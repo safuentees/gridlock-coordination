@@ -99,7 +99,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
 | source_discovery / ingestion | Nevada 90-row staged scope accepted; six approved-table diagnostics ready for production, then 21 approved plus 69 request mapping. | Exact Nevada producer/data/receipt in [spec](features/F27-us-regional-expansion/nv-nvenergy/spec.md); source is incomplete until requests are reconciled. SERTP remains blocked. |
-| core | WestConnect full 304 integrated through PR107; F27-PC-Q active. | Exact PacifiCorp qualification/sample/receipt in [spec](features/F27-us-regional-expansion/pacificorp-plan/spec.md); no producer before acceptance. |
+| core | PacifiCorp current/historical scopes accepted; three records per source ready for production, then full 10 + 14 after connection. | Exact two source producer/data folders and receipt in [spec](features/F27-us-regional-expansion/pacificorp-plan/spec.md); dated H/D3 source precedence explicit, no core calculations/checks. |
 | coordinator | PR107 integrated; accept next qualified scopes and connect samples before full producer handoffs. | Root owns aggregate/schema/register/merge/checks; preserve all unrelated untracked duplicate files. |
 | ui | Guam sample producer active, then full 27 after connection; TVA qualification queued afterward. | Exact `gu-gpa-cip` producer/data/receipt in [spec](features/F27-us-regional-expansion/gu-gpa/spec.md); next exact TVA qualification files in [spec](features/F27-us-regional-expansion/tva-public/spec.md). No UI/map edits or worker checks. |
 
