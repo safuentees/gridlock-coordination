@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareDatasets, downloadDataset, type DatasetChanges } from "@/data/import"
 import { createLocationRevision, getReadiness, type LocationEvidenceDraft } from "@/data/readiness"
-import { getLocationProposals } from "@/data/location-proposals"
+import { getLocationProposals, getLocationResearchHint } from "@/data/location-proposals"
 import { UTILITIES, type DataMode, type Dataset, type Project } from "@/domain/schema"
 import { visibleProjectNotes } from "@/lib/presentation"
 import { matchesProjectQuery } from "@/lib/project-search"
@@ -63,6 +63,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
   const selected = dataset.projects.find((project) => project.id === selection[dataset.mode]) ?? projects[0] ?? null
   const selectedNotes = selected ? visibleProjectNotes(selected) : []
   const suggestion = suggestions.find(proposal => proposal.projectId === selected?.id)
+  const researchHint = selected ? getLocationResearchHint(dataset, selected) : null
   const draftKey = selected ? JSON.stringify([dataset.mode, selected.id]) : ""
   const draft = selected ? drafts[draftKey] ?? initialDraft(selected) : null
   const fingerprint = draft ? JSON.stringify(draft) : ""
@@ -158,6 +159,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
                 <div className="space-y-4 [overflow-wrap:anywhere]">
                   <details className="rounded-lg border p-3"><summary className="cursor-pointer font-medium">Current location and sources</summary><div className="mt-3 space-y-4"><LocationEvidence location={selected.location} /><div className="space-y-2"><h3 className="text-sm font-medium">Project sources</h3><EvidenceSources sources={selected.sources} /></div>{selectedNotes.length > 0 && <ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{selectedNotes.map((note, index) => <li key={index}>{note}</li>)}</ul>}</div></details>
                   {suggestion && <section className="space-y-2 rounded-lg border p-3"><h3 className="text-sm font-medium">Suggested location evidence</h3><p className="text-sm text-muted-foreground">{suggestion.caveat}</p><a className="text-sm underline underline-offset-4" href={suggestion.draft.sourceUrl} target="_blank" rel="noreferrer">{suggestion.draft.sourceFile}</a><div><Button type="button" variant="outline" size="sm" onClick={previewSuggestion}>Preview suggestion</Button></div></section>}
+                  {researchHint && <section className="space-y-2 rounded-lg border p-3"><h3 className="text-sm font-medium">Evidence still needed</h3><p className="text-sm text-muted-foreground">{researchHint.enables}</p><details className="text-sm"><summary className="cursor-pointer">Research sources</summary><ul className="mt-2 space-y-2">{researchHint.publicSources.map(source => <li key={source.url}><a className="underline underline-offset-4" href={source.url} target="_blank" rel="noreferrer">{source.title}</a><p className="text-xs text-muted-foreground">{source.locator}</p></li>)}</ul></details></section>}
                   {dataset.mode === "demo" ? null : <form id={formId} onSubmit={preparePreview} noValidate className="space-y-4">
                     <p className="text-sm text-muted-foreground">Use decimal WGS84 coordinates.</p>
                     <div className="grid gap-3 sm:grid-cols-2"><div className="space-y-2"><Label htmlFor={`${formId}-latitude`}>Latitude</Label><Input id={`${formId}-latitude`} inputMode="decimal" value={draft.latitude} onChange={(event) => updateDraft("latitude", event.target.value)} placeholder="−90 to 90" required /></div><div className="space-y-2"><Label htmlFor={`${formId}-longitude`}>Longitude</Label><Input id={`${formId}-longitude`} inputMode="decimal" value={draft.longitude} onChange={(event) => updateDraft("longitude", event.target.value)} placeholder="−180 to 180" required /></div></div>
