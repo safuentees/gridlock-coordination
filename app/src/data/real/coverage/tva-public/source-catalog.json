@@ -1,0 +1,447 @@
+{
+  "sourceKey": "tva-public",
+  "editionId": "observed-2026-09-30",
+  "capturePolicy": "Coordinator accepted derived web-tool text captures; hashes identify captured text, never original HTML. Ordinary HTML downloads returned 403. Public GIS JSON is original but no geometry is authorized.",
+  "sources": [
+    {
+      "file": "web-capture-index.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-system-projects",
+      "sha256": "bc7a6de488eaf25170cee9854bff1fd95fa7dfa7d6da47d3c6cd14c9e9a87573",
+      "bytes": 6043,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-index.txt"
+    },
+    {
+      "file": "web-capture-2.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+      "sha256": "a61698f4e987bb859c2fcac221c15c82d7eb9e5167e4a936773c93d043f80b2f",
+      "bytes": 7134,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-2.txt"
+    },
+    {
+      "file": "web-capture-3.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+      "sha256": "f45365e0d1290e8ebf67c72434357f3affc8a33bc753fafd3773c8215977cd2b",
+      "bytes": 6129,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-3.txt"
+    },
+    {
+      "file": "web-capture-4.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+      "sha256": "93a6cbf82f4d8b8b8f38463b25815be302531b3e94e07accb4259c5b30a44f21",
+      "bytes": 9294,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-4.txt"
+    },
+    {
+      "file": "web-capture-5.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+      "sha256": "305aa25ad46cfcb5b5072e3eab460408b74b07fd4800d6ffaca5e7b1f18f4513",
+      "bytes": 6331,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-5.txt"
+    },
+    {
+      "file": "web-capture-6.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+      "sha256": "57c01ac6104712bedf94deb91ff7f14e2c55c45cfc01175c55777c8392761229",
+      "bytes": 9159,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-6.txt"
+    },
+    {
+      "file": "web-capture-7.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "sha256": "7456c606335a3539de696ab78fa4634ff7d1ed25eb7bcc41e8459a2143b9757a",
+      "bytes": 9432,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-7.txt"
+    },
+    {
+      "file": "web-capture-8.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+      "sha256": "f0c1b7d220bf66d3a4b26897e9fe4fc27b004b09eccc26e06964a405d9f326e1",
+      "bytes": 8574,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-8.txt"
+    },
+    {
+      "file": "web-capture-9.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+      "sha256": "9e7404879caf8f40110578cc4dcf5001620dd90667688bfe4726d6b32e78b5ea",
+      "bytes": 8626,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-9.txt"
+    },
+    {
+      "file": "web-capture-10.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+      "sha256": "9106582a5b33359097c2750facbbd515e2672e2ffbabf4525afde2714fb8e2d8",
+      "bytes": 9054,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-10.txt"
+    },
+    {
+      "file": "web-capture-11.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+      "sha256": "ec96c611c1cc33ac3f1941cc062cd598136246bbcebd12fd9dab27c6e8a7b623",
+      "bytes": 9634,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-11.txt"
+    },
+    {
+      "file": "web-capture-12.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "sha256": "68e74164002b4c10fcc5078c9cb497a13473943a294bf694dee9618ff7b00e0c",
+      "bytes": 9651,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-12.txt"
+    },
+    {
+      "file": "web-capture-13.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+      "sha256": "bcbdd668505bc6d2c08733271c0800332ae3660c140c0e320a6dda048b94f5f3",
+      "bytes": 12256,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-13.txt"
+    },
+    {
+      "file": "web-capture-14.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "sha256": "4f4092599a0f77072ee95ada069c12ad2fdfc6104e062634f19d4f4bfb7ec0ac",
+      "bytes": 9038,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-14.txt"
+    },
+    {
+      "file": "web-capture-15.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+      "sha256": "96c20682e8ca4aacfe93ebfcebc01e3eab51707c03f2a8be64c3b45421b572ff",
+      "bytes": 5331,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-15.txt"
+    },
+    {
+      "file": "web-capture-16.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+      "sha256": "ea7b7fbf99f57387b3cdc31b73d983bbf9a2c82d9607f2f19a9fed1bc16dac97",
+      "bytes": 6594,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-16.txt"
+    },
+    {
+      "file": "web-capture-17.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+      "sha256": "a979748758bb1a1de3a36e9d89116b0383f2b394c4ab6440c66ff6f89cde036e",
+      "bytes": 9691,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-17.txt"
+    },
+    {
+      "file": "web-capture-18.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+      "sha256": "15f3f0f1e5d299fbb8a4aeac314ea662f102b1063a3bc2f2e0119c02dda03f72",
+      "bytes": 8402,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-18.txt"
+    },
+    {
+      "file": "web-capture-19.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+      "sha256": "3513f1aa8ff35fe2722beeb956ad6669d2dab44772185e6f694dcd9b23f862a7",
+      "bytes": 6163,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-19.txt"
+    },
+    {
+      "file": "web-capture-20.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+      "sha256": "963cf70f10a27107d4611ccd6a86082b4398145493ec79520b16fc895679cdb8",
+      "bytes": 5810,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-20.txt"
+    },
+    {
+      "file": "web-capture-21.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+      "sha256": "a8d664c767f9eaf0e0261c37463fb7e67ea42cd921423947b0da3926955f7323",
+      "bytes": 12918,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-21.txt"
+    },
+    {
+      "file": "web-capture-22.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+      "sha256": "ca484ae9dd21648859e3582952a67ab05049c2a01dbead49b4eac94994271e67",
+      "bytes": 9301,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-22.txt"
+    },
+    {
+      "file": "web-capture-23.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+      "sha256": "4e3c96aaa4a49628f7825879824aac28abf3f948ce352d5027c9b1aafceb57f4",
+      "bytes": 12709,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-23.txt"
+    },
+    {
+      "file": "web-capture-24.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+      "sha256": "b29203aee1df2879def212f78edf920eeaa7ba90d312670a3e9342eee46f01e9",
+      "bytes": 16354,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-24.txt"
+    },
+    {
+      "file": "web-capture-25.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+      "sha256": "6fbf469319960f0636d7de746507f11d7b9bee317d6f3c9727a0c002ebaddddc",
+      "bytes": 11278,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-25.txt"
+    },
+    {
+      "file": "web-capture-26.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+      "sha256": "f2d4d58a1b0777049a8919b49391d3f75ff7a94d162df5f755c9e72ac8623106",
+      "bytes": 12075,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-26.txt"
+    },
+    {
+      "file": "web-capture-27.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+      "sha256": "be205f86134a88797d7c74d4986a2caa5bcd50c51eaaf7b3c33d888c1954ad69",
+      "bytes": 7856,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-27.txt"
+    },
+    {
+      "file": "web-capture-28.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+      "sha256": "813263e6367b61914731037bd7557039b47460adb3553537ff21587b346c0aae",
+      "bytes": 4909,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-28.txt"
+    },
+    {
+      "file": "web-capture-29.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+      "sha256": "581eed26b4285259a9b470a69d095325ffa885f70ef0233c62d43fc388e8228e",
+      "bytes": 12371,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-29.txt"
+    },
+    {
+      "file": "web-capture-30.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+      "sha256": "23194f9f7093a4e250638f143e81ef79833c5d85903c332c3abb375197514b40",
+      "bytes": 8364,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-30.txt"
+    },
+    {
+      "file": "web-capture-31.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+      "sha256": "27ea86174a83cd79a6cd0a5082b6f5a23aa07c4e8d370b9fbe660dcc27910cb3",
+      "bytes": 9061,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-31.txt"
+    },
+    {
+      "file": "web-capture-32.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+      "sha256": "00beb1d6aefefa75504ec2ce9e118c34d1506c75d0c70bec4a1a6f0474152ebb",
+      "bytes": 10203,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-32.txt"
+    },
+    {
+      "file": "web-capture-33.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+      "sha256": "e4e1e995b6c6973ff9a7c0d44efb70a4197c29042110405aca4c16870e097ff9",
+      "bytes": 8473,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-33.txt"
+    },
+    {
+      "file": "web-capture-34.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+      "sha256": "7873e10b3730f8d4ad297fc6dc629a84b45acbf0e064b066c1dda7b72467ae96",
+      "bytes": 8332,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-34.txt"
+    },
+    {
+      "file": "web-capture-35.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+      "sha256": "f48661416f2a16eec4963bf17c8fd8b69d28a767afb30ddf20375f44f650860b",
+      "bytes": 7888,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-35.txt"
+    },
+    {
+      "file": "web-capture-36.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+      "sha256": "83d5923fb80732d8a2aa9c033ba5e8ff0a96345cb34c92f0a976e162ff6a0e8f",
+      "bytes": 8034,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-36.txt"
+    },
+    {
+      "file": "web-capture-37.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+      "sha256": "fc6785b8483033df69ccc89b7d056e6f6b1cabab1aeea086bb7c31f0cd4fed4d",
+      "bytes": 8349,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-37.txt"
+    },
+    {
+      "file": "web-capture-38.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+      "sha256": "47ad441d1b8c25ba5908f20e50622cbee4c6bd959933ac8eda8527a1573807ab",
+      "bytes": 6806,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-38.txt"
+    },
+    {
+      "file": "web-capture-39.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+      "sha256": "e659eed1198876ad6faae413cae4665d0bb01cccd99b55f3d36db8680dccdb8c",
+      "bytes": 8096,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-39.txt"
+    },
+    {
+      "file": "web-capture-40.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+      "sha256": "f460e62ae6f0fd8539a81e0eb826767e317adf6053778e0f42ca9f6623730ad0",
+      "bytes": 9646,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-40.txt"
+    },
+    {
+      "file": "web-capture-41.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+      "sha256": "cd274b53e4bbe4f20cae9f1dccc3be10f4337168725557472e81dde230374a16",
+      "bytes": 9035,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-41.txt"
+    },
+    {
+      "file": "redstone-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/c1ba3709eb1b4132b5f0880d5380eccc?f=json",
+      "sha256": "482a2fb07e0eb0b6f448e121b6ff3e8abdb3f4b146e6f05eec5af94000e98a71",
+      "bytes": 1153,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-webmap-metadata.json"
+    },
+    {
+      "file": "redstone-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/c1ba3709eb1b4132b5f0880d5380eccc/data?f=json",
+      "sha256": "813a6eda74cb71c2b72815c8c41f7e0e2fa01549045a40b55221da857e56e786",
+      "bytes": 2348,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-webmap-data.json"
+    },
+    {
+      "file": "redstone-alternative-count.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&returnCountOnly=true",
+      "sha256": "24e9f6068fe41169abc6f1e5eef3a4a6ff58aa2dc8b9b48feabf966a8bc05cb8",
+      "bytes": 13,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-alternative-count.json"
+    },
+    {
+      "file": "redstone-proposed-centerlines.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+      "sha256": "d8dd4d7a889c7186287131719d96773c236591b8c6ff61a89d3a84b7e5dfccdd",
+      "bytes": 1548,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-proposed-centerlines.json"
+    },
+    {
+      "file": "appalachia-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ee1a293f298948adb6cc1f6d1968fd6d?f=json",
+      "sha256": "9633b842bc356dd24d711802ed65db3f83196e6d3b8cdd2b542ccc4389b6e017",
+      "bytes": 1147,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-webmap-metadata.json"
+    },
+    {
+      "file": "appalachia-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ee1a293f298948adb6cc1f6d1968fd6d/data?f=json",
+      "sha256": "c2b6bda79db73da29260102e8123f9a5b4ad325196fd23d94d08885dee81f407",
+      "bytes": 2363,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-webmap-data.json"
+    },
+    {
+      "file": "appalachia-alternative-count.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Appalachia+Area+Improvement+Project%27&returnCountOnly=true",
+      "sha256": "95a874dd08fc46f31593ae5c7de8d7f5e976af0e67e2a84bbfab489631f016be",
+      "bytes": 14,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-alternative-count.json"
+    },
+    {
+      "file": "appalachia-proposed-centerlines.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Appalachia+Area+Improvements+%28AAI%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+      "sha256": "f1018ee9ba65a60a224734178166ceb9a06ddcbc343f2b9329118f658e082039",
+      "bytes": 2654,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-proposed-centerlines.json"
+    },
+    {
+      "file": "kentucky-phase-ii-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ab4d8fbbf3574ce990fd503408597823?f=json",
+      "sha256": "22997123c00cdf307b541fd67c931a124c3e8d1ddbc06080c07474c0a5261b59",
+      "bytes": 1150,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-webmap-metadata.json"
+    },
+    {
+      "file": "kentucky-phase-ii-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ab4d8fbbf3574ce990fd503408597823/data?f=json",
+      "sha256": "7b6ec8a6c4555643fc4fe825b3a95e6140a8eba47c1c2d8e2df5faa26d7612bd",
+      "bytes": 2358,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-webmap-data.json"
+    },
+    {
+      "file": "kentucky-phase-ii-alternative-count.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Kentucky+Area+Improvement+Phase+2%27&returnCountOnly=true",
+      "sha256": "a56a03ca377dfe3875a551d5f14e1cd07efa20ba11f08f19280bc9088639db99",
+      "bytes": 14,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-alternative-count.json"
+    },
+    {
+      "file": "kentucky-phase-ii-proposed-centerlines.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27KY+Area+Improvements+Phase+2%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+      "sha256": "11b2213952464e8d0ce9b1b27bda5f9f21f1770f196fb125d25469f20767f237",
+      "bytes": 2391,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-proposed-centerlines.json"
+    },
+    {
+      "file": "public-layer-0-metadata.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0?f=json",
+      "sha256": "39d951e5899393d787c1877c57092c891b233cecbcb03a51d93e002c7c0470c5",
+      "bytes": 12387,
+      "captureKind": "original public layer metadata JSON response",
+      "localPath": "inputs/originals/F27-tva-public/public-layer-0-metadata.json"
+    },
+    {
+      "file": "public-layer-5-metadata.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5?f=json",
+      "sha256": "4e9cfc80f4a586041fcfe27e8452a69e9d3666be1ece8d17fd7d16e69b444631",
+      "bytes": 13080,
+      "captureKind": "original public layer metadata JSON response",
+      "localPath": "inputs/originals/F27-tva-public/public-layer-5-metadata.json"
+    }
+  ]
+}

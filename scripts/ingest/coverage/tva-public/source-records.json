@@ -1,0 +1,1785 @@
+{
+  "sourceKey": "tva-public",
+  "editionId": "observed-2026-09-30",
+  "retrievedOn": "2026-09-30",
+  "generatedAt": "2026-09-30T10:39:48Z",
+  "publishedOn": null,
+  "sampleIds": [
+    "new-liberty--alabama-(cherokee-and-calhoun-counties)",
+    "kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+    "beulah-grove--mississippi-(pontotoc-county)",
+    "appalachia-area-improvement-tennessee-and-north-carolina",
+    "shooting-creek--north-carolina-(clay-county)",
+    "hardin-valley-(tennessee)"
+  ],
+  "identityPolicy": "Canonical decoded final URL slugs are source locators, not engineering IDs; retain explicit crosswalks for future URL changes. GIS PROJECT_ID aliases do not establish whole-page identity.",
+  "capturePolicy": "Coordinator accepted derived web-tool text captures; hashes identify captured text, never original HTML. Ordinary HTML downloads returned 403. Public GIS JSON is original but no geometry is authorized.",
+  "acceptedFullLifecycleCounts": {
+    "planned": 36,
+    "on-hold": 3,
+    "under-construction": 1
+  },
+  "sources": [
+    {
+      "file": "web-capture-index.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-system-projects",
+      "sha256": "bc7a6de488eaf25170cee9854bff1fd95fa7dfa7d6da47d3c6cd14c9e9a87573",
+      "bytes": 6043,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-index.txt"
+    },
+    {
+      "file": "web-capture-2.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+      "sha256": "a61698f4e987bb859c2fcac221c15c82d7eb9e5167e4a936773c93d043f80b2f",
+      "bytes": 7134,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-2.txt"
+    },
+    {
+      "file": "web-capture-3.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+      "sha256": "f45365e0d1290e8ebf67c72434357f3affc8a33bc753fafd3773c8215977cd2b",
+      "bytes": 6129,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-3.txt"
+    },
+    {
+      "file": "web-capture-4.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+      "sha256": "93a6cbf82f4d8b8b8f38463b25815be302531b3e94e07accb4259c5b30a44f21",
+      "bytes": 9294,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-4.txt"
+    },
+    {
+      "file": "web-capture-5.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+      "sha256": "305aa25ad46cfcb5b5072e3eab460408b74b07fd4800d6ffaca5e7b1f18f4513",
+      "bytes": 6331,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-5.txt"
+    },
+    {
+      "file": "web-capture-6.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+      "sha256": "57c01ac6104712bedf94deb91ff7f14e2c55c45cfc01175c55777c8392761229",
+      "bytes": 9159,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-6.txt"
+    },
+    {
+      "file": "web-capture-7.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "sha256": "7456c606335a3539de696ab78fa4634ff7d1ed25eb7bcc41e8459a2143b9757a",
+      "bytes": 9432,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-7.txt"
+    },
+    {
+      "file": "web-capture-8.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+      "sha256": "f0c1b7d220bf66d3a4b26897e9fe4fc27b004b09eccc26e06964a405d9f326e1",
+      "bytes": 8574,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-8.txt"
+    },
+    {
+      "file": "web-capture-9.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+      "sha256": "9e7404879caf8f40110578cc4dcf5001620dd90667688bfe4726d6b32e78b5ea",
+      "bytes": 8626,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-9.txt"
+    },
+    {
+      "file": "web-capture-10.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+      "sha256": "9106582a5b33359097c2750facbbd515e2672e2ffbabf4525afde2714fb8e2d8",
+      "bytes": 9054,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-10.txt"
+    },
+    {
+      "file": "web-capture-11.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+      "sha256": "ec96c611c1cc33ac3f1941cc062cd598136246bbcebd12fd9dab27c6e8a7b623",
+      "bytes": 9634,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-11.txt"
+    },
+    {
+      "file": "web-capture-12.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "sha256": "68e74164002b4c10fcc5078c9cb497a13473943a294bf694dee9618ff7b00e0c",
+      "bytes": 9651,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-12.txt"
+    },
+    {
+      "file": "web-capture-13.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+      "sha256": "bcbdd668505bc6d2c08733271c0800332ae3660c140c0e320a6dda048b94f5f3",
+      "bytes": 12256,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-13.txt"
+    },
+    {
+      "file": "web-capture-14.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "sha256": "4f4092599a0f77072ee95ada069c12ad2fdfc6104e062634f19d4f4bfb7ec0ac",
+      "bytes": 9038,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-14.txt"
+    },
+    {
+      "file": "web-capture-15.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+      "sha256": "96c20682e8ca4aacfe93ebfcebc01e3eab51707c03f2a8be64c3b45421b572ff",
+      "bytes": 5331,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-15.txt"
+    },
+    {
+      "file": "web-capture-16.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+      "sha256": "ea7b7fbf99f57387b3cdc31b73d983bbf9a2c82d9607f2f19a9fed1bc16dac97",
+      "bytes": 6594,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-16.txt"
+    },
+    {
+      "file": "web-capture-17.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+      "sha256": "a979748758bb1a1de3a36e9d89116b0383f2b394c4ab6440c66ff6f89cde036e",
+      "bytes": 9691,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-17.txt"
+    },
+    {
+      "file": "web-capture-18.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+      "sha256": "15f3f0f1e5d299fbb8a4aeac314ea662f102b1063a3bc2f2e0119c02dda03f72",
+      "bytes": 8402,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-18.txt"
+    },
+    {
+      "file": "web-capture-19.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+      "sha256": "3513f1aa8ff35fe2722beeb956ad6669d2dab44772185e6f694dcd9b23f862a7",
+      "bytes": 6163,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-19.txt"
+    },
+    {
+      "file": "web-capture-20.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+      "sha256": "963cf70f10a27107d4611ccd6a86082b4398145493ec79520b16fc895679cdb8",
+      "bytes": 5810,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-20.txt"
+    },
+    {
+      "file": "web-capture-21.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+      "sha256": "a8d664c767f9eaf0e0261c37463fb7e67ea42cd921423947b0da3926955f7323",
+      "bytes": 12918,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-21.txt"
+    },
+    {
+      "file": "web-capture-22.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+      "sha256": "ca484ae9dd21648859e3582952a67ab05049c2a01dbead49b4eac94994271e67",
+      "bytes": 9301,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-22.txt"
+    },
+    {
+      "file": "web-capture-23.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+      "sha256": "4e3c96aaa4a49628f7825879824aac28abf3f948ce352d5027c9b1aafceb57f4",
+      "bytes": 12709,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-23.txt"
+    },
+    {
+      "file": "web-capture-24.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+      "sha256": "b29203aee1df2879def212f78edf920eeaa7ba90d312670a3e9342eee46f01e9",
+      "bytes": 16354,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-24.txt"
+    },
+    {
+      "file": "web-capture-25.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+      "sha256": "6fbf469319960f0636d7de746507f11d7b9bee317d6f3c9727a0c002ebaddddc",
+      "bytes": 11278,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-25.txt"
+    },
+    {
+      "file": "web-capture-26.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+      "sha256": "f2d4d58a1b0777049a8919b49391d3f75ff7a94d162df5f755c9e72ac8623106",
+      "bytes": 12075,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-26.txt"
+    },
+    {
+      "file": "web-capture-27.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+      "sha256": "be205f86134a88797d7c74d4986a2caa5bcd50c51eaaf7b3c33d888c1954ad69",
+      "bytes": 7856,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-27.txt"
+    },
+    {
+      "file": "web-capture-28.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+      "sha256": "813263e6367b61914731037bd7557039b47460adb3553537ff21587b346c0aae",
+      "bytes": 4909,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-28.txt"
+    },
+    {
+      "file": "web-capture-29.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+      "sha256": "581eed26b4285259a9b470a69d095325ffa885f70ef0233c62d43fc388e8228e",
+      "bytes": 12371,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-29.txt"
+    },
+    {
+      "file": "web-capture-30.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+      "sha256": "23194f9f7093a4e250638f143e81ef79833c5d85903c332c3abb375197514b40",
+      "bytes": 8364,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-30.txt"
+    },
+    {
+      "file": "web-capture-31.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+      "sha256": "27ea86174a83cd79a6cd0a5082b6f5a23aa07c4e8d370b9fbe660dcc27910cb3",
+      "bytes": 9061,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-31.txt"
+    },
+    {
+      "file": "web-capture-32.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+      "sha256": "00beb1d6aefefa75504ec2ce9e118c34d1506c75d0c70bec4a1a6f0474152ebb",
+      "bytes": 10203,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-32.txt"
+    },
+    {
+      "file": "web-capture-33.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+      "sha256": "e4e1e995b6c6973ff9a7c0d44efb70a4197c29042110405aca4c16870e097ff9",
+      "bytes": 8473,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-33.txt"
+    },
+    {
+      "file": "web-capture-34.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+      "sha256": "7873e10b3730f8d4ad297fc6dc629a84b45acbf0e064b066c1dda7b72467ae96",
+      "bytes": 8332,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-34.txt"
+    },
+    {
+      "file": "web-capture-35.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+      "sha256": "f48661416f2a16eec4963bf17c8fd8b69d28a767afb30ddf20375f44f650860b",
+      "bytes": 7888,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-35.txt"
+    },
+    {
+      "file": "web-capture-36.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+      "sha256": "83d5923fb80732d8a2aa9c033ba5e8ff0a96345cb34c92f0a976e162ff6a0e8f",
+      "bytes": 8034,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-36.txt"
+    },
+    {
+      "file": "web-capture-37.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+      "sha256": "fc6785b8483033df69ccc89b7d056e6f6b1cabab1aeea086bb7c31f0cd4fed4d",
+      "bytes": 8349,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-37.txt"
+    },
+    {
+      "file": "web-capture-38.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+      "sha256": "47ad441d1b8c25ba5908f20e50622cbee4c6bd959933ac8eda8527a1573807ab",
+      "bytes": 6806,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-38.txt"
+    },
+    {
+      "file": "web-capture-39.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+      "sha256": "e659eed1198876ad6faae413cae4665d0bb01cccd99b55f3d36db8680dccdb8c",
+      "bytes": 8096,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-39.txt"
+    },
+    {
+      "file": "web-capture-40.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+      "sha256": "f460e62ae6f0fd8539a81e0eb826767e317adf6053778e0f42ca9f6623730ad0",
+      "bytes": 9646,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-40.txt"
+    },
+    {
+      "file": "web-capture-41.txt",
+      "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+      "sha256": "cd274b53e4bbe4f20cae9f1dccc3be10f4337168725557472e81dde230374a16",
+      "bytes": 9035,
+      "captureKind": "web-tool extracted text; not original HTML",
+      "localPath": "inputs/originals/F27-tva-public/web-capture-41.txt"
+    },
+    {
+      "file": "redstone-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/c1ba3709eb1b4132b5f0880d5380eccc?f=json",
+      "sha256": "482a2fb07e0eb0b6f448e121b6ff3e8abdb3f4b146e6f05eec5af94000e98a71",
+      "bytes": 1153,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-webmap-metadata.json"
+    },
+    {
+      "file": "redstone-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/c1ba3709eb1b4132b5f0880d5380eccc/data?f=json",
+      "sha256": "813a6eda74cb71c2b72815c8c41f7e0e2fa01549045a40b55221da857e56e786",
+      "bytes": 2348,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-webmap-data.json"
+    },
+    {
+      "file": "redstone-alternative-count.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&returnCountOnly=true",
+      "sha256": "24e9f6068fe41169abc6f1e5eef3a4a6ff58aa2dc8b9b48feabf966a8bc05cb8",
+      "bytes": 13,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-alternative-count.json"
+    },
+    {
+      "file": "redstone-proposed-centerlines.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+      "sha256": "d8dd4d7a889c7186287131719d96773c236591b8c6ff61a89d3a84b7e5dfccdd",
+      "bytes": 1548,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/redstone-proposed-centerlines.json"
+    },
+    {
+      "file": "appalachia-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ee1a293f298948adb6cc1f6d1968fd6d?f=json",
+      "sha256": "9633b842bc356dd24d711802ed65db3f83196e6d3b8cdd2b542ccc4389b6e017",
+      "bytes": 1147,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-webmap-metadata.json"
+    },
+    {
+      "file": "appalachia-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ee1a293f298948adb6cc1f6d1968fd6d/data?f=json",
+      "sha256": "c2b6bda79db73da29260102e8123f9a5b4ad325196fd23d94d08885dee81f407",
+      "bytes": 2363,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-webmap-data.json"
+    },
+    {
+      "file": "appalachia-alternative-count.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Appalachia+Area+Improvement+Project%27&returnCountOnly=true",
+      "sha256": "95a874dd08fc46f31593ae5c7de8d7f5e976af0e67e2a84bbfab489631f016be",
+      "bytes": 14,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-alternative-count.json"
+    },
+    {
+      "file": "appalachia-proposed-centerlines.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Appalachia+Area+Improvements+%28AAI%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+      "sha256": "f1018ee9ba65a60a224734178166ceb9a06ddcbc343f2b9329118f658e082039",
+      "bytes": 2654,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/appalachia-proposed-centerlines.json"
+    },
+    {
+      "file": "kentucky-phase-ii-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ab4d8fbbf3574ce990fd503408597823?f=json",
+      "sha256": "22997123c00cdf307b541fd67c931a124c3e8d1ddbc06080c07474c0a5261b59",
+      "bytes": 1150,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-webmap-metadata.json"
+    },
+    {
+      "file": "kentucky-phase-ii-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/ab4d8fbbf3574ce990fd503408597823/data?f=json",
+      "sha256": "7b6ec8a6c4555643fc4fe825b3a95e6140a8eba47c1c2d8e2df5faa26d7612bd",
+      "bytes": 2358,
+      "captureKind": "original public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-webmap-data.json"
+    },
+    {
+      "file": "kentucky-phase-ii-alternative-count.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Kentucky+Area+Improvement+Phase+2%27&returnCountOnly=true",
+      "sha256": "a56a03ca377dfe3875a551d5f14e1cd07efa20ba11f08f19280bc9088639db99",
+      "bytes": 14,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-alternative-count.json"
+    },
+    {
+      "file": "kentucky-phase-ii-proposed-centerlines.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27KY+Area+Improvements+Phase+2%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+      "sha256": "11b2213952464e8d0ce9b1b27bda5f9f21f1770f196fb125d25469f20767f237",
+      "bytes": 2391,
+      "captureKind": "original project-filtered public JSON response",
+      "localPath": "inputs/originals/F27-tva-public/kentucky-phase-ii-proposed-centerlines.json"
+    },
+    {
+      "file": "public-layer-0-metadata.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0?f=json",
+      "sha256": "39d951e5899393d787c1877c57092c891b233cecbcb03a51d93e002c7c0470c5",
+      "bytes": 12387,
+      "captureKind": "original public layer metadata JSON response",
+      "localPath": "inputs/originals/F27-tva-public/public-layer-0-metadata.json"
+    },
+    {
+      "file": "public-layer-5-metadata.json",
+      "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5?f=json",
+      "sha256": "4e9cfc80f4a586041fcfe27e8452a69e9d3666be1ece8d17fd7d16e69b444631",
+      "bytes": 13080,
+      "captureKind": "original public layer metadata JSON response",
+      "localPath": "inputs/originals/F27-tva-public/public-layer-5-metadata.json"
+    }
+  ],
+  "geometryContext": {
+    "acceptedCenters": 0,
+    "layerGeometryType": "esriGeometryPolyline",
+    "nativeCrs": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "role": "Proposed pre-surveyed line centerline, selected from alternatives; alternative layer is candidate routing segments",
+    "accuracyMeters": null,
+    "runtimePolicy": "Current Point/MultiPoint schema cannot faithfully encode these polylines. Preserve linked public evidence; no centroid, midpoint, endpoint or station-center inference. No schema/map change requested.",
+    "materialConflicts": [
+      "Redstone page preferred length 3.3 mi versus GIS MILES 3.68123.",
+      "Appalachia page line 25.2 mi plus station/ties versus filtered GIS MILES 1.45934; geometry is not demonstrated to cover the whole page scope.",
+      "Kentucky Phase II latest page on hold May 2026 versus GIS STATUS Active; GIS edit/status labels do not override the page update."
+    ],
+    "linkedMaps": [
+      {
+        "linkedProject": "redstone",
+        "itemId": "c1ba3709eb1b4132b5f0880d5380eccc",
+        "publicAccess": "public",
+        "title": "TVA.COM_RedstoneArsenalNo.3",
+        "layers": [
+          {
+            "title": "Project Alternatives",
+            "definitionExpression": "PROJECT_NAME = 'Redstone Arsenal No. 3, AL'",
+            "source": "redstone-alternative-count.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&returnCountOnly=true",
+            "featureCount": 5,
+            "spatialReference": null,
+            "attributes": []
+          },
+          {
+            "title": "Proposed Transmission Line",
+            "definitionExpression": "NAME = 'Redstone Arsenal No. 3, AL'",
+            "source": "redstone-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "featureCount": 1,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            },
+            "attributes": [
+              {
+                "OBJECTID": 13192,
+                "NAME": "Redstone Arsenal No. 3, AL",
+                "PROJECT_ID": "551220",
+                "ID": null,
+                "STATUS": "Active",
+                "MILES": 3.68123
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkedProject": "appalachia",
+        "itemId": "ee1a293f298948adb6cc1f6d1968fd6d",
+        "publicAccess": "public",
+        "title": "TVA.COM_AppalachiaAreaImprovement",
+        "layers": [
+          {
+            "title": "Project Alternatives",
+            "definitionExpression": "PROJECT_NAME = 'Appalachia Area Improvement Project'",
+            "source": "appalachia-alternative-count.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Appalachia+Area+Improvement+Project%27&returnCountOnly=true",
+            "featureCount": 84,
+            "spatialReference": null,
+            "attributes": []
+          },
+          {
+            "title": "Proposed Transmission Line",
+            "definitionExpression": "NAME = 'Appalachia Area Improvements (AAI'",
+            "source": "appalachia-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Appalachia+Area+Improvements+%28AAI%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "featureCount": 1,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            },
+            "attributes": [
+              {
+                "OBJECTID": 13191,
+                "NAME": "Appalachia Area Improvements (AAI",
+                "PROJECT_ID": "629986",
+                "ID": null,
+                "STATUS": "Active",
+                "MILES": 1.45934
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkedProject": "kentucky-phase-ii",
+        "itemId": "ab4d8fbbf3574ce990fd503408597823",
+        "publicAccess": "public",
+        "title": "TVA.COM_KYAreaImprovements",
+        "layers": [
+          {
+            "title": "Project Alternatives",
+            "definitionExpression": "PROJECT_NAME = 'Kentucky Area Improvement Phase 2'",
+            "source": "kentucky-phase-ii-alternative-count.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Kentucky+Area+Improvement+Phase+2%27&returnCountOnly=true",
+            "featureCount": 42,
+            "spatialReference": null,
+            "attributes": []
+          },
+          {
+            "title": "Proposed Transmission Line",
+            "definitionExpression": "NAME = 'KY Area Improvements Phase 2'",
+            "source": "kentucky-phase-ii-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27KY+Area+Improvements+Phase+2%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "featureCount": 1,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            },
+            "attributes": [
+              {
+                "OBJECTID": 13200,
+                "NAME": "KY Area Improvements Phase 2",
+                "PROJECT_ID": "548237",
+                "ID": 0,
+                "STATUS": "Active",
+                "MILES": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "placementId": "alabama-01",
+      "stateSection": "Alabama",
+      "sourceId": "claysville-alabama",
+      "title": "Claysville, Alabama",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-2.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-02",
+      "stateSection": "Alabama",
+      "sourceId": "florence-alabama",
+      "title": "Florence, Alabama (Iron City)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-3.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-03",
+      "stateSection": "Alabama",
+      "sourceId": "helicon-trade-alabama",
+      "title": "Helicon-Trade, Alabama",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-4.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-04",
+      "stateSection": "Alabama",
+      "sourceId": "jones-chapel-alabama",
+      "title": "Jones Chapel, Alabama (Cullman and Winston Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-5.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-05",
+      "stateSection": "Alabama",
+      "sourceId": "mulberry-alabama-(cullman-county)",
+      "title": "Mulberry, Alabama (Cullman County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-6.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-06",
+      "stateSection": "Alabama",
+      "sourceId": "new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "title": "New Liberty, Alabama (Cherokee and Calhoun Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-7.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": {
+        "description": "Proposed 5.77-mile transmission connection from Alabama Power’s Centre–Piedmont line to Cherokee Electric’s New Liberty substation.",
+        "status": "Preferred route identified — October 2024",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Fall 2027"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Cherokee and Calhoun Counties; Centre–Piedmont line to New Liberty substation",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-10",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line and associated switches",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-7.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+                "locator": "October 2024 update, L19; Project Schedule L59"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-7.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+            "locator": "Update — October 2024, captured L7–23; Background L26–33; Project Schedule L50–60"
+          }
+        ],
+        "notes": [
+          "Operating voltage is 115 kV; the line is designed for 161 kV.",
+          "The proposal includes TVA line work, Alabama Power switches and a Cherokee Electric substation; complete asset ownership remains unresolved.",
+          "Preferred routing and pending environmental review do not establish construction approval."
+        ]
+      }
+    },
+    {
+      "placementId": "alabama-07",
+      "stateSection": "Alabama",
+      "sourceId": "redstone-arsenal-no.-3--alabama-(madison-county)",
+      "title": "Redstone Arsenal No. 3, Alabama (Madison County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-8.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-08",
+      "stateSection": "Alabama",
+      "sourceId": "star-gap--alabama-(fort-payne--dekalb-county)",
+      "title": "Star Gap, Alabama (Fort Payne, DeKalb County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-9.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "alabama-09",
+      "stateSection": "Alabama",
+      "sourceId": "sundown-drive-alabama",
+      "title": "Sundown Drive, Alabama",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-10.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "kentucky-01",
+      "stateSection": "Kentucky",
+      "sourceId": "commerce-park-ii-kentucky-(christian-and-todd-counties)",
+      "title": "Commerce Park II (St. Elmo), Kentucky (Christian and Todd Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-11.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "kentucky-02",
+      "stateSection": "Kentucky",
+      "sourceId": "kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "title": "Kentucky Area Improvements Phase II (Logan and Todd Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "Explicit temporary hold in latest update; older schedule is not current.",
+      "source": {
+        "file": "web-capture-12.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": {
+        "description": "Proposed Stokes switching station and about 20 miles of 161 kV line to Cave Springs; latest update pauses the project.",
+        "status": "Temporarily on hold — May 2026",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Current service date withheld while project is on hold"
+        },
+        "sourceState": "Kentucky",
+        "sourceLocation": "Logan and Todd Counties; Stokes switching station to Cave Springs",
+        "sourceUpdatedOn": null,
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-05",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New switching station and transmission line",
+        "aliases": [
+          "Public proposed-line GIS PROJECT_ID 548237 (scoped alias, not whole-page identity)"
+        ],
+        "milestones": [
+          {
+            "field": "Earlier forecast in service — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2027; April 2025 forecast, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-12.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+                "locator": "April 2025 update L18; Project Schedule L57"
+              }
+            ]
+          },
+          {
+            "field": "Older background forecast in service",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2028; historical background, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-12.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+                "locator": "Background L29"
+              }
+            ]
+          },
+          {
+            "field": "Earlier forecast construction start — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-12.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+                "locator": "April 2025 update L17"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-12.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+            "locator": "May 2026 hold, captured L8; Update — April 2025 L9–20; Background L22–29; Project Schedule L46–57"
+          },
+          {
+            "file": "kentucky-phase-ii-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27KY+Area+Improvements+Phase+2%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "locator": "Exact public webmap-selected feature query; PROJECT_ID, STATUS and MILES are scoped evidence only; no center conversion"
+          }
+        ],
+        "notes": [
+          "May 2026 pauses the project while still planning completion; revised dates await resumption.",
+          "Earlier 2027 and 2028 service forecasts are historical and do not supply the current primary date.",
+          "The public proposed-line GIS status Active does not override the later page hold; alternatives are not additional projects."
+        ]
+      }
+    },
+    {
+      "placementId": "kentucky-03",
+      "stateSection": "Kentucky",
+      "sourceId": "transpark-east-kentucky-(warren-county)",
+      "title": "Transpark East, Kentucky (Warren County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-13.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-01",
+      "stateSection": "Mississippi",
+      "sourceId": "belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "title": "Belmont Stage 2, Mississippi (Clay, Lowndes, and Oktibbeha Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "Explicit temporary hold in latest update; older schedule is not current.",
+      "source": {
+        "file": "web-capture-14.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-02",
+      "stateSection": "Mississippi",
+      "sourceId": "beulah-grove--mississippi-(pontotoc-county)",
+      "title": "Beulah Grove, Mississippi (Pontotoc County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "Current narrative revisits an earlier cancelled proposal; retain renewed planned work, not a cancelled record.",
+      "source": {
+        "file": "web-capture-15.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": {
+        "description": "Renewed proposal for about 2.5 miles of 161 kV line to the Beulah Grove substation.",
+        "status": "Renewed proposed transmission project — undated page",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2027"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Pontotoc County; Wellspring–McGregors Chapel line to Beulah Grove substation",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-15.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+                "locator": "Project timeline L18; Project Schedule L30"
+              }
+            ]
+          },
+          {
+            "field": "Former cancelled proposal forecast completion",
+            "date": {
+              "value": "2013",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "2013; historical cancelled proposal, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-15.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+                "locator": "Proposed Transmission Project L12"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-15.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+            "locator": "Proposed Transmission Project, captured L7–21; Project Schedule L25–31"
+          }
+        ],
+        "notes": [
+          "The current page explicitly restarts the former 2010 proposal after an earlier cancellation.",
+          "Easements acquired in 2012 do not establish construction or completion.",
+          "The page has no update date; lifecycle is observed in the captured September 30, 2026 snapshot."
+        ]
+      }
+    },
+    {
+      "placementId": "mississippi-03",
+      "stateSection": "Mississippi",
+      "sourceId": "macon-mississippi-(midway-south-macon)",
+      "title": "Macon, Mississippi (Midway-South Macon)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-16.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-04",
+      "stateSection": "Mississippi",
+      "sourceId": "nettleton--mississippi-(lee-county)",
+      "title": "Nettleton, Mississippi (Lee County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-17.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-05",
+      "stateSection": "Mississippi",
+      "sourceId": "north-oakland-coffeeville-mississippi",
+      "title": "North Oakland-Coffeeville, Mississippi",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-18.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-06",
+      "stateSection": "Mississippi",
+      "sourceId": "olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+      "title": "Olive Branch, Mississippi (Mineral Wells-West Pleasant Hill)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-19.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-07",
+      "stateSection": "Mississippi",
+      "sourceId": "railhub-south--mississippi-(alcorn-county)",
+      "title": "RailHub-South, Mississippi (Alcorn County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-20.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-08",
+      "stateSection": "Mississippi",
+      "sourceId": "south-macon-scooba-dekalb-mississippi",
+      "title": "South Macon-Scooba-DeKalb, Mississippi",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-21.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "mississippi-09",
+      "stateSection": "Mississippi",
+      "sourceId": "tupelo-mississippi-(north-green-street)",
+      "title": "Tupelo, Mississippi (North Green Street)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-22.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "north-carolina-01",
+      "stateSection": "North Carolina",
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "title": "Appalachia Area Improvement, Tennessee and North Carolina",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-23.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": {
+        "description": "Combined Appalachia line improvement and Martins Creek switching-station/tie work across Tennessee and North Carolina.",
+        "status": "Proposed transmission improvements — February 2025 schedules",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No single whole-program service milestone selected"
+        },
+        "sourceState": "North Carolina; Tennessee",
+        "sourceLocation": "Polk County, Tennessee; Cherokee County, North Carolina",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-02",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Transmission line, switching station and connecting lines",
+        "aliases": [
+          "Public proposed-line GIS PROJECT_ID 629986 (partial-scope alias)"
+        ],
+        "milestones": [
+          {
+            "field": "Power line forecast in service",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2029; line component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Power Line L11–19"
+              }
+            ]
+          },
+          {
+            "field": "Martins Creek switching station forecast in service",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Summer 2029; station component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Martins Creek Switching Station L21–29"
+              }
+            ]
+          },
+          {
+            "field": "Power line forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Power Line L17"
+              }
+            ]
+          },
+          {
+            "field": "Martins Creek switching station forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Martins Creek Switching Station L27"
+              }
+            ]
+          },
+          {
+            "field": "Superseded line forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2026–2027; June 2023 background, superseded"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "June 2023 background update L55"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-23.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+            "locator": "Update — February 2025, captured L7–29; Background Update — June 2023 L41–57"
+          },
+          {
+            "file": "appalachia-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Appalachia+Area+Improvements+%28AAI%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "locator": "Exact public webmap-selected feature query; PROJECT_ID, STATUS and MILES are scoped evidence only; no center conversion"
+          }
+        ],
+        "notes": [
+          "A single page appears under North Carolina and Tennessee; retain one work unit with distinct line and station schedules.",
+          "The source describes a 25.2-mile line and 0.4 miles of station connections; GIS length 1.45934 miles has incomplete scope, so no center is inferred.",
+          "Earlier 2026–2027 forecasts are superseded; a mismatched Piedmont involvement paragraph does not establish project geography."
+        ]
+      }
+    },
+    {
+      "placementId": "north-carolina-02",
+      "stateSection": "North Carolina",
+      "sourceId": "shooting-creek--north-carolina-(clay-county)",
+      "title": "Shooting Creek, North Carolina (Clay County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-24.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": {
+        "description": "Preferred 9.33-mile 161 kV line from Hayesville to the new Shooting Creek substation in Clay County, North Carolina.",
+        "status": "Preferred route identified — July 2026",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service"
+        },
+        "sourceState": "North Carolina",
+        "sourceLocation": "Clay County; Hayesville station to Shooting Creek substation",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-07",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter / Spring 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-24.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+                "locator": "July 2026 update L20; Background L31"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-24.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+            "locator": "Update — July 2026, captured L7–23; Background L25–31; Public Involvement L64–67"
+          }
+        ],
+        "notes": [
+          "July 2026 selects the 9.33-mile route; rejected and alternative routes are not separate records.",
+          "The Young Harris, Georgia meeting address is not a project center or project state.",
+          "July 8, 2026 notification letters are a communication event, not a publication day or construction milestone."
+        ]
+      }
+    },
+    {
+      "placementId": "tennessee-01",
+      "stateSection": "Tennessee",
+      "sourceId": "109-north--tennessee-(sumner-county)",
+      "title": "109 North, Tennessee (Sumner County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "August 2026 update reports surveys complete and easement acquisition; construction and service dates TBD, not construction begun.",
+      "source": {
+        "file": "web-capture-25.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-02",
+      "stateSection": "Tennessee",
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "title": "Appalachia Area Improvement, Tennessee and North Carolina",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+      "excluded": true,
+      "duplicateOfSourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "duplicateOfPlacementId": "north-carolina-01",
+      "mappingReason": "The same Appalachia URL is also listed under North Carolina; one page-scoped record only.",
+      "source": {
+        "file": "web-capture-23.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-03",
+      "stateSection": "Tennessee",
+      "sourceId": "bristol-tennessee-(south-bristol)",
+      "title": "Bristol, Tennessee (South Bristol)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-26.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-04",
+      "stateSection": "Tennessee",
+      "sourceId": "cates-landing-(lake-county-tennessee)",
+      "title": "Cates Landing (Lake County, Tennessee)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-27.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-05",
+      "stateSection": "Tennessee",
+      "sourceId": "columbia-tennessee-(fiberon)",
+      "title": "Columbia, Tennessee (Fiberon)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-28.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-06",
+      "stateSection": "Tennessee",
+      "sourceId": "dickson-tennessee",
+      "title": "Dickson, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-29.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-07",
+      "stateSection": "Tennessee",
+      "sourceId": "fall-creek--tennessee-(wilson-and-rutherford-counties)",
+      "title": "Fall Creek, Tennessee (Wilson and Rutherford Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-30.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-08",
+      "stateSection": "Tennessee",
+      "sourceId": "gallatin-tennessee-(north-gallatin)",
+      "title": "Gallatin, Tennessee (North Gallatin)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-31.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-09",
+      "stateSection": "Tennessee",
+      "sourceId": "hardin-valley-(tennessee)",
+      "title": "Hardin Valley, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "September 2024 update reports 80 percent construction complete, not full completion.",
+      "source": {
+        "file": "web-capture-32.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": {
+        "description": "Transmission line to the planned Hardin Valley station; the September 2024 update reports 80 percent construction completion.",
+        "status": "Construction 80 percent complete — September 2024",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Forecast in service: Winter 2025–2026"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Knox and Loudon Counties; proposed line to Hardin Valley station",
+        "sourceUpdatedOn": null,
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2024-09",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Updated forecast in service — unresolved winter range",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2025–2026; September 2024 narrative"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "September 2024 update L10"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting schedule forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2045–2025; exact conflicting source text, not repaired"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Project Schedule L72"
+              }
+            ]
+          },
+          {
+            "field": "Earlier background forecast in service",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2024; superseded background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Background 2 L25"
+              }
+            ]
+          },
+          {
+            "field": "Older background forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2022–2023; superseded background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Background 1 L46"
+              }
+            ]
+          },
+          {
+            "field": "Earlier forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter 2024; forecast only, not an actual start"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Background 2 L23; Project Schedule L71"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-32.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+            "locator": "Update — September 2024, captured L8–10; Background 2 L13–25; Background 1 L28–46; Project Schedule L63–72"
+          }
+        ],
+        "notes": [
+          "Construction progress is evidence from September 2024, not a claim about present status.",
+          "The latest winter 2025–2026 forecast conflicts with the table entry winter 2045–2025; neither is silently repaired to an exact date.",
+          "Older service forecasts remain historical. No actual start day or complete construction window is established."
+        ]
+      }
+    },
+    {
+      "placementId": "tennessee-10",
+      "stateSection": "Tennessee",
+      "sourceId": "lewis-chapel-tennessee-(dunlap)",
+      "title": "Lewis Chapel, Tennessee (Dunlap)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-33.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-11",
+      "stateSection": "Tennessee",
+      "sourceId": "lexington-tennessee-(west-lexington-jacks-creek)",
+      "title": "Lexington, Tennessee (West Lexington-Jacks Creek)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-34.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-12",
+      "stateSection": "Tennessee",
+      "sourceId": "north-dayton-tennessee",
+      "title": "North Dayton, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-35.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-13",
+      "stateSection": "Tennessee",
+      "sourceId": "riceville-tennessee",
+      "title": "Riceville, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-36.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-14",
+      "stateSection": "Tennessee",
+      "sourceId": "tiny-town-road-tennessee-(clarksville)",
+      "title": "Tiny Town Road, Tennessee (Clarksville)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-37.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-15",
+      "stateSection": "Tennessee",
+      "sourceId": "tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+      "title": "Tiptonville, Tennessee (Tiptonville-New Madrid No. 2)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-38.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-16",
+      "stateSection": "Tennessee",
+      "sourceId": "tullahoma-tennessee-(center-grove)",
+      "title": "Tullahoma, Tennessee (Center Grove)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-39.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-17",
+      "stateSection": "Tennessee",
+      "sourceId": "waldens-creek--tennessee-(sevier-county)",
+      "title": "Waldens Creek, Tennessee (Sevier County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "The page describes proposed/selected-route transmission work; no terminal completion is established.",
+      "source": {
+        "file": "web-capture-40.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    },
+    {
+      "placementId": "tennessee-18",
+      "stateSection": "Tennessee",
+      "sourceId": "west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+      "title": "West Tennessee Power System Improvements (Fayette, Haywood, and Tipton Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+      "excluded": false,
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "mappingReason": "Explicit hold while system options are evaluated.",
+      "source": {
+        "file": "web-capture-41.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      },
+      "facts": null
+    }
+  ]
+}
