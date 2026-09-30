@@ -24,6 +24,14 @@
       "summary": "Imported CUC planning and system context does not establish planned transmission-project coverage.",
       "needed": "A public project inventory that identifies transmission work and its asset role.",
       "url": "https://www.cucgov.org/"
+    },
+    {
+      "sourceKey": "our-grid-future",
+      "label": "National planned-project compilation",
+      "assessedOn": "2026-09-30",
+      "summary": "Our Grid Future’s planned-project downloads require contact-information submission. The advertised dataset has not been assessed or imported.",
+      "needed": "An openly accessible or legitimately supplied workbook and GIS package, with methodology and applicable reuse terms.",
+      "url": "https://www.ourgridfuture.org/"
     }
   ]
 }
