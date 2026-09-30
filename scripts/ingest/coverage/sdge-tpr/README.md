@@ -1,0 +1,9 @@
+# SDG&E public July 2026 TPR producer
+
+Accepted source contract: `specs/features/F27-us-regional-expansion/ca-sdge-tpr/spec.md`. Read-only openpyxl against the pinned public workbook; no workbook writes, private copy, network fetch, geocoding or owner inference. Original workbook/HTML stay ignored in `inputs/originals/F27-ca-sdge-tpr/`.
+
+Run `python3 scripts/ingest/coverage/sdge-tpr/extract.py --scope sample` with bundled Python/openpyxl. Default outputs are under `app/src/data/real/coverage/sdge-tpr/`. The producer hashes all three originals before reading whitelisted public columns. `descriptions.json` contains six concise row-cited paraphrases; full generation is deliberately blocked until the remaining accepted rows are transcribed after the initial loader connection.
+
+Summary exclusions run first: 40 labeled summaries, then 187 other operational and three canceled rows. Of 137 accepted source units, the first six are Excel 12/20/121/334/342/356; 131 remain pending. Unprefixed blanket budgets 121/161/163 are capital context with recordUnit omitted. Native AD IDs remain separate from AE parent orders, AG budget aliases and missing-ID source locators. Source-locator future-edition continuity needs an explicit crosswalk.
+
+BG is current projected or actual service. BF original forecasts and BE actual-or-expected starts are separate labeled milestones; no fallback, actual-start assertion or construction interval is invented. Owners and locations remain unknown. AA numeric kV and explicit AB kV are parsed separately from MVA. Costs preserve $000 labels and overlapping scopes, without computation into savings. Only the coordinator runs integrated application checks.

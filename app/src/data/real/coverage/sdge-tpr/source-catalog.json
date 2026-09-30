@@ -1,0 +1,28 @@
+{
+  "sourceKey": "sdge-tpr",
+  "editionId": "2026-07",
+  "captureMeaning": "Original downloaded bytes, never derived page text or a confidential workbook.",
+  "sources": [
+    {
+      "file": "JULY26-SDG&E-Public - Resolution E-5252 TPR Process Data.xlsx",
+      "localFile": "JULY26-SDGE-Public-Resolution-E-5252-TPR-Process-Data.xlsx",
+      "url": "https://www.sdge.com/sites/default/files/JULY26-SDG%26E-Public%20-%20Resolution%20E-5252%20TPR%20Process%20Data.xlsx",
+      "bytes": 297133,
+      "sha256": "0e800beb097adc26be9669c841808ced2c18542c9a499465144b41399c3dd157"
+    },
+    {
+      "file": "sdge-tpr-process.html",
+      "localFile": "sdge-tpr-process.html",
+      "url": "https://www.sdge.com/sdge-tpr-process",
+      "bytes": 80878,
+      "sha256": "9a77fbfd955b0962a3f6aff2f746311f14bd3cf610d1fc26f37568537aceb8c0"
+    },
+    {
+      "file": "cpuc-tpr-process.html",
+      "localFile": "cpuc-tpr-process.html",
+      "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/transmission-project-review-process",
+      "bytes": 72849,
+      "sha256": "1e3dfc920b9586e9cf380886574a1bf22daaee9596830e947d2543e31c715a15"
+    }
+  ]
+}
