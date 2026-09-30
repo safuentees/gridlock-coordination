@@ -5,6 +5,8 @@ Vite + React + TypeScript in `app/`, npm lockfile, Tailwind 4, official shadcn N
 
 Official defaults read: [Vite](https://ui.shadcn.com/docs/installation/vite), [CLI](https://ui.shadcn.com/docs/cli), [table](https://ui.shadcn.com/docs/components/radix/table), [tabs](https://ui.shadcn.com/docs/components/radix/tabs), [input](https://ui.shadcn.com/docs/components/radix/input). Preserve generated components and theme; use ordinary layout utilities, no redesign or visual inspection.
 
+Product copy and icon-control rules are maintained in `app/src/AGENTS.md`. Shared `IconButton` composes the existing Button and official Nova Tooltip defaults, with a name and hover/focus label; ordinary text buttons remain appropriate for domain actions. `lib/presentation.ts` curates known ingestion notes and source editions without changing raw data or exports. The global TooltipProvider is in main.tsx.
+
 ## Authoritative contract
 `app/src/domain/schema.ts` owns runtime Dataset/Project validation, domain types and analysis options. `app/src/domain/example.ts` is the representative contract record. Coordinator owns these files, package/dependency files, entry point, `app/src/index.css`, shared `components/ui/*`, `data/provider.ts`, specs and integration receipts. UI owns App after F00.
 

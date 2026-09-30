@@ -30,6 +30,8 @@ Source mode contains 44 Dominion descriptions and 208 active rows from Georgia's
 
 All 44 Dominion project-need sections and 208 Georgia planning zones are retained as source notes. Zones are source identifiers, not coordinates. The 242 missing locations reflect absent geospatial evidence in the selected listing sections, not extraction failures. Data readiness supports evidence-backed updates; it does not verify locations or find new coordinates automatically.
 
+Source editions are Dominion's 2024–2028 project descriptions and Georgia's 2025 IRP. Dataset-generation timestamps describe local assembly, not plan freshness. Extraction, native-ID deduplication and workbook-linking details live in the ingestion documentation and raw metadata; product screens show curated source context. Dawson's two phase dates remain attached to Dawson's evidence.
+
 Eligibility uses haversine distance between supplied centers, strictly less than the radius (default 25 statute miles). Distance ranks first, then known milestone gap, then stable identity. Unknown dates remain unknown; an enabled day-gap filter excludes unknown or partial dates. Construction overlap requires explicit windows. Locations in the real snapshot have not been independently verified.
 
 Representative example: Jasper–Okatie / McIntosh–Purrysburg is about 5.6501 miles apart with 152 days between an in-service milestone and a need-date milestone. The locations are unverified and construction overlap is unknown.
