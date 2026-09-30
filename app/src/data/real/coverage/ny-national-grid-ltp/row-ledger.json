@@ -32,8 +32,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p005-r02"
   },
   {
     "sourceId": "2025-p005-r03",
@@ -51,8 +51,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p005-r03"
   },
   {
     "sourceId": "2025-p005-r04",
@@ -70,8 +70,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p005-r04"
   },
   {
     "sourceId": "2025-p006-r01",
@@ -89,8 +89,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r01"
   },
   {
     "sourceId": "2025-p006-r02",
@@ -108,8 +108,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r02"
   },
   {
     "sourceId": "2025-p006-r03",
@@ -127,8 +127,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r03"
   },
   {
     "sourceId": "2025-p006-r04",
@@ -146,8 +146,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r04"
   },
   {
     "sourceId": "2025-p007-r01",
@@ -184,8 +184,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p007-r02"
   },
   {
     "sourceId": "2025-p007-r03",
@@ -203,8 +203,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p007-r03"
   },
   {
     "sourceId": "2025-p009-r01",
@@ -256,8 +256,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p009-r03"
   },
   {
     "sourceId": "2025-p009-r04",
@@ -275,8 +275,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p009-r04"
   },
   {
     "sourceId": "2025-p009-r05",
@@ -294,8 +294,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p009-r05"
   },
   {
     "sourceId": "2025-p010-r01",
@@ -313,8 +313,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r01"
   },
   {
     "sourceId": "2025-p010-r02",
@@ -332,8 +332,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r02"
   },
   {
     "sourceId": "2025-p010-r03",
@@ -351,8 +351,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r03"
   },
   {
     "sourceId": "2025-p010-r04",
@@ -370,8 +370,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r04"
   },
   {
     "sourceId": "2025-p010-r05",
@@ -389,8 +389,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r05"
   },
   {
     "sourceId": "2025-p012-r01",
@@ -425,8 +425,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p012-r02"
   },
   {
     "sourceId": "2025-p012-r03",
@@ -444,8 +444,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p012-r03"
   },
   {
     "sourceId": "2025-p012-r04",
@@ -482,8 +482,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r01"
   },
   {
     "sourceId": "2025-p013-r02",
@@ -501,8 +501,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r02"
   },
   {
     "sourceId": "2025-p013-r03",
@@ -520,8 +520,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r03"
   },
   {
     "sourceId": "2025-p013-r04",
@@ -539,8 +539,8 @@
     "lifecycle": "planned",
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-transmission-scope-set",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r04"
   },
   {
     "sourceId": "2025-p014-r01",
@@ -558,8 +558,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r01"
   },
   {
     "sourceId": "2025-p014-r02",
@@ -577,8 +577,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r02"
   },
   {
     "sourceId": "2025-p014-r03",
@@ -596,8 +596,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r03"
   },
   {
     "sourceId": "2025-p014-r04",
@@ -615,8 +615,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r04"
   },
   {
     "sourceId": "2025-p014-r05",
@@ -653,8 +653,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r01"
   },
   {
     "sourceId": "2025-p015-r02",
@@ -672,8 +672,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r02"
   },
   {
     "sourceId": "2025-p015-r03",
@@ -691,8 +691,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r03"
   },
   {
     "sourceId": "2025-p015-r04",
@@ -710,8 +710,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r04"
   },
   {
     "sourceId": "2025-p017-r01",
@@ -729,8 +729,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r01"
   },
   {
     "sourceId": "2025-p017-r02",
@@ -748,8 +748,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r02"
   },
   {
     "sourceId": "2025-p017-r03",
@@ -767,8 +767,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r03"
   },
   {
     "sourceId": "2025-p017-r04",
@@ -786,8 +786,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r04"
   },
   {
     "sourceId": "2025-p019-r01",
@@ -856,8 +856,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p019-r04"
   },
   {
     "sourceId": "2025-p019-r05",
@@ -875,8 +875,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p019-r05"
   },
   {
     "sourceId": "2025-p019-r06",
@@ -894,8 +894,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p019-r06"
   },
   {
     "sourceId": "2025-p020-r01",
@@ -913,8 +913,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p020-r01"
   },
   {
     "sourceId": "2025-p020-r02",
@@ -932,8 +932,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p020-r02"
   },
   {
     "sourceId": "2025-p020-r03",
@@ -951,8 +951,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p020-r03"
   },
   {
     "sourceId": "2025-p021-r01",
@@ -970,8 +970,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r01"
   },
   {
     "sourceId": "2025-p021-r02",
@@ -989,8 +989,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r02"
   },
   {
     "sourceId": "2025-p021-r03",
@@ -1008,8 +1008,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r03"
   },
   {
     "sourceId": "2025-p021-r04",
@@ -1027,8 +1027,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r04"
   },
   {
     "sourceId": "2025-p022-r01",
@@ -1046,8 +1046,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r01"
   },
   {
     "sourceId": "2025-p022-r02",
@@ -1065,8 +1065,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r02"
   },
   {
     "sourceId": "2025-p022-r03",
@@ -1084,8 +1084,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r03"
   },
   {
     "sourceId": "2025-p022-r04",
@@ -1103,8 +1103,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r04"
   },
   {
     "sourceId": "2025-p023-r01",
@@ -1122,8 +1122,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r01"
   },
   {
     "sourceId": "2025-p023-r02",
@@ -1141,8 +1141,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r02"
   },
   {
     "sourceId": "2025-p023-r03",
@@ -1160,8 +1160,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r03"
   },
   {
     "sourceId": "2025-p023-r04",
@@ -1179,8 +1179,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r04"
   },
   {
     "sourceId": "2025-p023-r05",
@@ -1198,8 +1198,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r05"
   },
   {
     "sourceId": "2025-p023-r06",
@@ -1217,8 +1217,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r06"
   },
   {
     "sourceId": "2025-p024-r01",
@@ -1236,8 +1236,8 @@
     "lifecycle": "planned",
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-transmission-scope-set",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r01"
   },
   {
     "sourceId": "2025-p024-r02",
@@ -1255,8 +1255,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r02"
   },
   {
     "sourceId": "2025-p024-r03",
@@ -1274,8 +1274,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r03"
   },
   {
     "sourceId": "2025-p024-r04",
@@ -1293,8 +1293,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r04"
   },
   {
     "sourceId": "2025-p025-r01",
@@ -1312,8 +1312,8 @@
     "lifecycle": "planned",
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-transmission-scope-set",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r01"
   },
   {
     "sourceId": "2025-p025-r02",
@@ -1331,8 +1331,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r02"
   },
   {
     "sourceId": "2025-p025-r03",
@@ -1350,8 +1350,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r03"
   },
   {
     "sourceId": "2025-p025-r04",
@@ -1369,8 +1369,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r04"
   },
   {
     "sourceId": "2025-p026-r01",
@@ -1388,8 +1388,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r01"
   },
   {
     "sourceId": "2025-p026-r02",
@@ -1407,8 +1407,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r02"
   },
   {
     "sourceId": "2025-p026-r03",
@@ -1426,8 +1426,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r03"
   },
   {
     "sourceId": "2025-p026-r04",
@@ -1445,8 +1445,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r04"
   },
   {
     "sourceId": "2025-p026-r05",
@@ -1464,8 +1464,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r05"
   },
   {
     "sourceId": "2025-p028-r01",
@@ -1551,8 +1551,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r01"
   },
   {
     "sourceId": "2025-p029-r02",
@@ -1570,8 +1570,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r02"
   },
   {
     "sourceId": "2025-p029-r03",
@@ -1608,8 +1608,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r04"
   },
   {
     "sourceId": "2025-p030-r01",
@@ -1627,8 +1627,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p030-r01"
   },
   {
     "sourceId": "2025-p030-r02",
@@ -1663,8 +1663,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p030-r03"
   },
   {
     "sourceId": "2025-p031-r01",
@@ -1682,8 +1682,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p031-r01"
   },
   {
     "sourceId": "2025-p031-r02",
@@ -1720,8 +1720,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p031-r03"
   },
   {
     "sourceId": "2025-p032-r01",
@@ -1739,8 +1739,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p032-r01"
   },
   {
     "sourceId": "2025-p032-r02",
@@ -1758,8 +1758,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p032-r02"
   },
   {
     "sourceId": "2025-p032-r03",
@@ -1777,8 +1777,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p032-r03"
   },
   {
     "sourceId": "2025-p033-r01",
@@ -1796,8 +1796,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p033-r01"
   },
   {
     "sourceId": "2025-p033-r02",
@@ -1832,8 +1832,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p033-r03"
   },
   {
     "sourceId": "2025-p033-r04",
@@ -1851,8 +1851,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p033-r04"
   },
   {
     "sourceId": "2025-p034-r01",
@@ -1870,8 +1870,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p034-r01"
   },
   {
     "sourceId": "2025-p034-r02",
@@ -1889,8 +1889,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p034-r02"
   },
   {
     "sourceId": "2025-p035-r01",
@@ -1908,8 +1908,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p035-r01"
   },
   {
     "sourceId": "2025-p035-r02",
@@ -1927,8 +1927,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p035-r02"
   },
   {
     "sourceId": "2025-p037-r01",
@@ -1946,8 +1946,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r01"
   },
   {
     "sourceId": "2025-p037-r02",
@@ -1965,8 +1965,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r02"
   },
   {
     "sourceId": "2025-p037-r03",
@@ -1984,8 +1984,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r03"
   },
   {
     "sourceId": "2025-p037-r04",
@@ -2003,8 +2003,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r04"
   },
   {
     "sourceId": "2025-p038-r01",
@@ -2022,8 +2022,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p038-r01"
   },
   {
     "sourceId": "2025-p038-r02",
@@ -2041,8 +2041,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p038-r02"
   },
   {
     "sourceId": "2025-p038-r03",
@@ -2060,8 +2060,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p038-r03"
   },
   {
     "sourceId": "2025-p040-r01",
@@ -2113,8 +2113,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p040-r03"
   },
   {
     "sourceId": "2025-p040-r04",
@@ -2132,8 +2132,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p040-r04"
   },
   {
     "sourceId": "2025-p041-r01",
@@ -2168,8 +2168,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p041-r02"
   },
   {
     "sourceId": "2025-p041-r03",
@@ -2187,8 +2187,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p041-r03"
   },
   {
     "sourceId": "2025-p041-r04",
@@ -2206,8 +2206,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p041-r04"
   },
   {
     "sourceId": "2025-p042-r01",
@@ -2225,8 +2225,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p042-r01"
   },
   {
     "sourceId": "2025-p042-r02",
@@ -2244,8 +2244,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p042-r02"
   },
   {
     "sourceId": "2025-p042-r03",
@@ -2263,8 +2263,8 @@
     "lifecycle": "planned",
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-transmission-scope-set",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p042-r03"
   },
   {
     "sourceId": "2025-p043-r01",
@@ -2282,8 +2282,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p043-r01"
   },
   {
     "sourceId": "2025-p043-r02",
@@ -2301,8 +2301,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p043-r02"
   },
   {
     "sourceId": "2025-p043-r03",
@@ -2320,8 +2320,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p043-r03"
   },
   {
     "sourceId": "2025-p045-r01",
@@ -2339,8 +2339,8 @@
     "lifecycle": "under-construction",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r01"
   },
   {
     "sourceId": "2025-p045-r02",
@@ -2358,8 +2358,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r02"
   },
   {
     "sourceId": "2025-p045-r03",
@@ -2377,8 +2377,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r03"
   },
   {
     "sourceId": "2025-p045-r04",
@@ -2396,8 +2396,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r04"
   },
   {
     "sourceId": "2025-p046-r01",
@@ -2415,8 +2415,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r01"
   },
   {
     "sourceId": "2025-p046-r02",
@@ -2434,8 +2434,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r02"
   },
   {
     "sourceId": "2025-p046-r03",
@@ -2453,8 +2453,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r03"
   },
   {
     "sourceId": "2025-p046-r04",
@@ -2472,8 +2472,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r04"
   },
   {
     "sourceId": "2025-p046-r05",
@@ -2491,8 +2491,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r05"
   },
   {
     "sourceId": "2025-p048-r01",
@@ -2510,8 +2510,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r01"
   },
   {
     "sourceId": "2025-p048-r02",
@@ -2529,8 +2529,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r02"
   },
   {
     "sourceId": "2025-p048-r03",
@@ -2548,8 +2548,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r03"
   },
   {
     "sourceId": "2025-p048-r04",
@@ -2567,8 +2567,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r04"
   },
   {
     "sourceId": "2025-p049-r01",
@@ -2586,8 +2586,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p049-r01"
   },
   {
     "sourceId": "2025-p049-r02",
@@ -2605,8 +2605,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p049-r02"
   },
   {
     "sourceId": "2025-p049-r03",
@@ -2624,8 +2624,8 @@
     "lifecycle": "planned",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p049-r03"
   },
   {
     "sourceId": "2025-p050-r01",
@@ -2643,8 +2643,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p050-r01"
   },
   {
     "sourceId": "2025-p050-r02",
@@ -2681,8 +2681,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p050-r03"
   },
   {
     "sourceId": "2025-p051-r01",
@@ -2700,8 +2700,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p051-r01"
   },
   {
     "sourceId": "2025-p051-r02",
@@ -2719,8 +2719,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p051-r02"
   },
   {
     "sourceId": "2025-p051-r03",
@@ -2738,8 +2738,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p051-r03"
   },
   {
     "sourceId": "2025-p052-r01",
@@ -2757,8 +2757,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p052-r01"
   },
   {
     "sourceId": "2025-p052-r02",
@@ -2776,8 +2776,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p052-r02"
   },
   {
     "sourceId": "2025-p052-r03",
@@ -2795,8 +2795,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p052-r03"
   },
   {
     "sourceId": "2025-p053-r01",
@@ -2814,8 +2814,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p053-r01"
   },
   {
     "sourceId": "2025-p053-r02",
@@ -2833,8 +2833,8 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p053-r02"
   },
   {
     "sourceId": "2025-p053-r03",
@@ -2852,7 +2852,7 @@
     "lifecycle": "unknown",
     "recordKind": "planning-context",
     "classificationBasis": "scope-not-promoted-under-conservative-qualification",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p053-r03"
   }
 ]

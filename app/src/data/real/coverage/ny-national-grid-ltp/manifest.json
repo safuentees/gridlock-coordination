@@ -16,13 +16,13 @@
   "sha256": "5f13264b522f017649867bc9f217568935a80f2a648c2d851c8aaccdcba27a33",
   "geographicScope": "National Grid New York local-plan footprint in NYISO Zones A–F; partial New York coverage, with no per-record state or center inferred.",
   "inventoryScope": "Historical utility project-table entries, including explicitly described transmission work and unresolved/mixed planning context. Explicit In-Service and Cancelled rows are excluded.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 152,
-    "importedRecords": 6,
+    "importedRecords": 136,
     "excludedRows": 16,
     "failedRows": 0,
-    "pendingRows": 130,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -43,7 +43,6 @@
     "No row-owner field establishes singular ownership. Publisher/utility context does not become an inferred owner identity.",
     "All records are unlocated; no native coordinates, map digitization, geocoding or planning-area centers are supplied.",
     "Expected in-service dates have month precision and do not establish construction windows or completion; study/permit progress does not override project status.",
-    "Source facts are used for authorized private informational analysis. National Grid terms restrict other reproduction/distribution and commercial use; no open/commercial license or PDF publication is asserted.",
-    "Six retained records are connected first; 130 accepted nonterminal rows remain pending before full-scope normalization."
+    "Source facts are used for authorized private informational analysis. National Grid terms restrict other reproduction/distribution and commercial use; no open/commercial license or PDF publication is asserted."
   ]
 }
