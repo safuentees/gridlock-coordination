@@ -16,13 +16,13 @@
   "sha256": "c540ce2974d538f5f6305794700026298f529aae237469dab1f4280a8eb5da64",
   "geographicScope": "Historical local project areas in Utah, Idaho, Wyoming and Oregon as explicitly labeled in chapter 4; partial planning scope, not state or utility completeness.",
   "inventoryScope": "Six completed local-improvement bullets excluded and fourteen planned-section bullets retained. Gateway Table 4.1, model portfolios, driver/benefit sub-bullets and program totals are outside this declared scope.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 20,
-    "importedRecords": 3,
+    "importedRecords": 14,
     "excludedRows": 6,
     "failedRows": 0,
-    "pendingRows": 11,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -38,7 +38,6 @@
     "Mixed transmission/distribution and BPA/PacifiCorp interests remain visible; no singular asset owner is inferred.",
     "Spanish Fork–Mercer has an evidenced overlap with the current featured source; records are not claimed to be unique engineering projects.",
     "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
-    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
-    "Three retained diagnostics are emitted first; 11 accepted entries await provider connection and full normalization."
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
   ]
 }

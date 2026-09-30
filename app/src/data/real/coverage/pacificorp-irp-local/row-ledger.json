@@ -97,8 +97,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p094-pace-central-utah-1"
   },
   {
     "sourceId": "2025-ch4-p094-pace-central-utah-2",
@@ -120,8 +120,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p094-pace-central-utah-2"
   },
   {
     "sourceId": "2025-ch4-p095-pace-central-utah-3",
@@ -194,8 +194,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p095-pace-salt-lake-1"
   },
   {
     "sourceId": "2025-ch4-p095-pace-salt-lake-2",
@@ -217,8 +217,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p095-pace-salt-lake-2"
   },
   {
     "sourceId": "2025-ch4-p095-pace-salt-lake-3",
@@ -240,8 +240,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p095-pace-salt-lake-3"
   },
   {
     "sourceId": "2025-ch4-p095-pace-southeast-idaho-1",
@@ -263,8 +263,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p095-pace-southeast-idaho-1"
   },
   {
     "sourceId": "2025-ch4-p096-pacw-eastern-oregon-1",
@@ -286,8 +286,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p096-pacw-eastern-oregon-1"
   },
   {
     "sourceId": "2025-ch4-p096-pacw-portland-1",
@@ -332,8 +332,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p096-pacw-roseburg-1"
   },
   {
     "sourceId": "2025-ch4-p096-pacw-roseburg-2",
@@ -355,8 +355,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p096-pacw-roseburg-2"
   },
   {
     "sourceId": "2025-ch4-p097-pacw-medford-1",
@@ -378,8 +378,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p097-pacw-medford-1"
   },
   {
     "sourceId": "2025-ch4-p097-pacw-medford-2",
@@ -401,7 +401,7 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p097-pacw-medford-2"
   }
 ]

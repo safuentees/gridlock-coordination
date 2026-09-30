@@ -1,7 +1,7 @@
 {
   "sourceKey": "pacificorp-irp-local",
   "editionId": "2025-03-31",
-  "scope": "sample",
+  "scope": "full",
   "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
   "acceptedRetainedLifecycleCounts": {
     "planned": 13,
@@ -15,12 +15,12 @@
     "unknown": 14
   },
   "importedLifecycleCounts": {
-    "planned": 2,
+    "planned": 13,
     "unknown": 1
   },
   "importedKindCounts": {
     "planning-context": 1,
-    "transmission-project": 2
+    "transmission-project": 13
   },
   "sampleIds": [
     "pacificorp-irp-local:2025-ch4-p095-pace-breaker-program-1",

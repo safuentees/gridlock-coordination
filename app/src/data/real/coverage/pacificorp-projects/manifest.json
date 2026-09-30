@@ -16,13 +16,13 @@
   "sha256": "80d201e1159e1119ed30fb27df12b2310f6e74ead55678f23134f76e9f75cdc3",
   "geographicScope": "Featured western project text includes Oregon, Utah, Idaho, Wyoming and Washington; source labels and endpoints are retained without assigning unsupplied project jurisdictions. Not complete utility/state coverage.",
   "inventoryScope": "Eleven Energy Gateway entries plus six Other Project rows plus E8 child; seven explicitly completed entries and one aggregate Segment E parent excluded. Components and phases stay bundled.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 18,
-    "importedRecords": 3,
+    "importedRecords": 10,
     "excludedRows": 8,
     "failedRows": 0,
-    "pendingRows": 7,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -43,7 +43,6 @@
     "Construction ranges retain supplied month/quarter/year precision; no exact days, centers, route geometry or singular owner are inferred.",
     "Spanish Fork–Mercer overlaps the historical local scope. Counts represent source records, not distinct engineering projects.",
     "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
-    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
-    "Three retained diagnostics are emitted first; 7 accepted entries await provider connection and full normalization."
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
   ]
 }
