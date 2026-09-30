@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "PacifiCorp featured transmission projects — observed September 30, 2026 — three-record sample",
+  "generatedAt": "2026-09-30T10:36:24+00:00",
+  "projects": [
+    {
+      "id": "pacificorp-projects:gateway-west--bridger-anticline-to-populus",
+      "utilityId": "pacificorp-projects",
+      "sourceId": "gateway-west--bridger-anticline-to-populus",
+      "sponsor": null,
+      "name": "Bridger/Anticline to Populus",
+      "description": "Proposed approximately 200-mile single-circuit 500 kV transmission line between Anticline and Populus substations.",
+      "status": "Proposed line; future in-service timing",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2035",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Earliest in-service year — March 2026 IRP update"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "gateway-west.html",
+          "locator": "Windstar to Populus — D3",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        },
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34 — Gateway West (Segment D3)",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        }
+      ],
+      "notes": [
+        "The March 31, 2026 IRP update supplies the authoritative earliest-2035 forecast. The Gateway West webpage instead says 2034 at the earliest; neither is a fixed completion commitment.",
+        "Permitting evidence does not establish regulatory approval of construction or construction underway."
+      ],
+      "inventory": {
+        "sourceKey": "pacificorp-projects",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "PacifiCorp featured transmission projects — observed September 30, 2026",
+        "reportingGroupName": "PacifiCorp featured projects",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Anticline Substation to Populus Substation in southeast Idaho",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source program: Energy Gateway",
+          "Source segment: D3"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": [
+          {
+            "field": "Earliest in-service year — March 2026 IRP update",
+            "date": {
+              "value": "2035",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Earliest in-service year — March 2026 IRP update"
+            },
+            "evidence": [
+              {
+                "file": "2025_IRP_Update.pdf",
+                "locator": "PDF page 44 / printed page 34 — Gateway West (Segment D3)",
+                "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+              }
+            ]
+          },
+          {
+            "field": "Earlier website earliest in-service estimate",
+            "date": {
+              "value": "2034",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Earlier website earliest in-service estimate"
+            },
+            "evidence": [
+              {
+                "file": "gateway-west.html",
+                "locator": "Windstar to Populus — D3",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pacificorp-projects:west-of-hemingway--boardman-to-hemingway",
+      "utilityId": "pacificorp-projects",
+      "sourceId": "west-of-hemingway--boardman-to-hemingway",
+      "sponsor": null,
+      "name": "Boardman to Hemingway",
+      "description": "500 kV transmission connection from the Boardman area in Oregon to Hemingway near Melba, Idaho.",
+      "status": "Construction underway — March 2026 IRP update",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2027-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Expected in-service date — March 2026 IRP update"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "west-of-hemingway.html",
+          "locator": "Segment in progress — Boardman to Hemingway; Project overview and schedule",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+        },
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34 — Boardman to Hemingway",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        }
+      ],
+      "notes": [
+        "The March 31, 2026 IRP update states construction is underway and provides the expected service date. This dated assertion takes precedence over the older website conditional/preconstruction wording.",
+        "The webpage, updated July 2025, projects late-2027 completion and a late-2025/early-2026 start. Those forecasts do not supply exact construction bounds.",
+        "Idaho Power leads permitting and the source describes joint funding participants; no singular asset owner is assigned.",
+        "Pending BPA redirect rights are separate planning context, not an additional physical line."
+      ],
+      "inventory": {
+        "sourceKey": "pacificorp-projects",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "PacifiCorp featured transmission projects — observed September 30, 2026",
+        "reportingGroupName": "PacifiCorp featured projects",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-03-31",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Oregon; Idaho",
+        "sourceLocation": "Boardman, Oregon to Hemingway Substation near Melba, Idaho",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source program: Energy Gateway",
+          "Source segment: H",
+          "Source abbreviation: B2H"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": [
+          {
+            "field": "Expected in-service date — March 2026 IRP update",
+            "date": {
+              "value": "2027-12-31",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Expected in-service date — March 2026 IRP update"
+            },
+            "evidence": [
+              {
+                "file": "2025_IRP_Update.pdf",
+                "locator": "PDF page 44 / printed page 34 — Boardman to Hemingway",
+                "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+              }
+            ]
+          },
+          {
+            "field": "Earlier website projected completion — late 2027",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Earlier website projected completion — late 2027"
+            },
+            "evidence": [
+              {
+                "file": "west-of-hemingway.html",
+                "locator": "Segment in progress — Boardman to Hemingway; Project overview and schedule",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pacificorp-projects:segment-e8--midpoint-to-hemingway",
+      "utilityId": "pacificorp-projects",
+      "sourceId": "segment-e8--midpoint-to-hemingway",
+      "sponsor": null,
+      "name": "Gateway West Segment E8 — Midpoint to Hemingway",
+      "description": "Proposed 500 kV line between Midpoint and Hemingway, with substation expansions and three signal-regeneration stations.",
+      "status": "Planned physical work",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2030-06",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Completed/In-Service — June 2030"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "segment-e8.html",
+          "locator": "Opening project scope; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+        },
+        {
+          "file": "gateway-west.html",
+          "locator": "Populus to Hemingway — Segment E; E8 link and description",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        }
+      ],
+      "notes": [
+        "E8 is an explicitly identified child of Segment E. The aggregate parent is excluded from imported records, and the remaining parent scope is not declared absent.",
+        "Child scope states approximately 133 miles; the Gateway West page describes E8 as 128 miles. The discrepancy remains unresolved.",
+        "The source describes a joint project with Idaho Power; no singular owner identity is inferred.",
+        "Construction is forecast for March 2028–June 2030. These month values do not supply a day-precision construction interval."
+      ],
+      "inventory": {
+        "sourceKey": "pacificorp-projects",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "PacifiCorp featured transmission projects — observed September 30, 2026",
+        "reportingGroupName": "PacifiCorp featured projects",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "sourceUpdatedOn": null,
+        "sourceState": "Idaho",
+        "sourceLocation": "Midpoint Substation in Jerome to Hemingway Substation in Melba",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source program: Energy Gateway",
+          "Source parent label: Gateway West Segment E",
+          "Source child label: E8"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": [
+          {
+            "field": "Completed/In-Service — June 2030",
+            "date": {
+              "value": "2030-06",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Completed/In-Service — June 2030"
+            },
+            "evidence": [
+              {
+                "file": "segment-e8.html",
+                "locator": "Opening project scope; Project timeline",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+              }
+            ]
+          },
+          {
+            "field": "Hemingway to Mayfield section completion",
+            "date": {
+              "value": "2028-11",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Hemingway to Mayfield section completion"
+            },
+            "evidence": [
+              {
+                "file": "segment-e8.html",
+                "locator": "Opening project scope; Project timeline",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+              }
+            ]
+          },
+          {
+            "field": "Mayfield to Midpoint section completion",
+            "date": {
+              "value": "2030-06",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Mayfield to Midpoint section completion"
+            },
+            "evidence": [
+              {
+                "file": "segment-e8.html",
+                "locator": "Opening project scope; Project timeline",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+              }
+            ]
+          },
+          {
+            "field": "Expected construction start",
+            "date": {
+              "value": "2028-03",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            },
+            "evidence": [
+              {
+                "file": "segment-e8.html",
+                "locator": "Opening project scope; Project timeline",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+              }
+            ]
+          },
+          {
+            "field": "Expected construction end",
+            "date": {
+              "value": "2030-06",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction end"
+            },
+            "evidence": [
+              {
+                "file": "segment-e8.html",
+                "locator": "Opening project scope; Project timeline",
+                "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "pacificorp-projects",
+      "editionId": "observed-2026-09-30",
+      "label": "PacifiCorp featured transmission projects — observed September 30, 2026",
+      "reportingGroupId": "pacificorp-projects",
+      "reportingGroupName": "PacifiCorp featured projects",
+      "publisher": "PacifiCorp",
+      "processAuthority": "PacifiCorp transmission planning",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "transmission-projects.html",
+        "locator": "Other project table plus Energy Gateway structured list and linked E8 child; eighteen declared entries",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+      },
+      "sha256": "80d201e1159e1119ed30fb27df12b2310f6e74ead55678f23134f76e9f75cdc3",
+      "geographicScope": "Featured western project text includes Oregon, Utah, Idaho, Wyoming and Washington; source labels and endpoints are retained without assigning unsupplied project jurisdictions. Not complete utility/state coverage.",
+      "inventoryScope": "Eleven Energy Gateway entries plus six Other Project rows plus E8 child; seven explicitly completed entries and one aggregate Segment E parent excluded. Components and phases stay bundled.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 18,
+        "importedRecords": 3,
+        "excludedRows": 8,
+        "failedRows": 0,
+        "pendingRows": 7,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "aggregate-parent-represented-by-e8",
+          "count": 1
+        },
+        {
+          "reason": "explicit-completed",
+          "count": 7
+        }
+      ],
+      "limitations": [
+        "H lifecycle and expected service use the dated March 31, 2026 update; D3 earliest service also uses that update. Older webpage forecasts remain separate evidence.",
+        "Aggregate Energy Gateway/Segment E totals and linked child scope never both inflate imported projects. The Segment E remainder remains unenumerated context.",
+        "The current featured list is not a utility-wide census. March 2026 model-selection tables remain unenumerated under the no-image policy.",
+        "Source-locator identity uses page and named entry; reused segment letters do not establish native engineering IDs.",
+        "Construction ranges retain supplied month/quarter/year precision; no exact days, centers, route geometry or singular owner are inferred.",
+        "Spanish Fork–Mercer overlaps the historical local scope. Counts represent source records, not distinct engineering projects.",
+        "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
+        "Three retained diagnostics are emitted first; 7 accepted entries await provider connection and full normalization."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 3,
+    "skipped": 8,
+    "failed": 0,
+    "notes": [
+      "All 18 declared source entries are reconciled; 7 retained entries remain pending.",
+      "Counts are source records, not distinct engineering projects across historical/current inventories."
+    ]
+  }
+}

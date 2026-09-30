@@ -1,0 +1,407 @@
+[
+  {
+    "sourceId": "2025-ch4-p093-completed-mona-reactor",
+    "sourceProjectName": "Mona switched shunt reactor",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 109 / printed page 93; local improvements; PACE Central Wyoming; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed-local-improvement"
+  },
+  {
+    "sourceId": "2025-ch4-p093-completed-bridgerland-yard",
+    "sourceProjectName": "Bridgerland yard and line loop",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 109 / printed page 93; local improvements; PACE Northern Utah/Southeast Idaho; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed-local-improvement"
+  },
+  {
+    "sourceId": "2025-ch4-p093-completed-magna-tooele-pine-canyon",
+    "sourceProjectName": "Magna capacitors and Tooele–Pine Canyon rebuild",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 109 / printed page 93; local improvements; PACE Salt Lake City; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed-local-improvement"
+  },
+  {
+    "sourceId": "2025-ch4-p093-completed-st-george-purgatory-flat",
+    "sourceProjectName": "St. George–Purgatory Flat reconductor",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 109 / printed page 93; local improvements; PACE Southern Utah; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed-local-improvement"
+  },
+  {
+    "sourceId": "2025-ch4-p094-completed-snow-goose-klamath-falls",
+    "sourceProjectName": "Snow Goose–Klamath Falls second line",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 110 / printed page 94; local improvements; PACW Klamath Falls; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed-local-improvement"
+  },
+  {
+    "sourceId": "2025-ch4-p094-completed-houston-lake-ponderosa",
+    "sourceProjectName": "Houston Lake–Ponderosa second line",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 110 / printed page 94; local improvements; PACW Prineville; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed-local-improvement"
+  },
+  {
+    "sourceId": "2025-ch4-p094-pace-central-utah-1",
+    "sourceProjectName": "Camp Williams transformer upgrade",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 110 / printed page 94; local improvements; PACE Central Utah; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p094-pace-central-utah-2",
+    "sourceProjectName": "Second Oquirrh transformer",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 110 / printed page 94; local improvements; PACE Central Utah; project bullet 2",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p095-pace-central-utah-3",
+    "sourceProjectName": "Spanish Fork to Mercer line",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95; local improvements; PACE Central Utah; project bullet 3",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      },
+      {
+        "file": "spanish-fork-to-mercer.html",
+        "locator": "Project overview — same Spanish Fork and Mercer endpoints and 345 kV scope; relationship evidence only",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p095-pace-central-utah-3"
+  },
+  {
+    "sourceId": "2025-ch4-p095-pace-breaker-program-1",
+    "sourceProjectName": "Utah, Idaho and Wyoming breaker replacement program",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95; local improvements; PACE Utah/Idaho/Wyoming upgrade program; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "project",
+    "lifecycle": "unknown",
+    "sourceStatus": "Planned heading with completed-tense wording",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p095-pace-breaker-program-1"
+  },
+  {
+    "sourceId": "2025-ch4-p095-pace-salt-lake-1",
+    "sourceProjectName": "North Salt Lake voltage conversion",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95; local improvements; PACE Salt Lake City; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p095-pace-salt-lake-2",
+    "sourceProjectName": "Midvalley 345 kV line loop",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95; local improvements; PACE Salt Lake City; project bullet 2",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p095-pace-salt-lake-3",
+    "sourceProjectName": "Eden substation",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95; local improvements; PACE Salt Lake City; project bullet 3",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p095-pace-southeast-idaho-1",
+    "sourceProjectName": "Franklin shunt capacitor",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95; local improvements; PACE Southeast Idaho; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p096-pacw-eastern-oregon-1",
+    "sourceProjectName": "Burns reactive-station replacement",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 112 / printed page 96; local improvements; PACW Eastern Oregon; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p096-pacw-portland-1",
+    "sourceProjectName": "Portland St. Johns–Columbia–Knott line conversions",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 112 / printed page 96; local improvements; PACW Portland; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-irp-local:2025-ch4-p096-pacw-portland-1"
+  },
+  {
+    "sourceId": "2025-ch4-p096-pacw-roseburg-1",
+    "sourceProjectName": "Roseburg lines 30 and 65 conversion",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 112 / printed page 96; local improvements; PACW Roseburg; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p096-pacw-roseburg-2",
+    "sourceProjectName": "Dixonville transformer replacement",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 112 / printed page 96; local improvements; PACW Roseburg; project bullet 2",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p097-pacw-medford-1",
+    "sourceProjectName": "Lone Pine to Whetstone line",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 113 / printed page 97; local improvements; PACW Medford; project bullet 1",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-ch4-p097-pacw-medford-2",
+    "sourceProjectName": "Sams Valley substation",
+    "sources": [
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 113 / printed page 97; local improvements; PACW Medford; project bullet 2",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned Transmission System Improvements",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  }
+]

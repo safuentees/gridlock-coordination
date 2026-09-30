@@ -1,0 +1,137 @@
+{
+  "sourceKey": "pacificorp-projects",
+  "editionId": "observed-2026-09-30",
+  "scope": "sample",
+  "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
+  "acceptedRetainedLifecycleCounts": {
+    "planned": 9,
+    "under-construction": 1
+  },
+  "acceptedRetainedKindCounts": {
+    "transmission-project": 10
+  },
+  "acceptedRetainedDatePrecisionCounts": {
+    "day": 1,
+    "month": 2,
+    "unknown": 3,
+    "year": 4
+  },
+  "importedLifecycleCounts": {
+    "planned": 2,
+    "under-construction": 1
+  },
+  "importedKindCounts": {
+    "transmission-project": 3
+  },
+  "sampleIds": [
+    "pacificorp-projects:west-of-hemingway--boardman-to-hemingway",
+    "pacificorp-projects:gateway-west--bridger-anticline-to-populus",
+    "pacificorp-projects:segment-e8--midpoint-to-hemingway"
+  ],
+  "originals": [
+    {
+      "file": "2025_IRP_Update.pdf",
+      "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf",
+      "bytes": 14089517,
+      "sha256": "e79300d73a910433791d3e35647ae826f0cdadfd47204ecbdddeafe0f57676de"
+    },
+    {
+      "file": "2025_IRP_Vol_1.pdf",
+      "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf",
+      "bytes": 14075881,
+      "sha256": "c540ce2974d538f5f6305794700026298f529aae237469dab1f4280a8eb5da64"
+    },
+    {
+      "file": "apex-to-maverick.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html",
+      "bytes": 37679,
+      "sha256": "393bb8f8854607e1489d382a8e56932d8f7eacd2134e043eb956fcfbbc636b2d"
+    },
+    {
+      "file": "black-rock-to-sigurd.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/black-rock-to-sigurd.html",
+      "bytes": 35454,
+      "sha256": "90f867103086a59874021aa16ad9ccfa265f12d8e8388c4e99bf63dbe76957f3"
+    },
+    {
+      "file": "blueprint-south.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html",
+      "bytes": 49036,
+      "sha256": "8976c2ae7da9c67b75cf163c38e55d4c588c683d844d64d2b5cbadaa77d87de8"
+    },
+    {
+      "file": "energy-gateway.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway.html",
+      "bytes": 39588,
+      "sha256": "0dc2c87bba893c4a803718a9588738f71124e7f2f7aafbf9f175fdaed83a5bcf"
+    },
+    {
+      "file": "gateway-central.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html",
+      "bytes": 42956,
+      "sha256": "34b07acf67f3fe81abc6c8314a77abb435250ff22559510578fb1e1a2ba12f66"
+    },
+    {
+      "file": "gateway-south.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html",
+      "bytes": 34077,
+      "sha256": "90cc07f3c2a837ce2c71d96403b713c7b3c288dfd3f30a930c6f2d55ff04be7c"
+    },
+    {
+      "file": "gateway-west.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html",
+      "bytes": 36187,
+      "sha256": "6e152740cbf5983662006f74890f7f1cea0415c8586f0a4e9eb7ee44144497fb"
+    },
+    {
+      "file": "irp-index.html",
+      "url": "https://www.pacificorp.com/energy/integrated-resource-plan.html",
+      "bytes": 53058,
+      "sha256": "b16ab60ac0397ab123f0fa7e61e03b75f27b3b026e3bb29e914db2d9f4023869"
+    },
+    {
+      "file": "segment-b-honeyville-populus-threemile.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html",
+      "bytes": 43331,
+      "sha256": "8439fa72db14aa720fde2c0c71785c45e4068a6eb3fea3d27de35da5698192de"
+    },
+    {
+      "file": "segment-e8.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html",
+      "bytes": 36415,
+      "sha256": "7812eb423f219eefe9046c131370742738b4ab63afa435d279f37e2e2e0310ef"
+    },
+    {
+      "file": "spanish-fork-to-mercer.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html",
+      "bytes": 44475,
+      "sha256": "dd01065e1adb21a5bbfd12c2e13c15fe044bbbdd4795d48498dbd32b68ba0a1c"
+    },
+    {
+      "file": "three-peaks-to-purgatory-flat.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html",
+      "bytes": 39108,
+      "sha256": "dd65b96d3a1583e2ab5d6fdbd8e105a5682447801dc25f60dce598d46cfaffb0"
+    },
+    {
+      "file": "transmission-projects.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects.html",
+      "bytes": 44137,
+      "sha256": "80d201e1159e1119ed30fb27df12b2310f6e74ead55678f23134f76e9f75cdc3"
+    },
+    {
+      "file": "west-of-hemingway.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html",
+      "bytes": 35694,
+      "sha256": "74899efa06e092ff20c485056c0ea20e90566fb66ade11e3cd6c85a7fbbd9ae6"
+    }
+  ],
+  "relationshipsAndPrecedence": [
+    "H lifecycle and expected service use the dated March 31, 2026 update; D3 earliest service also uses that update. Older webpage forecasts remain separate evidence.",
+    "Aggregate Energy Gateway/Segment E totals and linked child scope never both inflate imported projects. The Segment E remainder remains unenumerated context.",
+    "The current featured list is not a utility-wide census. March 2026 model-selection tables remain unenumerated under the no-image policy.",
+    "Source-locator identity uses page and named entry; reused segment letters do not establish native engineering IDs.",
+    "Construction ranges retain supplied month/quarter/year precision; no exact days, centers, route geometry or singular owner are inferred.",
+    "Spanish Fork–Mercer overlaps the historical local scope. Counts represent source records, not distinct engineering projects."
+  ]
+}
