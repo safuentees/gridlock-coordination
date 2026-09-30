@@ -58,8 +58,8 @@
       "kind": "in-service",
       "label": "Scheduled completed/in-service month"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:gateway-central--limber-to-terminal"
   },
   {
     "sourceId": "gateway-west--windstar-to-aeolus",
@@ -205,8 +205,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:apex-to-maverick--line"
   },
   {
     "sourceId": "black-rock-to-sigurd--line",
@@ -233,8 +233,8 @@
       "kind": "in-service",
       "label": "Anticipated in-service year"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:black-rock-to-sigurd--line"
   },
   {
     "sourceId": "blueprint-south--project",
@@ -256,8 +256,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:blueprint-south--project"
   },
   {
     "sourceId": "segment-b-honeyville-populus-threemile--maintenance",
@@ -284,8 +284,8 @@
       "kind": "in-service",
       "label": "Expected overall completion year; phase 2 Q4 2030"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:segment-b-honeyville-populus-threemile--maintenance"
   },
   {
     "sourceId": "spanish-fork-to-mercer--line",
@@ -317,8 +317,8 @@
       "kind": "unknown",
       "label": "No in-service milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:spanish-fork-to-mercer--line"
   },
   {
     "sourceId": "three-peaks-to-purgatory-flat--line",
@@ -345,8 +345,8 @@
       "kind": "in-service",
       "label": "Anticipated in-service year from project detail"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:three-peaks-to-purgatory-flat--line"
   },
   {
     "sourceId": "segment-e8--midpoint-to-hemingway",

@@ -1,7 +1,7 @@
-# PacifiCorp featured project sample
+# PacifiCorp full accepted featured scope
 
-Three provider-ready real records: H, D3 and E8. March 2026 IRP update evidence supplies H's under-construction lifecycle and 2027-12-31 service date, plus D3's earliest-2035 forecast; website conflicts remain explicit. E8 is retained as a child while its aggregate Segment E parent is excluded.
+Ten provider-ready real records from the accepted eighteen-entry featured scope. The H/D3/E8 sample was provider-connected at `d108589` before full generation; its values and IDs retain the unchanged catalog/normalizer projection.
 
-Separate current ledger: 18 = 3 imported + 8 excluded + 7 pending, zero failed/located. All owners/geometry/exact construction intervals are unknown. Dataset size: 13,825 compact / 18,372 formatted UTF-8 bytes.
+Ledger: 18 = 10 imported + 8 excluded, zero pending/failed/located. The ten physical transmission entries are nine planned plus H under construction. Dates retain four year, two month, one day and three unknown values. H lifecycle and service plus D3 earliest service use the accepted March 2026 update, while webpage discrepancies remain explicit. E8 is retained instead of aggregate Segment E; no project-count inflation or owner/geometry/day-window inference is introduced.
 
-The manifest, row ledger, source-quality catalog and payload measurements accompany `dataset.json`. Reproduce through `scripts/ingest/coverage/pacificorp-projects/README.md`. Provider connection is pending; full mode and worker checks have not run.
+Dataset size: 33,661 compact / 45,608 formatted UTF-8 bytes. The manifest, row ledger, source-quality catalog and payload measurements accompany `dataset.json`. Reproduce through `scripts/ingest/coverage/pacificorp-projects/README.md`. This is complete only for the declared featured subset, not the utility's full current portfolio. No worker checks ran; coordinator owns integration/checks.
