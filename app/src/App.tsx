@@ -117,11 +117,13 @@ export function App() {
                   {sourceEditions.length > 0 && <section className="space-y-2"><h3 className="text-sm font-medium">Source plans</h3><ul className="space-y-1 text-sm">{sourceEditions.map(edition => <li key={edition}>{edition}</li>)}</ul><p className="text-sm text-muted-foreground">Historical plans; current progress may differ.</p></section>}
                   {result.dataset.sourceEditions?.map(edition => {
                     const records = result.dataset!.projects.filter(project => project.inventory?.sourceKey === edition.sourceKey && project.inventory.editionId === edition.editionId)
+                    const statusDates = [...new Set(records.map(project => project.inventory!.lifecycleAsOf))].join(", ")
+                    const observed = records.some(project => project.inventory?.lifecycleDateMeaning === "snapshot-observed")
                     return <section key={`${edition.sourceKey}:${edition.editionId}`} className="space-y-2 border-t pt-4">
                       <h3 className="text-sm font-medium">{edition.label}</h3>
                       <p className="text-sm">{records.length} active records; {records.filter(project => project.location).length} with map centers. {edition.scope === "sample" ? "Sample available; full inventory in progress." : "Full declared source scope imported."}</p>
                       <p className="text-sm text-muted-foreground">{edition.geographicScope}</p>
-                      <p className="text-sm text-muted-foreground">{edition.publishedOn ? `Source date: ${edition.publishedOn}. ` : ""}Status is reported as of the source edition.</p>
+                      <p className="text-sm text-muted-foreground">{edition.publishedOn ? `Published ${edition.publishedOn}. ` : ""}{statusDates ? `${observed ? "Status observed" : "Source status as of"} ${statusDates}.` : "No active status records."}</p>
                       {edition.source.url && <a href={edition.source.url} target="_blank" rel="noreferrer" className="text-sm underline underline-offset-2">Open {edition.publisher} source</a>}
                     </section>
                   })}

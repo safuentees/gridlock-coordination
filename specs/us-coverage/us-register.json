@@ -1,19 +1,19 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F26 integrated inventory (implementation de3b170)",
+  "baselineRevision": "F27 regional integration PR67; bounded checks pending",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "F25 selected SCE; F26 full declared source scope imported; F27-PJM and F27-ISONE-Q qualification in progress",
+  "qualificationStatus": "Full declared SCE, PJM and ISO-NE source scopes imported; SPP qualification in progress",
   "totals": {
-    "importedSourceRecords": 419,
+    "importedSourceRecords": 6089,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 306,
+    "missingLocations": 5976,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 1,
-    "newFullRegionalInventoriesImported": 1,
+    "newRegionalSourcesQualified": 3,
+    "newFullRegionalInventoriesImported": 3,
     "knownNationalProjectDenominator": null
   },
   "pendingEvidence": {
@@ -127,6 +127,135 @@
         "64 unresolved centers; partial portfolio does not establish statewide completeness"
       ],
       "nextTask": "F27; additional public regional inventories"
+    },
+    {
+      "sourceKey": "pjm-rtep",
+      "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "All public Baseline, Network and Supplemental UpgradeId rows except IS, Cancelled and W. Retained units are upgrades, not deduplicated engineering projects; on-hold and pre-agreement work remain visible.",
+      "geographicScope": "Public PJM RTEP upgrade inventory across its regional planning footprint; not complete statewide coverage. Preserve raw state text without assigning anomalous or outside-footprint values to jurisdictions.",
+      "recordKind": "transmission upgrade records",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-09-30",
+      "importedRecords": 5624,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 5624,
+        "milestone": 115,
+        "constructionWindow": 5624,
+        "status": 0,
+        "voltage": 265,
+        "evidencedOwner": 40
+      },
+      "rawSourceRows": 15692,
+      "excludedRows": 10068,
+      "exclusions": [
+        {
+          "reason": "Cancelled \u2014 cancelled",
+          "count": 847
+        },
+        {
+          "reason": "IS \u2014 in service",
+          "count": 9215
+        },
+        {
+          "reason": "W \u2014 withdrawn",
+          "count": 6
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/pjm-rtep/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/pjm-rtep/row-ledger.json",
+      "publicInventoryDenominator": 5624,
+      "blockers": [
+        "This is a checksum-pinned retrieval snapshot, not a publisher-issued dated edition; row LastUpdated is not a lifecycle-change date.",
+        "All locations are absent. Named locations, states and transmission-owner tokens are not coordinate evidence.",
+        "Owners have source-scoped identity only. Blank/MISO/composite values do not establish one owner; DL and Duquesne Light (DL) share the explicit source alias.",
+        "Required, projected, actual, revised, ISA, board and TEAC milestones remain distinct. No construction interval is inferred.",
+        "Raw state values may be blank, multistate or anomalous. They do not establish complete jurisdiction coverage."
+      ],
+      "nextTask": "F27-SPP-Q; complementary regional source qualification",
+      "sourceStateCounts": {
+        "OH": 1324,
+        "VA": 968,
+        "IN": 366,
+        "PA": 971,
+        "MD": 177,
+        "KY": 184,
+        "DE": 39,
+        "NJ": 414,
+        "MI": 68,
+        "WV": 390,
+        "NC": 28,
+        "IL": 275,
+        "TN": 2
+      },
+      "unallocatedStateRecords": 418,
+      "stateCountMeaning": "Exact single-state source labels within the declared footprint; blanks, multistate and anomalous labels remain unallocated. Counts are not independently verified geography."
+    },
+    {
+      "sourceKey": "iso-ne-rsp",
+      "editionId": "2026-06",
+      "editionPublishedAt": "2026-07-09",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Individual RSP listed work items with latest status Planned, Under Construction or Proposed. In-service and cancelled rows excluded. Duplicate formatted/topical sheets are not additional inventory; asset-condition list is outside this source.",
+      "geographicScope": "Regional system planning list across Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island and Vermont; partial public inventory, not all local transmission work.",
+      "recordKind": "listed transmission work-item records",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-06",
+      "importedRecords": 46,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 46,
+        "milestone": 0,
+        "constructionWindow": 46,
+        "status": 2,
+        "voltage": 5,
+        "evidencedOwner": 0
+      },
+      "rawSourceRows": 1024,
+      "excludedRows": 978,
+      "exclusions": [
+        {
+          "reason": "cancelled",
+          "count": 335
+        },
+        {
+          "reason": "in-service",
+          "count": 643
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/iso-ne-rsp/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/iso-ne-rsp/row-ledger.json",
+      "publicInventoryDenominator": 46,
+      "blockers": [
+        "No native coordinates; every record remains unlocated and outside proximity matching.",
+        "Projected in-service dates have month precision; stored Excel days do not supply exact milestone days.",
+        "Proposed is retained with unknown normalized lifecycle; elapsed dates do not establish completion.",
+        "Owner identities are source-scoped and do not establish cross-source corporate equivalence.",
+        "Native Project IDs identify listed work items; major project names do not establish deduplication."
+      ],
+      "nextTask": "F27-SPP-Q; complementary regional source qualification",
+      "sourceStateCounts": {
+        "MA": 20,
+        "CT": 5,
+        "ME": 9,
+        "RI": 2,
+        "VT": 7,
+        "NH": 3
+      },
+      "unallocatedStateRecords": 0,
+      "stateCountMeaning": "Exact single-state source labels within the declared footprint; blanks, multistate and anomalous labels remain unallocated. Counts are not independently verified geography."
     }
   ],
   "jurisdictions": [
@@ -176,17 +305,27 @@
     },
     {
       "code": "CT",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "iso-ne-rsp"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "iso-ne-rsp": 5
+      }
     },
     {
       "code": "DE",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 39
+      }
     },
     {
       "code": "FL",
@@ -220,17 +359,27 @@
     },
     {
       "code": "IL",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 275
+      }
     },
     {
       "code": "IN",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 366
+      }
     },
     {
       "code": "IA",
@@ -248,10 +397,15 @@
     },
     {
       "code": "KY",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 184
+      }
     },
     {
       "code": "LA",
@@ -262,31 +416,51 @@
     },
     {
       "code": "ME",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "iso-ne-rsp"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "iso-ne-rsp": 9
+      }
     },
     {
       "code": "MD",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 177
+      }
     },
     {
       "code": "MA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "iso-ne-rsp"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "iso-ne-rsp": 20
+      }
     },
     {
       "code": "MI",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 68
+      }
     },
     {
       "code": "MN",
@@ -332,17 +506,27 @@
     },
     {
       "code": "NH",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "iso-ne-rsp"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "iso-ne-rsp": 3
+      }
     },
     {
       "code": "NJ",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 414
+      }
     },
     {
       "code": "NM",
@@ -360,10 +544,15 @@
     },
     {
       "code": "NC",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 28
+      }
     },
     {
       "code": "ND",
@@ -374,10 +563,15 @@
     },
     {
       "code": "OH",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 1324
+      }
     },
     {
       "code": "OK",
@@ -395,17 +589,27 @@
     },
     {
       "code": "PA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 971
+      }
     },
     {
       "code": "RI",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "iso-ne-rsp"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "iso-ne-rsp": 2
+      }
     },
     {
       "code": "SC",
@@ -425,10 +629,15 @@
     },
     {
       "code": "TN",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 2
+      }
     },
     {
       "code": "TX",
@@ -446,17 +655,27 @@
     },
     {
       "code": "VT",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "iso-ne-rsp"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "iso-ne-rsp": 7
+      }
     },
     {
       "code": "VA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 968
+      }
     },
     {
       "code": "WA",
@@ -467,10 +686,15 @@
     },
     {
       "code": "WV",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 390
+      }
     },
     {
       "code": "WI",
@@ -488,10 +712,15 @@
     },
     {
       "code": "DC",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pjm-rtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "pjm-rtep": 0
+      }
     },
     {
       "code": "AS",
@@ -557,30 +786,40 @@
     },
     {
       "sourceKey": "pjm-rtep",
-      "status": "qualification-in-progress",
+      "status": "full-declared-source-scope-imported",
       "sourceUrl": "https://www.pjm.com/planning/m/project-construction",
-      "importedRecords": 0,
+      "importedRecords": 5624,
       "locatedRecords": 0,
-      "missingInput": "Accepted lifecycle/owner/edition mapping; XML has no native coordinates",
+      "missingInput": "Native location evidence and globally scoped owner identity for cross-inventory comparisons",
       "owner": "source_discovery",
-      "task": "F27-PJM"
+      "task": "F27"
     },
     {
       "sourceKey": "iso-ne-rsp",
-      "status": "qualification-in-progress",
+      "status": "full-declared-source-scope-imported",
       "sourceUrl": "https://www.iso-ne.com/system-planning/system-plans-studies/rsp",
+      "importedRecords": 46,
+      "locatedRecords": 0,
+      "missingInput": "Native location evidence and globally scoped owner identity for cross-inventory comparisons",
+      "owner": "core (source qualification)",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "spp-tracking",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://spp.org/engineering/project-tracking-ntcs/",
       "importedRecords": 0,
       "locatedRecords": 0,
-      "missingInput": "Public workbook sample and complete mapping/enumeration",
-      "owner": "core (source qualification)",
-      "task": "F27-ISONE-Q"
+      "missingInput": "Public enumeration and accepted lifecycle/unit/owner/date/geometry mapping",
+      "owner": "source_discovery",
+      "task": "F27-SPP-Q"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
-    "Other US areas and territories lack assessed regional inventory coverage. SCE contains some cross-state work whose jurisdiction counts remain unassigned; zero imports never means zero projects.",
-    "National project denominator is unknown. One full declared source portfolio is imported; statewide and national completeness are not established.",
+    "Uncovered states and territories remain explicitly incomplete. SCE cross-state work and anomalous/multistate/blank PJM labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
+    "National project denominator is unknown. Three full declared regional scopes are imported; record units differ and no cross-source deduplication is claimed. Statewide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage."
   ],
   "qualifiedSources": [
@@ -603,6 +842,30 @@
       ],
       "scope": "SCE public transmission-capital portfolio; not statewide California completeness; includes cross-state work",
       "contract": "specs/features/F26-full-public-inventory/contract.md"
+    },
+    {
+      "sourceKey": "pjm-rtep",
+      "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+      "reportingGroup": "pjm-rtep",
+      "status": "full-declared-source-scope-imported",
+      "sourceRows": 15692,
+      "proposedRetainedRecords": 5624,
+      "proposedExcludedRows": 10068,
+      "locatedRecords": 0,
+      "scope": "Public PJM RTEP upgrade inventory across its regional planning footprint; not complete statewide coverage. Preserve raw state text without assigning anomalous or outside-footprint values to jurisdictions.",
+      "contract": "specs/features/F27-us-regional-expansion/contract.md"
+    },
+    {
+      "sourceKey": "iso-ne-rsp",
+      "editionId": "2026-06",
+      "reportingGroup": "iso-ne-rsp",
+      "status": "full-declared-source-scope-imported",
+      "sourceRows": 1024,
+      "proposedRetainedRecords": 46,
+      "proposedExcludedRows": 978,
+      "locatedRecords": 0,
+      "scope": "Regional system planning list across Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island and Vermont; partial public inventory, not all local transmission work.",
+      "contract": "specs/features/F27-us-regional-expansion/contract.md"
     }
   ]
 }

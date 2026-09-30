@@ -10,7 +10,7 @@ import { combineSourceDatasets } from "./coverage"
 export function loadDataset(mode: DataMode): Dataset {
   const dataset = mode === "demo" ? datasetSchema.parse({
     ...inventoryDemoDataset,
-    title: "600 synthetic transmission and inventory records",
+    title: `${demoDataset.projects.length + inventoryDemoDataset.projects.length} synthetic transmission and inventory records`,
     projects: [...demoDataset.projects, ...inventoryDemoDataset.projects],
     coverage: { ...inventoryDemoDataset.coverage, processed: demoDataset.projects.length + inventoryDemoDataset.projects.length },
   })
