@@ -1,8 +1,505 @@
 {
   "schemaVersion": 1,
   "mode": "real",
-  "title": "Challenge source records",
-  "generatedAt": "2026-09-30",
-  "projects": [],
-  "coverage": { "processed": 0, "skipped": 0, "failed": 0, "notes": ["Initial real batch is pending F01."] }
+  "title": "Ten supplied planning projects",
+  "generatedAt": "2026-09-30T00:00:00Z",
+  "projects": [
+    {
+      "id": "desc-6809-e",
+      "utilityId": "desc",
+      "sourceId": "6809 E",
+      "sponsor": "Dominion Energy South Carolina",
+      "name": "Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds",
+      "description": "9.5 miles. Scope includes rebuilding the 115 and 46 kV lines in this corridor SPDC.",
+      "status": "In Progress",
+      "date": {
+        "value": "2024-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Planned in-service date"
+      },
+      "voltageKv": [
+        115.0,
+        46.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 33.562599,
+        "lon": -82.051362,
+        "method": "single-endpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E2:L2",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2024-2028-2million-and-above-project-descriptions.pdf",
+          "locator": "physical page 14, Project ID 6809 E",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A2:M2",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: DESC_1.",
+        "Location supplied in workbook; not independently verified.",
+        "Only one endpoint is located; the center represents that endpoint, not the whole project."
+      ]
+    },
+    {
+      "id": "desc-6810-a",
+      "utilityId": "desc",
+      "sourceId": "6810 A",
+      "sponsor": "Dominion Energy South Carolina",
+      "name": "Hooks - Thurmond 115kV Tie: Rebuild",
+      "description": "Rebuilding section of line between Hooks and Thurmond. Approximately 2.3 miles. The line will be rebuilt on existing R/W using steel poles, 115 kV insulation, and 1272 ACSR conductor.",
+      "status": "In Progress",
+      "date": {
+        "value": "2024-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Planned in-service date"
+      },
+      "voltageKv": [
+        115.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 33.660127,
+        "lon": -82.195931,
+        "method": "single-endpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E3:L3",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2024-2028-2million-and-above-project-descriptions.pdf",
+          "locator": "physical page 31, Project ID 6810 A",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A3:M3",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: DESC_2.",
+        "Location supplied in workbook; not independently verified.",
+        "Only one endpoint is located; the center represents that endpoint, not the whole project."
+      ]
+    },
+    {
+      "id": "desc-06367-d-g",
+      "utilityId": "desc",
+      "sourceId": "06367 D - G",
+      "sponsor": "Dominion Energy South Carolina",
+      "name": "Jasper – Okatie 230 kV #2: Construct",
+      "description": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut.",
+      "status": "In Progress",
+      "date": {
+        "value": "2025-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Planned in-service date"
+      },
+      "voltageKv": [
+        230.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 32.346439000000004,
+        "lon": -81.0785475,
+        "method": "endpoint-midpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E4:L4",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2024-2028-2million-and-above-project-descriptions.pdf",
+          "locator": "physical page 23, Project ID 06367 D - G",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A4:M4",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: DESC_3.",
+        "Location supplied in workbook; not independently verified."
+      ]
+    },
+    {
+      "id": "desc-6807-b",
+      "utilityId": "desc",
+      "sourceId": "6807 B",
+      "sponsor": "Dominion Energy South Carolina",
+      "name": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV (Queensboro-James Island Sect)",
+      "description": "Replace the Queensboro – Ft Johnson 115 kV Line and structures as they have reached the end of life.",
+      "status": "In Progress",
+      "date": {
+        "value": "2023-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Planned in-service date"
+      },
+      "voltageKv": [
+        115.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 32.722793,
+        "lon": -79.967332,
+        "method": "single-endpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E5:L5",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2024-2028-2million-and-above-project-descriptions.pdf",
+          "locator": "physical page 1, Project ID 6807 B",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A5:M5",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: DESC_4.",
+        "Location supplied in workbook; not independently verified.",
+        "Only one endpoint is located; the center represents that endpoint, not the whole project."
+      ]
+    },
+    {
+      "id": "desc-6808-s",
+      "utilityId": "desc",
+      "sourceId": "6808 S",
+      "sponsor": "Dominion Energy South Carolina",
+      "name": "Okatie-Bluffton 115kV: Rebuild",
+      "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR.",
+      "status": "In Progress",
+      "date": {
+        "value": "2025-06-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Planned in-service date"
+      },
+      "voltageKv": [
+        115.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 32.2843925,
+        "lon": -80.9429395,
+        "method": "endpoint-midpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E6:L6",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2024-2028-2million-and-above-project-descriptions.pdf",
+          "locator": "physical page 10, Project ID 6808 S",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A6:M6",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: DESC_5.",
+        "Location supplied in workbook; not independently verified."
+      ]
+    },
+    {
+      "id": "gpc-20793",
+      "utilityId": "gpc",
+      "sourceId": "20793",
+      "sponsor": "GPC",
+      "name": "EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD",
+      "description": "",
+      "status": null,
+      "date": {
+        "value": "2033-06-01",
+        "precision": "day",
+        "kind": "need",
+        "label": "Need date"
+      },
+      "voltageKv": [
+        115.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 33.6020605,
+        "lon": -82.1822895,
+        "method": "endpoint-midpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E7:L7",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+          "locator": "physical page 189, Table 2, TEAMS 20793",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A7:M7",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: GPC_1.",
+        "Location supplied in workbook; not independently verified."
+      ]
+    },
+    {
+      "id": "gpc-20277",
+      "utilityId": "gpc",
+      "sourceId": "20277",
+      "sponsor": "SAV",
+      "name": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
+      "description": "",
+      "status": null,
+      "date": {
+        "value": "2026-06-01",
+        "precision": "day",
+        "kind": "need",
+        "label": "Need date"
+      },
+      "voltageKv": [
+        230.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 32.352116,
+        "lon": -81.175112,
+        "method": "single-endpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E8:L8",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+          "locator": "physical page 180, Table 2, TEAMS 20277",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A8:M8",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: GPC_2.",
+        "Location supplied in workbook; not independently verified.",
+        "Only one endpoint is located; the center represents that endpoint, not the whole project.",
+        "The workbook gives different McIntosh longitudes across these two projects; each source value is retained."
+      ]
+    },
+    {
+      "id": "gpc-20065",
+      "utilityId": "gpc",
+      "sourceId": "20065",
+      "sponsor": "SAV",
+      "name": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+      "description": "",
+      "status": null,
+      "date": {
+        "value": "2027-06-01",
+        "precision": "day",
+        "kind": "need",
+        "label": "Need date"
+      },
+      "voltageKv": [
+        115.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 32.3004085,
+        "lon": -81.1957885,
+        "method": "endpoint-midpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E9:L9",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+          "locator": "physical page 183, Table 2, TEAMS 20065",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A9:M9",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: GPC_3.",
+        "Location supplied in workbook; not independently verified.",
+        "The workbook gives different McIntosh longitudes across these two projects; each source value is retained."
+      ]
+    },
+    {
+      "id": "gpc-18492",
+      "utilityId": "gpc",
+      "sourceId": "18492",
+      "sponsor": "GPC",
+      "name": "MITCHELL - NORTH TIFTON 230KV RECONDUCTOR",
+      "description": "",
+      "status": null,
+      "date": {
+        "value": "2025-05-01",
+        "precision": "day",
+        "kind": "need",
+        "label": "Need date"
+      },
+      "voltageKv": [
+        230.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 31.462605,
+        "lon": -83.8414865,
+        "method": "endpoint-midpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E10:L10",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+          "locator": "physical page 177, Table 2, TEAMS 18492",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A10:M10",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: GPC_4.",
+        "Location supplied in workbook; not independently verified."
+      ]
+    },
+    {
+      "id": "gpc-11821",
+      "utilityId": "gpc",
+      "sourceId": "11821",
+      "sponsor": "GPC",
+      "name": "JESUP - LUDOWICI PRIMARY 115KV REBUILD",
+      "description": "",
+      "status": null,
+      "date": {
+        "value": "2025-06-01",
+        "precision": "day",
+        "kind": "need",
+        "label": "Need date"
+      },
+      "voltageKv": [
+        115.0
+      ],
+      "buildWindow": null,
+      "location": {
+        "lat": 31.6623515,
+        "lon": -81.834325,
+        "method": "endpoint-midpoint",
+        "confidence": "unverified",
+        "evidence": [
+          {
+            "file": "Projects_Overlaps.xlsx",
+            "locator": "projects!E11:L11",
+            "url": null
+          }
+        ]
+      },
+      "sources": [
+        {
+          "file": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+          "locator": "physical page 177, Table 2, TEAMS 11821",
+          "url": null
+        },
+        {
+          "file": "Projects_Overlaps.xlsx",
+          "locator": "projects!A11:M11",
+          "url": null
+        }
+      ],
+      "notes": [
+        "Workbook alias: GPC_5.",
+        "Location supplied in workbook; not independently verified."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 10,
+    "skipped": 0,
+    "failed": 0,
+    "notes": [
+      "Ten workbook projects linked to public planning records; full filing inventory is not yet included.",
+      "Georgia Table 2 need dates retain their source meaning. Dates are historical plan snapshots, not current completion claims.",
+      "All supplied locations are unverified centers. Workbook overlap outputs were not imported."
+    ]
+  }
 }
