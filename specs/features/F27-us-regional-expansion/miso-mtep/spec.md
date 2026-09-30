@@ -1,0 +1,11 @@
+# F27-MISO-Q — Qualify public MTEP project inventory
+
+Purpose: cover additional Midwest/South planned-transmission source scope through a complete usable public inventory. Reuse the existing F25 MISO lead. Begin with the [official MTEP page](https://www.misoenergy.org/planning/transmission-planning/mtep/) and its public quarterly project reports/report appendices. MTEP26 draft material is under review; MTEP25 is an approved annual plan. Do not conflate proposed, approved, quarterly construction status or old forecasts.
+
+Owner: source_discovery after SPP full producer integration. Own only this folder's `qualification.md` and `sample.json`, plus `changes/F27-miso-qualification.md`. Coordinator owns this spec/contracts/register/integration. Reuse the worker worktree/new branch; preserve originals under ignored `inputs/originals/F27-miso-mtep/`. No producer, map, shared-file or UI edits; no checks.
+
+At most 15 minutes of targeted public-source acquisition/clarification. Establish a complete source enumeration and six cited project/facility examples, exact edition/hash, project versus facility identity/relationships, lifecycle, milestones, ownership and native geometry role/accuracy. MTEP Appendix A project/facility lists differ from Appendix H existing facilities; generation proposals and existing-asset maps cannot substitute for planned transmission. General map pins must remain explicitly approximate and outside precise matching unless qualified. Public narrative coordinates may be absent; do not infer or digitize them.
+
+Use ordinary public access only. Do not seek CEII, execute an NDA, log in as someone else or circumvent a gate. A portal requirement for one report does not prove every public appendix is unavailable: check the official downloadable alternatives within the same bound, then record the exact missing input. Do not recursively broaden the research pass.
+
+Completion: source access/enumeration, exact C2/C3 mapping proposal, six diagnostic examples and row-reconciliation plan, or a specific evidence-backed public-data blocker. Report elapsed time. A public aggregate total alone is not an importable inventory and a sample is not complete scope. Coordinator accepts one declared edition/scope and exact producer paths before implementation. Unrelated regions continue.
