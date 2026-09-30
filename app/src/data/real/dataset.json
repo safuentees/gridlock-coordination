@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "mode": "real",
   "title": "Dominion and Georgia planning inventories",
-  "generatedAt": "2026-09-30T03:53:31+00:00",
+  "generatedAt": "2026-09-30T04:55:07+00:00",
   "projects": [
     {
       "id": "desc-6807-b",
@@ -48,6 +48,7 @@
         }
       ],
       "notes": [
+        "Project need: This project is required due to address end of life issues.",
         "Workbook alias: DESC_4.",
         "Location supplied in workbook; not independently verified.",
         "Only one endpoint is located; the center represents that endpoint, not the whole project."
@@ -80,7 +81,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to for load growth in the Charleston area."
+      ]
     },
     {
       "id": "desc-0139-m-n",
@@ -109,7 +112,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability."
+      ]
     },
     {
       "id": "desc-6341-a-f",
@@ -137,7 +142,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required due to load growth in the Mount Pleasant area and to meet NERC TPL and internal DESC Planning criteria."
+      ]
     },
     {
       "id": "desc-6808-j",
@@ -165,7 +172,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-k",
@@ -193,7 +202,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-l",
@@ -221,7 +232,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-n-o",
@@ -249,7 +262,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-r",
@@ -277,7 +292,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-s",
@@ -323,6 +340,7 @@
         }
       ],
       "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines.",
         "Workbook alias: DESC_5.",
         "Location supplied in workbook; not independently verified."
       ]
@@ -353,7 +371,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-v",
@@ -381,7 +401,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6808-w",
@@ -409,7 +431,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6809-e",
@@ -456,6 +480,7 @@
         }
       ],
       "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines.",
         "Workbook alias: DESC_1.",
         "Location supplied in workbook; not independently verified.",
         "Only one endpoint is located; the center represents that endpoint, not the whole project."
@@ -488,7 +513,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines."
+      ]
     },
     {
       "id": "desc-6805-g",
@@ -517,7 +544,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and maintenance issues on these transformers."
+      ]
     },
     {
       "id": "desc-1060a-i-l",
@@ -543,7 +572,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and maintenance issues on these transformers."
+      ]
     },
     {
       "id": "desc-06005-b",
@@ -571,7 +602,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-05004-p",
@@ -600,7 +633,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Spare equipment needs."
+      ]
     },
     {
       "id": "desc-06076a",
@@ -629,7 +664,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability."
+      ]
     },
     {
       "id": "desc-6359",
@@ -657,7 +694,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability."
+      ]
     },
     {
       "id": "desc-06367-a-c-h",
@@ -683,7 +722,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-06367-d-g",
@@ -729,6 +770,7 @@
         }
       ],
       "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
         "Workbook alias: DESC_3.",
         "Location supplied in workbook; not independently verified."
       ]
@@ -759,7 +801,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-06372-a",
@@ -787,7 +831,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Replacing approximately 38 guyed wooden structures due to recent failures in the fiberglass strain insulators along this line. Structures to be changed out are dead ends/large angles."
+      ]
     },
     {
       "id": "desc-06810-f",
@@ -815,7 +861,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and maintenance issues."
+      ]
     },
     {
       "id": "desc-06810-g",
@@ -841,7 +889,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and maintenance issues."
+      ]
     },
     {
       "id": "desc-06810-h",
@@ -869,7 +919,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is required to address end of life and maintenance issues."
+      ]
     },
     {
       "id": "desc-6809-m",
@@ -897,7 +949,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Grid hardening."
+      ]
     },
     {
       "id": "desc-5392-a-c",
@@ -925,7 +979,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-6810-a",
@@ -971,6 +1027,7 @@
         }
       ],
       "notes": [
+        "Project need: This project is required to address end of life and reliability issues on these lines.",
         "Workbook alias: DESC_2.",
         "Location supplied in workbook; not independently verified.",
         "Only one endpoint is located; the center represents that endpoint, not the whole project."
@@ -1002,7 +1059,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Grid hardening."
+      ]
     },
     {
       "id": "desc-6853-b-f",
@@ -1030,7 +1089,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-6859",
@@ -1059,6 +1120,7 @@
         }
       ],
       "notes": [
+        "Project need: Load growth.",
         "Source planned in-service dates: 10/1/2025 (phase 1) and 10/1/2026 (phase 2). No single date selected."
       ]
     },
@@ -1088,7 +1150,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability."
+      ]
     },
     {
       "id": "desc-6388-a",
@@ -1116,7 +1180,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability."
+      ]
     },
     {
       "id": "desc-0147-c-k",
@@ -1144,7 +1210,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-0147-b-j",
@@ -1172,7 +1240,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: Load growth."
+      ]
     },
     {
       "id": "desc-6847-a-b-d-h",
@@ -1200,7 +1270,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability."
+      ]
     },
     {
       "id": "desc-6846-a",
@@ -1229,6 +1301,7 @@
         }
       ],
       "notes": [
+        "Project need: This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
         "Source estimated total is $1,100,000 despite the filing's $2M-and-above title; the listed project is retained."
       ]
     },
@@ -1258,7 +1331,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: System hardening"
+      ]
     },
     {
       "id": "desc-6810-j",
@@ -1286,7 +1361,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: System hardening"
+      ]
     },
     {
       "id": "desc-6810-o",
@@ -1314,7 +1391,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: System hardening"
+      ]
     },
     {
       "id": "desc-6810-t",
@@ -1342,7 +1421,9 @@
           "url": null
         }
       ],
-      "notes": []
+      "notes": [
+        "Project need: System hardening."
+      ]
     },
     {
       "id": "gpc-19523",
@@ -1369,7 +1450,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -1399,7 +1481,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -1447,6 +1530,7 @@
       ],
       "notes": [
         "Estimated costs are redacted in the source.",
+        "Planning zone: 216.",
         "Workbook alias: GPC_4.",
         "Location supplied in workbook; not independently verified."
       ]
@@ -1478,7 +1562,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -1508,7 +1593,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -1538,7 +1624,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -1568,7 +1655,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -1599,7 +1687,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 218."
       ]
     },
     {
@@ -1629,7 +1718,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -1677,6 +1767,7 @@
       ],
       "notes": [
         "Estimated costs are redacted in the source.",
+        "Planning zone: 218.",
         "Workbook alias: GPC_5.",
         "Location supplied in workbook; not independently verified."
       ]
@@ -1708,7 +1799,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -1738,7 +1830,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -1768,7 +1861,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -1798,7 +1892,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -1828,7 +1923,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -1856,7 +1952,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -1884,7 +1981,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 218."
       ]
     },
     {
@@ -1912,7 +2010,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -1940,7 +2039,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 218."
       ]
     },
     {
@@ -1970,7 +2070,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -2000,7 +2101,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -2028,7 +2130,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -2058,7 +2161,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -2086,7 +2190,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -2116,7 +2221,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -2147,7 +2253,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -2177,7 +2284,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -2205,7 +2313,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -2235,7 +2344,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -2265,7 +2375,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -2293,7 +2404,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -2321,7 +2433,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -2351,7 +2464,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -2379,7 +2493,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -2409,7 +2524,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -2439,7 +2555,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -2469,7 +2586,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -2499,7 +2617,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -2530,7 +2649,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -2558,7 +2678,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -2588,7 +2709,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -2618,7 +2740,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -2649,7 +2772,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -2677,7 +2801,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -2705,7 +2830,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -2735,7 +2861,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -2763,7 +2890,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -2791,7 +2919,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -2821,7 +2950,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -2849,7 +2979,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -2877,7 +3008,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -2907,7 +3039,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -2935,7 +3068,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -2965,7 +3099,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -2996,7 +3131,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -3044,6 +3180,7 @@
       ],
       "notes": [
         "Estimated costs are redacted in the source.",
+        "Planning zone: 219.",
         "Workbook alias: GPC_2.",
         "Location supplied in workbook; not independently verified.",
         "Only one endpoint is located; the center represents that endpoint, not the whole project.",
@@ -3075,7 +3212,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -3105,7 +3243,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3135,7 +3274,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3163,7 +3303,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -3191,7 +3332,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3219,7 +3361,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3249,7 +3392,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -3279,7 +3423,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3309,7 +3454,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -3337,7 +3483,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -3367,7 +3514,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -3397,7 +3545,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3427,7 +3576,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -3455,7 +3605,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -3485,7 +3636,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -3515,7 +3667,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3545,7 +3698,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -3573,7 +3727,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3601,7 +3756,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3631,7 +3787,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -3659,7 +3816,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -3689,7 +3847,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -3719,7 +3878,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -3749,7 +3909,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -3779,7 +3940,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -3809,7 +3971,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -3840,7 +4003,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -3870,7 +4034,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -3898,7 +4063,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -3928,7 +4094,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -3958,7 +4125,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -3988,7 +4156,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -4018,7 +4187,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 218."
       ]
     },
     {
@@ -4048,7 +4218,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -4078,7 +4249,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -4106,7 +4278,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -4136,7 +4309,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4166,7 +4340,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -4214,6 +4389,7 @@
       ],
       "notes": [
         "Estimated costs are redacted in the source.",
+        "Planning zone: 219.",
         "Workbook alias: GPC_3.",
         "Location supplied in workbook; not independently verified.",
         "The workbook gives different McIntosh longitudes across these two projects; each source value is retained."
@@ -4247,7 +4423,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -4277,7 +4454,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4307,7 +4485,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4337,7 +4516,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -4365,7 +4545,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -4395,7 +4576,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -4425,7 +4607,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4453,7 +4636,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -4481,7 +4665,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -4511,7 +4696,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4541,7 +4727,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -4571,7 +4758,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -4602,7 +4790,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4632,7 +4821,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -4662,7 +4852,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -4692,7 +4883,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -4723,7 +4915,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -4753,7 +4946,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -4781,7 +4975,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -4811,7 +5006,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -4841,7 +5037,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -4869,7 +5066,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -4899,7 +5097,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -4929,7 +5128,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -4959,7 +5159,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -4990,7 +5191,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -5020,7 +5222,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -5050,7 +5253,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -5080,7 +5284,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -5110,7 +5315,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -5140,7 +5346,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -5170,7 +5377,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -5200,7 +5408,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -5230,7 +5439,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -5261,7 +5471,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -5291,7 +5502,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -5321,7 +5533,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -5351,7 +5564,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -5382,7 +5596,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -5412,7 +5627,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -5442,7 +5658,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 206."
       ]
     },
     {
@@ -5472,7 +5689,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -5502,7 +5720,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -5532,7 +5751,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 218."
       ]
     },
     {
@@ -5562,7 +5782,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -5592,7 +5813,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -5622,7 +5844,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -5652,7 +5875,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -5682,7 +5906,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -5710,7 +5935,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -5740,7 +5966,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -5770,7 +5997,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -5800,7 +6028,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -5830,7 +6059,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -5860,7 +6090,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -5888,7 +6119,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -5918,7 +6150,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -5948,7 +6181,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -5978,7 +6212,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -6008,7 +6243,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -6038,7 +6274,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6068,7 +6305,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -6098,7 +6336,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6128,7 +6367,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6156,7 +6396,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -6186,7 +6427,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -6216,7 +6458,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6244,7 +6487,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -6274,7 +6518,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -6304,7 +6549,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -6335,7 +6581,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -6365,7 +6612,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6395,7 +6643,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6425,7 +6674,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6455,7 +6705,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6485,7 +6736,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6515,7 +6767,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -6545,7 +6798,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6575,7 +6829,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6605,7 +6860,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -6635,7 +6891,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -6665,7 +6922,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -6695,7 +6953,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6725,7 +6984,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -6755,7 +7015,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 201."
       ]
     },
     {
@@ -6783,7 +7044,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -6811,7 +7073,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -6841,7 +7104,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -6871,7 +7135,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 208."
       ]
     },
     {
@@ -6901,7 +7166,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -6932,7 +7198,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 211."
       ]
     },
     {
@@ -6962,7 +7229,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -6993,7 +7261,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -7024,7 +7293,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 213."
       ]
     },
     {
@@ -7054,7 +7324,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -7082,7 +7353,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 214."
       ]
     },
     {
@@ -7112,7 +7384,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -7160,6 +7433,7 @@
       ],
       "notes": [
         "Estimated costs are redacted in the source.",
+        "Planning zone: 215.",
         "Workbook alias: GPC_1.",
         "Location supplied in workbook; not independently verified."
       ]
@@ -7191,7 +7465,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -7221,7 +7496,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7251,7 +7527,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7281,7 +7558,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7311,7 +7589,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7341,7 +7620,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7371,7 +7651,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7401,7 +7682,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7429,7 +7711,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -7460,7 +7743,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     },
     {
@@ -7490,7 +7774,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 202."
       ]
     },
     {
@@ -7520,7 +7805,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 216."
       ]
     },
     {
@@ -7550,7 +7836,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 212."
       ]
     },
     {
@@ -7581,7 +7868,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 219."
       ]
     },
     {
@@ -7611,7 +7899,8 @@
         }
       ],
       "notes": [
-        "Estimated costs are redacted in the source."
+        "Estimated costs are redacted in the source.",
+        "Planning zone: 215."
       ]
     }
   ],
@@ -7624,7 +7913,8 @@
       "10 unverified workbook locations; 242 projects have unknown locations and remain in the inventory.",
       "Dawson (Dominion page 34) has separate phase dates retained in its notes; no single date or construction interval was inferred.",
       "Georgia costs are redacted. Cancelled-project tables and restricted project details were not extracted.",
-      "Georgia need dates and Dominion planned in-service dates are historical plan snapshots, not current completion claims."
+      "Georgia need dates and Dominion planned in-service dates are historical plan snapshots, not current completion claims.",
+      "Public planning context retained for 44 Dominion project needs and 208 Georgia planning zones; zones are identifiers, not coordinates."
     ]
   }
 }
