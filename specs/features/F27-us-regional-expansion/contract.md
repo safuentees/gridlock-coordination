@@ -4,6 +4,8 @@ Additive to integrated F26-C1; Dataset remains version 2 and all v1/v2 records r
 
 New optional inventory fields: `recordUnit` (project/upgrade/component), `sourceState` and `sourceLocation` (raw source text or null), `sourceUpdatedOn` (ISO day or null), `lifecycleDateMeaning` (source-edition/snapshot-observed), and `milestones` ({field, date, evidence}[]). Each date uses the same precision/kind/value validator as Project.date. Unknown publication stays null in the manifest. A row's update date is not its status-change date. Project.date is still the single authoritative comparison milestone; other dates provide evidence only and never become construction windows. No coordinate, ownership or jurisdiction inference from location/state text.
 
+`lifecycleAsOf` additionally accepts YYYY-MM when the source gives only a monthly edition (ISO-NE: 2026-06); retain that precision instead of inventing a month-end day. It is still a display/evidence string, never a timing calculation input.
+
 Optional `owner.identityScope` is source/global. Core treats missing scope as source, without changing stored legacy snapshots. Explicit source-reported owner tokens can support within-source distinction after known aliases are reconciled; they do not prove distinct entities across different inventories. Any cross-source inventory pair requires both owner identities to have global scope backed by appropriate identity evidence. Same owner ID is always excluded. Synthetic fixture owners are explicitly global fictional identities; their evidence remains synthetic. Legacy/legacy matching remains unchanged. No new owner registry or guessed cross-source corporate equivalence.
 
 ## PJM accepted producer mapping

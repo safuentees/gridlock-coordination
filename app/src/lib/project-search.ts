@@ -13,7 +13,7 @@ export function matchesProjectQuery(project: Project, query: string): boolean {
     project.sponsor ?? "",
     reportingGroupLabel(project),
     project.status ?? "",
-    ...(project.inventory ? [project.inventory.editionLabel, project.inventory.owner?.name ?? "", project.inventory.workType ?? "", project.inventory.lifecycle, ...project.inventory.aliases] : []),
+    ...(project.inventory ? [project.inventory.editionLabel, project.inventory.owner?.name ?? "", project.inventory.workType ?? "", project.inventory.lifecycle, project.inventory.sourceState ?? "", project.inventory.sourceLocation ?? "", ...project.inventory.aliases] : []),
     ...project.voltageKv.map(String),
     ...visibleProjectNotes(project),
     ...project.sources.flatMap(source => [source.file, source.locator]),
