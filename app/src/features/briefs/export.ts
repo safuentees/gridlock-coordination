@@ -34,12 +34,22 @@ function inventoryText(project: Project): string[] {
   const geometry = inventory.nativeGeometry
   return [
     `Source inventory: ${inventory.sourceKey}; edition ${inventory.editionId} (${inventory.editionLabel})`,
-    `Record kind: ${inventory.recordKind}; lifecycle: ${inventory.lifecycle}; as of ${inventory.lifecycleAsOf}`,
+    `Record kind: ${inventory.recordKind}; lifecycle: ${inventory.lifecycle}`,
+    ...(inventory.recordUnit ? [`Source record unit: ${inventory.recordUnit}`] : []),
+    `Lifecycle date: ${inventory.lifecycleAsOf}; ${inventory.lifecycleDateMeaning === "snapshot-observed" ? "observed in the retrieved snapshot, not a status-change date" : inventory.lifecycleDateMeaning === "source-edition" ? "as of the source edition" : "date meaning not supplied"}`,
+    ...(inventory.sourceState !== undefined ? [`Source state text: ${inventory.sourceState ?? "Unknown"}`] : []),
+    ...(inventory.sourceLocation !== undefined ? [`Source location text: ${inventory.sourceLocation ?? "Unknown"}; this text does not establish coordinates`] : []),
+    ...(inventory.sourceUpdatedOn !== undefined ? [`Source row updated: ${inventory.sourceUpdatedOn ?? "Unknown"}; not a status-change date`] : []),
     `Evidenced asset owner: ${inventory.owner ? `${inventory.owner.name} (${inventory.owner.id})` : "Unknown"}`,
+    ...(inventory.owner ? [`Owner identity scope: ${inventory.owner.identityScope ?? "unspecified (treated as source-scoped)"}`] : []),
     ...(inventory.owner?.evidence.map(source => `Owner evidence: ${sourceText(source)}`) ?? []),
     ...(inventory.parentProgramId ? [`Parent program: ${inventory.parentProgramId}`] : []),
     ...(inventory.aliases.length ? [`Source aliases: ${inventory.aliases.join("; ")}`] : []),
     ...(inventory.workType ? [`Source work type: ${inventory.workType}`] : []),
+    ...(inventory.milestones?.flatMap(milestone => [
+      `Reported milestone: ${milestone.date.label}; value: ${milestone.date.value ?? "Unknown"}; precision: ${milestone.date.precision}; kind: ${milestone.date.kind}; source field: ${milestone.field}`,
+      ...milestone.evidence.map(source => `Milestone evidence: ${sourceText(source)}`),
+    ]) ?? []),
     `Reported construction start: ${inventory.constructionStart ?? "Unknown"}; this does not establish a construction window`,
     `Displayed location role: ${inventory.centerRole}`,
     ...inventory.locationAssumptions.map(assumption => `Location assumption: ${assumption}`),
@@ -94,7 +104,7 @@ export function createBrief(records: SavedOpportunity[], mode: DataMode, availab
     format: "gridlock-coordination-brief", version: 1, exportedAt: new Date().toISOString(), mode,
     label: mode === "demo" ? "SYNTHETIC DEMONSTRATION — NOT A UTILITY PLAN" : "Source-backed coordination investigation",
     caveats: records.some(record => record.projects.some(project => project.inventory)) ? [
-      "Legacy candidates compare reporting filings without asserting distinct owners; candidates involving source-qualified inventory require evidenced, distinct asset-owner identities.",
+      "Legacy candidates compare reporting filings without asserting distinct owners; candidates involving source-qualified inventory require evidenced, distinct asset-owner identities. Comparisons across different inventories also require globally scoped owner identities.",
       ...BRIEF_CAVEATS.slice(1),
     ] : BRIEF_CAVEATS,
     opportunities: records.map((record) => ({
