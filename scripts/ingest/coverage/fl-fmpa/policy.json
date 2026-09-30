@@ -1,0 +1,118 @@
+{
+  "acceptedBy": "specs/features/F27-us-regional-expansion/fl-fmpa/spec.md at 2ba30db",
+  "groups": [
+    {
+      "name": "Beaches Energy Services",
+      "slug": "beaches",
+      "workItems": 11
+    },
+    {
+      "name": "Kissimmee Utility Authority",
+      "slug": "kua",
+      "workItems": 17
+    },
+    {
+      "name": "Fort Pierce Utility Authority",
+      "slug": "fpua",
+      "workItems": 23
+    },
+    {
+      "name": "Keys Energy Services",
+      "slug": "keys",
+      "workItems": 2
+    },
+    {
+      "name": "Ocala Electric Utility",
+      "slug": "ocala",
+      "workItems": 6
+    }
+  ],
+  "sampleEntries": [
+    [
+      "beaches",
+      1
+    ],
+    [
+      "kua",
+      17
+    ],
+    [
+      "fpua",
+      8
+    ],
+    [
+      "fpua",
+      18
+    ],
+    [
+      "keys",
+      1
+    ],
+    [
+      "ocala",
+      6
+    ]
+  ],
+  "planningContextDecisions": [
+    {
+      "groupSlug": "beaches",
+      "childOrdinal": 7,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 7",
+      "reason": "Distribution transformation 138/26.4 kV; Beaches section 2.2.1 printed p.2-5 / PDF23 identifies its distribution delivery at 26.4 kV."
+    },
+    {
+      "groupSlug": "beaches",
+      "childOrdinal": 11,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 11",
+      "reason": "Distribution transformation 138/26.4 kV; Beaches section 2.2.1 printed p.2-5 / PDF23 identifies its distribution delivery at 26.4 kV."
+    },
+    {
+      "groupSlug": "kua",
+      "childOrdinal": 17,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17",
+      "reason": "Relay coordination study only."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 18,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 19,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 19",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 20,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 20",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 21,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 21",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 22,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 22",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 23,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 23",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "ocala",
+      "childOrdinal": 4,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 4",
+      "reason": "Description explicitly states distribution equipment/substation."
+    }
+  ]
+}
