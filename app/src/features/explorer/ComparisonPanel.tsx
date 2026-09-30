@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareProjectTiming } from "@/core"
 import { UTILITIES, type Dataset, type Opportunity, type Project } from "@/domain/schema"
-import { ImpactPanel } from "@/features/impact/ImpactPanel"
+import { ImpactPanel, type ImpactDraft } from "@/features/impact/ImpactPanel"
 import { ProjectEvidence } from "./ProjectDetails"
 import { sourceEditionLabels } from "@/lib/presentation"
 import { dateKind, projectDate } from "./format"
@@ -21,7 +21,11 @@ export interface ComparisonPanelProps {
 const BODY_CLASS = "min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain [overflow-wrap:anywhere]"
 
 export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject, actions, onProject }: ComparisonPanelProps) {
-  const [tab, setTab] = useState("evidence")
+  const selectionKey = JSON.stringify([dataset.mode, selectedOpportunity ? "candidate" : "project", selectedOpportunity?.id ?? selectedProject?.id ?? null])
+  const [tabs, setTabs] = useState<Record<string, string>>({})
+  const [impactDrafts, setImpactDrafts] = useState<Record<string, ImpactDraft>>({})
+  const tab = tabs[selectionKey] ?? "evidence"
+  const impactDraft = impactDrafts[selectionKey] ?? { length: "", width: "", cost: "", share: "" }
   const pair = selectedOpportunity?.projectIds.map((id) => dataset.projects.find((project) => project.id === id)) ?? []
   const [left, right] = pair
   const canEstimate = Boolean(selectedOpportunity && left && right)
@@ -57,21 +61,21 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
       </div> : <CardDescription>Select a candidate to compare, or a project to view its evidence.</CardDescription>}
     </CardHeader>
     {/* This stable slot keeps the parent's saved-review workspace mounted across selections and tabs. */}
-    <div className="min-w-0 shrink-0 px-4">{actions}</div>
+    {actions && <div className="min-w-0 shrink-0 px-4">{actions}</div>}
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
-      <Tabs value={activeTab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Method &amp; sources</TabsTrigger></TabsList>
-        <TabsContent forceMount value="evidence" className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
+      <Tabs value={activeTab} onValueChange={(value) => setTabs((previous) => ({ ...previous, [selectionKey]: value }))} className="min-h-0 min-w-0 flex-1 overflow-hidden">
+        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList>
+        <TabsContent forceMount value="evidence" inert={activeTab !== "evidence"} className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
               {pair.filter((project): project is Project => Boolean(project)).map((project) => <div key={project.id} className="min-w-0 border-t pt-4 first:border-t-0 first:pt-0"><ProjectEvidence project={project} /></div>)}
             </> : selectedProject ? <ProjectEvidence project={selectedProject} /> : null}
           </div>
         </TabsContent>
-        <TabsContent forceMount value="impact" className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
-          <div className="min-w-0 pt-3">{selectedOpportunity && left && right && <ImpactPanel opportunity={selectedOpportunity} projects={[left, right]} />}</div>
+        <TabsContent forceMount value="impact" inert={activeTab !== "impact"} className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
+          <div className="min-w-0 pt-3">{selectedOpportunity && left && right && <ImpactPanel opportunity={selectedOpportunity} projects={[left, right]} draft={impactDraft} onDraftChange={(draft) => setImpactDrafts((previous) => ({ ...previous, [selectionKey]: draft }))} />}</div>
         </TabsContent>
-        <TabsContent forceMount value="supporting" className={activeTab === "supporting" ? BODY_CLASS : "hidden"}>
+        <TabsContent forceMount value="supporting" inert={activeTab !== "supporting"} className={activeTab === "supporting" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-5 pt-3">
             <section className="space-y-2"><h3 className="text-sm font-medium">Comparison method</h3><ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">
               <li>Cross-filing candidates rank by straight-line center distance, then milestone gap.</li>

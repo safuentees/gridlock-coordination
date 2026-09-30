@@ -9,12 +9,14 @@ import type { ImpactResult, Opportunity, Project } from "@/domain/schema"
 export interface ImpactPanelProps {
   opportunity: Opportunity
   projects: [Project, Project]
+  draft?: ImpactDraft
+  onDraftChange?: (draft: ImpactDraft) => void
 }
 
-type Fields = { length: string; width: string; cost: string; share: string }
-const EMPTY_FIELDS: Fields = { length: "", width: "", cost: "", share: "" }
-const EXAMPLE_FIELDS: Fields = { length: "1", width: "100", cost: "10000", share: "50" }
-const FIELD_DEFINITIONS: Array<{ key: keyof Fields; label: string; max?: number }> = [
+export type ImpactDraft = { length: string; width: string; cost: string; share: string }
+const EMPTY_FIELDS: ImpactDraft = { length: "", width: "", cost: "", share: "" }
+const EXAMPLE_FIELDS: ImpactDraft = { length: "1", width: "100", cost: "10000", share: "50" }
+const FIELD_DEFINITIONS: Array<{ key: keyof ImpactDraft; label: string; max?: number }> = [
   { key: "length", label: "Shared length (miles)" },
   { key: "width", label: "Corridor width (feet)" },
   { key: "cost", label: "Land cost (USD per acre)" },
@@ -23,15 +25,20 @@ const FIELD_DEFINITIONS: Array<{ key: keyof Fields; label: string; max?: number 
 const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 })
 const acres = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 })
 
-// Key the form by candidate so assumptions never silently transfer to another pair.
-export function ImpactPanel(props: ImpactPanelProps) {
-  return <ImpactForm key={props.opportunity.id} />
+// Controlled callers retain drafts above selection lifecycles; standalone use keeps its own per-pair drafts.
+export function ImpactPanel({ opportunity, draft, onDraftChange }: ImpactPanelProps) {
+  const [drafts, setDrafts] = useState<Record<string, ImpactDraft>>({})
+  const fields = draft ?? drafts[opportunity.id] ?? EMPTY_FIELDS
+  function updateDraft(next: ImpactDraft) {
+    if (draft === undefined) setDrafts((previous) => ({ ...previous, [opportunity.id]: next }))
+    onDraftChange?.(next)
+  }
+  return <ImpactForm fields={fields} onFieldsChange={updateDraft} />
 }
 
-function ImpactForm() {
+function ImpactForm({ fields, onFieldsChange }: { fields: ImpactDraft; onFieldsChange: (draft: ImpactDraft) => void }) {
   const fieldId = useId()
-  const [fields, setFields] = useState<Fields>(EMPTY_FIELDS)
-  const errors: Partial<Record<keyof Fields, string>> = {}
+  const errors: Partial<Record<keyof ImpactDraft, string>> = {}
   for (const field of FIELD_DEFINITIONS) {
     if (fields[field.key].trim() === "") continue
     const value = Number(fields[field.key])
@@ -64,22 +71,19 @@ function ImpactForm() {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="flex flex-wrap gap-2">
-          <Button type="button" variant="outline" size="sm" onClick={() => setFields(EXAMPLE_FIELDS)}>Use hypothetical example</Button>
-          <Button type="button" variant="ghost" size="sm" onClick={() => setFields(EMPTY_FIELDS)}>Clear assumptions</Button>
+          <Button type="button" variant="outline" size="sm" onClick={() => onFieldsChange(EXAMPLE_FIELDS)}>Use hypothetical example</Button>
+          <Button type="button" variant="ghost" size="sm" onClick={() => onFieldsChange(EMPTY_FIELDS)}>Clear assumptions</Button>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          {FIELD_DEFINITIONS.map(({ key, label, max }) => (
+          {FIELD_DEFINITIONS.map(({ key, label }) => (
             <div key={key} className="space-y-2">
               <Label htmlFor={`${fieldId}-${key}`}>{label}</Label>
               <Input
                 id={`${fieldId}-${key}`}
-                type="number"
-                min={0}
-                max={max}
-                step="any"
+                type="text"
                 inputMode="decimal"
                 value={fields[key]}
-                onChange={(event) => setFields((previous) => ({ ...previous, [key]: event.target.value }))}
+                onChange={(event) => onFieldsChange({ ...fields, [key]: event.target.value })}
                 aria-invalid={Boolean(errors[key])}
                 aria-describedby={errors[key] ? `${fieldId}-${key}-error` : undefined}
               />
