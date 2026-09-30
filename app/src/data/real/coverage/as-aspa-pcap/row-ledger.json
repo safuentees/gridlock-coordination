@@ -1,0 +1,100 @@
+[
+  {
+    "sourceId": "aspa-priority-action-1",
+    "sourceProjectName": "New electrical grid control center — parent action",
+    "sources": [
+      {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14–15 / printed13–14"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "Aggregate priority action; its three explicitly numbered funding projects are enumerated separately. Do not import the parent alongside children."
+  },
+  {
+    "sourceId": "aspa-priority-action-1-a",
+    "sourceProjectName": "National Control Center",
+    "sources": [
+      {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14–15 / printed13–14"
+      }
+    ],
+    "recordKind": "capital-project-context",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Funding requested in March 2024 PCAP",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No service date supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "aspa-priority-action-1-b",
+    "sourceProjectName": "Wind and solar battery storage",
+    "sources": [
+      {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14 / printed13"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "Standalone 40MWh wind and12MWh solar storage; storage discovery is outside planned-transmission scope."
+  },
+  {
+    "sourceId": "aspa-priority-action-1-c",
+    "sourceProjectName": "New grid transmission line to and from the National Control Center",
+    "sources": [
+      {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14–15 / printed13–14"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Funding requested in March 2024 PCAP",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No service date supplied"
+    },
+    "disposition": "imported",
+    "projectId": "as-aspa-pcap:aspa-priority-action-1-c"
+  },
+  {
+    "sourceId": "aspa-priority-action-2",
+    "sourceProjectName": "Replace work vehicle fleet with electric vehicles",
+    "sources": [
+      {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF15–16 / printed14–15"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "Vehicle fleet action, not a physical transmission project. Vehicle counts are not additional source projects."
+  },
+  {
+    "sourceId": "aspa-priority-action-3",
+    "sourceProjectName": "Install electric vehicle charging stations",
+    "sources": [
+      {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF16 / printed15"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "Transport charging infrastructure, not a transmission project."
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "sourceKey": "as-aspa-pcap",
+  "editionId": "2024-03-21-pcap",
+  "scope": "sample",
+  "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
+  "acceptedRetainedLifecycleCounts": {
+    "planned": 2
+  },
+  "acceptedRetainedKindCounts": {
+    "capital-project-context": 1,
+    "transmission-project": 1
+  },
+  "acceptedRetainedDatePrecisionCounts": {
+    "unknown": 2
+  },
+  "importedLifecycleCounts": {
+    "planned": 1
+  },
+  "importedKindCounts": {
+    "transmission-project": 1
+  },
+  "sampleIds": [
+    "as-aspa-pcap:aspa-priority-action-1-c"
+  ],
+  "originals": [
+    {
+      "file": "as-pcap-2024.pdf",
+      "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+      "bytes": 962466,
+      "sha256": "dbf32acea623526934a401e19a6550b923bc7a333e2c11929e1c0b20eff5e7a6"
+    }
+  ],
+  "relationshipsAndPrecedence": [
+    "Full means the complete declared ASPA PCAP subset, not current utility or territory project coverage.",
+    "The cover revision is March 21, 2024; publication date remains unknown and filename date is not used.",
+    "Planning-action native IDs identify funding work, not engineering assets. Related aggregate Action1 is excluded.",
+    "Requested funding is not construction approval or evidence of current status. Related generation funding and emissions estimates do not establish benefit or funding for these actions.",
+    "A current public utility capital/transmission inventory and native location/ownership/date evidence remain missing."
+  ]
+}

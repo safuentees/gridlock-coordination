@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "ASPA priority climate actions — March 21, 2024 revision — one-record sample",
+  "generatedAt": "2026-09-30T10:45:00Z",
+  "projects": [
+    {
+      "id": "as-aspa-pcap:aspa-priority-action-1-c",
+      "utilityId": "as-aspa-pcap",
+      "sourceId": "aspa-priority-action-1-c",
+      "sponsor": "American Samoa Power Authority",
+      "name": "New grid transmission line to and from the National Control Center",
+      "description": "Explicit proposed grid transmission line. Funding request does not establish approval, routing, endpoints, voltage or construction dates.",
+      "status": "Funding requested in March 2024 PCAP",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No service date supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "as-pcap-2024.pdf",
+          "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+          "locator": "PDF14–15 / printed13–14"
+        }
+      ],
+      "notes": [
+        "Funding was requested in the March 2024 plan; current approval and construction status are unknown.",
+        "Tafuna is the stated location of the wider Priority Action 1, not an identified project center or route.",
+        "The plan calls this a grid transmission line to and from the National Control Center; voltage, endpoints, route and service date are not supplied."
+      ],
+      "inventory": {
+        "sourceKey": "as-aspa-pcap",
+        "editionId": "2024-03-21-pcap",
+        "editionLabel": "ASPA priority climate actions — March 21, 2024 revision",
+        "reportingGroupName": "American Samoa Power Authority PCAP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-03-21",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Tafuna, on the island of Tutuila in American Samoa (Priority Action 1 program location)",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "ASPA Priority Action 1.C",
+          "Parent planning action: ASPA Priority Action 1"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Tafuna/Tutuila describes the parent action. No native project center, route, CRS or accuracy is supplied."
+        ],
+        "milestones": []
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "as-aspa-pcap",
+      "editionId": "2024-03-21-pcap",
+      "label": "ASPA priority climate actions — March 21, 2024 revision",
+      "reportingGroupId": "as-aspa-pcap",
+      "reportingGroupName": "American Samoa Power Authority PCAP",
+      "publisher": "American Samoa Environmental Protection Agency",
+      "processAuthority": "American Samoa Power Authority priority actions",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "ASPA Priority Actions 1/1.A/1.B/1.C/2/3, PDF pages 13–16 / printed pages 12–15"
+      },
+      "sha256": "dbf32acea623526934a401e19a6550b923bc7a333e2c11929e1c0b20eff5e7a6",
+      "geographicScope": "American Samoa, Tutuila ASPA priority funding actions; parent-action Tafuna location is program-level context only.",
+      "inventoryScope": "All three ASPA priority actions and three numbered Action1 projects; exclude parent aggregate, storage, vehicles and charging, retain control-center context and explicit transmission line. Separate ASTCA actions are outside this ASPA subset.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 6,
+        "importedRecords": 1,
+        "excludedRows": 4,
+        "failedRows": 0,
+        "pendingRows": 1,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Aggregate priority action; its three explicitly numbered funding projects are enumerated separately. Do not import the parent alongside children.",
+          "count": 1
+        },
+        {
+          "reason": "Standalone 40MWh wind and12MWh solar storage; storage discovery is outside planned-transmission scope.",
+          "count": 1
+        },
+        {
+          "reason": "Transport charging infrastructure, not a transmission project.",
+          "count": 1
+        },
+        {
+          "reason": "Vehicle fleet action, not a physical transmission project. Vehicle counts are not additional source projects.",
+          "count": 1
+        }
+      ],
+      "limitations": [
+        "Full means the complete declared ASPA PCAP subset, not current utility or territory project coverage.",
+        "The cover revision is March 21, 2024; publication date remains unknown and filename date is not used.",
+        "Planning-action native IDs identify funding work, not engineering assets. Related aggregate Action1 is excluded.",
+        "Requested funding is not construction approval or evidence of current status. Related generation funding and emissions estimates do not establish benefit or funding for these actions.",
+        "A current public utility capital/transmission inventory and native location/ownership/date evidence remain missing.",
+        "No evidenced asset owner, voltage, native project center, service date or construction interval is supplied. ASPA is the implementing agency, not an inferred asset owner.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
+        "One retained diagnostic is emitted first; 1 accepted entries await provider connection and full normalization."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 1,
+    "skipped": 4,
+    "failed": 0,
+    "notes": [
+      "All 6 declared source entries are reconciled; 1 retained entries remain pending.",
+      "Counts are source funding-action records, not a territory-wide inventory."
+    ]
+  }
+}

@@ -19,6 +19,7 @@ import guamInventory from "./real/coverage/gu-gpa-cip/dataset.json"
 import nevadaInventory from "./real/coverage/nv-nvenergy/dataset.json"
 import pacifiCorpProjects from "./real/coverage/pacificorp-projects/dataset.json"
 import pacifiCorpLocalPlan from "./real/coverage/pacificorp-irp-local/dataset.json"
+import aspaClimateActions from "./real/coverage/as-aspa-pcap/dataset.json"
 import { combineSourceDatasets } from "./coverage"
 
 export function loadDataset(mode: DataMode): Dataset {
@@ -39,6 +40,7 @@ export function loadDataset(mode: DataMode): Dataset {
       datasetSchema.parse(guamInventory),
       datasetSchema.parse(nevadaInventory),
       datasetSchema.parse(pacifiCorpProjects), datasetSchema.parse(pacifiCorpLocalPlan),
+      datasetSchema.parse(aspaClimateActions),
     ])
   if (dataset.mode !== mode) throw new Error("The dataset mode does not match the requested source.")
   return dataset
