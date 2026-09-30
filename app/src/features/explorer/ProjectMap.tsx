@@ -17,9 +17,10 @@ function boundedInsets(insets: MapViewportInsets, width: number, height: number)
   function axis(start: number, end: number, size: number): [number, number] {
     const leading = finite(start)
     const trailing = finite(end)
-    const maximum = Math.max(0, size - Math.min(120, size / 2))
+    // Do not shrink real panel coverage merely to reserve an arbitrary fit width.
+    const maximum = Math.max(0, size - 1)
     const scale = leading + trailing > maximum ? maximum / (leading + trailing) : 1
-    return [Math.round(leading * scale), Math.round(trailing * scale)]
+    return [Math.floor(leading * scale), Math.floor(trailing * scale)]
   }
   const [left, right] = axis(insets.left, insets.right, width)
   const [top, bottom] = axis(insets.top, insets.bottom, height)
