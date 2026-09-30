@@ -1,5 +1,4 @@
 import { useMemo } from "react"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { getReadiness } from "@/data/readiness"
@@ -34,7 +33,7 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
 
   return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4 overflow-hidden" aria-label="Supported outcomes">
     <header className="shrink-0 space-y-2">
-      <div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Outcomes</h2><Badge variant="secondary">{dataset.mode === "demo" ? "Synthetic demo" : "Source data"}</Badge></div>
+      <h2 className="text-lg font-semibold">Outcomes</h2>
       <p className="break-words text-sm text-muted-foreground">{sourceEditions.length ? sourceEditions.join(" · ") : dataset.title}</p>
     </header>
     <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto overscroll-contain pb-1 [overflow-wrap:anywhere]" tabIndex={0} role="region" aria-label="Outcome evidence and next steps">
@@ -65,7 +64,11 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
                 <span className="text-muted-foreground">#{candidate.rank} </span>{projectsById.get(candidate.projectIds[0])?.name ?? "Project unavailable"}
                 <span className="block text-sm">↔ {projectsById.get(candidate.projectIds[1])?.name ?? "Project unavailable"}</span>
               </button>
-              <p className="text-xs text-muted-foreground">{candidate.distanceMiles.toFixed(2)} miles between centers · {candidate.dateGapDays === null ? "milestone gap unknown" : `${candidate.dateGapDays.toLocaleString()} days between milestones`} · {candidate.locationConfidence} locations</p>
+              <dl className="grid grid-cols-2 gap-3 text-sm">
+                <div><dt className="text-xs text-muted-foreground">Center distance</dt><dd className="tabular-nums">{candidate.distanceMiles.toFixed(2)} mi</dd></div>
+                <div><dt className="text-xs text-muted-foreground">Milestone gap</dt><dd className="tabular-nums">{candidate.dateGapDays === null ? "Unknown" : `${candidate.dateGapDays.toLocaleString()} days`}</dd></div>
+              </dl>
+              <p className="text-xs text-muted-foreground">{candidate.locationConfidence} locations</p>
             </li>)}</ol> : <p className="text-sm text-muted-foreground">Candidate evidence will appear here when a pair meets the applied criteria.</p>}
           </CardContent>
         </Card>
@@ -91,7 +94,7 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
             <li><span className="font-medium">Substation capacity:</span> Is there usable capacity or a justified shared upgrade?</li>
           </ul>
           <p className="text-sm text-muted-foreground">A candidate's Impact tab can explore a hypothetical land-cost scenario using your assumptions. Actual savings and feasibility remain unestablished.</p>
-          <Button variant="outline" onClick={onSavedFindings}>Open saved findings</Button>
+          <Button variant="outline" onClick={onSavedFindings}>Saved reviews</Button>
         </CardContent>
       </Card>
     </div>
