@@ -1,13 +1,14 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon, FunnelIcon, PanelLeftCloseIcon, PanelLeftOpenIcon, XIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { IconButton } from "@/components/ui/icon-button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { analyzeProjects } from "@/core"
-import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type AnalysisResult, type Dataset } from "@/domain/schema"
+import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type AnalysisResult, type Dataset, type Project } from "@/domain/schema"
 import { matchesProjectQuery } from "@/lib/project-search"
 import { BriefWorkspace, type ScenarioSaveRequest } from "@/features/briefs/BriefWorkspace"
 import { ProjectTimeline } from "@/features/scenarios/ProjectTimeline"
@@ -43,6 +44,8 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null)
   const [selectedPairId, setSelectedPairId] = useState<string | null>(null)
   const [scenarioSaveRequest, setScenarioSaveRequest] = useState<ScenarioSaveRequest | null>(null)
+  const [saveActionTarget, setSaveActionTarget] = useState<HTMLElement | null>(null)
+  const workspaceControls = useRef<HTMLDivElement>(null)
   const panel = useRef<HTMLElement>(null)
   const timelinePanel = useRef<HTMLElement>(null)
   const resultsView = useRef<HTMLDivElement>(null)
@@ -137,7 +140,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   useLayoutEffect(() => {
     const measure = () => {
       const next = {
-        top: collapsed ? (panel.current?.offsetHeight ?? 0) + 24 : 16,
+        top: (workspaceControls.current?.offsetHeight ?? 0) + (collapsed ? (panel.current?.offsetHeight ?? 0) + 36 : 24),
         left: collapsed ? 16 : (panel.current?.offsetWidth ?? 0) + 24,
         right: 16,
         bottom: timelineOpen ? (timelinePanel.current?.offsetHeight ?? 0) + 24 : 16,
@@ -145,7 +148,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
       setViewportInsets(previous => Object.keys(next).every(key => next[key as keyof typeof next] === previous[key as keyof typeof next]) ? previous : next)
     }
     const observer = new ResizeObserver(measure)
-    for (const element of [panel.current, timelinePanel.current]) if (element) observer.observe(element)
+    for (const element of [workspaceControls.current, panel.current, timelinePanel.current]) if (element) observer.observe(element)
     measure()
     return () => observer.disconnect()
   }, [collapsed, timelineOpen])
@@ -171,58 +174,75 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   const count = listView === "opportunities" ? opportunities.length : projects.length
   return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Coordination workspace">
     <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
+    <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} openRequest={reviewsRequest} saveScenarioRequest={scenarioSaveRequest} saveActionTarget={saveActionTarget} hideReviewsTrigger />
     <div className="pointer-events-none absolute inset-0 flex min-h-0 min-w-0 flex-col gap-3 p-3">
+      <div ref={workspaceControls} className="pointer-events-auto flex min-w-0 shrink-0 flex-wrap items-center gap-3 rounded-lg border bg-background p-3" role="group" aria-label="Workspace settings">
+        <ScenarioControls options={options} baseline={baseline} analysis={analysis} onApply={applyScenario} />
+        <p className="min-w-0 flex-1 text-xs text-muted-foreground">Applied: &lt;{options.radiusMiles} mi; {options.maxDateGapDays === null ? "any milestone gap" : `≤${options.maxDateGapDays} days`}; {options.includeUnverified ? "unverified included" : "confirmed only"}</p>
+        <Button variant={timelineOpen ? "secondary" : "outline"} aria-pressed={timelineOpen} aria-expanded={timelineOpen} aria-controls="workspace-timeline" onClick={() => setTimelineOpen(value => !value)}>Timeline {timelineOpen ? "on" : "off"}</Button>
+        <DropdownMenu><DropdownMenuTrigger asChild><Button variant="outline">Layout</Button></DropdownMenuTrigger><DropdownMenuContent align="end"><DropdownMenuItem onSelect={() => { backToResults(); setTimelineOpen(false); setFiltersOpen(false) }}>Reset layout</DropdownMenuItem></DropdownMenuContent></DropdownMenu>
+      </div>
       <div className="min-h-0 min-w-0 flex-1">
         <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 flex-col overflow-hidden rounded-lg border bg-background ${collapsed ? "h-auto w-full max-w-lg" : "h-full min-h-0 w-[min(32rem,65%)]"}`}>
-          <div className="shrink-0 space-y-2 border-b p-3">
-            <Label htmlFor="project-search" className="sr-only">Search projects</Label>
-            <div className="flex min-w-0 items-center gap-2">
-              <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
-              {collapsed
-                ? <Button ref={expandButton} variant="outline" size="sm" aria-expanded={false} aria-controls="panel-results panel-detail" onClick={expand}><PanelLeftOpenIcon aria-hidden="true" data-icon="inline-start" />Expand</Button>
-                : <IconButton variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>}
-            </div>
-            {collapsed && <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "projects"}</p>}
-          </div>
-          <div hidden={collapsed} inert={collapsed} className={collapsed ? "hidden" : "max-h-[35%] min-h-0 shrink-0 space-y-3 overflow-auto border-b p-3"}>
-              <div className="flex flex-wrap items-center gap-2">
-                <Button size="sm" variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>
-                <ScenarioControls options={options} baseline={baseline} analysis={analysis} onApply={applyScenario} />
-                <Button variant="outline" size="sm" aria-expanded={timelineOpen} aria-controls="workspace-timeline" onClick={() => setTimelineOpen(value => !value)}>Timeline</Button>
-                <Button variant="ghost" size="sm" onClick={() => { backToResults(); setTimelineOpen(false); setFiltersOpen(false) }}>Reset layout</Button>
+          <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
+            <div hidden={detailVisible} inert={detailVisible} className={detailVisible ? "hidden" : "shrink-0 space-y-3 border-b p-3"}>
+              <div hidden={collapsed} className={collapsed ? "hidden" : "flex min-w-0 items-center gap-2"}>
+                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
+                <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
               </div>
-              <p className="text-xs text-muted-foreground">&lt;{options.radiusMiles} mi; {options.maxDateGapDays === null ? "Any milestone gap" : `≤${options.maxDateGapDays} days`}; {options.includeUnverified ? "Unverified included" : "Confirmed only"}</p>
-              {filtersOpen && <div id="project-filters" className="space-y-3"><div className="space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Both filings</SelectItem><SelectItem value="desc">Dominion filing</SelectItem><SelectItem value="gpc">Georgia filing</SelectItem></SelectContent></Select></div><div className="space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All projects</SelectItem><SelectItem value="located">Located projects</SelectItem><SelectItem value="unlocated">Without locations</SelectItem></SelectContent></Select></div></div>}
-              {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
-          </div>
-          <div hidden={collapsed} inert={collapsed} className={collapsed ? "hidden" : "max-h-[20%] min-h-0 min-w-0 shrink-0 overflow-auto border-b p-3"}>
-            <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} openRequest={reviewsRequest} saveScenarioRequest={scenarioSaveRequest} />
-          </div>
-          <div ref={resultsView} id="panel-results" hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { listFocus.current[listView] = event.target as HTMLElement }}>
-            <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0">
-              <TabsList className="m-3 max-w-[calc(100%-1.5rem)] shrink-0 justify-start overflow-x-auto"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList>
-              {analysis.summary.unlocatedProjects > 0 && <p className="shrink-0 px-3 pb-3 text-xs text-muted-foreground">{analysis.summary.unlocatedProjects} projects need locations before they can be ranked.</p>}
+              <Label htmlFor="project-search" className="sr-only">Search projects</Label>
+              <div className="flex min-w-0 items-center gap-2">
+                <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
+                {collapsed
+                  ? <Button ref={expandButton} variant="outline" size="sm" aria-expanded={false} aria-controls="panel-results panel-detail" onClick={expand}><PanelLeftOpenIcon aria-hidden="true" data-icon="inline-start" />Expand</Button>
+                  : <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>}
+              </div>
+              {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "projects"}</p> : <>
+                {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Both filings</SelectItem><SelectItem value="desc">Dominion filing</SelectItem><SelectItem value="gpc">Georgia filing</SelectItem></SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All projects</SelectItem><SelectItem value="located">Located projects</SelectItem><SelectItem value="unlocated">Without locations</SelectItem></SelectContent></Select></div></div>}
+                <div className="flex min-w-0 flex-wrap items-center gap-2">
+                  {analysis.summary.unlocatedProjects > 0 && <p className="min-w-0 flex-1 text-xs text-muted-foreground">{analysis.summary.unlocatedProjects} projects need locations before ranking.</p>}
+                  {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
+                </div>
+              </>}
+            </div>
+            <div ref={resultsView} id="panel-results" hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { listFocus.current[listView] = event.target as HTMLElement }}>
               <div ref={resultsPanel} className="relative min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain" tabIndex={0} role="region" aria-label="Search results" onScroll={event => { if (active && resultsVisible) listScroll.current[listView] = event.currentTarget.scrollTop }}>
                 <TabsContent forceMount value="opportunities" hidden={listView !== "opportunities"} inert={listView !== "opportunities"} className={listView === "opportunities" ? "m-0" : "hidden"}>
-                  {opportunities.length ? <ul className="divide-y">{opportunities.slice(activePairPage * PAGE_SIZE, (activePairPage + 1) * PAGE_SIZE).map(pair => <li key={pair.id}><button type="button" aria-pressed={selectedPairId === pair.id} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectPair(pair.id)}><span className="block font-medium">#{pair.rank} {byId.get(pair.projectIds[0])?.name}<span className="block">↔ {byId.get(pair.projectIds[1])?.name}</span></span><span className="block text-sm">{pair.distanceMiles.toFixed(2)} mi apart; {pair.dateGapDays === null ? "date gap unknown" : `${pair.dateGapDays} days between milestones`}</span><span className="block text-xs text-muted-foreground">{pair.locationConfidence} locations</span></button></li>)}</ul> : <div className="space-y-3 p-3 text-sm"><p>No candidates match this search and scenario.</p><Button variant="outline" size="sm" onClick={() => changeListView("projects")}>Browse all projects</Button><p className="text-muted-foreground">Widen the radius or clear filters.</p></div>}
+                  {opportunities.length ? <ul className="divide-y">{opportunities.slice(activePairPage * PAGE_SIZE, (activePairPage + 1) * PAGE_SIZE).map(pair => <li key={pair.id}>
+                    <button type="button" aria-pressed={selectedPairId === pair.id} className="w-full space-y-3 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectPair(pair.id)}>
+                      <span className="block text-xs text-muted-foreground">Candidate #{pair.rank}</span>
+                      <span className="grid min-w-0 gap-2">{pair.projectIds.map(id => <ProjectIdentity key={id} project={byId.get(id)} missingId={id} />)}</span>
+                      <span className="grid min-w-0 grid-cols-3 gap-3 text-sm">
+                        <span className="min-w-0"><span className="block text-xs text-muted-foreground">Center distance</span><span className="tabular-nums">{pair.distanceMiles.toFixed(2)} mi</span></span>
+                        <span className="min-w-0"><span className="block text-xs text-muted-foreground">Milestone gap</span><span className="tabular-nums">{pair.dateGapDays === null ? "Unknown" : `${pair.dateGapDays} days`}</span></span>
+                        <span className="min-w-0"><span className="block text-xs text-muted-foreground">Locations</span>{pair.locationConfidence}</span>
+                      </span>
+                    </button>
+                  </li>)}</ul> : <div className="space-y-3 p-3 text-sm"><p>No candidates match this search and scenario.</p><Button variant="outline" size="sm" onClick={() => changeListView("projects")}>Browse all projects</Button><p className="text-muted-foreground">Widen the radius or clear filters.</p></div>}
                 </TabsContent>
                 <TabsContent forceMount value="projects" hidden={listView !== "projects"} inert={listView !== "projects"} className={listView === "projects" ? "m-0" : "hidden"}>
-                  {projects.length ? <ul className="divide-y">{projects.slice(activeProjectPage * PAGE_SIZE, (activeProjectPage + 1) * PAGE_SIZE).map(project => <li key={project.id}><button type="button" aria-pressed={focusIds.has(project.id)} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectProject(project.id)}><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{UTILITIES[project.utilityId]}{project.sourceId && `; ${project.sourceId}`}</span><span className="block text-sm">{dateKind(project)}: {projectDate(project)}</span><span className="block text-xs text-muted-foreground">{project.location ? `${project.location.confidence} location` : "Location missing"}</span></button></li>)}</ul> : <p className="p-3 text-sm text-muted-foreground">No projects match. Clear the search or change the filters.</p>}
+                  {projects.length ? <ul className="divide-y">{projects.slice(activeProjectPage * PAGE_SIZE, (activeProjectPage + 1) * PAGE_SIZE).map(project => <li key={project.id}><button type="button" aria-pressed={focusIds.has(project.id)} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectProject(project.id)}><ProjectIdentity project={project} /><span className="block text-sm">{dateKind(project)}: {projectDate(project)}</span><span className="block text-xs text-muted-foreground">{project.location ? `${project.location.confidence} location` : "Location missing"}</span></button></li>)}</ul> : <p className="p-3 text-sm text-muted-foreground">No projects match. Clear the search or change the filters.</p>}
                 </TabsContent>
               </div>
               <Pagination page={page} count={count} onChange={changePage} />
-            </Tabs>
-          </div>
-          <div ref={detailView} id="panel-detail" hidden={!detailVisible} inert={!detailVisible} className={detailVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { detailFocus.current = event.target as HTMLElement }}>
-            <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-b p-3">
-              <Button ref={backButton} variant="ghost" size="sm" onClick={backToResults}><ArrowLeftIcon aria-hidden="true" data-icon="inline-start" />Back to results</Button>
-              {selectedOpportunity && <div className="flex items-center gap-2"><span className="text-xs text-muted-foreground">{selectedCandidateIndex < 0 ? "Outside current results" : `${selectedCandidateIndex + 1} of ${opportunities.length} candidates`}</span><IconButton variant="outline" label="Previous candidate" disabled={selectedCandidateIndex <= 0} onClick={() => selectPair(opportunities[selectedCandidateIndex - 1].id, false)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" label="Next candidate" disabled={selectedCandidateIndex < 0 || selectedCandidateIndex + 1 >= opportunities.length} onClick={() => selectPair(opportunities[selectedCandidateIndex + 1].id, false)}><ChevronRightIcon aria-hidden="true" /></IconButton></div>}
             </div>
-            <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} onSaveScenario={(pairId, inputs) => setScenarioSaveRequest(previous => ({ pairId, mode: dataset.mode, request: (previous?.request ?? 0) + 1, inputs: { ...inputs } }))} /></div>
-          </div>
+            <div ref={detailView} id="panel-detail" hidden={!detailVisible} inert={!detailVisible} className={detailVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { detailFocus.current = event.target as HTMLElement }}>
+              <div className="flex shrink-0 flex-wrap items-center gap-2 border-b p-3">
+                <Button ref={backButton} variant="ghost" size="sm" onClick={backToResults}><ArrowLeftIcon aria-hidden="true" data-icon="inline-start" />Back to results</Button>
+                {selectedOpportunity && <div className="flex min-w-0 items-center gap-2"><span className="text-xs text-muted-foreground">{selectedCandidateIndex < 0 ? "Outside current results" : `${selectedCandidateIndex + 1} of ${opportunities.length} candidates`}</span><IconButton variant="outline" label="Previous candidate" disabled={selectedCandidateIndex <= 0} onClick={() => selectPair(opportunities[selectedCandidateIndex - 1].id, false)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" label="Next candidate" disabled={selectedCandidateIndex < 0 || selectedCandidateIndex + 1 >= opportunities.length} onClick={() => selectPair(opportunities[selectedCandidateIndex + 1].id, false)}><ChevronRightIcon aria-hidden="true" /></IconButton></div>}
+                <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
+              </div>
+              <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} actions={<div ref={setSaveActionTarget} />} onSaveScenario={(pairId, inputs) => setScenarioSaveRequest(previous => ({ pairId, mode: dataset.mode, request: (previous?.request ?? 0) + 1, inputs: { ...inputs } }))} /></div>
+            </div>
+          </Tabs>
         </aside>
       </div>
       <section ref={timelinePanel} id="workspace-timeline" aria-label="Timeline panel" hidden={!timelineOpen} inert={!timelineOpen} className={timelineOpen ? "pointer-events-auto flex h-[38%] min-h-0 min-w-0 shrink-0 flex-col gap-3 overflow-hidden rounded-lg border bg-background p-3" : "hidden"}><div className="flex shrink-0 items-center justify-between gap-3"><h2 className="font-medium">Project timeline</h2><IconButton variant="ghost" label="Close timeline" onClick={() => setTimelineOpen(false)}><XIcon aria-hidden="true" /></IconButton></div><ProjectTimeline projects={projects} selectedId={selectedProjectId} onProject={selectProject} /></section>
     </div>
   </section>
+}
+
+function ProjectIdentity({ project, missingId }: { project?: Project; missingId?: string }) {
+  if (!project) return <span className="block text-sm">Project unavailable{missingId && <span className="block text-xs text-muted-foreground">{missingId}</span>}</span>
+  return <span className="block min-w-0 space-y-1"><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{UTILITIES[project.utilityId]}{project.sourceId && `; Source ID ${project.sourceId}`}</span></span>
 }

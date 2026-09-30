@@ -23,6 +23,10 @@ export function ScenarioControls({ options, baseline, analysis, onApply }: {
   const activeIds = new Set(analysis.opportunities.map((pair) => pair.id))
   const added = analysis.opportunities.filter((pair) => !baselineIds.has(pair.id)).length
   const removed = baseline.opportunities.filter((pair) => !activeIds.has(pair.id)).length
+  const draftChanged = Number(radius) !== options.radiusMiles || !radius.trim()
+    || limitDates !== (options.maxDateGapDays !== null)
+    || (limitDates && (!dateGap.trim() || Number(dateGap) !== options.maxDateGapDays))
+    || includeUnverified !== options.includeUnverified
   function apply(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const radiusMiles = Number(radius)
@@ -45,15 +49,16 @@ export function ScenarioControls({ options, baseline, analysis, onApply }: {
           <div className="space-y-2"><Label htmlFor="scenario-radius">Radius (miles)</Label><Input id="scenario-radius" type="number" min="0" step="any" value={radius} onChange={(event) => setRadius(event.target.value)} required /><p className="text-xs text-muted-foreground">Strictly less than this distance.</p></div>
           <div className="space-y-2"><div className="flex items-center gap-2"><Checkbox id="scenario-limit-date" checked={limitDates} onCheckedChange={(value) => setLimitDates(value === true)} /><Label htmlFor="scenario-limit-date">Limit milestone gap (days)</Label></div><Input aria-label="Maximum milestone separation in days" type="number" min="0" step="1" value={dateGap} disabled={!limitDates} onChange={(event) => setDateGap(event.target.value)} /><p className="text-xs text-muted-foreground">Includes the maximum; excludes missing and partial dates.</p></div>
           <div className="space-y-2"><div className="flex items-center gap-2"><Checkbox id="scenario-unverified" checked={includeUnverified} onCheckedChange={(value) => setIncludeUnverified(value === true)} /><Label htmlFor="scenario-unverified">Include unverified locations</Label></div><p className="text-xs text-muted-foreground">Turn off to require two confirmed locations.</p></div>
+          {draftChanged && <p role="status" className="text-xs text-muted-foreground">Draft changes are not applied.</p>}
           {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
         </form>
         <section className="space-y-2 border-t pt-4" aria-live="polite" aria-label="Scenario comparison">
-          <p className="text-sm font-medium">Compared with defaults</p>
+          <p className="text-sm font-medium">Applied scenario vs. defaults</p>
           <div className="flex flex-wrap gap-2"><Badge variant="outline">Default: {baseline.opportunities.length}</Badge><Badge>Applied: {analysis.opportunities.length}</Badge><Badge variant="secondary">{added} added</Badge><Badge variant="secondary">{removed} removed</Badge></div>
           <p className="text-xs text-muted-foreground">Before list filters. {analysis.summary.excludedUnverified.toLocaleString()} pairs excluded for unverified locations.</p>
         </section>
       </div>
-      <DialogFooter className="shrink-0"><Button type="button" variant="outline" onClick={reset}>Reset defaults</Button><Button type="submit" form={formId}>Apply scenario</Button></DialogFooter>
+      <DialogFooter className="shrink-0"><Button type="button" variant="outline" onClick={reset}>Apply defaults</Button><Button type="submit" form={formId}>Apply scenario</Button></DialogFooter>
     </DialogContent>
   </Dialog>
 }
