@@ -43,7 +43,7 @@ export function getSourceCoverage(dataset: Dataset): SourceCoverageRow[] {
 /** Dated research context, not a claim that an unlisted source or area is complete. */
 export function getCoverageGaps(dataset: Dataset): CoverageGap[] {
   if (dataset.mode !== "real") return []
-  const importedTransmission = new Set(dataset.projects.filter(project => project.inventory?.recordKind === "transmission-project").map(project => project.inventory!.sourceKey))
-  const completeScopes = new Set((dataset.sourceEditions ?? []).filter(edition => edition.scope === "full").map(edition => edition.sourceKey))
-  return gaps.filter(gap => !importedTransmission.has(gap.sourceKey) || !completeScopes.has(gap.sourceKey))
+  const completeScopes = new Set((dataset.sourceEditions ?? []).filter(edition => edition.scope === "full").map(edition => JSON.stringify([edition.sourceKey, edition.editionId])))
+  const importedTransmission = new Set(dataset.projects.filter(project => project.inventory?.recordKind === "transmission-project" && completeScopes.has(JSON.stringify([project.inventory.sourceKey, project.inventory.editionId]))).map(project => project.inventory!.sourceKey))
+  return gaps.filter(gap => !importedTransmission.has(gap.sourceKey))
 }
