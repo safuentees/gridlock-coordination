@@ -34,7 +34,7 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
   return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4 overflow-hidden" aria-label="Supported outcomes">
     <header className="shrink-0 space-y-2">
       <h2 className="text-lg font-semibold">Outcomes</h2>
-      <p className="break-words text-sm text-muted-foreground">{sourceEditions.length ? sourceEditions.join(" · ") : dataset.title}</p>
+      <p className="break-words text-sm text-muted-foreground">{sourceEditions.length ? sourceEditions.join("; ") : dataset.title}</p>
     </header>
     <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto overscroll-contain pb-1 [overflow-wrap:anywhere]" tabIndex={0} role="region" aria-label="Outcome evidence and next steps">
       <Card>
@@ -50,7 +50,7 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
               <div><dt className="text-xs text-muted-foreground">Candidates with a known milestone gap</dt><dd className="font-medium">{candidateEvidence.dated.toLocaleString()} of {candidateCount.toLocaleString()}</dd></div>
               <div><dt className="text-xs text-muted-foreground">Candidates with unknown construction overlap</dt><dd className="font-medium">{candidateEvidence.constructionUnknown.toLocaleString()} of {candidateCount.toLocaleString()}</dd></div>
             </dl>
-          </> : <p className="text-sm">{readiness.missing ? `${readiness.missing.toLocaleString()} projects lack locations and cannot enter proximity analysis. ` : ""}A lack of matches does not rule out coordination opportunities.</p>}
+          </> : <p className="text-sm">{readiness.missing ? `${readiness.missing.toLocaleString()} records lack mapped locations. ` : ""}A lack of matches does not rule out coordination opportunities.</p>}
           <Button onClick={() => onExplore()}>{candidateCount ? "Review candidates in Explore" : "Review criteria in Explore"}</Button>
         </CardContent>
       </Card>
@@ -76,8 +76,9 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
           <CardHeader><CardTitle>What the records can establish</CardTitle></CardHeader>
           <CardContent className="space-y-4">
             <dl className="space-y-4 text-sm">
-              <div><dt className="font-medium">Location coverage</dt><dd className="mt-1 text-muted-foreground">{analysis.summary.locatedProjects.toLocaleString()} of {readiness.total.toLocaleString()} projects have centers; {readiness.missing.toLocaleString()} are missing. {readiness.unverified.toLocaleString()} centers are unverified and {readiness.confirmed.toLocaleString()} are marked confirmed.</dd></div>
-              <div><dt className="font-medium">Milestone precision</dt><dd className="mt-1 text-muted-foreground">{dates.day.toLocaleString()} day-level dates, {dates.month.toLocaleString()} month-level dates, {dates.year.toLocaleString()} year-level dates and {dates.unknown.toLocaleString()} unknown. Need and planned in-service dates are milestones, not construction intervals.</dd></div>
+              <div><dt className="font-medium">Location coverage</dt><dd className="mt-1 text-muted-foreground">{analysis.summary.locatedProjects.toLocaleString()} of {readiness.total.toLocaleString()} records have mapped locations; {readiness.missing.toLocaleString()} are missing. {readiness.unverified.toLocaleString()} locations are unverified and {readiness.confirmed.toLocaleString()} are marked confirmed.</dd></div>
+              <div><dt className="font-medium">Comparison eligibility</dt><dd className="mt-1 text-muted-foreground">{analysis.summary.eligibleProjects.toLocaleString()} records are eligible before scenario filters; {analysis.summary.excludedByEligibility.toLocaleString()} remain outside analysis. Inspect context-only records in Explore for missing ownership, lifecycle or location evidence.</dd></div>
+              <div><dt className="font-medium">Milestone precision</dt><dd className="mt-1 text-muted-foreground">{dates.day.toLocaleString()} day-level dates, {dates.month.toLocaleString()} month-level dates, {dates.year.toLocaleString()} year-level dates and {dates.unknown.toLocaleString()} unknown. Source date labels distinguish need, planned and projected-or-actual milestones. None establishes a construction interval.</dd></div>
               <div><dt className="font-medium">Construction evidence</dt><dd className="mt-1 text-muted-foreground">{dates.construction ? `${dates.construction.toLocaleString()} projects have explicit construction windows.` : "No explicit construction windows are recorded."}{candidateCount > 0 && ` ${candidateEvidence.constructionOverlap.toLocaleString()} candidate pairs have stated windows that overlap; ${candidateEvidence.constructionUnknown.toLocaleString()} lack two windows and remain unknown.`}</dd></div>
             </dl>
             <Button variant="outline" onClick={onReadiness}>{dataset.mode === "demo" ? "View demo coverage" : readiness.missing ? "Add missing location evidence" : "Review location evidence"}</Button>
