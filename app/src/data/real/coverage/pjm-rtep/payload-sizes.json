@@ -1,0 +1,10 @@
+{
+  "sourceKey": "pjm-rtep",
+  "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+  "scope": "sample",
+  "records": 6,
+  "compactUtf8Bytes": 25195,
+  "formattedDownloadUtf8Bytes": 38091,
+  "measurement": "UTF-8 JSON serialization of source-only Dataset2; actual aggregate/export envelope may be larger.",
+  "datasetFileFormat": "formatted"
+}

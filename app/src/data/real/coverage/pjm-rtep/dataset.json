@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "PJM public RTEP — snapshot September 30, 2026 — sample inventory",
+  "generatedAt": "2026-09-30T08:34:38.479938+00:00",
+  "projects": [
+    {
+      "id": "pjm-rtep:b1570.3",
+      "utilityId": "pjm-rtep",
+      "sponsor": "Dayton",
+      "sourceId": "b1570.3",
+      "name": "b1570.3 — Union REA - Honda MT",
+      "description": "Reconductor Union REA - Honda MT 69 kV line",
+      "status": "UC",
+      "voltageKv": [
+        69.0
+      ],
+      "date": {
+        "value": "2025-12-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "notes": [
+        "Source subregion: PJM WEST"
+      ],
+      "inventory": {
+        "sourceKey": "pjm-rtep",
+        "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+        "editionLabel": "PJM public RTEP — snapshot September 30, 2026",
+        "reportingGroupName": "PJM RTEP inventory",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-09-30",
+        "owner": {
+          "id": "pjm-to-dayton",
+          "name": "Dayton",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/TransmissionOwner",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+            }
+          ]
+        },
+        "recordUnit": "upgrade",
+        "sourceState": "OH",
+        "sourceLocation": "Union REA - Honda MT",
+        "sourceUpdatedOn": "2026-08-11",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "milestones": [
+          {
+            "field": "RequiredDate",
+            "date": {
+              "value": "2014-06-01",
+              "precision": "day",
+              "kind": "need",
+              "label": "Source required date (criteria violation)"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/RequiredDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "ProjectedInServiceDate",
+            "date": {
+              "value": "2025-12-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source projected in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/ProjectedInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "RevisedInServiceDate",
+            "date": {
+              "value": "2021-06-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source revised in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/RevisedInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "PJMBoardApprovalDate",
+            "date": {
+              "value": "2011-12-07",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source PJM board-approval date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/PJMBoardApprovalDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "InitialTEACDate",
+            "date": {
+              "value": "2011-05-12",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source initial TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/InitialTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "LatestTEACDate",
+            "date": {
+              "value": "2019-04-11",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source latest TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/LatestTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates[1]",
+            "date": {
+              "value": "2011-05-12",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates[2]",
+            "date": {
+              "value": "2019-04-11",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Baseline — Transmission Line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The public upgrade export has no native coordinates. Named location/state text is not geometry and no center is inferred."
+        ]
+      }
+    },
+    {
+      "id": "pjm-rtep:b2970",
+      "utilityId": "pjm-rtep",
+      "sponsor": "APS",
+      "sourceId": "b2970",
+      "name": "b2970 — Ringgold, Catoctin, Garfield",
+      "description": "Ringgold - Catoctin Solution",
+      "status": "On Hold",
+      "voltageKv": [
+        138.0,
+        230.0
+      ],
+      "date": {
+        "value": "2025-10-11",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='b2970']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "notes": [
+        "Source subregion: PJM WEST"
+      ],
+      "inventory": {
+        "sourceKey": "pjm-rtep",
+        "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+        "editionLabel": "PJM public RTEP — snapshot September 30, 2026",
+        "reportingGroupName": "PJM RTEP inventory",
+        "recordKind": "transmission-project",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-09-30",
+        "owner": {
+          "id": "pjm-to-aps",
+          "name": "APS",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/TransmissionOwner",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+            }
+          ]
+        },
+        "recordUnit": "upgrade",
+        "sourceState": "MD",
+        "sourceLocation": "Ringgold, Catoctin, Garfield",
+        "sourceUpdatedOn": "2026-07-28",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "milestones": [
+          {
+            "field": "RequiredDate",
+            "date": {
+              "value": "2020-06-01",
+              "precision": "day",
+              "kind": "need",
+              "label": "Source required date (criteria violation)"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/RequiredDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "ProjectedInServiceDate",
+            "date": {
+              "value": "2025-10-11",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source projected in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/ProjectedInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "PJMBoardApprovalDate",
+            "date": {
+              "value": "2017-12-05",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source PJM board-approval date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/PJMBoardApprovalDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "InitialTEACDate",
+            "date": {
+              "value": "2017-11-02",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source initial TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/InitialTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "LatestTEACDate",
+            "date": {
+              "value": "2017-11-02",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source latest TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/LatestTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates",
+            "date": {
+              "value": "2017-11-02",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Baseline — Substation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The public upgrade export has no native coordinates. Named location/state text is not geometry and no center is inferred."
+        ]
+      }
+    },
+    {
+      "id": "pjm-rtep:b3869.3",
+      "utilityId": "pjm-rtep",
+      "sponsor": "PSEG",
+      "sourceId": "b3869.3",
+      "name": "b3869.3 — Bergen",
+      "description": "Replace the two Bergen 138 kV series reactors with two new dry type 138 kV series reactors.",
+      "status": "PL",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2027-09-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "notes": [
+        "Source subregion: PJM MA"
+      ],
+      "inventory": {
+        "sourceKey": "pjm-rtep",
+        "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+        "editionLabel": "PJM public RTEP — snapshot September 30, 2026",
+        "reportingGroupName": "PJM RTEP inventory",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "owner": {
+          "id": "pjm-to-pseg",
+          "name": "PSEG",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/TransmissionOwner",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+            }
+          ]
+        },
+        "recordUnit": "upgrade",
+        "sourceState": "NJ",
+        "sourceLocation": "Bergen",
+        "sourceUpdatedOn": "2026-03-04",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "milestones": [
+          {
+            "field": "RequiredDate",
+            "date": {
+              "value": "2029-12-01",
+              "precision": "day",
+              "kind": "need",
+              "label": "Source required date (criteria violation)"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/RequiredDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "ProjectedInServiceDate",
+            "date": {
+              "value": "2027-09-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source projected in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/ProjectedInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "PJMBoardApprovalDate",
+            "date": {
+              "value": "2025-11-18",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source PJM board-approval date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/PJMBoardApprovalDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "InitialTEACDate",
+            "date": {
+              "value": "2025-10-16",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source initial TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/InitialTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "LatestTEACDate",
+            "date": {
+              "value": "2025-10-16",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source latest TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/LatestTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates",
+            "date": {
+              "value": "2025-10-16",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Baseline — Series Reactor",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The public upgrade export has no native coordinates. Named location/state text is not geometry and no center is inferred."
+        ]
+      }
+    },
+    {
+      "id": "pjm-rtep:n0613",
+      "utilityId": "pjm-rtep",
+      "sponsor": "AEP",
+      "sourceId": "n0613",
+      "name": "n0613 — Kammer",
+      "description": "Kammer - Upgrade station equipment to increase the emergency rating of the AEP owned Kammer to West Bellaire 345KV line from 1383 MVA to 1413 MVA",
+      "status": "Active",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2006-02-01",
+        "precision": "day",
+        "kind": "need",
+        "label": "Source required date (criteria violation)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='n0613']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "notes": [
+        "Active denotes a network upgrade linked to a queue project with a system impact study but no ISA/ICSA; it does not establish committed construction.",
+        "Source Voltage is 138 while Description mentions 345kV. Both source values are preserved; the discrepancy is unresolved.",
+        "Source subregion: PJM WEST"
+      ],
+      "inventory": {
+        "sourceKey": "pjm-rtep",
+        "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+        "editionLabel": "PJM public RTEP — snapshot September 30, 2026",
+        "reportingGroupName": "PJM RTEP inventory",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "owner": {
+          "id": "pjm-to-aep",
+          "name": "AEP",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/TransmissionOwner",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+            }
+          ]
+        },
+        "recordUnit": "upgrade",
+        "sourceState": "IL",
+        "sourceLocation": "Kammer",
+        "sourceUpdatedOn": "2025-05-22",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "milestones": [
+          {
+            "field": "RequiredDate",
+            "date": {
+              "value": "2006-02-01",
+              "precision": "day",
+              "kind": "need",
+              "label": "Source required date (criteria violation)"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/RequiredDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "ISAInServiceDate",
+            "date": {
+              "value": "2006-02-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source ISA in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/ISAInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "InitialTEACDate",
+            "date": {
+              "value": "2007-08-22",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source initial TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/InitialTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "LatestTEACDate",
+            "date": {
+              "value": "2007-08-22",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source latest TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/LatestTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates",
+            "date": {
+              "value": "2007-08-22",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Network — Substation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The public upgrade export has no native coordinates. Named location/state text is not geometry and no center is inferred."
+        ]
+      }
+    },
+    {
+      "id": "pjm-rtep:n8733.0",
+      "utilityId": "pjm-rtep",
+      "sponsor": "ATSI",
+      "sourceId": "n8733.0",
+      "name": "n8733.0 — Volant",
+      "description": "Frew Mill Substation – update drawings and nameplates for line name change",
+      "status": "UC-ISP",
+      "voltageKv": [
+        69.0
+      ],
+      "date": {
+        "value": "2027-03-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "notes": [
+        "The upgrade is partially in service with remaining construction; the entire upgrade is not classified as complete.",
+        "Source subregion: Not Specified"
+      ],
+      "inventory": {
+        "sourceKey": "pjm-rtep",
+        "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+        "editionLabel": "PJM public RTEP — snapshot September 30, 2026",
+        "reportingGroupName": "PJM RTEP inventory",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-09-30",
+        "owner": {
+          "id": "pjm-to-atsi",
+          "name": "ATSI",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/TransmissionOwner",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+            }
+          ]
+        },
+        "recordUnit": "upgrade",
+        "sourceState": "PA",
+        "sourceLocation": "Volant",
+        "sourceUpdatedOn": "2026-07-13",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "milestones": [
+          {
+            "field": "RequiredDate",
+            "date": {
+              "value": "2026-03-31",
+              "precision": "day",
+              "kind": "need",
+              "label": "Source required date (criteria violation)"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/RequiredDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "ProjectedInServiceDate",
+            "date": {
+              "value": "2027-03-31",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source projected in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/ProjectedInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "ISAInServiceDate",
+            "date": {
+              "value": "2026-03-31",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source ISA in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/ISAInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "PJMBoardApprovalDate",
+            "date": {
+              "value": "2025-11-18",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source PJM board-approval date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/PJMBoardApprovalDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "InitialTEACDate",
+            "date": {
+              "value": "2025-10-08",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source initial TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/InitialTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "LatestTEACDate",
+            "date": {
+              "value": "2025-10-08",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source latest TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/LatestTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates",
+            "date": {
+              "value": "2025-10-08",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Network — Substation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The public upgrade export has no native coordinates. Named location/state text is not geometry and no center is inferred."
+        ]
+      }
+    },
+    {
+      "id": "pjm-rtep:s0275",
+      "utilityId": "pjm-rtep",
+      "sponsor": "PPL",
+      "sourceId": "s0275",
+      "name": "s0275 — Whitpain/Buxmont",
+      "description": "Rebuild Whitpain – Buxmont 230 kV line",
+      "status": "EP",
+      "voltageKv": [
+        230.0
+      ],
+      "date": {
+        "value": "2027-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='s0275']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "notes": [
+        "Source subregion: PJM MA"
+      ],
+      "inventory": {
+        "sourceKey": "pjm-rtep",
+        "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+        "editionLabel": "PJM public RTEP — snapshot September 30, 2026",
+        "reportingGroupName": "PJM RTEP inventory",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "owner": {
+          "id": "pjm-to-ppl",
+          "name": "PPL",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='s0275']/TransmissionOwner",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+            }
+          ]
+        },
+        "recordUnit": "upgrade",
+        "sourceState": "PA",
+        "sourceLocation": "Whitpain/Buxmont",
+        "sourceUpdatedOn": "2026-08-06",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "milestones": [
+          {
+            "field": "ProjectedInServiceDate",
+            "date": {
+              "value": "2027-12-31",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Source projected in-service date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='s0275']/ProjectedInServiceDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "InitialTEACDate",
+            "date": {
+              "value": "2011-03-10",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source initial TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='s0275']/InitialTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "LatestTEACDate",
+            "date": {
+              "value": "2011-03-10",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source latest TEAC date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='s0275']/LatestTEACDate",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          },
+          {
+            "field": "TEACDates",
+            "date": {
+              "value": "2011-03-10",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source TEAC meeting date"
+            },
+            "evidence": [
+              {
+                "file": "projectCostUpgrades.xml",
+                "locator": "/Upgrades/Upgrade[UpgradeId='s0275']/TEACDates",
+                "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Supplemental — Transmission Line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The public upgrade export has no native coordinates. Named location/state text is not geometry and no center is inferred."
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "pjm-rtep",
+      "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+      "label": "PJM public RTEP — snapshot September 30, 2026",
+      "reportingGroupId": "pjm-rtep",
+      "reportingGroupName": "PJM RTEP inventory",
+      "publisher": "PJM Interconnection",
+      "processAuthority": "PJM Interconnection",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade; complete public export",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+      },
+      "sha256": "1cc0ae1b78258cbe81108ec2fdd43754098a57cc5ec224f6e7300cafefe2eb31",
+      "geographicScope": "Public PJM RTEP upgrade inventory across its regional planning footprint; not complete statewide coverage. Preserve raw state text without assigning anomalous or outside-footprint values to jurisdictions.",
+      "inventoryScope": "All public Baseline, Network and Supplemental UpgradeId rows except IS, Cancelled and W. Retained units are upgrades, not deduplicated engineering projects; on-hold and pre-agreement work remain visible.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 15692,
+        "importedRecords": 6,
+        "excludedRows": 0,
+        "failedRows": 0,
+        "pendingRows": 15686,
+        "locatedRecords": 0
+      },
+      "exclusions": [],
+      "limitations": [
+        "This is a checksum-pinned retrieval snapshot, not a publisher-issued dated edition; row LastUpdated is not a lifecycle-change date.",
+        "All locations are absent. Named locations, states and transmission-owner tokens are not coordinate evidence.",
+        "Owners have source-scoped identity only. Blank/MISO/composite values do not establish one owner; DL and Duquesne Light (DL) share the explicit source alias.",
+        "Required, projected, actual, revised, ISA, board and TEAC milestones remain distinct. No construction interval is inferred.",
+        "Raw state values may be blank, multistate or anomalous. They do not establish complete jurisdiction coverage.",
+        "Public export requires no login; PJM reserves rights and access does not confer an open reuse license. Preserve source attribution."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 0,
+    "failed": 0,
+    "notes": [
+      "15692 public upgrade rows, 15686 pending in this sample slice.",
+      "No source coordinates; all upgrades remain unlocated."
+    ]
+  }
+}
