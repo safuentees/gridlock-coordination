@@ -1,9 +1,109 @@
 {
   "schemaVersion": 2,
   "mode": "real",
-  "title": "ISO New England RSP — June 2026 — sample inventory",
-  "generatedAt": "2026-09-30T08:35:00Z",
+  "title": "ISO New England RSP — June 2026 — full inventory",
+  "generatedAt": "2026-09-30T08:36:00Z",
   "projects": [
+    {
+      "id": "iso-ne-rsp:1939",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1939",
+      "sponsor": "National Grid, USA",
+      "name": "Install a new 115 kV three breaker ring bus substation, to be named Quaker St., on NEP’s R-144N line, between NEP’s Millbury Substation and RIE’s Woonsocket Substation, to interconnect QP1320",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Under Construction",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2026-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A2:DE2; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1320; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-national-grid-usa",
+          "name": "National Grid, USA",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E2; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2026-11",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H2; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2024-12-05",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH2",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
     {
       "id": "iso-ne-rsp:1938",
       "utilityId": "iso-ne-rsp",
@@ -105,6 +205,206 @@
       }
     },
     {
+      "id": "iso-ne-rsp:1937",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1937",
+      "sponsor": "Central Maine Power Company",
+      "name": "Replace structure to increase the Summer Long Time Emergency rating of the 6.5 mile 82-2 segment of 115 kV line Section 82, from Detroit to the Section 82A Tap",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2029-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A4:DE4; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1100; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E4; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-11",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H4; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2025-09-24",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH4",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1936",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1936",
+      "sponsor": "Central Maine Power Company",
+      "name": "Install two static 10 MVAR, 115 kV shunt capacitor blocks, with necessary switchgear, at the Dogtown 115 kV bus.",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2029-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A5:DE5; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1100; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E5; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-11",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H5; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2025-09-24",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH5",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "iso-ne-rsp:1934",
       "utilityId": "iso-ne-rsp",
       "sourceId": "1934",
@@ -184,6 +484,390 @@
               {
                 "file": "final_rsp_project_list_jun_2026.xlsx",
                 "locator": "RSP_sortable!H7; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1933",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1933",
+      "sponsor": "Eversource",
+      "name": "Install one 80 MVAR shunt reactor at the 115 kV Electric Avenue Substation",
+      "description": "Reliability Upgrade",
+      "status": "Proposed",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2028-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A8:DE8; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Boston 2033 Solutions Study; original source category: 1b. These fields do not merge individual listed work items.",
+        "Source status is Proposed; planning/approval maturity is unresolved. No committed construction is inferred.",
+        "PPA (I.3.9) approval as published: No; not a dated approval.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E8; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H8; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1932",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1932",
+      "sponsor": "Eversource",
+      "name": "Add one bay with two breakers to the existing Electric Ave substation #315",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [],
+      "date": {
+        "value": "2028-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A9:DE9; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1148; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E9; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H9; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2025-01-06",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH9",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1930",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1930",
+      "sponsor": "Eversource",
+      "name": "Installation of a new 345 kV, 3-breaker ring bus switchyard in East Granby",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2027-10",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A11:DE11; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1192; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "CT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E11; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-10",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H11; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2024-05-28",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH11",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1929",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1929",
+      "sponsor": "Eversource",
+      "name": "Addition of a 115 kV 3-breaker ring-bus switchyard on the 1316 Line between Canterbury substation and Tunnel substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2029-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A12:DE12; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1138; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "CT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E12; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H12; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2024-06-28",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH12",
                 "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
               }
             ]
@@ -284,6 +968,776 @@
               {
                 "file": "final_rsp_project_list_jun_2026.xlsx",
                 "locator": "RSP_sortable!BH13",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1927",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1927",
+      "sponsor": "Eversource",
+      "name": "Add a series breaker to the 115 kV Medway Ring #65 Substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-02",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A14:DE14; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1320; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E14; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-02",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H14; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2024-12-05",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH14",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1926",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1926",
+      "sponsor": "Rhode Island Energy",
+      "name": "Replace one 115 kV circuit breaker at the Woonsocket substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Under Construction",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2026-06",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A15:DE15; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1320; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "RI",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-ri-energy",
+          "name": "Rhode Island Energy",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E15; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2026-06",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H15; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2024-12-05",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH15",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1924",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1924",
+      "sponsor": "Eversource",
+      "name": "Install a 115 kV tie line between the existing Mystic 9 Unit 93 terminal and the Mystic substation fence line",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2028-03",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A17:DE17; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1110; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E17; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-03",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H17; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2022-07-11",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH17",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1922",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1922",
+      "sponsor": "Eversource",
+      "name": "Addition of a 115 kV disconnect switch at Devon substation and other supporting substation equipment",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2028-10",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A19:DE19; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1089; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "CT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E19; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-10",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H19; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2022-12-19",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH19",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1920",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1920",
+      "sponsor": "Eversource",
+      "name": "Install new duct bank, termination stanchions, disconnect switch, CCVTs and other associated station upgrades at the Mystic #250 345 kV substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2028-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A21:DE21; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1143; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E21; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H21; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2023-08-29",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH21",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1919",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1919",
+      "sponsor": "Eversource",
+      "name": "Install one 115 kV circuit breaker, two 115 kV breaker disconnect switches and other associated substation upgrades at Chelsea #488 substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-08",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A22:DE22; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1115; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E22; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-08",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H22; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2022-10-19",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH22",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1918",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1918",
+      "sponsor": "Eversource",
+      "name": "Replace six 115 kV circuit breakers at Barnstable substation",
+      "description": "Reliability Upgrade",
+      "status": "Under Construction",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A23:DE23; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: SEMA 2028 Short Circuit Solutions; original source category: 1a. These fields do not merge individual listed work items.",
+        "PPA (I.3.9) approval as published: NR; not a dated approval.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E23; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-11",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H23; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1917",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1917",
+      "sponsor": "Central Maine Power Company",
+      "name": "Replace six 115 kV circuit breakers at Larrabee Road substation",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2028-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A24:DE24; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: ME 2028 Short Circuit Solutions; original source category: 1a. These fields do not merge individual listed work items.",
+        "PPA (I.3.9) approval as published: NR; not a dated approval.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E24; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H24; header H1 states month/year",
                 "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
               }
             ]
@@ -399,6 +1853,1260 @@
               {
                 "file": "final_rsp_project_list_jun_2026.xlsx",
                 "locator": "RSP_sortable!BI27",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1908",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1908",
+      "sponsor": "National Grid, USA",
+      "name": "Install a POTT protection system on the D-4 line via the A1/B2 lines",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [],
+      "date": {
+        "value": "2029-03",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A33:DE33; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: D-4 Protection System; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-national-grid-usa",
+          "name": "National Grid, USA",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E33; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-03",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H33; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2022-07-20",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH33",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1905",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1905",
+      "sponsor": "Versant Power",
+      "name": "Addition of a new 115 kV Three Rivers Switching Station on line 93 between Bull Hill and  Deblois",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Under Construction",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2026-08",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A36:DE36; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 833; original source category: 2a. These fields do not merge individual listed work items.",
+        "PPA (I.3.9) approval as published: 11/8/2021 05/31/2023; not a dated approval.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-versant",
+          "name": "Versant Power",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E36; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2026-08",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H36; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1902",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1902",
+      "sponsor": "National Grid, USA",
+      "name": "Convert the South Wrentham substation into a five breaker ring bus and upgrades of terminal equipment",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [],
+      "date": {
+        "value": "2027-07",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A39:DE39; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 877; original source category: 2a. These fields do not merge individual listed work items.",
+        "PPA (I.3.9) approval as published: 5/6/2022\n4/27/2023; not a dated approval.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-national-grid-usa",
+          "name": "National Grid, USA",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E39; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-07",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H39; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1901",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1901",
+      "sponsor": "National Grid, USA",
+      "name": "Reconductor the C129S 115 kV line from South Wrentham to Union Street and C181N/D182N 115 kV lines from South Wrentham to Berry Street",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-07",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A40:DE40; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 877; original source category: 2a. These fields do not merge individual listed work items.",
+        "PPA (I.3.9) approval as published: 5/6/2022\n4/27/2023; not a dated approval.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-national-grid-usa",
+          "name": "National Grid, USA",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E40; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-07",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H40; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1899",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1899",
+      "sponsor": "Central Maine Power Company",
+      "name": "Install a 115 kV three-breaker ring bus on CMP Section 80, approximately 2 miles from Highland Station",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2028-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A42:DE42; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 1086; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E42; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H42; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2022-03-21",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH42",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1885",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1885",
+      "sponsor": "Central Maine Power Company",
+      "name": "Install a +50/-25 MVAR synchronous condenser at Highland 115 kV substation",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A56:DE56; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: UME 2029 Solutions; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E56; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H56; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2023-08-29",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH56",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1884",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1884",
+      "sponsor": "Central Maine Power Company",
+      "name": "Install a 15 MVAR capacitor at Belfast 115 kV substation",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A57:DE57; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: UME 2029 Solutions; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E57; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H57; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2023-08-29",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH57",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1883",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1883",
+      "sponsor": "Central Maine Power Company",
+      "name": "Convert the Highland 115 kV substation to an eight breaker, breaker-and-a-half configuration with a bus connected 115/34.5 kV transformer",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        34.5,
+        115.0
+      ],
+      "date": {
+        "value": "2028-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A58:DE58; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: UME 2029 Solutions; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "ME",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-cmp",
+          "name": "Central Maine Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E58; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2028-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H58; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2023-08-29",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH58",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1870",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1870",
+      "sponsor": "Eversource",
+      "name": "Convert the planned 115 kV Mid-Cape line to 345 kV",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Under Construction",
+      "voltageKv": [
+        115.0,
+        345.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A71:DE71; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 700; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E71; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H71; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2021-01-04",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH71",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1869",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1869",
+      "sponsor": "Eversource",
+      "name": "Install a second 345/115 kV transformer at the West Barnstable substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0,
+        345.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A72:DE72; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 700; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E72; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H72; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2021-01-04",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH72",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1868",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1868",
+      "sponsor": "Eversource",
+      "name": "Add a third 115 kV breaker at the 115 kV West Barnstable substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A73:DE73; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 700; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E73; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H73; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2021-01-04",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH73",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1867",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1867",
+      "sponsor": "Eversource",
+      "name": "Upgrade the West Barnstable 345 kV substation to a four bay GIS breaker-and-a-half design",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A74:DE74; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 700; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E74; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H74; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2021-01-04",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH74",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1866",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1866",
+      "sponsor": "Eversource",
+      "name": "Construct a new Bourne 345 kV station as a breaker-and-a-half substation",
+      "description": "Generator Interconnection Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2029-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A75:DE75; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 700; original source category: 2a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E75; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Generator Interconnection Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2029-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H75; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2021-01-04",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH75",
                 "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
               }
             ]
@@ -605,6 +3313,1190 @@
           }
         ]
       }
+    },
+    {
+      "id": "iso-ne-rsp:1757",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1757",
+      "sponsor": "Eversource",
+      "name": "Uprate the N186 (Vernon Road Tap - Chestnut Hill) 115 kV line",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A184:DE184; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "NH",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E184; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H184; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH184",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1754",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1754",
+      "sponsor": "Vermont Electric Power Company",
+      "name": "Reconductor the K43 (New Haven - Williston) 115 kV line",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A187:DE187; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "VT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-velco",
+          "name": "Vermont Electric Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E187; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H187; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH187",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1753",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1753",
+      "sponsor": "Vermont Electric Power Company",
+      "name": "Reconductor the K27 (Williston - Tafts Corner) 115 kV line",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A188:DE188; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "VT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-velco",
+          "name": "Vermont Electric Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E188; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H188; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH188",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1752",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1752",
+      "sponsor": "Vermont Electric Power Company",
+      "name": "Replace a line drop for the K30 (Middlebury - Florance) 115 kV line",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A189:DE189; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "VT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-velco",
+          "name": "Vermont Electric Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E189; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H189; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH189",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1750",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1750",
+      "sponsor": "Vermont Electric Power Company",
+      "name": "Reconductor VELCO's section of the 381 (Vernon - Northfield) 345 kV line",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A191:DE191; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "VT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-velco",
+          "name": "Vermont Electric Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E191; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H191; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH191",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1749",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1749",
+      "sponsor": "Vermont Electric Power Company",
+      "name": "Add two 345 kV circuit breakers at the Coolidge 345 kV substation",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A192:DE192; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "VT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-velco",
+          "name": "Vermont Electric Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E192; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H192; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH192",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1730",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1730",
+      "sponsor": "Eversource",
+      "name": "Extend the 115 kV 114 line from Eversource/National Grid border to Industrial Park Tap",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2026-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A211:DE211; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Southeast Massachusetts/Rhode Island Reliability Project; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E211; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2026-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H211; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2018-04-30",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH211",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1722",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1722",
+      "sponsor": "National Grid, USA",
+      "name": "Extend Line 114 - Dartmouth town line (Eversource- NGRID border) to Bell Rock (~4.2 miles)",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [],
+      "date": {
+        "value": "2026-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A219:DE219; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Southeast Massachusetts/Rhode Island Reliability Project; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-national-grid-usa",
+          "name": "National Grid, USA",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E219; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2026-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H219; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2018-04-30",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH219",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1720",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1720",
+      "sponsor": "National Grid, USA",
+      "name": "Separate N12/M13 DCT & reconductor N12 & M13 between Somerset and Bell Rock (~3.5 miles)",
+      "description": "Reliability Upgrade",
+      "status": "Planned",
+      "voltageKv": [],
+      "date": {
+        "value": "2027-03",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A221:DE221; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Southeast Massachusetts/Rhode Island Reliability Project; original source category: 1a. These fields do not merge individual listed work items.",
+        "PPA (I.3.9) approval as published: 10/24/2023\n4/30/2018; not a dated approval.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "MA",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-national-grid-usa",
+          "name": "National Grid, USA",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E221; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-03",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H221; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1697",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1697",
+      "sponsor": "Eversource",
+      "name": "Reconductor ES's section of the 381 (Vernon - Northfield) 345 kV line. (NH portion)",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        345.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A244:DE244; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "NH",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-eversource",
+          "name": "Eversource",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E244; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H244; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH244",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1618",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1618",
+      "sponsor": "United Illuminating Company",
+      "name": "Old Town 115/13.8 kV Substation Rebuild",
+      "description": "Reliability Upgrade",
+      "status": "Under Construction",
+      "voltageKv": [
+        13.8,
+        115.0
+      ],
+      "date": {
+        "value": "2030-04",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A323:DE323; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Not stated; original source category: 1a. These fields do not merge individual listed work items.",
+        "TCA approval as published: No; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "CT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-ui",
+          "name": "United Illuminating Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E323; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2030-04",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H323; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2014-09-09",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH323",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "iso-ne-rsp:1545",
+      "utilityId": "iso-ne-rsp",
+      "sourceId": "1545",
+      "sponsor": "Vermont Electric Power Company",
+      "name": "New 1000 MW 320 kV HVDC Line, complete with two HVDC terminal stations, from a HQ station near Monteregie substation in Quebec to the VELCO 345/115 kV Coolidge substation in VT",
+      "description": "Elective Upgrade",
+      "status": "Planned",
+      "voltageKv": [
+        115.0,
+        320.0,
+        345.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "final_rsp_project_list_jun_2026.xlsx",
+          "locator": "RSP_sortable!A396:DE396; current status BF; headers row 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+        }
+      ],
+      "notes": [
+        "Major project context: Queue Position 501; original source category: 4a. These fields do not merge individual listed work items.",
+        "TCA approval as published: NR; not a dated approval."
+      ],
+      "inventory": {
+        "sourceKey": "iso-ne-rsp",
+        "editionId": "2026-06",
+        "editionLabel": "ISO New England RSP — June 2026",
+        "reportingGroupName": "ISO New England RSP",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "VT",
+        "sourceLocation": null,
+        "owner": {
+          "id": "isone-velco",
+          "name": "Vermont Electric Power Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "final_rsp_project_list_jun_2026.xlsx",
+              "locator": "RSP_sortable!E396; Primary Equipment Owner",
+              "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Elective Upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates are supplied. State and named facilities do not establish project centers."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!H396; header H1 states month/year",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "PPAApproval",
+            "date": {
+              "value": "2016-11-01",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "PPA (I.3.9) approval"
+            },
+            "evidence": [
+              {
+                "file": "final_rsp_project_list_jun_2026.xlsx",
+                "locator": "RSP_sortable!BH396",
+                "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "sourceEditions": [
@@ -626,16 +4518,25 @@
       "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
       "geographicScope": "Regional system planning list across Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island and Vermont; partial public inventory, not all local transmission work.",
       "inventoryScope": "Individual RSP listed work items with latest status Planned, Under Construction or Proposed. In-service and cancelled rows excluded. Duplicate formatted/topical sheets are not additional inventory; asset-condition list is outside this source.",
-      "scope": "sample",
+      "scope": "full",
       "counts": {
         "sourceRows": 1024,
-        "importedRecords": 6,
-        "excludedRows": 0,
+        "importedRecords": 46,
+        "excludedRows": 978,
         "failedRows": 0,
-        "pendingRows": 1018,
+        "pendingRows": 0,
         "locatedRecords": 0
       },
-      "exclusions": [],
+      "exclusions": [
+        {
+          "reason": "cancelled",
+          "count": 335
+        },
+        {
+          "reason": "in-service",
+          "count": 643
+        }
+      ],
       "limitations": [
         "No native coordinates; every record remains unlocated and outside proximity matching.",
         "Projected in-service dates have month precision; stored Excel days do not supply exact milestone days.",
@@ -647,8 +4548,8 @@
     }
   ],
   "coverage": {
-    "processed": 6,
-    "skipped": 0,
+    "processed": 46,
+    "skipped": 978,
     "failed": 0,
     "notes": [
       "Source-specific RSP inventory; all coordinates remain unknown."

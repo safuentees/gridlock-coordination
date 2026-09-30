@@ -16,16 +16,25 @@
   "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
   "geographicScope": "Regional system planning list across Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island and Vermont; partial public inventory, not all local transmission work.",
   "inventoryScope": "Individual RSP listed work items with latest status Planned, Under Construction or Proposed. In-service and cancelled rows excluded. Duplicate formatted/topical sheets are not additional inventory; asset-condition list is outside this source.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 1024,
-    "importedRecords": 6,
-    "excludedRows": 0,
+    "importedRecords": 46,
+    "excludedRows": 978,
     "failedRows": 0,
-    "pendingRows": 1018,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
-  "exclusions": [],
+  "exclusions": [
+    {
+      "reason": "cancelled",
+      "count": 335
+    },
+    {
+      "reason": "in-service",
+      "count": 643
+    }
+  ],
   "limitations": [
     "No native coordinates; every record remains unlocated and outside proximity matching.",
     "Projected in-service dates have month precision; stored Excel days do not supply exact milestone days.",
