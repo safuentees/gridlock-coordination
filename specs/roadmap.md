@@ -43,7 +43,9 @@ F00 → F01 + F02 + F03 → first connected real milestone, without waiting for 
 
 ## Active workers
 
-F15 ui, F16 core and F19 source_discovery are assigned in separate existing worktrees. Coordinator owns the shared journey interfaces and App/Explorer/BriefWorkspace/Readiness composition during this milestone; no worker edits those shared consumers. Start F15/F16 and F19 contextual search independently after the contract commit. Coordinator then connects the components and runs one bounded composition build. Source research does not block entry/outcomes.
+F15/F16 and F19 contextual search are integrated through PR30–34. Home/Outcomes are connected to retained working views and one applied scenario; need/zone search is shared by Explore/Readiness. The coordinator build passed at8eff2e7 with existing warnings; no browser or visual checks. F19 public evidence research continues independently.
+
+F17 is now assigned: core owns the additive storage/export contract; ui owns review/calculator/Explorer presentation after that contract lands, with exact boundaries in its spec. Coordinator retains App/Readiness and integration. Core proceeds to F18's restore module/component when its prerequisite contract is integrated; UI supplies the BriefWorkspace insertion. No other workers edit shared consumers.
 
 Next ready handoffs: ui takes F17 after F15 integration and saved-data contract agreement; core takes F18 when that contract is integrated. F19 continues with ten evidence decisions and integrates any supported small revision early; absent public coordinate evidence is a real blocker for data changes, not for other work. Do not leave workers idle when a ready selected increment exists. Never guess coordinates to meet a batch count.
 
