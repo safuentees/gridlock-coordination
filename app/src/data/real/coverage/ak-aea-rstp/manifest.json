@@ -16,13 +16,13 @@
   "sha256": "2503e90711cfc45603fc5871586d817ab2b754737397dfa87bc3dd76ff7d1d6d",
   "geographicScope": "Alaska Railbelt strategic transmission text inventory; not complete Alaska or national coverage.",
   "inventoryScope": "28 chapter-3 leaves: 25 transmission improvements, one mixed transmission/distribution context, two excluded standalone BESS entries. Twelve parent groups and repeated presentations are not additional records.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 28,
-    "importedRecords": 6,
+    "importedRecords": 26,
     "excludedRows": 2,
     "failedRows": 0,
-    "pendingRows": 20,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

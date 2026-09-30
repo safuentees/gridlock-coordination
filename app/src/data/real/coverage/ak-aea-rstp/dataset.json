@@ -1,9 +1,82 @@
 {
   "schemaVersion": 2,
   "mode": "real",
-  "title": "AEA Railbelt strategic transmission — sample",
+  "title": "AEA Railbelt strategic transmission — full",
   "generatedAt": "2026-09-30T00:00:00Z",
   "projects": [
+    {
+      "id": "ak-aea-rstp:map-A",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "map-A",
+      "sponsor": null,
+      "name": "Anchorage–Soldotna existing intertie upgrade",
+      "description": "Upgrade the Kenai Tie to 230 kV with larger conductors and voltage-control work between Anchorage and Soldotna.",
+      "status": "High priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 27; section 3.2.1; existing-intertie narrative; the two child cost labels are duplicated",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=27"
+        },
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 28; section 3.2.1; Kenai Tie reconstruction and voltage-control paragraphs",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=28"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key A",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+        }
+      ],
+      "notes": [
+        "Source priority: high; priority does not establish construction approval.",
+        "Parent source section: 3.2.1; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Companion table owner label: AEA, CEA, HEA.",
+        "The composite owner label does not establish one asset owner identity.",
+        "Companion table Project Timeline: 1-10; no absolute date inferred from this number or range.",
+        "Companion key A identifies the existing intertie, while B identifies CIPLink. Allocation of the two identically labelled cost rows remains unresolved; no amounts are assigned.",
+        "The source says much physical line construction is complete but few substations are upgraded for 230 kV operation. This does not establish the status of the entire remaining improvement."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Anchorage to Soldotna",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "A"
+        ],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
     {
       "id": "ak-aea-rstp:map-B",
       "utilityId": "ak-aea-rstp",
@@ -171,6 +244,155 @@
       }
     },
     {
+      "id": "ak-aea-rstp:map-D",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "map-D",
+      "sponsor": null,
+      "name": "Additional Central–Healy transmission connection",
+      "description": "Build a second 230 kV Central–Healy connection alongside the existing intertie to create an additional transmission path.",
+      "status": "High priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 29; section 3.2.2; child 2 and new Central–Healy intertie paragraph",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=29"
+        },
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 30; section 3.2.2; voltage-control context for parallel paths",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=30"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key D",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+        }
+      ],
+      "notes": [
+        "Source priority: high; priority does not establish construction approval.",
+        "Parent source section: 3.2.2; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Companion table owner label: AEA.",
+        "Companion table Project Timeline: 5-10; no absolute date inferred from this number or range.",
+        "The companion heading describes Anchorage to Healy; the narrative calls it Central–Healy. These refer to the same accepted source improvement, not two records."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": {
+          "id": "ak-aea-rstp-aea",
+          "name": "Alaska Energy Authority",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+              "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key D",
+              "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": "Central region to Healy",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "D"
+        ],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:map-E",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "map-E",
+      "sponsor": null,
+      "name": "Bradley Lake–Soldotna existing line voltage upgrade",
+      "description": "Upgrade the existing Bradley Lake–Soldotna line from its reported 115 kV system to a higher-capacity 230 kV connection.",
+      "status": "High priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 30; section 3.2.3; child 1 and primary transmission-line upgrade paragraph",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=30"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key E",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+        }
+      ],
+      "notes": [
+        "Source priority: high; priority does not establish construction approval.",
+        "Parent source section: 3.2.3; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Companion table owner label: AEA, HEA.",
+        "The composite owner label does not establish one asset owner identity.",
+        "Companion table Project Timeline: 5-7; no absolute date inferred from this number or range.",
+        "The composite AEA/HEA owner label is not one asset-owner identity. This existing-line upgrade is separate from the second-path alternatives recorded as F."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Bradley Lake to Soldotna",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "E"
+        ],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
       "id": "ak-aea-rstp:map-F",
       "utilityId": "ak-aea-rstp",
       "sourceId": "map-F",
@@ -248,6 +470,218 @@
       }
     },
     {
+      "id": "ak-aea-rstp:map-I",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "map-I",
+      "sponsor": null,
+      "name": "East–west Knik Arm 230 kV cable replacement",
+      "description": "Replace the aging 230 kV submarine cables in the east–west Knik Arm transmission corridor.",
+      "status": "High priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 31; section 3.2.4; child 1 and cable-life narrative",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=31"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key I",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+        }
+      ],
+      "notes": [
+        "Source priority: high; priority does not establish construction approval.",
+        "Parent source section: 3.2.4; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Companion table owner label: CEA.",
+        "Companion table Project Timeline: 4-6; no absolute date inferred from this number or range.",
+        "Expected replacement before 2050 is a broad planning horizon, not an exact completion milestone.",
+        "This east–west 230 kV proposal is distinct from the low-priority north–south crossing with the 138/139 kV wording conflict."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": {
+          "id": "ak-aea-rstp-cea",
+          "name": "Chugach Electric Association",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+              "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key I",
+              "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": "East–west Knik Arm crossing",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "I"
+        ],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:map-J",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "map-J",
+      "sponsor": null,
+      "name": "Point MacKenzie–Sullivan overhead conductor upgrade",
+      "description": "Increase overhead conductor capacity in the 230 kV corridor between Point MacKenzie and the Sullivan Power Plant.",
+      "status": "High priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 31; section 3.2.4; child 2 and corridor narrative",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=31"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key J",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+        }
+      ],
+      "notes": [
+        "Source priority: high; priority does not establish construction approval.",
+        "Parent source section: 3.2.4; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Companion table owner label: CEA.",
+        "Companion table Project Timeline: 4-6; no absolute date inferred from this number or range.",
+        "The companion table uses the broader Anchorage endpoint, while the main child label specifies Sullivan Power Plant; both descriptions are preserved as one accepted improvement."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": {
+          "id": "ak-aea-rstp-cea",
+          "name": "Chugach Electric Association",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+              "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key J",
+              "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": "Point MacKenzie to Sullivan Power Plant",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "J"
+        ],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-3-1-item-1",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-3-1-item-1",
+      "sponsor": null,
+      "name": "North Pole–Fort Knox transmission line",
+      "description": "Add a 138 kV connection from the North Pole area to Fort Knox to address congestion and support possible new resources.",
+      "status": "Medium priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        138
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 33; section 3.3.1; child 1 and first new-line explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=33"
+        }
+      ],
+      "notes": [
+        "Source priority: medium; priority does not establish construction approval.",
+        "Parent source section: 3.3.1; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "The transmission line is retained; associated renewable generation is not an additional transmission inventory record."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "North Pole to Fort Knox area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
       "id": "ak-aea-rstp:sec-3-3-1-item-2",
       "utilityId": "ak-aea-rstp",
       "sourceId": "sec-3-3-1-item-2",
@@ -293,6 +727,352 @@
         "owner": null,
         "sourceState": null,
         "sourceLocation": "North Pole area to Delta Junction area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-3-2-item-1",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-3-2-item-1",
+      "sponsor": null,
+      "name": "Teeland eastward transmission capacity improvement",
+      "description": "Reinforce transmission east from Teeland into the MEA system through additional lines and conductor upgrades under the moderate-load scenario.",
+      "status": "Medium priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 34; section 3.3.2; child 1 and moderate-load reinforcement paragraph",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=34"
+        }
+      ],
+      "notes": [
+        "Source priority: medium; priority does not establish construction approval.",
+        "Parent source section: 3.3.2; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "115 kV describes the existing system being reinforced; the source does not give separate operating voltages for every added line.",
+        "MEA service-area wording does not establish a single owner for this source improvement."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Teeland east into the MEA service area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-3-2-item-2",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-3-2-item-2",
+      "sponsor": null,
+      "name": "Two 230 kV paths through the MEA system",
+      "description": "Rebuild key transmission corridors to provide two 230 kV paths through the MEA system if high load growth occurs.",
+      "status": "Medium priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 34; section 3.3.2; child 2 and high-load rebuild/Fossil Creek paragraph",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=34"
+        },
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 26; section 3; discussion of omitted Fossil Creek Station",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=26"
+        }
+      ],
+      "notes": [
+        "Source priority: medium; priority does not establish construction approval.",
+        "Parent source section: 3.3.2; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Page 26 says Fossil Creek Station is not included under the selected study dispatches; page 34 discusses it as needed for the high-load rebuild. The conflict remains within this conditional scope, without a separate invented station record.",
+        "Utility/service-area references do not establish a single owner identity."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Corridors between CEA and MEA through the Mat-Su area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-1-item-1",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-1-item-1",
+      "sponsor": null,
+      "name": "Downtown Anchorage 115 kV line capacity upgrade",
+      "description": "Increase conductor capacity on the downtown Anchorage 115 kV network for the conditional high-load case.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 35; section 3.4.1; child 1 and high-load scenario explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.1; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Conditional on the source high-load Anchorage scenario and decommissioning of local generation; no current construction status is established."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Downtown Anchorage",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-1-item-2",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-1-item-2",
+      "sponsor": null,
+      "name": "Third University substation transformer",
+      "description": "Add a third transformer at University substation under the specified Anchorage load-growth scenario.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 35; section 3.4.1; child 2 and high-load scenario explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.1; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Conditional on the source high-load Anchorage scenario and decommissioning of local generation; no current construction status is established.",
+        "The child entry does not state this transformer’s voltage or asset owner."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "University substation, Anchorage area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-1-item-3",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-1-item-3",
+      "sponsor": null,
+      "name": "Sullivan substation transformer addition",
+      "description": "Add a transformer at Sullivan substation under the specified Anchorage load-growth scenario.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 35; section 3.4.1; child 3 and high-load scenario explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.1; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Conditional on the source high-load Anchorage scenario and decommissioning of local generation; no current construction status is established.",
+        "The child entry does not state this transformer’s voltage or asset owner."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Sullivan substation, Anchorage area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-1-item-4",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-1-item-4",
+      "sponsor": null,
+      "name": "Anchorage subtransmission and distribution program",
+      "description": "A broad conditional program covers Anchorage-area subtransmission and distribution lines and substations; individual engineering projects are not enumerated.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 35; section 3.4.1; child 4 and high-load scenario explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.1; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Conditional on the source high-load Anchorage scenario and decommissioning of local generation; no current construction status is established.",
+        "Retained as capital-project-context because the source mixes transmission and distribution without a separable child inventory. No extra lines or substations are fabricated."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Anchorage area",
         "sourceUpdatedOn": null,
         "milestones": [],
         "parentProgramId": null,
@@ -366,6 +1146,299 @@
       }
     },
     {
+      "id": "ak-aea-rstp:sec-3-4-2-item-2",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-2-item-2",
+      "sponsor": null,
+      "name": "Woronzof–International overhead conductor upgrade",
+      "description": "Upgrade overhead conductors between the Woronzof and International areas for the conditional remote-generation scenario.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 35; section 3.4.2; child 2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+        },
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 36; section 3.4.2; continuation on location/load-dependent line improvements",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=36"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.2; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "The source links this low-priority scope to unlikely removal of core Anchorage/Palmer generation, high loads and HVDC termination options.",
+        "The source also spells the endpoint Woronozof in the narrative; no separate project is inferred from the spelling variation."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Woronzof to International substations",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-2-item-3",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-2-item-3",
+      "sponsor": null,
+      "name": "Second Point MacKenzie 230/138 kV transformer",
+      "description": "Add a second transformer connecting 230 kV and 138 kV at Point MacKenzie under the remote-generation scenario.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230,
+        138
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 35; section 3.4.2; child 3",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+        },
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 36; section 3.4.2; continuation on generation/load dependence",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=36"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.2; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "The source links this low-priority scope to unlikely removal of core Anchorage/Palmer generation, high loads and HVDC termination options."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Point MacKenzie substation",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-3-item-1",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-3-item-1",
+      "sponsor": null,
+      "name": "Central Fairbanks 69 kV network capacity improvement",
+      "description": "Increase Central Fairbanks subtransmission capacity through conductor work or more extensive line and substation upgrades.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        69
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 36; section 3.4.3; child 1 and network-capacity explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=36"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.3; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "69 kV describes the existing network. The narrative also considers a higher nominal voltage without selecting a replacement voltage or enumerating additional projects."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Central Fairbanks",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-3-item-2",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-3-item-2",
+      "sponsor": null,
+      "name": "Goldhill substation transformer addition",
+      "description": "Add a transformer at Goldhill substation as part of the conditional Fairbanks-area capacity improvements.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 36; section 3.4.3; child 2 and load-growth context",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=36"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.3; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "The subtransmission discussion does not explicitly identify the added transformer’s voltage, owner or completion date."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Goldhill substation",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-3-item-3",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-3-item-3",
+      "sponsor": null,
+      "name": "Fort Wainright–Carney 69 kV conductor upgrade",
+      "description": "Reconduct the identified 69 kV lines between Fort Wainright and Carney within the Fairbanks-area improvements.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        69
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 36; section 3.4.3; child 3 and load-growth context",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=36"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.3; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Fort Wainright is preserved as printed in the source; no geocoding or place-name correction is applied."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Fort Wainright to Carney",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
       "id": "ak-aea-rstp:sec-3-4-4-item-1",
       "utilityId": "ak-aea-rstp",
       "sourceId": "sec-3-4-4-item-1",
@@ -419,6 +1492,174 @@
         "centerRole": "unknown",
         "locationAssumptions": []
       }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-5-item-1",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-5-item-1",
+      "sponsor": null,
+      "name": "Beluga–Point MacKenzie existing line upgrade",
+      "description": "Upgrade the existing Beluga–Point MacKenzie line if the specified future generation configuration requires it.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 37; section 3.4.5; child 1 and generation-scenario explanation",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=37"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.5; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "The child label prints 139 kV. No correction to 138 kV is inferred; nominal voltage remains unresolved.",
+        "Generation locations and types remain conditional; this is not a commitment to construct the associated power plants."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Beluga to Point MacKenzie substations",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-5-item-2",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-5-item-2",
+      "sponsor": null,
+      "name": "Susitna Valley plant transmission interconnection",
+      "description": "Provide new 230 kV transmission from a potential large synchronous plant west of Point MacKenzie toward Anchorage.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 37; section 3.4.5; child 2 and single-large-plant scenario paragraph",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=37"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.5; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Retained scope is the explicitly described new transmission lines, not the proposed generation plant. Need depends on the source single-large-synchronous-plant scenario."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "West of Point MacKenzie toward Anchorage",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "ak-aea-rstp:sec-3-4-5-item-3",
+      "utilityId": "ak-aea-rstp",
+      "sourceId": "sec-3-4-5-item-3",
+      "sponsor": null,
+      "name": "Lake Lorraine plant substation interconnection",
+      "description": "Provide a substation connection for a potential Lake Lorraine plant under the distributed-generation scenario.",
+      "status": "Low priority strategic improvement; construction maturity not stated",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed page 37; section 3.4.5; child 3 and distributed-synchronous-plants scenario paragraph",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=37"
+        }
+      ],
+      "notes": [
+        "Source priority: low; priority does not establish construction approval.",
+        "Parent source section: 3.4.5; this heading is not an additional project.",
+        "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.",
+        "Retained scope is the explicitly described transmission interconnection substation, not the proposed power plant. Voltage and owner remain unspecified."
+      ],
+      "inventory": {
+        "sourceKey": "ak-aea-rstp",
+        "editionId": "2026-02-26",
+        "editionLabel": "AEA 2050 Railbelt Strategic Transmission Plan — February 26, 2026",
+        "reportingGroupName": "AEA Railbelt strategic plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Lake Lorraine proposed plant area",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Strategic transmission improvement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
     }
   ],
   "sourceEditions": [
@@ -440,13 +1681,13 @@
       "sha256": "2503e90711cfc45603fc5871586d817ab2b754737397dfa87bc3dd76ff7d1d6d",
       "geographicScope": "Alaska Railbelt strategic transmission text inventory; not complete Alaska or national coverage.",
       "inventoryScope": "28 chapter-3 leaves: 25 transmission improvements, one mixed transmission/distribution context, two excluded standalone BESS entries. Twelve parent groups and repeated presentations are not additional records.",
-      "scope": "sample",
+      "scope": "full",
       "counts": {
         "sourceRows": 28,
-        "importedRecords": 6,
+        "importedRecords": 26,
         "excludedRows": 2,
         "failedRows": 0,
-        "pendingRows": 20,
+        "pendingRows": 0,
         "locatedRecords": 0
       },
       "exclusions": [
@@ -467,11 +1708,11 @@
     }
   ],
   "coverage": {
-    "processed": 6,
+    "processed": 26,
     "skipped": 2,
     "failed": 0,
     "notes": [
-      "20 accepted leaves remain pending in this source snapshot."
+      "0 accepted leaves remain pending in this source snapshot."
     ]
   }
 }

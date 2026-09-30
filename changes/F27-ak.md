@@ -1,6 +1,7 @@
-# F27-AK — Railbelt strategic inventory sample
+# F27-AK — Complete Railbelt strategic inventory
 
-- Produced six cited real records through a factual transcription table and deterministic standard-library normalizer. C3 source-locator identities, owner scope, unknowns, conditional alternatives and source conflicts remain explicit.
-- Sample reconciliation: 28 leaves = 6 imported + 2 standalone BESS exclusions + 20 pending; zero failed or located. Both official PDF hashes and all dispositions are in the ledger.
-- Payload: 18,116 compact UTF-8 bytes / 22,559 formatted UTF-8 bytes. Original PDFs remain ignored in the reusable UI worktree.
-- Generated source artifacts only; no worker validation, builds, images or visual checks. Stop for coordinator connection before transcribing the remaining 20 retained leaves.
+- PR80 connected the six-record sample before the remaining 20 transcriptions. The complete factual table and deterministic normalizer now produce all 26 accepted retained records: 25 transmission improvements and one mixed transmission/distribution context entry.
+- Full reconciliation: 28 leaves = 26 imported + 2 standalone BESS exclusions; zero pending, failed or located. Twelve parent groups are context only; both official PDF hashes and every disposition remain in the ledger.
+- Curated source-locator identities, source-scoped single owners, composite unknowns, A/B cost ambiguity, F alternatives, endpoint/voltage conflicts and conditional Fossil Creek scope remain explicit. Only CIPLink has a month-level scheduled completion; no coordinates or construction windows are inferred.
+- Payload: 63,119 compact UTF-8 bytes / 79,034 formatted UTF-8 bytes. Sample mode remains reproducible; original PDFs stay ignored in the reusable UI worktree.
+- Generated source artifacts only; no worker validation, builds, images or visual checks. Coordinator full-source integration and bounded milestone checks pending.

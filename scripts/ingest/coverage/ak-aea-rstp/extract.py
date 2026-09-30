@@ -83,7 +83,7 @@ def main():
         if row['excluded']:
             disposition, reason = 'excluded', row['exclusionReason']
         elif row['sourceId'] not in selected or row['facts'] is None:
-            disposition, reason = 'pending', 'Accepted retained leaf; awaiting full transcription after sample connection'
+            disposition, reason = 'pending', 'Accepted retained leaf outside this sample snapshot' if row['facts'] is not None else 'Accepted retained leaf; transcription pending'
         else:
             disposition, reason = 'imported', 'Accepted cited transmission improvement' if row['recordKind'] == 'transmission-project' else 'Mixed transmission/distribution context'
             projects.append(project(table, row))
