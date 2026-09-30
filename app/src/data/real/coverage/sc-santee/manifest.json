@@ -1,0 +1,48 @@
+{
+  "sourceKey": "sc-santee",
+  "editionId": "public-plans-snapshot-2026-09-30",
+  "label": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+  "reportingGroupId": "sc-santee",
+  "reportingGroupName": "Santee Cooper public transmission plans",
+  "publisher": "Santee Cooper / South Carolina Public Service Authority",
+  "processAuthority": "Santee Cooper public transmission planning; cited SCPSC certificate decisions",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "2025-irp-update.pdf",
+    "locator": "Appendix B, PDF pp.94–98 / printed pp.87–91; union with all 12 Power Line Projects index cards retrieved September 30, 2026",
+    "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf"
+  },
+  "sha256": "dc4f715aa51e4a201e36c06692728c8a845f0b417b1202e27d1d008e8e1a4774",
+  "geographicScope": "Santee Cooper South Carolina public transmission planning scope; per-record states are not inferred.",
+  "inventoryScope": "Complete union of 23 named 2025 IRP Appendix B headings and 12 public project-index cards: 24 retained observations, two concluded-work exclusions and nine supporting-page exclusions.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 35,
+    "importedRecords": 24,
+    "excludedRows": 11,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Explicit project-page notice says work concluded; actual completion date unknown.",
+      "count": 2
+    },
+    {
+      "reason": "Supporting page for an already enumerated IRP unit; no additional runtime record.",
+      "count": 9
+    }
+  ],
+  "limitations": [
+    "The union is a finite public subset, not a complete utility/statewide inventory or a count of unique engineering projects. Possible Seaboard–Indian Field / Indian Field–Varnville overlap is unresolved.",
+    "Composite snapshot observed September 30, 2026 has no single publication date. Downloaded IRP carries a November 21, 2025 filing stamp, distinct from the library's initial September 16 filing; webpages have no verified update date.",
+    "Active means listed project work, not construction. Three reported certificates support approved; Marion–Conway current lifecycle is unknown despite a historical April 2022 clearing statement. Elapsed forecasts do not prove approval, construction or completion.",
+    "IRP completion years retain year precision and unknown kind. Explicit website service targets retain supplied precision. Coarse seasons and construction-end months are distinct from energization and administrative closeout.",
+    "Bluffton retains an unknown primary date because IRP 2030 completion and an undated 2028 website service forecast conflict; county descriptions also differ.",
+    "All owners, locations, native geometry, construction windows, actual start days and row-update days remain unknown. The operator's network includes Authority-owned and Central-owned equipment.",
+    "Stable identities are source locators, not native engineering IDs. Named multi-circuit/station packages remain intact; regulatory docket/order references are aliases, not engineering identifiers.",
+    "All 17 public originals are checksum-pinned in the producer catalog and row ledger. Primary manifest hash identifies the IRP, not the composite files. Public accessibility is not a blanket redistribution license."
+  ]
+}

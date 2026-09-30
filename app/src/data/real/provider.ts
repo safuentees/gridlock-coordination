@@ -31,6 +31,8 @@ const sourceUrls = [
   new URL("./coverage/carolinas-tpc/dataset.json", import.meta.url),
   new URL("./coverage/sdge-tpr/dataset.json", import.meta.url),
   new URL("./coverage/ca-pge-tpr/dataset.json", import.meta.url),
+  new URL("./coverage/sc-santee/dataset.json", import.meta.url),
+  new URL("./coverage/fl-fpl/dataset.json", import.meta.url),
 ]
 
 export type SourceJsonReader = (url: URL) => Promise<unknown>

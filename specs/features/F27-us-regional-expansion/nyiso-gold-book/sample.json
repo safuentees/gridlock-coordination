@@ -1,0 +1,137 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "status": "blocked-public-input",
+  "sourceKeyCandidate": "nyiso-gold-book",
+  "sourceReview": {
+    "startedAt": "2026-09-30T11:53:07Z",
+    "endedAt": "2026-09-30T11:56:45Z",
+    "seconds": 218,
+    "method": "Ordinary public requests, official-source search and read-only PDF text/link extraction. No challenge-solving, restricted access, browser, images, geocoding or application checks."
+  },
+  "editionEvidence": {
+    "latestIdentifiedEditionYear": 2026,
+    "publicationMonthSupportedByPscCitation": "2026-04",
+    "exactPublicationDay": null,
+    "reportAsOfDate": null,
+    "contentsVerified": false,
+    "reportOriginalSha256": null,
+    "officialReportUrl": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+    "bareReportUrl": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf",
+    "fallbackReportUrl": "https://www.nyiso.com/documents/20142/2226333/2025-Gold-Book-Public.pdf/088438e1-02f1-5316-211b-dbca17c01b4b",
+    "latestMeaning": "The 2026 edition is corroborated by a NYISO-authored May29 presentation and a June12 PSC ruling. No later edition was found in the bounded search; the inaccessible Gold Book index cannot establish absence of later revisions."
+  },
+  "confirmedObservations": [
+    {
+      "fact": "NYISO identifies the 2026 Gold Book SectionVII as containing BPTF local transmission plans and firm non-BPTF local plans.",
+      "sourceFile": "2026-05-29_nyiso-cspp-update.pdf",
+      "locator": "PDF page 14 (printed slide 14); cover page 1",
+      "limit": "Confirms the section exists and a scope category; does not enumerate all table categories or rows."
+    },
+    {
+      "fact": "A PSC footnote cites the 2026 Load & Capacity Data Report as issued April2026 and links the public PDF.",
+      "sourceFile": "nypsc-26-E-0196-declaratory-ruling.pdf",
+      "locator": "PDF/printed page 12, footnote 15; cover page 1",
+      "limit": "Bibliographic evidence only; unrelated generation ownership/capacity in the ruling is outside this assignment."
+    }
+  ],
+  "preservedSupportingOriginals": [
+    {
+      "file": "2026-05-29_nyiso-cspp-update.pdf",
+      "url": "https://www.iso-ne.com/static-assets/documents/100035/2026-05-29_ipsac_a02.3_nyiso_updates_on_comprehensive_system_planning_process.pdf",
+      "locator": "PDF page 14 (printed slide 14); cover page 1",
+      "role": "NYISO-authored presentation hosted by ISO New England; confirms edition and exact report link, not the report itself",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 586567,
+      "sha256": "828013ca3341068481d783ce92cf265902a41c312add2f8894c94dda72b6b0d3",
+      "localPath": "inputs/originals/F27-nyiso-gold-book/2026-05-29_nyiso-cspp-update.pdf"
+    },
+    {
+      "file": "nypsc-26-E-0196-declaratory-ruling.pdf",
+      "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B30A9BC9E-0000-CC16-BB77-8FA1D20967F3%7D&DocTitle=Declaratory+Ruling+on+Transfer+Transaction",
+      "locator": "PDF/printed page 12, footnote 15; cover page 1",
+      "role": "New York PSC original ruling; bibliographic evidence for April 2026 publication only",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 98675,
+      "sha256": "7493bedff1a49cda758fe6d079ff76d7b3cf613d5fbb9a490e402c81e9e71c74",
+      "localPath": "inputs/originals/F27-nyiso-gold-book/nypsc-26-E-0196-declaratory-ruling.pdf"
+    }
+  ],
+  "accessAttempts": [
+    {
+      "requestedFile": "2026-Gold-Book-Public.pdf",
+      "file": "2026-Gold-Book-Public.pdf.response.html",
+      "url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf",
+      "finalUrl": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf",
+      "contentType": "text/html; charset=UTF-8",
+      "pdfSignature": false,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outcome": "no PDF acquired",
+      "hashMeaning": "Hash of returned empty response body, not of either Gold Book",
+      "webToolObservation": "JavaScript/robot-verification HTML instead of report content",
+      "localPath": "inputs/originals/F27-nyiso-gold-book/2026-Gold-Book-Public.pdf.response.html"
+    },
+    {
+      "requestedFile": "2025-Gold-Book-Public.pdf",
+      "file": "2025-Gold-Book-Public.pdf.response.html",
+      "url": "https://www.nyiso.com/documents/20142/2226333/2025-Gold-Book-Public.pdf/088438e1-02f1-5316-211b-dbca17c01b4b",
+      "finalUrl": "https://www.nyiso.com/documents/20142/2226333/2025-Gold-Book-Public.pdf/088438e1-02f1-5316-211b-dbca17c01b4b",
+      "contentType": "text/html; charset=UTF-8",
+      "pdfSignature": false,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outcome": "no PDF acquired",
+      "hashMeaning": "Hash of returned empty response body, not of either Gold Book",
+      "webToolObservation": "JavaScript/robot-verification HTML instead of report content",
+      "localPath": "inputs/originals/F27-nyiso-gold-book/2025-Gold-Book-Public.pdf.response.html"
+    },
+    {
+      "file": "2026-Gold-Book-Public-linked.response.html",
+      "url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+      "finalUrl": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+      "contentType": "text/html; charset=UTF-8",
+      "pdfSignature": false,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outcome": "no PDF acquired",
+      "hashMeaning": "Hash of returned empty response body, not of either Gold Book",
+      "webToolObservation": "JavaScript/robot-verification HTML instead of report content",
+      "localPath": "inputs/originals/F27-nyiso-gold-book/2026-Gold-Book-Public-linked.response.html"
+    }
+  ],
+  "enumeration": {
+    "declaredSource": "2026 Gold Book SectionVII / proposed transmission facilities, subject to acquiring all pages and notes",
+    "sourceRows": null,
+    "retainedRows": null,
+    "excludedRows": null,
+    "pendingRows": null,
+    "identityUnits": null,
+    "ledger": [],
+    "unknownCountsMeaning": "Unread report counts are unknown, not zero. No row-level enumeration or retention proposal is asserted."
+  },
+  "diagnostics": [],
+  "diagnosticsStatus": "No six-record sample can be responsibly supplied without the SectionVII rows and footnotes. This fulfills only the precise missing-input outcome of the qualification task.",
+  "unresolvedMapping": {
+    "identity": "Need complete queue/reference/component columns and page/table locators. Do not deduplicate repeated queue IDs or cross-source names.",
+    "owner": "Need exact owner-column headers, abbreviations and ownership footnotes. Composite listed entities cannot become a single inferred owner.",
+    "lifecycle": "Need current firm/non-firm and recently in-service/removed categories and definitions. Planning inclusion is not actual construction.",
+    "dates": "Need report as-of and proposed-season/year notes. No exact day or construction interval may be inferred.",
+    "voltageAndRatings": "Need operating/design kV definitions and separate MW/MVA/thermal-rating units. No unit substitution.",
+    "recordKind": "Need row scope to distinguish physical transmission, ancillary/planning context and retirements.",
+    "locations": "No native geometry inspected. Endpoint names/maps do not supply coordinates, point role, CRS or accuracy.",
+    "newScopeBeyondNationalGrid": "Intended target includes other owners/merchant/downstate/LongIsland scopes, but no 2026 incremental record count or identity overlap can be established yet."
+  },
+  "missingPublicInput": {
+    "required": "An ordinarily accessible complete official2026 Gold Book public PDF, or a complete public SectionVII extract including cover/edition/as-of, all proposed-facility pages, headings, owner definitions and all table notes.",
+    "alternative": "The complete cited2025 public edition may be qualified as an explicitly historical fallback if it becomes accessible; do not label it latest now that2026 is corroborated.",
+    "notSufficient": [
+      "Search snippets or selected project rows",
+      "A load forecast update",
+      "Older 2022/2024 proposed-transmission tables",
+      "FERC715/private/CEII network models",
+      "A bot-challenge page or empty response hash"
+    ]
+  },
+  "acceptanceProposal": "Record the acquisition gap and leave the source unaccepted for production. Resume bounded qualification only when complete ordinary public source content is available. No producer/shared/runtime/schema changes are proposed."
+}

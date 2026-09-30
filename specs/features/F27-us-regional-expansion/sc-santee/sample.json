@@ -1,0 +1,1149 @@
+{
+  "qualificationOnly": true,
+  "sourceKey": "sc-santee",
+  "proposedEditionId": "public-plans-snapshot-2026-09-30",
+  "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+  "publisher": "Santee Cooper / South Carolina Public Service Authority",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "editionMeaning": "Composite public-source snapshot; IRP hosted at2025 update link has November 21, 2025 SCPSC filing stamp. IRP library describes original September 16 filing. Webpages lack verified publication/status dates.",
+  "sourcePass": {
+    "startUtc": "2026-09-30T11:49:47Z",
+    "endUtc": "2026-09-30T11:55:00Z",
+    "minutes": 5.2,
+    "ceilingMinutes": 15
+  },
+  "scope": {
+    "irpHeadings": 23,
+    "irpActive": 17,
+    "irpPlanned": 6,
+    "webIndexCards": 12,
+    "sourceObservations": 35,
+    "proposedRetained": 24,
+    "explicitlyConcludedExclusions": 2,
+    "supportingPageExclusions": 9,
+    "transmissionRecords": 24,
+    "locatedRecords": 0,
+    "proposedLifecycleCounts": {
+      "planned": 20,
+      "approved": 3,
+      "under-construction": 1
+    },
+    "countMeaning": "35 raw source observations reconcile to 24 runtime source observations and 11 exclusions. Nine linked pages enrich existing IRP units; two IRP units have explicit concluded-work notices. Unresolved Seaboard/Indian Field/Varnville overlap means24 is not a count of unique engineering projects."
+  },
+  "artifacts": [
+    {
+      "file": "johns-island.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/johns-island/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/johns-island.html",
+      "bytes": 45014,
+      "sha256": "be16c8fbc9ae68590e7cc11f0610a35cc695e3197be34493f99191657c693107"
+    },
+    {
+      "file": "marion-conway.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/marion-conway/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/marion-conway.html",
+      "bytes": 51211,
+      "sha256": "3131bf8432e883039436c60a522494e8d47dd70737807a5cb8f76e33ff57f38f"
+    },
+    {
+      "file": "conway-perry-road.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/conway-perry-road/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/conway-perry-road.html",
+      "bytes": 43473,
+      "sha256": "6e0e9395579931b4e9797cd0959e33efd7668f2c405d2b643ae72c5882cfd2a4"
+    },
+    {
+      "file": "marion-red-bluff.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/marion-red-bluff/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/marion-red-bluff.html",
+      "bytes": 56214,
+      "sha256": "0e5fe14caea9a76c03a6688f7a38fe4d06be4e22f069c15cfc3cec1aaf111546"
+    },
+    {
+      "file": "hemingway-kingstree-2.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/hemingway-kingstree-2/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/hemingway-kingstree-2.html",
+      "bytes": 46099,
+      "sha256": "1658d6288eefa5bd09c64c071130937df1af8e6d87a7bfd172c0e783bce9b895"
+    },
+    {
+      "file": "indian-field-sugar-hill.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-sugar-hill/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/indian-field-sugar-hill.html",
+      "bytes": 47790,
+      "sha256": "ca207f627e3797b88ff0d11a9512e9f1374ac90f737b2bb10629ad86645ef74c"
+    },
+    {
+      "file": "bennettsville-latta.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/bennettsville-latta/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/bennettsville-latta.html",
+      "bytes": 46050,
+      "sha256": "89b610cc87df38e1156e9fa1e59c146bdf0327ecfcb1e13270873cff92698ad8"
+    },
+    {
+      "file": "varnville-robertville.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/varnville-robertville.html",
+      "bytes": 45456,
+      "sha256": "de0779a1666087bd8d64447df560a999f3ec7d5ba7548068300f836fbf5ba0a4"
+    },
+    {
+      "file": "bluffton-market-place.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/bluffton-market-place/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/bluffton-market-place.html",
+      "bytes": 46168,
+      "sha256": "ae5dbeb75667d6d01d5a40c30bacb4624d7ec8c702db28666a94322ffc494c45"
+    },
+    {
+      "file": "yemassee-varnville-area-230kv-project.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/yemassee-varnville-area-230kv-project/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/yemassee-varnville-area-230kv-project.html",
+      "bytes": 46213,
+      "sha256": "9c5769ddae573ebbdb328edb4cf2af4b80a76073044046ff6acacedcc087cfc7"
+    },
+    {
+      "file": "cross-wassamassaw-2-230kv-line.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/cross-wassamassaw-2-230kv-line/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/cross-wassamassaw-2-230kv-line.html",
+      "bytes": 46466,
+      "sha256": "56c76a0886985f2f6af3016dc74d5dcfabab03e22028272ae2b818f557f6be73"
+    },
+    {
+      "file": "indian-field-varnville.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-varnville/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/indian-field-varnville.html",
+      "bytes": 45723,
+      "sha256": "d9096eb787cad0ee6721082e4176f3ea3f2ae5ec2dd88637055589741987bacf"
+    },
+    {
+      "file": "2025-irp-update.pdf",
+      "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/2025-irp-update.pdf",
+      "bytes": 7568271,
+      "sha256": "dc4f715aa51e4a201e36c06692728c8a845f0b417b1202e27d1d008e8e1a4774"
+    },
+    {
+      "file": "2026-generation-transmission-distribution.pdf",
+      "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/2026-generation-transmission-distribution.pdf",
+      "bytes": 490548,
+      "sha256": "0394d5a775c172cbbb18c7963a8109365aec5453e44e5cc1d81c1349240ffb19"
+    },
+    {
+      "file": "power-line-projects.html",
+      "url": "https://www.santeecooper.com/community/power-line-projects/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/power-line-projects.html",
+      "bytes": 48931,
+      "sha256": "39373bb945294206ef4eeb5f2c84494c56ad817d316cd332899a1a49caed42f2"
+    },
+    {
+      "file": "irp-library.html",
+      "url": "https://www.santeecooper.com/about/integrated-resource-plan/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/irp-library.html",
+      "bytes": 51838,
+      "sha256": "544b6be1b6600041ac7a9096a96af806bbf3bfec176963116c0ec85d46b0545b"
+    },
+    {
+      "file": "rate-study.html",
+      "url": "https://www.santeecooper.com/rates/rate-study/",
+      "localPath": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-sc-santee/rate-study.html",
+      "bytes": 70977,
+      "sha256": "e7be8c39117515a32ac6cecc5a5f8ae08871dc9ed3f65f211a8053798d41c19e"
+    }
+  ],
+  "enumeration": [
+    {
+      "sourceRow": 1,
+      "sourceId": "irp-appendix-b:johns-island-queensboro",
+      "identityBasis": "source-locator",
+      "title": "Johns Island – Queensboro (DESC) 115  kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2025",
+      "scopeVoltageKv": [
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.94 / printed p.87, ACTIVE PROJECTS, named heading Johns Island – Queensboro (DESC) 115  kV Line"
+      },
+      "proposedDisposition": "exclude-explicitly-concluded",
+      "proposedLifecycle": "planned",
+      "completionEvidence": {
+        "file": "johns-island.html",
+        "locator": "Overview: work on the project has concluded; actual completion day not stated",
+        "url": "https://www.santeecooper.com/community/power-line-projects/johns-island/"
+      }
+    },
+    {
+      "sourceRow": 2,
+      "sourceId": "irp-appendix-b:conway-switching-station",
+      "identityBasis": "source-locator",
+      "title": "Conway 230  kV Switching Station",
+      "rawSection": "Active",
+      "rawCompletionYear": "2025",
+      "scopeVoltageKv": [
+        230
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.94 / printed p.87, ACTIVE PROJECTS, named heading Conway 230  kV Switching Station"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 3,
+      "sourceId": "irp-appendix-b:marion-conway",
+      "identityBasis": "source-locator",
+      "title": "Marion – Conway 230  kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2025",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.94 / printed p.87, ACTIVE PROJECTS, named heading Marion – Conway 230  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "under-construction",
+      "statusCaveat": "Web FAQ says clearing began April 2022 and overview says constructing. This supports only a historical construction claim as snapshot-observed; the page has conflicting elapsed forecast timelines and does not verify current 2026 construction or completion."
+    },
+    {
+      "sourceRow": 4,
+      "sourceId": "irp-appendix-b:carolina-forest-transformer-1",
+      "identityBasis": "source-locator",
+      "title": "Carolina Forest 230-115  kV Transformer #1 Addition",
+      "rawSection": "Active",
+      "rawCompletionYear": "2025",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.94 / printed p.87, ACTIVE PROJECTS, named heading Carolina Forest 230-115  kV Transformer #1 Addition"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 5,
+      "sourceId": "irp-appendix-b:conway-perry-road",
+      "identityBasis": "source-locator",
+      "title": "Conway – Perry Road 230  kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2025",
+      "scopeVoltageKv": [
+        230
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Conway – Perry Road 230  kV Line"
+      },
+      "proposedDisposition": "exclude-explicitly-concluded",
+      "proposedLifecycle": "planned",
+      "completionEvidence": {
+        "file": "conway-perry-road.html",
+        "locator": "Opening project notice: work has concluded; actual completion day not stated",
+        "url": "https://www.santeecooper.com/community/power-line-projects/conway-perry-road/"
+      }
+    },
+    {
+      "sourceRow": 6,
+      "sourceId": "irp-appendix-b:wassamassaw-pringletown",
+      "identityBasis": "source-locator",
+      "title": "Wassamassaw – Pringletown #1 & #2 115  kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2025",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Wassamassaw – Pringletown #1 & #2 115  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": "irp-appendix-b:purrysburg-mcintosh",
+      "identityBasis": "source-locator",
+      "title": "Reconductor Purrysburg – McIntosh 230 kV Tie Lines",
+      "rawSection": "Active",
+      "rawCompletionYear": "2026",
+      "scopeVoltageKv": [
+        230
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Reconductor Purrysburg – McIntosh 230 kV Tie Lines"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 8,
+      "sourceId": "irp-appendix-b:indian-field-substation",
+      "identityBasis": "source-locator",
+      "title": "Indian Field 230-115 kV Substation",
+      "rawSection": "Active",
+      "rawCompletionYear": "2026",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Indian Field 230-115 kV Substation"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 9,
+      "sourceId": "irp-appendix-b:indian-field-wassamassaw",
+      "identityBasis": "source-locator",
+      "title": "Indian Field – Wassamassaw 230 kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2026",
+      "scopeVoltageKv": [
+        230
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Indian Field – Wassamassaw 230 kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "approved"
+    },
+    {
+      "sourceRow": 10,
+      "sourceId": "irp-appendix-b:cross-wassamassaw-2",
+      "identityBasis": "source-locator",
+      "title": "Cross – Wassamassaw 230  kV Line #2",
+      "rawSection": "Active",
+      "rawCompletionYear": "2027",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Cross – Wassamassaw 230  kV Line #2; continues PDF p.96 / printed p.89"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 11,
+      "sourceId": "irp-appendix-b:bennettsville-latta",
+      "identityBasis": "source-locator",
+      "title": "Bennettsville – Latta 69  kV Rebuild as Double Circuit",
+      "rawSection": "Active",
+      "rawCompletionYear": "2027",
+      "scopeVoltageKv": [
+        69
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.96 / printed p.89, ACTIVE PROJECTS, named heading Bennettsville – Latta 69  kV Rebuild as Double Circuit"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 12,
+      "sourceId": "irp-appendix-b:seaboard-substation",
+      "identityBasis": "source-locator",
+      "title": "Seaboard 230-115  kV Substation",
+      "rawSection": "Active",
+      "rawCompletionYear": "2027",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.96 / printed p.89, ACTIVE PROJECTS, named heading Seaboard 230-115  kV Substation"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 13,
+      "sourceId": "irp-appendix-b:seaboard-indian-field",
+      "identityBasis": "source-locator",
+      "title": "Seaboard – Indian Field 230  kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2028",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.96 / printed p.89, ACTIVE PROJECTS, named heading Seaboard – Indian Field 230  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 14,
+      "sourceId": "irp-appendix-b:marion-red-bluff",
+      "identityBasis": "source-locator",
+      "title": "Marion– Red Bluff 230  kV Line",
+      "rawSection": "Active",
+      "rawCompletionYear": "2028",
+      "scopeVoltageKv": [
+        230,
+        115,
+        69
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.96 / printed p.89, ACTIVE PROJECTS, named heading Marion– Red Bluff 230  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 15,
+      "sourceId": "irp-appendix-b:kingstree-hemingway-2",
+      "identityBasis": "source-locator",
+      "title": "Kingstree – Hemingway 230  kV Line #2",
+      "rawSection": "Active",
+      "rawCompletionYear": "2029",
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Kingstree – Hemingway 230  kV Line #2"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "approved"
+    },
+    {
+      "sourceRow": 16,
+      "sourceId": "irp-appendix-b:bluffton-market-place-2-phase-2",
+      "identityBasis": "source-locator",
+      "title": "Bluffton – Market Place #2 115  kV Line Phase 2",
+      "rawSection": "Active",
+      "rawCompletionYear": "2030",
+      "scopeVoltageKv": [
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Bluffton – Market Place #2 115  kV Line Phase 2"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": "irp-appendix-b:yemassee-varnville",
+      "identityBasis": "source-locator",
+      "title": "Yemassee – Varnville 230  kV Line Rebuild",
+      "rawSection": "Active",
+      "rawCompletionYear": "2030",
+      "scopeVoltageKv": [
+        230
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Yemassee – Varnville 230  kV Line Rebuild"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 18,
+      "sourceId": "irp-appendix-b:nixons-crossroads-red-bluff-1",
+      "identityBasis": "source-locator",
+      "title": "Nixons Crossroads – Red Bluff #1 115  kV Line",
+      "rawSection": "Planned",
+      "rawCompletionYear": null,
+      "scopeVoltageKv": [
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, PLANNED PROJECTS, named heading Nixons Crossroads – Red Bluff #1 115  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 19,
+      "sourceId": "irp-appendix-b:cross-jefferies-2",
+      "identityBasis": "source-locator",
+      "title": "Cross – Jefferies 230  kV #2 Line",
+      "rawSection": "Planned",
+      "rawCompletionYear": null,
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, PLANNED PROJECTS, named heading Cross – Jefferies 230  kV #2 Line; continues PDF p.98 / printed p.91"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 20,
+      "sourceId": "irp-appendix-b:bucksville-conway",
+      "identityBasis": "source-locator",
+      "title": "Bucksville – Conway 230  kV Line",
+      "rawSection": "Planned",
+      "rawCompletionYear": null,
+      "scopeVoltageKv": [
+        230
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.98 / printed p.91, PLANNED PROJECTS, named heading Bucksville – Conway 230  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 21,
+      "sourceId": "irp-appendix-b:orangeburg-indian-field",
+      "identityBasis": "source-locator",
+      "title": "Orangeburg – Indian Field 230  kV Line",
+      "rawSection": "Planned",
+      "rawCompletionYear": null,
+      "scopeVoltageKv": [
+        230,
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.98 / printed p.91, PLANNED PROJECTS, named heading Orangeburg – Indian Field 230  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 22,
+      "sourceId": "irp-appendix-b:perry-road-myrtle-beach-2",
+      "identityBasis": "source-locator",
+      "title": "Rebuild Perry Rd – Myrtle Beach #2 115  kV Line",
+      "rawSection": "Planned",
+      "rawCompletionYear": null,
+      "scopeVoltageKv": [
+        115
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.98 / printed p.91, PLANNED PROJECTS, named heading Rebuild Perry Rd – Myrtle Beach #2 115  kV Line"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 23,
+      "sourceId": "irp-appendix-b:cedar-knoll-substation",
+      "identityBasis": "source-locator",
+      "title": "Cedar Knoll 230-69 kV Substation",
+      "rawSection": "Planned",
+      "rawCompletionYear": null,
+      "scopeVoltageKv": [
+        230,
+        69
+      ],
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.98 / printed p.91, PLANNED PROJECTS, named heading Cedar Knoll 230-69 kV Substation"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "proposedLifecycle": "planned"
+    },
+    {
+      "sourceRow": 24,
+      "sourceId": "power-line-projects:johns-island",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "johns-island.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/johns-island/",
+        "locator": "Power Line Projects index card 1; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:johns-island-queensboro",
+      "title": "Johns Island – Queensboro (DESC) 115  kV Line"
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": "power-line-projects:marion-conway",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "marion-conway.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/marion-conway/",
+        "locator": "Power Line Projects index card 2; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:marion-conway",
+      "title": "Marion – Conway 230  kV Line"
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "power-line-projects:conway-perry-road",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "conway-perry-road.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/conway-perry-road/",
+        "locator": "Power Line Projects index card 3; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:conway-perry-road",
+      "title": "Conway – Perry Road 230  kV Line"
+    },
+    {
+      "sourceRow": 27,
+      "sourceId": "power-line-projects:marion-red-bluff",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "marion-red-bluff.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/marion-red-bluff/",
+        "locator": "Power Line Projects index card 4; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:marion-red-bluff",
+      "title": "Marion– Red Bluff 230  kV Line"
+    },
+    {
+      "sourceRow": 28,
+      "sourceId": "power-line-projects:hemingway-kingstree-2",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "hemingway-kingstree-2.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/hemingway-kingstree-2/",
+        "locator": "Power Line Projects index card 5; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:kingstree-hemingway-2",
+      "title": "Kingstree – Hemingway 230  kV Line #2"
+    },
+    {
+      "sourceRow": 29,
+      "sourceId": "power-line-projects:indian-field-sugar-hill",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "indian-field-sugar-hill.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-sugar-hill/",
+        "locator": "Power Line Projects index card 6; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "title": "Indian Field–Sugar Hill #1 and #2 230  kV Lines",
+      "proposedLifecycle": "approved",
+      "scopeVoltageKv": [
+        230
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "sourceId": "power-line-projects:bennettsville-latta",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "bennettsville-latta.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/bennettsville-latta/",
+        "locator": "Power Line Projects index card 7; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:bennettsville-latta",
+      "title": "Bennettsville – Latta 69  kV Rebuild as Double Circuit"
+    },
+    {
+      "sourceRow": 31,
+      "sourceId": "power-line-projects:varnville-robertville",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "varnville-robertville.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/",
+        "locator": "Power Line Projects index card 8; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "title": "Varnville–Robertville 69  kV Rebuild / new 115  kV line",
+      "proposedLifecycle": "planned",
+      "scopeVoltageKv": [
+        69,
+        115
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "sourceId": "power-line-projects:bluffton-market-place",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "bluffton-market-place.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/bluffton-market-place/",
+        "locator": "Power Line Projects index card 9; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:bluffton-market-place-2-phase-2",
+      "title": "Bluffton – Market Place #2 115  kV Line Phase 2"
+    },
+    {
+      "sourceRow": 33,
+      "sourceId": "power-line-projects:yemassee-varnville-area-230kv-project",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "yemassee-varnville-area-230kv-project.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/yemassee-varnville-area-230kv-project/",
+        "locator": "Power Line Projects index card 10; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:yemassee-varnville",
+      "title": "Yemassee – Varnville 230  kV Line Rebuild"
+    },
+    {
+      "sourceRow": 34,
+      "sourceId": "power-line-projects:cross-wassamassaw-2-230kv-line",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "cross-wassamassaw-2-230kv-line.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/cross-wassamassaw-2-230kv-line/",
+        "locator": "Power Line Projects index card 11; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "supporting-page-no-extra-runtime-record",
+      "linkedSourceId": "irp-appendix-b:cross-wassamassaw-2",
+      "title": "Cross – Wassamassaw 230  kV Line #2"
+    },
+    {
+      "sourceRow": 35,
+      "sourceId": "power-line-projects:indian-field-varnville",
+      "identityBasis": "source-locator",
+      "source": {
+        "file": "indian-field-varnville.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-varnville/",
+        "locator": "Power Line Projects index card 12; project page title, Overview/Project Description and Timeline"
+      },
+      "proposedDisposition": "retain-transmission-project",
+      "title": "Indian Field–Varnville 230  kV Line",
+      "proposedLifecycle": "planned",
+      "scopeVoltageKv": [
+        230,
+        115
+      ]
+    }
+  ],
+  "representativeRecords": [
+    {
+      "sourceRow": 6,
+      "rawFacts": {
+        "section": "ACTIVE PROJECTS",
+        "completionYear": "2025",
+        "designedCircuitKv": "230/115",
+        "initialOperatingKv": "115",
+        "nativeProjectId": null
+      },
+      "scopeSummary": "Double-circuit line from Pringletown switching station to Wassamassaw substation, initially operated at 115  kV.",
+      "date": {
+        "value": "2025",
+        "precision": "year",
+        "kind": "unknown",
+        "label": "IRP scheduled completion year; not confirmation of service"
+      },
+      "lifecycle": "planned",
+      "notes": [
+        "An elapsed2025 completion forecast does not establish completion; Active is not proof of construction.",
+        "Keep both circuits within one named package, with design voltage distinct from initial operation."
+      ],
+      "sourceId": "irp-appendix-b:wassamassaw-pringletown",
+      "proposedId": "sc-santee:irp-appendix-b:wassamassaw-pringletown",
+      "name": "Wassamassaw – Pringletown #1 & #2 115  kV Line",
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Wassamassaw – Pringletown #1 & #2 115  kV Line"
+      },
+      "voltageKv": [
+        230,
+        115
+      ],
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "identityBasis": "source-locator",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "sourceUpdatedOn": null,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed"
+    },
+    {
+      "sourceRow": 15,
+      "rawFacts": {
+        "irpCompletionYear": "2029",
+        "webInServiceTarget": "June 1, 2029",
+        "webConstructionForecast": "2026–2029; staged work from mid 2026",
+        "approvalDate": "April 10, 2026",
+        "docket": "2025-300-E",
+        "order": "2026-206",
+        "nativeProjectId": null
+      },
+      "scopeSummary": "Rebuild the existing Kingstree–Hemingway 115  kV line as a double-circuit230/115  kV package, with associated station work.",
+      "date": {
+        "value": "2029-06-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Website target by June 1, 2029; forecast only"
+      },
+      "lifecycle": "approved",
+      "notes": [
+        "2026 report pp.10–11 explicitly records approval; this is not evidence construction began.",
+        "Santee pages give a day-level target. No supplied Santee rule establishes that June 1 is a seasonal placeholder; do not import CTPC normalization.",
+        "Administrative closeout at year-end differs from service target."
+      ],
+      "sourceId": "irp-appendix-b:kingstree-hemingway-2",
+      "proposedId": "sc-santee:irp-appendix-b:kingstree-hemingway-2",
+      "name": "Kingstree – Hemingway 230  kV Line #2",
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Kingstree – Hemingway 230  kV Line #2"
+      },
+      "voltageKv": [
+        230,
+        115
+      ],
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "identityBasis": "source-locator",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "sourceUpdatedOn": null,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "supplementarySources": [
+        {
+          "file": "hemingway-kingstree-2.html",
+          "locator": "Project Description and Timeline",
+          "url": "https://www.santeecooper.com/community/power-line-projects/hemingway-kingstree-2/"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "PDF/printed pp.10–11, Kingstree–Hemingway approval bullet",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "rawFacts": {
+        "irpCompletionYear": "2030",
+        "irpCountyText": "Jasper County",
+        "webInServiceTarget": "June 1, 2028",
+        "webCountyText": "Beaufort County",
+        "webConstructionForecast": "late April 2027 to late 2027",
+        "nativeProjectId": null
+      },
+      "scopeSummary": "Phase2 extends the 115  kV line from Buckingham/Bluffton toward Hilton Head.",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Conflicting IRP 2030 completion and undated website 2028 service forecasts"
+      },
+      "lifecycle": "planned",
+      "notes": [
+        "Retain both labeled forecasts as supplementary milestones; no authoritative revision sequence was established.",
+        "Generic overview says constructing, but the specific description places construction in 2027. Treat it as planned.",
+        "County descriptions conflict; do not infer geometry or resolve the discrepancy by name."
+      ],
+      "sourceId": "irp-appendix-b:bluffton-market-place-2-phase-2",
+      "proposedId": "sc-santee:irp-appendix-b:bluffton-market-place-2-phase-2",
+      "name": "Bluffton – Market Place #2 115  kV Line Phase 2",
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Bluffton – Market Place #2 115  kV Line Phase 2"
+      },
+      "voltageKv": [
+        115
+      ],
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "identityBasis": "source-locator",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "sourceUpdatedOn": null,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "supplementarySources": [
+        {
+          "file": "bluffton-market-place.html",
+          "locator": "Project Description and Timeline",
+          "url": "https://www.santeecooper.com/community/power-line-projects/bluffton-market-place/"
+        }
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "rawFacts": {
+        "webCompletionTarget": "Winter 2026",
+        "webConstructionStartForecast": "Spring 2026",
+        "approvalDate": "February 13, 2026",
+        "docket": "2025-274-E",
+        "order": "2026-83",
+        "nativeProjectId": null
+      },
+      "scopeSummary": "Two 230  kV lines and the associated new Sugar Hill substation form one approved package serving a data-center load.",
+      "date": {
+        "value": "2026",
+        "precision": "year",
+        "kind": "unknown",
+        "label": "Approximate completion target Winter 2026; season preserved"
+      },
+      "lifecycle": "approved",
+      "notes": [
+        "Winter is not an exact month/day or construction interval. Proposed schedule explicitly may change.",
+        "The certificate is an approval, not physical progress; customer/cooperative participation does not establish asset ownership."
+      ],
+      "sourceId": "power-line-projects:indian-field-sugar-hill",
+      "proposedId": "sc-santee:power-line-projects:indian-field-sugar-hill",
+      "name": "Indian Field–Sugar Hill #1 and #2 230  kV Lines",
+      "source": {
+        "file": "indian-field-sugar-hill.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-sugar-hill/",
+        "locator": "Power Line Projects index card 6; project page title, Overview/Project Description and Timeline"
+      },
+      "voltageKv": [
+        230
+      ],
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "identityBasis": "source-locator",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "sourceUpdatedOn": null,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "supplementarySources": [
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "PDF/printed p.11, Indian Field–Sugar Hill approval bullet",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "rawFacts": {
+        "existingLineKv": "69",
+        "newLineKv": "115",
+        "constructionStartForecast": "around March 2026",
+        "constructionEndForecast": "July 2026",
+        "administrativeWrapUp": "December 23, 2026",
+        "nativeProjectId": null
+      },
+      "scopeSummary": "Rebuild approximately 6 miles from Varnville station to the Nixville tap with a new 115  kV line in existing right of way.",
+      "date": {
+        "value": "2026-07",
+        "precision": "month",
+        "kind": "unknown",
+        "label": "Projected construction end in July 2026; service date unknown"
+      },
+      "lifecycle": "planned",
+      "notes": [
+        "Do not infer completion from the past July forecast.",
+        "December 23 is administrative wrap-up after accounting/engineering, not energization or construction finish.",
+        "Keep the69  kV title/existing role distinct from the new 115  kV scope."
+      ],
+      "sourceId": "power-line-projects:varnville-robertville",
+      "proposedId": "sc-santee:power-line-projects:varnville-robertville",
+      "name": "Varnville–Robertville 69  kV Rebuild / new 115  kV line",
+      "source": {
+        "file": "varnville-robertville.html",
+        "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/",
+        "locator": "Power Line Projects index card 8; project page title, Overview/Project Description and Timeline"
+      },
+      "voltageKv": [
+        69,
+        115
+      ],
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "identityBasis": "source-locator",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "sourceUpdatedOn": null,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed"
+    },
+    {
+      "sourceRow": 18,
+      "rawFacts": {
+        "section": "PLANNED PROJECTS",
+        "completionTarget": null,
+        "nativeProjectId": null
+      },
+      "scopeSummary": "New 115  kV line from Nixons Crossroads substation to Brooksville delivery point; the heading remains Nixons Crossroads–Red Bluff#1.",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No project completion or service target supplied"
+      },
+      "lifecycle": "planned",
+      "notes": [
+        "No date, schedule or project-owner inference from the heading or served delivery point.",
+        "Named project and endpoint roles remain source facts; no center or route derived."
+      ],
+      "sourceId": "irp-appendix-b:nixons-crossroads-red-bluff-1",
+      "proposedId": "sc-santee:irp-appendix-b:nixons-crossroads-red-bluff-1",
+      "name": "Nixons Crossroads – Red Bluff #1 115  kV Line",
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+        "locator": "Appendix B, PDF p.97 / printed p.90, PLANNED PROJECTS, named heading Nixons Crossroads – Red Bluff #1 115  kV Line"
+      },
+      "voltageKv": [
+        115
+      ],
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "identityBasis": "source-locator",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "sourceUpdatedOn": null,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed"
+    }
+  ],
+  "regulatoryEvidence": [
+    {
+      "relatedSourceId": "irp-appendix-b:indian-field-wassamassaw",
+      "docket": "2025-177-E",
+      "order": "2025-692",
+      "approvalDate": "2025-11-07",
+      "source": {
+        "file": "2026-generation-transmission-distribution.pdf",
+        "locator": "p.10, Wassamassaw–Indian Field bullet",
+        "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+      }
+    },
+    {
+      "relatedSourceId": "irp-appendix-b:kingstree-hemingway-2",
+      "docket": "2025-300-E",
+      "order": "2026-206",
+      "approvalDate": "2026-04-10",
+      "source": {
+        "file": "2026-generation-transmission-distribution.pdf",
+        "locator": "pp.10–11, Kingstree–Hemingway bullet",
+        "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+      }
+    },
+    {
+      "relatedSourceId": "power-line-projects:indian-field-sugar-hill",
+      "docket": "2025-274-E",
+      "order": "2026-83",
+      "approvalDate": "2026-02-13",
+      "source": {
+        "file": "2026-generation-transmission-distribution.pdf",
+        "locator": "p.11, Indian Field–Sugar Hill bullet",
+        "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+      }
+    },
+    {
+      "relatedSourceId": "irp-appendix-b:cross-wassamassaw-2",
+      "docket": "2025-334-E",
+      "approvalDate": null,
+      "hearingForecast": "2026-05-05",
+      "source": {
+        "file": "2026-generation-transmission-distribution.pdf",
+        "locator": "p.11, pending Cross–Wassamassaw bullet",
+        "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+      }
+    }
+  ],
+  "ownershipEvidence": {
+    "owner": null,
+    "source": {
+      "file": "2026-generation-transmission-distribution.pdf",
+      "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+      "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+    },
+    "meaning": "Publisher, operating system, certificate applicant and served cooperative are not enough to identify each package owner."
+  },
+  "unresolvedRelations": [
+    {
+      "sourceIds": [
+        "irp-appendix-b:seaboard-indian-field",
+        "power-line-projects:indian-field-varnville"
+      ],
+      "meaning": "Likely related corridor, but different terminal naming and no keyed engineering crosswalk. Retain as separate source observations, explicitly possible overlap; do not infer duplicate or parent/child identity."
+    }
+  ],
+  "materialLimits": [
+    "No native engineering IDs; labels are source references, regulatory docket/order IDs are aliases/context only.",
+    "No numerical native project coordinates/CRS/accuracy acquired; images and interactive maps were not read.",
+    "All day-bounded construction windows remain unknown despite coarse published construction forecasts.",
+    "Two completed cases are based on explicit work-concluded notices, not elapsed dates; actual completion dates remain unknown.",
+    "Generic constructing copy on future-design pages is not current progress evidence. Marion–Conway historical clearing claim may be stale; actual current status needs confirmation.",
+    "Bluffton has unresolved 2030 versus 2028 forecasts and differing county text; leave primary comparison date unknown pending a dated revision.",
+    "Public-source union is not a full utility or South Carolina inventory. A current public engineering register with IDs/owners/status dates and a corridor crosswalk remains missing.",
+    "No SERTP source opened, private information used, or source instructions followed. Originals and contact/person fields remain outside Git/runtime."
+  ]
+}

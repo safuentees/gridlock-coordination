@@ -32,6 +32,7 @@ function inventoryText(project: Project): string[] {
   const inventory = project.inventory
   if (!inventory) return []
   const geometry = inventory.nativeGeometry
+  const ownershipStatement = inventory.owner?.ownershipStatement
   return [
     `Source inventory: ${inventory.sourceKey}; edition ${inventory.editionId} (${inventory.editionLabel})`,
     `Record kind: ${inventory.recordKind}; lifecycle: ${inventory.lifecycle}`,
@@ -41,7 +42,11 @@ function inventoryText(project: Project): string[] {
     ...(inventory.sourceState !== undefined ? [`Source state text: ${inventory.sourceState ?? "Unknown"}`] : []),
     ...(inventory.sourceLocation !== undefined ? [`Source location text: ${inventory.sourceLocation ?? "Unknown"}; this text does not establish coordinates`] : []),
     ...(inventory.sourceUpdatedOn !== undefined ? [`Source row updated: ${inventory.sourceUpdatedOn ?? "Unknown"}; not a status-change date`] : []),
-    `Evidenced asset owner: ${inventory.owner ? `${inventory.owner.name} (${inventory.owner.id})` : "Unknown"}`,
+    `${ownershipStatement ? "Planned asset owner" : "Evidenced asset owner"}: ${inventory.owner ? `${inventory.owner.name} (${inventory.owner.id})` : "Unknown"}`,
+    ...(ownershipStatement ? [
+      `Ownership evidence as of: ${ownershipStatement.asOf}`,
+      `Planned ownership scope: ${ownershipStatement.scope}`,
+    ] : []),
     ...(inventory.owner ? [`Owner identity scope: ${inventory.owner.identityScope ?? "unspecified (treated as source-scoped)"}`] : []),
     ...(inventory.owner?.evidence.map(source => `Owner evidence: ${sourceText(source)}`) ?? []),
     ...(inventory.parentProgramId ? [`Parent program: ${inventory.parentProgramId}`] : []),

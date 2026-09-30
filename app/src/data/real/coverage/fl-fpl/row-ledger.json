@@ -1,0 +1,3758 @@
+[
+  {
+    "sourceId": "iii-e1-r01",
+    "sourceName": "Whidden–Sweatt 230 kV transmission line",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, row 1; columns (1)–(7)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 1"
+      }
+    ],
+    "scope": "Table III.E.1 bulk line",
+    "row": 1,
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r01"
+  },
+  {
+    "sourceId": "iii-e1-r02",
+    "sourceName": "Andytown–Oasis 500 kV transmission line",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, row 2; columns (1)–(7)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+      }
+    ],
+    "scope": "Table III.E.1 bulk line",
+    "row": 2,
+    "recordKind": "transmission-project",
+    "recordUnit": "component",
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r02"
+  },
+  {
+    "sourceId": "iii-e1-r03",
+    "sourceName": "Quarry–Oasis 500 kV transmission line",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, row 3; columns (1)–(7)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+      }
+    ],
+    "scope": "Table III.E.1 bulk line",
+    "row": 3,
+    "recordKind": "transmission-project",
+    "recordUnit": "component",
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r03"
+  },
+  {
+    "sourceId": "iii-e1-r04",
+    "sourceName": "Oasis–Quarry 230 kV transmission line",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, row 4; columns (1)–(7)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+      }
+    ],
+    "scope": "Table III.E.1 bulk line",
+    "row": 4,
+    "recordKind": "transmission-project",
+    "recordUnit": "component",
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r04"
+  },
+  {
+    "sourceId": "iii-e1-r05",
+    "sourceName": "Oasis–Levee 230 kV transmission line",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, row 5; columns (1)–(7)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+      }
+    ],
+    "scope": "Table III.E.1 bulk line",
+    "row": 5,
+    "recordKind": "transmission-project",
+    "recordUnit": "component",
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r05"
+  },
+  {
+    "sourceId": "s10-001",
+    "sourceName": "Clover Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 1/84, printed p.315 / PDF p.329; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.1, printed p.97 / PDF p.111; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 1,
+    "sourceFacts": {
+      "number": 1,
+      "sourceId": "s10-001",
+      "name": "Clover Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Sunbreak Substation to the new Clover Substation",
+      "numberOfLines": 1,
+      "lineLength": "Approximately 2 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "2nd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Clover Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-001",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-002",
+    "sourceName": "Sea Grape Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 2/84, printed p.316 / PDF p.330; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.2, printed p.98 / PDF p.112; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 2,
+    "sourceFacts": {
+      "number": 2,
+      "sourceId": "s10-002",
+      "name": "Sea Grape Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Sunbreak - Morrow 230 kV transmission line to new Muscadine Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "2 nd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Muscadine Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-002",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-003",
+    "sourceName": "North Orange Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 3/84, printed p.317 / PDF p.331; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.3, printed p.99 / PDF p.113; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 3,
+    "sourceFacts": {
+      "number": 3,
+      "sourceId": "s10-003",
+      "name": "North Orange Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Sunbreak - Morrow 230 kV transmission line to new Apricot Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "2 nd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Apricot Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-003",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-004",
+    "sourceName": "Sand Pine Solar Energy Center (Calhoun County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 4/84, printed p.318 / PDF p.332; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.4, printed p.100 / PDF p.114; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 4,
+    "sourceFacts": {
+      "number": 4,
+      "sourceId": "s10-004",
+      "name": "Sand Pine Solar Energy Center (Calhoun County)",
+      "county": "Calhoun County",
+      "originAndTermination": "Quincy Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "2nd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Chinkapin Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-004",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-005",
+    "sourceName": "Big Brook Battery Energy Storage System Center (Calhoun County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 5/84, printed p.319 / PDF p.333; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.5, printed p.101 / PDF p.115; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 5,
+    "sourceFacts": {
+      "number": 5,
+      "sourceId": "s10-005",
+      "name": "Big Brook Battery Energy Storage System Center (Calhoun County)",
+      "county": "Calhoun County",
+      "originAndTermination": "Song Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Song Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-006",
+    "sourceName": "Sand Pine Battery Energy Storage System Center (Calhoun County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 6/84, printed p.320 / PDF p.334; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.6, printed p.102 / PDF p.116; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 6,
+    "sourceFacts": {
+      "number": 6,
+      "sourceId": "s10-006",
+      "name": "Sand Pine Battery Energy Storage System Center (Calhoun County)",
+      "county": "Calhoun County",
+      "originAndTermination": "Quincy Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3 rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Chinkapin Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-007",
+    "sourceName": "North Orange Battery Energy Storage System Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 7/84, printed p.321 / PDF p.335; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.7, printed p.103 / PDF p.117; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 7,
+    "sourceFacts": {
+      "number": 7,
+      "sourceId": "s10-007",
+      "name": "North Orange Battery Energy Storage System Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Apricot Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3 rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Apricot Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-008",
+    "sourceName": "Norton Creek Battery Energy Storage System Center (Madison County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 8/84, printed p.322 / PDF p.336; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.8, printed p.104 / PDF p.118; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 8,
+    "sourceFacts": {
+      "number": 8,
+      "sourceId": "s10-008",
+      "name": "Norton Creek Battery Energy Storage System Center (Madison County)",
+      "county": "Madison County",
+      "originAndTermination": "Bandit Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 161,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3 rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Bandit Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-009",
+    "sourceName": "Thomas Creek Battery Energy Storage System Center (Nassau County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 9/84, printed p.323 / PDF p.337; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.9, printed p.105 / PDF p.119; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 9,
+    "sourceFacts": {
+      "number": 9,
+      "sourceId": "s10-009",
+      "name": "Thomas Creek Battery Energy Storage System Center (Nassau County)",
+      "county": "Nassau County",
+      "originAndTermination": "Thomas Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3 rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Thomas Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-010",
+    "sourceName": "Cedar Trail Battery Energy Storage System Center (Baker County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 10/84, printed p.324 / PDF p.338; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.10, printed p.106 / PDF p.120; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 10,
+    "sourceFacts": {
+      "number": 10,
+      "sourceId": "s10-010",
+      "name": "Cedar Trail Battery Energy Storage System Center (Baker County)",
+      "county": "Baker County",
+      "originAndTermination": "Deodar Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3 rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Deodar Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-011",
+    "sourceName": "Nature Trail Battery Energy Storage System Center (Baker County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 11/84, printed p.325 / PDF p.339; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.11, printed p.107 / PDF p.121; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 11,
+    "sourceFacts": {
+      "number": 11,
+      "sourceId": "s10-011",
+      "name": "Nature Trail Battery Energy Storage System Center (Baker County)",
+      "county": "Baker County",
+      "originAndTermination": "Harvey Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "3 rd Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Harvey Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-012",
+    "sourceName": "Lansing Smith Battery Energy Storage System Center (Bay County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 12/84, printed p.326 / PDF p.340; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.12, printed p.108 / PDF p.122; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 12,
+    "sourceFacts": {
+      "number": 12,
+      "sourceId": "s10-012",
+      "name": "Lansing Smith Battery Energy Storage System Center (Bay County)",
+      "county": "Bay County",
+      "originAndTermination": "Parakeet substation",
+      "numberOfLines": 1,
+      "lineLength": "0.26 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "4 th Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 400.0,
+      "transformerMva": [
+        225.0
+      ],
+      "substations": "Parakeet substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-012",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-013",
+    "sourceName": "Putnam Battery Energy Storage System Center (Putnam County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 13/84, printed p.327 / PDF p.341; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.13, printed p.109 / PDF p.123; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 13,
+    "sourceFacts": {
+      "number": 13,
+      "sourceId": "s10-013",
+      "name": "Putnam Battery Energy Storage System Center (Putnam County)",
+      "county": "Putnam County",
+      "originAndTermination": "Putnam BESS U1 substation",
+      "numberOfLines": 1,
+      "lineLength": "0.3 miles",
+      "lineVoltageKv": 115,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "4th Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 200.0,
+      "transformerMva": [
+        225.0
+      ],
+      "substations": "Putnam BESS U1 substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-013",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-014",
+    "sourceName": "Clover Battery Energy Storage System Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 14/84, printed p.328 / PDF p.342; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.14, printed p.110 / PDF p.124; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 14,
+    "sourceFacts": {
+      "number": 14,
+      "sourceId": "s10-014",
+      "name": "Clover Battery Energy Storage System Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Clover Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "4th Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Clover Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-015",
+    "sourceName": "Sea Grape Battery Energy Storage System Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 15/84, printed p.329 / PDF p.343; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.15, printed p.111 / PDF p.125; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 15,
+    "sourceFacts": {
+      "number": 15,
+      "sourceId": "s10-015",
+      "name": "Sea Grape Battery Energy Storage System Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Muscadine Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "4 th Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Muscadine Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-016",
+    "sourceName": "White Tail Battery Energy Storage System Center (Martin County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 16/84, printed p.330 / PDF p.344; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.16, printed p.112 / PDF p.126; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 16,
+    "sourceFacts": {
+      "number": 16,
+      "sourceId": "s10-016",
+      "name": "White Tail Battery Energy Storage System Center (Martin County)",
+      "county": "Martin County",
+      "originAndTermination": "Strawberry Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "4 th Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Strawberry Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-017",
+    "sourceName": "Fawn Battery Energy Storage System Center (Martin County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 17/84, printed p.331 / PDF p.345; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.17, printed p.113 / PDF p.127; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 17,
+    "sourceFacts": {
+      "number": 17,
+      "sourceId": "s10-017",
+      "name": "Fawn Battery Energy Storage System Center (Martin County)",
+      "county": "Martin County",
+      "originAndTermination": "Fawn Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2025",
+      "constructionEndYear": "2026",
+      "projectedConnectionQuarter": "4th Quarter of 2026",
+      "projectedConnectionYear": "2026",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Fawn Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-018",
+    "sourceName": "Indrio Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 18/84, printed p.332 / PDF p.346; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.18, printed p.114 / PDF p.128; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 18,
+    "sourceFacts": {
+      "number": 18,
+      "sourceId": "s10-018",
+      "name": "Indrio Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Sunbreak - Heritage 230 kV transmission line to new Estuary Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Estuary Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-018",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-019",
+    "sourceName": "Tangelo Solar Energy Center (Okeechobee County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 19/84, printed p.333 / PDF p.347; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.19, printed p.115 / PDF p.129; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 19,
+    "sourceFacts": {
+      "number": 19,
+      "sourceId": "s10-019",
+      "name": "Tangelo Solar Energy Center (Okeechobee County)",
+      "county": "Okeechobee County",
+      "originAndTermination": "Clementine Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Clementine Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-019",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-020",
+    "sourceName": "Wood Stork Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 20/84, printed p.334 / PDF p.348; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.20, printed p.116 / PDF p.130; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 20,
+    "sourceFacts": {
+      "number": 20,
+      "sourceId": "s10-020",
+      "name": "Wood Stork Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Liberty Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Liberty Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-020",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-021",
+    "sourceName": "Hendry Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 21/84, printed p.335 / PDF p.349; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.21, printed p.117 / PDF p.131; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 21,
+    "sourceFacts": {
+      "number": 21,
+      "sourceId": "s10-021",
+      "name": "Hendry Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Ghost Substation",
+      "numberOfLines": 0,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Ghost Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-021",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-022",
+    "sourceName": "Middle Lake Solar Energy Center (Madison County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 22/84, printed p.336 / PDF p.350; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.22, printed p.118 / PDF p.132; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 22,
+    "sourceFacts": {
+      "number": 22,
+      "sourceId": "s10-022",
+      "name": "Middle Lake Solar Energy Center (Madison County)",
+      "county": "Madison County",
+      "originAndTermination": "Sound Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 161,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Sound Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-022",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-023",
+    "sourceName": "Spanish Moss Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 23/84, printed p.337 / PDF p.351; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.23, printed p.119 / PDF p.133; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 23,
+    "sourceFacts": {
+      "number": 23,
+      "sourceId": "s10-023",
+      "name": "Spanish Moss Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Apricot Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Apricot Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-023",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-024",
+    "sourceName": "County Line Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 24/84, printed p.338 / PDF p.352; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.24, printed p.120 / PDF p.134; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 24,
+    "sourceFacts": {
+      "number": 24,
+      "sourceId": "s10-024",
+      "name": "County Line Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Medieval Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Medieval Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-024",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-025",
+    "sourceName": "Saddle Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 25/84, printed p.339 / PDF p.353; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.25, printed p.121 / PDF p.135; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 25,
+    "sourceFacts": {
+      "number": 25,
+      "sourceId": "s10-025",
+      "name": "Saddle Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Cheriot Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Pignut Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-025",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-026",
+    "sourceName": "Swamp Cabbage Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 26/84, printed p.340 / PDF p.354; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.26, printed p.122 / PDF p.136; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 26,
+    "sourceFacts": {
+      "number": 26,
+      "sourceId": "s10-026",
+      "name": "Swamp Cabbage Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Swamp Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "2 nd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Swamp Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-027",
+    "sourceName": "Green Pasture Battery Energy Storage System Center (Charlotte County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 27/84, printed p.341 / PDF p.355; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.27, printed p.123 / PDF p.137; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 27,
+    "sourceFacts": {
+      "number": 27,
+      "sourceId": "s10-027",
+      "name": "Green Pasture Battery Energy Storage System Center (Charlotte County)",
+      "county": "Charlotte County",
+      "originAndTermination": "Zoysia Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "2 nd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Zoysia Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-028",
+    "sourceName": "Blue Heron Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 28/84, printed p.342 / PDF p.356; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.28, printed p.124 / PDF p.138; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 28,
+    "sourceFacts": {
+      "number": 28,
+      "sourceId": "s10-028",
+      "name": "Blue Heron Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Citron Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 138,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "2 nd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Citron Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-029",
+    "sourceName": "Sawgrass Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 29/84, printed p.343 / PDF p.357; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.29, printed p.125 / PDF p.139; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 29,
+    "sourceFacts": {
+      "number": 29,
+      "sourceId": "s10-029",
+      "name": "Sawgrass Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Ghost Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "2 nd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Ghost Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-030",
+    "sourceName": "Terrill Creek Battery Energy Storage System Center (Clay County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 30/84, printed p.344 / PDF p.358; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.30, printed p.126 / PDF p.140; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 30,
+    "sourceFacts": {
+      "number": 30,
+      "sourceId": "s10-030",
+      "name": "Terrill Creek Battery Energy Storage System Center (Clay County)",
+      "county": "Clay County",
+      "originAndTermination": "Terrill Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "2 nd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Terrill Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-031",
+    "sourceName": "Orange Blossom Battery Energy Storage System Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 31/84, printed p.345 / PDF p.359; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.31, printed p.127 / PDF p.141; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 31,
+    "sourceFacts": {
+      "number": 31,
+      "sourceId": "s10-031",
+      "name": "Orange Blossom Battery Energy Storage System Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Finca Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "2 nd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Finca Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": [
+      "The Schedule 10 heading identifies Orange Blossom but its narrative sentence names Sawgrass. III.E.31 identifies Orange Blossom; preserve this discrepancy on the excluded source entry."
+    ]
+  },
+  {
+    "sourceId": "s10-032",
+    "sourceName": "Hardwood Hammock Solar Energy Center (Walton County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 32/84, printed p.346 / PDF p.360; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.32, printed p.128 / PDF p.142; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 32,
+    "sourceFacts": {
+      "number": 32,
+      "sourceId": "s10-032",
+      "name": "Hardwood Hammock Solar Energy Center (Walton County)",
+      "county": "Walton County",
+      "originAndTermination": "Quail Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Pignut Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-032",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-033",
+    "sourceName": "Maple Trail Solar Energy Center (Baker County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 33/84, printed p.347 / PDF p.361; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.33, printed p.129 / PDF p.143; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 33,
+    "sourceFacts": {
+      "number": 33,
+      "sourceId": "s10-033",
+      "name": "Maple Trail Solar Energy Center (Baker County)",
+      "county": "Baker County",
+      "originAndTermination": "Maple Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Maple Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-033",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-034",
+    "sourceName": "Maple Trail Battery Energy Storage System Center (Baker County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 34/84, printed p.348 / PDF p.362; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.34, printed p.130 / PDF p.144; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 34,
+    "sourceFacts": {
+      "number": 34,
+      "sourceId": "s10-034",
+      "name": "Maple Trail Battery Energy Storage System Center (Baker County)",
+      "county": "Baker County",
+      "originAndTermination": "Deodar Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3 rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Deodar Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-035",
+    "sourceName": "Indrio Battery Energy Storage System Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 35/84, printed p.349 / PDF p.363; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.35, printed p.131 / PDF p.145; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 35,
+    "sourceFacts": {
+      "number": 35,
+      "sourceId": "s10-035",
+      "name": "Indrio Battery Energy Storage System Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Estuary Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Estuary Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-036",
+    "sourceName": "Monarch Battery Energy Storage System Center (Martin County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 36/84, printed p.350 / PDF p.364; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.36, printed p.132 / PDF p.146; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 36,
+    "sourceFacts": {
+      "number": 36,
+      "sourceId": "s10-036",
+      "name": "Monarch Battery Energy Storage System Center (Martin County)",
+      "county": "Martin County",
+      "originAndTermination": "Gopher Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Gopher Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-037",
+    "sourceName": "Monarch ACES Battery Energy Storage System Center Pilot (Martin County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 37/84, printed p.351 / PDF p.365; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.37, printed p.133 / PDF p.147; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 37,
+    "sourceFacts": {
+      "number": 37,
+      "sourceId": "s10-037",
+      "name": "Monarch ACES Battery Energy Storage System Center Pilot (Martin County)",
+      "county": "Martin County",
+      "originAndTermination": "Gopher Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3 rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 10.0,
+      "transformerMva": [],
+      "substations": "Gopher Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-038",
+    "sourceName": "Swallowtail Battery Energy Storage System Center (Walton County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 38/84, printed p.352 / PDF p.366; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.38, printed p.134 / PDF p.148; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 38,
+    "sourceFacts": {
+      "number": 38,
+      "sourceId": "s10-038",
+      "name": "Swallowtail Battery Energy Storage System Center (Walton County)",
+      "county": "Walton County",
+      "originAndTermination": "Swallowtail Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3 rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Swallowtail Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-039",
+    "sourceName": "Union Springs Battery Energy Storage System Center (Union County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 39/84, printed p.353 / PDF p.367; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.39, printed p.135 / PDF p.149; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 39,
+    "sourceFacts": {
+      "number": 39,
+      "sourceId": "s10-039",
+      "name": "Union Springs Battery Energy Storage System Center (Union County)",
+      "county": "Union County",
+      "originAndTermination": "Plum Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 115,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3 rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Plum Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-040",
+    "sourceName": "Catfish Solar Energy Center (Okeechobee County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 40/84, printed p.354 / PDF p.368; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.40, printed p.136 / PDF p.150; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 40,
+    "sourceFacts": {
+      "number": 40,
+      "sourceId": "s10-040",
+      "name": "Catfish Solar Energy Center (Okeechobee County)",
+      "county": "Okeechobee County",
+      "originAndTermination": "Catfish Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Catfish Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-040",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-041",
+    "sourceName": "Cocoplum Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 41/84, printed p.355 / PDF p.369; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.41, printed p.137 / PDF p.151; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 41,
+    "sourceFacts": {
+      "number": 41,
+      "sourceId": "s10-041",
+      "name": "Cocoplum Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Mulberry Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Mulberry Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-041",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-042",
+    "sourceName": "Pinecone Solar Energy Center (Calhoun County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 42/84, printed p.356 / PDF p.370; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.42, printed p.138 / PDF p.152; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 42,
+    "sourceFacts": {
+      "number": 42,
+      "sourceId": "s10-042",
+      "name": "Pinecone Solar Energy Center (Calhoun County)",
+      "county": "Calhoun County",
+      "originAndTermination": "Chinkapin Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Chinkapin Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-042",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-043",
+    "sourceName": "Myakka Solar Energy Center (Manatee County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 43/84, printed p.357 / PDF p.371; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.43, printed p.139 / PDF p.153; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 43,
+    "sourceFacts": {
+      "number": 43,
+      "sourceId": "s10-043",
+      "name": "Myakka Solar Energy Center (Manatee County)",
+      "county": "Manatee County",
+      "originAndTermination": "Lemur Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Lemur Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-043",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-044",
+    "sourceName": "Joshua Creek Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 44/84, printed p.358 / PDF p.372; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.44, printed p.140 / PDF p.154; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 44,
+    "sourceFacts": {
+      "number": 44,
+      "sourceId": "s10-044",
+      "name": "Joshua Creek Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Stallion Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Stallion Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-044",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-045",
+    "sourceName": "Vernia Solar Energy Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 45/84, printed p.359 / PDF p.373; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.45, printed p.141 / PDF p.155; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 45,
+    "sourceFacts": {
+      "number": 45,
+      "sourceId": "s10-045",
+      "name": "Vernia Solar Energy Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Vernia",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2026",
+      "constructionEndYear": "2027",
+      "projectedConnectionQuarter": "3rd Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Vernia",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-045",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-046",
+    "sourceName": "Ambersweet Solar Energy Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 46/84, printed p.360 / PDF p.374; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.46, printed p.142 / PDF p.156; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 46,
+    "sourceFacts": {
+      "number": 46,
+      "sourceId": "s10-046",
+      "name": "Ambersweet Solar Energy Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Ambersweet Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2027",
+      "projectedConnectionYear": "2027",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Ambersweet Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-046",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-047",
+    "sourceName": "Waveland Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 47/84, printed p.361 / PDF p.375; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.47, printed p.143 / PDF p.157; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 47,
+    "sourceFacts": {
+      "number": 47,
+      "sourceId": "s10-047",
+      "name": "Waveland Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Waveland Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Waveland Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-047",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-048",
+    "sourceName": "Inlet Solar Energy Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 48/84, printed p.362 / PDF p.376; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.48, printed p.144 / PDF p.158; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 48,
+    "sourceFacts": {
+      "number": 48,
+      "sourceId": "s10-048",
+      "name": "Inlet Solar Energy Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Lumia Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Lumia Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-048",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-049",
+    "sourceName": "Beachland Solar Energy Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 49/84, printed p.363 / PDF p.377; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.49, printed p.145 / PDF p.159; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 49,
+    "sourceFacts": {
+      "number": 49,
+      "sourceId": "s10-049",
+      "name": "Beachland Solar Energy Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Finance Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Finance Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-049",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-050",
+    "sourceName": "Wabasso Solar Energy Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 50/84, printed p.364 / PDF p.378; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.50, printed p.146 / PDF p.160; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 50,
+    "sourceFacts": {
+      "number": 50,
+      "sourceId": "s10-050",
+      "name": "Wabasso Solar Energy Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Finance Substation",
+      "numberOfLines": 1,
+      "lineLength": "4.5 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Finance Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-050",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-051",
+    "sourceName": "Shores Solar Energy Center (Indian River County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 51/84, printed p.365 / PDF p.379; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.51, printed p.147 / PDF p.161; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 51,
+    "sourceFacts": {
+      "number": 51,
+      "sourceId": "s10-051",
+      "name": "Shores Solar Energy Center (Indian River County)",
+      "county": "Indian River County",
+      "originAndTermination": "Finance Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Finance Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-051",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-052",
+    "sourceName": "Treefrog Solar Energy Center (Collier County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 52/84, printed p.366 / PDF p.380; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.52, printed p.148 / PDF p.162; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 52,
+    "sourceFacts": {
+      "number": 52,
+      "sourceId": "s10-052",
+      "name": "Treefrog Solar Energy Center (Collier County)",
+      "county": "Collier County",
+      "originAndTermination": "Boardwalk Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Boardwalk Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-052",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-053",
+    "sourceName": "Honeybee Solar Energy Center (Collier County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 53/84, printed p.367 / PDF p.381; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.53, printed p.149 / PDF p.163; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 53,
+    "sourceFacts": {
+      "number": 53,
+      "sourceId": "s10-053",
+      "name": "Honeybee Solar Energy Center (Collier County)",
+      "county": "Collier County",
+      "originAndTermination": "Boardwalk Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Boardwalk Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-053",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-054",
+    "sourceName": "Bromeliad Solar Energy Center (Collier County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 54/84, printed p.368 / PDF p.382; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.54, printed p.150 / PDF p.164; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 54,
+    "sourceFacts": {
+      "number": 54,
+      "sourceId": "s10-054",
+      "name": "Bromeliad Solar Energy Center (Collier County)",
+      "county": "Collier County",
+      "originAndTermination": "Boardwalk Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Boardwalk Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-054",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-055",
+    "sourceName": "Sand Gully Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 55/84, printed p.369 / PDF p.383; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.55, printed p.151 / PDF p.165; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 55,
+    "sourceFacts": {
+      "number": 55,
+      "sourceId": "s10-055",
+      "name": "Sand Gully Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Stallion Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Stallion Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-055",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-056",
+    "sourceName": "Pine Lily Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 56/84, printed p.370 / PDF p.384; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.56, printed p.152 / PDF p.166; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 56,
+    "sourceFacts": {
+      "number": 56,
+      "sourceId": "s10-056",
+      "name": "Pine Lily Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Lily Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Lily Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-056",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-057",
+    "sourceName": "Pine Lily Battery Energy Storage System Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 57/84, printed p.371 / PDF p.385; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.57, printed p.153 / PDF p.167; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 57,
+    "sourceFacts": {
+      "number": 57,
+      "sourceId": "s10-057",
+      "name": "Pine Lily Battery Energy Storage System Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Lily Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Lily Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-058",
+    "sourceName": "Wild Lime Solar Energy Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 58/84, printed p.372 / PDF p.386; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.58, printed p.154 / PDF p.168; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 58,
+    "sourceFacts": {
+      "number": 58,
+      "sourceId": "s10-058",
+      "name": "Wild Lime Solar Energy Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Lilly Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Lilly Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-058",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-059",
+    "sourceName": "Wild Lime Battery Energy Storage System Center (St. Lucie County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 59/84, printed p.373 / PDF p.387; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.59, printed p.155 / PDF p.169; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 59,
+    "sourceFacts": {
+      "number": 59,
+      "sourceId": "s10-059",
+      "name": "Wild Lime Battery Energy Storage System Center (St. Lucie County)",
+      "county": "St. Lucie County",
+      "originAndTermination": "Lily Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3 rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Lily Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-060",
+    "sourceName": "Waxweed Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 60/84, printed p.374 / PDF p.388; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.60, printed p.156 / PDF p.170; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 60,
+    "sourceFacts": {
+      "number": 60,
+      "sourceId": "s10-060",
+      "name": "Waxweed Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Waxweed Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Waxweed Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-060",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-061",
+    "sourceName": "Waxweed Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 61/84, printed p.375 / PDF p.389; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.61, printed p.157 / PDF p.171; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 61,
+    "sourceFacts": {
+      "number": 61,
+      "sourceId": "s10-061",
+      "name": "Waxweed Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Waxweed Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3 rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Waxweed Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-062",
+    "sourceName": "Owen Branch Solar Energy Center (Manatee County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 62/84, printed p.376 / PDF p.390; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.62, printed p.158 / PDF p.172; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 62,
+    "sourceFacts": {
+      "number": 62,
+      "sourceId": "s10-062",
+      "name": "Owen Branch Solar Energy Center (Manatee County)",
+      "county": "Manatee County",
+      "originAndTermination": "Owen Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Owen Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-062",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-063",
+    "sourceName": "Owen Branch Battery Energy Storage System Center (Manatee County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 63/84, printed p.377 / PDF p.391; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.63, printed p.159 / PDF p.173; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 63,
+    "sourceFacts": {
+      "number": 63,
+      "sourceId": "s10-063",
+      "name": "Owen Branch Battery Energy Storage System Center (Manatee County)",
+      "county": "Manatee County",
+      "originAndTermination": "Owen Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3 rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Owen Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-064",
+    "sourceName": "Shell Creek Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 64/84, printed p.378 / PDF p.392; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.64, printed p.160 / PDF p.174; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 64,
+    "sourceFacts": {
+      "number": 64,
+      "sourceId": "s10-064",
+      "name": "Shell Creek Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Notts Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Notts Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-064",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-065",
+    "sourceName": "Shell Creek Battery Energy Storage System Center (Desoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 65/84, printed p.379 / PDF p.393; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.65, printed p.161 / PDF p.175; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 65,
+    "sourceFacts": {
+      "number": 65,
+      "sourceId": "s10-065",
+      "name": "Shell Creek Battery Energy Storage System Center (Desoto County)",
+      "county": "Desoto County",
+      "originAndTermination": "Notts Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3 rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Notts Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-066",
+    "sourceName": "LaBelle Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 66/84, printed p.380 / PDF p.394; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.66, printed p.162 / PDF p.176; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 66,
+    "sourceFacts": {
+      "number": 66,
+      "sourceId": "s10-066",
+      "name": "LaBelle Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Swamp Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Swamp Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-066",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-067",
+    "sourceName": "Cardinal Solar Energy Center (Brevard County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 67/84, printed p.381 / PDF p.395; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.67, printed p.163 / PDF p.177; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 67,
+    "sourceFacts": {
+      "number": 67,
+      "sourceId": "s10-067",
+      "name": "Cardinal Solar Energy Center (Brevard County)",
+      "county": "Brevard County",
+      "originAndTermination": "Goodwin Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Goodwin Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-067",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-068",
+    "sourceName": "Redroot Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 68/84, printed p.382 / PDF p.396; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.68, printed p.164 / PDF p.178; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 68,
+    "sourceFacts": {
+      "number": 68,
+      "sourceId": "s10-068",
+      "name": "Redroot Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Waxweed Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Waxweed Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-068",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-069",
+    "sourceName": "Redroot Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 69/84, printed p.383 / PDF p.397; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.69, printed p.165 / PDF p.179; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 69,
+    "sourceFacts": {
+      "number": 69,
+      "sourceId": "s10-069",
+      "name": "Redroot Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Waxweed Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Waxweed Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-070",
+    "sourceName": "Mango Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 70/84, printed p.384 / PDF p.398; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.70, printed p.166 / PDF p.180; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 70,
+    "sourceFacts": {
+      "number": 70,
+      "sourceId": "s10-070",
+      "name": "Mango Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Towhee Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Towhee Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-070",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-071",
+    "sourceName": "Mango Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 71/84, printed p.385 / PDF p.399; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.71, printed p.167 / PDF p.181; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 71,
+    "sourceFacts": {
+      "number": 71,
+      "sourceId": "s10-071",
+      "name": "Mango Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Towhee Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Towhee Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-072",
+    "sourceName": "Grapefruit Solar Energy Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 72/84, printed p.386 / PDF p.400; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.72, printed p.168 / PDF p.182; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 72,
+    "sourceFacts": {
+      "number": 72,
+      "sourceId": "s10-072",
+      "name": "Grapefruit Solar Energy Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Towhee Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Towhee Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-072",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-073",
+    "sourceName": "Grapefruit Battery Energy Storage System Center (Hendry County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 73/84, printed p.387 / PDF p.401; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.73, printed p.169 / PDF p.183; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 73,
+    "sourceFacts": {
+      "number": 73,
+      "sourceId": "s10-073",
+      "name": "Grapefruit Battery Energy Storage System Center (Hendry County)",
+      "county": "Hendry County",
+      "originAndTermination": "Towhee Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "3 rd Quarter of 2028",
+      "projectedConnectionYear": "2028",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Towhee Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-074",
+    "sourceName": "Ladybug Solar Energy Center (Desoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 74/84, printed p.388 / PDF p.402; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.74, printed p.170 / PDF p.184; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 74,
+    "sourceFacts": {
+      "number": 74,
+      "sourceId": "s10-074",
+      "name": "Ladybug Solar Energy Center (Desoto County)",
+      "county": "Desoto County",
+      "originAndTermination": "Tern Substation",
+      "numberOfLines": 1,
+      "lineLength": "8 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Tern Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-074",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-075",
+    "sourceName": "Ladybug Battery Energy Storage System Center (Desoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 75/84, printed p.389 / PDF p.403; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.75, printed p.171 / PDF p.185; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 75,
+    "sourceFacts": {
+      "number": 75,
+      "sourceId": "s10-075",
+      "name": "Ladybug Battery Energy Storage System Center (Desoto County)",
+      "county": "Desoto County",
+      "originAndTermination": "Tern Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2027",
+      "constructionEndYear": "2028",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Tern Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": [
+      "Schedule 10 construction end 2028 differs from narrative connection timing 1st Quarter of 2029."
+    ]
+  },
+  {
+    "sourceId": "s10-076",
+    "sourceName": "Leafcutter Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 76/84, printed p.390 / PDF p.404; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.76, printed p.172 / PDF p.186; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 76,
+    "sourceFacts": {
+      "number": 76,
+      "sourceId": "s10-076",
+      "name": "Leafcutter Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Tern Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Tern Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-076",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-077",
+    "sourceName": "Leafcutter Battery Energy Storage System Center (Desoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 77/84, printed p.391 / PDF p.405; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.77, printed p.173 / PDF p.187; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 77,
+    "sourceFacts": {
+      "number": 77,
+      "sourceId": "s10-077",
+      "name": "Leafcutter Battery Energy Storage System Center (Desoto County)",
+      "county": "Desoto County",
+      "originAndTermination": "Tern Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Tern Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-078",
+    "sourceName": "Blanketflower Solar Energy Center (DeSoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 78/84, printed p.392 / PDF p.406; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.78, printed p.174 / PDF p.188; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 78,
+    "sourceFacts": {
+      "number": 78,
+      "sourceId": "s10-078",
+      "name": "Blanketflower Solar Energy Center (DeSoto County)",
+      "county": "DeSoto County",
+      "originAndTermination": "Tern Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Tern Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-078",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-079",
+    "sourceName": "Blanketflower Battery Energy Storage System Center (Desoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 79/84, printed p.393 / PDF p.407; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.79, printed p.175 / PDF p.189; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 79,
+    "sourceFacts": {
+      "number": 79,
+      "sourceId": "s10-079",
+      "name": "Blanketflower Battery Energy Storage System Center (Desoto County)",
+      "county": "Desoto County",
+      "originAndTermination": "Tern Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Tern Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": true
+    },
+    "disposition": "excluded",
+    "reason": "storage-collector-side-only-no-transmission-work",
+    "evidenceSummary": "The matched narrative specifies extension of an existing 34.5 kV BESS collector bus/protection and explicitly no additional transmission work or upgrades.",
+    "notes": []
+  },
+  {
+    "sourceId": "s10-080",
+    "sourceName": "Dove Solar Energy Center (Desoto County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 80/84, printed p.394 / PDF p.408; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.80, printed p.176 / PDF p.190; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 80,
+    "sourceFacts": {
+      "number": 80,
+      "sourceId": "s10-080",
+      "name": "Dove Solar Energy Center (Desoto County)",
+      "county": "Desoto County",
+      "originAndTermination": "Dove Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Dove Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-080",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-081",
+    "sourceName": "Spoonbill Solar Energy Center (Collier County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 81/84, printed p.395 / PDF p.409; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.81, printed p.177 / PDF p.191; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 81,
+    "sourceFacts": {
+      "number": 81,
+      "sourceId": "s10-081",
+      "name": "Spoonbill Solar Energy Center (Collier County)",
+      "county": "Collier County",
+      "originAndTermination": "Boardwalk Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Boardwalk Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-081",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-082",
+    "sourceName": "Limkin Solar Energy Center (Collier County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 82/84, printed p.396 / PDF p.410; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.82, printed p.178 / PDF p.192; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 82,
+    "sourceFacts": {
+      "number": 82,
+      "sourceId": "s10-082",
+      "name": "Limkin Solar Energy Center (Collier County)",
+      "county": "Collier County",
+      "originAndTermination": "Boardwalk Substation",
+      "numberOfLines": 1,
+      "lineLength": "0.0 miles",
+      "lineVoltageKv": 500,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "1st Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [],
+      "substations": "Boardwalk Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-082",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-083",
+    "sourceName": "New River Solar Energy Center (Union County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 83/84, printed p.397 / PDF p.411; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.83, printed p.179 / PDF p.193; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 83,
+    "sourceFacts": {
+      "number": 83,
+      "sourceId": "s10-083",
+      "name": "New River Solar Energy Center (Union County)",
+      "county": "Union County",
+      "originAndTermination": "Damson Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 115,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "3rd Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Damson Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-083",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  },
+  {
+    "sourceId": "s10-084",
+    "sourceName": "Caladium Solar Energy Center (Highlands County)",
+    "sources": [
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Schedule 10, form 84/84, printed p.398 / PDF p.412; items (1)–(9)"
+      },
+      {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "III.E.84, printed p.180 / PDF p.194; projected interconnection work"
+      }
+    ],
+    "scope": "Schedule 10 interconnection work",
+    "form": 84,
+    "sourceFacts": {
+      "number": 84,
+      "sourceId": "s10-084",
+      "name": "Caladium Solar Energy Center (Highlands County)",
+      "county": "Highlands County",
+      "originAndTermination": "Condor Substation",
+      "numberOfLines": 1,
+      "lineLength": "0 miles",
+      "lineVoltageKv": 230,
+      "constructionStartYear": "2028",
+      "constructionEndYear": "2029",
+      "projectedConnectionQuarter": "3rd Quarter of 2029",
+      "projectedConnectionYear": "2029",
+      "servedCapacityMw": 74.5,
+      "transformerMva": [
+        85.0
+      ],
+      "substations": "Condor Substation",
+      "rightOfWay": "FPL-owned",
+      "otherUtilityParticipation": "None",
+      "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+      "excluded": false
+    },
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-084",
+    "recordKind": "transmission-project",
+    "recordUnit": "component"
+  }
+]

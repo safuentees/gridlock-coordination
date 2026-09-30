@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "proposals": [
+    {
+      "decisionId": "F27-SCE-E1-calcite",
+      "projectId": "ca-sce-tpr:SP-01",
+      "expected": {
+        "id": "ca-sce-tpr:SP-01",
+        "utilityId": "sce-tpr",
+        "sponsor": null,
+        "sourceId": "SP-01",
+        "name": "Calcite Substation Construction",
+        "description": "Construct new Calcite 230 kV Substation to interconnect renewable generation projects.",
+        "status": "Engineering less than 50% complete",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2029-01-23",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Reported projected or actual in-service date"
+        },
+        "buildWindow": null,
+        "location": {
+          "lat": 34.5469999999997,
+          "lon": -116.952,
+          "method": "source-point",
+          "confidence": "unverified",
+          "evidence": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!C355:D355",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B5:C5",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+            "locator": "'CPUC TPR Public'!A355:CM355; headers row 3",
+            "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+          },
+          {
+            "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+            "locator": "'TPR Notes'!B3:C5, B23:C23",
+            "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+          }
+        ],
+        "notes": [],
+        "inventory": {
+          "sourceKey": "ca-sce-tpr",
+          "editionId": "2026-06-01",
+          "editionLabel": "SCE public TPR — June 1, 2026",
+          "reportingGroupName": "SCE TPR filing",
+          "recordKind": "transmission-project",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-06-01",
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [
+            "program-account:6902"
+          ],
+          "workType": "Substation - Multiple",
+          "constructionStart": "2028-01-25",
+          "nativeGeometry": {
+            "type": "Point",
+            "coordinates": [
+              [
+                -116.952,
+                34.5469999999997
+              ]
+            ],
+            "role": "substation-center",
+            "crs": null,
+            "accuracyMeters": null,
+            "rawLatitude": "34.5469999999997",
+            "rawLongitude": "-116.952",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C355:D355",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "centerRole": "substation-center",
+          "locationAssumptions": [
+            "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy."
+          ]
+        }
+      },
+      "owner": {
+        "id": "southern-california-edison-company",
+        "name": "Southern California Edison Company",
+        "identityScope": "global",
+        "evidence": [
+          {
+            "file": "calcite-lucerne-final-eir-2025-volume-i.pdf",
+            "url": "https://lus.sbcounty.gov/wp-content/uploads/sites/48/Volume-I_Final-Environmental-Impact-Report.pdf",
+            "locator": "PDF page 200 / printed 2-41, section 2.7.2"
+          },
+          {
+            "file": "sienna-calcite-project-description.pdf",
+            "url": "https://lus.sbcounty.gov/wp-content/uploads/sites/48/Planning/Appendix-O-Project-Description-SCES-Calcite-Substation-and-the-Interconnection-of-Sienna-Solar-Project.pdf",
+            "locator": "PDF/printed page 4, project overview; page 13, gen-tie extension"
+          }
+        ],
+        "ownershipStatement": {
+          "type": "planned",
+          "asOf": "2025-09",
+          "scope": "Planned Calcite substation equipment. Excludes the customer solar/storage facilities and customer-owned gen-tie portion."
+        }
+      },
+      "caveat": "Planned Calcite substation ownership, supported by September 2025 evidence; present equipment title is not confirmed. Customer generation and customer-owned gen-tie facilities are excluded.",
+      "limitations": [
+        "The Calcite match uses its distinctive name, location and scope; the external documents do not cite SP-01 or program 6902.",
+        "The TPR reports 230 kV and the external description 220 kV. The original voltage, dates and unverified location are retained."
+      ]
+    }
+  ]
+}
