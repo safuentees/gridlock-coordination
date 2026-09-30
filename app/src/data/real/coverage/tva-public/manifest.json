@@ -1,0 +1,44 @@
+{
+  "sourceKey": "tva-public",
+  "editionId": "observed-2026-09-30",
+  "label": "TVA public transmission-project index — September 30, 2026 captured text",
+  "reportingGroupId": "tva-public",
+  "reportingGroupName": "Tennessee Valley Authority",
+  "publisher": "Tennessee Valley Authority",
+  "processAuthority": null,
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "web-capture-index.txt",
+    "url": "https://www.tva.com/energy/transmission/transmission-system-projects",
+    "locator": "Derived web-tool text capture, state-section project links; 41 placements / 40 unique URLs; not original HTML"
+  },
+  "sha256": "bc7a6de488eaf25170cee9854bff1fd95fa7dfa7d6da47d3c6cd14c9e9a87573",
+  "geographicScope": "Captured index sections span Alabama, Kentucky, Mississippi, North Carolina and Tennessee; Georgia/Virginia sections have no links, not a zero-project claim. Some projects cross section/state boundaries.",
+  "inventoryScope": "All 41 current-index placements: 40 unique public transmission page work units and one excluded duplicate Appalachia placement. No claim of utility-wide or state-wide capital-inventory completeness.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 41,
+    "importedRecords": 40,
+    "excludedRows": 1,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Duplicate Appalachia placement under Tennessee; retained once under North Carolina.",
+      "count": 1
+    }
+  ],
+  "limitations": [
+    "The 41 placements cover only this captured public engagement index: 40 unique page-scoped work units and one duplicate Appalachia placement. Full scope is not a complete TVA or state engineering register.",
+    "The primary SHA-256 identifies web-tool extracted text, not publisher HTML. Ordinary HTML acquisition returned 403; the coordinator explicitly accepted derived captures as frozen evidence. Separate public GIS JSON artifacts are originals.",
+    "Georgia and Virginia have empty index sections, which do not establish zero projects. Project geography may differ from the section; public meeting addresses are not project locations.",
+    "One page may combine line, station and connection work. Alternatives, existing assets and future separate work without an index link are not additional records.",
+    "Canonical URL slugs are source-locator identities, not engineering IDs. GIS PROJECT_ID values remain scoped aliases; future edition continuity needs explicit crosswalks.",
+    "Lifecycle belongs to the dated source statement or undated snapshot observation, not present construction status. Elapsed forecasts, preferred routes and acquired easements do not establish completion, approval or construction.",
+    "Seasonal forecasts retain year precision and their source labels. Cross-year winters, conflicts and withdrawn schedules keep unknown primary dates; historical/component milestones remain supplemental.",
+    "Owners, centers, native geometry and construction intervals remain unknown. TVA is the reporting sponsor. Public proposed polylines have scope/status mismatches and are not converted to centers."
+  ]
+}

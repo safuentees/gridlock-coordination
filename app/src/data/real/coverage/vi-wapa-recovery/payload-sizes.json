@@ -1,0 +1,10 @@
+{
+  "sourceKey": "vi-wapa-recovery",
+  "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+  "scope": "full",
+  "records": 19,
+  "compactUtf8Bytes": 56395,
+  "formattedDownloadUtf8Bytes": 72381,
+  "measurement": "Source-only Dataset2 UTF-8 JSON including final newline; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "compact"
+}

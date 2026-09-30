@@ -1,0 +1,26 @@
+# CUC FY2025 reported grid work producer
+
+This independent standard-library adapter projects the accepted factual catalog against exact preserved original hashes. It now emits the full accepted scope after the three-record sample was provider-connected at `9777ab3`. No original PDF, image, contact data or copied source prose is published.
+
+```sh
+python3 scripts/ingest/coverage/mp-cuc-ccr/normalize.py \
+  --original-dir inputs/originals/F27-mp-cuc \
+  --output-dir app/src/data/real/coverage/mp-cuc-ccr --scope full \
+  --generated-at 2026-09-30T11:03:09+00:00
+```
+
+Run from the project root containing the ignored originals, or provide its absolute input path from an isolated worktree. The fixed generation time makes this full output reproducible; it does not update source status. `catalog.json` freezes source hashes, factual paraphrases, locators, accepted classifications and every source-row disposition. A new edition requires explicit identity review. Hash, identity and reconciliation guards are production safeguards, not worker runtime/schema checks.
+
+| Frozen source locator | Diagnostic |
+|---|---|
+| `fy2025-p04-power-b06` | Saipan PP1–CHCC underground distribution; construction application pending |
+| `fy2025-p04-power-b16` | Tinian/Rota combined pole entry; never split into invented project IDs |
+| `fy2025-p04-power-b17` | Saipan design-phase poles; printed p2 supplies island context |
+
+Project IDs prefix these locators with `mp-cuc-ccr:`. They are source references, not native engineering IDs. Full ledger: **26 = 8 imported + 18 excluded, zero pending/failed/located**. The full accepted source has five capital-project-context entries (bullets6/8/16/17/18) and three planning-context entries (5/19/20); four planned and four unknown lifecycle. The original three connected diagnostics remain capital-project-context/planned. October2025 is the publication month and lifecycle-as-of; publication day is unknown. Printed p4 power bullets define the complete boundary; p2 supplies evidence only. The legislature copy is not imported a second time.
+
+All records retain unknown owners, service/need dates, construction bounds, locations/native geometry and center roles. No operating voltages or transmission roles are inferred from the utility program labels. Source islands, terminals, program labels, operator identity, budget years and elapsed forecasts do not fill missing fields.
+
+`dataset.json` is Dataset v2; `manifest.json`, `row-ledger.json`, `source-quality.json` and `payload-sizes.json` preserve the complete accepted boundary. Full payload is **17,510 compact / 22,891 formatted UTF-8 bytes**. Both CNMI scopes are contextual inventories, not transmission-qualified coverage or a territory project census. No source is silently merged or deduplicated across editions.
+
+The catalog and normalizer are unchanged from the connected sample, so its record values and IDs retain the same projection. Default `--scope sample` still emits the original three diagnostics; `--scope full` emits every accepted retained entry. Source reuse is concise factual private analysis with citations; no open/commercial license or original-PDF publication is asserted. Coordinator alone integrates and checks; no worker checks ran.
