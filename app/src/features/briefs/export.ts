@@ -1,6 +1,7 @@
-import { UTILITIES, type DataMode, type Project, type SourceRef } from "@/domain/schema"
+import { estimateImpact } from "@/core"
+import { UTILITIES, type DataMode, type ImpactResult, type Project, type SourceRef } from "@/domain/schema"
 import { dateKind, projectDate, timelineLabels } from "@/features/explorer/format"
-import type { SavedOpportunity } from "./storage"
+import { investigationSchema, type Investigation, type SavedOpportunity } from "./storage"
 
 export const BRIEF_CAVEATS = [
   "Candidates compare different reporting filings; the asset sponsor is preserved separately and may differ from the filing utility.",
@@ -24,12 +25,42 @@ function projectText(project: Project) {
     ...project.notes.map((note) => `Source note: ${note}`),
   ].join("\n")
 }
+const resourceLabels: Record<Investigation["resource"], string> = {
+  unspecified: "Unspecified",
+  "right-of-way": "Right-of-way",
+  "crews-equipment": "Crews and equipment",
+  "substation-capacity": "Substation capacity",
+  other: "Other",
+}
+function deriveHypotheticalImpact(record: SavedOpportunity): ImpactResult | undefined {
+  const parsed = investigationSchema.safeParse(record.investigation)
+  return parsed.success && parsed.data.impactInputs ? estimateImpact(parsed.data.impactInputs) : undefined
+}
+function investigationText(record: ReturnType<typeof createBrief>["opportunities"][number]): string[] {
+  const investigation = record.investigation
+  if (!investigation) return []
+  return [
+    ...(investigation.resource !== "unspecified" ? [`Resource to investigate: ${resourceLabels[investigation.resource]}`] : []),
+    ...(investigation.objective.trim() ? [`Investigation objective: ${investigation.objective}`] : []),
+    ...(investigation.nextAction.trim() ? [`Next action: ${investigation.nextAction}`] : []),
+    ...(investigation.owner.trim() ? [`Analyst / owner: ${investigation.owner}`] : []),
+    ...(record.hypotheticalImpact ? [
+      `Hypothetical shared corridor area: ${record.hypotheticalImpact.sharedAcres.toFixed(2)} acres`,
+      `Hypothetical avoided land cost: $${record.hypotheticalImpact.indicativeSavingsUsd.toFixed(2)} USD`,
+      ...record.hypotheticalImpact.assumptions.map((assumption) => `Impact assumption: ${assumption}`),
+    ] : []),
+  ]
+}
 export function createBrief(records: SavedOpportunity[], mode: DataMode, availability: Record<string, string>) {
   return {
     format: "gridlock-coordination-brief", version: 1, exportedAt: new Date().toISOString(), mode,
     label: mode === "demo" ? "SYNTHETIC DEMONSTRATION — NOT A UTILITY PLAN" : "Source-backed coordination investigation",
     caveats: BRIEF_CAVEATS,
-    opportunities: records.map((record) => ({ ...record, currentAvailability: availability[record.id] ?? "Current availability unknown" })),
+    opportunities: records.map((record) => ({
+      ...record,
+      hypotheticalImpact: deriveHypotheticalImpact(record),
+      currentAvailability: availability[record.id] ?? "Current availability unknown",
+    })),
   }
 }
 export function briefText(brief: ReturnType<typeof createBrief>) {
@@ -38,6 +69,7 @@ export function briefText(brief: ReturnType<typeof createBrief>) {
     ...brief.opportunities.flatMap((record, index) => [
       `OPPORTUNITY ${index + 1}: ${record.projects[0].name} / ${record.projects[1].name}`,
       `Pair ID: ${record.id}`, `Review: ${record.reviewState}`, `Review notes: ${record.notes || "None recorded"}`,
+      ...investigationText(record),
       `Dataset: ${record.dataset.title}; snapshot ${record.dataset.generatedAt}`, `Saved: ${record.savedAt}; last updated ${record.updatedAt}`,
       `Current availability: ${record.currentAvailability}`, `Saved rank: ${record.opportunity.rank}`,
       `Center distance: ${record.opportunity.distanceMiles.toFixed(2)} statute miles`,
