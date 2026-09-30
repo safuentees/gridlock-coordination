@@ -96,9 +96,9 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | Florida full integrated on current branch; Puerto Rico six-record producer active after accepted qualification. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/pr-transmission/spec.md); connect sample next milestone before full 22. SERTP remains blocked. |
-| core | New York full integrated on current branch; WestConnect six-record producer ready after accepted PR102. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/westconnect-tppl/spec.md); connect sample next milestone before full 304. |
-| coordinator | PR95 integrated; connect Puerto Rico and WestConnect samples in the next increment, then dispatch full producers. | Root owns aggregate/schema/register/merge/checks; preserve all unrelated untracked duplicate files. |
+| source_discovery / ingestion | Florida full integrated on current branch; Puerto Rico six-record batch connected; full 22 producer active. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/pr-transmission/spec.md); Provider connection 2834057 precedes full 22. SERTP remains blocked. |
+| core | New York full integrated on current branch; WestConnect six-record batch connected; full 304 producer active. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/westconnect-tppl/spec.md); Provider connection adc2397 precedes full 304. |
+| coordinator | PR95 integrated; PR107 connects Puerto Rico/WestConnect samples, full source integration pending. | Root owns aggregate/schema/register/merge/checks; preserve all unrelated untracked duplicate files. |
 | ui | BPA full 77 and 13,200-record fixture integrated; F27-GU-Q active. | Exact Guam qualification/sample/receipt in [spec](features/F27-us-regional-expansion/gu-gpa/spec.md); no producer before acceptance, no UI/map edits. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
