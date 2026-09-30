@@ -1,6 +1,6 @@
 {
-  "scope": "sample",
-  "datasetRecords": 6,
-  "compactUtf8Bytes": 21783,
-  "formattedUtf8Bytes": 29786
+  "scope": "full",
+  "datasetRecords": 1766,
+  "compactUtf8Bytes": 5825541,
+  "formattedUtf8Bytes": 8032160
 }

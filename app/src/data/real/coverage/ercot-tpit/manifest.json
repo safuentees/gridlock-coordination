@@ -16,13 +16,13 @@
   "sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
   "geographicScope": "ERCOT planning footprint in Texas; not all Texas transmission, and no per-record state or center is inferred.",
   "inventoryScope": "Source-assigned TPIT component records: explicit transmission-equipment evidence and useful unresolved/distribution planning context. Completed/cancelled, explicit in-service and model-only entries excluded; RTP rows are supplemental context, not additional active projects.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 2216,
-    "importedRecords": 6,
+    "importedRecords": 1766,
     "excludedRows": 450,
     "failedRows": 0,
-    "pendingRows": 1760,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

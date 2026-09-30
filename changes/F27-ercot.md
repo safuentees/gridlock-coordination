@@ -1,6 +1,6 @@
-# F27 ERCOT producer — sample
-- Produced six retained source records spanning physical transmission, planning context, lifecycle uncertainty, duplicate provenance and conflicting supplementary dates.
-- Reproducible source-specific extractor and ledger reconcile 2,216 rows: 6 imported, 450 excluded and 1,760 pending; supplemental RTP context never adds invented projects.
-- Native IDs, usable month precision, source-scoped ownership and classification evidence preserved; year-9999 cells stay unknown with raw evidence/counts; no contacts, inferred centers/windows, parent IDs or benefit calculations.
-- Compact/formatted UTF-8 payload sizes are recorded with the data. Full 1,766-record normalization awaits coordinator sample connection.
-- No shared files or application dependencies changed. Coordinator integration check pending; no worker builds/tests/browser/visual checks run.
+# F27 ERCOT producer — full inventory
+- Connected six retained records at ed07698, then normalized all 1,766 accepted TPIT components: 795 with transmission-equipment evidence and 971 planning-context records.
+- Full ledger reconciles 2,216 project-table rows with 450 explicit exclusions and zero pending/failed; RTP references remain supplemental without invented projects.
+- Source IDs, classification/owner evidence and month precision preserved; 10 retained year-9999 cells normalize to unknown with raw cell evidence (19 across all source rows).
+- Source Dataset sizes: 5,825,541 compact / 8,032,160 formatted UTF-8 bytes. All records remain unlocated; no contact data, inferred windows/parents or benefit calculations.
+- Original unchanged and ignored; no shared files or dependencies changed. Coordinator integration check pending; no worker checks run.
