@@ -1,5 +1,7 @@
 # F27 — Expand US discovery through additional regions
 
+Next bounded task: [F27-PJM](pjm-rtep/spec.md). Coordinator acquired the official public 15,692-upgrade XML, containing owner/state/location text but no coordinates. Qualification must resolve lifecycle/granularity/edition and spatial limitations before implementation; it is not yet imported or qualified.
+
 Selected national-coverage increment 3; continuing capability, not complete after one adapter. Depends on F26's shared contract and first integrated inventory. Purpose: let users find planned transmission projects across the US with honest regional and field coverage. Each independently delivered adapter adds a documented region/source footprint; refreshing the same inventory does not count as geographic expansion.
 
 For each next region, coordinator records a source-specific F27-<source-key> task here or in an adjacent short spec before dispatch: publisher/edition, geographic extent, public enumeration and sample, field/identity mapping, exact producer/consumer paths, owners, dependencies and full-inventory acceptance. Reuse F25 qualification criteria. The initial research timebox does not cap national expansion; later qualification is scoped to the next adapter, not a repeated open-ended national survey. Prefer usable planned-project locations and complementary geographic coverage. Include non-RTO sources and Alaska/Hawaii; keep all territories explicitly visible in the register.
