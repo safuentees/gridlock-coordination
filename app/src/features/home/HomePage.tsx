@@ -5,11 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { projectEligibility } from "@/core"
 import { getReadiness } from "@/data/readiness"
 import type { HomePageProps } from "@/domain/workspace"
-import { sourceEditionLabels } from "@/lib/presentation"
+import { SourceCoverageDialog } from "@/features/coverage/SourceCoverageDialog"
 
 export function HomePage({ dataset, onNavigate, onDemo }: HomePageProps) {
   const coverage = useMemo(() => getReadiness(dataset), [dataset])
-  const sourceEditions = useMemo(() => sourceEditionLabels(dataset.projects), [dataset])
   const eligible = useMemo(() => dataset.projects.filter(project => projectEligibility(project).eligible).length, [dataset])
   const counts = [
     { label: "Inventory records", value: coverage.total },
@@ -37,7 +36,7 @@ export function HomePage({ dataset, onNavigate, onDemo }: HomePageProps) {
         <CardContent className="space-y-4">
           <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">{counts.map(({ label, value }) => <div key={label}><dt className="text-sm text-muted-foreground">{label}</dt><dd className="text-xl font-semibold">{value.toLocaleString()}</dd></div>)}</dl>
           <p className="text-sm text-muted-foreground">Eligibility is assessed before scenario filters. A mapped location alone does not establish that a record can be compared.</p>
-          {sourceEditions.length > 0 && <div className="space-y-1 text-sm text-muted-foreground"><p>{sourceEditions.join("; ")}</p><p>Status reflects each source edition. Milestone dates do not confirm current construction status.</p></div>}
+          <SourceCoverageDialog dataset={dataset} />
         </CardContent>
       </Card>
 
