@@ -1,0 +1,26 @@
+# Local inputs and credentials
+inputs/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+*.log
+
+# Local workspace / OS state
+.worktrees/
+.codex/
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
