@@ -40,7 +40,7 @@ export function ProjectMap({ projects, opportunities, selectedProjectId, selecte
         return <Polyline key={opportunity.id} positions={[[left.lat, left.lon], [right.lat, right.lon]]} pathOptions={{ color: "#525252", weight: selectedOpportunity ? 3 : 1.5, opacity: selectedOpportunity ? 0.9 : 0.3, dashArray: "5 5" }} eventHandlers={{ click: () => onOpportunity(opportunity.id) }} />
       })}
       {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : colors[project.utilityId], fillColor: colors[project.utilityId], fillOpacity: 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }}>
-        <Popup><strong>{project.name}</strong><p>{UTILITIES[project.utilityId]}<br />{project.location.confidence} · {project.location.method.replaceAll("-", " ")}</p><button type="button" className="underline" onClick={() => onProject(project.id)}>Show project evidence</button></Popup>
+        <Popup><strong>{project.name}</strong><p>{UTILITIES[project.utilityId]}<br />{project.location.confidence}; {project.location.method.replaceAll("-", " ")}</p><button type="button" className="underline" onClick={() => onProject(project.id)}>Show project evidence</button></Popup>
       </CircleMarker>)}
     </MapContainer>
     {tileError && <p role="status" className="text-xs text-muted-foreground">Basemap tiles could not load. Project coordinates, inventory and evidence remain available.</p>}
