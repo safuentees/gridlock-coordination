@@ -1,7 +1,7 @@
 # Shared technical agreement
 
 ## Stack and commands
-Vite + React + TypeScript in `app/`, npm lockfile, Tailwind 4, official shadcn Nova preset with Radix, neutral colors and Geist, Leaflet/react-leaflet, Zod. No backend. `cd app && npm ci`; `npm run dev -- --host 127.0.0.1`; checker only: `npm run build` and `npx tsx scripts/check-core.ts` once per integrated milestone as appropriate. Python ingestion uses bundled pypdf/openpyxl read-only against originals; generated application builds are ignored.
+Vite + React + TypeScript in `app/`, npm lockfile, Tailwind 4, official shadcn Nova preset with Radix, neutral colors and Geist, Leaflet/react-leaflet, Zod. No backend. `cd app && npm ci`; `npm run dev -- --host 127.0.0.1`; checker only: `npm run build` and `node --import tsx scripts/check-core.ts` once per integrated milestone as appropriate. Python ingestion uses bundled pypdf/openpyxl read-only against originals; generated application builds are ignored.
 
 Official defaults read: [Vite](https://ui.shadcn.com/docs/installation/vite), [CLI](https://ui.shadcn.com/docs/cli), [table](https://ui.shadcn.com/docs/components/radix/table), [tabs](https://ui.shadcn.com/docs/components/radix/tabs), [input](https://ui.shadcn.com/docs/components/radix/input). Preserve generated components and theme; use ordinary layout utilities, no redesign or visual inspection.
 

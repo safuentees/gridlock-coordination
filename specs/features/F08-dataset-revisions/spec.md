@@ -3,7 +3,7 @@ id: F08
 name: Import and compare revised datasets
 agent: coordinator
 phase: 3
-depends_on: ['F04', 'F03']
+depends_on: ['F00']
 owns: ['app/src/features/import/', 'app/src/data/import.ts']
 cut: never
 ---
@@ -21,3 +21,5 @@ Coordinator is the sole checker at integrated milestones, bounded to one build a
 
 ## Defaults
 Local-first, public supplied sources, no secrets or raw originals committed. Missing values remain unknown. Commit coherent implementation and a three-to-eight-line receipt; report precise blockers.
+
+The shared provider and schema are sufficient to implement this independently. Final UI connection waits for F03; bulk extraction is not a technical dependency.
