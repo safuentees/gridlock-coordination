@@ -2,24 +2,25 @@
   "sourceKey": "pr-transmission",
   "editionId": "2026-08-27-table1",
   "sourceSha256": "d1bc3b2e3a42fca0f41c5d2ad52b136700cf5ae580d048b213a484f4e24b5cc5",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 32,
-    "importedRecords": 6,
+    "importedRecords": 22,
     "excludedRows": 10,
     "failedRows": 0,
-    "pendingRows": 16,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "recordKindCounts": {
-    "transmission-project": 5,
+    "transmission-project": 21,
     "capital-project-context": 1
   },
   "lifecycleCounts": {
-    "planned": 3,
-    "on-hold": 1,
-    "unknown": 1,
-    "approved": 1
+    "planned": 9,
+    "on-hold": 2,
+    "unknown": 2,
+    "under-construction": 4,
+    "approved": 5
   },
   "completeRetainedRecordKindCounts": {
     "transmission-project": 21,
@@ -133,8 +134,9 @@
         "expectedConstructionCompletion": "Nov-25",
         "projectStatus": "The line was energized in December 2025, according to the commitment with the DOE. Further line hardening is scheduled for completion by October 2026. This scope is incremental and will be executed with savings from the original scope."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:05",
       "recordKind": "transmission-project",
       "lifecycle": "planned"
     },
@@ -175,8 +177,9 @@
         "expectedConstructionCompletion": "Dec-25",
         "projectStatus": "The line was energized in December 2025, according to the commitment with the DOE. Further line hardening is scheduled for completion by October 2026. This scope is incremental and will be executed with savings from the original project."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:07",
       "recordKind": "transmission-project",
       "lifecycle": "planned"
     },
@@ -340,8 +343,9 @@
         "expectedConstructionCompletion": "-",
         "projectStatus": "Awaiting reactivation. Included in LUMA’s prioritization Master List."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:15",
       "recordKind": "transmission-project",
       "lifecycle": "on-hold"
     },
@@ -362,8 +366,9 @@
         "expectedConstructionCompletion": "-",
         "projectStatus": "DOE P3 will now fund this project."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:16",
       "recordKind": "transmission-project",
       "lifecycle": "planned"
     },
@@ -384,8 +389,9 @@
         "expectedConstructionCompletion": "Nov-26",
         "projectStatus": "Pending procurement of corrugated pipe for foundations."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:17",
       "recordKind": "transmission-project",
       "lifecycle": "planned"
     },
@@ -406,8 +412,9 @@
         "expectedConstructionCompletion": "Oct-26",
         "projectStatus": "Pending procurement of corrugated pipe for foundations."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:18",
       "recordKind": "transmission-project",
       "lifecycle": "planned"
     },
@@ -428,8 +435,9 @@
         "expectedConstructionCompletion": "Sep-26",
         "projectStatus": "Pending procurement of corrugated pipe for foundations."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:19",
       "recordKind": "transmission-project",
       "lifecycle": "planned"
     },
@@ -498,8 +506,9 @@
         "expectedConstructionCompletion": "Sep-26",
         "projectStatus": "Construction could not be completed due to system constraints and unforeseen issues."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:22",
       "recordKind": "transmission-project",
       "lifecycle": "unknown"
     },
@@ -520,8 +529,9 @@
         "expectedConstructionCompletion": "Sep-26",
         "projectStatus": "Ten of the 12 planned feature identification number (FIDs) were completed. Due to system constraints and unforeseen delays, the remaining two were deferred and are now scheduled for Q1 FY2027."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:23",
       "recordKind": "transmission-project",
       "lifecycle": "under-construction"
     },
@@ -542,8 +552,9 @@
         "expectedConstructionCompletion": "Sep-26",
         "projectStatus": "Four of the five planned FIDs were completed. The remaining FID was deferred due to system constraints and unforeseen delays; with its execution scheduled for Q1 FY2027."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:24",
       "recordKind": "transmission-project",
       "lifecycle": "under-construction"
     },
@@ -564,8 +575,9 @@
         "expectedConstructionCompletion": "Sep-26",
         "projectStatus": "Of the 29 planned FIDs, we completed 23. The remaining six FIDs were deferred due to system constraints and unforeseen delays, and their execution was rescheduled for Q1 FY2027."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:25",
       "recordKind": "transmission-project",
       "lifecycle": "under-construction"
     },
@@ -586,8 +598,9 @@
         "expectedConstructionCompletion": "Sep-26",
         "projectStatus": "Two of the three planned FIDs were completed. The remaining FID was deferred due to system constraints and unforeseen delays, with its execution rescheduled for Q1 FY2027."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:26",
       "recordKind": "transmission-project",
       "lifecycle": "under-construction"
     },
@@ -631,8 +644,9 @@
         "expectedConstructionCompletion": "Mar-27",
         "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:28",
       "recordKind": "transmission-project",
       "lifecycle": "approved"
     },
@@ -653,8 +667,9 @@
         "expectedConstructionCompletion": "Jan-27",
         "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:29",
       "recordKind": "transmission-project",
       "lifecycle": "approved"
     },
@@ -675,8 +690,9 @@
         "expectedConstructionCompletion": "Mar-27",
         "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:30",
       "recordKind": "transmission-project",
       "lifecycle": "approved"
     },
@@ -697,8 +713,9 @@
         "expectedConstructionCompletion": "Feb-27",
         "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
       },
-      "disposition": "pending",
-      "reason": "Retained work package outside the six-record connection sample.",
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:31",
       "recordKind": "transmission-project",
       "lifecycle": "approved"
     },
