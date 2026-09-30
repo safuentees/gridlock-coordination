@@ -2,10 +2,8 @@ import type { Color, LayersList } from "@deck.gl/core"
 import { PathLayer, ScatterplotLayer } from "@deck.gl/layers"
 import { PathStyleExtension, type PathStyleExtensionProps } from "@deck.gl/extensions"
 import type { LocatedMapProject, MapConnection } from "../map-view"
+import { mapReportingGroupColor } from "../map-colors"
 
-const filingColors: Record<LocatedMapProject["utilityId"], Color> = {
-  desc: [37, 99, 235, 217], gpc: [180, 83, 9, 217],
-}
 const dashedPaths = new PathStyleExtension({ dash: true })
 
 export function projectLayers({ projects, connections, focusIds, candidateIds, selectedPair, pointOpacity = 1, onProject, onOpportunity }: {
@@ -48,10 +46,10 @@ export function projectLayers({ projects, connections, focusIds, candidateIds, s
       getPosition: (project) => [project.location.lon, project.location.lat],
       radiusUnits: "pixels",
       getRadius: (project) => focusIds.includes(project.id) ? 8 : 5,
-      getFillColor: (project) => filingColors[project.utilityId],
+      getFillColor: (project): Color => [...mapReportingGroupColor(project.utilityId).rgb, 217],
       stroked: true,
       lineWidthUnits: "pixels",
-      getLineColor: (project) => focusIds.includes(project.id) || candidateIds.has(project.id) ? [23, 23, 23, 255] : filingColors[project.utilityId],
+      getLineColor: (project): Color => focusIds.includes(project.id) || candidateIds.has(project.id) ? [23, 23, 23, 255] : [...mapReportingGroupColor(project.utilityId).rgb, 217],
       getLineWidth: (project) => focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1,
       updateTriggers: { getRadius: [focusIds], getLineColor: [focusIds, candidateIds], getLineWidth: [focusIds, candidateIds] },
       pickable: isSelected || opacity > 0.05,
