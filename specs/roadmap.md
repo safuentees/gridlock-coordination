@@ -107,7 +107,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | source_discovery / ingestion | [F27-CTPC-I](features/F27-us-regional-expansion/carolinas-tpc/spec.md): six-record sample connected through the shared loader; full 98 active. | Exact carolinas-tpc producer/data folders and receipt; 120 source rows, 22 terminal exclusions, no SERTP access or shared edits/checks. |
 | core | [F27-PGE-I](features/F27-us-regional-expansion/ca-pge-tpr/spec.md): six diagnostics, then full 1,591 after connection. | Exact ca-pge-tpr producer/data folders and receipt; preserve components/program scope and March status evidence. |
 | coordinator | PR125 merged; accept PG&E/SDG&E/CTPC source contracts, connect small samples and reconcile full inventories. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
-| ui | [F27-SDGE-I](features/F27-us-regional-expansion/ca-sdge-tpr/spec.md): six diagnostics, then full 137 after connection. | Exact sdge-tpr producer/data folders and receipt; preserve budget/source-locator and mixed date meanings, no UI/map edits. |
+| ui | [F27-SDGE-I](features/F27-us-regional-expansion/ca-sdge-tpr/spec.md): six diagnostics connected; full 137 active. | Exact sdge-tpr producer/data folders and receipt; preserve budget/source-locator and mixed date meanings, no UI/map edits. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
