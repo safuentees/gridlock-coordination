@@ -16,13 +16,13 @@
   "sha256": "7a3266df72a13e0312daea561e685d2fba1fab86ef48648d634c6f453ac98c2d",
   "geographicScope": "Featured Hawaiian Electric topics on Oahu, Hawaii Island and Maui; retained topics concern Oahu and Hawaii Island. Not complete Hawaii or utility coverage.",
   "inventoryScope": "Seven featured topics: two transmission improvements, one capital network program, one unresolved planning context and three excluded completed/generation/storage topics. Workstreams and phases are not extra records.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 7,
-    "importedRecords": 2,
+    "importedRecords": 4,
     "excludedRows": 3,
     "failedRows": 0,
-    "pendingRows": 2,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

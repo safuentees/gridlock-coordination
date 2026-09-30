@@ -78,7 +78,32 @@
           "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/downtown-honolulu-network-upgrades"
         }
       ],
-      "facts": null
+      "facts": {
+        "name": "Downtown Honolulu Network Upgrades",
+        "sponsor": "Hawaiian Electric",
+        "description": "Network program covering substation equipment, vaults, cables, manholes and monitoring.",
+        "status": null,
+        "voltageKv": [],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "unknown",
+          "label": "Program upgrade horizon; not an in-service date"
+        },
+        "notes": [
+          "One program-level context record; five workstreams are not five separately identified engineering projects.",
+          "Some work is completed while other work continues; the program has not been treated as wholly completed."
+        ],
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "sourceState": "HI",
+        "sourceLocation": "Downtown Honolulu / Chinatown, Oahu",
+        "sourceUpdatedOn": null,
+        "aliases": [],
+        "workType": null,
+        "milestones": []
+      }
     },
     {
       "topicOrdinal": 2,
@@ -195,7 +220,49 @@
           "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
         }
       ],
-      "facts": null
+      "facts": {
+        "name": "Waiau Transmission Structure Replacements",
+        "sponsor": "Hawaiian Electric",
+        "description": "Replacement of aging transmission lattice structures with steel poles.",
+        "status": null,
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No in-service or completion milestone published"
+        },
+        "notes": [
+          "High-voltage transmission is explicit, but no numeric voltage was established.",
+          "Survey/permitting start is not construction start or completion. Individual structure numbers are not separate source projects."
+        ],
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "sourceState": "HI",
+        "sourceLocation": "Waiau Power Plant through Pearl City, Oahu",
+        "sourceUpdatedOn": null,
+        "aliases": [],
+        "workType": null,
+        "milestones": [
+          {
+            "field": "Anticipated survey and permitting start",
+            "date": {
+              "value": "2030",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated survey and permitting start; construction follows"
+            },
+            "evidence": [
+              {
+                "file": "waiau-transmission-structure-replacements.html",
+                "locator": "Final schedule paragraph",
+                "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "topicOrdinal": 5,

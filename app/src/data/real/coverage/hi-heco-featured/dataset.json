@@ -1,9 +1,61 @@
 {
   "schemaVersion": 2,
   "mode": "real",
-  "title": "Hawaiian Electric featured projects — sample",
+  "title": "Hawaiian Electric featured projects — full",
   "generatedAt": "2026-09-30T09:18:09Z",
   "projects": [
+    {
+      "id": "hi-heco-featured:downtown-honolulu-network-upgrades",
+      "utilityId": "hi-heco-featured",
+      "sourceId": "downtown-honolulu-network-upgrades",
+      "name": "Downtown Honolulu Network Upgrades",
+      "sponsor": "Hawaiian Electric",
+      "description": "Network program covering substation equipment, vaults, cables, manholes and monitoring.",
+      "status": null,
+      "voltageKv": [],
+      "date": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "unknown",
+        "label": "Program upgrade horizon; not an in-service date"
+      },
+      "notes": [
+        "One program-level context record; five workstreams are not five separately identified engineering projects.",
+        "Some work is completed while other work continues; the program has not been treated as wholly completed."
+      ],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "downtown-honolulu-network-upgrades.html",
+          "locator": "Keeping You Informed; Keys to a Resilient Downtown Network, items 1–5",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/downtown-honolulu-network-upgrades"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "hi-heco-featured",
+        "editionId": "snapshot-2026-09-30-7a3266df",
+        "editionLabel": "Hawaiian Electric featured project pages — September 30, 2026 snapshot",
+        "reportingGroupName": "Hawaiian Electric featured projects",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "sourceState": "HI",
+        "sourceLocation": "Downtown Honolulu / Chinatown, Oahu",
+        "sourceUpdatedOn": null,
+        "aliases": [],
+        "workType": null,
+        "milestones": [],
+        "owner": null,
+        "parentProgramId": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
     {
       "id": "hi-heco-featured:overhead-power-line-replacement-project-in-kalaeloa",
       "utilityId": "hi-heco-featured",
@@ -101,6 +153,75 @@
       }
     },
     {
+      "id": "hi-heco-featured:waiau-transmission-structure-replacements",
+      "utilityId": "hi-heco-featured",
+      "sourceId": "waiau-transmission-structure-replacements",
+      "name": "Waiau Transmission Structure Replacements",
+      "sponsor": "Hawaiian Electric",
+      "description": "Replacement of aging transmission lattice structures with steel poles.",
+      "status": null,
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service or completion milestone published"
+      },
+      "notes": [
+        "High-voltage transmission is explicit, but no numeric voltage was established.",
+        "Survey/permitting start is not construction start or completion. Individual structure numbers are not separate source projects."
+      ],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "waiau-transmission-structure-replacements.html",
+          "locator": "Opening scope; final survey and permitting schedule paragraph",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "hi-heco-featured",
+        "editionId": "snapshot-2026-09-30-7a3266df",
+        "editionLabel": "Hawaiian Electric featured project pages — September 30, 2026 snapshot",
+        "reportingGroupName": "Hawaiian Electric featured projects",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "sourceState": "HI",
+        "sourceLocation": "Waiau Power Plant through Pearl City, Oahu",
+        "sourceUpdatedOn": null,
+        "aliases": [],
+        "workType": null,
+        "milestones": [
+          {
+            "field": "Anticipated survey and permitting start",
+            "date": {
+              "value": "2030",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated survey and permitting start; construction follows"
+            },
+            "evidence": [
+              {
+                "file": "waiau-transmission-structure-replacements.html",
+                "locator": "Final schedule paragraph",
+                "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+              }
+            ]
+          }
+        ],
+        "owner": null,
+        "parentProgramId": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
       "id": "hi-heco-featured:north-kohala-microgrid",
       "utilityId": "hi-heco-featured",
       "sourceId": "north-kohala-microgrid",
@@ -183,13 +304,13 @@
       "sha256": "7a3266df72a13e0312daea561e685d2fba1fab86ef48648d634c6f453ac98c2d",
       "geographicScope": "Featured Hawaiian Electric topics on Oahu, Hawaii Island and Maui; retained topics concern Oahu and Hawaii Island. Not complete Hawaii or utility coverage.",
       "inventoryScope": "Seven featured topics: two transmission improvements, one capital network program, one unresolved planning context and three excluded completed/generation/storage topics. Workstreams and phases are not extra records.",
-      "scope": "sample",
+      "scope": "full",
       "counts": {
         "sourceRows": 7,
-        "importedRecords": 2,
+        "importedRecords": 4,
         "excludedRows": 3,
         "failedRows": 0,
-        "pendingRows": 2,
+        "pendingRows": 0,
         "locatedRecords": 0
       },
       "exclusions": [
@@ -219,11 +340,11 @@
     }
   ],
   "coverage": {
-    "processed": 2,
+    "processed": 4,
     "skipped": 3,
     "failed": 0,
     "notes": [
-      "2 accepted featured topics remain pending in this source snapshot.",
+      "0 accepted featured topics remain pending in this source snapshot.",
       "Featured subset only; broader Hawaii planned-project inventory coverage remains incomplete."
     ]
   }

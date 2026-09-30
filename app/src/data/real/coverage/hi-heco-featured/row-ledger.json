@@ -59,15 +59,15 @@
   ],
   "counts": {
     "sourceRows": 7,
-    "importedRecords": 2,
+    "importedRecords": 4,
     "excludedRows": 3,
     "failedRows": 0,
-    "pendingRows": 2,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "payloadSizes": {
-    "compactUtf8Bytes": 8151,
-    "formattedUtf8Bytes": 10342
+    "compactUtf8Bytes": 11968,
+    "formattedUtf8Bytes": 15350
   },
   "rows": [
     {
@@ -77,8 +77,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained topic; production transcription pending",
+      "disposition": "imported",
+      "reason": "Network capital program, not separately enumerated engineering projects",
       "sources": [
         {
           "file": "downtown-honolulu-network-upgrades.html",
@@ -133,8 +133,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Accepted retained topic; production transcription pending",
+      "disposition": "imported",
+      "reason": "Explicit transmission/subtransmission improvement",
       "sources": [
         {
           "file": "waiau-transmission-structure-replacements.html",
