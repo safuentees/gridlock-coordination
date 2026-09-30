@@ -1,0 +1,56 @@
+{
+  "sourceKey": "al-apc-doe",
+  "editionId": "review-index-snapshot-2026-09-30",
+  "label": "Alabama Power DOE public environmental-review projects — September 2026 index snapshot",
+  "reportingGroupId": "al-apc-doe",
+  "reportingGroupName": "Alabama Power DOE environmental-review projects",
+  "publisher": "U.S. Department of Energy, Office of Energy Dominance Financing",
+  "processAuthority": "DOE Office of Energy Dominance Financing environmental reviews for potential federal financial support",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "index.html",
+    "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+    "locator": "Documents Available for Download, all twelve entries in observed index order, September 30, 2026"
+  },
+  "sha256": "216fbddd6529809cf885181467788f3e60f2eed29256f70c4ff0e7adba2dfbf8",
+  "geographicScope": "Alabama; each retained letter explicitly identifies its county or counties.",
+  "inventoryScope": "All twelve DOE Alabama Power review entries: six physical transmission packages retained; one generation, one demand-side program, two fiber-only and two distribution entries excluded.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 12,
+    "importedRecords": 3,
+    "excludedRows": 6,
+    "failedRows": 0,
+    "pendingRows": 3,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Generation conversion; not a separate physical transmission package.",
+      "count": 1
+    },
+    {
+      "reason": "Behind-the-meter demand-side program; no physical transmission construction.",
+      "count": 1
+    },
+    {
+      "reason": "Fiber-only work; no new or altered electrical transmission facilities established.",
+      "count": 2
+    },
+    {
+      "reason": "Distribution line and pole improvements; not transmission.",
+      "count": 2
+    }
+  ],
+  "limitations": [
+    "This is a finite featured/funding-review subset, not a complete Alabama Power transmission register or statewide inventory. Broader project denominators remain unknown.",
+    "The composite index snapshot has no single publication date. Per-record lifecycleAsOf is its letter date, not index posting or retrieval; four index/letter date differences remain explicit, including excluded Roanoke.",
+    "All six retained packages are planned. Environmental-review completion and a program-level loan guarantee do not establish physical progress, commissioning, engineering approval or project-specific financing close.",
+    "Five APC review/project numbers are native only within this source context. Lock 5 uses a named-review source locator; environmental consultation codes are not engineering IDs. No cross-source identity is inferred.",
+    "Lock 5 voltage is unknown because only future 500/230 kV terminal accommodation is stated. South Bessemer retains 500 kV for specified served circuits while its existing 500/230/115 kV station and autobank remain contextual.",
+    "Thurlow and Bassett commercial-operation targets are month-precision service forecasts. South Bessemer May 2030 is completion with unknown kind; the other three have no completion/service target. Forecast starts remain milestones, never actual construction bounds.",
+    "All asset owners, numeric geometry, construction windows, actual construction starts and row-update days are unknown. Applicant/borrower identity does not prove equipment ownership.",
+    "Index and all twelve PDFs are checksum-pinned in the catalog and row ledger. No original binaries, contact details, map-derived centers or restricted SERTP material are included. Public downloadability does not establish blanket redistribution permission."
+  ]
+}
