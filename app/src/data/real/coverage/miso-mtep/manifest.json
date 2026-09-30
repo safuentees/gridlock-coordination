@@ -1,0 +1,43 @@
+{
+  "sourceKey": "miso-mtep",
+  "editionId": "appendix-a-2026-08-04",
+  "label": "MISO Appendix A status through August 4, 2026",
+  "reportingGroupId": "miso-mtep",
+  "reportingGroupName": "MISO MTEP inventory",
+  "publisher": "Midcontinent Independent System Operator",
+  "processAuthority": "Midcontinent Independent System Operator",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "Appendix A Status Report575959.xlsx",
+    "locator": "'MTEP Approved (Appendix A) ...'!A1:D1 report as-of; A4:Y3214 facility inventory",
+    "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+  },
+  "sha256": "55b8a60fc0a4159d9de52a5c1f83be04cfaa2c60468126408d9968782eb0c9dc",
+  "geographicScope": "Partial MISO regional public facility inventory including seam work; state labels do not establish complete MISO or jurisdiction coverage.",
+  "inventoryScope": "All public Appendix A facility components except M4 in service. Explicit parent projects are not extra records. Ancillary and distribution context remain visible with distinct kinds; annual and under-evaluation inventories remain separate.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 3211,
+    "importedRecords": 6,
+    "excludedRows": 169,
+    "failedRows": 0,
+    "pendingRows": 3036,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "M4 — completed and in service",
+      "count": 169
+    }
+  ],
+  "limitations": [
+    "August 4, 2026 is the workbook report-through date, not a known publication or per-row update date. Retrieval is September 30; the URL cache parameter is not freshness.",
+    "Facility status controls lifecycle. Target MTEP cycle and Current Appendix do not override a Proposed row; past expected dates do not prove completion.",
+    "Miscellaneous capital work and the accepted distribution-context decisions are not transmission-qualified records. Parent IDs are context, not deduplicated engineering-project counts.",
+    "Facility Owner(s) is separate from Submitting TO. Blank, joint, generic and unresolved alias families keep unknown qualified owners; other identities are source-scoped only.",
+    "All coordinates, geometry and construction windows are unknown. Expected ISD is a facility forecast at displayed precision; source miles are not routes or shared corridors.",
+    "Only the public visible inventory sheet is used; internal workbook metadata, portal models, maps and separate annual/evaluation inventories are not imported.",
+    "Public access is not an open-data or commercial reuse license; source attribution and stated rights are preserved."
+  ]
+}
