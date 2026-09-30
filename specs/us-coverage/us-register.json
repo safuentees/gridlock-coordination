@@ -4,7 +4,7 @@
   "baselineRevision": "F27 California/Carolinas PR133 (checked implementation ae04a2b; one build and source/revision case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported; CNMI transmission role and SERTP source markings remain unresolved",
+  "qualificationStatus": "Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported; Santee Cooper and FPL qualified for staged production. NYISO report access, CNMI transmission role and SERTP source markings remain unresolved.",
   "totals": {
     "importedSourceRecords": 14820,
     "locatedRecords": 113,
@@ -12,7 +12,7 @@
     "unverifiedLocations": 113,
     "missingLocations": 14707,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 19,
+    "newRegionalSourcesQualified": 21,
     "newFullRegionalInventoriesImported": 19,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 5,
