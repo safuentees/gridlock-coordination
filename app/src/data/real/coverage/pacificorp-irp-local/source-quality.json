@@ -1,0 +1,57 @@
+{
+  "sourceKey": "pacificorp-irp-local",
+  "editionId": "2025-03-31",
+  "scope": "full",
+  "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
+  "acceptedRetainedLifecycleCounts": {
+    "planned": 13,
+    "unknown": 1
+  },
+  "acceptedRetainedKindCounts": {
+    "planning-context": 1,
+    "transmission-project": 13
+  },
+  "acceptedRetainedDatePrecisionCounts": {
+    "unknown": 14
+  },
+  "importedLifecycleCounts": {
+    "planned": 13,
+    "unknown": 1
+  },
+  "importedKindCounts": {
+    "planning-context": 1,
+    "transmission-project": 13
+  },
+  "sampleIds": [
+    "pacificorp-irp-local:2025-ch4-p095-pace-breaker-program-1",
+    "pacificorp-irp-local:2025-ch4-p095-pace-central-utah-3",
+    "pacificorp-irp-local:2025-ch4-p096-pacw-portland-1"
+  ],
+  "originals": [
+    {
+      "file": "2025_IRP_Vol_1.pdf",
+      "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf",
+      "bytes": 14075881,
+      "sha256": "c540ce2974d538f5f6305794700026298f529aae237469dab1f4280a8eb5da64"
+    },
+    {
+      "file": "irp-index.html",
+      "url": "https://www.pacificorp.com/energy/integrated-resource-plan.html",
+      "bytes": 53058,
+      "sha256": "b16ab60ac0397ab123f0fa7e61e03b75f27b3b026e3bb29e914db2d9f4023869"
+    },
+    {
+      "file": "spanish-fork-to-mercer.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html",
+      "bytes": 44475,
+      "sha256": "dd01065e1adb21a5bbfd12c2e13c15fe044bbbdd4795d48498dbd32b68ba0a1c"
+    }
+  ],
+  "relationshipsAndPrecedence": [
+    "Historical March 31, 2025 edition is not current lifecycle; current featured pages and the March 2026 update do not silently replace it.",
+    "The breaker program has conflicting planned heading and completed-tense wording; one planning-context record stays unknown, without inventing twelve substations.",
+    "All fourteen retained entries lack service dates and native project IDs; frozen chapter/page/area/bullet locators identify source records.",
+    "Mixed transmission/distribution and BPA/PacifiCorp interests remain visible; no singular asset owner is inferred.",
+    "Spanish Fork–Mercer has an evidenced overlap with the current featured source; records are not claimed to be unique engineering projects."
+  ]
+}

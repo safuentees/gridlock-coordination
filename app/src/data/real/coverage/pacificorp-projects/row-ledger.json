@@ -1,0 +1,379 @@
+[
+  {
+    "sourceId": "west-of-hemingway--wallula-to-mcnary",
+    "sourceProjectName": "Wallula to McNary",
+    "sources": [
+      {
+        "file": "west-of-hemingway.html",
+        "locator": "Completed segment — Wallula to McNary",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "gateway-central--original-populus-to-terminal",
+    "sourceProjectName": "Original Populus to Terminal",
+    "sources": [
+      {
+        "file": "gateway-central.html",
+        "locator": "Introduction and Completed segments — Populus to Terminal",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "gateway-central--mona-to-oquirrh",
+    "sourceProjectName": "Mona to Oquirrh",
+    "sources": [
+      {
+        "file": "gateway-central.html",
+        "locator": "Introduction and Completed segments — Mona to Oquirrh",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "gateway-central--limber-to-terminal",
+    "sourceProjectName": "Limber to Terminal",
+    "sources": [
+      {
+        "file": "gateway-central.html",
+        "locator": "Segments in progress — Limber to Terminal; Project timeline",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": "2030-11",
+      "precision": "month",
+      "kind": "in-service",
+      "label": "Scheduled completed/in-service month"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:gateway-central--limber-to-terminal"
+  },
+  {
+    "sourceId": "gateway-west--windstar-to-aeolus",
+    "sourceProjectName": "Windstar to Aeolus",
+    "sources": [
+      {
+        "file": "gateway-west.html",
+        "locator": "D1 — completed November 2024",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "gateway-west--aeolus-to-bridger-anticline",
+    "sourceProjectName": "Aeolus to Bridger/Anticline",
+    "sources": [
+      {
+        "file": "gateway-west.html",
+        "locator": "D2 — completed October and energized November 2020",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "gateway-west--bridger-anticline-to-populus",
+    "sourceProjectName": "Bridger/Anticline to Populus",
+    "sources": [
+      {
+        "file": "gateway-west.html",
+        "locator": "Windstar to Populus — D3",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+      },
+      {
+        "file": "2025_IRP_Update.pdf",
+        "locator": "PDF page 44 / printed page 34 — Gateway West (Segment D3)",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Proposed line; future in-service timing",
+    "date": {
+      "value": "2035",
+      "precision": "year",
+      "kind": "in-service",
+      "label": "Earliest in-service year — March 2026 IRP update"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:gateway-west--bridger-anticline-to-populus"
+  },
+  {
+    "sourceId": "gateway-west--populus-to-hemingway-aggregate",
+    "sourceProjectName": "Populus to Hemingway aggregate",
+    "sources": [
+      {
+        "file": "gateway-west.html",
+        "locator": "Populus to Hemingway (Gateway West — Segment E)",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "aggregate-parent-represented-by-e8",
+    "notes": [
+      "The unenumerated remainder is not declared absent, and no aggregate mileage is added to E8."
+    ]
+  },
+  {
+    "sourceId": "gateway-south--aeolus-to-mona-clover",
+    "sourceProjectName": "Aeolus to Mona/Clover",
+    "sources": [
+      {
+        "file": "gateway-south.html",
+        "locator": "Completed segments — Aeolus to Mona/Clover, completed November 2024",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "gateway-south--sigurd-to-red-butte",
+    "sourceProjectName": "Sigurd to Red Butte",
+    "sources": [
+      {
+        "file": "gateway-south.html",
+        "locator": "Completed segments — Sigurd to Red Butte, completed May 2015",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html"
+      }
+    ],
+    "disposition": "excluded",
+    "reason": "explicit-completed"
+  },
+  {
+    "sourceId": "west-of-hemingway--boardman-to-hemingway",
+    "sourceProjectName": "Boardman to Hemingway",
+    "sources": [
+      {
+        "file": "west-of-hemingway.html",
+        "locator": "Segment in progress — Boardman to Hemingway; Project overview and schedule",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+      },
+      {
+        "file": "2025_IRP_Update.pdf",
+        "locator": "PDF page 44 / printed page 34 — Boardman to Hemingway",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "under-construction",
+    "sourceStatus": "Construction underway — March 2026 IRP update",
+    "date": {
+      "value": "2027-12-31",
+      "precision": "day",
+      "kind": "in-service",
+      "label": "Expected in-service date — March 2026 IRP update"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:west-of-hemingway--boardman-to-hemingway"
+  },
+  {
+    "sourceId": "apex-to-maverick--line",
+    "sourceProjectName": "Apex to Maverick",
+    "sources": [
+      {
+        "file": "apex-to-maverick.html",
+        "locator": "Opening project description; Preliminary project schedule",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:apex-to-maverick--line"
+  },
+  {
+    "sourceId": "black-rock-to-sigurd--line",
+    "sourceProjectName": "Black Rock to Sigurd",
+    "sources": [
+      {
+        "file": "black-rock-to-sigurd.html",
+        "locator": "About the project; equipment facts; Project timeline",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/black-rock-to-sigurd.html"
+      },
+      {
+        "file": "transmission-projects.html",
+        "locator": "Other transmission line projects — Black Rock to Sigurd row",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": "2027",
+      "precision": "year",
+      "kind": "in-service",
+      "label": "Anticipated in-service year"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:black-rock-to-sigurd--line"
+  },
+  {
+    "sourceId": "blueprint-south--project",
+    "sourceProjectName": "Blueprint South",
+    "sources": [
+      {
+        "file": "blueprint-south.html",
+        "locator": "Opening project scope; Location routing study; Preliminary project schedule",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:blueprint-south--project"
+  },
+  {
+    "sourceId": "segment-b-honeyville-populus-threemile--maintenance",
+    "sourceProjectName": "Honeyville to Populus and Threemile Knoll maintenance",
+    "sources": [
+      {
+        "file": "segment-b-honeyville-populus-threemile.html",
+        "locator": "Project overview; Phase 1; Phase 2; Project timeline",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html"
+      },
+      {
+        "file": "gateway-central.html",
+        "locator": "Segments in progress — Honeyville to Populus and Threemile Knoll",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": "2030",
+      "precision": "year",
+      "kind": "in-service",
+      "label": "Expected overall completion year; phase 2 Q4 2030"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:segment-b-honeyville-populus-threemile--maintenance"
+  },
+  {
+    "sourceId": "spanish-fork-to-mercer--line",
+    "sourceProjectName": "Spanish Fork to Mercer",
+    "sources": [
+      {
+        "file": "spanish-fork-to-mercer.html",
+        "locator": "Project overview; Project map and planning/design-stage description",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html"
+      },
+      {
+        "file": "transmission-projects.html",
+        "locator": "Other transmission line projects — Spanish Fork to Mercer row",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+      },
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "locator": "PDF page 111 / printed page 95 — PACE Central Utah, third planned project bullet",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No in-service milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:spanish-fork-to-mercer--line"
+  },
+  {
+    "sourceId": "three-peaks-to-purgatory-flat--line",
+    "sourceProjectName": "Three Peaks to Purgatory Flat",
+    "sources": [
+      {
+        "file": "three-peaks-to-purgatory-flat.html",
+        "locator": "Project overview; equipment facts; Anticipated project timeline",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html"
+      },
+      {
+        "file": "transmission-projects.html",
+        "locator": "Other transmission line projects — Three Peaks to Purgatory Flat row",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": "2033",
+      "precision": "year",
+      "kind": "in-service",
+      "label": "Anticipated in-service year from project detail"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:three-peaks-to-purgatory-flat--line"
+  },
+  {
+    "sourceId": "segment-e8--midpoint-to-hemingway",
+    "sourceProjectName": "Gateway West Segment E8 — Midpoint to Hemingway",
+    "sources": [
+      {
+        "file": "segment-e8.html",
+        "locator": "Opening project scope; Project timeline",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+      },
+      {
+        "file": "gateway-west.html",
+        "locator": "Populus to Hemingway — Segment E; E8 link and description",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "component",
+    "lifecycle": "planned",
+    "sourceStatus": "Planned physical work",
+    "date": {
+      "value": "2030-06",
+      "precision": "month",
+      "kind": "in-service",
+      "label": "Completed/In-Service — June 2030"
+    },
+    "disposition": "imported",
+    "projectId": "pacificorp-projects:segment-e8--midpoint-to-hemingway"
+  }
+]

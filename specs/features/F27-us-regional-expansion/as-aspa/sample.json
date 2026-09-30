@@ -1,0 +1,201 @@
+{
+  "qualificationVersion": 1,
+  "sourceKey": "as-aspa-pcap",
+  "editionId": "2024-03-21-pcap",
+  "retrievedOn": "2026-09-30",
+  "publishedOn": null,
+  "sourceEditionDate": "2024-03-21",
+  "sourceEditionDateMeaning": "Cover last-revised date; not filename date or inferred publication date.",
+  "sourceRows": 6,
+  "proposedRetained": 2,
+  "proposedExcluded": 4,
+  "recordKindCounts": {
+    "transmission-project": 1,
+    "capital-project-context": 1
+  },
+  "scope": "All three ASPA priority actions and the three explicitly numbered children of Action1 in the2024 PCAP; six hierarchical units. ASTCA section is outside this declared ASPA subset.",
+  "identityPolicy": "Published action labels are native planning-action identifiers, not engineering asset IDs; source IDs namespace the full ASPA action label. Parent action1 is excluded, not an additional retained project.",
+  "sources": [
+    {
+      "file": "aspa-2025-audit.pdf",
+      "url": "https://www.aspower.com/ASPAWEB/PublicNotice/Reports/ASPA%202025%20Final%20Audit%20Reports%20(FS%20%26%20SA).pdf",
+      "bytes": 1221637,
+      "sha256": "05b515935a28bb26dc2be19cc511286440ba637c667bb68981650a64b79b226c"
+    },
+    {
+      "file": "as-pcap-2024.pdf",
+      "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+      "bytes": 962466,
+      "sha256": "dbf32acea623526934a401e19a6550b923bc7a333e2c11929e1c0b20eff5e7a6"
+    },
+    {
+      "file": "aspa25-078-hardware.pdf",
+      "url": "https://www.aspower.com/aspaweb/Bids/RFQ%20No.%20ASPA25.078%20-%20T%26D%2035kV%20Transmission%20Line%20Hardware.pdf",
+      "bytes": 795604,
+      "sha256": "63b5d3f11ae5689a780b476063eb617b81cf23e09ab8f087be10a2bdcbc694a8"
+    },
+    {
+      "file": "aspa26-037-rate-study.pdf",
+      "url": "https://www.aspower.com/aspaweb/Bids/RFP%20NO.%20ASPA26.037%20-%20Rate%20Study.pdf",
+      "bytes": 1165563,
+      "sha256": "26e3d2611f0e1b6c58f7d0aed5bbdbaa3972e44b31f370e901ac095efc7c9e0c"
+    },
+    {
+      "file": "nrel-as-baseline.pdf",
+      "url": "https://docs.nrel.gov/docs/fy24osti/88856.pdf",
+      "error": "curl: (6) Could not resolve host: docs.nrel.gov\n"
+    }
+  ],
+  "diagnostics": [
+    {
+      "sourceAction": "1",
+      "sourceId": "aspa-priority-action-1",
+      "name": "New electrical grid control center \u2014 parent action",
+      "disposition": "exclude",
+      "recordKind": null,
+      "reason": "Aggregate priority action; its three explicitly numbered funding projects are enumerated separately. Do not import the parent alongside children.",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14\u201315 / printed13\u201314"
+      },
+      "lifecycle": null,
+      "lifecycleAsOf": null,
+      "lifecycleDateMeaning": null,
+      "date": null,
+      "voltageKv": [],
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "buildWindow": null,
+      "sourceLocation": "Tafuna, on the island of Tutuila in American Samoa (Priority Action 1 program location)"
+    },
+    {
+      "sourceAction": "1.A",
+      "sourceId": "aspa-priority-action-1-a",
+      "name": "National Control Center",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "Proposed mixed utility grid/plant/water control facility. Funding requested; no evidenced exclusive transmission role or asset owner.",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14\u201315 / printed13\u201314"
+      },
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2024-03-21",
+      "lifecycleDateMeaning": "source-edition",
+      "date": null,
+      "voltageKv": [],
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "buildWindow": null,
+      "sourceLocation": "Tafuna, on the island of Tutuila in American Samoa (Priority Action 1 program location)"
+    },
+    {
+      "sourceAction": "1.B",
+      "sourceId": "aspa-priority-action-1-b",
+      "name": "Wind and solar battery storage",
+      "disposition": "exclude",
+      "recordKind": null,
+      "reason": "Standalone 40MWh wind and12MWh solar storage; storage discovery is outside planned-transmission scope.",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14 / printed13"
+      },
+      "lifecycle": null,
+      "lifecycleAsOf": null,
+      "lifecycleDateMeaning": null,
+      "date": null,
+      "voltageKv": [],
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "buildWindow": null,
+      "sourceLocation": "Tafuna, on the island of Tutuila in American Samoa (Priority Action 1 program location)"
+    },
+    {
+      "sourceAction": "1.C",
+      "sourceId": "aspa-priority-action-1-c",
+      "name": "New grid transmission line to and from the National Control Center",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Explicit proposed grid transmission line. Funding request does not establish approval, routing, endpoints, voltage or construction dates.",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF14\u201315 / printed13\u201314"
+      },
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2024-03-21",
+      "lifecycleDateMeaning": "source-edition",
+      "date": null,
+      "voltageKv": [],
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "buildWindow": null,
+      "sourceLocation": "Tafuna, on the island of Tutuila in American Samoa (Priority Action 1 program location)"
+    },
+    {
+      "sourceAction": "2",
+      "sourceId": "aspa-priority-action-2",
+      "name": "Replace work vehicle fleet with electric vehicles",
+      "disposition": "exclude",
+      "recordKind": null,
+      "reason": "Vehicle fleet action, not a physical transmission project. Vehicle counts are not additional source projects.",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF15\u201316 / printed14\u201315"
+      },
+      "lifecycle": null,
+      "lifecycleAsOf": null,
+      "lifecycleDateMeaning": null,
+      "date": null,
+      "voltageKv": [],
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "buildWindow": null,
+      "sourceLocation": null
+    },
+    {
+      "sourceAction": "3",
+      "sourceId": "aspa-priority-action-3",
+      "name": "Install electric vehicle charging stations",
+      "disposition": "exclude",
+      "recordKind": null,
+      "reason": "Transport charging infrastructure, not a transmission project.",
+      "source": {
+        "file": "as-pcap-2024.pdf",
+        "url": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+        "locator": "PDF16 / printed15"
+      },
+      "lifecycle": null,
+      "lifecycleAsOf": null,
+      "lifecycleDateMeaning": null,
+      "date": null,
+      "voltageKv": [],
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "buildWindow": null,
+      "sourceLocation": null
+    }
+  ],
+  "gaps": [
+    "Complete current utility/territory capital or transmission inventory not established.",
+    "No qualified centers, asset owners, voltage or service/construction dates for retained actions.",
+    "Funding secured for related generation does not establish funding or current status of these requested actions.",
+    "Program-level Tafuna location is descriptive context, never a center or route.",
+    "No coordination savings or avoided emissions are inferred from plan estimates."
+  ],
+  "sourcePass": {
+    "startedAt": "2026-09-30T10:30:38Z",
+    "closedAt": "2026-09-30T10:43:17Z",
+    "scope": "Public PDF text and official source indexes only; no image analysis, geocoding or private sources."
+  }
+}

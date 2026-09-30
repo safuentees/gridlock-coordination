@@ -1,0 +1,615 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "Qualified staged public source: approved-entry slice first, then required new-request mapping/reconciliation. First slice alone does not complete selected source.",
+  "sourceKeyProposal": "nv-nvenergy",
+  "reportingGroupProposal": "nv-nvenergy",
+  "editionProposal": "2026-05-06-irp",
+  "lifecycleAsOfProposal": "2026-05-06",
+  "publishedOn": "2026-05-06",
+  "publishedOnMeaning": "Dated joint application; official filing-library entry agrees. Not an individual status-change date.",
+  "retrievedOn": "2026-09-30",
+  "sources": [
+    {
+      "file": "NPC-SPPC-Volume-2.pdf",
+      "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-nv-nvenergy/NPC-SPPC-Volume-2.pdf",
+      "sha256": "26b785915f24ba21bc488ad7096ebf0192ef05dfc16360ca4fb07b66b2e48cda",
+      "bytes": 5520980,
+      "pages": 301
+    },
+    {
+      "file": "NPC-SPPC-Volume-8.pdf",
+      "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-nv-nvenergy/NPC-SPPC-Volume-8.pdf",
+      "sha256": "6b915a71d43e3588596f731ce0149b7bb1a4d952f1976c0f7003d0f887847433",
+      "bytes": 13949834,
+      "pages": 245
+    },
+    {
+      "file": "NPC-SPPC-Volume-9.pdf",
+      "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-nv-nvenergy/NPC-SPPC-Volume-9.pdf",
+      "sha256": "674f4a973742a716f721cb36c67c3e9dd84caa969250a907cd3ba144c7f1b72f",
+      "bytes": 9984235,
+      "pages": 248
+    }
+  ],
+  "selectedScope": {
+    "sourceUnits": 90,
+    "approvedTableRows": 21,
+    "newRequestBullets": 69,
+    "uniqueEngineeringProjectCount": null,
+    "firstSliceRetainedProposal": 21,
+    "firstSliceExcludedProposal": 0,
+    "remainingSourceUnitsRequiringMapping": 69,
+    "fullInventoryComplete": false,
+    "firstSliceRecordKinds": {
+      "transmission-project": 15,
+      "capital-project-context": 6
+    },
+    "firstSliceRawStatusCounts": {
+      "Active": 19,
+      "Suspended": 2
+    },
+    "firstSliceLifecycleProposal": {
+      "approved": 18,
+      "on-hold": 2,
+      "under-construction": 1
+    },
+    "firstSliceDateProposal": {
+      "day": 19,
+      "unknown": 2
+    },
+    "firstSliceLocatedRecords": 0,
+    "firstSliceQualifiedOwners": 0
+  },
+  "approvedTableDisposition": [
+    {
+      "row": 1,
+      "sourceId": "2026-05-06:tp-131:row-01",
+      "locator": "Figure TP-131; row 1 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Bordertown to California 120 kV Project",
+      "rawStatus": "Active",
+      "rawISD": "6/1/2028",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 2,
+      "sourceId": "2026-05-06:tp-131:row-02",
+      "locator": "Figure TP-131; row 2 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Shaffer 345/69 kV substation",
+      "rawStatus": "Active",
+      "rawISD": "12/1/2026",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 3,
+      "sourceId": "2026-05-06:tp-131:row-03",
+      "locator": "Figure TP-131; row 3 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Dry Lake East",
+      "rawStatus": "Active",
+      "rawISD": "12/1/2026",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context."
+    },
+    {
+      "row": 4,
+      "sourceId": "2026-05-06:tp-131:row-04",
+      "locator": "Figure TP-131; row 4 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Libra",
+      "rawStatus": "Active",
+      "rawISD": "12/1/2027",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context."
+    },
+    {
+      "row": 5,
+      "sourceId": "2026-05-06:tp-131:row-05",
+      "locator": "Figure TP-131; row 5 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Corsac",
+      "rawStatus": "Active",
+      "rawISD": "1/1/2030",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "Name does not establish the physical asset scope; retain transmission-associated capital context."
+    },
+    {
+      "row": 6,
+      "sourceId": "2026-05-06:tp-131:row-06",
+      "locator": "Figure TP-131; row 6 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "North Valmy Combustion Turbines",
+      "rawStatus": "Active",
+      "rawISD": "6/1/2028",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "Generation-labelled name; table inclusion does not prove a transmission asset or identify a network component."
+    },
+    {
+      "row": 7,
+      "sourceId": "2026-05-06:tp-131:row-07",
+      "locator": "Figure TP-131; row 7 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Tolson Substation 230/138 KV Transformer #2",
+      "rawStatus": "Active",
+      "rawISD": "6/1/2029",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 8,
+      "sourceId": "2026-05-06:tp-131:row-08",
+      "locator": "Figure TP-131; row 8 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Reid Gardner – Harry Allen 230-kV Line #3",
+      "rawStatus": "Suspended",
+      "rawISD": "1/1/2028",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 9,
+      "sourceId": "2026-05-06:tp-131:row-09",
+      "locator": "Figure TP-131; row 9 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Lantern – Comstock Meadows 345-kV Line",
+      "rawStatus": "Active",
+      "rawISD": "9/1/2031",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 10,
+      "sourceId": "2026-05-06:tp-131:row-10",
+      "locator": "Figure TP-131; row 10 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Comstock Meadows 280-MVA 345/120-kV Transformer #2",
+      "rawStatus": "Active",
+      "rawISD": "5/1/2027",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 11,
+      "sourceId": "2026-05-06:tp-131:row-11",
+      "locator": "Figure TP-131; row 11 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "West Tracy 280-MVA 345/120-kV Transformer #2",
+      "rawStatus": "Active",
+      "rawISD": "5/1/2028",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 12,
+      "sourceId": "2026-05-06:tp-131:row-12",
+      "locator": "Figure TP-131; row 12 (one-based, across both pages); PDF 54 / printed 293",
+      "name": "Machacek 230 kV Ring Bus",
+      "rawStatus": "Active",
+      "rawISD": "6/1/2027",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 13,
+      "sourceId": "2026-05-06:tp-131:row-13",
+      "locator": "Figure TP-131; row 13 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Darling 230/12-kV Substation",
+      "rawStatus": "Active",
+      "rawISD": "6/1/2028",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "230/12-kV transformation includes a low-voltage side; conservatively keep mixed transmission/distribution capital context without claiming an explicit source classification."
+    },
+    {
+      "row": 14,
+      "sourceId": "2026-05-06:tp-131:row-14",
+      "locator": "Figure TP-131; row 14 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Ft. Churchill 525/345-kV 600-MVA Transformers #3 and #4",
+      "rawStatus": "Suspended",
+      "rawISD": "NA",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 15,
+      "sourceId": "2026-05-06:tp-131:row-15",
+      "locator": "Figure TP-131; row 15 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Mackay Substation",
+      "rawStatus": "Active",
+      "rawISD": "12/1/2027",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 16,
+      "sourceId": "2026-05-06:tp-131:row-16",
+      "locator": "Figure TP-131; row 16 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Gosling Substation",
+      "rawStatus": "Active",
+      "rawISD": "4/1/2027",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 17,
+      "sourceId": "2026-05-06:tp-131:row-17",
+      "locator": "Figure TP-131; row 17 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Walker River-Gosling 525 kV lines siting/permitting (known as Ft Churchill-Veterans 525 kV line)",
+      "rawStatus": "Active",
+      "rawISD": "5/1/2031",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Approval is for siting/permitting only; table explicitly says this 2026 IRP requests construction approval. Approved must not mean construction approved."
+    },
+    {
+      "row": 18,
+      "sourceId": "2026-05-06:tp-131:row-18",
+      "locator": "Figure TP-131; row 18 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Naniwa 345 kV Switching Station",
+      "rawStatus": "Active",
+      "rawISD": "1/1/2027",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+    },
+    {
+      "row": 19,
+      "sourceId": "2026-05-06:tp-131:row-19",
+      "locator": "Figure TP-131; row 19 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Nighthawk",
+      "rawStatus": "Active",
+      "rawISD": "3/2/2029",
+      "disposition": "retain",
+      "recordKind": "capital-project-context",
+      "reason": "Name alone does not establish physical asset scope; retain transmission-associated capital context."
+    },
+    {
+      "row": 20,
+      "sourceId": "2026-05-06:tp-131:row-20",
+      "locator": "Figure TP-131; row 20 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Greenlink North",
+      "rawStatus": "Active",
+      "rawISD": "See narrative",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Retain one approved parent package; do not add its included substations/line segments as extra records."
+    },
+    {
+      "row": 21,
+      "sourceId": "2026-05-06:tp-131:row-21",
+      "locator": "Figure TP-131; row 21 (one-based, across both pages); PDF 55 / printed 294",
+      "name": "Greenlink West",
+      "rawStatus": "Active",
+      "rawISD": "See narrative",
+      "disposition": "retain",
+      "recordKind": "transmission-project",
+      "reason": "Retain one parent package including Common Ties; construction is explicit for a segment, not every component. Compound in-service dates remain unresolved at parent level."
+    }
+  ],
+  "newRequestScope": {
+    "file": "NPC-SPPC-Volume-2.pdf",
+    "locator": "Application Exhibit B, TRANSMISSION — IRP, PDF46–50 / Exhibit B pp4–8; first Sapphire phase1 bullet through Bald Mountain120-kV line-terminal bullet; stop before DEMAND SIDE PROGRAMS",
+    "bulletsByPdfPage": {
+      "46": 4,
+      "47": 17,
+      "48": 18,
+      "49": 17,
+      "50": 13
+    },
+    "sourceUnit": "One approval-request bullet, including source phases and compound work; not a unique engineering-project count.",
+    "lifecycleMeaning": "Requested construction approval, not already approved.",
+    "milestoneMeaning": "ISD forecasts have year precision in these bullets.",
+    "requiredReconciliation": [
+      "Explicit HVD and 12-kV distribution work must remain context or mixed scope, not be silently called transmission.",
+      "Walker River345-kV line-terminal requests appear on PDF49 and PDF50; do not deduplicate without public identity evidence or double-count the shared physical asset.",
+      "New Mackay transformer request differs in scope/date from approved Mackay Substation row; resemblance alone is not identity.",
+      "Sapphire phase1 shows230/120 kV and2028 in ExhibitB, versus230/12 kV and required2027 in Volume8 PDF211. Preserve discrepancy; no silent correction.",
+      "Brooks and other shared network work support several resource narratives; keep declared bullet units and do not add narrative parents/components again.",
+      "Economic-impact table Volume9 PDF50, printed289, on-page FigureTP-128 contains repeated names, scenario adjustments and totals. It cannot substitute for the69-bullet list."
+    ],
+    "status": "Required next producer mapping work, not an optional lead; no disposition counts asserted yet."
+  },
+  "mappingPolicy": {
+    "owner": "Null for every first-slice row: joint applicants/reporting group cannot assign one qualified per-project asset owner.",
+    "identity": "Docket is an approval grouping, never a native project ID. Preserve one-based table-row source reference.",
+    "spatial": "No native coordinates in declared tables; no route/map interpretation, geocoding or implied centers.",
+    "date": "Keep exact source ISD days, NA unknown, compound parent date unknown; no month/year-to-day expansion. February2026 applies to cost column, not all statuses.",
+    "reuse": "Public fact extraction with source attribution; no public-redistribution license asserted and original PDFs stay ignored.",
+    "coverage": "Partial NV Energy public planning scope, not all Nevada utilities or all US projects; Bordertown-to-California naming warns footprint is not strictly bounded by state label."
+  },
+  "examples": [
+    {
+      "locator": "Figure TP-131; row 1 (one-based, across both pages); PDF 54 / printed 293",
+      "raw": {
+        "Docket": "19-05003",
+        "Project Name": "Bordertown to California 120 kV Project",
+        "ISD": "6/1/2028",
+        "Status": "Active",
+        "Cost ($MM) - as of February 2026": "12.8"
+      },
+      "proposal": {
+        "id": "nv-nvenergy:2026-05-06:tp-131:row-01",
+        "sourceId": "2026-05-06:tp-131:row-01",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "date": {
+          "value": "2028-06-01",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "ISD (source forecast)"
+        },
+        "voltageKv": 120,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null,
+        "constructionStart": null,
+        "milestones": [],
+        "notes": [
+          "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+        ]
+      },
+      "source": {
+        "file": "NPC-SPPC-Volume-9.pdf",
+        "locator": "Figure TP-131; row 1 (one-based, across both pages); PDF 54 / printed 293",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+      }
+    },
+    {
+      "locator": "Figure TP-131; row 6 (one-based, across both pages); PDF 54 / printed 293",
+      "raw": {
+        "Docket": "24-05041",
+        "Project Name": "North Valmy Combustion Turbines",
+        "ISD": "6/1/2028",
+        "Status": "Active",
+        "Cost ($MM) - as of February 2026": "13.5"
+      },
+      "proposal": {
+        "id": "nv-nvenergy:2026-05-06:tp-131:row-06",
+        "sourceId": "2026-05-06:tp-131:row-06",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "capital-project-context",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "date": {
+          "value": "2028-06-01",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "ISD (source forecast)"
+        },
+        "voltageKv": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null,
+        "constructionStart": null,
+        "milestones": [],
+        "notes": [
+          "Generation-labelled name; table inclusion does not prove a transmission asset or identify a network component."
+        ]
+      },
+      "source": {
+        "file": "NPC-SPPC-Volume-9.pdf",
+        "locator": "Figure TP-131; row 6 (one-based, across both pages); PDF 54 / printed 293",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+      }
+    },
+    {
+      "locator": "Figure TP-131; row 13 (one-based, across both pages); PDF 55 / printed 294",
+      "raw": {
+        "Docket": "24-05041",
+        "Project Name": "Darling 230/12-kV Substation",
+        "ISD": "6/1/2028",
+        "Status": "Active",
+        "Cost ($MM) - as of February 2026": "58.5"
+      },
+      "proposal": {
+        "id": "nv-nvenergy:2026-05-06:tp-131:row-13",
+        "sourceId": "2026-05-06:tp-131:row-13",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "capital-project-context",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "date": {
+          "value": "2028-06-01",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "ISD (source forecast)"
+        },
+        "voltageKv": 230,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null,
+        "constructionStart": null,
+        "milestones": [],
+        "notes": [
+          "230/12-kV transformation includes a low-voltage side; conservatively keep mixed transmission/distribution capital context without claiming an explicit source classification."
+        ]
+      },
+      "source": {
+        "file": "NPC-SPPC-Volume-9.pdf",
+        "locator": "Figure TP-131; row 13 (one-based, across both pages); PDF 55 / printed 294",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+      }
+    },
+    {
+      "locator": "Figure TP-131; row 14 (one-based, across both pages); PDF 55 / printed 294",
+      "raw": {
+        "Docket": "24-05041",
+        "Project Name": "Ft. Churchill 525/345-kV 600-MVA Transformers #3 and #4",
+        "ISD": "NA",
+        "Status": "Suspended",
+        "Cost ($MM) - as of February 2026": "24.0"
+      },
+      "proposal": {
+        "id": "nv-nvenergy:2026-05-06:tp-131:row-14",
+        "sourceId": "2026-05-06:tp-131:row-14",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "ISD (source forecast)"
+        },
+        "voltageKv": 525,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null,
+        "constructionStart": null,
+        "milestones": [],
+        "notes": [
+          "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+        ]
+      },
+      "source": {
+        "file": "NPC-SPPC-Volume-9.pdf",
+        "locator": "Figure TP-131; row 14 (one-based, across both pages); PDF 55 / printed 294",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+      }
+    },
+    {
+      "locator": "Figure TP-131; row 20 (one-based, across both pages); PDF 55 / printed 294",
+      "raw": {
+        "Docket": "20-07023",
+        "Project Name": "Greenlink North",
+        "ISD": "See narrative",
+        "Status": "Active",
+        "Cost ($MM) - as of February 2026": "See narrative"
+      },
+      "proposal": {
+        "id": "nv-nvenergy:2026-05-06:tp-131:row-20",
+        "sourceId": "2026-05-06:tp-131:row-20",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "date": {
+          "value": "2028-12-31",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Planned in-service date (Greenlink North narrative)"
+        },
+        "voltageKv": 525,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null,
+        "constructionStart": null,
+        "milestones": [],
+        "notes": [
+          "Retain one approved parent package; do not add its included substations/line segments as extra records.",
+          "Narrative PDF55–56 / printed294–295: approved for permitting/engineering and design/construction in separate earlier dockets; construction planned January2027. No exact construction-start day."
+        ]
+      },
+      "source": {
+        "file": "NPC-SPPC-Volume-9.pdf",
+        "locator": "Figure TP-131; row 20 (one-based, across both pages); PDF 55 / printed 294",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+      }
+    },
+    {
+      "locator": "Figure TP-131; row 21 (one-based, across both pages); PDF 55 / printed 294",
+      "raw": {
+        "Docket": "20-07023",
+        "Project Name": "Greenlink West",
+        "ISD": "See narrative",
+        "Status": "Active",
+        "Cost ($MM) - as of February 2026": "See narrative"
+      },
+      "proposal": {
+        "id": "nv-nvenergy:2026-05-06:tp-131:row-21",
+        "sourceId": "2026-05-06:tp-131:row-21",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "ISD (source forecast)"
+        },
+        "voltageKv": 525,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null,
+        "constructionStart": null,
+        "milestones": [
+          {
+            "field": "Greenlink West main in-service forecast",
+            "date": {
+              "value": "2027-12-31",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "locator": "Volume9 PDF58 / printed297"
+          },
+          {
+            "field": "Greenlink West segment4 planned in-service",
+            "date": {
+              "value": "2028-12-31",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "locator": "Volume9 PDF59 / printed298"
+          }
+        ],
+        "notes": [
+          "Retain one parent package including Common Ties; construction is explicit for a segment, not every component. Compound in-service dates remain unresolved at parent level.",
+          "PDF58 / printed297: construction on segment1 began January2025. Main Greenlink West in-service forecast December31,2027; PDF59 / printed298 gives segment4 December31,2028. Common Ties are included; parent date is not a fabricated common completion date."
+        ]
+      },
+      "source": {
+        "file": "NPC-SPPC-Volume-9.pdf",
+        "locator": "Figure TP-131; row 21 (one-based, across both pages); PDF 55 / printed 294",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+      }
+    }
+  ],
+  "sourcePass": {
+    "startedAt": "2026-09-30T10:13:49Z",
+    "endedAt": "2026-09-30T10:20:41Z",
+    "activeMinutes": 6.9,
+    "ceilingMinutes": 15,
+    "method": "Public links and PDF text extraction only; no restricted volumes, maps, rendering, browser or worker checks."
+  }
+}

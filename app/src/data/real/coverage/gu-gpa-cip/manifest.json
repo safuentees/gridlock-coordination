@@ -1,0 +1,109 @@
+{
+  "sourceKey": "gu-gpa-cip",
+  "editionId": "fy2026-2027-board-2025-08-26",
+  "label": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+  "reportingGroupId": "gu-gpa-cip",
+  "reportingGroupName": "Guam Power Authority",
+  "publisher": "Guam Power Authority",
+  "processAuthority": "Consolidated Commission on Utilities",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "2025-08-26-ccu-legislature.pdf",
+    "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+    "locator": "August 26, 2025 CCU presentation, Proposed FY2026–2027 CIP Budget Details, slides 36–40; packet pages 57–61; PDF pages 725–729"
+  },
+  "sha256": "70bba24f62b1a56d855472307eb03483c1c2928c4eb8b512858a97002be15db8",
+  "geographicScope": "Guam Power Authority budget-work scope on Guam; not a complete current Guam project register.",
+  "inventoryScope": "All 44 named detail-budget rows in sections A–E/G: 27 retained source work units (two transmission, 14 capital context, 11 planning context) and 17 exclusions. Broad programs are not deduplicated engineering projects.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 44,
+    "importedRecords": 27,
+    "excludedRows": 17,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Generation overhaul and tools.",
+      "count": 1
+    },
+    {
+      "reason": "Generation equipment.",
+      "count": 1
+    },
+    {
+      "reason": "Generation overhaul.",
+      "count": 1
+    },
+    {
+      "reason": "Combined combustion-turbine refurbishment and employee-gate work; no identified grid work.",
+      "count": 1
+    },
+    {
+      "reason": "Office communications, computers and firewalls.",
+      "count": 1
+    },
+    {
+      "reason": "Time and attendance system.",
+      "count": 1
+    },
+    {
+      "reason": "Vehicle procurement and crane refurbishment.",
+      "count": 1
+    },
+    {
+      "reason": "Transportation building improvements.",
+      "count": 1
+    },
+    {
+      "reason": "Office/building cooling and water-treatment facilities.",
+      "count": 1
+    },
+    {
+      "reason": "Mixed generation tools, offices, HR software and administrative equipment.",
+      "count": 1
+    },
+    {
+      "reason": "Vehicle charging, not transmission work.",
+      "count": 1
+    },
+    {
+      "reason": "Consulting/management contract, not an identified physical work unit.",
+      "count": 1
+    },
+    {
+      "reason": "Fuel infrastructure.",
+      "count": 1
+    },
+    {
+      "reason": "Generation-site demolition.",
+      "count": 1
+    },
+    {
+      "reason": "Generation installation.",
+      "count": 1
+    },
+    {
+      "reason": "Generation-site building work.",
+      "count": 1
+    },
+    {
+      "reason": "Fuel connection to generation.",
+      "count": 1
+    }
+  ],
+  "limitations": [
+    "Full scope, when complete, refers only to the 44 named detail rows: A4+B4+C1+D1+E5+G29. Summary-only F/H/I categories, totals and other public IRP/annual-report work are outside this boundary.",
+    "Budget programs and named upgrades can overlap. Category C and G.8 both describe substation/transmission improvements; no silent merging or deduplicated-project count is claimed.",
+    "Curated section/row locators are not native engineering IDs. Circuit and transformer labels are asset aliases; future editions need an explicit identity crosswalk.",
+    "Planned lifecycle describes the August 26, 2025 proposed-budget source. Budget adoption does not prove individual engineering authorization, current construction or completion.",
+    "FY2026 and FY2027 are spending years, not milestones or construction windows. Every retained primary date, construction window and construction start remains unknown.",
+    "Every retained owner and center/native geometry remains unknown. GPA is the reporting/budget sponsor, not an inferred complete asset owner; locality text is not coordinates.",
+    "Only G.6 and G.15 establish one explicit 115 kV value. Combined 34.5/115 kV protection programs remain context, and ambiguous circuit/transformer/regulator titles are not inferred transmission work.",
+    "Repeated earlier August 21 presentations inside the legislative packet are not additional source entries. The primary source is the August 26 presentation preserved in the public legislative mirror.",
+    "The meeting date is established; the original public posting date and individual row update dates are not."
+  ]
+}

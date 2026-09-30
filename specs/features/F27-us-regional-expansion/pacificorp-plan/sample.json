@@ -1,0 +1,396 @@
+{
+  "kind": "qualification-diagnostics",
+  "retrievedOn": "2026-09-30",
+  "notice": "Six factual diagnostics across explicitly separate sources; not an application Dataset. No contact data, hidden metadata, map interpretation or inferred engineering identities.",
+  "proposedScopes": [
+    {
+      "scope": "current-featured-web",
+      "sourceEntries": 18,
+      "retained": 10,
+      "excluded": 8,
+      "exclusions": {
+        "explicitCompleted": 7,
+        "aggregateSegmentEParent": 1
+      }
+    },
+    {
+      "scope": "historical-local-irp-2025",
+      "sourceEntries": 20,
+      "retained": 14,
+      "excluded": 6,
+      "exclusions": {
+        "explicitCompletedLocalImprovement": 6
+      }
+    }
+  ],
+  "sources": [
+    {
+      "file": "2025_IRP_Update.pdf",
+      "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf",
+      "bytes": 14089517,
+      "sha256": "e79300d73a910433791d3e35647ae826f0cdadfd47204ecbdddeafe0f57676de"
+    },
+    {
+      "file": "2025_IRP_Vol_1.pdf",
+      "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf",
+      "bytes": 14075881,
+      "sha256": "c540ce2974d538f5f6305794700026298f529aae237469dab1f4280a8eb5da64"
+    },
+    {
+      "file": "apex-to-maverick.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html",
+      "bytes": 37679,
+      "sha256": "393bb8f8854607e1489d382a8e56932d8f7eacd2134e043eb956fcfbbc636b2d"
+    },
+    {
+      "file": "black-rock-to-sigurd.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/black-rock-to-sigurd.html",
+      "bytes": 35454,
+      "sha256": "90f867103086a59874021aa16ad9ccfa265f12d8e8388c4e99bf63dbe76957f3"
+    },
+    {
+      "file": "blueprint-south.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html",
+      "bytes": 49036,
+      "sha256": "8976c2ae7da9c67b75cf163c38e55d4c588c683d844d64d2b5cbadaa77d87de8"
+    },
+    {
+      "file": "energy-gateway.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway.html",
+      "bytes": 39588,
+      "sha256": "0dc2c87bba893c4a803718a9588738f71124e7f2f7aafbf9f175fdaed83a5bcf"
+    },
+    {
+      "file": "gateway-central.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html",
+      "bytes": 42956,
+      "sha256": "34b07acf67f3fe81abc6c8314a77abb435250ff22559510578fb1e1a2ba12f66"
+    },
+    {
+      "file": "gateway-south.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html",
+      "bytes": 34077,
+      "sha256": "90cc07f3c2a837ce2c71d96403b713c7b3c288dfd3f30a930c6f2d55ff04be7c"
+    },
+    {
+      "file": "gateway-west.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html",
+      "bytes": 36187,
+      "sha256": "6e152740cbf5983662006f74890f7f1cea0415c8586f0a4e9eb7ee44144497fb"
+    },
+    {
+      "file": "irp-index.html",
+      "url": "https://www.pacificorp.com/energy/integrated-resource-plan.html",
+      "bytes": 53058,
+      "sha256": "b16ab60ac0397ab123f0fa7e61e03b75f27b3b026e3bb29e914db2d9f4023869"
+    },
+    {
+      "file": "segment-b-honeyville-populus-threemile.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html",
+      "bytes": 43331,
+      "sha256": "8439fa72db14aa720fde2c0c71785c45e4068a6eb3fea3d27de35da5698192de"
+    },
+    {
+      "file": "segment-e8.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html",
+      "bytes": 36415,
+      "sha256": "7812eb423f219eefe9046c131370742738b4ab63afa435d279f37e2e2e0310ef"
+    },
+    {
+      "file": "spanish-fork-to-mercer.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html",
+      "bytes": 44475,
+      "sha256": "dd01065e1adb21a5bbfd12c2e13c15fe044bbbdd4795d48498dbd32b68ba0a1c"
+    },
+    {
+      "file": "terms.html",
+      "url": "https://www.pacificorp.com/terms",
+      "bytes": 49492,
+      "sha256": "49c952825666ce6759fffef1d6a92e95feab7075b35f95b5f97ab778ff2c90cf"
+    },
+    {
+      "file": "three-peaks-to-purgatory-flat.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html",
+      "bytes": 39108,
+      "sha256": "dd65b96d3a1583e2ab5d6fdbd8e105a5682447801dc25f60dce598d46cfaffb0"
+    },
+    {
+      "file": "transmission-projects.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects.html",
+      "bytes": 44137,
+      "sha256": "80d201e1159e1119ed30fb27df12b2310f6e74ead55678f23134f76e9f75cdc3"
+    },
+    {
+      "file": "west-of-hemingway.html",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html",
+      "bytes": 35694,
+      "sha256": "74899efa06e092ff20c485056c0ea20e90566fb66ade11e3cd6c85a7fbbd9ae6"
+    }
+  ],
+  "samples": [
+    {
+      "scope": "current-featured-web",
+      "sourceLocatorId": "segment-b-honeyville-populus-threemile",
+      "name": "Honeyville to Populus and Threemile Knoll maintenance project",
+      "sources": [
+        {
+          "file": "segment-b-honeyville-populus-threemile.html",
+          "locator": "Project overview; Phase 1; Phase 2; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html"
+        },
+        {
+          "file": "gateway-central.html",
+          "locator": "Segments in progress — Honeyville to Populus and Threemile Knoll",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+        }
+      ],
+      "facts": {
+        "voltageKv": [
+          138,
+          345
+        ],
+        "phaseOneMiles": 67,
+        "phaseTwoMiles": 40,
+        "phaseOneDetailExpectedYear": 2028,
+        "phaseOneCentralPageExpectedYear": 2029,
+        "phaseTwoRawInService": "Q4 2030",
+        "phaseTwoRawConstruction": "Jan 2029 – Oct 2030",
+        "sourceStates": [
+          "Idaho",
+          "Utah"
+        ]
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Expected overall completion year; phase 2 Q4 2030"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "qualification": "One maintenance project with two phases. Preserve the phase-one disagreement; do not confuse reused Segment B with the separate original line completed in 2010. Month/quarter construction bounds do not fit day-precision buildWindow."
+    },
+    {
+      "scope": "current-featured-web",
+      "sourceLocatorId": "three-peaks-to-purgatory-flat",
+      "name": "Three Peaks to Purgatory Flat",
+      "sources": [
+        {
+          "file": "three-peaks-to-purgatory-flat.html",
+          "locator": "Project overview; equipment facts; Anticipated project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html"
+        },
+        {
+          "file": "transmission-projects.html",
+          "locator": "Other transmission line projects — Three Peaks row",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+        }
+      ],
+      "facts": {
+        "voltageKv": [
+          345
+        ],
+        "lengthMiles": 54,
+        "sourceState": "Utah",
+        "detailExpectedInServiceYear": 2033,
+        "indexRawTimeline": "2025-2032",
+        "rawConstruction": "2031-2033"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Anticipated in-service year from project detail"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "qualification": "Detail explicitly names the service event; index timeline endpoint does not. Keep the discrepancy. Planning/routing stage is not construction."
+    },
+    {
+      "scope": "current-featured-web",
+      "sourceLocatorId": "gateway-west/segment-e8",
+      "name": "Gateway West Segment E8 — Midpoint to Hemingway",
+      "sources": [
+        {
+          "file": "segment-e8.html",
+          "locator": "Project description; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+        },
+        {
+          "file": "gateway-west.html",
+          "locator": "Populus to Hemingway (Segment E); Segment E8 link",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        }
+      ],
+      "facts": {
+        "voltageKv": [
+          500
+        ],
+        "detailLengthMiles": 133,
+        "parentPageChildLengthMiles": 128,
+        "rawInService": "June 2030",
+        "rawConstruction": "March 2028 – June 2030",
+        "rawPartialCompletion": "Hemingway to Mayfield: November 2028",
+        "sourceState": "Idaho",
+        "participants": [
+          "PacifiCorp",
+          "Idaho Power"
+        ]
+      },
+      "proposed": {
+        "disposition": "retain-child-exclude-aggregate-parent",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "date": {
+          "value": "2030-06",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Completed/In-Service — June 2030"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "qualification": "Keep parent Segment E as relationship/context, not another imported project. Parent remainder is not fully enumerated. Joint development does not identify one asset owner; month bounds do not invent construction days."
+    },
+    {
+      "scope": "historical-local-irp-2025",
+      "sourceLocatorId": "2025-ch4-p094-pace-central-utah-1",
+      "name": "Camp Williams transformer upgrade",
+      "sources": [
+        {
+          "file": "2025_IRP_Vol_1.pdf",
+          "locator": "PDF page 110 / printed page 94; Planned Transmission System Improvements; PACE; Central Utah; first project bullet",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+        }
+      ],
+      "facts": {
+        "voltageKv": [
+          138,
+          345
+        ],
+        "existingTransformerMva": 167,
+        "proposedTransformerMva": 700,
+        "sourceArea": "Central Utah",
+        "sourceEdition": "2025-03-31"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "In-service not supplied"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "qualification": "Explicit physical upgrade under a planned heading, with no service date or native project ID. Historical source meaning remains attached; no current status inferred."
+    },
+    {
+      "scope": "historical-local-irp-2025",
+      "sourceLocatorId": "2025-ch4-p095-pace-breaker-program-1",
+      "name": "Utah, Idaho and Wyoming over-dutied breaker replacement program",
+      "sources": [
+        {
+          "file": "2025_IRP_Vol_1.pdf",
+          "locator": "PDF page 111 / printed page 95; Planned Transmission System Improvements; PACE item 2; project bullet",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+        }
+      ],
+      "facts": {
+        "identifiedSubstations": 12,
+        "sourceStates": [
+          "Utah",
+          "Idaho",
+          "Wyoming"
+        ],
+        "headingMeaning": "planned improvements",
+        "bulletTense": "replaced",
+        "sourceEdition": "2025-03-31"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "In-service not supplied"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "qualification": "One program entry, not 12 invented project records. Planned heading and completed-tense text conflict; retain the ambiguity and do not infer ongoing construction."
+    },
+    {
+      "scope": "newer-irp-update-context-not-merged",
+      "sourceLocatorId": "2026-update-p034-boardman-hemingway",
+      "name": "Boardman to Hemingway",
+      "sources": [
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34; Boardman to Hemingway",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        },
+        {
+          "file": "west-of-hemingway.html",
+          "locator": "Segment in progress — Boardman to Hemingway; project overview and schedule",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+        }
+      ],
+      "facts": {
+        "updateEdition": "2026-03-31",
+        "updateStatusMeaning": "construction underway",
+        "updateExpectedInService": "12/31/2027",
+        "webPageUpdated": "July 2025",
+        "webCompletionMeaning": "late 2027",
+        "webConditionality": "transmission options considered among alternatives"
+      },
+      "proposed": {
+        "disposition": "supporting-edition-context-only",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "date": {
+          "value": "2027-12-31",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected in-service in March 2026 IRP update"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "qualification": "This concrete later observation is not silently applied to a separate web snapshot or historical IRP record. A producer must explicitly accept which edition supplies each normalized fact. Pending BPA redirect rights are separate planning context, not new transmission lines."
+    }
+  ]
+}

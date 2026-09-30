@@ -1,0 +1,819 @@
+{
+  "sourceKey": "gu-gpa-cip",
+  "editionId": "fy2026-2027-board-2025-08-26",
+  "sources": [
+    {
+      "file": "2025-08-26-ccu-legislature.pdf",
+      "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+      "bytes": 23469637,
+      "sha256": "70bba24f62b1a56d855472307eb03483c1c2928c4eb8b512858a97002be15db8",
+      "localOriginal": "inputs/originals/F27-gu-gpa/2025-08-26-ccu-legislature.pdf"
+    }
+  ],
+  "counts": {
+    "sourceRows": 44,
+    "importedRecords": 27,
+    "excludedRows": 17,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "payloadSizes": {
+    "compactUtf8Bytes": 50564,
+    "formattedUtf8Bytes": 64837
+  },
+  "rows": [
+    {
+      "sourceId": "cip-a-row-01",
+      "section": "A",
+      "rowWithinSection": 1,
+      "title": "Diesel",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation overhaul and tools.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section A, named row 1; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-a-row-02",
+      "section": "A",
+      "rowWithinSection": 2,
+      "title": "Gas Combustion Turbine (CT)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation equipment.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section A, named row 2; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-a-row-03",
+      "section": "A",
+      "rowWithinSection": 3,
+      "title": "Piti 7",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation overhaul.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section A, named row 3; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-a-row-04",
+      "section": "A",
+      "rowWithinSection": 4,
+      "title": "Safety",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Combined combustion-turbine refurbishment and employee-gate work; no identified grid work.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section A, named row 4; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-b-row-01",
+      "section": "B",
+      "rowWithinSection": 1,
+      "title": "Information Technology",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Office communications, computers and firewalls.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 1; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-b-row-02",
+      "section": "B",
+      "rowWithinSection": 2,
+      "title": "CFO",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Time and attendance system.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 2; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-b-row-03",
+      "section": "B",
+      "rowWithinSection": 3,
+      "title": "PSCC",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "SCADA, substation controller, backup power and communications bundle.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 3; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-b-row-04",
+      "section": "B",
+      "rowWithinSection": 4,
+      "title": "SPORD",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Mixed metering, substation communications and distribution automation bundle.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 4; slide 36, packet page 57, PDF page 725"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-c-row-01",
+      "section": "C",
+      "rowWithinSection": 1,
+      "title": "T&D",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Mixed equipment/protection bundle explicitly includes 34.5 and 115 kV relay upgrades; not one located line project.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section C, named row 1; slide 37, packet page 58, PDF page 726"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-d-row-01",
+      "section": "D",
+      "rowWithinSection": 1,
+      "title": "Transportation",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Vehicle procurement and crane refurbishment.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section D, named row 1; slide 37, packet page 58, PDF page 726"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-e-row-01",
+      "section": "E",
+      "rowWithinSection": 1,
+      "title": "Safety",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Substation access control with site CCTV; mixed physical-security program.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 1; slide 38, packet page 59, PDF page 727"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-e-row-02",
+      "section": "E",
+      "rowWithinSection": 2,
+      "title": "T&D",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Monotubes and steel inserts bundled with linework tools; no identified engineering project.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 2; slide 38, packet page 59, PDF page 727"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-e-row-03",
+      "section": "E",
+      "rowWithinSection": 3,
+      "title": "Transportation",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Transportation building improvements.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 3; slide 38, packet page 59, PDF page 727"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-e-row-04",
+      "section": "E",
+      "rowWithinSection": 4,
+      "title": "Facilities",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Office/building cooling and water-treatment facilities.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 4; slide 38, packet page 59, PDF page 727"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-e-row-05",
+      "section": "E",
+      "rowWithinSection": 5,
+      "title": "Other",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Mixed generation tools, offices, HR software and administrative equipment.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 5; slide 38, packet page 59, PDF page 727"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-01",
+      "section": "G",
+      "rowWithinSection": 1,
+      "title": "T7 Transformer Replacement",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Transformer location, voltage and grid role not established by the title.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 1; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-02",
+      "section": "G",
+      "rowWithinSection": 2,
+      "title": "Substation Hardening/Concrete Fencing - Harmon",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Named substation physical-security work; no asserted transmission voltage.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 2; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-03",
+      "section": "G",
+      "rowWithinSection": 3,
+      "title": "EV Charging Station",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Vehicle charging, not transmission work.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 3; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-04",
+      "section": "G",
+      "rowWithinSection": 4,
+      "title": "EPCM Contract - Stanley Consultants",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Consulting/management contract, not an identified physical work unit.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 4; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-05",
+      "section": "G",
+      "rowWithinSection": 5,
+      "title": "P-111 and P-047 Metal Cross Arm Refurbishment",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Line identifiers are source aliases; voltage and transmission/distribution role unresolved.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 5; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-06",
+      "section": "G",
+      "rowWithinSection": 6,
+      "title": "115kV Cabras to Agana - monotube upgrade",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Explicit 115 kV line structures.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 6; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-07",
+      "section": "G",
+      "rowWithinSection": 7,
+      "title": "Smart grid Controller Conversion and T&D Line Maintenance Support/Distribution Improvement",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Mixed control, line-maintenance and distribution-improvement program.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 7; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-08",
+      "section": "G",
+      "rowWithinSection": 8,
+      "title": "Substation and Transmission Improvements",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Unspecified improvement allowance; overlap with category C is not resolved.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 8; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-09",
+      "section": "G",
+      "rowWithinSection": 9,
+      "title": "Automated Omni Rupter Switch",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Switch location, voltage and system role unresolved.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 9; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-10",
+      "section": "G",
+      "rowWithinSection": 10,
+      "title": "SCADA Ready Switched Cap Banks",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Capacitor locations, voltage and system role unresolved.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 10; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-11",
+      "section": "G",
+      "rowWithinSection": 11,
+      "title": "Predictive Based Maintenance - Island wide",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Budgeted maintenance program, not a distinct new transmission asset.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 11; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-12",
+      "section": "G",
+      "rowWithinSection": 12,
+      "title": "P-087 GWA Wells Underground Conversion - GPA Portion",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Underground conversion identified, but voltage and line role unstated; GPA portion is not complete asset-ownership evidence.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 12; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-13",
+      "section": "G",
+      "rowWithinSection": 13,
+      "title": "ULSD Quick flash Installation",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Fuel infrastructure.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 13; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-14",
+      "section": "G",
+      "rowWithinSection": 14,
+      "title": "Grid-Enhancing Data Analytics Demonstrations for Operations, Monitoring, and Control - GPA portion",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Grid analytics demonstration; not a physical transmission line.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 14; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-15",
+      "section": "G",
+      "rowWithinSection": 15,
+      "title": "Piti-Harmon 115 kV Pole Upgrade",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Explicit 115 kV line structures.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 15; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-16",
+      "section": "G",
+      "rowWithinSection": 16,
+      "title": "Piti Power plant Smokestack Demolition",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation-site demolition.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 16; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-17",
+      "section": "G",
+      "rowWithinSection": 17,
+      "title": "Route 1 Pole Relocation",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Unspecified pole relocation; voltage and grid role unknown.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 17; slide 39, packet page 60, PDF page 728"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-18",
+      "section": "G",
+      "rowWithinSection": 18,
+      "title": "Talofofo Backup Generator - Installation Cost",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation installation.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 18; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-19",
+      "section": "G",
+      "rowWithinSection": 19,
+      "title": "Hagatna Power Plant Building Renovation to include Fencing Upgrades",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation-site building work.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 19; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-20",
+      "section": "G",
+      "rowWithinSection": 20,
+      "title": "Physical Access Control System (PACS) - Fadian",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Named site access-control work; no transmission-asset claim.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 20; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-21",
+      "section": "G",
+      "rowWithinSection": 21,
+      "title": "Piti Substation Grounding",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Named substation grounding; source does not establish voltage or full project role.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 21; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-22",
+      "section": "G",
+      "rowWithinSection": 22,
+      "title": "Barrigada Ingress/Egress",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Site access work, not established transmission construction.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 22; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-23",
+      "section": "G",
+      "rowWithinSection": 23,
+      "title": "Underserved & Indigenous Community Microgrids - GPA portion",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Mixed microgrid scope not described sufficiently to classify physical grid versus generation work.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 23; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-24",
+      "section": "G",
+      "rowWithinSection": 24,
+      "title": "Tamuning T51 Transformer - installation",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Named transformer, but voltage and grid role unknown.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 24; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-25",
+      "section": "G",
+      "rowWithinSection": 25,
+      "title": "ULSD - Additional Connection to Backup Diesel Generator",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Fuel connection to generation.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 25; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-26",
+      "section": "G",
+      "rowWithinSection": 26,
+      "title": "Voltage Regulator - North, Central, and South Installations",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Regulator locations, voltage and transmission/distribution role unresolved.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 26; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-27",
+      "section": "G",
+      "rowWithinSection": 27,
+      "title": "P-090 underground extension to Battulo Street",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Line extension without stated voltage or transmission/distribution role.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 27; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-28",
+      "section": "G",
+      "rowWithinSection": 28,
+      "title": "Pulantat Substation Upgrades",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Named substation work without established equipment or voltage.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 28; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    },
+    {
+      "sourceId": "cip-g-row-29",
+      "section": "G",
+      "rowWithinSection": 29,
+      "title": "P-005 extension to Apra (Steel Arms)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Line extension without stated voltage or transmission/distribution role.",
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 29; slide 40, packet page 61, PDF page 729"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1574 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "GPA capital-budget detail inventory — full",
+  "generatedAt": "2026-09-30T10:23:40Z",
+  "projects": [
+    {
+      "id": "gu-gpa-cip:cip-b-row-03",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-b-row-03",
+      "sponsor": "Guam Power Authority",
+      "name": "PSCC",
+      "description": "Procure SCADA fiber switches, substation controller I/O modules, replacement UPS batteries and fiber-optic cables.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 3; slide 36, packet page 57, PDF page 725"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The combined equipment row does not identify one transmission project or center."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "SCADA, controls and communications program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-b-row-04",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-b-row-04",
+      "sponsor": "Guam Power Authority",
+      "name": "SPORD",
+      "description": "Expand metering and communications equipment, integrate outage-management and SEL systems, and improve distribution automation and meter-data tools.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 4; slide 36, packet page 57, PDF page 725"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Mixed substation, metering and distribution scope remains capital context."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Metering, communications and distribution automation program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-c-row-01",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-c-row-01",
+      "sponsor": "Guam Power Authority",
+      "name": "T&D",
+      "description": "Budgeted substation and transmission work combines underground reconstruction, 34.5/115 kV line protection, breakers, switching equipment and testing tools.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section C, named row 1; slide 37, packet page 58, PDF page 726"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The combined row includes 34.5 and 115 kV relay work plus 38/115 kV potential transformers; no single project voltage or center is established."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Combined substation and transmission equipment program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-e-row-01",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-e-row-01",
+      "sponsor": "Guam Power Authority",
+      "name": "Safety",
+      "description": "Install substation physical-access controls and replace perimeter CCTV at Fadian and Dededo.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 1; slide 38, packet page 59, PDF page 727"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The row combines substation access work and multiple site CCTV replacements; sites are not a single project center."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Fadian; Dededo",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Combined physical-security program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-e-row-02",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-e-row-02",
+      "sponsor": "Guam Power Authority",
+      "name": "T&D",
+      "description": "Upgrade monotubes and steel inserts and procure transmission/distribution linework tools and inspection equipment.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 2; slide 38, packet page 59, PDF page 727"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The budget combines physical work and tools without identifying a separate line or voltage."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Combined linework and tools program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-01",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-01",
+      "sponsor": "Guam Power Authority",
+      "name": "T7 Transformer Replacement",
+      "description": "Replace the transformer identified as T7; the budget row does not specify its site or network role.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 1; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "T7 is an equipment label, not a native engineering project ID. Voltage, location and transmission/distribution role remain unknown."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "T7"
+        ],
+        "workType": "Transformer replacement",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-02",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-02",
+      "sponsor": "Guam Power Authority",
+      "name": "Substation Hardening/Concrete Fencing - Harmon",
+      "description": "Harden the Harmon substation with concrete fencing.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 2; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The source does not state the substation voltage or establish a separately scoped transmission upgrade."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Harmon",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Substation hardening and fencing",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-05",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-05",
+      "sponsor": "Guam Power Authority",
+      "name": "P-111 and P-047 Metal Cross Arm Refurbishment",
+      "description": "Refurbish metal cross arms on the lines identified as P-111 and P-047.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 5; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Line labels do not establish voltage or transmission/distribution role, and are not native engineering project IDs."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "P-111",
+          "P-047"
+        ],
+        "workType": "Line cross-arm refurbishment",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-06",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-06",
+      "sponsor": "Guam Power Authority",
+      "name": "115kV Cabras to Agana - monotube upgrade",
+      "description": "Upgrade monotube structures on the Cabras–Agana 115 kV line.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 6; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Cabras to Agana",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Line structure upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-07",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-07",
+      "sponsor": "Guam Power Authority",
+      "name": "Smart grid Controller Conversion and T&D Line Maintenance Support/Distribution Improvement",
+      "description": "Combined grid-controller conversion, transmission/distribution line-maintenance support and distribution improvements.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 7; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The combined program is capital context, not a separately enumerated transmission project. No match to an older IRP controller program is inferred."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Combined controls, maintenance and distribution program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-08",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-08",
+      "sponsor": "Guam Power Authority",
+      "name": "Substation and Transmission Improvements",
+      "description": "Budget an unspecified bundle of substation and transmission improvements.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 8; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Potential overlap with category C T&D is unresolved; this budget work unit is retained separately without a deduplicated-project claim."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Unspecified substation and transmission improvement program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-09",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-09",
+      "sponsor": "Guam Power Authority",
+      "name": "Automated Omni Rupter Switch",
+      "description": "Provide an automated Omni Rupter switch; its site and network role are unstated.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 9; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Voltage, location and transmission/distribution role remain unknown."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Switch automation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-10",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-10",
+      "sponsor": "Guam Power Authority",
+      "name": "SCADA Ready Switched Cap Banks",
+      "description": "Provide SCADA-ready switched capacitor banks; locations and system role are unspecified.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 10; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Voltage, location and transmission/distribution role remain unknown."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Switched capacitor banks",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-11",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-11",
+      "sponsor": "Guam Power Authority",
+      "name": "Predictive Based Maintenance - Island wide",
+      "description": "Budget an island-wide predictive-maintenance program.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 11; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "This is a capital-budget program entry, not a distinct new transmission asset or a known construction interval."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Island wide",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Predictive maintenance program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-12",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-12",
+      "sponsor": "Guam Power Authority",
+      "name": "P-087 GWA Wells Underground Conversion - GPA Portion",
+      "description": "GPA budget portion of underground conversion for the P-087 GWA wells line.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 12; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Voltage and transmission/distribution role are not stated. GPA portion identifies a budget scope, not complete asset ownership. P-087 is a line label, not a native engineering project ID."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "P-087 GWA Wells",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "P-087"
+        ],
+        "workType": "Underground line conversion",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-14",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-14",
+      "sponsor": "Guam Power Authority",
+      "name": "Grid-Enhancing Data Analytics Demonstrations for Operations, Monitoring, and Control - GPA portion",
+      "description": "Fund GPA’s portion of grid analytics demonstrations for operations, monitoring and control.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 14; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "GPA portion denotes budget scope, not complete asset ownership. The demonstration is capital context rather than a physical transmission line."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Grid analytics demonstration",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-15",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-15",
+      "sponsor": "Guam Power Authority",
+      "name": "Piti-Harmon 115 kV Pole Upgrade",
+      "description": "Upgrade poles on the Piti–Harmon 115 kV line.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 15; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Piti-Harmon",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Line structure upgrade",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-17",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-17",
+      "sponsor": "Guam Power Authority",
+      "name": "Route 1 Pole Relocation",
+      "description": "Relocate poles along Route 1; voltage and network role are not specified.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 17; slide 39, packet page 60, PDF page 728"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Pole relocation alone does not establish transmission scope; no route or center is inferred."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Route 1",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Pole relocation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-20",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-20",
+      "sponsor": "Guam Power Authority",
+      "name": "Physical Access Control System (PACS) - Fadian",
+      "description": "Install physical-access control at Fadian.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 20; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The site-security entry is capital context and does not establish a transmission asset."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Fadian",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Site access-control system",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-21",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-21",
+      "sponsor": "Guam Power Authority",
+      "name": "Piti Substation Grounding",
+      "description": "Improve grounding at Piti Substation.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 21; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The source does not specify voltage or full project role; this remains capital context."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Piti Substation",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Substation grounding",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-22",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-22",
+      "sponsor": "Guam Power Authority",
+      "name": "Barrigada Ingress/Egress",
+      "description": "Provide ingress and egress work at Barrigada.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 22; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The source title establishes access work but no transmission-construction scope or exact site."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Barrigada",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Site access work",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-23",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-23",
+      "sponsor": "Guam Power Authority",
+      "name": "Underserved & Indigenous Community Microgrids - GPA portion",
+      "description": "Fund GPA’s portion of microgrids for underserved and Indigenous communities.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 23; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "The source does not separate line, generation, storage or other equipment scope. Retain unresolved planning context without creating child projects or inferring ownership."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Community microgrid program",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-24",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-24",
+      "sponsor": "Guam Power Authority",
+      "name": "Tamuning T51 Transformer - installation",
+      "description": "Install the transformer identified as T51 at Tamuning.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 24; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "T51 is an equipment label, not a native engineering project ID. Voltage and transmission/distribution role are unknown."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Tamuning",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "T51"
+        ],
+        "workType": "Transformer installation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-26",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-26",
+      "sponsor": "Guam Power Authority",
+      "name": "Voltage Regulator - North, Central, and South Installations",
+      "description": "Install voltage regulators in the north, central and south areas.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 26; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Specific sites, voltage and transmission/distribution role are unknown; regional wording is not coordinate evidence."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "North, Central, and South",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Voltage regulator installations",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-27",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-27",
+      "sponsor": "Guam Power Authority",
+      "name": "P-090 underground extension to Battulo Street",
+      "description": "Extend the underground line identified as P-090 to Battulo Street.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 27; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Voltage and transmission/distribution role are not stated. P-090 is a line label, not a native engineering project ID."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Battulo Street",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "P-090"
+        ],
+        "workType": "Underground line extension",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-28",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-28",
+      "sponsor": "Guam Power Authority",
+      "name": "Pulantat Substation Upgrades",
+      "description": "Upgrade Pulantat Substation; the budget title does not identify equipment.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 28; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Equipment scope and voltage remain unknown; the named substation is not a coordinate or complete asset-ownership assertion."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "capital-project-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Pulantat Substation",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Unspecified substation upgrades",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "gu-gpa-cip:cip-g-row-29",
+      "utilityId": "gu-gpa-cip",
+      "sourceId": "cip-g-row-29",
+      "sponsor": "Guam Power Authority",
+      "name": "P-005 extension to Apra (Steel Arms)",
+      "description": "Extend the line identified as P-005 to Apra using steel arms.",
+      "status": "Proposed FY2026–2027 CIP budget",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project milestone not published"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-08-26-ccu-legislature.pdf",
+          "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+          "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 29; slide 40, packet page 61, PDF page 729"
+        }
+      ],
+      "notes": [
+        "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+        "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+        "Voltage and transmission/distribution role are not stated. P-005 is a line label, not a native engineering project ID."
+      ],
+      "inventory": {
+        "sourceKey": "gu-gpa-cip",
+        "editionId": "fy2026-2027-board-2025-08-26",
+        "editionLabel": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+        "reportingGroupName": "Guam Power Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-08-26",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": "Apra",
+        "sourceUpdatedOn": null,
+        "milestones": [],
+        "parentProgramId": null,
+        "aliases": [
+          "P-005"
+        ],
+        "workType": "Line extension with steel arms",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "gu-gpa-cip",
+      "editionId": "fy2026-2027-board-2025-08-26",
+      "label": "GPA FY2026–2027 CIP details — August 26, 2025 board presentation",
+      "reportingGroupId": "gu-gpa-cip",
+      "reportingGroupName": "Guam Power Authority",
+      "publisher": "Guam Power Authority",
+      "processAuthority": "Consolidated Commission on Utilities",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "2025-08-26-ccu-legislature.pdf",
+        "url": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+        "locator": "August 26, 2025 CCU presentation, Proposed FY2026–2027 CIP Budget Details, slides 36–40; packet pages 57–61; PDF pages 725–729"
+      },
+      "sha256": "70bba24f62b1a56d855472307eb03483c1c2928c4eb8b512858a97002be15db8",
+      "geographicScope": "Guam Power Authority budget-work scope on Guam; not a complete current Guam project register.",
+      "inventoryScope": "All 44 named detail-budget rows in sections A–E/G: 27 retained source work units (two transmission, 14 capital context, 11 planning context) and 17 exclusions. Broad programs are not deduplicated engineering projects.",
+      "scope": "full",
+      "counts": {
+        "sourceRows": 44,
+        "importedRecords": 27,
+        "excludedRows": 17,
+        "failedRows": 0,
+        "pendingRows": 0,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Generation overhaul and tools.",
+          "count": 1
+        },
+        {
+          "reason": "Generation equipment.",
+          "count": 1
+        },
+        {
+          "reason": "Generation overhaul.",
+          "count": 1
+        },
+        {
+          "reason": "Combined combustion-turbine refurbishment and employee-gate work; no identified grid work.",
+          "count": 1
+        },
+        {
+          "reason": "Office communications, computers and firewalls.",
+          "count": 1
+        },
+        {
+          "reason": "Time and attendance system.",
+          "count": 1
+        },
+        {
+          "reason": "Vehicle procurement and crane refurbishment.",
+          "count": 1
+        },
+        {
+          "reason": "Transportation building improvements.",
+          "count": 1
+        },
+        {
+          "reason": "Office/building cooling and water-treatment facilities.",
+          "count": 1
+        },
+        {
+          "reason": "Mixed generation tools, offices, HR software and administrative equipment.",
+          "count": 1
+        },
+        {
+          "reason": "Vehicle charging, not transmission work.",
+          "count": 1
+        },
+        {
+          "reason": "Consulting/management contract, not an identified physical work unit.",
+          "count": 1
+        },
+        {
+          "reason": "Fuel infrastructure.",
+          "count": 1
+        },
+        {
+          "reason": "Generation-site demolition.",
+          "count": 1
+        },
+        {
+          "reason": "Generation installation.",
+          "count": 1
+        },
+        {
+          "reason": "Generation-site building work.",
+          "count": 1
+        },
+        {
+          "reason": "Fuel connection to generation.",
+          "count": 1
+        }
+      ],
+      "limitations": [
+        "Full scope, when complete, refers only to the 44 named detail rows: A4+B4+C1+D1+E5+G29. Summary-only F/H/I categories, totals and other public IRP/annual-report work are outside this boundary.",
+        "Budget programs and named upgrades can overlap. Category C and G.8 both describe substation/transmission improvements; no silent merging or deduplicated-project count is claimed.",
+        "Curated section/row locators are not native engineering IDs. Circuit and transformer labels are asset aliases; future editions need an explicit identity crosswalk.",
+        "Planned lifecycle describes the August 26, 2025 proposed-budget source. Budget adoption does not prove individual engineering authorization, current construction or completion.",
+        "FY2026 and FY2027 are spending years, not milestones or construction windows. Every retained primary date, construction window and construction start remains unknown.",
+        "Every retained owner and center/native geometry remains unknown. GPA is the reporting/budget sponsor, not an inferred complete asset owner; locality text is not coordinates.",
+        "Only G.6 and G.15 establish one explicit 115 kV value. Combined 34.5/115 kV protection programs remain context, and ambiguous circuit/transformer/regulator titles are not inferred transmission work.",
+        "Repeated earlier August 21 presentations inside the legislative packet are not additional source entries. The primary source is the August 26 presentation preserved in the public legislative mirror.",
+        "The meeting date is established; the original public posting date and individual row update dates are not."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 27,
+    "skipped": 17,
+    "failed": 0,
+    "notes": [
+      "0 accepted budget entries remain pending in this source snapshot.",
+      "The complete declared detail-table scope is not the complete capital budget or current Guam project universe."
+    ]
+  }
+}

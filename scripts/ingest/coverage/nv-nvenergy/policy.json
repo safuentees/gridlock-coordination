@@ -1,0 +1,43 @@
+{
+  "acceptedContract": "f674be0; specs/features/F27-us-regional-expansion/nv-nvenergy/spec.md",
+  "sampleApprovedRows": [
+    1,
+    6,
+    13,
+    14,
+    20,
+    21
+  ],
+  "approvedCapitalContextRows": [
+    3,
+    4,
+    5,
+    6,
+    13,
+    19
+  ],
+  "approvedRowMeaning": {
+    "1": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "2": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "3": "Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context.",
+    "4": "Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context.",
+    "5": "Name does not establish the physical asset scope; retain transmission-associated capital context.",
+    "6": "Generation-labelled name; table inclusion does not prove a transmission asset or identify a network component.",
+    "7": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "8": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "9": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "10": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "11": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "12": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "13": "230/12-kV transformation includes a low-voltage side; conservatively keep mixed transmission/distribution capital context without claiming an explicit source classification.",
+    "14": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "15": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "16": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "17": "Approval is for siting/permitting only; table explicitly says this 2026 IRP requests construction approval. Approved must not mean construction approved.",
+    "18": "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+    "19": "Name alone does not establish physical asset scope; retain transmission-associated capital context.",
+    "20": "Retain one approved parent package; do not add its included substations/line segments as extra records.",
+    "21": "Retain one parent package including Common Ties; construction is explicit for a segment, not every component. Compound in-service dates remain unresolved at parent level."
+  },
+  "requestDispositionStatus": "Accepted at d108589: retain all69 requests;52 transmission/17 capital context; no exclusions."
+}
