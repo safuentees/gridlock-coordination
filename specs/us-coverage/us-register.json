@@ -1,23 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 Southeast/evidence PR143 (checked implementation c6469fa; one build and source/revision case passed)",
+  "baselineRevision": "F27 public-review/coverage PR154 (checked implementation 26f3091; one build and source/revision/coverage case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Twenty-one full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported. NYISO public report access, CNMI transmission role and SERTP source markings remain unresolved.",
+  "qualificationStatus": "Twenty-one full declared regional inventories, eight complete featured/funding subsets and two contextual scopes imported. NYISO public report access, CNMI transmission role and SERTP source markings remain unresolved.",
   "totals": {
-    "importedSourceRecords": 14899,
+    "importedSourceRecords": 14923,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 14786,
+    "missingLocations": 14810,
     "explicitConstructionWindows": 0,
     "newRegionalSourcesQualified": 21,
     "newFullRegionalInventoriesImported": 21,
     "knownNationalProjectDenominator": null,
-    "qualifiedFeaturedSubsets": 5,
-    "fullFeaturedSubsetsImported": 5,
-    "fullDeclaredSourceScopesImported": 28,
+    "qualifiedFeaturedSubsets": 8,
+    "fullFeaturedSubsetsImported": 8,
+    "fullDeclaredSourceScopesImported": 31,
     "qualifiedContextScopes": 2,
     "fullContextScopesImported": 2
   },
@@ -1829,6 +1829,191 @@
       "sourceStateCounts": {},
       "unallocatedStateRecords": 55,
       "stateCountMeaning": "Explicit single-state source fields only. Utility footprint and county/endpoint names do not establish verified per-record geography."
+    },
+    {
+      "sourceKey": "al-apc-doe",
+      "editionId": "review-index-snapshot-2026-09-30",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "All twelve DOE Alabama Power review entries: six physical transmission packages retained; one generation, one demand-side program, two fiber-only and two distribution entries excluded.",
+      "geographicScope": "Alabama; each retained letter explicitly identifies its county or counties.",
+      "recordKind": "6 transmission-project",
+      "transmissionProjectRecords": 6,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": null,
+      "lifecycleSourceDates": [
+        "2026-03-24",
+        "2026-03-30",
+        "2026-05-20",
+        "2026-07-31",
+        "2026-08-28",
+        "2026-09-25"
+      ],
+      "importedRecords": 6,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 6,
+        "milestone": 3,
+        "constructionWindow": 6,
+        "status": 0,
+        "voltage": 1,
+        "evidencedOwner": 6
+      },
+      "rawSourceRows": 12,
+      "excludedRows": 6,
+      "exclusions": [
+        {
+          "reason": "Generation conversion; not a separate physical transmission package.",
+          "count": 1
+        },
+        {
+          "reason": "Behind-the-meter demand-side program; no physical transmission construction.",
+          "count": 1
+        },
+        {
+          "reason": "Fiber-only work; no new or altered electrical transmission facilities established.",
+          "count": 2
+        },
+        {
+          "reason": "Distribution line and pole improvements; not transmission.",
+          "count": 2
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/al-apc-doe/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/al-apc-doe/row-ledger.json",
+      "publicInventoryDenominator": 6,
+      "blockers": [
+        "This is a finite featured/funding-review subset, not a complete Alabama Power transmission register or statewide inventory. Broader project denominators remain unknown.",
+        "The composite index snapshot has no single publication date. Per-record lifecycleAsOf is its letter date, not index posting or retrieval; four index/letter date differences remain explicit, including excluded Roanoke.",
+        "All six retained packages are planned. Environmental-review completion and a program-level loan guarantee do not establish physical progress, commissioning, engineering approval or project-specific financing close.",
+        "Five APC review/project numbers are native only within this source context. Lock 5 uses a named-review source locator; environmental consultation codes are not engineering IDs. No cross-source identity is inferred.",
+        "Lock 5 voltage is unknown because only future 500/230 kV terminal accommodation is stated. South Bessemer retains 500 kV for specified served circuits while its existing 500/230/115 kV station and autobank remain contextual.",
+        "Thurlow and Bassett commercial-operation targets are month-precision service forecasts. South Bessemer May 2030 is completion with unknown kind; the other three have no completion/service target. Forecast starts remain milestones, never actual construction bounds.",
+        "All asset owners, numeric geometry, construction windows, actual construction starts and row-update days are unknown. Applicant/borrower identity does not prove equipment ownership.",
+        "Index and all twelve PDFs are checksum-pinned in the catalog and row ledger. No original binaries, contact details, map-derived centers or restricted SERTP material are included. Public downloadability does not establish blanket redistribution permission."
+      ],
+      "nextTask": "F27; native location/owner evidence, cross-source identity and broader public inventories",
+      "sourceStateCounts": {
+        "AL": 6
+      },
+      "unallocatedStateRecords": 0,
+      "stateCountMeaning": "Only explicit single-state source fields are allocated; multistate and unspecified observations remain unallocated. Source footprint is not a verified project location."
+    },
+    {
+      "sourceKey": "ga-gpc-public",
+      "editionId": "observed-2026-09-30",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "All ten Current Projects page entries: six transmission project/upgrade observations and four area-program capital contexts; no exclusions. Supporting notices are evidence, not additional rows.",
+      "geographicScope": "Georgia project catalog, including a Big Tazewell–Farley endpoint explicitly in Alabama; per-record state is supplied only when explicit.",
+      "recordKind": "4 capital-project-context, 6 transmission-project",
+      "transmissionProjectRecords": 6,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleSourceDates": [
+        "2026-09-30"
+      ],
+      "importedRecords": 10,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 10,
+        "milestone": 10,
+        "constructionWindow": 10,
+        "status": 7,
+        "voltage": 0,
+        "evidencedOwner": 10
+      },
+      "rawSourceRows": 10,
+      "excludedRows": 0,
+      "exclusions": [],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/ga-gpc-public/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/ga-gpc-public/row-ledger.json",
+      "publicInventoryDenominator": 10,
+      "blockers": [
+        "This is a complete featured catalog subset, not a complete Georgia Power or statewide inventory. Page observations and component scopes do not establish a count of distinct engineering projects.",
+        "Four multi-component programs remain capital-project-context with recordUnit omitted. Decatur is a transmission upgrade; the other five transmission observations are projects. One page stays one observation.",
+        "Full accepted lifecycle is three planned and seven unknown. Mixed component stages, generic construction prose, tentative schedules and historical notices do not confirm current project-wide construction.",
+        "Primary dates, actual construction starts and windows remain unknown. Quarter/season milestones retain raw labels with unknown precision/kind and null values; no quarter boundaries or silent year coercion are manufactured.",
+        "Catalog publication and per-project update dates are unknown. Observation on September 30, 2026 is not freshness; dated July 2026 and October 2025 notices apply only to their stated historical scope.",
+        "All owners, centers and native geometry are unknown. Reporter/developer, easements and customer land do not prove equipment ownership; pre-engineering route depictions and map viewports do not establish qualifying coordinates.",
+        "Index/detail geography and scope differences remain visible, including Alabama at Big Tazewell–Farley, intermediate Ashley counties and the Hills Bridge multi-component voltage/program scope.",
+        "Page basenames are stable source-locator identities, not native engineering IDs. Historical Georgia and other-source observations remain separate with no inherited dates/owners/geometry or name-based merge.",
+        "Index, ten pages and four supporting notices are checksum-pinned outside runtime. Original bytes are unchanged; no contacts, restricted SERTP content, map-derived coordinates or ungrounded project quantities are imported."
+      ],
+      "nextTask": "F27; native location/owner evidence, cross-source identity and broader public inventories",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 10,
+      "stateCountMeaning": "Only explicit single-state source fields are allocated; multistate and unspecified observations remain unallocated. Source footprint is not a verified project location."
+    },
+    {
+      "sourceKey": "aep-doe",
+      "editionId": "review-index-snapshot-2026-09-30",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "Eight named physical transmission scopes from the captured DOE AEP review index: seven line rebuild upgrades and one station project. Supplemental consultations do not add projects.",
+      "geographicScope": "Three named Ohio and five named Texas scopes; finite public review subset, not complete state, AEP or regional coverage.",
+      "recordKind": "8 transmission-project",
+      "transmissionProjectRecords": 8,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": null,
+      "lifecycleSourceDates": [
+        "2026-04-24",
+        "2026-05-08",
+        "2026-07-24",
+        "2026-09-01",
+        "2026-09-03",
+        "2026-09-08",
+        "2026-09-11"
+      ],
+      "importedRecords": 8,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 8,
+        "milestone": 5,
+        "constructionWindow": 8,
+        "status": 0,
+        "voltage": 0,
+        "evidencedOwner": 8
+      },
+      "rawSourceRows": 8,
+      "excludedRows": 0,
+      "exclusions": [],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/aep-doe/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/aep-doe/row-ledger.json",
+      "publicInventoryDenominator": 8,
+      "blockers": [
+        "Complete enumeration refers only to the eight-entry public featured/funding-review index snapshot, not all AEP projects or net-new projects beyond PJM/ERCOT.",
+        "All lifecycle values are planned at the readable signed-letter date. Review completion is neither construction/service completion nor financing approval or engineering feasibility.",
+        "Index posting, signed review, anticipated start and anticipated operation dates are separate meanings. Snapshot retrieval and generatedAt do not update project status.",
+        "Ohio operation forecasts retain exact day precision; all five Texas operation dates are unknown. Forecast starts are supplemental and do not establish actual construction bounds.",
+        "East Munday uses May 8 public consultation text. The later indexed PDF is image-only; its signed date and body were not interpreted. King Ranch voltage uses June 16 public matching-scope evidence.",
+        "AEP applicant and index affiliate labels do not establish legal asset owners. All owners remain unknown.",
+        "All locations, native geometry and construction bounds remain unknown. Named counties/endpoints, route lengths, right-of-way widths and station areas do not supply project centers or shared-corridor estimates.",
+        "review-001 through review-008 are frozen source-document locators, not native engineering IDs. Future index reordering requires an explicit crosswalk. Shared consultation codes and similar RTO names do not authorize merging or field transfers.",
+        "Only concise factual paraphrases and public citations are derived. No original files, personal contact fields, restricted attachments, image interpretation or asserted open/commercial reuse license are included."
+      ],
+      "nextTask": "F27; native location/owner evidence, cross-source identity and broader public inventories",
+      "sourceStateCounts": {
+        "OH": 3,
+        "TX": 5
+      },
+      "unallocatedStateRecords": 0,
+      "stateCountMeaning": "Only explicit single-state source fields are allocated; multistate and unspecified observations remain unallocated. Source footprint is not a verified project location."
     }
   ],
   "jurisdictions": [
@@ -1836,12 +2021,15 @@
       "code": "AL",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "tva-public"
+        "tva-public",
+        "al-apc-doe",
+        "ga-gpc-public"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "tva-public": 8
+        "tva-public": 8,
+        "al-apc-doe": 6
       }
     },
     {
@@ -1939,9 +2127,10 @@
     },
     {
       "code": "GA",
-      "status": "partial-historical-filing",
+      "status": "partial-historical-and-featured-source-scope",
       "sourceKeys": [
-        "gpc"
+        "gpc",
+        "ga-gpc-public"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -2266,13 +2455,15 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "pjm-rtep",
-        "miso-mtep"
+        "miso-mtep",
+        "aep-doe"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
         "pjm-rtep": 1324,
-        "miso-mtep": 2
+        "miso-mtep": 2,
+        "aep-doe": 3
       }
     },
     {
@@ -2371,14 +2562,16 @@
         "spp-tracking",
         "ercot-tpit",
         "miso-mtep",
-        "westconnect-tppl"
+        "westconnect-tppl",
+        "aep-doe"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
         "spp-tracking": 256,
         "miso-mtep": 41,
-        "westconnect-tppl": 67
+        "westconnect-tppl": 67,
+        "aep-doe": 5
       }
     },
     {
@@ -2843,13 +3036,55 @@
       "proposedImportedRecords": 55,
       "locatedRecords": 0,
       "importedRecords": 55
+    },
+    {
+      "sourceKey": "al-apc-doe",
+      "status": "imported-complete-featured-subset",
+      "sourceUrl": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+      "task": "F27",
+      "owner": "source_discovery",
+      "importedRecords": 6,
+      "locatedRecords": 0,
+      "missingInput": "Native location/owner evidence and unresolved cross-source identity; featured public scope complete, wider coverage incomplete"
+    },
+    {
+      "sourceKey": "ga-gpc-public",
+      "status": "imported-complete-featured-subset",
+      "sourceUrl": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+      "task": "F27",
+      "owner": "source_discovery",
+      "importedRecords": 10,
+      "locatedRecords": 0,
+      "missingInput": "Native location/owner evidence and unresolved cross-source identity; featured public scope complete, wider coverage incomplete"
+    },
+    {
+      "sourceKey": "aep-doe",
+      "status": "imported-complete-featured-subset",
+      "sourceUrl": "https://www.energy.gov/edf/american-electric-power-environmental-reviews",
+      "task": "F27",
+      "owner": "core",
+      "importedRecords": 8,
+      "locatedRecords": 0,
+      "missingInput": "Native location/owner evidence and unresolved cross-source identity; featured public scope complete, wider coverage incomplete"
+    },
+    {
+      "sourceKey": "our-grid-future",
+      "status": "blocked-download-contact-form",
+      "sourceUrl": "https://www.ourgridfuture.org/",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "publicSourceRecordCount": null,
+      "missingInput": "An openly accessible or legitimately supplied workbook and planned-project GIS package, with metadata and terms; no contact information submitted or gated files acquired.",
+      "owner": "ui",
+      "task": "F27-OGF-Q",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/our-grid-future/qualification.md"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National denominator remains unknown. Twenty-one full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Work-unit, program and uncertain cross-source identity boundaries prevent a distinct-engineering-project total. CNMI transmission scope, SERTP source markings and NYISO public report access remain unresolved. Statewide, territory-wide and national completeness are not established.",
+    "National denominator remains unknown. Twenty-one full declared regional inventories, eight complete featured/funding subsets and two contextual scopes are imported. Source work units and unresolved cross-source identity prevent a distinct-engineering-project total. CNMI transmission role, SERTP source markings and NYISO public report access remain unresolved. Statewide, territory-wide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported.",
     "NYISO 2026 proposed-facility expansion is specifically blocked by unavailable complete public report bytes; official references establish edition existence, not rows. Existing National Grid scope remains usable and NYISO totals are unknown, not zero."
@@ -3200,6 +3435,45 @@
       "excludedRows": 34,
       "scope": "Five bulk-line table rows plus 84 Schedule 10 forms; 84 engineering narratives support rather than duplicate forms. Fifty-five retained transmission work units, not full Florida coverage.",
       "evidenceFile": "specs/features/F27-us-regional-expansion/fl-fpl/qualification.md"
+    },
+    {
+      "sourceKey": "al-apc-doe",
+      "editionId": "review-index-snapshot-2026-09-30",
+      "status": "imported-complete-featured-subset",
+      "task": "F27-APC-I",
+      "owner": "source_discovery",
+      "proposedImportedRecords": 6,
+      "locatedRecords": 0,
+      "sourceRows": 12,
+      "excludedRows": 6,
+      "scope": "All twelve DOE Alabama Power review entries: six physical transmission packages retained; one generation, one demand-side program, two fiber-only and two distribution entries excluded.",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/al-apc-doe/qualification.md"
+    },
+    {
+      "sourceKey": "ga-gpc-public",
+      "editionId": "observed-2026-09-30",
+      "status": "imported-complete-featured-subset",
+      "task": "F27-GPC-I",
+      "owner": "source_discovery",
+      "proposedImportedRecords": 10,
+      "locatedRecords": 0,
+      "sourceRows": 10,
+      "excludedRows": 0,
+      "scope": "All ten Current Projects page entries: six transmission project/upgrade observations and four area-program capital contexts; no exclusions. Supporting notices are evidence, not additional rows.",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/ga-gpc-public/qualification.md"
+    },
+    {
+      "sourceKey": "aep-doe",
+      "editionId": "review-index-snapshot-2026-09-30",
+      "status": "imported-complete-featured-subset",
+      "task": "F27-AEP-I",
+      "owner": "core",
+      "proposedImportedRecords": 8,
+      "locatedRecords": 0,
+      "sourceRows": 8,
+      "excludedRows": 0,
+      "scope": "Eight named physical transmission scopes from the captured DOE AEP review index: seven line rebuild upgrades and one station project. Supplemental consultations do not add projects.",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/aep-doe/qualification.md"
     }
   ]
 }

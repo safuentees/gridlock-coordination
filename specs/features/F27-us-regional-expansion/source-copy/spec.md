@@ -9,3 +9,7 @@ Inspect the accepted `al-apc-doe`, `ga-gpc-public` and `aep-doe` producers/recor
 Examples: Lock 5 needs the explanation that 500/230 kV describes future accommodation, without 'normalized voltage stays empty'; the generic retrieval-date and reporter-versus-owner paragraphs need not repeat structured evidence. Georgia needs line-versus-substation stage uncertainty and quarter/season labels, without a general implementation lecture. AEP East Munday must retain that its scope comes from May 8 evidence and later letter details are unavailable. Do not hide an observed date discrepancy just because both dates also appear in milestones.
 
 Observable completion: these source records keep their decision-relevant exceptions, raw notes/exports remain untouched, unknown notes remain visible and the existing screen/search API still works. No new research, components, tests or worker checking. Coordinator folds the representative preserved-note/translation case into the current single milestone check; no visual/browser/mobile work.
+
+## Integrated completion
+
+Completed through PR154. The coordinator’s single production build and representative source/revision/coverage/copy case passed at 26f3091 on September 30, 2026, within 28 seconds. Exact scope counts, preserved sample/revision evidence and limitations are recorded in `changes/F27-public-review-coverage.md`. No worker, browser, visual or mobile checks. Broader national coverage remains incomplete.
