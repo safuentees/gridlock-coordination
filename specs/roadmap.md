@@ -13,7 +13,7 @@ check_budget: "5 minutes per integrated milestone; no visual checks"
 
 # Product roadmap
 
-F00–F14 deliver the working tool and remain complete. F15–F19 surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. F20 adds independent map focus controls; F21 organizes actions and scrolling around user tasks. F00–F25 are integrated; evidence gaps remain explicit. US-wide planned-transmission discovery is selected through F25–F27, with experimental F22/F23 map work integrated. Increments are independently deliverable and no task quota applies.
+F00–F14 deliver the working tool and remain complete. F15–F19 surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. F20 adds independent map focus controls; F21 organizes actions and scrolling around user tasks. F00–F26 are integrated; evidence gaps remain explicit. US-wide planned-transmission discovery is selected through F25–F27, with experimental F22/F23 map work integrated. Increments are independently deliverable and no task quota applies.
 
 | ID | Capability | Owner | Phase | Depends on | Owned paths |
 |---|---|---|---|---|---|
@@ -57,11 +57,13 @@ Relevant planning from `codex/F19-source-research-plan` / `34f1c63` is integrate
 2. **F26 full inventory:** connect the sample early, then import/reconcile every usable public project in the selected source edition/scope, including valid unlocated records. Complete only after the full inventory and shared coverage are integrated; a pilot is insufficient.
 3. **F27 regional expansion:** add independently deliverable full regional inventories using shared identities/schema/editions. Each increment must add documented geographic coverage. Refreshing one source improves freshness but cannot complete geographic or national expansion.
 
-The [US coverage register](us-coverage/us-register.json) starts at 252 historical source records, 10 unverified locations and 242 missing; SCE June 2026 is qualified but not yet imported. It records every state/DC and US territories, partial imported filing scopes, field gaps and unqualified source leads. A filled register does not mean covered geography. National expansion stays open while areas remain uncovered, blocked or sample-only.
+The [US coverage register](us-coverage/us-register.json) now contains 419 real records, 113 unverified centers and 306 unresolved centers, including the preserved 252-record historical snapshot. SCE June 2026 contributes its complete declared 167-record public scope (128 transmission records and 39 capital-context records); no asset owners are inferred. It records every state/DC and US territories, partial imported filing scopes, field gaps and unqualified source leads. A filled register does not mean covered geography. National expansion stays open while areas remain uncovered, blocked or sample-only.
 
 After source choice, coordinator activates F26-C1 (shared validation/migration/eligibility), then assigns the exact source-specific F26-I1 ingestion and F26-I2 integration tasks already scoped in the spec. Producer and consumer work can overlap after that contract; connect the first batch before complete extraction. After integration, continue the full inventory and subsequent qualified F27 adapters without requesting the same scope approval again. Independent adapters may run in parallel in separate owned files/worktrees. Preserve map-ui's current interface/ownership and isolated synthetic density work. Worker assignment below is recorded; the coordinator dispatches workers directly after the C1 contract commit.
 
 ## Current milestone and assignments
+
+**F26 complete through the shared PR57 integration and source/core/map/UI slices PR58–62.** The six-record batch was connected through the provider before full extraction integration. Full SCE scope reconciles 494 rows into 167 retained and 327 exclusions, with 103 unverified centers and 64 unresolved. Aggregate source data is 419 records/113 centers; all 167 SCE owners remain unknown and legacy six candidates are unchanged. Dataset v2 accepts unchanged v1, snapshots retain source context, dynamic consumers preserve all records, and bundled additions use an explicit preview preserving local edits. The original 300 demo identities remain beside 300 new synthetic inventory records. Coordinator's one build and one representative source/save/revision case passed at de3b170; existing Vite-loader/bundle warnings remain, no visual/browser/mobile checks. F27-PJM and F27-ISONE-Q qualification are dispatched in independent folders; national scope remains incomplete.
 
 **F24 — complete with the focused map-controls integration.** Zoom, Scan Fit projects, Legend and Fit selection are fixed at the map's top-right. UI placed workspace settings outside the map region and bounded the panel width; the legend uses the sole new preset component, a collision-bounded Popover with event isolation and internal scrolling. Geographic fitting/attribution still use panel insets; data/public contracts are unchanged. Coordinator's one production build passed with existing future Vite-loader/bundle warnings; no browser, visual/mobile checks or repeated core case. Return ProjectMap and this integrated base to map-ui for F22 wrapper work; its independent adapter/dependency changes were preserved.
 
@@ -85,11 +87,11 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
-| map-ui | F22/F23 complete; narrow F26 reporting-group colors/legend compatibility after C1. | Exact map files in C1; preserve trial/density and fixed controls. No Explorer edits or pattern polish. |
-| source_discovery / ingestion | F25 complete; F26-I1 after shared C1 commit: first six real records, then all 494 source rows / proposed 167 retained. | Own `scripts/ingest/coverage/ca-sce-tpr/*` and `data/real/coverage/ca-sce-tpr/*`; never edit aggregate or manufacture locations. |
-| coordinator | F26-C1 shared contract now; compose sample early, preserve local revisions, reconcile coverage and integrate full inventory. | Root owns schema/helpers/provider/App/import/readiness/register and merge/checks. |
-| core | F26 canonical inventory eligibility and saved version compatibility after C1. | `core/eligibility.ts`, `core/index.ts`, briefs storage/export/restore only; legacy calculations unchanged. |
-| ui | F26 dynamic sources and evidence/coverage consumers after C1, using separate synthetic fixture. | Exact eleven UI files plus demo fixture in C1; core eligibility is authoritative, map/App excluded. |
+| map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
+| source_discovery / ingestion | F26-I1 complete; F27-PJM qualification dispatched. | Own only PJM qualification/sample docs; reuse public XML, max 15-minute clarification; no guessed coordinates or production adapter before accepted mapping. |
+| core | F26 eligibility/save compatibility complete; independent F27-ISONE-Q qualification dispatched. | Exact New England qualification/sample docs; max 15-minute public-source clarification; core calculation ownership retained. |
+| coordinator | Integrate full F26, maintain register and accept next qualified F27 mappings/producer handoffs. | Root alone owns aggregate/schema/merge/checks; no national completion claim from one source. |
+| ui | F26 consumers complete; available for source-driven follow-up after next accepted inventory mapping. | Existing UI ownership retained; no map or shared-contract edits without handoff. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 

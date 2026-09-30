@@ -1,19 +1,19 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "6475864",
+  "baselineRevision": "F26 integrated inventory (implementation de3b170)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "F25 complete: ca-sce-tpr / 2026-06-01 selected; F26 contract and import in progress",
+  "qualificationStatus": "F25 selected SCE; F26 full declared source scope imported; F27-PJM and F27-ISONE-Q qualification in progress",
   "totals": {
-    "importedSourceRecords": 252,
-    "locatedRecords": 10,
+    "importedSourceRecords": 419,
+    "locatedRecords": 113,
     "confirmedLocations": 0,
-    "unverifiedLocations": 10,
-    "missingLocations": 242,
+    "unverifiedLocations": 113,
+    "missingLocations": 306,
     "explicitConstructionWindows": 0,
     "newRegionalSourcesQualified": 1,
-    "newFullRegionalInventoriesImported": 0,
+    "newFullRegionalInventoriesImported": 1,
     "knownNationalProjectDenominator": null
   },
   "pendingEvidence": {
@@ -76,6 +76,57 @@
         "Current source-edition continuity not established"
       ],
       "nextTask": "F25; preserve F19 evidence decisions"
+    },
+    {
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "editionPublishedAt": "2026-06-01",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Nonaggregate project/subproject lines except Operational and Canceled. On Hold and unknown lifecycle remain visible; includes ancillary capital work. Program aggregates are separately reconciled without inventing child projects.",
+      "geographicScope": "SCE FERC-jurisdictional transmission capital portfolio, including reported work outside California; not all California transmission projects.",
+      "recordKind": "128 transmission-project records and 39 capital-project-context records",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-06-01",
+      "importedRecords": 167,
+      "locatedRecords": 103,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 103,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 64,
+        "milestone": 2,
+        "constructionWindow": 167,
+        "status": 1,
+        "voltage": 18,
+        "evidencedOwner": 167
+      },
+      "rawSourceRows": 494,
+      "excludedRows": 327,
+      "exclusions": [
+        {
+          "reason": "cancelled",
+          "count": 4
+        },
+        {
+          "reason": "operational",
+          "count": 279
+        },
+        {
+          "reason": "program-aggregate",
+          "count": 44
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/ca-sce-tpr/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/ca-sce-tpr/row-ledger.json",
+      "publicInventoryDenominator": 167,
+      "blockers": [
+        "Asset ownership not supplied; inventory remains outside new owner-based candidate comparisons",
+        "Source CRS and positional accuracy unspecified; every mapped center unverified",
+        "64 unresolved centers; partial portfolio does not establish statewide completeness"
+      ],
+      "nextTask": "F27; additional public regional inventories"
     }
   ],
   "jurisdictions": [
@@ -109,8 +160,10 @@
     },
     {
       "code": "CA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-portfolio",
+      "sourceKeys": [
+        "ca-sce-tpr"
+      ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
     },
@@ -484,13 +537,13 @@
   "qualificationLeads": [
     {
       "sourceKey": "california-tpr",
-      "status": "SCE edition qualified; other TPR portfolios not yet imported",
+      "status": "SCE declared scope imported; other TPR portfolios unimported",
       "sourceUrl": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/transmission-project-review-process",
       "importedRecords": 0,
       "locatedRecords": 0,
-      "missingInput": "Full F26 normalized inventory and product integration",
+      "missingInput": "Additional regional inventories and independent location/owner evidence",
       "owner": "source_discovery",
-      "task": "F25"
+      "task": "F27"
     },
     {
       "sourceKey": "miso-mtep",
@@ -501,13 +554,33 @@
       "missingInput": "Public downloadable planned-project sample; documented general-pin precision may limit geographic eligibility",
       "owner": "source_discovery",
       "task": "F25 fallback"
+    },
+    {
+      "sourceKey": "pjm-rtep",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.pjm.com/planning/m/project-construction",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Accepted lifecycle/owner/edition mapping; XML has no native coordinates",
+      "owner": "source_discovery",
+      "task": "F27-PJM"
+    },
+    {
+      "sourceKey": "iso-ne-rsp",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.iso-ne.com/system-planning/system-plans-studies/rsp",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Public workbook sample and complete mapping/enumeration",
+      "owner": "core (source qualification)",
+      "task": "F27-ISONE-Q"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
-    "Other US areas and territories have no imported inventory. Zero imports do not mean zero projects.",
-    "National project denominator remains unknown. SCE public edition qualified; no new full inventory imported yet.",
+    "Other US areas and territories lack assessed regional inventory coverage. SCE contains some cross-state work whose jurisdiction counts remain unassigned; zero imports never means zero projects.",
+    "National project denominator is unknown. One full declared source portfolio is imported; statewide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage."
   ],
   "qualifiedSources": [
@@ -515,11 +588,11 @@
       "sourceKey": "ca-sce-tpr",
       "editionId": "2026-06-01",
       "reportingGroup": "sce-tpr",
-      "status": "qualified-not-imported",
+      "status": "full-declared-source-scope-imported",
       "sourceRows": 494,
       "proposedRetainedRecords": 167,
       "proposedExcludedRows": 327,
-      "locatedRecords": null,
+      "locatedRecords": 103,
       "sampleNativeIds": [
         "SP-01",
         "PB-02.01",
