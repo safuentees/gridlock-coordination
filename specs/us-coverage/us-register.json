@@ -1,23 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 California/Carolinas PR133 (checked implementation ae04a2b; one build and source/revision case passed)",
+  "baselineRevision": "F27 Southeast/evidence PR143 (checked implementation c6469fa; one build and source/revision case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported; Santee Cooper and FPL qualified for staged production. NYISO report access, CNMI transmission role and SERTP source markings remain unresolved.",
+  "qualificationStatus": "Twenty-one full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported. NYISO public report access, CNMI transmission role and SERTP source markings remain unresolved.",
   "totals": {
-    "importedSourceRecords": 14820,
+    "importedSourceRecords": 14899,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 14707,
+    "missingLocations": 14786,
     "explicitConstructionWindows": 0,
     "newRegionalSourcesQualified": 21,
-    "newFullRegionalInventoriesImported": 19,
+    "newFullRegionalInventoriesImported": 21,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 5,
     "fullFeaturedSubsetsImported": 5,
-    "fullDeclaredSourceScopesImported": 26,
+    "fullDeclaredSourceScopesImported": 28,
     "qualifiedContextScopes": 2,
     "fullContextScopesImported": 2
   },
@@ -25,7 +25,11 @@
     "integratedF19Decisions": 10,
     "unappliedLocationSuggestions": 1,
     "unresolvedDecisions": 9,
-    "note": "Okatie permit-area suggestion does not change the bundled snapshot until explicitly applied; per-user revisions are not this baseline."
+    "note": "Okatie permit-area suggestion does not change the bundled snapshot until explicitly applied; per-user revisions are not this baseline.",
+    "integratedF27OwnershipDecisions": 6,
+    "unappliedPlannedOwnerSuggestions": 1,
+    "unresolvedOwnershipDecisions": 5,
+    "ownershipNote": "Calcite planned-owner evidence from September 2025 is an explicit guarded local revision; no present equipment title or new bundled candidates are asserted."
   },
   "importedSources": [
     {
@@ -1714,6 +1718,117 @@
       "sourceStateCounts": {},
       "unallocatedStateRecords": 137,
       "stateCountMeaning": "Explicit single-state source fields only. Utility/participant-area footprint is not verified per-record geography; no name inference."
+    },
+    {
+      "sourceKey": "sc-santee",
+      "editionId": "public-plans-snapshot-2026-09-30",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Complete union of 23 named 2025 IRP Appendix B headings and 12 public project-index cards: 24 retained observations, two concluded-work exclusions and nine supporting-page exclusions.",
+      "geographicScope": "Santee Cooper South Carolina public transmission planning scope; per-record states are not inferred.",
+      "recordKind": "24 transmission-project",
+      "transmissionProjectRecords": 24,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-09-30",
+      "importedRecords": 24,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 24,
+        "milestone": 8,
+        "constructionWindow": 24,
+        "status": 1,
+        "voltage": 0,
+        "evidencedOwner": 24
+      },
+      "rawSourceRows": 35,
+      "excludedRows": 11,
+      "exclusions": [
+        {
+          "reason": "Explicit project-page notice says work concluded; actual completion date unknown.",
+          "count": 2
+        },
+        {
+          "reason": "Supporting page for an already enumerated IRP unit; no additional runtime record.",
+          "count": 9
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/sc-santee/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/sc-santee/row-ledger.json",
+      "publicInventoryDenominator": 24,
+      "blockers": [
+        "The union is a finite public subset, not a complete utility/statewide inventory or a count of unique engineering projects. Possible Seaboard–Indian Field / Indian Field–Varnville overlap is unresolved.",
+        "Composite snapshot observed September 30, 2026 has no single publication date. Downloaded IRP carries a November 21, 2025 filing stamp, distinct from the library's initial September 16 filing; webpages have no verified update date.",
+        "Active means listed project work, not construction. Three reported certificates support approved; Marion–Conway current lifecycle is unknown despite a historical April 2022 clearing statement. Elapsed forecasts do not prove approval, construction or completion.",
+        "IRP completion years retain year precision and unknown kind. Explicit website service targets retain supplied precision. Coarse seasons and construction-end months are distinct from energization and administrative closeout.",
+        "Bluffton retains an unknown primary date because IRP 2030 completion and an undated 2028 website service forecast conflict; county descriptions also differ.",
+        "All owners, locations, native geometry, construction windows, actual start days and row-update days remain unknown. The operator's network includes Authority-owned and Central-owned equipment.",
+        "Stable identities are source locators, not native engineering IDs. Named multi-circuit/station packages remain intact; regulatory docket/order references are aliases, not engineering identifiers.",
+        "All 17 public originals are checksum-pinned in the producer catalog and row ledger. Primary manifest hash identifies the IRP, not the composite files. Public accessibility is not a blanket redistribution license."
+      ],
+      "nextTask": "F27; qualified native location/owner evidence and remaining regional scopes",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 24,
+      "stateCountMeaning": "Explicit single-state source fields only. Utility footprint and county/endpoint names do not establish verified per-record geography."
+    },
+    {
+      "sourceKey": "fl-fpl",
+      "editionId": "2026-04",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "89 primary source entries: five bulk lines and 84 interconnection forms; retain 55 transmission work units and exclude 34 storage-side-only forms. Matching engineering narratives add no rows.",
+      "geographicScope": "Partial FPL Florida and Northwest Florida utility planning scope, with named counties/terminals only; not statewide completeness.",
+      "recordKind": "55 transmission-project",
+      "transmissionProjectRecords": 55,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-04",
+      "importedRecords": 55,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 55,
+        "milestone": 50,
+        "constructionWindow": 55,
+        "status": 0,
+        "voltage": 0,
+        "evidencedOwner": 50
+      },
+      "rawSourceRows": 89,
+      "excludedRows": 34,
+      "exclusions": [
+        {
+          "reason": "storage-collector-side-only-no-transmission-work",
+          "count": 34
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/fl-fpl/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/fl-fpl/row-ledger.json",
+      "publicInventoryDenominator": 55,
+      "blockers": [
+        "Two finite primary scopes: five Table III.E.1 bulk rows plus 84 Schedule 10 forms. The 84 matching III.E narratives are support, not extra projects.",
+        "Full accepted scope is 55 transmission work units; 34 storage-side collector/protection entries are excluded by explicit work scope, not a voltage cutoff.",
+        "This FPL plan includes Northwest Florida but is not a complete Florida inventory or a known statewide denominator.",
+        "April 2026 is submission/edition precision; publication day and row update dates are unknown. Analyses occurred in 2025 and Q1 2026; retrieval does not refresh lifecycle.",
+        "Source-locator IDs freeze the initial source positions without an edition prefix. They are not native engineering IDs; every future edition requires an explicit identity crosswalk.",
+        "Only five bulk rows evidence FPL line ownership, scoped to this source. Right-of-way/reporting identity/participation do not establish ownership of the 50 interconnection packages.",
+        "Five bulk commercial-service dates have month precision. Fifty interconnection service dates remain unknown; construction years and connection quarters are supplementary, never invented actual windows.",
+        "Separate line/program dates, source voltage, name and endpoint discrepancies and unresolved timing conflicts are preserved. No parent records, guessed centers or cross-source FMPA merges.",
+        "Reported circuit miles, kV, transformer/capacity MVA and served-facility MW are distinct meanings. Schedule 9 total installed costs do not establish standalone transmission costs or savings.",
+        "Source text calls forecasts tentative and longer-term sites nondefinitive; proposed equipment work is not a final location or design.",
+        "Public factual private analysis only; originals, contact data, hidden metadata and maps are not published or interpreted. No open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; qualified native location/owner evidence and remaining regional scopes",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 55,
+      "stateCountMeaning": "Explicit single-state source fields only. Utility footprint and county/endpoint names do not establish verified per-record geography."
     }
   ],
   "jurisdictions": [
@@ -1816,7 +1931,8 @@
       "code": "FL",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "fl-fmpa"
+        "fl-fmpa",
+        "fl-fpl"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -2214,7 +2330,8 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "desc",
-        "carolinas-tpc"
+        "carolinas-tpc",
+        "sc-santee"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -2707,30 +2824,32 @@
     },
     {
       "sourceKey": "sc-santee",
-      "status": "qualified-production-in-progress",
-      "task": "F27-SANTEE-I",
+      "status": "imported-full-declared-public-scope",
+      "task": "F27",
       "owner": "source_discovery",
-      "missingInput": "Connected six-record batch, then full 24 accepted observations; native locations, owners and corridor crosswalk remain unknown",
+      "missingInput": "Native location/owner evidence and unresolved cross-source identity; declared public scope complete, wider coverage incomplete",
       "sourceRows": 35,
       "proposedImportedRecords": 24,
-      "locatedRecords": 0
+      "locatedRecords": 0,
+      "importedRecords": 24
     },
     {
       "sourceKey": "fl-fpl",
-      "status": "qualified-production-in-progress",
-      "task": "F27-FPL-I",
+      "status": "imported-full-declared-public-scope",
+      "task": "F27",
       "owner": "core",
-      "missingInput": "Connected five-record batch then full 55; locations and 50 interconnection owners remain unknown",
+      "missingInput": "Native location/owner evidence and unresolved cross-source identity; declared public scope complete, wider coverage incomplete",
       "sourceRows": 89,
       "proposedImportedRecords": 55,
-      "locatedRecords": 0
+      "locatedRecords": 0,
+      "importedRecords": 55
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National denominator remains unknown. Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Work-unit, program and uncertain cross-source identity boundaries prevent a distinct-engineering-project total. CNMI transmission scope and SERTP source markings remain unresolved. Statewide, territory-wide and national completeness are not established.",
+    "National denominator remains unknown. Twenty-one full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Work-unit, program and uncertain cross-source identity boundaries prevent a distinct-engineering-project total. CNMI transmission scope, SERTP source markings and NYISO public report access remain unresolved. Statewide, territory-wide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported.",
     "NYISO 2026 proposed-facility expansion is specifically blocked by unavailable complete public report bytes; official references establish edition existence, not rows. Existing National Grid scope remains usable and NYISO totals are unknown, not zero."
@@ -3059,7 +3178,7 @@
     {
       "sourceKey": "sc-santee",
       "editionId": "public-plans-snapshot-2026-09-30",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "task": "F27-SANTEE-I",
       "owner": "source_discovery",
       "proposedImportedRecords": 24,
@@ -3072,7 +3191,7 @@
     {
       "sourceKey": "fl-fpl",
       "editionId": "2026-04",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "task": "F27-FPL-I",
       "owner": "core",
       "proposedImportedRecords": 55,
