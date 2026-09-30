@@ -1,0 +1,253 @@
+{
+  "purpose": "Six source-qualification diagnostics; not a production Dataset",
+  "source": {
+    "publisher": "National Grid",
+    "utilityScope": "National Grid New York local transmission plan, partial New York coverage",
+    "edition": "2025-10-30",
+    "publishedOn": null,
+    "retrievedOn": "2026-09-30",
+    "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf",
+    "sha256": "5f13264b522f017649867bc9f217568935a80f2a648c2d851c8aaccdcba27a33",
+    "bytes": 3532098
+  },
+  "proposedReconciliation": {
+    "sourceRows": 152,
+    "retained": 136,
+    "excluded": 16,
+    "failed": 0,
+    "pending": 0,
+    "nativeLocated": 0,
+    "conservativeTransmissionKind": 8,
+    "planningContext": 128
+  },
+  "examples": [
+    {
+      "sourceId": "2025-p029-r03",
+      "identityBasis": "source-locator",
+      "nativeProjectId": null,
+      "nameSummary": "Indian River\u2013North Watertown line and station work",
+      "nameSummaryIsParaphrase": true,
+      "citation": {
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=29",
+        "page": 29,
+        "table": "Project Name / Scope / Project Status / Expected In-Service Date",
+        "bodyRow": 3
+      },
+      "sourceFacts": {
+        "projectStatus": "Under Construction",
+        "expectedInService": "03/2026",
+        "rowOwner": null,
+        "nativeCoordinates": null
+      },
+      "proposal": {
+        "disposition": "retain",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2025-10-30",
+        "lifecycleDateMeaning": "source-edition",
+        "inService": {
+          "value": "2026-03",
+          "precision": "month",
+          "kind": "in-service"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null
+      },
+      "meaning": "Physical scope explicitly includes a new 115 kV transmission line and station work; no center or row owner is provided."
+    },
+    {
+      "sourceId": "2025-p014-r05",
+      "identityBasis": "source-locator",
+      "nativeProjectId": null,
+      "nameSummary": "Pembroke EV rest-stop transmission taps",
+      "nameSummaryIsParaphrase": true,
+      "citation": {
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=14",
+        "page": 14,
+        "table": "Project Name / Scope / Project Status / Expected In-Service Date",
+        "bodyRow": 5
+      },
+      "sourceFacts": {
+        "projectStatus": "Initiated",
+        "expectedInService": "08/2029",
+        "rowOwner": null,
+        "nativeCoordinates": null
+      },
+      "proposal": {
+        "disposition": "retain",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-10-30",
+        "lifecycleDateMeaning": "source-edition",
+        "inService": {
+          "value": "2029-08",
+          "precision": "month",
+          "kind": "in-service"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null
+      },
+      "meaning": "Scope expressly combines transmission taps with a distribution substation. Initiated does not establish approved or under-construction status."
+    },
+    {
+      "sourceId": "2025-p012-r04",
+      "identityBasis": "source-locator",
+      "nativeProjectId": null,
+      "nameSummary": "Brockport R412 breaker replacement",
+      "nameSummaryIsParaphrase": true,
+      "citation": {
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=12",
+        "page": 12,
+        "table": "Project Name / Scope / Project Status / Expected In-Service Date",
+        "bodyRow": 4
+      },
+      "sourceFacts": {
+        "projectStatus": "N/A",
+        "expectedInService": "10/2026",
+        "rowOwner": null,
+        "nativeCoordinates": null
+      },
+      "proposal": {
+        "disposition": "retain",
+        "recordUnit": "project",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-10-30",
+        "lifecycleDateMeaning": "source-edition",
+        "inService": {
+          "value": "2026-10",
+          "precision": "month",
+          "kind": "in-service"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null
+      },
+      "meaning": "The scope identifies one 34.5 kV breaker. Preserve voltage and missing lifecycle without assigning transmission/distribution by a voltage cutoff."
+    },
+    {
+      "sourceId": "2025-p031-r02",
+      "identityBasis": "source-locator",
+      "nativeProjectId": null,
+      "nameSummary": "Middle Road station replacement / Staplin Creek",
+      "nameSummaryIsParaphrase": true,
+      "citation": {
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=31",
+        "page": 31,
+        "table": "Project Name / Scope / Project Status / Expected In-Service Date",
+        "bodyRow": 2
+      },
+      "sourceFacts": {
+        "projectStatus": "Application Deemed Complete",
+        "expectedInService": "06/2028",
+        "rowOwner": null,
+        "nativeCoordinates": null
+      },
+      "proposal": {
+        "disposition": "retain",
+        "recordUnit": "project",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-10-30",
+        "lifecycleDateMeaning": "source-edition",
+        "inService": {
+          "value": "2028-06",
+          "precision": "month",
+          "kind": "in-service"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null
+      },
+      "meaning": "A permit-like phrase occurs in Project Status. Do not move it to another column or turn it into project approval."
+    },
+    {
+      "sourceId": "2025-p050-r02",
+      "identityBasis": "source-locator",
+      "nativeProjectId": null,
+      "nameSummary": "Sunnyside transmission loop and substation",
+      "nameSummaryIsParaphrase": true,
+      "citation": {
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=50",
+        "page": 50,
+        "table": "Project Name / Scope / Project Status / Expected In-Service Date",
+        "bodyRow": 2
+      },
+      "sourceFacts": {
+        "projectStatus": "Concept",
+        "expectedInService": "01/2032",
+        "rowOwner": null,
+        "nativeCoordinates": null
+      },
+      "proposal": {
+        "disposition": "retain",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-10-30",
+        "lifecycleDateMeaning": "source-edition",
+        "inService": {
+          "value": "2032-01",
+          "precision": "month",
+          "kind": "in-service"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null
+      },
+      "meaning": "Explicit transmission-loop work supports kind, but conceptual lifecycle remains unknown and the expected date is not a construction window."
+    },
+    {
+      "sourceId": "2025-p030-r02",
+      "identityBasis": "source-locator",
+      "nativeProjectId": null,
+      "nameSummary": "North Foothills PV interconnection",
+      "nameSummaryIsParaphrase": true,
+      "citation": {
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=30",
+        "page": 30,
+        "table": "Project Name / Scope / Project Status / Expected In-Service Date",
+        "bodyRow": 2
+      },
+      "sourceFacts": {
+        "projectStatus": "Cancelled",
+        "expectedInService": "N/A",
+        "rowOwner": null,
+        "nativeCoordinates": null
+      },
+      "proposal": {
+        "disposition": "exclude",
+        "recordUnit": "project",
+        "recordKind": null,
+        "lifecycle": "cancelled",
+        "lifecycleAsOf": "2025-10-30",
+        "lifecycleDateMeaning": "source-edition",
+        "inService": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "buildWindow": null
+      },
+      "meaning": "Explicit cancellation excludes this source row. Q1436 is a related SIS queue reference, not the local-plan row identity."
+    }
+  ]
+}
