@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { analyzeProjects } from "@/core"
 import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type AnalysisResult, type Dataset } from "@/domain/schema"
 import { matchesProjectQuery } from "@/lib/project-search"
-import { BriefWorkspace } from "@/features/briefs/BriefWorkspace"
+import { BriefWorkspace, type ScenarioSaveRequest } from "@/features/briefs/BriefWorkspace"
 import { ProjectTimeline } from "@/features/scenarios/ProjectTimeline"
 import { ScenarioControls } from "@/features/scenarios/ScenarioControls"
 import { ComparisonPanel } from "./ComparisonPanel"
@@ -42,6 +42,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(null)
   const [selectedPairId, setSelectedPairId] = useState<string | null>(null)
+  const [scenarioSaveRequest, setScenarioSaveRequest] = useState<ScenarioSaveRequest | null>(null)
   const panel = useRef<HTMLElement>(null)
   const timelinePanel = useRef<HTMLElement>(null)
   const resultsView = useRef<HTMLDivElement>(null)
@@ -195,7 +196,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
               {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
           </div>
           <div hidden={collapsed} inert={collapsed} className={collapsed ? "hidden" : "max-h-[20%] min-h-0 min-w-0 shrink-0 overflow-auto border-b p-3"}>
-            <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} openRequest={reviewsRequest} />
+            <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} openRequest={reviewsRequest} saveScenarioRequest={scenarioSaveRequest} />
           </div>
           <div ref={resultsView} id="panel-results" hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { listFocus.current[listView] = event.target as HTMLElement }}>
             <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0">
@@ -217,7 +218,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
               <Button ref={backButton} variant="ghost" size="sm" onClick={backToResults}><ArrowLeftIcon aria-hidden="true" data-icon="inline-start" />Back to results</Button>
               {selectedOpportunity && <div className="flex items-center gap-2"><span className="text-xs text-muted-foreground">{selectedCandidateIndex < 0 ? "Outside current results" : `${selectedCandidateIndex + 1} of ${opportunities.length} candidates`}</span><IconButton variant="outline" label="Previous candidate" disabled={selectedCandidateIndex <= 0} onClick={() => selectPair(opportunities[selectedCandidateIndex - 1].id, false)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" label="Next candidate" disabled={selectedCandidateIndex < 0 || selectedCandidateIndex + 1 >= opportunities.length} onClick={() => selectPair(opportunities[selectedCandidateIndex + 1].id, false)}><ChevronRightIcon aria-hidden="true" /></IconButton></div>}
             </div>
-            <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} /></div>
+            <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} onSaveScenario={(pairId, inputs) => setScenarioSaveRequest(previous => ({ pairId, mode: dataset.mode, request: (previous?.request ?? 0) + 1, inputs: { ...inputs } }))} /></div>
           </div>
         </aside>
       </div>

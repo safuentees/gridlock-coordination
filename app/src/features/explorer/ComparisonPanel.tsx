@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareProjectTiming } from "@/core"
-import { UTILITIES, type Dataset, type Opportunity, type Project } from "@/domain/schema"
+import { UTILITIES, type Dataset, type ImpactInputs, type Opportunity, type Project } from "@/domain/schema"
 import { ImpactPanel, type ImpactDraft } from "@/features/impact/ImpactPanel"
 import { ProjectEvidence } from "./ProjectDetails"
 import { sourceEditionLabels } from "@/lib/presentation"
@@ -16,11 +16,12 @@ export interface ComparisonPanelProps {
   selectedProject: Project | null
   actions?: ReactNode
   onProject: (id: string) => void
+  onSaveScenario?: (pairId: string, inputs: ImpactInputs) => void
 }
 
 const BODY_CLASS = "min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain [overflow-wrap:anywhere]"
 
-export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject, actions, onProject }: ComparisonPanelProps) {
+export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject, actions, onProject, onSaveScenario }: ComparisonPanelProps) {
   const selectionKey = JSON.stringify([dataset.mode, selectedOpportunity ? "candidate" : "project", selectedOpportunity?.id ?? selectedProject?.id ?? null])
   const [tabs, setTabs] = useState<Record<string, string>>({})
   const [impactDrafts, setImpactDrafts] = useState<Record<string, ImpactDraft>>({})
@@ -73,7 +74,7 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
           </div>
         </TabsContent>
         <TabsContent forceMount value="impact" inert={activeTab !== "impact"} className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
-          <div className="min-w-0 pt-3">{selectedOpportunity && left && right && <ImpactPanel opportunity={selectedOpportunity} projects={[left, right]} draft={impactDraft} onDraftChange={(draft) => setImpactDrafts((previous) => ({ ...previous, [selectionKey]: draft }))} />}</div>
+          <div className="min-w-0 pt-3">{selectedOpportunity && left && right && <ImpactPanel opportunity={selectedOpportunity} projects={[left, right]} draft={impactDraft} onDraftChange={(draft) => setImpactDrafts((previous) => ({ ...previous, [selectionKey]: draft }))} onSaveScenario={onSaveScenario ? inputs => onSaveScenario(selectedOpportunity.id, inputs) : undefined} />}</div>
         </TabsContent>
         <TabsContent forceMount value="supporting" inert={activeTab !== "supporting"} className={activeTab === "supporting" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-5 pt-3">

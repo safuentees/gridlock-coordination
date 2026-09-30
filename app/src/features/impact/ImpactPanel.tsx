@@ -1,16 +1,18 @@
 import { useId, useState } from "react"
+import { SaveIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { estimateImpact } from "@/core"
-import type { ImpactResult, Opportunity, Project } from "@/domain/schema"
+import type { ImpactInputs, ImpactResult, Opportunity, Project } from "@/domain/schema"
 
 export interface ImpactPanelProps {
   opportunity: Opportunity
   projects: [Project, Project]
   draft?: ImpactDraft
   onDraftChange?: (draft: ImpactDraft) => void
+  onSaveScenario?: (inputs: ImpactInputs) => void
 }
 
 export type ImpactDraft = { length: string; width: string; cost: string; share: string }
@@ -26,17 +28,17 @@ const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "
 const acres = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 })
 
 // Controlled callers retain drafts above selection lifecycles; standalone use keeps its own per-pair drafts.
-export function ImpactPanel({ opportunity, draft, onDraftChange }: ImpactPanelProps) {
+export function ImpactPanel({ opportunity, draft, onDraftChange, onSaveScenario }: ImpactPanelProps) {
   const [drafts, setDrafts] = useState<Record<string, ImpactDraft>>({})
   const fields = draft ?? drafts[opportunity.id] ?? EMPTY_FIELDS
   function updateDraft(next: ImpactDraft) {
     if (draft === undefined) setDrafts((previous) => ({ ...previous, [opportunity.id]: next }))
     onDraftChange?.(next)
   }
-  return <ImpactForm fields={fields} onFieldsChange={updateDraft} />
+  return <ImpactForm fields={fields} onFieldsChange={updateDraft} onSaveScenario={onSaveScenario} />
 }
 
-function ImpactForm({ fields, onFieldsChange }: { fields: ImpactDraft; onFieldsChange: (draft: ImpactDraft) => void }) {
+function ImpactForm({ fields, onFieldsChange, onSaveScenario }: { fields: ImpactDraft; onFieldsChange: (draft: ImpactDraft) => void; onSaveScenario?: (inputs: ImpactInputs) => void }) {
   const fieldId = useId()
   const errors: Partial<Record<keyof ImpactDraft, string>> = {}
   for (const field of FIELD_DEFINITIONS) {
@@ -47,15 +49,18 @@ function ImpactForm({ fields, onFieldsChange }: { fields: ImpactDraft; onFieldsC
   }
   const complete = FIELD_DEFINITIONS.every(({ key }) => fields[key].trim() !== "")
   let result: ImpactResult | null = null
+  let validInputs: ImpactInputs | null = null
   let calculationError: string | null = null
   if (complete && Object.keys(errors).length === 0) {
     try {
-      result = estimateImpact({
+      const inputs = {
         sharedLengthMiles: Number(fields.length),
         corridorWidthFeet: Number(fields.width),
         costPerAcreUsd: Number(fields.cost),
         shareFraction: Number(fields.share) / 100,
-      })
+      }
+      result = estimateImpact(inputs)
+      validInputs = inputs
     } catch (error) {
       calculationError = error instanceof Error ? error.message : "These assumptions cannot be calculated."
     }
@@ -106,6 +111,7 @@ function ImpactForm({ fields, onFieldsChange }: { fields: ImpactDraft; onFieldsC
             </p>
           )}
         </div>
+        {onSaveScenario && <Button type="button" disabled={!result || !validInputs} onClick={() => { if (validInputs) onSaveScenario(validInputs) }}><SaveIcon aria-hidden="true" data-icon="inline-start" />Save scenario</Button>}
         <details className="text-sm">
           <summary className="cursor-pointer">Calculation and limitations</summary>
           <div className="mt-2 space-y-2 text-muted-foreground">
