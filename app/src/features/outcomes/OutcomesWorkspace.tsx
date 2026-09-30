@@ -3,12 +3,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { getReadiness } from "@/data/readiness"
 import type { OutcomesWorkspaceProps } from "@/domain/workspace"
-import { sourceEditionLabels } from "@/lib/presentation"
+import { SourceCoverageDialog } from "@/features/coverage/SourceCoverageDialog"
 
 export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onReadiness, onSavedFindings }: OutcomesWorkspaceProps) {
   const readiness = useMemo(() => getReadiness(dataset), [dataset])
   const projectsById = useMemo(() => new Map(dataset.projects.map((project) => [project.id, project])), [dataset])
-  const sourceEditions = useMemo(() => sourceEditionLabels(dataset.projects), [dataset])
   const dates = useMemo(() => {
     const counts = { day: 0, month: 0, year: 0, unknown: 0, construction: 0 }
     for (const project of dataset.projects) {
@@ -33,8 +32,8 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
 
   return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4 overflow-hidden" aria-label="Supported outcomes">
     <header className="shrink-0 space-y-2">
-      <h2 className="text-lg font-semibold">Outcomes</h2>
-      <p className="break-words text-sm text-muted-foreground">{sourceEditions.length ? sourceEditions.join("; ") : dataset.title}</p>
+      <div className="flex flex-wrap items-center justify-between gap-3"><h2 className="text-lg font-semibold">Outcomes</h2><SourceCoverageDialog dataset={dataset} /></div>
+      <p className="text-sm text-muted-foreground">{dataset.mode === "demo" ? "Synthetic demo" : "Active source data"}</p>
     </header>
     <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto overscroll-contain pb-1 [overflow-wrap:anywhere]" tabIndex={0} role="region" aria-label="Outcome evidence and next steps">
       <Card>

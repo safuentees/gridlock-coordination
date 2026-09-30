@@ -14,6 +14,7 @@ import { getLocationProposals, getLocationResearchHint } from "@/data/location-p
 import { createOwnerRevision, getOwnerProposals } from "@/data/owner-proposals"
 import type { DataMode, Dataset, Project } from "@/domain/schema"
 import { InventoryEvidence } from "@/features/explorer/ProjectDetails"
+import { SourceCoverageDialog } from "@/features/coverage/SourceCoverageDialog"
 import { reportingGroups, reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-groups"
 import { visibleProjectNotes } from "@/lib/presentation"
 import { matchesProjectQuery } from "@/lib/project-search"
@@ -184,7 +185,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
 
   return <section className="flex h-full min-h-0 w-full min-w-0 flex-col gap-4 overflow-hidden" aria-label="Data readiness workspace">
     <header className="max-h-[30%] min-h-0 shrink-0 space-y-3 overflow-auto overscroll-contain">
-      <div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Data readiness</h2>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div>
+      <div className="flex flex-wrap items-center justify-between gap-3"><div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Data readiness</h2>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div><SourceCoverageDialog dataset={dataset} /></div>
       <p className="text-sm text-muted-foreground">{dataset.mode === "demo" ? "Switch to source data to revise evidence." : "Review suggested evidence or add a location with its source."}</p>
     </header>
     <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 overflow-hidden">
