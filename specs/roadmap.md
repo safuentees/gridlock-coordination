@@ -41,11 +41,14 @@ F00–F14 deliver the working tool and remain complete. F15–F19 surround it wi
 | F21 | [Task-based UI organization](features/F21-ui-composition/spec.md) | coordinator + ui + core presentation | 10 | F14–F19; shared composition contract | Exact split in spec: root App/Home/Outcomes/shared menu; ui Explorer/comparison/briefs/scenarios; core readiness/import/restore presentation. F20 paths excluded. |
 | F22 | [Experimental map compatibility](features/F22-maplibre-compatibility/spec.md) | map-ui (separate chat) | 11 | F20/F21 integrated; pinned dependency handoff | Exact ProjectMap/map-view + three density-map adapter files, package files and receipt in spec; default Leaflet retained |
 | F23 | [Hierarchical project concentrations](features/F23-hierarchical-density/spec.md) | map-ui (separate chat) | 12 | F22 integrated | Exact hierarchy/layer/synthetic files and F22 adapter files; only agreed hierarchy dependencies; receipt |
+| F24 | [Stationary map controls and accessible legend](features/F24-map-controls/spec.md) | coordinator + ui | 11 | F20/F21; explicit map-ui handoff | coordinator: ProjectMap, shared Popover, instructions/receipt; ui: Explorer shell placement and MapLegend only. No map-view/package edits. |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Current milestone and assignments
+
+**F24 — active focused correction.** Map-ui released untouched ProjectMap while continuing F22 adapter/dependency work. Coordinator owns constant map-top-right controls; UI owns the legend and minimal settings-row placement needed to avoid overlap. Geographic fitting/attribution still use panel insets; public contracts are unchanged. Return the integrated base to map-ui before F22 wrapper work resumes.
 
 **F22 ready; F23 follows compatibility integration.** The user explicitly requested an experimental MapLibre/deck.gl density view in the separate map/UI chat. Coordinator agreed the exact file/dependency handoff in F22/F23; map-ui proceeds without blocking unrelated evidence/UI work. Leaflet stays default, shared contracts/data remain unchanged, and an explicitly isolated synthetic density preview is allowed. Pattern/stipple work waits until the user tries the first density interaction. Coordinator alone merges/checks; no worker or visual checks.
 
