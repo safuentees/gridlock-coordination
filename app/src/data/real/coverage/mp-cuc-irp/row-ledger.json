@@ -24,8 +24,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r01"
   },
   {
     "sourceId": "2025-p055-t45-r02",
@@ -52,8 +52,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r02"
   },
   {
     "sourceId": "2025-p055-t45-r03",
@@ -103,8 +103,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r04"
   },
   {
     "sourceId": "2025-p055-t45-r05",
@@ -126,8 +126,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r05"
   },
   {
     "sourceId": "2025-p055-t45-r06",
@@ -154,8 +154,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r06"
   },
   {
     "sourceId": "2025-p055-t45-r07",
@@ -205,8 +205,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r08"
   },
   {
     "sourceId": "2025-p055-t45-r09",
@@ -261,7 +261,7 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r10"
   }
 ]

@@ -1,7 +1,7 @@
-# CUC FY2025 reported grid work — first real batch
+# CUC FY2025 reported grid work — full accepted scope
 
-Three unlocated contextual records ready for provider connection. Ledger: 26 = 3 imported + 18 excluded + 5 pending, zero failed/located. The full accepted source has five capital-project-context entries (bullets6/8/16/17/18) and three planning-context entries (5/19/20); four planned and four unknown lifecycle. All three emitted diagnostics are capital-project-context/planned. October2025 is the publication month and lifecycle-as-of; publication day is unknown. Printed p4 power bullets define the complete boundary; p2 supplies evidence only. The legislature copy is not imported a second time.
+Eight contextual work records retain five capital-project-context and three planning-context classifications, with four planned and four unknown lifecycle. Tinian/Rota bullet16 and multi-island programs remain combined source entries. The original three-record sample was provider-connected at `9777ab3`; its values and source-locator IDs retain the unchanged catalog/normalizer projection.
 
-Payload: 9,529 compact / 12,400 formatted UTF-8 bytes. Dates, owners, native geometry and construction bounds remain unknown; no transmission eligibility is asserted. The accompanying manifest, complete source ledger and source-quality file preserve all accepted entries, including pending work. Reproduce through `scripts/ingest/coverage/mp-cuc-ccr/README.md`.
+Full ledger: **26 = 8 imported + 18 excluded, zero pending/failed/located**. Payload: **17,510 compact / 22,891 formatted UTF-8 bytes**. Service/need dates, owners, native geometry and construction bounds remain unknown. These are contextual inventory records, not transmission-qualified or complete territory coverage.
 
-This sample stops before full production. No shared/core/UI changes or worker checks. Coordinator owns provider connection and the next full-scope dispatch.
+The manifest, complete source ledger, source-quality catalog and payload file accompany `dataset.json`. Reproduce through `scripts/ingest/coverage/mp-cuc-ccr/README.md`. No worker checks ran; coordinator owns integration and the bounded milestone check.

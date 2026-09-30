@@ -1,7 +1,7 @@
-# CUC IRP network recommendations — first real batch
+# CUC IRP network recommendations — full accepted scope
 
-Three unlocated contextual records ready for provider connection. Ledger: 10 = 3 imported + 7 pending, zero exclusions/failed/located. All ten accepted Table45 rows are planning-context with unknown lifecycle. The source cover edition is 2025-03-27; publication day remains unknown. All seven printed Table25 scenario rows, including the repeated Naftan entry, are accounted separately in the catalog and source-quality file and do not become extra projects. Other narrative RTU work remains supplementary, not an invented asset list.
+Ten modeled Table45 recommendations remain planning-context/unknown lifecycle. Rota row9 keeps unknown normalized voltage and distinct model-line/terminal evidence. Seven Table25 scenario rows remain supplemental, including the repeated Naftan row; no additional projects are invented. The original three-record sample was provider-connected at `9777ab3`; its values and source-locator IDs retain the unchanged catalog/normalizer projection.
 
-Payload: 8,929 compact / 11,102 formatted UTF-8 bytes. Dates, owners, native geometry and construction bounds remain unknown; no transmission eligibility is asserted. The accompanying manifest, complete source ledger and source-quality file preserve all accepted entries, including pending work. Reproduce through `scripts/ingest/coverage/mp-cuc-irp/README.md`.
+Full ledger: **10 = 10 imported, zero exclusions/pending/failed/located**. Payload: **21,677 compact / 27,831 formatted UTF-8 bytes**. Service/need dates, owners, native geometry and construction bounds remain unknown. These are contextual inventory records, not transmission-qualified or complete territory coverage.
 
-This sample stops before full production. No shared/core/UI changes or worker checks. Coordinator owns provider connection and the next full-scope dispatch.
+The manifest, complete source ledger, source-quality catalog and payload file accompany `dataset.json`. Reproduce through `scripts/ingest/coverage/mp-cuc-irp/README.md`. No worker checks ran; coordinator owns integration and the bounded milestone check.

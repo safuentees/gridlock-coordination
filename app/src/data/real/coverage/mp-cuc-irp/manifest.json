@@ -16,13 +16,13 @@
   "sha256": "d0a509e70cf4a7c87295259dc00d61caa02e7bf4e6933eaa195e1381dc5cb92e",
   "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
   "inventoryScope": "Ten modeled recommended-reinforcement rows in Table45. Separate aggressive-generation alternatives, existing assets and narrative SCADA work are supplemental, not extra adopted projects.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 10,
-    "importedRecords": 3,
+    "importedRecords": 10,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 7,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [],
@@ -37,7 +37,6 @@
     "Rota row9 uses a 15 kV model line type and a 13.8 kV terminal; proposed line operating voltage is unknown.",
     "The 2025-03-27 cover establishes the source edition, not a separately verified publication day or current project status.",
     "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
-    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
-    "Three retained diagnostics are emitted first; 7 accepted entries await provider connection and full normalization."
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
   ]
 }

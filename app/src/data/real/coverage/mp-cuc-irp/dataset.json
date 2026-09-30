@@ -1,9 +1,137 @@
 {
   "schemaVersion": 2,
   "mode": "real",
-  "title": "CUC March 2025 IRP network recommendations — three-record sample",
-  "generatedAt": "2026-09-30T10:59:16+00:00",
+  "title": "CUC March 2025 IRP network recommendations — full accepted scope",
+  "generatedAt": "2026-09-30T11:03:09+00:00",
   "projects": [
+    {
+      "id": "mp-cuc-irp:2025-p055-t45-r01",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r01",
+      "sponsor": null,
+      "name": "Saipan Naftan connection",
+      "description": "2 km connection; model node POL_2724",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [
+        13.8
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row1",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        },
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF52–53 / printed38–39, Table25; separate aggressive-generation alternatives",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "Table25 includes both a matching minimum case and a different Naftan maximum case; neither adds an adopted project to this table."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan; model references: POL_2724",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "POL_2724"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
+      "id": "mp-cuc-irp:2025-p055-t45-r02",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r02",
+      "sponsor": null,
+      "name": "Saipan As Gonno connection",
+      "description": "0.5 km connection; model node Site 4/BB",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [
+        13.8
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row2",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        },
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF52–53 / printed38–39, Table25; separate aggressive-generation alternatives",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "Table25 aggressive As Gonno scenario says no upgrades, whereas this baseline table specifies 0.5 km. Preserve the different model scenarios."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan; model references: Site 4/BB",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Site 4/BB"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
     {
       "id": "mp-cuc-irp:2025-p055-t45-r03",
       "utilityId": "mp-cuc-irp",
@@ -71,6 +199,188 @@
       }
     },
     {
+      "id": "mp-cuc-irp:2025-p055-t45-r04",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r04",
+      "sponsor": null,
+      "name": "Saipan Kiya 1 reinforcement",
+      "description": "Stat_5-POL_4218_K1; reconductor or parallel-line alternatives",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [
+        13.8
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row4",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "The source allows reconductoring or a parallel line; it does not establish which design is adopted."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan; model references: Stat_5-POL_4218_K1, Feeder Kiya 1",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Stat_5-POL_4218_K1",
+          "Feeder Kiya 1"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
+      "id": "mp-cuc-irp:2025-p055-t45-r05",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r05",
+      "sponsor": null,
+      "name": "Saipan Feeder 2 reinforcement",
+      "description": "Sub1_MV_N_Feeder2; reconductor or parallel-line alternatives",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [
+        13.8
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row5",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "The source allows reconductoring or a parallel line; it does not establish which design is adopted."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan; model references: Sub1_MV_N_Feeder2, Feeder 2",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Sub1_MV_N_Feeder2",
+          "Feeder 2"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
+      "id": "mp-cuc-irp:2025-p055-t45-r06",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r06",
+      "sponsor": null,
+      "name": "Saipan Reactive support",
+      "description": "17.5 MVAr; compensator or existing-generator capability per section 4.7.1",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row6",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        },
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF67 / printed53, section4.7.1",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "Section4.7.1 permits reactive capability from existing generators instead of a new compensator."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan; model references: STAT_1/MV_BB",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "STAT_1/MV_BB"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
       "id": "mp-cuc-irp:2025-p055-t45-r07",
       "utilityId": "mp-cuc-irp",
       "sourceId": "2025-p055-t45-r07",
@@ -118,6 +428,68 @@
         "parentProgramId": null,
         "aliases": [
           "Terminal 207"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
+      "id": "mp-cuc-irp:2025-p055-t45-r08",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r08",
+      "sponsor": null,
+      "name": "Tinian Reactive support",
+      "description": "5.2 MVAr; compensator or existing-generator capability per section 4.7.2",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row8",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        },
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF68 / printed54, section4.7.2",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "Section4.7.2 permits reactive capability from existing generators instead of a new compensator."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Tinian; model references: Power Station 4.16 kV terminal",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Power Station 4.16 kV terminal"
         ],
         "workType": null,
         "constructionStart": null,
@@ -190,6 +562,66 @@
         ],
         "milestones": []
       }
+    },
+    {
+      "id": "mp-cuc-irp:2025-p055-t45-r10",
+      "utilityId": "mp-cuc-irp",
+      "sourceId": "2025-p055-t45-r10",
+      "sponsor": null,
+      "name": "Rota Reactive support",
+      "description": "1 MVAr; compensator or existing-generator capability per section 4.7.3",
+      "status": "Recommended network reinforcement in the IRP model",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF69 / printed55, Table45 body row10",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        },
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF68 / printed54, section4.7.3",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ],
+      "notes": [
+        "Modeled recommendation, not an approved construction project; supplied voltages describe model assumptions.",
+        "Section4.7.3 permits reactive capability from existing generators instead of a new compensator."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-irp",
+        "editionId": "2025-03-27",
+        "editionLabel": "CUC March 2025 IRP network recommendations",
+        "reportingGroupName": "CNMI CUC IRP recommendations",
+        "recordKind": "planning-context",
+        "recordUnit": "upgrade",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2025-03-27",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Rota",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
     }
   ],
   "sourceEditions": [
@@ -211,13 +643,13 @@
       "sha256": "d0a509e70cf4a7c87295259dc00d61caa02e7bf4e6933eaa195e1381dc5cb92e",
       "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
       "inventoryScope": "Ten modeled recommended-reinforcement rows in Table45. Separate aggressive-generation alternatives, existing assets and narrative SCADA work are supplemental, not extra adopted projects.",
-      "scope": "sample",
+      "scope": "full",
       "counts": {
         "sourceRows": 10,
-        "importedRecords": 3,
+        "importedRecords": 10,
         "excludedRows": 0,
         "failedRows": 0,
-        "pendingRows": 7,
+        "pendingRows": 0,
         "locatedRecords": 0
       },
       "exclusions": [],
@@ -232,17 +664,16 @@
         "Rota row9 uses a 15 kV model line type and a 13.8 kV terminal; proposed line operating voltage is unknown.",
         "The 2025-03-27 cover establishes the source edition, not a separately verified publication day or current project status.",
         "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
-        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
-        "Three retained diagnostics are emitted first; 7 accepted entries await provider connection and full normalization."
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
       ]
     }
   ],
   "coverage": {
-    "processed": 3,
+    "processed": 10,
     "skipped": 0,
     "failed": 0,
     "notes": [
-      "All 10 declared source entries are reconciled; 7 retained entries remain pending.",
+      "All 10 declared source entries are reconciled; 0 retained entries remain pending.",
       "Counts are contextual source entries, not transmission-qualified or unique engineering projects."
     ]
   }

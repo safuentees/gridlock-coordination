@@ -80,8 +80,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-ccr:fy2025-p04-power-b05"
   },
   {
     "sourceId": "fy2025-p04-power-b06",
@@ -145,8 +145,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-ccr:fy2025-p04-power-b08"
   },
   {
     "sourceId": "fy2025-p04-power-b09",
@@ -322,8 +322,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-ccr:fy2025-p04-power-b18"
   },
   {
     "sourceId": "fy2025-p04-power-b19",
@@ -345,8 +345,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-ccr:fy2025-p04-power-b19"
   },
   {
     "sourceId": "fy2025-p04-power-b20",
@@ -368,8 +368,8 @@
       "kind": "unknown",
       "label": "No committed in-service or need milestone supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "mp-cuc-ccr:fy2025-p04-power-b20"
   },
   {
     "sourceId": "fy2025-p04-power-b21",
