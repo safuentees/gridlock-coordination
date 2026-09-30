@@ -104,7 +104,7 @@ function RestorePanel({ mode, records, dirtyIds, onRestore }: RestoreBriefProps)
 
 function FindingSummary({ record }: { record: SavedOpportunity }) {
   return <div className="space-y-1">
-    <p className="text-sm font-medium">{record.projects[0].name}<span className="block text-xs font-normal text-muted-foreground">↔ {record.projects[1].name}</span></p>
+    <p className="text-sm font-medium">{record.projects[0].name}<span className="block">↔ {record.projects[1].name}</span></p>
     <p className="text-xs text-muted-foreground">Saved {record.savedAt.slice(0, 10)} · {record.reviewState}</p>
     <p className="text-xs text-muted-foreground">Saved scenario: &lt;{record.options.radiusMiles} mi; {record.options.maxDateGapDays === null ? "any milestone gap" : `≤${record.options.maxDateGapDays} days`}; {record.options.includeUnverified ? "unverified locations included" : "confirmed locations required"}.</p>
     {record.investigation?.objective && <p className="text-xs">{record.investigation.objective}</p>}
