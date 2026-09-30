@@ -3,10 +3,10 @@
 The deterministic, standard-library adapter normalizes the accepted cited factual table in `source-records.json`. It does not fetch changing sources, interpret maps, geocode, invent asset owners or infer project milestones from fiscal spending years.
 
 ```sh
-python3 scripts/ingest/coverage/gu-gpa-cip/extract.py --scope sample
+python3 scripts/ingest/coverage/gu-gpa-cip/extract.py --scope full
 ```
 
-The first snapshot emits six diagnostics C.1/G.6/G.15/G.1/G.7/G.12 and reconciles all 44 entries: six imported, 17 excluded, 21 pending; no failed or located records. `--output-dir` may select another artifact directory. Full mode refuses incomplete transcription. The coordinator must connect this small sample before the remaining 21 accepted entries are produced.
+Full mode emits all 27 retained entries and reconciles the complete 44-row ledger: 27 imported, 17 excluded, zero pending/failed/located. The coordinator connected the six diagnostics C.1/G.6/G.15/G.1/G.7/G.12 in PR114 before this increment; their values and identities remain unchanged. `--scope sample` still emits those six records with 21 pending. `--output-dir` may select another artifact directory. Full mode refuses incomplete transcription.
 
 The full accepted scope is 27 retained budget work units (two explicit transmission, 14 capital context, 11 unresolved planning context), not a complete current Guam register or deduplicated engineering-project total. Use only August 26, 2025 slides 36–40, packet pages 57–61, PDF pages 725–729. Earlier August 21 copies are not extra rows. Summary-only F/H/I categories, totals and separate IRP/annual-report observations are outside the declared detail boundary.
 

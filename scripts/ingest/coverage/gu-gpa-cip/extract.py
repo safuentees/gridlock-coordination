@@ -38,7 +38,7 @@ def main():
     args = parser.parse_args()
     table = json.loads((script_dir / 'source-records.json').read_text())
     if args.scope == 'full' and any(not row['excluded'] and row['facts'] is None for row in table['rows']):
-        raise SystemExit('Full transcription is pending; connect the six-record sample before the remaining accepted records.')
+        raise SystemExit('Full transcription is incomplete; every accepted retained budget entry needs cited facts.')
     selected = set(table['sampleIds']) if args.scope == 'sample' else {row['sourceId'] for row in table['rows'] if not row['excluded']}
     projects, ledger = [], []
     for row in table['rows']:
@@ -106,7 +106,7 @@ def main():
 
 Source-only Dataset version 2: {counts['sourceRows']} named budget entries = {counts['importedRecords']} imported + {counts['excludedRows']} excluded + {counts['pendingRows']} pending; zero failed and zero located. The accepted full boundary contains 27 retained source work units, not a complete current Guam register or deduplicated engineering-project total.
 
-The six-record sample covers C.1, G.6, G.15, G.1, G.7 and G.12. Broad protection/control programs remain capital context; unresolved transformer/line roles remain planning context. Only the two explicit 115 kV line upgrades carry a numeric voltage. Every owner, center, native geometry, construction interval and project milestone stays unknown. FY2026/FY2027 spending columns are not project dates; the August 26, 2025 budget-plan lifecycle does not establish current status.
+The first connected sample covered C.1, G.6, G.15, G.1, G.7 and G.12; full mode retains those records unchanged and adds the other 21 accepted entries. Broad protection/control programs remain capital context; unresolved transformer/line roles remain planning context. Only the two explicit 115 kV line upgrades carry a numeric voltage. Every owner, center, native geometry, construction interval and project milestone stays unknown. FY2026/FY2027 spending columns are not project dates; the August 26, 2025 budget-plan lifecycle does not establish current status.
 
 Section/row identities are reproducible source locators, not native engineering IDs. Programs may overlap and are not silently merged. Summary-only F/H/I categories, other GPA documents and repeated earlier presentations remain outside this declared detail-table scope. Sponsor does not supply ownership evidence; sourceState is null because no geographic state column is supplied.
 

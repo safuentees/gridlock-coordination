@@ -12,15 +12,15 @@
   ],
   "counts": {
     "sourceRows": 44,
-    "importedRecords": 6,
+    "importedRecords": 27,
     "excludedRows": 17,
     "failedRows": 0,
-    "pendingRows": 21,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "payloadSizes": {
-    "compactUtf8Bytes": 14709,
-    "formattedUtf8Bytes": 18790
+    "compactUtf8Bytes": 50564,
+    "formattedUtf8Bytes": 64837
   },
   "rows": [
     {
@@ -139,8 +139,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "SCADA, substation controller, backup power and communications bundle.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -157,8 +157,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Mixed metering, substation communications and distribution automation bundle.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -211,8 +211,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Substation access control with site CCTV; mixed physical-security program.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -229,8 +229,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Monotubes and steel inserts bundled with linework tools; no identified engineering project.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -319,8 +319,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Named substation physical-security work; no asserted transmission voltage.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -373,8 +373,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Line identifiers are source aliases; voltage and transmission/distribution role unresolved.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -427,8 +427,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Unspecified improvement allowance; overlap with category C is not resolved.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -445,8 +445,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Switch location, voltage and system role unresolved.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -463,8 +463,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Capacitor locations, voltage and system role unresolved.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -481,8 +481,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Budgeted maintenance program, not a distinct new transmission asset.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -535,8 +535,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Grid analytics demonstration; not a physical transmission line.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -589,8 +589,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Unspecified pole relocation; voltage and grid role unknown.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -643,8 +643,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Named site access-control work; no transmission-asset claim.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -661,8 +661,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Named substation grounding; source does not establish voltage or full project role.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -679,8 +679,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Site access work, not established transmission construction.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -697,8 +697,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Mixed microgrid scope not described sufficiently to classify physical grid versus generation work.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -715,8 +715,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Named transformer, but voltage and grid role unknown.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -751,8 +751,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Regulator locations, voltage and transmission/distribution role unresolved.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -769,8 +769,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Line extension without stated voltage or transmission/distribution role.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -787,8 +787,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "capital-project-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Named substation work without established equipment or voltage.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",
@@ -805,8 +805,8 @@
       "identityBasis": "source-locator",
       "nativeEngineeringProjectId": null,
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Accepted retained budget entry; production transcription pending",
+      "disposition": "imported",
+      "reason": "Line extension without stated voltage or transmission/distribution role.",
       "sources": [
         {
           "file": "2025-08-26-ccu-legislature.pdf",

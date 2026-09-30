@@ -143,7 +143,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 3; slide 36, packet page 57, PDF page 725"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Procure SCADA fiber switches, substation controller I/O modules, replacement UPS batteries and fiber-optic cables.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "SCADA, controls and communications program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The combined equipment row does not identify one transmission project or center."
+        ]
+      }
     },
     {
       "sourceId": "cip-b-row-04",
@@ -160,7 +171,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section B, named row 4; slide 36, packet page 57, PDF page 725"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Expand metering and communications equipment, integrate outage-management and SEL systems, and improve distribution automation and meter-data tools.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Metering, communications and distribution automation program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Mixed substation, metering and distribution scope remains capital context."
+        ]
+      }
     },
     {
       "sourceId": "cip-c-row-01",
@@ -222,7 +244,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 1; slide 38, packet page 59, PDF page 727"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Install substation physical-access controls and replace perimeter CCTV at Fadian and Dededo.",
+        "voltageKv": [],
+        "sourceLocation": "Fadian; Dededo",
+        "aliases": [],
+        "workType": "Combined physical-security program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The row combines substation access work and multiple site CCTV replacements; sites are not a single project center."
+        ]
+      }
     },
     {
       "sourceId": "cip-e-row-02",
@@ -239,7 +272,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section E, named row 2; slide 38, packet page 59, PDF page 727"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Upgrade monotubes and steel inserts and procure transmission/distribution linework tools and inspection equipment.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Combined linework and tools program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The budget combines physical work and tools without identifying a separate line or voltage."
+        ]
+      }
     },
     {
       "sourceId": "cip-e-row-03",
@@ -337,7 +381,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 2; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Harden the Harmon substation with concrete fencing.",
+        "voltageKv": [],
+        "sourceLocation": "Harmon",
+        "aliases": [],
+        "workType": "Substation hardening and fencing",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The source does not state the substation voltage or establish a separately scoped transmission upgrade."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-03",
@@ -388,7 +443,21 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 5; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Refurbish metal cross arms on the lines identified as P-111 and P-047.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [
+          "P-111",
+          "P-047"
+        ],
+        "workType": "Line cross-arm refurbishment",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Line labels do not establish voltage or transmission/distribution role, and are not native engineering project IDs."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-06",
@@ -462,7 +531,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 8; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Budget an unspecified bundle of substation and transmission improvements.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Unspecified substation and transmission improvement program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Potential overlap with category C T&D is unresolved; this budget work unit is retained separately without a deduplicated-project claim."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-09",
@@ -479,7 +559,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 9; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Provide an automated Omni Rupter switch; its site and network role are unstated.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Switch automation",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Voltage, location and transmission/distribution role remain unknown."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-10",
@@ -496,7 +587,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 10; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Provide SCADA-ready switched capacitor banks; locations and system role are unspecified.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Switched capacitor banks",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Voltage, location and transmission/distribution role remain unknown."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-11",
@@ -513,7 +615,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 11; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Budget an island-wide predictive-maintenance program.",
+        "voltageKv": [],
+        "sourceLocation": "Island wide",
+        "aliases": [],
+        "workType": "Predictive maintenance program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "This is a capital-budget program entry, not a distinct new transmission asset or a known construction interval."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-12",
@@ -577,7 +690,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 14; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Fund GPA’s portion of grid analytics demonstrations for operations, monitoring and control.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Grid analytics demonstration",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "GPA portion denotes budget scope, not complete asset ownership. The demonstration is capital context rather than a physical transmission line."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-15",
@@ -640,7 +764,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 17; slide 39, packet page 60, PDF page 728"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Relocate poles along Route 1; voltage and network role are not specified.",
+        "voltageKv": [],
+        "sourceLocation": "Route 1",
+        "aliases": [],
+        "workType": "Pole relocation",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Pole relocation alone does not establish transmission scope; no route or center is inferred."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-18",
@@ -691,7 +826,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 20; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Install physical-access control at Fadian.",
+        "voltageKv": [],
+        "sourceLocation": "Fadian",
+        "aliases": [],
+        "workType": "Site access-control system",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The site-security entry is capital context and does not establish a transmission asset."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-21",
@@ -708,7 +854,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 21; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Improve grounding at Piti Substation.",
+        "voltageKv": [],
+        "sourceLocation": "Piti Substation",
+        "aliases": [],
+        "workType": "Substation grounding",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The source does not specify voltage or full project role; this remains capital context."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-22",
@@ -725,7 +882,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 22; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Provide ingress and egress work at Barrigada.",
+        "voltageKv": [],
+        "sourceLocation": "Barrigada",
+        "aliases": [],
+        "workType": "Site access work",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The source title establishes access work but no transmission-construction scope or exact site."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-23",
@@ -742,7 +910,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 23; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Fund GPA’s portion of microgrids for underserved and Indigenous communities.",
+        "voltageKv": [],
+        "sourceLocation": null,
+        "aliases": [],
+        "workType": "Community microgrid program",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "The source does not separate line, generation, storage or other equipment scope. Retain unresolved planning context without creating child projects or inferring ownership."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-24",
@@ -759,7 +938,20 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 24; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Install the transformer identified as T51 at Tamuning.",
+        "voltageKv": [],
+        "sourceLocation": "Tamuning",
+        "aliases": [
+          "T51"
+        ],
+        "workType": "Transformer installation",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "T51 is an equipment label, not a native engineering project ID. Voltage and transmission/distribution role are unknown."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-25",
@@ -793,7 +985,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 26; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Install voltage regulators in the north, central and south areas.",
+        "voltageKv": [],
+        "sourceLocation": "North, Central, and South",
+        "aliases": [],
+        "workType": "Voltage regulator installations",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Specific sites, voltage and transmission/distribution role are unknown; regional wording is not coordinate evidence."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-27",
@@ -810,7 +1013,20 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 27; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Extend the underground line identified as P-090 to Battulo Street.",
+        "voltageKv": [],
+        "sourceLocation": "Battulo Street",
+        "aliases": [
+          "P-090"
+        ],
+        "workType": "Underground line extension",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Voltage and transmission/distribution role are not stated. P-090 is a line label, not a native engineering project ID."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-28",
@@ -827,7 +1043,18 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 28; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Upgrade Pulantat Substation; the budget title does not identify equipment.",
+        "voltageKv": [],
+        "sourceLocation": "Pulantat Substation",
+        "aliases": [],
+        "workType": "Unspecified substation upgrades",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Equipment scope and voltage remain unknown; the named substation is not a coordinate or complete asset-ownership assertion."
+        ]
+      }
     },
     {
       "sourceId": "cip-g-row-29",
@@ -844,7 +1071,20 @@
           "locator": "CCU August 26, 2025, Proposed 2026–2027 CIP Budget Details, section G, named row 29; slide 40, packet page 61, PDF page 729"
         }
       ],
-      "facts": null
+      "facts": {
+        "description": "Extend the line identified as P-005 to Apra using steel arms.",
+        "voltageKv": [],
+        "sourceLocation": "Apra",
+        "aliases": [
+          "P-005"
+        ],
+        "workType": "Line extension with steel arms",
+        "notes": [
+          "FY2026 and FY2027 are spending years, not construction or in-service milestones.",
+          "Source budget work units may overlap broader programs; no distinct engineering-project count is established.",
+          "Voltage and transmission/distribution role are not stated. P-005 is a line label, not a native engineering project ID."
+        ]
+      }
     }
   ]
 }
