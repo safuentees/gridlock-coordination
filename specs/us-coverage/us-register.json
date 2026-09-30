@@ -1,21 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 SPP/ERCOT/Alaska integration PR73 (implementation 437f865; one build/case passed)",
+  "baselineRevision": "F27 MISO/Hawaii integration PR88 (implementation 20dd4fc; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Six full declared regional source scopes imported; MISO and Hawaiian Electric featured subset accepted for next increment",
+  "qualificationStatus": "Seven full declared regional inventories plus one complete featured subset imported; historical New York inventory accepted; BPA/Florida qualification active; SERTP marking conflict blocks that source",
   "totals": {
-    "importedSourceRecords": 9128,
+    "importedSourceRecords": 12174,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 9015,
+    "missingLocations": 12061,
     "explicitConstructionWindows": 0,
     "newRegionalSourcesQualified": 8,
-    "newFullRegionalInventoriesImported": 6,
+    "newFullRegionalInventoriesImported": 7,
     "knownNationalProjectDenominator": null,
-    "qualifiedFeaturedSubsets": 1
+    "qualifiedFeaturedSubsets": 1,
+    "fullFeaturedSubsetsImported": 1,
+    "fullDeclaredSourceScopesImported": 8
   },
   "pendingEvidence": {
     "integratedF19Decisions": 10,
@@ -450,6 +452,134 @@
       "sourceStateCounts": {},
       "unallocatedStateRecords": 26,
       "stateCountMeaning": "Exact single-state source labels only; incomplete, multistate, placeholder and absent labels remain unallocated. These are source assertions, not independently verified geography."
+    },
+    {
+      "sourceKey": "miso-mtep",
+      "editionId": "appendix-a-2026-08-04",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "All public Appendix A facility components except M4 in service. Explicit parent projects are not extra records. Ancillary and distribution context remain visible with distinct kinds; annual and under-evaluation inventories remain separate.",
+      "geographicScope": "Partial MISO regional public facility inventory including seam work; state labels do not establish complete MISO or jurisdiction coverage.",
+      "recordKind": "2850 transmission-project, 30 planning-context, 162 capital-project-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-08-04",
+      "importedRecords": 3042,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 3042,
+        "milestone": 0,
+        "constructionWindow": 3042,
+        "status": 0,
+        "voltage": 3,
+        "evidencedOwner": 1251
+      },
+      "rawSourceRows": 3211,
+      "excludedRows": 169,
+      "exclusions": [
+        {
+          "reason": "M4 — completed and in service",
+          "count": 169
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/miso-mtep/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/miso-mtep/row-ledger.json",
+      "publicInventoryDenominator": 3042,
+      "blockers": [
+        "August 4, 2026 is the workbook report-through date, not a known publication or per-row update date. Retrieval is September 30; the URL cache parameter is not freshness.",
+        "Facility status controls lifecycle. Target MTEP cycle and Current Appendix do not override a Proposed row; past expected dates do not prove completion.",
+        "Miscellaneous capital work and the accepted distribution-context decisions are not transmission-qualified records. Parent IDs are context, not deduplicated engineering-project counts.",
+        "Facility Owner(s) is separate from Submitting TO. Blank, joint, generic and unresolved alias families keep unknown qualified owners; other identities are source-scoped only.",
+        "All coordinates, geometry and construction windows are unknown. Expected ISD is a facility forecast at displayed precision; source miles are not routes or shared corridors.",
+        "Only the public visible inventory sheet is used; internal workbook metadata, portal models, maps and separate annual/evaluation inventories are not imported.",
+        "Public access is not an open-data or commercial reuse license; source attribution and stated rights are preserved."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {
+        "IN": 328,
+        "WI": 357,
+        "LA": 117,
+        "MN": 323,
+        "IA": 582,
+        "MO": 140,
+        "IL": 270,
+        "MI": 579,
+        "MS": 85,
+        "TX": 41,
+        "AR": 42,
+        "ND": 79,
+        "KY": 22,
+        "SD": 31,
+        "OH": 2,
+        "MT": 4
+      },
+      "unallocatedStateRecords": 40,
+      "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
+    },
+    {
+      "sourceKey": "hi-heco-featured",
+      "editionId": "snapshot-2026-09-30-7a3266df",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "Seven featured topics: two transmission improvements, one capital network program, one unresolved planning context and three excluded completed/generation/storage topics. Workstreams and phases are not extra records.",
+      "geographicScope": "Featured Hawaiian Electric topics on Oahu, Hawaii Island and Maui; retained topics concern Oahu and Hawaii Island. Not complete Hawaii or utility coverage.",
+      "recordKind": "1 capital-project-context, 2 transmission-project, 1 planning-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": null,
+      "importedRecords": 4,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 4,
+        "milestone": 2,
+        "constructionWindow": 4,
+        "status": 1,
+        "voltage": 2,
+        "evidencedOwner": 4
+      },
+      "rawSourceRows": 7,
+      "excludedRows": 3,
+      "exclusions": [
+        {
+          "reason": "Generation turbines, not a standalone transmission improvement.",
+          "count": 1
+        },
+        {
+          "reason": "Explicit completion on 2023-12-15; do not infer in-service wording.",
+          "count": 1
+        },
+        {
+          "reason": "Waena standalone storage; a historical withdrawn Keahole mention is not another index topic.",
+          "count": 1
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/hi-heco-featured/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/hi-heco-featured/row-ledger.json",
+      "publicInventoryDenominator": 4,
+      "blockers": [
+        "The featured index is not a complete utility or statewide planned-project inventory; broader Hawaii coverage remains a gap.",
+        "Page slugs are source locators, not native engineering project IDs. Dockets identify proceedings; future-edition identity continuity requires review.",
+        "All retained project owners and geometry are unknown. Publisher/sponsor, controller ownership and named places do not establish project ownership or coordinates.",
+        "Forecast month/year precision is preserved. No construction window, actual start or in-service date is inferred from a schedule or program horizon.",
+        "Kalaeloa replacement-pole counts conflict: 21 in the index, 20 on the detail page.",
+        "North Kohala remains unresolved planning context. Its closed storage procurement does not establish cancellation of the wider concept; the June 30, 2026 annual update reports reevaluation.",
+        "Koa Ridge is excluded because its detail page explicitly reports completion, despite the older future-tense index summary.",
+        "Conditional REZ alternatives and other planning/distribution examples are outside this seven-topic boundary."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {
+        "HI": 4
+      },
+      "unallocatedStateRecords": 0,
+      "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
     }
   ],
   "jurisdictions": [
@@ -480,12 +610,14 @@
       "code": "AR",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 21
+        "spp-tracking": 21,
+        "miso-mtep": 42
       }
     },
     {
@@ -546,10 +678,15 @@
     },
     {
       "code": "HI",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-featured-project-subset",
+      "sourceKeys": [
+        "hi-heco-featured"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "hi-heco-featured": 4
+      }
     },
     {
       "code": "ID",
@@ -562,36 +699,42 @@
       "code": "IL",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 275
+        "pjm-rtep": 275,
+        "miso-mtep": 270
       }
     },
     {
       "code": "IN",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 366
+        "pjm-rtep": 366,
+        "miso-mtep": 328
       }
     },
     {
       "code": "IA",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 6
+        "spp-tracking": 6,
+        "miso-mtep": 582
       }
     },
     {
@@ -610,24 +753,28 @@
       "code": "KY",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 184
+        "pjm-rtep": 184,
+        "miso-mtep": 22
       }
     },
     {
       "code": "LA",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 30
+        "spp-tracking": 30,
+        "miso-mtep": 117
       }
     },
     {
@@ -670,50 +817,66 @@
       "code": "MI",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 68
+        "pjm-rtep": 68,
+        "miso-mtep": 579
       }
     },
     {
       "code": "MN",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "miso-mtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "miso-mtep": 323
+      }
     },
     {
       "code": "MS",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "miso-mtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "miso-mtep": 85
+      }
     },
     {
       "code": "MO",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 84
+        "spp-tracking": 84,
+        "miso-mtep": 140
       }
     },
     {
       "code": "MT",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 1
+        "spp-tracking": 1,
+        "miso-mtep": 4
       }
     },
     {
@@ -794,24 +957,28 @@
       "code": "ND",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 88
+        "spp-tracking": 88,
+        "miso-mtep": 79
       }
     },
     {
       "code": "OH",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 1324
+        "pjm-rtep": 1324,
+        "miso-mtep": 2
       }
     },
     {
@@ -870,12 +1037,14 @@
       "code": "SD",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 105
+        "spp-tracking": 105,
+        "miso-mtep": 31
       }
     },
     {
@@ -895,12 +1064,14 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "spp-tracking",
-        "ercot-tpit"
+        "ercot-tpit",
+        "miso-mtep"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 256
+        "spp-tracking": 256,
+        "miso-mtep": 41
       }
     },
     {
@@ -955,10 +1126,15 @@
     },
     {
       "code": "WI",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "miso-mtep"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "miso-mtep": 357
+      }
     },
     {
       "code": "WY",
@@ -1038,11 +1214,11 @@
     },
     {
       "sourceKey": "miso-mtep",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
-      "importedRecords": 0,
+      "importedRecords": 3042,
       "locatedRecords": 0,
-      "missingInput": "Sample/provider connection and full accepted source production; all source locations unknown",
+      "missingInput": "Native locations, owner reconciliation and broader public source scopes",
       "owner": "source_discovery",
       "task": "F27"
     },
@@ -1098,21 +1274,62 @@
     },
     {
       "sourceKey": "hi-heco-featured",
-      "status": "qualified-production-in-progress",
+      "status": "imported-complete-featured-subset",
       "sourceUrl": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future",
-      "importedRecords": 0,
+      "importedRecords": 4,
       "locatedRecords": 0,
-      "missingInput": "Sample/provider connection and full accepted source production; all source locations unknown",
+      "missingInput": "Native locations and stronger ownership evidence; featured subset also lacks broader utility/Hawaii enumeration",
       "owner": "ui",
       "task": "F27"
+    },
+    {
+      "sourceKey": "ny-national-grid-ltp",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://www.nationalgridus.com/Wholesale-Interconnections/New-York/",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Provider connection and full accepted historical inventory; native locations and referenced newer edition absent",
+      "owner": "core",
+      "task": "F27-NY-I"
+    },
+    {
+      "sourceKey": "bpa-plan",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.bpa.gov/energy-and-services/transmission/attachment-k",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Accepted complete enumeration and native geometry/identity interpretation",
+      "owner": "ui",
+      "task": "F27-BPA-Q"
+    },
+    {
+      "sourceKey": "fl-fmpa",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Public table enumeration and accepted row/group/date/owner mapping",
+      "owner": "source_discovery",
+      "task": "F27-FL-Q"
+    },
+    {
+      "sourceKey": "sertp-plan",
+      "status": "blocked-conflicting-source-markings",
+      "sourceUrl": "https://www.southeasternrtp.com/reference_library.cshtml",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Authoritative clarification or corrected public report: Non-CEII link conflicts with CEII page header; no extraction performed",
+      "owner": "source_discovery",
+      "task": "F27-SERTP-Q"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National project denominator is unknown. Six full declared regional scopes are imported; record units differ and no cross-source deduplication is claimed. Eight sources are qualified, including one limited featured subset; two accepted sources are not yet imported. Statewide and national completeness are not established.",
-    "Existing infrastructure and generation proposals are not planned-transmission coverage."
+    "National project denominator is unknown. Seven full declared regional inventories and one complete seven-topic featured subset are imported; source units differ and no cross-source deduplication is claimed. Eight regional sources plus one featured subset are qualified; historical New York production is pending. Statewide and national completeness are not established.",
+    "Existing infrastructure and generation proposals are not planned-transmission coverage.",
+    "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
   ],
   "qualifiedSources": [
     {
@@ -1199,7 +1416,7 @@
       "sourceKey": "miso-mtep",
       "editionId": "appendix-a-2026-08-04",
       "reportingGroup": "miso-mtep",
-      "status": "qualified-not-yet-imported",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 3211,
       "proposedRetainedRecords": 3042,
       "proposedExcludedRows": 169,
@@ -1211,13 +1428,25 @@
       "sourceKey": "hi-heco-featured",
       "editionId": "snapshot-2026-09-30-7a3266df",
       "reportingGroup": "hi-heco-featured",
-      "status": "qualified-not-yet-imported",
+      "status": "imported-complete-featured-subset",
       "sourceRows": 7,
       "proposedRetainedRecords": 4,
       "proposedExcludedRows": 3,
       "locatedRecords": 0,
       "scope": "Seven Hawaiian Electric featured topics only; not complete utility or Hawaii inventory",
       "contract": "specs/features/F27-us-regional-expansion/hi-heco-projects/spec.md"
+    },
+    {
+      "sourceKey": "ny-national-grid-ltp",
+      "editionId": "2025-10-30",
+      "reportingGroup": "ny-national-grid-ltp",
+      "status": "qualified-not-yet-imported",
+      "sourceRows": 152,
+      "proposedRetainedRecords": 136,
+      "proposedExcludedRows": 16,
+      "locatedRecords": 0,
+      "scope": "Historical National Grid New York local-plan table only; newer referenced edition not located, no statewide completeness",
+      "contract": "specs/features/F27-us-regional-expansion/ny-local/spec.md"
     }
   ]
 }

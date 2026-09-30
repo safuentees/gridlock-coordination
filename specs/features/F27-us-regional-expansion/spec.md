@@ -1,8 +1,8 @@
 # F27 — Expand US discovery through additional regions
 
-Current integration: PR67 delivered full SCE/PJM/ISO-NE composition and scalable revision storage/browsing. PR73 adds SPP, ERCOT and Alaska full declared scopes; samples preceded every full producer. National coverage remains incomplete.
+Current integration: PR67 delivered SCE/PJM/ISO-NE composition and scalable revision storage/browsing; PR73 added SPP/ERCOT/Alaska; PR88 adds MISO and a bounded Hawaiian Electric featured subset. Samples preceded every full producer. National coverage remains incomplete.
 
-Next independent assignments: source_discovery owns [MISO](miso-mtep/spec.md), ui temporarily owns [Hawaii featured-source ingestion](hi-heco-projects/spec.md), and core qualifies [New York local plans](ny-local/spec.md). All exact handoffs are committed. Coordinator alone connects samples, maintains shared contracts/register and runs bounded milestone checks.
+Next independent assignments: core produces [New York](ny-local/spec.md), ui temporarily qualifies [Northwest/BPA](bpa-plan/spec.md), and source_discovery qualifies [Florida municipal transmission](fl-fmpa/spec.md). [SERTP](sertp-plan/spec.md) is blocked by conflicting source markings, with no project extraction. Exact handoffs are committed. Coordinator alone connects samples, maintains shared contracts/register and runs bounded milestone checks.
 
 Selected national-coverage increment 3; continuing capability, not complete after one adapter. Depends on F26's shared contract and first integrated inventory. Purpose: let users find planned transmission projects across the US with honest regional and field coverage. Each independently delivered adapter adds a documented region/source footprint; refreshing the same inventory does not count as geographic expansion.
 
