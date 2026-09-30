@@ -2,8 +2,10 @@ import { DEFAULT_OPTIONS } from "../domain/schema"
 import type { AnalysisOptions, AnalysisResult, Opportunity, Project } from "../domain/schema"
 import { hasUsableCoordinates, haversineMiles } from "./geography"
 import { compareProjectTiming } from "./timing"
+import { pairEligibility, projectEligibility } from "./eligibility"
 
 export { haversineMiles } from "./geography"
+export { pairEligibility, projectEligibility } from "./eligibility"
 export { compareProjectTiming, DATE_PROXIMITY_DAYS } from "./timing"
 
 function validateOptions(options: AnalysisOptions): void {
@@ -20,7 +22,7 @@ function compareIds(left: string, right: string): number {
   return left < right ? -1 : left > right ? 1 : 0
 }
 
-/** Analyze cross-filing center proximity. All filters use full precision, never display rounding. */
+/** Analyze eligible project-center proximity. All filters use full precision, never display rounding. */
 export function analyzeProjects(projects: Project[], options: AnalysisOptions = DEFAULT_OPTIONS): AnalysisResult {
   validateOptions(options)
   if (new Set(projects.map((project) => project.id)).size !== projects.length) {
@@ -28,20 +30,24 @@ export function analyzeProjects(projects: Project[], options: AnalysisOptions = 
   }
   const located = projects.filter((project): project is Project & { location: NonNullable<Project["location"]> } =>
     hasUsableCoordinates(project.location))
+  const eligible = located.filter(project => projectEligibility(project).eligible)
   const summary: AnalysisResult["summary"] = {
     totalProjects: projects.length,
     locatedProjects: located.length,
     unlocatedProjects: projects.length - located.length,
-    // Both counters refer to cross-filing pairs, not individual projects.
+    eligibleProjects: eligible.length,
+    excludedByEligibility: projects.length - eligible.length,
+    // These counters refer to eligible pairs, not individual projects.
     comparedPairs: 0,
     excludedUnverified: 0,
   }
   const opportunities: Opportunity[] = []
-  for (let first = 0; first < located.length; first += 1) {
-    for (let second = first + 1; second < located.length; second += 1) {
-      const pair = [located[first], located[second]].sort((left, right) => compareIds(left.id, right.id))
+  for (let first = 0; first < eligible.length; first += 1) {
+    for (let second = first + 1; second < eligible.length; second += 1) {
+      const pair = [eligible[first], eligible[second]].sort((left, right) => compareIds(left.id, right.id))
       const [left, right] = pair
-      if (left.utilityId === right.utilityId) continue
+      const eligibility = pairEligibility(left, right)
+      if (!eligibility.eligible) continue
       summary.comparedPairs += 1
       const locationConfidence = left.location.confidence === "confirmed" && right.location.confidence === "confirmed"
         ? "confirmed" : "unverified"
@@ -61,7 +67,7 @@ export function analyzeProjects(projects: Project[], options: AnalysisOptions = 
         locationConfidence, rank: 0,
         reasons: [
           `Project centers are ${distanceMiles.toFixed(2)} straight-line miles apart, within the strict ${options.radiusMiles}-mile radius.`,
-          "Projects belong to different reporting filings; their asset sponsors may differ from the filing utilities.",
+          ...eligibility.reasons,
           locationConfidence === "unverified"
             ? "At least one center is unverified supplied location evidence."
             : "Both centers are marked confirmed in the supplied records.",
