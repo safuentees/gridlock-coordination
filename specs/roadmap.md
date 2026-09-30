@@ -28,15 +28,18 @@ Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inve
 | F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F00 | `app/src/features/import/`, `app/src/data/import.ts`, `app/src/App.tsx` (agreed composition) |
 | F09 | [Viewport-sized workspace](features/F09-viewport-workspace/spec.md) | coordinator + ui + workspace-briefs | 4 | F03, F05–F08 | `App.tsx`, `index.css`, shared dialog, explorer/scenarios, brief presentation and import presentation |
 | F10 | [Map-first workspace](features/F10-map-workspace/spec.md) | coordinator + ui + comparison | 5 | F09 | coordinator: `App.tsx`, `Explorer.tsx`; ui: `ProjectMap.tsx`; comparison: `ComparisonPanel.tsx`, `ProjectDetails.tsx` |
+| F11 | [Guided location evidence](features/F11-data-readiness/spec.md) | coordinator + ui | 6 | F10 | coordinator: `data/readiness.ts`, App/Explorer composition; ui: `features/readiness/*` |
+| F12 | [Public planning context](features/F12-source-context/spec.md) | ingestion | 6 | F10 | `scripts/ingest/*`, `data/real/*`, `changes/F12.md` |
+| F13 | [Return to source revisions](features/F13-source-return/spec.md) | core + coordinator | 6 | F08, F10 | core: `data/source-session.ts`, `changes/F13.md`; coordinator: App composition, import copy |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Active workers
 
-F00–F09 are complete. F10 is active with coordinator owning the shell/list, `/root/ui` the inset-aware map and `/root/core` the comparison panel in separate branches/worktrees. Ingestion performed read-only gap discovery for Stage 2; no data edits before F10 integration. Existing data, calculations and storage/export semantics are preserved.
+F00–F10 are complete. F10 integrated in PR15–17; its single build passed at 6e63757. Stage 2 assessed arrival, working, understanding, acting and returning against the mission. F11–F13 are the selected next milestone: guided coverage work, source context and local source-revision continuity.
 
-The prior single coordinator build passed at 5bab886; see `changes/F09.md`. F10 will receive one integrated build. No visual or browser checks. After integration, coordinator selects and begins the highest-value journey/real-coverage milestone within the existing mission. Additional utility adapters and verified route geometry remain proposals, not automatic scope.
+Coordinator commits F11 shared revision/readiness contracts before dispatch. UI owns the readiness workspace against real/demo-scale data; ingestion independently enriches approved source context in the same schema; core owns safe browser persistence. Coordinator composes and performs one final production build plus one representative data-revision/persistence check; no duplicated core calculation checks. Additional utility adapters, current schedule refresh and verified route geometry remain proposed extensions, not automatic scope. No visual or browser checks.
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
