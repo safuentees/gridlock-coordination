@@ -106,8 +106,8 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | [F27-SANTEE-I](features/F27-us-regional-expansion/sc-santee/spec.md): accepted 24 observations; six diagnostics then full after connection. | Exact sc-santee producer/data folders and receipt; preserve composite dates, null ownership and overlap. No shared/map edits. |
-| core | [F27-FPL-I](features/F27-us-regional-expansion/fl-fpl/spec.md): five retained diagnostics, then full 55 after connection. | Exact fl-fpl producer/data folders and receipt; preserve storage-side exclusions and unknown service dates. No shared/UI/map edits. |
+| source_discovery / ingestion | Santee full 24 delivered; next [F27-APC-Q](features/F27-us-regional-expansion/al-apc-doe/spec.md) qualifies DOE’s finite ordinary-public Alabama review subset. | Exact al-apc-doe qualification/sample/receipt only; no runtime/shared/map edits. Separate from the unresolved SERTP report. |
+| core | FPL full 55 delivered; [F27-SCE-E2-X](features/F27-us-regional-expansion/sce-owner-evidence/spec.md) retains planned-owner meaning in text briefs. | export.ts and F27-owner-export receipt only; no storage, schema, map or canonical-calculation changes. |
 | coordinator | PR133 integrated at 4c13618; accept next source/evidence contracts and connect samples before full production. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
 | ui | [F27-SCE-E2](features/F27-us-regional-expansion/sce-owner-evidence/spec.md): explicit preview/apply of one accepted planned-owner proposal; F27-SCE-E1 research delivered one supported / five unresolved. | ReadinessWorkspace, RevisionPreview, ProjectDetails and F27-owner-revision receipt only; root helper/schema committed before handoff. No map/core edits. NYISO still waits for complete public source content. |
 
