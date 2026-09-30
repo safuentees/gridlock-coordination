@@ -7,6 +7,13 @@ export const sourceKeySchema = z.string().regex(/^[a-z][a-z0-9-]*$/)
 const evidenceSchema = z.array(sourceSchema).min(1)
 const countSchema = z.number().int().nonnegative()
 const positionSchema = z.tuple([z.number().min(-180).max(180), z.number().min(-90).max(90)])
+export const dateSchema = z.object({ value: z.string().nullable(), precision: z.enum(["day", "month", "year", "unknown"]), kind: z.enum(["in-service", "need", "unknown"]), label: z.string() }).superRefine((date, ctx) => {
+  const valid = date.precision === "unknown" ? date.value === null
+    : date.precision === "year" ? /^\d{4}$/.test(date.value ?? "")
+    : date.precision === "month" ? /^\d{4}-(0[1-9]|1[0-2])$/.test(date.value ?? "")
+    : z.iso.date().safeParse(date.value).success
+  if (!valid) ctx.addIssue({ code: "custom", message: "Date value must match its stated precision", path: ["value"] })
+})
 
 /** Published positions, not inferred routes. Coordinate order is longitude, latitude. */
 export const nativeGeometrySchema = z.object({
@@ -23,7 +30,12 @@ export const inventorySchema = z.object({
   recordKind: z.enum(["transmission-project", "capital-project-context"]),
   lifecycle: z.enum(["planned", "approved", "under-construction", "on-hold", "in-service", "cancelled", "unknown"]),
   lifecycleAsOf: z.iso.date(),
-  owner: z.object({ id: sourceKeySchema, name: z.string().min(1), evidence: evidenceSchema }).nullable(),
+  owner: z.object({ id: sourceKeySchema, name: z.string().min(1), evidence: evidenceSchema, identityScope: z.enum(["source", "global"]).optional() }).nullable(),
+  recordUnit: z.enum(["project", "upgrade", "component"]).optional(),
+  sourceState: z.string().nullable().optional(), sourceLocation: z.string().nullable().optional(),
+  sourceUpdatedOn: z.iso.date().nullable().optional(),
+  lifecycleDateMeaning: z.enum(["source-edition", "snapshot-observed"]).optional(),
+  milestones: z.array(z.object({ field: z.string().min(1), date: dateSchema, evidence: evidenceSchema })).optional(),
   parentProgramId: z.string().nullable(), aliases: z.array(z.string()),
   workType: z.string().nullable(), constructionStart: z.iso.date().nullable(),
   nativeGeometry: nativeGeometrySchema.nullable(),
