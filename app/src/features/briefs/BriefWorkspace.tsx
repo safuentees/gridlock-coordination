@@ -3,7 +3,7 @@ import { BookmarkIcon, DownloadIcon, RefreshCwIcon, SaveIcon } from "lucide-reac
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Dialog, DialogClose, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
@@ -91,7 +91,7 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
     <DialogContent className="flex h-[min(48rem,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-6xl">
       <DialogHeader className="shrink-0 pr-6">
         <DialogTitle>Saved reviews</DialogTitle>
-        <DialogDescription>{dataset.mode === "demo" ? "Synthetic demo records" : "Source records"} are stored separately in this browser. Compare saved evidence and prepare a coordination brief.</DialogDescription>
+        <DialogDescription>{dataset.mode === "demo" ? "Synthetic demo" : "Source"} reviews saved in this browser.</DialogDescription>
       </DialogHeader>
       {(store.error || notice || removed) && <div className="max-h-24 shrink-0 space-y-2 overflow-auto">
         {store.error && <p role="alert" className="text-sm text-destructive">{store.error}</p>}
@@ -111,7 +111,7 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
                     <span className="block break-words font-medium">{record.projects[0].name}<span className="block text-xs font-normal text-muted-foreground">↔ {record.projects[1].name}</span></span>
                     <span className="block"><Badge variant={record.id === editingId ? "default" : "secondary"}>{record.reviewState}</Badge></span>
                     <span className="block break-words text-xs text-muted-foreground">{availability[record.id]}</span>
-                    <span className="block break-words text-xs text-muted-foreground">Saved {record.savedAt.slice(0, 10)}; snapshot {record.dataset.generatedAt}</span>
+                    <span className="block break-words text-xs text-muted-foreground">Saved {record.savedAt.slice(0, 10)}</span>
                   </button>
                 </li>)}
               </ul>
@@ -126,11 +126,11 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
               onSave={(draft) => updateReview(editing, draft)}
               onShowCurrent={() => showCurrent(editing.id)}
               onRemove={() => removeRecord(editing)}
-            /> : <div className="min-h-0 min-w-0 overflow-auto rounded-lg border p-4 text-sm text-muted-foreground">Select a saved candidate to review its notes and evidence.</div>}
-          </div> : <p className="min-h-0 flex-1 overflow-auto p-4 text-sm text-muted-foreground">No saved candidates in this mode yet. Close this dialog and select a candidate to save it.</p>}
+            /> : <div className="min-h-0 min-w-0 overflow-auto rounded-lg border p-4 text-sm text-muted-foreground">Select a saved candidate to review.</div>}
+          </div> : <p className="min-h-0 flex-1 overflow-auto p-4 text-sm text-muted-foreground">No saved reviews. Select a candidate, then choose Save selected.</p>}
         </TabsContent>
         <TabsContent value="compare" className="min-h-0 min-w-0 overflow-hidden data-[state=active]:flex data-[state=active]:flex-col">
-          <div className="shrink-0 space-y-1 pb-3"><h3 className="font-medium">Compare saved evidence</h3><p className="text-xs text-muted-foreground">Comparison and exports use saved snapshots and saved review notes. Refresh evidence explicitly from the selected current candidate.</p></div>
+          <div className="shrink-0 space-y-1 pb-3"><h3 className="font-medium">Compare saved evidence</h3><p className="text-xs text-muted-foreground">Comparison and exports use saved evidence and notes.</p></div>
           {compared.length ? <div className="min-h-0 min-w-0 flex-1 overflow-auto rounded-lg border [&>[data-slot=table-container]]:overflow-visible">
             <Table className="min-w-[48rem]"><TableHeader className="sticky top-0 z-10 bg-background"><TableRow><TableHead>Saved pair</TableHead><TableHead>Center distance</TableHead><TableHead>Timing context</TableHead><TableHead>Saved scenario</TableHead><TableHead>Review notes</TableHead></TableRow></TableHeader><TableBody>{compared.map((record) => <TableRow key={record.id}>
               <TableCell className="max-w-64 whitespace-normal break-words"><button type="button" className="text-left underline-offset-4 hover:underline focus-visible:underline" onClick={() => { setEditingId(record.id); setTab("saved") }}>{record.projects[0].name}<span className="block text-xs text-muted-foreground">↔ {record.projects[1].name}</span></button><span className="mt-1 block text-xs text-muted-foreground">{availability[record.id]}</span></TableCell>
@@ -139,14 +139,13 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
               <TableCell className="whitespace-normal text-xs">&lt;{record.options.radiusMiles} mi<br />{record.options.maxDateGapDays === null ? "Any milestone gap" : `≤${record.options.maxDateGapDays} days`}<br />{record.options.includeUnverified ? "Unverified locations included" : "Confirmed locations required"}</TableCell>
               <TableCell className="max-w-64 whitespace-pre-wrap break-words text-xs"><span className="mb-1 block font-medium">{record.reviewState}</span>{record.notes || "No notes"}</TableCell>
             </TableRow>)}</TableBody></Table>
-          </div> : <div className="min-h-0 flex-1 space-y-3 overflow-auto p-4"><p className="text-sm text-muted-foreground">Select saved candidates to compare their evidence and export a brief.</p><Button type="button" variant="outline" onClick={() => setTab("saved")}>Choose saved candidates</Button></div>}
+          </div> : <div className="min-h-0 flex-1 space-y-3 overflow-auto p-4"><p className="text-sm text-muted-foreground">Select saved candidates to compare and export.</p><Button type="button" variant="outline" onClick={() => setTab("saved")}>Choose saved candidates</Button></div>}
         </TabsContent>
       </Tabs>
       <div className="flex shrink-0 flex-wrap items-center gap-2 border-t pt-4">
         <Badge variant="secondary">{compared.length} selected</Badge>
         <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("txt")}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Export text brief</Button>
         <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("json")}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Export JSON brief</Button>
-        <DialogClose asChild><Button type="button" variant="ghost" size="sm" className="ml-auto">Close</Button></DialogClose>
       </div>
     </DialogContent>
   </Dialog>
@@ -170,9 +169,8 @@ function SavedReview({ record, draft, availability, canShowCurrent, onDraftChang
     <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto p-4">
       <div><p className="break-words text-sm font-medium">{record.projects[0].name} / {record.projects[1].name}</p><p className="mt-1 break-words text-xs text-muted-foreground">{availability}</p></div>
       <div className="space-y-2"><Label htmlFor={`${fieldId}-state`}>Review state</Label><Select value={draft.reviewState} onValueChange={(value) => onDraftChange({ ...draft, reviewState: value as ReviewState })}><SelectTrigger id={`${fieldId}-state`}><SelectValue /></SelectTrigger><SelectContent>{REVIEW_STATES.map((state) => <SelectItem value={state} key={state}>{state}</SelectItem>)}</SelectContent></Select></div>
-      <div className="space-y-2"><Label htmlFor={`${fieldId}-notes`}>Coordination notes</Label><Textarea id={`${fieldId}-notes`} value={draft.notes} onChange={(event) => onDraftChange({ ...draft, notes: event.target.value })} placeholder="Record the rationale, evidence gaps and questions for a coordination discussion." rows={4} /></div>
+      <div className="space-y-2"><Label htmlFor={`${fieldId}-notes`}>Coordination notes</Label><Textarea id={`${fieldId}-notes`} value={draft.notes} onChange={(event) => onDraftChange({ ...draft, notes: event.target.value })} placeholder="Rationale, evidence gaps and questions" rows={4} /></div>
       <details className="min-w-0 rounded-lg border p-3"><summary className="cursor-pointer font-medium">Saved source evidence</summary><div className="mt-4 min-w-0 space-y-5 break-words [overflow-wrap:anywhere]">{record.projects.map((project) => <ProjectEvidence key={project.id} project={project} />)}</div></details>
-      <p className="text-xs text-muted-foreground">Review states record your assessment. They do not confirm engineering feasibility or a utility agreement.</p>
     </div>
     <div className="flex shrink-0 flex-wrap items-center gap-2 border-t p-3"><Button type="submit"><SaveIcon aria-hidden="true" data-icon="inline-start" />Save review</Button>{dirty && <span className="text-xs text-muted-foreground">Unsaved changes</span>}</div>
   </form>

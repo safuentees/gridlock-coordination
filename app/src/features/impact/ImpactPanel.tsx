@@ -15,27 +15,27 @@ type Fields = { length: string; width: string; cost: string; share: string }
 const EMPTY_FIELDS: Fields = { length: "", width: "", cost: "", share: "" }
 const EXAMPLE_FIELDS: Fields = { length: "1", width: "100", cost: "10000", share: "50" }
 const FIELD_DEFINITIONS: Array<{ key: keyof Fields; label: string; max?: number }> = [
-  { key: "length", label: "Assumed shared length (miles)" },
-  { key: "width", label: "Assumed corridor width (feet)" },
-  { key: "cost", label: "Assumed land cost (USD per acre)" },
-  { key: "share", label: "Land cost potentially avoided (%)", max: 100 },
+  { key: "length", label: "Shared length (miles)" },
+  { key: "width", label: "Corridor width (feet)" },
+  { key: "cost", label: "Land cost (USD per acre)" },
+  { key: "share", label: "Potentially avoided land cost (%)", max: 100 },
 ]
 const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 })
 const acres = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 })
 
 // Key the form by candidate so assumptions never silently transfer to another pair.
 export function ImpactPanel(props: ImpactPanelProps) {
-  return <ImpactForm key={props.opportunity.id} {...props} />
+  return <ImpactForm key={props.opportunity.id} />
 }
 
-function ImpactForm({ opportunity, projects }: ImpactPanelProps) {
+function ImpactForm() {
   const fieldId = useId()
   const [fields, setFields] = useState<Fields>(EMPTY_FIELDS)
   const errors: Partial<Record<keyof Fields, string>> = {}
   for (const field of FIELD_DEFINITIONS) {
     if (fields[field.key].trim() === "") continue
     const value = Number(fields[field.key])
-    if (!Number.isFinite(value) || value < 0) errors[field.key] = "Enter a finite number of zero or more."
+    if (!Number.isFinite(value) || value < 0) errors[field.key] = "Enter zero or a positive number."
     else if (field.max !== undefined && value > field.max) errors[field.key] = "Enter a percentage between 0 and 100."
   }
   const complete = FIELD_DEFINITIONS.every(({ key }) => fields[key].trim() !== "")
@@ -57,10 +57,9 @@ function ImpactForm({ opportunity, projects }: ImpactPanelProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Hypothetical shared-corridor impact</CardTitle>
+        <CardTitle>Hypothetical corridor impact</CardTitle>
         <CardDescription>
-          Explore land cost assumptions for {projects[0].name} and {projects[1].name}.
-          The {opportunity.distanceMiles.toFixed(2)}-mile center separation does not establish shared corridor length.
+          Shared length is an assumption, not the distance between project centers.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -95,11 +94,11 @@ function ImpactForm({ opportunity, projects }: ImpactPanelProps) {
                 <div><dt className="text-muted-foreground">Hypothetical shared area</dt><dd className="text-lg font-medium">{acres.format(result.sharedAcres)} acres</dd></div>
                 <div><dt className="text-muted-foreground">Indicative avoided land cost</dt><dd className="text-lg font-medium">{currency.format(result.indicativeSavingsUsd)}</dd></div>
               </dl>
-              <p className="text-sm text-muted-foreground">Hypothetical results from your inputs. Shared-route feasibility and actual savings are unknown.</p>
+              <p className="text-sm text-muted-foreground">Illustrative land cost only; actual savings are unknown.</p>
             </>
           ) : (
             <p className={calculationError ? "text-sm text-destructive" : "text-sm text-muted-foreground"}>
-              {calculationError ?? (Object.keys(errors).length > 0 ? "Correct the assumptions to calculate an estimate." : "Enter all four assumptions to calculate an estimate, or load the hypothetical example.")}
+              {calculationError ?? (Object.keys(errors).length > 0 ? "Correct the assumptions to calculate an estimate." : "Enter all assumptions or use the hypothetical example.")}
             </p>
           )}
         </div>
@@ -107,8 +106,7 @@ function ImpactForm({ opportunity, projects }: ImpactPanelProps) {
           <summary className="cursor-pointer">Calculation and limitations</summary>
           <div className="mt-2 space-y-2 text-muted-foreground">
             <p>Acres = shared miles × 5,280 × width in feet ÷ 43,560. Indicative avoided land cost = acres × cost per acre × avoided share.</p>
-            <p>This rectangular land-area estimate excludes engineering, construction, permitting, acquisition and schedule effects.</p>
-            {result && <ul className="list-disc space-y-1 pl-5">{result.assumptions.map((assumption) => <li key={assumption}>{assumption}</li>)}</ul>}
+            {result ? <ul className="list-disc space-y-1 pl-5">{result.assumptions.map((assumption) => <li key={assumption}>{assumption}</li>)}</ul> : <p>Excludes engineering, construction, permitting, acquisition and schedule effects.</p>}
           </div>
         </details>
       </CardContent>

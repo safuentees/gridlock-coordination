@@ -30,15 +30,15 @@ export function DatasetImport({ dataset, isImported, onApply, onReset }: Props) 
   return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4" aria-label="Source revisions">
     <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto overscroll-contain py-2 [overflow-wrap:anywhere]">
     <div className="space-y-2">
-      <p className="text-sm text-muted-foreground">Preview a normalized source dataset before using it. Applied revisions are saved in this browser when storage is available. Download a copy for backup or another device; Restore supplied snapshot clears the saved revision.</p>
+      <p className="text-sm text-muted-foreground">Preview changes before replacing the current source dataset.</p>
     </div>
     <div className="flex flex-wrap gap-2">
-      <Button variant="outline" onClick={() => downloadDataset(dataset)}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download current {dataset.mode === "demo" ? "demo" : "source"} dataset</Button>
+      <Button variant="outline" onClick={() => downloadDataset(dataset)}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download {dataset.mode === "demo" ? "demo" : "source"} data</Button>
       {isImported && <Button variant="outline" onClick={() => { request.current += 1; setBusy(false); setCandidate(null); setApplied(false); setError(null); onReset() }}>Restore supplied snapshot</Button>}
     </div>
     {dataset.mode === "demo" ? <p className="text-sm">Switch to source data to import a revision.</p> : <>
       <div className="space-y-2">
-        <Label htmlFor="dataset-file">Revised source dataset (JSON, up to 10 MB)</Label>
+        <Label htmlFor="dataset-file">Source revision (JSON, up to 10 MB)</Label>
         <Input id="dataset-file" type="file" accept=".json,application/json" onChange={async event => {
           const file = event.target.files?.[0]
           const token = ++request.current
@@ -54,7 +54,7 @@ export function DatasetImport({ dataset, isImported, onApply, onReset }: Props) 
           } finally { if (token === request.current) setBusy(false) }
         }} />
       </div>
-      <p className="text-sm text-muted-foreground">Keep native project IDs stable. Dates, source references, coordinates and filing groups use the downloaded dataset's schema.</p>
+      <details className="text-sm"><summary className="cursor-pointer">File requirements and saved revisions</summary><div className="mt-2 space-y-2 text-muted-foreground"><p>Use downloaded source data as your template. Keep project IDs unchanged and preserve date precision and source references.</p><p>Revisions are saved in this browser when storage is available. Download a copy for backup. Restore supplied snapshot removes the saved revision.</p></div></details>
       {busy && <p role="status" className="text-sm">Reading dataset…</p>}
       {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
       {candidate && changes && <div className="space-y-3">
@@ -63,9 +63,9 @@ export function DatasetImport({ dataset, isImported, onApply, onReset }: Props) 
           <TableHeader><TableRow><TableHead>Project</TableHead><TableHead>Revision</TableHead></TableRow></TableHeader>
           <TableBody>{rows.map(row => <TableRow key={row.id}><TableCell>{row.name}<span className="block text-xs text-muted-foreground">{row.id}</span></TableCell><TableCell>{row.change}</TableCell></TableRow>)}</TableBody>
         </Table></div>}
-        {candidate.projects.length === 0 && <p className="text-sm">This revision has no projects. Applying it replaces the active inventory with an empty dataset, including the saved browser revision.</p>}
+        {candidate.projects.length === 0 && <p className="text-sm">This revision is empty. Applying it removes all projects from the active and saved source dataset.</p>}
       </div>}
-      {applied && <p role="status" className="text-sm">The revision is active in the explorer.</p>}
+      {applied && <p role="status" className="text-sm">Revision applied.</p>}
     </>}
     </div>
     {candidate && dataset.mode === "real" && <div className="shrink-0 border-t pt-4"><Button onClick={() => { onApply(candidate); setCandidate(null); setApplied(true) }}>Use this revision</Button></div>}
