@@ -1,12 +1,13 @@
 # Gridlock mission
 
-Gridlock helps transmission planners and regional coordination analysts compare neighboring utilities' public plans, investigate nearby projects, and prepare an evidence-backed coordination proposal.
+Gridlock helps transmission planners and regional coordination analysts move from fragmented public plans to a prioritized, evidence-backed investigation and a reusable coordination handoff. The product must help people arrive, do the work, understand what it supports, act and return—not only operate a map.
 
 The central experience is a connected map, searchable project inventory and ranked opportunity list. Selecting a pair reveals where its locations and dates came from, distinguishes uncertainty, and supports comparison, scenario exploration and a reusable coordination brief.
 
 Explore uses one floating panel over the map: searchable results by default, details replacing the body, and Back restoring the browsing context. A compact collapsed state preserves search and selection. Navigation preserves unsaved scenario, impact and review work; longer evidence remains inside the same panel or the existing occasional-action dialogs.
 
 ## Full selected product
+- Orient a new user with a concise Home page explaining audience, visibility problem, investigation benefit, source coverage and a clear entry to the workspace.
 - Ingest the supplied Dominion and Georgia public planning records reproducibly, link the starter workbook's locations, and preserve source identifiers, dates, sponsor, provenance and missing values.
 - Explore all projects from both filings on an interactive map and searchable inventory. Keep unlocated projects discoverable. Separate real source mode from a realistic 300-record demo.
 - Compute cross-filing proximity in one canonical engine, use distance as the primary ranking signal and date separation as secondary context, and explain exclusions and assumptions.
@@ -15,22 +16,31 @@ Explore uses one floating panel over the map: searchable results by default, det
 - Save and compare opportunities with local notes and review states, then export a labeled, source-referenced coordination brief for follow-up.
 - Estimate potential shared-corridor acreage and indicative avoided land cost using explicit user assumptions. Do not claim engineering feasibility or actual savings.
 - Import a revised normalized dataset with validation and preview, retain stable identities, and compare additions, removals and changed records locally.
+- Explain supported outcomes in a dedicated view linked to the same applied scenario: candidate evidence, limits on conclusions, coverage gaps and concrete next actions. Potential sharing of land, crews, equipment or substation capacity is a question to investigate, never an inferred benefit.
+- Retain an investigation objective, next research action and optional analyst ownership; explicitly save hypothetical impact inputs/results with their evidence and export them in a usable handoff.
+- Restore exported findings without losing existing reviews, confusing source/demo data or silently replacing saved evidence with a changed dataset.
+- Find projects by imported need/zone context and grow usable real-data coverage through small, reviewable evidence decisions rather than forced coordinates.
 
 ## Differentiation
 Evidence and uncertainty travel with each result. Candidate proximity is never represented as confirmed shared right-of-way, simultaneous construction or verified savings. Source-date precision and reporting utility versus sponsor stay visible.
 
-## Next milestone: evidence readiness and returning to work
-The map-first Explore workspace is the default arrival screen. Data readiness is a separate purposeful workspace for understanding coverage and preparing source-backed location revisions. Saved reviews and occasional dataset imports remain dialogs. Both workspaces fill a viewport; switching workspaces preserves exploration state.
+## Complete user journey and next milestone
+Home becomes the concise entry screen. Explore remains the full map-first working surface, Outcomes explains supported conclusions and actions, and Data readiness addresses evidence gaps. These are four purposeful destinations within one application; each fills a viewport with internal scrolling. Existing Explore/Readiness instances and drafts stay mounted across navigation. Saved-review management and dataset revisions remain dialogs, not extra pages.
 
-| Journey | Present | Next useful improvement |
-|---|---|---|
-| Arriving | Source/demo label, searchable list, map and scenario summary | Actionable coverage orientation explaining why most records cannot be ranked |
-| Working | All 252 real records, 300 demo records, filters, synchronized selection and timeline | A searchable missing/unverified-location queue with guided evidence editing |
-| Understanding | Paired evidence, timing precision, confidence, uncertainty and impact assumptions | Retain Georgia planning zones and Dominion project-need text already in approved source sections |
-| Acting | Save/compare reviews and export briefs; preview normalized JSON imports | Preview, apply and download one-project location revisions without editing JSON |
-| Returning | Separate local saved reviews and notes | Persist validated source revisions locally, with clear recovery/reset and download fallbacks |
+| Capability and user purpose | Required inputs | Present / missing enabling work | Observable completion |
+|---|---|---|---|
+| Entry: understand relevance and begin | Active dataset mode, source editions and derived coverage | Labels/coverage exist; concise Home and shell destinations missing (F15) | User can identify audience, problem, benefit and enter source workspace or explicitly choose demo |
+| Core work: locate, compare and investigate | Stable projects, provenance, location/date precision, authoritative scenario analysis | F00–F14 complete; shared scenario navigation and need/zone search remain (F15/F16/F19) | All imported records stay reachable; search finds useful context; selection opens the same retained detail with unchanged calculations |
+| Outcomes: understand what results support | Applied full-dataset analysis, coverage/confidence, dates/windows and source meanings | Evidence exists; dedicated interpretation and action paths missing (F16) | Counts and conclusions match the applied scenario, unknowns remain explicit, and actions open candidate evidence/readiness/reviews |
+| Act: prepare a useful handoff | Saved pair evidence, analyst objective/next question and explicit optional impact assumptions | Notes/states/export exist; structured investigation and saved impact context missing (F17) | Export carries the investigation question, evidence, next action and any labeled hypothetical calculation; legacy reviews survive |
+| Return: retain work beyond one browser | Versioned exported brief, saved identity/mode and conflict decisions | Local persistence exists; safe export restoration missing (F18) | A restored brief retains evidence and notes, previews duplicates and never silently overwrites existing work |
+| Strengthen coverage: enable more defensible comparisons | Need/zone context, exact public location evidence and identity match | F11/F12 provide context/revision workflow; search and external evidence decisions missing (F19) | Context searches work; a bounded batch records supported or unresolved decisions and any real revision can be previewed without invented coordinates |
 
-Source discovery found 242 missing locations (39 Dominion, 203 Georgia), not parse failures. Ten supplied centers are unverified; no record supplies an explicit construction window. The next selected milestone is F11 guided location evidence, F12 deterministic public-source context enrichment and F13 local revision persistence. New coordinates require actual user-supplied evidence and remain unverified; no automatic geocoding, guessed coordinates, private-document ingestion or new calculation engine. Originals and stable IDs are preserved. This extends the existing evidence-backed purpose without a change in direction.
+F15/F16 and the first F19 increment start in parallel now; no reset of completed work. F17 follows entry integration and its shared saved-data agreement; F18 follows that additive contract. F19 research can continue independently of presentation work. Each capability has owners, file boundaries, inputs and completion criteria in the roadmap and short spec.
+
+Supplied-source review adds useful direction: challenge §1 names crews/equipment/right-of-way/substation capacity, while its bonus asks for an explained impact estimate. The location guide Part 2 requires identity checks against description, zone and landmarks. Dominion p31's existing right-of-way and p23's new line illustrate distinct scope; pp14–15 contain related but separate Stevens Creek–Hooks records, and p34 contains Dawson phases. These justify resource-specific research questions, searchable source context and retained assumptions. Related-record navigation is a worthwhile later addition; do not merge records or infer shared geometry.
+
+The real-data limit remains 242 missing locations, ten supplied unverified centers and no explicit construction windows. Counts describe the supplied historical snapshot, not current utility status. Evidence acquisition is an enabling capability, not a reason to postpone entry/outcomes. New source matches require exact public evidence and remain unverified through the current revision workflow; no bulk geocoding, guessed coordinates, private-document ingestion or second calculation engine. A current-plan refresh needs its own source-edition review before making new status claims.
 
 ## Requirements and reversible assumptions
 The brief requires at least two utilities, interactive project display and highlighted overlaps, and ranked coordination opportunities. Geography is primary; timing is secondary. A rough impact estimate is a bonus that we select. Details and one input/output example are in discovery.md.
