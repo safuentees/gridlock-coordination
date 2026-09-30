@@ -1,23 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 Puerto Rico/WestConnect integration PR107 (implementation 7cab7a8; one build/case passed)",
+  "baselineRevision": "F27 Guam/Nevada/PacifiCorp/ASPA integration PR111 (implementation 10ce90b; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Twelve full declared regional inventories plus one complete featured subset imported; Guam, Nevada and PacifiCorp qualifications active; SERTP marking conflict blocks that source",
+  "qualificationStatus": "Fifteen full declared regional inventories and three complete featured/funding subsets imported; TVA captured-index producer accepted; CNMI and Virgin Islands qualification active; SERTP source marking conflict unresolved",
   "totals": {
-    "importedSourceRecords": 12772,
+    "importedSourceRecords": 12915,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 12659,
+    "missingLocations": 12802,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 12,
-    "newFullRegionalInventoriesImported": 12,
+    "newRegionalSourcesQualified": 15,
+    "newFullRegionalInventoriesImported": 15,
     "knownNationalProjectDenominator": null,
-    "qualifiedFeaturedSubsets": 1,
-    "fullFeaturedSubsetsImported": 1,
-    "fullDeclaredSourceScopesImported": 13
+    "qualifiedFeaturedSubsets": 4,
+    "fullFeaturedSubsetsImported": 3,
+    "fullDeclaredSourceScopesImported": 18
   },
   "pendingEvidence": {
     "integratedF19Decisions": 10,
@@ -870,6 +870,336 @@
       },
       "unallocatedStateRecords": 12,
       "stateCountMeaning": "Explicit single-state source names only; missing and Multiple labels stay unallocated. Puerto Rico is a source footprint, not per-record coordinate evidence."
+    },
+    {
+      "sourceKey": "gu-gpa-cip",
+      "editionId": "fy2026-2027-board-2025-08-26",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "All 44 named detail-budget rows in sections A–E/G: 27 retained source work units (two transmission, 14 capital context, 11 planning context) and 17 exclusions. Broad programs are not deduplicated engineering projects.",
+      "geographicScope": "Guam Power Authority budget-work scope on Guam; not a complete current Guam project register.",
+      "recordKind": "14 capital-project-context, 11 planning-context, 2 transmission-project",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2025-08-26",
+      "importedRecords": 27,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 27,
+        "milestone": 27,
+        "constructionWindow": 27,
+        "status": 0,
+        "voltage": 25,
+        "evidencedOwner": 27
+      },
+      "rawSourceRows": 44,
+      "excludedRows": 17,
+      "exclusions": [
+        {
+          "reason": "Generation overhaul and tools.",
+          "count": 1
+        },
+        {
+          "reason": "Generation equipment.",
+          "count": 1
+        },
+        {
+          "reason": "Generation overhaul.",
+          "count": 1
+        },
+        {
+          "reason": "Combined combustion-turbine refurbishment and employee-gate work; no identified grid work.",
+          "count": 1
+        },
+        {
+          "reason": "Office communications, computers and firewalls.",
+          "count": 1
+        },
+        {
+          "reason": "Time and attendance system.",
+          "count": 1
+        },
+        {
+          "reason": "Vehicle procurement and crane refurbishment.",
+          "count": 1
+        },
+        {
+          "reason": "Transportation building improvements.",
+          "count": 1
+        },
+        {
+          "reason": "Office/building cooling and water-treatment facilities.",
+          "count": 1
+        },
+        {
+          "reason": "Mixed generation tools, offices, HR software and administrative equipment.",
+          "count": 1
+        },
+        {
+          "reason": "Vehicle charging, not transmission work.",
+          "count": 1
+        },
+        {
+          "reason": "Consulting/management contract, not an identified physical work unit.",
+          "count": 1
+        },
+        {
+          "reason": "Fuel infrastructure.",
+          "count": 1
+        },
+        {
+          "reason": "Generation-site demolition.",
+          "count": 1
+        },
+        {
+          "reason": "Generation installation.",
+          "count": 1
+        },
+        {
+          "reason": "Generation-site building work.",
+          "count": 1
+        },
+        {
+          "reason": "Fuel connection to generation.",
+          "count": 1
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/gu-gpa-cip/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/gu-gpa-cip/row-ledger.json",
+      "publicInventoryDenominator": 27,
+      "blockers": [
+        "Full scope, when complete, refers only to the 44 named detail rows: A4+B4+C1+D1+E5+G29. Summary-only F/H/I categories, totals and other public IRP/annual-report work are outside this boundary.",
+        "Budget programs and named upgrades can overlap. Category C and G.8 both describe substation/transmission improvements; no silent merging or deduplicated-project count is claimed.",
+        "Curated section/row locators are not native engineering IDs. Circuit and transformer labels are asset aliases; future editions need an explicit identity crosswalk.",
+        "Planned lifecycle describes the August 26, 2025 proposed-budget source. Budget adoption does not prove individual engineering authorization, current construction or completion.",
+        "FY2026 and FY2027 are spending years, not milestones or construction windows. Every retained primary date, construction window and construction start remains unknown.",
+        "Every retained owner and center/native geometry remains unknown. GPA is the reporting/budget sponsor, not an inferred complete asset owner; locality text is not coordinates.",
+        "Only G.6 and G.15 establish one explicit 115 kV value. Combined 34.5/115 kV protection programs remain context, and ambiguous circuit/transformer/regulator titles are not inferred transmission work.",
+        "Repeated earlier August 21 presentations inside the legislative packet are not additional source entries. The primary source is the August 26 presentation preserved in the public legislative mirror.",
+        "The meeting date is established; the original public posting date and individual row update dates are not."
+      ],
+      "nextTask": "F27; complementary current inventories and evidenced native locations/owners",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 27,
+      "stateCountMeaning": "Raw geographic descriptors are preserved; these rows are not independently assigned to jurisdiction counts. Manifest footprint indexes source reach only."
+    },
+    {
+      "sourceKey": "nv-nvenergy",
+      "editionId": "2026-05-06-irp",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "21 approved-table rows plus 69 new construction-approval request bullets: 90 source work units, not unique engineering projects. No narrative parents/components or economic-benefit totals are additional records.",
+      "geographicScope": "Partial NV Energy public Nevada planning inventory, with cross-state named work such as Bordertown to California; not all Nevada utilities.",
+      "recordKind": "67 transmission-project, 23 capital-project-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-05-06",
+      "importedRecords": 90,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 90,
+        "milestone": 2,
+        "constructionWindow": 90,
+        "status": 0,
+        "voltage": 21,
+        "evidencedOwner": 90
+      },
+      "rawSourceRows": 90,
+      "excludedRows": 0,
+      "exclusions": [],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/nv-nvenergy/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/nv-nvenergy/row-ledger.json",
+      "publicInventoryDenominator": 90,
+      "blockers": [
+        "All 90 declared source units are reconciled: 21 approved entries and 69 requested actions. Complete refers only to these two source enumerations, not all Nevada projects or unique engineering assets.",
+        "May 6, 2026 dates the joint application/source edition. Exact publication is not independently established; retrieval is not status recency.",
+        "Raw Active means approved in this table; Suspended means on-hold. Greenlink West has partial-construction narrative evidence, not proof every component is under construction.",
+        "Approved-table rows3/4/5/6/13/19 remain conservative capital context because their physical transmission scope is ambiguous or mixed. Row17 approval covers siting/permitting, not construction.",
+        "All qualified owners and native locations/geometry are unknown. Joint applicants, approval dockets, named facilities and routes cannot substitute for those fields.",
+        "Exact ISD days remain forecasts; Greenlink West has distinct main/segment4 milestones and an unknown aggregate comparison date. No construction interval is inferred.",
+        "One source row may be a compound program. Common Ties belongs within Greenlink West. Narrative components and economic-benefit totals are not extra records.",
+        "Accepted request policy retains all69 observations:52 transmission and17 HVD/distribution/mixed capital context, all planned with year forecasts. Six conflicting voltages stay unknown; cited raw values and eleven relationship groups preserve unresolved identities. No duplicate exclusion or parent identity is inferred.",
+        "Public redacted source facts only; no confidential appendix, contact metadata, redaction recovery or source-binary redistribution. Source filenames/hashes for all three volumes are preserved in the ledger."
+      ],
+      "nextTask": "F27; complementary current inventories and evidenced native locations/owners",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 90,
+      "stateCountMeaning": "Raw geographic descriptors are preserved; these rows are not independently assigned to jurisdiction counts. Manifest footprint indexes source reach only."
+    },
+    {
+      "sourceKey": "pacificorp-projects",
+      "editionId": "observed-2026-09-30",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "Eleven Energy Gateway entries plus six Other Project rows plus E8 child; seven explicitly completed entries and one aggregate Segment E parent excluded. Components and phases stay bundled.",
+      "geographicScope": "Featured western project text includes Oregon, Utah, Idaho, Wyoming and Washington; source labels and endpoints are retained without assigning unsupplied project jurisdictions. Not complete utility/state coverage.",
+      "recordKind": "10 transmission-project",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "mixed dated assertions and 2026-09-30 snapshot",
+      "importedRecords": 10,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 10,
+        "milestone": 3,
+        "constructionWindow": 10,
+        "status": 0,
+        "voltage": 0,
+        "evidencedOwner": 10
+      },
+      "rawSourceRows": 18,
+      "excludedRows": 8,
+      "exclusions": [
+        {
+          "reason": "aggregate-parent-represented-by-e8",
+          "count": 1
+        },
+        {
+          "reason": "explicit-completed",
+          "count": 7
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/pacificorp-projects/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/pacificorp-projects/row-ledger.json",
+      "publicInventoryDenominator": 10,
+      "blockers": [
+        "H lifecycle and expected service use the dated March 31, 2026 update; D3 earliest service also uses that update. Older webpage forecasts remain separate evidence.",
+        "Aggregate Energy Gateway/Segment E totals and linked child scope never both inflate imported projects. The Segment E remainder remains unenumerated context.",
+        "The current featured list is not a utility-wide census. March 2026 model-selection tables remain unenumerated under the no-image policy.",
+        "Source-locator identity uses page and named entry; reused segment letters do not establish native engineering IDs.",
+        "Construction ranges retain supplied month/quarter/year precision; no exact days, centers, route geometry or singular owner are inferred.",
+        "Spanish Fork–Mercer overlaps the historical local scope. Counts represent source records, not distinct engineering projects.",
+        "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; complementary current inventories and evidenced native locations/owners",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 10,
+      "stateCountMeaning": "Raw geographic descriptors are preserved; these rows are not independently assigned to jurisdiction counts. Manifest footprint indexes source reach only."
+    },
+    {
+      "sourceKey": "pacificorp-irp-local",
+      "editionId": "2025-03-31",
+      "editionPublishedAt": "2025-03-31",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Six completed local-improvement bullets excluded and fourteen planned-section bullets retained. Gateway Table 4.1, model portfolios, driver/benefit sub-bullets and program totals are outside this declared scope.",
+      "geographicScope": "Historical local project areas in Utah, Idaho, Wyoming and Oregon as explicitly labeled in chapter 4; partial planning scope, not state or utility completeness.",
+      "recordKind": "13 transmission-project, 1 planning-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2025-03-31",
+      "importedRecords": 14,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 14,
+        "milestone": 14,
+        "constructionWindow": 14,
+        "status": 1,
+        "voltage": 1,
+        "evidencedOwner": 14
+      },
+      "rawSourceRows": 20,
+      "excludedRows": 6,
+      "exclusions": [
+        {
+          "reason": "explicit-completed-local-improvement",
+          "count": 6
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/pacificorp-irp-local/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/pacificorp-irp-local/row-ledger.json",
+      "publicInventoryDenominator": 14,
+      "blockers": [
+        "Historical March 31, 2025 edition is not current lifecycle; current featured pages and the March 2026 update do not silently replace it.",
+        "The breaker program has conflicting planned heading and completed-tense wording; one planning-context record stays unknown, without inventing twelve substations.",
+        "All fourteen retained entries lack service dates and native project IDs; frozen chapter/page/area/bullet locators identify source records.",
+        "Mixed transmission/distribution and BPA/PacifiCorp interests remain visible; no singular asset owner is inferred.",
+        "Spanish Fork–Mercer has an evidenced overlap with the current featured source; records are not claimed to be unique engineering projects.",
+        "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; complementary current inventories and evidenced native locations/owners",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 14,
+      "stateCountMeaning": "Raw geographic descriptors are preserved; these rows are not independently assigned to jurisdiction counts. Manifest footprint indexes source reach only."
+    },
+    {
+      "sourceKey": "as-aspa-pcap",
+      "editionId": "2024-03-21-pcap",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "All three ASPA priority actions and three numbered Action1 projects; exclude parent aggregate, storage, vehicles and charging, retain control-center context and explicit transmission line. Separate ASTCA actions are outside this ASPA subset.",
+      "geographicScope": "American Samoa, Tutuila ASPA priority funding actions; parent-action Tafuna location is program-level context only.",
+      "recordKind": "1 capital-project-context, 1 transmission-project",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2024-03-21",
+      "importedRecords": 2,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 2,
+        "milestone": 2,
+        "constructionWindow": 2,
+        "status": 0,
+        "voltage": 2,
+        "evidencedOwner": 2
+      },
+      "rawSourceRows": 6,
+      "excludedRows": 4,
+      "exclusions": [
+        {
+          "reason": "Aggregate priority action; its three explicitly numbered funding projects are enumerated separately. Do not import the parent alongside children.",
+          "count": 1
+        },
+        {
+          "reason": "Standalone 40MWh wind and12MWh solar storage; storage discovery is outside planned-transmission scope.",
+          "count": 1
+        },
+        {
+          "reason": "Transport charging infrastructure, not a transmission project.",
+          "count": 1
+        },
+        {
+          "reason": "Vehicle fleet action, not a physical transmission project. Vehicle counts are not additional source projects.",
+          "count": 1
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/as-aspa-pcap/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/as-aspa-pcap/row-ledger.json",
+      "publicInventoryDenominator": 2,
+      "blockers": [
+        "Full means the complete declared ASPA PCAP subset, not current utility or territory project coverage.",
+        "The cover revision is March 21, 2024; publication date remains unknown and filename date is not used.",
+        "Planning-action native IDs identify funding work, not engineering assets. Related aggregate Action1 is excluded.",
+        "Requested funding is not construction approval or evidence of current status. Related generation funding and emissions estimates do not establish benefit or funding for these actions.",
+        "A current public utility capital/transmission inventory and native location/ownership/date evidence remain missing.",
+        "No evidenced asset owner, voltage, native project center, service date or construction interval is supplied. ASPA is the implementing agency, not an inferred asset owner.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; complementary current inventories and evidenced native locations/owners",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 2,
+      "stateCountMeaning": "Raw geographic descriptors are preserved; these rows are not independently assigned to jurisdiction counts. Manifest footprint indexes source reach only."
     }
   ],
   "jurisdictions": [
@@ -995,7 +1325,9 @@
       "code": "ID",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "bpa-plan"
+        "bpa-plan",
+        "pacificorp-projects",
+        "pacificorp-irp-local"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
@@ -1205,8 +1537,10 @@
     },
     {
       "code": "NV",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "nv-nvenergy"
+      ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
     },
@@ -1313,7 +1647,9 @@
       "code": "OR",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "bpa-plan"
+        "bpa-plan",
+        "pacificorp-projects",
+        "pacificorp-irp-local"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
@@ -1399,8 +1735,11 @@
     },
     {
       "code": "UT",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pacificorp-projects",
+        "pacificorp-irp-local"
+      ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
     },
@@ -1432,7 +1771,8 @@
       "code": "WA",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "bpa-plan"
+        "bpa-plan",
+        "pacificorp-projects"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
@@ -1470,7 +1810,9 @@
       "sourceKeys": [
         "spp-tracking",
         "bpa-plan",
-        "westconnect-tppl"
+        "westconnect-tppl",
+        "pacificorp-projects",
+        "pacificorp-irp-local"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
@@ -1493,16 +1835,20 @@
     },
     {
       "code": "AS",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "as-aspa-pcap"
+      ],
       "territory": true,
       "inventoryComplete": false,
       "recordCountByJurisdiction": null
     },
     {
       "code": "GU",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "gu-gpa-cip"
+      ],
       "territory": true,
       "inventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -1676,41 +2022,91 @@
       "task": "F27"
     },
     {
-      "sourceKey": "gu-gpa",
-      "status": "qualification-in-progress",
-      "sourceUrl": "https://www.guampowerauthority.com/gpa-initiatives/clean-energy-master-plan",
-      "importedRecords": 0,
-      "locatedRecords": null,
-      "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
+      "sourceKey": "gu-gpa-cip",
+      "status": "imported-full-declared-public-scope",
+      "sourceUrl": "https://guamlegislature.gov/38th_Guam_Legislature/Mess_Comms_38th/Doc.%20No.%2038GL-25-1107.pdf",
+      "importedRecords": 27,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complementary/current public inventories; declared scope complete, wider coverage incomplete",
       "owner": "ui",
-      "task": "F27-GU-Q"
+      "task": "F27"
     },
     {
       "sourceKey": "nv-nvenergy",
-      "status": "qualification-in-progress",
-      "sourceUrl": "https://www.nvenergy.com/about-nvenergy/rates-regulatory/recent-regulatory-filings",
-      "importedRecords": 0,
-      "locatedRecords": null,
-      "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
+      "status": "imported-full-declared-public-scope",
+      "sourceUrl": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf",
+      "importedRecords": 90,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complementary/current public inventories; declared scope complete, wider coverage incomplete",
       "owner": "source_discovery",
-      "task": "F27-NV-Q"
+      "task": "F27"
     },
     {
-      "sourceKey": "pacificorp-plan",
-      "status": "qualification-in-progress",
+      "sourceKey": "pacificorp-projects",
+      "status": "imported-complete-featured-subset",
       "sourceUrl": "https://www.pacificorp.com/transmission/transmission-projects.html",
+      "importedRecords": 10,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complementary/current public inventories; declared scope complete, wider coverage incomplete",
+      "owner": "core",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "pacificorp-irp-local",
+      "status": "imported-full-declared-public-scope",
+      "sourceUrl": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf",
+      "importedRecords": 14,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complementary/current public inventories; declared scope complete, wider coverage incomplete",
+      "owner": "core",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "as-aspa-pcap",
+      "status": "imported-complete-featured-subset",
+      "sourceUrl": "https://www.aspower.com/ASPAWEB/PublicNotice/CPRG%20PCAP_AS_2024.3.25.pdf",
+      "importedRecords": 2,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complementary/current public inventories; declared scope complete, wider coverage incomplete",
+      "owner": "coordinator",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "tva-public",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://www.tva.com/energy/transmission/transmission-system-projects",
       "importedRecords": 0,
       "locatedRecords": null,
-      "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
+      "missingInput": "Connected sample and full40-page inventory; native locations and complete engineering scope remain absent",
+      "owner": "ui",
+      "task": "F27-TVA-I"
+    },
+    {
+      "sourceKey": "mp-cuc",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.cucgov.org/",
+      "importedRecords": 0,
+      "locatedRecords": null,
+      "missingInput": "Accepted public named-work scope, lifecycle and transmission/distribution role",
       "owner": "core",
-      "task": "F27-PC-Q"
+      "task": "F27-MP-Q"
+    },
+    {
+      "sourceKey": "vi-wapa",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.viwapa.vi/projects",
+      "importedRecords": 0,
+      "locatedRecords": null,
+      "missingInput": "Accepted public named-work scope, lifecycle and transmission/distribution role",
+      "owner": "source_discovery",
+      "task": "F27-VI-Q"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National project denominator is unknown. Twelve full declared regional inventories and one complete seven-topic featured subset are imported; source units differ and no cross-source deduplication is claimed. Statewide and national completeness are not established. Guam, Nevada and PacifiCorp source qualification is in progress; remaining territories and missing locations remain open.",
+    "National project denominator is unknown. Fifteen full declared regional inventories and three complete featured/funding subsets are imported; source units differ and no cross-source deduplication is claimed. TVA production and remaining territory qualifications are active. Statewide, territory-wide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
   ],
@@ -1878,6 +2274,78 @@
       "locatedRecords": 0,
       "scope": "Public 389-row TPPL; partial submitted regional inventory, not all Western Interconnection projects",
       "contract": "specs/features/F27-us-regional-expansion/westconnect-tppl/spec.md"
+    },
+    {
+      "sourceKey": "gu-gpa-cip",
+      "editionId": "fy2026-2027-board-2025-08-26",
+      "reportingGroup": "gu-gpa-cip",
+      "status": "imported-full-declared-public-scope",
+      "sourceRows": 44,
+      "proposedRetainedRecords": 27,
+      "proposedExcludedRows": 17,
+      "locatedRecords": 0,
+      "scope": "All 44 named detail-budget rows in sections A–E/G: 27 retained source work units (two transmission, 14 capital context, 11 planning context) and 17 exclusions. Broad programs are not deduplicated engineering projects.",
+      "contract": "specs/features/F27-us-regional-expansion/gu-gpa/spec.md"
+    },
+    {
+      "sourceKey": "nv-nvenergy",
+      "editionId": "2026-05-06-irp",
+      "reportingGroup": "nv-nvenergy",
+      "status": "imported-full-declared-public-scope",
+      "sourceRows": 90,
+      "proposedRetainedRecords": 90,
+      "proposedExcludedRows": 0,
+      "locatedRecords": 0,
+      "scope": "21 approved-table rows plus 69 new construction-approval request bullets: 90 source work units, not unique engineering projects. No narrative parents/components or economic-benefit totals are additional records.",
+      "contract": "specs/features/F27-us-regional-expansion/nv-nvenergy/spec.md"
+    },
+    {
+      "sourceKey": "pacificorp-projects",
+      "editionId": "observed-2026-09-30",
+      "reportingGroup": "pacificorp-projects",
+      "status": "imported-complete-featured-subset",
+      "sourceRows": 18,
+      "proposedRetainedRecords": 10,
+      "proposedExcludedRows": 8,
+      "locatedRecords": 0,
+      "scope": "Eleven Energy Gateway entries plus six Other Project rows plus E8 child; seven explicitly completed entries and one aggregate Segment E parent excluded. Components and phases stay bundled.",
+      "contract": "specs/features/F27-us-regional-expansion/pacificorp-plan/spec.md"
+    },
+    {
+      "sourceKey": "pacificorp-irp-local",
+      "editionId": "2025-03-31",
+      "reportingGroup": "pacificorp-irp-local",
+      "status": "imported-full-declared-public-scope",
+      "sourceRows": 20,
+      "proposedRetainedRecords": 14,
+      "proposedExcludedRows": 6,
+      "locatedRecords": 0,
+      "scope": "Six completed local-improvement bullets excluded and fourteen planned-section bullets retained. Gateway Table 4.1, model portfolios, driver/benefit sub-bullets and program totals are outside this declared scope.",
+      "contract": "specs/features/F27-us-regional-expansion/pacificorp-plan/spec.md"
+    },
+    {
+      "sourceKey": "as-aspa-pcap",
+      "editionId": "2024-03-21-pcap",
+      "reportingGroup": "as-aspa-pcap",
+      "status": "imported-complete-featured-subset",
+      "sourceRows": 6,
+      "proposedRetainedRecords": 2,
+      "proposedExcludedRows": 4,
+      "locatedRecords": 0,
+      "scope": "All three ASPA priority actions and three numbered Action1 projects; exclude parent aggregate, storage, vehicles and charging, retain control-center context and explicit transmission line. Separate ASTCA actions are outside this ASPA subset.",
+      "contract": "specs/features/F27-us-regional-expansion/as-aspa/spec.md"
+    },
+    {
+      "sourceKey": "tva-public",
+      "editionId": "observed-2026-09-30",
+      "reportingGroup": "tva-public",
+      "status": "qualified-production-in-progress",
+      "sourceRows": 41,
+      "proposedRetainedRecords": 40,
+      "proposedExcludedRows": 1,
+      "locatedRecords": 0,
+      "scope": "Captured public engagement index:40 unique project pages plus one duplicate Appalachia state placement; not a full TVA engineering register. Hashes identify derived public text captures, not original HTML.",
+      "contract": "specs/features/F27-us-regional-expansion/tva-public/spec.md"
     }
   ]
 }
