@@ -1,0 +1,11 @@
+# F27-ISONE-Q — New England public inventory qualification
+
+Purpose: prepare an independent next regional inventory for planned transmission in New England, preserving unlocated records and source meanings. It is not nationwide completion. Owner: `core` acting as a source qualifier after its F26 implementation delivery; coordinator remains merge/check/shared-contract owner.
+
+Inputs: official [RSP source index](https://www.iso-ne.com/system-planning/system-plans-studies/rsp), [RSP list description](https://www.iso-ne.com/rsp-lists), and current public RSP Project List. Coordinator's 2026-09-30 search surfaced “Final RSP Project List — June 2026”, published July 9, 2026, XLSX; that workbook has not been acquired or qualified. The RSP Project List and Asset Condition List are distinct source classes. Some linked technical documents are explicitly CEII; use only public files and never seek restricted detail.
+
+Exact owned writes: `specs/features/F27-us-regional-expansion/iso-ne-rsp/qualification.md` and `sample.json`. Preserve any acquired original under ignored root `inputs/originals/F27-iso-ne-rsp-2026/`; no original binaries in Git. Do not edit the shared register, source contract, map or production data.
+
+Use at most 15 minutes of targeted primary-source clarification and six sample rows. Establish public access and exact edition, stable IDs/row grouping, project/lifecycle scope, owner meaning, milestones, coordinate availability/meaning, regional footprint, full enumeration and explicit missing fields. Prove at least a useful import scope with source rows and reconciliation rules; distinguish inventory usefulness from spatial eligibility if no coordinate fields are present. Never manufacture coordinates, schedules, owners, statewide coverage or research-budget availability. Stop acquisition at the bound and package what is established.
+
+Read-only qualification may overlap F26 integration. The next production adapter needs coordinator acceptance of the mapping and an exact source key/path handoff after the first F26 inventory is integrated. Keep any inaccessible source gate specific; it does not block unrelated adapters. Publish a small dependent docs PR and report samples/coverage/limitations. No worker tests, browser automation, visual/mobile checks or new infrastructure.
