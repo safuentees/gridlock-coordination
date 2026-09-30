@@ -1,0 +1,51 @@
+{
+  "sourceKey": "ca-sce-tpr",
+  "editionId": "2026-06-01",
+  "label": "SCE public TPR — June 1, 2026",
+  "reportingGroupId": "sce-tpr",
+  "reportingGroupName": "SCE TPR filing",
+  "publisher": "Southern California Edison",
+  "processAuthority": "California Public Utilities Commission",
+  "publishedOn": "2026-06-01",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+    "locator": "'CPUC TPR Public'!A4:CM497; headers row 3; 'TPR Notes'!B3:C5, B23:C23",
+    "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+  },
+  "sha256": "42f5ce7a686d08f3900d02eb5ebd09fe089dba39f6e04b1279038d6fde473118",
+  "geographicScope": "SCE FERC-jurisdictional transmission capital portfolio, including reported work outside California; not all California transmission projects.",
+  "inventoryScope": "Nonaggregate project/subproject lines except Operational and Canceled. On Hold and unknown lifecycle remain visible; includes ancillary capital work. Program aggregates are separately reconciled without inventing child projects.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 494,
+    "importedRecords": 167,
+    "excludedRows": 327,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 103
+  },
+  "exclusions": [
+    {
+      "reason": "cancelled",
+      "count": 4
+    },
+    {
+      "reason": "operational",
+      "count": 279
+    },
+    {
+      "reason": "program-aggregate",
+      "count": 44
+    }
+  ],
+  "limitations": [
+    "Source edition lifecycle is not live status and never inferred from elapsed milestone dates.",
+    "Project Manager is not asset owner; personal manager data is omitted and owners remain unknown.",
+    "Published positions have no stated datum or positional accuracy; mapped centers remain unverified with explicit assumptions.",
+    "Multiple or ambiguous positions may be retained without a center. No route geometry is inferred.",
+    "Construction start and projected-or-actual in-service are distinct; no construction end or continuous interval is inferred.",
+    "Public download is available without login; no dataset-specific open reuse license was declared.",
+    "Native TPR IDs are preserved; repeated work orders are aliases, not deduplication keys."
+  ]
+}

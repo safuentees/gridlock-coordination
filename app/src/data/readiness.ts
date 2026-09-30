@@ -14,10 +14,11 @@ export interface ReadinessCounts { total: number; missing: number; unverified: n
 export interface ReadinessSummary extends ReadinessCounts { byUtility: Record<Project["utilityId"], ReadinessCounts> }
 const emptyCounts = (): ReadinessCounts => ({ total: 0, missing: 0, unverified: 0, confirmed: 0 })
 export function getReadiness(dataset: Dataset): ReadinessSummary {
-  const summary: ReadinessSummary = { ...emptyCounts(), byUtility: { desc: emptyCounts(), gpc: emptyCounts() } }
+  const summary: ReadinessSummary = { ...emptyCounts(), byUtility: {} }
   for (const project of dataset.projects) {
     const state = project.location?.confidence ?? "missing"
     summary.total += 1; summary[state] += 1
+    summary.byUtility[project.utilityId] ??= emptyCounts()
     summary.byUtility[project.utilityId].total += 1; summary.byUtility[project.utilityId][state] += 1
   }
   return summary
@@ -44,6 +45,7 @@ export function createLocationRevision(dataset: Dataset, projectId: string, draf
     : []
   const next = projectSchema.safeParse({
     ...original,
+    ...(original.inventory ? { inventory: { ...original.inventory, centerRole: "unknown", locationAssumptions: [...original.inventory.locationAssumptions, "Current center supplied through local evidence; geographic role is not established by this revision."] } } : {}),
     location: { lat, lon, method: draft.method, confidence: "unverified", evidence: [...(moved ? [] : priorEvidence).filter(source => JSON.stringify(source) !== JSON.stringify(evidence)), evidence] },
     notes: [...original.notes.filter(note => note !== "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage."), ...superseded, "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage."],
   })

@@ -1,6 +1,6 @@
 # F19-R1 / F25 — Qualify the first source for selected US expansion
 
-Status: selected source-qualification work under F25; owner assignment recorded, worker dispatch pending in the main thread. US-wide planned-transmission discovery is selected in the mission. Source choice, not national product scope, remains to be resolved.
+Status: F25 completed and selected SCE `ca-sce-tpr` / `2026-06-01` through PR56. See recommendation and source-options for the six records, full enumeration and timing overrun. US-wide planned-transmission discovery remains incomplete; F26 is now the implementation handoff. Prior coordinator-screening active time was not recorded; reuse that screening and cap the first new active qualification pass at 20 minutes, recording elapsed time and that uncertainty without resetting the cumulative 60-minute ceiling.
 Owner: `source_discovery` (existing data/research worker). Coordinator owns this brief, selection, shared contracts and integration.
 Parent evidence: [F19](../../features/F19-evidence-led-discovery/spec.md) is complete: ten decisions, one guarded Okatie permit-area suggestion and nine unresolved records. Reuse them without reopening that batch. [F25](../../features/F25-source-qualification/spec.md), F26 and F27 now govern qualification, full inventory and national expansion. This file integrates the relevant source screening and interface reasoning from commit `34f1c63`.
 

@@ -21,5 +21,6 @@ export function sourceEditionLabels(projects: Project[]): string[] {
   const labels: string[] = []
   if (files.has("2024-2028-2million-and-above-project-descriptions.pdf")) labels.push("Dominion 2024–2028 plan")
   if (files.has("2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf")) labels.push("Georgia 2025 IRP")
+  for (const project of projects) if (project.inventory && !labels.includes(project.inventory.editionLabel)) labels.push(project.inventory.editionLabel)
   return labels
 }

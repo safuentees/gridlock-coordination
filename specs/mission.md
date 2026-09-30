@@ -71,3 +71,7 @@ The user authorizes subagent coordination, project pushes, PRs and integration, 
 
 ## Exclusions
 No private/CEII material ingestion, autonomous engineering decisions, real-time utility schedule claims, external messaging, live geocoding at scale, authentication, or production hosting. Additional regional transmission adapters are selected scope under F25–F27. Verified route geometry beyond source-supported points remains a separate extension; generation-proposal discovery is not selected by the national-transmission goal.
+
+## Current integrated coverage after F26
+
+The working source collection now has 419 records and 113 unverified map centers. This preserves the 252 historical records and adds the complete declared SCE June 2026 public scope: 167 records (128 transmission projects, 39 capital-context records), 103 centers and 64 unresolved centers. Owner evidence is absent, so the added inventory supports discovery/evidence review without inventing new cross-owner candidate pairs. SCE source accounting covers 494 rows with 327 explicit exclusions. One utility portfolio is not California-wide or national completeness. F27 advances independent PJM and New England qualification; all other unassessed/partial/blocked areas remain explicit.

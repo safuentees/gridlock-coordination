@@ -2,6 +2,7 @@ import { useMemo } from "react"
 import { MapIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { projectEligibility } from "@/core"
 import { getReadiness } from "@/data/readiness"
 import type { HomePageProps } from "@/domain/workspace"
 import { sourceEditionLabels } from "@/lib/presentation"
@@ -9,11 +10,12 @@ import { sourceEditionLabels } from "@/lib/presentation"
 export function HomePage({ dataset, onNavigate, onDemo }: HomePageProps) {
   const coverage = useMemo(() => getReadiness(dataset), [dataset])
   const sourceEditions = useMemo(() => sourceEditionLabels(dataset.projects), [dataset])
+  const eligible = useMemo(() => dataset.projects.filter(project => projectEligibility(project).eligible).length, [dataset])
   const counts = [
-    { label: "Projects", value: coverage.total },
+    { label: "Inventory records", value: coverage.total },
     { label: "Missing locations", value: coverage.missing },
     { label: "Unverified locations", value: coverage.unverified },
-    { label: "Confirmed locations", value: coverage.confirmed },
+    { label: "Eligible for comparison", value: eligible },
   ]
 
   return <section aria-labelledby="home-heading" className="h-full min-h-0 min-w-0 overflow-auto overscroll-contain p-4">
@@ -34,8 +36,8 @@ export function HomePage({ dataset, onNavigate, onDemo }: HomePageProps) {
         </CardHeader>
         <CardContent className="space-y-4">
           <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">{counts.map(({ label, value }) => <div key={label}><dt className="text-sm text-muted-foreground">{label}</dt><dd className="text-xl font-semibold">{value.toLocaleString()}</dd></div>)}</dl>
-          {coverage.missing > 0 && <p className="text-sm text-muted-foreground">Projects without locations remain in the inventory, but cannot be compared by distance.</p>}
-          {sourceEditions.length > 0 && <div className="space-y-1 text-sm text-muted-foreground"><p>{sourceEditions.join("; ")}</p><p>Historical plans; dates do not confirm current construction status.</p></div>}
+          <p className="text-sm text-muted-foreground">Eligibility is assessed before scenario filters. A mapped location alone does not establish that a record can be compared.</p>
+          {sourceEditions.length > 0 && <div className="space-y-1 text-sm text-muted-foreground"><p>{sourceEditions.join("; ")}</p><p>Status reflects each source edition. Milestone dates do not confirm current construction status.</p></div>}
         </CardContent>
       </Card>
 

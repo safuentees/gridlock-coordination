@@ -6,6 +6,7 @@ export interface DatasetChanges {
   removed: Project[]
   changed: { before: Project; after: Project; fields: string[] }[]
   unchanged: number
+  editionChanges: { sourceKey: string; editionId: string; label: string; kind: "added" | "changed" | "removed" }[]
 }
 
 export function parseSourceDataset(text: string): Dataset {
@@ -24,15 +25,24 @@ export function parseSourceDataset(text: string): Dataset {
 export function compareDatasets(previous: Dataset, next: Dataset): DatasetChanges {
   const previousById = new Map(previous.projects.map(project => [project.id, project]))
   const nextIds = new Set(next.projects.map(project => project.id))
-  const changes: DatasetChanges = { added: [], removed: [], changed: [], unchanged: 0 }
+  const changes: DatasetChanges = { added: [], removed: [], changed: [], unchanged: 0, editionChanges: [] }
   for (const project of next.projects) {
     const before = previousById.get(project.id)
     if (!before) { changes.added.push(project); continue }
-    const fields = (Object.keys(project) as (keyof Project)[]).filter(key => JSON.stringify(before[key]) !== JSON.stringify(project[key]))
+    const fields = ([...new Set([...Object.keys(before), ...Object.keys(project)])] as (keyof Project)[]).filter(key => JSON.stringify(before[key]) !== JSON.stringify(project[key]))
     if (fields.length) changes.changed.push({ before, after: project, fields })
     else changes.unchanged += 1
   }
   changes.removed = previous.projects.filter(project => !nextIds.has(project.id))
+  const previousEditions = new Map((previous.sourceEditions ?? []).map(edition => [`${edition.sourceKey}:${edition.editionId}`, edition]))
+  const nextEditionIds = new Set<string>()
+  for (const edition of next.sourceEditions ?? []) {
+    const key = `${edition.sourceKey}:${edition.editionId}`
+    const before = previousEditions.get(key)
+    nextEditionIds.add(key)
+    if (!before || JSON.stringify(before) !== JSON.stringify(edition)) changes.editionChanges.push({ sourceKey: edition.sourceKey, editionId: edition.editionId, label: edition.label, kind: before ? "changed" : "added" })
+  }
+  for (const [key, edition] of previousEditions) if (!nextEditionIds.has(key)) changes.editionChanges.push({ sourceKey: edition.sourceKey, editionId: edition.editionId, label: edition.label, kind: "removed" })
   return changes
 }
 

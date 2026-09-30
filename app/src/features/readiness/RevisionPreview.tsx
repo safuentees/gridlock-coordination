@@ -28,14 +28,21 @@ export function LocationEvidence({ location }: { location: Project["location"] }
   </div>
 }
 
+function CurrentLocationMeaning({ project }: { project: Project }) {
+  if (!project.inventory) return null
+  return <div className="space-y-2 text-xs text-muted-foreground"><p>Displayed location role: {project.inventory.centerRole.replaceAll("-", " ")}.</p>{project.inventory.locationAssumptions.map((assumption, index) => <p key={index}>{assumption}</p>)}</div>
+}
+
 export function RevisionPreview({ before, after, changes }: { before: Project; after: Project; changes: DatasetChanges }) {
   return <section className="space-y-4" aria-label="Location revision preview">
     <h3 className="font-medium">Review the proposed location</h3>
     <div className="grid gap-4 lg:grid-cols-2">
-      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">Current evidence</h4><LocationEvidence location={before.location} /></section>
-      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">Proposed evidence</h4><LocationEvidence location={after.location} /></section>
+      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">Current evidence</h4><LocationEvidence location={before.location} /><CurrentLocationMeaning project={before} /></section>
+      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">Proposed evidence</h4><LocationEvidence location={after.location} /><CurrentLocationMeaning project={after} /></section>
     </div>
-    <p className="text-sm">{changes.changed.length} changed, {changes.added.length} added, {changes.removed.length} removed, {changes.unchanged} unchanged projects.</p>
+    <p className="text-sm">{changes.changed.length} changed, {changes.added.length} added, {changes.removed.length} removed, {changes.unchanged} unchanged records.</p>
+    {changes.editionChanges.length > 0 && <ul className="space-y-1 text-sm" aria-label="Source edition changes">{changes.editionChanges.map(edition => <li key={`${edition.sourceKey}:${edition.editionId}`}>{edition.label}: {edition.kind}</li>)}</ul>}
+    {after.inventory && <p className="text-sm text-muted-foreground">Original published positions are preserved. A local location alone does not establish ownership or eligibility for comparison.</p>}
     <details className="rounded-lg border p-3"><summary className="cursor-pointer font-medium">Project sources</summary><div className="mt-3"><EvidenceSources sources={before.sources} /></div></details>
   </section>
 }

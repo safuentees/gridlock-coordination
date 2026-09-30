@@ -1,5 +1,6 @@
 import { z } from "zod"
 import { estimateImpact } from "@/core"
+import { sourceEditionSchema } from "@/domain/coverage"
 import { projectSchema, type AnalysisOptions, type DataMode, type Dataset, type Opportunity, type Project } from "@/domain/schema"
 
 const impactInputsSchema = z.object({
@@ -31,7 +32,7 @@ export const EMPTY_INVESTIGATION: Investigation = {
 export const REVIEW_STATES = ["Unreviewed", "Investigating", "Ready for discussion", "Dismissed"] as const
 export const savedOpportunitySchema = z.object({
   id: z.string().min(1), mode: z.enum(["real", "demo"]),
-  dataset: z.object({ title: z.string(), generatedAt: z.string(), schemaVersion: z.literal(1) }),
+  dataset: z.object({ title: z.string(), generatedAt: z.string(), schemaVersion: z.union([z.literal(1), z.literal(2)]), sourceEditions: z.array(sourceEditionSchema).optional() }),
   savedAt: z.iso.datetime(), updatedAt: z.iso.datetime(),
   reviewState: z.enum(REVIEW_STATES), notes: z.string(),
   investigation: investigationSchema.optional(),
@@ -72,8 +73,12 @@ export function snapshotOpportunity(dataset: Dataset, opportunity: Opportunity, 
   const projects = opportunity.projectIds.map((id) => dataset.projects.find((project) => project.id === id))
   if (!projects[0] || !projects[1]) throw new Error("Both projects must be available to save their evidence.")
   const now = new Date().toISOString()
+  const sourceEditions = dataset.sourceEditions?.filter(edition => projects.some(project => project?.inventory?.sourceKey === edition.sourceKey && project.inventory.editionId === edition.editionId))
   return {
-    id: opportunity.id, mode: dataset.mode, dataset: { title: dataset.title, generatedAt: dataset.generatedAt, schemaVersion: dataset.schemaVersion },
+    id: opportunity.id, mode: dataset.mode, dataset: {
+      title: dataset.title, generatedAt: dataset.generatedAt, schemaVersion: dataset.schemaVersion,
+      ...(sourceEditions?.length ? { sourceEditions: structuredClone(sourceEditions) } : {}),
+    },
     savedAt: previous?.savedAt ?? now, updatedAt: now,
     reviewState: previous?.reviewState ?? "Unreviewed", notes: previous?.notes ?? "",
     ...(previous?.investigation ? { investigation: structuredClone(previous.investigation) } : {}),

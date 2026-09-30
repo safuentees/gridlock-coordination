@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { loadDataset } from "@/data/provider"
+import { prepareBundledUpdate } from "@/data/coverage"
 import { clearSourceSession, readSourceSession, saveSourceSession } from "@/data/source-session"
 import { Explorer } from "@/features/explorer/Explorer"
 import { HomePage } from "@/features/home/HomePage"
@@ -51,7 +52,12 @@ export function App() {
     catch (error) { return { dataset: null, error: error instanceof Error ? error.message : "The dataset could not be loaded." } }
   }, [mode, sourceOverride])
   const analysis = useMemo(() => result.dataset ? analyzeProjects(result.dataset.projects, options) : null, [result.dataset, options])
-  const sourceEditions = result.dataset ? sourceEditionLabels(result.dataset.projects) : []
+  const sourceEditions = result.dataset ? sourceEditionLabels(result.dataset.projects.filter(project => !project.inventory)) : []
+  const bundledUpdate = useMemo(() => {
+    if (mode !== "real" || !sourceOverride || !result.dataset) return { dataset: null, error: null }
+    try { return { dataset: prepareBundledUpdate(result.dataset, loadDataset("real")), error: null } }
+    catch (failure) { return { dataset: null, error: failure instanceof Error ? failure.message : "Bundled additions could not be prepared." } }
+  }, [mode, sourceOverride, result.dataset])
   return <main className="flex h-dvh min-h-0 w-full min-w-0 flex-col overflow-hidden">
     <header className="flex max-h-[25dvh] min-h-0 min-w-0 shrink-0 flex-wrap items-center justify-between gap-4 overflow-auto border-b p-4">
       <div className="flex min-w-0 flex-wrap items-center gap-3"><h1 className="text-2xl font-semibold">Gridlock</h1><Badge variant={mode === "demo" ? "secondary" : "outline"}>{mode === "demo" ? "Synthetic demo" : sourceOverride ? "Revised source" : "Source data"}</Badge><nav className="flex min-w-0 flex-wrap gap-2" aria-label="Workspaces">{([
@@ -67,13 +73,24 @@ export function App() {
               <TabsList aria-label="Dataset views" className="shrink-0"><TabsTrigger value="coverage">Coverage</TabsTrigger><TabsTrigger value="revisions">Revisions</TabsTrigger></TabsList>
               <TabsContent value="coverage" className="min-h-0 min-w-0 overflow-auto overscroll-contain">
                 <section aria-label="Dataset coverage" className="space-y-4 py-2 [overflow-wrap:anywhere]">
-                  <p>{result.dataset.projects.length} projects: {result.dataset.projects.filter(project => project.location !== null).length} with locations, {result.dataset.projects.filter(project => project.location === null).length} missing locations.</p>
+                  <p>{result.dataset.projects.length} records: {result.dataset.projects.filter(project => project.location !== null).length} with map centers, {result.dataset.projects.filter(project => project.location === null).length} without a resolved center.</p>
                   <Button variant="outline" onClick={() => { setDatasetOpen(false); setWorkspace("readiness") }}>Review location evidence</Button>
                   {sourceEditions.length > 0 && <section className="space-y-2"><h3 className="text-sm font-medium">Source plans</h3><ul className="space-y-1 text-sm">{sourceEditions.map(edition => <li key={edition}>{edition}</li>)}</ul><p className="text-sm text-muted-foreground">Historical plans; current progress may differ.</p></section>}
+                  {result.dataset.sourceEditions?.map(edition => {
+                    const records = result.dataset!.projects.filter(project => project.inventory?.sourceKey === edition.sourceKey && project.inventory.editionId === edition.editionId)
+                    return <section key={`${edition.sourceKey}:${edition.editionId}`} className="space-y-2 border-t pt-4">
+                      <h3 className="text-sm font-medium">{edition.label}</h3>
+                      <p className="text-sm">{records.length} active records; {records.filter(project => project.location).length} with map centers. {edition.scope === "sample" ? "Sample available; full inventory in progress." : "Full declared source scope imported."}</p>
+                      <p className="text-sm text-muted-foreground">{edition.geographicScope}</p>
+                      <p className="text-sm text-muted-foreground">{edition.publishedOn ? `Source date: ${edition.publishedOn}. ` : ""}Status is reported as of the source edition.</p>
+                      {edition.source.url && <a href={edition.source.url} target="_blank" rel="noreferrer" className="text-sm underline underline-offset-2">Open {edition.publisher} source</a>}
+                    </section>
+                  })}
                 </section>
               </TabsContent>
-              <TabsContent forceMount value="revisions" className="min-h-0 min-w-0 overflow-hidden data-[state=inactive]:hidden">
-                <DatasetImport key={mode} dataset={result.dataset} isImported={mode === "real" && (sourceOverride !== null || savedSource.writeBlocked)} onApply={applySource} onReset={restoreSource} />
+              <TabsContent forceMount value="revisions" className="flex min-h-0 min-w-0 flex-col overflow-hidden data-[state=inactive]:hidden">
+                {bundledUpdate.error && <p role="status" className="shrink-0 text-sm">Available source additions could not be prepared: {bundledUpdate.error}</p>}
+                <DatasetImport key={mode} dataset={result.dataset} bundledUpdate={bundledUpdate.dataset} isImported={mode === "real" && (sourceOverride !== null || savedSource.writeBlocked)} onApply={applySource} onReset={restoreSource} />
               </TabsContent>
             </Tabs>
           </DialogContent>

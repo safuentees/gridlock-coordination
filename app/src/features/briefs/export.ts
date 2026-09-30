@@ -1,5 +1,7 @@
 import { estimateImpact } from "@/core"
-import { UTILITIES, type DataMode, type ImpactResult, type Project, type SourceRef } from "@/domain/schema"
+import type { DataMode, ImpactResult, Project, SourceRef } from "@/domain/schema"
+import type { SourceEdition } from "@/domain/coverage"
+import { reportingGroupLabel } from "@/lib/reporting-groups"
 import { dateKind, projectDate, timelineLabels } from "@/features/explorer/format"
 import { investigationSchema, type Investigation, type SavedOpportunity } from "./storage"
 
@@ -14,16 +16,52 @@ function sourceText(source: SourceRef) { return `${source.file}; ${source.locato
 function projectText(project: Project) {
   return [
     `Project: ${project.name}`, `Stable ID: ${project.id}`, `Source ID: ${project.sourceId ?? "Unknown"}`,
-    `Reporting filing: ${UTILITIES[project.utilityId]}`, `Listed sponsor: ${project.sponsor ?? "Unknown"}`,
+    `Reporting filing: ${reportingGroupLabel(project)}`, `Listed sponsor: ${project.sponsor ?? "Unknown"}`,
     `Description: ${project.description || "Unknown"}`, `Status: ${project.status ?? "Unknown"}`,
     `Voltage: ${project.voltageKv.length ? `${project.voltageKv.join(" / ")} kV` : "Unknown"}`,
     `${dateKind(project)}: ${projectDate(project)}`, `Source date label: ${project.date.label}`,
     `Explicit construction window: ${project.buildWindow ? `${project.buildWindow.start} through ${project.buildWindow.end}` : "Unknown"}`,
     `Location: ${project.location ? `${project.location.lat}, ${project.location.lon}; ${project.location.method}; ${project.location.confidence}` : "Unknown"}`,
+    ...inventoryText(project),
     ...project.sources.map((source) => `Project source: ${sourceText(source)}`),
     ...(project.location?.evidence.map((source) => `Location source: ${sourceText(source)}`) ?? []),
     ...project.notes.map((note) => `Source note: ${note}`),
   ].join("\n")
+}
+function inventoryText(project: Project): string[] {
+  const inventory = project.inventory
+  if (!inventory) return []
+  const geometry = inventory.nativeGeometry
+  return [
+    `Source inventory: ${inventory.sourceKey}; edition ${inventory.editionId} (${inventory.editionLabel})`,
+    `Record kind: ${inventory.recordKind}; lifecycle: ${inventory.lifecycle}; as of ${inventory.lifecycleAsOf}`,
+    `Evidenced asset owner: ${inventory.owner ? `${inventory.owner.name} (${inventory.owner.id})` : "Unknown"}`,
+    ...(inventory.owner?.evidence.map(source => `Owner evidence: ${sourceText(source)}`) ?? []),
+    ...(inventory.parentProgramId ? [`Parent program: ${inventory.parentProgramId}`] : []),
+    ...(inventory.aliases.length ? [`Source aliases: ${inventory.aliases.join("; ")}`] : []),
+    ...(inventory.workType ? [`Source work type: ${inventory.workType}`] : []),
+    `Reported construction start: ${inventory.constructionStart ?? "Unknown"}; this does not establish a construction window`,
+    `Displayed location role: ${inventory.centerRole}`,
+    ...inventory.locationAssumptions.map(assumption => `Location assumption: ${assumption}`),
+    ...(geometry ? [
+      `Native geometry: ${geometry.type}; role: ${geometry.role}; longitude/latitude positions: ${JSON.stringify(geometry.coordinates)}`,
+      `Published latitude: ${geometry.rawLatitude ?? "Unknown"}; published longitude: ${geometry.rawLongitude ?? "Unknown"}`,
+      `Source CRS: ${geometry.crs ?? "Unknown"}; stated accuracy: ${geometry.accuracyMeters === null ? "Unknown" : `${geometry.accuracyMeters} meters`}`,
+      ...geometry.evidence.map(source => `Native geometry source: ${sourceText(source)}`),
+    ] : ["Native geometry: Unknown"]),
+  ]
+}
+function sourceEditionText(edition: SourceEdition): string[] {
+  return [
+    `Source edition: ${edition.sourceKey}:${edition.editionId}; ${edition.label}`,
+    `Publisher: ${edition.publisher}; process authority: ${edition.processAuthority ?? "Unknown"}; neither establishes asset ownership`,
+    `Published: ${edition.publishedOn ?? "Unknown"}; retrieved: ${edition.retrievedOn}`,
+    `Geographic scope: ${edition.geographicScope}`,
+    `Inventory scope: ${edition.inventoryScope}; import scope: ${edition.scope}`,
+    `Source import snapshot: ${edition.counts.importedRecords} imported, ${edition.counts.locatedRecords} located, ${edition.counts.excludedRows} excluded, ${edition.counts.pendingRows} pending, ${edition.counts.failedRows} failed of ${edition.counts.sourceRows} source rows`,
+    `Edition source: ${sourceText(edition.source)}`,
+    ...edition.limitations.map(limitation => `Source limitation: ${limitation}`),
+  ]
 }
 const resourceLabels: Record<Investigation["resource"], string> = {
   unspecified: "Unspecified",
@@ -55,7 +93,10 @@ export function createBrief(records: SavedOpportunity[], mode: DataMode, availab
   return {
     format: "gridlock-coordination-brief", version: 1, exportedAt: new Date().toISOString(), mode,
     label: mode === "demo" ? "SYNTHETIC DEMONSTRATION — NOT A UTILITY PLAN" : "Source-backed coordination investigation",
-    caveats: BRIEF_CAVEATS,
+    caveats: records.some(record => record.projects.some(project => project.inventory)) ? [
+      "Legacy candidates compare reporting filings without asserting distinct owners; candidates involving source-qualified inventory require evidenced, distinct asset-owner identities.",
+      ...BRIEF_CAVEATS.slice(1),
+    ] : BRIEF_CAVEATS,
     opportunities: records.map((record) => ({
       ...record,
       hypotheticalImpact: deriveHypotheticalImpact(record),
@@ -71,6 +112,7 @@ export function briefText(brief: ReturnType<typeof createBrief>) {
       `Pair ID: ${record.id}`, `Review: ${record.reviewState}`, `Review notes: ${record.notes || "None recorded"}`,
       ...investigationText(record),
       `Dataset: ${record.dataset.title}; snapshot ${record.dataset.generatedAt}`, `Saved: ${record.savedAt}; last updated ${record.updatedAt}`,
+      ...(record.dataset.sourceEditions?.flatMap(sourceEditionText) ?? []),
       `Current availability: ${record.currentAvailability}`, `Saved rank: ${record.opportunity.rank}`,
       `Center distance: ${record.opportunity.distanceMiles.toFixed(2)} statute miles`,
       `Milestone separation: ${record.opportunity.dateGapDays === null ? "Unknown" : `${record.opportunity.dateGapDays} days`}`,
