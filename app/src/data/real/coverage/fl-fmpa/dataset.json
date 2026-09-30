@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "FMPA 2026–2035 site plan — April 1, 2026 — sample inventory",
+  "generatedAt": "2026-09-30T09:45:00.126073+00:00",
+  "projects": [
+    {
+      "id": "fl-fmpa:2026-04-01:ii-1:beaches:01",
+      "utilityId": "fl-fmpa",
+      "sourceId": "2026-04-01:ii-1:beaches:01",
+      "sponsor": "Beaches Energy Services",
+      "name": "Sampson Substation: Replace breakers 805N & 805NT1",
+      "description": "Sampson Substation: Replace breakers 805N & 805NT1",
+      "status": "Planned and Proposed Transmission Additions",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2026-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Estimated in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "FMPA Municipal Power.pdf",
+          "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 1 (top to bottom)",
+          "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+        }
+      ],
+      "notes": [
+        "Municipal participant: Beaches Energy Services; the City column is reporting context, not a qualified asset owner.",
+        "Planned/proposed addition in the April 1, 2026 report; individual approval and construction status are not supplied. An elapsed forecast does not establish completion.",
+        "Source MVA: -; source Circuit: -. Values are preserved as reported, not project counts or savings.",
+        "Source Voltage: 138 kV; estimated in-service: 12/2026.",
+        "One table work item is retained even when its description names several assets. The source reference is an edition-specific locator, not a native engineering ID."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fmpa",
+        "editionId": "2026-04-01",
+        "editionLabel": "FMPA 2026–2035 site plan — April 1, 2026",
+        "reportingGroupName": "Florida FMPA municipal additions",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04-01",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Planned/proposed municipal addition",
+        "sourceState": null,
+        "sourceLocation": "Source City / participant: Beaches Energy Services",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date",
+            "date": {
+              "value": "2026-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Estimated in-service date"
+            },
+            "evidence": [
+              {
+                "file": "FMPA Municipal Power.pdf",
+                "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 1 (top to bottom)",
+                "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named facilities and City/participant labels are descriptive context. No coordinates, geometry or precision are supplied; no center or route is inferred."
+        ]
+      }
+    },
+    {
+      "id": "fl-fmpa:2026-04-01:ii-1:kua:17",
+      "utilityId": "fl-fmpa",
+      "sourceId": "2026-04-01:ii-1:kua:17",
+      "sponsor": "Kissimmee Utility Authority",
+      "name": "PRC027 Relay Coordination Study – BES only",
+      "description": "PRC027 Relay Coordination Study – BES only",
+      "status": "Planned and Proposed Transmission Additions",
+      "voltageKv": [
+        230.0
+      ],
+      "date": {
+        "value": "2026-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Estimated in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "FMPA Municipal Power.pdf",
+          "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17 (top to bottom)",
+          "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+        }
+      ],
+      "notes": [
+        "Municipal participant: Kissimmee Utility Authority; the City column is reporting context, not a qualified asset owner.",
+        "Planned/proposed addition in the April 1, 2026 report; individual approval and construction status are not supplied. An elapsed forecast does not establish completion.",
+        "Source MVA: -; source Circuit: -. Values are preserved as reported, not project counts or savings.",
+        "Source Voltage: 230KV; estimated in-service: 12/2026.",
+        "One table work item is retained even when its description names several assets. The source reference is an edition-specific locator, not a native engineering ID.",
+        "Relay coordination study only. Retained as planning context, outside transmission-qualified comparisons."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fmpa",
+        "editionId": "2026-04-01",
+        "editionLabel": "FMPA 2026–2035 site plan — April 1, 2026",
+        "reportingGroupName": "Florida FMPA municipal additions",
+        "recordKind": "planning-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04-01",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Planned/proposed municipal addition",
+        "sourceState": null,
+        "sourceLocation": "Source City / participant: Kissimmee Utility Authority",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date",
+            "date": {
+              "value": "2026-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Estimated in-service date"
+            },
+            "evidence": [
+              {
+                "file": "FMPA Municipal Power.pdf",
+                "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17 (top to bottom)",
+                "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named facilities and City/participant labels are descriptive context. No coordinates, geometry or precision are supplied; no center or route is inferred."
+        ]
+      }
+    },
+    {
+      "id": "fl-fmpa:2026-04-01:ii-1:fpua:08",
+      "utilityId": "fl-fmpa",
+      "sourceId": "2026-04-01:ii-1:fpua:08",
+      "sponsor": "Fort Pierce Utility Authority",
+      "name": "HD King Substation: Replace breaker K69T2",
+      "description": "HD King Substation: Replace breaker K69T2",
+      "status": "Planned and Proposed Transmission Additions",
+      "voltageKv": [
+        69.0
+      ],
+      "date": {
+        "value": "2026-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Estimated in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "FMPA Municipal Power.pdf",
+          "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 8 (top to bottom)",
+          "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+        }
+      ],
+      "notes": [
+        "Municipal participant: Fort Pierce Utility Authority; the City column is reporting context, not a qualified asset owner.",
+        "Planned/proposed addition in the April 1, 2026 report; individual approval and construction status are not supplied. An elapsed forecast does not establish completion.",
+        "Source MVA: -; source Circuit: -. Values are preserved as reported, not project counts or savings.",
+        "Source Voltage: 69 kV; estimated in-service: 05/2026.",
+        "One table work item is retained even when its description names several assets. The source reference is an edition-specific locator, not a native engineering ID."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fmpa",
+        "editionId": "2026-04-01",
+        "editionLabel": "FMPA 2026–2035 site plan — April 1, 2026",
+        "reportingGroupName": "Florida FMPA municipal additions",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04-01",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Planned/proposed municipal addition",
+        "sourceState": null,
+        "sourceLocation": "Source City / participant: Fort Pierce Utility Authority",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date",
+            "date": {
+              "value": "2026-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Estimated in-service date"
+            },
+            "evidence": [
+              {
+                "file": "FMPA Municipal Power.pdf",
+                "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 8 (top to bottom)",
+                "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named facilities and City/participant labels are descriptive context. No coordinates, geometry or precision are supplied; no center or route is inferred."
+        ]
+      }
+    },
+    {
+      "id": "fl-fmpa:2026-04-01:ii-1:fpua:18",
+      "utilityId": "fl-fmpa",
+      "sourceId": "2026-04-01:ii-1:fpua:18",
+      "sponsor": "Fort Pierce Utility Authority",
+      "name": "Garden City Substation: Distribution Transformer Addition",
+      "description": "Garden City Substation: Distribution Transformer Addition",
+      "status": "Planned and Proposed Transmission Additions",
+      "voltageKv": [
+        69.0
+      ],
+      "date": {
+        "value": "2030-06",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Estimated in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "FMPA Municipal Power.pdf",
+          "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18 (top to bottom)",
+          "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+        }
+      ],
+      "notes": [
+        "Municipal participant: Fort Pierce Utility Authority; the City column is reporting context, not a qualified asset owner.",
+        "Planned/proposed addition in the April 1, 2026 report; individual approval and construction status are not supplied. An elapsed forecast does not establish completion.",
+        "Source MVA: 25; source Circuit: -. Values are preserved as reported, not project counts or savings.",
+        "Source Voltage: 69 kV; estimated in-service: 06/2030.",
+        "One table work item is retained even when its description names several assets. The source reference is an edition-specific locator, not a native engineering ID.",
+        "Description explicitly states distribution equipment/substation. Retained as planning context, outside transmission-qualified comparisons."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fmpa",
+        "editionId": "2026-04-01",
+        "editionLabel": "FMPA 2026–2035 site plan — April 1, 2026",
+        "reportingGroupName": "Florida FMPA municipal additions",
+        "recordKind": "planning-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04-01",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Planned/proposed municipal addition",
+        "sourceState": null,
+        "sourceLocation": "Source City / participant: Fort Pierce Utility Authority",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date",
+            "date": {
+              "value": "2030-06",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Estimated in-service date"
+            },
+            "evidence": [
+              {
+                "file": "FMPA Municipal Power.pdf",
+                "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18 (top to bottom)",
+                "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named facilities and City/participant labels are descriptive context. No coordinates, geometry or precision are supplied; no center or route is inferred."
+        ]
+      }
+    },
+    {
+      "id": "fl-fmpa:2026-04-01:ii-1:keys:01",
+      "utilityId": "fl-fmpa",
+      "sourceId": "2026-04-01:ii-1:keys:01",
+      "sponsor": "Keys Energy Services",
+      "name": "US1 Substation: Repalce Auto Transformer AT1",
+      "description": "US1 Substation: Repalce Auto Transformer AT1",
+      "status": "Planned and Proposed Transmission Additions",
+      "voltageKv": [
+        69.0,
+        138.0
+      ],
+      "date": {
+        "value": "2028-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Estimated in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "FMPA Municipal Power.pdf",
+          "locator": "PDF p.67 / printed II-1; Table II-1; Keys Energy Services; child entry 1 (top to bottom)",
+          "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+        }
+      ],
+      "notes": [
+        "Municipal participant: Keys Energy Services; the City column is reporting context, not a qualified asset owner.",
+        "Planned/proposed addition in the April 1, 2026 report; individual approval and construction status are not supplied. An elapsed forecast does not establish completion.",
+        "Source MVA: 125; source Circuit: 1. Values are preserved as reported, not project counts or savings.",
+        "Source Voltage: 138/69 kV; estimated in-service: 12/2028.",
+        "One table work item is retained even when its description names several assets. The source reference is an edition-specific locator, not a native engineering ID."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fmpa",
+        "editionId": "2026-04-01",
+        "editionLabel": "FMPA 2026–2035 site plan — April 1, 2026",
+        "reportingGroupName": "Florida FMPA municipal additions",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04-01",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Planned/proposed municipal addition",
+        "sourceState": null,
+        "sourceLocation": "Source City / participant: Keys Energy Services",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date",
+            "date": {
+              "value": "2028-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Estimated in-service date"
+            },
+            "evidence": [
+              {
+                "file": "FMPA Municipal Power.pdf",
+                "locator": "PDF p.67 / printed II-1; Table II-1; Keys Energy Services; child entry 1 (top to bottom)",
+                "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named facilities and City/participant labels are descriptive context. No coordinates, geometry or precision are supplied; no center or route is inferred."
+        ]
+      }
+    },
+    {
+      "id": "fl-fmpa:2026-04-01:ii-1:ocala:06",
+      "utilityId": "fl-fmpa",
+      "sourceId": "2026-04-01:ii-1:ocala:06",
+      "sponsor": "Ocala Electric Utility",
+      "name": "Ergle Substation: Replace Auto-Transformer",
+      "description": "Ergle Substation: Replace Auto-Transformer",
+      "status": "Planned and Proposed Transmission Additions",
+      "voltageKv": [
+        69.0,
+        230.0
+      ],
+      "date": {
+        "value": "2031-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Estimated in-service date"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "FMPA Municipal Power.pdf",
+          "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 6 (top to bottom)",
+          "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+        }
+      ],
+      "notes": [
+        "Municipal participant: Ocala Electric Utility; the City column is reporting context, not a qualified asset owner.",
+        "Planned/proposed addition in the April 1, 2026 report; individual approval and construction status are not supplied. An elapsed forecast does not establish completion.",
+        "Source MVA: (blank); source Circuit: (blank). Values are preserved as reported, not project counts or savings.",
+        "Source Voltage: 230/69 kV; estimated in-service: 12/2031.",
+        "One table work item is retained even when its description names several assets. The source reference is an edition-specific locator, not a native engineering ID.",
+        "MVA and Circuit cells are genuinely blank; preceding-row values are not substituted."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fmpa",
+        "editionId": "2026-04-01",
+        "editionLabel": "FMPA 2026–2035 site plan — April 1, 2026",
+        "reportingGroupName": "Florida FMPA municipal additions",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04-01",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Planned/proposed municipal addition",
+        "sourceState": null,
+        "sourceLocation": "Source City / participant: Ocala Electric Utility",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date",
+            "date": {
+              "value": "2031-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Estimated in-service date"
+            },
+            "evidence": [
+              {
+                "file": "FMPA Municipal Power.pdf",
+                "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 6 (top to bottom)",
+                "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named facilities and City/participant labels are descriptive context. No coordinates, geometry or precision are supplied; no center or route is inferred."
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "fl-fmpa",
+      "editionId": "2026-04-01",
+      "label": "FMPA 2026–2035 site plan — April 1, 2026",
+      "reportingGroupId": "fl-fmpa",
+      "reportingGroupName": "Florida FMPA municipal additions",
+      "publisher": "Florida Municipal Power Agency",
+      "processAuthority": "Florida Public Service Commission",
+      "publishedOn": "2026-04-01",
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "FMPA Municipal Power.pdf",
+        "locator": "PDF pp.1–2 report date; PDF p.67 / printed II-1, Table II-1, all five City groups",
+        "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+      },
+      "sha256": "dce5c6ec57b598c3bf98013881f64751914ef960253f839fa4e6b341f348a4af",
+      "geographicScope": "Partial Florida municipal ARP participant scope: five named reporting groups, not statewide coverage.",
+      "inventoryScope": "Every aligned work-item line in Table II-1 planned/proposed transmission additions, with explicit distribution/study context retained separately. Five grouped City cells are not extra projects.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 59,
+        "importedRecords": 6,
+        "excludedRows": 0,
+        "failedRows": 0,
+        "pendingRows": 53,
+        "locatedRecords": 0
+      },
+      "exclusions": [],
+      "limitations": [
+        "Actual public TCRPC copy is cited. The PSC endpoint was unavailable; byte equality with that copy is not asserted.",
+        "The report supplies a 69 kV-and-above table boundary. Blank voltage is not an exclusion; no additional threshold is imposed.",
+        "All qualified owners, coordinates, geometry and construction windows remain unknown. Municipal participant and publisher are not substituted for asset owner.",
+        "Forecasts preserve month precision. Planned/proposed is a combined table heading, not an individual approval or construction claim; elapsed dates do not establish completion.",
+        "Source references identify edition-specific table/group/child positions, not native engineering IDs or cross-edition continuity. Compound descriptions are not split further.",
+        "Ten exact distribution/study work items retain planning context. Potentially mixed KUA substation work retains explicit scope uncertainty.",
+        "No cross-source identity evidence supports deduplication; totals count source work items, not distinct national engineering projects.",
+        "Original binary remains outside Git; public availability is not a redistribution-license claim."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 0,
+    "failed": 0,
+    "notes": [
+      "Five participant groups; 59 work items; 53 pending.",
+      "All source forecasts are months. No coordinates, owners or construction windows inferred."
+    ]
+  }
+}
