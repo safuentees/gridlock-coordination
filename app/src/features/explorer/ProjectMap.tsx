@@ -1,13 +1,12 @@
-import { useEffect, useId, useMemo, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { CircleMarker, MapContainer, Polyline, TileLayer, useMap } from "react-leaflet"
 import { DomEvent } from "leaflet"
-import { MinusIcon, PlusIcon } from "lucide-react"
+import { MinusIcon, PlusIcon, ScanIcon } from "lucide-react"
 import "leaflet/dist/leaflet.css"
 import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
 import { IconButton } from "@/components/ui/icon-button"
-import { Label } from "@/components/ui/label"
 import type { Opportunity, Project } from "@/domain/schema"
+import { MapLegend } from "./MapLegend"
 import { getMapConnections, getMapLocations } from "./map-view"
 
 export interface MapViewportInsets { top: number; right: number; bottom: number; left: number }
@@ -39,7 +38,6 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
 }) {
   const map = useMap()
   const controls = useRef<HTMLDivElement>(null)
-  const connectionsId = useId()
   const [size, setSize] = useState({ width: 0, height: 0 })
   const lastFit = useRef<{ locationsKey: string; focusKey: string; fitRevision: number; layoutKey: string } | null>(null)
   const locations = useMemo(() => getMapLocations(projects), [projects])
@@ -108,29 +106,18 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
     lastFit.current = { locationsKey, focusKey, fitRevision: fitRequest.revision, layoutKey }
   }, [map, locations, selectedLocations, locationsKey, focusKey, fitRequest, visible, size, insets, layoutKey])
 
-  return <div ref={controls} className="pointer-events-none absolute z-[1000] flex flex-wrap items-start gap-2" style={{ top: insets.top + 12, left: insets.left + 12, right: insets.right + 12 }}>
-    <div className="pointer-events-auto flex flex-wrap items-center gap-1 rounded-lg border bg-background p-1">
-      <IconButton variant="ghost" label="Zoom in" onClick={() => map.zoomIn()}><PlusIcon aria-hidden="true" /></IconButton>
-      <IconButton variant="ghost" label="Zoom out" onClick={() => map.zoomOut()}><MinusIcon aria-hidden="true" /></IconButton>
-      <Button type="button" variant="ghost" size="sm" disabled={!locations.length} onClick={() => onFit("projects")}>Fit projects</Button>
-      <Button type="button" variant="ghost" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>
-    </div>
-    <details className="pointer-events-auto max-w-full rounded-lg border bg-background text-sm">
-      <summary className="cursor-pointer px-3 py-2 font-medium">Map key</summary>
-      <div className="max-w-72 space-y-2 overflow-auto px-3 pb-3 text-xs" style={{ maxHeight: Math.max(24, Math.min(192, size.height - insets.top - insets.bottom - 64)) }}>
-        <p><span aria-hidden="true" className="mr-2 inline-block size-2 rounded-full bg-blue-600" />Dominion filing</p>
-        <p><span aria-hidden="true" className="mr-2 inline-block size-2 rounded-full bg-amber-700" />Georgia filing</p>
-        <p>Outlined points have candidates. Larger points are selected.</p>
-        <div className="flex items-center gap-2">
-          <Checkbox id={connectionsId} checked={showConnections} onCheckedChange={(checked) => onShowConnections(checked === true)} aria-describedby={`${connectionsId}-hint`} />
-          <Label htmlFor={connectionsId}>Candidate connections</Label>
-        </div>
-        <p id={`${connectionsId}-hint`}>Controls background connections. The selected candidate's connection stays visible when both locations are available.</p>
-        <p>Dashed lines connect centers; they do not show routes. {selectedPair ? connectionCount ? "Selected candidate shown." : "Selected connection unavailable without both locations." : `${connectionCount} connections shown; see all in Candidates.`}</p>
-        <p>Select projects or candidates in the list with the keyboard. On the map, arrow keys pan; + and − zoom.</p>
+  // Controls belong to the viewport; changing occlusion only affects geographic fitting.
+  return <div ref={controls} className="pointer-events-none absolute right-3 top-3 z-[1000] flex max-w-[calc(100%-1.5rem)] flex-col items-end gap-2 font-sans">
+    <div className="pointer-events-auto flex items-center gap-2">
+      <div className="flex items-center gap-1 rounded-lg border bg-background p-1" role="group" aria-label="Map zoom">
+        <IconButton variant="ghost" label="Zoom in" onClick={() => map.zoomIn()}><PlusIcon aria-hidden="true" /></IconButton>
+        <IconButton variant="ghost" label="Zoom out" onClick={() => map.zoomOut()}><MinusIcon aria-hidden="true" /></IconButton>
       </div>
-    </details>
-    {tileError && <p role="status" className="pointer-events-auto basis-full rounded-lg border bg-background p-2 text-xs">Background map unavailable. Project points and lists still work.</p>}
+      <IconButton variant="outline" label="Fit projects" disabled={!locations.length} onClick={() => onFit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
+    </div>
+    <div className="pointer-events-auto">{visible && <MapLegend boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
+    <Button className="pointer-events-auto" type="button" variant="outline" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>
+    {tileError && <p role="status" className="pointer-events-auto max-w-72 rounded-lg border bg-background p-2 text-xs">Background map unavailable. Project points and lists still work.</p>}
   </div>
 }
 

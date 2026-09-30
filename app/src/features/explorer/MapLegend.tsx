@@ -62,9 +62,11 @@ export function MapLegend({ boundary, connectionCount, selectedPair, showConnect
 }
 
 function MapSymbol({ kind }: { kind: "dominion" | "georgia" | "candidate" | "selected" | "connection" }) {
-  const fill = kind === "dominion" ? "#2563eb" : kind === "georgia" ? "#b45309" : "#a3a3a3"
+  const fillId = useId()
+  const fill = kind === "dominion" ? "#2563eb" : kind === "georgia" ? "#b45309" : `url(#${fillId})`
   const outlined = kind === "candidate" || kind === "selected"
   return <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" className="size-6 shrink-0">
+    {outlined && <defs><linearGradient id={fillId}><stop offset="50%" stopColor="#2563eb" /><stop offset="50%" stopColor="#b45309" /></linearGradient></defs>}
     {kind === "connection"
       ? <line x1="1" y1="12" x2="23" y2="12" stroke="#525252" strokeWidth="1.5" strokeDasharray="5 5" />
       : <circle cx="12" cy="12" r={kind === "selected" ? 8 : 5} fill={fill} fillOpacity="0.85" stroke={outlined ? "#171717" : fill} strokeWidth={kind === "selected" ? 3 : kind === "candidate" ? 2 : 1} />}
