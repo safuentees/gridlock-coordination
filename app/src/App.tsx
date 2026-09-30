@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react"
+import { DatabaseIcon, ListChecksIcon, MapIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
@@ -33,10 +34,10 @@ export function App() {
   }, [mode, sourceOverride])
   return <main className="flex h-dvh min-h-0 w-full min-w-0 flex-col overflow-hidden">
     <header className="flex max-h-[25dvh] min-h-0 min-w-0 shrink-0 flex-wrap items-center justify-between gap-4 overflow-auto border-b p-4">
-      <div className="flex min-w-0 flex-wrap items-center gap-3"><h1 className="text-2xl font-semibold">Gridlock</h1><Badge variant={mode === "demo" ? "secondary" : "outline"}>{mode === "demo" ? "Synthetic demo" : sourceOverride ? "Revised source" : "Source data"}</Badge><nav className="flex gap-2" aria-label="Workspaces"><Button variant={workspace === "explore" ? "default" : "ghost"} aria-current={workspace === "explore" ? "page" : undefined} onClick={() => setWorkspace("explore")}>Explore</Button><Button variant={workspace === "readiness" ? "default" : "ghost"} aria-current={workspace === "readiness" ? "page" : undefined} onClick={() => setWorkspace("readiness")}>Data readiness</Button></nav></div>
+      <div className="flex min-w-0 flex-wrap items-center gap-3"><h1 className="text-2xl font-semibold">Gridlock</h1><Badge variant={mode === "demo" ? "secondary" : "outline"}>{mode === "demo" ? "Synthetic demo" : sourceOverride ? "Revised source" : "Source data"}</Badge><nav className="flex gap-2" aria-label="Workspaces"><Button variant={workspace === "explore" ? "default" : "ghost"} aria-current={workspace === "explore" ? "page" : undefined} onClick={() => setWorkspace("explore")}><MapIcon aria-hidden="true" data-icon="inline-start" />Explore</Button><Button variant={workspace === "readiness" ? "default" : "ghost"} aria-current={workspace === "readiness" ? "page" : undefined} onClick={() => setWorkspace("readiness")}><ListChecksIcon aria-hidden="true" data-icon="inline-start" />Data readiness</Button></nav></div>
       <nav aria-label="Dataset controls" className="flex min-w-0 flex-wrap items-center gap-2">
         {result.dataset && <Dialog>
-          <DialogTrigger asChild><Button variant="outline">Dataset</Button></DialogTrigger>
+          <DialogTrigger asChild><Button variant="outline"><DatabaseIcon aria-hidden="true" data-icon="inline-start" />Dataset</Button></DialogTrigger>
           <DialogContent className="flex h-[85dvh] max-h-[calc(100dvh-2rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-3xl">
             <DialogHeader className="min-w-0 shrink-0 pr-8"><DialogTitle>Dataset</DialogTitle><DialogDescription className="break-words">{result.dataset.title}</DialogDescription></DialogHeader>
             <Tabs defaultValue="coverage" className="min-h-0 min-w-0 flex-1">

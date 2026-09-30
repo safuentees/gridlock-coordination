@@ -1,4 +1,5 @@
 import { useId, useState, type FormEvent } from "react"
+import { SlidersHorizontalIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -36,7 +37,7 @@ export function ScenarioControls({ options, baseline, analysis, onApply }: {
     onApply({ ...DEFAULT_OPTIONS })
   }
   return <Dialog open={open} onOpenChange={setOpen}>
-    <DialogTrigger asChild><Button variant="outline">Edit scenario</Button></DialogTrigger>
+    <DialogTrigger asChild><Button variant="outline"><SlidersHorizontalIcon aria-hidden="true" data-icon="inline-start" />Edit scenario</Button></DialogTrigger>
     <DialogContent className="flex max-h-[calc(100dvh-2rem)] min-h-0 flex-col overflow-hidden sm:max-w-2xl">
       <DialogHeader className="shrink-0 pr-8"><DialogTitle>Coordination scenario</DialogTitle><DialogDescription>Change eligibility and compare with the default 25-mile scenario.</DialogDescription></DialogHeader>
       <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain" tabIndex={0} role="region" aria-label="Scenario settings">

@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import { DownloadIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -32,7 +33,7 @@ export function DatasetImport({ dataset, isImported, onApply, onReset }: Props) 
       <p className="text-sm text-muted-foreground">Preview a normalized source dataset before using it. Applied revisions are saved in this browser when storage is available. Download a copy for backup or another device; Restore supplied snapshot clears the saved revision.</p>
     </div>
     <div className="flex flex-wrap gap-2">
-      <Button variant="outline" onClick={() => downloadDataset(dataset)}>Download current {dataset.mode === "demo" ? "demo" : "source"} dataset</Button>
+      <Button variant="outline" onClick={() => downloadDataset(dataset)}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download current {dataset.mode === "demo" ? "demo" : "source"} dataset</Button>
       {isImported && <Button variant="outline" onClick={() => { request.current += 1; setBusy(false); setCandidate(null); setApplied(false); setError(null); onReset() }}>Restore supplied snapshot</Button>}
     </div>
     {dataset.mode === "demo" ? <p className="text-sm">Switch to source data to import a revision.</p> : <>
