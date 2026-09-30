@@ -1,10 +1,10 @@
 # US planned-transmission coverage
 
-US-wide discovery is selected scope (F25–F27). `us-register.json` is the canonical planning register, maintained by the coordinator after each source decision/import/integration. This initial register is documentation, not a shipped application coverage dashboard. F26 connects the runtime manifest to Readiness/Outcomes using existing composition and internal scrolling.
+US-wide discovery is selected scope (F25–F27). `us-register.json` is the canonical planning register, maintained by the coordinator after each source decision/import/integration. The register is planning documentation. Runtime source manifests and active records drive the shared Source coverage dialog in Home, Outcomes and Data readiness; known access/scope gaps remain explicit. The dialog uses existing composition and internal scrolling.
 
 ## Shared contract before adapters
 
-All producers emit the same versioned source/edition manifest and normalized project envelope once F26-C1 is committed. Required meanings:
+All producers emit the same versioned source/edition manifest and normalized project envelope under the integrated F26-C1 agreement. Required meanings:
 - Source: stable key, publisher, reporting group, public URL/locator, declared geography and inclusion/exclusion rules. Source footprint is not the same as complete coverage of a state or ISO territory.
 - Edition: stable edition ID and publication/as-of date separate from retrieval/generation time; explicit full/sample scope and processed/imported/excluded/failed counts. Preserve original artifacts according to repository rules.
 - Identity: source key plus native project ID, independent of edition. Keep legacy IDs unchanged and cite cross-source identity links. Do not conflate publishers and owners or silently deduplicate similar names.
@@ -12,7 +12,7 @@ All producers emit the same versioned source/edition manifest and normalized pro
 - Geography: source point/endpoints/route and CRS when supplied; normalized point plus derivation, role and precision/confidence. Unknown stays null. General pins/permit areas are not surveyed centers. Geometry unsuitable for precise radius matching needs an explicit canonical eligibility policy and clear user explanation.
 - Envelope: source manifest plus proposed additions/changes/unresolved records, expected baseline/edition and exact evidence. Shared import preview/apply preserves local revisions, drafts, reviews and real/demo boundaries. Never silently remove a project merely because a new edition omitted it.
 
-These are selected semantic requirements, not a claim that runtime schema v1 already supports regional sources. F26-C1 commits exact validation/types, migration and consumer signatures before parallel implementation. The current two-value utilityId/filing comparison cannot be used as a fake owner model. The canonical core remains authoritative; map props stay compatible via the agreed shared adapter. Keep map-only synthetic fixtures isolated and excluded from source counts/exports.
+The integrated Dataset v2 contract accepts unchanged v1 records and provides source-qualified reporting groups, manifests and inventory metadata. Reporting-group identity is distinct from evidenced equipment ownership. The canonical core remains authoritative; map props stay compatible via the agreed shared adapter. Keep map-only synthetic fixtures isolated and excluded from source counts/exports.
 
 ## Register rules
 
