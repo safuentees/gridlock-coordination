@@ -1,0 +1,294 @@
+{
+  "purpose": "Qualification proposal only; no accepted source key, production records or importer. All sample fields exclude the contact column and contact sheet.",
+  "source": {
+    "publisher": "ERCOT",
+    "indexUrl": "https://www.ercot.com/gridinfo/sysplan",
+    "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+    "filename": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+    "editionAsOf": "2026-07-13",
+    "publishedOn": "2026-07-17",
+    "retrievedOn": "2026-09-30",
+    "bytes": 560265,
+    "sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+    "nativeGeometryAvailable": false
+  },
+  "qualificationStartedAt": "2026-09-30T08:52:53Z",
+  "packagedAt": "2026-09-30T09:01:21.750040+00:00",
+  "enumeration": {
+    "tpitRows": 2127,
+    "tpitDistinctIds": 2122,
+    "futureRows": 1429,
+    "plannedRows": 358,
+    "completedRows": 262,
+    "cancelledRows": 78,
+    "exactNonContactDuplicateRows": 5,
+    "futurePlannedInServiceRows": 14,
+    "nonterminalDistinctTpitRows": 1768,
+    "rtpRows": 89,
+    "proposedPhysicalTransmission": 795,
+    "proposedDistributionContext": 18,
+    "proposedUnresolvedContext": 953,
+    "proposedModelOnlyExclusions": 2,
+    "proposedRetainedRecords": 1766,
+    "proposedWorkbookInventoryRows": 2216,
+    "proposedExcludedRowsIncludingRtpContext": 450,
+    "nativeLocatedRecords": 0
+  },
+  "ruleStatus": "Coordinator must accept the conservative equipment/context rule and terminal-sheet precedence before production; mixed model/physical TPIT scope is a real mapping limitation.",
+  "samples": [
+    {
+      "nativeId": "105622A",
+      "locator": "FutureTPIT071326NoCost!A8:AG8",
+      "duplicateLocator": null,
+      "sourceTitle": "Adds type A load records at King",
+      "summary": "Addition of load-model records at a named bus; no evidenced transmission construction.",
+      "proposedDisposition": "exclude-model-only",
+      "rawStatus": "Planned",
+      "rawOwner": "CNP",
+      "ownerEvidence": "FutureTPIT071326NoCost!I8",
+      "ownerIdentityScope": "source",
+      "terminalFrom": "King",
+      "terminalTo": null,
+      "countyFrom": "Harris",
+      "countyTo": null,
+      "voltageKv": 138,
+      "quantities": {
+        "newCircuitMiles": 0,
+        "rebuiltUpgradedCircuitMiles": 0,
+        "autotransformerMva": 0,
+        "reactiveMvarRaw": " "
+      },
+      "relatedIdentifiers": {
+        "phase": "109935",
+        "modProject": "105622",
+        "rtpProject": null
+      },
+      "milestones": [
+        {
+          "field": "L",
+          "label": "Projected in-service month/year",
+          "rawExcelDate": "2027-01-01T00:01:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2027-01",
+          "precision": "month",
+          "evidence": "FutureTPIT071326NoCost!L8"
+        }
+      ],
+      "nativeGeometry": null,
+      "location": null,
+      "buildWindow": null
+    },
+    {
+      "nativeId": "110733",
+      "locator": "FutureTPIT071326NoCost!A363:AG363",
+      "duplicateLocator": "FutureTPIT071326NoCost!A364:AG364",
+      "sourceTitle": "Related_WylieSW_LCP_Upgrades_Walnut_Newman_Line",
+      "summary": "Transmission-line upgrade with 0.56 rebuilt/upgraded circuit miles; repeated non-contact row coalesces.",
+      "proposedDisposition": "physical-transmission",
+      "rawStatus": "Planned",
+      "rawOwner": "GPL",
+      "ownerEvidence": "FutureTPIT071326NoCost!I363",
+      "ownerIdentityScope": "source",
+      "terminalFrom": "Walnut",
+      "terminalTo": "Newman",
+      "countyFrom": "Dallas",
+      "countyTo": "Dallas",
+      "voltageKv": 138,
+      "quantities": {
+        "newCircuitMiles": 0,
+        "rebuiltUpgradedCircuitMiles": 0.56,
+        "autotransformerMva": 0,
+        "reactiveMvarRaw": " "
+      },
+      "relatedIdentifiers": {
+        "phase": "110734",
+        "modProject": "110733",
+        "rtpProject": null
+      },
+      "milestones": [
+        {
+          "field": "L",
+          "label": "Projected in-service month/year",
+          "rawExcelDate": "2027-12-01T00:00:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2027-12",
+          "precision": "month",
+          "evidence": "FutureTPIT071326NoCost!L363"
+        }
+      ],
+      "nativeGeometry": null,
+      "location": null,
+      "buildWindow": null
+    },
+    {
+      "nativeId": "90446",
+      "locator": "PlannedTPIT071326NoCost!A6:AG6",
+      "duplicateLocator": null,
+      "sourceTitle": "Avila BESS 138kV Gen Tie.",
+      "summary": "A 138 kV generator-tie line, distinct from the BESS generation facility; old forecast does not change reported construction status.",
+      "proposedDisposition": "physical-transmission",
+      "rawStatus": "Under Construction",
+      "rawOwner": "TNMP",
+      "ownerEvidence": "PlannedTPIT071326NoCost!I6",
+      "ownerIdentityScope": "source",
+      "terminalFrom": null,
+      "terminalTo": null,
+      "countyFrom": "Pecos",
+      "countyTo": "Pecos",
+      "voltageKv": 138,
+      "quantities": {
+        "newCircuitMiles": 0.22,
+        "rebuiltUpgradedCircuitMiles": 0,
+        "autotransformerMva": 0,
+        "reactiveMvarRaw": " "
+      },
+      "relatedIdentifiers": {
+        "phase": "90447",
+        "modProject": "90446",
+        "rtpProject": null
+      },
+      "milestones": [
+        {
+          "field": "L",
+          "label": "Projected in-service month/year",
+          "rawExcelDate": "2025-05-01T00:00:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2025-05",
+          "precision": "month",
+          "evidence": "PlannedTPIT071326NoCost!L6"
+        }
+      ],
+      "nativeGeometry": null,
+      "location": null,
+      "buildWindow": null
+    },
+    {
+      "nativeId": "77074",
+      "locator": "CompletedTPIT071326NoCost!A5:AG5",
+      "duplicateLocator": null,
+      "sourceTitle": "Buda to Turnersville Storm Hardening",
+      "summary": "Completed-table line rebuild despite stale Planned text; keep both source assertions in the ledger.",
+      "proposedDisposition": "exclude-completed-tab",
+      "rawStatus": "Planned",
+      "rawOwner": "PEC",
+      "ownerEvidence": "CompletedTPIT071326NoCost!I5",
+      "ownerIdentityScope": "source",
+      "terminalFrom": "Buda",
+      "terminalTo": "Turnersville",
+      "countyFrom": "Hays",
+      "countyTo": "Hays",
+      "voltageKv": 138,
+      "quantities": {
+        "newCircuitMiles": 0,
+        "rebuiltUpgradedCircuitMiles": 3.8,
+        "autotransformerMva": 0,
+        "reactiveMvarRaw": " "
+      },
+      "relatedIdentifiers": {
+        "phase": "77075",
+        "modProject": "77074",
+        "rtpProject": null
+      },
+      "milestones": [
+        {
+          "field": "L",
+          "label": "Projected in-service month/year",
+          "rawExcelDate": "2024-12-31T00:00:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2024-12",
+          "precision": "month",
+          "evidence": "CompletedTPIT071326NoCost!L5"
+        },
+        {
+          "field": "M",
+          "label": "Actual in-service month/year",
+          "rawExcelDate": "2025-01-09T00:00:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2025-01",
+          "precision": "month",
+          "evidence": "CompletedTPIT071326NoCost!M5"
+        }
+      ],
+      "nativeGeometry": null,
+      "location": null,
+      "buildWindow": null
+    },
+    {
+      "nativeId": "55603",
+      "locator": "CancelledTPIT071326NoCost!A3:AG3",
+      "duplicateLocator": null,
+      "sourceTitle": "Big Foot to Pearsall: Rebuild 69 kV line",
+      "summary": "Cancelled-table line rebuild despite stale Planned text; actual-date entry is not proof of energization.",
+      "proposedDisposition": "exclude-cancelled-tab",
+      "rawStatus": "Planned",
+      "rawOwner": "AEP TCC",
+      "ownerEvidence": "CancelledTPIT071326NoCost!I3",
+      "ownerIdentityScope": "source",
+      "terminalFrom": "Big Foot",
+      "terminalTo": "Pearsall",
+      "countyFrom": "Frio",
+      "countyTo": "Frio",
+      "voltageKv": 69,
+      "quantities": {
+        "newCircuitMiles": 0,
+        "rebuiltUpgradedCircuitMiles": 14.79,
+        "autotransformerMva": 0,
+        "reactiveMvarRaw": " "
+      },
+      "relatedIdentifiers": {
+        "phase": "65571",
+        "modProject": "55603",
+        "rtpProject": null
+      },
+      "milestones": [
+        {
+          "field": "L",
+          "label": "Projected in-service month/year",
+          "rawExcelDate": "2022-11-30T00:00:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2022-11",
+          "precision": "month",
+          "evidence": "CancelledTPIT071326NoCost!L3"
+        },
+        {
+          "field": "M",
+          "label": "Actual in-service month/year",
+          "rawExcelDate": "2025-05-12T00:00:00",
+          "numberFormat": "[$-409]mmm\\-yy;@",
+          "value": "2025-05",
+          "precision": "month",
+          "evidence": "CancelledTPIT071326NoCost!M3"
+        }
+      ],
+      "nativeGeometry": null,
+      "location": null,
+      "buildWindow": null
+    },
+    {
+      "nativeId": "2022-NC2",
+      "locator": "RTPProjects!A8:H8",
+      "sourceTitle": "Brand (827) to Ben Davis (968) 138-kV Line Upgrade",
+      "summary": "Regional-plan row explicitly references TPIT 67170, absent from this edition; it is not an additional confirmed active project.",
+      "proposedDisposition": "supplemental-rtp-context-only",
+      "rawOwner": "GPL",
+      "ownerEvidence": "RTPProjects!C8",
+      "rawStatus": null,
+      "associatedTpitIds": [
+        "67170"
+      ],
+      "matchedTpitIds": [],
+      "milestones": [
+        {
+          "field": "D",
+          "label": "ERCOT proposed in-service year",
+          "value": "2024",
+          "precision": "year",
+          "evidence": "RTPProjects!D8"
+        }
+      ],
+      "nativeGeometry": null,
+      "location": null,
+      "buildWindow": null
+    }
+  ]
+}
