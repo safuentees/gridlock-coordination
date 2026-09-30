@@ -1,0 +1,1059 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "status": "awaiting-coordinator-acceptance",
+  "sourceReview": {
+    "startedAt": "2026-09-30T12:02:46Z",
+    "endedAt": "2026-09-30T12:11:55Z",
+    "seconds": 549,
+    "method": "Public primary-source search, ordinary HTTP acquisition and read-only PDF text. No browser, images/maps, geocoding, restricted material, producer or application checks."
+  },
+  "baseline": {
+    "gitCommit": "22fae130890e2a0fc067af2e1a5356e22ee4bf9d",
+    "datasetPath": "app/src/data/real/coverage/ca-sce-tpr/dataset.json",
+    "datasetFileSha256": "31e46c400097ae63d2447f83165f0fca88a1a135e55f63c9cb43b3eb268dc7ee",
+    "sourceKey": "ca-sce-tpr",
+    "editionId": "2026-06-01",
+    "sourceFile": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+    "sourceOriginalSha256": "42f5ce7a686d08f3900d02eb5ebd09fe089dba39f6e04b1279038d6fde473118",
+    "sourceHashMeaning": "Existing source-edition manifest hash; workbook not reacquired or modified in this pass."
+  },
+  "counts": {
+    "reviewed": 6,
+    "supportedPlannedOwnerProposals": 1,
+    "presentEquipmentOwnerConfirmed": 0,
+    "unresolved": 5,
+    "runtimeChanges": 0
+  },
+  "documents": [
+    {
+      "id": "calcite-final-2025",
+      "file": "calcite-lucerne-final-eir-2025-volume-i.pdf",
+      "url": "https://lus.sbcounty.gov/wp-content/uploads/sites/48/Volume-I_Final-Environmental-Impact-Report.pdf",
+      "title": "County of San Bernardino, Sienna Solar and Storage Project Final EIR, Volume I",
+      "sourceDate": "2025-09",
+      "locator": "PDF page 200 / printed 2-41, section 2.7.2; PDF page 204 / printed 2-45, section 2.7.2.3",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 30193675,
+      "sha256": "3b42215a32d0318037ada48f28a9b63955c8c8a82fd2f435e86d224771415a2b",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/calcite-lucerne-final-eir-2025-volume-i.pdf"
+    },
+    {
+      "id": "calcite-sce-2023",
+      "file": "sienna-calcite-project-description.pdf",
+      "url": "https://lus.sbcounty.gov/wp-content/uploads/sites/48/Planning/Appendix-O-Project-Description-SCES-Calcite-Substation-and-the-Interconnection-of-Sienna-Solar-Project.pdf",
+      "title": "SCE Calcite Substation and Sienna interconnection project description, Appendix O",
+      "sourceDate": "2023-05",
+      "locator": "PDF/printed pages 4–5, 13; cover page 1",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 1400923,
+      "sha256": "eb0e17ce0031508a33959c560bdace92909e87d14b8de65844bd0497df3e6b1f",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/sienna-calcite-project-description.pdf"
+    },
+    {
+      "id": "calcite-nop-2022",
+      "file": "sienna-notice-preparation.pdf",
+      "url": "https://lus.sbcounty.gov/wp-content/uploads/sites/48/Environmental/NOP-Sienna-Solar-and-Storage-Project.pdf",
+      "title": "County of San Bernardino, Sienna Solar and Storage Notice of Preparation",
+      "sourceDate": "2022-08-23",
+      "locator": "PDF page 3, Gen-Tie Line paragraph; cover page 1",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 529056,
+      "sha256": "b3d36a37b54a38f39b5aeabee0c0032407fffeab2989b835350665587f8220ec",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/sienna-notice-preparation.pdf"
+    },
+    {
+      "id": "calcite-stagecoach-2021",
+      "file": "stagecoach-2021-appendix-e.pdf",
+      "url": "https://files.ceqanet.lci.ca.gov/265209-3/attachment/SxQiQX9DwTUcAyqk1DkZsTrQwExZeRmCE6o_IEL546rNjEjC2kx_MV2IlwXZbopuhGqrR1kVQ9H7ny7U0",
+      "title": "State Lands Commission Stagecoach Draft EIR Appendix E, SCE project description",
+      "sourceDate": "2021-10",
+      "locator": "PDF pages 5–6 / printed E-1–E-2; project overview and generator boundary",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 8882707,
+      "sha256": "1b7e168c4d88dbdcb450190ce0b8e093b17718380d977bb28a6ef42c7d641596",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/stagecoach-2021-appendix-e.pdf"
+    },
+    {
+      "id": "calcite-current-page",
+      "file": "sce-calcite-project.html",
+      "url": "https://www.sce.com/about-sce/reliability/projects-in-progress/calcite-substation-project",
+      "title": "SCE Calcite Substation Project",
+      "sourceDate": null,
+      "locator": "Project Description, Status and Project Timeline sections; observed 2026-09-30",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original HTTP HTML response bytes",
+      "bytes": 219549,
+      "sha256": "b7b8b9a91df67cac755ef07c5c8b04969e7bb147a5afd039e22e378011ed10fe",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/sce-calcite-project.html"
+    },
+    {
+      "id": "sce-grc-capital",
+      "file": "sce-2025-grc-vol7-bookc.pdf",
+      "url": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A2305010/7166/528454338.pdf",
+      "title": "SCE 2025 GRC A.23-05-010, SCE-02 Volume 7 Book C capital workpapers",
+      "sourceDate": "2023-05",
+      "locator": "PDF pages 43–44 / printed 41–42, PIN 8029 and PIN 6791",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 2017962,
+      "sha256": "1d2b929f2445594f7c9549165646d56ccb07c538c06e3b69d933e194cf226b55",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/sce-2025-grc-vol7-bookc.pdf"
+    },
+    {
+      "id": "sce-grc-budget",
+      "file": "sce-2025-grc-workpapers.pdf",
+      "url": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A2305010/7194/528920107.pdf",
+      "title": "SCE 2025 GRC A.23-05-010, SCE-07 Volume 2 Book A rate-base workpapers",
+      "sourceDate": "2023-05",
+      "locator": "PDF pages 48 and 51 / printed 45 and 48, capital-budget WBS rows and % ISO header",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 9417980,
+      "sha256": "0b5783961e38727bb441088d2d2771785e659e2539d2b25b5c5790709db30833",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/sce-2025-grc-workpapers.pdf"
+    },
+    {
+      "id": "lugo-victorville-2017",
+      "file": "caiso-2016-2017-draft.pdf",
+      "url": "https://www.caiso.com/Documents/Draft2016-2017TransmissionPlan.pdf",
+      "title": "CAISO Draft 2016–2017 Transmission Plan",
+      "sourceDate": "2017-01-31",
+      "locator": "PDF pages 134–135 / printed 128–129, Lugo–Victorville 500 kV Upgrade (SCE portion)",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 6055188,
+      "sha256": "d0eff99feac9b80607b519fab870d0319553cad16633375ad6ba275196d5203c",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/caiso-2016-2017-draft.pdf"
+    },
+    {
+      "id": "eldorado-2023",
+      "file": "caiso-2023-06-28-bus-split.pdf",
+      "url": "https://stakeholdercenter.caiso.com/InitiativeDocuments/Presentation-2023-2024-Transmission-Planning-Process-Jun282023.pdf",
+      "title": "CAISO Eldorado 230 kV Short Circuit Duty Mitigation Project presentation",
+      "sourceDate": "2023-06-28",
+      "locator": "PDF/printed slide 4; cover slide 1",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "original downloaded PDF bytes",
+      "bytes": 561279,
+      "sha256": "d8b6e191978a0253327024850ef63264739c89f500718604a67c564afb334085",
+      "localPath": "inputs/originals/F27-sce-owner-evidence/caiso-2023-06-28-bus-split.pdf"
+    },
+    {
+      "id": "pdci-ladwp-2023",
+      "file": "CALosAngeles17a-POS.pdf",
+      "url": "https://www.ladwp.com/sites/default/files/2023-10/CALosAngeles17a-POS.pdf",
+      "title": "LADWP Power System Revenue Bonds 2023 Series D Preliminary Official Statement",
+      "sourceDate": "2023-10-03",
+      "locator": "PDF page 62 / printed 56, Pacific DC Intertie and Sylmar Converter Station; cover page 1",
+      "retrievedOn": "2026-09-30",
+      "captureKind": "public PDF text read through web tool; ordinary direct download returned HTTP 403",
+      "bytes": null,
+      "sha256": null,
+      "localPath": null
+    }
+  ],
+  "decisions": [
+    {
+      "projectId": "ca-sce-tpr:SP-01",
+      "sourceId": "SP-01",
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "baselineFingerprint": {
+        "algorithm": "SHA-256",
+        "serialization": "Recursively sort every object key with JavaScript Array.sort(); preserve array order; JSON.stringify with no whitespace; UTF-8 bytes; ECMAScript number serialization.",
+        "selectedFields": [
+          "buildWindow",
+          "date",
+          "description",
+          "id",
+          "inventory",
+          "location",
+          "name",
+          "notes",
+          "sourceId",
+          "sources",
+          "sponsor",
+          "status",
+          "utilityId",
+          "voltageKv"
+        ],
+        "scope": "Complete current Project value, including complete inventory, location/evidence, dates, sources and notes. No fields omitted.",
+        "sha256": "43d0d2c7136ab3766cb25a7866a2939fe601772d7f16981f700a5f1b72e73d3e",
+        "baseline": {
+          "id": "ca-sce-tpr:SP-01",
+          "utilityId": "sce-tpr",
+          "sponsor": null,
+          "sourceId": "SP-01",
+          "name": "Calcite Substation Construction",
+          "description": "Construct new Calcite 230 kV Substation to interconnect renewable generation projects.",
+          "status": "Engineering less than 50% complete",
+          "voltageKv": [
+            230
+          ],
+          "date": {
+            "value": "2029-01-23",
+            "precision": "day",
+            "kind": "in-service",
+            "label": "Reported projected or actual in-service date"
+          },
+          "buildWindow": null,
+          "location": {
+            "lat": 34.5469999999997,
+            "lon": -116.952,
+            "method": "source-point",
+            "confidence": "unverified",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C355:D355",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!A355:CM355; headers row 3",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B3:C5, B23:C23",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ],
+          "notes": [],
+          "inventory": {
+            "sourceKey": "ca-sce-tpr",
+            "editionId": "2026-06-01",
+            "editionLabel": "SCE public TPR — June 1, 2026",
+            "reportingGroupName": "SCE TPR filing",
+            "recordKind": "transmission-project",
+            "lifecycle": "planned",
+            "lifecycleAsOf": "2026-06-01",
+            "owner": null,
+            "parentProgramId": null,
+            "aliases": [
+              "program-account:6902"
+            ],
+            "workType": "Substation - Multiple",
+            "constructionStart": "2028-01-25",
+            "nativeGeometry": {
+              "type": "Point",
+              "coordinates": [
+                [
+                  -116.952,
+                  34.5469999999997
+                ]
+              ],
+              "role": "substation-center",
+              "crs": null,
+              "accuracyMeters": null,
+              "rawLatitude": "34.5469999999997",
+              "rawLongitude": "-116.952",
+              "evidence": [
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'CPUC TPR Public'!C355:D355",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                },
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'TPR Notes'!B5:C5",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                }
+              ]
+            },
+            "centerRole": "substation-center",
+            "locationAssumptions": [
+              "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy."
+            ]
+          }
+        }
+      },
+      "decision": "supported-planned-owner-proposal",
+      "proposal": {
+        "id": "southern-california-edison-company",
+        "name": "Southern California Edison Company",
+        "identityScope": "global",
+        "relationship": "planned-equipment-owner",
+        "ownershipStatementAsOf": "2025-09",
+        "presentEquipmentTitleConfirmed": false,
+        "scope": "Planned Calcite substation equipment. Excludes the customer solar/storage facilities and customer-owned gen-tie portion.",
+        "requiresCoordinatorAcceptance": true
+      },
+      "evidence": [
+        {
+          "documentId": "calcite-final-2025",
+          "locator": "PDF page 200 / printed 2-41, section 2.7.2",
+          "finding": "The county final EIR explicitly assigns intended future substation ownership to SCE."
+        },
+        {
+          "documentId": "calcite-sce-2023",
+          "locator": "PDF/printed page 4, project overview; page 13, gen-tie extension",
+          "finding": "The utility-authored description expands SCE to Southern California Edison Company and separates the customer-owned connection from the utility-side facilities."
+        },
+        {
+          "documentId": "calcite-current-page",
+          "locator": "Project Description and Project Timeline",
+          "finding": "The observed utility page describes the planned Calcite station at Lucerne Valley and a 2028–2029 construction horizon, consistent with the TPR project identity."
+        }
+      ],
+      "identityAssessment": "Exact distinctive station name, Lucerne Valley setting and new renewable-interconnection purpose agree. No public crosswalk to native SP-01 or program 6902 was found; identity is a curated name/scope match, not an externally stated ID join.",
+      "limitations": [
+        "Ownership language is prospective; it does not prove operating-asset title on June 1, 2026. The undated current webpage is an observation on September 30, not an edition as-of statement.",
+        "Public documents describe 220 kV while the TPR row records 230 kV. Preserve both source meanings without replacing the original voltage.",
+        "Earlier Stagecoach material and current Sienna material concern different generator customers. The proposal covers only the Calcite substation. The final EIR retains edit-marked connection counts; no quantity or footprint is inferred from flattened text."
+      ],
+      "missingInput": "For a claim of present ownership, obtain an effective ownership/asset record for the built equipment. Coordinator must decide whether explicitly labeled planned ownership is acceptable in the revision contract."
+    },
+    {
+      "projectId": "ca-sce-tpr:SP-11",
+      "sourceId": "SP-11",
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "baselineFingerprint": {
+        "algorithm": "SHA-256",
+        "serialization": "Recursively sort every object key with JavaScript Array.sort(); preserve array order; JSON.stringify with no whitespace; UTF-8 bytes; ECMAScript number serialization.",
+        "selectedFields": [
+          "buildWindow",
+          "date",
+          "description",
+          "id",
+          "inventory",
+          "location",
+          "name",
+          "notes",
+          "sourceId",
+          "sources",
+          "sponsor",
+          "status",
+          "utilityId",
+          "voltageKv"
+        ],
+        "scope": "Complete current Project value, including complete inventory, location/evidence, dates, sources and notes. No fields omitted.",
+        "sha256": "f0680b02d94b3c2540924f8e4095e38d1b9b5c32bf79d5259f1c348c0f8a6728",
+        "baseline": {
+          "id": "ca-sce-tpr:SP-11",
+          "utilityId": "sce-tpr",
+          "sponsor": null,
+          "sourceId": "SP-11",
+          "name": "Lugo Substation Transformer Bank Conversion (Bank on Breaker)",
+          "description": "This project involves conversion of the current bank-on-bus configuration to a bank on circuit breaker configuration for the Lugo 1AA & 2AA 500/220 kV transformer banks.",
+          "status": "Engineering more than 50% complete",
+          "voltageKv": [
+            220,
+            500
+          ],
+          "date": {
+            "value": "2032-06-29",
+            "precision": "day",
+            "kind": "in-service",
+            "label": "Reported projected or actual in-service date"
+          },
+          "buildWindow": null,
+          "location": {
+            "lat": 34.3669999999997,
+            "lon": -117.369,
+            "method": "source-point",
+            "confidence": "unverified",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C364:D364",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!A364:CM364; headers row 3",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B3:C5, B23:C23",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ],
+          "notes": [
+            "The source notes describe operational assets with remaining project work; the source row lifecycle is retained."
+          ],
+          "inventory": {
+            "sourceKey": "ca-sce-tpr",
+            "editionId": "2026-06-01",
+            "editionLabel": "SCE public TPR — June 1, 2026",
+            "reportingGroupName": "SCE TPR filing",
+            "recordKind": "transmission-project",
+            "lifecycle": "planned",
+            "lifecycleAsOf": "2026-06-01",
+            "owner": null,
+            "parentProgramId": null,
+            "aliases": [
+              "work-order:800308934",
+              "accounting-id:CET-ET-TP-RL-679100",
+              "program-account:6791"
+            ],
+            "workType": "Substation - Multiple",
+            "constructionStart": "2031-01-02",
+            "nativeGeometry": {
+              "type": "Point",
+              "coordinates": [
+                [
+                  -117.369,
+                  34.3669999999997
+                ]
+              ],
+              "role": "substation-center",
+              "crs": null,
+              "accuracyMeters": null,
+              "rawLatitude": "34.3669999999997",
+              "rawLongitude": "-117.369",
+              "evidence": [
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'CPUC TPR Public'!C364:D364",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                },
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'TPR Notes'!B5:C5",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                }
+              ]
+            },
+            "centerRole": "substation-center",
+            "locationAssumptions": [
+              "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy."
+            ]
+          }
+        }
+      },
+      "decision": "unresolved",
+      "proposal": null,
+      "evidence": [
+        {
+          "documentId": "sce-grc-capital",
+          "locator": "PDF page 44 / printed 42, PIN 6791, CWBS CETETTPRL679100",
+          "finding": "The utility capital workpaper matches the TPR accounting/program alias and Lugo double-breaker work."
+        },
+        {
+          "documentId": "sce-grc-budget",
+          "locator": "PDF page 48 / printed 45, WBS CET-ET-TP-RL-679100 and table header",
+          "finding": "The 100% field is headed % ISO; it is not an equipment-ownership percentage."
+        }
+      ],
+      "identityAssessment": "Program 6791 and normalized CWBS match the row aliases; work-order 800308934 and explicit ownership of both 1AA/2AA bank conversion equipment remain uncorroborated.",
+      "limitations": [
+        "A capital forecast supports project identity and spending responsibility, not complete legal title to the affected banks, breakers and new equipment.",
+        "May 2023 workpaper forecasts December 1, 2024 in-service; the June 2026 TPR reports June 29, 2032. No date replacement or completed-work inference is made."
+      ],
+      "missingInput": "Public asset register, ownership schedule or equipment-specific utility statement covering Lugo 1AA and 2AA conversion work / 800308934 with effective date and any co-owner boundary."
+    },
+    {
+      "projectId": "ca-sce-tpr:SP-30",
+      "sourceId": "SP-30",
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "baselineFingerprint": {
+        "algorithm": "SHA-256",
+        "serialization": "Recursively sort every object key with JavaScript Array.sort(); preserve array order; JSON.stringify with no whitespace; UTF-8 bytes; ECMAScript number serialization.",
+        "selectedFields": [
+          "buildWindow",
+          "date",
+          "description",
+          "id",
+          "inventory",
+          "location",
+          "name",
+          "notes",
+          "sourceId",
+          "sources",
+          "sponsor",
+          "status",
+          "utilityId",
+          "voltageKv"
+        ],
+        "scope": "Complete current Project value, including complete inventory, location/evidence, dates, sources and notes. No fields omitted.",
+        "sha256": "3cdef23e5d8adf271acfe218745ffd66d129380142e2968404c58794c154d4d9",
+        "baseline": {
+          "id": "ca-sce-tpr:SP-30",
+          "utilityId": "sce-tpr",
+          "sponsor": null,
+          "sourceId": "SP-30",
+          "name": "Lugo-Victorville 500kV Transmission Line Upgrade  (Lugo-Victorville Thermal Overloads)",
+          "description": "Thermal Overloads on Lugo - Victorville 500 kV Transmission Line during N-2 loss of either Eldorado – Lugo 500 kV with Eldorado –Mohave 500 kV",
+          "status": "Permitting",
+          "voltageKv": [
+            500
+          ],
+          "date": {
+            "value": "2027-06-30",
+            "precision": "day",
+            "kind": "in-service",
+            "label": "Reported projected or actual in-service date"
+          },
+          "buildWindow": null,
+          "location": {
+            "lat": 34.45099999999999,
+            "lon": -117.332,
+            "method": "endpoint-midpoint",
+            "confidence": "unverified",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C382:D382",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!A382:CM382; headers row 3",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B3:C5, B23:C23",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ],
+          "notes": [],
+          "inventory": {
+            "sourceKey": "ca-sce-tpr",
+            "editionId": "2026-06-01",
+            "editionLabel": "SCE public TPR — June 1, 2026",
+            "reportingGroupName": "SCE TPR filing",
+            "recordKind": "transmission-project",
+            "lifecycle": "planned",
+            "lifecycleAsOf": "2026-06-01",
+            "owner": null,
+            "parentProgramId": null,
+            "aliases": [
+              "program-account:8029"
+            ],
+            "workType": "Transmission Line/Substation",
+            "constructionStart": "2026-05-11",
+            "nativeGeometry": {
+              "type": "MultiPoint",
+              "coordinates": [
+                [
+                  -117.369,
+                  34.367
+                ],
+                [
+                  -117.295,
+                  34.535
+                ]
+              ],
+              "role": "line-endpoints",
+              "crs": null,
+              "accuracyMeters": null,
+              "rawLatitude": "34.367 | 34.535",
+              "rawLongitude": "-117.369 | -117.295",
+              "evidence": [
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'CPUC TPR Public'!C382:D382",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                },
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'TPR Notes'!B5:C5",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                }
+              ]
+            },
+            "centerRole": "endpoint-midpoint",
+            "locationAssumptions": [
+              "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy.",
+              "The displayed center is the arithmetic midpoint of the two published endpoints, not a surveyed route center or the complete work footprint."
+            ]
+          }
+        }
+      },
+      "decision": "unresolved-mixed-boundary",
+      "proposal": null,
+      "evidence": [
+        {
+          "documentId": "lugo-victorville-2017",
+          "locator": "PDF pages 134–135 / printed 128–129",
+          "finding": "CAISO describes joint SCE/LADWP line ownership and separately owned upgrade portions; SCE work comprises four towers and Lugo terminal equipment."
+        },
+        {
+          "documentId": "sce-grc-capital",
+          "locator": "PDF page 43 / printed 41, PIN 8029",
+          "finding": "The TPR program alias matches a Lugo breaker/disconnect capital item, which supports a narrower equipment association."
+        }
+      ],
+      "identityAssessment": "Line endpoints, thermal-overload purpose and program 8029 support association, but the TPR work unit does not explicitly say SCE portion or delimit the complete row to those terminal assets.",
+      "limitations": [
+        "The 2017 planning document is historical and includes an obsolete December 2018 forecast. The 2023 workpaper forecasts January 2025; neither replaces the TPR June 2027 date.",
+        "Neither the full line nor the endpoint midpoint may be treated as a wholly SCE-owned work footprint. A source-scoped single-owner label would still misrepresent unresolved joint scope."
+      ],
+      "missingInput": "A dated crosswalk from SP-30 / program 8029 to the exact SCE-owned portion, plus current ownership boundary for included line and terminal equipment. Otherwise retain mixed ownership and no scalar owner."
+    },
+    {
+      "projectId": "ca-sce-tpr:SP-172",
+      "sourceId": "SP-172",
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "baselineFingerprint": {
+        "algorithm": "SHA-256",
+        "serialization": "Recursively sort every object key with JavaScript Array.sort(); preserve array order; JSON.stringify with no whitespace; UTF-8 bytes; ECMAScript number serialization.",
+        "selectedFields": [
+          "buildWindow",
+          "date",
+          "description",
+          "id",
+          "inventory",
+          "location",
+          "name",
+          "notes",
+          "sourceId",
+          "sources",
+          "sponsor",
+          "status",
+          "utilityId",
+          "voltageKv"
+        ],
+        "scope": "Complete current Project value, including complete inventory, location/evidence, dates, sources and notes. No fields omitted.",
+        "sha256": "3cb9527680b5f5ecf62d6696a45c10fed7ed586934fbb3885666ccbc20ab94a4",
+        "baseline": {
+          "id": "ca-sce-tpr:SP-172",
+          "utilityId": "sce-tpr",
+          "sponsor": null,
+          "sourceId": "SP-172",
+          "name": "Eldorado 220 kV Jointed-Owned Bus Split (Section A)",
+          "description": "Split the Joint-Owned Eldorado 220 kV Bus and reconfigure the T/L configuration to lower the short circuit duty to maintain safety and reliability.",
+          "status": "Engineering more than 50% complete",
+          "voltageKv": [
+            230
+          ],
+          "date": {
+            "value": "2029-10-31",
+            "precision": "day",
+            "kind": "in-service",
+            "label": "Reported projected or actual in-service date"
+          },
+          "buildWindow": null,
+          "location": {
+            "lat": 35.79915556,
+            "lon": -115.0067527778,
+            "method": "source-point",
+            "confidence": "unverified",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C457:D457",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!A457:CM457; headers row 3",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B3:C5, B23:C23",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ],
+          "notes": [],
+          "inventory": {
+            "sourceKey": "ca-sce-tpr",
+            "editionId": "2026-06-01",
+            "editionLabel": "SCE public TPR — June 1, 2026",
+            "reportingGroupName": "SCE TPR filing",
+            "recordKind": "transmission-project",
+            "lifecycle": "planned",
+            "lifecycleAsOf": "2026-06-01",
+            "owner": null,
+            "parentProgramId": null,
+            "aliases": [
+              "accounting-id:CET-ET-TP-RL-854500",
+              "program-account:8545"
+            ],
+            "workType": "Substation - Bus Arrangement",
+            "constructionStart": "2029-01-23",
+            "nativeGeometry": {
+              "type": "Point",
+              "coordinates": [
+                [
+                  -115.0067527778,
+                  35.79915556
+                ]
+              ],
+              "role": "substation-center",
+              "crs": null,
+              "accuracyMeters": null,
+              "rawLatitude": "35.79915556",
+              "rawLongitude": "-115.0067527778",
+              "evidence": [
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'CPUC TPR Public'!C457:D457",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                },
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'TPR Notes'!B5:C5",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                }
+              ]
+            },
+            "centerRole": "substation-center",
+            "locationAssumptions": [
+              "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy."
+            ]
+          }
+        }
+      },
+      "decision": "unresolved-joint-owner",
+      "proposal": null,
+      "evidence": [
+        {
+          "documentId": "eldorado-2023",
+          "locator": "PDF/printed slide 4",
+          "finding": "CAISO identifies multiple bus co-owners and a sectionalizing/line-relocation scope. SCE is the submitter, not stated sole owner."
+        }
+      ],
+      "identityAssessment": "The joint bus split, Eldorado site and short-circuit purpose match. TPR Section A and aliases 8545/CET-ET-TP-RL-854500 are retained; no external alias crosswalk or complete co-owner schedule was found.",
+      "limitations": [
+        "The TPR title and description already identify joint ownership. Its title uses 220 kV, voltage field 230 kV, and CAISO uses 230 kV; do not normalize away the distinction.",
+        "The 2023 presentation is a recommended project scope, not a 2026 title/ownership schedule. Section A is not evidence that joint rights disappeared."
+      ],
+      "missingInput": "Public ownership/participation schedule for the specific Section A bus, sectionalizing equipment and relocated terminals, including legal entities, shares/scope and effective date. Existing scalar-owner schema cannot honestly express an unresolved consortium."
+    },
+    {
+      "projectId": "ca-sce-tpr:PB-02.01",
+      "sourceId": "PB-02.01",
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "baselineFingerprint": {
+        "algorithm": "SHA-256",
+        "serialization": "Recursively sort every object key with JavaScript Array.sort(); preserve array order; JSON.stringify with no whitespace; UTF-8 bytes; ECMAScript number serialization.",
+        "selectedFields": [
+          "buildWindow",
+          "date",
+          "description",
+          "id",
+          "inventory",
+          "location",
+          "name",
+          "notes",
+          "sourceId",
+          "sources",
+          "sponsor",
+          "status",
+          "utilityId",
+          "voltageKv"
+        ],
+        "scope": "Complete current Project value, including complete inventory, location/evidence, dates, sources and notes. No fields omitted.",
+        "sha256": "369f8ea1304eb2bdac3e4fb836939ae9b696a0300c6dd4038ef0bed445ce2b00",
+        "baseline": {
+          "id": "ca-sce-tpr:PB-02.01",
+          "utilityId": "sce-tpr",
+          "sponsor": null,
+          "sourceId": "PB-02.01",
+          "name": "Nevada Pacific DC Intertie Insulator Replacement",
+          "description": "Replace approx. 80,000 old porcelain insulators pm ~432  miles of the PDCI with toughened glass insulators to support the planned  voltage upgrade",
+          "status": "Construction (50%-75%)",
+          "voltageKv": [
+            500
+          ],
+          "date": {
+            "value": "2026-12-01",
+            "precision": "day",
+            "kind": "in-service",
+            "label": "Reported projected or actual in-service date"
+          },
+          "buildWindow": null,
+          "location": {
+            "lat": 39.90562256,
+            "lon": -119.77785673,
+            "method": "endpoint-midpoint",
+            "confidence": "unverified",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C11:D11",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!A11:CM11; headers row 3",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B3:C5, B23:C23",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ],
+          "notes": [
+            "The source notes describe operational assets with remaining project work; the source row lifecycle is retained.",
+            "The source Notes column includes a construction-start clarification. No continuous construction interval is inferred.",
+            "The reported start belongs to a multi-year replacement program performed during scheduled outages, not continuous construction."
+          ],
+          "inventory": {
+            "sourceKey": "ca-sce-tpr",
+            "editionId": "2026-06-01",
+            "editionLabel": "SCE public TPR — June 1, 2026",
+            "reportingGroupName": "SCE TPR filing",
+            "recordKind": "transmission-project",
+            "lifecycle": "under-construction",
+            "lifecycleAsOf": "2026-06-01",
+            "owner": null,
+            "parentProgramId": "PB-02",
+            "aliases": [
+              "work-order:901994846",
+              "accounting-id:CET-OT-OT-ME-313801",
+              "program-account:3138"
+            ],
+            "workType": "Transmission Line - Other Equipment",
+            "constructionStart": "2008-06-01",
+            "nativeGeometry": {
+              "type": "MultiPoint",
+              "coordinates": [
+                [
+                  -118.49109346,
+                  34.31365912
+                ],
+                [
+                  -121.06462,
+                  45.497586
+                ]
+              ],
+              "role": "line-endpoints",
+              "crs": null,
+              "accuracyMeters": null,
+              "rawLatitude": "34.31365912 | 45.497586",
+              "rawLongitude": "-118.49109346 | -121.06462",
+              "evidence": [
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'CPUC TPR Public'!C11:D11",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                },
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'TPR Notes'!B5:C5",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                }
+              ]
+            },
+            "centerRole": "endpoint-midpoint",
+            "locationAssumptions": [
+              "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy.",
+              "The displayed center is the arithmetic midpoint of the two published endpoints, not a surveyed route center or the complete work footprint."
+            ]
+          }
+        }
+      },
+      "decision": "unresolved-joint-boundary",
+      "proposal": null,
+      "evidence": [
+        {
+          "documentId": "pdci-ladwp-2023",
+          "locator": "PDF page 62 / printed 56, Pacific DC Intertie and Sylmar Converter Station",
+          "finding": "LADWP states a 40% interest in the southern PDCI portion and distinguishes BPA ownership north of the Nevada–Oregon border; operational agency is also separate."
+        },
+        {
+          "documentId": "sce-grc-budget",
+          "locator": "PDF page 51 / printed 48, WBS CET-OT-OT-ME-313800",
+          "finding": "The parent accounting bucket concerns Sylmar converter capital; it does not assign title to the specific Nevada insulators."
+        }
+      ],
+      "identityAssessment": "PDCI context is supported, but the 432-mile Nevada insulator work and work-order 901994846 are not tied to a specific ownership segment by the external evidence.",
+      "limitations": [
+        "The TPR coordinates span the wider intertie while the description specifies a Nevada work segment. No geometry, segment boundary or owner is inferred from the midpoint.",
+        "A 2023 southern-system ownership percentage does not establish the current title of every replaced insulator, nor a sole SCE owner. LADWP operating-agent status is not a substitute."
+      ],
+      "missingInput": "A public dated work-order/asset schedule connecting 901994846 and the 80,000-insulator scope to exact jointly or separately owned Nevada spans and legal owners."
+    },
+    {
+      "projectId": "ca-sce-tpr:PB-03.02",
+      "sourceId": "PB-03.02",
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "baselineFingerprint": {
+        "algorithm": "SHA-256",
+        "serialization": "Recursively sort every object key with JavaScript Array.sort(); preserve array order; JSON.stringify with no whitespace; UTF-8 bytes; ECMAScript number serialization.",
+        "selectedFields": [
+          "buildWindow",
+          "date",
+          "description",
+          "id",
+          "inventory",
+          "location",
+          "name",
+          "notes",
+          "sourceId",
+          "sources",
+          "sponsor",
+          "status",
+          "utilityId",
+          "voltageKv"
+        ],
+        "scope": "Complete current Project value, including complete inventory, location/evidence, dates, sources and notes. No fields omitted.",
+        "sha256": "889d33ad1a84bebc638da7608fbc2b5254e7159a7e0dbc9936322c7bd9a59c79",
+        "baseline": {
+          "id": "ca-sce-tpr:PB-03.02",
+          "utilityId": "sce-tpr",
+          "sponsor": null,
+          "sourceId": "PB-03.02",
+          "name": "Palo Verde - PL R9 (4 single phase reactors) replacement and adding new reactor switcher",
+          "description": "Replace Palo Verde R9 reactor and add new reactor switcher",
+          "status": "Planning",
+          "voltageKv": [],
+          "date": {
+            "value": "2026-12-31",
+            "precision": "day",
+            "kind": "in-service",
+            "label": "Reported projected or actual in-service date"
+          },
+          "buildWindow": null,
+          "location": {
+            "lat": 33.3825999999997,
+            "lon": -112.8605,
+            "method": "source-point",
+            "confidence": "unverified",
+            "evidence": [
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'CPUC TPR Public'!C17:D17",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              },
+              {
+                "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                "locator": "'TPR Notes'!B5:C5",
+                "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+              }
+            ]
+          },
+          "sources": [
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'CPUC TPR Public'!A17:CM17; headers row 3",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            },
+            {
+              "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+              "locator": "'TPR Notes'!B3:C5, B23:C23",
+              "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+            }
+          ],
+          "notes": [],
+          "inventory": {
+            "sourceKey": "ca-sce-tpr",
+            "editionId": "2026-06-01",
+            "editionLabel": "SCE public TPR — June 1, 2026",
+            "reportingGroupName": "SCE TPR filing",
+            "recordKind": "transmission-project",
+            "lifecycle": "planned",
+            "lifecycleAsOf": "2026-06-01",
+            "owner": null,
+            "parentProgramId": "PB-03",
+            "aliases": [
+              "work-order:904011808",
+              "accounting-id:CET-OT-OT-ME-465100",
+              "program-account:4651"
+            ],
+            "workType": "Substation - Switch",
+            "constructionStart": "2026-10-01",
+            "nativeGeometry": {
+              "type": "Point",
+              "coordinates": [
+                [
+                  -112.8605,
+                  33.3825999999997
+                ]
+              ],
+              "role": "substation-center",
+              "crs": null,
+              "accuracyMeters": null,
+              "rawLatitude": "33.3825999999997",
+              "rawLongitude": "-112.8605",
+              "evidence": [
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'CPUC TPR Public'!C17:D17",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                },
+                {
+                  "file": "01 Public_(Public)SCE TPR Process-June 2026.xlsx",
+                  "locator": "'TPR Notes'!B5:C5",
+                  "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx"
+                }
+              ]
+            },
+            "centerRole": "substation-center",
+            "locationAssumptions": [
+              "Published latitude/longitude is interpreted as decimal WGS84 for map display only; the source does not state its datum or positional accuracy."
+            ]
+          }
+        }
+      },
+      "decision": "unresolved",
+      "proposal": null,
+      "evidence": [
+        {
+          "documentId": "sce-grc-budget",
+          "locator": "PDF page 51 / printed 48, WBS CET-OT-OT-ME-465100 / PIN 4651",
+          "finding": "The exact parent accounting bucket is Palo Verde switchrack capital. It supplies neither an R9 equipment match nor an ownership schedule."
+        }
+      ],
+      "identityAssessment": "Accounting alias 4651 matches only the parent bucket. No external equipment-level crosswalk to work-order 904011808 / PL R9 and its four single-phase reactors or new switcher was found.",
+      "limitations": [
+        "Palo Verde nuclear generating-station ownership and nearby transmission-line ownership cannot establish ownership of this switchrack reactor bank.",
+        "Capital allocation and % ISO classification do not establish legal title. The TPR reported December 31, 2026 date remains unchanged."
+      ],
+      "missingInput": "Public equipment ownership/participation schedule for Palo Verde PL R9, its four single-phase reactors and new reactor switcher, cross-referenced to 904011808 and dated for the relevant planning scope."
+    }
+  ],
+  "applicationConstraints": [
+    "Qualification is not approval to write runtime data.",
+    "A future revision must preview the proposed owner, its prospective/date qualifier and evidence; preserve all local notes and all unrelated fields.",
+    "Fingerprint is a strict baseline comparison aid, not permission to overwrite a changed record. Identity, edition and relevant fields must agree; local changes need explicit preservation/review.",
+    "No owner proposal changes geometry, unverified location confidence, lifecycle, source dates or calculation policy. No new eligible pair is claimed."
+  ]
+}
