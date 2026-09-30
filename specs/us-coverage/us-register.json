@@ -2720,7 +2720,7 @@
       "status": "qualified-production-in-progress",
       "task": "F27-FPL-I",
       "owner": "core",
-      "missingInput": "Connected five-record batch then full55; locations and50interconnection owners remain unknown",
+      "missingInput": "Connected five-record batch then full 55; locations and 50 interconnection owners remain unknown",
       "sourceRows": 89,
       "proposedImportedRecords": 55,
       "locatedRecords": 0
@@ -3079,7 +3079,7 @@
       "locatedRecords": 0,
       "sourceRows": 89,
       "excludedRows": 34,
-      "scope": "Five bulk-line table rows plus84Schedule10 forms;84engineering narratives support rather than duplicate forms. Fifty-five retained transmission work units, not full Florida coverage.",
+      "scope": "Five bulk-line table rows plus 84 Schedule 10 forms; 84 engineering narratives support rather than duplicate forms. Fifty-five retained transmission work units, not full Florida coverage.",
       "evidenceFile": "specs/features/F27-us-regional-expansion/fl-fpl/qualification.md"
     }
   ]
