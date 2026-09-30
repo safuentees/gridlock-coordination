@@ -16,13 +16,13 @@
   "sha256": "b4b4d88177e2ec35c9f606f60ec33a3c6c52ec66394879e70ce73b7e524df02c",
   "geographicScope": "Three named Ohio and five named Texas scopes; finite public review subset, not complete state, AEP or regional coverage.",
   "inventoryScope": "Eight named physical transmission scopes from the captured DOE AEP review index: seven line rebuild upgrades and one station project. Supplemental consultations do not add projects.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 8,
-    "importedRecords": 4,
+    "importedRecords": 8,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 4,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [],
@@ -35,7 +35,6 @@
     "AEP applicant and index affiliate labels do not establish legal asset owners. All owners remain unknown.",
     "All locations, native geometry and construction bounds remain unknown. Named counties/endpoints, route lengths, right-of-way widths and station areas do not supply project centers or shared-corridor estimates.",
     "review-001 through review-008 are frozen source-document locators, not native engineering IDs. Future index reordering requires an explicit crosswalk. Shared consultation codes and similar RTO names do not authorize merging or field transfers.",
-    "Only concise factual paraphrases and public citations are derived. No original files, personal contact fields, restricted attachments, image interpretation or asserted open/commercial reuse license are included.",
-    "Four retained diagnostics are emitted first; four accepted entries await provider connection and full normalization."
+    "Only concise factual paraphrases and public citations are derived. No original files, personal contact fields, restricted attachments, image interpretation or asserted open/commercial reuse license are included."
   ]
 }

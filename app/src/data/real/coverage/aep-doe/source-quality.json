@@ -1,7 +1,7 @@
 {
   "sourceKey": "aep-doe",
   "editionId": "review-index-snapshot-2026-09-30",
-  "scope": "sample",
+  "scope": "full",
   "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no images, restricted attachments or contact fields.",
   "acceptedRetainedUnitCounts": {
     "project": 1,
@@ -16,11 +16,11 @@
   },
   "importedUnitCounts": {
     "project": 1,
-    "upgrade": 3
+    "upgrade": 7
   },
   "importedDatePrecisionCounts": {
-    "day": 1,
-    "unknown": 3
+    "day": 3,
+    "unknown": 5
   },
   "sampleIds": [
     "aep-doe:review-001",
