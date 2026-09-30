@@ -1,0 +1,178 @@
+{
+  "sourceKey": "tva-public",
+  "editionId": "observed-2026-09-30",
+  "scope": "sample",
+  "normalizationMethod": "Cited factual catalog pinned to exact preserved artifact bytes; no changing-page fetch, map interpretation or inference.",
+  "capturePolicy": "Coordinator accepted derived web-tool text captures; hashes identify captured text, never original HTML. Ordinary HTML downloads returned 403. Public GIS JSON is original but no geometry is authorized.",
+  "rawPublisherHtmlAvailable": false,
+  "capturedTextArtifacts": 41,
+  "originalPublicGisJsonArtifacts": 14,
+  "artifactCatalog": "source-catalog.json",
+  "acceptedFullLifecycleCounts": {
+    "planned": 36,
+    "on-hold": 3,
+    "under-construction": 1
+  },
+  "importedLifecycleCounts": {
+    "planned": 4,
+    "on-hold": 1,
+    "under-construction": 1
+  },
+  "importedDatePrecisionCounts": {
+    "year": 3,
+    "unknown": 3
+  },
+  "unknownOwnerRecords": 6,
+  "unknownLocationRecords": 6,
+  "unknownConstructionWindowRecords": 6,
+  "sampleIds": [
+    "tva-public:new-liberty--alabama-(cherokee-and-calhoun-counties)",
+    "tva-public:kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+    "tva-public:beulah-grove--mississippi-(pontotoc-county)",
+    "tva-public:appalachia-area-improvement-tennessee-and-north-carolina",
+    "tva-public:shooting-creek--north-carolina-(clay-county)",
+    "tva-public:hardin-valley-(tennessee)"
+  ],
+  "geometryContext": {
+    "acceptedCenters": 0,
+    "layerGeometryType": "esriGeometryPolyline",
+    "nativeCrs": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "role": "Proposed pre-surveyed line centerline, selected from alternatives; alternative layer is candidate routing segments",
+    "accuracyMeters": null,
+    "runtimePolicy": "Current Point/MultiPoint schema cannot faithfully encode these polylines. Preserve linked public evidence; no centroid, midpoint, endpoint or station-center inference. No schema/map change requested.",
+    "materialConflicts": [
+      "Redstone page preferred length 3.3 mi versus GIS MILES 3.68123.",
+      "Appalachia page line 25.2 mi plus station/ties versus filtered GIS MILES 1.45934; geometry is not demonstrated to cover the whole page scope.",
+      "Kentucky Phase II latest page on hold May 2026 versus GIS STATUS Active; GIS edit/status labels do not override the page update."
+    ],
+    "linkedMaps": [
+      {
+        "linkedProject": "redstone",
+        "itemId": "c1ba3709eb1b4132b5f0880d5380eccc",
+        "publicAccess": "public",
+        "title": "TVA.COM_RedstoneArsenalNo.3",
+        "layers": [
+          {
+            "title": "Project Alternatives",
+            "definitionExpression": "PROJECT_NAME = 'Redstone Arsenal No. 3, AL'",
+            "source": "redstone-alternative-count.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&returnCountOnly=true",
+            "featureCount": 5,
+            "spatialReference": null,
+            "attributes": []
+          },
+          {
+            "title": "Proposed Transmission Line",
+            "definitionExpression": "NAME = 'Redstone Arsenal No. 3, AL'",
+            "source": "redstone-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "featureCount": 1,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            },
+            "attributes": [
+              {
+                "OBJECTID": 13192,
+                "NAME": "Redstone Arsenal No. 3, AL",
+                "PROJECT_ID": "551220",
+                "ID": null,
+                "STATUS": "Active",
+                "MILES": 3.68123
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkedProject": "appalachia",
+        "itemId": "ee1a293f298948adb6cc1f6d1968fd6d",
+        "publicAccess": "public",
+        "title": "TVA.COM_AppalachiaAreaImprovement",
+        "layers": [
+          {
+            "title": "Project Alternatives",
+            "definitionExpression": "PROJECT_NAME = 'Appalachia Area Improvement Project'",
+            "source": "appalachia-alternative-count.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Appalachia+Area+Improvement+Project%27&returnCountOnly=true",
+            "featureCount": 84,
+            "spatialReference": null,
+            "attributes": []
+          },
+          {
+            "title": "Proposed Transmission Line",
+            "definitionExpression": "NAME = 'Appalachia Area Improvements (AAI'",
+            "source": "appalachia-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Appalachia+Area+Improvements+%28AAI%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "featureCount": 1,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            },
+            "attributes": [
+              {
+                "OBJECTID": 13191,
+                "NAME": "Appalachia Area Improvements (AAI",
+                "PROJECT_ID": "629986",
+                "ID": null,
+                "STATUS": "Active",
+                "MILES": 1.45934
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkedProject": "kentucky-phase-ii",
+        "itemId": "ab4d8fbbf3574ce990fd503408597823",
+        "publicAccess": "public",
+        "title": "TVA.COM_KYAreaImprovements",
+        "layers": [
+          {
+            "title": "Project Alternatives",
+            "definitionExpression": "PROJECT_NAME = 'Kentucky Area Improvement Phase 2'",
+            "source": "kentucky-phase-ii-alternative-count.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/5/query?f=json&where=PROJECT_NAME+%3D+%27Kentucky+Area+Improvement+Phase+2%27&returnCountOnly=true",
+            "featureCount": 42,
+            "spatialReference": null,
+            "attributes": []
+          },
+          {
+            "title": "Proposed Transmission Line",
+            "definitionExpression": "NAME = 'KY Area Improvements Phase 2'",
+            "source": "kentucky-phase-ii-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27KY+Area+Improvements+Phase+2%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "featureCount": 1,
+            "spatialReference": {
+              "wkid": 102100,
+              "latestWkid": 3857
+            },
+            "attributes": [
+              {
+                "OBJECTID": 13200,
+                "NAME": "KY Area Improvements Phase 2",
+                "PROJECT_ID": "548237",
+                "ID": 0,
+                "STATUS": "Active",
+                "MILES": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "relationshipsAndPrecedence": [
+    "The 41 placements cover only this captured public engagement index: 40 unique page-scoped work units and one duplicate Appalachia placement. Full scope is not a complete TVA or state engineering register.",
+    "The primary SHA-256 identifies web-tool extracted text, not publisher HTML. Ordinary HTML acquisition returned 403; the coordinator explicitly accepted derived captures as frozen evidence. Separate public GIS JSON artifacts are originals.",
+    "Georgia and Virginia have empty index sections, which do not establish zero projects. Project geography may differ from the section; public meeting addresses are not project locations.",
+    "One page may combine line, station and connection work. Alternatives, existing assets and future separate work without an index link are not additional records.",
+    "Canonical URL slugs are source-locator identities, not engineering IDs. GIS PROJECT_ID values remain scoped aliases; future edition continuity needs explicit crosswalks.",
+    "Lifecycle belongs to the dated source statement or undated snapshot observation, not present construction status. Elapsed forecasts, preferred routes and acquired easements do not establish completion, approval or construction.",
+    "Seasonal forecasts retain year precision and their source labels. Cross-year winters, conflicts and withdrawn schedules keep unknown primary dates; historical/component milestones remain supplemental.",
+    "Owners, centers, native geometry and construction intervals remain unknown. TVA is the reporting sponsor. Public proposed polylines have scope/status mismatches and are not converted to centers."
+  ]
+}

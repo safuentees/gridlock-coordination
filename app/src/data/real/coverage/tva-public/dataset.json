@@ -1,0 +1,685 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "TVA public transmission-project index — sample",
+  "generatedAt": "2026-09-30T10:39:48Z",
+  "projects": [
+    {
+      "id": "tva-public:new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "utilityId": "tva-public",
+      "sourceId": "new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "sponsor": "Tennessee Valley Authority",
+      "name": "New Liberty, Alabama (Cherokee and Calhoun Counties)",
+      "description": "Proposed 5.77-mile transmission connection from Alabama Power’s Centre–Piedmont line to Cherokee Electric’s New Liberty substation.",
+      "status": "Preferred route identified — October 2024",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": "2027",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Forecast in service; source: Fall 2027"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "web-capture-7.txt",
+          "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+          "locator": "Update — October 2024, captured L7–23; Background L26–33; Project Schedule L50–60"
+        }
+      ],
+      "notes": [
+        "Operating voltage is 115 kV; the line is designed for 161 kV.",
+        "The proposal includes TVA line work, Alabama Power switches and a Cherokee Electric substation; complete asset ownership remains unresolved.",
+        "Preferred routing and pending environmental review do not establish construction approval."
+      ],
+      "inventory": {
+        "sourceKey": "tva-public",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "TVA public transmission-project index — September 30, 2026 captured text",
+        "reportingGroupName": "Tennessee Valley Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-10",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Cherokee and Calhoun Counties; Centre–Piedmont line to New Liberty substation",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-7.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+                "locator": "October 2024 update, L19; Project Schedule L59"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "New transmission line and associated switches",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "tva-public:kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "utilityId": "tva-public",
+      "sourceId": "kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "sponsor": "Tennessee Valley Authority",
+      "name": "Kentucky Area Improvements Phase II (Logan and Todd Counties)",
+      "description": "Proposed Stokes switching station and about 20 miles of 161 kV line to Cave Springs; latest update pauses the project.",
+      "status": "Temporarily on hold — May 2026",
+      "voltageKv": [
+        161
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current service date withheld while project is on hold"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "web-capture-12.txt",
+          "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+          "locator": "May 2026 hold, captured L8; Update — April 2025 L9–20; Background L22–29; Project Schedule L46–57"
+        },
+        {
+          "file": "kentucky-phase-ii-proposed-centerlines.json",
+          "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27KY+Area+Improvements+Phase+2%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+          "locator": "Exact public webmap-selected feature query; PROJECT_ID, STATUS and MILES are scoped evidence only; no center conversion"
+        }
+      ],
+      "notes": [
+        "May 2026 pauses the project while still planning completion; revised dates await resumption.",
+        "Earlier 2027 and 2028 service forecasts are historical and do not supply the current primary date.",
+        "The public proposed-line GIS status Active does not override the later page hold; alternatives are not additional projects."
+      ],
+      "inventory": {
+        "sourceKey": "tva-public",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "TVA public transmission-project index — September 30, 2026 captured text",
+        "reportingGroupName": "Tennessee Valley Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-05",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": "Kentucky",
+        "sourceLocation": "Logan and Todd Counties; Stokes switching station to Cave Springs",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Earlier forecast in service — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2027; April 2025 forecast, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-12.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+                "locator": "April 2025 update L18; Project Schedule L57"
+              }
+            ]
+          },
+          {
+            "field": "Older background forecast in service",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2028; historical background, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-12.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+                "locator": "Background L29"
+              }
+            ]
+          },
+          {
+            "field": "Earlier forecast construction start — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-12.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+                "locator": "April 2025 update L17"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [
+          "Public proposed-line GIS PROJECT_ID 548237 (scoped alias, not whole-page identity)"
+        ],
+        "workType": "New switching station and transmission line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "tva-public:beulah-grove--mississippi-(pontotoc-county)",
+      "utilityId": "tva-public",
+      "sourceId": "beulah-grove--mississippi-(pontotoc-county)",
+      "sponsor": "Tennessee Valley Authority",
+      "name": "Beulah Grove, Mississippi (Pontotoc County)",
+      "description": "Renewed proposal for about 2.5 miles of 161 kV line to the Beulah Grove substation.",
+      "status": "Renewed proposed transmission project — undated page",
+      "voltageKv": [
+        161
+      ],
+      "date": {
+        "value": "2027",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Forecast in service; source: Summer 2027"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "web-capture-15.txt",
+          "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+          "locator": "Proposed Transmission Project, captured L7–21; Project Schedule L25–31"
+        }
+      ],
+      "notes": [
+        "The current page explicitly restarts the former 2010 proposal after an earlier cancellation.",
+        "Easements acquired in 2012 do not establish construction or completion.",
+        "The page has no update date; lifecycle is observed in the captured September 30, 2026 snapshot."
+      ],
+      "inventory": {
+        "sourceKey": "tva-public",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "TVA public transmission-project index — September 30, 2026 captured text",
+        "reportingGroupName": "Tennessee Valley Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "owner": null,
+        "sourceState": "Mississippi",
+        "sourceLocation": "Pontotoc County; Wellspring–McGregors Chapel line to Beulah Grove substation",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-15.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+                "locator": "Project timeline L18; Project Schedule L30"
+              }
+            ]
+          },
+          {
+            "field": "Former cancelled proposal forecast completion",
+            "date": {
+              "value": "2013",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "2013; historical cancelled proposal, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-15.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+                "locator": "Proposed Transmission Project L12"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "New transmission line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "tva-public:appalachia-area-improvement-tennessee-and-north-carolina",
+      "utilityId": "tva-public",
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "sponsor": "Tennessee Valley Authority",
+      "name": "Appalachia Area Improvement, Tennessee and North Carolina",
+      "description": "Combined Appalachia line improvement and Martins Creek switching-station/tie work across Tennessee and North Carolina.",
+      "status": "Proposed transmission improvements — February 2025 schedules",
+      "voltageKv": [
+        161
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No single whole-program service milestone selected"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "web-capture-23.txt",
+          "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+          "locator": "Update — February 2025, captured L7–29; Background Update — June 2023 L41–57"
+        },
+        {
+          "file": "appalachia-proposed-centerlines.json",
+          "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Appalachia+Area+Improvements+%28AAI%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+          "locator": "Exact public webmap-selected feature query; PROJECT_ID, STATUS and MILES are scoped evidence only; no center conversion"
+        }
+      ],
+      "notes": [
+        "A single page appears under North Carolina and Tennessee; retain one work unit with distinct line and station schedules.",
+        "The source describes a 25.2-mile line and 0.4 miles of station connections; GIS length 1.45934 miles has incomplete scope, so no center is inferred.",
+        "Earlier 2026–2027 forecasts are superseded; a mismatched Piedmont involvement paragraph does not establish project geography."
+      ],
+      "inventory": {
+        "sourceKey": "tva-public",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "TVA public transmission-project index — September 30, 2026 captured text",
+        "reportingGroupName": "Tennessee Valley Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-02",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": "North Carolina; Tennessee",
+        "sourceLocation": "Polk County, Tennessee; Cherokee County, North Carolina",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Power line forecast in service",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2029; line component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Power Line L11–19"
+              }
+            ]
+          },
+          {
+            "field": "Martins Creek switching station forecast in service",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Summer 2029; station component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Martins Creek Switching Station L21–29"
+              }
+            ]
+          },
+          {
+            "field": "Power line forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Power Line L17"
+              }
+            ]
+          },
+          {
+            "field": "Martins Creek switching station forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "February 2025 update, Martins Creek Switching Station L27"
+              }
+            ]
+          },
+          {
+            "field": "Superseded line forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2026–2027; June 2023 background, superseded"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-23.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+                "locator": "June 2023 background update L55"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [
+          "Public proposed-line GIS PROJECT_ID 629986 (partial-scope alias)"
+        ],
+        "workType": "Transmission line, switching station and connecting lines",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "tva-public:shooting-creek--north-carolina-(clay-county)",
+      "utilityId": "tva-public",
+      "sourceId": "shooting-creek--north-carolina-(clay-county)",
+      "sponsor": "Tennessee Valley Authority",
+      "name": "Shooting Creek, North Carolina (Clay County)",
+      "description": "Preferred 9.33-mile 161 kV line from Hayesville to the new Shooting Creek substation in Clay County, North Carolina.",
+      "status": "Preferred route identified — July 2026",
+      "voltageKv": [
+        161
+      ],
+      "date": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Forecast in service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "web-capture-24.txt",
+          "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+          "locator": "Update — July 2026, captured L7–23; Background L25–31; Public Involvement L64–67"
+        }
+      ],
+      "notes": [
+        "July 2026 selects the 9.33-mile route; rejected and alternative routes are not separate records.",
+        "The Young Harris, Georgia meeting address is not a project center or project state.",
+        "July 8, 2026 notification letters are a communication event, not a publication day or construction milestone."
+      ],
+      "inventory": {
+        "sourceKey": "tva-public",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "TVA public transmission-project index — September 30, 2026 captured text",
+        "reportingGroupName": "Tennessee Valley Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-07",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": "North Carolina",
+        "sourceLocation": "Clay County; Hayesville station to Shooting Creek substation",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter / Spring 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-24.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+                "locator": "July 2026 update L20; Background L31"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "New transmission line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "tva-public:hardin-valley-(tennessee)",
+      "utilityId": "tva-public",
+      "sourceId": "hardin-valley-(tennessee)",
+      "sponsor": "Tennessee Valley Authority",
+      "name": "Hardin Valley, Tennessee",
+      "description": "Transmission line to the planned Hardin Valley station; the September 2024 update reports 80 percent construction completion.",
+      "status": "Construction 80 percent complete — September 2024",
+      "voltageKv": [
+        161
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Forecast in service: Winter 2025–2026"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "web-capture-32.txt",
+          "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+          "locator": "Update — September 2024, captured L8–10; Background 2 L13–25; Background 1 L28–46; Project Schedule L63–72"
+        }
+      ],
+      "notes": [
+        "Construction progress is evidence from September 2024, not a claim about present status.",
+        "The latest winter 2025–2026 forecast conflicts with the table entry winter 2045–2025; neither is silently repaired to an exact date.",
+        "Older service forecasts remain historical. No actual start day or complete construction window is established."
+      ],
+      "inventory": {
+        "sourceKey": "tva-public",
+        "editionId": "observed-2026-09-30",
+        "editionLabel": "TVA public transmission-project index — September 30, 2026 captured text",
+        "reportingGroupName": "Tennessee Valley Authority",
+        "identityBasis": "source-locator",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2024-09",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "sourceState": "Tennessee",
+        "sourceLocation": "Knox and Loudon Counties; proposed line to Hardin Valley station",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Updated forecast in service — unresolved winter range",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2025–2026; September 2024 narrative"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "September 2024 update L10"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting schedule forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2045–2025; exact conflicting source text, not repaired"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Project Schedule L72"
+              }
+            ]
+          },
+          {
+            "field": "Earlier background forecast in service",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2024; superseded background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Background 2 L25"
+              }
+            ]
+          },
+          {
+            "field": "Older background forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2022–2023; superseded background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Background 1 L46"
+              }
+            ]
+          },
+          {
+            "field": "Earlier forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter 2024; forecast only, not an actual start"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-32.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+                "locator": "Background 2 L23; Project Schedule L71"
+              }
+            ]
+          }
+        ],
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "New transmission line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "tva-public",
+      "editionId": "observed-2026-09-30",
+      "label": "TVA public transmission-project index — September 30, 2026 captured text",
+      "reportingGroupId": "tva-public",
+      "reportingGroupName": "Tennessee Valley Authority",
+      "publisher": "Tennessee Valley Authority",
+      "processAuthority": null,
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "web-capture-index.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-system-projects",
+        "locator": "Derived web-tool text capture, state-section project links; 41 placements / 40 unique URLs; not original HTML"
+      },
+      "sha256": "bc7a6de488eaf25170cee9854bff1fd95fa7dfa7d6da47d3c6cd14c9e9a87573",
+      "geographicScope": "Captured index sections span Alabama, Kentucky, Mississippi, North Carolina and Tennessee; Georgia/Virginia sections have no links, not a zero-project claim. Some projects cross section/state boundaries.",
+      "inventoryScope": "All 41 current-index placements: 40 unique public transmission page work units and one excluded duplicate Appalachia placement. No claim of utility-wide or state-wide capital-inventory completeness.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 41,
+        "importedRecords": 6,
+        "excludedRows": 1,
+        "failedRows": 0,
+        "pendingRows": 34,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Duplicate Appalachia placement under Tennessee; retained once under North Carolina.",
+          "count": 1
+        }
+      ],
+      "limitations": [
+        "The 41 placements cover only this captured public engagement index: 40 unique page-scoped work units and one duplicate Appalachia placement. Full scope is not a complete TVA or state engineering register.",
+        "The primary SHA-256 identifies web-tool extracted text, not publisher HTML. Ordinary HTML acquisition returned 403; the coordinator explicitly accepted derived captures as frozen evidence. Separate public GIS JSON artifacts are originals.",
+        "Georgia and Virginia have empty index sections, which do not establish zero projects. Project geography may differ from the section; public meeting addresses are not project locations.",
+        "One page may combine line, station and connection work. Alternatives, existing assets and future separate work without an index link are not additional records.",
+        "Canonical URL slugs are source-locator identities, not engineering IDs. GIS PROJECT_ID values remain scoped aliases; future edition continuity needs explicit crosswalks.",
+        "Lifecycle belongs to the dated source statement or undated snapshot observation, not present construction status. Elapsed forecasts, preferred routes and acquired easements do not establish completion, approval or construction.",
+        "Seasonal forecasts retain year precision and their source labels. Cross-year winters, conflicts and withdrawn schedules keep unknown primary dates; historical/component milestones remain supplemental.",
+        "Owners, centers, native geometry and construction intervals remain unknown. TVA is the reporting sponsor. Public proposed polylines have scope/status mismatches and are not converted to centers."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 1,
+    "failed": 0,
+    "notes": [
+      "34 accepted unique page work units remain pending in this snapshot.",
+      "Derived page-text captures are explicitly accepted evidence, not original HTML or a live engineering-status register."
+    ]
+  }
+}

@@ -1,0 +1,756 @@
+{
+  "sourceKey": "tva-public",
+  "editionId": "observed-2026-09-30",
+  "counts": {
+    "sourceRows": 41,
+    "importedRecords": 6,
+    "excludedRows": 1,
+    "failedRows": 0,
+    "pendingRows": 34,
+    "locatedRecords": 0
+  },
+  "payloadSizes": {
+    "compactUtf8Bytes": 22272,
+    "formattedUtf8Bytes": 29962
+  },
+  "rows": [
+    {
+      "placementId": "alabama-01",
+      "stateSection": "Alabama",
+      "sourceId": "claysville-alabama",
+      "title": "Claysville, Alabama",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-2.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-02",
+      "stateSection": "Alabama",
+      "sourceId": "florence-alabama",
+      "title": "Florence, Alabama (Iron City)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-3.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-03",
+      "stateSection": "Alabama",
+      "sourceId": "helicon-trade-alabama",
+      "title": "Helicon-Trade, Alabama",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-4.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-04",
+      "stateSection": "Alabama",
+      "sourceId": "jones-chapel-alabama",
+      "title": "Jones Chapel, Alabama (Cullman and Winston Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-5.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-05",
+      "stateSection": "Alabama",
+      "sourceId": "mulberry-alabama-(cullman-county)",
+      "title": "Mulberry, Alabama (Cullman County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-6.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-06",
+      "stateSection": "Alabama",
+      "sourceId": "new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "title": "New Liberty, Alabama (Cherokee and Calhoun Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "imported",
+      "reason": "One accepted page-scoped transmission work unit; component scopes are not extra records.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-7.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/new-liberty--alabama-(cherokee-and-calhoun-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-07",
+      "stateSection": "Alabama",
+      "sourceId": "redstone-arsenal-no.-3--alabama-(madison-county)",
+      "title": "Redstone Arsenal No. 3, Alabama (Madison County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-8.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-08",
+      "stateSection": "Alabama",
+      "sourceId": "star-gap--alabama-(fort-payne--dekalb-county)",
+      "title": "Star Gap, Alabama (Fort Payne, DeKalb County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-9.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "alabama-09",
+      "stateSection": "Alabama",
+      "sourceId": "sundown-drive-alabama",
+      "title": "Sundown Drive, Alabama",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-10.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "kentucky-01",
+      "stateSection": "Kentucky",
+      "sourceId": "commerce-park-ii-kentucky-(christian-and-todd-counties)",
+      "title": "Commerce Park II (St. Elmo), Kentucky (Christian and Todd Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-11.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "kentucky-02",
+      "stateSection": "Kentucky",
+      "sourceId": "kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "title": "Kentucky Area Improvements Phase II (Logan and Todd Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "imported",
+      "reason": "One accepted page-scoped transmission work unit; component scopes are not extra records.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-12.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "kentucky-03",
+      "stateSection": "Kentucky",
+      "sourceId": "transpark-east-kentucky-(warren-county)",
+      "title": "Transpark East, Kentucky (Warren County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-13.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-01",
+      "stateSection": "Mississippi",
+      "sourceId": "belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "title": "Belmont Stage 2, Mississippi (Clay, Lowndes, and Oktibbeha Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-14.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-02",
+      "stateSection": "Mississippi",
+      "sourceId": "beulah-grove--mississippi-(pontotoc-county)",
+      "title": "Beulah Grove, Mississippi (Pontotoc County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "imported",
+      "reason": "One accepted page-scoped transmission work unit; component scopes are not extra records.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-15.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/beulah-grove--mississippi-(pontotoc-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-03",
+      "stateSection": "Mississippi",
+      "sourceId": "macon-mississippi-(midway-south-macon)",
+      "title": "Macon, Mississippi (Midway-South Macon)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-16.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-04",
+      "stateSection": "Mississippi",
+      "sourceId": "nettleton--mississippi-(lee-county)",
+      "title": "Nettleton, Mississippi (Lee County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-17.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-05",
+      "stateSection": "Mississippi",
+      "sourceId": "north-oakland-coffeeville-mississippi",
+      "title": "North Oakland-Coffeeville, Mississippi",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-18.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-06",
+      "stateSection": "Mississippi",
+      "sourceId": "olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+      "title": "Olive Branch, Mississippi (Mineral Wells-West Pleasant Hill)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-19.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-07",
+      "stateSection": "Mississippi",
+      "sourceId": "railhub-south--mississippi-(alcorn-county)",
+      "title": "RailHub-South, Mississippi (Alcorn County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-20.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-08",
+      "stateSection": "Mississippi",
+      "sourceId": "south-macon-scooba-dekalb-mississippi",
+      "title": "South Macon-Scooba-DeKalb, Mississippi",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-21.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "mississippi-09",
+      "stateSection": "Mississippi",
+      "sourceId": "tupelo-mississippi-(north-green-street)",
+      "title": "Tupelo, Mississippi (North Green Street)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-22.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "north-carolina-01",
+      "stateSection": "North Carolina",
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "title": "Appalachia Area Improvement, Tennessee and North Carolina",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "imported",
+      "reason": "One accepted page-scoped transmission work unit; component scopes are not extra records.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-23.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "north-carolina-02",
+      "stateSection": "North Carolina",
+      "sourceId": "shooting-creek--north-carolina-(clay-county)",
+      "title": "Shooting Creek, North Carolina (Clay County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "imported",
+      "reason": "One accepted page-scoped transmission work unit; component scopes are not extra records.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-24.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/shooting-creek--north-carolina-(clay-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-01",
+      "stateSection": "Tennessee",
+      "sourceId": "109-north--tennessee-(sumner-county)",
+      "title": "109 North, Tennessee (Sumner County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-25.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-02",
+      "stateSection": "Tennessee",
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "title": "Appalachia Area Improvement, Tennessee and North Carolina",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "excluded",
+      "reason": "Duplicate Appalachia placement under Tennessee; retained once under North Carolina.",
+      "duplicateOfSourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "duplicateOfPlacementId": "north-carolina-01",
+      "source": {
+        "file": "web-capture-23.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/appalachia-area-improvement-tennessee-and-north-carolina",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-03",
+      "stateSection": "Tennessee",
+      "sourceId": "bristol-tennessee-(south-bristol)",
+      "title": "Bristol, Tennessee (South Bristol)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-26.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-04",
+      "stateSection": "Tennessee",
+      "sourceId": "cates-landing-(lake-county-tennessee)",
+      "title": "Cates Landing (Lake County, Tennessee)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-27.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-05",
+      "stateSection": "Tennessee",
+      "sourceId": "columbia-tennessee-(fiberon)",
+      "title": "Columbia, Tennessee (Fiberon)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-28.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-06",
+      "stateSection": "Tennessee",
+      "sourceId": "dickson-tennessee",
+      "title": "Dickson, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-29.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-07",
+      "stateSection": "Tennessee",
+      "sourceId": "fall-creek--tennessee-(wilson-and-rutherford-counties)",
+      "title": "Fall Creek, Tennessee (Wilson and Rutherford Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-30.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-08",
+      "stateSection": "Tennessee",
+      "sourceId": "gallatin-tennessee-(north-gallatin)",
+      "title": "Gallatin, Tennessee (North Gallatin)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-31.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-09",
+      "stateSection": "Tennessee",
+      "sourceId": "hardin-valley-(tennessee)",
+      "title": "Hardin Valley, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "imported",
+      "reason": "One accepted page-scoped transmission work unit; component scopes are not extra records.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-32.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/hardin-valley-(tennessee)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-10",
+      "stateSection": "Tennessee",
+      "sourceId": "lewis-chapel-tennessee-(dunlap)",
+      "title": "Lewis Chapel, Tennessee (Dunlap)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-33.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-11",
+      "stateSection": "Tennessee",
+      "sourceId": "lexington-tennessee-(west-lexington-jacks-creek)",
+      "title": "Lexington, Tennessee (West Lexington-Jacks Creek)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-34.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-12",
+      "stateSection": "Tennessee",
+      "sourceId": "north-dayton-tennessee",
+      "title": "North Dayton, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-35.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-13",
+      "stateSection": "Tennessee",
+      "sourceId": "riceville-tennessee",
+      "title": "Riceville, Tennessee",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-36.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-14",
+      "stateSection": "Tennessee",
+      "sourceId": "tiny-town-road-tennessee-(clarksville)",
+      "title": "Tiny Town Road, Tennessee (Clarksville)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-37.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-15",
+      "stateSection": "Tennessee",
+      "sourceId": "tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+      "title": "Tiptonville, Tennessee (Tiptonville-New Madrid No. 2)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-38.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-16",
+      "stateSection": "Tennessee",
+      "sourceId": "tullahoma-tennessee-(center-grove)",
+      "title": "Tullahoma, Tennessee (Center Grove)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-39.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-17",
+      "stateSection": "Tennessee",
+      "sourceId": "waldens-creek--tennessee-(sevier-county)",
+      "title": "Waldens Creek, Tennessee (Sevier County)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-40.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    },
+    {
+      "placementId": "tennessee-18",
+      "stateSection": "Tennessee",
+      "sourceId": "west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+      "title": "West Tennessee Power System Improvements (Fayette, Haywood, and Tipton Counties)",
+      "canonicalUrl": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "disposition": "pending",
+      "reason": "Accepted unique page work unit; normalization pending outside this sample.",
+      "duplicateOfSourceId": null,
+      "duplicateOfPlacementId": null,
+      "source": {
+        "file": "web-capture-41.txt",
+        "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+        "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
+      }
+    }
+  ]
+}
