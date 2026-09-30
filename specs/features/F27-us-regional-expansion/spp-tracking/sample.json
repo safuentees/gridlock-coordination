@@ -1,0 +1,996 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "qualified-for-inventory-discovery; coordinator mapping acceptance required before production",
+  "sourceKeyProposal": "spp-tracking",
+  "reportingGroupProposal": "spp-tracking",
+  "editionProposal": "2026-q3",
+  "publishedOn": "2026-07-07",
+  "postedOn": "2026-08-05",
+  "retrievedOn": "2026-09-30",
+  "dateMeaning": "Report cover/revision history gives July 7; archive listing is posted August 5. Publication is an edition anchor, not a row status-change date.",
+  "source": {
+    "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+    "indexUrl": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "definitionUrl": "https://spp.org/engineering/project-tracking-ntcs/",
+    "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-spp-tracking/Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+    "sha256": "167bb301dc9fd290f7901318c43312b28513aec711484d1da17162a207f09b5f",
+    "archiveSha256": "9870923806c427e4a390160ec20c4a9f0e2cf66dcec480fcf6c53f6891d3786d",
+    "bytes": 261922,
+    "range": "'Staff QPT Appendix 1'!A3:AA1424",
+    "identityColumn": "C (UID)",
+    "parentColumn": "B (PID)"
+  },
+  "enumeration": {
+    "sourceRows": 1422,
+    "uniqueUpgradeIds": 1422,
+    "uniqueParentPids": 468,
+    "retainedUpgradeRows": 1247,
+    "retainedParentPids": 401,
+    "excludedRows": 175,
+    "statusCounts": {
+      "Delay - Mitigation": 690,
+      "Delay - Mitigation Window": 22,
+      "Re-evaluation": 3,
+      "Complete": 155,
+      "In Service": 136,
+      "Closed Out": 12,
+      "On Schedule < 4": 204,
+      "NTC - Commitment Window": 14,
+      "Identified": 65,
+      "On Schedule > 4": 30,
+      "Withdrawn": 8,
+      "NTC-C Project Estimate Window": 82,
+      "Pending NTC/ NTC-C": 1
+    },
+    "exclusions": {
+      "Complete": 155,
+      "Closed Out": 12,
+      "Withdrawn": 8
+    },
+    "nativeCoordinateRows": 0,
+    "retainedTbdOwners": 7,
+    "retainedBlankStates": 13,
+    "retainedWithoutBusNames": 731,
+    "appendix2Rows": 26,
+    "appendix2IdsAlreadyInAppendix1": 26
+  },
+  "statusMappingProposal": {
+    "Delay - Mitigation": "planned",
+    "Delay - Mitigation Window": "planned",
+    "Re-evaluation": "unknown",
+    "In Service": "under-construction",
+    "On Schedule < 4": "planned",
+    "NTC - Commitment Window": "planned",
+    "Identified": "planned",
+    "On Schedule > 4": "planned",
+    "NTC-C Project Estimate Window": "planned",
+    "Pending NTC/ NTC-C": "unknown"
+  },
+  "ownerAliasProposal": [
+    {
+      "tokens": [
+        "EKC",
+        "WR"
+      ],
+      "id": "spp-owner-ekc",
+      "meaning": "Explicit source owner alias; not ultimate-parent grouping.",
+      "evidence": [
+        {
+          "file": "SPP-PCWG-2021-06-02.pdf",
+          "locator": "PDF p.109, Project Owner EKC/WR, UID 82116",
+          "url": "https://www.spp.org/Documents/64759/PCWG%20Minutes%20and%20Attachments%2020210602.pdf"
+        },
+        {
+          "file": "SPP-EKC-name-change-2020.pdf",
+          "locator": "PDF p.2, section II name change from Westar Energy to Evergy Kansas Central",
+          "url": "https://www.spp.org/documents/62482/20200626_3220r1%20evergy%20ks%20central%20%26%20sunflower%20%26%20itc%20great%20plains%20interconnection%20agreement_er20-2187.pdf"
+        }
+      ]
+    },
+    {
+      "tokens": [
+        "EM",
+        "KCPL"
+      ],
+      "id": "spp-owner-em",
+      "meaning": "Explicit source Project Owner token pair; not ultimate-parent grouping.",
+      "evidence": [
+        {
+          "file": "SPP-PCWG-2021-06-02.pdf",
+          "locator": "PDF p.110, Project Owner EM/KCPL, UID 112370",
+          "url": "https://www.spp.org/Documents/64759/PCWG%20Minutes%20and%20Attachments%2020210602.pdf"
+        }
+      ]
+    },
+    {
+      "tokens": [
+        "EMW",
+        "GMO"
+      ],
+      "id": "spp-owner-emw",
+      "meaning": "Explicit legal name change; do not merge with EM or EKC.",
+      "evidence": [
+        {
+          "file": "SPP-EMW-name-change-2020.pdf",
+          "locator": "PDF p.11, recital A, EMW formerly KCP&L Greater Missouri Operations (GMO)",
+          "url": "https://www.spp.org/documents/62499/20200630_3024r1%20evergy%20missouri%20west%20and%20transource%20missouri%20interconnection%20agreement_er20-2278.pdf"
+        }
+      ]
+    }
+  ],
+  "milestonePrecedence": [
+    "Project Owner Indicated In-Service Date",
+    "RTO Determined Need Date",
+    "unknown"
+  ],
+  "researchTiming": {
+    "startedAt": "2026-09-30T08:46:10Z",
+    "researchClosedAt": "2026-09-30T08:51:38Z",
+    "elapsedMinutes": 5.47,
+    "limitMinutes": 15
+  },
+  "limitations": [
+    "All planned centers are unknown; named buses cannot establish coordinates or routes.",
+    "Source units are UID upgrades under explicit PID parents; do not import duplicate PID summary records.",
+    "Appendix 2 is a 26-UID delay-context subset and creates no new upgrade records; its long free-text history contains apparent copy/paste inconsistencies.",
+    "The executive-summary reporting-period text conflicts with Q3 publication context; preserve the named edition rather than infer a uniform activity interval.",
+    "SPP terms permit cited copying subject to stated restrictions and require express authorization for commercial use; no open-data license or commercial permission is asserted."
+  ],
+  "records": [
+    {
+      "nativeId": "50442",
+      "parentPid": "30375",
+      "sourceRow": 3,
+      "citation": {
+        "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+        "locator": "'Staff QPT Appendix 1'!A3:AA3",
+        "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+      },
+      "raw": {
+        "NTC ID": 200220,
+        "PID": 30375,
+        "UID": 50442,
+        "ProjectOwner": "NPPD",
+        "State(s)": "NE",
+        "Project Name": "Multi - Gentleman - Cherry Co. - Holt Co. 345 kV",
+        "Upgrade Name": "Cherry Co. - Gentleman 345 kV Ckt 1",
+        "Project Type": "Regional \nReliability",
+        "Project Owner Indicated In-Service Date": "2028-09-30",
+        "RTO Determined Need Date": "2018-01-01",
+        "Letter of Notification to Construct Issue Date": "2013-03-11",
+        "Source Study": "2012 ITP10",
+        "Baseline Cost Estimate": 296697797,
+        "Baseline Cost Estimate Year": 2025,
+        "Baseline Cost Estimate with Escalation": 304115241.925,
+        "Current Cost Estimate": 296697797,
+        "Final Cost": null,
+        "Project Status": "Delay - \nMitigation",
+        "From Bus Number": "640500",
+        "From Bus Name": "Cherry County 345 kV",
+        "To Bus Number": "640183",
+        "To Bus Name": "Gerald Gentleman Station",
+        "Project Description/ Comments": "Build new 110-mile 345 kV line from Gerald Gentleman Station substation to new Cherry County substation. This upgrade is contingent upon approval from Western Area Power Administration (\"WAPA\") to tap the Grand Island - Fort Thompson 345 kV line.",
+        "Voltages (kV)": 345,
+        "Number of New": 100.7,
+        "Number of Rebuild/Reconductor": null,
+        "Number of Voltage Conversion": null
+      },
+      "candidate": {
+        "id": "spp-tracking:50442",
+        "utilityId": "spp-tracking",
+        "sourceId": "50442",
+        "sponsor": "NPPD",
+        "name": "Cherry Co. - Gentleman 345 kV Ckt 1",
+        "description": "Build new 110-mile 345 kV line from Gerald Gentleman Station substation to new Cherry County substation. This upgrade is contingent upon approval from Western Area Power Administration (\"WAPA\") to tap the Grand Island - Fort Thompson 345 kV line.",
+        "status": "Delay - \nMitigation",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2028-09-30",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Project owner forecast in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+            "locator": "'Staff QPT Appendix 1'!A3:AA3",
+            "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+          }
+        ],
+        "notes": [
+          "Source project PID 30375: Multi - Gentleman - Cherry Co. - Holt Co. 345 kV",
+          "Source study: 2012 ITP10",
+          "Delay describes the owner forecast relative to the need date; construction phase is not established."
+        ],
+        "inventory": {
+          "sourceKey": "spp-tracking",
+          "editionId": "2026-q3",
+          "editionLabel": "SPP Q3 2026 project tracking",
+          "reportingGroupName": "SPP project tracking",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-07-07",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": {
+            "id": "spp-owner-nppd",
+            "name": "NPPD",
+            "identityScope": "source",
+            "evidence": [
+              {
+                "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                "locator": "'Staff QPT Appendix 1'!D3",
+                "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+              }
+            ]
+          },
+          "parentProgramId": "spp-tracking:pid:30375",
+          "aliases": [
+            "ntc:200220"
+          ],
+          "workType": "Regional \nReliability",
+          "sourceState": "NE",
+          "sourceLocation": "From bus 640500: Cherry County 345 kV; To bus 640183: Gerald Gentleman Station",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Project Owner Indicated In-Service Date",
+              "date": {
+                "value": "2028-09-30",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Project Owner Indicated In-Service Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!I3",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "RTO Determined Need Date",
+              "date": {
+                "value": "2018-01-01",
+                "precision": "day",
+                "kind": "need",
+                "label": "RTO Determined Need Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!J3",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "Letter of Notification to Construct Issue Date",
+              "date": {
+                "value": "2013-03-11",
+                "precision": "day",
+                "kind": "unknown",
+                "label": "Letter of Notification to Construct Issue Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!K3",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "Named source buses are text evidence only; the workbook has no native coordinates and no center is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeId": "50444",
+      "parentPid": "30375",
+      "sourceRow": 4,
+      "citation": {
+        "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+        "locator": "'Staff QPT Appendix 1'!A4:AA4",
+        "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+      },
+      "raw": {
+        "NTC ID": 200220,
+        "PID": 30375,
+        "UID": 50444,
+        "ProjectOwner": "NPPD",
+        "State(s)": "NE",
+        "Project Name": "Multi - Gentleman - Cherry Co. - Holt Co. 345 kV",
+        "Upgrade Name": "Cherry Co. Substation 345 kV",
+        "Project Type": "Regional \nReliability",
+        "Project Owner Indicated In-Service Date": "2028-09-30",
+        "RTO Determined Need Date": "2018-01-01",
+        "Letter of Notification to Construct Issue Date": "2013-03-11",
+        "Source Study": "2012 ITP10",
+        "Baseline Cost Estimate": 15479072,
+        "Baseline Cost Estimate Year": 2025,
+        "Baseline Cost Estimate with Escalation": 15866048.8,
+        "Current Cost Estimate": 15479072,
+        "Final Cost": null,
+        "Project Status": "Delay - \nMitigation",
+        "From Bus Number": "640500",
+        "From Bus Name": "Cherry County 345 kV",
+        "To Bus Number": null,
+        "To Bus Name": null,
+        "Project Description/ Comments": "Build new Cherry County 345 kV substation and install necessary terminal equipment. This upgrade is contingent upon approval from WAPA to tap the Grand Island - Fort Thompson 345 kV line.",
+        "Voltages (kV)": 345,
+        "Number of New": null,
+        "Number of Rebuild/Reconductor": null,
+        "Number of Voltage Conversion": null
+      },
+      "candidate": {
+        "id": "spp-tracking:50444",
+        "utilityId": "spp-tracking",
+        "sourceId": "50444",
+        "sponsor": "NPPD",
+        "name": "Cherry Co. Substation 345 kV",
+        "description": "Build new Cherry County 345 kV substation and install necessary terminal equipment. This upgrade is contingent upon approval from WAPA to tap the Grand Island - Fort Thompson 345 kV line.",
+        "status": "Delay - \nMitigation",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2028-09-30",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Project owner forecast in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+            "locator": "'Staff QPT Appendix 1'!A4:AA4",
+            "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+          }
+        ],
+        "notes": [
+          "Source project PID 30375: Multi - Gentleman - Cherry Co. - Holt Co. 345 kV",
+          "Source study: 2012 ITP10",
+          "Delay describes the owner forecast relative to the need date; construction phase is not established."
+        ],
+        "inventory": {
+          "sourceKey": "spp-tracking",
+          "editionId": "2026-q3",
+          "editionLabel": "SPP Q3 2026 project tracking",
+          "reportingGroupName": "SPP project tracking",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-07-07",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": {
+            "id": "spp-owner-nppd",
+            "name": "NPPD",
+            "identityScope": "source",
+            "evidence": [
+              {
+                "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                "locator": "'Staff QPT Appendix 1'!D4",
+                "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+              }
+            ]
+          },
+          "parentProgramId": "spp-tracking:pid:30375",
+          "aliases": [
+            "ntc:200220"
+          ],
+          "workType": "Regional \nReliability",
+          "sourceState": "NE",
+          "sourceLocation": "From bus 640500: Cherry County 345 kV",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Project Owner Indicated In-Service Date",
+              "date": {
+                "value": "2028-09-30",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Project Owner Indicated In-Service Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!I4",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "RTO Determined Need Date",
+              "date": {
+                "value": "2018-01-01",
+                "precision": "day",
+                "kind": "need",
+                "label": "RTO Determined Need Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!J4",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "Letter of Notification to Construct Issue Date",
+              "date": {
+                "value": "2013-03-11",
+                "precision": "day",
+                "kind": "unknown",
+                "label": "Letter of Notification to Construct Issue Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!K4",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "Named source buses are text evidence only; the workbook has no native coordinates and no center is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeId": "51487",
+      "parentPid": "31025",
+      "sourceRow": 10,
+      "citation": {
+        "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+        "locator": "'Staff QPT Appendix 1'!A10:AA10",
+        "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+      },
+      "raw": {
+        "NTC ID": 200390,
+        "PID": 31025,
+        "UID": 51487,
+        "ProjectOwner": "GRDA",
+        "State(s)": "OK",
+        "Project Name": "Sub - Sallisaw 161 kV Terminal Upgrades",
+        "Upgrade Name": "Sallisaw 161 kV Terminal Upgrades",
+        "Project Type": "Regional \nReliability",
+        "Project Owner Indicated In-Service Date": "2017-12-31",
+        "RTO Determined Need Date": "2017-06-01",
+        "Letter of Notification to Construct Issue Date": "2016-05-17",
+        "Source Study": "2016 ITPNT",
+        "Baseline Cost Estimate": 2266000,
+        "Baseline Cost Estimate Year": 2016,
+        "Baseline Cost Estimate with Escalation": 2322650,
+        "Current Cost Estimate": 2266000,
+        "Final Cost": null,
+        "Project Status": "Re-evaluation",
+        "From Bus Number": "505550",
+        "From Bus Name": "Sallisaw",
+        "To Bus Number": null,
+        "To Bus Name": null,
+        "Project Description/ Comments": "Install ring bus at Sallisaw 161 kV substation.",
+        "Voltages (kV)": 161,
+        "Number of New": null,
+        "Number of Rebuild/Reconductor": null,
+        "Number of Voltage Conversion": null
+      },
+      "candidate": {
+        "id": "spp-tracking:51487",
+        "utilityId": "spp-tracking",
+        "sourceId": "51487",
+        "sponsor": "GRDA",
+        "name": "Sallisaw 161 kV Terminal Upgrades",
+        "description": "Install ring bus at Sallisaw 161 kV substation.",
+        "status": "Re-evaluation",
+        "voltageKv": [
+          161.0
+        ],
+        "date": {
+          "value": "2017-12-31",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Project owner forecast in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+            "locator": "'Staff QPT Appendix 1'!A10:AA10",
+            "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+          }
+        ],
+        "notes": [
+          "Source project PID 31025: Sub - Sallisaw 161 kV Terminal Upgrades",
+          "Source study: 2016 ITPNT",
+          "Source says active pending re-evaluation; lifecycle stage remains unknown, not presumed suspended."
+        ],
+        "inventory": {
+          "sourceKey": "spp-tracking",
+          "editionId": "2026-q3",
+          "editionLabel": "SPP Q3 2026 project tracking",
+          "reportingGroupName": "SPP project tracking",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-07-07",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": {
+            "id": "spp-owner-grda",
+            "name": "GRDA",
+            "identityScope": "source",
+            "evidence": [
+              {
+                "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                "locator": "'Staff QPT Appendix 1'!D10",
+                "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+              }
+            ]
+          },
+          "parentProgramId": "spp-tracking:pid:31025",
+          "aliases": [
+            "ntc:200390"
+          ],
+          "workType": "Regional \nReliability",
+          "sourceState": "OK",
+          "sourceLocation": "From bus 505550: Sallisaw",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Project Owner Indicated In-Service Date",
+              "date": {
+                "value": "2017-12-31",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Project Owner Indicated In-Service Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!I10",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "RTO Determined Need Date",
+              "date": {
+                "value": "2017-06-01",
+                "precision": "day",
+                "kind": "need",
+                "label": "RTO Determined Need Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!J10",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "Letter of Notification to Construct Issue Date",
+              "date": {
+                "value": "2016-05-17",
+                "precision": "day",
+                "kind": "unknown",
+                "label": "Letter of Notification to Construct Issue Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!K10",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "Named source buses are text evidence only; the workbook has no native coordinates and no center is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeId": "71933",
+      "parentPid": "51239",
+      "sourceRow": 12,
+      "citation": {
+        "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+        "locator": "'Staff QPT Appendix 1'!A12:AA12",
+        "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+      },
+      "raw": {
+        "NTC ID": null,
+        "PID": 51239,
+        "UID": 71933,
+        "ProjectOwner": "NPPD",
+        "State(s)": "NE/",
+        "Project Name": "Sub - Holt County 345kV (Tap Grand Prairie - Grand Island 345kV) - GEN-2015-023 Addition",
+        "Upgrade Name": "Holt County 345kV (Tap Grand Prairie - Grand Island 345kV) - GEN-2015-023 Addition (TOIF)",
+        "Project Type": "Generation \nInterconnection",
+        "Project Owner Indicated In-Service Date": "2022-09-30",
+        "RTO Determined Need Date": null,
+        "Letter of Notification to Construct Issue Date": null,
+        "Source Study": "GI STUDIES",
+        "Baseline Cost Estimate": null,
+        "Baseline Cost Estimate Year": null,
+        "Baseline Cost Estimate with Escalation": 0,
+        "Current Cost Estimate": 4700000,
+        "Final Cost": null,
+        "Project Status": "In Service",
+        "From Bus Number": "640503",
+        "From Bus Name": "Holt County 345 kV",
+        "To Bus Number": null,
+        "To Bus Name": null,
+        "Project Description/ Comments": "Holt County 345kV Substation - Install 345kV line terminal to connect to the Interconnection Customer Interconnection Facilities. Work to include line switch, dead-end towers, metering, current transformers, potential transformers, and associated and miscellaneous material.; One (1) approximately five (5) mile 345 kV overhead transmission line from the Interconnection Customer's collector substation to the Transmission Owner's Holt County 345 kV substation.",
+        "Voltages (kV)": "345/0",
+        "Number of New": null,
+        "Number of Rebuild/Reconductor": null,
+        "Number of Voltage Conversion": null
+      },
+      "candidate": {
+        "id": "spp-tracking:71933",
+        "utilityId": "spp-tracking",
+        "sourceId": "71933",
+        "sponsor": "NPPD",
+        "name": "Holt County 345kV (Tap Grand Prairie - Grand Island 345kV) - GEN-2015-023 Addition (TOIF)",
+        "description": "Holt County 345kV Substation - Install 345kV line terminal to connect to the Interconnection Customer Interconnection Facilities. Work to include line switch, dead-end towers, metering, current transformers, potential transformers, and associated and miscellaneous material.; One (1) approximately five (5) mile 345 kV overhead transmission line from the Interconnection Customer's collector substation to the Transmission Owner's Holt County 345 kV substation.",
+        "status": "In Service",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2022-09-30",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Project owner forecast in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+            "locator": "'Staff QPT Appendix 1'!A12:AA12",
+            "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+          }
+        ],
+        "notes": [
+          "Source project PID 51239: Sub - Holt County 345kV (Tap Grand Prairie - Grand Island 345kV) - GEN-2015-023 Addition",
+          "Source study: GI STUDIES",
+          "Source status means operational with construction activities still incomplete; not a wholly completed upgrade."
+        ],
+        "inventory": {
+          "sourceKey": "spp-tracking",
+          "editionId": "2026-q3",
+          "editionLabel": "SPP Q3 2026 project tracking",
+          "reportingGroupName": "SPP project tracking",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "lifecycle": "under-construction",
+          "lifecycleAsOf": "2026-07-07",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": {
+            "id": "spp-owner-nppd",
+            "name": "NPPD",
+            "identityScope": "source",
+            "evidence": [
+              {
+                "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                "locator": "'Staff QPT Appendix 1'!D12",
+                "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+              }
+            ]
+          },
+          "parentProgramId": "spp-tracking:pid:51239",
+          "aliases": [],
+          "workType": "Generation \nInterconnection",
+          "sourceState": "NE/",
+          "sourceLocation": "From bus 640503: Holt County 345 kV",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Project Owner Indicated In-Service Date",
+              "date": {
+                "value": "2022-09-30",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Project Owner Indicated In-Service Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!I12",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "Named source buses are text evidence only; the workbook has no native coordinates and no center is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeId": "157811",
+      "parentPid": "93109",
+      "sourceRow": 444,
+      "citation": {
+        "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+        "locator": "'Staff QPT Appendix 1'!A444:AA444",
+        "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+      },
+      "raw": {
+        "NTC ID": null,
+        "PID": 93109,
+        "UID": 157811,
+        "ProjectOwner": "TBD",
+        "State(s)": "AR/KS/OK",
+        "Project Name": "Line - Ft. Smith  - Thistle 345 kV",
+        "Upgrade Name": "Ft. Smith - Thistle 345 kV CKT 1",
+        "Project Type": "Economic",
+        "Project Owner Indicated In-Service Date": null,
+        "RTO Determined Need Date": "2042-01-01",
+        "Letter of Notification to Construct Issue Date": null,
+        "Source Study": "2022 20 Year \nAssessment",
+        "Baseline Cost Estimate": null,
+        "Baseline Cost Estimate Year": null,
+        "Baseline Cost Estimate with Escalation": 0,
+        "Current Cost Estimate": 461160280,
+        "Final Cost": null,
+        "Project Status": "Identified",
+        "From Bus Number": null,
+        "From Bus Name": null,
+        "To Bus Number": null,
+        "To Bus Name": null,
+        "Project Description/ Comments": "Build Ft. Smith  - Thistle 345 kV circuit 1",
+        "Voltages (kV)": 345,
+        "Number of New": null,
+        "Number of Rebuild/Reconductor": null,
+        "Number of Voltage Conversion": null
+      },
+      "candidate": {
+        "id": "spp-tracking:157811",
+        "utilityId": "spp-tracking",
+        "sourceId": "157811",
+        "sponsor": "TBD",
+        "name": "Ft. Smith - Thistle 345 kV CKT 1",
+        "description": "Build Ft. Smith  - Thistle 345 kV circuit 1",
+        "status": "Identified",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2042-01-01",
+          "precision": "day",
+          "kind": "need",
+          "label": "RTO determined need date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+            "locator": "'Staff QPT Appendix 1'!A444:AA444",
+            "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+          }
+        ],
+        "notes": [
+          "Source project PID 93109: Line - Ft. Smith  - Thistle 345 kV",
+          "Source study: 2022 20 Year \nAssessment",
+          "ProjectOwner is TBD; no owner identity is established.",
+          "Identified in Board-approved study results; no construction commitment inferred."
+        ],
+        "inventory": {
+          "sourceKey": "spp-tracking",
+          "editionId": "2026-q3",
+          "editionLabel": "SPP Q3 2026 project tracking",
+          "reportingGroupName": "SPP project tracking",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-07-07",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "parentProgramId": "spp-tracking:pid:93109",
+          "aliases": [],
+          "workType": "Economic",
+          "sourceState": "AR/KS/OK",
+          "sourceLocation": null,
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "RTO Determined Need Date",
+              "date": {
+                "value": "2042-01-01",
+                "precision": "day",
+                "kind": "need",
+                "label": "RTO Determined Need Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!J444",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "Named source buses are text evidence only; the workbook has no native coordinates and no center is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeId": "171264",
+      "parentPid": "95192",
+      "sourceRow": 1249,
+      "citation": {
+        "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+        "locator": "'Staff QPT Appendix 1'!A1249:AA1249",
+        "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+      },
+      "raw": {
+        "NTC ID": 220968,
+        "PID": 95192,
+        "UID": 171264,
+        "ProjectOwner": "BEPC",
+        "State(s)": "ND",
+        "Project Name": "Line - Belfield - Roundup 345 kV New Line",
+        "Upgrade Name": "Belfield - Roundup 345 kV Ckt 1 New Line",
+        "Project Type": "Economic",
+        "Project Owner Indicated In-Service Date": null,
+        "RTO Determined Need Date": "2032-01-01",
+        "Letter of Notification to Construct Issue Date": "2025-12-19",
+        "Source Study": "2025 ITP",
+        "Baseline Cost Estimate": null,
+        "Baseline Cost Estimate Year": null,
+        "Baseline Cost Estimate with Escalation": 0,
+        "Current Cost Estimate": 156240000,
+        "Final Cost": null,
+        "Project Status": "NTC-C Project \nEstimate Window",
+        "From Bus Number": "652424",
+        "From Bus Name": "BELFIELD",
+        "To Bus Number": "659384",
+        "To Bus Name": null,
+        "Project Description/ Comments": "Build a 50.4-mile 345 kV Ckt 1 line from Belfield to Roundup",
+        "Voltages (kV)": "345/0",
+        "Number of New": 50.4,
+        "Number of Rebuild/Reconductor": null,
+        "Number of Voltage Conversion": null
+      },
+      "candidate": {
+        "id": "spp-tracking:171264",
+        "utilityId": "spp-tracking",
+        "sourceId": "171264",
+        "sponsor": "BEPC",
+        "name": "Belfield - Roundup 345 kV Ckt 1 New Line",
+        "description": "Build a 50.4-mile 345 kV Ckt 1 line from Belfield to Roundup",
+        "status": "NTC-C Project \nEstimate Window",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2032-01-01",
+          "precision": "day",
+          "kind": "need",
+          "label": "RTO determined need date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+            "locator": "'Staff QPT Appendix 1'!A1249:AA1249",
+            "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+          }
+        ],
+        "notes": [
+          "Source project PID 95192: Line - Belfield - Roundup 345 kV New Line",
+          "Source study: 2025 ITP",
+          "Conditional notification estimate window; no construction commitment inferred."
+        ],
+        "inventory": {
+          "sourceKey": "spp-tracking",
+          "editionId": "2026-q3",
+          "editionLabel": "SPP Q3 2026 project tracking",
+          "reportingGroupName": "SPP project tracking",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-07-07",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": {
+            "id": "spp-owner-bepc",
+            "name": "BEPC",
+            "identityScope": "source",
+            "evidence": [
+              {
+                "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                "locator": "'Staff QPT Appendix 1'!D1249",
+                "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+              }
+            ]
+          },
+          "parentProgramId": "spp-tracking:pid:95192",
+          "aliases": [
+            "ntc:220968"
+          ],
+          "workType": "Economic",
+          "sourceState": "ND",
+          "sourceLocation": "From bus 652424: BELFIELD; To bus 659384: unknown name",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "RTO Determined Need Date",
+              "date": {
+                "value": "2032-01-01",
+                "precision": "day",
+                "kind": "need",
+                "label": "RTO Determined Need Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!J1249",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            },
+            {
+              "field": "Letter of Notification to Construct Issue Date",
+              "date": {
+                "value": "2025-12-19",
+                "precision": "day",
+                "kind": "unknown",
+                "label": "Letter of Notification to Construct Issue Date"
+              },
+              "evidence": [
+                {
+                  "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+                  "locator": "'Staff QPT Appendix 1'!K1249",
+                  "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "Named source buses are text evidence only; the workbook has no native coordinates and no center is inferred."
+          ]
+        }
+      }
+    }
+  ]
+}
