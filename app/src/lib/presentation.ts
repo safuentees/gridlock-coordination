@@ -4,6 +4,7 @@ import type { Project } from "@/domain/schema"
 // Unknown/imported notes remain visible rather than being discarded by broad keyword matching.
 export function visibleProjectNotes(project: Project): string[] {
   return project.notes.flatMap(note => {
+    if (project.inventory?.identityBasis === "source-locator" && note === "Source locator identity; not a native engineering project ID. Later editions require explicit identity review.") return []
     if (note.startsWith("Workbook alias:") || note === "Location supplied in workbook; not independently verified.") return []
     if (note === "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage.") return []
     if (note === "All names, dates, coordinates and confidence labels in this record are synthetic." || note === "No location supplied in this scenario; the project remains in the inventory.") return []
