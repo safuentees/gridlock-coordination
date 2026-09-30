@@ -1,0 +1,38 @@
+{
+  "sourceKey": "vi-wapa-upgrades",
+  "editionId": "2026-07-07-system-upgrades",
+  "label": "WAPA July 7, 2026 system-upgrade works",
+  "reportingGroupId": "vi-wapa-upgrades",
+  "reportingGroupName": "Virgin Islands WAPA July 2026 upgrades",
+  "publisher": "Virgin Islands Water and Power Authority",
+  "processAuthority": null,
+  "publishedOn": "2026-07-07",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "2026-07-07-transmission-distribution-release.html",
+    "locator": "Dated July7,2026 article: both named remaining-work descriptions (body paragraphs4–5); shared outage schedule is not an inventory list",
+    "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+  },
+  "sha256": "e14e88a3082ddc037390e1e599df1e38031e29244068f3866abfcb02e610ce67",
+  "geographicScope": "Two works serving eastern St.Thomas and St.John; affected areas are not site geometry.",
+  "inventoryScope": "Both named remaining-work descriptions in the July7,2026 release; outage-affected feeders and old assets are not additional projects.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 2,
+    "importedRecords": 2,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "These source observations are not a current complete Virgin Islands project register or a count of unique engineering assets.",
+    "WAPA is publisher/operator context; no per-package sole owner evidence is established. Contractors and funding agencies are not owners.",
+    "All normalized voltages, coordinates/native geometry, construction-start days and construction intervals remain unknown. Undergrounding alone is not a transmission role.",
+    "Feeder/circuit labels are asset references, not engineering project IDs. Source-locator identity preserves named packages and island distinctions; compound work is not split.",
+    "No keyed crosswalk proves equivalence between historical recovery entries and newer upgrades. Related names are not merged, and affected feeder lists are not projects.",
+    "July7,2026 is the dated release/source edition, not a confirmation that work was completed later.",
+    "The July13/14 outage schedule applies to both named works without assigning a per-project energization/completion day. Shared outage nights remain evidence, not construction windows."
+  ]
+}

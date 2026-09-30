@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "Historical WAPA recovery presentation — electrical mitigation — sample",
+  "generatedAt": "2026-09-30T11:00:00+00:00",
+  "projects": [
+    {
+      "id": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p06:poles-st-thomas",
+      "utilityId": "vi-wapa-recovery",
+      "sourceId": "snapshot-2026-09-30:recovery:p06:poles-st-thomas",
+      "sponsor": "Virgin Islands Water and Power Authority (publisher/operator context)",
+      "name": "St. Thomas composite pole package",
+      "description": "St. Thomas composite pole package — Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "status": "99%",
+      "voltageKv": [],
+      "date": {
+        "value": "2024-01",
+        "precision": "month",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2023-09-12-investments-public.pdf",
+          "locator": "PDF p.6; Composite Pole Project, St. Thomas column",
+          "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+        }
+      ],
+      "notes": [
+        "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+        "PDF p.6 explicitly says data as of August2023.",
+        "Source installed poles: 2305 of 2334; reported status 99%; target end: January 2024. These are August2023 source facts, not current completion."
+      ],
+      "inventory": {
+        "sourceKey": "vi-wapa-recovery",
+        "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+        "editionLabel": "Historical WAPA recovery presentation — electrical mitigation",
+        "reportingGroupName": "Virgin Islands WAPA historical recovery",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2023-08",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Historical electrical mitigation package",
+        "sourceState": null,
+        "sourceLocation": "Reported island: St. Thomas",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Target end",
+            "date": {
+              "value": "2024-01",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Target end (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "2023-09-12-investments-public.pdf",
+                "locator": "PDF p.6; Composite Pole Project, St. Thomas column",
+                "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named islands, affected areas, feeder/circuit references and endpoints are source context, not native geometry or inferred project centers."
+        ]
+      }
+    },
+    {
+      "id": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p07:substation-east-end",
+      "utilityId": "vi-wapa-recovery",
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-east-end",
+      "sponsor": "Virgin Islands Water and Power Authority (publisher/operator context)",
+      "name": "East End Substation",
+      "description": "East End Substation — Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "status": "99%",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end invalid in source: 11/31/2023"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2023-09-12-investments-public.pdf",
+          "locator": "PDF p.7; Substation Projects Overview, East End column",
+          "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+        },
+        {
+          "file": "substation-projects.html",
+          "url": "https://www.viwapa.vi/projects/substation-projects",
+          "locator": "East End Substation project overview; mixed substation/switchgear scope"
+        },
+        {
+          "file": "2020-05-30-east-end-ridge-road-release.html",
+          "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2020/05/30/wapa-board-approves-changes-to-mitigation-projects-st.-croix-water-line-rehab-project-extension-and-contract-for-project-management-services",
+          "locator": "East End reconstruction paragraph: St.Thomas site, transmission to St.John, and distribution Ridge Road feeder"
+        }
+      ],
+      "notes": [
+        "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+        "Invalid November31 target stays unknown, never silently repaired to November30 or December1.",
+        "Areas Affected is not site location. The2020 WAPA release locates East End Substation on St.Thomas; preserve the slide impact-area wording without using it as a center.",
+        "Percent project status does not explicitly identify physical construction stage; lifecycle unknown.",
+        "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+        "Source project status: 99%; target end: 11/31/2023.",
+        "Project start is not established as physical construction start; no construction window is inferred.",
+        "The invalid source target 11/31/2023 remains raw evidence. Its normalized date is unknown."
+      ],
+      "inventory": {
+        "sourceKey": "vi-wapa-recovery",
+        "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+        "editionLabel": "Historical WAPA recovery presentation — electrical mitigation",
+        "reportingGroupName": "Virgin Islands WAPA historical recovery",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Historical electrical mitigation package",
+        "sourceState": null,
+        "sourceLocation": "Affected area: Eastern Portion of St. John",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Target end",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Target end invalid in source: 11/31/2023"
+            },
+            "evidence": [
+              {
+                "file": "2023-09-12-investments-public.pdf",
+                "locator": "PDF p.7; Substation Projects Overview, East End column",
+                "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+              }
+            ]
+          },
+          {
+            "field": "Project Start Date (not established as construction start)",
+            "date": {
+              "value": "2018-08-17",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Source project start"
+            },
+            "evidence": [
+              {
+                "file": "2023-09-12-investments-public.pdf",
+                "locator": "PDF p.7; Substation Projects Overview, East End column",
+                "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named islands, affected areas, feeder/circuit references and endpoints are source context, not native geometry or inferred project centers."
+        ]
+      }
+    },
+    {
+      "id": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p07:substation-tutu",
+      "utilityId": "vi-wapa-recovery",
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-tutu",
+      "sponsor": "Virgin Islands Water and Power Authority (publisher/operator context)",
+      "name": "Tutu Substation",
+      "description": "Tutu Substation — Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "status": "Design RFP",
+      "voltageKv": [],
+      "date": {
+        "value": "2026-01-31",
+        "precision": "day",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2023-09-12-investments-public.pdf",
+          "locator": "PDF p.7; Substation Projects Overview, Tutu column",
+          "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+        },
+        {
+          "file": "substation-projects.html",
+          "url": "https://www.viwapa.vi/projects/substation-projects",
+          "locator": "Tutu Substation project overview; mixed substation/switchgear scope"
+        }
+      ],
+      "notes": [
+        "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+        "Design/engineering RFP start is procurement, not construction start.",
+        "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+        "Source project status: Design RFP; target end: 1/31/2026."
+      ],
+      "inventory": {
+        "sourceKey": "vi-wapa-recovery",
+        "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+        "editionLabel": "Historical WAPA recovery presentation — electrical mitigation",
+        "reportingGroupName": "Virgin Islands WAPA historical recovery",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Historical electrical mitigation package",
+        "sourceState": null,
+        "sourceLocation": "Affected area: Eastern Portion of St. Thomas",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Target end",
+            "date": {
+              "value": "2026-01-31",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Target end (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "2023-09-12-investments-public.pdf",
+                "locator": "PDF p.7; Substation Projects Overview, Tutu column",
+                "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+              }
+            ]
+          },
+          {
+            "field": "Design & Engineering RFP start",
+            "date": {
+              "value": "2023-12-31",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Design & Engineering RFP start"
+            },
+            "evidence": [
+              {
+                "file": "2023-09-12-investments-public.pdf",
+                "locator": "PDF p.7; Substation Projects Overview, Tutu column",
+                "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named islands, affected areas, feeder/circuit references and endpoints are source context, not native geometry or inferred project centers."
+        ]
+      }
+    },
+    {
+      "id": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
+      "utilityId": "vi-wapa-recovery",
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
+      "sponsor": "Virgin Islands Water and Power Authority (publisher/operator context)",
+      "name": "Transmission Lines 0D0E2 and 0C0D undergrounding",
+      "description": "Transmission Lines 0D0E2 and 0C0D undergrounding — Source expressly identifies transmission lines.",
+      "status": "UPCOMING UNDERGROUNDING",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2023-09-12-investments-public.pdf",
+          "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 6",
+          "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+        }
+      ],
+      "notes": [
+        "Source expressly identifies transmission lines.",
+        "One compound named source entry contains two line references; these are asset references, not a native project ID. Do not split into two projects or infer voltage from system size.",
+        "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+        "The source heading is UPCOMING UNDERGROUNDING; no actual status date is supplied for this page."
+      ],
+      "inventory": {
+        "sourceKey": "vi-wapa-recovery",
+        "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+        "editionLabel": "Historical WAPA recovery presentation — electrical mitigation",
+        "reportingGroupName": "Virgin Islands WAPA historical recovery",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Historical electrical mitigation package",
+        "sourceState": null,
+        "sourceLocation": "Reported island: St. Thomas",
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "Target end",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Target end date not supplied"
+            },
+            "evidence": [
+              {
+                "file": "2023-09-12-investments-public.pdf",
+                "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 6",
+                "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Named islands, affected areas, feeder/circuit references and endpoints are source context, not native geometry or inferred project centers."
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "vi-wapa-recovery",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "label": "Historical WAPA recovery presentation — electrical mitigation",
+      "reportingGroupId": "vi-wapa-recovery",
+      "reportingGroupName": "Virgin Islands WAPA historical recovery",
+      "publisher": "Virgin Islands Water and Power Authority",
+      "processAuthority": null,
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "Electrical mitigation section, PDF pp.6–8: island pole packages, substation packages and completed/upcoming undergrounding entries",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "sha256": "20db94628fe067568fb929589307a1080f39ccf09e1fe0a5dc400e03d9fd3b8b",
+      "geographicScope": "Partial multi-island WAPA recovery observations: St.Thomas, St.John, St.Croix and completed Water Island work.",
+      "inventoryScope": "All24 named packages in PDF pages6–8: four island pole packages, three substations and17 underground entries; five explicitly completed packages excluded.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 24,
+        "importedRecords": 4,
+        "excludedRows": 5,
+        "failedRows": 0,
+        "pendingRows": 15,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Explicitly completed package; no remaining scope identified in this source.",
+          "count": 1
+        },
+        {
+          "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+          "count": 4
+        }
+      ],
+      "limitations": [
+        "These source observations are not a current complete Virgin Islands project register or a count of unique engineering assets.",
+        "WAPA is publisher/operator context; no per-package sole owner evidence is established. Contractors and funding agencies are not owners.",
+        "All normalized voltages, coordinates/native geometry, construction-start days and construction intervals remain unknown. Undergrounding alone is not a transmission role.",
+        "Feeder/circuit labels are asset references, not engineering project IDs. Source-locator identity preserves named packages and island distinctions; compound work is not split.",
+        "No keyed crosswalk proves equivalence between historical recovery entries and newer upgrades. Related names are not merged, and affected feeder lists are not projects.",
+        "The linked historical PDF filename suggests2023 but does not verify publication. Only page6 explicitly dates facts to August2023; pages7–8 use September30,2026 snapshot-observed meaning, never a2026 status update.",
+        "Historical target ends are project-completion forecasts, not in-service dates or evidence of completion today. Invalid11/31/2023 stays unknown with raw evidence.",
+        "Project-status percentages on page7 do not establish physical construction stage. Design-RFP and project starts are not construction starts.",
+        "Four completed underground packages and the completed Water Island pole package are excluded. Generation/storage, water, systems and training elsewhere in the deck are outside the selected pages6–8."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 4,
+    "skipped": 5,
+    "failed": 0,
+    "notes": [
+      "24 source units = 4 imported + 5 excluded + 15 pending.",
+      "Public factual catalog normalized against its checksum-pinned unchanged original; no native geography/ownership or current status inferred."
+    ]
+  }
+}

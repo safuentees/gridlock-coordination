@@ -1,0 +1,49 @@
+{
+  "sourceKey": "vi-wapa-recovery",
+  "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+  "label": "Historical WAPA recovery presentation — electrical mitigation",
+  "reportingGroupId": "vi-wapa-recovery",
+  "reportingGroupName": "Virgin Islands WAPA historical recovery",
+  "publisher": "Virgin Islands Water and Power Authority",
+  "processAuthority": null,
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "2023-09-12-investments-public.pdf",
+    "locator": "Electrical mitigation section, PDF pp.6–8: island pole packages, substation packages and completed/upcoming undergrounding entries",
+    "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+  },
+  "sha256": "20db94628fe067568fb929589307a1080f39ccf09e1fe0a5dc400e03d9fd3b8b",
+  "geographicScope": "Partial multi-island WAPA recovery observations: St.Thomas, St.John, St.Croix and completed Water Island work.",
+  "inventoryScope": "All24 named packages in PDF pages6–8: four island pole packages, three substations and17 underground entries; five explicitly completed packages excluded.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 24,
+    "importedRecords": 4,
+    "excludedRows": 5,
+    "failedRows": 0,
+    "pendingRows": 15,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Explicitly completed package; no remaining scope identified in this source.",
+      "count": 1
+    },
+    {
+      "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+      "count": 4
+    }
+  ],
+  "limitations": [
+    "These source observations are not a current complete Virgin Islands project register or a count of unique engineering assets.",
+    "WAPA is publisher/operator context; no per-package sole owner evidence is established. Contractors and funding agencies are not owners.",
+    "All normalized voltages, coordinates/native geometry, construction-start days and construction intervals remain unknown. Undergrounding alone is not a transmission role.",
+    "Feeder/circuit labels are asset references, not engineering project IDs. Source-locator identity preserves named packages and island distinctions; compound work is not split.",
+    "No keyed crosswalk proves equivalence between historical recovery entries and newer upgrades. Related names are not merged, and affected feeder lists are not projects.",
+    "The linked historical PDF filename suggests2023 but does not verify publication. Only page6 explicitly dates facts to August2023; pages7–8 use September30,2026 snapshot-observed meaning, never a2026 status update.",
+    "Historical target ends are project-completion forecasts, not in-service dates or evidence of completion today. Invalid11/31/2023 stays unknown with raw evidence.",
+    "Project-status percentages on page7 do not establish physical construction stage. Design-RFP and project starts are not construction starts.",
+    "Four completed underground packages and the completed Water Island pole package are excluded. Generation/storage, water, systems and training elsewhere in the deck are outside the selected pages6–8."
+  ]
+}

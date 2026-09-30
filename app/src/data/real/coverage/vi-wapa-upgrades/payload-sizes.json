@@ -1,0 +1,10 @@
+{
+  "sourceKey": "vi-wapa-upgrades",
+  "editionId": "2026-07-07-system-upgrades",
+  "scope": "full",
+  "records": 2,
+  "compactUtf8Bytes": 10333,
+  "formattedDownloadUtf8Bytes": 13202,
+  "measurement": "Source-only Dataset2 UTF-8 JSON including final newline; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "compact"
+}
