@@ -11,6 +11,7 @@ import { compareDatasets, downloadDataset, type DatasetChanges } from "@/data/im
 import { createLocationRevision, getReadiness, type LocationEvidenceDraft } from "@/data/readiness"
 import { UTILITIES, type DataMode, type Dataset, type Project } from "@/domain/schema"
 import { visibleProjectNotes } from "@/lib/presentation"
+import { matchesProjectQuery } from "@/lib/project-search"
 import { EvidenceSources, LOCATION_METHODS, LocationEvidence, RevisionPreview } from "./RevisionPreview"
 
 interface ReadinessWorkspaceProps {
@@ -50,10 +51,9 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
   const [notice, setNotice] = useState<{ key: string; message: string } | null>(null)
   const summary = useMemo(() => getReadiness(dataset), [dataset])
   const projects = useMemo(() => {
-    const query = search.trim().toLocaleLowerCase()
     return dataset.projects.filter((project) => {
       const matchesQueue = queue === "all" || (queue === "missing" ? project.location === null : project.location?.confidence === "unverified")
-      const matchesSearch = !query || [project.name, project.sourceId, project.sponsor, project.description, ...project.sources.flatMap((source) => [source.file, source.locator])].filter(Boolean).join(" ").toLocaleLowerCase().includes(query)
+      const matchesSearch = matchesProjectQuery(project, search)
       return matchesQueue && matchesSearch && (filing === "all" || project.utilityId === filing)
     })
   }, [dataset, queue, search, filing])
@@ -125,7 +125,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
     <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 overflow-hidden">
       <Card className="min-h-0 min-w-0"><CardHeader className="shrink-0"><CardTitle>Location evidence queue</CardTitle></CardHeader><CardContent className="flex min-h-0 min-w-0 flex-1 flex-col gap-3">
         <div role="group" aria-label="Location queue" className="flex shrink-0 gap-2 overflow-x-auto">{([ ["missing", "Missing"], ["unverified", "Unverified"], ["all", "All projects"] ] as const).map(([value, label]) => <Button key={value} variant={queue === value ? "secondary" : "outline"} size="sm" aria-pressed={queue === value} onClick={() => setQueue(value)}>{label}</Button>)}</div>
-        <div className="shrink-0 space-y-2"><Label htmlFor={`${formId}-search`}><SearchIcon aria-hidden="true" className="size-4" />Search records</Label><Input id={`${formId}-search`} placeholder="Project, source ID, sponsor or source" value={search} onChange={(event) => setSearch(event.target.value)} /></div>
+        <div className="shrink-0 space-y-2"><Label htmlFor={`${formId}-search`}><SearchIcon aria-hidden="true" className="size-4" />Search records</Label><Input id={`${formId}-search`} placeholder="Name, need, zone or source ID" value={search} onChange={(event) => setSearch(event.target.value)} /></div>
         <div className="flex shrink-0 flex-wrap items-center justify-between gap-2"><Select value={filing} onValueChange={setFiling}><SelectTrigger aria-label="Filter reporting filing"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Both filings</SelectItem><SelectItem value="desc">Dominion filing</SelectItem><SelectItem value="gpc">Georgia filing</SelectItem></SelectContent></Select><p className="text-xs text-muted-foreground" aria-live="polite">{projects.length} matching records</p></div>
         <div className="min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain" tabIndex={0} role="region" aria-label="Location evidence records">
           {projects.length ? <ul className="space-y-1">{projects.map((project) => <li key={project.id}><Button variant={selected?.id === project.id ? "secondary" : "ghost"} className="h-auto w-full justify-start whitespace-normal p-3 text-left" aria-pressed={selected?.id === project.id} onClick={() => chooseProject(project)}><span className="min-w-0 space-y-1 [overflow-wrap:anywhere]"><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{project.sourceId ?? "No source ID"}; {UTILITIES[project.utilityId]}</span><span className="block text-xs text-muted-foreground">Location: {locationLabel(project)}</span></span></Button></li>)}</ul> : <div className="space-y-3 py-4"><p className="text-sm text-muted-foreground">No records match this queue and search.</p><Button variant="outline" size="sm" onClick={() => { setQueue("all"); setSearch(""); setFiling("all") }}>Show all projects</Button></div>}

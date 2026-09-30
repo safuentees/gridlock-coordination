@@ -1,4 +1,4 @@
-import { useId, useMemo, useState, type FormEvent } from "react"
+import { useEffect, useId, useMemo, useRef, useState, type FormEvent } from "react"
 import { BookmarkIcon, DownloadIcon, RefreshCwIcon, SaveIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -21,13 +21,14 @@ interface BriefWorkspaceProps {
   selectedOpportunity: Opportunity | null
   opportunities: Opportunity[]
   onShowCurrent: (id: string) => void
+  openRequest?: number
 }
 type ReviewDraft = { notes: string; reviewState: ReviewState }
 
 export function BriefWorkspace(props: BriefWorkspaceProps) {
   return <Workspace key={props.dataset.mode} {...props} />
 }
-function Workspace({ dataset, options, selectedOpportunity, opportunities, onShowCurrent }: BriefWorkspaceProps) {
+function Workspace({ dataset, options, selectedOpportunity, opportunities, onShowCurrent, openRequest = 0 }: BriefWorkspaceProps) {
   const [store, setStore] = useState(() => readSaved(dataset.mode))
   const [open, setOpen] = useState(false)
   const [tab, setTab] = useState("saved")
@@ -43,6 +44,14 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
   const compared = store.records.filter((record) => compareIds.includes(record.id))
   const editing = store.records.find((record) => record.id === editingId) ?? null
   const currentSaved = store.records.find((record) => record.id === selectedOpportunity?.id)
+  const previousOpenRequest = useRef(openRequest)
+  useEffect(() => {
+    if (openRequest !== previousOpenRequest.current) {
+      previousOpenRequest.current = openRequest
+      setOpen(true)
+      setEditingId(previous => previous ?? store.records[0]?.id ?? null)
+    }
+  }, [openRequest])
   function commit(records: SavedOpportunity[]) {
     const error = writeSaved(dataset.mode, records, store.writeBlocked)
     setStore({ ...store, records, error })

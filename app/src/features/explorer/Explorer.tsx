@@ -7,7 +7,8 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { analyzeProjects } from "@/core"
-import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type Dataset } from "@/domain/schema"
+import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type AnalysisResult, type Dataset } from "@/domain/schema"
+import { matchesProjectQuery } from "@/lib/project-search"
 import { BriefWorkspace } from "@/features/briefs/BriefWorkspace"
 import { ProjectTimeline } from "@/features/scenarios/ProjectTimeline"
 import { ScenarioControls } from "@/features/scenarios/ScenarioControls"
@@ -24,8 +25,11 @@ function Pagination({ page, count, onChange }: { page: number; count: number; on
   const pages = Math.max(1, Math.ceil(count / PAGE_SIZE))
   return <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-t p-3"><p className="text-xs text-muted-foreground">{count ? `${page * PAGE_SIZE + 1}–${Math.min((page + 1) * PAGE_SIZE, count)} of ${count}` : "0 results"}</p><div className="flex gap-2"><IconButton variant="outline" disabled={page === 0} label="Previous page" onClick={() => onChange(page - 1)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" disabled={page + 1 >= pages} label="Next page" onClick={() => onChange(page + 1)}><ChevronRightIcon aria-hidden="true" /></IconButton></div></div>
 }
-export function Explorer({ dataset, active = true, projectToReveal = null }: { dataset: Dataset; active?: boolean; projectToReveal?: { id: string; request: number } | null }) {
-  const [options, setOptions] = useState<AnalysisOptions>({ ...DEFAULT_OPTIONS })
+export function Explorer({ dataset, options, analysis, onOptionsChange, active = true, projectToReveal = null, candidateToReveal = null, reviewsRequest = 0 }: {
+  dataset: Dataset; options: AnalysisOptions; analysis: AnalysisResult; onOptionsChange: (options: AnalysisOptions) => void;
+  active?: boolean; projectToReveal?: { id: string; request: number } | null;
+  candidateToReveal?: { id: string; request: number } | null; reviewsRequest?: number;
+}) {
   const [search, setSearch] = useState("")
   const [utility, setUtility] = useState("all")
   const [locationFilter, setLocationFilter] = useState("all")
@@ -51,11 +55,9 @@ export function Explorer({ dataset, active = true, projectToReveal = null }: { d
   const focusRequest = useRef<FocusRequest>(null)
   const [viewportInsets, setViewportInsets] = useState({ top: 16, right: 16, bottom: 16, left: 0 })
   const baseline = useMemo(() => analyzeProjects(dataset.projects, DEFAULT_OPTIONS), [dataset])
-  const analysis = useMemo(() => analyzeProjects(dataset.projects, options), [dataset, options])
   const projects = useMemo(() => {
-    const query = search.trim().toLocaleLowerCase()
     return dataset.projects.filter((project) => {
-      const matchesSearch = !query || [project.name, project.description, project.sourceId, project.sponsor, ...project.voltageKv.map(String)].filter(Boolean).join(" ").toLocaleLowerCase().includes(query)
+      const matchesSearch = matchesProjectQuery(project, search)
       return matchesSearch && (utility === "all" || utility === project.utilityId) && (locationFilter === "all" || (locationFilter === "located" ? project.location !== null : project.location === null))
     })
   }, [dataset, search, utility, locationFilter])
@@ -108,7 +110,7 @@ export function Explorer({ dataset, active = true, projectToReveal = null }: { d
   function expand() { focusRequest.current = panelView; setCollapsed(false) }
   function changeFilter(update: () => void) { update(); resetResultPages() }
   function applyScenario(next: AnalysisOptions) {
-    setOptions(next); setPairPage(0)
+    onOptionsChange(next); setPairPage(0)
     listScroll.current.opportunities = 0
     listFocus.current.opportunities = null
   }
@@ -125,6 +127,12 @@ export function Explorer({ dataset, active = true, projectToReveal = null }: { d
   useEffect(() => {
     if (projectToReveal && byId.has(projectToReveal.id)) selectProject(projectToReveal.id)
   }, [projectToReveal])
+  useEffect(() => {
+    if (candidateToReveal && analysis.opportunities.some(pair => pair.id === candidateToReveal.id)) selectPair(candidateToReveal.id)
+  }, [candidateToReveal])
+  useEffect(() => {
+    if (reviewsRequest > 0) setCollapsed(false)
+  }, [reviewsRequest])
   useLayoutEffect(() => {
     const measure = () => {
       const next = {
@@ -168,7 +176,7 @@ export function Explorer({ dataset, active = true, projectToReveal = null }: { d
           <div className="shrink-0 space-y-2 border-b p-3">
             <Label htmlFor="project-search" className="sr-only">Search projects</Label>
             <div className="flex min-w-0 items-center gap-2">
-              <Input id="project-search" className="min-w-0 flex-1" placeholder="Search projects" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
+              <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
               {collapsed
                 ? <Button ref={expandButton} variant="outline" size="sm" aria-expanded={false} aria-controls="panel-results panel-detail" onClick={expand}><PanelLeftOpenIcon aria-hidden="true" data-icon="inline-start" />Expand</Button>
                 : <IconButton variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>}
@@ -187,7 +195,7 @@ export function Explorer({ dataset, active = true, projectToReveal = null }: { d
               {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
           </div>
           <div hidden={collapsed} inert={collapsed} className={collapsed ? "hidden" : "max-h-[20%] min-h-0 min-w-0 shrink-0 overflow-auto border-b p-3"}>
-            <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} />
+            <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} openRequest={reviewsRequest} />
           </div>
           <div ref={resultsView} id="panel-results" hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { listFocus.current[listView] = event.target as HTMLElement }}>
             <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0">
