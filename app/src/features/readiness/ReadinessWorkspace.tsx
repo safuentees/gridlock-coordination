@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareDatasets, downloadDataset, type DatasetChanges } from "@/data/import"
 import { createLocationRevision, getReadiness, type LocationEvidenceDraft } from "@/data/readiness"
+import { getLocationProposals } from "@/data/location-proposals"
 import { UTILITIES, type DataMode, type Dataset, type Project } from "@/domain/schema"
 import { visibleProjectNotes } from "@/lib/presentation"
 import { matchesProjectQuery } from "@/lib/project-search"
@@ -29,6 +30,7 @@ interface Preview {
   before: Project
   after: Project
   changes: DatasetChanges
+  suggestionCaveat?: string
 }
 function initialDraft(project: Project): EditorDraft {
   return {
@@ -50,6 +52,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
   const [error, setError] = useState<{ key: string; message: string; base: Dataset } | null>(null)
   const [notice, setNotice] = useState<{ key: string; message: string } | null>(null)
   const summary = useMemo(() => getReadiness(dataset), [dataset])
+  const suggestions = useMemo(() => getLocationProposals(dataset), [dataset])
   const projects = useMemo(() => {
     return dataset.projects.filter((project) => {
       const matchesQueue = queue === "all" || (queue === "missing" ? project.location === null : project.location?.confidence === "unverified")
@@ -59,6 +62,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
   }, [dataset, queue, search, filing])
   const selected = dataset.projects.find((project) => project.id === selection[dataset.mode]) ?? projects[0] ?? null
   const selectedNotes = selected ? visibleProjectNotes(selected) : []
+  const suggestion = suggestions.find(proposal => proposal.projectId === selected?.id)
   const draftKey = selected ? JSON.stringify([dataset.mode, selected.id]) : ""
   const draft = selected ? drafts[draftKey] ?? initialDraft(selected) : null
   const fingerprint = draft ? JSON.stringify(draft) : ""
@@ -105,6 +109,20 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
       setError({ key: draftKey, base: dataset, message: failure instanceof Error ? failure.message : "The revision could not be applied." })
     }
   }
+  function previewSuggestion() {
+    if (!selected || !suggestion) return
+    setError(null); setNotice(null); setCandidate(null)
+    setSelection(previous => ({ ...previous, [dataset.mode]: selected.id }))
+    try {
+      const revision = createLocationRevision(dataset, selected.id, suggestion.draft)
+      const after = revision.projects.find(project => project.id === selected.id)
+      if (!after) throw new Error("The project is no longer available.")
+      setCandidate({ key: draftKey, fingerprint, base: dataset, revision, before: selected, after, changes: compareDatasets(dataset, revision), suggestionCaveat: suggestion.caveat })
+      setEditorTab("preview")
+    } catch (failure) {
+      setError({ key: draftKey, base: dataset, message: failure instanceof Error ? failure.message : "The suggested evidence could not be previewed." })
+    }
+  }
   function downloadPreview() {
     if (!preview || dataset.mode !== "real") return
     try {
@@ -122,6 +140,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
       <dl className="flex flex-wrap gap-x-6 gap-y-2 text-sm"><div><dt className="text-muted-foreground">Active projects</dt><dd className="font-medium">{summary.total}</dd></div><div><dt className="text-muted-foreground">Missing locations</dt><dd className="font-medium">{summary.missing}</dd></div><div><dt className="text-muted-foreground">Unverified locations</dt><dd className="font-medium">{summary.unverified}</dd></div><div><dt className="text-muted-foreground">Marked confirmed</dt><dd className="font-medium">{summary.confirmed}</dd></div></dl>
       <details className="text-xs text-muted-foreground"><summary className="cursor-pointer">Coverage by filing</summary><div className="mt-2 space-y-1">{(["desc", "gpc"] as const).map((utility) => <p key={utility}>{UTILITIES[utility]}: {summary.byUtility[utility].total} projects; {summary.byUtility[utility].missing} missing, {summary.byUtility[utility].unverified} unverified, {summary.byUtility[utility].confirmed} confirmed.</p>)}</div></details>
     </header>
+    {suggestions.length > 0 && <div className="flex max-h-[15%] min-h-0 shrink-0 flex-wrap items-center gap-2 overflow-auto"><span className="text-sm">Suggested public evidence:</span>{suggestions.map(proposal => <Button key={proposal.decisionId} variant="outline" size="sm" onClick={() => { const project = dataset.projects.find(item => item.id === proposal.projectId); if (project) chooseProject(project) }}>{dataset.projects.find(project => project.id === proposal.projectId)?.name}</Button>)}</div>}
     <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 overflow-hidden">
       <Card className="min-h-0 min-w-0"><CardHeader className="shrink-0"><CardTitle>Location evidence queue</CardTitle></CardHeader><CardContent className="flex min-h-0 min-w-0 flex-1 flex-col gap-3">
         <div role="group" aria-label="Location queue" className="flex shrink-0 gap-2 overflow-x-auto">{([ ["missing", "Missing"], ["unverified", "Unverified"], ["all", "All projects"] ] as const).map(([value, label]) => <Button key={value} variant={queue === value ? "secondary" : "outline"} size="sm" aria-pressed={queue === value} onClick={() => setQueue(value)}>{label}</Button>)}</div>
@@ -138,6 +157,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
               <TabsContent value="evidence" className="min-h-0 min-w-0 overflow-auto overscroll-contain pt-3">
                 <div className="space-y-4 [overflow-wrap:anywhere]">
                   <details className="rounded-lg border p-3"><summary className="cursor-pointer font-medium">Current location and sources</summary><div className="mt-3 space-y-4"><LocationEvidence location={selected.location} /><div className="space-y-2"><h3 className="text-sm font-medium">Project sources</h3><EvidenceSources sources={selected.sources} /></div>{selectedNotes.length > 0 && <ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{selectedNotes.map((note, index) => <li key={index}>{note}</li>)}</ul>}</div></details>
+                  {suggestion && <section className="space-y-2 rounded-lg border p-3"><h3 className="text-sm font-medium">Suggested location evidence</h3><p className="text-sm text-muted-foreground">{suggestion.caveat}</p><a className="text-sm underline underline-offset-4" href={suggestion.draft.sourceUrl} target="_blank" rel="noreferrer">{suggestion.draft.sourceFile}</a><div><Button type="button" variant="outline" size="sm" onClick={previewSuggestion}>Preview suggestion</Button></div></section>}
                   {dataset.mode === "demo" ? null : <form id={formId} onSubmit={preparePreview} noValidate className="space-y-4">
                     <p className="text-sm text-muted-foreground">Use decimal WGS84 coordinates.</p>
                     <div className="grid gap-3 sm:grid-cols-2"><div className="space-y-2"><Label htmlFor={`${formId}-latitude`}>Latitude</Label><Input id={`${formId}-latitude`} inputMode="decimal" value={draft.latitude} onChange={(event) => updateDraft("latitude", event.target.value)} placeholder="−90 to 90" required /></div><div className="space-y-2"><Label htmlFor={`${formId}-longitude`}>Longitude</Label><Input id={`${formId}-longitude`} inputMode="decimal" value={draft.longitude} onChange={(event) => updateDraft("longitude", event.target.value)} placeholder="−180 to 180" required /></div></div>
@@ -148,7 +168,7 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
                   </form>}
                 </div>
               </TabsContent>
-              <TabsContent value="preview" className="min-h-0 min-w-0 overflow-auto overscroll-contain pt-3">{preview && <RevisionPreview before={preview.before} after={preview.after} changes={preview.changes} />}</TabsContent>
+              <TabsContent value="preview" className="min-h-0 min-w-0 overflow-auto overscroll-contain pt-3">{preview && <>{preview.suggestionCaveat && <p className="mb-3 text-sm text-muted-foreground">{preview.suggestionCaveat} Your form draft is unchanged.</p>}<RevisionPreview before={preview.before} after={preview.after} changes={preview.changes} /></>}</TabsContent>
             </Tabs>
             {activeError && <p role="alert" className="max-h-24 shrink-0 overflow-auto text-sm text-destructive">{activeError}</p>}
             {previewInvalidated && <p role="status" className="shrink-0 text-xs text-muted-foreground">The dataset changed. Preview again before applying.</p>}
