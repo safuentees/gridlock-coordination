@@ -23,7 +23,7 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
   const pair = selectedOpportunity?.projectIds.map((id) => dataset.projects.find((project) => project.id === id)) ?? []
   const [left, right] = pair
   const canEstimate = Boolean(selectedOpportunity && left && right)
-  const activeTab = canEstimate ? tab : "evidence"
+  const activeTab = tab === "impact" && !canEstimate ? "evidence" : tab
   const timing = left && right ? compareProjectTiming(left, right) : null
   const constructionLabel = timing?.constructionRelation === "overlap" ? "Explicit windows overlap"
     : timing?.constructionRelation === "separate" ? "Explicit windows do not overlap" : "Unknown"
@@ -56,18 +56,31 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
     <div className="min-w-0 shrink-0 px-4">{actions}</div>
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <Tabs value={activeTab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence">Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}>Impact</TabsTrigger></TabsList>
+        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence">Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}>Impact</TabsTrigger><TabsTrigger value="supporting">Supporting</TabsTrigger></TabsList>
         <TabsContent forceMount value="evidence" className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
               {pair.filter((project): project is Project => Boolean(project)).map((project) => <div key={project.id} className="min-w-0 border-t pt-4 first:border-t-0 first:pt-0"><ProjectEvidence project={project} /></div>)}
-              <details className="min-w-0 rounded-lg border p-3"><summary className="cursor-pointer font-medium">Why this candidate appears</summary><ul className="mt-3 list-disc space-y-2 pl-4 text-xs text-muted-foreground">{selectedOpportunity.reasons.map((reason, index) => <li key={index}>{reason}</li>)}</ul></details>
             </> : selectedProject ? <ProjectEvidence project={selectedProject} /> : <p className="text-sm text-muted-foreground">Project sources, location evidence and date meanings will appear here.</p>}
-            {(selectedOpportunity || selectedProject) && <p className="text-xs text-muted-foreground">{dataset.title}. Historical planning evidence; past milestones do not establish completed work. Reporting groups can include other asset sponsors.</p>}
           </div>
         </TabsContent>
         <TabsContent forceMount value="impact" className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 pt-3">{selectedOpportunity && left && right && <ImpactPanel opportunity={selectedOpportunity} projects={[left, right]} />}</div>
+        </TabsContent>
+        <TabsContent forceMount value="supporting" className={activeTab === "supporting" ? BODY_CLASS : "hidden"}>
+          <div className="min-w-0 space-y-5 pt-3">
+            {selectedOpportunity && <section className="space-y-2"><h3 className="text-sm font-medium">Why this candidate appears</h3><ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">{selectedOpportunity.reasons.map((reason, index) => <li key={index}>{reason}</li>)}</ul></section>}
+            <section className="space-y-2"><h3 className="text-sm font-medium">Comparison method</h3><ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">
+              <li>Cross-filing candidates compare project centers using straight-line distance. Ranking prioritizes distance, then known milestone separation.</li>
+              <li>Milestone gaps require source dates with day precision. Construction overlap requires explicit source construction windows.</li>
+              <li>Reporting groups may include other asset sponsors. A nearby center does not establish shared right-of-way or engineering feasibility.</li>
+            </ul></section>
+            <section className="space-y-2"><h3 className="text-sm font-medium">Dataset context</h3><dl className="space-y-2 text-xs">
+              <div><dt className="text-muted-foreground">Dataset</dt><dd>{dataset.title}</dd></div>
+              <div><dt className="text-muted-foreground">Mode</dt><dd>{dataset.mode === "demo" ? "Synthetic demonstration; not a utility plan" : "Source records"}</dd></div>
+              <div><dt className="text-muted-foreground">Dataset generated</dt><dd>{dataset.generatedAt}</dd></div>
+            </dl><p className="text-xs text-muted-foreground">Historical planning evidence is not a live schedule. Past milestones do not establish completed work.</p>{dataset.coverage.notes.length > 0 && <ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">{dataset.coverage.notes.map((note, index) => <li key={index}>{note}</li>)}</ul>}</section>
+          </div>
         </TabsContent>
       </Tabs>
     </CardContent>
