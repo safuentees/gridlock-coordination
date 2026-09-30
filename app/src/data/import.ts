@@ -1,6 +1,6 @@
 import { datasetSchema, type Dataset, type Project } from "@/domain/schema"
 
-export const MAX_IMPORT_BYTES = 10 * 1024 * 1024
+export const MAX_IMPORT_BYTES = 50 * 1024 * 1024
 export interface DatasetChanges {
   added: Project[]
   removed: Project[]
@@ -10,7 +10,7 @@ export interface DatasetChanges {
 }
 
 export function parseSourceDataset(text: string): Dataset {
-  if (new TextEncoder().encode(text).length > MAX_IMPORT_BYTES) throw new Error("Choose a dataset smaller than 10 MB.")
+  if (new TextEncoder().encode(text).length > MAX_IMPORT_BYTES) throw new Error(`Choose a dataset no larger than ${MAX_IMPORT_BYTES / (1024 * 1024)} MiB.`)
   let raw: unknown
   try { raw = JSON.parse(text) } catch { throw new Error("This file is not valid JSON.") }
   const result = datasetSchema.safeParse(raw)
