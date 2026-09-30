@@ -1,7 +1,9 @@
-# PJM public RTEP — connection sample
+# PJM public RTEP — full accepted snapshot
 
-Six upgrades connect the C2 source contract before full ingestion. The manifest and ledger reconcile 15,692 source rows as 6 imported and 15,686 pending, with no exclusions claimed yet. All six locations are unknown. This is a retrieval snapshot of a regional public inventory, not a published edition or a count of unique engineering projects.
+The checksum-pinned public snapshot contains 15,692 unique native upgrades. All rows are reconciled: 5,624 retained, 9,215 IS/in-service excluded, 847 Cancelled excluded and 6 W/withdrawn excluded; none failed or remain pending. Retained raw statuses are EP 3,800, Active 831, UC 532, On Hold 256, PL 199 and UC-ISP 6. These are upgrades, not unique engineering-project totals. The snapshot was observed on 2026-09-30; no publisher-issued edition date is asserted.
 
-`dataset.json` is the source-only Dataset 2 consumed by the coordinator's provider. `manifest.json` duplicates its one source edition; `row-ledger.json` records every source row's disposition. `payload-sizes.json` records compact and formatted source-only sizes. The original XML is preserved outside Git. Reproduction and field meanings are in `scripts/ingest/coverage/pjm-rtep/README.md`; public-source qualification is in the F27 PJM spec folder.
+All 5,624 locations remain unknown. Raw place/state labels, source-scoped owners, supplied milestones and complete descriptions support discovery and follow-through, but provide no map centers or spatial eligibility. The public inventory is partial regional coverage, not complete state or US coverage.
 
-Sample payload: 25,195 compact bytes / 38,091 formatted bytes. Integration and full-scope reconciliation remain pending; worker checks were not run.
+`dataset.json` is the compact source-only Dataset 2 consumed by the coordinator's provider. `manifest.json` duplicates its one source edition; `row-ledger.json` records every source row's disposition. `payload-sizes.json` records 20,257,523 compact bytes and 30,988,029 formatted/download bytes; the aggregate/export envelope can be larger. No factual records were removed to fit storage or import limits.
+
+The original XML remains preserved outside Git. Reproduction and field meanings are in `scripts/ingest/coverage/pjm-rtep/README.md`; public-source qualification is in the F27 PJM spec folder. Source generation completed; coordinator integration/check is pending. No worker tests or visual work were run.
