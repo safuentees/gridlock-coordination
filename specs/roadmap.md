@@ -101,7 +101,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | source_discovery / ingestion | Puerto Rico full 22 integrated through PR107; F27-NV-Q active. | Exact Nevada qualification/sample/receipt in [spec](features/F27-us-regional-expansion/nv-nvenergy/spec.md); no producer before acceptance. SERTP remains blocked. |
 | core | WestConnect full 304 integrated through PR107; F27-PC-Q active. | Exact PacifiCorp qualification/sample/receipt in [spec](features/F27-us-regional-expansion/pacificorp-plan/spec.md); no producer before acceptance. |
 | coordinator | PR107 integrated; accept next qualified scopes and connect samples before full producer handoffs. | Root owns aggregate/schema/register/merge/checks; preserve all unrelated untracked duplicate files. |
-| ui | BPA full 77 and 13,200-record fixture integrated; F27-GU-Q active. | Exact Guam qualification/sample/receipt in [spec](features/F27-us-regional-expansion/gu-gpa/spec.md); no producer before acceptance, no UI/map edits. |
+| ui | Guam qualification accepted; first six budget records ready for production, then full 27 after connection. | Exact `gu-gpa-cip` producer/data/receipt in [spec](features/F27-us-regional-expansion/gu-gpa/spec.md); no UI/map edits or worker checks. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
