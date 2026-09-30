@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot — sample",
+  "generatedAt": "2026-09-30T12:09:58+00:00",
+  "projects": [
+    {
+      "id": "sc-santee:irp-appendix-b:wassamassaw-pringletown",
+      "utilityId": "sc-santee",
+      "sourceId": "irp-appendix-b:wassamassaw-pringletown",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "name": "Wassamassaw – Pringletown #1 & #2 115 kV Line",
+      "description": "Double-circuit line from Pringletown switching station to Wassamassaw substation, initially operated at 115 kV.",
+      "status": "Active",
+      "voltageKv": [
+        230,
+        115
+      ],
+      "date": {
+        "value": "2025",
+        "precision": "year",
+        "kind": "unknown",
+        "label": "IRP scheduled completion year; not confirmation of service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-irp-update.pdf",
+          "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+          "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Wassamassaw – Pringletown #1 & #2 115 kV Line"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ],
+      "notes": [
+        "An elapsed 2025 completion forecast does not establish completion; Active is not proof of construction.",
+        "Keep both circuits within one named package, with design voltage distinct from initial operation.",
+        "Status was observed in a September 30, 2026 composite snapshot; the IRP has a November 21, 2025 filing stamp and the project webpages have no verified update date.",
+        "Santee Cooper is the publisher/project proponent. The operated network includes Authority-owned and Central-owned equipment; ownership of this named package is not established."
+      ],
+      "inventory": {
+        "sourceKey": "sc-santee",
+        "editionId": "public-plans-snapshot-2026-09-30",
+        "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+        "reportingGroupName": "Santee Cooper public transmission plans",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Transmission line or substation work",
+        "milestones": [
+          {
+            "field": "IRP scheduled completion",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "IRP scheduled completion year; not confirmation of service"
+            },
+            "evidence": [
+              {
+                "file": "2025-irp-update.pdf",
+                "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+                "locator": "Appendix B, PDF p.95 / printed p.88, ACTIVE PROJECTS, named heading Wassamassaw – Pringletown #1 & #2 115 kV Line"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native numerical project coordinates, CRS or accuracy are supplied in the selected text. Named endpoints, counties and map images are not resolved into geometry."
+        ]
+      }
+    },
+    {
+      "id": "sc-santee:irp-appendix-b:kingstree-hemingway-2",
+      "utilityId": "sc-santee",
+      "sourceId": "irp-appendix-b:kingstree-hemingway-2",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "name": "Kingstree – Hemingway 230 kV Line #2",
+      "description": "Rebuild the existing Kingstree–Hemingway 115 kV line as a double-circuit 230/115 kV package, with associated station work.",
+      "status": "Active",
+      "voltageKv": [
+        230,
+        115
+      ],
+      "date": {
+        "value": "2029-06-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Website target by June 1, 2029; forecast only"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-irp-update.pdf",
+          "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+          "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Kingstree – Hemingway 230 kV Line #2"
+        },
+        {
+          "file": "hemingway-kingstree-2.html",
+          "locator": "Project Description and Timeline",
+          "url": "https://www.santeecooper.com/community/power-line-projects/hemingway-kingstree-2/"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "PDF/printed pp.10–11, Kingstree–Hemingway approval bullet",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "pp.10–11, Kingstree–Hemingway bullet",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ],
+      "notes": [
+        "2026 report pp.10–11 explicitly records approval; this is not evidence construction began.",
+        "The website explicitly describes June 1, 2029 as a service target; it is a forecast, not confirmed energization.",
+        "Administrative closeout at year-end differs from service target.",
+        "Status was observed in a September 30, 2026 composite snapshot; the IRP has a November 21, 2025 filing stamp and the project webpages have no verified update date.",
+        "Santee Cooper is the publisher/project proponent. The operated network includes Authority-owned and Central-owned equipment; ownership of this named package is not established."
+      ],
+      "inventory": {
+        "sourceKey": "sc-santee",
+        "editionId": "public-plans-snapshot-2026-09-30",
+        "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+        "reportingGroupName": "Santee Cooper public transmission plans",
+        "recordKind": "transmission-project",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [
+          "SCPSC docket 2025-300-E",
+          "SCPSC order 2026-206"
+        ],
+        "workType": "Transmission line or substation work",
+        "milestones": [
+          {
+            "field": "IRP scheduled completion",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "IRP scheduled completion year; not confirmation of service"
+            },
+            "evidence": [
+              {
+                "file": "2025-irp-update.pdf",
+                "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+                "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Kingstree – Hemingway 230 kV Line #2"
+              }
+            ]
+          },
+          {
+            "field": "Website forecast in-service target",
+            "date": {
+              "value": "2029-06-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Website target by June 1, 2029; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "hemingway-kingstree-2.html",
+                "locator": "Timeline, 2029: forecast service by June 1; administrative closeout by year-end",
+                "url": "https://www.santeecooper.com/community/power-line-projects/hemingway-kingstree-2/"
+              }
+            ]
+          },
+          {
+            "field": "Website forecast administrative closeout",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "By the end of 2029 after accounting, engineering and lessons learned; not energization"
+            },
+            "evidence": [
+              {
+                "file": "hemingway-kingstree-2.html",
+                "locator": "Timeline, 2029: forecast service by June 1; administrative closeout by year-end",
+                "url": "https://www.santeecooper.com/community/power-line-projects/hemingway-kingstree-2/"
+              }
+            ]
+          },
+          {
+            "field": "Reported certificate approval",
+            "date": {
+              "value": "2026-04-10",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Regulatory approval; not physical construction or energization"
+            },
+            "evidence": [
+              {
+                "file": "2026-generation-transmission-distribution.pdf",
+                "locator": "pp.10–11, Kingstree–Hemingway bullet",
+                "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native numerical project coordinates, CRS or accuracy are supplied in the selected text. Named endpoints, counties and map images are not resolved into geometry."
+        ]
+      }
+    },
+    {
+      "id": "sc-santee:irp-appendix-b:bluffton-market-place-2-phase-2",
+      "utilityId": "sc-santee",
+      "sourceId": "irp-appendix-b:bluffton-market-place-2-phase-2",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "name": "Bluffton – Market Place #2 115 kV Line Phase 2",
+      "description": "Phase 2 extends the 115 kV line from Buckingham/Bluffton toward Hilton Head.",
+      "status": "Active",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Conflicting IRP 2030 completion and undated website 2028 service forecasts"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-irp-update.pdf",
+          "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+          "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Bluffton – Market Place #2 115 kV Line Phase 2"
+        },
+        {
+          "file": "bluffton-market-place.html",
+          "locator": "Project Description and Timeline",
+          "url": "https://www.santeecooper.com/community/power-line-projects/bluffton-market-place/"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ],
+      "notes": [
+        "Retain both labeled forecasts as supplementary milestones; no authoritative revision sequence was established.",
+        "Generic overview says constructing, but the specific description places construction in 2027. Treat it as planned.",
+        "County descriptions conflict; do not infer geometry or resolve the discrepancy by name.",
+        "Status was observed in a September 30, 2026 composite snapshot; the IRP has a November 21, 2025 filing stamp and the project webpages have no verified update date.",
+        "Santee Cooper is the publisher/project proponent. The operated network includes Authority-owned and Central-owned equipment; ownership of this named package is not established."
+      ],
+      "inventory": {
+        "sourceKey": "sc-santee",
+        "editionId": "public-plans-snapshot-2026-09-30",
+        "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+        "reportingGroupName": "Santee Cooper public transmission plans",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Transmission line or substation work",
+        "milestones": [
+          {
+            "field": "IRP scheduled completion",
+            "date": {
+              "value": "2030",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "IRP scheduled completion year; not confirmation of service"
+            },
+            "evidence": [
+              {
+                "file": "2025-irp-update.pdf",
+                "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+                "locator": "Appendix B, PDF p.97 / printed p.90, ACTIVE PROJECTS, named heading Bluffton – Market Place #2 115 kV Line Phase 2"
+              }
+            ]
+          },
+          {
+            "field": "Website forecast in-service target, unresolved conflict",
+            "date": {
+              "value": "2028-06-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Undated website target by June 1, 2028 conflicts with IRP 2030 completion"
+            },
+            "evidence": [
+              {
+                "file": "bluffton-market-place.html",
+                "locator": "Project Description and Timeline: 2028 service forecast; Beaufort County versus IRP Jasper County",
+                "url": "https://www.santeecooper.com/community/power-line-projects/bluffton-market-place/"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native numerical project coordinates, CRS or accuracy are supplied in the selected text. Named endpoints, counties and map images are not resolved into geometry."
+        ]
+      }
+    },
+    {
+      "id": "sc-santee:irp-appendix-b:nixons-crossroads-red-bluff-1",
+      "utilityId": "sc-santee",
+      "sourceId": "irp-appendix-b:nixons-crossroads-red-bluff-1",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "name": "Nixons Crossroads – Red Bluff #1 115 kV Line",
+      "description": "New 115 kV line from Nixons Crossroads substation to Brooksville delivery point; the heading remains Nixons Crossroads–Red Bluff #1.",
+      "status": "Planned",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No project completion or service target supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-irp-update.pdf",
+          "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf",
+          "locator": "Appendix B, PDF p.97 / printed p.90, PLANNED PROJECTS, named heading Nixons Crossroads – Red Bluff #1 115 kV Line"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ],
+      "notes": [
+        "No date, schedule or project-owner inference from the heading or served delivery point.",
+        "Named project and endpoint roles remain source facts; no center or route derived.",
+        "Status was observed in a September 30, 2026 composite snapshot; the IRP has a November 21, 2025 filing stamp and the project webpages have no verified update date.",
+        "Santee Cooper is the publisher/project proponent. The operated network includes Authority-owned and Central-owned equipment; ownership of this named package is not established."
+      ],
+      "inventory": {
+        "sourceKey": "sc-santee",
+        "editionId": "public-plans-snapshot-2026-09-30",
+        "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+        "reportingGroupName": "Santee Cooper public transmission plans",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Transmission line or substation work",
+        "milestones": [],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native numerical project coordinates, CRS or accuracy are supplied in the selected text. Named endpoints, counties and map images are not resolved into geometry."
+        ]
+      }
+    },
+    {
+      "id": "sc-santee:power-line-projects:indian-field-sugar-hill",
+      "utilityId": "sc-santee",
+      "sourceId": "power-line-projects:indian-field-sugar-hill",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "name": "Indian Field–Sugar Hill #1 and #2 230 kV Lines",
+      "description": "Two 230 kV lines and the associated new Sugar Hill substation form one approved package serving a data-center load.",
+      "status": "Public project plan",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2026",
+        "precision": "year",
+        "kind": "unknown",
+        "label": "Approximate completion target Winter 2026; season preserved"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "indian-field-sugar-hill.html",
+          "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-sugar-hill/",
+          "locator": "Power Line Projects index card 6; project page title, Overview/Project Description and Timeline"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "PDF/printed p.11, Indian Field–Sugar Hill approval bullet",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.11, Indian Field–Sugar Hill bullet",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ],
+      "notes": [
+        "Winter is not an exact month/day or construction interval. Proposed schedule explicitly may change.",
+        "The certificate is an approval, not physical progress; customer/cooperative participation does not establish asset ownership.",
+        "Status was observed in a September 30, 2026 composite snapshot; the IRP has a November 21, 2025 filing stamp and the project webpages have no verified update date.",
+        "Santee Cooper is the publisher/project proponent. The operated network includes Authority-owned and Central-owned equipment; ownership of this named package is not established."
+      ],
+      "inventory": {
+        "sourceKey": "sc-santee",
+        "editionId": "public-plans-snapshot-2026-09-30",
+        "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+        "reportingGroupName": "Santee Cooper public transmission plans",
+        "recordKind": "transmission-project",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [
+          "SCPSC docket 2025-274-E",
+          "SCPSC order 2026-83"
+        ],
+        "workType": "Transmission line or substation work",
+        "milestones": [
+          {
+            "field": "Website approximate completion, raw Winter 2026",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Approximate completion target Winter 2026; season preserved"
+            },
+            "evidence": [
+              {
+                "file": "indian-field-sugar-hill.html",
+                "locator": "Timeline: approximate Spring 2026 construction start and Winter 2026 completion; schedule may change",
+                "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-sugar-hill/"
+              }
+            ]
+          },
+          {
+            "field": "Website approximate construction start, raw Spring 2026",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2026 forecast; no exact start day or construction interval"
+            },
+            "evidence": [
+              {
+                "file": "indian-field-sugar-hill.html",
+                "locator": "Timeline: approximate Spring 2026 construction start and Winter 2026 completion; schedule may change",
+                "url": "https://www.santeecooper.com/community/power-line-projects/indian-field-sugar-hill/"
+              }
+            ]
+          },
+          {
+            "field": "Reported certificate approval",
+            "date": {
+              "value": "2026-02-13",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Regulatory approval; not physical construction or energization"
+            },
+            "evidence": [
+              {
+                "file": "2026-generation-transmission-distribution.pdf",
+                "locator": "p.11, Indian Field–Sugar Hill bullet",
+                "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native numerical project coordinates, CRS or accuracy are supplied in the selected text. Named endpoints, counties and map images are not resolved into geometry."
+        ]
+      }
+    },
+    {
+      "id": "sc-santee:power-line-projects:varnville-robertville",
+      "utilityId": "sc-santee",
+      "sourceId": "power-line-projects:varnville-robertville",
+      "sponsor": "Santee Cooper (publisher/project proponent)",
+      "name": "Varnville–Robertville 69 kV Rebuild / new 115 kV line",
+      "description": "Rebuild approximately 6 miles from Varnville station to the Nixville tap with a new 115 kV line in existing right of way.",
+      "status": "Public project plan",
+      "voltageKv": [
+        69,
+        115
+      ],
+      "date": {
+        "value": "2026-07",
+        "precision": "month",
+        "kind": "unknown",
+        "label": "Projected construction end in July 2026; service date unknown"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "varnville-robertville.html",
+          "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/",
+          "locator": "Power Line Projects index card 8; project page title, Overview/Project Description and Timeline"
+        },
+        {
+          "file": "2026-generation-transmission-distribution.pdf",
+          "locator": "p.4, Transmission: operated network includes Authority-owned and Central-owned lines; ownership of named packages not allocated",
+          "url": "https://www.santeecooper.com/Rates/Rate-Study/_pdfs/RatesDocuments2026/Generation-Transmission-and-Distribution-Report.pdf"
+        }
+      ],
+      "notes": [
+        "Do not infer completion from the past July forecast.",
+        "December 23 is administrative wrap-up after accounting/engineering, not energization or construction finish.",
+        "Keep the 69 kV title/existing role distinct from the new 115 kV scope.",
+        "Status was observed in a September 30, 2026 composite snapshot; the IRP has a November 21, 2025 filing stamp and the project webpages have no verified update date.",
+        "Santee Cooper is the publisher/project proponent. The operated network includes Authority-owned and Central-owned equipment; ownership of this named package is not established."
+      ],
+      "inventory": {
+        "sourceKey": "sc-santee",
+        "editionId": "public-plans-snapshot-2026-09-30",
+        "editionLabel": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+        "reportingGroupName": "Santee Cooper public transmission plans",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Transmission line or substation work",
+        "milestones": [
+          {
+            "field": "Website approximate construction start",
+            "date": {
+              "value": "2026-03",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Around March 2026 forecast; not an observed construction start"
+            },
+            "evidence": [
+              {
+                "file": "varnville-robertville.html",
+                "locator": "Project Description and Timeline: around March start, July construction end, December 23 administrative wrap-up",
+                "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/"
+              }
+            ]
+          },
+          {
+            "field": "Website projected construction end",
+            "date": {
+              "value": "2026-07",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Projected construction end in July 2026; service date unknown"
+            },
+            "evidence": [
+              {
+                "file": "varnville-robertville.html",
+                "locator": "Project Description and Timeline: around March start, July construction end, December 23 administrative wrap-up",
+                "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/"
+              }
+            ]
+          },
+          {
+            "field": "Website forecast administrative wrap-up",
+            "date": {
+              "value": "2026-12-23",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "After accounting, engineering and lessons learned; not construction finish or service"
+            },
+            "evidence": [
+              {
+                "file": "varnville-robertville.html",
+                "locator": "Project Description and Timeline: around March start, July construction end, December 23 administrative wrap-up",
+                "url": "https://www.santeecooper.com/community/power-line-projects/varnville-robertville/"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native numerical project coordinates, CRS or accuracy are supplied in the selected text. Named endpoints, counties and map images are not resolved into geometry."
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "sc-santee",
+      "editionId": "public-plans-snapshot-2026-09-30",
+      "label": "Santee Cooper 2025 IRP transmission appendix and public project-page snapshot",
+      "reportingGroupId": "sc-santee",
+      "reportingGroupName": "Santee Cooper public transmission plans",
+      "publisher": "Santee Cooper / South Carolina Public Service Authority",
+      "processAuthority": "Santee Cooper public transmission planning; cited SCPSC certificate decisions",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "2025-irp-update.pdf",
+        "locator": "Appendix B, PDF pp.94–98 / printed pp.87–91; union with all 12 Power Line Projects index cards retrieved September 30, 2026",
+        "url": "https://www.santeecooper.com/About/Integrated-Resource-Plan/presentations/Santee-Cooper-2025-IRP-Update.pdf"
+      },
+      "sha256": "dc4f715aa51e4a201e36c06692728c8a845f0b417b1202e27d1d008e8e1a4774",
+      "geographicScope": "Santee Cooper South Carolina public transmission planning scope; per-record states are not inferred.",
+      "inventoryScope": "Complete union of 23 named 2025 IRP Appendix B headings and 12 public project-index cards: 24 retained observations, two concluded-work exclusions and nine supporting-page exclusions.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 35,
+        "importedRecords": 6,
+        "excludedRows": 11,
+        "failedRows": 0,
+        "pendingRows": 18,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Explicit project-page notice says work concluded; actual completion date unknown.",
+          "count": 2
+        },
+        {
+          "reason": "Supporting page for an already enumerated IRP unit; no additional runtime record.",
+          "count": 9
+        }
+      ],
+      "limitations": [
+        "The union is a finite public subset, not a complete utility/statewide inventory or a count of unique engineering projects. Possible Seaboard–Indian Field / Indian Field–Varnville overlap is unresolved.",
+        "Composite snapshot observed September 30, 2026 has no single publication date. Downloaded IRP carries a November 21, 2025 filing stamp, distinct from the library's initial September 16 filing; webpages have no verified update date.",
+        "Active means listed project work, not construction. Three reported certificates support approved; Marion–Conway current lifecycle is unknown despite a historical April 2022 clearing statement. Elapsed forecasts do not prove approval, construction or completion.",
+        "IRP completion years retain year precision and unknown kind. Explicit website service targets retain supplied precision. Coarse seasons and construction-end months are distinct from energization and administrative closeout.",
+        "Bluffton retains an unknown primary date because IRP 2030 completion and an undated 2028 website service forecast conflict; county descriptions also differ.",
+        "All owners, locations, native geometry, construction windows, actual start days and row-update days remain unknown. The operator's network includes Authority-owned and Central-owned equipment.",
+        "Stable identities are source locators, not native engineering IDs. Named multi-circuit/station packages remain intact; regulatory docket/order references are aliases, not engineering identifiers.",
+        "All 17 public originals are checksum-pinned in the producer catalog and row ledger. Primary manifest hash identifies the IRP, not the composite files. Public accessibility is not a blanket redistribution license."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 11,
+    "failed": 0,
+    "notes": [
+      "35 source observations = 6 imported + 11 excluded + 18 pending.",
+      "Accepted factual catalog normalized against unchanged checksum-pinned originals; unknown ownership and geography remain unknown."
+    ]
+  }
+}
