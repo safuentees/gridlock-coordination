@@ -2,6 +2,10 @@
 
 For every visible paragraph, field and label, ask: “What does the user need this for at this moment?” Remove content without a useful answer. Preserve useful field labels, units, error recovery and decision-relevant uncertainty.
 
+Follow `specs/ui-composition.md`: identify each surface's primary task and every action's scope (workspace, collection, selection or item). Group by task/frequency; specify placement before adding controls. Coordinator owns shared composition. Keep browsing tabs/search/filters together, save actions with selected evidence, and collection management consistently reachable. Rare layout actions belong in a labeled menu. No arbitrary toolbar quotas or icon-only conversion rules.
+
+Repeated rows use consistent identification and aligned comparison fields. Keep headers/tabs outside the content scroller with shrinkable ancestors; fix the overflow cause rather than clipping content. Existing panel state, project evidence, accessible default components and preset decisions below take precedence over generic examples.
+
 - Keep extraction, deduplication, workbook-linking and implementation commentary in repository documentation. Never render `dataset.coverage.notes` wholesale in product screens. Preserve raw records and exports; use curated presentation helpers for known ingestion notes, retaining unfamiliar imported notes.
 - Do not display `generatedAt` as freshness. Show a concise source edition/date only when grounded in actual sources. Preserve historical planned/need-date meanings; local saved dates are useful history, not source freshness.
 - Keep missing locations, confidence and material limitations beside the affected result. Keep phase-date exceptions with the relevant project, including Dawson. Explain methodology and source background once in a clearly named, curated details view, never a disclaimer dump or a large popover.

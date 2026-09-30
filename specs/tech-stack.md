@@ -25,6 +25,8 @@ Product copy and icon-control rules are maintained in `app/src/AGENTS.md`. Share
 300 deterministic demo projects with realistic names, varied dates, both utilities, clustered and distant locations, missing values and a minority of near pairs. Observed corpus is 252 list records before linking the ten workbook examples. Ingestion first commits the 10-record batch; integrate F01 with F02/F03 immediately, then expand via F04. Source snapshots are not live schedules.
 
 ## Ownership and checks
+Coordinator is the shared UI composition owner: action scopes, destinations, shared slots and conflicting placement changes follow [UI composition](ui-composition.md). Feature specs name exact temporary file owners. This adds no approval gate and does not transfer F20 map ownership.
+
 Coordinator acts as named checker sequentially and alone: at most one existing build/compile plus one representative core input/output check, five minutes per milestone. Workers implement and inspect code but do not run planned verification, browser/Playwright, screenshots or visual audits. Check-core is authored by core worker and executed by coordinator. No new test framework or CI.
 
 Core expected example: Jasper–Okatie ↔ McIntosh–Purrysburg from discovery.md gives about 5.65 mi, 152 days, unverified candidate; no confirmed construction interval. Rank IDs stable. Impact is user-supplied shared miles × 5280 × width feet / 43560 square feet per acre, then × cost/acre × share fraction; label hypothetical.
