@@ -13,7 +13,7 @@ check_budget: "5 minutes per integrated milestone; no visual checks"
 
 # Product roadmap
 
-F00–F14 deliver the working tool and remain complete. The next milestone surrounds it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. All listed features are selected scope; increments remain independently deliverable and no task quota applies.
+F00–F14 deliver the working tool and remain complete. F15–F19 now surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. All listed features are selected scope and integrated; evidence gaps remain explicit. Increments are independently deliverable and no task quota applies.
 
 | ID | Capability | Owner | Phase | Depends on | Owned paths |
 |---|---|---|---|---|---|
@@ -41,13 +41,23 @@ F00–F14 deliver the working tool and remain complete. The next milestone surro
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
-## Active workers
+## Current milestone and assignments
 
-F15/F16 and F19 contextual search are integrated through PR30–34. Home/Outcomes are connected to retained working views and one applied scenario; need/zone search is shared by Explore/Readiness. The coordinator build passed at8eff2e7 with existing warnings; no browser or visual checks. F19 public evidence research continues independently.
+F15/F16 and F19 contextual search are integrated through PR30–34. Home/Outcomes are connected to retained working views and one applied scenario; need/zone search is shared by Explore/Readiness. The coordinator build passed at 8eff2e7 with existing warnings; no browser or visual checks.
 
-F17 is now assigned: core owns the additive storage/export contract; ui owns review/calculator/Explorer presentation after that contract lands, with exact boundaries in its spec. Coordinator retains App/Readiness and integration. Core proceeds to F18's restore module/component when its prerequisite contract is integrated; UI supplies the BriefWorkspace insertion. No other workers edit shared consumers.
+F17 is integrated through PR36/37/40: core supplied backward-compatible investigation storage/export and ui connected optional resource questions, next actions, analyst ownership and explicit saving of hypothetical inputs. F18 is integrated through PR41/42: core supplied brief validation/conflict handling and ui connected Restore inside Saved reviews. Existing evidence, mode boundaries and dirty review drafts are preserved. No schema migration or new calculation engine was needed.
 
-Next ready handoffs: ui takes F17 after F15 integration and saved-data contract agreement; core takes F18 when that contract is integrated. F19 continues with ten evidence decisions and integrates any supported small revision early; absent public coordinate evidence is a real blocker for data changes, not for other work. Do not leave workers idle when a ready selected increment exists. Never guess coordinates to meet a batch count.
+F19 is integrated through PR31/34/35/38/39. The source worker completed ten evidence decisions: one supported Okatie permit-area suggestion and nine unresolved records with exact next inputs. Coordinator connected the suggestion to the existing preview/apply/download workflow and the unresolved guidance to affected records. The supplied 252-record snapshot and originals remain unchanged; explicitly applying the suggestion would change coverage from 10 located / 242 missing to 11 unverified / 241 missing. Never guess coordinates to meet a batch count.
+
+The coordinator's final bounded check passed at 7a41fc9: one production build and one representative save/export/restore-and-revision case, within five minutes. The temporary case was corrected to select stable native IDs after its initial case-sensitive name lookup failed; no application defect or second build resulted. It verified legacy compatibility, input-derived hypothetical output, duplicate/draft protection, mode separation and a single-record revision without changing the supplied dataset. Existing bundle-size and future Vite config-loader warnings remain. No worker, browser, visual or mobile checks ran; interactive behavior was not exercised.
+
+| Owner | Next concrete assignment / readiness | Dependency and boundary |
+|---|---|---|
+| source_discovery | Resume an unresolved F19 record when its specified public identity/location evidence becomes available; first actionable target is `desc-6809-g`'s native corridor endpoints, kept distinct from `6809 E`. No additional research batch is selected. | Exact public endpoint/route citation; `data/evidence/*` only. See the nine next-input entries in `f19-location-decisions.json`. No evidence means no coordinate change. |
+| coordinator | Integrate a supported evidence proposal through existing preview/revision interfaces when supplied; retain baseline and confidence meanings. | Source/native-ID agreement, then `data/location-proposals.ts` and Readiness composition only if necessary. |
+| ui / core | Selected F15–F18 implementation complete; no ready implementation dependency remains. Retain worktrees for the next selected capability. | Do not invent filler tasks or run duplicate checks. |
+
+The highest-value proposed extension is a **current public-plan edition refresh**: source_discovery would establish edition/identity continuity, core would reuse revision comparison, and coordinator/UI would surface changed or withdrawn findings. This is medium-sized source/integration work and needs accessible public documents; it would improve present-day usefulness without treating elapsed historical dates as completion. Related-record navigation is a smaller follow-up for distinct phases and linked projects; verified route geometry is a larger evidence effort. These remain proposals, not silently dispatched work.
 
 F14 is complete through PR27–29. UI delivered the single panel, restored browsing context and map occlusion; core delivered per-candidate impact drafts and detail topics. The coordinator's sole composition build passed at 5502dcd with the existing bundle-size and future Vite-loader warnings. No browser, visual or mobile checks ran. Source data, canonical calculations and storage interfaces were unchanged.
 
