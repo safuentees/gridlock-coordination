@@ -13,7 +13,7 @@ check_budget: "5 minutes per integrated milestone; no visual checks"
 
 # Product roadmap
 
-F00–F14 deliver the working tool and remain complete. F15–F19 now surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. All listed features are selected scope and integrated; evidence gaps remain explicit. Increments are independently deliverable and no task quota applies.
+F00–F14 deliver the working tool and remain complete. F15–F19 now surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. F00–F19 are integrated; evidence gaps remain explicit. F20 is a ready, bounded map-only assignment for the user's separate map/UI teammate. Increments are independently deliverable and no task quota applies.
 
 | ID | Capability | Owner | Phase | Depends on | Owned paths |
 |---|---|---|---|---|---|
@@ -37,11 +37,16 @@ F00–F14 deliver the working tool and remain complete. F15–F19 now surround i
 | F17 | [Actionable saved investigations](features/F17-actionable-investigations/spec.md) | ui + core contract | 9 | F06/F07/F14, F15/F16 composition | `features/briefs/*` excluding restore files, ComparisonPanel/ImpactPanel after handoff; coordinator: shared contracts |
 | F18 | [Restore and revisit findings](features/F18-return-to-findings/spec.md) | core + ui insertion | 9 | F17 saved-data contract | core: `briefs/restore.ts`, `RestoreBrief.tsx`, receipt; ui: agreed BriefWorkspace insertion |
 | F19 | [Evidence-led discovery and coverage](features/F19-evidence-led-discovery/spec.md) | source_discovery + coordinator | 8–9 | F11/F12, journey contract | source: `lib/project-search.ts`, `data/evidence/*`, research notes/receipt; coordinator: Explorer/Readiness consumers |
+| F20 | [Map focus and connection visibility](features/F20-map-focus/spec.md) | map-ui (user's separate chat) | 10 | F14, F15/F16 integrated; UI ownership released | `app/src/features/explorer/ProjectMap.tsx`, optional `app/src/features/explorer/map-view.ts`, `changes/F20.md` only |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Current milestone and assignments
+
+**F20 — ready for the new map/UI chat; implementation not started here.** Role `map-ui` owns explicit Fit selection and a reversible background Candidate connections toggle. Purpose: recover selected geography after panning and reduce background clutter without changing results. Inputs are the current ProjectMap projects/opportunities/selection and measured viewport insets; public props stay unchanged. There is no missing enabling dependency. Observable completion: fit selected/all located supplied points around panel occlusion; toggle only background lines while preserving selected lines, markers, callbacks and map position; accessible preset controls; one bounded implementation PR. Full criteria and exclusions are in the linked spec.
+
+The existing UI worker confirmed no pending ProjectMap edits and released its ownership on 2026-09-30. This F20 allocation supersedes earlier broad UI claims only for the three exact paths above. Explorer.tsx and all other UI files remain with `ui`; changes there require a coordinator-arranged handoff before assignment or editing. Coordinator keeps merge/check ownership and owns roadmap/spec changes. The new worker uses a separate managed worktree/branch from integrated main; unrelated source/core/UI work is unaffected. No implementation or visual checks are part of this assignment update.
 
 F15/F16 and F19 contextual search are integrated through PR30–34. Home/Outcomes are connected to retained working views and one applied scenario; need/zone search is shared by Explore/Readiness. The coordinator build passed at 8eff2e7 with existing warnings; no browser or visual checks.
 
@@ -53,6 +58,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
+| map-ui | F20 ready: implement Fit selection and background connection visibility; start in the user's separate chat after this assignment reaches main. | Integrated F14–F16; exact three paths in F20 spec. Explorer excluded; no worker checks or self-merge. |
 | source_discovery | Resume an unresolved F19 record when its specified public identity/location evidence becomes available; first actionable target is `desc-6809-g`'s native corridor endpoints, kept distinct from `6809 E`. No additional research batch is selected. | Exact public endpoint/route citation; `data/evidence/*` only. See the nine next-input entries in `f19-location-decisions.json`. No evidence means no coordinate change. |
 | coordinator | Integrate a supported evidence proposal through existing preview/revision interfaces when supplied; retain baseline and confidence meanings. | Source/native-ID agreement, then `data/location-proposals.ts` and Readiness composition only if necessary. |
 | ui / core | Selected F15–F18 implementation complete; no ready implementation dependency remains. Retain worktrees for the next selected capability. | Do not invent filler tasks or run duplicate checks. |
@@ -69,6 +75,6 @@ The focused copy/control pass is integrated through PR24–26: shared tooltip-ba
 
 The previously proposed ten-record evidence batch is now F19 selected work. Current schedule refresh, additional utilities, explicit related-record navigation and verified route geometry remain proposed extensions; they need concrete source evidence and should not be disguised as more landing-page content.
 
-Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
+Coordinator dispatches and resumes up to three subagents in this chat directly. F20 additionally authorizes a user-led separate map/UI chat with the explicit ownership boundary above; do not create or start that chat as part of the assignment-only update. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
 Milestones: M1 F01–F03 connected real/demo explorer; M2 source coverage + scenarios/briefs + impact; M3 validated revision import and final mission review. Only coordinator checks; receipts on integrated main record completion. M2 and M3 shared one final bounded check at c709368; see changes/M2-M3.md. No redundant status-only PRs.
