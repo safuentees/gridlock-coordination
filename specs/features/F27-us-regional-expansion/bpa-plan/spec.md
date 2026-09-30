@@ -1,0 +1,11 @@
+# F27-BPA-Q — Qualify the public Northwest transmission plan
+
+Purpose: expand Pacific Northwest coverage through a complete declared Bonneville Power Administration planned-transmission scope. Start with [Attachment K planning](https://www.bpa.gov/energy-and-services/transmission/attachment-k) and its final 2025 Transmission Plan, whose index reports an August 25, 2026 update. Cross-check the [Grid Expansion and Reinforcement Portfolio](https://www.bpa.gov/energy-and-services/transmission/grid-expansion-and-reinforcement-portfolio) only where it clarifies identity/status/native geometry; do not add repeated projects from both inventories.
+
+Owner: ui temporarily acting as source qualifier after Hawaii full producer delivery. Own only this folder's `qualification.md`, `sample.json` and `changes/F27-bpa-qualification.md`. Coordinator owns acceptance, shared contracts/register and exact producer handoff. Reuse the same worktree/new branch and preserve public originals under ignored `inputs/originals/F27-bpa-plan/`. No UI/map/producer/shared edits or checks.
+
+At most 15 minutes of targeted public-source clarification. Enumerate planned reinforcements separately from recently completed work, asset context and conditional alternatives. Establish source date/hash, native identity or source-locator boundaries, project/component grouping, lifecycle and milestone precision, owner evidence and geographic footprint. No generation-queue substitution or owner-from-publisher assumption.
+
+Native machine-readable public geometry may be inspected through a documented public download/API if directly available. Record its role, CRS, accuracy and project identity linkage; general map symbols are not precise centers or routes. Do not take screenshots, inspect map images, digitize illustrations, geocode names or enter gated/CEII systems. A missing coordinate field does not prevent importing a useful source inventory.
+
+Completion: six diagnostic cited records and complete source-enumeration/mapping proposal, or a specific unavailable input. Prefer the full usable plan scope over a featured-project list; if only the latter is feasible, declare its limit. Coordinator accepts exact scope and sample/producer paths before implementation, then connects a batch before full production. Other regional work continues independently.
