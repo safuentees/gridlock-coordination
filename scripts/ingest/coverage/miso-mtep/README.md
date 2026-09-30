@@ -10,7 +10,7 @@ python3 scripts/ingest/coverage/miso-mtep/extract.py \
   --generated-at 2026-09-30T00:00:00+00:00
 ```
 
-Use the prior Dataset's generatedAt for exact reproduction. Sample first uses the six qualified Facility IDs; all other source rows are pending in the exhaustive ledger. The coordinator connects this sample before `--scope full` generates the accepted 3,042 retained / 169 M4 excluded records.
+Use the prior Dataset's generatedAt for exact reproduction. Sample first uses the six qualified Facility IDs; all 169 known M4 rows are immediately excluded, while the other 3,036 retained rows are pending in the exhaustive ledger. The coordinator connects this sample before `--scope full` generates the accepted 3,042 retained / 169 M4 excluded records.
 
 `policy.json` preserves the accepted 30 planning-context decisions with their cell citations and the exact unresolved owner-token families. Source `Misc.` rows retain capital context; other accepted physical facility types retain transmission kind. These records remain visible regardless of kind. No voltage threshold or keyword-only scope filter is used.
 

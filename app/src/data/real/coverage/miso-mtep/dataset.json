@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "mode": "real",
   "title": "MISO Appendix A status through August 4, 2026 — sample inventory",
-  "generatedAt": "2026-09-30T09:23:30.361817+00:00",
+  "generatedAt": "2026-09-30T09:25:25.575923+00:00",
   "projects": [
     {
       "id": "miso-mtep:51925",
@@ -529,12 +529,17 @@
       "counts": {
         "sourceRows": 3211,
         "importedRecords": 6,
-        "excludedRows": 0,
+        "excludedRows": 169,
         "failedRows": 0,
-        "pendingRows": 3205,
+        "pendingRows": 3036,
         "locatedRecords": 0
       },
-      "exclusions": [],
+      "exclusions": [
+        {
+          "reason": "M4 — completed and in service",
+          "count": 169
+        }
+      ],
       "limitations": [
         "August 4, 2026 is the workbook report-through date, not a known publication or per-row update date. Retrieval is September 30; the URL cache parameter is not freshness.",
         "Facility status controls lifecycle. Target MTEP cycle and Current Appendix do not override a Proposed row; past expected dates do not prove completion.",
@@ -548,10 +553,10 @@
   ],
   "coverage": {
     "processed": 6,
-    "skipped": 0,
+    "skipped": 169,
     "failed": 0,
     "notes": [
-      "3211 facility rows; 6 retained parent project IDs; 3205 pending.",
+      "3211 facility rows; 6 retained parent project IDs; 3036 pending.",
       "No native coordinates or source construction windows. Original workbook remains unchanged."
     ]
   }

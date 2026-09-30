@@ -178,11 +178,11 @@ def main():
         seen.add(uid)
         entry = {'sheet': SHEET, 'sourceRow': row, 'nativeFacilityId': uid, 'parentProjectId': pid,
                  'rawStatus': status, 'rawFacilityType': text(values[14])}
-        if args.scope == 'sample' and uid not in SAMPLE:
-            entry.update(disposition='pending', reason='Outside the six-record connection sample.')
-        elif status == EXCLUDED:
+        if status == EXCLUDED:
             excluded += 1
             entry.update(disposition='excluded', reason=EXCLUSION_REASON)
+        elif args.scope == 'sample' and uid not in SAMPLE:
+            entry.update(disposition='pending', reason='Retained facility outside the six-record connection sample.')
         else:
             record = project(cells, row)
             projects.append(record)

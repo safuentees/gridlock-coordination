@@ -20,12 +20,17 @@
   "counts": {
     "sourceRows": 3211,
     "importedRecords": 6,
-    "excludedRows": 0,
+    "excludedRows": 169,
     "failedRows": 0,
-    "pendingRows": 3205,
+    "pendingRows": 3036,
     "locatedRecords": 0
   },
-  "exclusions": [],
+  "exclusions": [
+    {
+      "reason": "M4 — completed and in service",
+      "count": 169
+    }
+  ],
   "limitations": [
     "August 4, 2026 is the workbook report-through date, not a known publication or per-row update date. Retrieval is September 30; the URL cache parameter is not freshness.",
     "Facility status controls lifecycle. Target MTEP cycle and Current Appendix do not override a Proposed row; past expected dates do not prove completion.",
