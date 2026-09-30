@@ -28,6 +28,8 @@ The workspace fills one viewport. Both candidate projects, key metrics and uncer
 
 Source mode contains 44 Dominion descriptions and 208 active rows from Georgia's public Table 2. Reporting group and sponsor are distinct: the Georgia filing includes GPC, GTC, SAV, MEAG and DU projects. Dates are historical plan milestones, not live completion claims. Raw originals are preserved in ignored `inputs/originals/`; hashes are in `inputs/manifest.json`. See [source discovery](specs/discovery.md) and [reproducible ingestion](scripts/ingest/README.md).
 
+All 44 Dominion project-need sections and 208 Georgia planning zones are retained as source notes. Zones are source identifiers, not coordinates. The 242 missing locations reflect absent geospatial evidence in the selected listing sections, not extraction failures. Data readiness supports evidence-backed updates; it does not verify locations or find new coordinates automatically.
+
 Eligibility uses haversine distance between supplied centers, strictly less than the radius (default 25 statute miles). Distance ranks first, then known milestone gap, then stable identity. Unknown dates remain unknown; an enabled day-gap filter excludes unknown or partial dates. Construction overlap requires explicit windows. Locations in the real snapshot have not been independently verified.
 
 Representative example: Jasper–Okatie / McIntosh–Purrysburg is about 5.6501 miles apart with 152 days between an in-service milestone and a need-date milestone. The locations are unverified and construction overlap is unknown.
