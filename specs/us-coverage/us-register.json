@@ -4,7 +4,7 @@
   "baselineRevision": "6475864",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "source selection pending; source-selection worker dispatch not performed by this side conversation",
+  "qualificationStatus": "F25 complete: ca-sce-tpr / 2026-06-01 selected; F26 contract and import in progress",
   "totals": {
     "importedSourceRecords": 252,
     "locatedRecords": 10,
@@ -12,7 +12,7 @@
     "unverifiedLocations": 10,
     "missingLocations": 242,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 0,
+    "newRegionalSourcesQualified": 1,
     "newFullRegionalInventoriesImported": 0,
     "knownNationalProjectDenominator": null
   },
@@ -484,11 +484,11 @@
   "qualificationLeads": [
     {
       "sourceKey": "california-tpr",
-      "status": "unqualified",
+      "status": "SCE edition qualified; other TPR portfolios not yet imported",
       "sourceUrl": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/transmission-project-review-process",
       "importedRecords": 0,
       "locatedRecords": 0,
-      "missingInput": "Public project sample with usable location evidence and full-inventory enumeration",
+      "missingInput": "Full F26 normalized inventory and product integration",
       "owner": "source_discovery",
       "task": "F25"
     },
@@ -507,7 +507,29 @@
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Other US areas and territories have no imported inventory. Zero imports do not mean zero projects.",
-    "No national planned-project denominator, full regional source import or public location-ready new source has yet been established.",
+    "National project denominator remains unknown. SCE public edition qualified; no new full inventory imported yet.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage."
+  ],
+  "qualifiedSources": [
+    {
+      "sourceKey": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "reportingGroup": "sce-tpr",
+      "status": "qualified-not-imported",
+      "sourceRows": 494,
+      "proposedRetainedRecords": 167,
+      "proposedExcludedRows": 327,
+      "locatedRecords": null,
+      "sampleNativeIds": [
+        "SP-01",
+        "PB-02.01",
+        "SP-05",
+        "PB-32.03",
+        "PB-04.01",
+        "SP-118"
+      ],
+      "scope": "SCE public transmission-capital portfolio; not statewide California completeness; includes cross-state work",
+      "contract": "specs/features/F26-full-public-inventory/contract.md"
+    }
   ]
 }

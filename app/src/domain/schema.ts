@@ -1,8 +1,7 @@
 import { z } from "zod"
+import { inventorySchema, sourceEditionSchema, sourceKeySchema, sourceSchema } from "./coverage"
 
-export const sourceSchema = z.object({
-  file: z.string(), locator: z.string(), url: z.url().refine(value => /^https?:\/\//i.test(value), "Source links must use HTTP or HTTPS").nullable(),
-})
+export { sourceSchema } from "./coverage"
 const dateSchema = z.object({ value: z.string().nullable(), precision: z.enum(["day", "month", "year", "unknown"]), kind: z.enum(["in-service", "need", "unknown"]), label: z.string() }).superRefine((date, ctx) => {
   const valid = date.precision === "unknown" ? date.value === null
     : date.precision === "year" ? /^\d{4}$/.test(date.value ?? "")
@@ -11,7 +10,7 @@ const dateSchema = z.object({ value: z.string().nullable(), precision: z.enum(["
   if (!valid) ctx.addIssue({ code: "custom", message: "Date value must match its stated precision", path: ["value"] })
 })
 export const projectSchema = z.object({
-  id: z.string().min(1), utilityId: z.enum(["desc", "gpc"]),
+  id: z.string().min(1), utilityId: sourceKeySchema,
   sponsor: z.string().nullable(), sourceId: z.string().nullable(),
   name: z.string().min(1), description: z.string(), status: z.string().nullable(),
   voltageKv: z.array(z.number().positive()),
@@ -23,16 +22,30 @@ export const projectSchema = z.object({
     confidence: z.enum(["confirmed", "unverified"]), evidence: z.array(sourceSchema),
   }).nullable(),
   sources: z.array(sourceSchema).min(1), notes: z.array(z.string()),
+  inventory: inventorySchema.optional(),
+}).superRefine((project, ctx) => {
+  if (!project.inventory && !["desc", "gpc"].includes(project.utilityId)) ctx.addIssue({ code: "custom", path: ["inventory"], message: "New reporting groups require source-qualified inventory metadata" })
+  if (project.inventory && (!project.sourceId || project.id !== `${project.inventory.sourceKey}:${project.sourceId}`)) ctx.addIssue({ code: "custom", path: ["id"], message: "Inventory identity must use sourceKey:nativeId independently of edition" })
+  if (project.inventory && !project.location && project.inventory.centerRole !== "unknown") ctx.addIssue({ code: "custom", path: ["inventory", "centerRole"], message: "An unresolved center must retain unknown role" })
 })
 export const datasetSchema = z.object({
-  schemaVersion: z.literal(1), mode: z.enum(["demo", "real"]), title: z.string(),
+  schemaVersion: z.union([z.literal(1), z.literal(2)]), mode: z.enum(["demo", "real"]), title: z.string(),
   generatedAt: z.string(), projects: z.array(projectSchema),
+  sourceEditions: z.array(sourceEditionSchema).optional(),
   coverage: z.object({ processed: z.number().int().nonnegative(), skipped: z.number().int().nonnegative(), failed: z.number().int().nonnegative(), notes: z.array(z.string()) }),
 }).superRefine((dataset, ctx) => {
   const ids = new Set<string>()
+  const editions = new Map((dataset.sourceEditions ?? []).map(edition => [`${edition.sourceKey}:${edition.editionId}`, edition]))
+  if (editions.size !== (dataset.sourceEditions?.length ?? 0)) ctx.addIssue({ code: "custom", path: ["sourceEditions"], message: "Source editions must be unique" })
+  if (dataset.schemaVersion === 2 && !editions.size) ctx.addIssue({ code: "custom", path: ["sourceEditions"], message: "Version 2 requires source edition manifests" })
+  if (dataset.schemaVersion === 1 && (editions.size || dataset.projects.some(project => project.inventory))) ctx.addIssue({ code: "custom", path: ["schemaVersion"], message: "Source-qualified inventory requires version 2" })
   dataset.projects.forEach((project, index) => {
     if (ids.has(project.id)) ctx.addIssue({ code: "custom", message: "Project IDs must be unique", path: ["projects", index, "id"] })
     ids.add(project.id)
+    if (project.inventory) {
+      const edition = editions.get(`${project.inventory.sourceKey}:${project.inventory.editionId}`)
+      if (!edition || edition.reportingGroupId !== project.utilityId || edition.reportingGroupName !== project.inventory.reportingGroupName) ctx.addIssue({ code: "custom", path: ["projects", index, "inventory"], message: "Inventory must reference its matching source edition and reporting group" })
+    }
   })
 })
 export type SourceRef = z.infer<typeof sourceSchema>
@@ -49,7 +62,7 @@ export interface Opportunity {
 }
 export interface AnalysisResult {
   opportunities: Opportunity[];
-  summary: { totalProjects: number; locatedProjects: number; unlocatedProjects: number; comparedPairs: number; excludedUnverified: number };
+  summary: { totalProjects: number; locatedProjects: number; unlocatedProjects: number; comparedPairs: number; excludedUnverified: number; eligibleProjects: number; excludedByEligibility: number };
 }
 export interface ImpactInputs { sharedLengthMiles: number; corridorWidthFeet: number; costPerAcreUsd: number; shareFraction: number }
 export interface ImpactResult { sharedAcres: number; indicativeSavingsUsd: number; assumptions: string[] }
