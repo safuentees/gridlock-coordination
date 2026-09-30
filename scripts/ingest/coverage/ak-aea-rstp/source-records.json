@@ -1,0 +1,588 @@
+{
+  "sourceKey": "ak-aea-rstp",
+  "editionId": "2026-02-26",
+  "retrievedOn": "2026-09-30",
+  "generatedAt": "2026-09-30T00:00:00Z",
+  "transcriptionMeaning": "Accepted chapter-3 leaf inventory with factual paraphrases; not native engineering project IDs. Six source facts are transcribed for the initial connection; other retained leaves remain pending.",
+  "sources": [
+    {
+      "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+      "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D",
+      "sha256": "2503e90711cfc45603fc5871586d817ab2b754737397dfa87bc3dd76ff7d1d6d",
+      "localOriginal": "inputs/originals/F27-ak-railbelt/2026-02-26-aea-2050-rstp-final.pdf",
+      "bytes": 1539251,
+      "pdfPages": 42
+    },
+    {
+      "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+      "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D",
+      "sha256": "e1beaf0dc562ff532dd32027ffa5a1b9181cf1079d40f8bb0f564266b561b94b",
+      "localOriginal": "inputs/originals/F27-ak-railbelt/2026-02-19-aea-statewide-railbelt-energy-vision.pdf",
+      "bytes": 16983817,
+      "pdfPages": 23
+    }
+  ],
+  "sampleIds": [
+    "map-B",
+    "map-C",
+    "map-F",
+    "sec-3-3-1-item-2",
+    "sec-3-4-2-item-1",
+    "sec-3-4-4-item-1"
+  ],
+  "rows": [
+    {
+      "sourceId": "map-A",
+      "parentSection": "3.2.1",
+      "mainPages": [
+        27,
+        28
+      ],
+      "sourceMapKey": "A",
+      "curatedLabel": "Anchorage–Soldotna existing intertie",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "map-B",
+      "parentSection": "3.2.1",
+      "mainPages": [
+        27,
+        29
+      ],
+      "sourceMapKey": "B",
+      "curatedLabel": "CIPLink HVDC",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": {
+        "name": "Cook Inlet PowerLink",
+        "description": "A proposed HVDC connection provides an additional transmission path between the Kenai Peninsula and the Anchorage region.",
+        "recordUnit": "project",
+        "voltageKv": [],
+        "sourceLocation": "Anchorage and Kenai Peninsula",
+        "rawOwnerLabel": "AEA",
+        "rawTimeline": "8**",
+        "completionText": "August 2032",
+        "partiallyFunded": true,
+        "sourceNotes": [
+          "Table key B identifies the HVDC project. The two identically labelled cost rows in RSTP section 3.2.1 cannot be assigned to the Kenai Tie versus CIPLink by their labels; no cost attribution is proposed.",
+          "The table footnote states scheduled completion August 2032; the numeric 8 is not converted to an absolute date."
+        ],
+        "sources": [
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 27; section 3.2.1; narrative identifies HVDC project; duplicated cost-row attribution unresolved",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=27"
+          },
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 28; section 3.2.1; narrative identifies HVDC project; duplicated cost-row attribution unresolved",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=28"
+          },
+          {
+            "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+            "locator": "PDF page 19; printed page 34; System Improvement Projects table, map key B",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "map-C",
+      "parentSection": "3.2.2",
+      "mainPages": [
+        29,
+        30
+      ],
+      "sourceMapKey": "C",
+      "curatedLabel": "Anchorage–Fairbanks existing interties",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": {
+        "name": "Anchorage–Fairbanks intertie voltage upgrade",
+        "description": "Raise the existing Anchorage–Fairbanks intertie network to 230 kV, including line and terminal work across several owners.",
+        "recordUnit": "upgrade",
+        "voltageKv": [
+          230
+        ],
+        "sourceLocation": "Anchorage to Fairbanks",
+        "rawOwnerLabel": "AEA, CEA, MEA, GVEA",
+        "rawTimeline": "2-10",
+        "completionText": null,
+        "partiallyFunded": false,
+        "sourceNotes": [
+          "Several existing asset owners are explicitly named. The composite label is preserved without inventing a single owner ID.",
+          "230 kV is the proposed target voltage, not evidence that all existing segments already operate at that voltage."
+        ],
+        "sources": [
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 29; section 3.2.2; child 1 and explanatory paragraphs",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=29"
+          },
+          {
+            "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+            "locator": "PDF page 19; printed page 34; System Improvement Projects table, map key C",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "map-D",
+      "parentSection": "3.2.2",
+      "mainPages": [
+        29,
+        30
+      ],
+      "sourceMapKey": "D",
+      "curatedLabel": "Additional Central–Healy connection",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "map-E",
+      "parentSection": "3.2.3",
+      "mainPages": [
+        30
+      ],
+      "sourceMapKey": "E",
+      "curatedLabel": "Bradley–Soldotna existing line",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "map-F",
+      "parentSection": "3.2.3",
+      "mainPages": [
+        30
+      ],
+      "sourceMapKey": "F",
+      "curatedLabel": "Second Bradley–Soldotna path",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": {
+        "name": "Second Bradley Lake–Soldotna transmission path",
+        "description": "Create one additional 230 kV Bradley Lake–Soldotna path; the report describes alternative direct and western-loop approaches.",
+        "recordUnit": "project",
+        "voltageKv": [
+          230
+        ],
+        "sourceLocation": "Bradley Lake to Soldotna",
+        "rawOwnerLabel": "HEA",
+        "rawTimeline": "5-10",
+        "completionText": null,
+        "partiallyFunded": false,
+        "sourceNotes": [
+          "The narrative offers a new direct connection or an upgrade of the western 115 kV loop as alternatives for one second-path objective; do not count both alternatives as committed projects."
+        ],
+        "sources": [
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 30; section 3.2.3; child 2 and alternative-path paragraph",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=30"
+          },
+          {
+            "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+            "locator": "PDF page 19; printed page 34; System Improvement Projects table, map key F",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D#page=19"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "map-I",
+      "parentSection": "3.2.4",
+      "mainPages": [
+        31
+      ],
+      "sourceMapKey": "I",
+      "curatedLabel": "East–west Knik Arm 230 kV cables",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "map-J",
+      "parentSection": "3.2.4",
+      "mainPages": [
+        31
+      ],
+      "sourceMapKey": "J",
+      "curatedLabel": "Point MacKenzie–Sullivan overhead conductors",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "map-G",
+      "parentSection": "3.2.5",
+      "mainPages": [
+        32
+      ],
+      "sourceMapKey": "G",
+      "curatedLabel": "Existing BESS grid-forming conversion",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": true,
+      "exclusionReason": "Standalone battery energy storage",
+      "facts": null
+    },
+    {
+      "sourceId": "map-H",
+      "parentSection": "3.2.5",
+      "mainPages": [
+        32
+      ],
+      "sourceMapKey": "H",
+      "curatedLabel": "Additional regional BESS",
+      "priority": "high",
+      "recordKind": "transmission-project",
+      "excluded": true,
+      "exclusionReason": "Standalone battery energy storage",
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-3-1-item-1",
+      "parentSection": "3.3.1",
+      "mainPages": [
+        33
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "North Pole–Fort Knox line",
+      "priority": "medium",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-3-1-item-2",
+      "parentSection": "3.3.1",
+      "mainPages": [
+        33
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "North Pole/Fairbanks–Delta Junction line",
+      "priority": "medium",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": {
+        "name": "North Pole–Delta Junction second transmission path",
+        "description": "Add a 138 kV path serving the North Pole–Delta Junction corridor; the heading uses Fairbanks rather than North Pole.",
+        "recordUnit": "project",
+        "voltageKv": [
+          138
+        ],
+        "sourceLocation": "North Pole area to Delta Junction area",
+        "rawOwnerLabel": null,
+        "rawTimeline": null,
+        "completionText": null,
+        "partiallyFunded": false,
+        "sourceNotes": [
+          "The child heading uses Fairbanks–Delta Junction while its explanatory paragraph specifies North Pole–Delta Junction. Preserve this distinction; no separate duplicate project is inferred."
+        ],
+        "sources": [
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 33; section 3.3.1; child 2 and explanatory paragraph",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=33"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "sec-3-3-2-item-1",
+      "parentSection": "3.3.2",
+      "mainPages": [
+        34
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Teeland eastward capacity",
+      "priority": "medium",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-3-2-item-2",
+      "parentSection": "3.3.2",
+      "mainPages": [
+        34
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Two MEA 230 kV paths",
+      "priority": "medium",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-1-item-1",
+      "parentSection": "3.4.1",
+      "mainPages": [
+        35
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Downtown Anchorage 115 kV capacity",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-1-item-2",
+      "parentSection": "3.4.1",
+      "mainPages": [
+        35
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Third University transformer",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-1-item-3",
+      "parentSection": "3.4.1",
+      "mainPages": [
+        35
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Sullivan transformer",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-1-item-4",
+      "parentSection": "3.4.1",
+      "mainPages": [
+        35
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Anchorage subtransmission/distribution program",
+      "priority": "low",
+      "recordKind": "capital-project-context",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-2-item-1",
+      "parentSection": "3.4.2",
+      "mainPages": [
+        35,
+        36
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "North–south Knik Arm cable replacement",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": {
+        "name": "North–south Knik Arm cable replacement",
+        "description": "Replace the north–south Knik Arm cables under conditional load and generation scenarios; the source has conflicting voltage wording.",
+        "recordUnit": "upgrade",
+        "voltageKv": [],
+        "sourceLocation": "North–south Knik Arm crossing",
+        "rawOwnerLabel": null,
+        "rawTimeline": null,
+        "completionText": null,
+        "partiallyFunded": false,
+        "sourceNotes": [
+          "The child heading prints 139 kV; the narrative on page 36 says 138 kV. Nominal voltage is unresolved, not silently corrected.",
+          "This low-priority north–south crossing is distinct from the high-priority 230 kV east–west replacement (map key I). Its need is conditional on generation location and load scenarios."
+        ],
+        "sources": [
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 35; section 3.4.2; child 1 and continuation narrative",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=35"
+          },
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 36; section 3.4.2; child 1 and continuation narrative",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=36"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "sec-3-4-2-item-2",
+      "parentSection": "3.4.2",
+      "mainPages": [
+        35,
+        36
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Woronzof–International conductors",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-2-item-3",
+      "parentSection": "3.4.2",
+      "mainPages": [
+        35,
+        36
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Second Point MacKenzie 230/138 kV transformer",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-3-item-1",
+      "parentSection": "3.4.3",
+      "mainPages": [
+        36
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Central Fairbanks 69 kV capacity",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-3-item-2",
+      "parentSection": "3.4.3",
+      "mainPages": [
+        36
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Goldhill transformer",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-3-item-3",
+      "parentSection": "3.4.3",
+      "mainPages": [
+        36
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Fort Wainright–Carney 69 kV conductors",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-4-item-1",
+      "parentSection": "3.4.4",
+      "mainPages": [
+        37
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Puppy Dog Lake substation",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": {
+        "name": "Puppy Dog Lake interconnection substation",
+        "description": "Add an interconnection substation near Puppy Dog Lake if the specified area’s proposed renewable facilities proceed.",
+        "recordUnit": "project",
+        "voltageKv": [],
+        "sourceLocation": "Near Puppy Dog Lake; between Soldotna and Bernice Lake",
+        "rawOwnerLabel": null,
+        "rawTimeline": null,
+        "completionText": null,
+        "partiallyFunded": false,
+        "sourceNotes": [
+          "The proposed transmission substation is contingent on the size and location of future wind/solar facilities. Standalone generators are not imported."
+        ],
+        "sources": [
+          {
+            "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+            "locator": "PDF/printed page 37; section 3.4.4; child 1 and conditional interconnection narrative",
+            "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D#page=37"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "sec-3-4-5-item-1",
+      "parentSection": "3.4.5",
+      "mainPages": [
+        37
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Beluga–Point MacKenzie existing line",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-5-item-2",
+      "parentSection": "3.4.5",
+      "mainPages": [
+        37
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Susitna Valley plant transmission connection",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    },
+    {
+      "sourceId": "sec-3-4-5-item-3",
+      "parentSection": "3.4.5",
+      "mainPages": [
+        37
+      ],
+      "sourceMapKey": null,
+      "curatedLabel": "Lake Lorraine plant substation connection",
+      "priority": "low",
+      "recordKind": "transmission-project",
+      "excluded": false,
+      "exclusionReason": null,
+      "facts": null
+    }
+  ]
+}
