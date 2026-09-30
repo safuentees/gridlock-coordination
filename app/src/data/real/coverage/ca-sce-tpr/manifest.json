@@ -16,16 +16,29 @@
   "sha256": "42f5ce7a686d08f3900d02eb5ebd09fe089dba39f6e04b1279038d6fde473118",
   "geographicScope": "SCE FERC-jurisdictional transmission capital portfolio, including reported work outside California; not all California transmission projects.",
   "inventoryScope": "Nonaggregate project/subproject lines except Operational and Canceled. On Hold and unknown lifecycle remain visible; includes ancillary capital work. Program aggregates are separately reconciled without inventing child projects.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 494,
-    "importedRecords": 6,
-    "excludedRows": 0,
+    "importedRecords": 167,
+    "excludedRows": 327,
     "failedRows": 0,
-    "pendingRows": 488,
-    "locatedRecords": 2
+    "pendingRows": 0,
+    "locatedRecords": 103
   },
-  "exclusions": [],
+  "exclusions": [
+    {
+      "reason": "cancelled",
+      "count": 4
+    },
+    {
+      "reason": "operational",
+      "count": 279
+    },
+    {
+      "reason": "program-aggregate",
+      "count": 44
+    }
+  ],
   "limitations": [
     "Source edition lifecycle is not live status and never inferred from elapsed milestone dates.",
     "Project Manager is not asset owner; personal manager data is omitted and owners remain unknown.",
