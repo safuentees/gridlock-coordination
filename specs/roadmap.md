@@ -27,15 +27,16 @@ Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inve
 | F07 | [Transparent shared-corridor scenario](features/F07-impact-estimate/spec.md) | core | 3 | F02 | `app/src/core/`, `app/src/features/impact/` |
 | F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F00 | `app/src/features/import/`, `app/src/data/import.ts`, `app/src/App.tsx` (agreed composition) |
 | F09 | [Viewport-sized workspace](features/F09-viewport-workspace/spec.md) | coordinator + ui + workspace-briefs | 4 | F03, F05–F08 | `App.tsx`, `index.css`, shared dialog, explorer/scenarios, brief presentation and import presentation |
+| F10 | [Map-first workspace](features/F10-map-workspace/spec.md) | coordinator + ui + comparison | 5 | F09 | coordinator: `App.tsx`, `Explorer.tsx`; ui: `ProjectMap.tsx`; comparison: `ComparisonPanel.tsx`, `ProjectDetails.tsx` |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Active workers
 
-F00–F09 are complete. F09 ownership was agreed before edits: coordinator owned the shared shell and dataset presentation (PR11); `/root/core` owned saved-review presentation (PR12); `/root/ui` owned explorer/scenario/map/detail panels (PR13). Coordinator's final handoff adds usage notes and leading-edge alignment for overflowing tabs. Existing data, calculations and storage/export semantics are preserved.
+F00–F09 are complete. F10 is active with coordinator owning the shell/list, `/root/ui` the inset-aware map and `/root/core` the comparison panel in separate branches/worktrees. Ingestion performed read-only gap discovery for Stage 2; no data edits before F10 integration. Existing data, calculations and storage/export semantics are preserved.
 
-The single coordinator build passed at 5bab886; see `changes/F09.md`. No visual or browser checks. Workers are idle with no further selected task. Additional utility adapters and verified route geometry remain proposals requiring selection; there are no implementation blockers for the completed scope.
+The prior single coordinator build passed at 5bab886; see `changes/F09.md`. F10 will receive one integrated build. No visual or browser checks. After integration, coordinator selects and begins the highest-value journey/real-coverage milestone within the existing mission. Additional utility adapters and verified route geometry remain proposals, not automatic scope.
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
