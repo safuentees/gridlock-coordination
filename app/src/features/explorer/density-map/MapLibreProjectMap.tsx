@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import MapGL, { AttributionControl, type MapRef } from "react-map-gl/maplibre"
 import { LngLatBounds, setWorkerUrl, type StyleSpecification } from "maplibre-gl"
+import type { PickingInfo } from "@deck.gl/core"
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url"
 import { MinusIcon, PlusIcon, ScanIcon } from "lucide-react"
 import "maplibre-gl/dist/maplibre-gl.css"
@@ -11,6 +12,9 @@ import { MapLegend } from "../MapLegend"
 import { boundedInsets, getMapConnections, getMapLocations, isMappableProject, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "../map-view"
 import { DeckOverlay } from "./DeckOverlay"
 import { projectLayers } from "./map-layers"
+import { buildDensityHierarchy, getDensityFrame, smoothstep, type DensityCell, type DensityPoint } from "./hierarchy"
+import { densityLayers, syntheticPointLayer } from "./density-layers"
+import { syntheticDensityPoints } from "./synthetic"
 
 // MapLibre 6 uses a separate worker module; Vite must bundle its sibling imports too.
 setWorkerUrl(workerUrl)
@@ -26,7 +30,7 @@ const MAP_STYLE: StyleSpecification = {
   },
   layers: [{ id: "osm", type: "raster", source: "osm" }],
 }
-
+const densityNumber = new Intl.NumberFormat(undefined, { maximumSignificantDigits: 3 })
 type FitTarget = "projects" | "selection"
 
 export default function MapLibreProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
@@ -36,21 +40,56 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
   const [mapError, setMapError] = useState(false)
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [pitch, setPitch] = useState(0)
+  const [zoom, setZoom] = useState(7)
+  const [showDensity, setShowDensity] = useState(true)
+  const [columns, setColumns] = useState(false)
+  const [syntheticPreview, setSyntheticPreview] = useState(false)
   const [fitRequest, setFitRequest] = useState<{ target: FitTarget; revision: number }>({ target: "projects", revision: 0 })
   const lastFit = useRef<{ locationsKey: string; focusKey: string; layoutKey: string; revision: number } | null>(null)
   const mappedProjects = useMemo(() => projects.filter(isMappableProject), [projects])
   const outOfRangeCount = projects.filter((project) => project.location && !isMappableProject(project)).length
   const focusIds = useMemo(() => selectedOpportunity?.projectIds ?? (selectedProjectId ? [selectedProjectId] : []), [selectedOpportunity, selectedProjectId])
-  const locations = useMemo(() => getMapLocations(mappedProjects), [mappedProjects])
-  const selectedLocations = useMemo(() => getMapLocations(mappedProjects, focusIds), [mappedProjects, focusIds])
+  const projectPoints = useMemo(() => mappedProjects.map((project): DensityPoint => ({ id: project.id, position: [project.location.lon, project.location.lat] })), [mappedProjects])
+  // The preview replaces the map source. It never becomes a Project or analysis input.
+  const densityPoints = syntheticPreview ? syntheticDensityPoints : projectPoints
+  const hierarchy = useMemo(() => buildDensityHierarchy(densityPoints), [densityPoints])
+  const densityZoom = Math.min(12, Math.max(2, zoom))
+  const frame = useMemo(() => getDensityFrame(hierarchy, densityZoom), [hierarchy, densityZoom])
+  const pointOpacity = showDensity ? smoothstep(zoom - 11) : 1
+  const densityOpacity = showDensity ? 1 - pointOpacity : 0
+  const locations = useMemo(() => syntheticPreview
+    ? syntheticDensityPoints.map(({ position: [lon, lat] }): [number, number] => [lat, lon])
+    : getMapLocations(mappedProjects), [syntheticPreview, mappedProjects])
+  const selectedLocations = useMemo(() => syntheticPreview ? [] : getMapLocations(mappedProjects, focusIds), [syntheticPreview, mappedProjects, focusIds])
   const byId = useMemo(() => new Map(mappedProjects.map((project) => [project.id, project])), [mappedProjects])
   const candidateIds = useMemo(() => new Set(opportunities.flatMap((opportunity) => opportunity.projectIds)), [opportunities])
   const connections = useMemo(() => getMapConnections(byId, opportunities, selectedOpportunity, showConnections), [byId, opportunities, selectedOpportunity, showConnections])
-  const layers = useMemo(() => projectLayers({ projects: mappedProjects, connections, focusIds, candidateIds, selectedPair: selectedOpportunity !== null, onProject, onOpportunity }), [mappedProjects, connections, focusIds, candidateIds, selectedOpportunity, onProject, onOpportunity])
   const insets = useMemo(() => boundedInsets(viewportInsets, size.width, size.height), [viewportInsets, size])
-  const locationsKey = JSON.stringify(locations)
-  const focusKey = JSON.stringify([focusIds, selectedLocations])
+  const fitPadding = useMemo(() => boundedInsets({ top: insets.top + 72, right: insets.right + 24, bottom: insets.bottom + 40, left: insets.left + 24 }, size.width, size.height), [insets, size])
+  const locationsKey = JSON.stringify([syntheticPreview, locations])
+  const focusKey = JSON.stringify(syntheticPreview ? [] : [focusIds, selectedLocations])
   const layoutKey = `${size.width}:${size.height}:${insets.top}:${insets.right}:${insets.bottom}:${insets.left}`
+  const focusCell = useCallback((cell: DensityCell) => {
+    const current = map.current
+    if (!current || !ready) return
+    const [west, south, east, north] = cell.bounds
+    current.jumpTo({ pitch: 0, bearing: 0 })
+    current.fitBounds([[west, south], [east, north]], { padding: fitPadding, maxZoom: Math.min(14, current.getZoom() + 2), animate: false, duration: 0 })
+  }, [ready, fitPadding])
+  const layers = useMemo(() => [
+    ...densityLayers({ cells: frame.cells, columns, opacity: densityOpacity, onCell: focusCell }),
+    ...(syntheticPreview ? [syntheticPointLayer(syntheticDensityPoints, pointOpacity)]
+      : projectLayers({ projects: mappedProjects, connections, focusIds, candidateIds, selectedPair: selectedOpportunity !== null, pointOpacity, onProject, onOpportunity })),
+  ], [frame, columns, densityOpacity, focusCell, syntheticPreview, pointOpacity, mappedProjects, connections, focusIds, candidateIds, selectedOpportunity, onProject, onOpportunity])
+  const getTooltip = useCallback(({ object }: PickingInfo): string | null => {
+    if (!object) return null
+    if ("quadkey" in object) {
+      const cell = object as DensityCell
+      return `${cell.count.toLocaleString()} observed ${syntheticPreview ? "sample locations" : "projects"} in this square\nDisplayed density: ${densityNumber.format(cell.density)} / 1,000 km²\nArea: ${densityNumber.format(cell.areaKm2)} km²\nClick to focus`
+    }
+    if (syntheticPreview) return "Synthetic location · map preview only"
+    return "name" in object ? String(object.name) : null
+  }, [syntheticPreview])
 
   useEffect(() => {
     const node = container
@@ -78,34 +117,33 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
       if (points.length) {
         const bounds = new LngLatBounds()
         points.forEach(([lat, lon]) => bounds.extend([lon, lat]))
-        const padding = boundedInsets({ top: insets.top + 72, right: insets.right + 24, bottom: insets.bottom + 40, left: insets.left + 24 }, size.width, size.height)
         // Fit is deliberately flat/north-up so the full bounds fit outside panel occlusion.
         current.jumpTo({ pitch: 0, bearing: 0 })
-        current.fitBounds(bounds, { padding, maxZoom: useSelection && points.length > 1 ? 12 : 10, animate: false, duration: 0 })
+        current.fitBounds(bounds, { padding: fitPadding, maxZoom: useSelection && points.length > 1 ? 12 : 10, animate: false, duration: 0 })
       }
       lastFit.current = { locationsKey, focusKey, layoutKey, revision: fitRequest.revision }
     }
-  }, [ready, visible, size, insets, locations, selectedLocations, locationsKey, focusKey, layoutKey, fitRequest])
+  }, [ready, visible, size, fitPadding, locations, selectedLocations, locationsKey, focusKey, layoutKey, fitRequest])
 
   function fit(target: FitTarget) { setFitRequest((previous) => ({ target, revision: previous.revision + 1 })) }
 
   return <section ref={setContainer} className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Experimental project map">
-    <MapGL ref={map} initialViewState={{ longitude: -82.5, latitude: 33.2, zoom: 7 }} mapStyle={MAP_STYLE} attributionControl={false} renderWorldCopies={false} maxPitch={60} onLoad={() => setReady(true)} onError={() => setMapError(true)} onPitch={(event) => setPitch(event.viewState.pitch)} style={{ width: "100%", height: "100%" }}>
-      <DeckOverlay layers={layers} interleaved onError={() => setMapError(true)} />
+    <MapGL ref={map} initialViewState={{ longitude: -82.5, latitude: 33.2, zoom: 7 }} mapStyle={MAP_STYLE} attributionControl={false} renderWorldCopies={false} maxPitch={60} onLoad={() => setReady(true)} onError={() => setMapError(true)} onPitch={(event) => setPitch(event.viewState.pitch)} onZoom={(event) => setZoom(event.viewState.zoom)} style={{ width: "100%", height: "100%" }}>
+      <DeckOverlay layers={layers} interleaved getTooltip={getTooltip} onError={() => setMapError(true)} />
       <AttributionControl compact={false} style={{ marginRight: insets.right + 8, marginBottom: insets.bottom + 8, maxWidth: Math.max(40, size.width - insets.left - insets.right - 16), maxHeight: Math.max(24, (size.height - insets.top - insets.bottom) / 3), overflow: "auto", whiteSpace: "normal" }} />
     </MapGL>
-    <div className="pointer-events-none absolute right-3 top-3 z-10 flex max-w-[calc(100%-1.5rem)] flex-col items-end gap-2">
-      <div className="pointer-events-auto flex items-center gap-2">
+    <div className="pointer-events-auto absolute right-3 top-3 z-10 flex max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] flex-col items-end gap-2 overflow-y-auto overscroll-contain">
+      <div className="flex shrink-0 items-center gap-2">
         <div className="flex items-center gap-1 rounded-lg border bg-background p-1" role="group" aria-label="Map zoom">
           <IconButton variant="ghost" label="Zoom in" disabled={!ready} onClick={() => map.current?.zoomIn({ duration: 0 })}><PlusIcon aria-hidden="true" /></IconButton>
           <IconButton variant="ghost" label="Zoom out" disabled={!ready} onClick={() => map.current?.zoomOut({ duration: 0 })}><MinusIcon aria-hidden="true" /></IconButton>
         </div>
-        <IconButton variant="outline" label="Fit projects" disabled={!ready || !locations.length} onClick={() => fit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
+        <IconButton variant="outline" label={syntheticPreview ? "Fit sample" : "Fit projects"} disabled={!ready || !locations.length} onClick={() => fit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
       </div>
-      {visible && container && <div className="pointer-events-auto"><MapLegend boundary={container} connectionCount={connections.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
-      <Button type="button" variant="outline" size="sm" className="pointer-events-auto" disabled={!ready || !selectedLocations.length} onClick={() => fit("selection")}>Fit selection</Button>
+      {visible && container && !syntheticPreview && <div className="shrink-0"><MapLegend boundary={container} connectionCount={selectedOpportunity || pointOpacity > 0 ? connections.length : 0} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
+      <Button type="button" variant="outline" size="sm" className="shrink-0" disabled={!ready || !selectedLocations.length} onClick={() => fit("selection")}>Fit selection</Button>
       {visible && <DropdownMenu>
-        <DropdownMenuTrigger asChild><Button type="button" variant="outline" size="sm" className="pointer-events-auto">Map view</Button></DropdownMenuTrigger>
+        <DropdownMenuTrigger asChild><Button type="button" variant="outline" size="sm" className="shrink-0">Map view</Button></DropdownMenuTrigger>
         <DropdownMenuContent align="end" collisionBoundary={container} style={{ width: 256, maxWidth: "var(--radix-dropdown-menu-content-available-width)" }} onPointerDown={(event) => event.stopPropagation()} onKeyDown={(event) => event.stopPropagation()} onWheel={(event) => event.stopPropagation()}>
           <DropdownMenuLabel>Map view</DropdownMenuLabel>
           <DropdownMenuRadioGroup value="experimental" onValueChange={(value) => { if (value === "standard") onChangeRenderer() }}>
@@ -113,14 +151,29 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
             <DropdownMenuRadioItem value="experimental">Experimental</DropdownMenuRadioItem>
           </DropdownMenuRadioGroup>
           <DropdownMenuSeparator />
+          <DropdownMenuCheckboxItem checked={showDensity} onCheckedChange={(value) => setShowDensity(value === true)}>Density cells</DropdownMenuCheckboxItem>
+          <DropdownMenuCheckboxItem checked={columns} disabled={!ready || !showDensity} onCheckedChange={(value) => { setColumns(value === true); map.current?.jumpTo({ pitch: value ? 45 : 0 }) }}>Raised columns</DropdownMenuCheckboxItem>
           <DropdownMenuCheckboxItem checked={pitch > 0} disabled={!ready} onCheckedChange={(value) => map.current?.jumpTo({ pitch: value ? 45 : 0 })}>Tilt view</DropdownMenuCheckboxItem>
           <DropdownMenuItem disabled={!ready} onSelect={() => map.current?.jumpTo({ pitch: 0, bearing: 0 })}>Reset north and tilt</DropdownMenuItem>
-          <p className="max-w-64 px-2 py-1.5 text-xs text-muted-foreground">Right-drag to rotate and tilt. Fit returns to a flat, north-up view.</p>
+          <p className="px-2 py-1.5 text-xs text-muted-foreground">Darker and taller means denser. Color and height use a fixed logarithmic scale, capped at 10,000 per 1,000 km². Hover for observed counts; zoom in for locations.</p>
+          <DropdownMenuSeparator />
+          <DropdownMenuCheckboxItem checked={syntheticPreview} onCheckedChange={(value) => setSyntheticPreview(value === true)}>Synthetic density preview</DropdownMenuCheckboxItem>
+          <p className="px-2 py-1.5 text-xs text-muted-foreground">2,400 invented locations replace the map only. Results and your project selection stay unchanged.</p>
+          <DropdownMenuSeparator />
+          <p className="px-2 py-1.5 text-xs text-muted-foreground">Right-drag to rotate and tilt. Fit returns to a flat, north-up view.</p>
         </DropdownMenuContent>
       </DropdownMenu>}
-      <span className="rounded border bg-background px-2 py-1 text-xs">Experimental</span>
-      {outOfRangeCount > 0 && <p className="pointer-events-auto max-w-72 rounded-lg border bg-background p-2 text-xs">{outOfRangeCount} located records are outside this projection; their coordinates are unchanged.</p>}
-      {mapError && <p role="status" className="pointer-events-auto max-w-72 rounded-lg border bg-background p-2 text-xs">Experimental map unavailable or incomplete. <Button type="button" variant="link" size="sm" onClick={onChangeRenderer}>Use standard map</Button></p>}
+      <div className="max-w-28 shrink-0 rounded border bg-background px-2 py-1 text-xs">
+        <p>{syntheticPreview ? "Synthetic density preview" : "Experimental"}</p>
+        {syntheticPreview && <p>2,400 sample locations</p>}
+        {showDensity && densityOpacity > 0 && <div className="mt-1">
+          <p>{syntheticPreview ? "Samples" : "Projects"} / 1,000 km²</p>
+          <div className="my-1 h-2 rounded-sm" aria-hidden="true" style={{ background: "linear-gradient(to right, rgb(237 233 254), rgb(139 92 246), rgb(76 29 149))" }} />
+          <p className="flex justify-between gap-1"><span>0</span><span>10,000+</span></p>
+        </div>}
+      </div>
+      {!syntheticPreview && outOfRangeCount > 0 && <p className="max-w-28 shrink-0 rounded-lg border bg-background p-2 text-xs">{outOfRangeCount} located records are outside this projection; their coordinates are unchanged.</p>}
+      {mapError && <p role="status" className="max-w-72 shrink-0 rounded-lg border bg-background p-2 text-xs">Experimental map unavailable or incomplete. <Button type="button" variant="link" size="sm" onClick={onChangeRenderer}>Use standard map</Button></p>}
     </div>
   </section>
 }

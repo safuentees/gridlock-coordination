@@ -8,15 +8,19 @@ const filingColors: Record<LocatedMapProject["utilityId"], Color> = {
 }
 const dashedPaths = new PathStyleExtension({ dash: true })
 
-export function projectLayers({ projects, connections, focusIds, candidateIds, selectedPair, onProject, onOpportunity }: {
+export function projectLayers({ projects, connections, focusIds, candidateIds, selectedPair, pointOpacity = 1, onProject, onOpportunity }: {
   projects: LocatedMapProject[]
   connections: MapConnection[]
   focusIds: readonly string[]
   candidateIds: ReadonlySet<string>
   selectedPair: boolean
+  pointOpacity?: number
   onProject: (id: string) => void
   onOpportunity: (id: string) => void
 }): LayersList {
+  const selected = new Set(focusIds)
+  const opacity = Math.max(0, Math.min(1, pointOpacity))
+  const connectionOpacity = selectedPair ? 1 : opacity
   return [
     new PathLayer<MapConnection, PathStyleExtensionProps<MapConnection>>({
       id: "project-connections",
@@ -29,13 +33,18 @@ export function projectLayers({ projects, connections, focusIds, candidateIds, s
       getDashArray: [5, 5],
       dashUnits: "pixels",
       dashGapPickable: true,
-      pickable: true,
+      opacity: connectionOpacity,
+      visible: connectionOpacity > 0,
+      pickable: connectionOpacity > 0.05,
       onClick: ({ object }) => { if (object) onOpportunity(object.opportunity.id) },
-      parameters: { depthWriteEnabled: false },
+      parameters: { depthWriteEnabled: false, depthCompare: "always" },
     }),
-    new ScatterplotLayer<LocatedMapProject>({
-      id: "project-locations",
-      data: projects,
+    // Separate disjoint point sets keep the selected anchors visible at every scale.
+    ...[false, true].map((isSelected) => new ScatterplotLayer<LocatedMapProject>({
+      id: isSelected ? "selected-project-locations" : "project-locations",
+      data: projects.filter((project) => selected.has(project.id) === isSelected),
+      opacity: isSelected ? 1 : opacity,
+      visible: isSelected || opacity > 0,
       getPosition: (project) => [project.location.lon, project.location.lat],
       radiusUnits: "pixels",
       getRadius: (project) => focusIds.includes(project.id) ? 8 : 5,
@@ -45,9 +54,9 @@ export function projectLayers({ projects, connections, focusIds, candidateIds, s
       getLineColor: (project) => focusIds.includes(project.id) || candidateIds.has(project.id) ? [23, 23, 23, 255] : filingColors[project.utilityId],
       getLineWidth: (project) => focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1,
       updateTriggers: { getRadius: [focusIds], getLineColor: [focusIds, candidateIds], getLineWidth: [focusIds, candidateIds] },
-      pickable: true,
+      pickable: isSelected || opacity > 0.05,
       onClick: ({ object }) => { if (object) onProject(object.id) },
-      parameters: { depthWriteEnabled: false },
-    }),
+      parameters: { depthWriteEnabled: false, depthCompare: "always" },
+    })),
   ]
 }
