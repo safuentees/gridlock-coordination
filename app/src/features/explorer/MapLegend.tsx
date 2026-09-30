@@ -1,12 +1,15 @@
 import { useEffect, useId, useState } from "react"
 import { DomEvent } from "leaflet"
 import { ListIcon } from "lucide-react"
+import type { reportingGroups } from "@/lib/reporting-groups"
+import { mapReportingGroupColor } from "./map-colors"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 import { Popover, PopoverContent, PopoverHeader, PopoverTitle, PopoverTrigger } from "@/components/ui/popover"
 
 export interface MapLegendProps {
+  groups: ReturnType<typeof reportingGroups>
   boundary: HTMLElement
   connectionCount: number
   selectedPair: boolean
@@ -14,8 +17,9 @@ export interface MapLegendProps {
   onShowConnections: (show: boolean) => void
 }
 
-export function MapLegend({ boundary, connectionCount, selectedPair, showConnections, onShowConnections }: MapLegendProps) {
+export function MapLegend({ groups, boundary, connectionCount, selectedPair, showConnections, onShowConnections }: MapLegendProps) {
   const id = useId()
+  const colors = groups.map(group => mapReportingGroupColor(group.id).css)
   const [content, setContent] = useState<HTMLDivElement | null>(null)
   useEffect(() => {
     if (!content) return
@@ -38,10 +42,9 @@ export function MapLegend({ boundary, connectionCount, selectedPair, showConnect
       onKeyDown={event => event.stopPropagation()}>
       <PopoverHeader><PopoverTitle id={`${id}-title`}>Map legend</PopoverTitle></PopoverHeader>
       <ul className="space-y-2">
-        <li className="flex items-center gap-3"><MapSymbol kind="dominion" /><span>Dominion filing</span></li>
-        <li className="flex items-center gap-3"><MapSymbol kind="georgia" /><span>Georgia filing</span></li>
-        <li className="flex items-center gap-3"><MapSymbol kind="candidate" /><span>Project in a candidate</span></li>
-        <li className="flex items-center gap-3"><MapSymbol kind="selected" /><span>Selected project</span></li>
+        {groups.map((group, index) => <li key={group.id} className="flex items-center gap-3"><MapSymbol kind="group" colors={[colors[index]]} /><span>{group.label}</span></li>)}
+        <li className="flex items-center gap-3"><MapSymbol kind="candidate" colors={colors} /><span>Project in a candidate</span></li>
+        <li className="flex items-center gap-3"><MapSymbol kind="selected" colors={colors} /><span>Selected project</span></li>
         <li className="flex items-center gap-3"><MapSymbol kind="connection" /><span>Candidate connection</span></li>
       </ul>
       <p>Connections link project centers; they are not transmission routes.</p>
@@ -61,12 +64,15 @@ export function MapLegend({ boundary, connectionCount, selectedPair, showConnect
   </Popover>
 }
 
-function MapSymbol({ kind }: { kind: "dominion" | "georgia" | "candidate" | "selected" | "connection" }) {
+function MapSymbol({ kind, colors = [] }: { kind: "group" | "candidate" | "selected" | "connection"; colors?: string[] }) {
   const fillId = useId()
-  const fill = kind === "dominion" ? "#2563eb" : kind === "georgia" ? "#b45309" : `url(#${fillId})`
+  const fill = kind === "group" ? colors[0] : colors.length ? `url(#${fillId})` : "#a3a3a3"
   const outlined = kind === "candidate" || kind === "selected"
   return <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" className="size-6 shrink-0">
-    {outlined && <defs><linearGradient id={fillId}><stop offset="50%" stopColor="#2563eb" /><stop offset="50%" stopColor="#b45309" /></linearGradient></defs>}
+    {outlined && colors.length > 0 && <defs><linearGradient id={fillId}>{colors.flatMap((color, index) => [
+      <stop key={`${index}-start`} offset={`${index / colors.length * 100}%`} stopColor={color} />,
+      <stop key={`${index}-end`} offset={`${(index + 1) / colors.length * 100}%`} stopColor={color} />,
+    ])}</linearGradient></defs>}
     {kind === "connection"
       ? <line x1="1" y1="12" x2="23" y2="12" stroke="#525252" strokeWidth="1.5" strokeDasharray="5 5" />
       : <circle cx="12" cy="12" r={kind === "selected" ? 8 : 5} fill={fill} fillOpacity="0.85" stroke={outlined ? "#171717" : fill} strokeWidth={kind === "selected" ? 3 : kind === "candidate" ? 2 : 1} />}
