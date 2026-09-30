@@ -108,7 +108,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | Santee full 24 delivered; next [F27-APC-Q](features/F27-us-regional-expansion/al-apc-doe/spec.md) qualifies DOE’s finite ordinary-public Alabama review subset. | Exact al-apc-doe qualification/sample/receipt only; no runtime/shared/map edits. Separate from the unresolved SERTP report. |
+| source_discovery / ingestion | [F27-APC-I](features/F27-us-regional-expansion/al-apc-doe/spec.md): three diagnostic records, then full six after connection. | Exact al-apc-doe producer/data folders and receipt only; no shared/map edits. Separate from the unresolved SERTP report. |
 | core | [F27-AEP-Q](features/F27-us-regional-expansion/aep-doe/spec.md): qualify DOE’s eight-entry AEP review index. | Exact aep-doe qualification/sample/receipt only; no runtime/shared/map/core changes. |
 | coordinator | PR143 integrated at df2de0a; accept next public source contracts and connect samples before full production. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
 | ui | [F27-GPC-Q](features/F27-us-regional-expansion/ga-gpc-public/spec.md): qualify Georgia Power’s ten-entry public catalog. | Exact ga-gpc-public qualification/sample/receipt only; current UI/map files remain unchanged. NYISO still waits for complete public source content. |
