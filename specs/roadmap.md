@@ -104,7 +104,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | [F27-CTPC-I](features/F27-us-regional-expansion/carolinas-tpc/spec.md): six-record sample connected through the shared loader; full 98 active. | Exact carolinas-tpc producer/data folders and receipt; 120 source rows, 22 terminal exclusions, no SERTP access or shared edits/checks. |
+| source_discovery / ingestion | CTPC full 98 delivered after its connected sample; next [F27-SANTEE-Q](features/F27-us-regional-expansion/sc-santee/spec.md) qualifies the separate Santee Cooper public-power scope. | Exact Santee qualification/sample/receipt only; CTPC integration checks remain coordinator-owned. No SERTP restricted source or shared edits. |
 | core | [F27-PGE-I](features/F27-us-regional-expansion/ca-pge-tpr/spec.md): six diagnostics, then full 1,591 after connection. | Exact ca-pge-tpr producer/data folders and receipt; preserve components/program scope and March status evidence. |
 | coordinator | PR125 merged; accept PG&E/SDG&E/CTPC source contracts, connect small samples and reconcile full inventories. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
 | ui | [F27-SDGE-I](features/F27-us-regional-expansion/ca-sdge-tpr/spec.md): six diagnostics connected; full 137 active. | Exact sdge-tpr producer/data folders and receipt; preserve budget/source-locator and mixed date meanings, no UI/map edits. |
