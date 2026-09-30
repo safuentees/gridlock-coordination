@@ -1,6 +1,8 @@
 # F27 SPP ingestion
 
-- First connection increment: six public SPP upgrades under five explicit PIDs, with a 1,422-row ledger and 1,416 pending rows.
-- Preserves displayed date precision, raw statuses/descriptions, partial-service caveat, source-scoped owner aliases and named-bus/state context; every location/window remains null.
-- Ships a checksum-pinned workbook adapter, source-only Dataset 2, matching manifest and payload measurements; no original binary or macro enters Git.
-- Sample connection precedes full 1,247 retained / 175 excluded scope. Coordinator integration/check pending; no worker checks or visual work run.
+- Connected six real upgrades first, then reconciled all 1,422 source rows: 1,247 retained under 401 PIDs, 175 explicit exclusions, zero pending/failed.
+- Preserves displayed date precision, raw status/description, partial-service caveats, source-scoped owner aliases and bus/state context; all coordinates/windows remain null.
+- Ships a checksum-pinned workbook adapter, source-only Dataset 2, matching manifest and exhaustive ledger; no original binary or macro enters Git.
+- Full source JSON measures 3,897,030 compact / 5,429,949 formatted UTF-8 bytes; the full slice adds 1,241 records beyond the connected sample.
+- Appendix 2 remains a duplicate context subset; regional inventory is not complete national coverage or a commercial-reuse permission claim.
+- Source generation completed; coordinator full integration/check pending. No worker checks, browser or visual work run.

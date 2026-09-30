@@ -10,7 +10,7 @@ python3 scripts/ingest/coverage/spp-tracking/extract.py \
   --generated-at 2026-09-30T00:00:00+00:00
 ```
 
-Use a prior Dataset's generatedAt for reproducible output. `--scope full` is the subsequent increment after the coordinator connects the sample. The six qualified UIDs are 50442, 50444, 51487, 71933, 157811 and 171264. The sample ledger lists every source row, with all other UIDs pending. Full scope excludes Complete/Closed Out/Withdrawn individually and retains all other upgrades. PID is an explicit parent relationship, never an extra project. Appendix 2 is a subset outside this adapter.
+Use a prior Dataset's generatedAt for reproducible output. `--scope full` reproduces the accepted complete inventory; the six-record sample was connected before full extraction. The six qualified UIDs are 50442, 50444, 51487, 71933, 157811 and 171264. The sample ledger lists every source row, with all other UIDs pending. Full scope excludes Complete/Closed Out/Withdrawn individually and retains all other upgrades. PID is an explicit parent relationship, never an extra project. Appendix 2 is a subset outside this adapter.
 
 Owner forecast, RTO need and NTC issue dates stay distinct. Precision comes from the cell's displayed format, not hidden Excel date storage. In this pinned workbook all 3,204 populated I/J/K date cells display `mm-dd-yy`; 1,062 cells are empty. Coarser supported display formats produce month/year precision; unresolved formats/placeholders remain unknown. None produces a construction window.
 
