@@ -6,6 +6,8 @@ The central experience is a connected map, searchable project inventory and rank
 
 Explore uses one floating panel over the map: searchable results by default, details replacing the body, and Back restoring the browsing context. A compact collapsed state preserves search and selection. Navigation preserves unsaved scenario, impact and review work; longer evidence remains inside the same panel or the existing occasional-action dialogs.
 
+The user separately selected an experimental map extension (F22/F23): MapLibre/deck.gl navigation and explicit hierarchical cells for project concentrations. Keep the default map and existing selection/data interfaces while evaluating the first density interaction. Counts and area-based density describe mapped records, never coordination benefit; isolated synthetic previews are labeled and cannot alter real results. Patterned treatment waits for the user's trial feedback.
+
 ## Full selected product
 - Orient a new user with a concise Home page explaining audience, visibility problem, investigation benefit, source coverage and a clear entry to the workspace.
 - Ingest the supplied Dominion and Georgia public planning records reproducibly, link the starter workbook's locations, and preserve source identifiers, dates, sponsor, provenance and missing values.
