@@ -1,0 +1,592 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "WestConnect public TPPL — February 10, 2026 — six-record sample",
+  "generatedAt": "2026-09-30T10:07:48+00:00",
+  "projects": [
+    {
+      "id": "westconnect-tppl:5",
+      "sourceId": "5",
+      "utilityId": "westconnect-tppl",
+      "sponsor": "Tucson Electric Power",
+      "name": "Grier 138/13.8 kV Substation",
+      "description": "New substation, served from new 138 kV line from planned Owl Head Ranch Switchyard",
+      "status": "Planned",
+      "voltageKv": [
+        13.8,
+        138.0
+      ],
+      "date": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected in-service year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+          "locator": "All Projects!A2:AR2",
+          "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+        }
+      ],
+      "notes": [
+        "Purpose (E2): Load Serving",
+        "Drivers (F2): Load Serving",
+        "NeededForPublicPolicy_YorN (G2): No",
+        "PublicPoliciesInvolved (H2): N/A",
+        "SubRegionalID_Name (O2): SWAT",
+        "Length (P2): NA",
+        "WestConnect_TO_YorN (R2): Yes",
+        "Source voltage category (J2): 138 kV.",
+        "Source POST_DATE (AQ2), raw value: 2026-02-09T00:00:00. Administrative timestamp; not a construction milestone or lifecycle-change date."
+      ],
+      "inventory": {
+        "sourceKey": "westconnect-tppl",
+        "editionId": "2026-02-10",
+        "editionLabel": "WestConnect public TPPL — February 10, 2026",
+        "reportingGroupName": "WestConnect public TPPL",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-02-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Arizona",
+        "sourceLocation": "Origin: Owl Head Ranch 138 kV Switchyard; Termination: Grier 138 kV Substation",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source wcprojectID: 2028-5"
+        ],
+        "workType": "Substation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Origin, termination and state are source text only. No native coordinates, geocoding, route, state allocation or center is supplied."
+        ],
+        "milestones": [
+          {
+            "field": "InService",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Expected in-service year"
+            },
+            "evidence": [
+              {
+                "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+                "locator": "All Projects!A2:AR2; N2 InService",
+                "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "westconnect-tppl:17",
+      "sourceId": "17",
+      "utilityId": "westconnect-tppl",
+      "sponsor": "Public Service Company of New Mexico",
+      "name": "Alamogordo Voltage Support Phase II",
+      "description": "Install Voltage Support at Alamogordo",
+      "status": "Conceptual",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "in-service",
+        "label": "Expected in-service year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+          "locator": "All Projects!A3:AR3",
+          "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+        }
+      ],
+      "notes": [
+        "Purpose (E3): Prevent low voltage in the Alamogordo area for several contingencies during peak load conditions.",
+        "Drivers (F3): Reliability",
+        "NeededForPublicPolicy_YorN (G3): No",
+        "PublicPoliciesInvolved (H3): N/A",
+        "SubRegionalID_Name (O3): SWAT",
+        "Length (P3): NA",
+        "WestConnect_TO_YorN (R3): Yes",
+        "All_Req_Infrastructure_Identifyied (V3): Yes",
+        "Project_Inservice_for_Local_Planning_Process (W3): PNM",
+        "Financing_Commitment (X3): Yes",
+        "Financial_Arrangments (Y3): Local Project",
+        "Federal_Permit_Required_YorN (AC3): No",
+        "Federal_Permit_ROD_YorN (AD3): No",
+        "State_Permit_Required_YorN (AE3): No",
+        "State_Permit_Obtained_YorN (AF3): No",
+        "Source voltage category (J3): 115 kV.",
+        "Conceptual denotes active development that has not met the source planned criteria; it does not establish approval or construction.",
+        "Source POST_DATE (AQ3), raw value: 2026-02-04T00:00:00. Administrative timestamp; not a construction milestone or lifecycle-change date."
+      ],
+      "inventory": {
+        "sourceKey": "westconnect-tppl",
+        "editionId": "2026-02-10",
+        "editionLabel": "WestConnect public TPPL — February 10, 2026",
+        "reportingGroupName": "WestConnect public TPPL",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "recordKind": "transmission-project",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-02-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "New Mexico",
+        "sourceLocation": "Origin: Alamogordo; Termination: N/A",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source wcprojectID: TBD-17"
+        ],
+        "workType": "Substation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Origin, termination and state are source text only. No native coordinates, geocoding, route, state allocation or center is supplied."
+        ],
+        "milestones": [
+          {
+            "field": "InService",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Expected in-service year"
+            },
+            "evidence": [
+              {
+                "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+                "locator": "All Projects!A3:AR3; N3 InService",
+                "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "westconnect-tppl:1236",
+      "sourceId": "1236",
+      "utilityId": "westconnect-tppl",
+      "sponsor": "Tri-State Generation and Transmission Association",
+      "name": "Breaker Addition at Cahone Substation",
+      "description": "Add a new 115 kV bay at Cahone Substation to accommodate a generator interconnection",
+      "status": "Under Construction",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2025",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected in-service year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+          "locator": "All Projects!A86:AR86",
+          "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+        }
+      ],
+      "notes": [
+        "Purpose (E86): Generator Interconnection",
+        "Drivers (F86): Primarily reliability & secondarily public policy",
+        "NeededForPublicPolicy_YorN (G86): Yes",
+        "PublicPoliciesInvolved (H86): Colorado House Bill 19-1261 & Colorado House Bill 21-1266",
+        "SubRegionalID_Name (O86): CCPG",
+        "Length (P86): NA",
+        "WestConnect_TO_YorN (R86): Yes",
+        "Source voltage category (J86): 115 kV.",
+        "Source wcprojectID (S86) is 2025-; it differs from the current expected-year/projectid combination. Numeric projectid A86 identifies this record and InService N86 supplies its expected year.",
+        "The source still reports Under Construction with an elapsed expected year; the forecast does not establish completion.",
+        "Source POST_DATE (AQ86), raw value: 2026-02-10T00:00:00. Administrative timestamp; not a construction milestone or lifecycle-change date.",
+        "Source DateProjectEntered (AR86), raw value: 2020-10-18T16:49:21. Administrative timestamp; not a construction milestone or lifecycle-change date."
+      ],
+      "inventory": {
+        "sourceKey": "westconnect-tppl",
+        "editionId": "2026-02-10",
+        "editionLabel": "WestConnect public TPPL — February 10, 2026",
+        "reportingGroupName": "WestConnect public TPPL",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-02-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Colorado",
+        "sourceLocation": "Origin: Cahone; Termination: Cahone",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source wcprojectID: 2025-"
+        ],
+        "workType": "Substation",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Origin, termination and state are source text only. No native coordinates, geocoding, route, state allocation or center is supplied."
+        ],
+        "milestones": [
+          {
+            "field": "InService",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Expected in-service year"
+            },
+            "evidence": [
+              {
+                "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+                "locator": "All Projects!A86:AR86; N86 InService",
+                "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "westconnect-tppl:1262",
+      "sourceId": "1262",
+      "utilityId": "westconnect-tppl",
+      "sponsor": "El Paso Electric Company",
+      "name": "Seabeck Switching Station 115 kV (New)",
+      "description": "This project involves the construction of a new Seabeck 115 kV Switching Station that will be part of the East Side Loop Expansion Project.",
+      "status": "Planned",
+      "voltageKv": [
+        115.0
+      ],
+      "date": {
+        "value": "2027",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected in-service year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+          "locator": "All Projects!A100:AR100",
+          "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+        }
+      ],
+      "notes": [
+        "Purpose (E100): Reliability",
+        "Drivers (F100): Reliability",
+        "NeededForPublicPolicy_YorN (G100): No",
+        "PublicPoliciesInvolved (H100): N/A",
+        "SubRegionalID_Name (O100): SWAT",
+        "Length (P100): NA",
+        "WestConnect_TO_YorN (R100): Yes",
+        "Source voltage category (J100): 115 kV.",
+        "Source wcprojectID (S100) is 2029-1262; it differs from the current expected-year/projectid combination. Numeric projectid A100 identifies this record and InService N100 supplies its expected year.",
+        "Source modifieddate (AO100), raw value: 2024-01-03T13:36:30. Administrative timestamp; not a construction milestone or lifecycle-change date.",
+        "Source POST_DATE (AQ100), raw value: 2024-02-02T00:00:00. Administrative timestamp; not a construction milestone or lifecycle-change date.",
+        "Source DateProjectEntered (AR100), raw value: 2022-01-12T15:05:36. Administrative timestamp; not a construction milestone or lifecycle-change date."
+      ],
+      "inventory": {
+        "sourceKey": "westconnect-tppl",
+        "editionId": "2026-02-10",
+        "editionLabel": "WestConnect public TPPL — February 10, 2026",
+        "reportingGroupName": "WestConnect public TPPL",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-02-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": "2024-01-03",
+        "sourceState": "Texas",
+        "sourceLocation": "Origin: Seabeck; Termination: Seabeck",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source wcprojectID: 2029-1262"
+        ],
+        "workType": "Other",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Origin, termination and state are source text only. No native coordinates, geocoding, route, state allocation or center is supplied."
+        ],
+        "milestones": [
+          {
+            "field": "InService",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Expected in-service year"
+            },
+            "evidence": [
+              {
+                "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+                "locator": "All Projects!A100:AR100; N100 InService",
+                "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "westconnect-tppl:1595",
+      "sourceId": "1595",
+      "utilityId": "westconnect-tppl",
+      "sponsor": "El Paso Electric Company",
+      "name": "Rio Bosque 69 kV 1x15.9 MVAR Capacitor Bank (New)",
+      "description": "Rio Bosque 69 kV 1x15.9 MVAR Capacitor Bank (New)",
+      "status": "Planned",
+      "voltageKv": [
+        69.0
+      ],
+      "date": {
+        "value": "2027",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected in-service year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+          "locator": "All Projects!A287:AR287",
+          "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+        }
+      ],
+      "notes": [
+        "Purpose (E287): Voltage & reactive support, reliability",
+        "Drivers (F287): Reliability",
+        "NeededForPublicPolicy_YorN (G287): No",
+        "PublicPoliciesInvolved (H287): N/A",
+        "SubRegionalID_Name (O287): SWAT",
+        "Length (P287): NA",
+        "WestConnect_TO_YorN (R287): Yes",
+        "Source voltage category (J287): Below 115 kV.",
+        "Source ChangeTime (AP287), raw value: 46057.560636574075. Administrative timestamp; not a construction milestone or lifecycle-change date.",
+        "Source DateProjectEntered (AR287), raw value: 46057.560636574075. Administrative timestamp; not a construction milestone or lifecycle-change date."
+      ],
+      "inventory": {
+        "sourceKey": "westconnect-tppl",
+        "editionId": "2026-02-10",
+        "editionLabel": "WestConnect public TPPL — February 10, 2026",
+        "reportingGroupName": "WestConnect public TPPL",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-02-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Texas",
+        "sourceLocation": "Origin: Rio Bosque; Termination: Rio Bosque",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source wcprojectID: 2027-1595"
+        ],
+        "workType": "Other",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Origin, termination and state are source text only. No native coordinates, geocoding, route, state allocation or center is supplied."
+        ],
+        "milestones": [
+          {
+            "field": "InService",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Expected in-service year"
+            },
+            "evidence": [
+              {
+                "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+                "locator": "All Projects!A287:AR287; N287 InService",
+                "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "westconnect-tppl:1641",
+      "sourceId": "1641",
+      "utilityId": "westconnect-tppl",
+      "sponsor": "Public Service Company of Colorado/ Xcel Energy",
+      "name": "Barker Distribution Substation",
+      "description": "Construct a new distribution substation that would tap PSCo's Lacombe 230kV substation",
+      "status": "Planned",
+      "voltageKv": [
+        230.0
+      ],
+      "date": {
+        "value": "2027",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected in-service year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+          "locator": "All Projects!A332:AR332",
+          "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+        }
+      ],
+      "notes": [
+        "Purpose (E332): Increase reliability and load serving capability to the Dever load center",
+        "Drivers (F332): Reliability",
+        "NeededForPublicPolicy_YorN (G332): No",
+        "PublicPoliciesInvolved (H332): N/A",
+        "SubRegionalID_Name (O332): CCPG",
+        "Length (P332): TBD",
+        "WestConnect_TO_YorN (R332): Yes",
+        "Source voltage category (J332): 230 kV.",
+        "The source explicitly describes a distribution substation; retain its planning context without asserting transmission-project scope.",
+        "FacilityType says Transmission Line, but ProjectName and Description say distribution substation. Both source meanings are preserved.",
+        "Source ChangeTime (AP332), raw value: 46055.67798611111. Administrative timestamp; not a construction milestone or lifecycle-change date.",
+        "Source DateProjectEntered (AR332), raw value: 46055.67798611111. Administrative timestamp; not a construction milestone or lifecycle-change date."
+      ],
+      "inventory": {
+        "sourceKey": "westconnect-tppl",
+        "editionId": "2026-02-10",
+        "editionLabel": "WestConnect public TPPL — February 10, 2026",
+        "reportingGroupName": "WestConnect public TPPL",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-02-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Colorado",
+        "sourceLocation": "Origin: Lacombe; Termination: Barker",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source wcprojectID: 2027-1641"
+        ],
+        "workType": "Transmission Line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Origin, termination and state are source text only. No native coordinates, geocoding, route, state allocation or center is supplied."
+        ],
+        "milestones": [
+          {
+            "field": "InService",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Expected in-service year"
+            },
+            "evidence": [
+              {
+                "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+                "locator": "All Projects!A332:AR332; N332 InService",
+                "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "westconnect-tppl",
+      "editionId": "2026-02-10",
+      "label": "WestConnect public TPPL — February 10, 2026",
+      "reportingGroupId": "westconnect-tppl",
+      "reportingGroupName": "WestConnect public TPPL",
+      "publisher": "WestConnect",
+      "processAuthority": "WestConnect regional transmission planning",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A1:AR390; 389 project rows, header excluded",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+      "geographicScope": "Source-reported Arizona, New Mexico, Colorado, Texas, Wyoming, Nebraska, South Dakota, Multiple and blank state labels; partial regional submission scope, with no allocation of Multiple or inferred state coverage.",
+      "inventoryScope": "Public project-list entries with nonterminal transmission work and explicit distribution planning context. In-Service, Withdrawn and four exact generation-only entries are excluded.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 389,
+        "importedRecords": 6,
+        "excludedRows": 85,
+        "failedRows": 0,
+        "pendingRows": 298,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "explicit-generation-only",
+          "count": 4
+        },
+        {
+          "reason": "explicit-in-service",
+          "count": 65
+        },
+        {
+          "reason": "explicit-withdrawn",
+          "count": 16
+        }
+      ],
+      "limitations": [
+        "Public February 10, 2026 list only, with library posting March 26, 2026 separate from source edition. Actual publication date is unknown.",
+        "This is partial WestConnect planning evidence, not a census of states or distinct engineering projects across other inventories.",
+        "Numeric projectid is identity. Combined year/project labels include stale years and incomplete suffixes; they are only source references.",
+        "Full accepted scope has 300 transmission-project and four explicit distribution-substation planning-context records; mixed scope remains visible.",
+        "Sponsors identify source-reported owners or developers and do not establish individual asset ownership; owner identities remain unknown.",
+        "All retained records are unlocated. Origin/termination/state text and approximate length do not supply coordinates, CRS, accuracy, routes or shared corridors.",
+        "Planned does not establish regulatory approval; Conceptual remains unknown, and elapsed in-service forecasts do not establish completion.",
+        "Withdrawn covers cancelled, postponed or no active development; withdrawn exclusions do not assert cancellation.",
+        "Expected in-service dates have year precision or remain unknown. Administrative timestamps never become construction windows or comparison milestones.",
+        "Factual source evidence is retained for authorized private analysis. No open-data license, original-workbook publication or unrestricted commercial reuse is asserted.",
+        "Six retained diagnostic records are emitted first; 298 accepted records await provider connection and full normalization."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 85,
+    "failed": 0,
+    "notes": [
+      "All 389 source rows are reconciled; 298 accepted nonterminal records remain pending.",
+      "All records remain unlocated with unknown asset-owner identities."
+    ]
+  }
+}
