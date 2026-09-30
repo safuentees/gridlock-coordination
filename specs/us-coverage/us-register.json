@@ -1,7 +1,7 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 regional integration PR67; bounded checks pending",
+  "baselineRevision": "F27 regional integration PR67 (implementation b210acf; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
   "qualificationStatus": "Full declared SCE, PJM and ISO-NE source scopes imported; SPP qualification in progress",
