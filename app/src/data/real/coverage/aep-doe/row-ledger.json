@@ -1,0 +1,244 @@
+[
+  {
+    "sourceId": "review-001",
+    "sourceProjectName": "North McConnelsville to South Rokeby Transmission Line Rebuild",
+    "sources": [
+      {
+        "file": "01-mcconnelsville-rokeby.pdf",
+        "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/20260911_%20AEP%20Transco_N.%20McConnelsville%20%20S.%20Rokeby_EDF%20EnvRevCompletion%20Letter.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 1: North McConnelsville to South Rokeby Transmission Line Rebuild; index posting date 2026-09-11; affiliate label AEP Transco",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-09-11",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": "2027-03-24",
+      "precision": "day",
+      "kind": "in-service",
+      "label": "Anticipated project operation by"
+    },
+    "disposition": "imported",
+    "projectId": "aep-doe:review-001"
+  },
+  {
+    "sourceId": "review-002",
+    "sourceProjectName": "East Wheelersburg to Sadiq Switch Transmission Line Rebuild",
+    "sources": [
+      {
+        "file": "02-wheelersburg-sadiq.pdf",
+        "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEPTransco_E_Wheelersburg_to_Sadiq_EDF%20EnvRevCompletion_0.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 2: East Wheelersburg to Sadiq Switch Transmission Line Rebuild; index posting date 2026-09-09; affiliate label AEP Transco",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-09-08",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": "2027-11-04",
+      "precision": "day",
+      "kind": "in-service",
+      "label": "Anticipated project operation by"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; runtime normalization awaits sample connection."
+  },
+  {
+    "sourceId": "review-003",
+    "sourceProjectName": "Fort Steuben to Hammondsville Transmission Line Rebuild",
+    "sources": [
+      {
+        "file": "03-fort-steuben-hammondsville.pdf",
+        "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEP%20Transco_Ft%20Steuben_Hammondsville_EnvRevCompletion.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 3: Fort Steuben to Hammondsville Transmission Line Rebuild; index posting date 2026-09-08; affiliate label AEP Transco",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-09-08",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": "2027-07-01",
+      "precision": "day",
+      "kind": "in-service",
+      "label": "Anticipated project operation by"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; runtime normalization awaits sample connection."
+  },
+  {
+    "sourceId": "review-004",
+    "sourceProjectName": "Hamlin to Roby Transmission Line Project",
+    "sources": [
+      {
+        "file": "04-hamlin-roby.pdf",
+        "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Hamlin%20to%20Roby_EnvReviewCompletion_Letter.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 4: Hamlin to Roby Transmission Line Project; index posting date 2026-09-04; affiliate label AEP Texas",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-09-03",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "Project operation date not supplied"
+    },
+    "disposition": "imported",
+    "projectId": "aep-doe:review-004"
+  },
+  {
+    "sourceId": "review-005",
+    "sourceProjectName": "Uvalde to West Batesville Transmission Line Project",
+    "sources": [
+      {
+        "file": "05-uvalde-batesville.pdf",
+        "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Uvalde%20to%20Batesville_EnvReviewCompletion_Letter.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 5: Uvalde to West Batesville Transmission Line Project; index posting date 2026-09-01; affiliate label AEP Texas",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-09-01",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "Project operation date not supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; runtime normalization awaits sample connection."
+  },
+  {
+    "sourceId": "review-006",
+    "sourceProjectName": "Falfurrias to King Ranch Transmission Line Rebuild",
+    "sources": [
+      {
+        "file": "06-king-ranch.pdf",
+        "locator": "pp.1–2, description and anticipated schedule; p.9, conclusion",
+        "url": "https://www.energy.gov/sites/default/files/2026-07/AEP%20Texas_Falfurrias%20to%20King%20Ranch_EDF%20ERC_24Jul2026.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 6: Falfurrias to King Ranch Transmission Line Rebuild; index posting date 2026-07-27; affiliate label AEP Texas",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      },
+      {
+        "file": "06-king-ranch-public-consultation.pdf",
+        "locator": "June 16, 2026 public consultation letter, pp. 1–2: 138 kV subject and matching 20.5-mile physical scope",
+        "url": "https://www.energy.gov/documents/american-electric-power-aep-falfurrias-king-ranch-transmission-line-rebuild-project-nhpa"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-07-24",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "Project operation date not supplied"
+    },
+    "disposition": "imported",
+    "projectId": "aep-doe:review-006"
+  },
+  {
+    "sourceId": "review-007",
+    "sourceProjectName": "Abilene Northwest to Mulberry Creek Transmission Line Rebuild",
+    "sources": [
+      {
+        "file": "07-abilene-mulberry.pdf",
+        "locator": "p.1, description; p.3, conclusion; pp.4–5 earlier March 17 review correspondence is support, not another project",
+        "url": "https://www.energy.gov/sites/default/files/2026-04/American%20Electric%20Power%20%28AEP%29%20Texas%20%E2%80%93%20Environmental%20Review.pdf"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 7: Abilene Northwest to Mulberry Creek Transmission Line Rebuild; index posting date 2026-06-18; affiliate label AEP Texas",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "upgrade",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-04-24",
+    "sourceStatus": "Proposed transmission rebuild; environmental review completed",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "Project operation date not supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; runtime normalization awaits sample connection."
+  },
+  {
+    "sourceId": "review-008",
+    "sourceProjectName": "East Munday Greenfield 138 kV Station Project",
+    "sources": [
+      {
+        "file": "08-east-munday-public-consultation.pdf",
+        "locator": "May 8, 2026 public consultation letter: pp. 1–2, identity and physical scope; p. 3, 6.5-acre station footprint and 8.5-acre disturbance area",
+        "url": "https://www.energy.gov/documents/aep-texas-east-munday-greenfield-138-kv-station-project-nhpa-section-106-finding-no"
+      },
+      {
+        "file": "index.html",
+        "locator": "Entry 8: East Munday Greenfield138kV Station Project; index posting date 2026-06-18; affiliate label AEP Texas",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+      },
+      {
+        "file": "08-east-munday.pdf",
+        "locator": "Later June 18 index entry; five image-only pages with no readable body. Signed date, schedule and conditions were not interpreted.",
+        "url": "https://www.energy.gov/sites/default/files/2026-06/AEP%20TX_ERC%20Letter_East%20Munday%20Station.pdf"
+      }
+    ],
+    "recordKind": "transmission-project",
+    "recordUnit": "project",
+    "lifecycle": "planned",
+    "lifecycleAsOf": "2026-05-08",
+    "sourceStatus": "Proposed station; May 8 public consultation evidence",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "Project operation date not supplied in readable public evidence"
+    },
+    "disposition": "imported",
+    "projectId": "aep-doe:review-008"
+  }
+]

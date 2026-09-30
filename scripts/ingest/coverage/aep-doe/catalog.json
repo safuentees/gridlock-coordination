@@ -1,0 +1,1103 @@
+{
+  "config": {
+    "sourceKey": "aep-doe",
+    "editionId": "review-index-snapshot-2026-09-30",
+    "label": "AEP DOE public environmental-review index — September 30, 2026 snapshot",
+    "group": "AEP DOE public environmental reviews",
+    "publisher": "United States Department of Energy, Office of Energy Dominance Financing",
+    "processAuthority": "DOE environmental review within the Energy Dominance Financing process",
+    "publishedOn": null,
+    "retrievedOn": "2026-09-30",
+    "manifestSource": {
+      "file": "index.html",
+      "locator": "All eight featured AEP review entries captured September 30, 2026; two public consultation letters provide supplemental evidence, not extra records",
+      "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+    },
+    "manifestHash": "b4b4d88177e2ec35c9f606f60ec33a3c6c52ec66394879e70ce73b7e524df02c",
+    "expectedSourceRows": 8,
+    "expectedRetained": 8,
+    "expectedExcluded": 0,
+    "sampleIds": [
+      "review-001",
+      "review-004",
+      "review-006",
+      "review-008"
+    ],
+    "geographicScope": "Three named Ohio and five named Texas scopes; finite public review subset, not complete state, AEP or regional coverage.",
+    "inventoryScope": "Eight named physical transmission scopes from the captured DOE AEP review index: seven line rebuild upgrades and one station project. Supplemental consultations do not add projects.",
+    "limitations": [
+      "Complete enumeration refers only to the eight-entry public featured/funding-review index snapshot, not all AEP projects or net-new projects beyond PJM/ERCOT.",
+      "All lifecycle values are planned at the readable signed-letter date. Review completion is neither construction/service completion nor financing approval or engineering feasibility.",
+      "Index posting, signed review, anticipated start and anticipated operation dates are separate meanings. Snapshot retrieval and generatedAt do not update project status.",
+      "Ohio operation forecasts retain exact day precision; all five Texas operation dates are unknown. Forecast starts are supplemental and do not establish actual construction bounds.",
+      "East Munday uses May 8 public consultation text. The later indexed PDF is image-only; its signed date and body were not interpreted. King Ranch voltage uses June 16 public matching-scope evidence.",
+      "AEP applicant and index affiliate labels do not establish legal asset owners. All owners remain unknown.",
+      "All locations, native geometry and construction bounds remain unknown. Named counties/endpoints, route lengths, right-of-way widths and station areas do not supply project centers or shared-corridor estimates.",
+      "review-001 through review-008 are frozen source-document locators, not native engineering IDs. Future index reordering requires an explicit crosswalk. Shared consultation codes and similar RTO names do not authorize merging or field transfers.",
+      "Only concise factual paraphrases and public citations are derived. No original files, personal contact fields, restricted attachments, image interpretation or asserted open/commercial reuse license are included."
+    ],
+    "originals": [
+      {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews",
+        "bytes": 116993,
+        "sha256": "b4b4d88177e2ec35c9f606f60ec33a3c6c52ec66394879e70ce73b7e524df02c"
+      },
+      {
+        "file": "01-mcconnelsville-rokeby.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/20260911_%20AEP%20Transco_N.%20McConnelsville%20%20S.%20Rokeby_EDF%20EnvRevCompletion%20Letter.pdf",
+        "bytes": 381626,
+        "sha256": "4beece9f74a9c59d27df464f87286fee65150c9c1fbdfea3cfbd977a925564b2"
+      },
+      {
+        "file": "02-wheelersburg-sadiq.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEPTransco_E_Wheelersburg_to_Sadiq_EDF%20EnvRevCompletion_0.pdf",
+        "bytes": 397949,
+        "sha256": "f8d5cd94d693cd4299f37040748638aeb1626dba2c9bdcc7271e8bb3a26c69c2"
+      },
+      {
+        "file": "03-fort-steuben-hammondsville.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEP%20Transco_Ft%20Steuben_Hammondsville_EnvRevCompletion.pdf",
+        "bytes": 381310,
+        "sha256": "54eba0ab7685fd34c7667dfa111c89f2dae4adc1d4b5561995b4b4dfaa48c76b"
+      },
+      {
+        "file": "04-hamlin-roby.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Hamlin%20to%20Roby_EnvReviewCompletion_Letter.pdf",
+        "bytes": 311574,
+        "sha256": "b0aece2cc3a0fbf98eeb31e0b288fb4456a7bb0628419b6145094114b990746b"
+      },
+      {
+        "file": "05-uvalde-batesville.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Uvalde%20to%20Batesville_EnvReviewCompletion_Letter.pdf",
+        "bytes": 317717,
+        "sha256": "03b82f6f5c9ecf590203af69999d097ae30bdc8316baa6dac2d0060879ae7656"
+      },
+      {
+        "file": "06-king-ranch.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-07/AEP%20Texas_Falfurrias%20to%20King%20Ranch_EDF%20ERC_24Jul2026.pdf",
+        "bytes": 586080,
+        "sha256": "82cc2c4d8811dadbdbac483a59d3f7975edc0c0179062def4e76f3b52a557f94"
+      },
+      {
+        "file": "07-abilene-mulberry.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-04/American%20Electric%20Power%20%28AEP%29%20Texas%20%E2%80%93%20Environmental%20Review.pdf",
+        "bytes": 532341,
+        "sha256": "c4be3b63697c94e05b17cb85e92bda9c0be5987099c9c05d4eb48c991c192724"
+      },
+      {
+        "file": "08-east-munday.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-06/AEP%20TX_ERC%20Letter_East%20Munday%20Station.pdf",
+        "bytes": 1767590,
+        "sha256": "580cddbb6439818dbc9d65aa68fc7741e422591b1255499dd8a1bc71c1b8f08b"
+      },
+      {
+        "file": "06-king-ranch-public-consultation.pdf",
+        "url": "https://www.energy.gov/documents/american-electric-power-aep-falfurrias-king-ranch-transmission-line-rebuild-project-nhpa",
+        "bytes": 327279,
+        "sha256": "c9327d70d1823d768623be342914ddbd8d96072d0a1807d14666565124ba384b"
+      },
+      {
+        "file": "08-east-munday-public-consultation.pdf",
+        "url": "https://www.energy.gov/documents/aep-texas-east-munday-greenfield-138-kv-station-project-nhpa-section-106-finding-no",
+        "bytes": 289494,
+        "sha256": "08963f37476837a059ba2b7bb84a9b1f03b2b824cd56d4d1275dcf6d4d4c06b5"
+      }
+    ]
+  },
+  "records": [
+    {
+      "sourceId": "review-001",
+      "name": "North McConnelsville to South Rokeby Transmission Line Rebuild",
+      "description": "Rebuild 0.23 mile of the existing 69 kV line, replacing eight wood structures with six structures and renewing conductors/shield wire. Reported right-of-way widens from 50 to 60 feet.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-09-11",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        69
+      ],
+      "date": {
+        "value": "2027-03-24",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Anticipated project operation by"
+      },
+      "dateEvidence": [
+        {
+          "file": "01-mcconnelsville-rokeby.pdf",
+          "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/20260911_%20AEP%20Transco_N.%20McConnelsville%20%20S.%20Rokeby_EDF%20EnvRevCompletion%20Letter.pdf"
+        }
+      ],
+      "sourceState": "Ohio",
+      "sourceLocation": "Morgan County, Ohio; North McConnelsville to South Rokeby",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "01-mcconnelsville-rokeby.pdf",
+          "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/20260911_%20AEP%20Transco_N.%20McConnelsville%20%20S.%20Rokeby_EDF%20EnvRevCompletion%20Letter.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 1: North McConnelsville to South Rokeby Transmission Line Rebuild; index posting date 2026-09-11; affiliate label AEP Transco",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Transco. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Anticipated start and operation dates are source forecasts, not an established construction interval; constructionStart and buildWindow remain unknown.",
+        "Consultation code USFWS 2026-0090834 appears in both of the first two review packages; it is not an engineering identity or a basis for merging them.",
+        "Possible related source observation only: pjm-rtep:s2915.5. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-09-11",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "01-mcconnelsville-rokeby.pdf",
+              "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/20260911_%20AEP%20Transco_N.%20McConnelsville%20%20S.%20Rokeby_EDF%20EnvRevCompletion%20Letter.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-09-11",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 1: North McConnelsville to South Rokeby Transmission Line Rebuild; index posting date 2026-09-11; affiliate label AEP Transco",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction start; forecast, not actual start",
+          "date": {
+            "value": "2026-10-01",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Anticipated construction start; forecast, not actual start"
+          },
+          "evidence": [
+            {
+              "file": "01-mcconnelsville-rokeby.pdf",
+              "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/20260911_%20AEP%20Transco_N.%20McConnelsville%20%20S.%20Rokeby_EDF%20EnvRevCompletion%20Letter.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-002",
+      "name": "East Wheelersburg to Sadiq Switch Transmission Line Rebuild",
+      "description": "Rebuild 2 miles of existing 138 kV line, replacing 12 wood structures with 13 steel structures. The parallel alignment shifts about 50 feet within the reported 100-foot right-of-way.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-09-08",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        138
+      ],
+      "date": {
+        "value": "2027-11-04",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Anticipated project operation by"
+      },
+      "dateEvidence": [
+        {
+          "file": "02-wheelersburg-sadiq.pdf",
+          "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEPTransco_E_Wheelersburg_to_Sadiq_EDF%20EnvRevCompletion_0.pdf"
+        }
+      ],
+      "sourceState": "Ohio",
+      "sourceLocation": "Scioto County, Ohio; East Wheelersburg to Sadiq Switch",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "02-wheelersburg-sadiq.pdf",
+          "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEPTransco_E_Wheelersburg_to_Sadiq_EDF%20EnvRevCompletion_0.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 2: East Wheelersburg to Sadiq Switch Transmission Line Rebuild; index posting date 2026-09-09; affiliate label AEP Transco",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Transco. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Anticipated start and operation dates are source forecasts, not an established construction interval; constructionStart and buildWindow remain unknown.",
+        "Index posting 2026-09-09 differs from signed letter 2026-09-08; neither replaces the other.",
+        "Consultation code USFWS 2026-0090834 appears in both of the first two review packages; it is not an engineering identity or a basis for merging them.",
+        "Possible related source observation only: pjm-rtep:s2464. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-09-08",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "02-wheelersburg-sadiq.pdf",
+              "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEPTransco_E_Wheelersburg_to_Sadiq_EDF%20EnvRevCompletion_0.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-09-09",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 2: East Wheelersburg to Sadiq Switch Transmission Line Rebuild; index posting date 2026-09-09; affiliate label AEP Transco",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction start; forecast, not actual start",
+          "date": {
+            "value": "2026-10-02",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Anticipated construction start; forecast, not actual start"
+          },
+          "evidence": [
+            {
+              "file": "02-wheelersburg-sadiq.pdf",
+              "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEPTransco_E_Wheelersburg_to_Sadiq_EDF%20EnvRevCompletion_0.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-003",
+      "name": "Fort Steuben to Hammondsville Transmission Line Rebuild",
+      "description": "Rebuild 0.2 mile of existing 69 kV line, replacing four structures with two steel poles. Reported right-of-way widens from 70 to 80 feet.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-09-08",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        69
+      ],
+      "date": {
+        "value": "2027-07-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Anticipated project operation by"
+      },
+      "dateEvidence": [
+        {
+          "file": "03-fort-steuben-hammondsville.pdf",
+          "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEP%20Transco_Ft%20Steuben_Hammondsville_EnvRevCompletion.pdf"
+        }
+      ],
+      "sourceState": "Ohio",
+      "sourceLocation": "Jefferson County, Ohio; Fort Steuben to Hammondsville",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "03-fort-steuben-hammondsville.pdf",
+          "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEP%20Transco_Ft%20Steuben_Hammondsville_EnvRevCompletion.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 3: Fort Steuben to Hammondsville Transmission Line Rebuild; index posting date 2026-09-08; affiliate label AEP Transco",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Transco. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Anticipated start and operation dates are source forecasts, not an established construction interval; constructionStart and buildWindow remain unknown."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-09-08",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "03-fort-steuben-hammondsville.pdf",
+              "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEP%20Transco_Ft%20Steuben_Hammondsville_EnvRevCompletion.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-09-08",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 3: Fort Steuben to Hammondsville Transmission Line Rebuild; index posting date 2026-09-08; affiliate label AEP Transco",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction start; forecast, not actual start",
+          "date": {
+            "value": "2026-10-01",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Anticipated construction start; forecast, not actual start"
+          },
+          "evidence": [
+            {
+              "file": "03-fort-steuben-hammondsville.pdf",
+              "locator": "pp.1–2, project description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/20260908_%20AEP%20Transco_Ft%20Steuben_Hammondsville_EnvRevCompletion.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-004",
+      "name": "Hamlin to Roby Transmission Line Project",
+      "description": "Rebuild 25.2 miles of existing 69 kV line through Round Top to the Roby tie-in, replacing 471 structures with 258. The general 100-foot right-of-way is retained with minor reroutes.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-09-03",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        69
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project operation date not supplied"
+      },
+      "dateEvidence": [
+        {
+          "file": "04-hamlin-roby.pdf",
+          "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Hamlin%20to%20Roby_EnvReviewCompletion_Letter.pdf"
+        }
+      ],
+      "sourceState": "Texas",
+      "sourceLocation": "Jones and Fisher Counties, Texas; Hamlin through Round Top to the Roby tie-in",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "04-hamlin-roby.pdf",
+          "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Hamlin%20to%20Roby_EnvReviewCompletion_Letter.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 4: Hamlin to Roby Transmission Line Project; index posting date 2026-09-04; affiliate label AEP Texas",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Texas. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Anticipated start and operation dates are source forecasts, not an established construction interval; constructionStart and buildWindow remain unknown.",
+        "Index posting 2026-09-04 differs from signed letter 2026-09-03; neither replaces the other.",
+        "Possible related source observation only: ercot-tpit:73055. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-09-03",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "04-hamlin-roby.pdf",
+              "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Hamlin%20to%20Roby_EnvReviewCompletion_Letter.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-09-04",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 4: Hamlin to Roby Transmission Line Project; index posting date 2026-09-04; affiliate label AEP Texas",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction start; forecast, not actual start",
+          "date": {
+            "value": "2026-09",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Anticipated construction start; forecast, not actual start"
+          },
+          "evidence": [
+            {
+              "file": "04-hamlin-roby.pdf",
+              "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Hamlin%20to%20Roby_EnvReviewCompletion_Letter.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-005",
+      "name": "Uvalde to West Batesville Transmission Line Project",
+      "description": "Rebuild 2.6 miles of existing 138 kV line from Uvalde substation to dead-end structure 27, replacing 24 wood structures with 27 steel monopoles.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-09-01",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        138
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project operation date not supplied"
+      },
+      "dateEvidence": [
+        {
+          "file": "05-uvalde-batesville.pdf",
+          "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Uvalde%20to%20Batesville_EnvReviewCompletion_Letter.pdf"
+        }
+      ],
+      "sourceState": "Texas",
+      "sourceLocation": "Uvalde County, Texas; Uvalde substation to dead-end structure 27",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "05-uvalde-batesville.pdf",
+          "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Uvalde%20to%20Batesville_EnvReviewCompletion_Letter.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 5: Uvalde to West Batesville Transmission Line Project; index posting date 2026-09-01; affiliate label AEP Texas",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Texas. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Anticipated start and operation dates are source forecasts, not an established construction interval; constructionStart and buildWindow remain unknown.",
+        "Possible related source observation only: ercot-tpit:57910. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-09-01",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "05-uvalde-batesville.pdf",
+              "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Uvalde%20to%20Batesville_EnvReviewCompletion_Letter.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-09-01",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 5: Uvalde to West Batesville Transmission Line Project; index posting date 2026-09-01; affiliate label AEP Texas",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction start; forecast, not actual start",
+          "date": {
+            "value": "2026-09",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Anticipated construction start; forecast, not actual start"
+          },
+          "evidence": [
+            {
+              "file": "05-uvalde-batesville.pdf",
+              "locator": "p.1, description and anticipated schedule; p.3, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-09/AEP%20Texas_Uvalde%20to%20Batesville_EnvReviewCompletion_Letter.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-006",
+      "name": "Falfurrias to King Ranch Transmission Line Rebuild",
+      "description": "Rebuild 20.5 miles of existing transmission line between Falfurrias and King Ranch, replacing 184 wood structures within the existing 100-foot right-of-way. The matching June 16 consultation letter establishes the 138 kV rating.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-07-24",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        138
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project operation date not supplied"
+      },
+      "dateEvidence": [
+        {
+          "file": "06-king-ranch.pdf",
+          "locator": "pp.1–2, description and anticipated schedule; p.9, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-07/AEP%20Texas_Falfurrias%20to%20King%20Ranch_EDF%20ERC_24Jul2026.pdf"
+        }
+      ],
+      "sourceState": "Texas",
+      "sourceLocation": "Brooks, Jim Wells and Kleberg Counties, Texas; Falfurrias to King Ranch",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "06-king-ranch.pdf",
+          "locator": "pp.1–2, description and anticipated schedule; p.9, conclusion",
+          "url": "https://www.energy.gov/sites/default/files/2026-07/AEP%20Texas_Falfurrias%20to%20King%20Ranch_EDF%20ERC_24Jul2026.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 6: Falfurrias to King Ranch Transmission Line Rebuild; index posting date 2026-07-27; affiliate label AEP Texas",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        },
+        {
+          "file": "06-king-ranch-public-consultation.pdf",
+          "locator": "June 16, 2026 public consultation letter, pp. 1–2: 138 kV subject and matching 20.5-mile physical scope",
+          "url": "https://www.energy.gov/documents/american-electric-power-aep-falfurrias-king-ranch-transmission-line-rebuild-project-nhpa"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Texas. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Anticipated start and operation dates are source forecasts, not an established construction interval; constructionStart and buildWindow remain unknown.",
+        "Index posting 2026-07-27 differs from signed letter 2026-07-24; neither replaces the other.",
+        "The July 24 completion letter does not state voltage. The public June 16 consultation letter supplies 138 kV for the matching scope; no confidential attachment was consulted.",
+        "Possible related source observation only: ercot-tpit:73061. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-07-24",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "06-king-ranch.pdf",
+              "locator": "pp.1–2, description and anticipated schedule; p.9, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-07/AEP%20Texas_Falfurrias%20to%20King%20Ranch_EDF%20ERC_24Jul2026.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-07-27",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 6: Falfurrias to King Ranch Transmission Line Rebuild; index posting date 2026-07-27; affiliate label AEP Texas",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        },
+        {
+          "field": "Matching-scope public consultation letter signed; 138 kV evidence",
+          "date": {
+            "value": "2026-06-16",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Matching-scope public consultation letter signed; 138 kV evidence"
+          },
+          "evidence": [
+            {
+              "file": "06-king-ranch-public-consultation.pdf",
+              "locator": "June 16, 2026 public consultation letter, pp. 1–2: 138 kV subject and matching 20.5-mile physical scope",
+              "url": "https://www.energy.gov/documents/american-electric-power-aep-falfurrias-king-ranch-transmission-line-rebuild-project-nhpa"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction start in late July 2026; late-month qualifier retained",
+          "date": {
+            "value": "2026-07",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Anticipated construction start in late July 2026; late-month qualifier retained"
+          },
+          "evidence": [
+            {
+              "file": "06-king-ranch.pdf",
+              "locator": "pp.1–2, description and anticipated schedule; p.9, conclusion",
+              "url": "https://www.energy.gov/sites/default/files/2026-07/AEP%20Texas_Falfurrias%20to%20King%20Ranch_EDF%20ERC_24Jul2026.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-007",
+      "name": "Abilene Northwest to Mulberry Creek Transmission Line Rebuild",
+      "description": "Rebuild 2 miles of existing 138 kV line from Abilene Northwest to dead-end structure 8, replacing 22 wood H-frame structures with 22 steel poles within the existing 100-foot right-of-way.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-04-24",
+      "status": "Proposed transmission rebuild; environmental review completed",
+      "voltageKv": [
+        138
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project operation date not supplied"
+      },
+      "dateEvidence": [
+        {
+          "file": "07-abilene-mulberry.pdf",
+          "locator": "p.1, description; p.3, conclusion; pp.4–5 earlier March 17 review correspondence is support, not another project",
+          "url": "https://www.energy.gov/sites/default/files/2026-04/American%20Electric%20Power%20%28AEP%29%20Texas%20%E2%80%93%20Environmental%20Review.pdf"
+        }
+      ],
+      "sourceState": "Texas",
+      "sourceLocation": "Taylor County, Texas; Abilene Northwest to dead-end structure 8",
+      "aliases": [],
+      "workType": "Existing transmission line rebuild",
+      "sources": [
+        {
+          "file": "07-abilene-mulberry.pdf",
+          "locator": "p.1, description; p.3, conclusion; pp.4–5 earlier March 17 review correspondence is support, not another project",
+          "url": "https://www.energy.gov/sites/default/files/2026-04/American%20Electric%20Power%20%28AEP%29%20Texas%20%E2%80%93%20Environmental%20Review.pdf"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 7: Abilene Northwest to Mulberry Creek Transmission Line Rebuild; index posting date 2026-06-18; affiliate label AEP Texas",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Texas. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Index posting 2026-06-18 differs from signed letter 2026-04-24; neither replaces the other.",
+        "Pages 4–5 are earlier March 17 review correspondence for the same scope, not another source record.",
+        "Possible related source observation only: ercot-tpit:90065. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Environmental review completion letter signed; not physical completion",
+          "date": {
+            "value": "2026-04-24",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Environmental review completion letter signed; not physical completion"
+          },
+          "evidence": [
+            {
+              "file": "07-abilene-mulberry.pdf",
+              "locator": "p.1, description; p.3, conclusion; pp.4–5 earlier March 17 review correspondence is support, not another project",
+              "url": "https://www.energy.gov/sites/default/files/2026-04/American%20Electric%20Power%20%28AEP%29%20Texas%20%E2%80%93%20Environmental%20Review.pdf"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-06-18",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 7: Abilene Northwest to Mulberry Creek Transmission Line Rebuild; index posting date 2026-06-18; affiliate label AEP Texas",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "review-008",
+      "name": "East Munday Greenfield 138 kV Station Project",
+      "description": "Replace the 138 kV station west of its existing yard and reterminate five transmission tie-ins. Scope includes six 40 kA/3000 A breakers, protection and a control building, a 28.8 MVAR capacitor bank, and new transmission/substation structures. The 6.5-acre station footprint is distinct from the 8.5-acre disturbance area.",
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "sponsor": "American Electric Power (applicant)",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2026-05-08",
+      "status": "Proposed station; May 8 public consultation evidence",
+      "voltageKv": [
+        138
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Project operation date not supplied in readable public evidence"
+      },
+      "dateEvidence": [
+        {
+          "file": "08-east-munday-public-consultation.pdf",
+          "locator": "May 8, 2026 public consultation letter: pp. 1–2, identity and physical scope; p. 3, 6.5-acre station footprint and 8.5-acre disturbance area",
+          "url": "https://www.energy.gov/documents/aep-texas-east-munday-greenfield-138-kv-station-project-nhpa-section-106-finding-no"
+        }
+      ],
+      "sourceState": "Texas",
+      "sourceLocation": "Knox County, Texas; station west of the existing East Munday yard",
+      "aliases": [],
+      "workType": "Station replacement and transmission tie-ins",
+      "sources": [
+        {
+          "file": "08-east-munday-public-consultation.pdf",
+          "locator": "May 8, 2026 public consultation letter: pp. 1–2, identity and physical scope; p. 3, 6.5-acre station footprint and 8.5-acre disturbance area",
+          "url": "https://www.energy.gov/documents/aep-texas-east-munday-greenfield-138-kv-station-project-nhpa-section-106-finding-no"
+        },
+        {
+          "file": "index.html",
+          "locator": "Entry 8: East Munday Greenfield138kV Station Project; index posting date 2026-06-18; affiliate label AEP Texas",
+          "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+        },
+        {
+          "file": "08-east-munday.pdf",
+          "locator": "Later June 18 index entry; five image-only pages with no readable body. Signed date, schedule and conditions were not interpreted.",
+          "url": "https://www.energy.gov/sites/default/files/2026-06/AEP%20TX_ERC%20Letter_East%20Munday%20Station.pdf"
+        }
+      ],
+      "notes": [
+        "Planned status is observed in the dated readable letter. Environmental review does not establish physical completion, construction progress, financing approval or engineering feasibility.",
+        "DOE index affiliate label: AEP Texas. American Electric Power is the applicant; no specific legal asset owner is evidenced.",
+        "Identity is a frozen review-document locator, not an engineering project ID. This featured DOE subset may overlap other inventories; it is not a count of net-new unique projects.",
+        "Physical scope and planned status rely on the readable May 8 public letter. The later indexed completion PDF has no extractable body text; its signed date, status, schedule and conditions remain unread. No image interpretation or withheld attachment was used.",
+        "Possible related source observation only: ercot-tpit:91843. No explicit identity crosswalk exists; no alias, merge or date/owner transfer is asserted."
+      ],
+      "milestones": [
+        {
+          "field": "Public consultation letter signed; proposed scope only",
+          "date": {
+            "value": "2026-05-08",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "Public consultation letter signed; proposed scope only"
+          },
+          "evidence": [
+            {
+              "file": "08-east-munday-public-consultation.pdf",
+              "locator": "May 8, 2026 public consultation letter: pp. 1–2, identity and physical scope; p. 3, 6.5-acre station footprint and 8.5-acre disturbance area",
+              "url": "https://www.energy.gov/documents/aep-texas-east-munday-greenfield-138-kv-station-project-nhpa-section-106-finding-no"
+            }
+          ]
+        },
+        {
+          "field": "DOE index posting date; not a project milestone",
+          "date": {
+            "value": "2026-06-18",
+            "precision": "day",
+            "kind": "unknown",
+            "label": "DOE index posting date; not a project milestone"
+          },
+          "evidence": [
+            {
+              "file": "index.html",
+              "locator": "Entry 8: East Munday Greenfield138kV Station Project; index posting date 2026-06-18; affiliate label AEP Texas",
+              "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "possibleRelatedRecords": [
+    {
+      "id": "pjm-rtep:s2464",
+      "sourceId": "s2464",
+      "name": "s2464 — East Wheelersburg-Texas Eastern",
+      "date": {
+        "value": "2027-11-04",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='s2464']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    },
+    {
+      "id": "pjm-rtep:s2915.5",
+      "sourceId": "s2915.5",
+      "name": "s2915.5 — South Rokeby - North  McConnelsville",
+      "date": {
+        "value": "2027-04-14",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Source projected in-service date"
+      },
+      "sources": [
+        {
+          "file": "projectCostUpgrades.xml",
+          "locator": "/Upgrades/Upgrade[UpgradeId='s2915.5']",
+          "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    },
+    {
+      "id": "ercot-tpit:73061",
+      "sourceId": "73061",
+      "name": "Falfurrias to King Ranch: 138 kV Line Rebuild",
+      "date": {
+        "value": "2027-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 176, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P176; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    },
+    {
+      "id": "ercot-tpit:91843",
+      "sourceId": "91843",
+      "name": "East Munday: Rebuild 138 kV Station",
+      "date": {
+        "value": "2027-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 195, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!B195; header B2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!C195; header C2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!O195; header O2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P195; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!Q195; header Q2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!R195; header R2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    },
+    {
+      "id": "ercot-tpit:73055",
+      "sourceId": "73055",
+      "name": "Hamlin to Roby: Rebuild 69 kV line",
+      "date": {
+        "value": "2028-01",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 484, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P484; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    },
+    {
+      "id": "ercot-tpit:57910",
+      "sourceId": "57910",
+      "name": "Uvalde to West Batesville: Rebuild 138 kV Line",
+      "date": {
+        "value": "2031-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 1346, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P1346; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    },
+    {
+      "id": "ercot-tpit:90065",
+      "sourceId": "90065",
+      "name": "Abilene Northwest to Mulberry Creek: Rebuild 138 kV Line",
+      "date": {
+        "value": "2026-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "PlannedTPIT071326NoCost!row 223, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "PlannedTPIT071326NoCost!P223; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "relationship": "Possible related source observation only; no explicit DOE-to-RTO identity crosswalk. Preserve separately."
+    }
+  ]
+}

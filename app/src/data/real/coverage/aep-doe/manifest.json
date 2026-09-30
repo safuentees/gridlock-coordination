@@ -1,0 +1,41 @@
+{
+  "sourceKey": "aep-doe",
+  "editionId": "review-index-snapshot-2026-09-30",
+  "label": "AEP DOE public environmental-review index — September 30, 2026 snapshot",
+  "reportingGroupId": "aep-doe",
+  "reportingGroupName": "AEP DOE public environmental reviews",
+  "publisher": "United States Department of Energy, Office of Energy Dominance Financing",
+  "processAuthority": "DOE environmental review within the Energy Dominance Financing process",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "index.html",
+    "locator": "All eight featured AEP review entries captured September 30, 2026; two public consultation letters provide supplemental evidence, not extra records",
+    "url": "https://www.energy.gov/edf/american-electric-power-environmental-reviews"
+  },
+  "sha256": "b4b4d88177e2ec35c9f606f60ec33a3c6c52ec66394879e70ce73b7e524df02c",
+  "geographicScope": "Three named Ohio and five named Texas scopes; finite public review subset, not complete state, AEP or regional coverage.",
+  "inventoryScope": "Eight named physical transmission scopes from the captured DOE AEP review index: seven line rebuild upgrades and one station project. Supplemental consultations do not add projects.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 8,
+    "importedRecords": 4,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 4,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "Complete enumeration refers only to the eight-entry public featured/funding-review index snapshot, not all AEP projects or net-new projects beyond PJM/ERCOT.",
+    "All lifecycle values are planned at the readable signed-letter date. Review completion is neither construction/service completion nor financing approval or engineering feasibility.",
+    "Index posting, signed review, anticipated start and anticipated operation dates are separate meanings. Snapshot retrieval and generatedAt do not update project status.",
+    "Ohio operation forecasts retain exact day precision; all five Texas operation dates are unknown. Forecast starts are supplemental and do not establish actual construction bounds.",
+    "East Munday uses May 8 public consultation text. The later indexed PDF is image-only; its signed date and body were not interpreted. King Ranch voltage uses June 16 public matching-scope evidence.",
+    "AEP applicant and index affiliate labels do not establish legal asset owners. All owners remain unknown.",
+    "All locations, native geometry and construction bounds remain unknown. Named counties/endpoints, route lengths, right-of-way widths and station areas do not supply project centers or shared-corridor estimates.",
+    "review-001 through review-008 are frozen source-document locators, not native engineering IDs. Future index reordering requires an explicit crosswalk. Shared consultation codes and similar RTO names do not authorize merging or field transfers.",
+    "Only concise factual paraphrases and public citations are derived. No original files, personal contact fields, restricted attachments, image interpretation or asserted open/commercial reuse license are included.",
+    "Four retained diagnostics are emitted first; four accepted entries await provider connection and full normalization."
+  ]
+}
