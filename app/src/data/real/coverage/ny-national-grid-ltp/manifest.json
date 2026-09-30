@@ -1,0 +1,49 @@
+{
+  "sourceKey": "ny-national-grid-ltp",
+  "editionId": "2025-10-30",
+  "label": "National Grid New York local plan — October 30, 2025",
+  "reportingGroupId": "ny-national-grid-ltp",
+  "reportingGroupName": "National Grid New York local plan",
+  "publisher": "National Grid",
+  "processAuthority": "National Grid New York local transmission planning",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "national-grid-local-transmission-plan-2025.pdf",
+    "locator": "PDF cover and 40 project tables on pages 5–53",
+    "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf"
+  },
+  "sha256": "5f13264b522f017649867bc9f217568935a80f2a648c2d851c8aaccdcba27a33",
+  "geographicScope": "National Grid New York local-plan footprint in NYISO Zones A–F; partial New York coverage, with no per-record state or center inferred.",
+  "inventoryScope": "Historical utility project-table entries, including explicitly described transmission work and unresolved/mixed planning context. Explicit In-Service and Cancelled rows are excluded.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 152,
+    "importedRecords": 6,
+    "excludedRows": 16,
+    "failedRows": 0,
+    "pendingRows": 130,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "explicit-cancelled",
+      "count": 4
+    },
+    {
+      "reason": "explicit-in-service",
+      "count": 12
+    }
+  ],
+  "limitations": [
+    "Historical 2025-10-30 edition, not current lifecycle. A September 2026 criteria deck references an August update whose complete inventory was not located.",
+    "National Grid New York local plan only (NYISO Zones A–F); this does not cover every New York utility or planned project.",
+    "Page/body-row source locators are not engineering IDs. Continuity into a later edition requires explicit identity review; no title/ordinal merge is assumed.",
+    "The accepted full scope has eight explicitly described transmission records and 128 planning-context records; context is not a claim that work is non-transmission.",
+    "No row-owner field establishes singular ownership. Publisher/utility context does not become an inferred owner identity.",
+    "All records are unlocated; no native coordinates, map digitization, geocoding or planning-area centers are supplied.",
+    "Expected in-service dates have month precision and do not establish construction windows or completion; study/permit progress does not override project status.",
+    "Source facts are used for authorized private informational analysis. National Grid terms restrict other reproduction/distribution and commercial use; no open/commercial license or PDF publication is asserted.",
+    "Six retained records are connected first; 130 accepted nonterminal rows remain pending before full-scope normalization."
+  ]
+}
