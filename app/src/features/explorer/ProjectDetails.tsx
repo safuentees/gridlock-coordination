@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { UTILITIES, type Opportunity, type Project, type SourceRef } from "@/domain/schema"
+import { visibleProjectNotes } from "@/lib/presentation"
 import { dateKind, projectDate, timelineLabels } from "./format"
 
 function Sources({ sources }: { sources: SourceRef[] }) {
@@ -10,32 +11,33 @@ function Sources({ sources }: { sources: SourceRef[] }) {
   </li>)}</ul>
 }
 export function ProjectEvidence({ project }: { project: Project }) {
+  const notes = visibleProjectNotes(project)
+  const phaseDates = project.date.kind === "in-service" && project.date.value === null ? notes.find(note => note.startsWith("Source planned in-service dates:")) : undefined
+  const otherNotes = notes.filter(note => note !== phaseDates)
   return <section className="min-w-0 space-y-3 [overflow-wrap:anywhere]">
-    <div><h3 className="font-medium">{project.name}</h3><p className="text-xs text-muted-foreground">{UTILITIES[project.utilityId]}; {project.sourceId ?? "No source ID"}</p></div>
-    <p className="text-sm">{project.description || "No description supplied."}</p>
+    <div><h3 className="font-medium">{project.name}</h3><p className="text-xs text-muted-foreground">{UTILITIES[project.utilityId]}{project.sourceId && `; ${project.sourceId}`}</p></div>
+    {project.description.trim() && <p className="text-sm">{project.description}</p>}
     <dl className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-x-4 gap-y-2 text-sm [&_dd]:min-w-0 [&_dd]:break-words">
       <dt className="text-muted-foreground">Sponsor</dt><dd>{project.sponsor ?? "Unknown"}</dd>
       <dt className="text-muted-foreground">Status</dt><dd>{project.status ?? "Unknown"}</dd>
       <dt className="text-muted-foreground">Voltage</dt><dd>{project.voltageKv.length ? `${project.voltageKv.join(" / ")} kV` : "Unknown"}</dd>
-      <dt className="text-muted-foreground">{dateKind(project)}</dt><dd>{projectDate(project)}<span className="block text-xs text-muted-foreground">{project.date.label}</span></dd>
-      <dt className="text-muted-foreground">Construction</dt><dd>{project.buildWindow ? `${project.buildWindow.start} to ${project.buildWindow.end}` : "No explicit construction window"}</dd>
-      <dt className="text-muted-foreground">Location</dt><dd>{project.location ? <>{project.location.lat}, {project.location.lon}<span className="block text-xs text-muted-foreground">{project.location.method.replaceAll("-", " ")}; {project.location.confidence}</span></> : "Unknown; excluded from proximity analysis"}</dd>
+      <dt className="text-muted-foreground">{dateKind(project)}</dt><dd>{phaseDates ? phaseDates.replace(/^Source planned in-service dates:\s*/, "") : projectDate(project)}</dd>
+      <dt className="text-muted-foreground">Construction window</dt><dd>{project.buildWindow ? `${project.buildWindow.start} to ${project.buildWindow.end}` : "Not stated"}</dd>
+      <dt className="text-muted-foreground">Location</dt><dd>{project.location ? <>{project.location.lat}, {project.location.lon}<span className="block text-xs text-muted-foreground">{project.location.method.replaceAll("-", " ")}; {project.location.confidence}</span></> : "Missing; not ranked by distance"}</dd>
     </dl>
     {project.location && <div className="space-y-1"><h4 className="text-xs font-medium">Location evidence</h4><Sources sources={project.location.evidence} /></div>}
     <div className="space-y-1"><h4 className="text-xs font-medium">Project sources</h4><Sources sources={project.sources} /></div>
-    {project.notes.length > 0 && <ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{project.notes.map((note, index) => <li key={index}>{note}</li>)}</ul>}
+    {otherNotes.length > 0 && <ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{otherNotes.map((note, index) => <li key={index}>{note}</li>)}</ul>}
   </section>
 }
 export function ProjectDetails({ project }: { project: Project | null }) {
-  return <Card><CardHeader><CardTitle>Project evidence</CardTitle><CardDescription>Select a map point or an inventory project to inspect its source.</CardDescription></CardHeader><CardContent>{project ? <ProjectEvidence project={project} /> : <p className="text-sm text-muted-foreground">No project selected.</p>}</CardContent></Card>
+  return <Card><CardHeader><CardTitle>Project evidence</CardTitle>{!project && <CardDescription>Select a project to view its evidence.</CardDescription>}</CardHeader><CardContent>{project ? <ProjectEvidence project={project} /> : null}</CardContent></Card>
 }
 export function PairDetails({ opportunity, projects, onProject }: { opportunity: Opportunity; projects: Project[]; onProject: (id: string) => void }) {
   const pair = opportunity.projectIds.map((id) => projects.find((project) => project.id === id)).filter((project): project is Project => project !== undefined)
-  return <Card className="min-w-0"><CardHeader><CardTitle>Coordination candidate #{opportunity.rank}</CardTitle><CardDescription>Project centers indicate proximity. A connecting line is not a transmission route.</CardDescription></CardHeader><CardContent className="space-y-4">
+  return <Card className="min-w-0"><CardHeader><CardTitle>Candidate #{opportunity.rank}</CardTitle><CardDescription>Shared route unconfirmed.</CardDescription></CardHeader><CardContent className="space-y-4">
     <div className="flex flex-wrap gap-2"><Badge>{opportunity.distanceMiles.toFixed(2)} mi apart</Badge><Badge variant="secondary">{opportunity.dateGapDays === null ? "Date gap unknown" : `${opportunity.dateGapDays} days between milestones`}</Badge><Badge variant="outline">{opportunity.locationConfidence} locations</Badge></div>
     <p className="text-sm">{timelineLabels[opportunity.timelineRelation]}</p>
-    <ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{opportunity.reasons.map((reason, index) => <li key={index}>{reason}</li>)}</ul>
     {pair.map((project) => <div className="space-y-3 border-t pt-4" key={project.id}><ProjectEvidence project={project} /><Button variant="outline" size="sm" onClick={() => onProject(project.id)}>Select this project</Button></div>)}
-    <p className="text-xs text-muted-foreground">Reporting groups may include other asset sponsors. Proximity and milestone dates do not establish shared right-of-way or simultaneous construction.</p>
   </CardContent></Card>
 }

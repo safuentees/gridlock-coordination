@@ -7,7 +7,8 @@ import { compareProjectTiming } from "@/core"
 import { UTILITIES, type Dataset, type Opportunity, type Project } from "@/domain/schema"
 import { ImpactPanel } from "@/features/impact/ImpactPanel"
 import { ProjectEvidence } from "./ProjectDetails"
-import { dateKind, projectDate, timelineLabels } from "./format"
+import { sourceEditionLabels } from "@/lib/presentation"
+import { dateKind, projectDate } from "./format"
 
 export interface ComparisonPanelProps {
   dataset: Dataset
@@ -26,12 +27,15 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
   const canEstimate = Boolean(selectedOpportunity && left && right)
   const activeTab = tab === "impact" && !canEstimate ? "evidence" : tab
   const timing = left && right ? compareProjectTiming(left, right) : null
-  const constructionLabel = timing?.constructionRelation === "overlap" ? "Explicit windows overlap"
-    : timing?.constructionRelation === "separate" ? "Explicit windows do not overlap" : "Unknown"
+  const constructionLabel = timing?.constructionRelation === "overlap" ? "Construction windows overlap"
+    : timing?.constructionRelation === "separate" ? "Construction windows do not overlap" : "Construction overlap unknown"
+  const sourceEditions = sourceEditionLabels(selectedOpportunity
+    ? pair.filter((project): project is Project => Boolean(project))
+    : selectedProject ? [selectedProject] : dataset.projects)
 
   return <Card className="flex h-full min-h-0 min-w-0 flex-col overflow-hidden" aria-label="Project comparison">
     <CardHeader className="max-h-[55%] min-h-0 shrink-0 overflow-auto overscroll-contain [overflow-wrap:anywhere]">
-      <div className="flex flex-wrap items-center gap-2"><CardTitle>{selectedOpportunity ? `Coordination candidate #${selectedOpportunity.rank}` : selectedProject ? "Project evidence" : "Compare projects"}</CardTitle>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div>
+      <div className="flex flex-wrap items-center gap-2"><CardTitle>{selectedOpportunity ? `Candidate #${selectedOpportunity.rank}` : selectedProject ? "Project evidence" : "Compare projects"}</CardTitle>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div>
       {selectedOpportunity ? <div className="space-y-3">
         <div className="grid min-w-0 grid-cols-2 gap-4">
           {selectedOpportunity.projectIds.map((id, index) => <ProjectSummary key={id} project={pair[index] ?? null} missingId={id} onProject={onProject} />)}
@@ -42,27 +46,26 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
           <div className="min-w-0"><dt className="text-xs text-muted-foreground">Locations</dt><dd className="font-medium">{selectedOpportunity.locationConfidence}</dd></div>
         </dl>
         <div className="space-y-1 text-xs text-muted-foreground">
-          <p>{timelineLabels[selectedOpportunity.timelineRelation]}. Construction overlap: {constructionLabel.toLowerCase()}.</p>
-          <p>Center proximity does not confirm a shared route. Milestone proximity does not establish simultaneous construction.</p>
-          {(!left || !right) && <p>One or both source projects are unavailable in this dataset. Impact cannot be estimated for this selection.</p>}
+          <p>{constructionLabel}. Shared route unconfirmed.</p>
+          {(!left || !right) && <p>Project evidence is missing; impact is unavailable.</p>}
         </div>
       </div> : selectedProject ? <div className="space-y-2">
         <ProjectSummary project={selectedProject} onProject={onProject} />
         <p className="text-xs text-muted-foreground">{selectedProject.location
-          ? `${selectedProject.location.confidence === "unverified" ? "Unverified supplied" : "Source-confirmed"} project center; it does not describe the full transmission route.`
-          : "Location unknown. This project remains in the inventory and cannot be ranked by proximity."}</p>
-      </div> : <CardDescription>Select a candidate to compare both projects, or select an inventory project to inspect its evidence.</CardDescription>}
+          ? `${selectedProject.location.confidence} project center`
+          : "Location missing; not ranked by distance."}</p>
+      </div> : <CardDescription>Select a candidate to compare, or a project to view its evidence.</CardDescription>}
     </CardHeader>
     {/* This stable slot keeps the parent's saved-review workspace mounted across selections and tabs. */}
     <div className="min-w-0 shrink-0 px-4">{actions}</div>
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <Tabs value={activeTab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList>
+        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Method &amp; sources</TabsTrigger></TabsList>
         <TabsContent forceMount value="evidence" className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
               {pair.filter((project): project is Project => Boolean(project)).map((project) => <div key={project.id} className="min-w-0 border-t pt-4 first:border-t-0 first:pt-0"><ProjectEvidence project={project} /></div>)}
-            </> : selectedProject ? <ProjectEvidence project={selectedProject} /> : <p className="text-sm text-muted-foreground">Project sources, location evidence and date meanings will appear here.</p>}
+            </> : selectedProject ? <ProjectEvidence project={selectedProject} /> : null}
           </div>
         </TabsContent>
         <TabsContent forceMount value="impact" className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
@@ -70,17 +73,14 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
         </TabsContent>
         <TabsContent forceMount value="supporting" className={activeTab === "supporting" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-5 pt-3">
-            {selectedOpportunity && <section className="space-y-2"><h3 className="text-sm font-medium">Why this candidate appears</h3><ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">{selectedOpportunity.reasons.map((reason, index) => <li key={index}>{reason}</li>)}</ul></section>}
             <section className="space-y-2"><h3 className="text-sm font-medium">Comparison method</h3><ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">
-              <li>Cross-filing candidates compare project centers using straight-line distance. Ranking prioritizes distance, then known milestone separation.</li>
-              <li>Milestone gaps require source dates with day precision. Construction overlap requires explicit source construction windows.</li>
-              <li>Reporting groups may include other asset sponsors. A nearby center does not establish shared right-of-way or engineering feasibility.</li>
+              <li>Cross-filing candidates rank by straight-line center distance, then milestone gap.</li>
+              <li>Date gaps require day-precision dates. Construction overlap requires stated construction windows.</li>
+              <li>A reporting utility may differ from the asset sponsor.</li>
             </ul></section>
-            <section className="space-y-2"><h3 className="text-sm font-medium">Dataset context</h3><dl className="space-y-2 text-xs">
-              <div><dt className="text-muted-foreground">Dataset</dt><dd>{dataset.title}</dd></div>
-              <div><dt className="text-muted-foreground">Mode</dt><dd>{dataset.mode === "demo" ? "Synthetic demonstration; not a utility plan" : "Source records"}</dd></div>
-              <div><dt className="text-muted-foreground">Dataset generated</dt><dd>{dataset.generatedAt}</dd></div>
-            </dl><p className="text-xs text-muted-foreground">Historical planning evidence is not a live schedule. Past milestones do not establish completed work.</p>{dataset.coverage.notes.length > 0 && <ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">{dataset.coverage.notes.map((note, index) => <li key={index}>{note}</li>)}</ul>}</section>
+            <section className="space-y-2"><h3 className="text-sm font-medium">Sources</h3>{sourceEditions.length > 0
+              ? <ul className="space-y-1 text-xs">{sourceEditions.map(edition => <li key={edition}>{edition}</li>)}</ul>
+              : <p className="text-xs">{dataset.title}</p>}</section>
           </div>
         </TabsContent>
       </Tabs>

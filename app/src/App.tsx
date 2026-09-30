@@ -10,6 +10,7 @@ import { Explorer } from "@/features/explorer/Explorer"
 import { DatasetImport } from "@/features/import/DatasetImport"
 import { ReadinessWorkspace } from "@/features/readiness/ReadinessWorkspace"
 import type { DataMode, Dataset } from "@/domain/schema"
+import { sourceEditionLabels } from "@/lib/presentation"
 
 export function App() {
   const [mode, setMode] = useState<DataMode>("real")
@@ -32,6 +33,7 @@ export function App() {
     try { return { dataset: mode === "real" && sourceOverride ? sourceOverride : loadDataset(mode), error: null } }
     catch (error) { return { dataset: null, error: error instanceof Error ? error.message : "The dataset could not be loaded." } }
   }, [mode, sourceOverride])
+  const sourceEditions = result.dataset ? sourceEditionLabels(result.dataset.projects) : []
   return <main className="flex h-dvh min-h-0 w-full min-w-0 flex-col overflow-hidden">
     <header className="flex max-h-[25dvh] min-h-0 min-w-0 shrink-0 flex-wrap items-center justify-between gap-4 overflow-auto border-b p-4">
       <div className="flex min-w-0 flex-wrap items-center gap-3"><h1 className="text-2xl font-semibold">Gridlock</h1><Badge variant={mode === "demo" ? "secondary" : "outline"}>{mode === "demo" ? "Synthetic demo" : sourceOverride ? "Revised source" : "Source data"}</Badge><nav className="flex gap-2" aria-label="Workspaces"><Button variant={workspace === "explore" ? "default" : "ghost"} aria-current={workspace === "explore" ? "page" : undefined} onClick={() => setWorkspace("explore")}><MapIcon aria-hidden="true" data-icon="inline-start" />Explore</Button><Button variant={workspace === "readiness" ? "default" : "ghost"} aria-current={workspace === "readiness" ? "page" : undefined} onClick={() => setWorkspace("readiness")}><ListChecksIcon aria-hidden="true" data-icon="inline-start" />Data readiness</Button></nav></div>
@@ -44,11 +46,9 @@ export function App() {
               <TabsList className="shrink-0"><TabsTrigger value="coverage">Coverage</TabsTrigger><TabsTrigger value="revisions">Revisions</TabsTrigger></TabsList>
               <TabsContent value="coverage" className="min-h-0 min-w-0 overflow-auto overscroll-contain">
                 <section aria-label="Dataset coverage" className="space-y-4 py-2 [overflow-wrap:anywhere]">
-                  <p>{result.dataset.projects.length} projects; {result.dataset.projects.filter(project => project.location !== null).length} with locations.</p>
-                  <p className="text-sm">Use Data readiness to review missing or unverified locations and prepare a source-referenced update.</p>
-                  <p className="text-sm text-muted-foreground">Snapshot assembled {result.dataset.generatedAt}. Source plans are historical; a past milestone does not establish completion.</p>
-                  {result.dataset.coverage.notes.map((note, index) => <p className="text-sm" key={index}>{note}</p>)}
-                  <p className="text-sm text-muted-foreground">Map centers indicate proximity, not shared routes. Need dates and planned in-service dates do not establish construction windows.</p>
+                  <p>{result.dataset.projects.length} projects: {result.dataset.projects.filter(project => project.location !== null).length} with locations, {result.dataset.projects.filter(project => project.location === null).length} missing locations.</p>
+                  <p className="text-sm">Review missing or unverified locations in Data readiness.</p>
+                  {sourceEditions.length > 0 && <section className="space-y-2"><h3 className="text-sm font-medium">Source plans</h3><ul className="space-y-1 text-sm">{sourceEditions.map(edition => <li key={edition}>{edition}</li>)}</ul><p className="text-sm text-muted-foreground">Historical plans; current progress may differ.</p></section>}
                 </section>
               </TabsContent>
               <TabsContent forceMount value="revisions" className="min-h-0 min-w-0 overflow-hidden data-[state=inactive]:hidden">
@@ -65,7 +65,7 @@ export function App() {
       {result.dataset ? <>
         <div className={workspace === "explore" ? "h-full min-h-0 min-w-0" : "hidden"}><Explorer key={mode} dataset={result.dataset} active={workspace === "explore"} projectToReveal={revealProject} /></div>
         <div className={workspace === "readiness" ? "h-full min-h-0 min-w-0 p-4" : "hidden"}><ReadinessWorkspace key={mode} dataset={result.dataset} onApply={applySource} onExploreProject={id => { setRevealProject(previous => ({ id, request: (previous?.request ?? 0) + 1 })); setWorkspace("explore") }} /></div>
-      </> : <section role="alert" className="h-full space-y-2 overflow-auto rounded-lg border p-4 [overflow-wrap:anywhere]"><h2 className="font-medium">{mode === "real" ? "Source data" : "Demo data"} could not be loaded</h2><p className="text-sm text-muted-foreground">{result.error}</p><p className="text-sm">Switch modes explicitly to explore another dataset.</p></section>}
+      </> : <section role="alert" className="h-full space-y-2 overflow-auto rounded-lg border p-4 [overflow-wrap:anywhere]"><h2 className="font-medium">{mode === "real" ? "Source data" : "Demo data"} could not be loaded</h2><p className="text-sm text-muted-foreground">{result.error}</p><p className="text-sm">Choose another dataset to continue.</p></section>}
     </div>
   </main>
 }
