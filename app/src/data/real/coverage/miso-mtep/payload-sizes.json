@@ -1,0 +1,10 @@
+{
+  "sourceKey": "miso-mtep",
+  "editionId": "appendix-a-2026-08-04",
+  "scope": "sample",
+  "records": 6,
+  "compactUtf8Bytes": 17993,
+  "formattedDownloadUtf8Bytes": 23549,
+  "measurement": "Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "formatted"
+}

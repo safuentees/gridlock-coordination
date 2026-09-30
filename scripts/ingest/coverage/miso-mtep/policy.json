@@ -1,0 +1,331 @@
+{
+  "sourceKey": "miso-mtep",
+  "editionId": "appendix-a-2026-08-04",
+  "acceptedBy": "specs/features/F27-us-regional-expansion/miso-mtep/spec.md, accepted producer handoff ed07698",
+  "sampleFacilityIds": [
+    "51925",
+    "52001",
+    "52058",
+    "51268",
+    "25705",
+    "50898"
+  ],
+  "ownerUnresolvedNormalizedTokens": [
+    "AMMO",
+    "AMERENMO",
+    "AMIL",
+    "AMERENIL",
+    "AMEREN",
+    "NIPS",
+    "NIPSCO",
+    "SIGE",
+    "CPEI(SIGE)",
+    "DPC",
+    "DAIRYLANDPOWERCOOPERATIVE",
+    "DAIRYLANDPOWERCOOPRATIVE",
+    "ATXI",
+    "AMERENTRANSMISSIONCOMPANYOFILLINOIS"
+  ],
+  "planningContextDecisions": [
+    {
+      "nativeFacilityId": "52001",
+      "sourceRow": 31,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I31:J31",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "52022",
+      "sourceRow": 47,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I47:J47",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50658",
+      "sourceRow": 635,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I635:J635",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50660",
+      "sourceRow": 636,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I636:J636",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50665",
+      "sourceRow": 638,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I638:J638",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50697",
+      "sourceRow": 657,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I657:J657",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50716",
+      "sourceRow": 673,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I673:J673",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50719",
+      "sourceRow": 676,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I676:J676",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50739",
+      "sourceRow": 692,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I692:J692",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50748",
+      "sourceRow": 699,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I699:J699",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50749",
+      "sourceRow": 700,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I700:J700",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50750",
+      "sourceRow": 701,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I701:J701",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28462",
+      "sourceRow": 1310,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1310:J1310",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28465",
+      "sourceRow": 1313,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1313:J1313",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28580",
+      "sourceRow": 1381,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1381:J1381",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "27464",
+      "sourceRow": 1667,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1667:J1667",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "22357",
+      "sourceRow": 1899,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1899:J1899",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28346",
+      "sourceRow": 2078,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2078:J2078",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "23655",
+      "sourceRow": 2115,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2115:J2115",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "23479",
+      "sourceRow": 2614,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2614:J2614",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "25674",
+      "sourceRow": 2644,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2644:J2644",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "24118",
+      "sourceRow": 2712,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2712:J2712",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "23478",
+      "sourceRow": 2809,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2809:J2809",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "24377",
+      "sourceRow": 2919,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2919:J2919",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "22035",
+      "sourceRow": 2993,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2993:J2993",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "22025",
+      "sourceRow": 3097,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3097:J3097",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "21030",
+      "sourceRow": 3130,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3130:J3130",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "20745",
+      "sourceRow": 3158,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3158:J3158",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "4588",
+      "sourceRow": 3205,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3205:J3205",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "4590",
+      "sourceRow": 3206,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3206:J3206",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    }
+  ]
+}
