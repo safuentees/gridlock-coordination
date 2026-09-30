@@ -1,0 +1,9 @@
+# F27-MP-Q — Qualify CNMI public grid planning
+
+Purpose: assess the Northern Mariana Islands' remaining scope. Start with CUC's public [March 27, 2025 IRP](https://www.cucgov.org/cuc_content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf) and [FY2025 citizen report](https://cnmileg.net/resources/files/24th%20House/2025%20CCR/CUC2025CCR.pdf). Separate Saipan/Tinian/Rota source scopes, IRP generation alternatives, modeled grid upgrades and actual planned physical work. Existing lines or procurement questions do not constitute planned projects.
+
+Owner: core after PacifiCorp full production. Own only this folder's `qualification.md`, `sample.json` and `changes/F27-mp-qualification.md`; coordinator owns acceptance/contracts/provider/register/checks. Reuse its worktree/new branch and preserve public originals under ignored `inputs/originals/F27-mp-cuc/`. No producer, shared/core/UI/map/dependency edits or worker checks.
+
+At most 15 minutes of public text/data qualification. Establish complete named-work enumeration, exact source/edition/IDs or locators, island/voltage/asset role without a continental threshold, lifecycle/date precision, owners versus operators and native geometry meaning. Fiscal budgets/model years do not become in-service dates or day windows. Do not infer endpoints from maps or treat standalone generation/storage as transmission.
+
+Completion: six cited diagnostic records (all if fewer), complete declared disposition/mapping proposal or specific missing public input. Preserve unassessed versus inaccessible versus no qualifying scoped records; none implies zero territory projects. No private/CEII requests, image interpretation or contact/hidden metadata. Acceptance and early real batch precede full production; partial public scope never means complete CNMI coverage.
