@@ -1,23 +1,25 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 Guam/Nevada/PacifiCorp/ASPA integration PR111 (implementation 10ce90b; one build/case passed)",
+  "baselineRevision": "F27 TVA/CNMI/WAPA and deferred-loading integration PR125 (implementation 5fff2e6; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Fifteen full declared regional inventories and three complete featured/funding subsets imported; TVA captured-index producer accepted; CNMI and Virgin Islands qualification active; SERTP source marking conflict unresolved",
+  "qualificationStatus": "Sixteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported; CNMI transmission role remains unestablished; SERTP source markings require authoritative clarification",
   "totals": {
-    "importedSourceRecords": 12915,
+    "importedSourceRecords": 12994,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 12802,
+    "missingLocations": 12881,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 15,
-    "newFullRegionalInventoriesImported": 15,
+    "newRegionalSourcesQualified": 16,
+    "newFullRegionalInventoriesImported": 16,
     "knownNationalProjectDenominator": null,
-    "qualifiedFeaturedSubsets": 4,
-    "fullFeaturedSubsetsImported": 3,
-    "fullDeclaredSourceScopesImported": 18
+    "qualifiedFeaturedSubsets": 5,
+    "fullFeaturedSubsetsImported": 5,
+    "fullDeclaredSourceScopesImported": 23,
+    "qualifiedContextScopes": 2,
+    "fullContextScopesImported": 2
   },
   "pendingEvidence": {
     "integratedF19Decisions": 10,
@@ -1200,15 +1202,354 @@
       "sourceStateCounts": {},
       "unallocatedStateRecords": 2,
       "stateCountMeaning": "Raw geographic descriptors are preserved; these rows are not independently assigned to jurisdiction counts. Manifest footprint indexes source reach only."
+    },
+    {
+      "sourceKey": "tva-public",
+      "editionId": "observed-2026-09-30",
+      "editionPublishedAt": null,
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "All 41 current-index placements: 40 unique public transmission page work units and one excluded duplicate Appalachia placement. No claim of utility-wide or state-wide capital-inventory completeness.",
+      "geographicScope": "Captured index sections span Alabama, Kentucky, Mississippi, North Carolina and Tennessee; Georgia/Virginia sections have no links, not a zero-project claim. Some projects cross section/state boundaries.",
+      "recordKind": "40 transmission-project",
+      "transmissionProjectRecords": 40,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "mixed dated assertions and snapshot observation",
+      "importedRecords": 40,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 40,
+        "milestone": 20,
+        "constructionWindow": 40,
+        "status": 0,
+        "voltage": 1,
+        "evidencedOwner": 40
+      },
+      "rawSourceRows": 41,
+      "excludedRows": 1,
+      "exclusions": [
+        {
+          "reason": "Duplicate Appalachia placement under Tennessee; retained once under North Carolina.",
+          "count": 1
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/tva-public/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/tva-public/row-ledger.json",
+      "publicInventoryDenominator": 40,
+      "blockers": [
+        "The 41 placements cover only this captured public engagement index: 40 unique page-scoped work units and one duplicate Appalachia placement. Full scope is not a complete TVA or state engineering register.",
+        "The primary SHA-256 identifies web-tool extracted text, not publisher HTML. Ordinary HTML acquisition returned 403; the coordinator explicitly accepted derived captures as frozen evidence. Separate public GIS JSON artifacts are originals.",
+        "Georgia and Virginia have empty index sections, which do not establish zero projects. Project geography may differ from the section; public meeting addresses are not project locations.",
+        "One page may combine line, station and connection work. Alternatives, existing assets and future separate work without an index link are not additional records.",
+        "Canonical URL slugs are source-locator identities, not engineering IDs. GIS PROJECT_ID values remain scoped aliases; future edition continuity needs explicit crosswalks.",
+        "Lifecycle belongs to the dated source statement or undated snapshot observation, not present construction status. Elapsed forecasts, preferred routes and acquired easements do not establish completion, approval or construction.",
+        "Seasonal forecasts retain year precision and their source labels. Cross-year winters, conflicts and withdrawn schedules keep unknown primary dates; historical/component milestones remain supplemental.",
+        "Owners, centers, native geometry and construction intervals remain unknown. TVA is the reporting sponsor. Public proposed polylines have scope/status mismatches and are not converted to centers."
+      ],
+      "nextTask": "F27; resolve missing current asset-level scope and native geographic/owner evidence",
+      "sourceStateCounts": {
+        "AL": 8,
+        "KY": 3,
+        "MS": 9,
+        "NC": 1,
+        "TN": 16
+      },
+      "unallocatedStateRecords": 3,
+      "stateCountMeaning": "Exact single-state project text only; compound/unsupplied labels remain unallocated. Source-footprint index is not verified project geography."
+    },
+    {
+      "sourceKey": "mp-cuc-irp",
+      "editionId": "2025-03-27",
+      "editionPublishedAt": null,
+      "status": "imported-complete-contextual-scope",
+      "inventoryScope": "Ten modeled recommended-reinforcement rows in Table45. Separate aggressive-generation alternatives, existing assets and narrative SCADA work are supplemental, not extra adopted projects.",
+      "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
+      "recordKind": "10 planning-context",
+      "transmissionProjectRecords": 0,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2025-03-27",
+      "importedRecords": 10,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 10,
+        "milestone": 10,
+        "constructionWindow": 10,
+        "status": 10,
+        "voltage": 4,
+        "evidencedOwner": 10
+      },
+      "rawSourceRows": 10,
+      "excludedRows": 0,
+      "exclusions": [],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/mp-cuc-irp/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/mp-cuc-irp/row-ledger.json",
+      "publicInventoryDenominator": 10,
+      "blockers": [
+        "These are bounded public contextual inventories, not complete CNMI planned-transmission coverage or distinct engineering-project counts.",
+        "All service/need dates and construction windows are unknown. Fiscal budgets and model assumptions do not supply event dates.",
+        "Publisher, operator and existing-network ownership do not establish row-specific ownership of proposed assets.",
+        "No native project coordinates, CRS or accuracy were qualified. Island/terminal text and modeled lengths do not supply centers.",
+        "A public asset-level implementation register with adopted work, current lifecycle and geographic evidence remains missing.",
+        "All ten recommendations are planning-context with unknown lifecycle; no construction approval or transmission role is established.",
+        "All seven printed Table25 aggressive-scenario rows are separately accounted; its repeated Naftan minimum row is not another option/project.",
+        "Rota row9 uses a 15 kV model line type and a 13.8 kV terminal; proposed line operating voltage is unknown.",
+        "The 2025-03-27 cover establishes the source edition, not a separately verified publication day or current project status.",
+        "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; resolve missing current asset-level scope and native geographic/owner evidence",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 10,
+      "stateCountMeaning": "Exact single-state project text only; compound/unsupplied labels remain unallocated. Source-footprint index is not verified project geography."
+    },
+    {
+      "sourceKey": "mp-cuc-ccr",
+      "editionId": "fy2025-2025-10",
+      "editionPublishedAt": null,
+      "status": "imported-complete-contextual-scope",
+      "inventoryScope": "Twenty-six power-work bullets on printed page4; eight useful contextual grid entries retained and eighteen generation, completed, operating, civil, vehicle or broad-study entries excluded. Page2 supplements the same entries.",
+      "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
+      "recordKind": "3 planning-context, 5 capital-project-context",
+      "transmissionProjectRecords": 0,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2025-10",
+      "importedRecords": 8,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 8,
+        "milestone": 8,
+        "constructionWindow": 8,
+        "status": 4,
+        "voltage": 8,
+        "evidencedOwner": 8
+      },
+      "rawSourceRows": 26,
+      "excludedRows": 18,
+      "exclusions": [
+        {
+          "reason": "broad-planning-study",
+          "count": 1
+        },
+        {
+          "reason": "building-generation-storage",
+          "count": 1
+        },
+        {
+          "reason": "completed-generation",
+          "count": 1
+        },
+        {
+          "reason": "completed-generation-interconnection",
+          "count": 1
+        },
+        {
+          "reason": "completed-interconnection-policy",
+          "count": 1
+        },
+        {
+          "reason": "completed-maintenance",
+          "count": 1
+        },
+        {
+          "reason": "completed-study",
+          "count": 1
+        },
+        {
+          "reason": "completed-vehicle-procurement",
+          "count": 1
+        },
+        {
+          "reason": "environmental-investigation",
+          "count": 1
+        },
+        {
+          "reason": "fuel-pipeline",
+          "count": 1
+        },
+        {
+          "reason": "generation-controls",
+          "count": 1
+        },
+        {
+          "reason": "generation-storage-procurement",
+          "count": 1
+        },
+        {
+          "reason": "operating-compliance",
+          "count": 1
+        },
+        {
+          "reason": "operating-vegetation",
+          "count": 1
+        },
+        {
+          "reason": "power-plant-civil-work",
+          "count": 1
+        },
+        {
+          "reason": "standalone-storage",
+          "count": 1
+        },
+        {
+          "reason": "vehicle-grant",
+          "count": 1
+        },
+        {
+          "reason": "workshop-building",
+          "count": 1
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/mp-cuc-ccr/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/mp-cuc-ccr/row-ledger.json",
+      "publicInventoryDenominator": 8,
+      "blockers": [
+        "These are bounded public contextual inventories, not complete CNMI planned-transmission coverage or distinct engineering-project counts.",
+        "All service/need dates and construction windows are unknown. Fiscal budgets and model assumptions do not supply event dates.",
+        "Publisher, operator and existing-network ownership do not establish row-specific ownership of proposed assets.",
+        "No native project coordinates, CRS or accuracy were qualified. Island/terminal text and modeled lengths do not supply centers.",
+        "A public asset-level implementation register with adopted work, current lifecycle and geographic evidence remains missing.",
+        "Named physical bullets6/8/16/17/18 are capital-project-context; broad bullets5/19/20 remain planning-context. None is transmission-qualified.",
+        "Four retained entries are planned; four retain unknown lifecycle. Design completion, a funding award or procurement does not establish construction approval.",
+        "Tinian/Rota bullet16 and multi-island programs remain single source entries without invented child assets.",
+        "The publication and lifecycle evidence is October2025; no publication day or service milestone is invented.",
+        "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; resolve missing current asset-level scope and native geographic/owner evidence",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 8,
+      "stateCountMeaning": "Exact single-state project text only; compound/unsupplied labels remain unallocated. Source-footprint index is not verified project geography."
+    },
+    {
+      "sourceKey": "vi-wapa-recovery",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "All24 named packages in PDF pages6–8: four island pole packages, three substations and17 underground entries; five explicitly completed packages excluded.",
+      "geographicScope": "Partial multi-island WAPA recovery observations: St.Thomas, St.John, St.Croix and completed Water Island work.",
+      "recordKind": "18 capital-project-context, 1 transmission-project",
+      "transmissionProjectRecords": 1,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "August 2023 source evidence or historical snapshot observed September 30, 2026",
+      "importedRecords": 19,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 19,
+        "milestone": 15,
+        "constructionWindow": 19,
+        "status": 2,
+        "voltage": 19,
+        "evidencedOwner": 19
+      },
+      "rawSourceRows": 24,
+      "excludedRows": 5,
+      "exclusions": [
+        {
+          "reason": "Explicitly completed package; no remaining scope identified in this source.",
+          "count": 1
+        },
+        {
+          "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+          "count": 4
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/vi-wapa-recovery/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/vi-wapa-recovery/row-ledger.json",
+      "publicInventoryDenominator": 19,
+      "blockers": [
+        "These source observations are not a current complete Virgin Islands project register or a count of unique engineering assets.",
+        "WAPA is publisher/operator context; no per-package sole owner evidence is established. Contractors and funding agencies are not owners.",
+        "All normalized voltages, coordinates/native geometry, construction-start days and construction intervals remain unknown. Undergrounding alone is not a transmission role.",
+        "Feeder/circuit labels are asset references, not engineering project IDs. Source-locator identity preserves named packages and island distinctions; compound work is not split.",
+        "No keyed crosswalk proves equivalence between historical recovery entries and newer upgrades. Related names are not merged, and affected feeder lists are not projects.",
+        "The linked historical PDF filename suggests2023 but does not verify publication. Only page6 explicitly dates facts to August2023; pages7–8 use September30,2026 snapshot-observed meaning, never a2026 status update.",
+        "Historical target ends are project-completion forecasts, not in-service dates or evidence of completion today. Invalid11/31/2023 stays unknown with raw evidence.",
+        "Project-status percentages on page7 do not establish physical construction stage. Design-RFP and project starts are not construction starts.",
+        "Four completed underground packages and the completed Water Island pole package are excluded. Generation/storage, water, systems and training elsewhere in the deck are outside the selected pages6–8."
+      ],
+      "nextTask": "F27; resolve missing current asset-level scope and native geographic/owner evidence",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 19,
+      "stateCountMeaning": "Exact single-state project text only; compound/unsupplied labels remain unallocated. Source-footprint index is not verified project geography."
+    },
+    {
+      "sourceKey": "vi-wapa-upgrades",
+      "editionId": "2026-07-07-system-upgrades",
+      "editionPublishedAt": "2026-07-07",
+      "status": "imported-complete-featured-subset",
+      "inventoryScope": "Both named remaining-work descriptions in the July7,2026 release; outage-affected feeders and old assets are not additional projects.",
+      "geographicScope": "Two works serving eastern St.Thomas and St.John; affected areas are not site geometry.",
+      "recordKind": "1 transmission-project, 1 capital-project-context",
+      "transmissionProjectRecords": 1,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-07-07",
+      "importedRecords": 2,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 2,
+        "milestone": 2,
+        "constructionWindow": 2,
+        "status": 0,
+        "voltage": 2,
+        "evidencedOwner": 2
+      },
+      "rawSourceRows": 2,
+      "excludedRows": 0,
+      "exclusions": [],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/vi-wapa-upgrades/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/vi-wapa-upgrades/row-ledger.json",
+      "publicInventoryDenominator": 2,
+      "blockers": [
+        "These source observations are not a current complete Virgin Islands project register or a count of unique engineering assets.",
+        "WAPA is publisher/operator context; no per-package sole owner evidence is established. Contractors and funding agencies are not owners.",
+        "All normalized voltages, coordinates/native geometry, construction-start days and construction intervals remain unknown. Undergrounding alone is not a transmission role.",
+        "Feeder/circuit labels are asset references, not engineering project IDs. Source-locator identity preserves named packages and island distinctions; compound work is not split.",
+        "No keyed crosswalk proves equivalence between historical recovery entries and newer upgrades. Related names are not merged, and affected feeder lists are not projects.",
+        "July7,2026 is the dated release/source edition, not a confirmation that work was completed later.",
+        "The July13/14 outage schedule applies to both named works without assigning a per-project energization/completion day. Shared outage nights remain evidence, not construction windows."
+      ],
+      "nextTask": "F27; resolve missing current asset-level scope and native geographic/owner evidence",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 2,
+      "stateCountMeaning": "Exact single-state project text only; compound/unsupplied labels remain unallocated. Source-footprint index is not verified project geography."
     }
   ],
   "jurisdictions": [
     {
       "code": "AL",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "tva-public"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "tva-public": 8
+      }
     },
     {
       "code": "AK",
@@ -1394,13 +1735,15 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "pjm-rtep",
-        "miso-mtep"
+        "miso-mtep",
+        "tva-public"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
         "pjm-rtep": 184,
-        "miso-mtep": 22
+        "miso-mtep": 22,
+        "tva-public": 3
       }
     },
     {
@@ -1483,12 +1826,14 @@
       "code": "MS",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "miso-mtep"
+        "miso-mtep",
+        "tva-public"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "miso-mtep": 85
+        "miso-mtep": 85,
+        "tva-public": 9
       }
     },
     {
@@ -1595,12 +1940,14 @@
       "code": "NC",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "tva-public"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 28
+        "pjm-rtep": 28,
+        "tva-public": 1
       }
     },
     {
@@ -1708,12 +2055,14 @@
       "code": "TN",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "pjm-rtep"
+        "pjm-rtep",
+        "tva-public"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "pjm-rtep": 2
+        "pjm-rtep": 2,
+        "tva-public": 16
       }
     },
     {
@@ -1855,11 +2204,16 @@
     },
     {
       "code": "MP",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "assessed-context-only",
+      "sourceKeys": [
+        "mp-cuc-irp",
+        "mp-cuc-ccr"
+      ],
       "territory": true,
       "inventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "transmissionScopeEstablished": false,
+      "remainingInput": "Public asset-level implementation inventory establishing adopted work and transmission/distribution role; contextual records do not prove zero transmission projects."
     },
     {
       "code": "PR",
@@ -1873,8 +2227,11 @@
     },
     {
       "code": "VI",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "vi-wapa-recovery",
+        "vi-wapa-upgrades"
+      ],
       "territory": true,
       "inventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -2073,40 +2430,60 @@
     },
     {
       "sourceKey": "tva-public",
-      "status": "qualified-production-in-progress",
+      "status": "imported-complete-featured-subset",
       "sourceUrl": "https://www.tva.com/energy/transmission/transmission-system-projects",
-      "importedRecords": 0,
-      "locatedRecords": null,
-      "missingInput": "Connected sample and full40-page inventory; native locations and complete engineering scope remain absent",
+      "importedRecords": 40,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complete/current asset-level register or source identity crosswalk remain absent; declared public scope complete",
       "owner": "ui",
-      "task": "F27-TVA-I"
+      "task": "F27"
     },
     {
-      "sourceKey": "mp-cuc",
-      "status": "qualification-in-progress",
-      "sourceUrl": "https://www.cucgov.org/",
-      "importedRecords": 0,
-      "locatedRecords": null,
-      "missingInput": "Accepted public named-work scope, lifecycle and transmission/distribution role",
+      "sourceKey": "mp-cuc-irp",
+      "status": "imported-complete-contextual-scope",
+      "sourceUrl": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf",
+      "importedRecords": 10,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complete/current asset-level register or source identity crosswalk remain absent; declared public scope complete",
       "owner": "core",
-      "task": "F27-MP-Q"
+      "task": "F27"
     },
     {
-      "sourceKey": "vi-wapa",
-      "status": "qualification-in-progress",
-      "sourceUrl": "https://www.viwapa.vi/projects",
-      "importedRecords": 0,
-      "locatedRecords": null,
-      "missingInput": "Accepted public named-work scope, lifecycle and transmission/distribution role",
+      "sourceKey": "mp-cuc-ccr",
+      "status": "imported-complete-contextual-scope",
+      "sourceUrl": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf",
+      "importedRecords": 8,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complete/current asset-level register or source identity crosswalk remain absent; declared public scope complete",
+      "owner": "core",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "vi-wapa-recovery",
+      "status": "imported-full-declared-public-scope",
+      "sourceUrl": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0",
+      "importedRecords": 19,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complete/current asset-level register or source identity crosswalk remain absent; declared public scope complete",
       "owner": "source_discovery",
-      "task": "F27-VI-Q"
+      "task": "F27"
+    },
+    {
+      "sourceKey": "vi-wapa-upgrades",
+      "status": "imported-complete-featured-subset",
+      "sourceUrl": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john",
+      "importedRecords": 2,
+      "locatedRecords": 0,
+      "missingInput": "Native locations, evidenced owners and complete/current asset-level register or source identity crosswalk remain absent; declared public scope complete",
+      "owner": "source_discovery",
+      "task": "F27"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National project denominator is unknown. Fifteen full declared regional inventories and three complete featured/funding subsets are imported; source units differ and no cross-source deduplication is claimed. TVA production and remaining territory qualifications are active. Statewide, territory-wide and national completeness are not established.",
+    "National denominator remains unknown. Sixteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Different source units and uncertain cross-source identity prevent a distinct-engineering-project total. CNMI has assessed contextual evidence, not established transmission-project coverage. SERTP source markings remain unresolved. Statewide, territory-wide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
   ],
@@ -2339,13 +2716,61 @@
       "sourceKey": "tva-public",
       "editionId": "observed-2026-09-30",
       "reportingGroup": "tva-public",
-      "status": "qualified-production-in-progress",
+      "status": "imported-complete-featured-subset",
       "sourceRows": 41,
       "proposedRetainedRecords": 40,
       "proposedExcludedRows": 1,
       "locatedRecords": 0,
-      "scope": "Captured public engagement index:40 unique project pages plus one duplicate Appalachia state placement; not a full TVA engineering register. Hashes identify derived public text captures, not original HTML.",
+      "scope": "All 41 current-index placements: 40 unique public transmission page work units and one excluded duplicate Appalachia placement. No claim of utility-wide or state-wide capital-inventory completeness.",
       "contract": "specs/features/F27-us-regional-expansion/tva-public/spec.md"
+    },
+    {
+      "sourceKey": "mp-cuc-irp",
+      "editionId": "2025-03-27",
+      "reportingGroup": "mp-cuc-irp",
+      "status": "imported-complete-contextual-scope",
+      "sourceRows": 10,
+      "proposedRetainedRecords": 10,
+      "proposedExcludedRows": 0,
+      "locatedRecords": 0,
+      "scope": "Ten modeled recommended-reinforcement rows in Table45. Separate aggressive-generation alternatives, existing assets and narrative SCADA work are supplemental, not extra adopted projects.",
+      "contract": "specs/features/F27-us-regional-expansion/mp-cuc/spec.md"
+    },
+    {
+      "sourceKey": "mp-cuc-ccr",
+      "editionId": "fy2025-2025-10",
+      "reportingGroup": "mp-cuc-ccr",
+      "status": "imported-complete-contextual-scope",
+      "sourceRows": 26,
+      "proposedRetainedRecords": 8,
+      "proposedExcludedRows": 18,
+      "locatedRecords": 0,
+      "scope": "Twenty-six power-work bullets on printed page4; eight useful contextual grid entries retained and eighteen generation, completed, operating, civil, vehicle or broad-study entries excluded. Page2 supplements the same entries.",
+      "contract": "specs/features/F27-us-regional-expansion/mp-cuc/spec.md"
+    },
+    {
+      "sourceKey": "vi-wapa-recovery",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "reportingGroup": "vi-wapa-recovery",
+      "status": "imported-full-declared-public-scope",
+      "sourceRows": 24,
+      "proposedRetainedRecords": 19,
+      "proposedExcludedRows": 5,
+      "locatedRecords": 0,
+      "scope": "All24 named packages in PDF pages6–8: four island pole packages, three substations and17 underground entries; five explicitly completed packages excluded.",
+      "contract": "specs/features/F27-us-regional-expansion/vi-wapa/spec.md"
+    },
+    {
+      "sourceKey": "vi-wapa-upgrades",
+      "editionId": "2026-07-07-system-upgrades",
+      "reportingGroup": "vi-wapa-upgrades",
+      "status": "imported-complete-featured-subset",
+      "sourceRows": 2,
+      "proposedRetainedRecords": 2,
+      "proposedExcludedRows": 0,
+      "locatedRecords": 0,
+      "scope": "Both named remaining-work descriptions in the July7,2026 release; outage-affected feeders and old assets are not additional projects.",
+      "contract": "specs/features/F27-us-regional-expansion/vi-wapa/spec.md"
     }
   ]
 }

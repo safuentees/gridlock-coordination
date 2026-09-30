@@ -12,7 +12,7 @@ Product copy and icon-control rules are maintained in `app/src/AGENTS.md`. Share
 ## Authoritative contract
 `app/src/domain/schema.ts` owns runtime Dataset/Project validation, domain types and analysis options. `app/src/domain/example.ts` is the representative contract record. Coordinator owns these files, package/dependency files, entry point, `app/src/index.css`, shared `components/ui/*`, `data/provider.ts`, specs and integration receipts. UI owns App after F00.
 
-`loadDataset(mode: 'real'|'demo'): Dataset` returns validated records or throws, never falls back from real to demo. Real producer owns `app/src/data/real/*` and `scripts/ingest/*`; UI owns `app/src/data/demo/*`. Both return the same Dataset. UI uses `analyzeProjects(projects, options): AnalysisResult` from `app/src/core/index.ts`; core worker alone implements distance, ranking, date comparison and impact. No UI or ingestion copies of these calculations.
+`loadDataset(mode: 'real'|'demo'): Promise<Dataset>` resolves validated records or rejects, never falls back from real to demo. Real producer owns `app/src/data/real/*` and `scripts/ingest/*`; UI owns `app/src/data/demo/*`. Both return the same Dataset. UI uses `analyzeProjects(projects, options): AnalysisResult` from `app/src/core/index.ts`; core worker alone implements distance, ranking, date comparison and impact. No UI or ingestion copies of these calculations.
 
 ## Field meaning
 - `id` is stable source-based identity, `sourceId` native project ID, `utilityId` reporting/filing group (`desc` or `gpc`), `sponsor` separately preserves listed owner/sponsor or null. Reporting-group comparison does not guarantee different asset owners.

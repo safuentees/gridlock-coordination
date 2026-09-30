@@ -20,3 +20,7 @@ CCR group `mp-cuc-ccr`, edition `fy2025-2025-10`, publication day unknown; lifec
 Both sources retain unknown service/need dates, build windows, asset owners and native locations/geometry. Preserve island/terminal text as source context; sourceState can remain null. Do not infer current status, ownership or transmission role from operator, voltage or elapsed forecasts. The specific missing input is an asset-level public implementation register with adopted work, lifecycle and geographic evidence.
 
 First emit IRP rows 3/7/9 and CCR bullets 6/16/17: ledgers ten = three imported + seven pending; 26 = three imported + eighteen excluded + five pending. Stop for provider connection, then complete ten plus eight, preserving sample records/IDs, zero pending/failed, separate manifests/ledgers and measured compact/formatted payloads.
+
+## Completed accepted scope
+
+Six samples connected at 9777ab3 before full ten IRP/eight CCR records; 36 rows reconcile to eighteen imported and eighteen exclusions. Context only; transmission scope remains unestablished. PR125 integrates the complete scope with zero pending/failed rows. Coordinator's sole production build and representative case passed at 5fff2e6, preserving every connected sample value/ID, all prior records and local revisions. Full-source completion does not establish regional or national completeness. No worker or visual checks.
