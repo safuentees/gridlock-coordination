@@ -21,7 +21,7 @@ export function projectLayers({ projects, connections, focusIds, candidateIds, s
     new PathLayer<MapConnection, PathStyleExtensionProps<MapConnection>>({
       id: "project-connections",
       data: connections,
-      getPath: (connection) => connection.positions.map(([lat, lon]) => [lon, lat]),
+      getPath: (connection) => connection.positions.map(([lat, lon]): [number, number] => [lon, lat]),
       getColor: [82, 82, 82, selectedPair ? 230 : 77],
       getWidth: selectedPair ? 3 : 1.5,
       widthUnits: "pixels",
