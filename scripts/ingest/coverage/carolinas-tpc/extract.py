@@ -42,8 +42,12 @@ def project(row):
     if row['sourceId'] == 'W210482':
         refs.extend([update_ref('PDF/printed p.3, W210482 duplicate-removal change and p.9 surviving row'),
                      plan_ref('Appendix C, PDF pp.64,67 / printed pp.62,65: repeated W210482 before duplicate removal')])
-    if row['sourceId'] == 'MVSTDEC03':
+    if row['sourceId'] in ('MVSTDEC02', 'MVSTDEP01', 'MVSTDEC03'):
         refs.append(update_ref('PDF/printed p.17, note below MVST table: conceptual options unapproved and excluded from update approval totals'))
+    if row['sourceId'] == 'W200034':
+        refs.append(update_ref('PDF/printed p.4, W230387 explicitly combined into W200034'))
+    if row['sourceId'] == 'MVSTDEC01':
+        refs.append(update_ref('PDF/printed p.2, CTPCDEC02 moved to MVST without an explicit destination ID crosswalk'))
     notes = [
         f"Source category: {row['section']}. Issue resolved: {raw['issueResolved']}",
         f"Raw source status: {raw['status']}. Status is as of the August 2026 source edition, not the retrieval date.",
@@ -112,15 +116,15 @@ def main():
         'publishedOn': CATALOG['publishedOn'], 'retrievedOn': CATALOG['retrievedOn'],
         'source': update_ref(CATALOG['sourceLocator']), 'sha256': CATALOG['sourceSha256'],
         'geographicScope': 'DEC/DEP participant areas in North Carolina and South Carolina; no per-row jurisdiction inferred.',
-        'inventoryScope': 'All120 Project ID rows in August2026 update pp.8–17:98 reliability,17 public policy,5 MVST. Retain89 transmission and9 conceptual planning-context observations; exclude17 In-Service and5 Removed rows.',
+        'inventoryScope': 'All 120 Project ID rows in August 2026 update pp.8–17: 98 reliability, 17 public policy, five MVST. Retain 89 transmission and nine conceptual planning-context observations; exclude 17 In-Service and five Removed rows.',
         'scope': args.scope, 'counts': counts,
         'exclusions': [{'reason': reason, 'count': count} for reason, count in exclusions.items()],
         'limitations': [
             'The complete declared update scope is not all North/South Carolina projects. No extra monetary threshold is applied; prior plan tables, change summaries, models and alternative lists are not additional rows.',
-            'Publication day is the official index posting date August14,2026; document status has August2026 precision. Filename August13 is not a row update date.',
+            'Publication day is the official index posting date August 14, 2026; document status has August 2026 precision. Filename August 13 is not a row update date.',
             'Underway spans budget provision through some construction and cannot establish physical construction. It and Planned normalize to planned; Conceptual is planning-context/unknown, never an approved project.',
-            'June1/December1 represent peak-season service targets, not precise days. Normalized dates retain only the displayed calendar year; raw targets remain visible. Winter crosses years and no interval is inferred.',
-            'Non-placeholder E200161 June30,2026 is a reported estimated day, despite the still-Underway status; no completion is inferred from elapsed forecasts.',
+            'June 1/December 1 represent peak-season service targets, not precise days. Normalized dates retain only the displayed calendar year; raw targets remain visible. Winter crosses years and no interval is inferred.',
+            'Non-placeholder E200161 June 30, 2026 is a reported estimated day, despite the still-Underway status; no completion is inferred from elapsed forecasts.',
             'DEC/DEP singular row tokens identify source-scoped responsible equipment owners. Composite DEC/DEP remains null owner; no global owner registry or cross-source corporate distinction is established.',
             'All locations, native geometry, construction windows and row-update days remain unknown. Voltage derives only from explicitly named kV scope; missing values stay empty.',
             'Nine Conceptual entries remain contextual; three MVST concepts are explicitly unapproved and excluded from approved update cost/schedule totals.',
