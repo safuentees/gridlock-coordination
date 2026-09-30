@@ -82,3 +82,5 @@ export function analyzeProjects(projects: Project[], options: AnalysisOptions = 
   opportunities.forEach((opportunity, index) => { opportunity.rank = index + 1 })
   return { opportunities, summary }
 }
+
+export { estimateImpact } from "./impact"
