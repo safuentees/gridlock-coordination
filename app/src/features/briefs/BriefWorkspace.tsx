@@ -15,6 +15,7 @@ import type { AnalysisOptions, DataMode, Dataset, ImpactInputs, Opportunity } fr
 import { ProjectEvidence } from "@/features/explorer/ProjectDetails"
 import { timelineLabels } from "@/features/explorer/format"
 import { briefText, createBrief, downloadBrief } from "./export"
+import { RestoreBrief } from "./RestoreBrief"
 import { EMPTY_INVESTIGATION, investigationSchema, readSaved, REVIEW_STATES, savedAvailability, snapshotOpportunity, writeSaved, type Investigation, type ReviewState, type SavedOpportunity } from "./storage"
 
 export interface ScenarioSaveRequest {
@@ -63,6 +64,10 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
   const activeIds = useMemo(() => new Set(opportunities.map((pair) => pair.id)), [opportunities])
   const availability = useMemo(() => Object.fromEntries(store.records.map((record) => [record.id, savedAvailability(record, projectsById, activeIds)])), [store.records, projectsById, activeIds])
   const compared = store.records.filter((record) => compareIds.includes(record.id))
+  const dirtyIds = useMemo(() => new Set(Object.entries(drafts).filter(([id, draft]) => {
+    const saved = store.records.find(record => record.id === id)
+    return !saved || isDirty(saved, draft)
+  }).map(([id]) => id)), [drafts, store.records])
   const unsavedCompared = compared.some(record => drafts[record.id] && isDirty(record, drafts[record.id]))
   const editing = store.records.find((record) => record.id === editingId) ?? null
   const currentSaved = store.records.find((record) => record.id === selectedOpportunity?.id)
@@ -136,6 +141,13 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
     downloadBrief(format === "txt" ? briefText(brief) : JSON.stringify(brief, null, 2), dataset.mode, format)
     setNotice(`Prepared ${format.toUpperCase()} brief for ${compared.length} saved ${compared.length === 1 ? "candidate" : "candidates"}.`)
   }
+  function restoreRecords(records: SavedOpportunity[]) {
+    commit(records)
+    // Clean cached drafts must not hide a restored replacement; dirty drafts stay untouched.
+    setDrafts(previous => Object.fromEntries(Object.entries(previous).filter(([id]) => dirtyIds.has(id))))
+    setEditingId(previous => previous ?? records[0]?.id ?? null)
+    setNotice("Restored findings are available in Saved.")
+  }
   function showCurrent(id: string) { onShowCurrent(id); setOpen(false) }
 
   return <Dialog open={open} onOpenChange={setOpen}>
@@ -155,7 +167,7 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
         {removed && <div className="flex min-w-0 flex-wrap items-center gap-2"><span className="min-w-0 break-words text-xs text-muted-foreground">Removed: {removed.projects[0].name} / {removed.projects[1].name}</span><Button type="button" variant="outline" size="sm" onClick={undoRemove}>Undo removal</Button></div>}
       </div>}
       <Tabs value={tab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="shrink-0"><TabsTrigger value="saved">Saved ({store.records.length})</TabsTrigger><TabsTrigger value="compare">Compare ({compared.length})</TabsTrigger></TabsList>
+        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="saved">Saved ({store.records.length})</TabsTrigger><TabsTrigger value="compare">Compare ({compared.length})</TabsTrigger><TabsTrigger value="restore">Restore</TabsTrigger></TabsList>
         <TabsContent value="saved" className="min-h-0 min-w-0 overflow-hidden data-[state=active]:flex">
           {store.records.length ? <div className="grid min-h-0 min-w-0 flex-1 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:grid-rows-1">
             <section aria-label="Saved candidates" className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border">
@@ -177,6 +189,7 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
               record={editing}
               draft={drafts[editing.id] ?? draftFrom(editing)}
               availability={availability[editing.id]}
+              currentOptions={options}
               canShowCurrent={activeIds.has(editing.id)}
               onDraftChange={(draft) => setDrafts((previous) => ({ ...previous, [editing.id]: draft }))}
               onSave={(draft) => updateReview(editing, draft)}
@@ -204,6 +217,9 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
             </TableRow>)}</TableBody></Table>
           </div> : <div className="min-h-0 flex-1 space-y-3 overflow-auto p-4"><p className="text-sm text-muted-foreground">Select saved candidates to compare and export.</p><Button type="button" variant="outline" onClick={() => setTab("saved")}>Choose saved candidates</Button></div>}
         </TabsContent>
+        <TabsContent forceMount value="restore" inert={tab !== "restore"} className={tab === "restore" ? "min-h-0 min-w-0 overflow-hidden" : "hidden"}>
+          <RestoreBrief mode={dataset.mode} records={store.records} dirtyIds={dirtyIds} onRestore={restoreRecords} />
+        </TabsContent>
       </Tabs>
       <div className="flex shrink-0 flex-wrap items-center gap-2 border-t pt-4">
         <Badge variant="secondary">{compared.length} selected</Badge>
@@ -215,10 +231,11 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
   </Dialog>
 }
 
-function SavedReview({ record, draft, availability, canShowCurrent, onDraftChange, onSave, onShowCurrent, onRemove }: {
+function SavedReview({ record, draft, availability, currentOptions, canShowCurrent, onDraftChange, onSave, onShowCurrent, onRemove }: {
   record: SavedOpportunity
   draft: ReviewDraft
   availability: string
+  currentOptions: AnalysisOptions
   canShowCurrent: boolean
   onDraftChange: (draft: ReviewDraft) => void
   onSave: (draft: ReviewDraft) => void
@@ -227,11 +244,15 @@ function SavedReview({ record, draft, availability, canShowCurrent, onDraftChang
 }) {
   const fieldId = useId()
   const dirty = isDirty(record, draft)
+  const differentScenario = record.options.radiusMiles !== currentOptions.radiusMiles
+    || record.options.maxDateGapDays !== currentOptions.maxDateGapDays
+    || record.options.includeUnverified !== currentOptions.includeUnverified
   function submit(event: FormEvent<HTMLFormElement>) { event.preventDefault(); onSave(draft) }
   return <form onSubmit={submit} className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border">
     <div className="flex shrink-0 flex-wrap items-center gap-2 border-b p-3"><h3 className="mr-auto font-medium">Review candidate</h3><Button type="button" variant="ghost" size="sm" disabled={!canShowCurrent} onClick={onShowCurrent}>Show current</Button><Button type="button" variant="ghost" size="sm" onClick={onRemove}>Remove</Button></div>
     <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto p-4">
       <div><p className="break-words text-sm font-medium">{record.projects[0].name} / {record.projects[1].name}</p><p className="mt-1 break-words text-xs text-muted-foreground">{availability}</p></div>
+      {differentScenario && <p className="text-xs text-muted-foreground">Saved analysis settings differ from the current scenario: &lt;{record.options.radiusMiles} mi; {record.options.maxDateGapDays === null ? "any milestone gap" : `≤${record.options.maxDateGapDays} days`}; {record.options.includeUnverified ? "unverified locations included" : "confirmed locations required"}.</p>}
       <div className="space-y-2"><Label htmlFor={`${fieldId}-state`}>Review state</Label><Select value={draft.reviewState} onValueChange={(value) => onDraftChange({ ...draft, reviewState: value as ReviewState })}><SelectTrigger id={`${fieldId}-state`}><SelectValue /></SelectTrigger><SelectContent>{REVIEW_STATES.map((state) => <SelectItem value={state} key={state}>{state}</SelectItem>)}</SelectContent></Select></div>
       <fieldset className="space-y-3">
         <legend className="mb-3 font-medium">Investigation (optional)</legend>
