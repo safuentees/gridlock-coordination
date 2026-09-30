@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Reorganize Gridlock into a viewport-sized workspace with internal panel scrolling, persistent selection details and labeled secondary dialogs.
+
 ## 0.1.0 — 2026-09-30
 
 - Add an interactive map, searchable inventory and ranked cross-filing coordination candidates with source evidence.

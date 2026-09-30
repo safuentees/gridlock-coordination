@@ -81,7 +81,7 @@ export function Explorer({ dataset }: { dataset: Dataset }) {
     <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-4 overflow-hidden">
       <Card className="min-h-0 min-w-0"><CardContent className="flex min-h-0 min-w-0 flex-1 flex-col">
         <Tabs value={mainView} onValueChange={setMainView} className="min-h-0 min-w-0 flex-1">
-          <TabsList className="max-w-full shrink-0 overflow-x-auto"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">Inventory ({projects.length})</TabsTrigger><TabsTrigger value="map">Map</TabsTrigger><TabsTrigger value="timeline">Timeline</TabsTrigger></TabsList>
+          <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">Inventory ({projects.length})</TabsTrigger><TabsTrigger value="map">Map</TabsTrigger><TabsTrigger value="timeline">Timeline</TabsTrigger></TabsList>
           <TabsContent forceMount value="opportunities" className={panelClass(mainView === "opportunities")}>
             <p className="shrink-0 text-xs text-muted-foreground">Nearest centers rank first. Each candidate includes at least one project matching the filters.</p>
             <div className="min-h-0 min-w-0 flex-1 overflow-auto" tabIndex={0} role="region" aria-label="Ranked candidates">

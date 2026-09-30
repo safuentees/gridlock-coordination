@@ -26,15 +26,16 @@ Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inve
 | F06 | [Save comparisons and coordination briefs](features/F06-coordination-brief/spec.md) | ui | 2 | F05 | `app/src/App.tsx`, `app/src/features/briefs/`, `app/src/features/explorer/Explorer.tsx` |
 | F07 | [Transparent shared-corridor scenario](features/F07-impact-estimate/spec.md) | core | 3 | F02 | `app/src/core/`, `app/src/features/impact/` |
 | F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F00 | `app/src/features/import/`, `app/src/data/import.ts`, `app/src/App.tsx` (agreed composition) |
+| F09 | [Viewport-sized workspace](features/F09-viewport-workspace/spec.md) | coordinator + ui + workspace-briefs | 4 | F03, F05–F08 | `App.tsx`, `index.css`, shared dialog, explorer/scenarios, brief presentation and import presentation |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Active workers
 
-No active implementation claims remain. F00–F08 and C01 are integrated; completion receipts are in `changes/`. Worker identities were `/root/source_discovery` (ingestion), `/root/core` and `/root/ui`. Their managed ingestion/core/ui worktrees remain available for reuse after preparation from current main. The coordinator's local development server runs from the primary checkout.
+F00–F09 are complete. F09 ownership was agreed before edits: coordinator owned the shared shell and dataset presentation (PR11); `/root/core` owned saved-review presentation (PR12); `/root/ui` owned explorer/scenario/map/detail panels (PR13). Coordinator's final handoff adds usage notes and leading-edge alignment for overflowing tabs. Existing data, calculations and storage/export semantics are preserved.
 
-No next approved feature is waiting. Proposed location verification, true route geometry and additional utility adapters remain in [backlog](backlog.md); they are not active assignments.
+The single coordinator build passed at 5bab886; see `changes/F09.md`. No visual or browser checks. Workers are idle with no further selected task. Additional utility adapters and verified route geometry remain proposals requiring selection; there are no implementation blockers for the completed scope.
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
