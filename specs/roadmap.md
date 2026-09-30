@@ -108,10 +108,10 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | [F27-APC-I](features/F27-us-regional-expansion/al-apc-doe/spec.md): three diagnostic records, then full six after connection. | Exact al-apc-doe producer/data folders and receipt only; no shared/map edits. Separate from the unresolved SERTP report. |
-| core | [F27-AEP-Q](features/F27-us-regional-expansion/aep-doe/spec.md): qualify DOE’s eight-entry AEP review index. | Exact aep-doe qualification/sample/receipt only; no runtime/shared/map/core changes. |
+| source_discovery / ingestion | [F27-GPC-I](features/F27-us-regional-expansion/ga-gpc-public/spec.md): six diagnostic records, then full ten after connection. APC six-record subset is integrated in the milestone branch. | Exact ga-gpc-public producer/data folders and receipt only; no shared/map edits. |
+| core | [F27-AEP-I](features/F27-us-regional-expansion/aep-doe/spec.md): four diagnostic records, then full eight after connection. | Exact aep-doe producer/data folders and receipt only; no shared/map/core-calculation changes. |
 | coordinator | PR143 integrated at df2de0a; accept next public source contracts and connect samples before full production. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
-| ui | [F27-GPC-Q](features/F27-us-regional-expansion/ga-gpc-public/spec.md): qualify Georgia Power’s ten-entry public catalog. | Exact ga-gpc-public qualification/sample/receipt only. Next [F27-COV1](features/F27-us-regional-expansion/source-coverage/spec.md) uses the committed helper and explicit Home/Outcomes/Readiness coverage-dialog handoff; map files stay unchanged. |
+| ui | [F27-COV1](features/F27-us-regional-expansion/source-coverage/spec.md): Source coverage dialog delivered in PR159; coordinator integration pending. | Exact coverage-dialog/Home/Outcomes/Readiness/receipt handoff only; map files stay unchanged. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 

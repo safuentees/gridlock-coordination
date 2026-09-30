@@ -9,7 +9,8 @@ Bound ordinary public-source research to 15 minutes. Enumerate all eight index e
 Use only explicitly supplied coordinate/geometry data with identity, role, CRS and accuracy limitations. Names, place descriptions and map view centers are not project centers. No map-image inference, geocoding, browser/visual work, access bypass or restricted/CEII material. Preserve native county/state/date precision and contradictions. No original documents or contact fields in Git/runtime.
 
 Completion: complete finite scope/disposition counts, six diagnostic source records (all retained if fewer), evidence locators/hashes and C2/C3 mapping—or exact missing public input. Coordinator acceptance precedes a small runtime batch, provider connection and full declared subset. Featured source completeness cannot establish AEP, statewide or national inventory completeness.
-# Accepted producer — F27-AEP-I
+
+## Accepted producer — F27-AEP-I
 
 Coordinator accepts PR158's eight named physical transmission scopes, zero exclusions, as a complete finite featured/funding-review subset. Source/group `aep-doe`, edition `review-index-snapshot-2026-09-30`, retrievedOn `2026-09-30`, publishedOn/sourceUpdatedOn null. Freeze `review-001` through `review-008` against the exact captured document identities, source-locator basis, runtime prefix `aep-doe:` and no edition in identity. Future index reorderings need an explicit crosswalk; consultation codes, similar PJM/ERCOT names and affiliate labels cannot merge records or transfer dates/owners.
 

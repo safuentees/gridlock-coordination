@@ -9,7 +9,8 @@ Bound the ordinary public source pass to 15 minutes. Enumerate all current index
 Compare any source-native IDs or explicit cross-references with the existing Georgia/Santee/CTPC observations. Record possible relationships without name-based merging, silent replacement or distinct-project counting. If only page slugs identify entries, freeze source-locator identities independent of edition and require future crosswalk review. Reconcile every index entry as retained/excluded/supporting with reasons. Keep contacts/personal fields out of normalized data. Do not fetch the conflicted SERTP report or bypass access restrictions.
 
 Completion: exact finite scope/count/disposition proposal, six cited diagnostic observations, original hashes and C2/C3 field mapping—or a precise missing public input. A qualification is not runtime completion. Coordinator accepts scope, connects a small real batch and dispatches full production separately. The historical filing remains immutable, and a public catalog is at most a featured subset with unknown utility/statewide denominator.
-# Accepted producer — F27-GPC-I
+
+## Accepted producer — F27-GPC-I
 
 Coordinator accepts PR157's ten-page observed catalog: six transmission projects and four capital-project contexts, zero exclusions. Source/group `ga-gpc-public`, edition `observed-2026-09-30`, retrievedOn `2026-09-30`, publishedOn/sourceUpdatedOn null. This is a complete featured subset, not statewide or utility-wide coverage. Freeze the ten page basenames as source-locator identities, prefix runtime IDs with `ga-gpc-public:`, and exclude edition from identity. Keep historical Georgia records separate; similar names do not authorize a crosswalk or inherited fields.
 
