@@ -1,0 +1,267 @@
+[
+  {
+    "sourceId": "2025-p055-t45-r01",
+    "sourceProjectName": "Saipan Naftan connection",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row1",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF52–53 / printed38–39, Table25; separate aggressive-generation alternatives",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-p055-t45-r02",
+    "sourceProjectName": "Saipan As Gonno connection",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row2",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF52–53 / printed38–39, Table25; separate aggressive-generation alternatives",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-p055-t45-r03",
+    "sourceProjectName": "Saipan Kalabera connections",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row3",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF52–53 / printed38–39, Table25; separate aggressive-generation alternatives",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r03"
+  },
+  {
+    "sourceId": "2025-p055-t45-r04",
+    "sourceProjectName": "Saipan Kiya 1 reinforcement",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row4",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-p055-t45-r05",
+    "sourceProjectName": "Saipan Feeder 2 reinforcement",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row5",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-p055-t45-r06",
+    "sourceProjectName": "Saipan Reactive support",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row6",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF67 / printed53, section4.7.1",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-p055-t45-r07",
+    "sourceProjectName": "Tinian Marpo Heights connection",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row7",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r07"
+  },
+  {
+    "sourceId": "2025-p055-t45-r08",
+    "sourceProjectName": "Tinian Reactive support",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row8",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF68 / printed54, section4.7.2",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  },
+  {
+    "sourceId": "2025-p055-t45-r09",
+    "sourceProjectName": "Rota PV/BESS network connection",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row9",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF59 / printed45, section4.2.3 Rota PF modelling",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "imported",
+    "projectId": "mp-cuc-irp:2025-p055-t45-r09"
+  },
+  {
+    "sourceId": "2025-p055-t45-r10",
+    "sourceProjectName": "Rota Reactive support",
+    "sources": [
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row10",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      },
+      {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF68 / printed54, section4.7.3",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+      }
+    ],
+    "recordKind": "planning-context",
+    "recordUnit": "upgrade",
+    "lifecycle": "unknown",
+    "sourceStatus": "Recommended network reinforcement in the IRP model",
+    "date": {
+      "value": null,
+      "precision": "unknown",
+      "kind": "unknown",
+      "label": "No committed in-service or need milestone supplied"
+    },
+    "disposition": "pending",
+    "reason": "Accepted retained entry; normalization awaits sample connection."
+  }
+]
