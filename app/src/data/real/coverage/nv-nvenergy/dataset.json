@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "mode": "real",
-  "title": "NV Energy 2026 Joint IRP — approved entries and construction requests — connection sample",
+  "title": "NV Energy 2026 Joint IRP — approved entries and construction requests — approved slice; requests pending",
   "generatedAt": "2026-09-30T10:36:00+00:00",
   "projects": [
     {
@@ -81,6 +81,305 @@
       }
     },
     {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-02",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-02",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Shaffer 345/69 kV substation",
+      "description": "Shaffer 345/69 kV substation. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        345,
+        69
+      ],
+      "date": {
+        "value": "2026-12-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 2 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 19-05003. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 3.1.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2026-12-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 2 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-03",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-03",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Dry Lake East",
+      "description": "Dry Lake East. Previously approved table entry; reported Active. Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context.",
+      "status": "Active",
+      "voltageKv": [],
+      "date": {
+        "value": "2026-12-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 3 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 4.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2026-12-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 3 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-04",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-04",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Libra",
+      "description": "Libra. Previously approved table entry; reported Active. Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context.",
+      "status": "Active",
+      "voltageKv": [],
+      "date": {
+        "value": "2027-12-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 4 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 10.7.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Resource-style name without physical asset scope in the approved table; retain transmission-associated capital context."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2027-12-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 4 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-05",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-05",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Corsac",
+      "description": "Corsac. Previously approved table entry; reported Active. Name does not establish the physical asset scope; retain transmission-associated capital context.",
+      "status": "Active",
+      "voltageKv": [],
+      "date": {
+        "value": "2030-01-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 5 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 2.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Name does not establish the physical asset scope; retain transmission-associated capital context."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2030-01-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 5 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
       "id": "nv-nvenergy:2026-05-06:tp-131:row-06",
       "utilityId": "nv-nvenergy",
       "sourceId": "2026-05-06:tp-131:row-06",
@@ -141,6 +440,466 @@
               {
                 "file": "NPC-SPPC-Volume-9.pdf",
                 "locator": "Figure TP-131; row 6 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-07",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-07",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Tolson Substation 230/138 KV Transformer #2",
+      "description": "Tolson Substation 230/138 KV Transformer #2. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        230,
+        138
+      ],
+      "date": {
+        "value": "2029-06-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 7 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 24.5.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2029-06-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 7 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-08",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-08",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Reid Gardner – Harry Allen 230- kV Line #3",
+      "description": "Reid Gardner – Harry Allen 230- kV Line #3. Previously approved table entry; reported Suspended. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Suspended",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2028-01-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 8 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 26.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+        "Suspended remains on-hold; it is not cancelled or complete."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2028-01-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 8 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-09",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-09",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Lantern – Comstock Meadows 345-kV Line",
+      "description": "Lantern – Comstock Meadows 345-kV Line. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        345
+      ],
+      "date": {
+        "value": "2031-09-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 9 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 115.4.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2031-09-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 9 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-10",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-10",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Comstock Meadows 280-MVA 345/120-kV Transformer #2",
+      "description": "Comstock Meadows 280-MVA 345/120-kV Transformer #2. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        345,
+        120
+      ],
+      "date": {
+        "value": "2027-05-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 10 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 13.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2027-05-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 10 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-11",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-11",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "West Tracy 280-MVA 345/120- kV Transformer #2",
+      "description": "West Tracy 280-MVA 345/120- kV Transformer #2. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        345,
+        120
+      ],
+      "date": {
+        "value": "2028-05-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 11 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 17.2.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2028-05-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 11 across both pages; PDF p.54 / printed p.293",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-12",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-12",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Machacek 230 kV Ring Bus",
+      "description": "Machacek 230 kV Ring Bus. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2027-06-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 12 across both pages; PDF p.54 / printed p.293",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 14.8.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2027-06-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 12 across both pages; PDF p.54 / printed p.293",
                 "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
               }
             ]
@@ -296,6 +1055,380 @@
               {
                 "file": "NPC-SPPC-Volume-9.pdf",
                 "locator": "Figure TP-131; row 14 across both pages; PDF p.55 / printed p.294",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-15",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-15",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Mackay Substation",
+      "description": "Mackay Substation. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [],
+      "date": {
+        "value": "2027-12-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 15 across both pages; PDF p.55 / printed p.294",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 28.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2027-12-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 15 across both pages; PDF p.55 / printed p.294",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-16",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-16",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Gosling Substation",
+      "description": "Gosling Substation. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [],
+      "date": {
+        "value": "2027-04-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 16 across both pages; PDF p.55 / printed p.294",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 29.5.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2027-04-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 16 across both pages; PDF p.55 / printed p.294",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-17",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-17",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Walker River-Gosling 525 kV lines siting/permitting (known as Ft Churchill-Veterans 525 kV line)",
+      "description": "Walker River-Gosling 525 kV lines siting/permitting (known as Ft Churchill-Veterans 525 kV line). Previously approved table entry; reported Active. Approval is for siting/permitting only; table explicitly says this 2026 IRP requests construction approval. Approved must not mean construction approved.",
+      "status": "Active",
+      "voltageKv": [
+        525
+      ],
+      "date": {
+        "value": "2031-05-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 17 across both pages; PDF p.55 / printed p.294",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 2026 IRP - Requests Construction Approval.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Approval is for siting/permitting only; table explicitly says this 2026 IRP requests construction approval. Approved must not mean construction approved."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2031-05-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 17 across both pages; PDF p.55 / printed p.294",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-18",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-18",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Naniwa 345 kV Switching Station",
+      "description": "Naniwa 345 kV Switching Station. Previously approved table entry; reported Active. Physical transmission line, substation, transformer, switching or program work within the approved-transmission table.",
+      "status": "Active",
+      "voltageKv": [
+        345
+      ],
+      "date": {
+        "value": "2027-01-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 18 across both pages; PDF p.55 / printed p.294",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 26.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Physical transmission line, substation, transformer, switching or program work within the approved-transmission table."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2027-01-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 18 across both pages; PDF p.55 / printed p.294",
+                "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision."
+        ]
+      }
+    },
+    {
+      "id": "nv-nvenergy:2026-05-06:tp-131:row-19",
+      "utilityId": "nv-nvenergy",
+      "sourceId": "2026-05-06:tp-131:row-19",
+      "sponsor": "Nevada Power Company and Sierra Pacific Power Company (joint applicants)",
+      "name": "Nighthawk",
+      "description": "Nighthawk. Previously approved table entry; reported Active. Name alone does not establish physical asset scope; retain transmission-associated capital context.",
+      "status": "Active",
+      "voltageKv": [],
+      "date": {
+        "value": "2029-03-02",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "ISD (source forecast)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Figure TP-131; row 19 across both pages; PDF p.55 / printed p.294",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "notes": [
+        "Approval docket: 24-05041. This groups approvals and is not a native engineering project ID.",
+        "Reported cost ($MM), as of February 2026: 67.0.",
+        "May 6, 2026 is the application/source-edition date, not an individual status-change date. Active does not establish construction.",
+        "Name alone does not establish physical asset scope; retain transmission-associated capital context."
+      ],
+      "inventory": {
+        "sourceKey": "nv-nvenergy",
+        "editionId": "2026-05-06-irp",
+        "editionLabel": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+        "reportingGroupName": "NV Energy public transmission planning",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-05-06",
+        "lifecycleDateMeaning": "source-edition",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Previously approved transmission-associated work package",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "milestones": [
+          {
+            "field": "ISD (approved table)",
+            "date": {
+              "value": "2029-03-02",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "ISD (source forecast)"
+            },
+            "evidence": [
+              {
+                "file": "NPC-SPPC-Volume-9.pdf",
+                "locator": "Figure TP-131; row 19 across both pages; PDF p.55 / printed p.294",
                 "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
               }
             ]
@@ -554,15 +1687,15 @@
       "scope": "sample",
       "counts": {
         "sourceRows": 90,
-        "importedRecords": 6,
+        "importedRecords": 21,
         "excludedRows": 0,
         "failedRows": 0,
-        "pendingRows": 84,
+        "pendingRows": 69,
         "locatedRecords": 0
       },
       "exclusions": [],
       "limitations": [
-        "Six approved entries are connected; fifteen approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.",
+        "21 approved entries are included; 0 approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.",
         "May 6, 2026 dates the joint application/source edition. Exact publication is not independently established; retrieval is not status recency.",
         "Raw Active means approved in this table; Suspended means on-hold. Greenlink West has partial-construction narrative evidence, not proof every component is under construction.",
         "Approved-table rows3/4/5/6/13/19 remain conservative capital context because their physical transmission scope is ambiguous or mixed. Row17 approval covers siting/permitting, not construction.",
@@ -575,11 +1708,11 @@
     }
   ],
   "coverage": {
-    "processed": 6,
+    "processed": 21,
     "skipped": 0,
     "failed": 0,
     "notes": [
-      "90 source units = 6 imported + 84 pending; no exclusions have been accepted for requests.",
+      "90 source units = 21 imported + 69 pending; no exclusions have been accepted for requests.",
       "All 69 request locators are enumerated without request normalization. Complete-source status awaits their accepted dispositions."
     ]
   }

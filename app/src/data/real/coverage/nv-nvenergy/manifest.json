@@ -19,15 +19,15 @@
   "scope": "sample",
   "counts": {
     "sourceRows": 90,
-    "importedRecords": 6,
+    "importedRecords": 21,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 84,
+    "pendingRows": 69,
     "locatedRecords": 0
   },
   "exclusions": [],
   "limitations": [
-    "Six approved entries are connected; fifteen approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.",
+    "21 approved entries are included; 0 approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.",
     "May 6, 2026 dates the joint application/source edition. Exact publication is not independently established; retrieval is not status recency.",
     "Raw Active means approved in this table; Suspended means on-hold. Greenlink West has partial-construction narrative evidence, not proof every component is under construction.",
     "Approved-table rows3/4/5/6/13/19 remain conservative capital context because their physical transmission scope is ambiguous or mixed. Row17 approval covers siting/permitting, not construction.",

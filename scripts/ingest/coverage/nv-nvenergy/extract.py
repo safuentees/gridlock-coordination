@@ -183,6 +183,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input-dir', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
+    parser.add_argument('--stage', choices=('sample', 'approved'), default='sample')
     parser.add_argument('--generated-at', default=datetime.now(timezone.utc).isoformat())
     args = parser.parse_args()
     readers, source_files = load_sources(args.input_dir)
@@ -193,10 +194,10 @@ def main():
         number = row['rowNumber']
         entry = {'sourceId': approved_id(number), 'sourceUnit': 'approved-table-row',
                  'source': ref(9, approved_locator(number)), 'raw': row, 'recordKind': kind(number), 'lifecycle': lifecycle(number)}
-        if number in SAMPLE:
+        if args.stage == 'approved' or number in SAMPLE:
             record = approved_project(row)
             projects.append(record)
-            entry.update(disposition='imported', projectId=record['id'], reason='Accepted connection sample from the approved-table slice.')
+            entry.update(disposition='imported', projectId=record['id'], reason='Accepted approved-table entry retained; source remains incomplete until requests are reconciled.')
         else:
             entry.update(disposition='pending', reason='Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice.')
         ledger.append(entry)
@@ -217,7 +218,7 @@ def main():
         'inventoryScope': '21 approved-table rows plus 69 new construction-approval request bullets: 90 source units, not unique engineering projects. Requests remain required work.',
         'scope': 'sample', 'counts': counts, 'exclusions': [],
         'limitations': [
-            'Six approved entries are connected; fifteen approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.',
+            f'{len(projects)} approved entries are included; {21 - len(projects)} approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.',
             'May 6, 2026 dates the joint application/source edition. Exact publication is not independently established; retrieval is not status recency.',
             'Raw Active means approved in this table; Suspended means on-hold. Greenlink West has partial-construction narrative evidence, not proof every component is under construction.',
             'Approved-table rows3/4/5/6/13/19 remain conservative capital context because their physical transmission scope is ambiguous or mixed. Row17 approval covers siting/permitting, not construction.',
@@ -227,19 +228,19 @@ def main():
             'The 69 requested actions require classification and overlap reconciliation before normalization. Similar names do not prove identity; shared requests and voltage/date discrepancies remain unresolved.',
             'Public redacted source facts only; no confidential appendix, contact metadata, redaction recovery or source-binary redistribution. Source filenames/hashes for all three volumes are preserved in the ledger.',
         ]}
-    dataset = {'schemaVersion': 2, 'mode': 'real', 'title': LABEL + ' — connection sample',
+    dataset = {'schemaVersion': 2, 'mode': 'real', 'title': LABEL + (' — approved slice; requests pending' if args.stage == 'approved' else ' — connection sample'),
         'generatedAt': args.generated_at, 'projects': projects, 'sourceEditions': [manifest],
         'coverage': {'processed': len(projects), 'skipped': 0, 'failed': 0,
-            'notes': ['90 source units = 6 imported + 84 pending; no exclusions have been accepted for requests.',
+            'notes': [f'90 source units = {len(projects)} imported + {counts["pendingRows"]} pending; no exclusions have been accepted for requests.',
                       'All 69 request locators are enumerated without request normalization. Complete-source status awaits their accepted dispositions.']}}
     row_ledger = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': 'sample', 'counts': counts,
         'sourceFiles': source_files, 'sourceUnitCounts': {'approved-table-row': len(approved), 'construction-approval-request': len(requests)},
         'recordKindCounts': dict(Counter(p['inventory']['recordKind'] for p in projects)),
         'lifecycleCounts': dict(Counter(p['inventory']['lifecycle'] for p in projects)),
-        'requestPolicyStatus': 'Required mapping and coordinator acceptance pending; no request exclusions or normalized records yet.', 'rows': ledger}
+        'requestPolicyStatus': 'Proposed exact 69-row mapping in scripts/ingest/coverage/nv-nvenergy/request-policy.json; coordinator acceptance pending. No request exclusions or normalized records yet.', 'rows': ledger}
     compact = json.dumps(dataset, ensure_ascii=False, separators=(',', ':'), allow_nan=False) + '\n'
     formatted = json.dumps(dataset, ensure_ascii=False, indent=2, allow_nan=False) + '\n'
-    sizes = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': 'sample', 'records': len(projects),
+    sizes = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': 'sample', 'stage': args.stage, 'records': len(projects),
         'compactUtf8Bytes': len(compact.encode('utf-8')), 'formattedDownloadUtf8Bytes': len(formatted.encode('utf-8')),
         'measurement': 'Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.', 'datasetFileFormat': 'formatted'}
     args.output_dir.mkdir(parents=True, exist_ok=True)
