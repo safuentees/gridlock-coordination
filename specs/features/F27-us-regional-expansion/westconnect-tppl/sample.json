@@ -1,0 +1,224 @@
+{
+  "kind": "qualification-diagnostics",
+  "sourceKeyProposal": "westconnect-tppl",
+  "editionIdProposal": "2026-02-10",
+  "retrievedOn": "2026-09-30",
+  "sourceRows": 389,
+  "proposedRetained": 304,
+  "proposedExcluded": 85,
+  "notice": "Six cited diagnostic source rows; not a normalized application dataset. Owner and geometry remain unknown. Excluded examples are retained here solely to explain the ledger.",
+  "samples": [
+    {
+      "sourceId": "17",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A3:AR3",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "raw": {
+        "projectid": 17,
+        "Sponsor": "Public Service Company of New Mexico",
+        "ProjectName": "Alamogordo Voltage Support Phase II",
+        "Description": "Install Voltage Support at Alamogordo",
+        "FacilityType": "Substation",
+        "Voltage": "115 kV",
+        "Development": "Conceptual",
+        "Origin": "Alamogordo",
+        "Termination": "N/A",
+        "InService": "TBD",
+        "StateTraversed": "New Mexico",
+        "wcprojectID": "TBD-17"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "transmission-project",
+        "lifecycle": "unknown",
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Expected in-service year"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "reason": "Conceptual stays unknown; TBD supplies no usable year."
+      }
+    },
+    {
+      "sourceId": "1236",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A86:AR86",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "raw": {
+        "projectid": 1236,
+        "Sponsor": "Tri-State Generation and Transmission Association",
+        "ProjectName": "Breaker Addition at Cahone Substation",
+        "Description": "Add a new 115 kV bay at Cahone Substation to accommodate a generator interconnection",
+        "FacilityType": "Substation",
+        "Voltage": "115 kV",
+        "Development": "Under Construction",
+        "Origin": "Cahone",
+        "Termination": "Cahone",
+        "InService": 2025,
+        "StateTraversed": "Colorado",
+        "wcprojectID": "2025-"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "date": {
+          "value": "2025",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Expected in-service year"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "reason": "Under Construction stays historical even though forecast year 2025 has passed. Use numeric projectid; displayed combined label lacks its suffix."
+      }
+    },
+    {
+      "sourceId": "1262",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A100:AR100",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "raw": {
+        "projectid": 1262,
+        "Sponsor": "El Paso Electric Company",
+        "ProjectName": "Seabeck Switching Station 115 kV (New)",
+        "Description": "This project involves the construction of a new Seabeck 115 kV Switching Station that will be part of the East Side Loop Expansion Project.",
+        "FacilityType": "Other",
+        "Voltage": "115 kV",
+        "Development": "Planned",
+        "Origin": "Seabeck",
+        "Termination": "Seabeck",
+        "InService": 2027,
+        "StateTraversed": "Texas",
+        "wcprojectID": "2029-1262"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Expected in-service year"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "reason": "Explicit switching-station work supports transmission kind. Combined label has stale 2029 year; authoritative InService field is 2027. Related-program text does not establish a parent ID."
+      }
+    },
+    {
+      "sourceId": "1641",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A332:AR332",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "raw": {
+        "projectid": 1641,
+        "Sponsor": "Public Service Company of Colorado/ Xcel Energy",
+        "ProjectName": "Barker Distribution Substation",
+        "Description": "Construct a new distribution substation that would tap PSCo's Lacombe 230kV substation",
+        "FacilityType": "Transmission Line",
+        "Voltage": "230 kV",
+        "Development": "Planned",
+        "Origin": "Lacombe",
+        "Termination": "Barker",
+        "InService": 2027,
+        "StateTraversed": "Colorado",
+        "wcprojectID": "2027-1641"
+      },
+      "proposed": {
+        "disposition": "retain",
+        "recordKind": "planning-context",
+        "lifecycle": "planned",
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Expected in-service year"
+        },
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "reason": "Name and description explicitly say distribution substation despite FacilityType Transmission Line; retain as planning-context."
+      }
+    },
+    {
+      "sourceId": "1575",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A267:AR267",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "raw": {
+        "projectid": 1575,
+        "Sponsor": "Black Hills Power",
+        "ProjectName": "BHBE G25 115 MW RICE",
+        "Description": "BHBE G25 115 MW RICE Hall",
+        "FacilityType": "Other",
+        "Voltage": "230 kV",
+        "Development": "Planned",
+        "Origin": "Lange",
+        "Termination": "Lange",
+        "InService": 2026,
+        "StateTraversed": "South Dakota",
+        "wcprojectID": "2026-1575"
+      },
+      "proposed": {
+        "disposition": "exclude",
+        "recordKind": null,
+        "lifecycle": null,
+        "date": null,
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "reason": "Generation-only RICE project: exclude exact source ID without assigning a transmission record kind."
+      }
+    },
+    {
+      "sourceId": "1451",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A189:AR189",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "raw": {
+        "projectid": 1451,
+        "Sponsor": "El Paso Electric Company",
+        "ProjectName": "Newman 2 Thermal Generation Conversion to Synchronous Condenser",
+        "Description": "Newman 2 Thermal Generation Conversion to Synchronous Condenser",
+        "FacilityType": "Other",
+        "Voltage": "115 kV",
+        "Development": "Withdrawn",
+        "Origin": "Newman ",
+        "Termination": "Newman",
+        "InService": 2027,
+        "StateTraversed": "Texas",
+        "wcprojectID": "2027-1451"
+      },
+      "proposed": {
+        "disposition": "exclude",
+        "recordKind": null,
+        "lifecycle": null,
+        "date": null,
+        "owner": null,
+        "location": null,
+        "nativeGeometry": null,
+        "reason": "Withdrawn may mean cancelled, postponed or no active development. Exclude as withdrawn; do not assert cancellation."
+      }
+    }
+  ]
+}

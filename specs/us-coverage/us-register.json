@@ -1,23 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 MISO/Hawaii integration PR88 (implementation 20dd4fc; one build/case passed)",
+  "baselineRevision": "F27 New York/Florida/BPA integration PR95 (implementation 8f3012b; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Seven full declared regional inventories plus one complete featured subset imported; historical New York inventory accepted; BPA/Florida qualification active; SERTP marking conflict blocks that source",
+  "qualificationStatus": "Ten full declared regional inventories plus one complete featured subset imported; Puerto Rico and WestConnect accepted producers active; Guam qualification queued; SERTP marking conflict blocks that source",
   "totals": {
-    "importedSourceRecords": 12174,
+    "importedSourceRecords": 12446,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 12061,
+    "missingLocations": 12333,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 8,
-    "newFullRegionalInventoriesImported": 7,
+    "newRegionalSourcesQualified": 12,
+    "newFullRegionalInventoriesImported": 10,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 1,
     "fullFeaturedSubsetsImported": 1,
-    "fullDeclaredSourceScopesImported": 8
+    "fullDeclaredSourceScopesImported": 11
   },
   "pendingEvidence": {
     "integratedF19Decisions": 10,
@@ -580,6 +580,173 @@
       },
       "unallocatedStateRecords": 0,
       "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
+    },
+    {
+      "sourceKey": "ny-national-grid-ltp",
+      "editionId": "2025-10-30",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Historical utility project-table entries, including explicitly described transmission work and unresolved/mixed planning context. Explicit In-Service and Cancelled rows are excluded.",
+      "geographicScope": "National Grid New York local-plan footprint in NYISO Zones A–F; partial New York coverage, with no per-record state or center inferred.",
+      "recordKind": "128 planning-context, 8 transmission-project",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2025-10-30",
+      "importedRecords": 136,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 136,
+        "milestone": 0,
+        "constructionWindow": 136,
+        "status": 31,
+        "voltage": 54,
+        "evidencedOwner": 136
+      },
+      "rawSourceRows": 152,
+      "excludedRows": 16,
+      "exclusions": [
+        {
+          "reason": "explicit-cancelled",
+          "count": 4
+        },
+        {
+          "reason": "explicit-in-service",
+          "count": 12
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/ny-national-grid-ltp/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/ny-national-grid-ltp/row-ledger.json",
+      "publicInventoryDenominator": 136,
+      "blockers": [
+        "Historical 2025-10-30 edition, not current lifecycle. A September 2026 criteria deck references an August update whose complete inventory was not located.",
+        "National Grid New York local plan only (NYISO Zones A–F); this does not cover every New York utility or planned project.",
+        "Page/body-row source locators are not engineering IDs. Continuity into a later edition requires explicit identity review; no title/ordinal merge is assumed.",
+        "The accepted full scope has eight explicitly described transmission records and 128 planning-context records; context is not a claim that work is non-transmission.",
+        "No row-owner field establishes singular ownership. Publisher/utility context does not become an inferred owner identity.",
+        "All records are unlocated; no native coordinates, map digitization, geocoding or planning-area centers are supplied.",
+        "Expected in-service dates have month precision and do not establish construction windows or completion; study/permit progress does not override project status.",
+        "Source facts are used for authorized private informational analysis. National Grid terms restrict other reproduction/distribution and commercial use; no open/commercial license or PDF publication is asserted."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 136,
+      "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
+    },
+    {
+      "sourceKey": "fl-fmpa",
+      "editionId": "2026-04-01",
+      "editionPublishedAt": "2026-04-01",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Every aligned work-item line in Table II-1 planned/proposed transmission additions, with explicit distribution/study context retained separately. Five grouped City cells are not extra projects.",
+      "geographicScope": "Partial Florida municipal ARP participant scope: five named reporting groups, not statewide coverage.",
+      "recordKind": "49 transmission-project, 10 planning-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-04-01",
+      "importedRecords": 59,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 59,
+        "milestone": 0,
+        "constructionWindow": 59,
+        "status": 0,
+        "voltage": 3,
+        "evidencedOwner": 59
+      },
+      "rawSourceRows": 59,
+      "excludedRows": 0,
+      "exclusions": [],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/fl-fmpa/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/fl-fmpa/row-ledger.json",
+      "publicInventoryDenominator": 59,
+      "blockers": [
+        "Actual public TCRPC copy is cited. The PSC endpoint was unavailable; byte equality with that copy is not asserted.",
+        "The report supplies a 69 kV-and-above table boundary. Blank voltage is not an exclusion; no additional threshold is imposed.",
+        "All qualified owners, coordinates, geometry and construction windows remain unknown. Municipal participant and publisher are not substituted for asset owner.",
+        "Forecasts preserve month precision. Planned/proposed is a combined table heading, not an individual approval or construction claim; elapsed dates do not establish completion.",
+        "Source references identify edition-specific table/group/child positions, not native engineering IDs or cross-edition continuity. Compound descriptions are not split further.",
+        "Ten exact distribution/study work items retain planning context. Potentially mixed KUA substation work retains explicit scope uncertainty.",
+        "No cross-source identity evidence supports deduplication; totals count source work items, not distinct national engineering projects.",
+        "Original binary remains outside Git; public availability is not a redistribution-license claim."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 59,
+      "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
+    },
+    {
+      "sourceKey": "bpa-plan",
+      "editionId": "2025-updated-2026-08-25",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "77 retained physical transmission work units in a 98-row plan normalization: 15 completed units, one cancelled unit and five repeated observations excluded. Bundles and named components retain accepted boundaries.",
+      "geographicScope": "BPA plan areas across Washington, Oregon, Idaho, western Montana, northern California and northwest Wyoming; not complete state or utility capital inventories.",
+      "recordKind": "77 transmission-project",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2025",
+      "importedRecords": 77,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 77,
+        "milestone": 49,
+        "constructionWindow": 77,
+        "status": 1,
+        "voltage": 5,
+        "evidencedOwner": 77
+      },
+      "rawSourceRows": 98,
+      "excludedRows": 21,
+      "exclusions": [
+        {
+          "reason": "Explicitly completed source work",
+          "count": 15
+        },
+        {
+          "reason": "Explicitly cancelled source work",
+          "count": 1
+        },
+        {
+          "reason": "Repeated source observation of an accepted retained unit",
+          "count": 5
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/bpa-plan/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/bpa-plan/row-ledger.json",
+      "publicInventoryDenominator": 77,
+      "blockers": [
+        "Full scope refers to this declared plan normalization, not every BPA capital project or distinct engineering-project totals. Partial snapshots retain pending units explicitly.",
+        "Lifecycle assertions belong to plan year 2025. The August 25, 2026 index update is not a row update or lifecycle change; publication day is unknown. Separate GERP material and GIS snapshots are supplementary evidence, not a live status feed.",
+        "Native bundle identity is used only for unambiguous scope. Section/parent/component locators are not native engineering IDs; future-edition continuity requires explicit review.",
+        "Repeated or shared bundles do not merge different components. P5470/P05470 is an accepted explicit alias; P04632 planned breaker and completed line remain distinct. Warner/Hilltop share a bundle but retain component identity.",
+        "Conflicting and phased forecasts retain labeled source milestones, with unknown primary date. Need years are not service dates; estimated completion has unknown kind; no days or construction windows are invented.",
+        "Runtime geometry and project centers are unknown. Public GERP pins/lines can represent existing facilities or partial scope; no center, centroid or proposed route is inferred from them.",
+        "Owners remain unknown unless an exact assertion covers the whole unit. Publisher, sponsor, operator, customer and funder are not ownership defaults; joint BPA/PGE scope has no exclusive owner.",
+        "P03259 remains retained with unknown lifecycle despite its elapsed table year. Explicit completed/cancelled units and repeated observations stay in the source ledger.",
+        "The Schultz–Raver narrative includes separately retained Olympia/series-capacitor work. Plan and GIS differ on the North of Marion crossing assignment; preserve accepted source units without deduplicated engineering-project claims.",
+        "Two never-imported locator reservations were corrected before full import: Clatsop transformer to section 8.2.2 and Sacajawea to section 8.5.2. Old-to-new mappings remain in the ledger; all five connected sample records are unchanged."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {
+        "WA": 27,
+        "OR": 32,
+        "MT": 6,
+        "ID": 1
+      },
+      "unallocatedStateRecords": 11,
+      "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
     }
   ],
   "jurisdictions": [
@@ -622,9 +789,10 @@
     },
     {
       "code": "CA",
-      "status": "partial-public-portfolio",
+      "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "ca-sce-tpr"
+        "ca-sce-tpr",
+        "bpa-plan"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -662,8 +830,10 @@
     },
     {
       "code": "FL",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "fl-fmpa"
+      ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
     },
@@ -690,10 +860,15 @@
     },
     {
       "code": "ID",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "bpa-plan"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "bpa-plan": 1
+      }
     },
     {
       "code": "IL",
@@ -870,13 +1045,15 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "spp-tracking",
-        "miso-mtep"
+        "miso-mtep",
+        "bpa-plan"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
         "spp-tracking": 1,
-        "miso-mtep": 4
+        "miso-mtep": 4,
+        "bpa-plan": 6
       }
     },
     {
@@ -936,8 +1113,10 @@
     },
     {
       "code": "NY",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "ny-national-grid-ltp"
+      ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
     },
@@ -995,10 +1174,15 @@
     },
     {
       "code": "OR",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "bpa-plan"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "bpa-plan": 32
+      }
     },
     {
       "code": "PA",
@@ -1107,10 +1291,15 @@
     },
     {
       "code": "WA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "bpa-plan"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "bpa-plan": 27
+      }
     },
     {
       "code": "WV",
@@ -1140,7 +1329,8 @@
       "code": "WY",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "bpa-plan"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
@@ -1284,33 +1474,33 @@
     },
     {
       "sourceKey": "ny-national-grid-ltp",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://www.nationalgridus.com/Wholesale-Interconnections/New-York/",
-      "importedRecords": 0,
+      "importedRecords": 136,
       "locatedRecords": 0,
-      "missingInput": "Provider connection and full accepted historical inventory; native locations and referenced newer edition absent",
+      "missingInput": "Native locations, evidenced owners and complementary/current public scopes",
       "owner": "core",
-      "task": "F27-NY-I"
+      "task": "F27"
     },
     {
       "sourceKey": "bpa-plan",
-      "status": "qualification-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://www.bpa.gov/energy-and-services/transmission/attachment-k",
-      "importedRecords": 0,
+      "importedRecords": 77,
       "locatedRecords": 0,
-      "missingInput": "Accepted complete enumeration and native geometry/identity interpretation",
+      "missingInput": "Native locations, evidenced owners and complementary/current public scopes",
       "owner": "ui",
-      "task": "F27-BPA-Q"
+      "task": "F27"
     },
     {
       "sourceKey": "fl-fmpa",
-      "status": "qualification-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/",
-      "importedRecords": 0,
+      "importedRecords": 59,
       "locatedRecords": 0,
-      "missingInput": "Public table enumeration and accepted row/group/date/owner mapping",
+      "missingInput": "Native locations, evidenced owners and complementary/current public scopes",
       "owner": "source_discovery",
-      "task": "F27-FL-Q"
+      "task": "F27"
     },
     {
       "sourceKey": "sertp-plan",
@@ -1321,13 +1511,43 @@
       "missingInput": "Authoritative clarification or corrected public report: Non-CEII link conflicts with CEII page header; no extraction performed",
       "owner": "source_discovery",
       "task": "F27-SERTP-Q"
+    },
+    {
+      "sourceKey": "pr-transmission",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://energia.pr.gov/en/dockets/?docket=nepr-mi-2024-0005",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Provider connection and full accepted inventory; native locations and evidenced owners absent",
+      "owner": "source_discovery",
+      "task": "F27-PR-I"
+    },
+    {
+      "sourceKey": "westconnect-tppl",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://regplanning.westconnect.com/tppl.htm",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Provider connection and full accepted inventory; native locations and evidenced owners absent",
+      "owner": "core",
+      "task": "F27-WC-I"
+    },
+    {
+      "sourceKey": "gu-gpa",
+      "status": "qualification-queued",
+      "sourceUrl": "https://www.guampowerauthority.com/gpa-initiatives/clean-energy-master-plan",
+      "importedRecords": 0,
+      "locatedRecords": null,
+      "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
+      "owner": "ui",
+      "task": "F27-GU-Q"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National project denominator is unknown. Seven full declared regional inventories and one complete seven-topic featured subset are imported; source units differ and no cross-source deduplication is claimed. Eight regional sources plus one featured subset are qualified; historical New York production is pending. Statewide and national completeness are not established.",
+    "National project denominator is unknown. Ten full declared regional inventories and one complete seven-topic featured subset are imported; source units differ and no cross-source deduplication is claimed. Twelve regional sources plus one featured subset are qualified; Puerto Rico and WestConnect production is pending. Statewide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
   ],
@@ -1440,13 +1660,61 @@
       "sourceKey": "ny-national-grid-ltp",
       "editionId": "2025-10-30",
       "reportingGroup": "ny-national-grid-ltp",
-      "status": "qualified-not-yet-imported",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 152,
       "proposedRetainedRecords": 136,
       "proposedExcludedRows": 16,
       "locatedRecords": 0,
       "scope": "Historical National Grid New York local-plan table only; newer referenced edition not located, no statewide completeness",
       "contract": "specs/features/F27-us-regional-expansion/ny-local/spec.md"
+    },
+    {
+      "sourceKey": "fl-fmpa",
+      "editionId": "2026-04-01",
+      "reportingGroup": "fl-fmpa",
+      "sourceRows": 59,
+      "proposedRetainedRecords": 59,
+      "proposedExcludedRows": 0,
+      "scope": "Every aligned work-item line in Table II-1 planned/proposed transmission additions, with explicit distribution/study context retained separately. Five grouped City cells are not extra projects.",
+      "contract": "specs/features/F27-us-regional-expansion/fl-fmpa/spec.md",
+      "status": "imported-full-declared-public-scope",
+      "locatedRecords": 0
+    },
+    {
+      "sourceKey": "bpa-plan",
+      "editionId": "2025-updated-2026-08-25",
+      "reportingGroup": "bpa-plan",
+      "sourceRows": 98,
+      "proposedRetainedRecords": 77,
+      "proposedExcludedRows": 21,
+      "scope": "77 retained physical transmission work units in a 98-row plan normalization: 15 completed units, one cancelled unit and five repeated observations excluded. Bundles and named components retain accepted boundaries.",
+      "contract": "specs/features/F27-us-regional-expansion/bpa-plan/spec.md",
+      "status": "imported-full-declared-public-scope",
+      "locatedRecords": 0
+    },
+    {
+      "sourceKey": "pr-transmission",
+      "editionId": "2026-08-27-table1",
+      "reportingGroup": "pr-transmission",
+      "status": "qualified-not-yet-imported",
+      "sourceRows": 32,
+      "proposedRetainedRecords": 22,
+      "proposedExcludedRows": 10,
+      "locatedRecords": 0,
+      "scope": "Public monthly Table 1 hardening work only; energized work may retain additional physical construction; not all Puerto Rico projects",
+      "contract": "specs/features/F27-us-regional-expansion/pr-transmission/spec.md"
+    },
+    {
+      "sourceKey": "westconnect-tppl",
+      "editionId": "2026-02-10",
+      "reportingGroup": "westconnect-tppl",
+      "status": "qualified-not-yet-imported",
+      "sourceRows": 389,
+      "proposedRetainedRecords": 304,
+      "proposedExcludedRows": 85,
+      "locatedRecords": 0,
+      "scope": "Public 389-row TPPL; partial submitted regional inventory, not all Western Interconnection projects",
+      "contract": "specs/features/F27-us-regional-expansion/westconnect-tppl/spec.md"
     }
   ]
 }

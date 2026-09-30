@@ -1,0 +1,52 @@
+{
+  "sourceKey": "ny-national-grid-ltp",
+  "editionId": "2025-10-30",
+  "scope": "full",
+  "fullSourceStatusCounts": {
+    "Application Deemed Complete": 1,
+    "Cancelled": 4,
+    "Concept": 28,
+    "In-Service": 12,
+    "Initiated": 1,
+    "N/A": 1,
+    "Planned": 90,
+    "Under Construction": 15
+  },
+  "acceptedRetainedLifecycleCounts": {
+    "planned": 90,
+    "under-construction": 15,
+    "unknown": 31
+  },
+  "acceptedRetainedKindCounts": {
+    "transmission-project": 8,
+    "planning-context": 128
+  },
+  "importedLifecycleCounts": {
+    "planned": 90,
+    "under-construction": 15,
+    "unknown": 31
+  },
+  "importedKindCounts": {
+    "planning-context": 128,
+    "transmission-project": 8
+  },
+  "fieldAnomalies": [
+    {
+      "source": {
+        "file": "national-grid-local-transmission-plan-2025.pdf",
+        "locator": "PDF page 31, project-table body row 2 (header excluded); Project Status",
+        "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=31"
+      },
+      "rawValue": "Application Deemed Complete",
+      "handling": "Preserved in its source field; lifecycle remains unknown."
+    }
+  ],
+  "sampleIds": [
+    "ny-national-grid-ltp:2025-p007-r01",
+    "ny-national-grid-ltp:2025-p012-r04",
+    "ny-national-grid-ltp:2025-p014-r05",
+    "ny-national-grid-ltp:2025-p029-r03",
+    "ny-national-grid-ltp:2025-p031-r02",
+    "ny-national-grid-ltp:2025-p050-r02"
+  ]
+}

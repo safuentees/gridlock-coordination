@@ -1,0 +1,1094 @@
+{
+  "sourceKey": "fl-fmpa",
+  "editionId": "2026-04-01",
+  "sourceSha256": "dce5c6ec57b598c3bf98013881f64751914ef960253f839fa4e6b341f348a4af",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 59,
+    "importedRecords": 59,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "groupedCityRows": 5,
+  "groupWorkItemCounts": {
+    "Beaches Energy Services": 11,
+    "Kissimmee Utility Authority": 17,
+    "Fort Pierce Utility Authority": 23,
+    "Keys Energy Services": 2,
+    "Ocala Electric Utility": 6
+  },
+  "recordKindCounts": {
+    "transmission-project": 49,
+    "planning-context": 10
+  },
+  "completeScopeRecordKindCounts": {
+    "transmission-project": 49,
+    "planning-context": 10
+  },
+  "rows": [
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:01",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 1 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 1,
+        "description": "Sampson Substation: Replace breakers 805N & 805NT1",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:01"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:02",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 2 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 2,
+        "description": "Penman Substation: Replace breakers 800T2 &800N",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:02"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:03",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 3 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 3,
+        "description": "Fort Diego Substation: Replace breaker 806W",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:03"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:04",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 4 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 4,
+        "description": "Sampson Substation: Remove Wavetrap on Switzerland 230kV Line",
+        "mva": "-",
+        "voltage": "230 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:04"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:05",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 5 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 5,
+        "description": "Sampson Substation: Replace breaker 8W85",
+        "mva": "-",
+        "voltage": "230 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:05"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:06",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 6 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 6,
+        "description": "Butler Substation: Replace breakers 802T2, 802N, 803S & 803T1",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:06"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:07",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 7 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 7,
+        "description": "Fort Diego Substation: Replace TR1",
+        "mva": "50",
+        "voltage": "138/26.4 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2030"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:07"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:08",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 8 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 8,
+        "description": "Ft. Diego Substation: Install Circuit Switchers for T1 and T2",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:08"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:09",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 9 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 9,
+        "description": "Jax Beach Substation: Install Circuit Switchers for T1 and T2",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2032"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:09"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:10",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 10 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 10,
+        "description": "Sampson Substation: Replace TR1 Auto-Transformer",
+        "mva": "250",
+        "voltage": "230/138 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2031"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:10"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:beaches:11",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 11 (top to bottom)",
+      "raw": {
+        "group": "Beaches Energy Services",
+        "groupSlug": "beaches",
+        "childOrdinal": 11,
+        "description": "Jax Beach Substation: Replace TR1 and TR2 Transformer",
+        "mva": "50",
+        "voltage": "138/26.4 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2032"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:11"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:01",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 1 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 1,
+        "description": "Van Meter Substation (New); In & Out on Line 04-0710",
+        "mva": "80",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "04/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:01"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:02",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 2 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 2,
+        "description": "Airport Substation (Expansion); (2 x 40MVA Transformers)",
+        "mva": "160",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2030"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:02"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:03",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 3 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 3,
+        "description": "Domingo Toro – 4th transformer expansion (40MVA)",
+        "mva": "160",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2032"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:03"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:04",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 4 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 4,
+        "description": "Marydia Substation: Replace T01741 Auto-Transformer (Non-upgrade)",
+        "mva": "120",
+        "voltage": "230/69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2035"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:04"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:05",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 5 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 5,
+        "description": "Marydia Substation: Replace T01422 (30MVA) with 40MVA - Transformer",
+        "mva": "80",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2029"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:05"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:06",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 6 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 6,
+        "description": "Taft Substation: Replace T15741 Auto-Transformer",
+        "mva": "150",
+        "voltage": "230/69kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2033"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:06"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:07",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 7 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 7,
+        "description": "Pleasant Hill Substation – 3rd transformer expansion (40MVA)",
+        "mva": "120",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2029"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:07"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:08",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 8 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 8,
+        "description": "Employee Substation - 3rd transformer expansion (40MVA)",
+        "mva": "120",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2030"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:08"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:09",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 9 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 9,
+        "description": "OH to URD conversion (1,700’); Lines 04-2127/04-2123",
+        "mva": "-",
+        "voltage": "69 KV",
+        "circuit": "2",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:09"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:10",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 10 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 10,
+        "description": "Lines 04-2023/04-1420 – Pole Relocation for FDOT project",
+        "mva": "-",
+        "voltage": "69 KV",
+        "circuit": "2",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:10"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:11",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 11 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 11,
+        "description": "Reconductor (Non-upgrade) – Marydia to Taft – Maintenance/Storm Hardening",
+        "mva": "-",
+        "voltage": "230 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "04/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:11"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:12",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 12 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 12,
+        "description": "Reconductor (UPGRADE) Marydia to Hord Transmission Line",
+        "mva": "173",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:12"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:13",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 13 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 13,
+        "description": "Reconductor (UPGRADE) Buenaventura Lakes to Carl Wall Transmission Line",
+        "mva": "173",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:13"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:14",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 14 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 14,
+        "description": "Reconductor (UPGRADE) Airport to Lake Cecile Transmission Line",
+        "mva": "173",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:14"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:15",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 15 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 15,
+        "description": "Reconductor (UPGRADE) Lake Bryan to Lake Cecile Transmssion Line",
+        "mva": "173",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:15"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:16",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 16 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 16,
+        "description": "Reconductor (UPGRADE) Domingo Toro to Hansel",
+        "mva": "173",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2031"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:16"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:kua:17",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17 (top to bottom)",
+      "raw": {
+        "group": "Kissimmee Utility Authority",
+        "groupSlug": "kua",
+        "childOrdinal": 17,
+        "description": "PRC027 Relay Coordination Study – BES only",
+        "mva": "-",
+        "voltage": "230KV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:17"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:01",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 1 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 1,
+        "description": "Garden City Substation: Replace breakers G6902",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "10/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:01"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:02",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 2 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 2,
+        "description": "Hartman: Upgrade Auto-Transformer #1",
+        "mva": "120",
+        "voltage": "138/69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:02"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:03",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 3 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 3,
+        "description": "Hartman: Upgrade Auto-Transformer #2",
+        "mva": "120",
+        "voltage": "138/69 kV",
+        "circuit": "2",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:03"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:04",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 4 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 4,
+        "description": "Garden City Substation: Replace breakers G6910",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "04/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:04"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:05",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 5 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 5,
+        "description": "Lawnwood Substation: Replace breakers L6902",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "10/2029"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:05"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:06",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 6 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 6,
+        "description": "Lawnwood Substation: Replace breakers L6903",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "04/2030"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:06"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:07",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 7 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 7,
+        "description": "Causeway Substation: Replace breaker C69T2",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "10/2029"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:07"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:08",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 8 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 8,
+        "description": "HD King Substation: Replace breaker K69T2",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "05/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:08"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:09",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 9 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 9,
+        "description": "HD King Substation: Replace breaker K6905",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "05/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:09"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:10",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 10 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 10,
+        "description": "Reconductor (Upgrade) Hartman to Savannah Transmission Line",
+        "mva": "125",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2030"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:10"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:11",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 11 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 11,
+        "description": "Reconductor (Upgrade) Hartman to Lawnwood Transmission Line",
+        "mva": "125",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2030"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:11"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:12",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 12 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 12,
+        "description": "Reconductor (Upgrade) Lawnwood to Garden City Transmission Line",
+        "mva": "125",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2034"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:12"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:13",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 13 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 13,
+        "description": "Reconductor (Upgrade) Savannah to King Transmission Line",
+        "mva": "125",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2034"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:13"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:14",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 14 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 14,
+        "description": "Garden City Substation: Replace GT3 with 200MVA - Transformer",
+        "mva": "200",
+        "voltage": "138/69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "02/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:14"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:15",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 15 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 15,
+        "description": "Replace 15 MVAR Capacitor Bank witih Dynamic VAR Compensator (16 MVAR)",
+        "mva": "-",
+        "voltage": "-",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:15"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:16",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 16 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 16,
+        "description": "New Substation; In & Out on Garden City to Causeway Transmission Line",
+        "mva": "-",
+        "voltage": "-",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:16"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:17",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 17 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 17,
+        "description": "Hartman Substation: Create 69kV Ring Bus",
+        "mva": "-",
+        "voltage": "-",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:17"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:18",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 18,
+        "description": "Garden City Substation: Distribution Transformer Addition",
+        "mva": "25",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "06/2030"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:18"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:19",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 19 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 19,
+        "description": "Totten Substation: Distribution Transformer Addition",
+        "mva": "28",
+        "voltage": "69/13.2 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "06/2030"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:19"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:20",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 20 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 20,
+        "description": "Lawnwood Substation: Repalce Distribution Transformer LT1",
+        "mva": "-",
+        "voltage": "69/13.2 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:20"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:21",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 21 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 21,
+        "description": "Lawnwood Substation: Repalce Distribution Transformer LT2",
+        "mva": "-",
+        "voltage": "69/13.2 kV",
+        "circuit": "2",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:21"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:22",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 22 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 22,
+        "description": "Savannah Substation: Repalce Distribution Transformer ST2",
+        "mva": "-",
+        "voltage": "69/13.2 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:22"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:fpua:23",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 23 (top to bottom)",
+      "raw": {
+        "group": "Fort Pierce Utility Authority",
+        "groupSlug": "fpua",
+        "childOrdinal": 23,
+        "description": "HD King Substation: Replace Distribution Transformer KT1",
+        "mva": "-",
+        "voltage": "69/13.2 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2027"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:23"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:keys:01",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Keys Energy Services; child entry 1 (top to bottom)",
+      "raw": {
+        "group": "Keys Energy Services",
+        "groupSlug": "keys",
+        "childOrdinal": 1,
+        "description": "US1 Substation: Repalce Auto Transformer AT1",
+        "mva": "125",
+        "voltage": "138/69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2028"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:keys:01"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:keys:02",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Keys Energy Services; child entry 2 (top to bottom)",
+      "raw": {
+        "group": "Keys Energy Services",
+        "groupSlug": "keys",
+        "childOrdinal": 2,
+        "description": "US1 Substation: Repalce Auto Transformer AT2",
+        "mva": "125",
+        "voltage": "138/69 kV",
+        "circuit": "2",
+        "estimatedInServiceDate": "12/2031"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:keys:02"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:ocala:01",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 1 (top to bottom)",
+      "raw": {
+        "group": "Ocala Electric Utility",
+        "groupSlug": "ocala",
+        "childOrdinal": 1,
+        "description": "Reconductor Dearmin to White Transmission Line",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "06/2029"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:01"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:ocala:02",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 2 (top to bottom)",
+      "raw": {
+        "group": "Ocala Electric Utility",
+        "groupSlug": "ocala",
+        "childOrdinal": 2,
+        "description": "Dearmin Substation: Replace Auto-Transformer #1",
+        "mva": "105",
+        "voltage": "230/69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:02"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:ocala:03",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 3 (top to bottom)",
+      "raw": {
+        "group": "Ocala Electric Utility",
+        "groupSlug": "ocala",
+        "childOrdinal": 3,
+        "description": "Dearmin Substation: Replace Auto-Transformer #2",
+        "mva": "105",
+        "voltage": "230/69 kV",
+        "circuit": "2",
+        "estimatedInServiceDate": "12/2026"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:03"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:ocala:04",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 4 (top to bottom)",
+      "raw": {
+        "group": "Ocala Electric Utility",
+        "groupSlug": "ocala",
+        "childOrdinal": 4,
+        "description": "Airport II Substation: New distribution substation",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "06/2029"
+      },
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:04"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:ocala:05",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 5 (top to bottom)",
+      "raw": {
+        "group": "Ocala Electric Utility",
+        "groupSlug": "ocala",
+        "childOrdinal": 5,
+        "description": "Leo White Substation: Rebuild existing substation",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2029"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:05"
+    },
+    {
+      "sourceId": "2026-04-01:ii-1:ocala:06",
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 6 (top to bottom)",
+      "raw": {
+        "group": "Ocala Electric Utility",
+        "groupSlug": "ocala",
+        "childOrdinal": 6,
+        "description": "Ergle Substation: Replace Auto-Transformer",
+        "mva": "",
+        "voltage": "230/69 kV",
+        "circuit": "",
+        "estimatedInServiceDate": "12/2031"
+      },
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:06"
+    }
+  ]
+}

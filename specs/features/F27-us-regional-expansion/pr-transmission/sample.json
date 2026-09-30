@@ -1,0 +1,538 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "qualified public Table 1 inventory; exact mapping awaits coordinator acceptance",
+  "sourceKeyProposal": "pr-transmission",
+  "reportingGroupProposal": "pr-transmission",
+  "editionProposal": "2026-08-27-table1",
+  "lifecycleAsOfProposal": "2026-08",
+  "publishedOn": "2026-08-27",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "url": "https://energia.pr.gov/wp-content/uploads/sites/7/2026/09/20260827-MI20240005-Motion-to-Submit-August-2026-Monthly-Collaborative-Report-in-Compliance-with-Resolutions-and-Orders-of-March-2028-2025-and-February-18-2026-and-Request-for-Clarification-and-Exhibits.pdf",
+    "officialIndex": "https://energia.pr.gov/en/dockets/?docket=nepr-mi-2024-0005",
+    "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-pr-transmission/20260827-MI20240005-Monthly-Report-public.pdf",
+    "sha256": "d1bc3b2e3a42fca0f41c5d2ad52b136700cf5ae580d048b213a484f4e24b5cc5",
+    "bytes": 2367226,
+    "pages": 63,
+    "inventoryLocator": "Exhibit 1 Table 1, PDF pp.12–15 / printed pp.5–8; numbered rows1–32",
+    "editionLocator": "PDF p.1 received stamp and Exhibit1 cover PDF p.7, August27,2026",
+    "publicScope": "Ordinary public Energy Bureau monthly-filing link, without confidential request or conflicting markings in this filing. Separate comprehensive-plan confidential filings not accessed."
+  },
+  "enumeration": {
+    "sourceRows": 32,
+    "retainedRecordsProposal": 22,
+    "excludedRowsProposal": 10,
+    "recordKindCountsProposal": {
+      "transmission-project": 21,
+      "capital-project-context": 1
+    },
+    "lifecycleCountsProposal": {
+      "planned": 9,
+      "on-hold": 2,
+      "unknown": 2,
+      "under-construction": 4,
+      "approved": 5
+    },
+    "locatedRecords": 0,
+    "knownQualifiedOwners": 0,
+    "nativeEngineeringProjectIds": 0,
+    "rowRules": {
+      "completedOrClosed": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "energizedNoRemainingScope": [
+        6,
+        8
+      ],
+      "retainByLifecycle": {
+        "planned": [
+          4,
+          5,
+          7,
+          16,
+          17,
+          18,
+          19,
+          20,
+          32
+        ],
+        "on-hold": [
+          14,
+          15
+        ],
+        "unknown": [
+          21,
+          22
+        ],
+        "under-construction": [
+          23,
+          24,
+          25,
+          26
+        ],
+        "approved": [
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "capitalContext": [
+        21
+      ],
+      "incrementalDateFromNarrative": [
+        4,
+        5,
+        7
+      ]
+    },
+    "exclusionReasons": [
+      {
+        "reason": "Explicitly completed or closed",
+        "count": 8
+      },
+      {
+        "reason": "Energized with no remaining work identified in this row",
+        "count": 2
+      }
+    ],
+    "unit": "One numbered Table1 project/work-package row, not an asset or unique transmission line.",
+    "outsideDeclaredScope": [
+      "Eight preceding descoped narrative bullets, already removed from active list, are separately disclosed but are not extra Table1 rows.",
+      "Exhibit3 51-line maintenance/inspection summary is not a new planned-hardening inventory.",
+      "Vegetation, storage/generation, RTU and substation tables are separate scopes, not included."
+    ]
+  },
+  "datePolicy": {
+    "projectDate": "Expected remaining construction completion; rows4/5/7 use October2026 narrative forecast, all other retained rows preserve table month/TBD.",
+    "kind": "unknown (construction completion is not in-service or need)",
+    "constructionWindow": null,
+    "monthToDayExpansion": false,
+    "fiscalQuarterNotes": "Preserve Q1 FY2027 as raw narrative; do not invent an exact day or month from a fiscal-quarter phrase.",
+    "inconsistentHistoricalDates": "Several excluded rows list expected start after expected completion. Preserve raw fields in ledger; never construct an interval from them."
+  },
+  "examples": [
+    {
+      "locator": "Exhibit 1, Table 1; row 4; PDF 12 / printed 5",
+      "raw": {
+        "rowNumber": 4,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 2100: Transmission Hardening",
+        "expectedConstructionStart": "Jul-25",
+        "expectedConstructionCompletion": "Dec-25",
+        "projectStatus": "The line was energized in December 2025, according to the commitment with the DOE. Further line hardening is scheduled for completion by October 2026. This scope is incremental and will be executed with savings from the original scope."
+      },
+      "proposed": {
+        "id": "pr-transmission:2026-08-27:table1:04",
+        "sourceId": "2026-08-27:table1:04",
+        "sourceIdMeaning": "Edition/table/row source reference; not a native engineering ID.",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "sponsor": "LUMA (reporting operator)",
+        "owner": null,
+        "date": {
+          "value": "2026-10",
+          "precision": "month",
+          "kind": "unknown",
+          "label": "Expected incremental hardening construction completion"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "voltageKv": [],
+        "parentProgramId": null,
+        "milestones": [
+          {
+            "field": "Expected Construction Start Date",
+            "date": {
+              "value": "2025-07",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            }
+          },
+          {
+            "field": "Expected Construction Completion Date (table)",
+            "date": {
+              "value": "2025-12",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction completion (table)"
+            }
+          }
+        ],
+        "notes": [
+          "The original line was energized; additional physical hardening remains planned. October 2026 narrative forecast takes precedence for the remaining work; original table dates are preserved as separate milestones."
+        ]
+      }
+    },
+    {
+      "locator": "Exhibit 1, Table 1; row 14; PDF 13 / printed 6",
+      "raw": {
+        "rowNumber": 14,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "811913",
+        "projectTitle": "TL 9600: T-Pole Replacements",
+        "expectedConstructionStart": "-",
+        "expectedConstructionCompletion": "-",
+        "projectStatus": "Awaiting reactivation. Included in LUMA’s prioritization Master List."
+      },
+      "proposed": {
+        "id": "pr-transmission:2026-08-27:table1:14",
+        "sourceId": "2026-08-27:table1:14",
+        "sourceIdMeaning": "Edition/table/row source reference; not a native engineering ID.",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "sponsor": "LUMA (reporting operator)",
+        "owner": null,
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Expected construction completion"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "voltageKv": [],
+        "parentProgramId": null,
+        "milestones": [
+          {
+            "field": "Expected Construction Start Date",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            }
+          },
+          {
+            "field": "Expected Construction Completion Date (table)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Expected construction completion (table)"
+            }
+          }
+        ],
+        "notes": [
+          "Awaiting reactivation does not mean active construction. Both forecast cells are dash placeholders."
+        ]
+      }
+    },
+    {
+      "locator": "Exhibit 1, Table 1; row 20; PDF 13,14 / printed 6,7",
+      "raw": {
+        "rowNumber": 20,
+        "pdfPages": [
+          13,
+          14
+        ],
+        "printedPages": [
+          6,
+          7
+        ],
+        "fundingSource": "750168",
+        "projectTitle": "TL 4800 (Santa Isabel-Aibonito) T- Pole Replacements",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "Dec-26",
+        "projectStatus": "Pending procurement of corrugated pipe for foundations."
+      },
+      "proposed": {
+        "id": "pr-transmission:2026-08-27:table1:20",
+        "sourceId": "2026-08-27:table1:20",
+        "sourceIdMeaning": "Edition/table/row source reference; not a native engineering ID.",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "sponsor": "LUMA (reporting operator)",
+        "owner": null,
+        "date": {
+          "value": "2026-12",
+          "precision": "month",
+          "kind": "unknown",
+          "label": "Expected construction completion"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "voltageKv": [],
+        "parentProgramId": null,
+        "milestones": [
+          {
+            "field": "Expected Construction Start Date",
+            "date": {
+              "value": "2026-07",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            }
+          },
+          {
+            "field": "Expected Construction Completion Date (table)",
+            "date": {
+              "value": "2026-12",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction completion (table)"
+            }
+          }
+        ],
+        "notes": [
+          "This single row continues from PDF13 onto PDF14. Do not create a second project for the continuation or merge with row19 sharing TL4800."
+        ]
+      }
+    },
+    {
+      "locator": "Exhibit 1, Table 1; row 21; PDF 14 / printed 7",
+      "raw": {
+        "rowNumber": 21,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "3100-Carolina- Canóvanas TC-",
+        "expectedConstructionStart": "Jun-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Execution was changed from Structure Replacement to Critical Repair. Construction could not be completed due to system constraints and unforeseen issues."
+      },
+      "proposed": {
+        "id": "pr-transmission:2026-08-27:table1:21",
+        "sourceId": "2026-08-27:table1:21",
+        "sourceIdMeaning": "Edition/table/row source reference; not a native engineering ID.",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "capital-project-context",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "sponsor": "LUMA (reporting operator)",
+        "owner": null,
+        "date": {
+          "value": "2026-09",
+          "precision": "month",
+          "kind": "unknown",
+          "label": "Expected construction completion"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "voltageKv": [],
+        "parentProgramId": null,
+        "milestones": [
+          {
+            "field": "Expected Construction Start Date",
+            "date": {
+              "value": "2026-06",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            }
+          },
+          {
+            "field": "Expected Construction Completion Date (table)",
+            "date": {
+              "value": "2026-09",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction completion (table)"
+            }
+          }
+        ],
+        "notes": [
+          "Source changed scope from structure replacement to critical repair. Retain as capital context. Incomplete construction wording alone does not prove current execution phase."
+        ]
+      }
+    },
+    {
+      "locator": "Exhibit 1, Table 1; row 27; PDF 14 / printed 7",
+      "raw": {
+        "rowNumber": 27,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "1064452",
+        "projectTitle": "TL 800: T-Pole Replacements",
+        "expectedConstructionStart": "May-27",
+        "expectedConstructionCompletion": "May-27",
+        "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
+      },
+      "proposed": {
+        "id": "pr-transmission:2026-08-27:table1:27",
+        "sourceId": "2026-08-27:table1:27",
+        "sourceIdMeaning": "Edition/table/row source reference; not a native engineering ID.",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "sponsor": "LUMA (reporting operator)",
+        "owner": null,
+        "date": {
+          "value": "2027-05",
+          "precision": "month",
+          "kind": "unknown",
+          "label": "Expected construction completion"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "voltageKv": [],
+        "parentProgramId": null,
+        "milestones": [
+          {
+            "field": "Expected Construction Start Date",
+            "date": {
+              "value": "2027-05",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            }
+          },
+          {
+            "field": "Expected Construction Completion Date (table)",
+            "date": {
+              "value": "2027-05",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction completion (table)"
+            }
+          }
+        ],
+        "notes": [
+          "Explicit Energy Bureau approval/reactivation supports approved lifecycle. Funding Source numeric value is not asserted to be a project ID."
+        ]
+      }
+    },
+    {
+      "locator": "Exhibit 1, Table 1; row 32; PDF 15 / printed 8",
+      "raw": {
+        "rowNumber": 32,
+        "pdfPages": [
+          15
+        ],
+        "printedPages": [
+          8
+        ],
+        "fundingSource": "180052",
+        "projectTitle": "Line 100/200 Out- of-Service Segment",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "TBD",
+        "projectStatus": "Under design; included in FEMA scope."
+      },
+      "proposed": {
+        "id": "pr-transmission:2026-08-27:table1:32",
+        "sourceId": "2026-08-27:table1:32",
+        "sourceIdMeaning": "Edition/table/row source reference; not a native engineering ID.",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "sponsor": "LUMA (reporting operator)",
+        "owner": null,
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Expected construction completion"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "voltageKv": [],
+        "parentProgramId": null,
+        "milestones": [
+          {
+            "field": "Expected Construction Start Date",
+            "date": {
+              "value": "2026-07",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Expected construction start"
+            }
+          },
+          {
+            "field": "Expected Construction Completion Date (table)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Expected construction completion (table)"
+            }
+          }
+        ],
+        "notes": [
+          "An out-of-service line segment is the project title, not a completed-project status. Under design supports planned; TBD completion remains unknown."
+        ]
+      }
+    }
+  ],
+  "remainingCaveats": [
+    "Funding Source mixes agency labels and numeric values; numeric tokens are not established project IDs.",
+    "Repeated line identifiers and names cannot merge rows or establish distinct cross-source engineering projects.",
+    "LUMA is reporting/operator context; qualified asset owner stays unknown.",
+    "Monthly edition is not per-row status-change date; some maintenance activity lags a month and is outside the selected table.",
+    "No coordinates, voltage column, construction day bounds or explicit cross-source identity links supplied in selected table.",
+    "Public filing availability is not an open-data or redistribution-license assertion."
+  ],
+  "sourcePass": {
+    "startedAt": "2026-09-30T09:49:58Z",
+    "endedAt": "2026-09-30T09:52:44Z",
+    "elapsedMinutes": 2.77,
+    "ceilingMinutes": 15
+  },
+  "implementationAuthorized": false
+}

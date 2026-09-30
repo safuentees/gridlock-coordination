@@ -99,10 +99,57 @@ function createUnlocatedProject(group: typeof groups[number], index: number): Pr
   }
 }
 
-// Keep the existing 300 snapshots and their order intact; append unlocated scale records.
+function createExpandedUnlocatedProject(group: typeof groups[number], index: number): Project {
+  const project = createUnlocatedProject(group, index + 1800)
+  const inventory = project.inventory!
+  const sourceLocator = index % 7 === 0
+  const planningContext = index % 19 === 0
+  const sourceId = sourceLocator ? `sec-3-regional-needs-item-${String(index + 1801).padStart(4, "0")}` : project.sourceId!
+  const evidence: SourceRef = {
+    file: `${group.key}-synthetic-inventory.json`,
+    locator: sourceLocator ? `Synthetic section 3 regional-needs proposal ${sourceId}; no native engineering ID`
+      : `Synthetic upgrade ${sourceId}; expanded regional inventory scenario`,
+    url: null,
+  }
+  const milestones: NonNullable<InventoryMetadata["milestones"]> = planningContext
+    ? [{ field: "PlanningHorizon", date: { value: String(2030 + index % 6), precision: "year", kind: "unknown", label: "Planning horizon (synthetic); not an in-service date" }, evidence: [evidence] }]
+    : (inventory.milestones ?? []).map(milestone => ({ ...milestone, evidence: [evidence] }))
+  return {
+    ...project, id: `${group.key}:${sourceId}`, sourceId,
+    name: planningContext ? `${stations[index % stations.length]} regional needs review ${index + 1801} (synthetic)` : project.name,
+    description: planningContext
+      ? "Synthetic planning context for possible station and corridor work; equipment scope and implementation remain unresolved."
+      : project.description,
+    date: planningContext ? { value: null, precision: "unknown", kind: "unknown", label: "Implementation milestone unknown (synthetic)" } : project.date,
+    sources: [evidence],
+    notes: [
+      ...(sourceLocator ? ["Synthetic section/item identity; not a native engineering project ID or evidence of continuity across editions."] : []),
+      ...(planningContext ? ["Unresolved planning context is not a committed transmission project; its horizon does not establish a construction window."] : []),
+    ],
+    inventory: {
+      ...inventory,
+      identityBasis: sourceLocator ? "source-locator" : "native-id",
+      recordKind: planningContext ? "planning-context" : inventory.recordKind,
+      recordUnit: planningContext ? "project" : inventory.recordUnit,
+      lifecycle: planningContext ? "unknown" : inventory.lifecycle,
+      lifecycleAsOf: index % 3 === 0 ? "2025" : index % 3 === 1 ? "2026-06" : editionId,
+      lifecycleDateMeaning: index % 3 === 0 ? "source-edition" : inventory.lifecycleDateMeaning,
+      owner: planningContext || index % 6 === 0 || !inventory.owner ? null : { ...inventory.owner, evidence: [evidence] },
+      sourceState: ["Washington (synthetic)", "Oregon (synthetic)", "Montana (synthetic)", "Idaho (synthetic)", "Hawaii (synthetic)", "Alaska (synthetic)", null][index % 7],
+      sourceLocation: index % 5 === 0 ? null : `${stations[index % stations.length]} regional service area (synthetic); exact site unresolved`,
+      sourceUpdatedOn: index % 3 === 0 ? null : inventory.sourceUpdatedOn,
+      milestones, nativeGeometry: null, centerRole: "unknown",
+    },
+    status: planningContext ? null : project.status,
+    location: null, buildWindow: null,
+  }
+}
+
+// Keep all existing 5,700 inventory snapshots and their order intact; append the next scale increment.
 const projects = [
   ...groups.flatMap(group => Array.from({ length: 100 }, (_, index) => createProject(group, index))),
   ...groups.flatMap(group => Array.from({ length: 1800 }, (_, index) => createUnlocatedProject(group, index))),
+  ...groups.flatMap(group => Array.from({ length: 2400 }, (_, index) => createExpandedUnlocatedProject(group, index))),
 ]
 const sourceEditions: SourceEdition[] = groups.map(group => {
   const records = projects.filter(project => project.utilityId === group.key)
@@ -110,7 +157,7 @@ const sourceEditions: SourceEdition[] = groups.map(group => {
     sourceKey: group.key, editionId, label: `${group.name}; June 2026 synthetic edition`, reportingGroupId: group.key, reportingGroupName: group.name,
     publisher: "Synthetic fixture publisher", processAuthority: null, publishedOn: editionId, retrievedOn: editionId,
     source: { file: `${group.key}-synthetic-inventory.json`, locator: `All ${records.length} synthetic records`, url: null },
-    sha256: "0".repeat(64), geographicScope: "Fictional regional portfolio; not evidence of geographic coverage", inventoryScope: "Synthetic transmission and capital-context records", scope: "full",
+    sha256: "0".repeat(64), geographicScope: "Fictional regional portfolio; not evidence of geographic coverage", inventoryScope: "Synthetic transmission, capital-context and unresolved planning records", scope: "full",
     counts: { sourceRows: records.length, importedRecords: records.length, excludedRows: 0, failedRows: 0, pendingRows: 0, locatedRecords: records.filter(project => project.location !== null).length },
     exclusions: [], limitations: ["All identities, dates, ownership evidence and positions are synthetic. The zero digest is a fixture sentinel, not a source-file hash."],
   }

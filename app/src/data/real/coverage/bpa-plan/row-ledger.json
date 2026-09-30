@@ -1,0 +1,3754 @@
+{
+  "sourceKey": "bpa-plan",
+  "editionId": "2025-updated-2026-08-25",
+  "sources": [
+    {
+      "file": "attachment-k.html",
+      "url": "https://www.bpa.gov/energy-and-services/transmission/attachment-k",
+      "sha256": "f7f6c74acc34a8faec1359bd8d1d5c95111174fcdf2cfec965cb66b5c42b9635",
+      "bytes": 113230,
+      "localOriginal": "inputs/originals/F27-bpa-plan/attachment-k.html"
+    },
+    {
+      "file": "gerp.html",
+      "url": "https://www.bpa.gov/energy-and-services/transmission/grid-expansion-and-reinforcement-portfolio",
+      "sha256": "a21139fe82a25e5ba5f610149251dcd091896f64ff7025353afadfbadc3993da",
+      "bytes": 103241,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp.html"
+    },
+    {
+      "file": "2025-BPA-Transmission-Plan_Final.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf",
+      "sha256": "246e6470dec8c7efcd8d31be29ac2a3dbb3a63a9b5669df9812d309beb4a2638",
+      "bytes": 5814764,
+      "localOriginal": "inputs/originals/F27-bpa-plan/2025-BPA-Transmission-Plan_Final.pdf"
+    },
+    {
+      "file": "GERP-10-Project-Summaries.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf",
+      "sha256": "2bb5cdd272123c3c2eeaf71f622ee38a2628906a6434cab5dfdfd7f89df2ecbe",
+      "bytes": 132315,
+      "localOriginal": "inputs/originals/F27-bpa-plan/GERP-10-Project-Summaries.pdf"
+    },
+    {
+      "file": "GERP-20-Project-Summaries.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-20-Project-Summaries.pdf",
+      "sha256": "66433703556dd0db867e437dd837500bc7d7dc549515c0855891157896faa543",
+      "bytes": 183341,
+      "localOriginal": "inputs/originals/F27-bpa-plan/GERP-20-Project-Summaries.pdf"
+    },
+    {
+      "file": "GERP-Interactive-Map-Guide.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf",
+      "sha256": "8b8a92452285bbf89f3ca569e24142f181937737314ea9539ef00f2d4f42bed5",
+      "bytes": 1694058,
+      "localOriginal": "inputs/originals/F27-bpa-plan/GERP-Interactive-Map-Guide.pdf"
+    },
+    {
+      "file": "gerp-experience-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/06e44781378e48bab2cc352be7098c1c?f=pjson",
+      "sha256": "d6e4c7379af92fc50d72437b73f4f62a418c21f4d1a4ed49aaada2026d5baced",
+      "bytes": 6964,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-experience-metadata.json"
+    },
+    {
+      "file": "gerp-experience-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/06e44781378e48bab2cc352be7098c1c/data?f=json",
+      "sha256": "2db8135cae3b75604cf049e3caa4c31953d8afc71780a4418933aea82bb118ee",
+      "bytes": 52078,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-experience-data.json"
+    },
+    {
+      "file": "gerp-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/7f85f964b05442dd960a15b001d0567d?f=pjson",
+      "sha256": "c13657d5dddf37dbe22211e0fd51b476c65895e1f29a68c9e500e05e80ff3e9d",
+      "bytes": 7492,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-webmap-metadata.json"
+    },
+    {
+      "file": "gerp-webmap-data.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/7f85f964b05442dd960a15b001d0567d/data?f=json",
+      "sha256": "7bd3fb67d8dba51e8185174e0453085e61261be764fe9af711555170b3f95992",
+      "bytes": 60993,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-webmap-data.json"
+    },
+    {
+      "file": "gerp-lines-metadata.json",
+      "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11?f=pjson",
+      "sha256": "1adcbc3517d03492048fe463e0a4a54bd0342f4b8bd21b0f2565a33772ed2b5e",
+      "bytes": 21250,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-lines-metadata.json"
+    },
+    {
+      "file": "gerp-lines-features.json",
+      "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+      "sha256": "3a15c431b99e0f329444d126171c7e40dcdd04aecee8504d04027c1e7d1bde83",
+      "bytes": 247098,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-lines-features.json"
+    },
+    {
+      "file": "gerp-substations-metadata.json",
+      "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson",
+      "sha256": "3a547c179a40ae3749cf25966de39442a1dabe24f21080d6244faa68c28920c3",
+      "bytes": 18341,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-substations-metadata.json"
+    },
+    {
+      "file": "gerp-substations-features.json",
+      "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+      "sha256": "05afbfc66f638624d40291a185150d05cd70f6e3912566e51484488161fd83e6",
+      "bytes": 13686,
+      "localOriginal": "inputs/originals/F27-bpa-plan/gerp-substations-features.json"
+    }
+  ],
+  "indexUpdatedOn": "2026-08-25",
+  "lifecycleYear": "2025",
+  "identityPolicy": "Explicit mapping below; native bundle scope must be unambiguous. Locator IDs identify section/parent/named-component scope, never publisher engineering IDs. No future-edition matching by ordinal or title.",
+  "counts": {
+    "sourceRows": 98,
+    "importedRecords": 77,
+    "excludedRows": 21,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "payloadSizes": {
+    "compactUtf8Bytes": 190744,
+    "formattedUtf8Bytes": 253043
+  },
+  "rows": [
+    {
+      "ledgerId": "s11-1-row-01",
+      "title": "Silver Creek Substation Reinforcements (RN)",
+      "sourceId": "P01092",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P01092",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 40; §8.1.1 Proposed Plans of Service; Silver Creek",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=40"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1 Chehalis–Centralia; native bundle P01092",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "P01092      2028            $11,300,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P01092",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-02",
+      "title": "Kitsap 115 kV Shunt Capacitor Modification",
+      "sourceId": "P01443",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P01443",
+      "aliases": [
+        "Kitsap 115 kV Shunt Capacitor Relocation"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Kitsap 115 kV Shunt Capacitor Modification",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=42",
+          "locator": "Printed/PDF page 42; Kitsap 115 kV Shunt Capacitor Modification; scope and forecast"
+        }
+      ],
+      "sourceFields": "P01443      2029             $4,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P01443",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-03",
+      "title": "Shelton – Fairmont #1 115 kV line rebuild",
+      "sourceId": "P00695",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P00695",
+      "aliases": [
+        "Shelton–Fairmount #1"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Shelton – Fairmont #1 115 kV line rebuild",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=42",
+          "locator": "Printed/PDF page 42; Shelton – Fairmont #1 115 kV line rebuild; scope and forecast"
+        }
+      ],
+      "sourceFields": "P00695      2029                   TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P00695",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-04",
+      "title": "Raver 500/230 kV Transformer (PSANI) (RN)",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P00094",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Raver 500/230 kV Transformer (PSANI) (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "P00094      2024            Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-05",
+      "title": "Maple Valley 230 kV Shunt Reactor",
+      "sourceId": "P06244",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P06244",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Maple Valley 230 kV Shunt Reactor",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=43",
+          "locator": "Printed/PDF page 43; Maple Valley 230 kV Shunt Reactor; scope and forecast"
+        }
+      ],
+      "sourceFields": "P06244      2028             $7,800,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P06244",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-06",
+      "title": "Monroe-Novelty 230 kV Line Upgrade",
+      "sourceId": "P02367",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P02367",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Monroe-Novelty 230 kV Line Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=44",
+          "locator": "Printed/PDF page 44; Monroe-Novelty 230 kV Line Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "P02367      2028             $2,500,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P02367",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-07",
+      "title": "Sno-King 230/115 kV Bank #3 Power Circuit Breaker Bushing CTs",
+      "sourceId": "sec-8-1-3-sno-king-bank-3-bushing-ct",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 10; §1.2.1 Sno-King CAP; need year 2026",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 44; §8.1.3 Sno-King bank 3 CT upgrade; expected energization TBD",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=44"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1 Sno-King row; no native bundle listed",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "TBD                    TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-1-3-sno-king-bank-3-bushing-ct",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-08",
+      "title": "Covington 500/230 kV banks 4 and 5 upgrade",
+      "sourceId": "P04132",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04132",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Covington 500/230 kV banks 4 and 5 upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=44",
+          "locator": "Printed/PDF page 44; Covington 500/230 kV banks 4 and 5 upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "P04132      2027                   TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04132",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-09",
+      "title": "Snohomish 230/115 kV Banks Replacement",
+      "sourceId": "sec-8-1-3-snohomish-banks",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Snohomish 230/115 kV Banks Replacement",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=44",
+          "locator": "Printed/PDF page 44; Snohomish 230/115 kV Banks Replacement; scope and forecast"
+        }
+      ],
+      "sourceFields": "2027                   TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-1-3-snohomish-banks",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-10",
+      "title": "Aberdeen-Aberdeen Tap to Satsop Park-Cosmopolis 115 kV Line Upgrade",
+      "sourceId": "P03506",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P03506",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Aberdeen-Aberdeen Tap to Satsop Park-Cosmopolis 115 kV Line Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=46",
+          "locator": "Printed/PDF page 46; Aberdeen-Aberdeen Tap to Satsop Park-Cosmopolis 115 kV Line Upgrade; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10",
+          "locator": "Printed/PDF page 10; §1.2.1 Aberdeen CAP; need year 2026"
+        }
+      ],
+      "sourceFields": "P03506      2028             $1,172,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P03506",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-11",
+      "title": "Cosmopolis-Satsop Park 115 kV No.1 Upgrade project",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P05918",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Cosmopolis-Satsop Park 115 kV No.1 Upgrade project",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "P05918   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-12",
+      "title": "South Elma – Satsop Park No. 1 Line – Remove Impairments",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P05918",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, South Elma – Satsop Park No. 1 Line – Remove Impairments",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "P05918   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-13",
+      "title": "Naselle Shunt Capacitor Replacement",
+      "sourceId": "sec-8-1-4-naselle-capacitor",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Naselle Shunt Capacitor Replacement",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=46",
+          "locator": "Printed/PDF page 46; Naselle Shunt Capacitor Replacement; scope and forecast"
+        }
+      ],
+      "sourceFields": "2028                   TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-1-4-naselle-capacitor",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-14",
+      "title": "South Elma 115 kV Substation Addition",
+      "sourceId": "sec-8-1-4-south-elma-addition",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, South Elma 115 kV Substation Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=46",
+          "locator": "Printed/PDF page 46; South Elma 115 kV Substation Addition; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD                    TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-1-4-south-elma-addition",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-15",
+      "title": "High-Side Breaker and Switchgear Associated with the Clatsop Transformer Replacement",
+      "sourceId": "P05435",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P05435",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, High-Side Breaker and Switchgear Associated with the Clatsop Transformer Replacement",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=49",
+          "locator": "Printed/PDF page 49; High-Side Breaker and Switchgear Associated with the Clatsop Transformer Replacement; scope and forecast"
+        }
+      ],
+      "sourceFields": "P05435      2027             $1,600,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P05435",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-16",
+      "title": "Clatsop 230/115 kV Transformer Upgrade",
+      "sourceId": "sec-8-2-2-clatsop-transformer",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Clatsop 230/115 kV Transformer Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=49",
+          "locator": "Printed/PDF page 49; Clatsop 230/115 kV Transformer Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD                    TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-2-2-clatsop-transformer",
+      "duplicateOfRuntimeId": null,
+      "identityCorrections": [
+        {
+          "previousSourceId": "sec-8-2-1-clatsop-transformer",
+          "sourceId": "sec-8-2-2-clatsop-transformer",
+          "reason": "Corrected source section before this pending unit was first imported; connected sample IDs are unchanged."
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-17",
+      "title": "Astoria-Driscoll 115 kV transmission line Rebuild",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P04157",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Astoria-Driscoll 115 kV transmission line Rebuild",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "P04157   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-18",
+      "title": "Forest Grove – McMinnville 115 kV Line Upgrade",
+      "sourceId": "P03469",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P03469",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Forest Grove – McMinnville 115 kV Line Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=50",
+          "locator": "Printed/PDF page 50; Forest Grove – McMinnville 115 kV Line Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "P03469      2026             $1,800,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P03469",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-19",
+      "title": "Carlton Upgrades (RN)",
+      "sourceId": "P01367",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P01367",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Carlton Upgrades (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51",
+          "locator": "Printed/PDF page 51; Carlton Upgrades (RN); scope and forecast"
+        }
+      ],
+      "sourceFields": "P01367      2026            $19,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P01367",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-20",
+      "title": "Troutdale 230 kV Series Bus Sectionalizing Breaker",
+      "sourceId": "P04401",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04401",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Troutdale 230 kV Series Bus Sectionalizing Breaker",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51",
+          "locator": "Printed/PDF page 51; Troutdale 230 kV Series Bus Sectionalizing Breaker; scope and forecast"
+        }
+      ],
+      "sourceFields": "P04401      2027             $3,490,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04401",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-21",
+      "title": "St. Johns 230/115 kV Low-Side Line Section (Remove Impairments)",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P03619",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, St. Johns 230/115 kV Low-Side Line Section (Remove Impairments)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "sourceFields": "P03619   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-22",
+      "title": "Keeler 230 kV Bus Sectionalizing Breaker Addition L0452 (GERP1)",
+      "sourceId": "sec-8-2-3-keeler-bus-breaker-l0452",
+      "identityBasis": "source-locator",
+      "nativeBundleId": "P04632",
+      "aliases": [
+        "P04632",
+        "L0452"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1, printed/PDF page 100, Keeler 230 kV Bus Sectionalizing Breaker Addition L0452 (GERP1)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51",
+          "locator": "Printed/PDF page 51; Keeler 230 kV Bus Sectionalizing Breaker Addition L0452 (GERP1); scope and forecast"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=15; Bundle_ID=P04632; Keeler-Horizon 230 kV Line; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "P04632      2029            $11,530,000",
+      "caveats": [
+        "P04632 labels the 2029 breaker here; GERP uses it for completed Keeler-Horizon. Do not collapse component lifecycles."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-2-3-keeler-bus-breaker-l0452",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 15,
+          "bundleId": "P04632",
+          "name": "Keeler",
+          "projectName": "Keeler-Horizon 230 kV Line",
+          "rawStatus": "CLOSEOUT",
+          "expectedEnergization": 2026,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-23",
+      "title": "Pearl-Sherwood-McLoughlin Upgrade (GERP1)",
+      "sourceId": "P04974",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04974",
+      "aliases": [
+        "Pearl-Sherwood 230 kV Corridor Reconfiguration and Series Bus Sectionalizing Breaker Addition"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 51; §8.2.3 joint BPA/PGE Pearl–Sherwood corridor work",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 96; §9.14 joint project, expected energization 2027",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=96"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; §2 Portland upgrades; estimated completion May 2026",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1 P04974; phase envelope 2026–2028",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; §11.2 Pearl–Sherwood–McLoughlin; 2027",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=25; Bundle_ID=P04974; Name=Pearl; retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "P04974   2026-2028           $9,400,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04974",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": {
+        "source": "gerp-substations-features.json",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+        "objectId": 25,
+        "bundleId": "P04974",
+        "name": "Pearl",
+        "longitude": -122.77691679780706,
+        "latitude": 45.32933967400088,
+        "accuracyMeters": null,
+        "role": "one facility in a multi-facility joint project; not whole-project center",
+        "rawStatus": "CONSTRUCTION",
+        "rawYear": 2026
+      }
+    },
+    {
+      "ledgerId": "s11-1-row-24",
+      "title": "Schultz-Wautoma 500 kV Series Capacitor (RN)",
+      "sourceId": "P03259",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P03259",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Schultz-Wautoma 500 kV Series Capacitor (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101",
+          "locator": "Printed/PDF page 101; Schultz-Wautoma 500 kV Series Capacitor (RN); scope and forecast"
+        }
+      ],
+      "sourceFields": "P03259     2024       $44,000,000",
+      "caveats": [
+        "2024 is printed as energization year, with no completion label or matching proposed narrative established; retain unknown, not operational by elapsed time."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P03259",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-25",
+      "title": "Keeler 500 kV Expansion and Transformer Addition (GERP1)",
+      "sourceId": "P05449",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P05449",
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 52; §8.2.3 Keeler expansion; expected energization 2031",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 89; §9.5 same Keeler expansion; expected energization 2029",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; §2 Portland upgrades; Keeler estimated completion 2030",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1 native P05449; 2031",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; §11.2 native P05449; 2029",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=5; Bundle_ID=P05449; Name=Keeler; retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "P05449     2031       $36,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P05449",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": {
+        "source": "gerp-substations-features.json",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+        "objectId": 5,
+        "bundleId": "P05449",
+        "name": "Keeler",
+        "longitude": -122.89756357587169,
+        "latitude": 45.5501949477998,
+        "crs": "EPSG:4326 response; native EPSG:3857",
+        "accuracyMeters": null,
+        "role": "existing facility yard center or baseline intersection; project association only",
+        "rawStatus": "SCOPING",
+        "rawYear": 2030
+      }
+    },
+    {
+      "ledgerId": "s11-1-row-26",
+      "title": "Lookout Point – Alvey No. 1 and 2 Transfer Trip Addition",
+      "sourceId": "P03258",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P03258",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Lookout Point – Alvey No. 1 and 2 Transfer Trip Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=54",
+          "locator": "Printed/PDF page 54; Lookout Point – Alvey No. 1 and 2 Transfer Trip Addition; scope and forecast"
+        }
+      ],
+      "sourceFields": "P03258     2026        $3,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P03258",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-27",
+      "title": "Alvey-Dillard Tap 115 kV Line Rebuild",
+      "sourceId": "P04286",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04286",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Alvey-Dillard Tap 115 kV Line Rebuild",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=54",
+          "locator": "Printed/PDF page 54; Alvey-Dillard Tap 115 kV Line Rebuild; scope and forecast"
+        }
+      ],
+      "sourceFields": "P04286     2028        $1,300,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04286",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-28",
+      "title": "Chemawa 230/115 kV Transformer Upgrade",
+      "sourceId": "sec-8-3-2-chemawa-transformer",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Chemawa 230/115 kV Transformer Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=55",
+          "locator": "Printed/PDF page 55; Chemawa 230/115 kV Transformer Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-3-2-chemawa-transformer",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-29",
+      "title": "Santiam 500/230 kV Bank #4",
+      "sourceId": "sec-8-3-2-santiam-bank-4",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Santiam 500/230 kV Bank #4",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=56",
+          "locator": "Printed/PDF page 56; Santiam 500/230 kV Bank #4; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-3-2-santiam-bank-4",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-30",
+      "title": "Lebanon 230/115 kV Transformer Addition",
+      "sourceId": "sec-8-3-2-lebanon-transformer",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Lebanon 230/115 kV Transformer Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=56",
+          "locator": "Printed/PDF page 56; Lebanon 230/115 kV Transformer Addition; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-3-2-lebanon-transformer",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-31",
+      "title": "Central Oregon Coast O&M Flex (RN) (Toledo, Wendson, Santiam, Tahkenitch)",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P02230",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Central Oregon Coast O&M Flex (RN) (Toledo, Wendson, Santiam, Tahkenitch)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P02230   Completed",
+      "caveats": [
+        "One table bundle covers explicitly combined completed components; no extra retained project is created from the component descriptions."
+      ],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-32",
+      "title": "Columbia 230 kV Bus Tie and Sectionalizing Breaker Addition and Northern Mid-Columbia Area Reinforcement (Joint Utility) and Northern Mid-Columbia Area Reinforcement (RN)",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P00076",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Columbia 230 kV Bus Tie and Sectionalizing Breaker Addition and Northern Mid-Columbia Area Reinforcement (Joint Utility) and Northern Mid-Columbia Area Reinforcement (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P00076   Completed",
+      "caveats": [
+        "One table bundle covers explicitly combined completed components; no extra retained project is created from the component descriptions."
+      ],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-33",
+      "title": "Columbia 115 kV Breaker(B-400) Free Standing Current Transformer (C05409) Upgrade",
+      "sourceId": "sec-8-4-1-columbia-b400-ct",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "C05409",
+        "B-400"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Columbia 115 kV Breaker(B-400) Free Standing Current Transformer (C05409) Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=59",
+          "locator": "Printed/PDF page 59; Columbia 115 kV Breaker(B-400) Free Standing Current Transformer (C05409) Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-4-1-columbia-b400-ct",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-34",
+      "title": "Valhalla B-288 Bushing Current Transformer (BCT) #2 Upgrade",
+      "sourceId": "sec-8-4-1-valhalla-b288-ct",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "B-288"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Valhalla B-288 Bushing Current Transformer (BCT) #2 Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=59",
+          "locator": "Printed/PDF page 59; Valhalla B-288 Bushing Current Transformer (BCT) #2 Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-4-1-valhalla-b288-ct",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-35",
+      "title": "Ellensburg 115 kV Shunt Capacitor Expansion",
+      "sourceId": "sec-8-4-1-ellensburg-capacitor",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Ellensburg 115 kV Shunt Capacitor Expansion",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=59",
+          "locator": "Printed/PDF page 59; Ellensburg 115 kV Shunt Capacitor Expansion; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-4-1-ellensburg-capacitor",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-36",
+      "title": "Grand Coulee 230 kV Fault reduction Project",
+      "sourceId": "sec-8-4-1-grand-coulee-fault-reduction",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Grand Coulee 230 kV Fault reduction Project",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=59",
+          "locator": "Printed/PDF page 59; Grand Coulee 230 kV Fault reduction Project; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=60",
+          "locator": "Printed/PDF page 60; Grand Coulee project continuation; funding and energization 2027"
+        }
+      ],
+      "sourceFields": "2027",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-4-1-grand-coulee-fault-reduction",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-37",
+      "title": "East Omak 115 kV Shunt Capacitor Addition",
+      "sourceId": "sec-8-4-2-east-omak-capacitor",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, East Omak 115 kV Shunt Capacitor Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=61",
+          "locator": "Printed/PDF page 61; East Omak 115 kV Shunt Capacitor Addition; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10",
+          "locator": "Printed/PDF page 10; §1.2.1 East Omak CAP; 21 Mvar"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-4-2-east-omak-capacitor",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-38",
+      "title": "McNary-Patterson Tap 115 kV Line (RN)",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P02364",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, McNary-Patterson Tap 115 kV Line (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P02364   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-39",
+      "title": "Red-Mountain – Horn Rapids 115 kV Line Reconductor",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P03102",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Red-Mountain – Horn Rapids 115 kV Line Reconductor",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P03102   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-40",
+      "title": "Richland-Stevens Drive 115 kV Line (RN)",
+      "sourceId": "P02365",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P02365",
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Richland-Stevens Drive 115 kV Line (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=63",
+          "locator": "Printed/PDF page 63; Richland-Stevens Drive 115 kV Line (RN); scope and forecast"
+        }
+      ],
+      "sourceFields": "P02365     2027       $12,600,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P02365",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-41",
+      "title": "G0558 South Tri-Cities Reinforcement Webber Canyon (RN)",
+      "sourceId": "P04691",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04691",
+      "aliases": [
+        "G0558"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, G0558 South Tri-Cities Reinforcement Webber Canyon (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=63",
+          "locator": "Printed/PDF page 63; G0558 South Tri-Cities Reinforcement Webber Canyon (RN); scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=64",
+          "locator": "Printed/PDF page 64; Webber Canyon continuation; expected energization spring 2028"
+        }
+      ],
+      "sourceFields": "P04691     2027      $105,800,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04691",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-42",
+      "title": "Sacajawea to Ice Harbor-Franklin #1",
+      "sourceId": "sec-8-5-2-sacajawea-ice-harbor-franklin",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Sacajawea to Ice Harbor-Franklin #1",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=64",
+          "locator": "Printed/PDF page 64; Sacajawea to Ice Harbor-Franklin #1; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-5-2-sacajawea-ice-harbor-franklin",
+      "duplicateOfRuntimeId": null,
+      "identityCorrections": [
+        {
+          "previousSourceId": "sec-8-5-1-sacajawea-ice-harbor-franklin",
+          "sourceId": "sec-8-5-2-sacajawea-ice-harbor-franklin",
+          "reason": "Corrected source section before this pending unit was first imported; connected sample IDs are unchanged."
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-43",
+      "title": "Longhorn 500/230 kV Substation L0482",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P04342",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Longhorn 500/230 kV Substation L0482",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P04342   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-44",
+      "title": "McNary 230 kV Bay Addition L0481",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P04246",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, McNary 230 kV Bay Addition L0481",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P04246   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-45",
+      "title": "Morrow Flat 230 kV Shunt Reactor",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P04423",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-cancelled",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=65",
+          "locator": "Printed/PDF page 65; Under Proposed Plans of Service, explicit Project Status Cancelled"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101",
+          "locator": "Printed/PDF page 101; §11.1 P04423 Cancelled"
+        }
+      ],
+      "sourceFields": "P04423   Cancelled",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly cancelled source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-46",
+      "title": "Six Mile Canyon 500/230 kV Substation Addition (West of Boardman) L0510 (GERP1)",
+      "sourceId": "P05580",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P05580",
+      "aliases": [
+        "L0510",
+        "West of Boardman Area Reinforcement"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Six Mile Canyon 500/230 kV Substation Addition (West of Boardman) L0510 (GERP1)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=65",
+          "locator": "Printed/PDF page 65; Six Mile Canyon 500/230 kV Substation Addition (West of Boardman) L0510 (GERP1); scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=14",
+          "locator": "Printed/PDF page 14; GERP Six Mile Canyon; estimated completion early 2028"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=2; Bundle_ID=P05580; Six Mile Canyon 230/500 kV Substation; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "P05580     2028      $284,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P05580",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 2,
+          "bundleId": "P05580",
+          "name": "Boardman",
+          "projectName": "Six Mile Canyon 230/500 kV Substation",
+          "rawStatus": "DESIGN",
+          "expectedEnergization": 2028,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-47",
+      "title": "Tucannon River 115 kV 15 Mvar Shunt Reactor (RN)",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P04438",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1, printed/PDF page 101, Tucannon River 115 kV 15 Mvar Shunt Reactor (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        }
+      ],
+      "sourceFields": "P04438   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-48",
+      "title": "La Pine 115 kV Substation Upgrade TSEP 2016",
+      "sourceId": "P03443",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P03443",
+      "aliases": [
+        "TSEP 2016"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, La Pine 115 kV Substation Upgrade TSEP 2016",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=68",
+          "locator": "Printed/PDF page 68; La Pine 115 kV Substation Upgrade TSEP 2016; scope and forecast"
+        }
+      ],
+      "sourceFields": "P03443      2026       $7,100,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P03443",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-49",
+      "title": "La Pine Upgrade Transformer Addition TSEP 2016",
+      "sourceId": "P05322",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P05322",
+      "aliases": [
+        "TSEP 2016"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, La Pine Upgrade Transformer Addition TSEP 2016",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=68",
+          "locator": "Printed/PDF page 68; La Pine Upgrade Transformer Addition TSEP 2016; scope and forecast"
+        }
+      ],
+      "sourceFields": "P05322      2027      $11,600,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P05322",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-50",
+      "title": "New Bonanza 500/230 kV Substation addition (GERP2)",
+      "sourceId": "sec-8-6-1-bonanza-substation",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05847",
+        "L0543"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 69; §8.6.1 Bonanza substation; estimated energization 2030 and GERP2 label",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1 Bonanza substation row",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Supplemental GERP1 new Bonanza, L0543; 2028",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 12; §2 GERP1 Bonanza 115/230/500 kV near existing Ponderosa; completion 2031",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=10; Bundle_ID=P05847; Name=Ponderosa; retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "2030             TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-6-1-bonanza-substation",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": {
+        "source": "gerp-substations-features.json",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+        "objectId": 10,
+        "bundleId": "P05847",
+        "name": "Ponderosa",
+        "longitude": -120.9327476470405,
+        "latitude": 44.22567028995498,
+        "accuracyMeters": null,
+        "role": "existing Ponderosa facility pin, not established new Bonanza center",
+        "rawStatus": "SCOPING",
+        "rawYear": 2031
+      }
+    },
+    {
+      "ledgerId": "s11-1-row-51",
+      "title": "Bonanza-La Pine 230 kV line addition (GERP2)",
+      "sourceId": "sec-8-6-1-bonanza-la-pine-line",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05971"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Bonanza-La Pine 230 kV line addition (GERP2)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69",
+          "locator": "Printed/PDF page 69; Bonanza-La Pine 230 kV line addition (GERP2); scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13",
+          "locator": "Printed/PDF page 13; GERP1 La Pine–Bonanza line; completion 2032"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103",
+          "locator": "Printed/PDF page 103; Supplemental La Pine–Bonanza bullet; 2030"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=4; Bundle_ID=P05971; La Pine-Bonanza 230 kV Line; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "2030             TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-6-1-bonanza-la-pine-line",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 4,
+          "bundleId": "P05971",
+          "name": "Pilot Butte-LaPine No 1",
+          "projectName": "La Pine-Bonanza 230 kV Line",
+          "rawStatus": "SCOPING",
+          "expectedEnergization": 2032,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-52",
+      "title": "Warner 115 kV +/- 100 Mvar STATCOM addition (GERP2)",
+      "sourceId": "sec-8-6-2-warner-statcom",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06539"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Warner 115 kV +/- 100 Mvar STATCOM addition (GERP2)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=70",
+          "locator": "Printed/PDF page 70; Warner 115 kV +/- 100 Mvar STATCOM addition (GERP2); scope and forecast"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=22; Bundle_ID=P06539; Warner Reactive Addition; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "2030             TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-6-2-warner-statcom",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 22,
+          "bundleId": "P06539",
+          "name": "Warner",
+          "projectName": "Warner Reactive Addition",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2031,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-53",
+      "title": "Buckley Air Insulated Substation (GERP1)",
+      "sourceId": "P03999",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P03999",
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Buckley Air Insulated Substation (GERP1)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=97",
+          "locator": "Printed/PDF page 97; Buckley Air Insulated Substation (GERP1); scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12",
+          "locator": "Printed/PDF page 12; GERP1 Buckley air-insulated rebuild; estimated completion 2029"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=3; Bundle_ID=P03999; Buckley 500 kV Substation Rebuild; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "P03999      2030     $150,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P03999",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 3,
+          "bundleId": "P03999",
+          "name": "Buckley",
+          "projectName": "Buckley 500 kV Substation Rebuild",
+          "rawStatus": "DESIGN",
+          "expectedEnergization": 2029,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-1-row-54",
+      "title": "Libby Power House 1 AND 2 Redundant Transfer Trip",
+      "sourceId": "P04231",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04231",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Libby Power House 1 AND 2 Redundant Transfer Trip",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=71",
+          "locator": "Printed/PDF page 71; Libby Power House 1 AND 2 Redundant Transfer Trip; scope and forecast"
+        }
+      ],
+      "sourceFields": "P04231      2026        $800,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04231",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-55",
+      "title": "Troy Substation Expansion and Breaker Addition",
+      "sourceId": "P02299",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P02299",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Troy Substation Expansion and Breaker Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=71",
+          "locator": "Printed/PDF page 71; Troy Substation Expansion and Breaker Addition; scope and forecast"
+        }
+      ],
+      "sourceFields": "P02299      2032      $10,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P02299",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-56",
+      "title": "Troy 115 kV Shunt Capacitor Addition",
+      "sourceId": "sec-8-7-1-troy-capacitor",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Troy 115 kV Shunt Capacitor Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=72",
+          "locator": "Printed/PDF page 72; Troy 115 kV Shunt Capacitor Addition; scope and forecast"
+        }
+      ],
+      "sourceFields": "2032             TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-7-1-troy-capacitor",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-57",
+      "title": "Conkelley Substation Retirement (RN)",
+      "sourceId": "P02259",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P02259",
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Conkelley Substation Retirement (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=73",
+          "locator": "Printed/PDF page 73; Conkelley Substation Retirement (RN); scope and forecast"
+        }
+      ],
+      "sourceFields": "P02259      2027      $32,000,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P02259",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-58",
+      "title": "Columbia Falls 115/34.5 kV Transformer Replacement",
+      "sourceId": "P06349",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P06349",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Columbia Falls 115/34.5 kV Transformer Replacement",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=73",
+          "locator": "Printed/PDF page 73; Columbia Falls 115/34.5 kV Transformer Replacement; scope and forecast"
+        }
+      ],
+      "sourceFields": "P06349      TBD        $8,500,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P06349",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-59",
+      "title": "Columbia Falls 230/115 kV Transformer Bank 2 and 3 Replacements",
+      "sourceId": "sec-8-7-2-columbia-falls-banks-2-3",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Columbia Falls 230/115 kV Transformer Bank 2 and 3 Replacements",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=73",
+          "locator": "Printed/PDF page 73; Columbia Falls 230/115 kV Transformer Bank 2 and 3 Replacements; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD              TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-7-2-columbia-falls-banks-2-3",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-60",
+      "title": "Bell-Boundary 230 kV No. 1 (Sacheen) Line Upgrade",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P05566",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Bell-Boundary 230 kV No. 1 (Sacheen) Line Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        }
+      ],
+      "sourceFields": "P05566   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-61",
+      "title": "Spar Canyon 230 kV Reactor Addition",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P02306",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Spar Canyon 230 kV Reactor Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        }
+      ],
+      "sourceFields": "P02306   Completed",
+      "caveats": [],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-62",
+      "title": "Cattle Creek-Palisades and Palisades-Swan Valley 115-to-161 kV rebuild with transformer additions",
+      "sourceId": "sec-8-8-2-cattle-creek-palisades-swan-valley",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Cattle Creek-Palisades and Palisades-Swan Valley 115-to-161 kV rebuild with transformer additions",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=77",
+          "locator": "Printed/PDF page 77; Cattle Creek-Palisades and Palisades-Swan Valley 115-to-161 kV rebuild with transformer additions; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD               TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-8-2-cattle-creek-palisades-swan-valley",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-63",
+      "title": "Targhee substation, capacitor and Targhee-Swan Valley/Drummond reconductoring",
+      "sourceId": "sec-8-8-2-targhee-group",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Targhee substation, capacitor and Targhee-Swan Valley/Drummond reconductoring",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=77",
+          "locator": "Printed/PDF page 77; Targhee substation, capacitor and Targhee-Swan Valley/Drummond reconductoring; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD              TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-8-2-targhee-group",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-64",
+      "title": "Teton 115 kV sectionalizing breaker and capacitor",
+      "sourceId": "sec-8-8-2-teton-breaker-capacitor",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Teton 115 kV sectionalizing breaker and capacitor",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=77",
+          "locator": "Printed/PDF page 77; Teton 115 kV sectionalizing breaker and capacitor; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD              TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-8-2-teton-breaker-capacitor",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-65",
+      "title": "Heyburn- West Burley 138 kV line upgrade Line Upgrade",
+      "sourceId": "sec-8-8-1-heyburn-west-burley",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Heyburn- West Burley 138 kV line upgrade Line Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=76",
+          "locator": "Printed/PDF page 76; Heyburn- West Burley 138 kV line upgrade Line Upgrade; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD              TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-8-1-heyburn-west-burley",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-66",
+      "title": "Quenett Creek Substation Addition L0380 (RN)",
+      "sourceId": "P02256",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P02256",
+      "aliases": [
+        "L0380"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Quenett Creek Substation Addition L0380 (RN)",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=79",
+          "locator": "Printed/PDF page 79; Quenett Creek Substation Addition L0380 (RN); scope and forecast"
+        }
+      ],
+      "sourceFields": "P02256      2028      $57,500,000",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P02256",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-67",
+      "title": "Big Eddy 230 kV Bus Differential Relay Addition",
+      "sourceId": "sec-8-9-1-big-eddy-bus-relay",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Big Eddy 230 kV Bus Differential Relay Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=79",
+          "locator": "Printed/PDF page 79; Big Eddy 230 kV Bus Differential Relay Addition; scope and forecast"
+        }
+      ],
+      "sourceFields": "TBD              TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-9-1-big-eddy-bus-relay",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s11-1-row-68",
+      "title": "NWCPUD’s Big Eddy- The Dalles 115 kV upgrade",
+      "sourceId": "sec-8-9-1-nwcpud-big-eddy-the-dalles",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06692"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, NWCPUD’s Big Eddy- The Dalles 115 kV upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=79",
+          "locator": "Printed/PDF page 79; NWCPUD’s Big Eddy- The Dalles 115 kV upgrade; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; GERP2 Big Eddy–The Dalles rebuild under study with Northern Wasco PUD"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=22; Bundle_ID=P06692; Big Eddy-The Dalles Line Rebuild; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": "TBD              TBD",
+      "caveats": [],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-8-9-1-nwcpud-big-eddy-the-dalles",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 22,
+          "bundleId": "P06692",
+          "name": "Big Eddie-The Dalles",
+          "projectName": "Big Eddy-The Dalles Line Rebuild",
+          "rawStatus": "CUSTOMER STUDY",
+          "expectedEnergization": 2033,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-2-row-01",
+      "title": "Keeler expansion and transformer",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P05449",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "duplicate-of-retained",
+      "duplicateOfLedgerId": "s11-1-row-25",
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Keeler expansion and transformer",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "2029 here versus 2031 in area table; keep both statements."
+      ],
+      "disposition": "excluded",
+      "reason": "Repeated source observation of an accepted retained unit",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": "bpa-plan:P05449"
+    },
+    {
+      "ledgerId": "s11-2-row-02",
+      "title": "Schultz-Raver reconductor and Paul capacitor",
+      "sourceId": "P5470",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P5470",
+      "aliases": [
+        "P05470"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Schultz-Raver reconductor and Paul capacitor",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88",
+          "locator": "Printed/PDF page 88; Schultz-Raver reconductor and Paul capacitor; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85",
+          "locator": "Printed/PDF page 85; Path project summary; expected energization 2029"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13",
+          "locator": "Printed/PDF page 13; Cross Cascades North line/Paul components; completion 2032"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=16; Bundle_ID=P05470; Paul 500 kV Substation Upgrade; snapshot retrieved 2026-09-30"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=7; Bundle_ID=P05470; Schultz-Raver 500 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Native text P5470; GERP P05470 is a proposed explicit crosswalk, never automatic zero-padding. Keep line and Paul capacitor one source bundle."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P5470",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 16,
+          "bundleId": "P05470",
+          "name": "Paul",
+          "projectName": "Paul 500 kV Substation Upgrade",
+          "rawStatus": "SCOPING",
+          "expectedEnergization": 2032,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 7,
+          "bundleId": "P05470",
+          "name": "Schultz-Raver No 3",
+          "projectName": "Schultz-Raver 500 kV Line Upgrade",
+          "rawStatus": "SCOPING",
+          "expectedEnergization": 2032,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-2-row-03",
+      "title": "Schultz-Raver series capacitors",
+      "sourceId": "P04364",
+      "identityBasis": "native-id",
+      "nativeBundleId": "P04364",
+      "aliases": [],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Schultz-Raver series capacitors",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88",
+          "locator": "Printed/PDF page 88; Schultz-Raver series capacitors; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85",
+          "locator": "Printed/PDF page 85; Path project summary; series-capacitor 2029"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=26; Bundle_ID=P04364; Schultz-Raver 500kV Series Capacitors; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "2029 on p85, 2030 here; public GERP feature gives 2029. No silent date winner."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:P04364",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 26,
+          "bundleId": "P04364",
+          "name": "Schultz",
+          "projectName": "Schultz-Raver 500kV Series Capacitors",
+          "rawStatus": "DESIGN",
+          "expectedEnergization": 2029,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-2-row-04",
+      "title": "Pearl-Sherwood-McLoughlin upgrade",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "duplicate-of-retained",
+      "duplicateOfLedgerId": "s11-1-row-23",
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Pearl-Sherwood-McLoughlin upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Native ID supplied by area table, not this path row; 2027 here."
+      ],
+      "disposition": "excluded",
+      "reason": "Repeated source observation of an accepted retained unit",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": "bpa-plan:P04974"
+    },
+    {
+      "ledgerId": "s11-3-row-01",
+      "title": "Buckley air-insulated substation",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": "P03999",
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "duplicate-of-retained",
+      "duplicateOfLedgerId": "s11-1-row-53",
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Buckley air-insulated substation",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "2030 here; GERP summary 2029. Existing-yard pin does not establish new AIS center."
+      ],
+      "disposition": "excluded",
+      "reason": "Repeated source observation of an accepted retained unit",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": "bpa-plan:P03999"
+    },
+    {
+      "ledgerId": "s11-gerp-01",
+      "title": "Chehalis-Covington line upgrade to Cowlitz Tap",
+      "sourceId": "sec-2-gerp1-chehalis-covington",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05473",
+        "TSEP 2022"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Chehalis-Covington line upgrade to Cowlitz Tap",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12",
+          "locator": "Printed/PDF page 12; Chehalis-Covington line upgrade to Cowlitz Tap; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=2; Bundle_ID=P05473; Chehalis-Covington 230 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "GERP Bundle_ID P05473 is a proposed name/scope crosswalk; no bundle ID is printed in this supplemental bullet. Summary dates can differ."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp1-chehalis-covington",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 2,
+          "bundleId": "P05473",
+          "name": "Chehalis-Covington No 1",
+          "projectName": "Chehalis-Covington 230 kV Line Upgrade",
+          "rawStatus": "DESIGN",
+          "expectedEnergization": 2028,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-gerp-02",
+      "title": "New Bonanza substation",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "duplicate-of-retained",
+      "duplicateOfLedgerId": "s11-1-row-50",
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, New Bonanza substation",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "GERP Bundle_ID P05847 is a proposed name/scope crosswalk; no bundle ID is printed in this supplemental bullet. Summary dates can differ."
+      ],
+      "disposition": "excluded",
+      "reason": "Repeated source observation of an accepted retained unit",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": "bpa-plan:sec-8-6-1-bonanza-substation"
+    },
+    {
+      "ledgerId": "s11-gerp-03",
+      "title": "Ross-Rivergate line upgrade",
+      "sourceId": "sec-2-gerp1-ross-rivergate",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05471",
+        "TSEP 2022"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Ross-Rivergate line upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=14",
+          "locator": "Printed/PDF page 14; Ross-Rivergate line upgrade; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=6; Bundle_ID=P05471; Ross-Rivergate 230 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "GERP Bundle_ID P05471 is a proposed name/scope crosswalk; no bundle ID is printed in this supplemental bullet. Summary dates can differ."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp1-ross-rivergate",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 6,
+          "bundleId": "P05471",
+          "name": "Ross-Rivergate No 1",
+          "projectName": "Ross-Rivergate 230 kV Line Upgrade",
+          "rawStatus": "DESIGN",
+          "expectedEnergization": 2031,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-gerp-04",
+      "title": "New La Pine-Bonanza line",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "duplicate-of-retained",
+      "duplicateOfLedgerId": "s11-1-row-51",
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, New La Pine-Bonanza line",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "GERP Bundle_ID P05971 is a proposed name/scope crosswalk; no bundle ID is printed in this supplemental bullet. Summary dates can differ."
+      ],
+      "disposition": "excluded",
+      "reason": "Repeated source observation of an accepted retained unit",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": "bpa-plan:sec-8-6-1-bonanza-la-pine-line"
+    },
+    {
+      "ledgerId": "s11-gerp-05",
+      "title": "Rock Creek-John Day line upgrade",
+      "sourceId": "sec-2-gerp1-rock-creek-john-day",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05472",
+        "TSEP 2022"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Rock Creek-John Day line upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=14",
+          "locator": "Printed/PDF page 14; Rock Creek-John Day line upgrade; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=5; Bundle_ID=P05472; Rock Creek-John Day 500 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "GERP Bundle_ID P05472 is a proposed name/scope crosswalk; no bundle ID is printed in this supplemental bullet. Summary dates can differ."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp1-rock-creek-john-day",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 5,
+          "bundleId": "P05472",
+          "name": "Rock Creek-John Day No 1",
+          "projectName": "Rock Creek-John Day 500 kV Line Upgrade",
+          "rawStatus": "DESIGN",
+          "expectedEnergization": 2030,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s11-gerp-06",
+      "title": "Big Eddy-Chemawa line rebuild",
+      "sourceId": "sec-2-gerp1-big-eddy-chemawa",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05468",
+        "TSEP 2022"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Printed/PDF page 103, Big Eddy-Chemawa line rebuild",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12",
+          "locator": "Printed/PDF page 12; Big Eddy-Chemawa line rebuild; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=1; Bundle_ID=P05468; Big Eddy-Chemawa 230/500 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "GERP Bundle_ID P05468 is a proposed name/scope crosswalk; no bundle ID is printed in this supplemental bullet. Summary dates can differ."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp1-big-eddy-chemawa",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 1,
+          "bundleId": "P05468",
+          "name": "Big Eddy-Chemawa No 1",
+          "projectName": "Big Eddy-Chemawa 230/500 kV Line Upgrade",
+          "rawStatus": "SCOPING",
+          "expectedEnergization": 2033,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-01",
+      "title": "Olympia 230 kV substation upgrade",
+      "sourceId": "sec-2-cross-cascades-north-olympia",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06219"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; Printed/PDF page 13, Olympia 230 kV substation upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13",
+          "locator": "Printed/PDF page 13; Olympia 230 kV substation upgrade; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88",
+          "locator": "Printed/PDF page 88; Schultz–Raver narrative includes Olympia STATCOM"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=17; Bundle_ID=P06219; Olympia 230 kV Substation Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Distinct third Cross Cascades North component; other two are combined in P5470/P05470. Native GERP Bundle_ID crosswalk candidate: P06219."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-cross-cascades-north-olympia",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 17,
+          "bundleId": "P06219",
+          "name": "Olympia",
+          "projectName": "Olympia 230 kV Substation Upgrade",
+          "rawStatus": "SCOPING",
+          "expectedEnergization": 2032,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-02",
+      "title": "Big Eddy-Quenett Creek line upgrade",
+      "sourceId": "sec-2-gerp2-big-eddy-quenett-creek",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06660"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 16; Printed/PDF page 16, Big Eddy-Quenett Creek line upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; Big Eddy-Quenett Creek line upgrade; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=16; Bundle_ID=P06660; Big Eddy-Quenett Creek 230 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Distinct from Quenett Creek substation addition P02256. Native GERP Bundle_ID crosswalk candidate: P06660."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp2-big-eddy-quenett-creek",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 16,
+          "bundleId": "P06660",
+          "name": "Big Eddy-Quenett Creek No 1",
+          "projectName": "Big Eddy-Quenett Creek 230 kV Line Upgrade",
+          "rawStatus": "SCOPING",
+          "expectedEnergization": 2031,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-03",
+      "title": "Central Oregon dynamic reactive upgrades",
+      "sourceId": "sec-2-gerp2-central-oregon-reactive",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06546"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 16; Printed/PDF page 16, Central Oregon dynamic reactive upgrades",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; Central Oregon dynamic reactive upgrades; scope and forecast"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=18; Bundle_ID=P06546; Captain Jack Substation; snapshot retrieved 2026-09-30"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=19; Bundle_ID=P06546; Fort Rock Compensation Station; snapshot retrieved 2026-09-30"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=20; Bundle_ID=P06546; Bonanza 230/500 kV Substation; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Keep Captain Jack, Fort Rock and Bonanza sites together in one named project; three point features do not create three projects. Native GERP Bundle_ID crosswalk candidate: P06546."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp2-central-oregon-reactive",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 18,
+          "bundleId": "P06546",
+          "name": "Captain Jack",
+          "projectName": "Captain Jack Substation",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 19,
+          "bundleId": "P06546",
+          "name": "Fort Rock",
+          "projectName": "Fort Rock Compensation Station",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 20,
+          "bundleId": "P06546",
+          "name": "Bonanza",
+          "projectName": "Bonanza 230/500 kV Substation",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-04",
+      "title": "Lower Columbia to Bonanza",
+      "sourceId": "sec-2-lower-columbia-nob-bonanza",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06545"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 16; Printed/PDF page 16, Lower Columbia to Bonanza",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; Lower Columbia to Bonanza; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=40; Bundle_ID=P06545; Lower Columbia to Bonanza; snapshot retrieved 2026-09-30"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=41; Bundle_ID=P06545; Lower Columbia to Bonanza II; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Keep two named line corridors together; optional additional connections remain subordinate conditional scope. Native GERP Bundle_ID crosswalk candidate: P06545."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-lower-columbia-nob-bonanza",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 40,
+          "bundleId": "P06545",
+          "name": "Big Eddy-Bonanza",
+          "projectName": "Lower Columbia to Bonanza",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 41,
+          "bundleId": "P06545",
+          "name": "Longhorn-Bonanza",
+          "projectName": "Lower Columbia to Bonanza II",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-05",
+      "title": "Bonanza to Nevada-Oregon Border line",
+      "sourceId": "sec-2-lower-columbia-nob-line",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P05978"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 16; Printed/PDF page 16, Bonanza to Nevada-Oregon Border line",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; Bonanza to Nevada-Oregon Border line; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=23; Bundle_ID=P05978; Bonanza to Nevada-Oregon Border; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Named child; series capacitors remain subordinate scope. Native GERP Bundle_ID crosswalk candidate: P05978."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-lower-columbia-nob-line",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 23,
+          "bundleId": "P05978",
+          "name": "Bonanza-NOB",
+          "projectName": "Bonanza to Nevada-Oregon Border",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-06",
+      "title": "Nevada-Oregon Border substation",
+      "sourceId": "sec-2-lower-columbia-nob-substation",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06644"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 16; Printed/PDF page 16, Nevada-Oregon Border substation",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; Nevada-Oregon Border substation; scope and forecast"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=23; Bundle_ID=P06644; Nevada-Oregon Border Substation; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Separate named child from the new line; GIS project text describes land acquisition, not completed substation. Native GERP Bundle_ID crosswalk candidate: P06644."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-lower-columbia-nob-substation",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 23,
+          "bundleId": "P06644",
+          "name": "NOB",
+          "projectName": "Nevada-Oregon Border Substation",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-07",
+      "title": "North of Pearl upgrades",
+      "sourceId": "sec-2-gerp2-north-of-pearl",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P01322"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 16; Printed/PDF page 16, North of Pearl upgrades",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=16",
+          "locator": "Printed/PDF page 16; North of Pearl upgrades; scope and forecast"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; North of Pearl continuation; three workstream bullets"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=15; Bundle_ID=P01322; North of Pearl; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "One named multi-facility project continuing on p17; not the smaller Pearl-Sherwood-McLoughlin P04974. Native GERP Bundle_ID crosswalk candidate: P01322."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp2-north-of-pearl",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 15,
+          "bundleId": "P01322",
+          "name": "Pearl-Keeler No 1",
+          "projectName": "North of Pearl",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2033,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-08",
+      "title": "Ostrander-Pearl line upgrade",
+      "sourceId": "sec-2-gerp2-ostrander-pearl",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P02505"
+      ],
+      "recordUnit": "upgrade",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 17; Printed/PDF page 17, Ostrander-Pearl line upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; Ostrander-Pearl line upgrade; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=17; Bundle_ID=P02505; Ostrander-Pearl #1 500 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        " Native GERP Bundle_ID crosswalk candidate: P02505."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp2-ostrander-pearl",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 17,
+          "bundleId": "P02505",
+          "name": "Ostrander-Pearl No 1",
+          "projectName": "Ostrander-Pearl #1 500 kV Line Upgrade",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2031,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-09",
+      "title": "Hilltop reactive addition",
+      "sourceId": "sec-2-reno-alturas-hilltop",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06539"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 17; Printed/PDF page 17, Hilltop reactive addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; Hilltop reactive addition; scope and forecast"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=21; Bundle_ID=P06539; Hilltop Reactive Addition; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Proposed split of Reno-Alturas into Hilltop and already-listed Warner. Bundle P06539 is shared; source-locator component identity required, not native bundle alone. Native GERP Bundle_ID crosswalk candidate: P06539."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-reno-alturas-hilltop",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID_1",
+          "objectId": 21,
+          "bundleId": "P06539",
+          "name": "Hilltop",
+          "projectName": "Hilltop Reactive Addition",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2031,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-10",
+      "title": "North of Marion Upgrade I",
+      "sourceId": "sec-2-salem-north-of-marion-i",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06540"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 17; Printed/PDF page 17, North of Marion Upgrade I",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; North of Marion Upgrade I; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=18; Bundle_ID=P06540; Salem Area Upgrades #1 (North of Marion); snapshot retrieved 2026-09-30"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=19; Bundle_ID=P06540; Salem Area Upgrades #1 (North of Marion); snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "One named child of Salem upgrades; two GIS line features are not extra projects. Native GERP Bundle_ID crosswalk candidate: P06540."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-salem-north-of-marion-i",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 18,
+          "bundleId": "P06540",
+          "name": "Oregon City-Chemawa No 2",
+          "projectName": "Salem Area Upgrades #1 (North of Marion)",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 19,
+          "bundleId": "P06540",
+          "name": "Santiam-Chemawa No 1",
+          "projectName": "Salem Area Upgrades #1 (North of Marion)",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-11",
+      "title": "North of Marion Upgrade II",
+      "sourceId": "sec-2-salem-north-of-marion-ii",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P02506"
+      ],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 17; Printed/PDF page 17, North of Marion Upgrade II",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; North of Marion Upgrade II; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=20; Bundle_ID=P02506; Salem Area Upgrades #2 (North of Marion); snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Separate named child of Salem upgrades. Native GERP Bundle_ID crosswalk candidate: P02506."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-salem-north-of-marion-ii",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 20,
+          "bundleId": "P02506",
+          "name": "Pearl-Marion No 1",
+          "projectName": "Salem Area Upgrades #2 (North of Marion)",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-12",
+      "title": "Grand Coulee-Columbia-Schultz line upgrade",
+      "sourceId": "sec-2-gerp2-grand-coulee-columbia-schultz",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06544"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 17; Printed/PDF page 17, Grand Coulee-Columbia-Schultz line upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; Grand Coulee-Columbia-Schultz line upgrade; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=37; Bundle_ID=P06544; Grand Coulee-Columbia-Schultz 500 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Associated Columbia yard stays within the named line project. Native GERP Bundle_ID crosswalk candidate: P06544."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp2-grand-coulee-columbia-schultz",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 37,
+          "bundleId": "P06544",
+          "name": "Grand Coulee-Schultz No 1",
+          "projectName": "Grand Coulee-Columbia-Schultz 500 kV Line Upgrade",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-add-13",
+      "title": "Schultz-Olympia line rebuild",
+      "sourceId": "sec-2-gerp2-schultz-olympia",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [
+        "P06538"
+      ],
+      "recordUnit": "project",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 17; Printed/PDF page 17, Schultz-Olympia line rebuild",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=17",
+          "locator": "Printed/PDF page 17; Schultz-Olympia line rebuild; scope and forecast"
+        },
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID=14; Bundle_ID=P06538; Schultz-Olympia 500 kV Line Upgrade; snapshot retrieved 2026-09-30"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Associated Olympia yard stays within this project; not the distinct GERP 1.0 Olympia 230 kV component. Native GERP Bundle_ID crosswalk candidate: P06538."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-2-gerp2-schultz-olympia",
+      "duplicateOfRuntimeId": null,
+      "supplementaryPublicGeometryEvidence": [
+        {
+          "file": "gerp-lines-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "objectField": "OBJECTID",
+          "objectId": 14,
+          "bundleId": "P06538",
+          "name": "Olympia-Grand Coulee No 1",
+          "projectName": "Schultz-Olympia 500 kV Line Upgrade",
+          "rawStatus": "INTIATION",
+          "expectedEnergization": 2035,
+          "role": "published existing-facility or corridor representation; not a qualified project center or proposed route"
+        }
+      ]
+    },
+    {
+      "ledgerId": "s2-completed-01",
+      "title": "Keeler-Horizon 230 kV line #2",
+      "sourceId": null,
+      "identityBasis": null,
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": null,
+      "acceptedDisposition": "exclude-completed",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; Printed/PDF page 13, Keeler-Horizon 230 kV line #2",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Explicitly energized 2024. GERP point P04632 CLOSEOUT in 2026 overlaps the separate breaker scope; exclude this completed line observation without excluding the planned breaker."
+      ],
+      "disposition": "excluded",
+      "reason": "Explicitly completed source work",
+      "runtimeId": null,
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s1-cap-add-01",
+      "title": "Driscoll second under-voltage load-shedding relay",
+      "sourceId": "sec-1-2-1-driscoll-uvls",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 10; Printed/PDF page 10, Driscoll second under-voltage load-shedding relay",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10",
+          "locator": "Printed/PDF page 10; Driscoll second under-voltage load-shedding relay; scope and forecast"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Explicit new corrective work, not an existing asset-list item. Native bundle and service date unknown; Driscoll need year 2026 is not an in-service year."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-1-2-1-driscoll-uvls",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s1-cap-add-02",
+      "title": "McNary Powerhouse #6/North Wasco breaker",
+      "sourceId": "sec-1-2-1-mcnary-powerhouse-6-north-wasco-breaker",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 10; Printed/PDF page 10, McNary Powerhouse #6/North Wasco breaker",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10",
+          "locator": "Printed/PDF page 10; McNary Powerhouse #6/North Wasco breaker; scope and forecast"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Explicit short-circuit corrective work. Native bundle and milestone unknown; do not merge with other work at the same station."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-1-2-1-mcnary-powerhouse-6-north-wasco-breaker",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s1-cap-add-03",
+      "title": "Covington bus section 1-2 breaker",
+      "sourceId": "sec-1-2-1-covington-bus-1-2-breaker",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 11; Printed/PDF page 11, Covington bus section 1-2 breaker",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=11"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=11",
+          "locator": "Printed/PDF page 11; Covington bus section 1-2 breaker; scope and forecast"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Explicit short-circuit corrective work. Native bundle and milestone unknown; do not merge with other work at the same station."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-1-2-1-covington-bus-1-2-breaker",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s1-cap-add-04",
+      "title": "Maple Valley SVC/bank 3 reactive breaker",
+      "sourceId": "sec-1-2-1-maple-valley-reactive-breaker",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 11; Printed/PDF page 11, Maple Valley SVC/bank 3 reactive breaker",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=11"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=11",
+          "locator": "Printed/PDF page 11; Maple Valley SVC/bank 3 reactive breaker; scope and forecast"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Explicit short-circuit corrective work. Native bundle and milestone unknown; do not merge with other work at the same station."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-1-2-1-maple-valley-reactive-breaker",
+      "duplicateOfRuntimeId": null
+    },
+    {
+      "ledgerId": "s1-cap-add-05",
+      "title": "Keeler group 2 reactive breaker",
+      "sourceId": "sec-1-2-1-keeler-group-2-reactive-breaker",
+      "identityBasis": "source-locator",
+      "nativeBundleId": null,
+      "aliases": [],
+      "recordUnit": "component",
+      "acceptedDisposition": "retain",
+      "duplicateOfLedgerId": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 11; Printed/PDF page 11, Keeler group 2 reactive breaker",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=11"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=11",
+          "locator": "Printed/PDF page 11; Keeler group 2 reactive breaker; scope and forecast"
+        }
+      ],
+      "sourceFields": null,
+      "caveats": [
+        "Explicit short-circuit corrective work. Native bundle and milestone unknown; do not merge with other work at the same station."
+      ],
+      "disposition": "imported",
+      "reason": "Accepted physical transmission work with explicit source-unit identity",
+      "runtimeId": "bpa-plan:sec-1-2-1-keeler-group-2-reactive-breaker",
+      "duplicateOfRuntimeId": null
+    }
+  ]
+}

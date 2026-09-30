@@ -1,0 +1,2858 @@
+[
+  {
+    "sourceId": "2025-p005-r01",
+    "page": 5,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 5, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=5"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Industrial Customer Tap Removal 115 kV",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "06/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p005-r02",
+    "page": 5,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 5, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=5"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Zimmerman Switch Replacements",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "01/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p005-r02"
+  },
+  {
+    "sourceId": "2025-p005-r03",
+    "page": 5,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 5, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=5"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Packard Replace OCBs",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p005-r03"
+  },
+  {
+    "sourceId": "2025-p005-r04",
+    "page": 5,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 5, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=5"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Elm St TR2 Replacement",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "04/2027",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p005-r04"
+  },
+  {
+    "sourceId": "2025-p006-r01",
+    "page": 6,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 6, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=6"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Huntley-Lockport 36/37 Resiliency",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "04/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r01"
+  },
+  {
+    "sourceId": "2025-p006-r02",
+    "page": 6,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 6, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=6"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Packard-Huntley 130/133",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r02"
+  },
+  {
+    "sourceId": "2025-p006-r03",
+    "page": 6,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 6, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=6"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Niagara Digital Campus (Q1681)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r03"
+  },
+  {
+    "sourceId": "2025-p006-r04",
+    "page": 6,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 6, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=6"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Industrial Customer 115 kV (Niagara)",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "06/2028",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p006-r04"
+  },
+  {
+    "sourceId": "2025-p007-r01",
+    "page": 7,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 7, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=7"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Lockport Station Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2029",
+    "lifecycle": "planned",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p007-r01"
+  },
+  {
+    "sourceId": "2025-p007-r02",
+    "page": 7,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 7, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=7"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Katherine Street/First Ward Substation",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2032",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p007-r02"
+  },
+  {
+    "sourceId": "2025-p007-r03",
+    "page": 7,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 7, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=7"
+    },
+    "planningArea": "Frontier",
+    "sourceProjectName": "Packard-Gardenville Reconfiguration 115 kV Lines 180, 182, 181-922",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2033",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p007-r03"
+  },
+  {
+    "sourceId": "2025-p009-r01",
+    "page": 9,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 9, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=9"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Gardenville-Dunkirk 141/142 Rebuild (North)",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "02/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p009-r02",
+    "page": 9,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 9, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=9"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "CS2-DG -Hartfield R1446/R1450 RU",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "04/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p009-r03",
+    "page": 9,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 9, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=9"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Nile Hill SWS Upgrades on Line 157 (CLCPA)",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "10/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p009-r03"
+  },
+  {
+    "sourceId": "2025-p009-r04",
+    "page": 9,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 9, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=9"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Nile Hill Station Upgrades (CLCPA)",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "10/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p009-r04"
+  },
+  {
+    "sourceId": "2025-p009-r05",
+    "page": 9,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 9, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=9"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Dunkirk-Falconer 160 Resiliency",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p009-r05"
+  },
+  {
+    "sourceId": "2025-p010-r01",
+    "page": 10,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 10, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=10"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Q596 Alle Catt II Wind Project",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r01"
+  },
+  {
+    "sourceId": "2025-p010-r02",
+    "page": 10,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 10, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=10"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Dunkirk-Laona 161/162 Reconductor (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r02"
+  },
+  {
+    "sourceId": "2025-p010-r03",
+    "page": 10,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 10, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=10"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Homer Hill Station Asset replacement",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r03"
+  },
+  {
+    "sourceId": "2025-p010-r04",
+    "page": 10,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 10, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=10"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Moons-Falconer 175/176 Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2031",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r04"
+  },
+  {
+    "sourceId": "2025-p010-r05",
+    "page": 10,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 10, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=10"
+    },
+    "planningArea": "Southwest",
+    "sourceProjectName": "Gardenville Dunkirk 141/142 (South)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2035",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p010-r05"
+  },
+  {
+    "sourceId": "2025-p012-r01",
+    "page": 12,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 12, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=12"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Industrial Customer 115 kV",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "05/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p012-r02",
+    "page": 12,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 12, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=12"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Batavia -Transformer",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "10/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p012-r02"
+  },
+  {
+    "sourceId": "2025-p012-r03",
+    "page": 12,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 12, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=12"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "CS2-DG -N Lakeville Relay Upgrades",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "10/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p012-r03"
+  },
+  {
+    "sourceId": "2025-p012-r04",
+    "page": 12,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 12, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=12"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Brockport -Rplc CB R412 DF",
+    "rawStatus": "N/A",
+    "rawExpectedInService": "10/2026",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p012-r04"
+  },
+  {
+    "sourceId": "2025-p013-r01",
+    "page": 13,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 13, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=13"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Heritage Wind-Stations",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r01"
+  },
+  {
+    "sourceId": "2025-p013-r02",
+    "page": 13,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 13, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=13"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Lockport -Travelling Wave 113",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "01/2027",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r02"
+  },
+  {
+    "sourceId": "2025-p013-r03",
+    "page": 13,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 13, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=13"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Medina -CB Replacements",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "07/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r03"
+  },
+  {
+    "sourceId": "2025-p013-r04",
+    "page": 13,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 13, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=13"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "GolahSub Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2028",
+    "lifecycle": "planned",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p013-r04"
+  },
+  {
+    "sourceId": "2025-p014-r01",
+    "page": 14,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 14, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=14"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Rebuild Mortimer-Golah 109 69 kV",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r01"
+  },
+  {
+    "sourceId": "2025-p014-r02",
+    "page": 14,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 14, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=14"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "North Leroy –115 kV Thermal Upgrade",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "08/2028",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r02"
+  },
+  {
+    "sourceId": "2025-p014-r03",
+    "page": 14,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 14, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=14"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Lockport -Batavia 112 Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r03"
+  },
+  {
+    "sourceId": "2025-p014-r04",
+    "page": 14,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 14, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=14"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Rebuild Mortimer-Golah 110",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r04"
+  },
+  {
+    "sourceId": "2025-p014-r05",
+    "page": 14,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 14, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=14"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "EV RS -Pembroke T-line",
+    "rawStatus": "Initiated",
+    "rawExpectedInService": "08/2029",
+    "lifecycle": "unknown",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p014-r05"
+  },
+  {
+    "sourceId": "2025-p015-r01",
+    "page": 15,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 15, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=15"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Southeast Batavia-Golah 119 Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r01"
+  },
+  {
+    "sourceId": "2025-p015-r02",
+    "page": 15,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 15, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=15"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Brockport Taps ACR",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "07/2033",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r02"
+  },
+  {
+    "sourceId": "2025-p015-r03",
+    "page": 15,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 15, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=15"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Lockport-Batavia 107 Rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "09/2035",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r03"
+  },
+  {
+    "sourceId": "2025-p015-r04",
+    "page": 15,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 15, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=15"
+    },
+    "planningArea": "Genesee",
+    "sourceProjectName": "Lockport-Batavia 108 Rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "09/2035",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p015-r04"
+  },
+  {
+    "sourceId": "2025-p017-r01",
+    "page": 17,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 17, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=17"
+    },
+    "planningArea": "Finger Lakes",
+    "sourceProjectName": "Farmington Sta 168 (Avangrid) Interconnection",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "11/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r01"
+  },
+  {
+    "sourceId": "2025-p017-r02",
+    "page": 17,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 17, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=17"
+    },
+    "planningArea": "Finger Lakes",
+    "sourceProjectName": "Mortimer -Pannell 24/25",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r02"
+  },
+  {
+    "sourceId": "2025-p017-r03",
+    "page": 17,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 17, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=17"
+    },
+    "planningArea": "Finger Lakes",
+    "sourceProjectName": "Mortimer Station Work 24 25 Line Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r03"
+  },
+  {
+    "sourceId": "2025-p017-r04",
+    "page": 17,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 17, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=17"
+    },
+    "planningArea": "Finger Lakes",
+    "sourceProjectName": "Quaker-Sleight Road #13 Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2033",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p017-r04"
+  },
+  {
+    "sourceId": "2025-p019-r01",
+    "page": 19,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 19, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=19"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Clay -Wetzel Resiliency",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "04/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p019-r02",
+    "page": 19,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 19, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=19"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Bailey Station MEMCO Replacement",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "06/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p019-r03",
+    "page": 19,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 19, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=19"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "East Conklin Sta. MEMCO Replacement",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "06/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p019-r04",
+    "page": 19,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 19, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=19"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Dewitt –345 kV CB R220 DF",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "10/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p019-r04"
+  },
+  {
+    "sourceId": "2025-p019-r05",
+    "page": 19,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 19, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=19"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Oswego Station 345 kV Asset Separation",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "11/2025",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p019-r05"
+  },
+  {
+    "sourceId": "2025-p019-r06",
+    "page": 19,
+    "bodyRow": 6,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 19, project-table body row 6 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=19"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Volney Station MEMCO Replacement",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "03/2026",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p019-r06"
+  },
+  {
+    "sourceId": "2025-p020-r01",
+    "page": 20,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 20, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=20"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Scriba -RplcCB R200",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p020-r01"
+  },
+  {
+    "sourceId": "2025-p020-r02",
+    "page": 20,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 20, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=20"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "S Oswego -Lighthouse Hill Resiliency",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p020-r02"
+  },
+  {
+    "sourceId": "2025-p020-r03",
+    "page": 20,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 20, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=20"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Clay Substation Upgrades (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p020-r03"
+  },
+  {
+    "sourceId": "2025-p021-r01",
+    "page": 21,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 21, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=21"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Mallory 115 kV Breakers",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r01"
+  },
+  {
+    "sourceId": "2025-p021-r02",
+    "page": 21,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 21, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=21"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Maiden Lane (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r02"
+  },
+  {
+    "sourceId": "2025-p021-r03",
+    "page": 21,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 21, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=21"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Scriba Volney Series Reactor",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r03"
+  },
+  {
+    "sourceId": "2025-p021-r04",
+    "page": 21,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 21, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=21"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Tar Hill Station",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p021-r04"
+  },
+  {
+    "sourceId": "2025-p022-r01",
+    "page": 22,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 22, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=22"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Clay -Micron Fab1",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "01/2028",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r01"
+  },
+  {
+    "sourceId": "2025-p022-r02",
+    "page": 22,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 22, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=22"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Reconductor Cortland- Clarks Corners",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r02"
+  },
+  {
+    "sourceId": "2025-p022-r03",
+    "page": 22,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 22, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=22"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "East Ave Station (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r03"
+  },
+  {
+    "sourceId": "2025-p022-r04",
+    "page": 22,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 22, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=22"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Lighthouse Hill -Clay 7 Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p022-r04"
+  },
+  {
+    "sourceId": "2025-p023-r01",
+    "page": 23,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 23, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=23"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Homer Solar",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "04/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r01"
+  },
+  {
+    "sourceId": "2025-p023-r02",
+    "page": 23,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 23, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=23"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "S Oswego -Lighthouse Hill Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r02"
+  },
+  {
+    "sourceId": "2025-p023-r03",
+    "page": 23,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 23, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=23"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Solvay: Asset Replacement",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r03"
+  },
+  {
+    "sourceId": "2025-p023-r04",
+    "page": 23,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 23, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=23"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Sky High Solar T- Stations",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r04"
+  },
+  {
+    "sourceId": "2025-p023-r05",
+    "page": 23,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 23, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=23"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Bristol Hill -Asset Replacement",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "06/2030",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r05"
+  },
+  {
+    "sourceId": "2025-p023-r06",
+    "page": 23,
+    "bodyRow": 6,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 23, project-table body row 6 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=23"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Geres Lock -Solvay 2 Switch",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "07/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p023-r06"
+  },
+  {
+    "sourceId": "2025-p024-r01",
+    "page": 24,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 24, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=24"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Cicero Substation",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2030",
+    "lifecycle": "planned",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r01"
+  },
+  {
+    "sourceId": "2025-p024-r02",
+    "page": 24,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 24, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=24"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Duguid (Clay-DeWitt) Resiliency",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r02"
+  },
+  {
+    "sourceId": "2025-p024-r03",
+    "page": 24,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 24, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=24"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "DeWitt Station 115 kV Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r03"
+  },
+  {
+    "sourceId": "2025-p024-r04",
+    "page": 24,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 24, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=24"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Tilden: Asset Replacement",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "01/2031",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p024-r04"
+  },
+  {
+    "sourceId": "2025-p025-r01",
+    "page": 25,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 25, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=25"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Clay -Micron Fab 2",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2031",
+    "lifecycle": "planned",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r01"
+  },
+  {
+    "sourceId": "2025-p025-r02",
+    "page": 25,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 25, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=25"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "South Oswego: 115 kV Asset Replacement",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2031",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r02"
+  },
+  {
+    "sourceId": "2025-p025-r03",
+    "page": 25,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 25, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=25"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "DeWitt -Tilden Resiliency",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2031",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r03"
+  },
+  {
+    "sourceId": "2025-p025-r04",
+    "page": 25,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 25, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=25"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Scriba -ReplaceGCBs w VCBs",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "05/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p025-r04"
+  },
+  {
+    "sourceId": "2025-p026-r01",
+    "page": 26,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 26, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=26"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "West Lysander Station",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2032",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r01"
+  },
+  {
+    "sourceId": "2025-p026-r02",
+    "page": 26,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 26, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=26"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Geres Lock -Asset Replacement",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "07/2033",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r02"
+  },
+  {
+    "sourceId": "2025-p026-r03",
+    "page": 26,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 26, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=26"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Elbridge -Geres Lock Capacity",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "04/2033",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r03"
+  },
+  {
+    "sourceId": "2025-p026-r04",
+    "page": 26,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 26, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=26"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Pebble Hill -Replace Disconnect",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "12/2034",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r04"
+  },
+  {
+    "sourceId": "2025-p026-r05",
+    "page": 26,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 26, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=26"
+    },
+    "planningArea": "Syracuse/Oswego/Cortland",
+    "sourceProjectName": "Curtis St -Teall #13 ACR",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2035",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p026-r05"
+  },
+  {
+    "sourceId": "2025-p028-r01",
+    "page": 28,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 28, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=28"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Dennison Station Upgrades (CLCPA)",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "02/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p028-r02",
+    "page": 28,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 28, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=28"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Alcoa Station Upgrade (CLCPA)",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "03/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p028-r03",
+    "page": 28,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 28, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=28"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Colton Station Term Equip Upgrade (CLCPA)",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "08/2025",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p028-r04",
+    "page": 28,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 28, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=28"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Roosevelt Solar LLC",
+    "rawStatus": "Cancelled",
+    "rawExpectedInService": "N/A",
+    "lifecycle": "cancelled",
+    "disposition": "excluded",
+    "reason": "explicit-cancelled"
+  },
+  {
+    "sourceId": "2025-p029-r01",
+    "page": 29,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 29, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=29"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "St Lawrence Data and Agricultural Center",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "01/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r01"
+  },
+  {
+    "sourceId": "2025-p029-r02",
+    "page": 29,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 29, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=29"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Flat Rock",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "04/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r02"
+  },
+  {
+    "sourceId": "2025-p029-r03",
+    "page": 29,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 29, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=29"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Indian River -North Watertown (was \"Lyme Junction\")",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "03/2026",
+    "lifecycle": "under-construction",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r03"
+  },
+  {
+    "sourceId": "2025-p029-r04",
+    "page": 29,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 29, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=29"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Malone PAR",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p029-r04"
+  },
+  {
+    "sourceId": "2025-p030-r01",
+    "page": 30,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 30, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=30"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Malone 115-13.2 kV substation expansion",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "11/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p030-r01"
+  },
+  {
+    "sourceId": "2025-p030-r02",
+    "page": 30,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 30, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=30"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "North Foothills",
+    "rawStatus": "Cancelled",
+    "rawExpectedInService": "N/A",
+    "lifecycle": "cancelled",
+    "disposition": "excluded",
+    "reason": "explicit-cancelled"
+  },
+  {
+    "sourceId": "2025-p030-r03",
+    "page": 30,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 30, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=30"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Coffeen -Lyme Junction Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p030-r03"
+  },
+  {
+    "sourceId": "2025-p031-r01",
+    "page": 31,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 31, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=31"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Black River Station Upgrades (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "04/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p031-r01"
+  },
+  {
+    "sourceId": "2025-p031-r02",
+    "page": 31,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 31, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=31"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Middle Road Station (CLCPA) // Staplin Creek",
+    "rawStatus": "Application Deemed Complete",
+    "rawExpectedInService": "06/2028",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p031-r02"
+  },
+  {
+    "sourceId": "2025-p031-r03",
+    "page": 31,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 31, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=31"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Coffeen Asset Replacement",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "07/2027",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p031-r03"
+  },
+  {
+    "sourceId": "2025-p032-r01",
+    "page": 32,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 32, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=32"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Beaver River (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p032-r01"
+  },
+  {
+    "sourceId": "2025-p032-r02",
+    "page": 32,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 32, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=32"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Gulf Road Station (Boonville Rebuild)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p032-r02"
+  },
+  {
+    "sourceId": "2025-p032-r03",
+    "page": 32,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 32, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=32"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Colton -Nicholville (Malone) #3 Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p032-r03"
+  },
+  {
+    "sourceId": "2025-p033-r01",
+    "page": 33,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 33, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=33"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Coffeen -Black River Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "04/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p033-r01"
+  },
+  {
+    "sourceId": "2025-p033-r02",
+    "page": 33,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 33, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=33"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Golden Knight Solar",
+    "rawStatus": "Cancelled",
+    "rawExpectedInService": "N/A",
+    "lifecycle": "cancelled",
+    "disposition": "excluded",
+    "reason": "explicit-cancelled"
+  },
+  {
+    "sourceId": "2025-p033-r03",
+    "page": 33,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 33, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=33"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Coffeen Synchronous Condensers (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p033-r03"
+  },
+  {
+    "sourceId": "2025-p033-r04",
+    "page": 33,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 33, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=33"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Beaver Creek - Synchronous Condensers (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "07/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p033-r04"
+  },
+  {
+    "sourceId": "2025-p034-r01",
+    "page": 34,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 34, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=34"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Coffeen -East Watertown Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p034-r01"
+  },
+  {
+    "sourceId": "2025-p034-r02",
+    "page": 34,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 34, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=34"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Black River -LHH Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p034-r02"
+  },
+  {
+    "sourceId": "2025-p035-r01",
+    "page": 35,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 35, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=35"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Taylorville -Boonville Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p035-r01"
+  },
+  {
+    "sourceId": "2025-p035-r02",
+    "page": 35,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 35, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=35"
+    },
+    "planningArea": "Northern",
+    "sourceProjectName": "Black River -Taylorville Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p035-r02"
+  },
+  {
+    "sourceId": "2025-p037-r01",
+    "page": 37,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 37, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=37"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Watkins Rd Solar",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r01"
+  },
+  {
+    "sourceId": "2025-p037-r02",
+    "page": 37,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 37, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=37"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Oneida Station Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r02"
+  },
+  {
+    "sourceId": "2025-p037-r03",
+    "page": 37,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 37, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=37"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Hills Solar",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r03"
+  },
+  {
+    "sourceId": "2025-p037-r04",
+    "page": 37,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 37, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=37"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Boonville -Porter Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p037-r04"
+  },
+  {
+    "sourceId": "2025-p038-r01",
+    "page": 38,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 38, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=38"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Terminal Station Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p038-r01"
+  },
+  {
+    "sourceId": "2025-p038-r02",
+    "page": 38,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 38, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=38"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Yahnundasis -Porter Resiliency",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p038-r02"
+  },
+  {
+    "sourceId": "2025-p038-r03",
+    "page": 38,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 38, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=38"
+    },
+    "planningArea": "Utica/Rome",
+    "sourceProjectName": "Rome-Oneida #1 Rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "04/2033",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p038-r03"
+  },
+  {
+    "sourceId": "2025-p040-r01",
+    "page": 40,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 40, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=40"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "East Point Solar (Marshville)",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "06/2024",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p040-r02",
+    "page": 40,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 40, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=40"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Stoner Station upgrades (CLCPA)",
+    "rawStatus": "In-Service",
+    "rawExpectedInService": "08/2024",
+    "lifecycle": "in-service",
+    "disposition": "excluded",
+    "reason": "explicit-in-service"
+  },
+  {
+    "sourceId": "2025-p040-r03",
+    "page": 40,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 40, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=40"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "New Manheim Greenfield Project",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "06/2026",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p040-r03"
+  },
+  {
+    "sourceId": "2025-p040-r04",
+    "page": 40,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 40, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=40"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Rotterdam 10/12 Terminal Upgrades (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p040-r04"
+  },
+  {
+    "sourceId": "2025-p041-r01",
+    "page": 41,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 41, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=41"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Tayandenega Solar Q0565",
+    "rawStatus": "Cancelled",
+    "rawExpectedInService": "N/A",
+    "lifecycle": "cancelled",
+    "disposition": "excluded",
+    "reason": "explicit-cancelled"
+  },
+  {
+    "sourceId": "2025-p041-r02",
+    "page": 41,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 41, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=41"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Schoharie-Schenectady International-Rotterdam 18/4 Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p041-r02"
+  },
+  {
+    "sourceId": "2025-p041-r03",
+    "page": 41,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 41, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=41"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Inghams-Marshville (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p041-r03"
+  },
+  {
+    "sourceId": "2025-p041-r04",
+    "page": 41,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 41, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=41"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Marshville 115kV Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "05/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p041-r04"
+  },
+  {
+    "sourceId": "2025-p042-r01",
+    "page": 42,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 42, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=42"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Clinton Station upgrades (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p042-r01"
+  },
+  {
+    "sourceId": "2025-p042-r02",
+    "page": 42,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 42, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=42"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Ames Road 345-115 kV Station (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "02/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p042-r02"
+  },
+  {
+    "sourceId": "2025-p042-r03",
+    "page": 42,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 42, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=42"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Saltsman Road Station (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "10/2028",
+    "lifecycle": "planned",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p042-r03"
+  },
+  {
+    "sourceId": "2025-p043-r01",
+    "page": 43,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 43, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=43"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Meco 115 kV Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p043-r01"
+  },
+  {
+    "sourceId": "2025-p043-r02",
+    "page": 43,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 43, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=43"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Inghams-Rotterdam Rebuild (CLCPA)",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p043-r02"
+  },
+  {
+    "sourceId": "2025-p043-r03",
+    "page": 43,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 43, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=43"
+    },
+    "planningArea": "Mohawk",
+    "sourceProjectName": "Gloversville -Marshville 6 Rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "12/2030",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p043-r03"
+  },
+  {
+    "sourceId": "2025-p045-r01",
+    "page": 45,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 45, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=45"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Spier Falls Asset Replacement / Separation",
+    "rawStatus": "Under Construction",
+    "rawExpectedInService": "05/2026",
+    "lifecycle": "under-construction",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r01"
+  },
+  {
+    "sourceId": "2025-p045-r02",
+    "page": 45,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 45, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=45"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Ticonderoga LN2 tap for ELP Ticonderoga Solar",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "09/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r02"
+  },
+  {
+    "sourceId": "2025-p045-r03",
+    "page": 45,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 45, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=45"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Mohican Station Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r03"
+  },
+  {
+    "sourceId": "2025-p045-r04",
+    "page": 45,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 45, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=45"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Bald Mountain Solar POI",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "08/2028",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p045-r04"
+  },
+  {
+    "sourceId": "2025-p046-r01",
+    "page": 46,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 46, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=46"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Spier Falls -Mohican 115 kV lines 4/7/18 rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "01/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r01"
+  },
+  {
+    "sourceId": "2025-p046-r02",
+    "page": 46,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 46, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=46"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Lasher Rd Line 1 three span reconductor",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "06/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r02"
+  },
+  {
+    "sourceId": "2025-p046-r03",
+    "page": 46,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 46, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=46"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Spier -Queensbury 5/17 Rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "09/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r03"
+  },
+  {
+    "sourceId": "2025-p046-r04",
+    "page": 46,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 46, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=46"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Luther Forest third capacitor bank",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "11/2033",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r04"
+  },
+  {
+    "sourceId": "2025-p046-r05",
+    "page": 46,
+    "bodyRow": 5,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 46, project-table body row 5 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=46"
+    },
+    "planningArea": "Northeast",
+    "sourceProjectName": "Warrensburg -Scofield Rd LN10 rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "12/2033",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p046-r05"
+  },
+  {
+    "sourceId": "2025-p048-r01",
+    "page": 48,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 48, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=48"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Flint Mine Solar POI",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2026",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r01"
+  },
+  {
+    "sourceId": "2025-p048-r02",
+    "page": 48,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 48, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=48"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "New Scotland R93&R94 Asset Replace & 115 kV BPS Upgrades",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "06/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r02"
+  },
+  {
+    "sourceId": "2025-p048-r03",
+    "page": 48,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 48, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=48"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Rotterdam Asset Replacement and 230 kV BPS upgrades",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "03/2029",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r03"
+  },
+  {
+    "sourceId": "2025-p048-r04",
+    "page": 48,
+    "bodyRow": 4,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 48, project-table body row 4 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=48"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Coeymans Creek / POWI / Q1646 / Port of Coeymans Rd",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "01/2027",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p048-r04"
+  },
+  {
+    "sourceId": "2025-p049-r01",
+    "page": 49,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 49, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=49"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "State Campus LN12 and LN15 Underground Cable Replacement",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "01/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p049-r01"
+  },
+  {
+    "sourceId": "2025-p049-r02",
+    "page": 49,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 49, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=49"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Reynolds Rd short-term BPS upgrades",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "12/2030",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p049-r02"
+  },
+  {
+    "sourceId": "2025-p049-r03",
+    "page": 49,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 49, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=49"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Greenbush 115 kV Station Rebuild",
+    "rawStatus": "Planned",
+    "rawExpectedInService": "04/2031",
+    "lifecycle": "planned",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p049-r03"
+  },
+  {
+    "sourceId": "2025-p050-r01",
+    "page": 50,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 50, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=50"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Greenbush- Knickerbocker 13/14/15 DCT Rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "05/2031",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p050-r01"
+  },
+  {
+    "sourceId": "2025-p050-r02",
+    "page": 50,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 50, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=50"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Sunnyside Station",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "01/2032",
+    "lifecycle": "unknown",
+    "recordKind": "transmission-project",
+    "classificationBasis": "accepted-explicit-transmission-scope-set",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p050-r02"
+  },
+  {
+    "sourceId": "2025-p050-r03",
+    "page": 50,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 50, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=50"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Feuz Rd or Pangburn Rd Station",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "08/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p050-r03"
+  },
+  {
+    "sourceId": "2025-p051-r01",
+    "page": 51,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 51, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=51"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "New 345 kV line - Feuz/Pangburn to Oak Ridge",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "08/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p051-r01"
+  },
+  {
+    "sourceId": "2025-p051-r02",
+    "page": 51,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 51, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=51"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Oak Ridge 345 kV Station",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "08/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p051-r02"
+  },
+  {
+    "sourceId": "2025-p051-r03",
+    "page": 51,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 51, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=51"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "New 345 kV line -Oak Ridge to Gordon Rd",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "08/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p051-r03"
+  },
+  {
+    "sourceId": "2025-p052-r01",
+    "page": 52,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 52, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=52"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Rotterdam 115 kV modifications for Oak Ridge line changes",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "08/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p052-r01"
+  },
+  {
+    "sourceId": "2025-p052-r02",
+    "page": 52,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 52, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=52"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "345 kV LN18 mods for Feuz Rd (or Pangburn Rd) Station",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "08/2032",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p052-r02"
+  },
+  {
+    "sourceId": "2025-p052-r03",
+    "page": 52,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 52, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=52"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Eastover 70 MVAR cap bank",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "09/2033",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p052-r03"
+  },
+  {
+    "sourceId": "2025-p053-r01",
+    "page": 53,
+    "bodyRow": 1,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 53, project-table body row 1 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=53"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Rotterdam -Menands 115 kV corridor upgrades",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "02/2034",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p053-r01"
+  },
+  {
+    "sourceId": "2025-p053-r02",
+    "page": 53,
+    "bodyRow": 2,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 53, project-table body row 2 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=53"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "New Sugar Hill Station 230-115 kV station",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "11/2034",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p053-r02"
+  },
+  {
+    "sourceId": "2025-p053-r03",
+    "page": 53,
+    "bodyRow": 3,
+    "source": {
+      "file": "national-grid-local-transmission-plan-2025.pdf",
+      "locator": "PDF page 53, project-table body row 3 (header excluded); Project Name, Scope, Project Driver, Firm / Non-Firm, Status of SIS, Status of Facilities Study, Article VII Status, Project Status, Expected In-Service Date",
+      "url": "https://www.nationalgridus.com/media/pdfs/microsites/wholesale-interconnections/national_grid_local_transmission_plan_2025.pdf#page=53"
+    },
+    "planningArea": "Capital/Hudson Valley",
+    "sourceProjectName": "Eastover LN10 & 308 DCT 7.5 mi rebuild",
+    "rawStatus": "Concept",
+    "rawExpectedInService": "02/2037",
+    "lifecycle": "unknown",
+    "recordKind": "planning-context",
+    "classificationBasis": "scope-not-promoted-under-conservative-qualification",
+    "disposition": "imported",
+    "projectId": "ny-national-grid-ltp:2025-p053-r03"
+  }
+]

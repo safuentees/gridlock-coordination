@@ -1,0 +1,39 @@
+{
+  "sourceKey": "fl-fmpa",
+  "editionId": "2026-04-01",
+  "label": "FMPA 2026–2035 site plan — April 1, 2026",
+  "reportingGroupId": "fl-fmpa",
+  "reportingGroupName": "Florida FMPA municipal additions",
+  "publisher": "Florida Municipal Power Agency",
+  "processAuthority": "Florida Public Service Commission",
+  "publishedOn": "2026-04-01",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "FMPA Municipal Power.pdf",
+    "locator": "PDF pp.1–2 report date; PDF p.67 / printed II-1, Table II-1, all five City groups",
+    "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390"
+  },
+  "sha256": "dce5c6ec57b598c3bf98013881f64751914ef960253f839fa4e6b341f348a4af",
+  "geographicScope": "Partial Florida municipal ARP participant scope: five named reporting groups, not statewide coverage.",
+  "inventoryScope": "Every aligned work-item line in Table II-1 planned/proposed transmission additions, with explicit distribution/study context retained separately. Five grouped City cells are not extra projects.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 59,
+    "importedRecords": 59,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "Actual public TCRPC copy is cited. The PSC endpoint was unavailable; byte equality with that copy is not asserted.",
+    "The report supplies a 69 kV-and-above table boundary. Blank voltage is not an exclusion; no additional threshold is imposed.",
+    "All qualified owners, coordinates, geometry and construction windows remain unknown. Municipal participant and publisher are not substituted for asset owner.",
+    "Forecasts preserve month precision. Planned/proposed is a combined table heading, not an individual approval or construction claim; elapsed dates do not establish completion.",
+    "Source references identify edition-specific table/group/child positions, not native engineering IDs or cross-edition continuity. Compound descriptions are not split further.",
+    "Ten exact distribution/study work items retain planning context. Potentially mixed KUA substation work retains explicit scope uncertainty.",
+    "No cross-source identity evidence supports deduplication; totals count source work items, not distinct national engineering projects.",
+    "Original binary remains outside Git; public availability is not a redistribution-license claim."
+  ]
+}
