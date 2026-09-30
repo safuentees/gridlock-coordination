@@ -1,0 +1,10 @@
+{
+  "sourceKey": "spp-tracking",
+  "editionId": "2026-q3",
+  "scope": "sample",
+  "records": 6,
+  "compactUtf8Bytes": 21155,
+  "formattedDownloadUtf8Bytes": 28695,
+  "measurement": "Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "formatted"
+}
