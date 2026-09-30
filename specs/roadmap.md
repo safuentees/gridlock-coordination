@@ -90,10 +90,10 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | SPP full scope integrated on current branch; F27-MISO-Q ready. | Exact MISO qualification/sample/receipt in [spec](features/F27-us-regional-expansion/miso-mtep/spec.md); 15-minute public-source pass, no producer before acceptance. |
-| core | ERCOT qualification accepted; C3 exclusion/export explanation active, then ERCOT producer ready. | Exact C3 core/brief paths in [contract](features/F27-us-regional-expansion/context-contract.md); afterward source adapter/data/receipt in [ERCOT spec](features/F27-us-regional-expansion/ercot-tpit/spec.md), sample before full1,766. |
-| coordinator | PR67 integrated; maintain register and accept SPP/ERCOT mappings and early-sample/full producer handoffs. | Root alone owns aggregate/schema/merge/checks; national source gaps remain open. |
-| ui | Full Alaska scope integrated on current branch; temporary F27-HI-Q qualification ready. | Own exact Hawaii qualification/sample/receipt in [spec](features/F27-us-regional-expansion/hi-heco-projects/spec.md); 15-minute public-source pass, no producer/UI/map edits before acceptance. |
+| source_discovery / ingestion | SPP full scope integrated on current branch; accepted F27-MISO-I sample active. | Exact MISO producer/data/receipt paths in [spec](features/F27-us-regional-expansion/miso-mtep/spec.md); six records before full3,042, provider connection by root. |
+| core | C3 complete; connected ERCOT six-record sample, full1,766 active. Then F27-NY-Q. | Exact adapter/data/receipt in [ERCOT spec](features/F27-us-regional-expansion/ercot-tpit/spec.md); next [New York qualification](features/F27-us-regional-expansion/ny-local/spec.md) owns only its report/sample/receipt. |
+| coordinator | Compose SPP/ERCOT/Alaska milestone PR73, then MISO/Hawaii increment. | Root alone owns aggregate/schema/register/merge/checks; connect samples early and preserve national gaps. |
+| ui | Alaska full scope integrated on current branch; accepted F27-HI-I two-record sample active. | Exact Hawaii producer/data/receipt paths in [spec](features/F27-us-regional-expansion/hi-heco-projects/spec.md); two records before full four-topic retained subset, no UI/map edits. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
