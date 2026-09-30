@@ -15,14 +15,14 @@
   },
   "sha256": "1f16698d87d414c98478e0f1199a062211c0f2873417fd7ba185c81d49d45753",
   "geographicScope": "DEC/DEP participant areas in North Carolina and South Carolina; no per-row jurisdiction inferred.",
-  "inventoryScope": "All120 Project ID rows in August2026 update pp.8–17:98 reliability,17 public policy,5 MVST. Retain89 transmission and9 conceptual planning-context observations; exclude17 In-Service and5 Removed rows.",
-  "scope": "sample",
+  "inventoryScope": "All 120 Project ID rows in August 2026 update pp.8–17: 98 reliability, 17 public policy, five MVST. Retain 89 transmission and nine conceptual planning-context observations; exclude 17 In-Service and five Removed rows.",
+  "scope": "full",
   "counts": {
     "sourceRows": 120,
-    "importedRecords": 6,
+    "importedRecords": 98,
     "excludedRows": 22,
     "failedRows": 0,
-    "pendingRows": 92,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -37,10 +37,10 @@
   ],
   "limitations": [
     "The complete declared update scope is not all North/South Carolina projects. No extra monetary threshold is applied; prior plan tables, change summaries, models and alternative lists are not additional rows.",
-    "Publication day is the official index posting date August14,2026; document status has August2026 precision. Filename August13 is not a row update date.",
+    "Publication day is the official index posting date August 14, 2026; document status has August 2026 precision. Filename August 13 is not a row update date.",
     "Underway spans budget provision through some construction and cannot establish physical construction. It and Planned normalize to planned; Conceptual is planning-context/unknown, never an approved project.",
-    "June1/December1 represent peak-season service targets, not precise days. Normalized dates retain only the displayed calendar year; raw targets remain visible. Winter crosses years and no interval is inferred.",
-    "Non-placeholder E200161 June30,2026 is a reported estimated day, despite the still-Underway status; no completion is inferred from elapsed forecasts.",
+    "June 1/December 1 represent peak-season service targets, not precise days. Normalized dates retain only the displayed calendar year; raw targets remain visible. Winter crosses years and no interval is inferred.",
+    "Non-placeholder E200161 June 30, 2026 is a reported estimated day, despite the still-Underway status; no completion is inferred from elapsed forecasts.",
     "DEC/DEP singular row tokens identify source-scoped responsible equipment owners. Composite DEC/DEP remains null owner; no global owner registry or cross-source corporate distinction is established.",
     "All locations, native geometry, construction windows and row-update days remain unknown. Voltage derives only from explicitly named kV scope; missing values stay empty.",
     "Nine Conceptual entries remain contextual; three MVST concepts are explicitly unapproved and excluded from approved update cost/schedule totals.",
