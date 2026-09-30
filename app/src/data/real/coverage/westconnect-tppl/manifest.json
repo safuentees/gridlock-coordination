@@ -1,0 +1,54 @@
+{
+  "sourceKey": "westconnect-tppl",
+  "editionId": "2026-02-10",
+  "label": "WestConnect public TPPL — February 10, 2026",
+  "reportingGroupId": "westconnect-tppl",
+  "reportingGroupName": "WestConnect public TPPL",
+  "publisher": "WestConnect",
+  "processAuthority": "WestConnect regional transmission planning",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+    "locator": "All Projects!A1:AR390; 389 project rows, header excluded",
+    "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+  },
+  "sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+  "geographicScope": "Source-reported Arizona, New Mexico, Colorado, Texas, Wyoming, Nebraska, South Dakota, Multiple and blank state labels; partial regional submission scope, with no allocation of Multiple or inferred state coverage.",
+  "inventoryScope": "Public project-list entries with nonterminal transmission work and explicit distribution planning context. In-Service, Withdrawn and four exact generation-only entries are excluded.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 389,
+    "importedRecords": 304,
+    "excludedRows": 85,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "explicit-generation-only",
+      "count": 4
+    },
+    {
+      "reason": "explicit-in-service",
+      "count": 65
+    },
+    {
+      "reason": "explicit-withdrawn",
+      "count": 16
+    }
+  ],
+  "limitations": [
+    "Public February 10, 2026 list only, with library posting March 26, 2026 separate from source edition. Actual publication date is unknown.",
+    "This is partial WestConnect planning evidence, not a census of states or distinct engineering projects across other inventories.",
+    "Numeric projectid is identity. Combined year/project labels include stale years and incomplete suffixes; they are only source references.",
+    "Full accepted scope has 300 transmission-project and four explicit distribution-substation planning-context records; mixed scope remains visible.",
+    "Sponsors identify source-reported owners or developers and do not establish individual asset ownership; owner identities remain unknown.",
+    "All retained records are unlocated. Origin/termination/state text and approximate length do not supply coordinates, CRS, accuracy, routes or shared corridors.",
+    "Planned does not establish regulatory approval; Conceptual remains unknown, and elapsed in-service forecasts do not establish completion.",
+    "Withdrawn covers cancelled, postponed or no active development; withdrawn exclusions do not assert cancellation.",
+    "Expected in-service dates have year precision or remain unknown. Administrative timestamps never become construction windows or comparison milestones.",
+    "Factual source evidence is retained for authorized private analysis. No open-data license, original-workbook publication or unrestricted commercial reuse is asserted."
+  ]
+}

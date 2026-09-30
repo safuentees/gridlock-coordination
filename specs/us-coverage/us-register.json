@@ -1,23 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 New York/Florida/BPA integration PR95 (implementation 8f3012b; one build/case passed)",
+  "baselineRevision": "F27 Puerto Rico/WestConnect integration PR107 (implementation 7cab7a8; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Ten full declared regional inventories plus one complete featured subset imported; Puerto Rico and WestConnect accepted producers active; Guam qualification queued; SERTP marking conflict blocks that source",
+  "qualificationStatus": "Twelve full declared regional inventories plus one complete featured subset imported; Guam, Nevada and PacifiCorp qualifications active; SERTP marking conflict blocks that source",
   "totals": {
-    "importedSourceRecords": 12446,
+    "importedSourceRecords": 12772,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 12333,
+    "missingLocations": 12659,
     "explicitConstructionWindows": 0,
     "newRegionalSourcesQualified": 12,
-    "newFullRegionalInventoriesImported": 10,
+    "newFullRegionalInventoriesImported": 12,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 1,
     "fullFeaturedSubsetsImported": 1,
-    "fullDeclaredSourceScopesImported": 11
+    "fullDeclaredSourceScopesImported": 13
   },
   "pendingEvidence": {
     "integratedF19Decisions": 10,
@@ -747,6 +747,129 @@
       },
       "unallocatedStateRecords": 11,
       "stateCountMeaning": "Exact single-state source labels only, not independently verified geography; missing/multistate labels remain unallocated."
+    },
+    {
+      "sourceKey": "pr-transmission",
+      "editionId": "2026-08-27-table1",
+      "editionPublishedAt": "2026-08-27",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Every numbered Table 1 work package; completed/closed and energized-only scopes excluded, incremental remaining work retained. Critical-repair scope remains capital context.",
+      "geographicScope": "Partial Puerto Rico physical-hardening program, not territory-wide completeness.",
+      "recordKind": "21 transmission-project, 1 capital-project-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-08",
+      "importedRecords": 22,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 22,
+        "milestone": 4,
+        "constructionWindow": 22,
+        "status": 2,
+        "voltage": 22,
+        "evidencedOwner": 22
+      },
+      "rawSourceRows": 32,
+      "excludedRows": 10,
+      "exclusions": [
+        {
+          "reason": "Explicitly completed or closed",
+          "count": 8
+        },
+        {
+          "reason": "Energized with no remaining work identified in this row",
+          "count": 2
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/pr-transmission/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/pr-transmission/row-ledger.json",
+      "publicInventoryDenominator": 22,
+      "blockers": [
+        "August 2026 is the monthly source edition; August 27 is filing/publication, not a per-row status-change day or live status.",
+        "Rows4/5/7 retain incremental physical work despite original energization; the summary count of thirteen completed/energized original scopes does not override remaining-work evidence.",
+        "Funding tokens and repeated line numbers are not engineering IDs. Source references are edition/table/row locators without cross-edition continuity or cross-source deduplication.",
+        "Expected construction months are not in-service milestones or day-based windows. Fiscal-quarter wording stays narrative; reverse historical table dates remain raw source evidence.",
+        "All qualified owners, voltage, coordinates, geometry and construction windows are unknown. Reporting operator is not substituted for asset owner.",
+        "Row21 changed from structure replacement to critical repair and remains capital context; rows21/22 retain unknown lifecycle despite incomplete-work language.",
+        "The preceding eight descoped bullets, separate 51-segment maintenance program, vegetation, generation/storage and substation tables are outside the declared Table 1 inventory.",
+        "Only public Table 1 is extracted; confidential comprehensive-plan material and legal contact details are not derived data. Public availability does not assert a redistribution license."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 22,
+      "stateCountMeaning": "Explicit single-state source names only; missing and Multiple labels stay unallocated. Puerto Rico is a source footprint, not per-record coordinate evidence."
+    },
+    {
+      "sourceKey": "westconnect-tppl",
+      "editionId": "2026-02-10",
+      "editionPublishedAt": null,
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Public project-list entries with nonterminal transmission work and explicit distribution planning context. In-Service, Withdrawn and four exact generation-only entries are excluded.",
+      "geographicScope": "Source-reported Arizona, New Mexico, Colorado, Texas, Wyoming, Nebraska, South Dakota, Multiple and blank state labels; partial regional submission scope, with no allocation of Multiple or inferred state coverage.",
+      "recordKind": "300 transmission-project, 4 planning-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-02-10",
+      "importedRecords": 304,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 304,
+        "milestone": 50,
+        "constructionWindow": 304,
+        "status": 56,
+        "voltage": 0,
+        "evidencedOwner": 304
+      },
+      "rawSourceRows": 389,
+      "excludedRows": 85,
+      "exclusions": [
+        {
+          "reason": "explicit-generation-only",
+          "count": 4
+        },
+        {
+          "reason": "explicit-in-service",
+          "count": 65
+        },
+        {
+          "reason": "explicit-withdrawn",
+          "count": 16
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/westconnect-tppl/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/westconnect-tppl/row-ledger.json",
+      "publicInventoryDenominator": 304,
+      "blockers": [
+        "Public February 10, 2026 list only, with library posting March 26, 2026 separate from source edition. Actual publication date is unknown.",
+        "This is partial WestConnect planning evidence, not a census of states or distinct engineering projects across other inventories.",
+        "Numeric projectid is identity. Combined year/project labels include stale years and incomplete suffixes; they are only source references.",
+        "Full accepted scope has 300 transmission-project and four explicit distribution-substation planning-context records; mixed scope remains visible.",
+        "Sponsors identify source-reported owners or developers and do not establish individual asset ownership; owner identities remain unknown.",
+        "All retained records are unlocated. Origin/termination/state text and approximate length do not supply coordinates, CRS, accuracy, routes or shared corridors.",
+        "Planned does not establish regulatory approval; Conceptual remains unknown, and elapsed in-service forecasts do not establish completion.",
+        "Withdrawn covers cancelled, postponed or no active development; withdrawn exclusions do not assert cancellation.",
+        "Expected in-service dates have year precision or remain unknown. Administrative timestamps never become construction windows or comparison milestones.",
+        "Factual source evidence is retained for authorized private analysis. No open-data license, original-workbook publication or unrestricted commercial reuse is asserted."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {
+        "AZ": 101,
+        "NM": 39,
+        "CO": 77,
+        "TX": 67,
+        "WY": 7,
+        "NE": 1
+      },
+      "unallocatedStateRecords": 12,
+      "stateCountMeaning": "Explicit single-state source names only; missing and Multiple labels stay unallocated. Puerto Rico is a source footprint, not per-record coordinate evidence."
     }
   ],
   "jurisdictions": [
@@ -768,10 +891,15 @@
     },
     {
       "code": "AZ",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "westconnect-tppl"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "westconnect-tppl": 101
+      }
     },
     {
       "code": "AR",
@@ -799,10 +927,15 @@
     },
     {
       "code": "CO",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "westconnect-tppl"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "westconnect-tppl": 77
+      }
     },
     {
       "code": "CT",
@@ -1060,12 +1193,14 @@
       "code": "NE",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "westconnect-tppl"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 86
+        "spp-tracking": 86,
+        "westconnect-tppl": 1
       }
     },
     {
@@ -1103,12 +1238,14 @@
       "code": "NM",
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "spp-tracking"
+        "spp-tracking",
+        "westconnect-tppl"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 112
+        "spp-tracking": 112,
+        "westconnect-tppl": 39
       }
     },
     {
@@ -1249,13 +1386,15 @@
       "sourceKeys": [
         "spp-tracking",
         "ercot-tpit",
-        "miso-mtep"
+        "miso-mtep",
+        "westconnect-tppl"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
         "spp-tracking": 256,
-        "miso-mtep": 41
+        "miso-mtep": 41,
+        "westconnect-tppl": 67
       }
     },
     {
@@ -1330,12 +1469,14 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "spp-tracking",
-        "bpa-plan"
+        "bpa-plan",
+        "westconnect-tppl"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
       "sourceRecordCounts": {
-        "spp-tracking": 1
+        "spp-tracking": 1,
+        "westconnect-tppl": 7
       }
     },
     {
@@ -1376,8 +1517,10 @@
     },
     {
       "code": "PR",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "pr-transmission"
+      ],
       "territory": true,
       "inventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -1514,40 +1657,60 @@
     },
     {
       "sourceKey": "pr-transmission",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://energia.pr.gov/en/dockets/?docket=nepr-mi-2024-0005",
-      "importedRecords": 0,
+      "importedRecords": 22,
       "locatedRecords": 0,
-      "missingInput": "Provider connection and full accepted inventory; native locations and evidenced owners absent",
+      "missingInput": "Native locations, evidenced asset owners and complementary/current public scopes",
       "owner": "source_discovery",
-      "task": "F27-PR-I"
+      "task": "F27"
     },
     {
       "sourceKey": "westconnect-tppl",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://regplanning.westconnect.com/tppl.htm",
-      "importedRecords": 0,
+      "importedRecords": 304,
       "locatedRecords": 0,
-      "missingInput": "Provider connection and full accepted inventory; native locations and evidenced owners absent",
+      "missingInput": "Native locations, evidenced asset owners and complementary/current public scopes",
       "owner": "core",
-      "task": "F27-WC-I"
+      "task": "F27"
     },
     {
       "sourceKey": "gu-gpa",
-      "status": "qualification-queued",
+      "status": "qualification-in-progress",
       "sourceUrl": "https://www.guampowerauthority.com/gpa-initiatives/clean-energy-master-plan",
       "importedRecords": 0,
       "locatedRecords": null,
       "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
       "owner": "ui",
       "task": "F27-GU-Q"
+    },
+    {
+      "sourceKey": "nv-nvenergy",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.nvenergy.com/about-nvenergy/rates-regulatory/recent-regulatory-filings",
+      "importedRecords": 0,
+      "locatedRecords": null,
+      "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
+      "owner": "source_discovery",
+      "task": "F27-NV-Q"
+    },
+    {
+      "sourceKey": "pacificorp-plan",
+      "status": "qualification-in-progress",
+      "sourceUrl": "https://www.pacificorp.com/transmission/transmission-projects.html",
+      "importedRecords": 0,
+      "locatedRecords": null,
+      "missingInput": "Accepted public transmission project enumeration, source edition and field meanings",
+      "owner": "core",
+      "task": "F27-PC-Q"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National project denominator is unknown. Ten full declared regional inventories and one complete seven-topic featured subset are imported; source units differ and no cross-source deduplication is claimed. Twelve regional sources plus one featured subset are qualified; Puerto Rico and WestConnect production is pending. Statewide and national completeness are not established.",
+    "National project denominator is unknown. Twelve full declared regional inventories and one complete seven-topic featured subset are imported; source units differ and no cross-source deduplication is claimed. Statewide and national completeness are not established. Guam, Nevada and PacifiCorp source qualification is in progress; remaining territories and missing locations remain open.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
   ],
@@ -1696,7 +1859,7 @@
       "sourceKey": "pr-transmission",
       "editionId": "2026-08-27-table1",
       "reportingGroup": "pr-transmission",
-      "status": "qualified-not-yet-imported",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 32,
       "proposedRetainedRecords": 22,
       "proposedExcludedRows": 10,
@@ -1708,7 +1871,7 @@
       "sourceKey": "westconnect-tppl",
       "editionId": "2026-02-10",
       "reportingGroup": "westconnect-tppl",
-      "status": "qualified-not-yet-imported",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 389,
       "proposedRetainedRecords": 304,
       "proposedExcludedRows": 85,

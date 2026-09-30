@@ -1,0 +1,10 @@
+{
+  "sourceKey": "pr-transmission",
+  "editionId": "2026-08-27-table1",
+  "scope": "full",
+  "records": 22,
+  "compactUtf8Bytes": 89187,
+  "formattedDownloadUtf8Bytes": 113550,
+  "measurement": "Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "compact"
+}
