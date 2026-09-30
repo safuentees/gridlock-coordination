@@ -32,6 +32,7 @@ export const inventorySchema = z.object({
   lifecycleAsOf: z.union([z.iso.date(), z.string().regex(/^\d{4}-(0[1-9]|1[0-2])$/)]),
   owner: z.object({ id: sourceKeySchema, name: z.string().min(1), evidence: evidenceSchema, identityScope: z.enum(["source", "global"]).optional() }).nullable(),
   recordUnit: z.enum(["project", "upgrade", "component"]).optional(),
+  identityBasis: z.enum(["native-id", "source-locator"]).optional(),
   sourceState: z.string().nullable().optional(), sourceLocation: z.string().nullable().optional(),
   sourceUpdatedOn: z.iso.date().nullable().optional(),
   lifecycleDateMeaning: z.enum(["source-edition", "snapshot-observed"]).optional(),
