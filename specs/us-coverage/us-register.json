@@ -2689,6 +2689,21 @@
       "missingInput": "Native locations, evidenced asset owners and cross-source identity reconciliation; declared public scope complete, wider coverage incomplete",
       "owner": "ui",
       "task": "F27"
+    },
+    {
+      "sourceKey": "nyiso-gold-book",
+      "status": "blocked-public-input",
+      "task": "F27-NYISO-Q",
+      "owner": "ui",
+      "qualified": false,
+      "importedRecords": 0,
+      "publicInventoryDenominator": null,
+      "sourceRows": null,
+      "editionId": "2026-unacquired",
+      "geographicScope": "Intended New York proposed facilities beyond imported National Grid scope; no 2026 row enumeration acquired",
+      "url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/nyiso-gold-book/qualification.md",
+      "missingInput": "Complete ordinarily accessible official 2026 public report or full Section VII with cover/as-of, all rows, headers and footnotes. Ordinary report requests returned robot-verification/empty HTML, not PDF; official references confirm edition only."
     }
   ],
   "scopeLimits": [
@@ -2697,7 +2712,8 @@
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
     "National denominator remains unknown. Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Work-unit, program and uncertain cross-source identity boundaries prevent a distinct-engineering-project total. CNMI transmission scope and SERTP source markings remain unresolved. Statewide, territory-wide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
-    "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
+    "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported.",
+    "NYISO 2026 proposed-facility expansion is specifically blocked by unavailable complete public report bytes; official references establish edition existence, not rows. Existing National Grid scope remains usable and NYISO totals are unknown, not zero."
   ],
   "qualifiedSources": [
     {
