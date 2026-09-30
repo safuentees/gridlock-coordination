@@ -60,20 +60,25 @@ def between(text: str, start: str, end: str) -> str:
     return compact(text.split(start, 1)[1].split(end, 1)[0])
 
 
-def dominion_record(text: str, expected_id: str) -> dict:
+def dominion_record(text: str, expected_id: str | None = None) -> dict:
     native_id = between(text, "Project ID", "Project Description")
-    if native_id != expected_id:
+    if expected_id is not None and native_id != expected_id:
         raise ValueError(f"Dominion join changed: expected {expected_id}, received {native_id}")
+    raw_date = between(text, "Planned In-Service Date", "Estimated Project Cost")
+    notes = []
+    try:
+        date = {"value": date_value(raw_date), "precision": "day", "kind": "in-service", "label": "Planned in-service date"}
+    except ValueError:
+        date = {"value": None, "precision": "unknown", "kind": "in-service", "label": "Planned in-service dates by phase" if "phase" in raw_date.lower() else "Planned in-service date"}
+        notes.append(f"Source planned in-service dates: {raw_date}. No single date selected.")
     return {
         "sourceId": native_id,
         "sponsor": "Dominion Energy South Carolina",
         "name": between(text, "5 Year Budget", "Project ID"),
         "description": between(text, "Project Description", "Project Need"),
         "status": between(text, "Project Status", "Planned In-Service Date"),
-        "date": {
-            "value": date_value(between(text, "Planned In-Service Date", "Estimated Project Cost")),
-            "precision": "day", "kind": "in-service", "label": "Planned in-service date",
-        },
+        "date": date,
+        "notes": notes,
     }
 
 
@@ -133,7 +138,7 @@ def ingest_seed(inputs: Path, generated_at: str) -> dict:
         else:
             raise ValueError(f"Unmapped workbook alias {alias!r}; add an explicit source join")
         location = workbook_location(row, number)
-        notes = [f"Workbook alias: {alias}.", "Location supplied in workbook; not independently verified."]
+        notes = record.pop("notes", []) + [f"Workbook alias: {alias}.", "Location supplied in workbook; not independently verified."]
         if location and location["method"] == "single-endpoint":
             notes.append("Only one endpoint is located; the center represents that endpoint, not the whole project.")
         if alias in ("GPC_2", "GPC_3"):
