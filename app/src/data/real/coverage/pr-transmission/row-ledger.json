@@ -1,0 +1,729 @@
+{
+  "sourceKey": "pr-transmission",
+  "editionId": "2026-08-27-table1",
+  "sourceSha256": "d1bc3b2e3a42fca0f41c5d2ad52b136700cf5ae580d048b213a484f4e24b5cc5",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 32,
+    "importedRecords": 6,
+    "excludedRows": 10,
+    "failedRows": 0,
+    "pendingRows": 16,
+    "locatedRecords": 0
+  },
+  "recordKindCounts": {
+    "transmission-project": 5,
+    "capital-project-context": 1
+  },
+  "lifecycleCounts": {
+    "planned": 3,
+    "on-hold": 1,
+    "unknown": 1,
+    "approved": 1
+  },
+  "completeRetainedRecordKindCounts": {
+    "transmission-project": 21,
+    "capital-project-context": 1
+  },
+  "completeRetainedLifecycleCounts": {
+    "planned": 9,
+    "on-hold": 2,
+    "unknown": 2,
+    "under-construction": 4,
+    "approved": 5
+  },
+  "rows": [
+    {
+      "sourceId": "2026-08-27:table1:01",
+      "locator": "Exhibit 1, Table 1, row 1; PDF pp.12 / printed pp.5",
+      "raw": {
+        "rowNumber": 1,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "4500-Cañas TC - La Rambla SECT",
+        "expectedConstructionStart": "Feb-26",
+        "expectedConstructionCompletion": "Feb-26",
+        "projectStatus": "Completed. Execution was finalized ahead of schedule in February 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:02",
+      "locator": "Exhibit 1, Table 1, row 2; PDF pp.12 / printed pp.5",
+      "raw": {
+        "rowNumber": 2,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 38200: T-Pole Replacements",
+        "expectedConstructionStart": "Sep-26",
+        "expectedConstructionCompletion": "Feb-26",
+        "projectStatus": "Completed. Construction concluded with the installation of the final structure in February 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:03",
+      "locator": "Exhibit 1, Table 1, row 3; PDF pp.12 / printed pp.5",
+      "raw": {
+        "rowNumber": 3,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "16500-Fajardo TC- Dos Marinas-",
+        "expectedConstructionStart": "Mar-26",
+        "expectedConstructionCompletion": "Mar-26",
+        "projectStatus": "Completed. Execution finalized ahead of schedule in March 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:04",
+      "locator": "Exhibit 1, Table 1, row 4; PDF pp.12 / printed pp.5",
+      "raw": {
+        "rowNumber": 4,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 2100: Transmission Hardening",
+        "expectedConstructionStart": "Jul-25",
+        "expectedConstructionCompletion": "Dec-25",
+        "projectStatus": "The line was energized in December 2025, according to the commitment with the DOE. Further line hardening is scheduled for completion by October 2026. This scope is incremental and will be executed with savings from the original scope."
+      },
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:04",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:05",
+      "locator": "Exhibit 1, Table 1, row 5; PDF pp.12 / printed pp.5",
+      "raw": {
+        "rowNumber": 5,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 9100: Transmission Hardening",
+        "expectedConstructionStart": "Jul-25",
+        "expectedConstructionCompletion": "Nov-25",
+        "projectStatus": "The line was energized in December 2025, according to the commitment with the DOE. Further line hardening is scheduled for completion by October 2026. This scope is incremental and will be executed with savings from the original scope."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:06",
+      "locator": "Exhibit 1, Table 1, row 6; PDF pp.12 / printed pp.5",
+      "raw": {
+        "rowNumber": 6,
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          5
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 12600: Transmission Hardening",
+        "expectedConstructionStart": "Aug-25",
+        "expectedConstructionCompletion": "Jan-25",
+        "projectStatus": "The line was energized in January 2025."
+      },
+      "disposition": "excluded",
+      "reason": "Energized with no remaining work identified in this row"
+    },
+    {
+      "sourceId": "2026-08-27:table1:07",
+      "locator": "Exhibit 1, Table 1, row 7; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 7,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 13600: Transmission Hardening",
+        "expectedConstructionStart": "Aug-25",
+        "expectedConstructionCompletion": "Dec-25",
+        "projectStatus": "The line was energized in December 2025, according to the commitment with the DOE. Further line hardening is scheduled for completion by October 2026. This scope is incremental and will be executed with savings from the original project."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:08",
+      "locator": "Exhibit 1, Table 1, row 8; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 8,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 4500: Transmission Hardening",
+        "expectedConstructionStart": "Aug-26",
+        "expectedConstructionCompletion": "Feb-26",
+        "projectStatus": "The line was energized in February 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Energized with no remaining work identified in this row"
+    },
+    {
+      "sourceId": "2026-08-27:table1:09",
+      "locator": "Exhibit 1, Table 1, row 9; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 9,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "TL 36100: T-Pole Replacements",
+        "expectedConstructionStart": "Aug-26",
+        "expectedConstructionCompletion": "May-26",
+        "projectStatus": "The project was completed in May 2026 and is currently closed."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:10",
+      "locator": "Exhibit 1, Table 1, row 10; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 10,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "3200-Monacillos TC-Venezuela SECT",
+        "expectedConstructionStart": "May-26",
+        "expectedConstructionCompletion": "May-26",
+        "projectStatus": "The construction was completed in May 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:11",
+      "locator": "Exhibit 1, Table 1, row 11; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 11,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "3600-Lloréns Torres SECT- Martín Peña",
+        "expectedConstructionStart": "May-26",
+        "expectedConstructionCompletion": "May-26",
+        "projectStatus": "The construction was completed in May 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:12",
+      "locator": "Exhibit 1, Table 1, row 12; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 12,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "3000-Juncos TC- Río Blanco HP-F",
+        "expectedConstructionStart": "Apr-26",
+        "expectedConstructionCompletion": "May-26",
+        "projectStatus": "The construction was completed in May 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:13",
+      "locator": "Exhibit 1, Table 1, row 13; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 13,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "753782",
+        "projectTitle": "TL 3100: T-Pole Replacements",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "Jul-26",
+        "projectStatus": "The construction was completed in July 2026."
+      },
+      "disposition": "excluded",
+      "reason": "Explicitly completed or closed"
+    },
+    {
+      "sourceId": "2026-08-27:table1:14",
+      "locator": "Exhibit 1, Table 1, row 14; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 14,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "811913",
+        "projectTitle": "TL 9600: T-Pole Replacements",
+        "expectedConstructionStart": "-",
+        "expectedConstructionCompletion": "-",
+        "projectStatus": "Awaiting reactivation. Included in LUMA’s prioritization Master List."
+      },
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:14",
+      "recordKind": "transmission-project",
+      "lifecycle": "on-hold"
+    },
+    {
+      "sourceId": "2026-08-27:table1:15",
+      "locator": "Exhibit 1, Table 1, row 15; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 15,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "TBD",
+        "projectTitle": "TL 9400: Transmission Hardening",
+        "expectedConstructionStart": "-",
+        "expectedConstructionCompletion": "-",
+        "projectStatus": "Awaiting reactivation. Included in LUMA’s prioritization Master List."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "on-hold"
+    },
+    {
+      "sourceId": "2026-08-27:table1:16",
+      "locator": "Exhibit 1, Table 1, row 16; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 16,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "DOE",
+        "projectTitle": "Line 16800",
+        "expectedConstructionStart": "-",
+        "expectedConstructionCompletion": "-",
+        "projectStatus": "DOE P3 will now fund this project."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:17",
+      "locator": "Exhibit 1, Table 1, row 17; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 17,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "711819",
+        "projectTitle": "TL 13400: T-Pole Replacements",
+        "expectedConstructionStart": "Aug-26",
+        "expectedConstructionCompletion": "Nov-26",
+        "projectStatus": "Pending procurement of corrugated pipe for foundations."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:18",
+      "locator": "Exhibit 1, Table 1, row 18; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 18,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "749072",
+        "projectTitle": "TL 2700: T-Pole Replacements",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "Oct-26",
+        "projectStatus": "Pending procurement of corrugated pipe for foundations."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:19",
+      "locator": "Exhibit 1, Table 1, row 19; PDF pp.13 / printed pp.6",
+      "raw": {
+        "rowNumber": 19,
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          6
+        ],
+        "fundingSource": "750150",
+        "projectTitle": "TL 4800 (Santa Isabel-Toro Negro): T-Pole Replacements",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Pending procurement of corrugated pipe for foundations."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:20",
+      "locator": "Exhibit 1, Table 1, row 20; PDF pp.13,14 / printed pp.6,7",
+      "raw": {
+        "rowNumber": 20,
+        "pdfPages": [
+          13,
+          14
+        ],
+        "printedPages": [
+          6,
+          7
+        ],
+        "fundingSource": "750168",
+        "projectTitle": "TL 4800 (Santa Isabel-Aibonito) T- Pole Replacements",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "Dec-26",
+        "projectStatus": "Pending procurement of corrugated pipe for foundations."
+      },
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:20",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    },
+    {
+      "sourceId": "2026-08-27:table1:21",
+      "locator": "Exhibit 1, Table 1, row 21; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 21,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "3100-Carolina- Canóvanas TC-",
+        "expectedConstructionStart": "Jun-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Execution was changed from Structure Replacement to Critical Repair. Construction could not be completed due to system constraints and unforeseen issues."
+      },
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:21",
+      "recordKind": "capital-project-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "sourceId": "2026-08-27:table1:22",
+      "locator": "Exhibit 1, Table 1, row 22; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 22,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "700-Costa Sur SP- Yauco 2 HP-",
+        "expectedConstructionStart": "Jun-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Construction could not be completed due to system constraints and unforeseen issues."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown"
+    },
+    {
+      "sourceId": "2026-08-27:table1:23",
+      "locator": "Exhibit 1, Table 1, row 23; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 23,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "800-Comsat SECT - Cidra SECT",
+        "expectedConstructionStart": "Apr-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Ten of the 12 planned feature identification number (FIDs) were completed. Due to system constraints and unforeseen delays, the remaining two were deferred and are now scheduled for Q1 FY2027."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "under-construction"
+    },
+    {
+      "sourceId": "2026-08-27:table1:24",
+      "locator": "Exhibit 1, Table 1, row 24; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 24,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "10700-Hato Tejas SECT-Bayamón Pueblo SECT-",
+        "expectedConstructionStart": "May-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Four of the five planned FIDs were completed. The remaining FID was deferred due to system constraints and unforeseen delays; with its execution scheduled for Q1 FY2027."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "under-construction"
+    },
+    {
+      "sourceId": "2026-08-27:table1:25",
+      "locator": "Exhibit 1, Table 1, row 25; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 25,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "1700-Guánica TC- Yauco 2 HP-",
+        "expectedConstructionStart": "May-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Of the 29 planned FIDs, we completed 23. The remaining six FIDs were deferred due to system constraints and unforeseen delays, and their execution was rescheduled for Q1 FY2027."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "under-construction"
+    },
+    {
+      "sourceId": "2026-08-27:table1:26",
+      "locator": "Exhibit 1, Table 1, row 26; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 26,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "NFC",
+        "projectTitle": "3000-Caguax SECT-Juncos TC- F",
+        "expectedConstructionStart": "Apr-26",
+        "expectedConstructionCompletion": "Sep-26",
+        "projectStatus": "Two of the three planned FIDs were completed. The remaining FID was deferred due to system constraints and unforeseen delays, with its execution rescheduled for Q1 FY2027."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "under-construction"
+    },
+    {
+      "sourceId": "2026-08-27:table1:27",
+      "locator": "Exhibit 1, Table 1, row 27; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 27,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "1064452",
+        "projectTitle": "TL 800: T-Pole Replacements",
+        "expectedConstructionStart": "May-27",
+        "expectedConstructionCompletion": "May-27",
+        "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
+      },
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:27",
+      "recordKind": "transmission-project",
+      "lifecycle": "approved"
+    },
+    {
+      "sourceId": "2026-08-27:table1:28",
+      "locator": "Exhibit 1, Table 1, row 28; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 28,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "753785",
+        "projectTitle": "TL 3300: T-Pole Replacements",
+        "expectedConstructionStart": "Feb-27",
+        "expectedConstructionCompletion": "Mar-27",
+        "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "approved"
+    },
+    {
+      "sourceId": "2026-08-27:table1:29",
+      "locator": "Exhibit 1, Table 1, row 29; PDF pp.14 / printed pp.7",
+      "raw": {
+        "rowNumber": 29,
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          7
+        ],
+        "fundingSource": "1066980",
+        "projectTitle": "TL 5900: T-Pole Replacements",
+        "expectedConstructionStart": "Dec-26",
+        "expectedConstructionCompletion": "Jan-27",
+        "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "approved"
+    },
+    {
+      "sourceId": "2026-08-27:table1:30",
+      "locator": "Exhibit 1, Table 1, row 30; PDF pp.15 / printed pp.8",
+      "raw": {
+        "rowNumber": 30,
+        "pdfPages": [
+          15
+        ],
+        "printedPages": [
+          8
+        ],
+        "fundingSource": "753787",
+        "projectTitle": "TL 13700: T-Pole Replacements",
+        "expectedConstructionStart": "Feb-27",
+        "expectedConstructionCompletion": "Mar-27",
+        "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "approved"
+    },
+    {
+      "sourceId": "2026-08-27:table1:31",
+      "locator": "Exhibit 1, Table 1, row 31; PDF pp.15 / printed pp.8",
+      "raw": {
+        "rowNumber": 31,
+        "pdfPages": [
+          15
+        ],
+        "printedPages": [
+          8
+        ],
+        "fundingSource": "1066730",
+        "projectTitle": "TL 16500: T-Pole Replacements",
+        "expectedConstructionStart": "Jan-27",
+        "expectedConstructionCompletion": "Feb-27",
+        "projectStatus": "The Energy Bureau approved this project under Attachment A. The project was reactivated."
+      },
+      "disposition": "pending",
+      "reason": "Retained work package outside the six-record connection sample.",
+      "recordKind": "transmission-project",
+      "lifecycle": "approved"
+    },
+    {
+      "sourceId": "2026-08-27:table1:32",
+      "locator": "Exhibit 1, Table 1, row 32; PDF pp.15 / printed pp.8",
+      "raw": {
+        "rowNumber": 32,
+        "pdfPages": [
+          15
+        ],
+        "printedPages": [
+          8
+        ],
+        "fundingSource": "180052",
+        "projectTitle": "Line 100/200 Out- of-Service Segment",
+        "expectedConstructionStart": "Jul-26",
+        "expectedConstructionCompletion": "TBD",
+        "projectStatus": "Under design; included in FEMA scope."
+      },
+      "disposition": "imported",
+      "reason": "Remaining Table 1 work package retained.",
+      "projectId": "pr-transmission:2026-08-27:table1:32",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned"
+    }
+  ]
+}

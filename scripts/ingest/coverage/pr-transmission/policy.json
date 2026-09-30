@@ -1,0 +1,67 @@
+{
+  "acceptedBy": "specs/features/F27-us-regional-expansion/pr-transmission/spec.md at 94dfc83",
+  "sampleRows": [
+    4,
+    14,
+    20,
+    21,
+    27,
+    32
+  ],
+  "completedOrClosed": [
+    1,
+    2,
+    3,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "energizedNoRemainingScope": [
+    6,
+    8
+  ],
+  "retainByLifecycle": {
+    "planned": [
+      4,
+      5,
+      7,
+      16,
+      17,
+      18,
+      19,
+      20,
+      32
+    ],
+    "on-hold": [
+      14,
+      15
+    ],
+    "unknown": [
+      21,
+      22
+    ],
+    "under-construction": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "approved": [
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "capitalContext": [
+    21
+  ],
+  "incrementalDateFromNarrative": [
+    4,
+    5,
+    7
+  ]
+}
