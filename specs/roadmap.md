@@ -94,8 +94,8 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | Florida full integrated on current branch; F27-PR-Q active. | Exact Puerto Rico qualification/sample/receipt in [spec](features/F27-us-regional-expansion/pr-transmission/spec.md); no producer before acceptance. SERTP remains blocked. |
-| core | New York full integrated on current branch; F27-WC-Q active. | Exact WestConnect qualification/sample/receipt in [spec](features/F27-us-regional-expansion/westconnect-tppl/spec.md); no producer before acceptance. |
+| source_discovery / ingestion | Florida full integrated on current branch; Puerto Rico six-record producer active after accepted qualification. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/pr-transmission/spec.md); connect sample next milestone before full 22. SERTP remains blocked. |
+| core | New York full integrated on current branch; WestConnect six-record producer ready after accepted PR102. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/westconnect-tppl/spec.md); connect sample next milestone before full 304. |
 | coordinator | PR88 integrated; compose New York/Florida/BPA increment PR95. | Root owns aggregate/schema/register/merge/checks, including additive year-only lifecycle precision; preserve all unrelated untracked duplicate files. |
 | ui | BPA five-record sample active, then full 77; fixture scale refresh queued afterward. | Exact BPA producer/data/receipt in [spec](features/F27-us-regional-expansion/bpa-plan/spec.md). After full delivery, only demo inventory/scale receipt under [contract](features/F27-us-regional-expansion/contract.md), to 13,200 synthetic records. No UI/map edits. |
 
