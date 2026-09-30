@@ -1,12 +1,40 @@
 import { z } from "zod"
+import { estimateImpact } from "@/core"
 import { projectSchema, type AnalysisOptions, type DataMode, type Dataset, type Opportunity, type Project } from "@/domain/schema"
 
+const impactInputsSchema = z.object({
+  sharedLengthMiles: z.number().finite().nonnegative(),
+  corridorWidthFeet: z.number().finite().nonnegative(),
+  costPerAcreUsd: z.number().finite().nonnegative(),
+  shareFraction: z.number().finite().min(0).max(1),
+}).refine((inputs) => {
+  try {
+    estimateImpact(inputs)
+    return true
+  } catch {
+    return false
+  }
+}, "Impact assumptions must produce a finite hypothetical estimate")
+
+export const investigationSchema = z.object({
+  resource: z.enum(["unspecified", "right-of-way", "crews-equipment", "substation-capacity", "other"]),
+  objective: z.string(),
+  nextAction: z.string(),
+  owner: z.string(),
+  impactInputs: impactInputsSchema.nullable(),
+})
+export type Investigation = z.infer<typeof investigationSchema>
+export const EMPTY_INVESTIGATION: Investigation = {
+  resource: "unspecified", objective: "", nextAction: "", owner: "", impactInputs: null,
+}
+
 export const REVIEW_STATES = ["Unreviewed", "Investigating", "Ready for discussion", "Dismissed"] as const
-const savedOpportunitySchema = z.object({
+export const savedOpportunitySchema = z.object({
   id: z.string().min(1), mode: z.enum(["real", "demo"]),
   dataset: z.object({ title: z.string(), generatedAt: z.string(), schemaVersion: z.literal(1) }),
   savedAt: z.iso.datetime(), updatedAt: z.iso.datetime(),
   reviewState: z.enum(REVIEW_STATES), notes: z.string(),
+  investigation: investigationSchema.optional(),
   options: z.object({ radiusMiles: z.number().finite().positive(), maxDateGapDays: z.number().finite().nonnegative().nullable(), includeUnverified: z.boolean() }),
   opportunity: z.object({
     id: z.string(), projectIds: z.tuple([z.string(), z.string()]), distanceMiles: z.number().finite().nonnegative(), dateGapDays: z.number().finite().nonnegative().nullable(),
@@ -48,6 +76,7 @@ export function snapshotOpportunity(dataset: Dataset, opportunity: Opportunity, 
     id: opportunity.id, mode: dataset.mode, dataset: { title: dataset.title, generatedAt: dataset.generatedAt, schemaVersion: dataset.schemaVersion },
     savedAt: previous?.savedAt ?? now, updatedAt: now,
     reviewState: previous?.reviewState ?? "Unreviewed", notes: previous?.notes ?? "",
+    ...(previous?.investigation ? { investigation: structuredClone(previous.investigation) } : {}),
     options: { ...options }, opportunity: structuredClone(opportunity), projects: structuredClone([projects[0], projects[1]]) as [Project, Project],
   }
 }
