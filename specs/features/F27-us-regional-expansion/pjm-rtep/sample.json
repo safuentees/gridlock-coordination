@@ -1,0 +1,526 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "sourceKeyProposal": "pjm-rtep",
+  "reportingGroupProposal": "pjm-rtep",
+  "editionProposal": "snapshot-2026-09-30-1cc0ae1b7825",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "snapshotMeaning": "Public feed observed on retrieval date, pinned by checksum; not a publisher-issued annual edition.",
+  "source": {
+    "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+    "statusPage": "https://www.pjm.com/planning/m/project-construction",
+    "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-pjm-rtep-2026/projectCostUpgrades.xml",
+    "sha256": "1cc0ae1b78258cbe81108ec2fdd43754098a57cc5ec224f6e7300cafefe2eb31",
+    "bytes": 25476508,
+    "recordPath": "/Upgrades/Upgrade",
+    "identityField": "UpgradeId"
+  },
+  "enumeration": {
+    "sourceRows": 15692,
+    "retainedUpgradeRows": 5624,
+    "excludedRows": 10068,
+    "uniqueEngineeringProjectCount": null,
+    "statusCounts": {
+      "IS": 9215,
+      "Cancelled": 847,
+      "UC": 532,
+      "EP": 3800,
+      "On Hold": 256,
+      "PL": 199,
+      "Active": 831,
+      "W": 6,
+      "UC-ISP": 6
+    },
+    "retainedByType": {
+      "Baseline": 1249,
+      "Network": 1994,
+      "Supplemental": 2381
+    },
+    "exclusions": {
+      "IS": 9215,
+      "Cancelled": 847,
+      "W": 6
+    },
+    "nativeCoordinateRows": 0,
+    "retainedMissing": {
+      "TransmissionOwner": 38,
+      "State": 396,
+      "Location": 320,
+      "RequiredDate": 2691,
+      "ProjectedInServiceDate": 1209,
+      "ActualInServiceDate": 5615,
+      "LastUpdated": 0
+    }
+  },
+  "statusMappingProposal": {
+    "EP": "planned",
+    "Active": "planned",
+    "UC": "under-construction",
+    "UC-ISP": "under-construction",
+    "PL": "planned",
+    "On Hold": "on-hold",
+    "IS": "in-service",
+    "Cancelled": "cancelled",
+    "W": "cancelled"
+  },
+  "mappingCaveats": [
+    "Active means a network upgrade associated with a queue project with a system impact study but without ISA/ICSA; planned does not mean approved or committed construction.",
+    "UC-ISP retains partial-in-service meaning; do not label the whole upgrade complete.",
+    "W is withdrawn; normalized cancelled is only a terminal-category mapping, with raw W preserved.",
+    "A dot suffix is part of the native UpgradeId. No parent field exists; do not merge engineering scope by stem or name."
+  ],
+  "researchTiming": {
+    "startedAt": "2026-09-30T08:20:41Z",
+    "researchClosedAt": "2026-09-30T08:25:17Z",
+    "limitMinutes": 15,
+    "elapsedMinutes": 4.6
+  },
+  "records": [
+    {
+      "nativeId": "s0275",
+      "existingProjectId": null,
+      "citation": {
+        "file": "projectCostUpgrades.xml",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade[UpgradeId='s0275']"
+      },
+      "raw": {
+        "UpgradeId": "s0275",
+        "ProjectType": "Supplemental",
+        "Description": "Rebuild Whitpain – Buxmont 230 kV line",
+        "Voltage": "230",
+        "TransmissionOwner": "PPL",
+        "State": "PA",
+        "SubRegion": "PJM MA",
+        "Location": "Whitpain/Buxmont",
+        "Equipment": "Transmission Line",
+        "Task": null,
+        "Status": "EP",
+        "RequiredDate": null,
+        "ProjectedInServiceDate": "12/31/2027",
+        "ActualInServiceDate": null,
+        "ISAInServiceDate": null,
+        "RevisedInServiceDate": null,
+        "PJMBoardApprovalDate": null,
+        "LastUpdated": "8/6/2026",
+        "ProposalIds": null
+      },
+      "candidate": {
+        "id": "pjm-rtep:s0275",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "rawStatus": "EP",
+        "sourceUpdatedOn": "2026-08-06",
+        "lifecycleObservedOn": "2026-09-30",
+        "ownerCandidate": {
+          "sourceToken": "PPL",
+          "proposedId": "pjm-to-ppl",
+          "name": "PPL",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='s0275']/TransmissionOwner"
+            }
+          ],
+          "identityMeaning": "Source-reported transmission owner; no ultimate-parent inference or cross-source alias merge."
+        },
+        "sourceState": "PA",
+        "sourceLocation": "Whitpain/Buxmont",
+        "date": {
+          "value": "2027-12-31",
+          "kind": "in-service",
+          "label": "Source projected in-service date",
+          "precision": "day"
+        },
+        "actualInServiceDate": null,
+        "boardApprovalDate": null,
+        "constructionStart": null,
+        "buildWindow": null,
+        "nativeGeometry": null,
+        "location": null,
+        "centerRole": "unknown",
+        "spatialEligibility": false,
+        "missingFields": [
+          "native coordinates",
+          "geometry role/precision",
+          "explicit construction bounds"
+        ],
+        "caveats": []
+      }
+    },
+    {
+      "nativeId": "n0613",
+      "existingProjectId": null,
+      "citation": {
+        "file": "projectCostUpgrades.xml",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade[UpgradeId='n0613']"
+      },
+      "raw": {
+        "UpgradeId": "n0613",
+        "ProjectType": "Network",
+        "Description": "Kammer - Upgrade station equipment to increase the emergency rating of the AEP owned Kammer to West Bellaire 345KV line from 1383 MVA to 1413 MVA",
+        "Voltage": "138",
+        "TransmissionOwner": "AEP",
+        "State": "IL",
+        "SubRegion": "PJM WEST",
+        "Location": "Kammer",
+        "Equipment": "Substation",
+        "Task": null,
+        "Status": "Active",
+        "RequiredDate": "2/1/2006",
+        "ProjectedInServiceDate": null,
+        "ActualInServiceDate": null,
+        "ISAInServiceDate": "2/1/2006",
+        "RevisedInServiceDate": null,
+        "PJMBoardApprovalDate": null,
+        "LastUpdated": "5/22/2025",
+        "ProposalIds": null
+      },
+      "candidate": {
+        "id": "pjm-rtep:n0613",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "rawStatus": "Active",
+        "sourceUpdatedOn": "2025-05-22",
+        "lifecycleObservedOn": "2026-09-30",
+        "ownerCandidate": {
+          "sourceToken": "AEP",
+          "proposedId": "pjm-to-aep",
+          "name": "AEP",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='n0613']/TransmissionOwner"
+            }
+          ],
+          "identityMeaning": "Source-reported transmission owner; no ultimate-parent inference or cross-source alias merge."
+        },
+        "sourceState": "IL",
+        "sourceLocation": "Kammer",
+        "date": {
+          "value": "2006-02-01",
+          "kind": "need",
+          "label": "Source required date (criteria violation)",
+          "precision": "day"
+        },
+        "actualInServiceDate": null,
+        "boardApprovalDate": null,
+        "constructionStart": null,
+        "buildWindow": null,
+        "nativeGeometry": null,
+        "location": null,
+        "centerRole": "unknown",
+        "spatialEligibility": false,
+        "missingFields": [
+          "native coordinates",
+          "geometry role/precision",
+          "explicit construction bounds"
+        ],
+        "caveats": [
+          "Source Voltage is 138 while Description mentions 345kV; preserve both and flag inconsistency rather than silently correcting.",
+          "Active is a pre-agreement network upgrade, not the generator itself. State IL is source text, not coordinate evidence."
+        ]
+      }
+    },
+    {
+      "nativeId": "b1570.3",
+      "existingProjectId": null,
+      "citation": {
+        "file": "projectCostUpgrades.xml",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']"
+      },
+      "raw": {
+        "UpgradeId": "b1570.3",
+        "ProjectType": "Baseline",
+        "Description": "Reconductor Union REA - Honda MT 69 kV line",
+        "Voltage": "69",
+        "TransmissionOwner": "Dayton",
+        "State": "OH",
+        "SubRegion": "PJM WEST",
+        "Location": "Union REA - Honda MT",
+        "Equipment": "Transmission Line",
+        "Task": null,
+        "Status": "UC",
+        "RequiredDate": "6/1/2014",
+        "ProjectedInServiceDate": "12/1/2025",
+        "ActualInServiceDate": null,
+        "ISAInServiceDate": null,
+        "RevisedInServiceDate": "6/1/2021",
+        "PJMBoardApprovalDate": "12/7/2011",
+        "LastUpdated": "8/11/2026",
+        "ProposalIds": null
+      },
+      "candidate": {
+        "id": "pjm-rtep:b1570.3",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "rawStatus": "UC",
+        "sourceUpdatedOn": "2026-08-11",
+        "lifecycleObservedOn": "2026-09-30",
+        "ownerCandidate": {
+          "sourceToken": "Dayton",
+          "proposedId": "pjm-to-dayton",
+          "name": "Dayton",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='b1570.3']/TransmissionOwner"
+            }
+          ],
+          "identityMeaning": "Source-reported transmission owner; no ultimate-parent inference or cross-source alias merge."
+        },
+        "sourceState": "OH",
+        "sourceLocation": "Union REA - Honda MT",
+        "date": {
+          "value": "2025-12-01",
+          "kind": "in-service",
+          "label": "Source projected in-service date",
+          "precision": "day"
+        },
+        "actualInServiceDate": null,
+        "boardApprovalDate": "2011-12-07",
+        "constructionStart": null,
+        "buildWindow": null,
+        "nativeGeometry": null,
+        "location": null,
+        "centerRole": "unknown",
+        "spatialEligibility": false,
+        "missingFields": [
+          "native coordinates",
+          "geometry role/precision",
+          "explicit construction bounds"
+        ],
+        "caveats": []
+      }
+    },
+    {
+      "nativeId": "b2970",
+      "existingProjectId": null,
+      "citation": {
+        "file": "projectCostUpgrades.xml",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade[UpgradeId='b2970']"
+      },
+      "raw": {
+        "UpgradeId": "b2970",
+        "ProjectType": "Baseline",
+        "Description": "Ringgold - Catoctin Solution",
+        "Voltage": "230/138",
+        "TransmissionOwner": "APS",
+        "State": "MD",
+        "SubRegion": "PJM WEST",
+        "Location": "Ringgold, Catoctin, Garfield",
+        "Equipment": "Substation",
+        "Task": null,
+        "Status": "On Hold",
+        "RequiredDate": "6/1/2020",
+        "ProjectedInServiceDate": "10/11/2025",
+        "ActualInServiceDate": null,
+        "ISAInServiceDate": null,
+        "RevisedInServiceDate": null,
+        "PJMBoardApprovalDate": "12/5/2017",
+        "LastUpdated": "7/28/2026",
+        "ProposalIds": null
+      },
+      "candidate": {
+        "id": "pjm-rtep:b2970",
+        "recordKind": "transmission-project",
+        "lifecycle": "on-hold",
+        "rawStatus": "On Hold",
+        "sourceUpdatedOn": "2026-07-28",
+        "lifecycleObservedOn": "2026-09-30",
+        "ownerCandidate": {
+          "sourceToken": "APS",
+          "proposedId": "pjm-to-aps",
+          "name": "APS",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='b2970']/TransmissionOwner"
+            }
+          ],
+          "identityMeaning": "Source-reported transmission owner; no ultimate-parent inference or cross-source alias merge."
+        },
+        "sourceState": "MD",
+        "sourceLocation": "Ringgold, Catoctin, Garfield",
+        "date": {
+          "value": "2025-10-11",
+          "kind": "in-service",
+          "label": "Source projected in-service date",
+          "precision": "day"
+        },
+        "actualInServiceDate": null,
+        "boardApprovalDate": "2017-12-05",
+        "constructionStart": null,
+        "buildWindow": null,
+        "nativeGeometry": null,
+        "location": null,
+        "centerRole": "unknown",
+        "spatialEligibility": false,
+        "missingFields": [
+          "native coordinates",
+          "geometry role/precision",
+          "explicit construction bounds"
+        ],
+        "caveats": [
+          "Keep on-hold even though projected dates have elapsed."
+        ]
+      }
+    },
+    {
+      "nativeId": "b3869.3",
+      "existingProjectId": null,
+      "citation": {
+        "file": "projectCostUpgrades.xml",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']"
+      },
+      "raw": {
+        "UpgradeId": "b3869.3",
+        "ProjectType": "Baseline",
+        "Description": "Replace the two Bergen 138 kV series reactors with two new dry type 138 kV series reactors.",
+        "Voltage": "138",
+        "TransmissionOwner": "PSEG",
+        "State": "NJ",
+        "SubRegion": "PJM MA",
+        "Location": "Bergen",
+        "Equipment": "Series Reactor",
+        "Task": null,
+        "Status": "PL",
+        "RequiredDate": "12/1/2029",
+        "ProjectedInServiceDate": "9/1/2027",
+        "ActualInServiceDate": null,
+        "ISAInServiceDate": null,
+        "RevisedInServiceDate": null,
+        "PJMBoardApprovalDate": "11/18/2025",
+        "LastUpdated": "3/4/2026",
+        "ProposalIds": null
+      },
+      "candidate": {
+        "id": "pjm-rtep:b3869.3",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "rawStatus": "PL",
+        "sourceUpdatedOn": "2026-03-04",
+        "lifecycleObservedOn": "2026-09-30",
+        "ownerCandidate": {
+          "sourceToken": "PSEG",
+          "proposedId": "pjm-to-pseg",
+          "name": "PSEG",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='b3869.3']/TransmissionOwner"
+            }
+          ],
+          "identityMeaning": "Source-reported transmission owner; no ultimate-parent inference or cross-source alias merge."
+        },
+        "sourceState": "NJ",
+        "sourceLocation": "Bergen",
+        "date": {
+          "value": "2027-09-01",
+          "kind": "in-service",
+          "label": "Source projected in-service date",
+          "precision": "day"
+        },
+        "actualInServiceDate": null,
+        "boardApprovalDate": "2025-11-18",
+        "constructionStart": null,
+        "buildWindow": null,
+        "nativeGeometry": null,
+        "location": null,
+        "centerRole": "unknown",
+        "spatialEligibility": false,
+        "missingFields": [
+          "native coordinates",
+          "geometry role/precision",
+          "explicit construction bounds"
+        ],
+        "caveats": []
+      }
+    },
+    {
+      "nativeId": "n8733.0",
+      "existingProjectId": null,
+      "citation": {
+        "file": "projectCostUpgrades.xml",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+        "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']"
+      },
+      "raw": {
+        "UpgradeId": "n8733.0",
+        "ProjectType": "Network",
+        "Description": "Frew Mill Substation – update drawings and nameplates for line name change",
+        "Voltage": "69",
+        "TransmissionOwner": "ATSI",
+        "State": "PA",
+        "SubRegion": "Not Specified",
+        "Location": "Volant",
+        "Equipment": "Substation",
+        "Task": null,
+        "Status": "UC-ISP",
+        "RequiredDate": "3/31/2026",
+        "ProjectedInServiceDate": "3/31/2027",
+        "ActualInServiceDate": null,
+        "ISAInServiceDate": "3/31/2026",
+        "RevisedInServiceDate": null,
+        "PJMBoardApprovalDate": "11/18/2025",
+        "LastUpdated": "7/13/2026",
+        "ProposalIds": null
+      },
+      "candidate": {
+        "id": "pjm-rtep:n8733.0",
+        "recordKind": "transmission-project",
+        "lifecycle": "under-construction",
+        "rawStatus": "UC-ISP",
+        "sourceUpdatedOn": "2026-07-13",
+        "lifecycleObservedOn": "2026-09-30",
+        "ownerCandidate": {
+          "sourceToken": "ATSI",
+          "proposedId": "pjm-to-atsi",
+          "name": "ATSI",
+          "evidence": [
+            {
+              "file": "projectCostUpgrades.xml",
+              "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+              "locator": "/Upgrades/Upgrade[UpgradeId='n8733.0']/TransmissionOwner"
+            }
+          ],
+          "identityMeaning": "Source-reported transmission owner; no ultimate-parent inference or cross-source alias merge."
+        },
+        "sourceState": "PA",
+        "sourceLocation": "Volant",
+        "date": {
+          "value": "2027-03-31",
+          "kind": "in-service",
+          "label": "Source projected in-service date",
+          "precision": "day"
+        },
+        "actualInServiceDate": null,
+        "boardApprovalDate": "2025-11-18",
+        "constructionStart": null,
+        "buildWindow": null,
+        "nativeGeometry": null,
+        "location": null,
+        "centerRole": "unknown",
+        "spatialEligibility": false,
+        "missingFields": [
+          "native coordinates",
+          "geometry role/precision",
+          "explicit construction bounds"
+        ],
+        "caveats": [
+          "Partially in service with remaining construction; no complete-upgrade claim."
+        ]
+      }
+    }
+  ]
+}
