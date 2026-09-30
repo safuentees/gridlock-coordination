@@ -1,13 +1,13 @@
 {
   "sourceKey": "nv-nvenergy",
   "editionId": "2026-05-06-irp",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 90,
-    "importedRecords": 21,
+    "importedRecords": 90,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 69,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "sourceFiles": [
@@ -38,15 +38,219 @@
     "construction-approval-request": 69
   },
   "recordKindCounts": {
-    "transmission-project": 15,
-    "capital-project-context": 6
+    "transmission-project": 67,
+    "capital-project-context": 23
   },
   "lifecycleCounts": {
     "approved": 18,
     "on-hold": 2,
-    "under-construction": 1
+    "under-construction": 1,
+    "planned": 69
   },
-  "requestPolicyStatus": "Proposed exact 69-row mapping in scripts/ingest/coverage/nv-nvenergy/request-policy.json; coordinator acceptance pending. No request exclusions or normalized records yet.",
+  "requestPolicyStatus": "accepted by coordinator in d108589; source row decisions preserved from f6efcb6",
+  "relationships": [
+    {
+      "id": "sapphire-basin-phases",
+      "meaning": "phase/dependency; no inferred parent or merge",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-01",
+        "2026-05-06:exhibit-b:request-02",
+        "2026-05-06:exhibit-b:request-03",
+        "2026-05-06:exhibit-b:request-04",
+        "2026-05-06:exhibit-b:request-05",
+        "2026-05-06:exhibit-b:request-06",
+        "2026-05-06:exhibit-b:request-07"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Sapphire and Basin phased requests; PDF pp.211,214 / printed pp.207,210",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "opal-line-terminal-overlap",
+      "meaning": "partly shared line/terminal scope; retain distinct source actions",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-05",
+        "2026-05-06:exhibit-b:request-11",
+        "2026-05-06:exhibit-b:request-13"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Opal and HGIII scope descriptions; PDF pp.219,220,223 / printed pp.215,216,219",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "navigator-line-terminal-overlap",
+      "meaning": "partly shared line/terminal scope; retain distinct source actions",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-10",
+        "2026-05-06:exhibit-b:request-12",
+        "2026-05-06:exhibit-b:request-14"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Sand Dune/Navigator/HGIII connections; PDF pp.217,221,223 / printed pp.213,217,219",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "mackay-increment",
+      "meaning": "explicit incremental work after approval; not duplicate scope",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-22"
+      ],
+      "approvedSourceIds": [
+        "2026-05-06:tp-131:row-15"
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Mackay previously approved and new transformers; PDF pp.237 / printed pp.233",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "north-load-network",
+      "meaning": "related physical network; each compound action remains one source unit",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-20",
+        "2026-05-06:exhibit-b:request-21",
+        "2026-05-06:exhibit-b:request-22",
+        "2026-05-06:exhibit-b:request-23"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Mallard/Goose/Mackay/Walker River network; PDF pp.234,235,237,239 / printed pp.230,231,233,235",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "brooks-voltage-levels",
+      "meaning": "distinct transformation actions in one broader narrative",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-40",
+        "2026-05-06:exhibit-b:request-41"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Brooks transmission/distribution transformation; PDF pp.19,20,21 / printed pp.258,259,260",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "walker-river-title-repeat",
+      "meaning": "unresolved repeated title; distinct physical identity not asserted",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-53",
+        "2026-05-06:exhibit-b:request-64"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Walker River terminal resource narratives; PDF pp.33,44 / printed pp.272,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "winston-transformer-terminal",
+      "meaning": "distinct named equipment within a broader resource narrative",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-51",
+        "2026-05-06:exhibit-b:request-52"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Winston transformer/terminal scope; PDF pp.32,33 / printed pp.271,272",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "lux-and-thermal-clearance",
+      "meaning": "shared corridor/#124 scope; exact structure overlap unresolved",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-49",
+        "2026-05-06:exhibit-b:request-50",
+        "2026-05-06:exhibit-b:request-63",
+        "2026-05-06:exhibit-b:request-64"
+      ],
+      "approvedSourceIds": [
+        "2026-05-06:tp-131:row-19"
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Lux and Fort Churchill network works; PDF pp.30,31,44 / printed pp.269,270,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "resource-shared-network",
+      "meaning": "one set of named requests supports several resource narratives; no extra observations",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-15",
+        "2026-05-06:exhibit-b:request-31",
+        "2026-05-06:exhibit-b:request-34",
+        "2026-05-06:exhibit-b:request-35",
+        "2026-05-06:exhibit-b:request-38",
+        "2026-05-06:exhibit-b:request-42",
+        "2026-05-06:exhibit-b:request-44",
+        "2026-05-06:exhibit-b:request-61",
+        "2026-05-06:exhibit-b:request-62",
+        "2026-05-06:exhibit-b:request-65"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Hot Pot/Iron Point/Valmy contingent and direct works; PDF pp.41,42,48 / printed pp.280,281,287",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "valmy-interconnection-components",
+      "meaning": "distinct POI/terminal bullets; unnamed resource aliases unresolved",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-65",
+        "2026-05-06:exhibit-b:request-66",
+        "2026-05-06:exhibit-b:request-67",
+        "2026-05-06:exhibit-b:request-68",
+        "2026-05-06:exhibit-b:request-69"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Valmy portfolio network and interconnection scopes; PDF pp.48,49 / printed pp.287,288",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    }
+  ],
   "rows": [
     {
       "sourceId": "2026-05-06:tp-131:row-01",
@@ -70,7 +274,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-01",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-02",
@@ -94,7 +298,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-02",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-03",
@@ -118,7 +322,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-03",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-04",
@@ -142,7 +346,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-04",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-05",
@@ -166,7 +370,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-05",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-06",
@@ -190,7 +394,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-06",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-07",
@@ -214,7 +418,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-07",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-08",
@@ -238,7 +442,7 @@
       "lifecycle": "on-hold",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-08",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-09",
@@ -262,7 +466,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-09",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-10",
@@ -286,7 +490,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-10",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-11",
@@ -310,7 +514,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-11",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-12",
@@ -334,7 +538,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-12",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-13",
@@ -358,7 +562,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-13",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-14",
@@ -382,7 +586,7 @@
       "lifecycle": "on-hold",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-14",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-15",
@@ -406,7 +610,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-15",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-16",
@@ -430,7 +634,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-16",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-17",
@@ -454,7 +658,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-17",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-18",
@@ -478,7 +682,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-18",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-19",
@@ -502,7 +706,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-19",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-20",
@@ -526,7 +730,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-20",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-21",
@@ -550,7 +754,7 @@
       "lifecycle": "under-construction",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-21",
-      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
+      "reason": "Accepted approved-table work unit retained."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-01",
@@ -567,8 +771,20 @@
         "pageBullet": 1,
         "requestText": "Approval of the construction of the Sapphire 230/120 kV substation with an in-service date of 2028 (Sapphire phase 1 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "rawRequestVoltageKv": [
+        230,
+        120
+      ],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-01",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-02",
@@ -585,8 +801,21 @@
         "pageBullet": 2,
         "requestText": "Approval of the construction of the 230 kV HVD lines at Sapphire substation with an in- service date of 2028 (Sapphire phase 2 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-02",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-03",
@@ -603,8 +832,21 @@
         "pageBullet": 3,
         "requestText": "Approval of the construction of the Sapphire to Basin 230 kV line with an in- service date of 2031 (Sapphire phase 3 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-03",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-04",
@@ -621,8 +863,21 @@
         "pageBullet": 4,
         "requestText": "Approval of the construction of two 230 kV HVD lines at Sapphire substation with an in- service date of 2031 (Sapphire phase 4 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-04",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-05",
@@ -639,8 +894,22 @@
         "pageBullet": 1,
         "requestText": "Approval of the construction of the Sapphire to Opal 230 kV line with an in- service date of 2031 (Sapphire phase 5 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases",
+        "opal-line-terminal-overlap"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-05",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-06",
@@ -657,8 +926,23 @@
         "pageBullet": 2,
         "requestText": "Approval of the construction of the Basin 525/230 kV 1500 MVA transformer substation with an in-service date of 2031 (Basin phase 1 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "rawRequestVoltageKv": [
+        525,
+        230
+      ],
+      "normalizedVoltageKv": [
+        525,
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-06",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-07",
@@ -675,8 +959,23 @@
         "pageBullet": 3,
         "requestText": "Approval of the construction of the Basin second 525/230 kV 1500 MVA transformer with an in-service date of 2031 (Basin phase 2 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "rawRequestVoltageKv": [
+        525,
+        230
+      ],
+      "normalizedVoltageKv": [
+        525,
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-07",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-08",
@@ -693,8 +992,19 @@
         "pageBullet": 4,
         "requestText": "Approval of the construction of the Sand Dune 230 kV switching station with 230 kV HVD lines with an in-service date of 2029 (Sand Dune phase 1 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-08",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-09",
@@ -711,8 +1021,19 @@
         "pageBullet": 5,
         "requestText": "Approval of the construction of 230 kV HVD lines at Sand Dune with an in- service date of 2029 (Sand Dune phase 2 project).."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-09",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-10",
@@ -729,8 +1050,21 @@
         "pageBullet": 6,
         "requestText": "Approval of the construction of the Sand Dune to Navigator 230 kV line with an in-service date of 2031 (Sand Dune phase 3 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "navigator-line-terminal-overlap"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-10",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-11",
@@ -747,8 +1081,21 @@
         "pageBullet": 7,
         "requestText": "Approval of the construction of the New Opal 230 kV switching station with 230 kV HVD lines and 230 kV line to Sapphire and HGIII with an in-service date of 2031 (Opal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "opal-line-terminal-overlap"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-11",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-12",
@@ -765,8 +1112,21 @@
         "pageBullet": 8,
         "requestText": "Approval of the construction of the New Navigator switching station with 230 kV HVD lines and 230 kV line to HGIII and Sand Dune with an in-service date of 2031 (Navigator project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "navigator-line-terminal-overlap"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-12",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-13",
@@ -783,8 +1143,21 @@
         "pageBullet": 9,
         "requestText": "Approval of the construction of the HGIII to Opal, 230 kV line with an in- service date of 2031 (HGIII phase 1 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "opal-line-terminal-overlap"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-13",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-14",
@@ -801,8 +1174,23 @@
         "pageBullet": 10,
         "requestText": "Approval of the construction of the Connect HGIII to Navigator 230 kV line terminal and add 525/230 kV 600 MVA transformer at HGIII with an in- service date of 2031 (HGIII phase 2 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "navigator-line-terminal-overlap"
+      ],
+      "rawRequestVoltageKv": [
+        230,
+        525
+      ],
+      "normalizedVoltageKv": [
+        230,
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-14",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-15",
@@ -819,8 +1207,23 @@
         "pageBullet": 11,
         "requestText": "Approval of the construction of the Two Chukar 345/120 kV transformers with an in- service date of 2029 (Chukar 345/120 kV transformers project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345,
+        120
+      ],
+      "normalizedVoltageKv": [
+        345,
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-15",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-16",
@@ -837,8 +1240,19 @@
         "pageBullet": 12,
         "requestText": "Approval of the construction of the Viking switching station to connect 345 kV HVD lines, connects to Lantern -Comstock 345 kV line with an in- service date of 2030 (Viking project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-16",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-17",
@@ -855,8 +1269,21 @@
         "pageBullet": 13,
         "requestText": "Approval of the construction of the Vaquero switching station to connect 345 kV HVD lines and two (2) 345/120 kV 280 MVA transformers, connects to Lantern-Comstock 345 kV line, with 120 kV HVD lines with an in-service date of 2031 (Vaquero project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345,
+        120
+      ],
+      "normalizedVoltageKv": [
+        345,
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-17",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-18",
@@ -873,8 +1300,15 @@
         "pageBullet": 14,
         "requestText": "Approval of the construction of the HVD line terminals for a Rule 9 customer at East Tracy with an in-service date of 2031 (East Tracy project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-18",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-19",
@@ -891,8 +1325,19 @@
         "pageBullet": 15,
         "requestText": "Approval of the construction of the Petroglyph switching station, connects to West Tracy - Comstock Meadows 345 kV line, with new 345 kV HVD lines with an in-service date of 2029 (Petroglyph project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-19",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-20",
@@ -909,8 +1354,23 @@
         "pageBullet": 16,
         "requestText": "Approval of the construction of the Mallard 525/345 kV substation, connects to Mackay- Goose 525 kV line, with HVD lines with an in-service date of 2032 (Mallard project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "north-load-network"
+      ],
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "normalizedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-20",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-21",
@@ -927,8 +1387,23 @@
         "pageBullet": 17,
         "requestText": "Approval of the construction of the Goose 525/345 kV substation, with two (2) 525/345 kV 1500 MVA transformer banks, with new 345 HVD lines with an in-service date of 2032 (Goose project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "north-load-network"
+      ],
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "normalizedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-21",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-22",
@@ -945,8 +1420,24 @@
         "pageBullet": 1,
         "requestText": "Approval of the construction of the Three Mackay 525/345 kV 600 MVA transformers with an in-service date of 2032 (Mackay 525/345 kV transformer project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "mackay-increment",
+        "north-load-network"
+      ],
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "normalizedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-22",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-23",
@@ -963,8 +1454,21 @@
         "pageBullet": 2,
         "requestText": "Approval of the construction of the Walker River -Goose-Mackay-Walker River 525 kV transmission lines with an in -service date of 2032 (Walker River-Goose-Mackay-Walker River 525 kV transmission lines project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "north-load-network"
+      ],
+      "rawRequestVoltageKv": [
+        525
+      ],
+      "normalizedVoltageKv": [
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-23",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-24",
@@ -981,8 +1485,21 @@
         "pageBullet": 3,
         "requestText": "Approval of the construction of the Spring Canyon 230/12 kV substation with three (3) 37 MVA transformers, connects to Greenway -Mead 230 kV line with an in- service date of 2028 (Spring Canyon project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230,
+        12
+      ],
+      "normalizedVoltageKv": [
+        230,
+        12
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-24",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-25",
@@ -999,8 +1516,17 @@
         "pageBullet": 4,
         "requestText": "Approval of the construction of the Scorpion 230 kV switching station, connects to Arden- Mead 230 kV line, with HVD lines with an in-service date of 2030 (Scorpion project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-25",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-26",
@@ -1017,8 +1543,21 @@
         "pageBullet": 5,
         "requestText": "Approval of the construction of the Ft Sage 345/69 kV transformer with an in-service date of 2028 (Ft Sage 345/69 kV transformer project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345,
+        69
+      ],
+      "normalizedVoltageKv": [
+        345,
+        69
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-26",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-27",
@@ -1035,8 +1574,19 @@
         "pageBullet": 6,
         "requestText": "Approval of the construction of the Northwest 230 kV line terminal with an in-service date of 2028 (Northwest 230 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-27",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-28",
@@ -1053,8 +1603,19 @@
         "pageBullet": 7,
         "requestText": "Approval of the construction of the NSO-Magnolia 230 kV line with an in-service date of 2035 (NSO-Magnolia 230 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-28",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-29",
@@ -1071,8 +1632,21 @@
         "pageBullet": 8,
         "requestText": "Approval of the construction of the Onyx 230/69 kV substation with an in- service date of 2032 (Onyx 230/69 kV substation project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230,
+        69
+      ],
+      "normalizedVoltageKv": [
+        230,
+        69
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-29",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-30",
@@ -1089,8 +1663,15 @@
         "pageBullet": 9,
         "requestText": "Approval of the construction of the Harry Allen reactors with an in- service date of 2028 (Harry Allen reactors project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-30",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-31",
@@ -1107,8 +1688,21 @@
         "pageBullet": 10,
         "requestText": "Approval of the construction of the Coyote Creek 345 kV breakers with an in-service date of 2031 (Coyote Creek 345 kV breakers project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-31",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-32",
@@ -1125,8 +1719,19 @@
         "pageBullet": 11,
         "requestText": "Approval of the construction of the Equestrian 230 kV breaker with an in- service date of 2030 (Equestrian 230 kV breaker project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-32",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-33",
@@ -1143,8 +1748,21 @@
         "pageBullet": 12,
         "requestText": "Approval of the construction of the Northwest 525/230 kV transformer #7 with an in- service date of 2030 (Northwest 525/230 kV transformer #7 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        525,
+        230
+      ],
+      "normalizedVoltageKv": [
+        525,
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-33",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-34",
@@ -1161,8 +1779,21 @@
         "pageBullet": 13,
         "requestText": "Approval of the construction of the East Tracy- West Tracy 345 kV #2 with an in- service date of 2029 (East Tracy-West Tracy 345 kV #2 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-34",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-35",
@@ -1179,8 +1810,21 @@
         "pageBullet": 14,
         "requestText": "Approval of the construction of the East Tracy-West Tracy 345 kV #1 reconductor with an in-service date of 2029 (East Tracy-West Tracy 345 kV #1 reconductor project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-35",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-36",
@@ -1197,8 +1841,21 @@
         "pageBullet": 15,
         "requestText": "Approval of the construction of the East Tracy 345/120 kV replacement transformer #1 with 400 MVA with an in- service date of 2029 (East Tracy transformer #1 replacement with 400 MVA project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345,
+        120
+      ],
+      "normalizedVoltageKv": [
+        345,
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-36",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-37",
@@ -1215,8 +1872,15 @@
         "pageBullet": 16,
         "requestText": "Approval of the construction of the Reno Substation replacement switch #1101 and #1113 with an in-service date of 2029 (Replace switch #1101 and #1113 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-37",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-38",
@@ -1233,8 +1897,21 @@
         "pageBullet": 17,
         "requestText": "Approval of the construction of the Reconductor 120 kV line #103 with an in-service date of 2029 (Reconductor 120 kV line #103 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-38",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-39",
@@ -1251,8 +1928,19 @@
         "pageBullet": 18,
         "requestText": "Approval of the construction of the Frontier-Lander 230 kV line with an in-service date of 2030 (Frontier-Lander 230 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-39",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-40",
@@ -1269,8 +1957,23 @@
         "pageBullet": 1,
         "requestText": "Approval of the construction of the Brooks 230/138 kV substation with two (2) 400 MVA transformers with an in-service date of 2030 (Brooks 230/138 kV substation project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "brooks-voltage-levels"
+      ],
+      "rawRequestVoltageKv": [
+        230,
+        138
+      ],
+      "normalizedVoltageKv": [
+        230,
+        138
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-40",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-41",
@@ -1287,8 +1990,20 @@
         "pageBullet": 2,
         "requestText": "Approval of the construction of the Brooks 138/12 kV 33 MVA transformers, construct 12 kV get aways with an in-service date of 2030 (Brooks 138/12 kV transformer project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "brooks-voltage-levels"
+      ],
+      "rawRequestVoltageKv": [
+        138,
+        12
+      ],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-41",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-42",
@@ -1305,8 +2020,21 @@
         "pageBullet": 3,
         "requestText": "Approval of the construction of the Coyote Creek -Falcon 345 kV line with an in- service date of 2030 (Coyote Creek-Falcon 345 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-42",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-43",
@@ -1323,8 +2051,19 @@
         "pageBullet": 4,
         "requestText": "Approval of the construction of the Olinghouse-Chukar 345 kV line with an in-service date of 2030 (Olinghouse-Chukar 345 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-43",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-44",
@@ -1341,8 +2080,23 @@
         "pageBullet": 5,
         "requestText": "Approval of the construction of the third 345 kV PST and third 525/345 kV transformers at Robinson Summit substation with an in- service date of 2030 (R obinson Summit third 345 kV PST and third 525/345 kV transformer project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345,
+        525
+      ],
+      "normalizedVoltageKv": [
+        345,
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-44",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-45",
@@ -1359,8 +2113,19 @@
         "pageBullet": 6,
         "requestText": "Approval of the construction of the Esmeralda-Millers 230 kV line with an in-service date of 2030 (Esmeralda-Millers 230 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-45",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-46",
@@ -1377,8 +2142,15 @@
         "pageBullet": 7,
         "requestText": "Approval of the construction of the Interconnection of Big Smokey lead line at Millers with an in -service date of 2030 ( Interconnection of Big Smokey lead line at Millers project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-46",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-47",
@@ -1395,8 +2167,19 @@
         "pageBullet": 8,
         "requestText": "Approval of the construction of the 120 kV line terminal at Wassuk substation for lead line for Mason with an in-service date of 2030 (Wassuk lead line for Mason project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-47",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-48",
@@ -1413,8 +2196,19 @@
         "pageBullet": 9,
         "requestText": "Approval of the construction of the Candeleria switching station with 120 kV lead line position for Excelsior Geothermal project with an in-service date of 2030 (Candelaria 120 kV switching station project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-48",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-49",
@@ -1431,8 +2225,17 @@
         "pageBullet": 10,
         "requestText": "Approval of the construction of the #124 line clearance mitigations with an in-service date of 2030 (#124 line clearance mitigations project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "lux-and-thermal-clearance"
+      ],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-49",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-50",
@@ -1449,8 +2252,21 @@
         "pageBullet": 11,
         "requestText": "Approval of the construction of the Walker River 120 kV line terminal with an in- service date of 2030 (Walker River 120 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "lux-and-thermal-clearance"
+      ],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-50",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-51",
@@ -1467,8 +2283,20 @@
         "pageBullet": 12,
         "requestText": "Approval of the construction of the Walker River 345/230 kV transformer #3 with an in- service date of 2030 (Walker River 345/230 kV transformer #3 project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "winston-transformer-terminal"
+      ],
+      "rawRequestVoltageKv": [
+        345,
+        230
+      ],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-51",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-52",
@@ -1485,8 +2313,21 @@
         "pageBullet": 13,
         "requestText": "Approval of the construction of the Walker River 230 kV line terminal with an in- service date of 2030 (Walker River 230 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "winston-transformer-terminal"
+      ],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-52",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-53",
@@ -1503,8 +2344,21 @@
         "pageBullet": 14,
         "requestText": "Approval of the construction of the Walker River 345 kV line terminal with an in- service date of 2030 (Walker River 345 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "walker-river-title-repeat"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-53",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-54",
@@ -1521,8 +2375,17 @@
         "pageBullet": 15,
         "requestText": "Approval of the construction of the Miller 238 kV line terminal with an in- service date of 2030 (Miller 238 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        238
+      ],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-54",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-55",
@@ -1539,8 +2402,19 @@
         "pageBullet": 16,
         "requestText": "Approval of the construction of the Apex 525 kV line terminal with an in- service date of 2030 (Apex 525 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        525
+      ],
+      "normalizedVoltageKv": [
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-55",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-56",
@@ -1557,8 +2431,17 @@
         "pageBullet": 17,
         "requestText": "Approval of the construction of the Gonder 230 kV line terminal with an in-service date of 2030 (Gonder 230 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-56",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-57",
@@ -1575,8 +2458,19 @@
         "pageBullet": 1,
         "requestText": "Approval of the construction of the Gonder generator run back remedial action scheme (“RAS”) for loss of Gonder 345 kV connection to Robinson Summit with an in- service date of 2030 (Gonder generator run back RAS project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-57",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-58",
@@ -1593,8 +2487,19 @@
         "pageBullet": 2,
         "requestText": "Approval of the construction of the Mira Loma 120 kV line terminal with an in- service date of 2030 (Mira Loma 120 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-58",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-59",
@@ -1611,8 +2516,19 @@
         "pageBullet": 3,
         "requestText": "Approval of the construction of the Reconductor #129 120 kV line with an in-service date of 2030 (Reconductor #129 120 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-59",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-60",
@@ -1629,8 +2545,19 @@
         "pageBullet": 4,
         "requestText": "Approval of the construction of the Uprate Iron Mountain-Lorenzi 138 kV line with an in- service date of 2030 (Uprate Iron Mountain-Lorenzi 138 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [],
+      "rawRequestVoltageKv": [
+        138
+      ],
+      "normalizedVoltageKv": [
+        138
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-60",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-61",
@@ -1647,8 +2574,21 @@
         "pageBullet": 5,
         "requestText": "Approval of the construction to resolve clearance on #3420 and change size of conductor on the Lantern-Comstock Meadows 345 kV line with an in-service date of 2030 (Resolve clearance on #3420 and change size of conductor Lantern-Comstock Meadows 345 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-61",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-62",
@@ -1665,8 +2605,21 @@
         "pageBullet": 6,
         "requestText": "Approval of the construction of the North Valmy 345 kV line terminal with an in- service date of 2030 (North Valmy 345 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-62",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-63",
@@ -1683,8 +2636,23 @@
         "pageBullet": 7,
         "requestText": "Approval of the construction of the Grayskull 525/345 kV substation, with two (2) 1500 MVA transformers and the Grayskull-Walker River 525 kV line with an in-service date of 2030 (Walker River-Grayskull 525 kV line project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "lux-and-thermal-clearance"
+      ],
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "normalizedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-63",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-64",
@@ -1701,8 +2669,22 @@
         "pageBullet": 8,
         "requestText": "Approval of the construction of the Walker River 345 kV line terminal with an in- service date of 2030 (Walker River 345 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "walker-river-title-repeat",
+        "lux-and-thermal-clearance"
+      ],
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "normalizedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-64",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-65",
@@ -1719,8 +2701,18 @@
         "pageBullet": 9,
         "requestText": "Approval of the construction of the Valmy geothermal portfolio network upgrades, rebuilding #118 Eagle -NGPP, reconductoring #3422 between East Tracy- Lantern, and adding PST at Oreanna with an in- service date of 2030 ( Valmy geothermal portfolio network upgrades project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "resource-shared-network",
+        "valmy-interconnection-components"
+      ],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-65",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-66",
@@ -1737,8 +2729,17 @@
         "pageBullet": 10,
         "requestText": "Approval of the construction of the POI substation for Rose of Snowville with an in-service date of 2030 (POI substation for Rose of Snowville project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-66",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-67",
@@ -1755,8 +2756,21 @@
         "pageBullet": 11,
         "requestText": "Approval of the construction of the POI 120 kV line terminal with an in- service date of 2030 (POI 120 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-67",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-68",
@@ -1773,8 +2787,17 @@
         "pageBullet": 12,
         "requestText": "Approval of the construction of the POI substation for Pumpernickel with an in- service date of 2030 (POI substation for Pumpernickel project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "rawRequestVoltageKv": [],
+      "normalizedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-68",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-69",
@@ -1791,8 +2814,21 @@
         "pageBullet": 13,
         "requestText": "Approval of the construction of the Bald Mountain 120 kV line terminal with an in-service date of 2030 (Bald Mountain 120 kV line terminal project)."
       },
-      "disposition": "pending",
-      "reason": "Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance."
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "normalizedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:exhibit-b:request-69",
+      "reason": "Accepted source action retained; distinct engineering-project identity is not asserted."
     }
   ]
 }
