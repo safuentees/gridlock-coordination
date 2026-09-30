@@ -1,6 +1,6 @@
 # F27 — Expand US discovery through additional regions
 
-Next bounded task: [F27-PJM](pjm-rtep/spec.md). Coordinator acquired the official public 15,692-upgrade XML, containing owner/state/location text but no coordinates. Qualification must resolve lifecycle/granularity/edition and spatial limitations before implementation; it is not yet imported or qualified.
+Current integration: accepted PJM and ISO-NE mappings in C2, early samples connected, full inventories being integrated with async source persistence and bounded inventory browsing. Next independent qualification is [F27-SPP-Q](spp-tracking/spec.md); source_discovery owns its two source reports after the complete PJM producer. UI independently grows the unlocated synthetic inventory to 6,000 total records under the exact C2 handoff. Core owns async source persistence; coordinator composes and checks the regional milestone. National coverage remains incomplete.
 
 Selected national-coverage increment 3; continuing capability, not complete after one adapter. Depends on F26's shared contract and first integrated inventory. Purpose: let users find planned transmission projects across the US with honest regional and field coverage. Each independently delivered adapter adds a documented region/source footprint; refreshing the same inventory does not count as geographic expansion.
 
