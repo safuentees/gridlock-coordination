@@ -33,16 +33,40 @@ function CurrentLocationMeaning({ project }: { project: Project }) {
   return <div className="space-y-2 text-xs text-muted-foreground"><p>Displayed location role: {project.inventory.centerRole.replaceAll("-", " ")}.</p>{project.inventory.locationAssumptions.map((assumption, index) => <p key={index}>{assumption}</p>)}</div>
 }
 
-export function RevisionPreview({ before, after, changes }: { before: Project; after: Project; changes: DatasetChanges }) {
-  return <section className="space-y-4" aria-label="Location revision preview">
-    <h3 className="font-medium">Review the proposed location</h3>
+function OwnershipEvidence({ owner }: { owner: NonNullable<Project["inventory"]>["owner"] }) {
+  if (!owner) return <p className="text-sm text-muted-foreground">Unknown; no ownership evidence.</p>
+  return <div className="space-y-3">
+    <p className="text-sm font-medium">{owner.name}</p>
+    {owner.ownershipStatement && <div className="space-y-2 text-sm">
+      <p>Planned ownership; source evidence as of {owner.ownershipStatement.asOf}. Present equipment title is unconfirmed.</p>
+      <p className="text-muted-foreground">{owner.ownershipStatement.scope}</p>
+    </div>}
+    {owner.identityScope !== "global" && <p className="text-sm text-muted-foreground">Identified within this source; cross-source identity unverified.</p>}
+    <EvidenceSources sources={owner.evidence} />
+  </div>
+}
+
+interface RevisionPreviewProps {
+  before: Project
+  after: Project
+  changes: DatasetChanges
+  kind?: "location" | "owner"
+  caveat?: string
+  limitations?: string[]
+}
+
+export function RevisionPreview({ before, after, changes, kind = "location", caveat, limitations = [] }: RevisionPreviewProps) {
+  const ownership = kind === "owner"
+  return <section className="space-y-4" aria-label={ownership ? "Ownership revision preview" : "Location revision preview"}>
+    <h3 className="font-medium">{ownership ? "Review the proposed ownership evidence" : "Review the proposed location"}</h3>
     <div className="grid gap-4 lg:grid-cols-2">
-      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">Current evidence</h4><LocationEvidence location={before.location} /><CurrentLocationMeaning project={before} /></section>
-      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">Proposed evidence</h4><LocationEvidence location={after.location} /><CurrentLocationMeaning project={after} /></section>
+      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">{ownership ? "Current owner" : "Current evidence"}</h4>{ownership ? <OwnershipEvidence owner={before.inventory?.owner ?? null} /> : <><LocationEvidence location={before.location} /><CurrentLocationMeaning project={before} /></>}</section>
+      <section className="space-y-3 rounded-lg border p-4"><h4 className="font-medium">{ownership ? "Proposed owner" : "Proposed evidence"}</h4>{ownership ? <OwnershipEvidence owner={after.inventory?.owner ?? null} /> : <><LocationEvidence location={after.location} /><CurrentLocationMeaning project={after} /></>}</section>
     </div>
+    {ownership && <div className="space-y-2 text-sm text-muted-foreground">{caveat && <p>{caveat}</p>}{limitations.length > 0 && <ul className="list-disc space-y-1 pl-4">{limitations.map((limitation, index) => <li key={index}>{limitation}</li>)}</ul>}<p>Location, dates and lifecycle stay unchanged. Existing notes and your location draft are retained.</p></div>}
     <p className="text-sm">{changes.changed.length} changed, {changes.added.length} added, {changes.removed.length} removed, {changes.unchanged} unchanged records.</p>
     {changes.editionChanges.length > 0 && <ul className="space-y-1 text-sm" aria-label="Source edition changes">{changes.editionChanges.map(edition => <li key={`${edition.sourceKey}:${edition.editionId}`}>{edition.label}: {edition.kind}</li>)}</ul>}
-    {after.inventory && <p className="text-sm text-muted-foreground">Original published positions are preserved. A local location alone does not establish ownership or eligibility for comparison.</p>}
+    {!ownership && after.inventory && <p className="text-sm text-muted-foreground">Original published positions are preserved. A local location alone does not establish ownership or eligibility for comparison.</p>}
     <details className="rounded-lg border p-3"><summary className="cursor-pointer font-medium">Project sources</summary><div className="mt-3"><EvidenceSources sources={before.sources} /></div></details>
   </section>
 }
