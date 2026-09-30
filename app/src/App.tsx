@@ -63,7 +63,7 @@ export function App() {
     <div className="min-h-0 min-w-0 flex-1 overflow-hidden">
       {result.dataset ? <>
         <div className={workspace === "explore" ? "h-full min-h-0 min-w-0" : "hidden"}><Explorer key={mode} dataset={result.dataset} active={workspace === "explore"} projectToReveal={revealProject} /></div>
-        <div className={workspace === "readiness" ? "h-full min-h-0 min-w-0" : "hidden"}><ReadinessWorkspace key={mode} dataset={result.dataset} onApply={applySource} onExploreProject={id => { setRevealProject(previous => ({ id, request: (previous?.request ?? 0) + 1 })); setWorkspace("explore") }} /></div>
+        <div className={workspace === "readiness" ? "h-full min-h-0 min-w-0 p-4" : "hidden"}><ReadinessWorkspace key={mode} dataset={result.dataset} onApply={applySource} onExploreProject={id => { setRevealProject(previous => ({ id, request: (previous?.request ?? 0) + 1 })); setWorkspace("explore") }} /></div>
       </> : <section role="alert" className="h-full space-y-2 overflow-auto rounded-lg border p-4 [overflow-wrap:anywhere]"><h2 className="font-medium">{mode === "real" ? "Source data" : "Demo data"} could not be loaded</h2><p className="text-sm text-muted-foreground">{result.error}</p><p className="text-sm">Switch modes explicitly to explore another dataset.</p></section>}
     </div>
   </main>
