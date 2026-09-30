@@ -16,13 +16,13 @@
   "sha256": "ae36d91aecd55ae0bc236971ebd0387e462fcc8c84c1d074e80dc7b90e0a2c5f",
   "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
   "inventoryScope": "Twenty-six power-work bullets on printed page4; eight useful contextual grid entries retained and eighteen generation, completed, operating, civil, vehicle or broad-study entries excluded. Page2 supplements the same entries.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 26,
-    "importedRecords": 3,
+    "importedRecords": 8,
     "excludedRows": 18,
     "failedRows": 0,
-    "pendingRows": 5,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -110,7 +110,6 @@
     "Tinian/Rota bullet16 and multi-island programs remain single source entries without invented child assets.",
     "The publication and lifecycle evidence is October2025; no publication day or service milestone is invented.",
     "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
-    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
-    "Three retained diagnostics are emitted first; 5 accepted entries await provider connection and full normalization."
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
   ]
 }

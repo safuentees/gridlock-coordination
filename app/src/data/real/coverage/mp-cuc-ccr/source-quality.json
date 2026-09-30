@@ -1,7 +1,7 @@
 {
   "sourceKey": "mp-cuc-ccr",
   "editionId": "fy2025-2025-10",
-  "scope": "sample",
+  "scope": "full",
   "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
   "acceptedRetainedLifecycleCounts": {
     "planned": 4,
@@ -15,10 +15,12 @@
     "unknown": 8
   },
   "importedLifecycleCounts": {
-    "planned": 3
+    "planned": 4,
+    "unknown": 4
   },
   "importedKindCounts": {
-    "capital-project-context": 3
+    "capital-project-context": 5,
+    "planning-context": 3
   },
   "sampleIds": [
     "mp-cuc-ccr:fy2025-p04-power-b06",
