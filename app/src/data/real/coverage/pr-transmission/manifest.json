@@ -1,0 +1,48 @@
+{
+  "sourceKey": "pr-transmission",
+  "editionId": "2026-08-27-table1",
+  "label": "Puerto Rico August 2026 stabilization report — Table 1",
+  "reportingGroupId": "pr-transmission",
+  "reportingGroupName": "Puerto Rico public transmission hardening",
+  "publisher": "LUMA, Genera and PREPA; public filing via Puerto Rico Energy Bureau",
+  "processAuthority": "Puerto Rico Energy Bureau",
+  "publishedOn": "2026-08-27",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "20260827-MI20240005-Monthly-Report-public.pdf",
+    "locator": "Exhibit 1 Table 1, PDF pp.12–15 / printed pp.5–8, numbered rows1–32; date on PDF pp.1,7",
+    "url": "https://energia.pr.gov/wp-content/uploads/sites/7/2026/09/20260827-MI20240005-Motion-to-Submit-August-2026-Monthly-Collaborative-Report-in-Compliance-with-Resolutions-and-Orders-of-March-2028-2025-and-February-18-2026-and-Request-for-Clarification-and-Exhibits.pdf"
+  },
+  "sha256": "d1bc3b2e3a42fca0f41c5d2ad52b136700cf5ae580d048b213a484f4e24b5cc5",
+  "geographicScope": "Partial Puerto Rico physical-hardening program, not territory-wide completeness.",
+  "inventoryScope": "Every numbered Table 1 work package; completed/closed and energized-only scopes excluded, incremental remaining work retained. Critical-repair scope remains capital context.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 32,
+    "importedRecords": 6,
+    "excludedRows": 10,
+    "failedRows": 0,
+    "pendingRows": 16,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Explicitly completed or closed",
+      "count": 8
+    },
+    {
+      "reason": "Energized with no remaining work identified in this row",
+      "count": 2
+    }
+  ],
+  "limitations": [
+    "August 2026 is the monthly source edition; August 27 is filing/publication, not a per-row status-change day or live status.",
+    "Rows4/5/7 retain incremental physical work despite original energization; the summary count of thirteen completed/energized original scopes does not override remaining-work evidence.",
+    "Funding tokens and repeated line numbers are not engineering IDs. Source references are edition/table/row locators without cross-edition continuity or cross-source deduplication.",
+    "Expected construction months are not in-service milestones or day-based windows. Fiscal-quarter wording stays narrative; reverse historical table dates remain raw source evidence.",
+    "All qualified owners, voltage, coordinates, geometry and construction windows are unknown. Reporting operator is not substituted for asset owner.",
+    "Row21 changed from structure replacement to critical repair and remains capital context; rows21/22 retain unknown lifecycle despite incomplete-work language.",
+    "The preceding eight descoped bullets, separate 51-segment maintenance program, vegetation, generation/storage and substation tables are outside the declared Table 1 inventory.",
+    "Only public Table 1 is extracted; confidential comprehensive-plan material and legal contact details are not derived data. Public availability does not assert a redistribution license."
+  ]
+}
