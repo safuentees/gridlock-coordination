@@ -1,15 +1,20 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useId, useMemo, useRef, useState } from "react"
 import { CircleMarker, MapContainer, Polyline, TileLayer, useMap } from "react-leaflet"
-import { DomEvent, type LatLngTuple } from "leaflet"
+import { DomEvent } from "leaflet"
 import { MinusIcon, PlusIcon } from "lucide-react"
 import "leaflet/dist/leaflet.css"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import { IconButton } from "@/components/ui/icon-button"
+import { Label } from "@/components/ui/label"
 import type { Opportunity, Project } from "@/domain/schema"
+import { getMapConnections, getMapLocations } from "./map-view"
 
 export interface MapViewportInsets { top: number; right: number; bottom: number; left: number }
 const ZERO_INSETS: MapViewportInsets = { top: 0, right: 0, bottom: 0, left: 0 }
 const colors = { desc: "#2563eb", gpc: "#b45309" }
+type FitTarget = "projects" | "selection"
+interface FitRequest { target: FitTarget; revision: number }
 
 // Insets describe UI occlusion, not geographic distance. Keep Leaflet's fit area positive.
 function boundedInsets(insets: MapViewportInsets, width: number, height: number): MapViewportInsets {
@@ -27,17 +32,22 @@ function boundedInsets(insets: MapViewportInsets, width: number, height: number)
   return { left, right, top, bottom }
 }
 
-function MapView({ projects, focusIds, fitRevision, visible, viewportInsets, tileError, connectionCount, selectedPair, onFit }: {
-  projects: Project[]; focusIds: string[]; fitRevision: number; visible: boolean; viewportInsets: MapViewportInsets;
-  tileError: boolean; connectionCount: number; selectedPair: boolean; onFit: () => void;
+function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tileError, connectionCount, selectedPair, showConnections, onShowConnections, onFit }: {
+  projects: Project[]; focusIds: string[]; fitRequest: FitRequest; visible: boolean; viewportInsets: MapViewportInsets;
+  tileError: boolean; connectionCount: number; selectedPair: boolean; showConnections: boolean;
+  onShowConnections: (show: boolean) => void; onFit: (target: FitTarget) => void;
 }) {
   const map = useMap()
   const controls = useRef<HTMLDivElement>(null)
+  const connectionsId = useId()
   const [size, setSize] = useState({ width: 0, height: 0 })
-  const lastFit = useRef<{ projects: Project[]; focusKey: string; fitRevision: number; layoutKey: string } | null>(null)
-  const locations = useMemo(() => projects.flatMap((project): LatLngTuple[] => project.location ? [[project.location.lat, project.location.lon]] : []), [projects])
+  const lastFit = useRef<{ locationsKey: string; focusKey: string; fitRevision: number; layoutKey: string } | null>(null)
+  const locations = useMemo(() => getMapLocations(projects), [projects])
+  const selectedLocations = useMemo(() => getMapLocations(projects, focusIds), [projects, focusIds])
   const insets = useMemo(() => boundedInsets(viewportInsets, size.width, size.height), [viewportInsets.top, viewportInsets.right, viewportInsets.bottom, viewportInsets.left, size.width, size.height])
-  const focusKey = JSON.stringify(focusIds)
+  // Compare geographic inputs by value so equivalent caller arrays do not reset pan/zoom.
+  const locationsKey = JSON.stringify(locations)
+  const focusKey = JSON.stringify([focusIds, selectedLocations])
   const layoutKey = `${size.width}:${size.height}:${insets.top}:${insets.right}:${insets.bottom}:${insets.left}`
 
   useEffect(() => {
@@ -82,27 +92,28 @@ function MapView({ projects, focusIds, fitRevision, visible, viewportInsets, til
       attribution.style.whiteSpace = "normal"
     }
     const previous = lastFit.current
-    const requestedFit = previous !== null && previous.fitRevision !== fitRevision
+    const requestedFit = previous !== null && previous.fitRevision !== fitRequest.revision
     const selectionChanged = previous === null || previous.focusKey !== focusKey
     const layoutChanged = previous === null || previous.layoutKey !== layoutKey
-    const projectsChanged = previous === null || previous.projects !== projects
-    if (requestedFit || selectionChanged || layoutChanged || projectsChanged) {
-      const selected = projects.filter((project) => focusIds.includes(project.id)).flatMap((project): LatLngTuple[] => project.location ? [[project.location.lat, project.location.lon]] : [])
-      const points = !requestedFit && selected.length ? selected : locations
+    const locationsChanged = previous === null || previous.locationsKey !== locationsKey
+    if (requestedFit || selectionChanged || layoutChanged || locationsChanged) {
+      const useSelection = requestedFit ? fitRequest.target === "selection" : selectedLocations.length > 0
+      const points = useSelection ? selectedLocations : locations
       const padding = boundedInsets({ top: insets.top + 72, right: insets.right + 24, bottom: insets.bottom + 40, left: insets.left + 24 }, size.width, size.height)
       if (points.length) map.fitBounds(points, {
         paddingTopLeft: [padding.left, padding.top], paddingBottomRight: [padding.right, padding.bottom],
-        maxZoom: !requestedFit && selected.length > 1 ? 12 : 10, animate: false,
+        maxZoom: useSelection && points.length > 1 ? 12 : 10, animate: false,
       })
     }
-    lastFit.current = { projects, focusKey, fitRevision, layoutKey }
-  }, [map, locations, projects, focusIds, focusKey, fitRevision, visible, size, insets, layoutKey])
+    lastFit.current = { locationsKey, focusKey, fitRevision: fitRequest.revision, layoutKey }
+  }, [map, locations, selectedLocations, locationsKey, focusKey, fitRequest, visible, size, insets, layoutKey])
 
   return <div ref={controls} className="pointer-events-none absolute z-[1000] flex flex-wrap items-start gap-2" style={{ top: insets.top + 12, left: insets.left + 12, right: insets.right + 12 }}>
     <div className="pointer-events-auto flex flex-wrap items-center gap-1 rounded-lg border bg-background p-1">
       <IconButton variant="ghost" label="Zoom in" onClick={() => map.zoomIn()}><PlusIcon aria-hidden="true" /></IconButton>
       <IconButton variant="ghost" label="Zoom out" onClick={() => map.zoomOut()}><MinusIcon aria-hidden="true" /></IconButton>
-      <Button type="button" variant="ghost" size="sm" onClick={onFit}>Fit projects</Button>
+      <Button type="button" variant="ghost" size="sm" disabled={!locations.length} onClick={() => onFit("projects")}>Fit projects</Button>
+      <Button type="button" variant="ghost" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>
     </div>
     <details className="pointer-events-auto max-w-full rounded-lg border bg-background text-sm">
       <summary className="cursor-pointer px-3 py-2 font-medium">Map key</summary>
@@ -110,7 +121,12 @@ function MapView({ projects, focusIds, fitRevision, visible, viewportInsets, til
         <p><span aria-hidden="true" className="mr-2 inline-block size-2 rounded-full bg-blue-600" />Dominion filing</p>
         <p><span aria-hidden="true" className="mr-2 inline-block size-2 rounded-full bg-amber-700" />Georgia filing</p>
         <p>Outlined points have candidates. Larger points are selected.</p>
-        <p>Dashed lines connect centers; they do not show routes. {selectedPair ? "Selected candidate shown." : `${connectionCount} connections shown; see all in Candidates.`}</p>
+        <div className="flex items-center gap-2">
+          <Checkbox id={connectionsId} checked={showConnections} onCheckedChange={(checked) => onShowConnections(checked === true)} aria-describedby={`${connectionsId}-hint`} />
+          <Label htmlFor={connectionsId}>Candidate connections</Label>
+        </div>
+        <p id={`${connectionsId}-hint`}>Controls background connections. The selected candidate's connection stays visible when both locations are available.</p>
+        <p>Dashed lines connect centers; they do not show routes. {selectedPair ? connectionCount ? "Selected candidate shown." : "Selected connection unavailable without both locations." : `${connectionCount} connections shown; see all in Candidates.`}</p>
         <p>Select projects or candidates in the list with the keyboard. On the map, arrow keys pan; + and − zoom.</p>
       </div>
     </details>
@@ -122,22 +138,18 @@ export function ProjectMap({ projects, opportunities, selectedProjectId, selecte
   visible: boolean; projects: Project[]; opportunities: Opportunity[]; selectedProjectId: string | null; selectedOpportunity: Opportunity | null;
   onProject: (id: string) => void; onOpportunity: (id: string) => void; viewportInsets?: MapViewportInsets;
 }) {
-  const [fitRevision, setFitRevision] = useState(0)
+  const [fitRequest, setFitRequest] = useState<FitRequest>({ target: "projects", revision: 0 })
+  const [showConnections, setShowConnections] = useState(true)
   const [tileError, setTileError] = useState(false)
   const focusIds = useMemo(() => selectedOpportunity?.projectIds ?? (selectedProjectId ? [selectedProjectId] : []), [selectedOpportunity, selectedProjectId])
   const byId = useMemo(() => new Map(projects.map((project) => [project.id, project])), [projects])
   const candidateIds = useMemo(() => new Set(opportunities.flatMap((opportunity) => opportunity.projectIds)), [opportunities])
-  const lines = selectedOpportunity ? [selectedOpportunity] : opportunities.slice(0, 100)
+  const lines = getMapConnections(byId, opportunities, selectedOpportunity, showConnections)
   return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Project map">
     <MapContainer center={[33.2, -82.5]} zoom={7} zoomControl={false} scrollWheelZoom={false} className="absolute inset-0 z-0 h-full w-full" aria-label="Map of located projects">
-      <MapView projects={projects} focusIds={focusIds} fitRevision={fitRevision} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} onFit={() => setFitRevision((value) => value + 1)} />
+      <MapView projects={projects} focusIds={focusIds} fitRequest={fitRequest} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={setShowConnections} onFit={(target) => setFitRequest((previous) => ({ target, revision: previous.revision + 1 }))} />
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" eventHandlers={{ tileerror: () => setTileError(true) }} />
-      {lines.map((opportunity) => {
-        const left = byId.get(opportunity.projectIds[0])?.location
-        const right = byId.get(opportunity.projectIds[1])?.location
-        if (!left || !right) return null
-        return <Polyline key={opportunity.id} positions={[[left.lat, left.lon], [right.lat, right.lon]]} pathOptions={{ color: "#525252", weight: selectedOpportunity ? 3 : 1.5, opacity: selectedOpportunity ? 0.9 : 0.3, dashArray: "5 5" }} eventHandlers={{ click: () => onOpportunity(opportunity.id) }} />
-      })}
+      {lines.map(({ opportunity, positions }) => <Polyline key={opportunity.id} positions={positions} pathOptions={{ color: "#525252", weight: selectedOpportunity ? 3 : 1.5, opacity: selectedOpportunity ? 0.9 : 0.3, dashArray: "5 5" }} eventHandlers={{ click: () => onOpportunity(opportunity.id) }} />)}
       {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : colors[project.utilityId], fillColor: colors[project.utilityId], fillOpacity: 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }} />)}
     </MapContainer>
   </section>
