@@ -1,0 +1,1155 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "qualified for inventory discovery; mapping requires coordinator acceptance",
+  "sourceKeyProposal": "miso-mtep",
+  "reportingGroupProposal": "miso-mtep",
+  "editionProposal": "appendix-a-2026-08-04",
+  "sourceAsOf": "2026-08-04",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226",
+    "officialIndex": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+    "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-miso-mtep/Appendix A Status Report575959.xlsx",
+    "sha256": "55b8a60fc0a4159d9de52a5c1f83be04cfaa2c60468126408d9968782eb0c9dc",
+    "bytes": 537983,
+    "sheet": "MTEP Approved (Appendix A) ...",
+    "range": "A4:Y3214",
+    "headers": "A3:Y3",
+    "asOfLocator": "A1:D1",
+    "nativeIdentity": "H: Facility ID",
+    "parentIdentity": "E: MTEP Project ID",
+    "metadataSheetsExcluded": [
+      "hiddenSheet"
+    ]
+  },
+  "enumeration": {
+    "sourceRows": 3211,
+    "uniqueFacilityIds": 3211,
+    "parentProjectIds": 1497,
+    "retainedComponents": 3042,
+    "retainedParentProjectIds": 1497,
+    "excludedRows": 169,
+    "statusCounts": {
+      "M2 - Appendix A Approved": 2824,
+      "M3 - Under Construction": 217,
+      "M1 - Proposed": 1,
+      "M4 - Project in Service": 169
+    },
+    "retainedKinds": {
+      "transmission-project": 2850,
+      "planning-context": 30,
+      "capital-project-context": 162
+    },
+    "retainedOwnerDisposition": {
+      "blank": 870,
+      "source-token": 1791,
+      "alias-needs-reconciliation": 234,
+      "joint-or-generic": 147
+    },
+    "retainedState1Counts": {
+      "IN": 328,
+      "WI": 372,
+      "LA": 118,
+      "MN": 325,
+      "IA": 590,
+      "MO": 143,
+      "IL": 276,
+      "MI": 579,
+      "MS": 85,
+      "TX": 41,
+      "AR": 42,
+      "ND": 80,
+      "KY": 25,
+      "SD": 32,
+      "OH": 2,
+      "MT": 4
+    },
+    "nativeCoordinateRows": 0,
+    "populatedExpectedDates": 3211,
+    "expectedDateDisplayFormat": "mm-dd-yy"
+  },
+  "mappingProposal": {
+    "recordUnit": "component",
+    "id": "miso-mtep:<Facility ID>",
+    "parentProgramId": "miso-mtep:project:<MTEP Project ID>",
+    "status": {
+      "M1 - Proposed": "planned",
+      "M2 - Appendix A Approved": "approved",
+      "M3 - Under Construction": "under-construction",
+      "M4 - Project in Service": "in-service"
+    },
+    "exclusions": {
+      "M4 - Project in Service": 169
+    },
+    "miscFacilityType": "capital-project-context",
+    "explicitDistributionContext": "planning-context by the cited decisions below, not keyword-only filtering",
+    "otherPhysicalFacilityTypes": "transmission-project",
+    "sponsor": "Raw Facility Owner(s), nullable; Submitting TO is separate source context",
+    "ownerIdentity": "Source-scoped exact token after whitespace/punctuation normalization only; no corporate or cross-source equivalence",
+    "ownerUnresolvedNormalizedTokens": [
+      "AMMO",
+      "AMERENMO",
+      "AMIL",
+      "AMERENIL",
+      "AMEREN",
+      "NIPS",
+      "NIPSCO",
+      "SIGE",
+      "CPEI(SIGE)",
+      "DPC",
+      "DAIRYLANDPOWERCOOPERATIVE",
+      "DAIRYLANDPOWERCOOPRATIVE",
+      "ATXI",
+      "AMERENTRANSMISSIONCOMPANYOFILLINOIS"
+    ],
+    "ownerNullRules": [
+      "blank",
+      "comma/slash joint values",
+      "MISO",
+      "To Be Determined",
+      "Local TO(s)",
+      "listed alias families pending reconciliation"
+    ],
+    "dates": "Expected facility ISD at visible source precision; no construction window or publication inferred"
+  },
+  "planningContextDecisions": [
+    {
+      "nativeFacilityId": "52001",
+      "sourceRow": 31,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I31:J31",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "52022",
+      "sourceRow": 47,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I47:J47",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50658",
+      "sourceRow": 635,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I635:J635",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50660",
+      "sourceRow": 636,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I636:J636",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50665",
+      "sourceRow": 638,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I638:J638",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50697",
+      "sourceRow": 657,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I657:J657",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50716",
+      "sourceRow": 673,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I673:J673",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50719",
+      "sourceRow": 676,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I676:J676",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50739",
+      "sourceRow": 692,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I692:J692",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50748",
+      "sourceRow": 699,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I699:J699",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50749",
+      "sourceRow": 700,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I700:J700",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "50750",
+      "sourceRow": 701,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I701:J701",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28462",
+      "sourceRow": 1310,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1310:J1310",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28465",
+      "sourceRow": 1313,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1313:J1313",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28580",
+      "sourceRow": 1381,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1381:J1381",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "27464",
+      "sourceRow": 1667,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1667:J1667",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "22357",
+      "sourceRow": 1899,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I1899:J1899",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "28346",
+      "sourceRow": 2078,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2078:J2078",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "23655",
+      "sourceRow": 2115,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2115:J2115",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "23479",
+      "sourceRow": 2614,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2614:J2614",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "25674",
+      "sourceRow": 2644,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2644:J2644",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "24118",
+      "sourceRow": 2712,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2712:J2712",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "23478",
+      "sourceRow": 2809,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2809:J2809",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "24377",
+      "sourceRow": 2919,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2919:J2919",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "22035",
+      "sourceRow": 2993,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I2993:J2993",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "22025",
+      "sourceRow": 3097,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3097:J3097",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "21030",
+      "sourceRow": 3130,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3130:J3130",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "20745",
+      "sourceRow": 3158,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3158:J3158",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "4588",
+      "sourceRow": 3205,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3205:J3205",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    },
+    {
+      "nativeFacilityId": "4590",
+      "sourceRow": 3206,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!I3206:J3206",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "reason": "Explicit distribution equipment/connection; separate transmission scope is not established."
+    }
+  ],
+  "alternatives": {
+    "underEvaluation": {
+      "file": "MTEP Projects Under Evaluation368757.xlsx",
+      "url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+      "sha256": "40f325fe4ce7cb4dbc24207219725f623956efafdf6febb2e67a90accb24e72e",
+      "sourceAsOf": "2026-07-31",
+      "projectRows": 597,
+      "statusCounts": {
+        "M1 - Proposed": 506,
+        "M2 - Appendix A Approved": 77,
+        "M4 - Project in Service": 12,
+        "M3 - Under Construction": 2
+      },
+      "decision": "Deferred distinct project-level scope; reconcile parents/editions before any later merge, do not label all draft or add to this component inventory."
+    },
+    "MTEP25AnnualArchive": "Official alternative exists; unnecessary to download after the complete public quarterly component list succeeded."
+  },
+  "statusDefinitionSource": {
+    "file": "BPM-020-r34 Transmission Planning CLEAN.pdf",
+    "url": "https://cdn.misoenergy.org/BPM-020%20Transmission%20Planning113822.zip?v=20250124144741",
+    "locator": "PDF pp.32–34 and 76; effective July 1, 2026",
+    "sha256": "3c74ef832fdc952158f6e8788a960868bd149904aeb8807a417e1c571bb91fd6"
+  },
+  "researchTiming": {
+    "startedAt": "2026-09-30T09:07:09Z",
+    "researchClosedAt": "2026-09-30T09:13:34Z",
+    "elapsedMinutes": 6.42,
+    "limitMinutes": 15
+  },
+  "limitations": [
+    "No native coordinates in the public workbook; portal/model/map access was not requested.",
+    "Source cycles range MTEP10–26; cycle year is not a lifecycle status. One M1 facility coexists with parent Current Appendix A.",
+    "Past Expected ISD does not prove completion. The through date is a report as-of, not its publication or per-row update date.",
+    "All 3042 retained rows remain visible, but 162 ancillary and 30 distribution-context records do not count as transmission-qualified.",
+    "Owner aliases are deliberately unresolved where identity is uncertain; the raw field is preserved and submitter is never substituted.",
+    "Public download does not establish open or commercial reuse rights; legal/privacy terms reserve rights."
+  ],
+  "records": [
+    {
+      "nativeFacilityId": "51925",
+      "parentProjectId": "51057",
+      "sourceRow": 5,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!A5:Y5",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "raw": {
+        "Target MTEP Cycle": "MTEP26",
+        "Current Appendix": "A",
+        "Submitting TO": "AMERICAN TRANSMISSION COMPANY",
+        "Planning Region": "West",
+        "MTEP Project ID": 51057,
+        "Project": "Ozaukee County, DIC, New Substations",
+        "Project Type": "Other",
+        "Facility ID": 51925,
+        "Name": "Ozaukee County DIC Project",
+        "Facility Description": "Interconnection",
+        "Facility Owner(s)": null,
+        "Planning Status": "M3 - Under Construction",
+        "Current Cost": 1300000000,
+        "Expected ISD": "2027-12-01",
+        "Facility Type": "Substation",
+        "From Sub": "Decker",
+        "To Sub": "Cedar Creek Junction",
+        "Circuit ID": null,
+        "Max kV": 345,
+        "Min kV": null,
+        "Estimated Miles New": null,
+        "Estimated Miles Upgrade": null,
+        "State 1": "WI",
+        "State 2": null,
+        "Cost Shared Status": "Not Shared"
+      },
+      "dateCellDisplayFormat": "mm-dd-yy",
+      "candidate": {
+        "id": "miso-mtep:51925",
+        "utilityId": "miso-mtep",
+        "sourceId": "51925",
+        "sponsor": null,
+        "name": "Ozaukee County DIC Project",
+        "description": "Interconnection",
+        "status": "M3 - Under Construction",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2027-12-01",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected facility in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Appendix A Status Report575959.xlsx",
+            "locator": "'MTEP Approved (Appendix A) ...'!A5:Y5",
+            "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+          }
+        ],
+        "notes": [
+          "Source parent project 51057: Ozaukee County, DIC, New Substations",
+          "Submitting TO: AMERICAN TRANSMISSION COMPANY",
+          "Target cycle: MTEP26; current appendix: A; planning region: West",
+          "Qualified owner identity is unresolved; the submitting transmission owner does not fill an absent, joint or ambiguous Facility Owner(s) value."
+        ],
+        "inventory": {
+          "sourceKey": "miso-mtep",
+          "editionId": "appendix-a-2026-08-04",
+          "editionLabel": "MISO Appendix A status through August 4, 2026",
+          "reportingGroupName": "MISO MTEP inventory",
+          "recordKind": "transmission-project",
+          "recordUnit": "component",
+          "identityBasis": "native-id",
+          "lifecycle": "under-construction",
+          "lifecycleAsOf": "2026-08-04",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "parentProgramId": "miso-mtep:project:51057",
+          "aliases": [],
+          "workType": "Other — Substation",
+          "sourceState": "WI",
+          "sourceLocation": "From Sub: Decker; To Sub: Cedar Creek Junction",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Expected ISD",
+              "date": {
+                "value": "2027-12-01",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Expected facility in-service date"
+              },
+              "evidence": [
+                {
+                  "file": "Appendix A Status Report575959.xlsx",
+                  "locator": "'MTEP Approved (Appendix A) ...'!N5",
+                  "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "The public export supplies named substations but no coordinates, datum or accuracy; no center or route is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeFacilityId": "52001",
+      "parentProjectId": "51086",
+      "sourceRow": 31,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!A31:Y31",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "raw": {
+        "Target MTEP Cycle": "MTEP26",
+        "Current Appendix": "A",
+        "Submitting TO": "MISSOURI RIVER ENERGY SERVICES - TRANSMISSION",
+        "Planning Region": "West",
+        "MTEP Project ID": 51086,
+        "Project": "New Load on Existing HUC Plant 2 69 kV sub",
+        "Project Type": "Other",
+        "Facility ID": 52001,
+        "Name": "New Load on Existing HUC Plant 2 69 kV sub - Distribution Connection",
+        "Facility Description": "Add new 20 MW data center load to existing sub via distribution connection.",
+        "Facility Owner(s)": null,
+        "Planning Status": "M2 - Appendix A Approved",
+        "Current Cost": 0,
+        "Expected ISD": "2026-11-30",
+        "Facility Type": "Substation",
+        "From Sub": "HUC Plant 2",
+        "To Sub": null,
+        "Circuit ID": null,
+        "Max kV": 69,
+        "Min kV": null,
+        "Estimated Miles New": 0,
+        "Estimated Miles Upgrade": 0,
+        "State 1": "MN",
+        "State 2": null,
+        "Cost Shared Status": "Not Shared"
+      },
+      "dateCellDisplayFormat": "mm-dd-yy",
+      "candidate": {
+        "id": "miso-mtep:52001",
+        "utilityId": "miso-mtep",
+        "sourceId": "52001",
+        "sponsor": null,
+        "name": "New Load on Existing HUC Plant 2 69 kV sub - Distribution Connection",
+        "description": "Add new 20 MW data center load to existing sub via distribution connection.",
+        "status": "M2 - Appendix A Approved",
+        "voltageKv": [
+          69.0
+        ],
+        "date": {
+          "value": "2026-11-30",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected facility in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Appendix A Status Report575959.xlsx",
+            "locator": "'MTEP Approved (Appendix A) ...'!A31:Y31",
+            "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+          }
+        ],
+        "notes": [
+          "Source parent project 51086: New Load on Existing HUC Plant 2 69 kV sub",
+          "Submitting TO: MISSOURI RIVER ENERGY SERVICES - TRANSMISSION",
+          "Target cycle: MTEP26; current appendix: A; planning region: West",
+          "Qualified owner identity is unresolved; the submitting transmission owner does not fill an absent, joint or ambiguous Facility Owner(s) value.",
+          "Source scope describes distribution equipment or a load connection; separate transmission work is not established by this row."
+        ],
+        "inventory": {
+          "sourceKey": "miso-mtep",
+          "editionId": "appendix-a-2026-08-04",
+          "editionLabel": "MISO Appendix A status through August 4, 2026",
+          "reportingGroupName": "MISO MTEP inventory",
+          "recordKind": "planning-context",
+          "recordUnit": "component",
+          "identityBasis": "native-id",
+          "lifecycle": "approved",
+          "lifecycleAsOf": "2026-08-04",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "parentProgramId": "miso-mtep:project:51086",
+          "aliases": [],
+          "workType": "Other — Substation",
+          "sourceState": "MN",
+          "sourceLocation": "From Sub: HUC Plant 2",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Expected ISD",
+              "date": {
+                "value": "2026-11-30",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Expected facility in-service date"
+              },
+              "evidence": [
+                {
+                  "file": "Appendix A Status Report575959.xlsx",
+                  "locator": "'MTEP Approved (Appendix A) ...'!N31",
+                  "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "The public export supplies named substations but no coordinates, datum or accuracy; no center or route is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeFacilityId": "52058",
+      "parentProjectId": "51113",
+      "sourceRow": 61,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!A61:Y61",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "raw": {
+        "Target MTEP Cycle": "MTEP26",
+        "Current Appendix": "A",
+        "Submitting TO": "AMEREN MISSOURI",
+        "Planning Region": "Central",
+        "MTEP Project ID": 51113,
+        "Project": "Upgrade Montgomery 345 kV terminal equipment",
+        "Project Type": "BRP",
+        "Facility ID": 52058,
+        "Name": "Upgrade Montgomery-Vanhorn-Spencer Creek 345 kV",
+        "Facility Description": "Upgrade Montgomery-Vanhorn-Spencer Creek 345 kV line",
+        "Facility Owner(s)": null,
+        "Planning Status": "M1 - Proposed",
+        "Current Cost": 1,
+        "Expected ISD": "2029-12-01",
+        "Facility Type": "Line Upgrade",
+        "From Sub": "Montgomery",
+        "To Sub": "Spencer Creek",
+        "Circuit ID": null,
+        "Max kV": 345,
+        "Min kV": null,
+        "Estimated Miles New": null,
+        "Estimated Miles Upgrade": null,
+        "State 1": "MO",
+        "State 2": null,
+        "Cost Shared Status": "Not Shared"
+      },
+      "dateCellDisplayFormat": "mm-dd-yy",
+      "candidate": {
+        "id": "miso-mtep:52058",
+        "utilityId": "miso-mtep",
+        "sourceId": "52058",
+        "sponsor": null,
+        "name": "Upgrade Montgomery-Vanhorn-Spencer Creek 345 kV",
+        "description": "Upgrade Montgomery-Vanhorn-Spencer Creek 345 kV line",
+        "status": "M1 - Proposed",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2029-12-01",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected facility in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Appendix A Status Report575959.xlsx",
+            "locator": "'MTEP Approved (Appendix A) ...'!A61:Y61",
+            "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+          }
+        ],
+        "notes": [
+          "Source parent project 51113: Upgrade Montgomery 345 kV terminal equipment",
+          "Submitting TO: AMEREN MISSOURI",
+          "Target cycle: MTEP26; current appendix: A; planning region: Central",
+          "Source facility status is Proposed although parent Current Appendix is A; preserve the row status and do not infer approval from its container.",
+          "Qualified owner identity is unresolved; the submitting transmission owner does not fill an absent, joint or ambiguous Facility Owner(s) value."
+        ],
+        "inventory": {
+          "sourceKey": "miso-mtep",
+          "editionId": "appendix-a-2026-08-04",
+          "editionLabel": "MISO Appendix A status through August 4, 2026",
+          "reportingGroupName": "MISO MTEP inventory",
+          "recordKind": "transmission-project",
+          "recordUnit": "component",
+          "identityBasis": "native-id",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-08-04",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "parentProgramId": "miso-mtep:project:51113",
+          "aliases": [],
+          "workType": "BRP — Line Upgrade",
+          "sourceState": "MO",
+          "sourceLocation": "From Sub: Montgomery; To Sub: Spencer Creek",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Expected ISD",
+              "date": {
+                "value": "2029-12-01",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Expected facility in-service date"
+              },
+              "evidence": [
+                {
+                  "file": "Appendix A Status Report575959.xlsx",
+                  "locator": "'MTEP Approved (Appendix A) ...'!N61",
+                  "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "The public export supplies named substations but no coordinates, datum or accuracy; no center or route is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeFacilityId": "51268",
+      "parentProjectId": "50212",
+      "sourceRow": 281,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!A281:Y281",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "raw": {
+        "Target MTEP Cycle": "MTEP25",
+        "Current Appendix": "A",
+        "Submitting TO": "ITC",
+        "Planning Region": "East",
+        "MTEP Project ID": 50212,
+        "Project": "Avery - New DTE Interconnection",
+        "Project Type": "Other",
+        "Facility ID": 51268,
+        "Name": "Avery-Midtown_Install Underground Fiber",
+        "Facility Description": "Install underground Fiber from Avery to Midtown station.",
+        "Facility Owner(s)": null,
+        "Planning Status": "M2 - Appendix A Approved",
+        "Current Cost": 1721000,
+        "Expected ISD": "2028-09-29",
+        "Facility Type": "Misc.",
+        "From Sub": "Avery",
+        "To Sub": "Midtown",
+        "Circuit ID": null,
+        "Max kV": 120,
+        "Min kV": null,
+        "Estimated Miles New": null,
+        "Estimated Miles Upgrade": null,
+        "State 1": "MI",
+        "State 2": null,
+        "Cost Shared Status": "Not Shared"
+      },
+      "dateCellDisplayFormat": "mm-dd-yy",
+      "candidate": {
+        "id": "miso-mtep:51268",
+        "utilityId": "miso-mtep",
+        "sourceId": "51268",
+        "sponsor": null,
+        "name": "Avery-Midtown_Install Underground Fiber",
+        "description": "Install underground Fiber from Avery to Midtown station.",
+        "status": "M2 - Appendix A Approved",
+        "voltageKv": [
+          120.0
+        ],
+        "date": {
+          "value": "2028-09-29",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected facility in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Appendix A Status Report575959.xlsx",
+            "locator": "'MTEP Approved (Appendix A) ...'!A281:Y281",
+            "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+          }
+        ],
+        "notes": [
+          "Source parent project 50212: Avery - New DTE Interconnection",
+          "Submitting TO: ITC",
+          "Target cycle: MTEP25; current appendix: A; planning region: East",
+          "Qualified owner identity is unresolved; the submitting transmission owner does not fill an absent, joint or ambiguous Facility Owner(s) value.",
+          "Miscellaneous facility work is retained as capital context; this row is not counted as a transmission-qualified project."
+        ],
+        "inventory": {
+          "sourceKey": "miso-mtep",
+          "editionId": "appendix-a-2026-08-04",
+          "editionLabel": "MISO Appendix A status through August 4, 2026",
+          "reportingGroupName": "MISO MTEP inventory",
+          "recordKind": "capital-project-context",
+          "recordUnit": "component",
+          "identityBasis": "native-id",
+          "lifecycle": "approved",
+          "lifecycleAsOf": "2026-08-04",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "parentProgramId": "miso-mtep:project:50212",
+          "aliases": [],
+          "workType": "Other — Misc.",
+          "sourceState": "MI",
+          "sourceLocation": "From Sub: Avery; To Sub: Midtown",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Expected ISD",
+              "date": {
+                "value": "2028-09-29",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Expected facility in-service date"
+              },
+              "evidence": [
+                {
+                  "file": "Appendix A Status Report575959.xlsx",
+                  "locator": "'MTEP Approved (Appendix A) ...'!N281",
+                  "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "The public export supplies named substations but no coordinates, datum or accuracy; no center or route is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeFacilityId": "25705",
+      "parentProjectId": "20020",
+      "sourceRow": 739,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!A739:Y739",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "raw": {
+        "Target MTEP Cycle": "MTEP25",
+        "Current Appendix": "A",
+        "Submitting TO": "METC",
+        "Planning Region": "East",
+        "MTEP Project ID": 20020,
+        "Project": "Rebuild Gaylord - Mio Dam 138kV line",
+        "Project Type": "Other",
+        "Facility ID": 25705,
+        "Name": "Lewiston Jct-Mio_Rebuild with OPGW",
+        "Facility Description": "Lewiston Jct. - Mio 138 kV section with 954 ACSR overhead conductor capable of double circuit 230kV. OPGW will be installed on the rebuild. All line switches will be 2000A or greater, if replaced.",
+        "Facility Owner(s)": "METC",
+        "Planning Status": "M2 - Appendix A Approved",
+        "Current Cost": 86900000,
+        "Expected ISD": "2029-12-31",
+        "Facility Type": "Line Upgrade",
+        "From Sub": "Lewiston Jct",
+        "To Sub": "Mio",
+        "Circuit ID": "1",
+        "Max kV": 138,
+        "Min kV": null,
+        "Estimated Miles New": null,
+        "Estimated Miles Upgrade": 19.19,
+        "State 1": "MI",
+        "State 2": null,
+        "Cost Shared Status": "Not Shared"
+      },
+      "dateCellDisplayFormat": "mm-dd-yy",
+      "candidate": {
+        "id": "miso-mtep:25705",
+        "utilityId": "miso-mtep",
+        "sourceId": "25705",
+        "sponsor": "METC",
+        "name": "Lewiston Jct-Mio_Rebuild with OPGW",
+        "description": "Lewiston Jct. - Mio 138 kV section with 954 ACSR overhead conductor capable of double circuit 230kV. OPGW will be installed on the rebuild. All line switches will be 2000A or greater, if replaced.",
+        "status": "M2 - Appendix A Approved",
+        "voltageKv": [
+          138.0
+        ],
+        "date": {
+          "value": "2029-12-31",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected facility in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Appendix A Status Report575959.xlsx",
+            "locator": "'MTEP Approved (Appendix A) ...'!A739:Y739",
+            "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+          }
+        ],
+        "notes": [
+          "Source parent project 20020: Rebuild Gaylord - Mio Dam 138kV line",
+          "Submitting TO: METC",
+          "Target cycle: MTEP25; current appendix: A; planning region: East"
+        ],
+        "inventory": {
+          "sourceKey": "miso-mtep",
+          "editionId": "appendix-a-2026-08-04",
+          "editionLabel": "MISO Appendix A status through August 4, 2026",
+          "reportingGroupName": "MISO MTEP inventory",
+          "recordKind": "transmission-project",
+          "recordUnit": "component",
+          "identityBasis": "native-id",
+          "lifecycle": "approved",
+          "lifecycleAsOf": "2026-08-04",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": {
+            "id": "miso-owner-metc",
+            "name": "METC",
+            "identityScope": "source",
+            "evidence": [
+              {
+                "file": "Appendix A Status Report575959.xlsx",
+                "locator": "'MTEP Approved (Appendix A) ...'!K739",
+                "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+              }
+            ]
+          },
+          "parentProgramId": "miso-mtep:project:20020",
+          "aliases": [],
+          "workType": "Other — Line Upgrade",
+          "sourceState": "MI",
+          "sourceLocation": "From Sub: Lewiston Jct; To Sub: Mio",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Expected ISD",
+              "date": {
+                "value": "2029-12-31",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Expected facility in-service date"
+              },
+              "evidence": [
+                {
+                  "file": "Appendix A Status Report575959.xlsx",
+                  "locator": "'MTEP Approved (Appendix A) ...'!N739",
+                  "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "The public export supplies named substations but no coordinates, datum or accuracy; no center or route is inferred."
+          ]
+        }
+      }
+    },
+    {
+      "nativeFacilityId": "50898",
+      "parentProjectId": "50552",
+      "sourceRow": 851,
+      "citation": {
+        "file": "Appendix A Status Report575959.xlsx",
+        "locator": "'MTEP Approved (Appendix A) ...'!A851:Y851",
+        "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+      },
+      "raw": {
+        "Target MTEP Cycle": "MTEP24",
+        "Current Appendix": "A",
+        "Submitting TO": "NORTHERN STATES POWER COMPANY",
+        "Planning Region": "West",
+        "MTEP Project ID": 50552,
+        "Project": "LRTP-19: Bison - Alexandria",
+        "Project Type": "MVP",
+        "Facility ID": 50898,
+        "Name": "Line: MN/ND State Line - Bison - 345 kV",
+        "Facility Description": "Install second 345kV circuit on existing spare position.",
+        "Facility Owner(s)": "GRE, MP, MRES, OTP, XEL",
+        "Planning Status": "M2 - Appendix A Approved",
+        "Current Cost": 19600000,
+        "Expected ISD": "2032-06-01",
+        "Facility Type": "Line Upgrade",
+        "From Sub": "MN/ND State Line",
+        "To Sub": "Bison",
+        "Circuit ID": null,
+        "Max kV": 345,
+        "Min kV": null,
+        "Estimated Miles New": null,
+        "Estimated Miles Upgrade": 34,
+        "State 1": "ND",
+        "State 2": null,
+        "Cost Shared Status": "Shared"
+      },
+      "dateCellDisplayFormat": "mm-dd-yy",
+      "candidate": {
+        "id": "miso-mtep:50898",
+        "utilityId": "miso-mtep",
+        "sourceId": "50898",
+        "sponsor": "GRE, MP, MRES, OTP, XEL",
+        "name": "Line: MN/ND State Line - Bison - 345 kV",
+        "description": "Install second 345kV circuit on existing spare position.",
+        "status": "M2 - Appendix A Approved",
+        "voltageKv": [
+          345.0
+        ],
+        "date": {
+          "value": "2032-06-01",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Expected facility in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "Appendix A Status Report575959.xlsx",
+            "locator": "'MTEP Approved (Appendix A) ...'!A851:Y851",
+            "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+          }
+        ],
+        "notes": [
+          "Source parent project 50552: LRTP-19: Bison - Alexandria",
+          "Submitting TO: NORTHERN STATES POWER COMPANY",
+          "Target cycle: MTEP24; current appendix: A; planning region: West",
+          "Qualified owner identity is unresolved; the submitting transmission owner does not fill an absent, joint or ambiguous Facility Owner(s) value."
+        ],
+        "inventory": {
+          "sourceKey": "miso-mtep",
+          "editionId": "appendix-a-2026-08-04",
+          "editionLabel": "MISO Appendix A status through August 4, 2026",
+          "reportingGroupName": "MISO MTEP inventory",
+          "recordKind": "transmission-project",
+          "recordUnit": "component",
+          "identityBasis": "native-id",
+          "lifecycle": "approved",
+          "lifecycleAsOf": "2026-08-04",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "parentProgramId": "miso-mtep:project:50552",
+          "aliases": [],
+          "workType": "MVP — Line Upgrade",
+          "sourceState": "ND",
+          "sourceLocation": "From Sub: MN/ND State Line; To Sub: Bison",
+          "sourceUpdatedOn": null,
+          "milestones": [
+            {
+              "field": "Expected ISD",
+              "date": {
+                "value": "2032-06-01",
+                "precision": "day",
+                "kind": "in-service",
+                "label": "Expected facility in-service date"
+              },
+              "evidence": [
+                {
+                  "file": "Appendix A Status Report575959.xlsx",
+                  "locator": "'MTEP Approved (Appendix A) ...'!N851",
+                  "url": "https://cdn.misoenergy.org/Appendix%20A%20Status%20Report575959.xlsx?v=20260514162226"
+                }
+              ]
+            }
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": [
+            "The public export supplies named substations but no coordinates, datum or accuracy; no center or route is inferred."
+          ]
+        }
+      }
+    }
+  ]
+}
