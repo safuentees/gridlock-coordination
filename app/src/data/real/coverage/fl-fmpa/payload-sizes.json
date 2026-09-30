@@ -1,10 +1,10 @@
 {
   "sourceKey": "fl-fmpa",
   "editionId": "2026-04-01",
-  "scope": "sample",
-  "records": 6,
-  "compactUtf8Bytes": 18730,
-  "formattedDownloadUtf8Bytes": 23937,
+  "scope": "full",
+  "records": 59,
+  "compactUtf8Bytes": 161060,
+  "formattedDownloadUtf8Bytes": 208573,
   "measurement": "Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.",
-  "datasetFileFormat": "formatted"
+  "datasetFileFormat": "compact"
 }

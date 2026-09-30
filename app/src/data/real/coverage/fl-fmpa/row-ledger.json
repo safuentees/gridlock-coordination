@@ -2,13 +2,13 @@
   "sourceKey": "fl-fmpa",
   "editionId": "2026-04-01",
   "sourceSha256": "dce5c6ec57b598c3bf98013881f64751914ef960253f839fa4e6b341f348a4af",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 59,
-    "importedRecords": 6,
+    "importedRecords": 59,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 53,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "groupedCityRows": 5,
@@ -20,8 +20,8 @@
     "Ocala Electric Utility": 6
   },
   "recordKindCounts": {
-    "transmission-project": 4,
-    "planning-context": 2
+    "transmission-project": 49,
+    "planning-context": 10
   },
   "completeScopeRecordKindCounts": {
     "transmission-project": 49,
@@ -60,8 +60,9 @@
         "estimatedInServiceDate": "12/2026"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:02"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:03",
@@ -77,8 +78,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:03"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:04",
@@ -94,8 +96,9 @@
         "estimatedInServiceDate": "12/2026"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:04"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:05",
@@ -111,8 +114,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:05"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:06",
@@ -128,8 +132,9 @@
         "estimatedInServiceDate": "12/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:06"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:07",
@@ -145,8 +150,9 @@
         "estimatedInServiceDate": "12/2030"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:07"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:08",
@@ -162,8 +168,9 @@
         "estimatedInServiceDate": "12/2026"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:08"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:09",
@@ -179,8 +186,9 @@
         "estimatedInServiceDate": "12/2032"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:09"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:10",
@@ -196,8 +204,9 @@
         "estimatedInServiceDate": "12/2031"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:10"
     },
     {
       "sourceId": "2026-04-01:ii-1:beaches:11",
@@ -213,8 +222,9 @@
         "estimatedInServiceDate": "12/2032"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:beaches:11"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:01",
@@ -230,8 +240,9 @@
         "estimatedInServiceDate": "04/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:01"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:02",
@@ -247,8 +258,9 @@
         "estimatedInServiceDate": "12/2030"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:02"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:03",
@@ -264,8 +276,9 @@
         "estimatedInServiceDate": "12/2032"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:03"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:04",
@@ -281,8 +294,9 @@
         "estimatedInServiceDate": "12/2035"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:04"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:05",
@@ -298,8 +312,9 @@
         "estimatedInServiceDate": "12/2029"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:05"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:06",
@@ -315,8 +330,9 @@
         "estimatedInServiceDate": "12/2033"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:06"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:07",
@@ -332,8 +348,9 @@
         "estimatedInServiceDate": "12/2029"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:07"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:08",
@@ -349,8 +366,9 @@
         "estimatedInServiceDate": "12/2030"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:08"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:09",
@@ -366,8 +384,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:09"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:10",
@@ -383,8 +402,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:10"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:11",
@@ -400,8 +420,9 @@
         "estimatedInServiceDate": "04/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:11"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:12",
@@ -417,8 +438,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:12"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:13",
@@ -434,8 +456,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:13"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:14",
@@ -451,8 +474,9 @@
         "estimatedInServiceDate": "12/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:14"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:15",
@@ -468,8 +492,9 @@
         "estimatedInServiceDate": "12/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:15"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:16",
@@ -485,8 +510,9 @@
         "estimatedInServiceDate": "12/2031"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:kua:16"
     },
     {
       "sourceId": "2026-04-01:ii-1:kua:17",
@@ -520,8 +546,9 @@
         "estimatedInServiceDate": "10/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:01"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:02",
@@ -537,8 +564,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:02"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:03",
@@ -554,8 +582,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:03"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:04",
@@ -571,8 +600,9 @@
         "estimatedInServiceDate": "04/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:04"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:05",
@@ -588,8 +618,9 @@
         "estimatedInServiceDate": "10/2029"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:05"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:06",
@@ -605,8 +636,9 @@
         "estimatedInServiceDate": "04/2030"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:06"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:07",
@@ -622,8 +654,9 @@
         "estimatedInServiceDate": "10/2029"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:07"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:08",
@@ -657,8 +690,9 @@
         "estimatedInServiceDate": "05/2026"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:09"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:10",
@@ -674,8 +708,9 @@
         "estimatedInServiceDate": "12/2030"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:10"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:11",
@@ -691,8 +726,9 @@
         "estimatedInServiceDate": "12/2030"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:11"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:12",
@@ -708,8 +744,9 @@
         "estimatedInServiceDate": "12/2034"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:12"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:13",
@@ -725,8 +762,9 @@
         "estimatedInServiceDate": "12/2034"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:13"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:14",
@@ -742,8 +780,9 @@
         "estimatedInServiceDate": "02/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:14"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:15",
@@ -759,8 +798,9 @@
         "estimatedInServiceDate": "12/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:15"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:16",
@@ -776,8 +816,9 @@
         "estimatedInServiceDate": "12/2028"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:16"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:17",
@@ -793,8 +834,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:17"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:18",
@@ -828,8 +870,9 @@
         "estimatedInServiceDate": "06/2030"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:19"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:20",
@@ -845,8 +888,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:20"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:21",
@@ -862,8 +906,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:21"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:22",
@@ -879,8 +924,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:22"
     },
     {
       "sourceId": "2026-04-01:ii-1:fpua:23",
@@ -896,8 +942,9 @@
         "estimatedInServiceDate": "12/2027"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:fpua:23"
     },
     {
       "sourceId": "2026-04-01:ii-1:keys:01",
@@ -931,8 +978,9 @@
         "estimatedInServiceDate": "12/2031"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:keys:02"
     },
     {
       "sourceId": "2026-04-01:ii-1:ocala:01",
@@ -948,8 +996,9 @@
         "estimatedInServiceDate": "06/2029"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:01"
     },
     {
       "sourceId": "2026-04-01:ii-1:ocala:02",
@@ -965,8 +1014,9 @@
         "estimatedInServiceDate": "12/2026"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:02"
     },
     {
       "sourceId": "2026-04-01:ii-1:ocala:03",
@@ -982,8 +1032,9 @@
         "estimatedInServiceDate": "12/2026"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:03"
     },
     {
       "sourceId": "2026-04-01:ii-1:ocala:04",
@@ -999,8 +1050,9 @@
         "estimatedInServiceDate": "06/2029"
       },
       "recordKind": "planning-context",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:04"
     },
     {
       "sourceId": "2026-04-01:ii-1:ocala:05",
@@ -1016,8 +1068,9 @@
         "estimatedInServiceDate": "12/2029"
       },
       "recordKind": "transmission-project",
-      "disposition": "pending",
-      "reason": "Retained work item outside the six-record connection sample."
+      "disposition": "imported",
+      "reason": "Accepted planned/proposed work item.",
+      "projectId": "fl-fmpa:2026-04-01:ii-1:ocala:05"
     },
     {
       "sourceId": "2026-04-01:ii-1:ocala:06",
