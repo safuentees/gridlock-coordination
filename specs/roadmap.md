@@ -38,7 +38,7 @@ F00 → F01 + F02 + F03 → first connected real milestone, without waiting for 
 
 ## Active workers
 
-F14 is selected and active. UI owns the single panel, list navigation and map occlusion; core owns per-candidate impact draft retention and detail topics. Coordinator owns the shared agreement and the sole composition build. Separate existing worktrees are reused; no data, calculation or storage work is displaced.
+F14 is complete through PR27–29. UI delivered the single panel, restored browsing context and map occlusion; core delivered per-candidate impact drafts and detail topics. The coordinator's sole composition build passed at 5502dcd with the existing bundle-size and future Vite-loader warnings. No browser, visual or mobile checks ran. Source data, canonical calculations and storage interfaces are unchanged; all selected work is integrated and workers are idle.
 
 F00–F13 are complete. F10 integrated in PR15–17; its single build passed at 6e63757. Stage 2 assessed arrival, working, understanding, acting and returning against the mission. F11–F13 deliver guided coverage work, source context and local source-revision continuity through PR18–22. Final combined build and representative revision/storage check passed at 5404535; existing bundle-size and future Vite config-loader warnings remain nonblocking.
 
