@@ -65,8 +65,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:24"
   },
   {
     "sourceId": "44",
@@ -88,8 +88,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:44"
   },
   {
     "sourceId": "85",
@@ -111,8 +111,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:85"
   },
   {
     "sourceId": "86",
@@ -134,8 +134,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:86"
   },
   {
     "sourceId": "88",
@@ -157,8 +157,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:88"
   },
   {
     "sourceId": "93",
@@ -180,8 +180,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:93"
   },
   {
     "sourceId": "100",
@@ -203,8 +203,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:100"
   },
   {
     "sourceId": "102",
@@ -226,8 +226,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:102"
   },
   {
     "sourceId": "103",
@@ -249,8 +249,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:103"
   },
   {
     "sourceId": "106",
@@ -272,8 +272,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:106"
   },
   {
     "sourceId": "108",
@@ -295,8 +295,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:108"
   },
   {
     "sourceId": "110",
@@ -318,8 +318,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:110"
   },
   {
     "sourceId": "112",
@@ -341,8 +341,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:112"
   },
   {
     "sourceId": "166",
@@ -364,8 +364,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:166"
   },
   {
     "sourceId": "194",
@@ -387,8 +387,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:194"
   },
   {
     "sourceId": "271",
@@ -410,8 +410,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:271"
   },
   {
     "sourceId": "315",
@@ -433,8 +433,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:315"
   },
   {
     "sourceId": "340",
@@ -456,8 +456,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:340"
   },
   {
     "sourceId": "347",
@@ -479,8 +479,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:347"
   },
   {
     "sourceId": "348",
@@ -502,8 +502,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:348"
   },
   {
     "sourceId": "349",
@@ -525,8 +525,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:349"
   },
   {
     "sourceId": "450",
@@ -548,8 +548,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:450"
   },
   {
     "sourceId": "451",
@@ -571,8 +571,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:451"
   },
   {
     "sourceId": "582",
@@ -594,8 +594,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:582"
   },
   {
     "sourceId": "675",
@@ -617,8 +617,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:675"
   },
   {
     "sourceId": "736",
@@ -640,8 +640,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:736"
   },
   {
     "sourceId": "759",
@@ -663,8 +663,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:759"
   },
   {
     "sourceId": "792",
@@ -686,8 +686,8 @@
     "recordKind": "planning-context",
     "classificationBasis": "explicit-distribution-substation-name-or-description",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:792"
   },
   {
     "sourceId": "793",
@@ -709,8 +709,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:793"
   },
   {
     "sourceId": "877",
@@ -752,8 +752,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:878"
   },
   {
     "sourceId": "884",
@@ -775,8 +775,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:884"
   },
   {
     "sourceId": "885",
@@ -798,8 +798,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:885"
   },
   {
     "sourceId": "951",
@@ -821,8 +821,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:951"
   },
   {
     "sourceId": "952",
@@ -844,8 +844,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:952"
   },
   {
     "sourceId": "953",
@@ -887,8 +887,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:954"
   },
   {
     "sourceId": "970",
@@ -910,8 +910,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:970"
   },
   {
     "sourceId": "976",
@@ -933,8 +933,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:976"
   },
   {
     "sourceId": "987",
@@ -956,8 +956,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:987"
   },
   {
     "sourceId": "1001",
@@ -979,8 +979,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1001"
   },
   {
     "sourceId": "1042",
@@ -1002,8 +1002,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1042"
   },
   {
     "sourceId": "1043",
@@ -1025,8 +1025,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1043"
   },
   {
     "sourceId": "1044",
@@ -1048,8 +1048,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1044"
   },
   {
     "sourceId": "1055",
@@ -1071,8 +1071,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1055"
   },
   {
     "sourceId": "1072",
@@ -1094,8 +1094,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1072"
   },
   {
     "sourceId": "1079",
@@ -1117,8 +1117,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1079"
   },
   {
     "sourceId": "1080",
@@ -1140,8 +1140,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1080"
   },
   {
     "sourceId": "1081",
@@ -1163,8 +1163,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1081"
   },
   {
     "sourceId": "1082",
@@ -1206,8 +1206,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1085"
   },
   {
     "sourceId": "1087",
@@ -1229,8 +1229,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1087"
   },
   {
     "sourceId": "1088",
@@ -1252,8 +1252,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1088"
   },
   {
     "sourceId": "1089",
@@ -1275,8 +1275,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1089"
   },
   {
     "sourceId": "1090",
@@ -1298,8 +1298,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1090"
   },
   {
     "sourceId": "1091",
@@ -1321,8 +1321,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1091"
   },
   {
     "sourceId": "1092",
@@ -1344,8 +1344,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1092"
   },
   {
     "sourceId": "1118",
@@ -1367,8 +1367,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1118"
   },
   {
     "sourceId": "1129",
@@ -1450,8 +1450,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1132"
   },
   {
     "sourceId": "1136",
@@ -1473,8 +1473,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "under-construction",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1136"
   },
   {
     "sourceId": "1137",
@@ -1516,8 +1516,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1140"
   },
   {
     "sourceId": "1141",
@@ -1539,8 +1539,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1141"
   },
   {
     "sourceId": "1142",
@@ -1562,8 +1562,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1142"
   },
   {
     "sourceId": "1143",
@@ -1585,8 +1585,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1143"
   },
   {
     "sourceId": "1144",
@@ -1608,8 +1608,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1144"
   },
   {
     "sourceId": "1146",
@@ -1631,8 +1631,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1146"
   },
   {
     "sourceId": "1147",
@@ -1654,8 +1654,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1147"
   },
   {
     "sourceId": "1148",
@@ -1677,8 +1677,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1148"
   },
   {
     "sourceId": "1194",
@@ -1700,8 +1700,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1194"
   },
   {
     "sourceId": "1195",
@@ -1723,8 +1723,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1195"
   },
   {
     "sourceId": "1197",
@@ -1806,8 +1806,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1201"
   },
   {
     "sourceId": "1202",
@@ -1849,8 +1849,8 @@
     "recordKind": "planning-context",
     "classificationBasis": "explicit-distribution-substation-name-or-description",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1204"
   },
   {
     "sourceId": "1231",
@@ -1872,8 +1872,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1231"
   },
   {
     "sourceId": "1235",
@@ -1938,8 +1938,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1237"
   },
   {
     "sourceId": "1238",
@@ -2061,8 +2061,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1249"
   },
   {
     "sourceId": "1253",
@@ -2084,8 +2084,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1253"
   },
   {
     "sourceId": "1254",
@@ -2107,8 +2107,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1254"
   },
   {
     "sourceId": "1255",
@@ -2130,8 +2130,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1255"
   },
   {
     "sourceId": "1256",
@@ -2153,8 +2153,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1256"
   },
   {
     "sourceId": "1257",
@@ -2176,8 +2176,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1257"
   },
   {
     "sourceId": "1261",
@@ -2199,8 +2199,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1261"
   },
   {
     "sourceId": "1262",
@@ -2245,8 +2245,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1263"
   },
   {
     "sourceId": "1264",
@@ -2268,8 +2268,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1264"
   },
   {
     "sourceId": "1265",
@@ -2311,8 +2311,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1266"
   },
   {
     "sourceId": "1267",
@@ -2334,8 +2334,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1267"
   },
   {
     "sourceId": "1268",
@@ -2357,8 +2357,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1268"
   },
   {
     "sourceId": "1269",
@@ -2380,8 +2380,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1269"
   },
   {
     "sourceId": "1270",
@@ -2403,8 +2403,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1270"
   },
   {
     "sourceId": "1271",
@@ -2426,8 +2426,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1271"
   },
   {
     "sourceId": "1272",
@@ -2469,8 +2469,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1274"
   },
   {
     "sourceId": "1275",
@@ -2492,8 +2492,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1275"
   },
   {
     "sourceId": "1276",
@@ -2535,8 +2535,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1278"
   },
   {
     "sourceId": "1280",
@@ -2578,8 +2578,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1282"
   },
   {
     "sourceId": "1283",
@@ -2601,8 +2601,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1283"
   },
   {
     "sourceId": "1284",
@@ -2624,8 +2624,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1284"
   },
   {
     "sourceId": "1286",
@@ -2647,8 +2647,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1286"
   },
   {
     "sourceId": "1307",
@@ -2670,8 +2670,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1307"
   },
   {
     "sourceId": "1314",
@@ -2793,8 +2793,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1319"
   },
   {
     "sourceId": "1320",
@@ -3016,8 +3016,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1330"
   },
   {
     "sourceId": "1331",
@@ -3059,8 +3059,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1332"
   },
   {
     "sourceId": "1333",
@@ -3082,8 +3082,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1333"
   },
   {
     "sourceId": "1335",
@@ -3125,8 +3125,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1336"
   },
   {
     "sourceId": "1337",
@@ -3148,8 +3148,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1337"
   },
   {
     "sourceId": "1338",
@@ -3171,8 +3171,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1338"
   },
   {
     "sourceId": "1339",
@@ -3194,8 +3194,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1339"
   },
   {
     "sourceId": "1340",
@@ -3217,8 +3217,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1340"
   },
   {
     "sourceId": "1341",
@@ -3240,8 +3240,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1341"
   },
   {
     "sourceId": "1342",
@@ -3263,8 +3263,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1342"
   },
   {
     "sourceId": "1343",
@@ -3286,8 +3286,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1343"
   },
   {
     "sourceId": "1344",
@@ -3309,8 +3309,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1344"
   },
   {
     "sourceId": "1345",
@@ -3332,8 +3332,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1345"
   },
   {
     "sourceId": "1346",
@@ -3355,8 +3355,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1346"
   },
   {
     "sourceId": "1347",
@@ -3378,8 +3378,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1347"
   },
   {
     "sourceId": "1348",
@@ -3461,8 +3461,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "under-construction",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1353"
   },
   {
     "sourceId": "1355",
@@ -3504,8 +3504,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "under-construction",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1356"
   },
   {
     "sourceId": "1357",
@@ -3527,8 +3527,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1357"
   },
   {
     "sourceId": "1358",
@@ -3550,8 +3550,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1358"
   },
   {
     "sourceId": "1359",
@@ -3633,8 +3633,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1368"
   },
   {
     "sourceId": "1369",
@@ -3656,8 +3656,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1369"
   },
   {
     "sourceId": "1370",
@@ -3679,8 +3679,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1370"
   },
   {
     "sourceId": "1372",
@@ -3702,8 +3702,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1372"
   },
   {
     "sourceId": "1416",
@@ -3725,8 +3725,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1416"
   },
   {
     "sourceId": "1432",
@@ -3828,8 +3828,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1436"
   },
   {
     "sourceId": "1437",
@@ -3871,8 +3871,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1438"
   },
   {
     "sourceId": "1439",
@@ -3894,8 +3894,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1439"
   },
   {
     "sourceId": "1440",
@@ -3937,8 +3937,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1441"
   },
   {
     "sourceId": "1442",
@@ -3960,8 +3960,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1442"
   },
   {
     "sourceId": "1443",
@@ -4003,8 +4003,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1444"
   },
   {
     "sourceId": "1445",
@@ -4026,8 +4026,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1445"
   },
   {
     "sourceId": "1446",
@@ -4069,8 +4069,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1447"
   },
   {
     "sourceId": "1448",
@@ -4092,8 +4092,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1448"
   },
   {
     "sourceId": "1449",
@@ -4115,8 +4115,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1449"
   },
   {
     "sourceId": "1450",
@@ -4138,8 +4138,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1450"
   },
   {
     "sourceId": "1451",
@@ -4181,8 +4181,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1452"
   },
   {
     "sourceId": "1453",
@@ -4204,8 +4204,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1453"
   },
   {
     "sourceId": "1454",
@@ -4227,8 +4227,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1454"
   },
   {
     "sourceId": "1455",
@@ -4250,8 +4250,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1455"
   },
   {
     "sourceId": "1456",
@@ -4273,8 +4273,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1456"
   },
   {
     "sourceId": "1457",
@@ -4296,8 +4296,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1457"
   },
   {
     "sourceId": "1458",
@@ -4319,8 +4319,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1458"
   },
   {
     "sourceId": "1459",
@@ -4342,8 +4342,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1459"
   },
   {
     "sourceId": "1460",
@@ -4365,8 +4365,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1460"
   },
   {
     "sourceId": "1461",
@@ -4388,8 +4388,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1461"
   },
   {
     "sourceId": "1462",
@@ -4411,8 +4411,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1462"
   },
   {
     "sourceId": "1463",
@@ -4434,8 +4434,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1463"
   },
   {
     "sourceId": "1464",
@@ -4497,8 +4497,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1466"
   },
   {
     "sourceId": "1467",
@@ -4520,8 +4520,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1467"
   },
   {
     "sourceId": "1468",
@@ -4543,8 +4543,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1468"
   },
   {
     "sourceId": "1469",
@@ -4586,8 +4586,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1470"
   },
   {
     "sourceId": "1471",
@@ -4669,8 +4669,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1474"
   },
   {
     "sourceId": "1475",
@@ -4752,8 +4752,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1478"
   },
   {
     "sourceId": "1479",
@@ -4775,8 +4775,8 @@
     "recordKind": "planning-context",
     "classificationBasis": "explicit-distribution-substation-name-or-description",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1479"
   },
   {
     "sourceId": "1480",
@@ -4838,8 +4838,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1482"
   },
   {
     "sourceId": "1502",
@@ -4861,8 +4861,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1502"
   },
   {
     "sourceId": "1503",
@@ -4884,8 +4884,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1503"
   },
   {
     "sourceId": "1504",
@@ -4907,8 +4907,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1504"
   },
   {
     "sourceId": "1505",
@@ -4930,8 +4930,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1505"
   },
   {
     "sourceId": "1506",
@@ -4973,8 +4973,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1507"
   },
   {
     "sourceId": "1518",
@@ -4996,8 +4996,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1518"
   },
   {
     "sourceId": "1519",
@@ -5019,8 +5019,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1519"
   },
   {
     "sourceId": "1520",
@@ -5042,8 +5042,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1520"
   },
   {
     "sourceId": "1521",
@@ -5065,8 +5065,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1521"
   },
   {
     "sourceId": "1522",
@@ -5088,8 +5088,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1522"
   },
   {
     "sourceId": "1523",
@@ -5111,8 +5111,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1523"
   },
   {
     "sourceId": "1524",
@@ -5134,8 +5134,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1524"
   },
   {
     "sourceId": "1525",
@@ -5157,8 +5157,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1525"
   },
   {
     "sourceId": "1526",
@@ -5180,8 +5180,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1526"
   },
   {
     "sourceId": "1542",
@@ -5303,8 +5303,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1547"
   },
   {
     "sourceId": "1548",
@@ -5346,8 +5346,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1549"
   },
   {
     "sourceId": "1550",
@@ -5369,8 +5369,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1550"
   },
   {
     "sourceId": "1551",
@@ -5452,8 +5452,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1554"
   },
   {
     "sourceId": "1555",
@@ -5475,8 +5475,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1555"
   },
   {
     "sourceId": "1556",
@@ -5518,8 +5518,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1557"
   },
   {
     "sourceId": "1558",
@@ -5541,8 +5541,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1558"
   },
   {
     "sourceId": "1559",
@@ -5564,8 +5564,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1559"
   },
   {
     "sourceId": "1560",
@@ -5587,8 +5587,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1560"
   },
   {
     "sourceId": "1561",
@@ -5610,8 +5610,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1561"
   },
   {
     "sourceId": "1562",
@@ -5633,8 +5633,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1562"
   },
   {
     "sourceId": "1563",
@@ -5656,8 +5656,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1563"
   },
   {
     "sourceId": "1564",
@@ -5679,8 +5679,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1564"
   },
   {
     "sourceId": "1565",
@@ -5702,8 +5702,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1565"
   },
   {
     "sourceId": "1566",
@@ -5725,8 +5725,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1566"
   },
   {
     "sourceId": "1567",
@@ -5748,8 +5748,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1567"
   },
   {
     "sourceId": "1568",
@@ -5771,8 +5771,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1568"
   },
   {
     "sourceId": "1569",
@@ -5794,8 +5794,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1569"
   },
   {
     "sourceId": "1572",
@@ -5837,8 +5837,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1573"
   },
   {
     "sourceId": "1574",
@@ -5860,8 +5860,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1574"
   },
   {
     "sourceId": "1575",
@@ -5904,8 +5904,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1576"
   },
   {
     "sourceId": "1577",
@@ -5927,8 +5927,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1577"
   },
   {
     "sourceId": "1578",
@@ -5950,8 +5950,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1578"
   },
   {
     "sourceId": "1579",
@@ -6036,8 +6036,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1582"
   },
   {
     "sourceId": "1583",
@@ -6079,8 +6079,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1584"
   },
   {
     "sourceId": "1585",
@@ -6102,8 +6102,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1585"
   },
   {
     "sourceId": "1586",
@@ -6125,8 +6125,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1586"
   },
   {
     "sourceId": "1587",
@@ -6148,8 +6148,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1587"
   },
   {
     "sourceId": "1588",
@@ -6171,8 +6171,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1588"
   },
   {
     "sourceId": "1589",
@@ -6194,8 +6194,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1589"
   },
   {
     "sourceId": "1590",
@@ -6217,8 +6217,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1590"
   },
   {
     "sourceId": "1591",
@@ -6240,8 +6240,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1591"
   },
   {
     "sourceId": "1592",
@@ -6263,8 +6263,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1592"
   },
   {
     "sourceId": "1593",
@@ -6286,8 +6286,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1593"
   },
   {
     "sourceId": "1594",
@@ -6309,8 +6309,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1594"
   },
   {
     "sourceId": "1595",
@@ -6355,8 +6355,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1596"
   },
   {
     "sourceId": "1597",
@@ -6378,8 +6378,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1597"
   },
   {
     "sourceId": "1598",
@@ -6401,8 +6401,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1598"
   },
   {
     "sourceId": "1599",
@@ -6424,8 +6424,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1599"
   },
   {
     "sourceId": "1600",
@@ -6447,8 +6447,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1600"
   },
   {
     "sourceId": "1601",
@@ -6470,8 +6470,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1601"
   },
   {
     "sourceId": "1602",
@@ -6493,8 +6493,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1602"
   },
   {
     "sourceId": "1603",
@@ -6516,8 +6516,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1603"
   },
   {
     "sourceId": "1604",
@@ -6539,8 +6539,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1604"
   },
   {
     "sourceId": "1605",
@@ -6562,8 +6562,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1605"
   },
   {
     "sourceId": "1606",
@@ -6585,8 +6585,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1606"
   },
   {
     "sourceId": "1607",
@@ -6608,8 +6608,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1607"
   },
   {
     "sourceId": "1608",
@@ -6631,8 +6631,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1608"
   },
   {
     "sourceId": "1609",
@@ -6654,8 +6654,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1609"
   },
   {
     "sourceId": "1610",
@@ -6677,8 +6677,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1610"
   },
   {
     "sourceId": "1611",
@@ -6700,8 +6700,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1611"
   },
   {
     "sourceId": "1612",
@@ -6723,8 +6723,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1612"
   },
   {
     "sourceId": "1613",
@@ -6746,8 +6746,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1613"
   },
   {
     "sourceId": "1614",
@@ -6769,8 +6769,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1614"
   },
   {
     "sourceId": "1615",
@@ -6792,8 +6792,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1615"
   },
   {
     "sourceId": "1616",
@@ -6815,8 +6815,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1616"
   },
   {
     "sourceId": "1617",
@@ -6838,8 +6838,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1617"
   },
   {
     "sourceId": "1618",
@@ -6861,8 +6861,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1618"
   },
   {
     "sourceId": "1619",
@@ -6884,8 +6884,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1619"
   },
   {
     "sourceId": "1620",
@@ -6907,8 +6907,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1620"
   },
   {
     "sourceId": "1621",
@@ -6930,8 +6930,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1621"
   },
   {
     "sourceId": "1622",
@@ -6953,8 +6953,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1622"
   },
   {
     "sourceId": "1623",
@@ -6976,8 +6976,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1623"
   },
   {
     "sourceId": "1624",
@@ -6999,8 +6999,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1624"
   },
   {
     "sourceId": "1625",
@@ -7022,8 +7022,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1625"
   },
   {
     "sourceId": "1626",
@@ -7045,8 +7045,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1626"
   },
   {
     "sourceId": "1627",
@@ -7068,8 +7068,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1627"
   },
   {
     "sourceId": "1628",
@@ -7091,8 +7091,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1628"
   },
   {
     "sourceId": "1629",
@@ -7114,8 +7114,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1629"
   },
   {
     "sourceId": "1630",
@@ -7137,8 +7137,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1630"
   },
   {
     "sourceId": "1631",
@@ -7160,8 +7160,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1631"
   },
   {
     "sourceId": "1632",
@@ -7183,8 +7183,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1632"
   },
   {
     "sourceId": "1634",
@@ -7206,8 +7206,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1634"
   },
   {
     "sourceId": "1635",
@@ -7229,8 +7229,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1635"
   },
   {
     "sourceId": "1636",
@@ -7252,8 +7252,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1636"
   },
   {
     "sourceId": "1637",
@@ -7295,8 +7295,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1638"
   },
   {
     "sourceId": "1639",
@@ -7318,8 +7318,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1639"
   },
   {
     "sourceId": "1640",
@@ -7341,8 +7341,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1640"
   },
   {
     "sourceId": "1641",
@@ -7387,8 +7387,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1642"
   },
   {
     "sourceId": "1643",
@@ -7410,8 +7410,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1643"
   },
   {
     "sourceId": "1644",
@@ -7433,8 +7433,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1644"
   },
   {
     "sourceId": "1645",
@@ -7456,8 +7456,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1645"
   },
   {
     "sourceId": "1646",
@@ -7479,8 +7479,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1646"
   },
   {
     "sourceId": "1647",
@@ -7502,8 +7502,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1647"
   },
   {
     "sourceId": "1648",
@@ -7525,8 +7525,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1648"
   },
   {
     "sourceId": "1649",
@@ -7548,8 +7548,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1649"
   },
   {
     "sourceId": "1650",
@@ -7571,8 +7571,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1650"
   },
   {
     "sourceId": "1651",
@@ -7594,8 +7594,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1651"
   },
   {
     "sourceId": "1652",
@@ -7617,8 +7617,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1652"
   },
   {
     "sourceId": "1653",
@@ -7640,8 +7640,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1653"
   },
   {
     "sourceId": "1654",
@@ -7663,8 +7663,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1654"
   },
   {
     "sourceId": "1655",
@@ -7686,8 +7686,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1655"
   },
   {
     "sourceId": "1656",
@@ -7709,8 +7709,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1656"
   },
   {
     "sourceId": "1657",
@@ -7732,8 +7732,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1657"
   },
   {
     "sourceId": "1658",
@@ -7755,8 +7755,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1658"
   },
   {
     "sourceId": "1659",
@@ -7778,8 +7778,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1659"
   },
   {
     "sourceId": "1660",
@@ -7801,8 +7801,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1660"
   },
   {
     "sourceId": "1661",
@@ -7824,8 +7824,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1661"
   },
   {
     "sourceId": "1662",
@@ -7847,8 +7847,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1662"
   },
   {
     "sourceId": "1663",
@@ -7870,8 +7870,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1663"
   },
   {
     "sourceId": "1664",
@@ -7893,8 +7893,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1664"
   },
   {
     "sourceId": "1665",
@@ -7916,8 +7916,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1665"
   },
   {
     "sourceId": "1666",
@@ -7939,8 +7939,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1666"
   },
   {
     "sourceId": "1667",
@@ -7962,8 +7962,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1667"
   },
   {
     "sourceId": "1668",
@@ -7985,8 +7985,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1668"
   },
   {
     "sourceId": "1669",
@@ -8008,8 +8008,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1669"
   },
   {
     "sourceId": "1670",
@@ -8031,8 +8031,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1670"
   },
   {
     "sourceId": "1671",
@@ -8054,8 +8054,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1671"
   },
   {
     "sourceId": "1672",
@@ -8077,8 +8077,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1672"
   },
   {
     "sourceId": "1673",
@@ -8100,8 +8100,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1673"
   },
   {
     "sourceId": "1674",
@@ -8123,8 +8123,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1674"
   },
   {
     "sourceId": "1675",
@@ -8146,8 +8146,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1675"
   },
   {
     "sourceId": "1676",
@@ -8169,8 +8169,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1676"
   },
   {
     "sourceId": "1677",
@@ -8192,8 +8192,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1677"
   },
   {
     "sourceId": "1678",
@@ -8215,8 +8215,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1678"
   },
   {
     "sourceId": "1679",
@@ -8238,8 +8238,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1679"
   },
   {
     "sourceId": "1680",
@@ -8261,8 +8261,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1680"
   },
   {
     "sourceId": "1681",
@@ -8284,8 +8284,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1681"
   },
   {
     "sourceId": "1682",
@@ -8307,8 +8307,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1682"
   },
   {
     "sourceId": "1683",
@@ -8350,8 +8350,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1684"
   },
   {
     "sourceId": "1685",
@@ -8373,8 +8373,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1685"
   },
   {
     "sourceId": "1686",
@@ -8396,8 +8396,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "unknown",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1686"
   },
   {
     "sourceId": "1687",
@@ -8419,8 +8419,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1687"
   },
   {
     "sourceId": "1688",
@@ -8442,8 +8442,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1688"
   },
   {
     "sourceId": "1689",
@@ -8465,8 +8465,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1689"
   },
   {
     "sourceId": "1690",
@@ -8488,8 +8488,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1690"
   },
   {
     "sourceId": "1691",
@@ -8511,8 +8511,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "accepted-explicit-physical-grid-equipment-set",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1691"
   },
   {
     "sourceId": "1693",
@@ -8554,8 +8554,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1694"
   },
   {
     "sourceId": "1695",
@@ -8577,8 +8577,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1695"
   },
   {
     "sourceId": "1696",
@@ -8600,8 +8600,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1696"
   },
   {
     "sourceId": "1697",
@@ -8623,8 +8623,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1697"
   },
   {
     "sourceId": "1698",
@@ -8646,8 +8646,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1698"
   },
   {
     "sourceId": "1699",
@@ -8669,8 +8669,8 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1699"
   },
   {
     "sourceId": "1700",
@@ -8692,7 +8692,7 @@
     "recordKind": "transmission-project",
     "classificationBasis": "source-facility-type-and-project-scope",
     "lifecycle": "planned",
-    "disposition": "pending",
-    "reason": "Accepted nonterminal row; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "westconnect-tppl:1700"
   }
 ]
