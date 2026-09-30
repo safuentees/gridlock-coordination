@@ -1,0 +1,2229 @@
+{
+  "sourceKey": "carolinas-tpc",
+  "editionId": "2025-plan-midyear-2026-08",
+  "scope": "sample",
+  "sourceSha256": "1f16698d87d414c98478e0f1199a062211c0f2873417fd7ba185c81d49d45753",
+  "counts": {
+    "sourceRows": 120,
+    "importedRecords": 6,
+    "excludedRows": 22,
+    "failedRows": 0,
+    "pendingRows": 92,
+    "locatedRecords": 0
+  },
+  "rawStatusCounts": {
+    "Conceptual": 9,
+    "Removed": 5,
+    "Underway": 46,
+    "In-Service": 17,
+    "Planned": 43
+  },
+  "recordKindCounts": {
+    "planning-context": 2,
+    "transmission-project": 4
+  },
+  "lifecycleCounts": {
+    "unknown": 2,
+    "planned": 4
+  },
+  "completeRetainedRecordKindCounts": {
+    "planning-context": 9,
+    "transmission-project": 89
+  },
+  "completeRetainedLifecycleCounts": {
+    "unknown": 9,
+    "planned": 89
+  },
+  "rows": [
+    {
+      "sourceRow": 1,
+      "sourceId": "CTPCDEC01",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Beulah 100 kV Line (Lookout-EnergyUnited Del 18), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "18"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEC01",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 2,
+      "sourceId": "CTPCDEC02",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC02; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Removed",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 3,
+      "sourceId": "CTPCDEC03",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC03; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 4,
+      "sourceId": "CTPCDEC04",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC04; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 5,
+      "sourceId": "CTPCDEC05",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC05; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 6,
+      "sourceId": "W170306",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "North Greenville 230 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "33"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W170306",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": "W180359",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W180359; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 8,
+      "sourceId": "W190390",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W190390; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 9,
+      "sourceId": "W200010",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200010; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 10,
+      "sourceId": "W200030",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200030; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 11,
+      "sourceId": "W200031",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200031; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 12,
+      "sourceId": "W200034",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200034; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 13,
+      "sourceId": "W200039",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200039; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 14,
+      "sourceId": "W200042",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200042; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 15,
+      "sourceId": "W200061",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200061; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 16,
+      "sourceId": "W200116",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200116; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": "W200120",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200120; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 18,
+      "sourceId": "W200144",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200144; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 19,
+      "sourceId": "W200146",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200146; page project row 19",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 20,
+      "sourceId": "W200148",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200148; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 21,
+      "sourceId": "W200149",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200149; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 22,
+      "sourceId": "W200150",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200150; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 23,
+      "sourceId": "W200162",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200162; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 24,
+      "sourceId": "W200168",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200168; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": "W200170",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200170; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "W200172",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200172; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 27,
+      "sourceId": "W200173",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200173; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 28,
+      "sourceId": "W200187",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200187; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 29,
+      "sourceId": "W200262",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200262; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 30,
+      "sourceId": "W200412",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200412; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 31,
+      "sourceId": "W200413",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200413; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 32,
+      "sourceId": "W200425",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200425; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 33,
+      "sourceId": "W200582",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200582; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 34,
+      "sourceId": "W200588",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200588; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 35,
+      "sourceId": "W200590",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200590; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 36,
+      "sourceId": "W200592",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200592; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 37,
+      "sourceId": "W200595",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200595; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 38,
+      "sourceId": "W200599",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200599; page project row 19",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 39,
+      "sourceId": "W210192",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210192; page project row 20",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 40,
+      "sourceId": "W210482",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Madison Tie, Upgrade, add 100/44 kV Transformer",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2034",
+        "estimatedCostMillionNominalUsd": "2.4"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W210482",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 41,
+      "sourceId": "W220053",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220053; page project row 22",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 42,
+      "sourceId": "W220209",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220209; page project row 23",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 43,
+      "sourceId": "W220367",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220367; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 44,
+      "sourceId": "W220368",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220368; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 45,
+      "sourceId": "W220474",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220474; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 46,
+      "sourceId": "W220506",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220506; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 47,
+      "sourceId": "W220507",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220507; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 48,
+      "sourceId": "W220539",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220539; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 49,
+      "sourceId": "W220543",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220543; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 50,
+      "sourceId": "W220559",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220559; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 51,
+      "sourceId": "W230087",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230087; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 52,
+      "sourceId": "W230093",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230093; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Removed",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 53,
+      "sourceId": "W230145",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230145; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 54,
+      "sourceId": "W230158",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230158; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 55,
+      "sourceId": "W230245",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230245; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 56,
+      "sourceId": "W230276",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230276; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 57,
+      "sourceId": "W230358",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230358; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 58,
+      "sourceId": "W230368",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230368; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 59,
+      "sourceId": "W230384",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230384; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 60,
+      "sourceId": "W230387",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230387; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Removed",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 61,
+      "sourceId": "W230389",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230389; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 62,
+      "sourceId": "W230402",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230402; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 63,
+      "sourceId": "W230456",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230456; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 64,
+      "sourceId": "W240008",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240008; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Removed",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 65,
+      "sourceId": "W240278",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240278; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Removed",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 66,
+      "sourceId": "W250072",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250072; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 67,
+      "sourceId": "W250207",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250207; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 68,
+      "sourceId": "W250212",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250212; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 69,
+      "sourceId": "W250214",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250214; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 70,
+      "sourceId": "W250223",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250223; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 71,
+      "sourceId": "W250281",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250281; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 72,
+      "sourceId": "W250285",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250285; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 73,
+      "sourceId": "W250312",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250312; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 74,
+      "sourceId": "E220378",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID E220378; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 75,
+      "sourceId": "CTPCDEP03",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP03; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 76,
+      "sourceId": "CTPCDEP04",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP04; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 77,
+      "sourceId": "E190052",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID E190052; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 78,
+      "sourceId": "E190092",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E190092; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 79,
+      "sourceId": "E200161",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Castle Hayne–Folkstone115 kV Line, Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/30/2026",
+        "estimatedCostMillionNominalUsd": "73"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E200161",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 80,
+      "sourceId": "E210073",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210073; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 81,
+      "sourceId": "E210078",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210078; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 82,
+      "sourceId": "E210145",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210145; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 83,
+      "sourceId": "E210150",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210150; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 84,
+      "sourceId": "E220112",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220112; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 85,
+      "sourceId": "E220408",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220408; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 86,
+      "sourceId": "E230041",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230041; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 87,
+      "sourceId": "E230059",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230059; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 88,
+      "sourceId": "E230061",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230061; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 89,
+      "sourceId": "E240135",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240135; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 90,
+      "sourceId": "E240188",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240188; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 91,
+      "sourceId": "E240198",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240198; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 92,
+      "sourceId": "E240238",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240238; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 93,
+      "sourceId": "E240276",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240276; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 94,
+      "sourceId": "E240289",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240289; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 95,
+      "sourceId": "E240296",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240296; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 96,
+      "sourceId": "E240331",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240331; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 97,
+      "sourceId": "E250027",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E250027; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 98,
+      "sourceId": "F170824H",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID F170824H; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 99,
+      "sourceId": "W200169",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W200169; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 100,
+      "sourceId": "W220122",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220122; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 101,
+      "sourceId": "W220124",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220124; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 102,
+      "sourceId": "W230029",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230029; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 103,
+      "sourceId": "W230066",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230066; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 104,
+      "sourceId": "W230323",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230323; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 105,
+      "sourceId": "W240161",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W240161; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 106,
+      "sourceId": "E220082",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220082; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 107,
+      "sourceId": "E220083",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220083; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 108,
+      "sourceId": "E220086",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220086; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 109,
+      "sourceId": "E220087",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220087; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 110,
+      "sourceId": "E220088",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220088; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 111,
+      "sourceId": "E220093",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220093; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "In-Service",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 112,
+      "sourceId": "E220219",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220219; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 113,
+      "sourceId": "E230122",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230122; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 114,
+      "sourceId": "E230124",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230124; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Underway",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 115,
+      "sourceId": "E240038",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lee - Milburnie 230 kV Line; Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2031",
+        "estimatedCostMillionNominalUsd": "157"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240038",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 116,
+      "sourceId": "W250215",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID W250215; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 117,
+      "sourceId": "MVSTDEC01",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC01; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Planned",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 118,
+      "sourceId": "MVSTDEC02",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC02; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEC"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 119,
+      "sourceId": "MVSTDEP01",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEP01; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "status": "Conceptual",
+        "transmissionOwner": "DEP"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "pending",
+      "reason": "Accepted retained row awaiting normalization after the connection sample."
+    },
+    {
+      "sourceRow": 120,
+      "sourceId": "MVSTDEC03",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC03; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wateree - Open Wateree B&W",
+        "issueResolved": "Enable local generation and increase energy transfer from DEP to DEC",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC/DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:MVSTDEC03",
+      "reason": "Conceptual option retained only as planning context."
+    }
+  ]
+}

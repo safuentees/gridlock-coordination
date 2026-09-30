@@ -1,0 +1,10 @@
+{
+  "sourceKey": "carolinas-tpc",
+  "editionId": "2025-plan-midyear-2026-08",
+  "scope": "sample",
+  "records": 6,
+  "compactUtf8Bytes": 37288,
+  "formattedDownloadUtf8Bytes": 46882,
+  "measurement": "Source-only Dataset2 UTF-8 JSON including final newline; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "formatted"
+}

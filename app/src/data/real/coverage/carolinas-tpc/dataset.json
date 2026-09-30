@@ -1,0 +1,872 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "CTPC 2025–2035 plan — August 2026 update — sample",
+  "generatedAt": "2026-09-30T11:34:49+00:00",
+  "projects": [
+    {
+      "id": "carolinas-tpc:CTPCDEC01",
+      "utilityId": "carolinas-tpc",
+      "sourceId": "CTPCDEC01",
+      "sponsor": "DEC",
+      "name": "Beulah 100 kV Line (Lookout-EnergyUnited Del 18), Upgrade",
+      "description": "Beulah 100 kV Line (Lookout-EnergyUnited Del 18), Upgrade",
+      "status": "Conceptual",
+      "voltageKv": [
+        100
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Conceptual proposal; in-service target TBD"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed pp.13,16,17, footnotes 1–2: status and estimated nominal cost meanings"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        }
+      ],
+      "notes": [
+        "Source category: Reliability Projects. Issue resolved: Mitigate contingency loading",
+        "Raw source status: Conceptual. Status is as of the August 2026 source edition, not the retrieval date.",
+        "Raw estimated in-service target: TBD. The reported target does not establish actual completion.",
+        "Source estimated cost: 18 million nominal USD. These rounded estimated expenditures are not a coordination benefit; a dash means unknown.",
+        "Source cost includes direct costs, loadings and overheads; excludes AFUDC. Source p.1 gives rounding rules.",
+        "Source Transmission Owner token: DEC. Singular owner identities are source-scoped; no global parent or cross-source equivalence is established.",
+        "Explicitly not planned at this time. Retain as contextual future option, not approved/planned construction.",
+        "Named facilities and endpoints are description text only. No project coordinates, construction start, construction window or row-update day is supplied."
+      ],
+      "inventory": {
+        "sourceKey": "carolinas-tpc",
+        "editionId": "2025-plan-midyear-2026-08",
+        "editionLabel": "CTPC 2025–2035 plan — August 2026 update",
+        "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "owner": {
+          "id": "carolinas-tpc-dec",
+          "name": "Duke Energy Carolinas, LLC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026-08-13-midyear.pdf",
+              "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+              "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Projects",
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date (raw: TBD)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Conceptual proposal; in-service target TBD"
+            },
+            "evidence": [
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-04-16-final-plan.pdf",
+                "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+                "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinate/CRS/accuracy field is supplied. Names, operating areas and map images are not interpreted as project geometry."
+        ]
+      }
+    },
+    {
+      "id": "carolinas-tpc:W170306",
+      "utilityId": "carolinas-tpc",
+      "sourceId": "W170306",
+      "sponsor": "DEC",
+      "name": "North Greenville 230 kV Tie Station, Upgrade",
+      "description": "North Greenville 230 kV Tie Station, Upgrade",
+      "status": "Underway",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Source peak-season target 6/1/2029; calendar year only"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed pp.13,16,17, footnotes 1–2: status and estimated nominal cost meanings"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        }
+      ],
+      "notes": [
+        "Source category: Reliability Projects. Issue resolved: Mitigate contingency loading",
+        "Raw source status: Underway. Status is as of the August 2026 source edition, not the retrieval date.",
+        "Raw estimated in-service target: 6/1/2029. The reported target does not establish actual completion.",
+        "Source estimated cost: 33 million nominal USD. These rounded estimated expenditures are not a coordination benefit; a dash means unknown.",
+        "Source cost includes direct costs, loadings and overheads; excludes AFUDC. Source p.1 gives rounding rules.",
+        "Source Transmission Owner token: DEC. Singular owner identities are source-scoped; no global parent or cross-source equivalence is established.",
+        "Underway includes budget-only work; it is not evidence of actual construction.",
+        "June 1 is a peak-season placeholder; no exact construction or energization day is established.",
+        "Named facilities and endpoints are description text only. No project coordinates, construction start, construction window or row-update day is supplied."
+      ],
+      "inventory": {
+        "sourceKey": "carolinas-tpc",
+        "editionId": "2025-plan-midyear-2026-08",
+        "editionLabel": "CTPC 2025–2035 plan — August 2026 update",
+        "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "owner": {
+          "id": "carolinas-tpc-dec",
+          "name": "Duke Energy Carolinas, LLC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026-08-13-midyear.pdf",
+              "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+              "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Projects",
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date (raw: 6/1/2029)",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Source peak-season target 6/1/2029; calendar year only"
+            },
+            "evidence": [
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-04-16-final-plan.pdf",
+                "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+                "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinate/CRS/accuracy field is supplied. Names, operating areas and map images are not interpreted as project geometry."
+        ]
+      }
+    },
+    {
+      "id": "carolinas-tpc:W210482",
+      "utilityId": "carolinas-tpc",
+      "sourceId": "W210482",
+      "sponsor": "DEC",
+      "name": "Madison Tie, Upgrade, add 100/44 kV Transformer",
+      "description": "Madison Tie, Upgrade, add 100/44 kV Transformer",
+      "status": "Planned",
+      "voltageKv": [
+        100,
+        44
+      ],
+      "date": {
+        "value": "2034",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Source peak-season target 6/1/2034; calendar year only"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed pp.13,16,17, footnotes 1–2: status and estimated nominal cost meanings"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed p.3, W210482 duplicate-removal change and p.9 surviving row"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf",
+          "locator": "Appendix C, PDF pp.64,67 / printed pp.62,65: repeated W210482 before duplicate removal"
+        }
+      ],
+      "notes": [
+        "Source category: Reliability Projects. Issue resolved: Mitigate contingency loading",
+        "Raw source status: Planned. Status is as of the August 2026 source edition, not the retrieval date.",
+        "Raw estimated in-service target: 6/1/2034. The reported target does not establish actual completion.",
+        "Source estimated cost: 2.4 million nominal USD. These rounded estimated expenditures are not a coordination benefit; a dash means unknown.",
+        "Source cost includes direct costs, loadings and overheads; excludes AFUDC. Source p.1 gives rounding rules.",
+        "Source Transmission Owner token: DEC. Singular owner identities are source-scoped; no global parent or cross-source equivalence is established.",
+        "Update p.3 says duplicate project removed; p.9 retains this one native ID. The original final-plan Appendix C repeats W210482 on PDF pp.64 and67 (printed62 and65). Count current retained row once; do not cancel it from the change summary.",
+        "Named facilities and endpoints are description text only. No project coordinates, construction start, construction window or row-update day is supplied."
+      ],
+      "inventory": {
+        "sourceKey": "carolinas-tpc",
+        "editionId": "2025-plan-midyear-2026-08",
+        "editionLabel": "CTPC 2025–2035 plan — August 2026 update",
+        "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "owner": {
+          "id": "carolinas-tpc-dec",
+          "name": "Duke Energy Carolinas, LLC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026-08-13-midyear.pdf",
+              "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+              "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Projects",
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date (raw: 6/1/2034)",
+            "date": {
+              "value": "2034",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Source peak-season target 6/1/2034; calendar year only"
+            },
+            "evidence": [
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-04-16-final-plan.pdf",
+                "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+                "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinate/CRS/accuracy field is supplied. Names, operating areas and map images are not interpreted as project geometry."
+        ]
+      }
+    },
+    {
+      "id": "carolinas-tpc:E200161",
+      "utilityId": "carolinas-tpc",
+      "sourceId": "E200161",
+      "sponsor": "DEP",
+      "name": "Castle Hayne–Folkstone115 kV Line, Rebuild",
+      "description": "Castle Hayne–Folkstone115 kV Line, Rebuild",
+      "status": "Underway",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": "2026-06-30",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Reported estimated in-service date; source status remains Underway"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed pp.13,16,17, footnotes 1–2: status and estimated nominal cost meanings"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        }
+      ],
+      "notes": [
+        "Source category: Reliability Projects. Issue resolved: Mitigate contingency loading",
+        "Raw source status: Underway. Status is as of the August 2026 source edition, not the retrieval date.",
+        "Raw estimated in-service target: 6/30/2026. The reported target does not establish actual completion.",
+        "Source estimated cost: 73 million nominal USD. These rounded estimated expenditures are not a coordination benefit; a dash means unknown.",
+        "Source cost includes direct costs, loadings and overheads; excludes AFUDC. Source p.1 gives rounding rules.",
+        "Source Transmission Owner token: DEP. Singular owner identities are source-scoped; no global parent or cross-source equivalence is established.",
+        "Non-placeholder day is retained as a reported estimate, not actual service. Its date precedes the edition; do not infer completion or construction.",
+        "Named facilities and endpoints are description text only. No project coordinates, construction start, construction window or row-update day is supplied."
+      ],
+      "inventory": {
+        "sourceKey": "carolinas-tpc",
+        "editionId": "2025-plan-midyear-2026-08",
+        "editionLabel": "CTPC 2025–2035 plan — August 2026 update",
+        "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "owner": {
+          "id": "carolinas-tpc-dep",
+          "name": "Duke Energy Progress, LLC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026-08-13-midyear.pdf",
+              "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+              "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Reliability Projects",
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date (raw: 6/30/2026)",
+            "date": {
+              "value": "2026-06-30",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Reported estimated in-service date; source status remains Underway"
+            },
+            "evidence": [
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-04-16-final-plan.pdf",
+                "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+                "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinate/CRS/accuracy field is supplied. Names, operating areas and map images are not interpreted as project geometry."
+        ]
+      }
+    },
+    {
+      "id": "carolinas-tpc:E240038",
+      "utilityId": "carolinas-tpc",
+      "sourceId": "E240038",
+      "sponsor": "DEP",
+      "name": "Lee - Milburnie 230 kV Line; Rebuild",
+      "description": "Lee - Milburnie 230 kV Line; Rebuild",
+      "status": "Planned",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Source winter peak-season target 12/1/2031; displayed calendar year only"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed pp.13,16,17, footnotes 1–2: status and estimated nominal cost meanings"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        }
+      ],
+      "notes": [
+        "Source category: Public Policy Projects. Issue resolved: This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "Raw source status: Planned. Status is as of the August 2026 source edition, not the retrieval date.",
+        "Raw estimated in-service target: 12/1/2031. The reported target does not establish actual completion.",
+        "Source estimated cost: 157 million nominal USD. These rounded estimated expenditures are not a coordination benefit; a dash means unknown.",
+        "Source cost includes direct costs, loadings and overheads; excludes AFUDC. Source p.1 gives rounding rules.",
+        "Source Transmission Owner token: DEP. Singular owner identities are source-scoped; no global parent or cross-source equivalence is established.",
+        "Preserve raw winter-season reference. Winter spans calendar years; normalized 2031 is the displayed target year, not a claim that all winter activity finishes in 2031. Do not silently shift to 2032 or manufacture a window.",
+        "Public policy is the project driver; it does not make the work a generation project.",
+        "Named facilities and endpoints are description text only. No project coordinates, construction start, construction window or row-update day is supplied."
+      ],
+      "inventory": {
+        "sourceKey": "carolinas-tpc",
+        "editionId": "2025-plan-midyear-2026-08",
+        "editionLabel": "CTPC 2025–2035 plan — August 2026 update",
+        "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "owner": {
+          "id": "carolinas-tpc-dep",
+          "name": "Duke Energy Progress, LLC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "2026-08-13-midyear.pdf",
+              "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+              "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            },
+            {
+              "file": "2026-04-16-final-plan.pdf",
+              "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+              "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+            }
+          ]
+        },
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Public Policy Projects",
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date (raw: 12/1/2031)",
+            "date": {
+              "value": "2031",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Source winter peak-season target 12/1/2031; displayed calendar year only"
+            },
+            "evidence": [
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-04-16-final-plan.pdf",
+                "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+                "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinate/CRS/accuracy field is supplied. Names, operating areas and map images are not interpreted as project geometry."
+        ]
+      }
+    },
+    {
+      "id": "carolinas-tpc:MVSTDEC03",
+      "utilityId": "carolinas-tpc",
+      "sourceId": "MVSTDEC03",
+      "sponsor": "DEC/DEP",
+      "name": "Wateree - Open Wateree B&W",
+      "description": "Wateree - Open Wateree B&W",
+      "status": "Conceptual",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Conceptual proposal; in-service target TBD"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC03; page project row 5",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed pp.13,16,17, footnotes 1–2: status and estimated nominal cost meanings"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+        },
+        {
+          "file": "2026-04-16-final-plan.pdf",
+          "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+          "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+        },
+        {
+          "file": "2026-08-13-midyear.pdf",
+          "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+          "locator": "PDF/printed p.17, note below MVST table: conceptual options unapproved and excluded from update approval totals"
+        }
+      ],
+      "notes": [
+        "Source category: Multi-Value Strategic Transmission Projects. Issue resolved: Enable local generation and increase energy transfer from DEP to DEC",
+        "Raw source status: Conceptual. Status is as of the August 2026 source edition, not the retrieval date.",
+        "Raw estimated in-service target: TBD. The reported target does not establish actual completion.",
+        "Source estimated cost: - million nominal USD. These rounded estimated expenditures are not a coordination benefit; a dash means unknown.",
+        "Source cost includes direct costs, loadings and overheads; excludes AFUDC. Source p.1 gives rounding rules.",
+        "Source Transmission Owner token: DEC/DEP. Singular owner identities are source-scoped; no global parent or cross-source equivalence is established.",
+        "Table p.17 names this proposal but expressly excludes unapproved conceptual MVST work from update cost/schedule approval. Keep it context-only.",
+        "Composite owner token is preserved as sponsor context, with no inferred single/global owner or split record.",
+        "A dash is an unknown estimate, not zero.",
+        "Named facilities and endpoints are description text only. No project coordinates, construction start, construction window or row-update day is supplied."
+      ],
+      "inventory": {
+        "sourceKey": "carolinas-tpc",
+        "editionId": "2025-plan-midyear-2026-08",
+        "editionLabel": "CTPC 2025–2035 plan — August 2026 update",
+        "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "owner": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Multi-Value Strategic Transmission Projects",
+        "milestones": [
+          {
+            "field": "Estimated In-Service Date (raw: TBD)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Conceptual proposal; in-service target TBD"
+            },
+            "evidence": [
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC03; page project row 5",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-08-13-midyear.pdf",
+                "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+                "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+              },
+              {
+                "file": "2026-04-16-final-plan.pdf",
+                "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+                "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+              }
+            ]
+          }
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "No native coordinate/CRS/accuracy field is supplied. Names, operating areas and map images are not interpreted as project geometry."
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "carolinas-tpc",
+      "editionId": "2025-plan-midyear-2026-08",
+      "label": "CTPC 2025–2035 plan — August 2026 update",
+      "reportingGroupId": "carolinas-tpc",
+      "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+      "publisher": "Carolinas Transmission Planning Collaborative",
+      "processAuthority": "CTPC collaborative transmission planning process",
+      "publishedOn": "2026-08-14",
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+        "locator": "PDF/printed pp.8–17, all Project ID rows in Reliability, Public Policy and Multi-Value Strategic Transmission project tables"
+      },
+      "sha256": "1f16698d87d414c98478e0f1199a062211c0f2873417fd7ba185c81d49d45753",
+      "geographicScope": "DEC/DEP participant areas in North Carolina and South Carolina; no per-row jurisdiction inferred.",
+      "inventoryScope": "All120 Project ID rows in August2026 update pp.8–17:98 reliability,17 public policy,5 MVST. Retain89 transmission and9 conceptual planning-context observations; exclude17 In-Service and5 Removed rows.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 120,
+        "importedRecords": 6,
+        "excludedRows": 22,
+        "failedRows": 0,
+        "pendingRows": 92,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes.",
+          "count": 5
+        },
+        {
+          "reason": "Source status In-Service: operational, outside remaining planned scope.",
+          "count": 17
+        }
+      ],
+      "limitations": [
+        "The complete declared update scope is not all North/South Carolina projects. No extra monetary threshold is applied; prior plan tables, change summaries, models and alternative lists are not additional rows.",
+        "Publication day is the official index posting date August14,2026; document status has August2026 precision. Filename August13 is not a row update date.",
+        "Underway spans budget provision through some construction and cannot establish physical construction. It and Planned normalize to planned; Conceptual is planning-context/unknown, never an approved project.",
+        "June1/December1 represent peak-season service targets, not precise days. Normalized dates retain only the displayed calendar year; raw targets remain visible. Winter crosses years and no interval is inferred.",
+        "Non-placeholder E200161 June30,2026 is a reported estimated day, despite the still-Underway status; no completion is inferred from elapsed forecasts.",
+        "DEC/DEP singular row tokens identify source-scoped responsible equipment owners. Composite DEC/DEP remains null owner; no global owner registry or cross-source corporate distinction is established.",
+        "All locations, native geometry, construction windows and row-update days remain unknown. Voltage derives only from explicitly named kV scope; missing values stay empty.",
+        "Nine Conceptual entries remain contextual; three MVST concepts are explicitly unapproved and excluded from approved update cost/schedule totals.",
+        "W210482 survives once after duplicate removal; removed/combined/reassigned IDs are not additional active rows. Cross-source identity remains unresolved.",
+        "Source costs are rounded estimated nominal expenditures, not benefits. Public availability does not establish blanket redistribution permission."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 22,
+    "failed": 0,
+    "notes": [
+      "120 source rows = 6 imported + 22 excluded + 92 pending.",
+      "Accepted public factual catalog normalized against all checksum-pinned originals; source scope and unknown geography preserved."
+    ]
+  }
+}
