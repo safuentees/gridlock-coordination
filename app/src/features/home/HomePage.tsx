@@ -23,7 +23,7 @@ export function HomePage({ dataset, onNavigate, onDemo }: HomePageProps) {
         <p className="max-w-3xl text-sm text-muted-foreground">Gridlock brings separate utility plans together for transmission planners and coordination analysts. Prioritize nearby projects, inspect the evidence, and prepare questions for a coordination review.</p>
         <div className="flex flex-wrap gap-2">
           <Button onClick={() => onNavigate("explore")}><MapIcon aria-hidden="true" data-icon="inline-start" />Open workspace</Button>
-          <Button variant="outline" onClick={onDemo}>Try demo</Button>
+          {dataset.mode !== "demo" && <Button variant="outline" onClick={onDemo}>Try demo</Button>}
         </div>
       </header>
 
