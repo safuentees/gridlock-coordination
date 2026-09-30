@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "gaps": [
+    {
+      "sourceKey": "nyiso-gold-book",
+      "label": "New York proposed facilities",
+      "assessedOn": "2026-09-30",
+      "summary": "The complete 2026 NYISO public report is unavailable from the assessed links. Imported National Grid plans cover only a separate local scope.",
+      "needed": "An accessible complete public report or its full proposed-facilities section with dates and table notes.",
+      "url": "https://www.nyiso.com/gold-book-resources"
+    },
+    {
+      "sourceKey": "sertp-plan",
+      "label": "Southeastern regional plan",
+      "assessedOn": "2026-09-30",
+      "summary": "The linked report has conflicting public and restricted markings. It is not included. Other imported Southeast sources remain partial.",
+      "needed": "An authoritative clarification or a corrected public report.",
+      "url": "https://www.southeasternrtp.com/reference_library.cshtml"
+    },
+    {
+      "sourceKey": "mp-cuc-irp",
+      "label": "Northern Mariana Islands transmission scope",
+      "assessedOn": "2026-09-30",
+      "summary": "Imported CUC planning and system context does not establish planned transmission-project coverage.",
+      "needed": "A public project inventory that identifies transmission work and its asset role.",
+      "url": "https://www.cucgov.org/"
+    },
+    {
+      "sourceKey": "our-grid-future",
+      "label": "National planned-project compilation",
+      "assessedOn": "2026-09-30",
+      "summary": "Our Grid Future’s planned-project downloads require contact-information submission. The advertised dataset has not been assessed or imported.",
+      "needed": "An openly accessible or legitimately supplied workbook and GIS package, with methodology and applicable reuse terms.",
+      "url": "https://www.ourgridfuture.org/"
+    }
+  ]
+}

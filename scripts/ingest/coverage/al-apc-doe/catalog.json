@@ -1,0 +1,993 @@
+{
+  "sourceKey": "al-apc-doe",
+  "editionId": "review-index-snapshot-2026-09-30",
+  "label": "Alabama Power DOE public environmental-review projects — September 2026 index snapshot",
+  "reportingGroupName": "Alabama Power DOE environmental-review projects",
+  "publisher": "U.S. Department of Energy, Office of Energy Dominance Financing",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "contractCommit": "e20e3df81eec946aae2b11e3e2af7ad48bdfdd6e",
+  "sampleSourceRows": [
+    1,
+    2,
+    7
+  ],
+  "artifacts": [
+    {
+      "file": "index.html",
+      "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+      "bytes": 119655,
+      "sha256": "216fbddd6529809cf885181467788f3e60f2eed29256f70c4ff0e7adba2dfbf8"
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-09/260925_APC_57%20ThurDam%20Notasulga_EnvReview_Completion_ts.pdf",
+      "title": "APC Thurlow Dam-Notasulga 115kV Transmission Line Rebuild",
+      "sourceRow": 1,
+      "file": "01-thurlow-dam-notasulga.pdf",
+      "bytes": 358687,
+      "sha256": "89b8631c3736d81d53c5aaf37c0481c762a276f20b46670bb363879afde7e320",
+      "pages": 5
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-08/APC%20Lock%205%20Substation.pdf",
+      "title": "APC Lock 5 Substation",
+      "sourceRow": 2,
+      "file": "02-lock-5.pdf",
+      "bytes": 350065,
+      "sha256": "4ec449598c4b252e11723aa189eed04125205a528b71fd909a8540ee35c5cb80",
+      "pages": 4
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-07/20260728%20APC%20Barry%205%20CTG%20Env%20Review%20Completion.pdf",
+      "title": "APC Plant Barry Unit 5 Coal to Gas Project",
+      "sourceRow": 3,
+      "file": "03-plant-barry.pdf",
+      "bytes": 334727,
+      "sha256": "c28cdb046699ea1d4fa62e4eb847b7aff76cdd165a790c996b62ec2c37a51c6c",
+      "pages": 3
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-07/20260710_EnvReview_Completion_DSM.pdf",
+      "title": "APC Demand Side Management Programs",
+      "sourceRow": 4,
+      "file": "04-demand-side.pdf",
+      "bytes": 328983,
+      "sha256": "badea893812075101cca601b2ecc676cba4509c45fbc70e3b5cf768e5ba2f9c9",
+      "pages": 2
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-06/20260602_APC_BayMinetteSilverhill_Env_Completion.pdf",
+      "title": "APC Bay Minette-Silverhill Network Underground Fiber Optics",
+      "sourceRow": 5,
+      "file": "05-bay-minette-silverhill-fiber.pdf",
+      "bytes": 328526,
+      "sha256": "57d9a25cec09b07cb82759c0b2468618b75da5670ae4096ad26b40f758a41910",
+      "pages": 4
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-06/20260602_APC_FlomatonPerdido_Env_Completion.pdf",
+      "title": "APC Flomaton-Perdido Underground Fiber Optics",
+      "sourceRow": 6,
+      "file": "06-flomaton-perdido-fiber.pdf",
+      "bytes": 324710,
+      "sha256": "5621b9f28137dbed2375ab9392dd6483841d56e4e7d64fa7542c492f262f9d85",
+      "pages": 4
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-05/20260520_APC_Bass%20Sunny_EnvCompletion.pdf",
+      "title": "APC #31 Bassett Creek – Sunny South 115kV – Completion Letter",
+      "sourceRow": 7,
+      "file": "07-bassett-creek-sunny-south.pdf",
+      "bytes": 363998,
+      "sha256": "74c2d68cac344308fad8583116957823cfef2df13993676237a3c80887be57dc",
+      "pages": 4
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-05/APC%20Leeds%20DS%20Feeder%20Distribution%20Tie%20Line%20Improvements.pdf",
+      "title": "APC Leeds DS Feeder Distribution Tie Line Improvements",
+      "sourceRow": 8,
+      "file": "08-leeds-distribution.pdf",
+      "bytes": 344539,
+      "sha256": "7079cd0488db9844af22cb9d9b6d4bd5f6fa4d6734115ea8df5e2d69353ffc38",
+      "pages": 3
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-05/APC%20Roanoke%20Distribution%20Tie-in%20Lines%20Improvement%20Project_0.pdf",
+      "title": "APC Roanoke Distribution Tie-in Lines Improvement Project",
+      "sourceRow": 9,
+      "file": "09-roanoke-distribution.pdf",
+      "bytes": 346153,
+      "sha256": "08549826a83801ee56873e34e5837199df9f9a35489924bbd5a8c697b08e3c4a",
+      "pages": 3
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-03/%2319%20Pinckard-Fort%20Rucker%20to%20Enterprise%20115kV%20%E2%80%93%20Completion%20Letter.pdf",
+      "title": "APC #19 Pinckard-Fort Rucker to Enterprise 115kV – Completion Letter",
+      "sourceRow": 10,
+      "file": "10-pinckard-fort-rucker-enterprise.pdf",
+      "bytes": 313093,
+      "sha256": "79d5f799915ed457fa38ee772ff12d2e9da6b5bb82025174e4b954c263b27f47",
+      "pages": 3
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-03/APC%20Farley%20SS%20Env%20Review%20Completion%2003242026.pdf",
+      "title": "APC #28 Farley Switching Station - Completion Letter",
+      "sourceRow": 11,
+      "file": "11-farley-switching.pdf",
+      "bytes": 322513,
+      "sha256": "4d12f64a01b1fa5b7898f5cb8037c1916052d9f1ebb8d654e5edaef474c07516",
+      "pages": 3
+    },
+    {
+      "url": "https://www.energy.gov/sites/default/files/2026-08/20260731_APC_27_So_Bess_Sub_EnvCompletion_Letter.pdf",
+      "title": "APC South Bessemer Substation",
+      "sourceRow": 12,
+      "file": "12-south-bessemer.pdf",
+      "bytes": 511367,
+      "sha256": "b713fb3b33d8269ca331de15a897a7636aba3832713e9d5744c3f05ef04012c9",
+      "pages": 3
+    }
+  ],
+  "rows": [
+    {
+      "sourceRow": 1,
+      "indexTitle": "APC Thurlow Dam-Notasulga 115kV Transmission Line Rebuild",
+      "indexPostedOn": "2026-09-25",
+      "letterDate": "2026-09-25",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 1: APC Thurlow Dam-Notasulga 115kV Transmission Line Rebuild"
+      },
+      "source": {
+        "file": "01-thurlow-dam-notasulga.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-09/260925_APC_57%20ThurDam%20Notasulga_EnvReview_Completion_ts.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "retain-transmission-project",
+      "sourceId": "57",
+      "identityBasis": "native-id",
+      "rawNativeReference": "#57",
+      "lifecycle": "planned",
+      "normalized": {
+        "sourceRow": 1,
+        "sourceId": "57",
+        "proposedId": "al-apc-doe:57",
+        "identityBasis": "native-id",
+        "name": "Thurlow Dam–Notasulga 115 kV Transmission Line Rebuild",
+        "description": "Rebuild approximately 13 miles of the existing 115 kV line within its right of way, shifting its centerline and replacing structures.",
+        "rawFacts": {
+          "nativeReference": "#57 (letter subject)",
+          "work": "approximately 13 miles of 115 kV line; 92 replacement structures and 5 intermediate structures",
+          "constructionStartForecast": "October 2026",
+          "commercialOperationForecast": "June 2028"
+        },
+        "source": {
+          "file": "01-thurlow-dam-notasulga.pdf",
+          "url": "https://www.energy.gov/sites/default/files/2026-09/260925_APC_57%20ThurDam%20Notasulga_EnvReview_Completion_ts.pdf",
+          "locator": "PDF pp.1–2, project scope and construction/commercial-operation forecasts; pp.4–5 Conclusion"
+        },
+        "indexSource": {
+          "file": "index.html",
+          "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+          "locator": "Documents Available for Download, entry 1: APC Thurlow Dam-Notasulga 115kV Transmission Line Rebuild"
+        },
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-25",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Elmore, Tallapoosa, and Macon Counties, Alabama",
+        "sponsor": "Alabama Power Company (project proponent/applicant)",
+        "owner": null,
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2028-06",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Projected commercial operation in June 2028; forecast"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "milestones": [
+          {
+            "field": "Environmental-review completion letter",
+            "date": {
+              "value": "2026-09-25",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Environmental-review completion; not construction, energization or a financing-close date"
+            },
+            "evidence": [
+              {
+                "file": "01-thurlow-dam-notasulga.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-09/260925_APC_57%20ThurDam%20Notasulga_EnvReview_Completion_ts.pdf",
+                "locator": "PDF p.1 dated header and final Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "DOE index posting date",
+            "date": {
+              "value": "2026-09-25",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Index date, separate from document date and project schedule"
+            },
+            "evidence": [
+              {
+                "file": "index.html",
+                "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+                "locator": "Documents Available for Download, entry 1: APC Thurlow Dam-Notasulga 115kV Transmission Line Rebuild"
+              }
+            ]
+          },
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026-10",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Scheduled construction start in October 2026; forecast, not observed progress"
+            },
+            "evidence": [
+              {
+                "file": "01-thurlow-dam-notasulga.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-09/260925_APC_57%20ThurDam%20Notasulga_EnvReview_Completion_ts.pdf",
+                "locator": "PDF pp.1–2, project scope and construction/commercial-operation forecasts; pp.4–5 Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "Forecast commercial operation",
+            "date": {
+              "value": "2028-06",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected commercial operation in June 2028; forecast"
+            },
+            "evidence": [
+              {
+                "file": "01-thurlow-dam-notasulga.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-09/260925_APC_57%20ThurDam%20Notasulga_EnvReview_Completion_ts.pdf",
+                "locator": "PDF pp.1–2, project scope and construction/commercial-operation forecasts; pp.4–5 Conclusion"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "Review completion applies to proposed federal financial support, not physical completion or project-specific financing approval.",
+          "Route directions, acreages and right-of-way widths describe scope; they do not establish numeric geometry or a shared-resource estimate."
+        ]
+      }
+    },
+    {
+      "sourceRow": 2,
+      "indexTitle": "APC Lock 5 Substation",
+      "indexPostedOn": "2026-08-28",
+      "letterDate": "2026-08-28",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 2: APC Lock 5 Substation"
+      },
+      "source": {
+        "file": "02-lock-5.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-08/APC%20Lock%205%20Substation.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "retain-transmission-project",
+      "sourceId": "review:lock-5-transmission-substation",
+      "identityBasis": "source-locator",
+      "rawNativeReference": null,
+      "lifecycle": "planned",
+      "normalized": {
+        "sourceRow": 2,
+        "sourceId": "review:lock-5-transmission-substation",
+        "proposedId": "al-apc-doe:review:lock-5-transmission-substation",
+        "identityBasis": "source-locator",
+        "name": "Lock 5 Transmission Substation",
+        "description": "Construct a new transmission substation and gravel access road on a site with no existing facilities, with land reserved for future terminal additions.",
+        "rawFacts": {
+          "nativeReference": null,
+          "work": "new 1,055-foot by 1,740-foot transmission substation plus approximately quarter-mile access road",
+          "futureTerminalCapacity": "space for six additional 500 kV and two additional 230 kV terminals",
+          "constructionStartForecast": null,
+          "completionForecast": null
+        },
+        "source": {
+          "file": "02-lock-5.pdf",
+          "url": "https://www.energy.gov/sites/default/files/2026-08/APC%20Lock%205%20Substation.pdf",
+          "locator": "PDF pp.1–2, new transmission substation and future terminal space; p.4 Conclusion"
+        },
+        "indexSource": {
+          "file": "index.html",
+          "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+          "locator": "Documents Available for Download, entry 2: APC Lock 5 Substation"
+        },
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08-28",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Hale County, Alabama",
+        "sponsor": "Alabama Power Company (project proponent/applicant)",
+        "owner": null,
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No project completion or service target supplied"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "milestones": [
+          {
+            "field": "Environmental-review completion letter",
+            "date": {
+              "value": "2026-08-28",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Environmental-review completion; not construction, energization or a financing-close date"
+            },
+            "evidence": [
+              {
+                "file": "02-lock-5.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-08/APC%20Lock%205%20Substation.pdf",
+                "locator": "PDF p.1 dated header and final Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "DOE index posting date",
+            "date": {
+              "value": "2026-08-28",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Index date, separate from document date and project schedule"
+            },
+            "evidence": [
+              {
+                "file": "index.html",
+                "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+                "locator": "Documents Available for Download, entry 2: APC Lock 5 Substation"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "Lock 5 is the facility name; the numeral is not a supplied project ID.",
+          "The 500/230 kV values expressly describe future terminal accommodation. Initial installed voltage is not established, so normalized voltage stays empty.",
+          "Site dimensions and road intersection descriptions do not identify a verified substation center."
+        ]
+      }
+    },
+    {
+      "sourceRow": 3,
+      "indexTitle": "APC Plant Barry Unit 5 Coal to Gas Project",
+      "indexPostedOn": "2026-07-28",
+      "letterDate": "2026-07-28",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 3: APC Plant Barry Unit 5 Coal to Gas Project"
+      },
+      "source": {
+        "file": "03-plant-barry.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-07/20260728%20APC%20Barry%205%20CTG%20Env%20Review%20Completion.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "exclude-generation",
+      "reason": "Generation conversion inside Plant Barry Unit 5; no new transmission corridor. Ancillary substation integration does not establish a separate transmission project."
+    },
+    {
+      "sourceRow": 4,
+      "indexTitle": "APC Demand Side Management Programs",
+      "indexPostedOn": "2026-07-10",
+      "letterDate": "2026-07-10",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 4: APC Demand Side Management Programs"
+      },
+      "source": {
+        "file": "04-demand-side.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-07/20260710_EnvReview_Completion_DSM.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "exclude-demand-side-program",
+      "reason": "Behind-the-meter demand-response and energy-efficiency programs; no physical transmission construction."
+    },
+    {
+      "sourceRow": 5,
+      "indexTitle": "APC Bay Minette-Silverhill Network Underground Fiber Optics",
+      "indexPostedOn": "2026-06-02",
+      "letterDate": "2026-06-02",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 5: APC Bay Minette-Silverhill Network Underground Fiber Optics"
+      },
+      "source": {
+        "file": "05-bay-minette-silverhill-fiber.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-06/20260602_APC_BayMinetteSilverhill_Env_Completion.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "exclude-fiber-only",
+      "reason": "Underground fiber optics in public-road right of way, not electric transmission work."
+    },
+    {
+      "sourceRow": 6,
+      "indexTitle": "APC Flomaton-Perdido Underground Fiber Optics",
+      "indexPostedOn": "2026-06-02",
+      "letterDate": "2026-06-02",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 6: APC Flomaton-Perdido Underground Fiber Optics"
+      },
+      "source": {
+        "file": "06-flomaton-perdido-fiber.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-06/20260602_APC_FlomatonPerdido_Env_Completion.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "exclude-fiber-only",
+      "reason": "Underground fiber optics along an existing transmission right of way; the letter explicitly says existing powerlines will not be altered."
+    },
+    {
+      "sourceRow": 7,
+      "indexTitle": "APC #31 Bassett Creek – Sunny South 115kV – Completion Letter",
+      "indexPostedOn": "2026-05-20",
+      "letterDate": "2026-05-20",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 7: APC #31 Bassett Creek – Sunny South 115kV – Completion Letter"
+      },
+      "source": {
+        "file": "07-bassett-creek-sunny-south.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-05/20260520_APC_Bass%20Sunny_EnvCompletion.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "retain-transmission-project",
+      "sourceId": "31",
+      "identityBasis": "native-id",
+      "rawNativeReference": "#31",
+      "lifecycle": "planned",
+      "normalized": {
+        "sourceRow": 7,
+        "sourceId": "31",
+        "proposedId": "al-apc-doe:31",
+        "identityBasis": "native-id",
+        "name": "Bassett Creek–Sunny South 115 kV Transmission Line Rebuild",
+        "description": "Rebuild approximately 15.8 miles of existing 115 kV line and install 94 replacement structures within the existing right of way.",
+        "rawFacts": {
+          "nativeReference": "#31 (DOE index title)",
+          "work": "15.8 miles of 115 kV line and 94 replacement structures",
+          "constructionStartForecast": "June 2026",
+          "commercialOperationForecast": "February 2028"
+        },
+        "source": {
+          "file": "07-bassett-creek-sunny-south.pdf",
+          "url": "https://www.energy.gov/sites/default/files/2026-05/20260520_APC_Bass%20Sunny_EnvCompletion.pdf",
+          "locator": "PDF p.1, project scope and schedule; p.4 Conclusion; DOE index entry 7 supplies #31"
+        },
+        "indexSource": {
+          "file": "index.html",
+          "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+          "locator": "Documents Available for Download, entry 7: APC #31 Bassett Creek – Sunny South 115kV – Completion Letter"
+        },
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-05-20",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Clarke and Wilcox Counties, Alabama",
+        "sponsor": "Alabama Power Company (project proponent/applicant)",
+        "owner": null,
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2028-02",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Projected commercial operation in February 2028; forecast"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "milestones": [
+          {
+            "field": "Environmental-review completion letter",
+            "date": {
+              "value": "2026-05-20",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Environmental-review completion; not construction, energization or a financing-close date"
+            },
+            "evidence": [
+              {
+                "file": "07-bassett-creek-sunny-south.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-05/20260520_APC_Bass%20Sunny_EnvCompletion.pdf",
+                "locator": "PDF p.1 dated header and final Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "DOE index posting date",
+            "date": {
+              "value": "2026-05-20",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Index date, separate from document date and project schedule"
+            },
+            "evidence": [
+              {
+                "file": "index.html",
+                "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+                "locator": "Documents Available for Download, entry 7: APC #31 Bassett Creek – Sunny South 115kV – Completion Letter"
+              }
+            ]
+          },
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026-06",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Scheduled construction start in June 2026; an elapsed forecast does not establish a start"
+            },
+            "evidence": [
+              {
+                "file": "07-bassett-creek-sunny-south.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-05/20260520_APC_Bass%20Sunny_EnvCompletion.pdf",
+                "locator": "PDF p.1, project scope and schedule; p.4 Conclusion; DOE index entry 7 supplies #31"
+              }
+            ]
+          },
+          {
+            "field": "Forecast commercial operation",
+            "date": {
+              "value": "2028-02",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected commercial operation in February 2028; forecast"
+            },
+            "evidence": [
+              {
+                "file": "07-bassett-creek-sunny-south.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-05/20260520_APC_Bass%20Sunny_EnvCompletion.pdf",
+                "locator": "PDF p.1, project scope and schedule; p.4 Conclusion; DOE index entry 7 supplies #31"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "The completion-letter title refers to environmental reviews; physical commissioning is not reported.",
+          "Seasonal tree-clearing restrictions are environmental conditions, not project construction windows."
+        ]
+      }
+    },
+    {
+      "sourceRow": 8,
+      "indexTitle": "APC Leeds DS Feeder Distribution Tie Line Improvements",
+      "indexPostedOn": "2026-05-12",
+      "letterDate": "2026-05-12",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 8: APC Leeds DS Feeder Distribution Tie Line Improvements"
+      },
+      "source": {
+        "file": "08-leeds-distribution.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-05/APC%20Leeds%20DS%20Feeder%20Distribution%20Tie%20Line%20Improvements.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "exclude-distribution",
+      "reason": "Distribution feeder conductor/pole improvements, not transmission."
+    },
+    {
+      "sourceRow": 9,
+      "indexTitle": "APC Roanoke Distribution Tie-in Lines Improvement Project",
+      "indexPostedOn": "2026-05-07",
+      "letterDate": "2026-05-06",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 9: APC Roanoke Distribution Tie-in Lines Improvement Project"
+      },
+      "source": {
+        "file": "09-roanoke-distribution.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-05/APC%20Roanoke%20Distribution%20Tie-in%20Lines%20Improvement%20Project_0.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "exclude-distribution",
+      "reason": "Distribution tie-in conductor/pole improvements, not transmission."
+    },
+    {
+      "sourceRow": 10,
+      "indexTitle": "APC #19 Pinckard-Fort Rucker to Enterprise 115kV – Completion Letter",
+      "indexPostedOn": "2026-04-24",
+      "letterDate": "2026-03-30",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 10: APC #19 Pinckard-Fort Rucker to Enterprise 115kV – Completion Letter"
+      },
+      "source": {
+        "file": "10-pinckard-fort-rucker-enterprise.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-03/%2319%20Pinckard-Fort%20Rucker%20to%20Enterprise%20115kV%20%E2%80%93%20Completion%20Letter.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "retain-transmission-project",
+      "sourceId": "19",
+      "identityBasis": "native-id",
+      "rawNativeReference": "#19",
+      "lifecycle": "planned",
+      "normalized": {
+        "sourceRow": 10,
+        "sourceId": "19",
+        "proposedId": "al-apc-doe:19",
+        "identityBasis": "native-id",
+        "name": "Pinckard–Fort Rucker to Enterprise 115 kV Transmission Line",
+        "description": "Reconductoring of approximately 7.5 miles of the existing 115 kV transmission line within its established right of way.",
+        "rawFacts": {
+          "nativeReference": "#19 (DOE index title and PDF URL)",
+          "work": "approximately 7.5 miles of 115 kV reconductoring",
+          "constructionStartForecast": null,
+          "completionForecast": null,
+          "indexPostedOn": "April 24, 2026",
+          "letterDate": "March 30, 2026"
+        },
+        "source": {
+          "file": "10-pinckard-fort-rucker-enterprise.pdf",
+          "url": "https://www.energy.gov/sites/default/files/2026-03/%2319%20Pinckard-Fort%20Rucker%20to%20Enterprise%20115kV%20%E2%80%93%20Completion%20Letter.pdf",
+          "locator": "PDF p.1, dated header and reconductoring scope; p.2 Conclusion; DOE index entry 10 supplies #19"
+        },
+        "indexSource": {
+          "file": "index.html",
+          "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+          "locator": "Documents Available for Download, entry 10: APC #19 Pinckard-Fort Rucker to Enterprise 115kV – Completion Letter"
+        },
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-03-30",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Coffee and Dale Counties, Alabama",
+        "sponsor": "Alabama Power Company (project proponent/applicant)",
+        "owner": null,
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No project completion or service target supplied"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "milestones": [
+          {
+            "field": "Environmental-review completion letter",
+            "date": {
+              "value": "2026-03-30",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Environmental-review completion; not construction, energization or a financing-close date"
+            },
+            "evidence": [
+              {
+                "file": "10-pinckard-fort-rucker-enterprise.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-03/%2319%20Pinckard-Fort%20Rucker%20to%20Enterprise%20115kV%20%E2%80%93%20Completion%20Letter.pdf",
+                "locator": "PDF p.1 dated header and final Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "DOE index posting date",
+            "date": {
+              "value": "2026-04-24",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Index date, separate from document date and project schedule"
+            },
+            "evidence": [
+              {
+                "file": "index.html",
+                "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+                "locator": "Documents Available for Download, entry 10: APC #19 Pinckard-Fort Rucker to Enterprise 115kV – Completion Letter"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "The index posting date April 24 differs from the March 30 letter date; neither is a construction or service date.",
+          "USFWS consultation project codes identify environmental cases, not the native transmission work number."
+        ]
+      }
+    },
+    {
+      "sourceRow": 11,
+      "indexTitle": "APC #28 Farley Switching Station - Completion Letter",
+      "indexPostedOn": "2026-03-25",
+      "letterDate": "2026-03-24",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 11: APC #28 Farley Switching Station - Completion Letter"
+      },
+      "source": {
+        "file": "11-farley-switching.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-03/APC%20Farley%20SS%20Env%20Review%20Completion%2003242026.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "retain-transmission-project",
+      "sourceId": "28",
+      "identityBasis": "native-id",
+      "rawNativeReference": "#28",
+      "lifecycle": "planned",
+      "normalized": {
+        "sourceRow": 11,
+        "sourceId": "28",
+        "proposedId": "al-apc-doe:28",
+        "identityBasis": "native-id",
+        "name": "Farley 500 kV Switching Station",
+        "description": "Construct a new 500 kV switching station and access road serving two existing 500 kV lines near Farley Nuclear Power Plant.",
+        "rawFacts": {
+          "nativeReference": "#28 (letter subject and index title)",
+          "work": "new 500 kV switching station for two existing 500 kV transmission lines",
+          "constructionStartForecast": null,
+          "completionForecast": null,
+          "indexPostedOn": "March 25, 2026",
+          "letterDate": "March 24, 2026"
+        },
+        "source": {
+          "file": "11-farley-switching.pdf",
+          "url": "https://www.energy.gov/sites/default/files/2026-03/APC%20Farley%20SS%20Env%20Review%20Completion%2003242026.pdf",
+          "locator": "PDF p.1, subject and station scope; p.2 conditional historic-property finding; p.3 Conclusion"
+        },
+        "indexSource": {
+          "file": "index.html",
+          "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+          "locator": "Documents Available for Download, entry 11: APC #28 Farley Switching Station - Completion Letter"
+        },
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-03-24",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Houston County, Alabama",
+        "sponsor": "Alabama Power Company (project proponent/applicant)",
+        "owner": null,
+        "voltageKv": [
+          500
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No project completion or service target supplied"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "milestones": [
+          {
+            "field": "Environmental-review completion letter",
+            "date": {
+              "value": "2026-03-24",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Environmental-review completion; not construction, energization or a financing-close date"
+            },
+            "evidence": [
+              {
+                "file": "11-farley-switching.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-03/APC%20Farley%20SS%20Env%20Review%20Completion%2003242026.pdf",
+                "locator": "PDF p.1 dated header and final Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "DOE index posting date",
+            "date": {
+              "value": "2026-03-25",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Index date, separate from document date and project schedule"
+            },
+            "evidence": [
+              {
+                "file": "index.html",
+                "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+                "locator": "Documents Available for Download, entry 11: APC #28 Farley Switching Station - Completion Letter"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "This is physical transmission switching work, not a new nuclear generation unit.",
+          "Final siting/design must continue to avoid identified historic properties; the environmental finding is conditional. The station location is not a verified numerical point.",
+          "March 24 letter date differs from March 25 index posting; completion means the review process."
+        ]
+      }
+    },
+    {
+      "sourceRow": 12,
+      "indexTitle": "APC South Bessemer Substation",
+      "indexPostedOn": "2026-08-03",
+      "letterDate": "2026-07-31",
+      "indexSource": {
+        "file": "index.html",
+        "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+        "locator": "Documents Available for Download, entry 12: APC South Bessemer Substation"
+      },
+      "source": {
+        "file": "12-south-bessemer.pdf",
+        "url": "https://www.energy.gov/sites/default/files/2026-08/20260731_APC_27_So_Bess_Sub_EnvCompletion_Letter.pdf",
+        "locator": "PDF p.1, subject and project description; dated header"
+      },
+      "disposition": "retain-transmission-project",
+      "sourceId": "27",
+      "identityBasis": "native-id",
+      "rawNativeReference": "#27",
+      "lifecycle": "planned",
+      "normalized": {
+        "sourceRow": 12,
+        "sourceId": "27",
+        "proposedId": "al-apc-doe:27",
+        "identityBasis": "native-id",
+        "name": "South Bessemer Substation Expansion",
+        "description": "Expand the existing transmission substation with an eight-terminal breaker-and-a-half gas-insulated switchgear scheme and related site work serving 500 kV connections.",
+        "rawFacts": {
+          "nativeReference": "#27 (letter subject)",
+          "existingStationVoltage": "500/230/115 kV",
+          "work": "eight-terminal breaker-and-a-half gas-insulated scheme; existing 500 kV lines and 500/230 kV autobank; one new 500 kV line connection; future capacity retained as context",
+          "constructionStartForecast": "September 8, 2026",
+          "completionForecast": "May 2030",
+          "indexPostedOn": "August 3, 2026",
+          "letterDate": "July 31, 2026"
+        },
+        "source": {
+          "file": "12-south-bessemer.pdf",
+          "url": "https://www.energy.gov/sites/default/files/2026-08/20260731_APC_27_So_Bess_Sub_EnvCompletion_Letter.pdf",
+          "locator": "PDF pp.1–2, existing substation versus expansion scope and schedule; p.3 Conclusion"
+        },
+        "indexSource": {
+          "file": "index.html",
+          "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+          "locator": "Documents Available for Download, entry 12: APC South Bessemer Substation"
+        },
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-07-31",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": "Alabama",
+        "sourceLocation": "Bibb County, Alabama; Section 9, Township 21 South, Range 5 west",
+        "sponsor": "Alabama Power Company (project proponent/applicant)",
+        "owner": null,
+        "voltageKv": [
+          500
+        ],
+        "date": {
+          "value": "2030-05",
+          "precision": "month",
+          "kind": "unknown",
+          "label": "Anticipated completion in May 2030; energization not expressly identified"
+        },
+        "constructionStart": null,
+        "buildWindow": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "milestones": [
+          {
+            "field": "Environmental-review completion letter",
+            "date": {
+              "value": "2026-07-31",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Environmental-review completion; not construction, energization or a financing-close date"
+            },
+            "evidence": [
+              {
+                "file": "12-south-bessemer.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-08/20260731_APC_27_So_Bess_Sub_EnvCompletion_Letter.pdf",
+                "locator": "PDF p.1 dated header and final Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "DOE index posting date",
+            "date": {
+              "value": "2026-08-03",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Index date, separate from document date and project schedule"
+            },
+            "evidence": [
+              {
+                "file": "index.html",
+                "url": "https://www.energy.gov/edf/alabama-power-company-environmental-reviews",
+                "locator": "Documents Available for Download, entry 12: APC South Bessemer Substation"
+              }
+            ]
+          },
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026-09-08",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Expected construction start September 8, 2026; forecast, not confirmation"
+            },
+            "evidence": [
+              {
+                "file": "12-south-bessemer.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-08/20260731_APC_27_So_Bess_Sub_EnvCompletion_Letter.pdf",
+                "locator": "PDF pp.1–2, existing substation versus expansion scope and schedule; p.3 Conclusion"
+              }
+            ]
+          },
+          {
+            "field": "Forecast completion",
+            "date": {
+              "value": "2030-05",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Anticipated completion in May 2030; energization not expressly identified"
+            },
+            "evidence": [
+              {
+                "file": "12-south-bessemer.pdf",
+                "url": "https://www.energy.gov/sites/default/files/2026-08/20260731_APC_27_So_Bess_Sub_EnvCompletion_Letter.pdf",
+                "locator": "PDF pp.1–2, existing substation versus expansion scope and schedule; p.3 Conclusion"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "Existing station designation is 500/230/115 kV; the explicit served line connections are 500 kV. The lower-voltage designation is not a claim every voltage tier is rebuilt.",
+          "Two existing 500 kV lines, an existing autobank, one new line connection and space for future lines/autobank are context for one expansion, not additional project records.",
+          "The expected September 8 start has elapsed; it does not prove construction. May 2030 is completion, not an expressly stated in-service date.",
+          "The cadastral description remains text; no point or route is derived."
+        ]
+      }
+    }
+  ],
+  "identityMeaning": "Five APC project/review numbers are native to this DOE/APC source context; no global engineering identifier equivalence is claimed. Lock 5 uses a stable named-review locator; no edition in identity.",
+  "ownershipMeaning": "No retained review expressly assigns equipment ownership. Applicant, proponent and borrower status are not ownership; all retained owners remain null. Plant Barry land ownership concerns an excluded generation project and cannot be propagated.",
+  "dateMeaning": "Index dates differ from four letter dates, including excluded Roanoke. Per-record proposed lifecycleAsOf uses its letter date with source-edition meaning, not September snapshot retrieval. Reviews do not establish actual start, service or financing close.",
+  "scopeMeaning": "All twelve ordinary-public index links, each one named review/project package; finite featured/funding subset, not an Alabama Power or statewide transmission inventory."
+}

@@ -1,0 +1,1367 @@
+{
+  "sourceKey": "ga-gpc-public",
+  "editionId": "observed-2026-09-30",
+  "label": "Georgia Power public transmission catalog — September 2026 observation",
+  "reportingGroupName": "Georgia Power public project catalog",
+  "publisher": "Georgia Power",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "lifecycleAsOf": "2026-09-30",
+  "contractCommit": "1bfe2dc8e96afb6bda0052c1b47b913781e25511",
+  "sampleSourceIds": [
+    "tomochichi-towaliga",
+    "big-tazewell-farley",
+    "decatur-scottdale",
+    "callaway-thomson",
+    "hills-bridge-speedway",
+    "ashley-park"
+  ],
+  "artifacts": [
+    {
+      "file": "index.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+      "sha256": "8188831eae7426228620ba3a8219e88306b47eba95505c32ac7d131efb736192",
+      "bytes": 322065
+    },
+    {
+      "file": "tomochichi-towaliga.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html",
+      "sha256": "d6c5a359eae9183fa3dcf72cea957c2c048af67f48d910441144c8897fa70be1",
+      "bytes": 304900
+    },
+    {
+      "file": "big-tazewell-farley.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html",
+      "sha256": "4d28a92e98a1ac53af0e08d76ed57e975262523de04c6f1164408ccfbdad095c",
+      "bytes": 265496
+    },
+    {
+      "file": "decatur-scottdale.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html",
+      "sha256": "e9ffcbb71c12a2d8bec0818e23336b80a362ce5aa17c8845bc9b1396103e2905",
+      "bytes": 275820
+    },
+    {
+      "file": "callaway-thomson.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+      "sha256": "fb729fea410327a7a83757b9e0ef22a71535e9fb7bd32ef41316de81397adca5",
+      "bytes": 276989
+    },
+    {
+      "file": "effingham-county.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+      "sha256": "3b6fcdce932f6d3f777e0372746c572ec06f671ce71d8f8a6ef7784dd8cf83e2",
+      "bytes": 261279
+    },
+    {
+      "file": "hills-bridge-speedway.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html",
+      "sha256": "e37a969992b149014159c24f3073ea3093159916382092ca7a56be8a2a24dfae",
+      "bytes": 363172
+    },
+    {
+      "file": "grassy-hollow-great-valley.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html",
+      "sha256": "e4d07f49e856fce68947beaafeaeb0f9360674c518264c6273be87316aab45ac",
+      "bytes": 263979
+    },
+    {
+      "file": "hatch-wadley.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html",
+      "sha256": "8a588810d833260556a251dab3c32d66a3b168d290be90ef5821fc80ee18da12",
+      "bytes": 266212
+    },
+    {
+      "file": "conyers-klondike.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html",
+      "sha256": "afe408c84bd83d10b11dfd280355b3e6f4331600bed014a8a489bcc894464ac8",
+      "bytes": 282339
+    },
+    {
+      "file": "ashley-park.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html",
+      "sha256": "f6cdc770c3f4278670d85edc73b63ce4385ff7b4306765226423d3896ca16dd8",
+      "bytes": 293169
+    },
+    {
+      "file": "hills-bridge-letter-to-residents.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/hills-bridge-letter-to-residents.pdf",
+      "sha256": "abd348fefb0daa4959b1c702b29614431f24407a3091df9e3ed2cf959b1668eb",
+      "bytes": 134807
+    },
+    {
+      "file": "grassy-hollow-great-valley-pre-construction-postcards.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/grassy-hollow-great-valley-pre-construction-postcards.pdf",
+      "sha256": "b8e9e184d8bb3e97832298028bf87bac9fbcc95d061553f0fe59b20006a70b3b",
+      "bytes": 2372473
+    },
+    {
+      "file": "external-project-overview-hatch-wadley-500k-kv.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/external-project-overview-hatch-wadley-500k-kv.pdf",
+      "sha256": "0d169b00768874aff392b1300d7554f50960ef365c0a0b084b987615fda9f552",
+      "bytes": 254907
+    },
+    {
+      "file": "ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+      "sha256": "79d950995bc9db226aa810979ae0c4ff25a1e7248d7470de0bfeb58336b9d678",
+      "bytes": 140644
+    }
+  ],
+  "rows": [
+    {
+      "sourceId": "tomochichi-towaliga",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Tomochichi - Towaliga River 230 kV",
+      "indexCountyRegion": "Butts & Spalding counties",
+      "indexType": "Area Project",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html",
+      "disposition": "retained",
+      "reason": "Two roughly 5-mile 230 kV lines plus Tomochichi substation. Planning text coexists with a substation construction-began milestone; do not assign one component stage to the program.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "unknown",
+      "sourceRow": 1,
+      "normalized": {
+        "sourceId": "tomochichi-towaliga",
+        "name": "Tomochichi - Towaliga River 230 kV",
+        "description": "Two 230 kV lines and a new substation serving an area load need.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "capital-project-context",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Butts & Spalding counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Tomochichi Substation Construction Began",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2026 — Tomochichi Substation Construction Began (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "tomochichi-towaliga.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html"
+                }
+              ]
+            },
+            {
+              "field": "Transmission Line Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Transmission Line Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "tomochichi-towaliga.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html"
+                }
+              ]
+            },
+            {
+              "field": "Tomochichi Substation Complete",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q3 2027 — Tomochichi Substation Complete (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "tomochichi-towaliga.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html"
+                }
+              ]
+            },
+            {
+              "field": "Project Completion Target",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2027 — Project Completion Target (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "tomochichi-towaliga.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "tomochichi-towaliga.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html"
+          }
+        ],
+        "note": "Program-wide stage unknown; one component has a reported start while other elements remain in planning.",
+        "possibleHistoricalIds": [
+          "gpc-20717"
+        ],
+        "voltageKv": [
+          230
+        ]
+      }
+    },
+    {
+      "sourceId": "big-tazewell-farley",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Big Tazewell - Farley 500 kV",
+      "indexCountyRegion": "Chattahoochee, Clay, Early, Marion, Quitman, & Stewart counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html",
+      "disposition": "retained",
+      "reason": "Approximately 102-mile line to a new Big Tazewell substation. Detail adds Houston County, Alabama; index lists Georgia counties only. FAQ construction wording conflicts with future line-construction schedule.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 2,
+      "normalized": {
+        "sourceId": "big-tazewell-farley",
+        "name": "Big Tazewell - Farley 500 kV",
+        "description": "A 500 kV line from Farley Switching Station, Houston County, Alabama, to Big Tazewell in Marion County, Georgia.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "transmission-project",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": "Alabama; Georgia",
+          "sourceLocation": "Chattahoochee, Clay, Early, Marion, Quitman, & Stewart counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "recordUnit": "project",
+          "milestones": [
+            {
+              "field": "Substation Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Substation Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "big-tazewell-farley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2 2027 — Line Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "big-tazewell-farley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation Complete",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2 2028 — Substation Complete (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "big-tazewell-farley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Construction Complete",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2028 — Line Construction Complete (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "big-tazewell-farley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "big-tazewell-farley.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html"
+          }
+        ],
+        "note": "Construction phrasing does not confirm the current stage. The detail explicitly identifies an Alabama endpoint as well as Georgia counties.",
+        "possibleHistoricalIds": [
+          "gpc-21063"
+        ],
+        "voltageKv": [
+          500
+        ]
+      }
+    },
+    {
+      "sourceId": "decatur-scottdale",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Decatur - Scottdale 115 kV",
+      "indexCountyRegion": "Dekalb County",
+      "indexType": "Transmission Line Upgrade",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html",
+      "disposition": "retained",
+      "reason": "Rebuild of approximately 2.5 miles and relocation of approximately 0.7 miles. Do not sum these as independent route lengths; 1965 is existing infrastructure history, not the project date.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "upgrade",
+      "sourceRow": 3,
+      "normalized": {
+        "sourceId": "decatur-scottdale",
+        "name": "Decatur - Scottdale 115 kV",
+        "description": "Rebuild and partial relocation of an existing 115 kV line in DeKalb County.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "transmission-project",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Dekalb County",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "recordUnit": "upgrade",
+          "milestones": [
+            {
+              "field": "Easement Acquisition",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 - Q3 2026 — Easement Acquisition (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "decatur-scottdale.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Clearing Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2026 — Line Clearing Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "decatur-scottdale.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html"
+                }
+              ]
+            },
+            {
+              "field": "Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "decatur-scottdale.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html"
+                }
+              ]
+            },
+            {
+              "field": "Project Completion",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2027 — Project Completion (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "decatur-scottdale.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "decatur-scottdale.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html"
+          }
+        ],
+        "note": "The existing line date and relay-modernization record do not identify this rebuild.",
+        "possibleHistoricalIds": [],
+        "voltageKv": [
+          115
+        ]
+      }
+    },
+    {
+      "sourceId": "callaway-thomson",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Callaway Road - Thomson Primary 500 kV",
+      "indexCountyRegion": "Columbia & McDuffie counties",
+      "indexType": "Area Project",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+      "disposition": "retained",
+      "reason": "Callaway Road 500/230 kV substation plus two 500 kV lines, approximately 10 and 7 miles. Preserve the area-program unit; timeline uses seasons and publishes no completion milestone.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "sourceRow": 4,
+      "normalized": {
+        "sourceId": "callaway-thomson",
+        "name": "Callaway Road - Thomson Primary 500 kV",
+        "description": "A 500/230 kV substation and two 500 kV lines in Columbia and McDuffie counties.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "capital-project-context",
+          "identityBasis": "source-locator",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Columbia & McDuffie counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Substation Location Process Began; Line Location Process Began",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Early Spring 2026 — Substation Location Process Began; Line Location Process Began (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "callaway-thomson.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation Clearing and Grading Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Winter 2026 — Substation Clearing and Grading Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "callaway-thomson.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation Construction Begins; Line Land Acquisition Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Spring 2027 — Substation Construction Begins; Line Land Acquisition Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "callaway-thomson.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Clearing and Grading Begins; Line Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Summer 2027 — Line Clearing and Grading Begins; Line Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "callaway-thomson.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "callaway-thomson.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html"
+          }
+        ],
+        "note": "Seasonal construction targets are tentative; no completion date is published. The substation and both lines form one area program.",
+        "possibleHistoricalIds": [],
+        "voltageKv": [
+          500,
+          230
+        ]
+      }
+    },
+    {
+      "sourceId": "effingham-county",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Effingham County 500 kV",
+      "indexCountyRegion": "Effingham County",
+      "indexType": "Area Project",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+      "disposition": "retained",
+      "reason": "Expected 500/230 kV substation, 500 kV infrastructure and associated facilities. Components/routes remain under planning; no project map or completion milestone published.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "sourceRow": 5,
+      "normalized": {
+        "sourceId": "effingham-county",
+        "name": "Effingham County 500 kV",
+        "description": "A planned 500/230 kV Effingham County substation, new 500 kV transmission infrastructure and associated facilities; component scope and routes remain under study.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "capital-project-context",
+          "identityBasis": "source-locator",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Effingham County",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Notification to elected officials",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Summer 2026 — Notification to elected officials (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "effingham-county.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation survey notifications to property owners",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Summer 2026 — Substation survey notifications to property owners (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "effingham-county.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation land acquisition activities begin",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Fall 2026 — Substation land acquisition activities begin (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "effingham-county.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation clearing and grading begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Spring 2027 — Substation clearing and grading begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "effingham-county.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html"
+                }
+              ]
+            },
+            {
+              "field": "Substation construction activities begin",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Fall 2027 — Substation construction activities begin (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "effingham-county.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "effingham-county.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html"
+          }
+        ],
+        "note": "The page explicitly describes planning with scope subject to engineering, environmental and routing studies. It publishes no completion target or project map; the program is not a single defined line.",
+        "possibleHistoricalIds": [],
+        "voltageKv": [
+          500,
+          230
+        ]
+      }
+    },
+    {
+      "sourceId": "hills-bridge-speedway",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Hills Bridge – Speedway 500/230 kV",
+      "indexCountyRegion": "Clayton & Henry counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html",
+      "disposition": "retained",
+      "reason": "Detail scope is two substations and three lines, not one line: a 500 kV loop and two 230 kV links. Planning prose, Q2 2026 construction schedule and July clearing notice are retained separately.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "unknown",
+      "sourceRow": 6,
+      "normalized": {
+        "sourceId": "hills-bridge-speedway",
+        "name": "Hills Bridge – Speedway 500/230 kV",
+        "description": "Two substations, a roughly 0.25-mile 500 kV loop and roughly 1.5-mile and 1-mile 230 kV links.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "capital-project-context",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Clayton & Henry counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2 2026 — Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hills-bridge-speedway.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html"
+                }
+              ]
+            },
+            {
+              "field": "Project Completion",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2028 — Project Completion (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hills-bridge-speedway.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "hills-bridge-speedway.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html"
+          },
+          {
+            "file": "hills-bridge-letter-to-residents.pdf",
+            "locator": "PDF p. 1, dated resident letter",
+            "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/hills-bridge-letter-to-residents.pdf"
+          }
+        ],
+        "note": "The July 6, 2026 notice describes July/August clearing for future construction. The index labels a single line, while the detail describes multiple components.",
+        "possibleHistoricalIds": [],
+        "supportingNotice": "hills-bridge-letter-to-residents.pdf",
+        "supportingPublishedOn": "2026-07-06",
+        "voltageKv": [
+          500,
+          230
+        ]
+      }
+    },
+    {
+      "sourceId": "grassy-hollow-great-valley",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Grassy Hollow – Great Valley 230 kV",
+      "indexCountyRegion": "Bartow County",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html",
+      "disposition": "retained",
+      "reason": "Approximately 10.4-mile 230 kV line plus new Grassy Hollow substation. Undated construction notice describes a range of possible work; elapsed tentative schedule does not establish current stage.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 7,
+      "normalized": {
+        "sourceId": "grassy-hollow-great-valley",
+        "name": "Grassy Hollow – Great Valley 230 kV",
+        "description": "A new Grassy Hollow substation and approximately 10.4 miles of 230 kV transmission connecting Grassy Hollow to Great Valley in Bartow County.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "transmission-project",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Bartow County",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Survey Notification to Landowners",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2023 — Survey Notification to Landowners (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "grassy-hollow-great-valley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html"
+                }
+              ]
+            },
+            {
+              "field": "Easement Acquisition Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2024 — Easement Acquisition Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "grassy-hollow-great-valley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html"
+                }
+              ]
+            },
+            {
+              "field": "Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2 2026 — Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "grassy-hollow-great-valley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html"
+                }
+              ]
+            },
+            {
+              "field": "Project Completion",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Project Completion (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "grassy-hollow-great-valley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html"
+                }
+              ]
+            }
+          ],
+          "recordUnit": "project"
+        },
+        "sourceEvidence": [
+          {
+            "file": "grassy-hollow-great-valley.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html"
+          },
+          {
+            "file": "grassy-hollow-great-valley-pre-construction-postcards.pdf",
+            "locator": "PDF pp.1–2, undated construction activity notice; possible pre-construction/construction activities",
+            "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/grassy-hollow-great-valley-pre-construction-postcards.pdf"
+          }
+        ],
+        "note": "The undated construction-activity notice says work may include pre-construction and construction activities without establishing a dated current stage. The elapsed Q2 2026 construction target does not confirm work began; lifecycle remains unknown.",
+        "possibleHistoricalIds": [
+          "gpc-20150"
+        ],
+        "voltageKv": [
+          230
+        ],
+        "supportingNotice": "grassy-hollow-great-valley-pre-construction-postcards.pdf",
+        "supportingPublishedOn": null
+      }
+    },
+    {
+      "sourceId": "hatch-wadley",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Hatch – Wadley Primary 500 kV",
+      "indexCountyRegion": "Appling, Emanuel, Jefferson, & Toombs counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html",
+      "disposition": "retained",
+      "reason": "Approximately 75-mile 500 kV line. Undated project-information notice says route surveys are underway; preserve that source observation without treating the entire line as under construction.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "recordUnit": "project",
+      "sourceRow": 8,
+      "normalized": {
+        "sourceId": "hatch-wadley",
+        "name": "Hatch – Wadley Primary 500 kV",
+        "description": "A new approximately 75-mile 500 kV line from Plant Hatch in Appling County to Wadley Primary Substation in Jefferson County, crossing Toombs and Emanuel counties.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "transmission-project",
+          "identityBasis": "source-locator",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Appling, Emanuel, Jefferson, & Toombs counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Survey Notification to Landowners",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2 2026 — Survey Notification to Landowners (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hatch-wadley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+                }
+              ]
+            },
+            {
+              "field": "Community Meetings",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q3 2026 — Community Meetings (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hatch-wadley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+                }
+              ]
+            },
+            {
+              "field": "Easement Acquisition Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2026 — Easement Acquisition Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hatch-wadley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Clearing and Grading Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Line Clearing and Grading Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hatch-wadley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2028 — Line Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hatch-wadley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+                }
+              ]
+            },
+            {
+              "field": "Project Completion",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2031 — Project Completion (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "hatch-wadley.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+                }
+              ]
+            }
+          ],
+          "recordUnit": "project"
+        },
+        "sourceEvidence": [
+          {
+            "file": "hatch-wadley.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html"
+          },
+          {
+            "file": "external-project-overview-hatch-wadley-500k-kv.pdf",
+            "locator": "PDF p.1, undated Project Information: approximate 75-mile line and route surveys underway",
+            "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/external-project-overview-hatch-wadley-500k-kv.pdf"
+          }
+        ],
+        "note": "The undated project-information notice states that surveys are underway as the proposed route is finalized. This is planning evidence, not confirmation that the line is under construction. The generic phases diagram does not define the current stage.",
+        "possibleHistoricalIds": [
+          "gpc-20756"
+        ],
+        "voltageKv": [
+          500
+        ],
+        "supportingNotice": "external-project-overview-hatch-wadley-500k-kv.pdf",
+        "supportingPublishedOn": null
+      }
+    },
+    {
+      "sourceId": "conyers-klondike",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Conyers – Klondike 230 kV",
+      "indexCountyRegion": "Dekalb & Rockdale counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html",
+      "disposition": "retained",
+      "reason": "New approximately 8.5-mile 230 kV line uses portions of an existing corridor plus new corridor. Existing and proposed lines share names; no historical-record merge is supported.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 9,
+      "normalized": {
+        "sourceId": "conyers-klondike",
+        "name": "Conyers – Klondike 230 kV",
+        "description": "A new approximately 8.5-mile 230 kV line from Conyers Substation in Rockdale County to Klondike Substation in Dekalb County, using both existing and new corridor sections.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "transmission-project",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Dekalb & Rockdale counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "milestones": [
+            {
+              "field": "Survey Notification to Landowners",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2-Q3 2025 — Survey Notification to Landowners (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "conyers-klondike.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+                }
+              ]
+            },
+            {
+              "field": "Community Meetings",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2-Q3 2026 — Community Meetings (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "conyers-klondike.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+                }
+              ]
+            },
+            {
+              "field": "Easement Acquisition Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q3-Q4 2026 — Easement Acquisition Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "conyers-klondike.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Clearing and Grading Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q4 2026 — Line Clearing and Grading Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "conyers-klondike.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Construction Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Line Construction Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "conyers-klondike.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+                }
+              ]
+            },
+            {
+              "field": "Project complete",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2028 — Project complete (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "conyers-klondike.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+                }
+              ]
+            }
+          ],
+          "recordUnit": "project"
+        },
+        "sourceEvidence": [
+          {
+            "file": "conyers-klondike.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html"
+          }
+        ],
+        "note": "The FAQ uses constructing wording while the timeline forecasts Q1 2027 line construction. Current lifecycle remains unknown. Existing and proposed Conyers–Klondike lines share endpoint names; they are not proven to be the same record.",
+        "possibleHistoricalIds": [
+          "gpc-21142"
+        ],
+        "voltageKv": [
+          230
+        ]
+      }
+    },
+    {
+      "sourceId": "ashley-park",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Ashley Park – Wansley 500 kV",
+      "indexCountyRegion": "Fayette & Heard counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html",
+      "disposition": "retained",
+      "reason": "New approximately 35-mile 500 kV line; detail adds Fulton and Coweta counties. Dated 2025 letter distinguishes line surveying from substation construction; do not transfer the substation stage to the line.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 10,
+      "normalized": {
+        "sourceId": "ashley-park",
+        "name": "Ashley Park – Wansley 500 kV",
+        "description": "A 35-mile 500 kV line from Ashley Park to Wansley through Fayette, Fulton, Coweta and Heard counties.",
+        "location": null,
+        "inventoryProposal": {
+          "sourceKey": "ga-gpc-public",
+          "editionId": "observed-2026-09-30",
+          "reportingGroupName": "Georgia Power public project catalog",
+          "recordKind": "transmission-project",
+          "identityBasis": "source-locator",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": null,
+          "sourceLocation": "Fayette & Heard counties",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "recordUnit": "project",
+          "milestones": [
+            {
+              "field": "Line Clearing & Grading Begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q1 2027 — Line Clearing & Grading Begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "ashley-park.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html"
+                }
+              ]
+            },
+            {
+              "field": "Line Construction begins",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q3 2027 — Line Construction begins (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "ashley-park.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html"
+                }
+              ]
+            },
+            {
+              "field": "Project complete",
+              "date": {
+                "value": null,
+                "precision": "unknown",
+                "kind": "unknown",
+                "label": "Q2 2028 — Project complete (tentative)"
+              },
+              "evidence": [
+                {
+                  "file": "ashley-park.html",
+                  "locator": "About the Project; Project Timeline; About the Project FAQ",
+                  "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html"
+                }
+              ]
+            }
+          ]
+        },
+        "sourceEvidence": [
+          {
+            "file": "ashley-park.html",
+            "locator": "About the Project; Project Timeline; About the Project FAQ",
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html"
+          },
+          {
+            "file": "ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+            "locator": "PDF p. 1, dated resident letter",
+            "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf"
+          }
+        ],
+        "note": "October 3, 2025 notice reports line surveying while its substation was under construction. This is historical phase evidence, not a 2026 current-stage update.",
+        "possibleHistoricalIds": [
+          "gpc-21062"
+        ],
+        "supportingNotice": "ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+        "supportingPublishedOn": "2025-10-03",
+        "voltageKv": [
+          500
+        ]
+      }
+    }
+  ],
+  "commonLimits": [
+    "No native engineering IDs or explicit historical crosswalks found; page slugs are source locators only.",
+    "No geometry with documented identity, role, CRS and accuracy found; image-derived centers are prohibited.",
+    "Developer, reporter, asset construction and land rights do not establish equipment ownership.",
+    "Quarter/season labels are preserved without invented month/day; completion is not assumed in-service.",
+    "HTTP Last-Modified, site copyright and retrieval are not publication or per-project update dates."
+  ]
+}

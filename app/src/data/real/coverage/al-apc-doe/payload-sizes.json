@@ -1,0 +1,10 @@
+{
+  "sourceKey": "al-apc-doe",
+  "editionId": "review-index-snapshot-2026-09-30",
+  "scope": "full",
+  "records": 6,
+  "compactUtf8Bytes": 28443,
+  "formattedDownloadUtf8Bytes": 36980,
+  "measurement": "Source-only Dataset2 UTF-8 JSON including final newline; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "compact"
+}

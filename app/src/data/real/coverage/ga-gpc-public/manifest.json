@@ -1,0 +1,40 @@
+{
+  "sourceKey": "ga-gpc-public",
+  "editionId": "observed-2026-09-30",
+  "label": "Georgia Power public transmission catalog — September 2026 observation",
+  "reportingGroupId": "ga-gpc-public",
+  "reportingGroupName": "Georgia Power public project catalog",
+  "publisher": "Georgia Power",
+  "processAuthority": "Georgia Power public project information catalog",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "index.html",
+    "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+    "locator": "Current Projects, all ten linked project entries in observed order, September 30, 2026"
+  },
+  "sha256": "8188831eae7426228620ba3a8219e88306b47eba95505c32ac7d131efb736192",
+  "geographicScope": "Georgia project catalog, including a Big Tazewell–Farley endpoint explicitly in Alabama; per-record state is supplied only when explicit.",
+  "inventoryScope": "All ten Current Projects page entries: six transmission project/upgrade observations and four area-program capital contexts; no exclusions. Supporting notices are evidence, not additional rows.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 10,
+    "importedRecords": 10,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "This is a complete featured catalog subset, not a complete Georgia Power or statewide inventory. Page observations and component scopes do not establish a count of distinct engineering projects.",
+    "Four multi-component programs remain capital-project-context with recordUnit omitted. Decatur is a transmission upgrade; the other five transmission observations are projects. One page stays one observation.",
+    "Full accepted lifecycle is three planned and seven unknown. Mixed component stages, generic construction prose, tentative schedules and historical notices do not confirm current project-wide construction.",
+    "Primary dates, actual construction starts and windows remain unknown. Quarter/season milestones retain raw labels with unknown precision/kind and null values; no quarter boundaries or silent year coercion are manufactured.",
+    "Catalog publication and per-project update dates are unknown. Observation on September 30, 2026 is not freshness; dated July 2026 and October 2025 notices apply only to their stated historical scope.",
+    "All owners, centers and native geometry are unknown. Reporter/developer, easements and customer land do not prove equipment ownership; pre-engineering route depictions and map viewports do not establish qualifying coordinates.",
+    "Index/detail geography and scope differences remain visible, including Alabama at Big Tazewell–Farley, intermediate Ashley counties and the Hills Bridge multi-component voltage/program scope.",
+    "Page basenames are stable source-locator identities, not native engineering IDs. Historical Georgia and other-source observations remain separate with no inherited dates/owners/geometry or name-based merge.",
+    "Index, ten pages and four supporting notices are checksum-pinned outside runtime. Original bytes are unchanged; no contacts, restricted SERTP content, map-derived coordinates or ungrounded project quantities are imported."
+  ]
+}
