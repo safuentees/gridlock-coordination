@@ -1,7 +1,7 @@
-# Florida municipal additions — connection sample
+# Florida municipal additions — full accepted scope
 
-Six cited Table II-1 work items span all five participant groups: four transmission and two planning-context records. The complete source ledger reconciles 59 work items = 6 imported + 53 pending, with zero exclusions/failed/located records. Participant groups contain 11 Beaches, 17 KUA, 23 FPUA, 2 KEYS and 6 Ocala items; groups are not additional projects.
+All 59 Table II-1 work items are retained: 49 transmission and 10 planning-context records. The source ledger reconciles 59 imported with zero exclusions, failed, pending or located records. Five participant groups contain 11 Beaches, 17 KUA, 23 FPUA, 2 KEYS and 6 Ocala items; groups are not additional projects.
 
-All qualified owners, coordinates, geometry and construction windows remain unknown. Source references preserve exact edition/group/child identity; month forecasts retain their estimated meaning. Sample diagnostics include a relay study, explicit distribution addition, a past forecast and genuinely blank scalar cells.
+All qualified owners, coordinates, geometry and construction windows remain unknown. Source references preserve exact edition/group/child identity; month forecasts retain their estimated meaning. Exact context decisions, compound work items and genuinely blank scalar cells remain unchanged from the accepted mapping.
 
-`dataset.json` is source-only Dataset 2, with matching `manifest.json`, exhaustive `row-ledger.json` and measured `payload-sizes.json`: 18,730 compact / 23,937 formatted UTF-8 bytes before aggregate/export overhead. Reproduction and source decisions are in `scripts/ingest/coverage/fl-fmpa/`. Original binary remains outside Git. Full generation awaits coordinator sample connection. No worker checks or visual work were run.
+`dataset.json` is compact source-only Dataset 2, with matching `manifest.json`, exhaustive `row-ledger.json` and measured `payload-sizes.json`: 161,060 compact / 208,573 formatted UTF-8 bytes before aggregate/export overhead. Reproduction and source decisions are in `scripts/ingest/coverage/fl-fmpa/`. Original binary remains outside Git. The six-record sample was connected at `dca96d8` before full generation. No worker checks or visual work were run; coordinator owns milestone validation.

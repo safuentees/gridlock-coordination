@@ -16,13 +16,13 @@
   "sha256": "dce5c6ec57b598c3bf98013881f64751914ef960253f839fa4e6b341f348a4af",
   "geographicScope": "Partial Florida municipal ARP participant scope: five named reporting groups, not statewide coverage.",
   "inventoryScope": "Every aligned work-item line in Table II-1 planned/proposed transmission additions, with explicit distribution/study context retained separately. Five grouped City cells are not extra projects.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 59,
-    "importedRecords": 6,
+    "importedRecords": 59,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 53,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [],
