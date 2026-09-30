@@ -39,11 +39,15 @@ F00–F14 deliver the working tool and remain complete. F15–F19 surround it wi
 | F19 | [Evidence-led discovery and coverage](features/F19-evidence-led-discovery/spec.md) | source_discovery + coordinator | 8–9 | F11/F12, journey contract | source: `lib/project-search.ts`, `data/evidence/*`, research notes/receipt; coordinator: Explorer/Readiness consumers |
 | F20 | [Map focus and connection visibility](features/F20-map-focus/spec.md) | map-ui (user's separate chat) | 10 | F14, F15/F16 integrated; UI ownership released | `app/src/features/explorer/ProjectMap.tsx`, optional `app/src/features/explorer/map-view.ts`, `changes/F20.md` only |
 | F21 | [Task-based UI organization](features/F21-ui-composition/spec.md) | coordinator + ui + core presentation | 10 | F14–F19; shared composition contract | Exact split in spec: root App/Home/Outcomes/shared menu; ui Explorer/comparison/briefs/scenarios; core readiness/import/restore presentation. F20 paths excluded. |
+| F22 | [Experimental map compatibility](features/F22-maplibre-compatibility/spec.md) | map-ui (separate chat) | 11 | F20/F21 integrated; pinned dependency handoff | Exact ProjectMap/map-view + three density-map adapter files, package files and receipt in spec; default Leaflet retained |
+| F23 | [Hierarchical project concentrations](features/F23-hierarchical-density/spec.md) | map-ui (separate chat) | 12 | F22 integrated | Exact hierarchy/layer/synthetic files and F22 adapter files; only agreed hierarchy dependencies; receipt |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Current milestone and assignments
+
+**F22 ready; F23 follows compatibility integration.** The user explicitly requested an experimental MapLibre/deck.gl density view in the separate map/UI chat. Coordinator agreed the exact file/dependency handoff in F22/F23; map-ui proceeds without blocking unrelated evidence/UI work. Leaflet stays default, shared contracts/data remain unchanged, and an explicitly isolated synthetic density preview is allowed. Pattern/stipple work waits until the user tries the first density interaction. Coordinator alone merges/checks; no worker or visual checks.
 
 **F21 — complete through PR45/46/47/49 and the final guide update.** Relevant template v1.9.0 composition rules are local without replacing Gridlock decisions. UI grouped browsing/workspace/selection controls and fixed tab scrolling; core independently corrected readiness and revision/restore presentation; coordinator connected consistent Saved reviews navigation. The surface review and retained patterns are in F21. No source/calculation/storage changes or new pages. Coordinator's one build passed at 1a518aa, alongside F20's representative helper case. Existing Vite-loader/bundle warnings remain; no browser, visual or mobile checks. Source review caught and repaired hidden Detail search before integration; interactions were not exercised.
 
@@ -61,7 +65,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
-| map-ui | F20 complete. The user requested a separate experimental density map in that chat; coordinator is recording F22/F23 before implementation. | Keep existing interfaces and default map; dependency handoff and exact files belong to the new task specs. Explorer remains excluded. |
+| map-ui | F22 ready: experimental MapLibre compatibility; then F23 hierarchy after F22 integration. | Exact files and temporary pinned dependency ownership in F22/F23. Keep interfaces/default map; Explorer excluded. No pattern polish before user trial. |
 | source_discovery | Resume an unresolved F19 record when its specified public identity/location evidence becomes available; first actionable target is `desc-6809-g`'s native corridor endpoints, kept distinct from `6809 E`. No additional research batch is selected. | Exact public endpoint/route citation; `data/evidence/*` only. See the nine next-input entries in `f19-location-decisions.json`. No evidence means no coordinate change. |
 | coordinator | Integrate a supported evidence proposal through existing preview/revision interfaces when supplied; retain baseline and confidence meanings. | Source/native-ID agreement, then `data/location-proposals.ts` and Readiness composition only if necessary. |
 | ui / core | F21 composition slices complete; retain worktrees for the next selected capability. | No ready assigned implementation dependency; no duplicate checks. |

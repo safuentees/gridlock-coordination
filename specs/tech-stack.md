@@ -5,6 +5,8 @@ Vite + React + TypeScript in `app/`, npm lockfile, Tailwind 4, official shadcn N
 
 Official defaults read: [Vite](https://ui.shadcn.com/docs/installation/vite), [CLI](https://ui.shadcn.com/docs/cli), [table](https://ui.shadcn.com/docs/components/radix/table), [tabs](https://ui.shadcn.com/docs/components/radix/tabs), [input](https://ui.shadcn.com/docs/components/radix/input). Preserve generated components and theme; use ordinary layout utilities, no redesign or visual inspection.
 
+F22/F23 authorize an optional MapLibre/react-map-gl/deck.gl adapter while Leaflet remains default. Exact pinned dependency and package-file ownership is temporarily delegated to map-ui in those specs; no other worker changes dependencies. Existing ProjectMap props, MapViewportInsets, dataset and selection interfaces stay authoritative. Hierarchy/area encoding is map-only and cannot change canonical proximity/ranking/impact or real data. These additions are assigned, not yet shipped.
+
 Product copy and icon-control rules are maintained in `app/src/AGENTS.md`. Shared `IconButton` composes the existing Button and official Nova Tooltip defaults, with a name and hover/focus label; ordinary text buttons remain appropriate for domain actions. `lib/presentation.ts` curates known ingestion notes and source editions without changing raw data or exports. The global TooltipProvider is in main.tsx.
 
 ## Authoritative contract
