@@ -34,6 +34,8 @@ App places **Saved reviews** consistently in collection navigation and uses Expl
 
 Workers report concrete secondary findings/corrections, including retained working surfaces, in PRs; coordinator updates this table if the final scope differs. Do not add changes just to make every row have a diff.
 
+Implemented review outcome: navigation, results/detail controls, scenario status, timeline scrolling, review export context, readiness queues and revision/restore presentation received concrete corrections. Home kept its structure and omits Try demo when already in demo. Outcomes kept its conclusions and aligns pair metrics/labels. Evidence, Impact, RevisionPreview and the existing pages remain structurally intact. Tab overflow now belongs to padded, naturally sized wrappers rather than fixed-height TabsList elements; rows retain their separate scroller. Search remains mounted in Results, Detail and Collapsed. F20's independent map controls integrated without a composition contract change.
+
 ## Acceptance
 
 1. Browse controls are grouped; results tabs and essential controls are outside the results scroller. Full names, native identifiers, comparable metrics and uncertainty remain accessible. No artificial reduction of type/spacing or hidden data.
@@ -44,3 +46,5 @@ Workers report concrete secondary findings/corrections, including retained worki
 ## Bounded validation
 
 Only coordinator runs at most one production build after composition, within five minutes; no duplicated typecheck/lint and no new framework. No calculation changes warrant a new core test. Review component lifetime, portal target, scroll boundaries and action scope in source. No Playwright/browser automation, screenshots, image analysis, visual verification or mobile audits. Do not claim source review proves usability or exercised interactions.
+
+Actual result: one build passed at 1a518aa with the existing Vite-loader and bundle-size warnings. The same bounded milestone ran F20's one representative map-helper case successfully. No additional F21 tests or visual checks; interactions remain unverified.
