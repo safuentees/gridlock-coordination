@@ -6,10 +6,10 @@ Input is the unchanged public `ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx
 python3 scripts/ingest/coverage/ercot-tpit/extract.py \
   --input inputs/originals/F27-ercot-tpit/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx \
   --output-dir app/src/data/real/coverage/ercot-tpit \
-  --scope sample --generated-at 2026-09-30T09:10:00Z
+  --scope full --generated-at 2026-09-30T09:20:00Z
 ```
 
-`--scope sample` is the default and emits six retained records; other retained rows remain pending. Run `--scope full` only after the coordinator connects the first sample. Hash, repeated-ID and reconciliation guards reject unqualified changes before output. These are production extraction guards, not a test suite. The coordinator alone runs shared schema/build checks.
+`--scope sample` is the safe default and reproduces the first six retained records with the remainder pending. The coordinator connected that sample at `ed07698`; the command above now produces the accepted full 1,766-record inventory. Hash, repeated-ID and reconciliation guards reject unqualified changes before output. These are production extraction guards, not a test suite. The coordinator alone runs shared schema/build checks.
 
 Use the accepted mapping in `specs/features/F27-us-regional-expansion/ercot-tpit/spec.md`. Native A IDs retain suffixes/leading zeros. Only the five approved equal non-contact duplicate payloads coalesce, with both locators retained. Phase, MOD, owner-project and RTP references remain labeled aliases, never parents or deduplication keys. Record units are components, with native-id identity basis.
 
