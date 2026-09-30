@@ -1,0 +1,6 @@
+# F27 — Puerto Rico and WestConnect integration
+- PR107 connects both six-record samples before full scopes: 22 public Puerto Rico hardening work packages and 304 WestConnect public-list records; aggregate 12,772 records, 113 unverified centers and six unchanged legacy candidates.
+- Thirteen declared scopes reconcile 24,824 rows into 12,520 retained and 12,304 excluded, with no pending or failed rows. Original energization/additional construction, historical status, conceptual work, source identities and unknown owners retain their distinct meanings.
+- Coordinator's one production build and representative input/output case passed at 7cab7a8, 10:15:59–10:16:15 UTC. It covered exact source meanings/counts, all twelve connected sample values/IDs, unchanged candidates and additive local revision preservation plus the 58,105,658-byte revised download/import round trip.
+- Existing import guard remains 64 MiB; no schema, calculation, UI, map or storage changes. Main JS is 38.9 MB / 2.10 MB gzip; existing bundle-size and future Vite-loader warnings remain. No worker/browser/visual/mobile/persistence-interaction checks.
+- Guam, Nevada and PacifiCorp source qualification continues independently. SERTP remains blocked by conflicting public-link/PDF markings; unassessed territory scopes and missing native locations remain open. National discovery is incomplete.
