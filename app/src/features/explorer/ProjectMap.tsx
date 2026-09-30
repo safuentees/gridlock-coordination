@@ -1,40 +1,24 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { Component, lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react"
 import { CircleMarker, MapContainer, Polyline, TileLayer, useMap } from "react-leaflet"
 import { DomEvent } from "leaflet"
 import { MinusIcon, PlusIcon, ScanIcon } from "lucide-react"
 import "leaflet/dist/leaflet.css"
 import { Button } from "@/components/ui/button"
 import { IconButton } from "@/components/ui/icon-button"
-import type { Opportunity, Project } from "@/domain/schema"
+import type { Project } from "@/domain/schema"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { MapLegend } from "./MapLegend"
-import { getMapConnections, getMapLocations } from "./map-view"
+import { boundedInsets, getMapConnections, getMapLocations, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "./map-view"
 
 export interface MapViewportInsets { top: number; right: number; bottom: number; left: number }
-const ZERO_INSETS: MapViewportInsets = { top: 0, right: 0, bottom: 0, left: 0 }
 const colors = { desc: "#2563eb", gpc: "#b45309" }
 type FitTarget = "projects" | "selection"
 interface FitRequest { target: FitTarget; revision: number }
 
-// Insets describe UI occlusion, not geographic distance. Keep Leaflet's fit area positive.
-function boundedInsets(insets: MapViewportInsets, width: number, height: number): MapViewportInsets {
-  const finite = (value: number) => Number.isFinite(value) ? Math.max(0, value) : 0
-  function axis(start: number, end: number, size: number): [number, number] {
-    const leading = finite(start)
-    const trailing = finite(end)
-    // Do not shrink real panel coverage merely to reserve an arbitrary fit width.
-    const maximum = Math.max(0, size - 1)
-    const scale = leading + trailing > maximum ? maximum / (leading + trailing) : 1
-    return [Math.floor(leading * scale), Math.floor(trailing * scale)]
-  }
-  const [left, right] = axis(insets.left, insets.right, width)
-  const [top, bottom] = axis(insets.top, insets.bottom, height)
-  return { left, right, top, bottom }
-}
-
-function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tileError, connectionCount, selectedPair, showConnections, onShowConnections, onFit }: {
+function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tileError, connectionCount, selectedPair, showConnections, onShowConnections, onFit, onChangeRenderer }: {
   projects: Project[]; focusIds: string[]; fitRequest: FitRequest; visible: boolean; viewportInsets: MapViewportInsets;
   tileError: boolean; connectionCount: number; selectedPair: boolean; showConnections: boolean;
-  onShowConnections: (show: boolean) => void; onFit: (target: FitTarget) => void;
+  onShowConnections: (show: boolean) => void; onFit: (target: FitTarget) => void; onChangeRenderer: () => void;
 }) {
   const map = useMap()
   const controls = useRef<HTMLDivElement>(null)
@@ -117,16 +101,22 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
     </div>
     <div className="pointer-events-auto">{visible && <MapLegend boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
     <Button className="pointer-events-auto" type="button" variant="outline" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>
+    {visible && <DropdownMenu>
+      <DropdownMenuTrigger asChild><Button className="pointer-events-auto" type="button" variant="outline" size="sm">Map view</Button></DropdownMenuTrigger>
+      <DropdownMenuContent align="end" collisionBoundary={map.getContainer()} onPointerDown={event => event.stopPropagation()} onKeyDown={event => event.stopPropagation()} onWheel={event => event.stopPropagation()}>
+        <DropdownMenuLabel>Map view</DropdownMenuLabel>
+        <DropdownMenuRadioGroup value="standard" onValueChange={value => { if (value === "experimental") onChangeRenderer() }}>
+          <DropdownMenuRadioItem value="standard">Standard</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="experimental">Experimental</DropdownMenuRadioItem>
+        </DropdownMenuRadioGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>}
     {tileError && <p role="status" className="pointer-events-auto max-w-72 rounded-lg border bg-background p-2 text-xs">Background map unavailable. Project points and lists still work.</p>}
   </div>
 }
 
-export function ProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS }: {
-  visible: boolean; projects: Project[]; opportunities: Opportunity[]; selectedProjectId: string | null; selectedOpportunity: Opportunity | null;
-  onProject: (id: string) => void; onOpportunity: (id: string) => void; viewportInsets?: MapViewportInsets;
-}) {
+function LeafletProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
   const [fitRequest, setFitRequest] = useState<FitRequest>({ target: "projects", revision: 0 })
-  const [showConnections, setShowConnections] = useState(true)
   const [tileError, setTileError] = useState(false)
   const focusIds = useMemo(() => selectedOpportunity?.projectIds ?? (selectedProjectId ? [selectedProjectId] : []), [selectedOpportunity, selectedProjectId])
   const byId = useMemo(() => new Map(projects.map((project) => [project.id, project])), [projects])
@@ -134,10 +124,40 @@ export function ProjectMap({ projects, opportunities, selectedProjectId, selecte
   const lines = getMapConnections(byId, opportunities, selectedOpportunity, showConnections)
   return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Project map">
     <MapContainer center={[33.2, -82.5]} zoom={7} zoomControl={false} scrollWheelZoom={false} className="absolute inset-0 z-0 h-full w-full" aria-label="Map of located projects">
-      <MapView projects={projects} focusIds={focusIds} fitRequest={fitRequest} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={setShowConnections} onFit={(target) => setFitRequest((previous) => ({ target, revision: previous.revision + 1 }))} />
+      <MapView projects={projects} focusIds={focusIds} fitRequest={fitRequest} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} onChangeRenderer={onChangeRenderer} onFit={(target) => setFitRequest((previous) => ({ target, revision: previous.revision + 1 }))} />
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" eventHandlers={{ tileerror: () => setTileError(true) }} />
       {lines.map(({ opportunity, positions }) => <Polyline key={opportunity.id} positions={positions} pathOptions={{ color: "#525252", weight: selectedOpportunity ? 3 : 1.5, opacity: selectedOpportunity ? 0.9 : 0.3, dashArray: "5 5" }} eventHandlers={{ click: () => onOpportunity(opportunity.id) }} />)}
       {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : colors[project.utilityId], fillColor: colors[project.utilityId], fillOpacity: 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }} />)}
     </MapContainer>
   </section>
+}
+
+const ExperimentalMap = lazy(() => import("./density-map/MapLibreProjectMap"))
+
+function MapFallback({ message, onStandard }: { message: string; onStandard: () => void }) {
+  return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Experimental map status">
+    <div className="absolute right-3 top-3 max-w-[min(18rem,calc(100%-1.5rem))] space-y-2 rounded-lg border bg-background p-3">
+      <p role="status" className="text-sm">{message}</p>
+      <Button type="button" variant="outline" size="sm" onClick={onStandard}>Use standard map</Button>
+    </div>
+  </section>
+}
+
+class ExperimentalMapBoundary extends Component<{ children: ReactNode; fallback: ReactNode }, { failed: boolean }> {
+  state = { failed: false }
+  static getDerivedStateFromError() { return { failed: true } }
+  render() { return this.state.failed ? this.props.fallback : this.props.children }
+}
+
+export function ProjectMap(props: ProjectMapProps) {
+  const [experimental, setExperimental] = useState(false)
+  const [showConnections, setShowConnections] = useState(true)
+  const controls = { showConnections, onShowConnections: setShowConnections }
+  if (!experimental) return <LeafletProjectMap {...props} {...controls} onChangeRenderer={() => setExperimental(true)} />
+  const onStandard = () => setExperimental(false)
+  return <ExperimentalMapBoundary fallback={<MapFallback message="Experimental map unavailable." onStandard={onStandard} />}>
+    <Suspense fallback={<MapFallback message="Loading experimental map…" onStandard={onStandard} />}>
+      <ExperimentalMap {...props} {...controls} onChangeRenderer={onStandard} />
+    </Suspense>
+  </ExperimentalMapBoundary>
 }
