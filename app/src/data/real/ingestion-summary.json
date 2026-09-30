@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-09-30T03:53:31+00:00",
+  "scope": "44 Dominion listing pages and Georgia public-disclosure active Table 2 only",
+  "processed": 252,
+  "skipped": 0,
+  "failed": 0,
+  "linkedSeedRecords": 10,
+  "locatedRecords": 10,
+  "unlocatedRecords": 242,
+  "sources": [
+    {
+      "file": "2024-2028-2million-and-above-project-descriptions.pdf",
+      "physicalPages": "1-44",
+      "processed": 44,
+      "skipped": 0,
+      "failed": 0
+    },
+    {
+      "file": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+      "physicalPages": "177-190",
+      "table": "Table 2",
+      "processed": 208,
+      "skipped": 0,
+      "failed": 0,
+      "rowsPerPage": {
+        "177": 13,
+        "178": 15,
+        "179": 15,
+        "180": 15,
+        "181": 15,
+        "182": 16,
+        "183": 15,
+        "184": 16,
+        "185": 17,
+        "186": 17,
+        "187": 16,
+        "188": 17,
+        "189": 16,
+        "190": 5
+      }
+    }
+  ],
+  "georgiaSponsors": {
+    "DU": 2,
+    "GPC": 122,
+    "GTC": 54,
+    "MEAG": 14,
+    "SAV": 16
+  },
+  "parsingExceptions": [
+    {
+      "id": "desc-6859",
+      "page": 34,
+      "handling": "Multiple phase dates retained verbatim in notes; date.value is null and buildWindow is null."
+    }
+  ],
+  "excludedSections": [
+    "Georgia cancelled-project tables",
+    "Georgia restricted project details",
+    "private opportunity materials"
+  ],
+  "notes": [
+    "44 Dominion projects and 208 active Georgia Table 2 projects; ten workbook examples linked by native identity without duplication.",
+    "10 unverified workbook locations; 242 projects have unknown locations and remain in the inventory.",
+    "Dawson (Dominion page 34) has separate phase dates retained in its notes; no single date or construction interval was inferred.",
+    "Georgia costs are redacted. Cancelled-project tables and restricted project details were not extracted.",
+    "Georgia need dates and Dominion planned in-service dates are historical plan snapshots, not current completion claims."
+  ]
+}
