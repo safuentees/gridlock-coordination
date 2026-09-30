@@ -1,0 +1,52 @@
+{
+  "sourceKey": "ca-pge-tpr",
+  "editionId": "2026-05-01",
+  "label": "PG&E public May 2026 TPR portfolio",
+  "reportingGroupId": "ca-pge-tpr",
+  "reportingGroupName": "PG&E public TPR",
+  "publisher": "Pacific Gas and Electric Company",
+  "processAuthority": "CPUC Transmission Project Review Process",
+  "publishedOn": "2026-05-01",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "pge-may2026-public.xlsx",
+    "locator": "CPUC TPR PUBLIC!B5:CV2675; all 2671 native-ID rows; manager column Y omitted",
+    "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+  },
+  "sha256": "917464588f082e2239726479b331dff6ffda97436af9daa5372332a734d4b94e",
+  "geographicScope": "PG&E California public FERC-transmission capital portfolio; source city/county labels do not establish statewide completeness or coordinates.",
+  "inventoryScope": "Entire public CPUC TPR PUBLIC table, rows 5:2675. Retain nonterminal physical components/upgrades and capital/planning context; exclude 1079 Operational and one Cancelled.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 2671,
+    "importedRecords": 6,
+    "excludedRows": 1080,
+    "failedRows": 0,
+    "pendingRows": 1585,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "explicit-cancelled",
+      "count": 1
+    },
+    {
+      "reason": "explicit-operational",
+      "count": 1079
+    }
+  ],
+  "limitations": [
+    "Public May 1, 2026 Attachment 11 only; no confidential/NDA copy, hidden metadata or person fields are imported.",
+    "March 2026 lifecycle evidence and March 10 automated extraction precede publication; no row modification date is established.",
+    "2671 source rows reconcile to 1591 retained and 1080 terminal exclusions. The separate 1434 in-progress headline is not reconciled to this row-filter definition.",
+    "Full retained scope is 1001 physical transmission components/upgrades, 278 capital context and 312 planning context; programs/allocations have no invented project unit.",
+    "Exact native ID #1 tokens preserve case. ID #2 values group work and may carry repeated descriptions/costs; no synthetic parents or name-based deduplication.",
+    "Source percentage status bands are milestone-timing estimates, not measured physical completion. Approval fields and past dates do not replace BI status.",
+    "BM current projected-or-actual service supplies 1306 day dates and 285 OAI unknowns. Mixed actual/expected starts and original forecasts remain supplementary; construction windows are unknown.",
+    "All public coordinate cells are blank. Endpoints are defined but not supplied; city/county text, voltage and length never supply geometry. Asset owners remain unknown.",
+    "Costs/ranges retain $000 units and parent/forecast/actual meanings; they are not additive project totals or hypothetical impact inputs.",
+    "This utility-limited FERC capital portfolio is not complete California coverage or a unique engineering-project census.",
+    "Public factual evidence supports authorized private analysis; no original-workbook publication or open/commercial reuse license is asserted.",
+    "Six diagnostic records are emitted first; 1585 accepted records await provider connection and full normalization."
+  ]
+}

@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "PG&E public May 2026 TPR portfolio — six-record sample",
+  "generatedAt": "2026-09-30T11:43:37+00:00",
+  "projects": [
+    {
+      "id": "ca-pge-tpr:Ex112888",
+      "sourceId": "Ex112888",
+      "utilityId": "ca-pge-tpr",
+      "sponsor": null,
+      "name": "Transmission As-Build Process Improvement",
+      "description": "Forecast placeholder for t-line As Build Process Improvement",
+      "status": "Planning",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current projected or actual in-service — OAI (operative as installed; no event date)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "locator": "CPUC TPR PUBLIC!B14:X14, Z14:CV14",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages 2–3, 5, 7–8; dates, native units, programmatic work and public redactions"
+        },
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "Data Field Descriptions!B62:F66"
+        }
+      ],
+      "notes": [
+        "Scope and purpose: Project Description - What (H14): Other; Project Description - Action Taken (I14): Upgrade/Retrofit; Primary Purpose (L14): Other [See Notes]; Secondary Purpose (M14): System Operations; Alternative Solutions and Costs - Solutions (S14): Other - Status Quo; Wildfire Related (V14): FALSE | FALSE | FALSE; RAMP (W14): False",
+        "Source identity and approval: Utility Unique ID #3 (Least Specific) (AM14): 21; Changes in Unique IDs (AN14): NA | NA | NA | NA; Utility Approval (AO14): True; Process(es) for Utility Approval (AQ14): Project Management Governance Standard; Long term Transmission Investment Plan Inclusion (AR14): 2024; TPP Phase 3 (AT14): False; GIDAP-Related (AX14): False",
+        "Permit evidence: CPUC Status (BG14): NA [See Notes]",
+        "Service-date and rate-base context: In-Flight Projects (BP14): False",
+        "Source costs and expenditures ($000): Cost Cap ($000) (BR14): NA | NA; Inception to Date ($000) (BS14): 0; Current Projected Total or Actual Final Cost ($000) (BT14): 3500; Actual Capital Expenditures 2021 ($000) (BU14): 0; Actual Capital Expenditures 2022 ($000) (BV14): 0; Actual Capital Expenditures 2023 ($000) (BW14): 0; Actual Capital Expenditures 2024 ($000) (BX14): 0; Actual Capital Expenditures 2025 ($000) (BY14): 0; Actual and Forecast Capital Expenditures 2026 ($000) (BZ14): 0.3381; Projected Capital Expenditures 2027 ($000) (CA14): 0; Projected Capital Expenditures 2028 ($000) (CB14): 0; Projected Capital Expenditures 2029 ($000) (CC14): 1000; Projected Capital Expenditures 2030 ($000) (CD14): 1000; Construction Work in Progress ($000) (CE14): -0.3381; Accrued Overhead ($000) (CF14): Accrued Overheard included in Data Field #57; Accrued AFUDC ($000) (CG14): Accrued AFUDC included in Data Field #57; Dollars Put into FERC Rate Base 2021 ($000) (CI14): 0; Dollars Put into FERC Rate Base 2022 ($000) (CJ14): 0; Dollars Put into FERC Rate Base 2023 ($000) (CK14): 0; Dollars Put into FERC Rate Base 2024 ($000) (CL14): 0; Dollars Put into FERC Rate Base 2025 ($000) (CM14): 0; Dollars Put into FERC Rate Base 2026 ($000) (CN14): 0",
+        "Other source financial context: Percentage of Bid (CO14): 0; Percentage and Value ($000) of Work Requested by Others Passed onto Ratepayers (CP14): NA | NA; Percentage of Cost in High Voltage TAC (CT14): 0.3518; Percentage of Cost in Low Voltage TAC (CU14): 0.6482",
+        "Source voltage evidence: AB14 line kV = NA; AC14 substation/transformer capacity = NA. Values retain their separate source field meanings.",
+        "Source notes (CV14): [Primary Purpose] Operations Support\n\n\n[CPUC Status] CPUC Permit Status Exempt: Non-electric work; not subject to GO 131-E NOC, PTC or CPCN requirements",
+        "Public forecast, investment-code or redacted scope does not establish a defined physical project. Restricted underlying details are not reconstructed.",
+        "Source cost fields retain $000 units and their own forecast/actual meanings; they do not establish coordination savings.",
+        "March 2026 status evidence is separate from the March 10 automated extraction and May 1 publication. Actual-or-expected start and projected-or-actual service dates do not establish a construction window."
+      ],
+      "inventory": {
+        "sourceKey": "ca-pge-tpr",
+        "editionId": "2026-05-01",
+        "editionLabel": "PG&E public May 2026 TPR portfolio",
+        "reportingGroupName": "PG&E public TPR",
+        "recordKind": "planning-context",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-03",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "NA",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Major work category: 21"
+        ],
+        "workType": "Other",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "All public latitude/longitude cells are blank. Defined line-endpoint meaning, city/county text and lengths do not supply a qualified center, CRS or accuracy."
+        ],
+        "milestones": [
+          {
+            "field": "Original planned in-service (BL)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Original planned in-service — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B14:X14, Z14:CV14; BL14",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          },
+          {
+            "field": "Actual or expected construction start (BK)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Actual or expected construction start — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B14:X14, Z14:CV14; BK14",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-pge-tpr:5816828",
+      "sourceId": "5816828",
+      "utilityId": "ca-pge-tpr",
+      "sponsor": null,
+      "name": "Electric Transmission Cyber Security Upgrade",
+      "description": "",
+      "status": "Programmatic Work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current projected or actual in-service — OAI (operative as installed; no event date)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "locator": "CPUC TPR PUBLIC!B32:X32, Z32:CV32",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages 2–3, 5, 7–8; dates, native units, programmatic work and public redactions"
+        },
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "Data Field Descriptions!B62:F66"
+        }
+      ],
+      "notes": [
+        "Scope and purpose: Project Description - What (H32): Other - IT; Project Description - Action Taken (I32): Upgrade/Retrofit; Primary Purpose (L32): Other [See Notes]; Secondary Purpose (M32): Security Upgrades; Alternative Solutions and Costs - Solutions (S32): Other - Status Quo; Wildfire Related (V32): FALSE | FALSE | FALSE; RAMP (W32): False",
+        "Source identity and approval: Utility Unique ID #2 (Less Specific) - T.Dot Name (AK32): Electric Transmission Cyber Security Upgrade; Utility Unique ID #3 (Least Specific) (AM32): 2F; Changes in Unique IDs (AN32): NA | NA | NA | NA; Utility Approval (AO32): True; Process(es) for Utility Approval (AQ32): Project Management Governance Standard; Long term Transmission Investment Plan Inclusion (AR32): 2026; TPP Phase 3 (AT32): False; GIDAP-Related (AX32): False",
+        "Permit evidence: CPUC Status (BG32): NA [See Notes]",
+        "Service-date and rate-base context: In-Flight Projects (BP32): True",
+        "Source costs and expenditures ($000): Cost Cap ($000) (BR32): NA | NA; Inception to Date ($000) (BS32): 0; Current Projected Total or Actual Final Cost ($000) (BT32): 2000; Actual Capital Expenditures 2021 ($000) (BU32): 0; Actual Capital Expenditures 2022 ($000) (BV32): 0; Actual Capital Expenditures 2023 ($000) (BW32): 0; Actual Capital Expenditures 2024 ($000) (BX32): 0; Actual Capital Expenditures 2025 ($000) (BY32): 0; Actual and Forecast Capital Expenditures 2026 ($000) (BZ32): 2000; Projected Capital Expenditures 2027 ($000) (CA32): 0; Projected Capital Expenditures 2028 ($000) (CB32): 0; Projected Capital Expenditures 2029 ($000) (CC32): 0; Projected Capital Expenditures 2030 ($000) (CD32): 0; Construction Work in Progress ($000) (CE32): 0; Accrued Overhead ($000) (CF32): Accrued Overheard included in Data Field #57; Accrued AFUDC ($000) (CG32): Accrued AFUDC included in Data Field #57; Dollars Put into FERC Rate Base 2021 ($000) (CI32): 0; Dollars Put into FERC Rate Base 2022 ($000) (CJ32): 0; Dollars Put into FERC Rate Base 2023 ($000) (CK32): 0; Dollars Put into FERC Rate Base 2024 ($000) (CL32): 0; Dollars Put into FERC Rate Base 2025 ($000) (CM32): 0; Dollars Put into FERC Rate Base 2026 ($000) (CN32): 0",
+        "Other source financial context: FERC: Year(s) (CH32): 2026; Percentage of Bid (CO32): 0; Percentage and Value ($000) of Work Requested by Others Passed onto Ratepayers (CP32): NA | NA; Percentage of Cost in High Voltage TAC (CT32): 0.3518; Percentage of Cost in Low Voltage TAC (CU32): 0.6482",
+        "Source voltage evidence: AB32 line kV = NA; AC32 substation/transformer capacity = NA. Values retain their separate source field meanings.",
+        "Source notes (CV32): [Primary Purpose] Cybersecurity\n\n\n[CPUC Status] CPUC Permit Status Exempt: Non-electric work; not subject to GO 131-E NOC, PTC or CPCN requirements",
+        "Programmatic work is an allocation or bucket, not an individually identified engineering project; lifecycle remains unknown.",
+        "Public forecast, investment-code or redacted scope does not establish a defined physical project. Restricted underlying details are not reconstructed.",
+        "Source cost fields retain $000 units and their own forecast/actual meanings; they do not establish coordination savings.",
+        "March 2026 status evidence is separate from the March 10 automated extraction and May 1 publication. Actual-or-expected start and projected-or-actual service dates do not establish a construction window."
+      ],
+      "inventory": {
+        "sourceKey": "ca-pge-tpr",
+        "editionId": "2026-05-01",
+        "editionLabel": "PG&E public May 2026 TPR portfolio",
+        "reportingGroupName": "PG&E public TPR",
+        "recordKind": "planning-context",
+        "identityBasis": "native-id",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-03",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Source ID #2 name: Electric Transmission Cyber Security Upgrade",
+          "Major work category: 2F"
+        ],
+        "workType": "Other - IT",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "All public latitude/longitude cells are blank. Defined line-endpoint meaning, city/county text and lengths do not supply a qualified center, CRS or accuracy."
+        ],
+        "milestones": [
+          {
+            "field": "Original planned in-service (BL)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Original planned in-service — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B32:X32, Z32:CV32; BL32",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          },
+          {
+            "field": "Actual or expected construction start (BK)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Actual or expected construction start — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B32:X32, Z32:CV32; BK32",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-pge-tpr:5779902",
+      "sourceId": "5779902",
+      "utilityId": "ca-pge-tpr",
+      "sponsor": null,
+      "name": "TABLE MOUNTAIN: Repl Cap BK 6 Relays",
+      "description": "Replace Table Mountain Cap Bank 6",
+      "status": "On Hold",
+      "voltageKv": [
+        500.0
+      ],
+      "date": {
+        "value": "2027-03-02",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Current projected or actual in-service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "locator": "CPUC TPR PUBLIC!B106:X106, Z106:CV106",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages 2–3, 5, 7–8; dates, native units, programmatic work and public redactions"
+        },
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "Data Field Descriptions!B62:F66"
+        }
+      ],
+      "notes": [
+        "Scope and purpose: Project Description - What (H106): Substation - Protection Relay; Project Description - Action Taken (I106): Replace; Project Dependencies (K106): T.0003940; Primary Purpose (L106): Asset Condition; Secondary Purpose (M106): Age/Condition - 500 kV Relay Replacement; Last Inspection (P106): 2026-03-20; Age of Asset (Q106): 34; Types of Analyses (R106): Lifecycle Replacement Analysis; Alternative Solutions and Costs - Solutions (S106): TBD; Alternative Solutions and Costs - Costs (T106): TBD; CPUC Fire Threat Zone/Rating (U106): Tier 1; Wildfire Related (V106): FALSE | FALSE | FALSE; RAMP (W106): False; Other Environmental Factors (X106): Heat Wave; Substation Project Footprint (acres) (AA106): 47.516018143181",
+        "Source identity and approval: Utility Unique ID #2 (Less Specific) (AJ106): T.0003939; Utility Unique ID #2 (Less Specific) - T.Dot Name (AK106): Table Mountain Cap 6 Relay Project; Utility Unique ID #2 (Less Specific) - Planning Orders per T.Dot (AL106): 1; Utility Unique ID #3 (Least Specific) (AM106): 3F; Changes in Unique IDs (AN106): NA | NA | NA | NA; Utility Approval (AO106): True; Year of Internal Utility Approval (AP106): TBD; Process(es) for Utility Approval (AQ106): Project Management Governance Standard; Long term Transmission Investment Plan Inclusion (AR106): 2025; TPP Phase 3 (AT106): False; GIDAP-Related (AX106): False",
+        "Permit evidence: CPUC Status (BG106): NA [See Notes]",
+        "Service-date and rate-base context: In-Flight Projects (BP106): True",
+        "Source costs and expenditures ($000): Cost Cap ($000) (BR106): NA | NA; Inception to Date ($000) (BS106): 3.8125; Current Projected Total or Actual Final Cost ($000) (BT106): 3932.8864; Actual Capital Expenditures 2021 ($000) (BU106): 0; Actual Capital Expenditures 2022 ($000) (BV106): 0; Actual Capital Expenditures 2023 ($000) (BW106): 0; Actual Capital Expenditures 2024 ($000) (BX106): 0; Actual Capital Expenditures 2025 ($000) (BY106): 4; Actual and Forecast Capital Expenditures 2026 ($000) (BZ106): 179.0739; Projected Capital Expenditures 2027 ($000) (CA106): 1000.0000000000001; Projected Capital Expenditures 2028 ($000) (CB106): 2000; Projected Capital Expenditures 2029 ($000) (CC106): 750; Projected Capital Expenditures 2030 ($000) (CD106): 0; Construction Work in Progress ($000) (CE106): 3.8125; Accrued Overhead ($000) (CF106): Accrued Overheard included in Data Field #57; Accrued AFUDC ($000) (CG106): Accrued AFUDC included in Data Field #57; Dollars Put into FERC Rate Base 2021 ($000) (CI106): 0; Dollars Put into FERC Rate Base 2022 ($000) (CJ106): 0; Dollars Put into FERC Rate Base 2023 ($000) (CK106): 0; Dollars Put into FERC Rate Base 2024 ($000) (CL106): 0; Dollars Put into FERC Rate Base 2025 ($000) (CM106): 0; Dollars Put into FERC Rate Base 2026 ($000) (CN106): 0",
+        "Other source financial context: FERC: Year(s) (CH106): 2027; Percentage of Bid (CO106): 0; Percentage and Value ($000) of Work Requested by Others Passed onto Ratepayers (CP106): NA | NA; Percentage of Cost in High Voltage TAC (CT106): 1; Percentage of Cost in Low Voltage TAC (CU106): 0",
+        "Source voltage evidence: AB106 line kV = NA; AC106 substation/transformer capacity = 500 kV. Values retain their separate source field meanings.",
+        "Source notes (CV106): [Types of Analyses] For all Analyses listed, results of these analyses are include in the AAs & BCs.\n\n\n[CPUC Status] CPUC Permit Status Exempt: Substation modifications, not subject to GO 131-E NOC, PTC or CPCN requirements\n\n\n[Project Status] Project is On Hold due to prioritization and is not accuring AFUDC due to the automated AFUDC process",
+        "The supplied ID #2 groups source work; the parent description/cost may span multiple planning orders and owners. No parent record, unique engineering-project count or singular asset owner is inferred.",
+        "Source cost fields retain $000 units and their own forecast/actual meanings; they do not establish coordination savings.",
+        "March 2026 status evidence is separate from the March 10 automated extraction and May 1 publication. Actual-or-expected start and projected-or-actual service dates do not establish a construction window."
+      ],
+      "inventory": {
+        "sourceKey": "ca-pge-tpr",
+        "editionId": "2026-05-01",
+        "editionLabel": "PG&E public May 2026 TPR portfolio",
+        "reportingGroupName": "PG&E public TPR",
+        "recordKind": "transmission-project",
+        "identityBasis": "native-id",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-03",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Butte",
+        "owner": null,
+        "parentProgramId": "T.0003939",
+        "aliases": [
+          "Source ID #2 name: Table Mountain Cap 6 Relay Project",
+          "Major work category: 3F"
+        ],
+        "workType": "Substation - Protection Relay",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "All public latitude/longitude cells are blank. Defined line-endpoint meaning, city/county text and lengths do not supply a qualified center, CRS or accuracy."
+        ],
+        "milestones": [
+          {
+            "field": "Original planned in-service (BL)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Original planned in-service — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B106:X106, Z106:CV106; BL106",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          },
+          {
+            "field": "Actual or expected construction start (BK)",
+            "date": {
+              "value": "2026-12-31",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Actual or expected construction start"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B106:X106, Z106:CV106; BK106",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          }
+        ],
+        "recordUnit": "component"
+      }
+    },
+    {
+      "id": "ca-pge-tpr:5792705",
+      "sourceId": "5792705",
+      "utilityId": "ca-pge-tpr",
+      "sponsor": null,
+      "name": "MIDWAY: REP VINCENT AND LB RELAYS",
+      "description": "The scope of this project is to replace the line relays on the Midway-Vincent #2 500kV Line and Los Banos-Midway #2 500kV Line at Midway substation only. The scope includes the upgrade of the operator interface on the Midway terminal of the Midway-Vincent 500kV line #2, consisting of installation of associated network architecture necessary to incorporate this line in existing HMI.",
+      "status": "Construction (25%-50%)",
+      "voltageKv": [
+        500.0
+      ],
+      "date": {
+        "value": "2027-02-10",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Current projected or actual in-service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "locator": "CPUC TPR PUBLIC!B109:X109, Z109:CV109",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages 2–3, 5, 7–8; dates, native units, programmatic work and public redactions"
+        },
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "Data Field Descriptions!B62:F66"
+        }
+      ],
+      "notes": [
+        "Scope and purpose: Project Description - What (H109): Substation - Protection Relay; Project Description - Action Taken (I109): Replace; Project Dependencies (K109): T.0002454 | T.0002455 | T.0004292; Primary Purpose (L109): Asset Condition; Secondary Purpose (M109): Age/Condition - 500 kV Relay Replacement; Last Inspection (P109): 2026-03-03; Age of Asset (Q109): 34; Types of Analyses (R109): Lifecycle Replacement Analysis; Alternative Solutions and Costs - Solutions (S109): Other - Status Quo; Alternative Solutions and Costs - Costs (T109): $15 Mil - $20 Mil; CPUC Fire Threat Zone/Rating (U109): Tier 1; Wildfire Related (V109): FALSE | FALSE | FALSE; RAMP (W109): False; Substation Project Footprint (acres) (AA109): 94.5324210889207",
+        "Source identity and approval: Utility Unique ID #2 (Less Specific) (AJ109): T.0006402; Utility Unique ID #2 (Less Specific) - T.Dot Name (AK109): MIDWAY: REP VINCENT AND LB RELAYS; Utility Unique ID #2 (Less Specific) - Planning Orders per T.Dot (AL109): 2; Utility Unique ID #3 (Least Specific) (AM109): 3F; Changes in Unique IDs (AN109): NA | NA | NA | NA; Utility Approval (AO109): True; Year of Internal Utility Approval (AP109): 2024; Process(es) for Utility Approval (AQ109): Project Management Governance Standard; Long term Transmission Investment Plan Inclusion (AR109): 2021; TPP Phase 3 (AT109): False; GIDAP-Related (AX109): False",
+        "Permit evidence: CPUC Status (BG109): NA [See Notes]",
+        "Service-date and rate-base context: Reason for Change in In-Service Date (BN109): Clearances; In-Flight Projects (BP109): True",
+        "Source costs and expenditures ($000): Original Projected Cost or Cost Range ($000) (BQ109): 17800; Cost Cap ($000) (BR109): NA | NA; Inception to Date ($000) (BS109): 12164.539; Current Projected Total or Actual Final Cost ($000) (BT109): 18913.9816; Actual Capital Expenditures 2021 ($000) (BU109): 0; Actual Capital Expenditures 2022 ($000) (BV109): 183.7951; Actual Capital Expenditures 2023 ($000) (BW109): 555.2989; Actual Capital Expenditures 2024 ($000) (BX109): 3945.1099; Actual Capital Expenditures 2025 ($000) (BY109): 6284.2079; Actual and Forecast Capital Expenditures 2026 ($000) (BZ109): 6463.4005; Projected Capital Expenditures 2027 ($000) (CA109): 1482.1693; Projected Capital Expenditures 2028 ($000) (CB109): 0; Projected Capital Expenditures 2029 ($000) (CC109): 0; Projected Capital Expenditures 2030 ($000) (CD109): 0; Construction Work in Progress ($000) (CE109): 10968.411800000002; Accrued Overhead ($000) (CF109): Accrued Overheard included in Data Field #57; Accrued AFUDC ($000) (CG109): Accrued AFUDC included in Data Field #57; Dollars Put into FERC Rate Base 2021 ($000) (CI109): 0; Dollars Put into FERC Rate Base 2022 ($000) (CJ109): 0; Dollars Put into FERC Rate Base 2023 ($000) (CK109): 0; Dollars Put into FERC Rate Base 2024 ($000) (CL109): 0; Dollars Put into FERC Rate Base 2025 ($000) (CM109): 0; Dollars Put into FERC Rate Base 2026 ($000) (CN109): 0",
+        "Other source financial context: FERC: Year(s) (CH109): 2027; Percentage of Bid (CO109): 0; Percentage and Value ($000) of Work Requested by Others Passed onto Ratepayers (CP109): NA | NA; Percentage of Cost in High Voltage TAC (CT109): 1; Percentage of Cost in Low Voltage TAC (CU109): 0",
+        "Source voltage evidence: AB109 line kV = NA; AC109 substation/transformer capacity = 500 kV. Values retain their separate source field meanings.",
+        "Source notes (CV109): [Types of Analyses] For all Analyses listed, results of these analyses are include in the AAs & BCs.\n\n\n[CPUC Status] CPUC Permit Status Exempt: Substation modifications, not subject to GO 131-E NOC, PTC or CPCN requirements",
+        "The source derives engineering/construction percentage bands from milestone timing, not measured physical completion; retain the reported status with that limitation.",
+        "The supplied ID #2 groups source work; the parent description/cost may span multiple planning orders and owners. No parent record, unique engineering-project count or singular asset owner is inferred.",
+        "Original projected cost/range is the ID #2 project total where available. Source costs are $000 and are not additive across repeated parent entries or evidence of coordination savings.",
+        "March 2026 status evidence is separate from the March 10 automated extraction and May 1 publication. Actual-or-expected start and projected-or-actual service dates do not establish a construction window."
+      ],
+      "inventory": {
+        "sourceKey": "ca-pge-tpr",
+        "editionId": "2026-05-01",
+        "editionLabel": "PG&E public May 2026 TPR portfolio",
+        "reportingGroupName": "PG&E public TPR",
+        "recordKind": "transmission-project",
+        "identityBasis": "native-id",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-03",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Buttonwillow CDP, Kern",
+        "owner": null,
+        "parentProgramId": "T.0006402",
+        "aliases": [
+          "Source ID #2 name: MIDWAY: REP VINCENT AND LB RELAYS",
+          "Major work category: 3F"
+        ],
+        "workType": "Substation - Protection Relay",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "All public latitude/longitude cells are blank. Defined line-endpoint meaning, city/county text and lengths do not supply a qualified center, CRS or accuracy."
+        ],
+        "milestones": [
+          {
+            "field": "Original planned in-service (BL)",
+            "date": {
+              "value": "2026-06-20",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Original planned in-service"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B109:X109, Z109:CV109; BL109",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          },
+          {
+            "field": "Actual or expected construction start (BK)",
+            "date": {
+              "value": "2025-07-08",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Actual or expected construction start"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B109:X109, Z109:CV109; BK109",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          }
+        ],
+        "recordUnit": "component"
+      }
+    },
+    {
+      "id": "ca-pge-tpr:5771718",
+      "sourceId": "5771718",
+      "utilityId": "ca-pge-tpr",
+      "sponsor": null,
+      "name": "MORRO BAY - CAL FLATS 230KV LINE SHOOFLY",
+      "description": "This project will construct a new 230/70kV substation (owned and operated by HWT) and an adjacent 70kV \nsubstation (owned by PG&E) approximately five miles east of the existing Paso Robles Substation to provide \nrobust system reinforcement and system reliability to customers in the Paso Robles DPA. Key project elements \nfor the scope include:\nCompetitive Scope (230kV): Awarded to HWT\n• Construct 230kV portion of Estrella Substation, including one new 230/70kV transformer.\n• Acquire land rights and permits for substation.\n• Complete rough grading for both the 230kV and 70kV stations.\nNon-competitive Scope (70kV): \n• Construct the 70kV Union substation.\n• Construct 230kV transmission lines to loop the Cal Flats-Morro Bay 230kV into Estrella Substation.\n• Construct one (1)-double circuit 70kV line from Union Substation to a tie-in point with the San Miguel_x0002_Paso Robles 70kV line (10.5 miles). The line includes a common neutral conductor and fiber optic cable.\n• Reconductor the southernmost portion of the San Miguel-Paso Robles 70kV line between the tie-in point \nand Paso Robles Substation (six miles). Add a common neutral conductor and fiber optic cable.\n• Acquire land rights and permits for the 70kV substation and transmission lines connecting to the substation\nand perfect easements for certain portions of the reconductoring work on the San Miguel-Paso Robles \n70kV line.\n• Build 230kV remote end upgrades at Morro Bay and Cal Flats substations to coordinate with the new \nEstrella Substation.\n• Install reverse power relays at Templeton and Union/Estrella substations to avoid reverse power flow from \nthe 70kV system to the 230kV system during certain system conditions.\n• Install a new dead-end structure and associated switches at Paso Robles Substation to accommodate new \nconductor size and terminate a new fiber optic cable within the control building.",
+      "status": "Engineering more than 50% complete",
+      "voltageKv": [
+        230.0
+      ],
+      "date": {
+        "value": "2027-03-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Current projected or actual in-service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "locator": "CPUC TPR PUBLIC!B500:X500, Z500:CV500",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages 2–3, 5, 7–8; dates, native units, programmatic work and public redactions"
+        },
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "Data Field Descriptions!B62:F66"
+        }
+      ],
+      "notes": [
+        "Scope and purpose: Project Description - What (H500): Transmission Line - Conductor; Project Description - Action Taken (I500): New; Primary Purpose (L500): Reliability; Secondary Purpose (M500): T-Line Capacity; NERC/WECC/CAISO Standard/Requirement/Contingency (N500): NERC TPL Standards; Last Inspection (P500): 2026-03-03; Age of Asset (Q500): 70; Types of Analyses (R500): Steady State Power Flow System Analysis; Alternative Solutions and Costs - Solutions (S500): Wires - Bus Upgrade Alternative; Alternative Solutions and Costs - Costs (T500): $125 Mil - $150 Mil; CPUC Fire Threat Zone/Rating (U500): Tier 1; Wildfire Related (V500): FALSE | FALSE | FALSE; RAMP (W500): False; Other Environmental Factors (X500): Corrosion | Flooding; Transmission Project Size (length in miles) (Z500): 0.1; Substation Project Footprint (acres) (AA500): 1.62717242456321",
+        "Source identity and approval: Utility Unique ID #2 (Less Specific) (AJ500): T.0000154; Utility Unique ID #2 (Less Specific) - T.Dot Name (AK500): Estrella 230 kV Transmission Substation; Utility Unique ID #2 (Less Specific) - Planning Orders per T.Dot (AL500): 20; Utility Unique ID #3 (Least Specific) (AM500): 60; Changes in Unique IDs (AN500): NA | 5757620 | NA | NA; Utility Approval (AO500): False; Year of Internal Utility Approval (AP500): 2015; Process(es) for Utility Approval (AQ500): Project Management Governance Standard; Long term Transmission Investment Plan Inclusion (AR500): 2018; CAISO Year (AS500): 2014; TPP Phase 3 (AT500): True; Year(s) when considered in CAISO TPP (AU500): 2014; Link to TPP where project has been considered, approved, and/or expected to be considered (AW500): https://www.caiso.com/Documents/Board-Approved2013-2014TransmissionPlan.pdf; GIDAP-Related (AX500): False",
+        "Permit evidence: CEQA Status (AY500): CEQA Final Published; CEQA Status - Date (AZ500): 2023-03-31; CEQA Document Type (BA500): EIR; CEQA Lead Agency (BC500): CPUC; CPUC Filing Type (BE500): PTC: A.17-01-023; CPUC Date Filed (BF500): 2017-01-25; CPUC Status (BG500): Approved; CPUC Status - Year (BH500): 2024",
+        "Service-date and rate-base context: Reason for Change in In-Service Date (BN500): Prioritization; In-Flight Projects (BP500): True",
+        "Source costs and expenditures ($000): Original Projected Cost or Cost Range ($000) (BQ500): $35,000 | $45,000; Cost Cap ($000) (BR500): NA | NA; Inception to Date ($000) (BS500): 122.8807; Current Projected Total or Actual Final Cost ($000) (BT500): 907.9767; Actual Capital Expenditures 2021 ($000) (BU500): 41.9105; Actual Capital Expenditures 2022 ($000) (BV500): 39.5365; Actual Capital Expenditures 2023 ($000) (BW500): 14.4304; Actual Capital Expenditures 2024 ($000) (BX500): 15.7343; Actual Capital Expenditures 2025 ($000) (BY500): 2.8291; Actual and Forecast Capital Expenditures 2026 ($000) (BZ500): 357.5181; Projected Capital Expenditures 2027 ($000) (CA500): 429.5861; Projected Capital Expenditures 2028 ($000) (CB500): 0; Projected Capital Expenditures 2029 ($000) (CC500): 0; Projected Capital Expenditures 2030 ($000) (CD500): 0; Construction Work in Progress ($000) (CE500): 120.8725; Accrued Overhead ($000) (CF500): Accrued Overheard included in Data Field #57; Accrued AFUDC ($000) (CG500): Accrued AFUDC included in Data Field #57; Dollars Put into FERC Rate Base 2021 ($000) (CI500): 0; Dollars Put into FERC Rate Base 2022 ($000) (CJ500): 0; Dollars Put into FERC Rate Base 2023 ($000) (CK500): 0; Dollars Put into FERC Rate Base 2024 ($000) (CL500): 0; Dollars Put into FERC Rate Base 2025 ($000) (CM500): 0; Dollars Put into FERC Rate Base 2026 ($000) (CN500): 0",
+        "Other source financial context: FERC: Year(s) (CH500): 2027; Percentage of Bid (CO500): 0% | NextEra, Estrella 230 kV Transmission Substation; Percentage and Value ($000) of Work Requested by Others Passed onto Ratepayers (CP500): NA | NA; FERC Incentives (CS500): Granted 100% Abandoned Plant Recovery Incentive; Percentage of Cost in High Voltage TAC (CT500): 1; Percentage of Cost in Low Voltage TAC (CU500): 0",
+        "Source voltage evidence: AB500 line kV = 230; AC500 substation/transformer capacity = NA. Values retain their separate source field meanings.",
+        "Source notes (CV500): [NERC/WECC/CAISO Standard/Requirement/Contingency] TPL-001-4 R2-R5\n\n\n[Types of Analyses] For all Analyses listed, results of these analyses are include in the AAs & BCs. For Steady State Power Flow System Analysis results, please also refer to annual CAISO Transmission Plan & corresponding attachment: https://www.caiso.com/Documents/AppendixCBoardApproved2013-2014TransmissionPlanJuly162014.pdf\n\n\n[TPP Phase 3] Please refer to the Project Description field for the description of the portion of the project awarded to another developer and how it relates to the project in this Spreadsheet.",
+        "The source derives engineering/construction percentage bands from milestone timing, not measured physical completion; retain the reported status with that limitation.",
+        "The supplied ID #2 groups source work; the parent description/cost may span multiple planning orders and owners. No parent record, unique engineering-project count or singular asset owner is inferred.",
+        "Original projected cost/range is the ID #2 project total where available. Source costs are $000 and are not additive across repeated parent entries or evidence of coordination savings.",
+        "March 2026 status evidence is separate from the March 10 automated extraction and May 1 publication. Actual-or-expected start and projected-or-actual service dates do not establish a construction window."
+      ],
+      "inventory": {
+        "sourceKey": "ca-pge-tpr",
+        "editionId": "2026-05-01",
+        "editionLabel": "PG&E public May 2026 TPR portfolio",
+        "reportingGroupName": "PG&E public TPR",
+        "recordKind": "transmission-project",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-03",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "El Paso de Robles, San Luis Obispo",
+        "owner": null,
+        "parentProgramId": "T.0000154",
+        "aliases": [
+          "Source ID #2 name: Estrella 230 kV Transmission Substation",
+          "Major work category: 60"
+        ],
+        "workType": "Transmission Line - Conductor",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "All public latitude/longitude cells are blank. Defined line-endpoint meaning, city/county text and lengths do not supply a qualified center, CRS or accuracy."
+        ],
+        "milestones": [
+          {
+            "field": "Original planned in-service (BL)",
+            "date": {
+              "value": "2019-05-01",
+              "precision": "day",
+              "kind": "in-service",
+              "label": "Original planned in-service"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B500:X500, Z500:CV500; BL500",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          },
+          {
+            "field": "Actual or expected construction start (BK)",
+            "date": {
+              "value": "2027-01-04",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Actual or expected construction start"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B500:X500, Z500:CV500; BK500",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          }
+        ],
+        "recordUnit": "component"
+      }
+    },
+    {
+      "id": "ca-pge-tpr:5562465",
+      "sourceId": "5562465",
+      "utilityId": "ca-pge-tpr",
+      "sponsor": null,
+      "name": "System Inspections TPTT",
+      "description": "Bucket for transmission pole test and treat inspections. These are intrusive wood pole inspections, conducted on a 10 year cycle.",
+      "status": "Programmatic Work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current projected or actual in-service — OAI (operative as installed; no event date)"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "locator": "CPUC TPR PUBLIC!B1620:X1620, Z1620:CV1620",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages 2–3, 5, 7–8; dates, native units, programmatic work and public redactions"
+        },
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "Data Field Descriptions!B62:F66"
+        }
+      ],
+      "notes": [
+        "Scope and purpose: Project Description - What (H1620): Transmission Line - Pole/Tower; Project Description - Action Taken (I1620): Replace; Primary Purpose (L1620): Asset Condition; Secondary Purpose (M1620): Age/Condition - Replace Steel Poles; Types of Analyses (R1620): Lifecycle Replacement Analysis; Alternative Solutions and Costs - Solutions (S1620): Other - Status Quo; Wildfire Related (V1620): FALSE | FALSE | False; RAMP (W1620): False; Other Environmental Factors (X1620): Extreme Heat",
+        "Source identity and approval: Utility Unique ID #3 (Least Specific) (AM1620): 70; Changes in Unique IDs (AN1620): NA | NA | NA | NA; Utility Approval (AO1620): True; Process(es) for Utility Approval (AQ1620): Project Management Governance Standard; Long term Transmission Investment Plan Inclusion (AR1620): 2025; TPP Phase 3 (AT1620): False; GIDAP-Related (AX1620): False",
+        "Permit evidence: CPUC Status (BG1620): NA [See Notes]",
+        "Service-date and rate-base context: In-Flight Projects (BP1620): True",
+        "Source costs and expenditures ($000): Cost Cap ($000) (BR1620): NA | NA; Inception to Date ($000) (BS1620): 1601.7949; Current Projected Total or Actual Final Cost ($000) (BT1620): 1601.7949; Actual Capital Expenditures 2021 ($000) (BU1620): 0; Actual Capital Expenditures 2022 ($000) (BV1620): 0; Actual Capital Expenditures 2023 ($000) (BW1620): 0; Actual Capital Expenditures 2024 ($000) (BX1620): 0; Actual Capital Expenditures 2025 ($000) (BY1620): 1601.7948; Actual and Forecast Capital Expenditures 2026 ($000) (BZ1620): 0; Projected Capital Expenditures 2027 ($000) (CA1620): 0; Projected Capital Expenditures 2028 ($000) (CB1620): 0; Projected Capital Expenditures 2029 ($000) (CC1620): 0; Projected Capital Expenditures 2030 ($000) (CD1620): 0; Construction Work in Progress ($000) (CE1620): 1601.7949; Accrued Overhead ($000) (CF1620): Accrued Overheard included in Data Field #57; Accrued AFUDC ($000) (CG1620): Accrued AFUDC included in Data Field #57; Dollars Put into FERC Rate Base 2021 ($000) (CI1620): 0; Dollars Put into FERC Rate Base 2022 ($000) (CJ1620): 0; Dollars Put into FERC Rate Base 2023 ($000) (CK1620): 0; Dollars Put into FERC Rate Base 2024 ($000) (CL1620): 0; Dollars Put into FERC Rate Base 2025 ($000) (CM1620): 0; Dollars Put into FERC Rate Base 2026 ($000) (CN1620): 0",
+        "Other source financial context: FERC: Year(s) (CH1620): 2026; Percentage of Bid (CO1620): 0; Percentage and Value ($000) of Work Requested by Others Passed onto Ratepayers (CP1620): NA | NA; Percentage of Cost in High Voltage TAC (CT1620): 0.3518; Percentage of Cost in Low Voltage TAC (CU1620): 0.6482",
+        "Source voltage evidence: AB1620 line kV = NA; AC1620 substation/transformer capacity = NA. Values retain their separate source field meanings.",
+        "Source notes (CV1620): [Types of Analyses] For all Analyses listed, results of these analyses are include in the AAs & BCs.\n\n\n[CPUC Status] CPUC Permit Status Exempt: Non-electric work; not subject to GO 131-E NOC, PTC or CPCN requirements",
+        "Programmatic work is an allocation or bucket, not an individually identified engineering project; lifecycle remains unknown.",
+        "Source cost fields retain $000 units and their own forecast/actual meanings; they do not establish coordination savings.",
+        "March 2026 status evidence is separate from the March 10 automated extraction and May 1 publication. Actual-or-expected start and projected-or-actual service dates do not establish a construction window."
+      ],
+      "inventory": {
+        "sourceKey": "ca-pge-tpr",
+        "editionId": "2026-05-01",
+        "editionLabel": "PG&E public May 2026 TPR portfolio",
+        "reportingGroupName": "PG&E public TPR",
+        "recordKind": "capital-project-context",
+        "identityBasis": "native-id",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-03",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "NA",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Major work category: 70"
+        ],
+        "workType": "Transmission Line - Pole/Tower",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "All public latitude/longitude cells are blank. Defined line-endpoint meaning, city/county text and lengths do not supply a qualified center, CRS or accuracy."
+        ],
+        "milestones": [
+          {
+            "field": "Original planned in-service (BL)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Original planned in-service — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B1620:X1620, Z1620:CV1620; BL1620",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          },
+          {
+            "field": "Actual or expected construction start (BK)",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Actual or expected construction start — NA"
+            },
+            "evidence": [
+              {
+                "file": "pge-may2026-public.xlsx",
+                "locator": "CPUC TPR PUBLIC!B1620:X1620, Z1620:CV1620; BK1620",
+                "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "ca-pge-tpr",
+      "editionId": "2026-05-01",
+      "label": "PG&E public May 2026 TPR portfolio",
+      "reportingGroupId": "ca-pge-tpr",
+      "reportingGroupName": "PG&E public TPR",
+      "publisher": "Pacific Gas and Electric Company",
+      "processAuthority": "CPUC Transmission Project Review Process",
+      "publishedOn": "2026-05-01",
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "pge-may2026-public.xlsx",
+        "locator": "CPUC TPR PUBLIC!B5:CV2675; all 2671 native-ID rows; manager column Y omitted",
+        "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+      },
+      "sha256": "917464588f082e2239726479b331dff6ffda97436af9daa5372332a734d4b94e",
+      "geographicScope": "PG&E California public FERC-transmission capital portfolio; source city/county labels do not establish statewide completeness or coordinates.",
+      "inventoryScope": "Entire public CPUC TPR PUBLIC table, rows 5:2675. Retain nonterminal physical components/upgrades and capital/planning context; exclude 1079 Operational and one Cancelled.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 2671,
+        "importedRecords": 6,
+        "excludedRows": 1080,
+        "failedRows": 0,
+        "pendingRows": 1585,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "explicit-cancelled",
+          "count": 1
+        },
+        {
+          "reason": "explicit-operational",
+          "count": 1079
+        }
+      ],
+      "limitations": [
+        "Public May 1, 2026 Attachment 11 only; no confidential/NDA copy, hidden metadata or person fields are imported.",
+        "March 2026 lifecycle evidence and March 10 automated extraction precede publication; no row modification date is established.",
+        "2671 source rows reconcile to 1591 retained and 1080 terminal exclusions. The separate 1434 in-progress headline is not reconciled to this row-filter definition.",
+        "Full retained scope is 1001 physical transmission components/upgrades, 278 capital context and 312 planning context; programs/allocations have no invented project unit.",
+        "Exact native ID #1 tokens preserve case. ID #2 values group work and may carry repeated descriptions/costs; no synthetic parents or name-based deduplication.",
+        "Source percentage status bands are milestone-timing estimates, not measured physical completion. Approval fields and past dates do not replace BI status.",
+        "BM current projected-or-actual service supplies 1306 day dates and 285 OAI unknowns. Mixed actual/expected starts and original forecasts remain supplementary; construction windows are unknown.",
+        "All public coordinate cells are blank. Endpoints are defined but not supplied; city/county text, voltage and length never supply geometry. Asset owners remain unknown.",
+        "Costs/ranges retain $000 units and parent/forecast/actual meanings; they are not additive project totals or hypothetical impact inputs.",
+        "This utility-limited FERC capital portfolio is not complete California coverage or a unique engineering-project census.",
+        "Public factual evidence supports authorized private analysis; no original-workbook publication or open/commercial reuse license is asserted.",
+        "Six diagnostic records are emitted first; 1585 accepted records await provider connection and full normalization."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 1080,
+    "failed": 0,
+    "notes": [
+      "All 2671 source rows are reconciled; 1585 retained entries remain pending.",
+      "Native source work units are not distinct engineering-project counts; all retained entries remain unlocated."
+    ]
+  }
+}
