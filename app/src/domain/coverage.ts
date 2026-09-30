@@ -27,11 +27,12 @@ export const nativeGeometrySchema = z.object({
 export const inventorySchema = z.object({
   sourceKey: sourceKeySchema, editionId: z.string().min(1), editionLabel: z.string().min(1),
   reportingGroupName: z.string().min(1),
-  recordKind: z.enum(["transmission-project", "capital-project-context"]),
+  recordKind: z.enum(["transmission-project", "capital-project-context", "planning-context"]),
   lifecycle: z.enum(["planned", "approved", "under-construction", "on-hold", "in-service", "cancelled", "unknown"]),
   lifecycleAsOf: z.union([z.iso.date(), z.string().regex(/^\d{4}-(0[1-9]|1[0-2])$/)]),
   owner: z.object({ id: sourceKeySchema, name: z.string().min(1), evidence: evidenceSchema, identityScope: z.enum(["source", "global"]).optional() }).nullable(),
   recordUnit: z.enum(["project", "upgrade", "component"]).optional(),
+  identityBasis: z.enum(["native-id", "source-locator"]).optional(),
   sourceState: z.string().nullable().optional(), sourceLocation: z.string().nullable().optional(),
   sourceUpdatedOn: z.iso.date().nullable().optional(),
   lifecycleDateMeaning: z.enum(["source-edition", "snapshot-observed"]).optional(),

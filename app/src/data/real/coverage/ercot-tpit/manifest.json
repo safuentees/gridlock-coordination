@@ -1,0 +1,64 @@
+{
+  "sourceKey": "ercot-tpit",
+  "editionId": "2026-07-13",
+  "label": "ERCOT TPIT — July 13, 2026",
+  "reportingGroupId": "ercot-tpit",
+  "reportingGroupName": "ERCOT TPIT inventory",
+  "publisher": "ERCOT",
+  "processAuthority": "ERCOT transmission planning",
+  "publishedOn": "2026-07-17",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+    "locator": "Four TPIT project sheets, rows 3 onward (excluding contact column J); RTPProjects rows 2:90 supplemental only",
+    "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+  },
+  "sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+  "geographicScope": "ERCOT planning footprint in Texas; not all Texas transmission, and no per-record state or center is inferred.",
+  "inventoryScope": "Source-assigned TPIT component records: explicit transmission-equipment evidence and useful unresolved/distribution planning context. Completed/cancelled, explicit in-service and model-only entries excluded; RTP rows are supplemental context, not additional active projects.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 2216,
+    "importedRecords": 1766,
+    "excludedRows": 450,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "cancelled-tab",
+      "count": 78
+    },
+    {
+      "reason": "completed-tab",
+      "count": 262
+    },
+    {
+      "reason": "duplicate-row",
+      "count": 5
+    },
+    {
+      "reason": "explicit-in-service",
+      "count": 14
+    },
+    {
+      "reason": "model-only",
+      "count": 2
+    },
+    {
+      "reason": "supplemental-rtp-context",
+      "count": 89
+    }
+  ],
+  "limitations": [
+    "All source records remain unlocated; named terminals/counties and bus references are not native geometry.",
+    "TPIT component counts are not unique engineering-project totals. Five exact non-contact duplicate rows are coalesced with both locators.",
+    "Only explicit accepted equipment quantities establish transmission-project scope; zero/missing quantities leave other useful records as planning-context.",
+    "Conceptual and absent status remain unknown; source tab/status and actual-date conflicts are preserved rather than resolved through date arithmetic.",
+    "Usable TPIT milestone fields retain displayed month precision; stored days/minutes are not day-level evidence. Year 9999 cells stay unknown with raw evidence preserved.",
+    "Owner tokens are source-scoped; unresolved/composite tokens do not become singular owner identities or globally distinct companies.",
+    "RTP records may overlap TPIT and have blank status; absent links do not establish uniqueness or cancellation.",
+    "Public raw data reused for analysis under ERCOT Terms of Use section 5; source attribution does not imply ERCOT endorsement."
+  ]
+}

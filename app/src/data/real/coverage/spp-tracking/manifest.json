@@ -1,0 +1,51 @@
+{
+  "sourceKey": "spp-tracking",
+  "editionId": "2026-q3",
+  "label": "SPP Q3 2026 project tracking",
+  "reportingGroupId": "spp-tracking",
+  "reportingGroupName": "SPP project tracking",
+  "publisher": "Southwest Power Pool",
+  "processAuthority": "Southwest Power Pool",
+  "publishedOn": "2026-07-07",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "Q3 2026 Quarterly Project Tracking Appendix 1.xlsm",
+    "locator": "'Staff QPT Appendix 1'!A3:AA1424; complete UID inventory",
+    "url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip"
+  },
+  "sha256": "167bb301dc9fd290f7901318c43312b28513aec711484d1da17162a207f09b5f",
+  "geographicScope": "Partial SPP regional public transmission-upgrade portfolio; raw states and named buses do not establish complete jurisdiction coverage.",
+  "inventoryScope": "All Appendix 1 UID upgrades except Complete, Closed Out and Withdrawn. Parent PIDs are relationships, not additional inventory records; Appendix 2 adds no independent upgrades.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 1422,
+    "importedRecords": 1247,
+    "excludedRows": 175,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Closed Out — complete with closeout requirements fulfilled",
+      "count": 12
+    },
+    {
+      "reason": "Complete — construction complete and in service",
+      "count": 155
+    },
+    {
+      "reason": "Withdrawn — no longer retained in the active scope",
+      "count": 8
+    }
+  ],
+  "limitations": [
+    "Report publication/lifecycle edition anchor is July 7, 2026; the archive index was posted August 5, 2026. A conflicting older reporting-period string does not establish an activity interval.",
+    "Every location is unknown. Bus numbers/names and state labels are raw context, not coordinates or routes.",
+    "Owner identities are source-scoped; EKC/WR, EM/KCPL and EMW/GMO are evidenced aliases. TBD/blank/composite owners remain unknown; no ultimate parent is inferred.",
+    "In Service means operational with incomplete construction. Schedule/notification stages do not establish construction start; re-evaluation and undefined pending notifications retain unknown phase.",
+    "Owner forecast, RTO need and notification dates remain separate at displayed source precision; none creates a construction window.",
+    "Appendix 2 contains 26 UIDs already in Appendix 1 and is deferred; its inconsistent free-text histories do not overwrite forecasts.",
+    "SPP terms distinguish cited copying from commercial use requiring express authorization. This attributed analysis does not claim commercial permission or an open-data license."
+  ]
+}

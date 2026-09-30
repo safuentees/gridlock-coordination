@@ -15,7 +15,7 @@ export const BRIEF_CAVEATS = [
 function sourceText(source: SourceRef) { return `${source.file}; ${source.locator}${source.url ? `; ${source.url}` : ""}` }
 function projectText(project: Project) {
   return [
-    `Project: ${project.name}`, `Stable ID: ${project.id}`, `Source ID: ${project.sourceId ?? "Unknown"}`,
+    `Project: ${project.name}`, `Stable ID: ${project.id}`, `${project.inventory?.identityBasis === "source-locator" ? "Source-record locator" : "Source ID"}: ${project.sourceId ?? "Unknown"}`,
     `Reporting filing: ${reportingGroupLabel(project)}`, `Listed sponsor: ${project.sponsor ?? "Unknown"}`,
     `Description: ${project.description || "Unknown"}`, `Status: ${project.status ?? "Unknown"}`,
     `Voltage: ${project.voltageKv.length ? `${project.voltageKv.join(" / ")} kV` : "Unknown"}`,
@@ -36,6 +36,7 @@ function inventoryText(project: Project): string[] {
     `Source inventory: ${inventory.sourceKey}; edition ${inventory.editionId} (${inventory.editionLabel})`,
     `Record kind: ${inventory.recordKind}; lifecycle: ${inventory.lifecycle}`,
     ...(inventory.recordUnit ? [`Source record unit: ${inventory.recordUnit}`] : []),
+    ...(inventory.identityBasis ? [`Source identity basis: ${inventory.identityBasis}${inventory.identityBasis === "source-locator" ? "; a reproducible source-record reference, not a native engineering project ID. Future editions require explicit identity review." : ""}`] : []),
     `Lifecycle date: ${inventory.lifecycleAsOf}; ${inventory.lifecycleDateMeaning === "snapshot-observed" ? "observed in the retrieved snapshot, not a status-change date" : inventory.lifecycleDateMeaning === "source-edition" ? "as of the source edition" : "date meaning not supplied"}`,
     ...(inventory.sourceState !== undefined ? [`Source state text: ${inventory.sourceState ?? "Unknown"}`] : []),
     ...(inventory.sourceLocation !== undefined ? [`Source location text: ${inventory.sourceLocation ?? "Unknown"}; this text does not establish coordinates`] : []),

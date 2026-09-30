@@ -1,0 +1,562 @@
+{
+  "sourceKey": "ak-aea-rstp",
+  "editionId": "2026-02-26",
+  "sources": [
+    {
+      "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+      "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D",
+      "sha256": "2503e90711cfc45603fc5871586d817ab2b754737397dfa87bc3dd76ff7d1d6d",
+      "localOriginal": "inputs/originals/F27-ak-railbelt/2026-02-26-aea-2050-rstp-final.pdf",
+      "bytes": 1539251,
+      "pdfPages": 42
+    },
+    {
+      "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+      "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D",
+      "sha256": "e1beaf0dc562ff532dd32027ffa5a1b9181cf1079d40f8bb0f564266b561b94b",
+      "localOriginal": "inputs/originals/F27-ak-railbelt/2026-02-19-aea-statewide-railbelt-energy-vision.pdf",
+      "bytes": 16983817,
+      "pdfPages": 23
+    }
+  ],
+  "counts": {
+    "sourceRows": 28,
+    "importedRecords": 26,
+    "excludedRows": 2,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "payloadSizes": {
+    "compactUtf8Bytes": 63119,
+    "formattedUtf8Bytes": 79034
+  },
+  "rows": [
+    {
+      "sourceId": "map-A",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.1",
+      "nativeMapKey": "A",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Anchorage–Soldotna existing intertie",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 27, 28; section 3.2.1; accepted leaf map-A",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key A",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-B",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.1",
+      "nativeMapKey": "B",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "CIPLink HVDC",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 27, 29; section 3.2.1; accepted leaf map-B",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key B",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-C",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.2",
+      "nativeMapKey": "C",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Anchorage–Fairbanks existing interties",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 29, 30; section 3.2.2; accepted leaf map-C",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key C",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-D",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.2",
+      "nativeMapKey": "D",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Additional Central–Healy connection",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 29, 30; section 3.2.2; accepted leaf map-D",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key D",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-E",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.3",
+      "nativeMapKey": "E",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Bradley–Soldotna existing line",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 30; section 3.2.3; accepted leaf map-E",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key E",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-F",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.3",
+      "nativeMapKey": "F",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Second Bradley–Soldotna path",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 30; section 3.2.3; accepted leaf map-F",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key F",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-I",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.4",
+      "nativeMapKey": "I",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "East–west Knik Arm 230 kV cables",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 31; section 3.2.4; accepted leaf map-I",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key I",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-J",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.4",
+      "nativeMapKey": "J",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Point MacKenzie–Sullivan overhead conductors",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 31; section 3.2.4; accepted leaf map-J",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key J",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-G",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.5",
+      "nativeMapKey": "G",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Existing BESS grid-forming conversion",
+      "disposition": "excluded",
+      "reason": "Standalone battery energy storage",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 32; section 3.2.5; accepted leaf map-G",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key G",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "map-H",
+      "identityBasis": "source-locator",
+      "parentSection": "3.2.5",
+      "nativeMapKey": "H",
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Additional regional BESS",
+      "disposition": "excluded",
+      "reason": "Standalone battery energy storage",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 32; section 3.2.5; accepted leaf map-H",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        },
+        {
+          "file": "2026.02.19 AEA Statewide Railbelt Energy Vision (Optimized Final).pdf",
+          "locator": "PDF page 19 / printed page 34; System Improvement Projects table; map key H",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.19%20AEA%20Statewide%20Railbelt%20Energy%20Vision%20%28Optimized%20Final%29.pdf?ver=s4gynDAydbr9YM7gWGJZBg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-3-1-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.3.1",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "North Pole–Fort Knox line",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 33; section 3.3.1; accepted leaf sec-3-3-1-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-3-1-item-2",
+      "identityBasis": "source-locator",
+      "parentSection": "3.3.1",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "North Pole/Fairbanks–Delta Junction line",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 33; section 3.3.1; accepted leaf sec-3-3-1-item-2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-3-2-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.3.2",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Teeland eastward capacity",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 34; section 3.3.2; accepted leaf sec-3-3-2-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-3-2-item-2",
+      "identityBasis": "source-locator",
+      "parentSection": "3.3.2",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Two MEA 230 kV paths",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 34; section 3.3.2; accepted leaf sec-3-3-2-item-2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-1-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.1",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Downtown Anchorage 115 kV capacity",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35; section 3.4.1; accepted leaf sec-3-4-1-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-1-item-2",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.1",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Third University transformer",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35; section 3.4.1; accepted leaf sec-3-4-1-item-2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-1-item-3",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.1",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Sullivan transformer",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35; section 3.4.1; accepted leaf sec-3-4-1-item-3",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-1-item-4",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.1",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Anchorage subtransmission/distribution program",
+      "disposition": "imported",
+      "reason": "Mixed transmission/distribution context",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35; section 3.4.1; accepted leaf sec-3-4-1-item-4",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-2-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.2",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "North–south Knik Arm cable replacement",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35, 36; section 3.4.2; accepted leaf sec-3-4-2-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-2-item-2",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.2",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Woronzof–International conductors",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35, 36; section 3.4.2; accepted leaf sec-3-4-2-item-2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-2-item-3",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.2",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Second Point MacKenzie 230/138 kV transformer",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 35, 36; section 3.4.2; accepted leaf sec-3-4-2-item-3",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-3-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.3",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Central Fairbanks 69 kV capacity",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 36; section 3.4.3; accepted leaf sec-3-4-3-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-3-item-2",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.3",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Goldhill transformer",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 36; section 3.4.3; accepted leaf sec-3-4-3-item-2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-3-item-3",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.3",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Fort Wainright–Carney 69 kV conductors",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 36; section 3.4.3; accepted leaf sec-3-4-3-item-3",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-4-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.4",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Puppy Dog Lake substation",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 37; section 3.4.4; accepted leaf sec-3-4-4-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-5-item-1",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.5",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Beluga–Point MacKenzie existing line",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 37; section 3.4.5; accepted leaf sec-3-4-5-item-1",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-5-item-2",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.5",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Susitna Valley plant transmission connection",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 37; section 3.4.5; accepted leaf sec-3-4-5-item-2",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    },
+    {
+      "sourceId": "sec-3-4-5-item-3",
+      "identityBasis": "source-locator",
+      "parentSection": "3.4.5",
+      "nativeMapKey": null,
+      "nativeEngineeringProjectId": null,
+      "curatedLabel": "Lake Lorraine plant substation connection",
+      "disposition": "imported",
+      "reason": "Accepted cited transmission improvement",
+      "sources": [
+        {
+          "file": "2026.02.26 AEA 2050 RSTP (Final).pdf",
+          "locator": "PDF/printed pages 37; section 3.4.5; accepted leaf sec-3-4-5-item-3",
+          "url": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D"
+        }
+      ]
+    }
+  ]
+}

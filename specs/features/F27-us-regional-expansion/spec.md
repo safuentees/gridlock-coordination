@@ -1,6 +1,8 @@
 # F27 — Expand US discovery through additional regions
 
-Current integration: accepted PJM and ISO-NE mappings in C2, early samples connected, full inventories being integrated with async source persistence and bounded inventory browsing. Next independent qualification is [F27-SPP-Q](spp-tracking/spec.md); source_discovery owns its two source reports after the complete PJM producer. UI independently grows the unlocated synthetic inventory to 6,000 total records under the exact C2 handoff. Core owns async source persistence; coordinator composes and checks the regional milestone. National coverage remains incomplete.
+Current integration: PR67 delivered full SCE/PJM/ISO-NE composition and scalable revision storage/browsing. PR73 adds SPP, ERCOT and Alaska full declared scopes; samples preceded every full producer. National coverage remains incomplete.
+
+Next independent assignments: source_discovery owns [MISO](miso-mtep/spec.md), ui temporarily owns [Hawaii featured-source ingestion](hi-heco-projects/spec.md), and core qualifies [New York local plans](ny-local/spec.md). All exact handoffs are committed. Coordinator alone connects samples, maintains shared contracts/register and runs bounded milestone checks.
 
 Selected national-coverage increment 3; continuing capability, not complete after one adapter. Depends on F26's shared contract and first integrated inventory. Purpose: let users find planned transmission projects across the US with honest regional and field coverage. Each independently delivered adapter adds a documented region/source footprint; refreshing the same inventory does not count as geographic expansion.
 

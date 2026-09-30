@@ -1,0 +1,475 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "sourceKeyProposal": "hi-heco-featured",
+  "reportingGroupProposal": {
+    "id": "hi-heco-featured",
+    "name": "Hawaiian Electric featured projects"
+  },
+  "editionProposal": {
+    "editionId": "snapshot-2026-09-30-7a3266df",
+    "publishedOn": null,
+    "retrievedOn": "2026-09-30",
+    "scopeAfterAcceptance": "full",
+    "scopeMeaning": "Complete disposition of the seven frozen featured topics only; not utility-wide or statewide inventory completeness."
+  },
+  "sourceReview": {
+    "startedAt": "2026-09-30T09:14:32Z",
+    "endedAt": "2026-09-30T09:18:09Z",
+    "elapsedSeconds": 217,
+    "method": "Public HTML and PDF text only; no visual analysis."
+  },
+  "enumerationProposal": {
+    "sourceRows": 7,
+    "importedRecords": 4,
+    "excludedRows": 3,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0,
+    "transmissionRecords": 2,
+    "capitalContextRecords": 1,
+    "planningContextRecords": 1,
+    "exactEngineeringProjectCount": null
+  },
+  "acceptanceRequired": [
+    "Accept the seven-topic featured boundary and the three exclusions.",
+    "Retain North Kohala only as unresolved planning context; do not turn storage docket closure into cancellation.",
+    "Accept source-page slugs as source-locator identities with unproven future continuity; dockets are aliases only.",
+    "No producer or runtime import until coordinator accepts the proposal."
+  ],
+  "sources": [
+    {
+      "file": "downtown-honolulu-network-upgrades.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/downtown-honolulu-network-upgrades",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/downtown-honolulu-network-upgrades.html",
+      "sha256": "cc8cefb70189f8e8be588702e0727c5daa884b7530701ed3eb2455b4d7a7e8d1"
+    },
+    {
+      "file": "overhead-power-line-replacement-project-in-kalaeloa.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/overhead-power-line-replacement-project-in-kalaeloa.html",
+      "sha256": "526ba09c612c6f7528416671e5e9b1a5ed9ba6f3174ed6fc562a5940ff68be3a"
+    },
+    {
+      "file": "waiau-transmission-structure-replacements.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/waiau-transmission-structure-replacements.html",
+      "sha256": "8f5d78c11f19111ebbbb6a9dde9c859aec4acf46d323a2beffd19cbe854ac801"
+    },
+    {
+      "file": "koa-ridge-46kv-overhead-line-relocation-project.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/koa-ridge-46kv-overhead-line-relocation-project.html",
+      "sha256": "043f0dcb6bb256add458dea2a040a322e3c4685076d2449a92bc32b7990fee27"
+    },
+    {
+      "file": "waiau-repower.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-repower",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/waiau-repower.html",
+      "sha256": "39b7bed11d4afafb234c14f4e899e8bd955942c1ecbba30190930214359ded0e"
+    },
+    {
+      "file": "north-kohala-microgrid.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/north-kohala-microgrid",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/north-kohala-microgrid.html",
+      "sha256": "446df9d7c52dfdcd910d7980e3e35739e6a6e29de3080520b3696f262eda925b"
+    },
+    {
+      "file": "development-team-projects.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/development-team-projects",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/development-team-projects.html",
+      "sha256": "04d9cb1a17147f2f90aebb4039fc15daf6c04775ced9646ea402f9fddf2f66e0"
+    },
+    {
+      "file": "investing-in-the-future.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/investing-in-the-future.html",
+      "sha256": "7a3266df72a13e0312daea561e685d2fba1fab86ef48648d634c6f453ac98c2d"
+    },
+    {
+      "file": "integrated-grid-planning.html",
+      "url": "https://www.hawaiianelectric.com/clean-energy-hawaii/integrated-grid-planning",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/integrated-grid-planning.html",
+      "sha256": "d27a23ec71641d7c0f9be62b82b101b5eb70b37b347c4a7869b5441fb87babdf"
+    },
+    {
+      "file": "igp.html",
+      "url": "https://hawaiipowered.com/igp/",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/igp.html",
+      "sha256": "1ad527f64907ede1e47c2d43aa39a66a74f1434cfc2ccbc5e355d950e2378cd3"
+    },
+    {
+      "file": "key-stakeholder-documents.html",
+      "url": "https://www.hawaiianelectric.com/clean-energy-hawaii/integrated-grid-planning/stakeholder-and-community-engagement/key-stakeholder-documents",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/key-stakeholder-documents.html",
+      "sha256": "4abe6bb2d9e71b4e5bdc4eb4cfe3d17a350a4f9c46f8d214d6808a2981c1fd90"
+    },
+    {
+      "file": "2026-06-30-igp-action-plan-annual-update.pdf",
+      "url": "https://hawaiipowered.com/igp/2026-0001_2026-06-30_IGP_Action_Plan_2026_Annual_Update.pdf",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/2026-06-30-igp-action-plan-annual-update.pdf",
+      "sha256": "d40aa4ae0c551a5de2206e3366213c673ff6c18ccf19cddc84d8596c362295d2"
+    },
+    {
+      "file": "2023-igp-appendix-c-data-tables.pdf",
+      "url": "https://hawaiipowered.com/igp/06_IGP-AppendixC_DataTables.pdf",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/2023-igp-appendix-c-data-tables.pdf",
+      "sha256": "32f75a416fe75669650ed62cecb4b769918f419b3fc381d8f4e841dab7570553"
+    },
+    {
+      "file": "2021-11-transmission-rez-study.pdf",
+      "url": "https://www.hawaiianelectric.com/a/9996",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/2021-11-transmission-rez-study.pdf",
+      "sha256": "a2ea94fe1dcadce2315a15de1f922accd310f42de898b1158dc233da418e7173"
+    }
+  ],
+  "topicLedger": [
+    {
+      "topic": "Downtown Honolulu Network Upgrades",
+      "sourceLocatorKey": "downtown-honolulu-network-upgrades",
+      "disposition": "retain",
+      "recordKind": "capital-project-context"
+    },
+    {
+      "topic": "Overhead Power Line Replacement project in Kalaeloa",
+      "sourceLocatorKey": "overhead-power-line-replacement-project-in-kalaeloa",
+      "disposition": "retain",
+      "recordKind": "transmission-project"
+    },
+    {
+      "topic": "Waiau Transmission Structure Replacements",
+      "sourceLocatorKey": "waiau-transmission-structure-replacements",
+      "disposition": "retain",
+      "recordKind": "transmission-project"
+    },
+    {
+      "topic": "North Kohala Microgrid",
+      "sourceLocatorKey": "north-kohala-microgrid",
+      "disposition": "retain",
+      "recordKind": "planning-context"
+    },
+    {
+      "topic": "Koa Ridge 46kV Overhead Line Relocation Project",
+      "sourceLocatorKey": "koa-ridge-46kv-overhead-line-relocation-project",
+      "disposition": "exclude",
+      "reason": "Explicit completion on 2023-12-15; do not infer in-service wording.",
+      "evidence": {
+        "file": "koa-ridge-46kv-overhead-line-relocation-project.html",
+        "locator": "Final approval and completion paragraphs; Docket 2022-0141",
+        "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project"
+      }
+    },
+    {
+      "topic": "Repowering the Waiau Power Plant",
+      "sourceLocatorKey": "waiau-repower",
+      "disposition": "exclude",
+      "reason": "Generation turbines, not a standalone transmission improvement.",
+      "evidence": {
+        "file": "waiau-repower.html",
+        "locator": "About the Project",
+        "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-repower"
+      }
+    },
+    {
+      "topic": "Self-Build Battery Energy Storage System on Maui",
+      "sourceLocatorKey": "development-team-projects",
+      "disposition": "exclude",
+      "reason": "Waena standalone storage; a historical withdrawn Keahole mention is not another index topic.",
+      "evidence": {
+        "file": "development-team-projects.html",
+        "locator": "Battery Energy Storage Systems; Maui County",
+        "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/development-team-projects"
+      }
+    }
+  ],
+  "records": [
+    {
+      "sourceLocatorKey": "downtown-honolulu-network-upgrades",
+      "nativeEngineeringProjectId": null,
+      "projectProposal": {
+        "id": "hi-heco-featured:downtown-honolulu-network-upgrades",
+        "sourceId": "downtown-honolulu-network-upgrades",
+        "name": "Downtown Honolulu Network Upgrades",
+        "utilityId": "hi-heco-featured",
+        "sponsor": "Hawaiian Electric",
+        "description": "Network program covering substation equipment, vaults, cables, manholes and monitoring.",
+        "voltageKv": [],
+        "status": null,
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "unknown",
+          "label": "Program upgrade horizon; not an in-service date"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "downtown-honolulu-network-upgrades.html",
+            "locator": "Keeping You Informed; Keys to a Resilient Downtown Network, items 1–5",
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/downtown-honolulu-network-upgrades"
+          }
+        ],
+        "notes": [
+          "One program-level context record; five workstreams are not five separately identified engineering projects.",
+          "Some work is completed while other work continues; the program has not been treated as wholly completed."
+        ],
+        "inventory": {
+          "sourceKey": "hi-heco-featured",
+          "editionId": "snapshot-2026-09-30-7a3266df",
+          "identityBasis": "source-locator",
+          "recordKind": "capital-project-context",
+          "lifecycle": "under-construction",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": "HI",
+          "sourceLocation": "Downtown Honolulu / Chinatown, Oahu",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "aliases": [],
+          "workType": null,
+          "constructionStart": null,
+          "milestones": [],
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      }
+    },
+    {
+      "sourceLocatorKey": "overhead-power-line-replacement-project-in-kalaeloa",
+      "nativeEngineeringProjectId": null,
+      "projectProposal": {
+        "id": "hi-heco-featured:overhead-power-line-replacement-project-in-kalaeloa",
+        "sourceId": "overhead-power-line-replacement-project-in-kalaeloa",
+        "name": "Overhead Power Line Replacement project in Kalaeloa",
+        "utilityId": "hi-heco-featured",
+        "sponsor": "Hawaiian Electric",
+        "description": "Reconductoring of the CEIP-46 circuit with associated underground and pole work.",
+        "voltageKv": [
+          46
+        ],
+        "status": null,
+        "date": {
+          "value": "2027-04",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Anticipated in-service by end of April 2027"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "overhead-power-line-replacement-project-in-kalaeloa.html",
+            "locator": "Key elements; final PUC approval and anticipated completion paragraph",
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+          },
+          {
+            "file": "investing-in-the-future.html",
+            "locator": "Overhead Power Line Replacement Project in Kalaeloa topic",
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future"
+          }
+        ],
+        "notes": [
+          "Explicit subtransmission work; no voltage cutoff inferred.",
+          "Index states 21 replacement poles; detail page states 20. The discrepancy is unresolved.",
+          "A scheduled start month does not establish actual construction. Docket 2023-0345 identifies the proceeding, not an engineering project ID."
+        ],
+        "inventory": {
+          "sourceKey": "hi-heco-featured",
+          "editionId": "snapshot-2026-09-30-7a3266df",
+          "identityBasis": "source-locator",
+          "recordKind": "transmission-project",
+          "lifecycle": "approved",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": "HI",
+          "sourceLocation": "Roosevelt Avenue between CEIP Substation and Fort Barrette Road, Kalaeloa, West Oahu",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "aliases": [
+            "CEIP 46kV Roosevelt Avenue Reconductoring",
+            "Docket 2023-0345"
+          ],
+          "workType": null,
+          "constructionStart": null,
+          "milestones": [
+            {
+              "field": "Anticipated construction start",
+              "date": {
+                "value": "2026-09",
+                "precision": "month",
+                "kind": "unknown",
+                "label": "Anticipated construction start"
+              },
+              "evidence": [
+                {
+                  "file": "overhead-power-line-replacement-project-in-kalaeloa.html",
+                  "locator": "Opening paragraph",
+                  "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+                }
+              ]
+            },
+            {
+              "field": "PUC approval",
+              "date": {
+                "value": "2025-05-27",
+                "precision": "day",
+                "kind": "unknown",
+                "label": "PUC Decision and Order 41730"
+              },
+              "evidence": [
+                {
+                  "file": "overhead-power-line-replacement-project-in-kalaeloa.html",
+                  "locator": "Final PUC approval paragraph",
+                  "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+                }
+              ]
+            }
+          ],
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      }
+    },
+    {
+      "sourceLocatorKey": "waiau-transmission-structure-replacements",
+      "nativeEngineeringProjectId": null,
+      "projectProposal": {
+        "id": "hi-heco-featured:waiau-transmission-structure-replacements",
+        "sourceId": "waiau-transmission-structure-replacements",
+        "name": "Waiau Transmission Structure Replacements",
+        "utilityId": "hi-heco-featured",
+        "sponsor": "Hawaiian Electric",
+        "description": "Replacement of aging transmission lattice structures with steel poles.",
+        "voltageKv": [],
+        "status": null,
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No in-service or completion milestone published"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "waiau-transmission-structure-replacements.html",
+            "locator": "Opening scope; final survey and permitting schedule paragraph",
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+          }
+        ],
+        "notes": [
+          "High-voltage transmission is explicit, but no numeric voltage was established.",
+          "Survey/permitting start is not construction start or completion. Individual structure numbers are not separate source projects."
+        ],
+        "inventory": {
+          "sourceKey": "hi-heco-featured",
+          "editionId": "snapshot-2026-09-30-7a3266df",
+          "identityBasis": "source-locator",
+          "recordKind": "transmission-project",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2026-09-30",
+          "lifecycleDateMeaning": "snapshot-observed",
+          "owner": null,
+          "sourceState": "HI",
+          "sourceLocation": "Waiau Power Plant through Pearl City, Oahu",
+          "sourceUpdatedOn": null,
+          "parentProgramId": null,
+          "aliases": [],
+          "workType": null,
+          "constructionStart": null,
+          "milestones": [
+            {
+              "field": "Anticipated survey and permitting start",
+              "date": {
+                "value": "2030",
+                "precision": "year",
+                "kind": "unknown",
+                "label": "Anticipated survey and permitting start; construction follows"
+              },
+              "evidence": [
+                {
+                  "file": "waiau-transmission-structure-replacements.html",
+                  "locator": "Final schedule paragraph",
+                  "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+                }
+              ]
+            }
+          ],
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      }
+    },
+    {
+      "sourceLocatorKey": "north-kohala-microgrid",
+      "nativeEngineeringProjectId": null,
+      "projectProposal": {
+        "id": "hi-heco-featured:north-kohala-microgrid",
+        "sourceId": "north-kohala-microgrid",
+        "name": "North Kohala Microgrid",
+        "utilityId": "hi-heco-featured",
+        "sponsor": "Hawaiian Electric",
+        "description": "Unresolved microgrid and associated subtransmission-rebuild planning context.",
+        "voltageKv": [
+          34.5
+        ],
+        "status": null,
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "No retained implementation milestone established"
+        },
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "north-kohala-microgrid.html",
+            "locator": "Updated March 19, 2024; preferred solution and RFP closure paragraphs",
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/north-kohala-microgrid"
+          },
+          {
+            "file": "2026-06-30-igp-action-plan-annual-update.pdf",
+            "locator": "Section 1.3.7, printed page 10 / PDF page 18; June 30, 2026 filing cover",
+            "url": "https://hawaiipowered.com/igp/2026-0001_2026-06-30_IGP_Action_Plan_2026_Annual_Update.pdf"
+          }
+        ],
+        "notes": [
+          "The preferred solution combined a line rebuild with storage; the separately approved transmission scope remains unresolved.",
+          "The storage solicitation closed without an award; that does not establish cancellation of the wider project.",
+          "Controller ownership does not establish ownership of the complete mixed project.",
+          "The June 2026 annual update says the project is being reevaluated after unsuccessful funding efforts. The 34.5 kV value describes the existing associated line, not the BESS."
+        ],
+        "inventory": {
+          "sourceKey": "hi-heco-featured",
+          "editionId": "snapshot-2026-09-30-7a3266df",
+          "identityBasis": "source-locator",
+          "recordKind": "planning-context",
+          "lifecycle": "unknown",
+          "lifecycleAsOf": "2026-06-30",
+          "lifecycleDateMeaning": "source-edition",
+          "owner": null,
+          "sourceState": "HI",
+          "sourceLocation": "North Kohala, Hawaii Island",
+          "sourceUpdatedOn": "2024-03-19",
+          "parentProgramId": null,
+          "aliases": [
+            "Docket 2022-0012"
+          ],
+          "workType": null,
+          "constructionStart": null,
+          "milestones": [],
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      }
+    }
+  ]
+}
