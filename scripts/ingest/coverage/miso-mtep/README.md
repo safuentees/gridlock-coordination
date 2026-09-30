@@ -5,12 +5,12 @@ Reads the unchanged public status workbook through August 4, 2026 using openpyxl
 ```sh
 python3 scripts/ingest/coverage/miso-mtep/extract.py \
   --input '/absolute/path/Appendix A Status Report575959.xlsx' \
-  --scope sample \
+  --scope full \
   --output-dir app/src/data/real/coverage/miso-mtep \
   --generated-at 2026-09-30T00:00:00+00:00
 ```
 
-Use the prior Dataset's generatedAt for exact reproduction. Sample first uses the six qualified Facility IDs; all 169 known M4 rows are immediately excluded, while the other 3,036 retained rows are pending in the exhaustive ledger. The coordinator connects this sample before `--scope full` generates the accepted 3,042 retained / 169 M4 excluded records.
+Use the prior Dataset's generatedAt for exact reproduction. Sample first uses the six qualified Facility IDs; all 169 known M4 rows are immediately excluded, while the other 3,036 retained rows are pending in the exhaustive ledger. The coordinator connected this sample at `faf5c03` before full generation. The committed output contains the accepted 3,042 retained / 169 M4 excluded records, with zero pending or failed rows.
 
 `policy.json` preserves the accepted 30 planning-context decisions with their cell citations and the exact unresolved owner-token families. Source `Misc.` rows retain capital context; other accepted physical facility types retain transmission kind. These records remain visible regardless of kind. No voltage threshold or keyword-only scope filter is used.
 
