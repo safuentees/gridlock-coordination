@@ -1,0 +1,97 @@
+{
+  "qualificationOnly": true,
+  "status": "missing-public-input",
+  "source": "https://www.ourgridfuture.org/",
+  "sourcePass": {
+    "startedAt": "2026-09-30T12:56:31Z",
+    "endedAt": "2026-09-30T12:58:25Z",
+    "elapsedSeconds": 114
+  },
+  "access": {
+    "landingPageText": "available through web retrieval",
+    "ordinaryRawHtmlStatus": 403,
+    "downloadBoundary": "Contact-information submission required. No form submitted or gated URL retrieved.",
+    "publishedControls": [
+      "Download GIS shapefile (.zip)",
+      "Download database (.xlsx)"
+    ],
+    "resolvedUngatedDownloadUrls": null
+  },
+  "publisherContext": {
+    "compiler": "Horizon Energy Systems",
+    "collaborator": "Great Plains Institute",
+    "citationEdition": "June 2026",
+    "layerDisplayDate": "2026-06-30",
+    "projectAsOfDate": null,
+    "editionVerifiedFromDataFiles": false
+  },
+  "advertisedScope": "US transmission expansion at 230 kV or above, including new lines, upgrades, rebuilds and reconductoring; actual file enumeration unavailable.",
+  "usage": {
+    "citationRequiredForPublishedUse": true,
+    "openLicenseVerified": false,
+    "redistributionTermsVerified": false,
+    "termsLocator": "Landing page, Download the database form and citation agreement"
+  },
+  "counts": {
+    "workbookSheets": null,
+    "sourceRows": null,
+    "shapefileLayers": null,
+    "geometryFeatures": null,
+    "distinctEngineeringProjects": null,
+    "retained": null,
+    "excluded": null,
+    "located": null
+  },
+  "requestedDiagnosticCount": 6,
+  "diagnosticRecords": null,
+  "diagnosticsUnavailableReason": "The workbook and planned-project GIS package are behind the contact-information access form.",
+  "nativeIdentity": {
+    "compilerIdField": null,
+    "underlyingProjectIdField": null,
+    "editionStability": null,
+    "projectCitationField": null,
+    "crosswalkToImportedRecords": null
+  },
+  "geometry": {
+    "crs": null,
+    "featureTypes": null,
+    "lineage": null,
+    "accuracyMeters": null,
+    "actualVersusApproximate": null,
+    "pointRouteComponentRole": null,
+    "topology": null,
+    "recordLinkage": null,
+    "usableMappedCoverageIncrease": null,
+    "centerConversionAuthorized": false
+  },
+  "unavailableDatasetOriginals": [
+    {
+      "artifact": "June 2026 planned-project workbook",
+      "sha256": null
+    },
+    {
+      "artifact": "June 2026 planned-project GIS package with metadata",
+      "sha256": null
+    }
+  ],
+  "preservedEvidence": [
+    {
+      "file": "web-public-page-capture.json",
+      "kind": "derived-web-tool-text",
+      "bytes": 27867,
+      "sha256": "37e151d1a44d3ca17a85dc560a516ef05a7b39bd4376e8c6c68153be73e33310",
+      "publisherDatasetOriginal": false
+    },
+    {
+      "file": "index-http-error.html",
+      "kind": "raw-http-403-error",
+      "bytes": 5394,
+      "sha256": "c8323b7191ff90ca142a80dd1496f411f0c47ee24e3d7304c8ddde90c0eb5dcd",
+      "publisherDatasetOriginal": false
+    }
+  ],
+  "neededInput": "An openly downloadable planned-project workbook and GIS package, or a legitimately supplied copy, with accompanying dictionary/methodology, CRS and geometry-lineage metadata, underlying citations and applicable reuse terms.",
+  "mappingDecision": "No C2/C3 records or identity policy proposed until the source files establish units, native identifiers, status/date semantics and geometric linkage. Existing/context layers cannot substitute.",
+  "runtimeProduced": false,
+  "workerApplicationChecksRun": false
+}
