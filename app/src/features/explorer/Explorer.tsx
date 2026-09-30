@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { analyzeProjects } from "@/core"
 import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type Dataset } from "@/domain/schema"
+import { BriefWorkspace } from "@/features/briefs/BriefWorkspace"
 import { ProjectTimeline } from "@/features/scenarios/ProjectTimeline"
 import { ScenarioControls } from "@/features/scenarios/ScenarioControls"
 import { PairDetails, ProjectDetails } from "./ProjectDetails"
@@ -81,6 +82,7 @@ export function Explorer({ dataset }: { dataset: Dataset }) {
       </Tabs></CardContent></Card>
       <aside aria-label="Selection evidence" aria-live="polite">{selectedOpportunity ? <PairDetails opportunity={selectedOpportunity} projects={dataset.projects} onProject={selectProject} /> : <ProjectDetails project={selectedProject} />}</aside>
     </div>
+    <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} />
     <details className="rounded-lg border p-4 text-sm"><summary className="cursor-pointer font-medium">Dataset coverage and assumptions</summary><div className="mt-3 space-y-2 text-muted-foreground"><p>{dataset.title}; Snapshot {dataset.generatedAt}</p><p>Processed {dataset.coverage.processed}; Skipped {dataset.coverage.skipped}; Failed {dataset.coverage.failed}</p>{dataset.coverage.notes.map((note, index) => <p key={index}>{note}</p>)}<p>Source snapshots are not live schedules. Past milestone dates do not establish completion. Map centers do not establish shared right-of-way.</p></div></details>
   </div>
 }
