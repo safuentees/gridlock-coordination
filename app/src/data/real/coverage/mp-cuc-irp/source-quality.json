@@ -1,0 +1,143 @@
+{
+  "sourceKey": "mp-cuc-irp",
+  "editionId": "2025-03-27",
+  "scope": "sample",
+  "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
+  "acceptedRetainedLifecycleCounts": {
+    "unknown": 10
+  },
+  "acceptedRetainedKindCounts": {
+    "planning-context": 10
+  },
+  "acceptedRetainedDatePrecisionCounts": {
+    "unknown": 10
+  },
+  "importedLifecycleCounts": {
+    "unknown": 3
+  },
+  "importedKindCounts": {
+    "planning-context": 3
+  },
+  "sampleIds": [
+    "mp-cuc-irp:2025-p055-t45-r03",
+    "mp-cuc-irp:2025-p055-t45-r07",
+    "mp-cuc-irp:2025-p055-t45-r09"
+  ],
+  "originals": [
+    {
+      "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+      "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf",
+      "bytes": 3459188,
+      "sha256": "d0a509e70cf4a7c87295259dc00d61caa02e7bf4e6933eaa195e1381dc5cb92e"
+    }
+  ],
+  "relationshipsAndPrecedence": [
+    "These are bounded public contextual inventories, not complete CNMI planned-transmission coverage or distinct engineering-project counts.",
+    "All service/need dates and construction windows are unknown. Fiscal budgets and model assumptions do not supply event dates.",
+    "Publisher, operator and existing-network ownership do not establish row-specific ownership of proposed assets.",
+    "No native project coordinates, CRS or accuracy were qualified. Island/terminal text and modeled lengths do not supply centers.",
+    "A public asset-level implementation register with adopted work, current lifecycle and geographic evidence remains missing.",
+    "All ten recommendations are planning-context with unknown lifecycle; no construction approval or transmission role is established.",
+    "All seven printed Table25 aggressive-scenario rows are separately accounted; its repeated Naftan minimum row is not another option/project.",
+    "Rota row9 uses a 15 kV model line type and a 13.8 kV terminal; proposed line operating voltage is unknown.",
+    "The 2025-03-27 cover establishes the source edition, not a separately verified publication day or current project status."
+  ],
+  "supplementalScenarioRows": [
+    {
+      "locator": "PDF52 / printed38, Table25 row1",
+      "option": "Naftan minimum",
+      "role": "Supplemental to Table45 row1; same 2 km/13.8 kV connection",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF52 / printed38, Table25 row1",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    },
+    {
+      "locator": "PDF52 / printed38, Table25 row2",
+      "option": "Naftan maximum",
+      "role": "Separate modeled alternative: at least 10 km, source says 34.8 kV, reactive support; not a committed project",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF52 / printed38, Table25 row2",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row1",
+      "option": "Naftan minimum repeated",
+      "role": "Printed repeat of preceding-page row; no extra unique option",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF53 / printed39, Table25 row1",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row2",
+      "option": "As Gonno",
+      "role": "Scenario says no upgrades; conflicts with baseline 0.5 km requirement, preserve both scenarios",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF53 / printed39, Table25 row2",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row3",
+      "option": "Tapochao",
+      "role": "Separate modeled alternative: at least 4 km/13.8 kV and reactive support",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF53 / printed39, Table25 row3",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row4",
+      "option": "Kalabera minimum",
+      "role": "Separate modeled alternative: at least 8 km/13.8 kV",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF53 / printed39, Table25 row4",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row5",
+      "option": "Kalabera maximum",
+      "role": "Source says 2 × 12 km/34.8 kV and 52.5 MW, unlike Table45 34.5 kV/40 MW; no automatic merge",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF53 / printed39, Table25 row5",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    }
+  ],
+  "otherSupplementalContext": [
+    {
+      "summary": "Substation feeder RTU upgrades are reported underway with remote-control scope unresolved; no individual asset inventory is enumerated. Not part of Table45.",
+      "sources": [
+        {
+          "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+          "locator": "PDF76 / printed62, section6.1",
+          "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+        }
+      ]
+    }
+  ]
+}

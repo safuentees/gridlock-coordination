@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "CUC FY2025 reported grid work — three-record sample",
+  "generatedAt": "2026-09-30T10:59:16+00:00",
+  "projects": [
+    {
+      "id": "mp-cuc-ccr:fy2025-p04-power-b06",
+      "utilityId": "mp-cuc-ccr",
+      "sourceId": "fy2025-p04-power-b06",
+      "sponsor": null,
+      "name": "PP1–CHCC underground supply",
+      "description": "Distribution project; design finished, construction application awaiting approval",
+      "status": "Distribution project; design finished, construction application awaiting approval",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+          "locator": "PDF4 / printed4, power section bullet6",
+          "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+        },
+        {
+          "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+          "locator": "PDF2 / printed2, Power Transmission and Distribution narrative",
+          "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+        }
+      ],
+      "notes": [
+        "The page2 narrative explicitly identifies underground distribution work. Completed design and a pending construction application do not establish construction approval."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-ccr",
+        "editionId": "fy2025-2025-10",
+        "editionLabel": "CUC FY2025 reported grid work",
+        "reportingGroupName": "CNMI CUC reported grid work",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "CHCC"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
+      "id": "mp-cuc-ccr:fy2025-p04-power-b16",
+      "utilityId": "mp-cuc-ccr",
+      "sourceId": "fy2025-p04-power-b16",
+      "sponsor": null,
+      "name": "Concrete poles, Tinian and Rota",
+      "description": "One combined source bullet; designs finished, construction applications awaiting approval",
+      "status": "One combined source bullet; designs finished, construction applications awaiting approval",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+          "locator": "PDF4 / printed4, power section bullet16",
+          "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+        },
+        {
+          "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+          "locator": "PDF2 / printed2, Power Transmission and Distribution narrative",
+          "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+        }
+      ],
+      "notes": [
+        "Tinian and Rota are one combined source bullet; do not split it into two invented project IDs. Both construction applications remain pending."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-ccr",
+        "editionId": "fy2025-2025-10",
+        "editionLabel": "CUC FY2025 reported grid work",
+        "reportingGroupName": "CNMI CUC reported grid work",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Tinian; Rota",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    },
+    {
+      "id": "mp-cuc-ccr:fy2025-p04-power-b17",
+      "utilityId": "mp-cuc-ccr",
+      "sourceId": "fy2025-p04-power-b17",
+      "sponsor": null,
+      "name": "Concrete poles, phase I",
+      "description": "Design application awaiting approval; island identified in printed p2 T&D narrative",
+      "status": "Design application awaiting approval; island identified in printed p2 T&D narrative",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed in-service or need milestone supplied"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+          "locator": "PDF4 / printed4, power section bullet17",
+          "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+        },
+        {
+          "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+          "locator": "PDF2 / printed2, Power Transmission and Distribution narrative",
+          "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+        }
+      ],
+      "notes": [
+        "Page2 identifies the otherwise unnamed page4 phase-I pole entry as Saipan. The application remains at design, not construction."
+      ],
+      "inventory": {
+        "sourceKey": "mp-cuc-ccr",
+        "editionId": "fy2025-2025-10",
+        "editionLabel": "CUC FY2025 reported grid work",
+        "reportingGroupName": "CNMI CUC reported grid work",
+        "recordKind": "capital-project-context",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-10",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Saipan",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source area/endpoints are descriptive text only. No qualified native center, CRS or accuracy is supplied; linked maps were not interpreted."
+        ],
+        "milestones": []
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "mp-cuc-ccr",
+      "editionId": "fy2025-2025-10",
+      "label": "CUC FY2025 reported grid work",
+      "reportingGroupId": "mp-cuc-ccr",
+      "reportingGroupName": "CNMI CUC reported grid work",
+      "publisher": "Commonwealth Utilities Corporation",
+      "processAuthority": null,
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "locator": "PDF4 / printed4, power generation/T&D/renewables section, all 26 top-level bullets",
+        "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf"
+      },
+      "sha256": "ae36d91aecd55ae0bc236971ebd0387e462fcc8c84c1d074e80dc7b90e0a2c5f",
+      "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
+      "inventoryScope": "Twenty-six power-work bullets on printed page4; eight useful contextual grid entries retained and eighteen generation, completed, operating, civil, vehicle or broad-study entries excluded. Page2 supplements the same entries.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 26,
+        "importedRecords": 3,
+        "excludedRows": 18,
+        "failedRows": 0,
+        "pendingRows": 5,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "broad-planning-study",
+          "count": 1
+        },
+        {
+          "reason": "building-generation-storage",
+          "count": 1
+        },
+        {
+          "reason": "completed-generation",
+          "count": 1
+        },
+        {
+          "reason": "completed-generation-interconnection",
+          "count": 1
+        },
+        {
+          "reason": "completed-interconnection-policy",
+          "count": 1
+        },
+        {
+          "reason": "completed-maintenance",
+          "count": 1
+        },
+        {
+          "reason": "completed-study",
+          "count": 1
+        },
+        {
+          "reason": "completed-vehicle-procurement",
+          "count": 1
+        },
+        {
+          "reason": "environmental-investigation",
+          "count": 1
+        },
+        {
+          "reason": "fuel-pipeline",
+          "count": 1
+        },
+        {
+          "reason": "generation-controls",
+          "count": 1
+        },
+        {
+          "reason": "generation-storage-procurement",
+          "count": 1
+        },
+        {
+          "reason": "operating-compliance",
+          "count": 1
+        },
+        {
+          "reason": "operating-vegetation",
+          "count": 1
+        },
+        {
+          "reason": "power-plant-civil-work",
+          "count": 1
+        },
+        {
+          "reason": "standalone-storage",
+          "count": 1
+        },
+        {
+          "reason": "vehicle-grant",
+          "count": 1
+        },
+        {
+          "reason": "workshop-building",
+          "count": 1
+        }
+      ],
+      "limitations": [
+        "These are bounded public contextual inventories, not complete CNMI planned-transmission coverage or distinct engineering-project counts.",
+        "All service/need dates and construction windows are unknown. Fiscal budgets and model assumptions do not supply event dates.",
+        "Publisher, operator and existing-network ownership do not establish row-specific ownership of proposed assets.",
+        "No native project coordinates, CRS or accuracy were qualified. Island/terminal text and modeled lengths do not supply centers.",
+        "A public asset-level implementation register with adopted work, current lifecycle and geographic evidence remains missing.",
+        "Named physical bullets6/8/16/17/18 are capital-project-context; broad bullets5/19/20 remain planning-context. None is transmission-qualified.",
+        "Four retained entries are planned; four retain unknown lifecycle. Design completion, a funding award or procurement does not establish construction approval.",
+        "Tinian/Rota bullet16 and multi-island programs remain single source entries without invented child assets.",
+        "The publication and lifecycle evidence is October2025; no publication day or service milestone is invented.",
+        "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+        "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
+        "Three retained diagnostics are emitted first; 5 accepted entries await provider connection and full normalization."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 3,
+    "skipped": 18,
+    "failed": 0,
+    "notes": [
+      "All 26 declared source entries are reconciled; 5 retained entries remain pending.",
+      "Counts are contextual source entries, not transmission-qualified or unique engineering projects."
+    ]
+  }
+}

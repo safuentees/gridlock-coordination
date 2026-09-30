@@ -1,0 +1,43 @@
+{
+  "sourceKey": "mp-cuc-irp",
+  "editionId": "2025-03-27",
+  "label": "CUC March 2025 IRP network recommendations",
+  "reportingGroupId": "mp-cuc-irp",
+  "reportingGroupName": "CNMI CUC IRP recommendations",
+  "publisher": "Commonwealth Utilities Corporation",
+  "processAuthority": null,
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+    "locator": "PDF69 / printed55, Table45, all ten body rows",
+    "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf"
+  },
+  "sha256": "d0a509e70cf4a7c87295259dc00d61caa02e7bf4e6933eaa195e1381dc5cb92e",
+  "geographicScope": "Saipan, Tinian and Rota source context within the Northern Mariana Islands; no territory-wide project census.",
+  "inventoryScope": "Ten modeled recommended-reinforcement rows in Table45. Separate aggressive-generation alternatives, existing assets and narrative SCADA work are supplemental, not extra adopted projects.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 10,
+    "importedRecords": 3,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 7,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "These are bounded public contextual inventories, not complete CNMI planned-transmission coverage or distinct engineering-project counts.",
+    "All service/need dates and construction windows are unknown. Fiscal budgets and model assumptions do not supply event dates.",
+    "Publisher, operator and existing-network ownership do not establish row-specific ownership of proposed assets.",
+    "No native project coordinates, CRS or accuracy were qualified. Island/terminal text and modeled lengths do not supply centers.",
+    "A public asset-level implementation register with adopted work, current lifecycle and geographic evidence remains missing.",
+    "All ten recommendations are planning-context with unknown lifecycle; no construction approval or transmission role is established.",
+    "All seven printed Table25 aggressive-scenario rows are separately accounted; its repeated Naftan minimum row is not another option/project.",
+    "Rota row9 uses a 15 kV model line type and a 13.8 kV terminal; proposed line operating voltage is unknown.",
+    "The 2025-03-27 cover establishes the source edition, not a separately verified publication day or current project status.",
+    "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
+    "Three retained diagnostics are emitted first; 7 accepted entries await provider connection and full normalization."
+  ]
+}

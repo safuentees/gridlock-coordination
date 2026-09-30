@@ -1,0 +1,49 @@
+{
+  "sourceKey": "mp-cuc-ccr",
+  "editionId": "fy2025-2025-10",
+  "scope": "sample",
+  "normalizationMethod": "Audited factual catalog with exact preserved-source hashes and locators; no image/map interpretation.",
+  "acceptedRetainedLifecycleCounts": {
+    "planned": 4,
+    "unknown": 4
+  },
+  "acceptedRetainedKindCounts": {
+    "capital-project-context": 5,
+    "planning-context": 3
+  },
+  "acceptedRetainedDatePrecisionCounts": {
+    "unknown": 8
+  },
+  "importedLifecycleCounts": {
+    "planned": 3
+  },
+  "importedKindCounts": {
+    "capital-project-context": 3
+  },
+  "sampleIds": [
+    "mp-cuc-ccr:fy2025-p04-power-b06",
+    "mp-cuc-ccr:fy2025-p04-power-b16",
+    "mp-cuc-ccr:fy2025-p04-power-b17"
+  ],
+  "originals": [
+    {
+      "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+      "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf",
+      "bytes": 1342765,
+      "sha256": "ae36d91aecd55ae0bc236971ebd0387e462fcc8c84c1d074e80dc7b90e0a2c5f"
+    }
+  ],
+  "relationshipsAndPrecedence": [
+    "These are bounded public contextual inventories, not complete CNMI planned-transmission coverage or distinct engineering-project counts.",
+    "All service/need dates and construction windows are unknown. Fiscal budgets and model assumptions do not supply event dates.",
+    "Publisher, operator and existing-network ownership do not establish row-specific ownership of proposed assets.",
+    "No native project coordinates, CRS or accuracy were qualified. Island/terminal text and modeled lengths do not supply centers.",
+    "A public asset-level implementation register with adopted work, current lifecycle and geographic evidence remains missing.",
+    "Named physical bullets6/8/16/17/18 are capital-project-context; broad bullets5/19/20 remain planning-context. None is transmission-qualified.",
+    "Four retained entries are planned; four retain unknown lifecycle. Design completion, a funding award or procurement does not establish construction approval.",
+    "Tinian/Rota bullet16 and multi-island programs remain single source entries without invented child assets.",
+    "The publication and lifecycle evidence is October2025; no publication day or service milestone is invented."
+  ],
+  "supplementalScenarioRows": [],
+  "otherSupplementalContext": []
+}
