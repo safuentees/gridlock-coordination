@@ -1,7 +1,9 @@
-# WestConnect public TPPL sample
+# WestConnect public TPPL full inventory
 
-Provider-ready Dataset v2 from the accepted February 10, 2026 public TPPL. Six retained diagnostic records precede full normalization; all remain unlocated with unknown asset owners. The complete row ledger reconciles 389 source records as six imported, 85 excluded and 298 pending.
+Provider-ready Dataset v2 from the accepted February 10, 2026 public TPPL. The six-record sample was provider-connected at `adc2397` before expansion. All 304 retained records remain unlocated with unknown asset owners, and the six connected records retain the same projection and IDs.
 
-`dataset.json` and `manifest.json` share the source manifest. `row-ledger.json` preserves each source disposition and citation. `source-quality.json` records accepted full totals, identity discrepancies and classification/date meanings. `payload-sizes.json` records actual Dataset sizes: 18,431 compact / 24,270 formatted UTF-8 bytes.
+The complete row ledger reconciles 389 source records as 304 imported, 85 excluded and zero pending/failed. Exclusions remain 65 In-Service, 16 Withdrawn (not necessarily cancelled) and four exact generation-only IDs. Retained kind totals are 300 transmission-project and four planning-context; lifecycle totals are 244 planned, 56 unknown Conceptual and four under-construction. Dates retain 254 year values and 50 unknown values.
 
-See the source-only producer and reproduction command in `scripts/ingest/coverage/westconnect-tppl/README.md`. Originals remain ignored. Coordinator provider connection is pending; no source worker checks or full output have run.
+`dataset.json` and `manifest.json` share the source manifest. `row-ledger.json` preserves every source disposition and citation. `source-quality.json` records scope, identity discrepancies and classification/date meanings. `payload-sizes.json` records actual Dataset sizes: 748,620 compact / 1,011,996 formatted UTF-8 bytes.
+
+See the source-only producer and reproduction command in `scripts/ingest/coverage/westconnect-tppl/README.md`. Originals remain ignored. No source worker checks ran; coordinator owns integration and milestone verification.

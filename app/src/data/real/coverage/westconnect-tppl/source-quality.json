@@ -1,7 +1,7 @@
 {
   "sourceKey": "westconnect-tppl",
   "editionId": "2026-02-10",
-  "scope": "sample",
+  "scope": "full",
   "fullSourceStatusCounts": {
     "Conceptual": 56,
     "In-Service": 65,
@@ -23,13 +23,13 @@
     "year": 254
   },
   "importedLifecycleCounts": {
-    "planned": 4,
-    "under-construction": 1,
-    "unknown": 1
+    "planned": 244,
+    "under-construction": 4,
+    "unknown": 56
   },
   "importedKindCounts": {
-    "planning-context": 1,
-    "transmission-project": 5
+    "planning-context": 4,
+    "transmission-project": 300
   },
   "combinedIdMismatchCounts": {
     "different-year": 36,

@@ -16,13 +16,13 @@
   "sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
   "geographicScope": "Source-reported Arizona, New Mexico, Colorado, Texas, Wyoming, Nebraska, South Dakota, Multiple and blank state labels; partial regional submission scope, with no allocation of Multiple or inferred state coverage.",
   "inventoryScope": "Public project-list entries with nonterminal transmission work and explicit distribution planning context. In-Service, Withdrawn and four exact generation-only entries are excluded.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 389,
-    "importedRecords": 6,
+    "importedRecords": 304,
     "excludedRows": 85,
     "failedRows": 0,
-    "pendingRows": 298,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -49,7 +49,6 @@
     "Planned does not establish regulatory approval; Conceptual remains unknown, and elapsed in-service forecasts do not establish completion.",
     "Withdrawn covers cancelled, postponed or no active development; withdrawn exclusions do not assert cancellation.",
     "Expected in-service dates have year precision or remain unknown. Administrative timestamps never become construction windows or comparison milestones.",
-    "Factual source evidence is retained for authorized private analysis. No open-data license, original-workbook publication or unrestricted commercial reuse is asserted.",
-    "Six retained diagnostic records are emitted first; 298 accepted records await provider connection and full normalization."
+    "Factual source evidence is retained for authorized private analysis. No open-data license, original-workbook publication or unrestricted commercial reuse is asserted."
   ]
 }
