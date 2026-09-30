@@ -2714,6 +2714,16 @@
       "sourceRows": 35,
       "proposedImportedRecords": 24,
       "locatedRecords": 0
+    },
+    {
+      "sourceKey": "fl-fpl",
+      "status": "qualified-production-in-progress",
+      "task": "F27-FPL-I",
+      "owner": "core",
+      "missingInput": "Connected five-record batch then full55; locations and50interconnection owners remain unknown",
+      "sourceRows": 89,
+      "proposedImportedRecords": 55,
+      "locatedRecords": 0
     }
   ],
   "scopeLimits": [
@@ -3058,6 +3068,19 @@
       "excludedRows": 11,
       "scope": "Full declared IRP appendix/public-index union, not full utility inventory; unresolved observation overlap prevents a unique engineering-project count",
       "evidenceFile": "specs/features/F27-us-regional-expansion/sc-santee/qualification.md"
+    },
+    {
+      "sourceKey": "fl-fpl",
+      "editionId": "2026-04",
+      "status": "qualified-production-in-progress",
+      "task": "F27-FPL-I",
+      "owner": "core",
+      "proposedImportedRecords": 55,
+      "locatedRecords": 0,
+      "sourceRows": 89,
+      "excludedRows": 34,
+      "scope": "Five bulk-line table rows plus84Schedule10 forms;84engineering narratives support rather than duplicate forms. Fifty-five retained transmission work units, not full Florida coverage.",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/fl-fpl/qualification.md"
     }
   ]
 }

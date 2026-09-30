@@ -107,7 +107,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
 | source_discovery / ingestion | [F27-SANTEE-I](features/F27-us-regional-expansion/sc-santee/spec.md): accepted 24 observations; six diagnostics then full after connection. | Exact sc-santee producer/data folders and receipt; preserve composite dates, null ownership and overlap. No shared/map edits. |
-| core | PG&E full 1,591 complete; next [F27-FPL-Q](features/F27-us-regional-expansion/fl-fpl/spec.md) qualifies FPL proposed transmission beyond FMPA. | Exact FPL qualification/sample/receipt only; no shared/core/UI/map changes. |
+| core | [F27-FPL-I](features/F27-us-regional-expansion/fl-fpl/spec.md): five retained diagnostics, then full 55 after connection. | Exact fl-fpl producer/data folders and receipt; preserve storage-side exclusions and unknown service dates. No shared/UI/map edits. |
 | coordinator | PR133 integrated at 4c13618; accept next source/evidence contracts and connect samples before full production. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
 | ui | [NYISO qualification](features/F27-us-regional-expansion/nyiso-gold-book/spec.md) recorded an inaccessible complete public report; next [F27-SCE-E1](features/F27-us-regional-expansion/sce-owner-evidence/spec.md) investigates six located records' missing asset-owner evidence. | Exact SCE evidence qualification/sample/receipt only; no producer/shared/UI/map edits. NYISO production waits for complete public source content. |
 
