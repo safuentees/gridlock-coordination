@@ -53,7 +53,7 @@ def main():
             raise SystemExit('Captured artifact differs from the accepted edition: ' + source['file'])
     retained = [row for row in table['rows'] if not row['excluded']]
     if args.scope == 'full' and any(row['facts'] is None for row in retained):
-        raise SystemExit('Full transcription remains pending; connect the six-record sample before completing the remaining 34 pages.')
+        raise SystemExit('Full transcription is incomplete; every accepted unique page needs cited facts.')
     selected = set(table['sampleIds']) if args.scope == 'sample' else {row['sourceId'] for row in retained}
     projects, ledger = [], []
     for row in table['rows']:
@@ -120,7 +120,8 @@ def main():
         'importedDatePrecisionCounts': dict(Counter(p['date']['precision'] for p in projects)),
         'unknownOwnerRecords': len(projects), 'unknownLocationRecords': len(projects),
         'unknownConstructionWindowRecords': len(projects), 'sampleIds': [SOURCE + ':' + value for value in table['sampleIds']],
-        'geometryContext': table['geometryContext'], 'relationshipsAndPrecedence': limitations,
+        'geometryContext': table['geometryContext'], 'sourceConflicts': table.get('sourceConflicts', []),
+        'relationshipsAndPrecedence': limitations,
     }
     args.output_dir.mkdir(parents=True, exist_ok=True)
     (args.output_dir / 'dataset.json').write_text(formatted)
@@ -136,7 +137,7 @@ The six diagnostics are New Liberty, Kentucky Phase II, Beulah Grove, Appalachia
 
 `manifest.json` matches the embedded edition `observed-2026-09-30`. Its primary hash identifies the derived index text capture, never original HTML. Ordinary HTML downloads returned 403; the coordinator accepted captured text. `source-catalog.json` separately identifies all 41 text captures and 14 original public GIS JSON responses by URL, size and SHA-256. `source-quality.json` preserves capture meaning and GIS scope/status conflicts; no route geometry is converted to a center. Artifacts remain ignored under `inputs/originals/F27-tva-public/` in the UI worktree.
 
-`row-ledger.json` retains every index placement and links the excluded Tennessee Appalachia placement to its retained North Carolina placement. The sample is ready for coordinator provider connection before the other 34 unique pages are normalized. Payload: {sizes['compactUtf8Bytes']} compact UTF-8 bytes / {sizes['formattedUtf8Bytes']} formatted UTF-8 bytes.
+`row-ledger.json` retains every index placement and links the excluded Tennessee Appalachia placement to its retained North Carolina placement. The coordinator connected the original six diagnostics before this full increment; their values and identities remain unchanged. Full scope adds 34 page work units. `--scope sample` still emits the original six with 34 pending. Payload: {sizes['compactUtf8Bytes']} compact UTF-8 bytes / {sizes['formattedUtf8Bytes']} formatted UTF-8 bytes.
 
 Reproduce with `python3 scripts/ingest/coverage/tva-public/extract.py --scope {args.scope}` and the preserved artifacts. Coordinator owns runtime validation and provider integration; no worker checks were run.
 ''')

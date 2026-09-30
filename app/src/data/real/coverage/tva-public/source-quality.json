@@ -1,7 +1,7 @@
 {
   "sourceKey": "tva-public",
   "editionId": "observed-2026-09-30",
-  "scope": "sample",
+  "scope": "full",
   "normalizationMethod": "Cited factual catalog pinned to exact preserved artifact bytes; no changing-page fetch, map interpretation or inference.",
   "capturePolicy": "Coordinator accepted derived web-tool text captures; hashes identify captured text, never original HTML. Ordinary HTML downloads returned 403. Public GIS JSON is original but no geometry is authorized.",
   "rawPublisherHtmlAvailable": false,
@@ -14,17 +14,17 @@
     "under-construction": 1
   },
   "importedLifecycleCounts": {
-    "planned": 4,
-    "on-hold": 1,
+    "planned": 36,
+    "on-hold": 3,
     "under-construction": 1
   },
   "importedDatePrecisionCounts": {
-    "year": 3,
-    "unknown": 3
+    "year": 20,
+    "unknown": 20
   },
-  "unknownOwnerRecords": 6,
-  "unknownLocationRecords": 6,
-  "unknownConstructionWindowRecords": 6,
+  "unknownOwnerRecords": 40,
+  "unknownLocationRecords": 40,
+  "unknownConstructionWindowRecords": 40,
   "sampleIds": [
     "tva-public:new-liberty--alabama-(cherokee-and-calhoun-counties)",
     "tva-public:kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
@@ -165,6 +165,52 @@
       }
     ]
   },
+  "sourceConflicts": [
+    {
+      "sourceId": "redstone-arsenal-no.-3--alabama-(madison-county)",
+      "meaning": "Preferred Redstone page length 3.3 miles differs from GIS 3.68123; older demarcation/schedule descriptions are superseded."
+    },
+    {
+      "sourceId": "sundown-drive-alabama",
+      "meaning": "Sundown survey/easement seasons differ between update and table, without affecting the consistent service forecast."
+    },
+    {
+      "sourceId": "belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "meaning": "Belmont background winter–spring 2028 and winter–spring 2027–2028 wording differs; newer hold prevents using old dates."
+    },
+    {
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "meaning": "Appalachia GIS covers only 1.45934 miles versus the page line/station scope; separate 2029 component seasons are retained."
+    },
+    {
+      "sourceId": "bristol-tennessee-(south-bristol)",
+      "meaning": "Bristol repeats the Sullivan label on the second schedule table; the explicit update identifies Bluff City as that component."
+    },
+    {
+      "sourceId": "hardin-valley-(tennessee)",
+      "meaning": "Hardin Valley winter 2025–2026 conflicts with table winter 2045–2025; no typo correction or completion inference."
+    },
+    {
+      "sourceId": "lewis-chapel-tennessee-(dunlap)",
+      "meaning": "Lewis Chapel construction forecast uses winter 2023–2024 in the update versus winter 2023 in background/table."
+    },
+    {
+      "sourceId": "lexington-tennessee-(west-lexington-jacks-creek)",
+      "meaning": "Lexington narrative service Fall 2025/construction Fall 2024 conflicts with table Fall 2023/Fall 2022."
+    },
+    {
+      "sourceId": "north-dayton-tennessee",
+      "meaning": "North Dayton service Fall 2022 versus Spring 2023, with differing construction forecasts; lifecycle is May 2019, not the later environmental heading."
+    },
+    {
+      "sourceId": "tullahoma-tennessee-(center-grove)",
+      "meaning": "Tullahoma uses winter 2024–2025 versus winter 2025; no exact calendar range inferred."
+    },
+    {
+      "sourceId": "kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "meaning": "Kentucky Phase II GIS Active is overridden by the May 2026 page hold; older service dates are not current."
+    }
+  ],
   "relationshipsAndPrecedence": [
     "The 41 placements cover only this captured public engagement index: 40 unique page-scoped work units and one duplicate Appalachia placement. Full scope is not a complete TVA or state engineering register.",
     "The primary SHA-256 identifies web-tool extracted text, not publisher HTML. Ordinary HTML acquisition returned 403; the coordinator explicitly accepted derived captures as frozen evidence. Separate public GIS JSON artifacts are originals.",
