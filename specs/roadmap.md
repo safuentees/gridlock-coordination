@@ -31,11 +31,14 @@ Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inve
 | F11 | [Guided location evidence](features/F11-data-readiness/spec.md) | coordinator + ui | 6 | F10 | coordinator: `data/readiness.ts`, App/Explorer composition; ui: `features/readiness/*` |
 | F12 | [Public planning context](features/F12-source-context/spec.md) | ingestion | 6 | F10 | `scripts/ingest/*`, `data/real/*`, `changes/F12.md` |
 | F13 | [Return to source revisions](features/F13-source-return/spec.md) | core + coordinator | 6 | F08, F10 | core: `data/source-session.ts`, `changes/F13.md`; coordinator: App composition, import copy |
+| F14 | [One map panel with stack navigation](features/F14-panel-stack/spec.md) | ui + core + coordinator | 7 | F10–F13 | ui: Explorer/ProjectMap + receipt; core: ComparisonPanel/ImpactPanel; coordinator: shared contract/docs/integration |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Active workers
+
+F14 is selected and active. UI owns the single panel, list navigation and map occlusion; core owns per-candidate impact draft retention and detail topics. Coordinator owns the shared agreement and the sole composition build. Separate existing worktrees are reused; no data, calculation or storage work is displaced.
 
 F00–F13 are complete. F10 integrated in PR15–17; its single build passed at 6e63757. Stage 2 assessed arrival, working, understanding, acting and returning against the mission. F11–F13 deliver guided coverage work, source context and local source-revision continuity through PR18–22. Final combined build and representative revision/storage check passed at 5404535; existing bundle-size and future Vite config-loader warnings remain nonblocking.
 

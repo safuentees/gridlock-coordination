@@ -4,6 +4,8 @@ Gridlock helps transmission planners and regional coordination analysts compare 
 
 The central experience is a connected map, searchable project inventory and ranked opportunity list. Selecting a pair reveals where its locations and dates came from, distinguishes uncertainty, and supports comparison, scenario exploration and a reusable coordination brief.
 
+Explore uses one floating panel over the map: searchable results by default, details replacing the body, and Back restoring the browsing context. A compact collapsed state preserves search and selection. Navigation preserves unsaved scenario, impact and review work; longer evidence remains inside the same panel or the existing occasional-action dialogs.
+
 ## Full selected product
 - Ingest the supplied Dominion and Georgia public planning records reproducibly, link the starter workbook's locations, and preserve source identifiers, dates, sponsor, provenance and missing values.
 - Explore all projects from both filings on an interactive map and searchable inventory. Keep unlocated projects discoverable. Separate real source mode from a realistic 300-record demo.
