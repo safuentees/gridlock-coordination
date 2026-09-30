@@ -14,6 +14,7 @@ Refresh affected instructions when they change, not after every edit.
 
 ## Working rules
 - Commit one shared scaffold and contract before parallel implementation.
+- For data-backed products, parallelize UI on realistic synthetic data and ingestion on the same schema; follow the technical agreement.
 - Use separate branches/worktrees and respect feature ownership.
 - Claim ready assigned work; keep one implementation feature active per worker.
 - Keep drafts bare. Use documented component defaults and useful, concise copy.

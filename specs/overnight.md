@@ -16,7 +16,7 @@ The filename follows the reference project; this is also the daytime workflow. I
 7. The authorized merge owner incorporates compatible work when prerequisites are present, ownership is respected, no known blocking defect remains and enforced repository requirements are satisfied. Default owner: coordinator. Worker self-merge requires explicit authorization. Do not add repeated human approvals once merging is authorized. No branch deletion, force-push or publication is implicitly granted.
 8. A receipt on main means integrated, not fully verified. Dispatch the next ready feature immediately. Resume stopped workers through authorized tools, or give the operator one concise instruction. No ready task means name the blocker or stop; do not poll continuously or invent work.
 
-Coordinate shared-file changes with their owner and affected consumers. Keep useful parts independently integrable. Do not repeatedly rebase for unrelated merges; update when an actual dependency, conflict or enforced requirement needs it. Preserve others' changes and keep secrets, source credentials and generated files out of commits.
+Coordinate shared-file changes with their owner and affected consumers. Keep useful parts independently integrable. Prefer additive contract changes; update affected specs and ownership with the change, and name the consumer follow-up. Do not claim integration complete while that connection is missing. Do not repeatedly rebase for unrelated merges; update when an actual dependency, conflict or enforced requirement needs it. Preserve others' changes and keep secrets, source credentials and generated files out of commits.
 
 ## One limited check owner
 

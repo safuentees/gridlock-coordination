@@ -42,7 +42,7 @@ Phases set priorities; actual dependencies determine readiness. Each product pha
 
 ## Critical path
 
-[Required chain to the core user outcome; name independent parallel work and one fallback if a bottleneck is late.]
+[Required chain to the core user outcome; name independent parallel work and one fallback if a bottleneck is late. For data-backed products, UI starts on the shared contract with synthetic data; record the first small real-data handoff without waiting for the whole corpus.]
 
 ## Active workers
 

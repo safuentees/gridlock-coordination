@@ -1,6 +1,6 @@
 # Agent workflow template
 
-A small, framework-neutral starting point for agent-assisted projects. Version 1.0.0.
+A small, framework-neutral starting point for agent-assisted projects. Version 1.1.0.
 
 ## Start a project
 
@@ -20,7 +20,7 @@ An agent can read AGENTS.md even if its client does not load that filename autom
 
 Brief → product roadmap → shared contracts/scaffold → parallel feature worktrees → small PRs → integration → next ready feature.
 
-The coordinator fills in the mission, stack and roadmap once. Each selected feature gets a concise spec. The roadmap has the winner's phase/lane/dependency structure; the initial F00 row is only a bootstrap placeholder, not the intended project scope.
+The coordinator fills in the mission, stack and roadmap once. Each selected feature gets a concise spec. For data-backed products, UI develops with realistic synthetic data at the intended scale while ingestion uses the same contract; a small real batch connects them early. The roadmap has the winner's phase/lane/dependency structure; the initial F00 row is only a bootstrap placeholder, not the intended project scope.
 
 Only one agent performs limited nonvisual milestone checks. There are no installed review bots, CI workflows, browser tests, app dependencies or automatic schedulers. Web UI defaults to documented shadcn components; other projects choose an appropriate stack during setup.
 
@@ -30,4 +30,4 @@ The template's own commit is not a completed application bootstrap. Do not add `
 
 `AGENTS.md` routes work. `specs/mission.md` defines why; `specs/tech-stack.md` defines shared agreements; `specs/roadmap.md` assigns features; `specs/features/` contains task instructions; `specs/overnight.md` defines execution. `changes/` holds short completion records.
 
-Inspired by the [ShellHacks winner's roadmap](https://github.com/fradicus/Shellhacks-2026/blob/9840f7f/specs/roadmap.md). Limited checking, default styling and coordinator merging are deliberate adaptations, not claims about every action that team took.
+Inspired by the [ShellHacks winner's roadmap](https://github.com/fradicus/Shellhacks-2026/blob/9840f7f/specs/roadmap.md). Its [UI PR](https://github.com/fradicus/Shellhacks-2026/pull/6), [data API PR](https://github.com/fradicus/Shellhacks-2026/pull/8) and [contract extension](https://github.com/fradicus/Shellhacks-2026/pull/22) illustrate a shared data interface and coordinated ownership. Intended-scale synthetic data, an explicit early real-data handoff, limited checking, default styling and coordinator merging are deliberate adaptations, not claims about every action that team took.
