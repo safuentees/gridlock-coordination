@@ -4,7 +4,7 @@ name: Transparent shared-corridor scenario
 agent: core
 phase: 3
 depends_on: ['F02']
-owns: ['app/src/core/', 'app/src/features/impact/']
+owns: ['app/src/core/', 'app/src/features/impact/', 'app/scripts/check-core.ts']
 cut: never
 ---
 

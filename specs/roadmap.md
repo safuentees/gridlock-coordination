@@ -25,18 +25,17 @@ Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inve
 | F05 | [Explore geographic and temporal scenarios](features/F05-scenario-timeline/spec.md) | ui | 2 | F02, F03 | `app/src/App.tsx`, `app/src/features/explorer/`, `app/src/features/scenarios/` |
 | F06 | [Save comparisons and coordination briefs](features/F06-coordination-brief/spec.md) | ui | 2 | F05 | `app/src/App.tsx`, `app/src/features/briefs/`, `app/src/features/explorer/Explorer.tsx` |
 | F07 | [Transparent shared-corridor scenario](features/F07-impact-estimate/spec.md) | core | 3 | F02 | `app/src/core/`, `app/src/features/impact/` |
-| F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F00 | `app/src/features/import/`, `app/src/data/import.ts` |
+| F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F00 | `app/src/features/import/`, `app/src/data/import.ts`, `app/src/App.tsx` (agreed composition) |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Active workers
-| Worker | Feature | Branch / worktree | Claim / PR |
-|---|---|---|---|
-| source_discovery / ingestion | F04 | codex/F04-source-coverage / ~/.codex/worktrees/gridlock-ingestion/agent-workflow-template | assigned |
-| core | F07 | codex/F07-impact-estimate / ~/.codex/worktrees/gridlock-core/agent-workflow-template | assigned |
-| ui | F05 | codex/F05-scenario-timeline / ~/.codex/worktrees/gridlock-ui/agent-workflow-template | assigned |
+
+No active implementation claims remain. F00–F08 and C01 are integrated; completion receipts are in `changes/`. Worker identities were `/root/source_discovery` (ingestion), `/root/core` and `/root/ui`. Their managed ingestion/core/ui worktrees remain available for reuse after preparation from current main. The coordinator's local development server runs from the primary checkout.
+
+No next approved feature is waiting. Proposed location verification, true route geometry and additional utility adapters remain in [backlog](backlog.md); they are not active assignments.
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
-Milestones: M1 F01–F03 connected real/demo explorer; M2 source coverage + scenarios/briefs + impact; M3 validated revision import and final mission review. Only coordinator checks; receipts on integrated main record completion. No redundant status-only PRs.
+Milestones: M1 F01–F03 connected real/demo explorer; M2 source coverage + scenarios/briefs + impact; M3 validated revision import and final mission review. Only coordinator checks; receipts on integrated main record completion. M2 and M3 shared one final bounded check at c709368; see changes/M2-M3.md. No redundant status-only PRs.

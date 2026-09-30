@@ -4,7 +4,7 @@ name: Save comparisons and coordination briefs
 agent: ui
 phase: 2
 depends_on: ['F05']
-owns: ['app/src/App.tsx', 'app/src/features/briefs/', 'app/src/features/explorer/Explorer.tsx']
+owns: ['app/src/App.tsx', 'app/src/features/briefs/', 'app/src/features/explorer/Explorer.tsx', 'app/src/features/explorer/format.ts']
 cut: never
 ---
 

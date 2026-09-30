@@ -4,7 +4,7 @@ name: Import and compare revised datasets
 agent: coordinator
 phase: 3
 depends_on: ['F00']
-owns: ['app/src/features/import/', 'app/src/data/import.ts']
+owns: ['app/src/features/import/', 'app/src/data/import.ts', 'app/src/App.tsx']
 cut: never
 ---
 

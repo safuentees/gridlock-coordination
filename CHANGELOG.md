@@ -1,9 +1,13 @@
 # Changelog
 
-## 0.1.0 (in development)
+## 0.1.0 — 2026-09-30
 
-- Initialize Gridlock with shared contracts, default shadcn scaffold and complete product roadmap.
-- Preserve challenge sources locally and separate source requirements from reversible assumptions.
+- Add an interactive map, searchable inventory and ranked cross-filing coordination candidates with source evidence.
+- Ingest 252 public planning records and connect ten supplied location examples; add a separate 300-project demo.
+- Centralize geographic matching, temporal uncertainty, scenario comparison and hypothetical shared-corridor impact calculations.
+- Add chronological context and validated session-only dataset revision import with change preview.
+- Save evidence snapshots, compare candidates, retain local review notes and export labeled coordination briefs.
+- Preserve challenge originals locally and document assumptions, ownership and bounded nonvisual checks.
 
 # Changelog
 
