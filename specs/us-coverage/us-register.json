@@ -1,23 +1,23 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 TVA/CNMI/WAPA and deferred-loading integration PR125 (implementation 5fff2e6; one build/case passed)",
+  "baselineRevision": "F27 California/Carolinas PR133 (checked implementation ae04a2b; one build and source/revision case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Sixteen full regional inventories, five featured/funding subsets and two contextual scopes imported; three additional regional portfolios qualified for staged production. CNMI transmission role and SERTP source markings remain unresolved.",
+  "qualificationStatus": "Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported; CNMI transmission role and SERTP source markings remain unresolved",
   "totals": {
-    "importedSourceRecords": 12994,
+    "importedSourceRecords": 14820,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 12881,
+    "missingLocations": 14707,
     "explicitConstructionWindows": 0,
     "newRegionalSourcesQualified": 19,
-    "newFullRegionalInventoriesImported": 16,
+    "newFullRegionalInventoriesImported": 19,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 5,
     "fullFeaturedSubsetsImported": 5,
-    "fullDeclaredSourceScopesImported": 23,
+    "fullDeclaredSourceScopesImported": 26,
     "qualifiedContextScopes": 2,
     "fullContextScopesImported": 2
   },
@@ -1536,6 +1536,184 @@
       "sourceStateCounts": {},
       "unallocatedStateRecords": 2,
       "stateCountMeaning": "Exact single-state project text only; compound/unsupplied labels remain unallocated. Source-footprint index is not verified project geography."
+    },
+    {
+      "sourceKey": "carolinas-tpc",
+      "editionId": "2025-plan-midyear-2026-08",
+      "editionPublishedAt": "2026-08-14",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "All 120 Project ID rows in August 2026 update pp.8–17: 98 reliability, 17 public policy, five MVST. Retain 89 transmission and nine conceptual planning-context observations; exclude 17 In-Service and five Removed rows.",
+      "geographicScope": "DEC/DEP participant areas in North Carolina and South Carolina; no per-row jurisdiction inferred.",
+      "recordKind": "9 planning-context, 89 transmission-project",
+      "transmissionProjectRecords": 89,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-08",
+      "importedRecords": 98,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 98,
+        "milestone": 9,
+        "constructionWindow": 98,
+        "status": 9,
+        "voltage": 16,
+        "evidencedOwner": 1
+      },
+      "rawSourceRows": 120,
+      "excludedRows": 22,
+      "exclusions": [
+        {
+          "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes.",
+          "count": 5
+        },
+        {
+          "reason": "Source status In-Service: operational, outside remaining planned scope.",
+          "count": 17
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/carolinas-tpc/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/carolinas-tpc/row-ledger.json",
+      "publicInventoryDenominator": 98,
+      "blockers": [
+        "The complete declared update scope is not all North/South Carolina projects. No extra monetary threshold is applied; prior plan tables, change summaries, models and alternative lists are not additional rows.",
+        "Publication day is the official index posting date August 14, 2026; document status has August 2026 precision. Filename August 13 is not a row update date.",
+        "Underway spans budget provision through some construction and cannot establish physical construction. It and Planned normalize to planned; Conceptual is planning-context/unknown, never an approved project.",
+        "June 1/December 1 represent peak-season service targets, not precise days. Normalized dates retain only the displayed calendar year; raw targets remain visible. Winter crosses years and no interval is inferred.",
+        "Non-placeholder E200161 June 30, 2026 is a reported estimated day, despite the still-Underway status; no completion is inferred from elapsed forecasts.",
+        "DEC/DEP singular row tokens identify source-scoped responsible equipment owners. Composite DEC/DEP remains null owner; no global owner registry or cross-source corporate distinction is established.",
+        "All locations, native geometry, construction windows and row-update days remain unknown. Voltage derives only from explicitly named kV scope; missing values stay empty.",
+        "Nine Conceptual entries remain contextual; three MVST concepts are explicitly unapproved and excluded from approved update cost/schedule totals.",
+        "W210482 survives once after duplicate removal; removed/combined/reassigned IDs are not additional active rows. Cross-source identity remains unresolved.",
+        "Source costs are rounded estimated nominal expenditures, not benefits. Public availability does not establish blanket redistribution permission."
+      ],
+      "nextTask": "F27; qualified native location/owner evidence and remaining regional scopes",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 98,
+      "stateCountMeaning": "Explicit single-state source fields only. Utility/participant-area footprint is not verified per-record geography; no name inference."
+    },
+    {
+      "sourceKey": "ca-pge-tpr",
+      "editionId": "2026-05-01",
+      "editionPublishedAt": "2026-05-01",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Entire public CPUC TPR PUBLIC table, rows 5:2675. Retain nonterminal physical components/upgrades and capital/planning context; exclude 1079 Operational and one Cancelled.",
+      "geographicScope": "PG&E California public FERC-transmission capital portfolio; source city/county labels do not establish statewide completeness or coordinates.",
+      "recordKind": "278 capital-project-context, 312 planning-context, 1001 transmission-project",
+      "transmissionProjectRecords": 1001,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-03",
+      "importedRecords": 1591,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 1591,
+        "milestone": 285,
+        "constructionWindow": 1591,
+        "status": 185,
+        "voltage": 309,
+        "evidencedOwner": 1591
+      },
+      "rawSourceRows": 2671,
+      "excludedRows": 1080,
+      "exclusions": [
+        {
+          "reason": "explicit-cancelled",
+          "count": 1
+        },
+        {
+          "reason": "explicit-operational",
+          "count": 1079
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/ca-pge-tpr/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/ca-pge-tpr/row-ledger.json",
+      "publicInventoryDenominator": 1591,
+      "blockers": [
+        "Public May 1, 2026 Attachment 11 only; no confidential/NDA copy, hidden metadata or person fields are imported.",
+        "March 2026 lifecycle evidence and March 10 automated extraction precede publication; no row modification date is established.",
+        "2671 source rows reconcile to 1591 retained and 1080 terminal exclusions. The separate 1434 in-progress headline is not reconciled to this row-filter definition.",
+        "Full retained scope is 1001 physical transmission components/upgrades, 278 capital context and 312 planning context; programs/allocations have no invented project unit.",
+        "Exact native ID #1 tokens preserve case. ID #2 values group work and may carry repeated descriptions/costs; no synthetic parents or name-based deduplication.",
+        "Source percentage status bands are milestone-timing estimates, not measured physical completion. Approval fields and past dates do not replace BI status.",
+        "BM current projected-or-actual service supplies 1306 day dates and 285 OAI unknowns. Mixed actual/expected starts and original forecasts remain supplementary; construction windows are unknown.",
+        "All public coordinate cells are blank. Endpoints are defined but not supplied; city/county text, voltage and length never supply geometry. Asset owners remain unknown.",
+        "Costs/ranges retain $000 units and parent/forecast/actual meanings; they are not additive project totals or hypothetical impact inputs.",
+        "This utility-limited FERC capital portfolio is not complete California coverage or a unique engineering-project census.",
+        "Public factual evidence supports authorized private analysis; no original-workbook publication or open/commercial reuse license is asserted."
+      ],
+      "nextTask": "F27; qualified native location/owner evidence and remaining regional scopes",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 1591,
+      "stateCountMeaning": "Explicit single-state source fields only. Utility/participant-area footprint is not verified per-record geography; no name inference."
+    },
+    {
+      "sourceKey": "sdge-tpr",
+      "editionId": "2026-07",
+      "editionPublishedAt": "2026-07-01",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "137 nonterminal row units after summary-first exclusions; 93 explicit line/substation units and 44 capital-project-context units. Three unprefixed blanket budgets remain overlapping context.",
+      "geographicScope": "SDG&E public FERC transmission capital filing; source geography may span multiple cities/counties. Not all California transmission work.",
+      "recordKind": "93 transmission-project, 44 capital-project-context",
+      "transmissionProjectRecords": 93,
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-07-01",
+      "importedRecords": 137,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 137,
+        "milestone": 18,
+        "constructionWindow": 137,
+        "status": 0,
+        "voltage": 40,
+        "evidencedOwner": 137
+      },
+      "rawSourceRows": 367,
+      "excludedRows": 230,
+      "exclusions": [
+        {
+          "reason": "canceled",
+          "count": 3
+        },
+        {
+          "reason": "operational",
+          "count": 187
+        },
+        {
+          "reason": "program-summary",
+          "count": 40
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/sdge-tpr/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/sdge-tpr/row-ledger.json",
+      "publicInventoryDenominator": 137,
+      "blockers": [
+        "Complete declared public expenditure-bounded workbook: 367 rows, 137 retained units and 230 exclusions. This is not a statewide or deduplicated engineering-project inventory.",
+        "Exclude 40 labeled program summaries before 187 other Operational and three Canceled rows. Parent project counts are not additional rows or evidence of missing projects.",
+        "Three unprefixed distribution blanket budgets remain context with overlapping program/cost scope; optional recordUnit is omitted. Other non-transmission capital work remains context.",
+        "July 1, 2026 is the source edition release, not a known row update, extraction time or live status. Actual/expected starts and projected/actual service dates retain their labels and conflicts.",
+        "Most-specific native IDs, parent work orders and budget codes are distinct. Missing project IDs use explicit source locators; future-edition continuity needs reviewed crosswalks.",
+        "All public latitude/longitude cells are blank. Source city/county text is not geocoded; centers, native geometry, coordinate role/accuracy and asset owners remain unknown.",
+        "The utility is the reporting sponsor, not evidenced asset owner. Project Manager is a person field and is not extracted. Original workbook and hidden metadata remain outside runtime and Git.",
+        "Construction start is actual or expected; no complete construction interval is established. On Hold and nonterminal status remain unchanged when milestones pass.",
+        "Cost fields are in $000 with potentially overlapping parent/child/program scope. No additive project total, ranking input or realized/hypothetical coordination benefit is derived."
+      ],
+      "nextTask": "F27; qualified native location/owner evidence and remaining regional scopes",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 137,
+      "stateCountMeaning": "Explicit single-state source fields only. Utility/participant-area footprint is not verified per-record geography; no name inference."
     }
   ],
   "jurisdictions": [
@@ -1591,7 +1769,9 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "ca-sce-tpr",
-        "bpa-plan"
+        "bpa-plan",
+        "ca-pge-tpr",
+        "sdge-tpr"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -1941,7 +2121,8 @@
       "status": "partial-public-regional-inventory",
       "sourceKeys": [
         "pjm-rtep",
-        "tva-public"
+        "tva-public",
+        "carolinas-tpc"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null,
@@ -2030,9 +2211,10 @@
     },
     {
       "code": "SC",
-      "status": "partial-historical-filing",
+      "status": "partial-public-regional-inventory",
       "sourceKeys": [
-        "desc"
+        "desc",
+        "carolinas-tpc"
       ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
@@ -2240,11 +2422,11 @@
   "qualificationLeads": [
     {
       "sourceKey": "california-tpr",
-      "status": "SCE declared scope imported; other TPR portfolios unimported",
+      "status": "SCE, PG&E and SDG&E declared public scopes imported; California completeness unestablished",
       "sourceUrl": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/transmission-project-review-process",
       "importedRecords": 0,
       "locatedRecords": 0,
-      "missingInput": "Additional regional inventories and independent location/owner evidence",
+      "missingInput": "Other regional public source scopes and native location/owner evidence; no assumption of complete statewide coverage",
       "owner": "source_discovery",
       "task": "F27"
     },
@@ -2480,31 +2662,31 @@
     },
     {
       "sourceKey": "carolinas-tpc",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://carolinastpc.org/reference/",
-      "importedRecords": 0,
+      "importedRecords": 98,
       "locatedRecords": 0,
-      "missingInput": "Connected six-record sample and full98; native location evidence and cross-source owner/identity reconciliation remain absent",
+      "missingInput": "Native locations, evidenced asset owners and cross-source identity reconciliation; declared public scope complete, wider coverage incomplete",
       "owner": "source_discovery",
-      "task": "F27-CTPC-I"
+      "task": "F27"
     },
     {
       "sourceKey": "ca-pge-tpr",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://pgera.azurewebsites.net/Regulation/",
-      "importedRecords": 0,
+      "importedRecords": 1591,
       "locatedRecords": 0,
-      "missingInput": "Connected six-record sample then full accepted source scope; native owner/location and cross-source identity remain unresolved",
+      "missingInput": "Native locations, evidenced asset owners and cross-source identity reconciliation; declared public scope complete, wider coverage incomplete",
       "owner": "core",
       "task": "F27"
     },
     {
       "sourceKey": "sdge-tpr",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceUrl": "https://www.sdge.com/sdge-tpr-process",
-      "importedRecords": 0,
+      "importedRecords": 137,
       "locatedRecords": 0,
-      "missingInput": "Connected six-record sample then full accepted source scope; native owner/location and cross-source identity remain unresolved",
+      "missingInput": "Native locations, evidenced asset owners and cross-source identity reconciliation; declared public scope complete, wider coverage incomplete",
       "owner": "ui",
       "task": "F27"
     }
@@ -2513,7 +2695,7 @@
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
     "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National denominator remains unknown. Sixteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Different source units and uncertain cross-source identity prevent a distinct-engineering-project total. CNMI has assessed contextual evidence, not established transmission-project coverage. SERTP source markings remain unresolved. Statewide, territory-wide and national completeness are not established.",
+    "National denominator remains unknown. Nineteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes are imported. Work-unit, program and uncertain cross-source identity boundaries prevent a distinct-engineering-project total. CNMI transmission scope and SERTP source markings remain unresolved. Statewide, territory-wide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage.",
     "SERTP is specifically blocked by conflicting Non-CEII/CEII markings; public labels alone do not resolve that conflict. Its counts remain unknown and no source content is imported."
   ],
@@ -2806,7 +2988,7 @@
       "sourceKey": "carolinas-tpc",
       "editionId": "2025-plan-midyear-2026-08",
       "reportingGroup": "carolinas-tpc",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 120,
       "proposedRetainedRecords": 98,
       "proposedExcludedRows": 22,
@@ -2818,7 +3000,7 @@
       "sourceKey": "ca-pge-tpr",
       "editionId": "2026-05-01",
       "reportingGroup": "ca-pge-tpr",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 2671,
       "proposedRetainedRecords": 1591,
       "proposedExcludedRows": 1080,
@@ -2830,7 +3012,7 @@
       "sourceKey": "sdge-tpr",
       "editionId": "2026-07",
       "reportingGroup": "sdge-tpr",
-      "status": "qualified-production-in-progress",
+      "status": "imported-full-declared-public-scope",
       "sourceRows": 367,
       "proposedRetainedRecords": 137,
       "proposedExcludedRows": 230,
