@@ -6,6 +6,7 @@ Build concrete product capabilities in small, coherent increments.
 - **New project:** follow [preflight](specs/preflight.md) once.
 - **Purpose and scope:** [mission](specs/mission.md).
 - **Contracts, stack, commands and UI defaults:** [tech stack](specs/tech-stack.md).
+- **UI placement and action scope:** [UI composition](specs/ui-composition.md), alongside project-specific `app/src/AGENTS.md`.
 - **Assignments and dependencies:** [roadmap](specs/roadmap.md).
 - **Your feature:** `specs/features/<ID>-<slug>/spec.md`.
 - **Claim, implement, merge, continue:** [workflow](specs/overnight.md).
