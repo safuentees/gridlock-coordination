@@ -1,0 +1,579 @@
+{
+  "qualificationOnly": true,
+  "sourcePass": {
+    "startedAt": "2026-09-30T11:22:00Z",
+    "completedAt": "2026-09-30T11:29:04Z",
+    "method": "Targeted public index/form download and read-only visible workbook/PDF text; no browser or image interpretation."
+  },
+  "proposedSourceKey": "ca-pge-tpr",
+  "editionId": "2026-05-01",
+  "publishedOn": "2026-05-01",
+  "retrievedOn": "2026-09-30",
+  "lifecycleAsOf": "2026-03",
+  "automatedFieldsExtractedOn": "2026-03-10",
+  "originalsRoot": "inputs/originals/F27-ca-pge-tpr/",
+  "originals": [
+    {
+      "file": "cpuc-tpr-index.html",
+      "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/transmission-project-review-process",
+      "bytes": 72651,
+      "sha256": "7ce77da96f4b7913041d3f1ae449925ea45ca55865b1b5a9e8c2cc6e6ee13187"
+    },
+    {
+      "file": "pge-may2026-public.xlsx",
+      "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+      "bytes": 10402079,
+      "sha256": "917464588f082e2239726479b331dff6ffda97436af9daa5372332a734d4b94e"
+    },
+    {
+      "file": "pge-may2026-transmittal.pdf",
+      "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+      "bytes": 327001,
+      "sha256": "50b35533feee7eecb1c8da83269716390227559bb74412a558aeed3f62937393"
+    },
+    {
+      "file": "pge-regulation.html",
+      "url": "https://pgera.azurewebsites.net/Regulation/",
+      "bytes": 235978,
+      "sha256": "17f8388852be362597e50a9d6eb94248d8d06e34e07b122560d06a2f3c5ec507"
+    },
+    {
+      "file": "pge-tpr-may2026-results.html",
+      "url": "https://pgera.azurewebsites.net/Regulation/NewSearchResults",
+      "bytes": 40097,
+      "sha256": "09292a3d3cfe0f552bef2a82a2cb2617f50a0426be2423324a6b2eb120295e11"
+    },
+    {
+      "file": "pge-tpr-public-results.html",
+      "url": "https://pgera.azurewebsites.net/Regulation/NewSearchResults",
+      "bytes": 125062,
+      "sha256": "ef58ac5ea2d4dbb079e15672c0f13d6fa54ff3683ef553bbe5eedfd1c16bc973"
+    }
+  ],
+  "publicSearch": {
+    "caseId": "14605",
+    "caseName": "Transmission Project Review (TPR) Process [Res.E-5252]",
+    "fromDate": "04/25/26",
+    "toDate": "05/05/26",
+    "publicWorkbookDocId": "871875",
+    "access": "Published PUBLIC attachment, no login/NDA or restricted attachment access."
+  },
+  "enumeration": {
+    "sheet": "CPUC TPR PUBLIC",
+    "headerRow": 4,
+    "dataFirstRow": 5,
+    "dataLastRow": 2675,
+    "dataColumns": "B:CV",
+    "sourceRows": 2671,
+    "uniqueNativeIds": 2671,
+    "nativeIdColumn": "AI",
+    "retained": 1591,
+    "excluded": 1080,
+    "exclusionReasons": {
+      "Operational": 1079,
+      "Cancelled": 1
+    },
+    "territoryProjectDenominator": null,
+    "otherSheets": [
+      {
+        "name": "Data Field Descriptions",
+        "rows": 91,
+        "role": "Meaning reference, not project records"
+      },
+      {
+        "name": "Options Lists",
+        "rows": 80,
+        "role": "Validation vocabulary, not project records"
+      }
+    ]
+  },
+  "proposedKindCounts": {
+    "transmission-project": 1001,
+    "capital-project-context": 278,
+    "planning-context": 312
+  },
+  "proposedLifecycleCounts": {
+    "planned": 1145,
+    "under-construction": 138,
+    "on-hold": 123,
+    "unknown": 185
+  },
+  "rawStatusCounts": {
+    "Operational": 1079,
+    "Cancelled": 1,
+    "Engineering more than 50% complete": 521,
+    "Engineering less than 50% complete": 234,
+    "Planning": 390,
+    "Programmatic Work": 185,
+    "On Hold": 123,
+    "Construction (over 75%)": 51,
+    "Construction (50%-75%)": 37,
+    "Construction (10%-25%)": 24,
+    "Construction (25%-50%)": 17,
+    "Construction (under 10%)": 9
+  },
+  "kindPrecedence": [
+    "Remove only terminal Operational/Cancelled rows from this proposed nonterminal inventory.",
+    "planning-context when description contains forecast placeholder (case-insensitive), native ID begins EX (case-insensitive, preserve original ID case), description contains redact, or public name contains one of the four replacement labels named in transmittal p8.",
+    "Else capital-project-context for a Bucket for description, Programmatic Work status, H exactly Transmission Line - Right of Way, or H not beginning Substation -, Transmission Line -, or Transmission Line/Substation after whitespace trimming.",
+    "Else transmission-project based on explicit equipment class plus FERC transmission portfolio scope. These are PO components/upgrades, not necessarily independent engineering projects."
+  ],
+  "publicReplacementNamePatterns": [
+    "Electric Transmission Substation Security Upgrade",
+    "Electric Transmission Cyber Security Upgrade",
+    "Work at the Request of Others (WRO) Network Upgrades",
+    "Private Load Interconnection Project"
+  ],
+  "unitFacts": {
+    "retainedInvestmentCodes": 192,
+    "retainedBucketDescriptions": 148,
+    "retainedForecastDescriptions": 48,
+    "retainedPublicPlaceholderNames": 116,
+    "retainedWithTdot": 1200,
+    "retainedWithOtherId2": 1,
+    "otherId2": {
+      "lineNumber": 2467,
+      "nativeId": "5744742",
+      "value": "P.05271"
+    },
+    "retainedId2NA": 267,
+    "retainedId2TBD": 123,
+    "physicalComponentsWithId2": 977,
+    "physicalUpgradesWithoutId2": 24,
+    "contextRecordUnit": "omit; unsupported program/budget units must not be labeled projects"
+  },
+  "dateFacts": {
+    "retainedCurrentServiceDay": 1306,
+    "retainedCurrentServiceOAIUnknown": 285,
+    "retainedOriginalServiceDay": 817,
+    "retainedOriginalServiceNA": 755,
+    "retainedOriginalServiceTBD": 19,
+    "retainedConstructionStartDay": 1289,
+    "retainedConstructionStartNA": 302,
+    "buildWindows": "All remain null; in-service is not an explicit construction-end event."
+  },
+  "locationFacts": {
+    "blankLatitudeRows": 2671,
+    "blankLongitudeRows": 2671,
+    "retainedSourceLocationText": 1070,
+    "retainedLocationNA": 269,
+    "retainedLocationBlank": 240,
+    "retainedLocationTBD": 12,
+    "meaning": "Field descriptions rows7–8 define transmission-line coordinates as endpoints, but all public coordinate cells are blank. City/county text is not geometry.",
+    "crs": null,
+    "accuracyMeters": null,
+    "locatedRecords": 0
+  },
+  "payloadEstimate": {
+    "method": "Non-persisted Project-shaped serialization estimate with raw public descriptions/notes, selected labeled costs, two source refs and original service milestone; classification placeholders are for sizing only, not proposed records. Manifest overhead excluded.",
+    "rows": 1591,
+    "compactUtf8Bytes": 4698884,
+    "formattedUtf8Bytes": 6036916,
+    "currentAggregateFormattedBytes": 58904460,
+    "modeledCombinedBytes": 64941376,
+    "importCapBytes": 67108864,
+    "remainingModeledBytes": 2167488,
+    "limitation": "Estimate only, not a production export; actual full Dataset includes manifest and further nesting. Measure before any import-cap decision."
+  },
+  "diagnostics": [
+    {
+      "nativeId": "5771718",
+      "proposedId": "ca-pge-tpr:5771718",
+      "identityBasis": "native-id",
+      "lineNumber": 496,
+      "sheetRow": 500,
+      "name": "MORRO BAY - CAL FLATS 230KV LINE SHOOFLY",
+      "diagnostic": "line",
+      "factualSummary": "Morro Bay–Cal Flats 230 kV shoofly planning order within the Estrella T.Dot. The shared description covers HWT and PG&E assets and must not be read as this row owning the entire parent project.",
+      "selectedPublicFields": {
+        "H": "Transmission Line - Conductor",
+        "I": "New",
+        "AJ": "T.0000154",
+        "AK": "Estrella 230 kV Transmission Substation",
+        "AL": "20",
+        "AM": "60",
+        "AO": "False",
+        "AP": "2015",
+        "BI": "Engineering more than 50% complete",
+        "AB": "230",
+        "AC": "NA",
+        "BK": "2027-01-04 00:00:00",
+        "BL": "2019-05-01 00:00:00",
+        "BM": "2027-03-31 00:00:00",
+        "BQ": "$35,000 | $45,000",
+        "BT": "907.9767"
+      },
+      "sourceLocation": "El Paso de Robles, San Luis Obispo",
+      "proposedKind": "transmission-project",
+      "proposedLifecycle": "planned",
+      "lifecycleAsOf": "2026-03",
+      "lifecycleDateMeaning": "source-edition",
+      "comparisonDate": {
+        "value": "2027-03-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Current projected or actual in-service; OAI has no event date",
+        "raw": "2027-03-31 00:00:00"
+      },
+      "originalServiceMilestone": {
+        "value": "2019-05-01",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Original planned in-service",
+        "raw": "2019-05-01 00:00:00"
+      },
+      "constructionStartRaw": "2027-01-04 00:00:00",
+      "buildWindow": null,
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "CPUC TPR PUBLIC!B500:CV500; selected public fields only, omit Y (Project Manager)"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages2–3,7–8; extraction/status dates, program units and public-redaction meanings"
+        }
+      ],
+      "proposedRecordUnit": "component"
+    },
+    {
+      "nativeId": "5792705",
+      "proposedId": "ca-pge-tpr:5792705",
+      "identityBasis": "native-id",
+      "lineNumber": 105,
+      "sheetRow": 109,
+      "name": "MIDWAY: REP VINCENT AND LB RELAYS",
+      "diagnostic": "sub-construction",
+      "factualSummary": "Replacement of two 500 kV line-relay interfaces at Midway substation, including the local operator interface.",
+      "selectedPublicFields": {
+        "H": "Substation - Protection Relay",
+        "I": "Replace",
+        "AJ": "T.0006402",
+        "AK": "MIDWAY: REP VINCENT AND LB RELAYS",
+        "AL": "2",
+        "AM": "3F",
+        "AO": "True",
+        "AP": "2024",
+        "BI": "Construction (25%-50%)",
+        "AB": "NA",
+        "AC": "500 kV",
+        "BK": "2025-07-08 00:00:00",
+        "BL": "2026-06-20 00:00:00",
+        "BM": "2027-02-10 00:00:00",
+        "BQ": "17800",
+        "BT": "18913.9816"
+      },
+      "sourceLocation": "Buttonwillow CDP, Kern",
+      "proposedKind": "transmission-project",
+      "proposedLifecycle": "under-construction",
+      "lifecycleAsOf": "2026-03",
+      "lifecycleDateMeaning": "source-edition",
+      "comparisonDate": {
+        "value": "2027-02-10",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Current projected or actual in-service; OAI has no event date",
+        "raw": "2027-02-10 00:00:00"
+      },
+      "originalServiceMilestone": {
+        "value": "2026-06-20",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Original planned in-service",
+        "raw": "2026-06-20 00:00:00"
+      },
+      "constructionStartRaw": "2025-07-08 00:00:00",
+      "buildWindow": null,
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "CPUC TPR PUBLIC!B109:CV109; selected public fields only, omit Y (Project Manager)"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages2–3,7–8; extraction/status dates, program units and public-redaction meanings"
+        }
+      ],
+      "proposedRecordUnit": "component"
+    },
+    {
+      "nativeId": "5779902",
+      "proposedId": "ca-pge-tpr:5779902",
+      "identityBasis": "native-id",
+      "lineNumber": 102,
+      "sheetRow": 106,
+      "name": "TABLE MOUNTAIN: Repl Cap BK 6 Relays",
+      "diagnostic": "on-hold",
+      "factualSummary": "Table Mountain capacitor-bank relay work; retain the explicit on-hold state despite a future service date.",
+      "selectedPublicFields": {
+        "H": "Substation - Protection Relay",
+        "I": "Replace",
+        "AJ": "T.0003939",
+        "AK": "Table Mountain Cap 6 Relay Project",
+        "AL": "1",
+        "AM": "3F",
+        "AO": "True",
+        "AP": "TBD",
+        "BI": "On Hold",
+        "AB": "NA",
+        "AC": "500 kV",
+        "BK": "2026-12-31 00:00:00",
+        "BL": "NA",
+        "BM": "2027-03-02 00:00:00",
+        "BQ": "NA",
+        "BT": "3932.8864"
+      },
+      "sourceLocation": "Butte",
+      "proposedKind": "transmission-project",
+      "proposedLifecycle": "on-hold",
+      "lifecycleAsOf": "2026-03",
+      "lifecycleDateMeaning": "source-edition",
+      "comparisonDate": {
+        "value": "2027-03-02",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Current projected or actual in-service; OAI has no event date",
+        "raw": "2027-03-02 00:00:00"
+      },
+      "originalServiceMilestone": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Original planned in-service",
+        "raw": "NA"
+      },
+      "constructionStartRaw": "2026-12-31 00:00:00",
+      "buildWindow": null,
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "CPUC TPR PUBLIC!B106:CV106; selected public fields only, omit Y (Project Manager)"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages2–3,7–8; extraction/status dates, program units and public-redaction meanings"
+        }
+      ],
+      "proposedRecordUnit": "component"
+    },
+    {
+      "nativeId": "5562465",
+      "proposedId": "ca-pge-tpr:5562465",
+      "identityBasis": "native-id",
+      "lineNumber": 1616,
+      "sheetRow": 1620,
+      "name": "System Inspections TPTT",
+      "diagnostic": "bucket",
+      "factualSummary": "Program bucket for recurring intrusive pole inspections; no individually identified engineering project or single service date.",
+      "selectedPublicFields": {
+        "H": "Transmission Line - Pole/Tower",
+        "I": "Replace",
+        "AJ": "NA",
+        "AK": "NA",
+        "AL": "NA",
+        "AM": "70",
+        "AO": "True",
+        "AP": "NA",
+        "BI": "Programmatic Work",
+        "AB": "NA",
+        "AC": "NA",
+        "BK": "NA",
+        "BL": "NA",
+        "BM": "OAI",
+        "BQ": "NA",
+        "BT": "1601.7949"
+      },
+      "sourceLocation": "NA",
+      "proposedKind": "capital-project-context",
+      "proposedLifecycle": "unknown",
+      "lifecycleAsOf": "2026-03",
+      "lifecycleDateMeaning": "source-edition",
+      "comparisonDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current projected or actual in-service; OAI has no event date",
+        "raw": "OAI"
+      },
+      "originalServiceMilestone": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Original planned in-service",
+        "raw": "NA"
+      },
+      "constructionStartRaw": "NA",
+      "buildWindow": null,
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "CPUC TPR PUBLIC!B1620:CV1620; selected public fields only, omit Y (Project Manager)"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages2–3,7–8; extraction/status dates, program units and public-redaction meanings"
+        }
+      ]
+    },
+    {
+      "nativeId": "Ex112888",
+      "proposedId": "ca-pge-tpr:Ex112888",
+      "identityBasis": "native-id",
+      "lineNumber": 10,
+      "sheetRow": 14,
+      "name": "Transmission As-Build Process Improvement",
+      "diagnostic": "investment",
+      "factualSummary": "Investment-code forecast placeholder for improving transmission as-built processes; no defined physical asset or planning order yet.",
+      "selectedPublicFields": {
+        "H": "Other",
+        "I": "Upgrade/Retrofit",
+        "AJ": "NA",
+        "AK": "NA",
+        "AL": "NA",
+        "AM": "21",
+        "AO": "True",
+        "AP": "NA",
+        "BI": "Planning",
+        "AB": "NA",
+        "AC": "NA",
+        "BK": "NA",
+        "BL": "NA",
+        "BM": "OAI",
+        "BQ": "NA",
+        "BT": "3500"
+      },
+      "sourceLocation": "NA",
+      "proposedKind": "planning-context",
+      "proposedLifecycle": "planned",
+      "lifecycleAsOf": "2026-03",
+      "lifecycleDateMeaning": "source-edition",
+      "comparisonDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current projected or actual in-service; OAI has no event date",
+        "raw": "OAI"
+      },
+      "originalServiceMilestone": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Original planned in-service",
+        "raw": "NA"
+      },
+      "constructionStartRaw": "NA",
+      "buildWindow": null,
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "CPUC TPR PUBLIC!B14:CV14; selected public fields only, omit Y (Project Manager)"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages2–3,7–8; extraction/status dates, program units and public-redaction meanings"
+        }
+      ]
+    },
+    {
+      "nativeId": "5816828",
+      "proposedId": "ca-pge-tpr:5816828",
+      "identityBasis": "native-id",
+      "lineNumber": 28,
+      "sheetRow": 32,
+      "name": "Electric Transmission Cyber Security Upgrade",
+      "diagnostic": "redacted",
+      "factualSummary": "Publisher-provided public cybersecurity placeholder. Description and location are absent; restricted underlying details were neither requested nor reconstructed.",
+      "selectedPublicFields": {
+        "H": "Other - IT",
+        "I": "Upgrade/Retrofit",
+        "AJ": "NA",
+        "AK": "Electric Transmission Cyber Security Upgrade",
+        "AL": "NA",
+        "AM": "2F",
+        "AO": "True",
+        "AP": "NA",
+        "BI": "Programmatic Work",
+        "AB": "NA",
+        "AC": "NA",
+        "BK": "NA",
+        "BL": "NA",
+        "BM": "OAI",
+        "BQ": "NA",
+        "BT": "2000"
+      },
+      "sourceLocation": null,
+      "proposedKind": "planning-context",
+      "proposedLifecycle": "unknown",
+      "lifecycleAsOf": "2026-03",
+      "lifecycleDateMeaning": "source-edition",
+      "comparisonDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Current projected or actual in-service; OAI has no event date",
+        "raw": "OAI"
+      },
+      "originalServiceMilestone": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Original planned in-service",
+        "raw": "NA"
+      },
+      "constructionStartRaw": "NA",
+      "buildWindow": null,
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "sources": [
+        {
+          "file": "pge-may2026-public.xlsx",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+          "locator": "CPUC TPR PUBLIC!B32:CV32; selected public fields only, omit Y (Project Manager)"
+        },
+        {
+          "file": "pge-may2026-transmittal.pdf",
+          "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+          "locator": "Pages2–3,7–8; extraction/status dates, program units and public-redaction meanings"
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    "No producer or application files changed.",
+    "No private/NDA/CEII copy downloaded, hidden-sheet values or contact column retained.",
+    "Public original access does not imply an open/commercial reuse license.",
+    "Six samples are qualification diagnostics, not an importable Dataset or independent project census."
+  ]
+}

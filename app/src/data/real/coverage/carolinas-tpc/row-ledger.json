@@ -1,0 +1,2777 @@
+{
+  "sourceKey": "carolinas-tpc",
+  "editionId": "2025-plan-midyear-2026-08",
+  "scope": "full",
+  "sourceSha256": "1f16698d87d414c98478e0f1199a062211c0f2873417fd7ba185c81d49d45753",
+  "counts": {
+    "sourceRows": 120,
+    "importedRecords": 98,
+    "excludedRows": 22,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "rawStatusCounts": {
+    "Conceptual": 9,
+    "Removed": 5,
+    "Underway": 46,
+    "In-Service": 17,
+    "Planned": 43
+  },
+  "recordKindCounts": {
+    "planning-context": 9,
+    "transmission-project": 89
+  },
+  "lifecycleCounts": {
+    "unknown": 9,
+    "planned": 89
+  },
+  "completeRetainedRecordKindCounts": {
+    "planning-context": 9,
+    "transmission-project": 89
+  },
+  "completeRetainedLifecycleCounts": {
+    "unknown": 9,
+    "planned": 89
+  },
+  "rows": [
+    {
+      "sourceRow": 1,
+      "sourceId": "CTPCDEC01",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Beulah 100 kV Line (Lookout-EnergyUnited Del 18), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "18"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEC01",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 2,
+      "sourceId": "CTPCDEC02",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC02; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Harley 100 kV Line (Tiger-Campobello), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 3,
+      "sourceId": "CTPCDEC03",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC03; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Correct Clearance Issues on the Clear Creek Lines to increase the line's rating",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "2"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEC03",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 4,
+      "sourceId": "CTPCDEC04",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC04; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Replace Ancillary Equipment on the Glen Springs line to increase the Line's Ratings",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "2"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEC04",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 5,
+      "sourceId": "CTPCDEC05",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC05; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Add capacitor banks at Lake Emory",
+        "issueResolved": "Mitigate contingency voltage issues",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "10"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEC05",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 6,
+      "sourceId": "W170306",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "North Greenville 230 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "33"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W170306",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": "W180359",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W180359; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "States CTCC Bus Line 4, Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W180359",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 8,
+      "sourceId": "W190390",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W190390; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Gastonia # 2 44 kV Line, Rebuild Clover 44 kV line to double circuit and add a new tap off the Gastonia #2 Line",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2032",
+        "estimatedCostMillionNominalUsd": "2.3"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W190390",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 9,
+      "sourceId": "W200010",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200010; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cherokee 100 kV Line (Peach Valley-Enola Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/25/2026",
+        "estimatedCostMillionNominalUsd": "8"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 10,
+      "sourceId": "W200030",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200030; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wylie 100 kV Line (Wylie-Arrowood Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200030",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 11,
+      "sourceId": "W200031",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200031; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Monroe 100 kV Line (Lancaster-Monroe), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "62"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200031",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 12,
+      "sourceId": "W200034",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200034; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Panther 100 kV Lines (Parkwood Tie-E Durham Tie), Upgrade and Network to E Durham Tie",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "41"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200034",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 13,
+      "sourceId": "W200039",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200039; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Coronaca 100 kV Line (Coronaca-Creto), Upgrade and Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "7/27/2026",
+        "estimatedCostMillionNominalUsd": "29"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 14,
+      "sourceId": "W200042",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200042; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sevier 100 kV Line (East Greenville-Verdae Retail Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "20"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200042",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 15,
+      "sourceId": "W200061",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200061; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Page and Guilford 100 kV Lines (Greensboro -North Greensboro), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "25"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200061",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 16,
+      "sourceId": "W200116",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200116; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Hodges 230/100/44 kV Tie, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2029",
+        "estimatedCostMillionNominalUsd": "40"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200116",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": "W200120",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200120; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Dairyhill 100 kV Line (Shelby-CUSTOMER Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2029",
+        "estimatedCostMillionNominalUsd": "20"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200120",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 18,
+      "sourceId": "W200144",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200144; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Oak Hollow Switching Station, Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "6"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200144",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 19,
+      "sourceId": "W200146",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200146; page project row 19",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Swepsonville 100 kV Line (Mebane -Trollingwood Retail), Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2032",
+        "estimatedCostMillionNominalUsd": "3.3"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200146",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 20,
+      "sourceId": "W200148",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200148; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Pinewood 100 kV Line (Lawsons Fork-Una Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "27"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200148",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 21,
+      "sourceId": "W200149",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200149; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Reidsville and Wolf Creek 100 kV Lines (Dan River-Sadler), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "54"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200149",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 22,
+      "sourceId": "W200150",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200150; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Troutman 44 kV Line, Upgrade and Partial conversion to 100 kV [Modification to Project ID 0110 in 2023 Plan - Additional Scope]",
+        "issueResolved": "Mitigate non-contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "60"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200150",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 23,
+      "sourceId": "W200162",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200162; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Dan River 100 kV Line (Dan River-North Greensboro), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "78"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200162",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 24,
+      "sourceId": "W200168",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200168; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Steam 100 kV Line (Dan River CC-Dan River Steam), Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "1"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200168",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": "W200170",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200170; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lakewood 100 kV Line (Lakewood-Remount Road Retail), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "23"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200170",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "W200172",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200172; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Morning Star 230 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "95"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200172",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 27,
+      "sourceId": "W200173",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200173; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Terrell 44 kV Line, Conversion",
+        "issueResolved": "Mitigate contingency loading and voltage issues",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2035",
+        "estimatedCostMillionNominalUsd": "25"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200173",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 28,
+      "sourceId": "W200187",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200187; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Harrisburg 230/100/44 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "20"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200187",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 29,
+      "sourceId": "W200262",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200262; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sandy Ridge 230 kV Line (Newport-Morning Star), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "82"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200262",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 30,
+      "sourceId": "W200412",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200412; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Skybrook 100 kV Line (Winecoff-Eastfield Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200412",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 31,
+      "sourceId": "W200413",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200413; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Tiger Tie Autotransformer #5 (230/100 kV) Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "23"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200413",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 32,
+      "sourceId": "W200425",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200425; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Marshall 230 kV Line (Marshall-Beckerdite), Raise individual towers",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "0.2"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200425",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 33,
+      "sourceId": "W200582",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200582; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Bethania and Shattalon 100 kV Lines (Rural Hall-Shattalon), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200582",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 34,
+      "sourceId": "W200588",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200588; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Ferrell White 100 kV Line, Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2032",
+        "estimatedCostMillionNominalUsd": "0.6"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200588",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 35,
+      "sourceId": "W200590",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200590; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Crab Orchard 100 kV Line (Harrisburg-Amity), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200590",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 36,
+      "sourceId": "W200592",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200592; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Crest St 100 kV Lines, Raise individual towers",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2031",
+        "estimatedCostMillionNominalUsd": "1.9"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200592",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 37,
+      "sourceId": "W200595",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200595; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Westport 230 kV Line (McGuire-Marshall), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "42"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200595",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 38,
+      "sourceId": "W200599",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200599; page project row 19",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Davidson River 100 kV Line (North Greenville-Marietta), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "55"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200599",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 39,
+      "sourceId": "W210192",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210192; page project row 20",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Earl 100 kV Line (Customer Tap-Customer Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "3/31/2026",
+        "estimatedCostMillionNominalUsd": "9"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 40,
+      "sourceId": "W210482",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Madison Tie, Upgrade, add 100/44 kV Transformer",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2034",
+        "estimatedCostMillionNominalUsd": "2.4"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W210482",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 41,
+      "sourceId": "W220053",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220053; page project row 22",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Shattalon Switching Station, RAS (Grid Enhancing Technology) to Avoid Overload on Bethania and Shattalon 100 kV Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "1"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220053",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 42,
+      "sourceId": "W220209",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220209; page project row 23",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lyle Creek Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2029",
+        "estimatedCostMillionNominalUsd": "75"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220209",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 43,
+      "sourceId": "W220367",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220367; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Boyd Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "88"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220367",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 44,
+      "sourceId": "W220368",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220368; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Haas Creek Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "70"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220368",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 45,
+      "sourceId": "W220474",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220474; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Batte 100 kV Line (Concord-Winecoff), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "13"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220474",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 46,
+      "sourceId": "W220506",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220506; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Upgrade Switches at Oakvale Tie",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "0.8"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220506",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 47,
+      "sourceId": "W220507",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220507; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cabarrus 100 kV Line (Wildcat-Westfork), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220507",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 48,
+      "sourceId": "W220539",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220539; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Batte 100 kV Line, RAS (Grid Enhancing Technology) to Avoid Overloads on Batte Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "1.9"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220539",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 49,
+      "sourceId": "W220543",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220543; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Delta 100 kV Line (Research Triangle Retail-Ellis Rd Retail), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "11"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220543",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 50,
+      "sourceId": "W220559",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220559; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Concord 100 kV Line (Concord-Concord City Del 3), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "21"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220559",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 51,
+      "sourceId": "W230087",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230087; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Kennedy 100 kV Line (Orchard-Newton Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "6"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230087",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 52,
+      "sourceId": "W230093",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230093; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Woodlawn 230/100/44 kV Tie Station, Upgrade Add 44 kV Breaker",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 53,
+      "sourceId": "W230145",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230145; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Hands Mill Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "61"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230145",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 54,
+      "sourceId": "W230158",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230158; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Nanny Mountain 1 44 kV Line, Upgrade and Partial Conversion to 100 kV",
+        "issueResolved": "Mitigate contingency loading and voltage issues",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230158",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 55,
+      "sourceId": "W230245",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230245; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Messer 230 kV Line (Dixon School Rd-Customer), Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "30"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230245",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 56,
+      "sourceId": "W230276",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230276; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Shelby 230/100/44 kV Tie, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "22"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230276",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 57,
+      "sourceId": "W230358",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230358; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Hinkle 100 kV Line (Stamey-Statesville), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230358",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 58,
+      "sourceId": "W230368",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230368; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Mooresville Tie, RAS (Grid Enhancing Technology) to Avoid Overloads on Timber and Sherrill 100 kV Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "5/7/2026",
+        "estimatedCostMillionNominalUsd": "0.3"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 59,
+      "sourceId": "W230384",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230384; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Oliver 230 kV Line (Marshall-Boyd), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "16"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230384",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 60,
+      "sourceId": "W230387",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230387; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "E Durham 230/100 kV Tie, Construct Panther Line Terminals",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 61,
+      "sourceId": "W230389",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230389; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sycamore B/W 100 kV (Longview-Lyle Creek), Upgrade and Network",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2037",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230389",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 62,
+      "sourceId": "W230402",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230402; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Ashe St 100 kV Line (Durham-Ashe St), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "10"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230402",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 63,
+      "sourceId": "W230456",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230456; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lawsons Fork Tie Series 100 kV BJB",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "0.8"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230456",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 64,
+      "sourceId": "W240008",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240008; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Pinewood 100 kV Line, RAS (Grid Enhancing Technology) to Avoid Overloads on Pinewood Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 65,
+      "sourceId": "W240278",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240278; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Central 230/100/44 kV Tie, Upgrade, Add Redundant Relaying",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "cancelled",
+      "disposition": "excluded",
+      "reason": "Source status Removed: no longer active in this table; cancelled, combined or reassigned per source notes."
+    },
+    {
+      "sourceRow": 66,
+      "sourceId": "W250072",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250072; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Taylors 100 kV Line - Rebuild between Tiger Tie and Customer Station with 795 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "1.8"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250072",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 67,
+      "sourceId": "W250207",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250207; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cliffside 100 kV Lines - Rebuild lines between Cliffside 5 and Customer Tap with 1158 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "29"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250207",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 68,
+      "sourceId": "W250212",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250212; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Duncan 100 kV Lines - Rebuild lines between Cliffside 5 and Inman Tie with 1158 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "3.9"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250212",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 69,
+      "sourceId": "W250214",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250214; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Rebuild the Cherokee Lines between AZP Tap and Chesnee Tie with 1158 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "17"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250214",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 70,
+      "sourceId": "W250223",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250223; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Switzer 44 kV Line - Rebuild between structures 48 and 139.5 with 477 ACSS/TW. Includes adding a 100 kV Circuit",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250223",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 71,
+      "sourceId": "W250281",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250281; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lemley 100 kV Bl & Wh Lines 3 span clearance fix and AEU includes D-Line Work",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250281",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 72,
+      "sourceId": "W250285",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250285; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Add breakers at Campobello Tie",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2032",
+        "estimatedCostMillionNominalUsd": "0.7"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250285",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 73,
+      "sourceId": "W250312",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250312; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Shelby Tie - Replace Bank 4",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "8"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250312",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 74,
+      "sourceId": "E220378",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID E220378; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Durham – RTP 230 kV Line, Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "6"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E220378",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 75,
+      "sourceId": "CTPCDEP03",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP03; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Falls – Franklinton (Franklinton – Franklinton Novo 115 kV Feeder), Construct",
+        "issueResolved": "Mitigate low voltage issues",
+        "status": "Conceptual",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "16"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEP03",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 76,
+      "sourceId": "CTPCDEP04",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP04; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Rocky Mount - Wilson 115 kV Line, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "1.5"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:CTPCDEP04",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 77,
+      "sourceId": "E190052",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID E190052; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Jacksonville 230 kV, Upgrade CT Ratio for Jacksonville City 115 kV East Line and Add Second 115 kV Bus Tie Breaker",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/15/2025",
+        "estimatedCostMillionNominalUsd": "2.1"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 78,
+      "sourceId": "E190092",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E190092; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Greenville - VEPCO Everetts 230 kV Line, Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "12"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E190092",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 79,
+      "sourceId": "E200161",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Castle Hayne–Folkstone115 kV Line, Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/30/2026",
+        "estimatedCostMillionNominalUsd": "73"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E200161",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 80,
+      "sourceId": "E210073",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210073; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Carthage (Hill Crest) 230/115 kV Substation, Construct",
+        "issueResolved": "Mitigate contingency loading and voltage issues",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/29/2026",
+        "estimatedCostMillionNominalUsd": "32"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 81,
+      "sourceId": "E210078",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210078; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Fayetteville 230/115 kV Bank #1, Upgrade 115 kV Disconnect Switches, Wave Traps, and CT Ratios",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "3/19/2026",
+        "estimatedCostMillionNominalUsd": "11"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 82,
+      "sourceId": "E210145",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210145; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Holly Ridge North 115 kV Switching Station, Construct",
+        "issueResolved": "Mitigate low voltage issues",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E210145",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 83,
+      "sourceId": "E210150",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210150; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Havelock 230 kV Substation, Upgrade Ancillary Equipment",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E210150",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 84,
+      "sourceId": "E220112",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220112; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Asheville Plant – Oteen 115 kV West Line (Arden), Construct",
+        "issueResolved": "Mitigate low voltage issues",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "4/28/2026",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 85,
+      "sourceId": "E220408",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220408; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Vanderbilt - West Asheville 115 kV Line, Upgrade 115 kV CB and Switches",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "2"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E220408",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 86,
+      "sourceId": "E230041",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230041; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Richmond 500/230 kV Banks #1 & #2, Upgrade CT Ratios",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "3/10/2026",
+        "estimatedCostMillionNominalUsd": "2.2"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 87,
+      "sourceId": "E230059",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230059; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sumter – SCEG Eastover 115 kV Line (Kings Hwy – Shaw Field – Eastover), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "18"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E230059",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 88,
+      "sourceId": "E230061",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230061; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Henderson 230/115 kV Banks #1 & #2, Upgrade CT Ratios and Relay Settings",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/29/2026",
+        "estimatedCostMillionNominalUsd": "2.2"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 89,
+      "sourceId": "E240135",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240135; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sumter - SCEG Eastover 115 kV Line (Gold Kist Tap-Kings Hwy Section), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "11"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240135",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 90,
+      "sourceId": "E240188",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240188; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 2 - Delco 230 kV West Line (Brunswick 2 – BEMC Southport), Raise Section",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "0.8"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240188",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 91,
+      "sourceId": "E240198",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240198; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 1 - Delco 230 kV East Line (Brunswick 1 - Southport Tap), Upgrade Switch; Reconductor Brunswick 1 -Southport Tap Section",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "4.5"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240198",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 92,
+      "sourceId": "E240238",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240238; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Henderson – DVP Kerr Dam 115 kV line, Upgrade the wave trap, CT ratio, and relay settings at Henderson 230 to at least 1294 A.",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "4.1"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240238",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 93,
+      "sourceId": "E240276",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240276; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Barnard Creek – Castle Hayne 230 kV East line, Upgrade switches 38A-1, 38A-2 to 3000 A and 41B-3 to 2000 A",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "3.1"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240276",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 94,
+      "sourceId": "E240289",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240289; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 1 - Barnard Creek 230 kV line, Upgrade OOS relays, CT ratios, line trap, and line switches to allow us of 2806 A line conductor 32F CW rating",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "1.2"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240289",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 95,
+      "sourceId": "E240296",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240296; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 2 - Town Creek 230 kV line, Upgrade OOS relay to at least 2000 A, preferably 3000 A",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "0.4"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240296",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 96,
+      "sourceId": "E240331",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240331; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wake-Zebulon 230 kV line, Upgrade CT ratios and relay settings at Wake, upgrade line switch 42-1, and upgrade CT ratios and relay settings at Zebulon 230, all to 3000 A",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "2.4"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240331",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 97,
+      "sourceId": "E250027",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E250027; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Method-DPC East Durham 230 kV line upgrade line switches and terminal equipment at both ends to allow full line conductor 2546 A cold winter rating",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "1"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E250027",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 98,
+      "sourceId": "F170824H",
+      "section": "Reliability Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID F170824H; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Weatherspoon – LOF 115 kV Line (Maxton-Pembroke), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "24"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:F170824H",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 99,
+      "sourceId": "W200169",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W200169; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Piedmont 100 kV Line (Lee-Shady Grove), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "44"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W200169",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 100,
+      "sourceId": "W220122",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220122; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Clinton 100 kV Line (Bush River-Laurens), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "85"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W220122",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 101,
+      "sourceId": "W220124",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220124; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Newberry 115 kV Line (Bush River-DESC), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "3/30/2026",
+        "estimatedCostMillionNominalUsd": "35"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 102,
+      "sourceId": "W230029",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230029; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Broadway B/W 100 kV Line (Belton-Lee), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "28"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230029",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 103,
+      "sourceId": "W230066",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230066; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Bush River Tie 115/100 kV, Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "12"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230066",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 104,
+      "sourceId": "W230323",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230323; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lilesville – Oakboro 230 kV Black & White Lines, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "32"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W230323",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 105,
+      "sourceId": "W240161",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W240161; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Champion B/W 100 kV Line (Bush River - Newberry PV), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "26"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W240161",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 106,
+      "sourceId": "E220082",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220082; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cape Fear – West End 230 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/29/2026",
+        "estimatedCostMillionNominalUsd": "52"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 107,
+      "sourceId": "E220083",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220083; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Erwin – Fayetteville East 230 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "7/13/2026",
+        "estimatedCostMillionNominalUsd": "46"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 108,
+      "sourceId": "E220086",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220086; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Milburnie 230 kV Substation, Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/15/2026",
+        "estimatedCostMillionNominalUsd": "5"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 109,
+      "sourceId": "E220087",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220087; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Fayetteville-Fayetteville Dupont 115 kV Line, Rebuild 4.9-mile section",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "3/19/2026",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 110,
+      "sourceId": "E220088",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220088; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Robinson Plant-Rockingham 230 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "7/29/2026",
+        "estimatedCostMillionNominalUsd": "31"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 111,
+      "sourceId": "E220093",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220093; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Camden Junction-Wateree 115 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/26/2026",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "in-service",
+      "disposition": "excluded",
+      "reason": "Source status In-Service: operational, outside remaining planned scope."
+    },
+    {
+      "sourceRow": 112,
+      "sourceId": "E220219",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220219; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Robinson Plant-Rockingham 115 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "32"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E220219",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 113,
+      "sourceId": "E230122",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230122; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Clayton Industrial - Selma 115 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "27"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E230122",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 114,
+      "sourceId": "E230124",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230124; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lilesville - Oakboro 230 kV Black & White lines, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "111"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E230124",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 115,
+      "sourceId": "E240038",
+      "section": "Public Policy Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lee - Milburnie 230 kV Line; Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2031",
+        "estimatedCostMillionNominalUsd": "157"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:E240038",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 116,
+      "sourceId": "W250215",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID W250215; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cliffside 500/230 kV Transformer",
+        "issueResolved": "Enable load growth in the region",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "138"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:W250215",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 117,
+      "sourceId": "MVSTDEC01",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC01; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Harley Hogback - Rebuilds",
+        "issueResolved": "Enable local load growth and economic transfers",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2034",
+        "estimatedCostMillionNominalUsd": "125"
+      },
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:MVSTDEC01",
+      "reason": "Accepted physical transmission project; lifecycle conservatively planned."
+    },
+    {
+      "sourceRow": 118,
+      "sourceId": "MVSTDEC02",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC02; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Woodruff - New 100 KV Lines",
+        "issueResolved": "Enable industrial load growth and solar interconnection",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:MVSTDEC02",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 119,
+      "sourceId": "MVSTDEP01",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEP01; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Badin Rebuilds",
+        "issueResolved": "Increase DEP to DEC energy transfer capability and reduce solar curtailment",
+        "status": "Conceptual",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:MVSTDEP01",
+      "reason": "Conceptual option retained only as planning context."
+    },
+    {
+      "sourceRow": 120,
+      "sourceId": "MVSTDEC03",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC03; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wateree - Open Wateree B&W",
+        "issueResolved": "Enable local generation and increase energy transfer from DEP to DEC",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC/DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "disposition": "imported",
+      "projectId": "carolinas-tpc:MVSTDEC03",
+      "reason": "Conceptual option retained only as planning context."
+    }
+  ]
+}

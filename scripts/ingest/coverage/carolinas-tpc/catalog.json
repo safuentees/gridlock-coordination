@@ -1,0 +1,4509 @@
+{
+  "catalogVersion": 1,
+  "acceptedContract": "1732ccf; specs/features/F27-us-regional-expansion/carolinas-tpc/spec.md",
+  "sourceKey": "carolinas-tpc",
+  "editionId": "2025-plan-midyear-2026-08",
+  "label": "CTPC 2025–2035 plan — August 2026 update",
+  "reportingGroupName": "Carolinas Transmission Planning Collaborative",
+  "publisher": "Carolinas Transmission Planning Collaborative",
+  "publishedOn": "2026-08-14",
+  "retrievedOn": "2026-09-30",
+  "lifecycleAsOf": "2026-08",
+  "sourceFile": "2026-08-13-midyear.pdf",
+  "sourceUrl": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+  "sourceSha256": "1f16698d87d414c98478e0f1199a062211c0f2873417fd7ba185c81d49d45753",
+  "sourceLocator": "PDF/printed pp.8–17, all Project ID rows in Reliability, Public Policy and Multi-Value Strategic Transmission project tables",
+  "artifacts": [
+    {
+      "file": "2026-08-13-midyear.pdf",
+      "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf",
+      "sha256": "1f16698d87d414c98478e0f1199a062211c0f2873417fd7ba185c81d49d45753",
+      "bytes": 431299
+    },
+    {
+      "file": "2026-04-16-final-plan.pdf",
+      "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf",
+      "sha256": "9374c5f9565ce77d14ea1499b2dd8589a55725ee8609994bcd0d1f12a4437099",
+      "bytes": 6103344
+    },
+    {
+      "file": "reference.html",
+      "url": "https://carolinastpc.org/reference/",
+      "sha256": "f7b83048262fbd8b34bbc43310a9a1220ab8305baf0508fa9f1ce86bb4252061",
+      "bytes": 148319
+    }
+  ],
+  "sampleSourceIds": [
+    "W170306",
+    "W210482",
+    "E200161",
+    "E240038",
+    "CTPCDEC01",
+    "MVSTDEC03"
+  ],
+  "ownerEvidence": {
+    "definition": {
+      "file": "2026-04-16-final-plan.pdf",
+      "locator": "PDF p.52 / printed p.50, field 4 Transmission Owner",
+      "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+    },
+    "aliases": {
+      "file": "2026-04-16-final-plan.pdf",
+      "locator": "PDF p.3 / printed p.1, CTPC participants DEC and DEP expansion",
+      "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+    },
+    "rules": {
+      "DEC": {
+        "id": "carolinas-tpc-dec",
+        "name": "Duke Energy Carolinas, LLC",
+        "identityScope": "source"
+      },
+      "DEP": {
+        "id": "carolinas-tpc-dep",
+        "name": "Duke Energy Progress, LLC",
+        "identityScope": "source"
+      },
+      "DEC/DEP": null
+    },
+    "limitation": "Source says responsible equipment owner designated to design and implement the work. No cross-source/global corporate registry or parent equivalence is established."
+  },
+  "dateEvidence": [
+    {
+      "file": "2026-08-13-midyear.pdf",
+      "locator": "PDF/printed p.1, opening paragraph: June1/December1 peak-season normalization; actual dates where applicable",
+      "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+    },
+    {
+      "file": "2026-04-16-final-plan.pdf",
+      "locator": "PDF p.19 / printed p.17, 2030 Summer / 2030–2031 Winter and 2035 Summer / 2035–2036 Winter study cases",
+      "url": "https://carolinastpc.org/media/reference/2026/04/22/2025_CTPC_Collaborative_Transmission_Plan_Report_FINAL_04-16-2026.pdf"
+    }
+  ],
+  "rows": [
+    {
+      "sourceRow": 1,
+      "sourceId": "CTPCDEC01",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+      "section": "Reliability Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC01; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Beulah 100 kV Line (Lookout-EnergyUnited Del 18), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "18"
+      },
+      "proposed": {
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "ownerId": "carolinas-tpc-dec",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        },
+        "id": "carolinas-tpc:CTPCDEC01",
+        "identityBasis": "native-id",
+        "recordUnit": "project",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "ownerIdentityScope": "source",
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "notes": [
+        "Explicitly not planned at this time. Retain as contextual future option, not approved/planned construction."
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "sourceId": "CTPCDEC02",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC02; page project row 2",
+      "section": "Reliability Projects",
+      "sourceStatus": "Removed",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-removed",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC02; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Harley 100 kV Line (Tiger-Campobello), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      }
+    },
+    {
+      "sourceRow": 3,
+      "sourceId": "CTPCDEC03",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC03; page project row 3",
+      "section": "Reliability Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC03; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Correct Clearance Issues on the Clear Creek Lines to increase the line's rating",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "2"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:CTPCDEC03",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction."
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "sourceId": "CTPCDEC04",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC04; page project row 4",
+      "section": "Reliability Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC04; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Replace Ancillary Equipment on the Glen Springs line to increase the Line's Ratings",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "2"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:CTPCDEC04",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction."
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "sourceId": "CTPCDEC05",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC05; page project row 5",
+      "section": "Reliability Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID CTPCDEC05; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Add capacitor banks at Lake Emory",
+        "issueResolved": "Mitigate contingency voltage issues",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "10"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:CTPCDEC05",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction."
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "sourceId": "W170306",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W170306; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "North Greenville 230 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "33"
+      },
+      "proposed": {
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "ownerId": "carolinas-tpc-dec",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source peak-season target 6/1/2029; calendar year only"
+        },
+        "id": "carolinas-tpc:W170306",
+        "identityBasis": "native-id",
+        "recordUnit": "project",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "ownerIdentityScope": "source",
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "notes": [
+        "Underway includes budget-only work; it is not evidence of actual construction.",
+        "June 1 is a peak-season placeholder; no exact construction or energization day is established."
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": "W180359",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W180359; page project row 7",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W180359; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "States CTCC Bus Line 4, Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W180359",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "sourceId": "W190390",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W190390; page project row 8",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W190390; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Gastonia # 2 44 kV Line, Rebuild Clover 44 kV line to double circuit and add a new tap off the Gastonia #2 Line",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2032",
+        "estimatedCostMillionNominalUsd": "2.3"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W190390",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          44
+        ],
+        "date": {
+          "value": "2032",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2032; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "sourceId": "W200010",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200010; page project row 9",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200010; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cherokee 100 kV Line (Peach Valley-Enola Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/25/2026",
+        "estimatedCostMillionNominalUsd": "8"
+      }
+    },
+    {
+      "sourceRow": 10,
+      "sourceId": "W200030",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200030; page project row 10",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200030; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wylie 100 kV Line (Wylie-Arrowood Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200030",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "sourceId": "W200031",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200031; page project row 11",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200031; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Monroe 100 kV Line (Lancaster-Monroe), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "62"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200031",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "sourceId": "W200034",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200034; page project row 12",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200034; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Panther 100 kV Lines (Parkwood Tie-E Durham Tie), Upgrade and Network to E Durham Tie",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "41"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200034",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval.",
+        "The update p.4 change summary combines removed W230387 into this project. Keep the surviving W200034 row once; the removed ID is not a second active record."
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "sourceId": "W200039",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200039; page project row 13",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200039; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Coronaca 100 kV Line (Coronaca-Creto), Upgrade and Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "7/27/2026",
+        "estimatedCostMillionNominalUsd": "29"
+      }
+    },
+    {
+      "sourceRow": 14,
+      "sourceId": "W200042",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200042; page project row 14",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200042; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sevier 100 kV Line (East Greenville-Verdae Retail Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "20"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200042",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "sourceId": "W200061",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200061; page project row 15",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200061; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Page and Guilford 100 kV Lines (Greensboro -North Greensboro), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "25"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200061",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "sourceId": "W200116",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200116; page project row 16",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200116; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Hodges 230/100/44 kV Tie, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2029",
+        "estimatedCostMillionNominalUsd": "40"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200116",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230,
+          100,
+          44
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": "W200120",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200120; page project row 17",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200120; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Dairyhill 100 kV Line (Shelby-CUSTOMER Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2029",
+        "estimatedCostMillionNominalUsd": "20"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200120",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "sourceId": "W200144",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200144; page project row 18",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200144; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Oak Hollow Switching Station, Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "6"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200144",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "sourceId": "W200146",
+      "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200146; page project row 19",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 8, Reliability Projects, Project ID W200146; page project row 19",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Swepsonville 100 kV Line (Mebane -Trollingwood Retail), Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2032",
+        "estimatedCostMillionNominalUsd": "3.3"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200146",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2032",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2032; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "sourceId": "W200148",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200148; page project row 1",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200148; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Pinewood 100 kV Line (Lawsons Fork-Una Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "27"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200148",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "sourceId": "W200149",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200149; page project row 2",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200149; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Reidsville and Wolf Creek 100 kV Lines (Dan River-Sadler), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "54"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200149",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "sourceId": "W200150",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200150; page project row 3",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200150; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Troutman 44 kV Line, Upgrade and Partial conversion to 100 kV [Modification to Project ID 0110 in 2023 Plan - Additional Scope]",
+        "issueResolved": "Mitigate non-contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "60"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200150",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          44,
+          100
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "sourceId": "W200162",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200162; page project row 4",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200162; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Dan River 100 kV Line (Dan River-North Greensboro), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "78"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200162",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "sourceId": "W200168",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200168; page project row 5",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200168; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Steam 100 kV Line (Dan River CC-Dan River Steam), Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "1"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200168",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": "W200170",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200170; page project row 6",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200170; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lakewood 100 kV Line (Lakewood-Remount Road Retail), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "23"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200170",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "W200172",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200172; page project row 7",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200172; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Morning Star 230 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "95"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200172",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "sourceId": "W200173",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200173; page project row 8",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200173; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Terrell 44 kV Line, Conversion",
+        "issueResolved": "Mitigate contingency loading and voltage issues",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2035",
+        "estimatedCostMillionNominalUsd": "25"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200173",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          44
+        ],
+        "date": {
+          "value": "2035",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2035; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "sourceId": "W200187",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200187; page project row 9",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200187; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Harrisburg 230/100/44 kV Tie Station, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "20"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200187",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230,
+          100,
+          44
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "sourceId": "W200262",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200262; page project row 10",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200262; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sandy Ridge 230 kV Line (Newport-Morning Star), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "82"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200262",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "sourceId": "W200412",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200412; page project row 11",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200412; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Skybrook 100 kV Line (Winecoff-Eastfield Retail), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200412",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "sourceId": "W200413",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200413; page project row 12",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200413; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Tiger Tie Autotransformer #5 (230/100 kV) Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "23"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200413",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230,
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "sourceId": "W200425",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200425; page project row 13",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200425; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Marshall 230 kV Line (Marshall-Beckerdite), Raise individual towers",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "0.2"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200425",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "sourceId": "W200582",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200582; page project row 14",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200582; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Bethania and Shattalon 100 kV Lines (Rural Hall-Shattalon), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200582",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "sourceId": "W200588",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200588; page project row 15",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200588; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Ferrell White 100 kV Line, Construct",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2032",
+        "estimatedCostMillionNominalUsd": "0.6"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200588",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2032",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2032; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "sourceId": "W200590",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200590; page project row 16",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200590; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Crab Orchard 100 kV Line (Harrisburg-Amity), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200590",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "sourceId": "W200592",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200592; page project row 17",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200592; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Crest St 100 kV Lines, Raise individual towers",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2031",
+        "estimatedCostMillionNominalUsd": "1.9"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200592",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2031",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2031; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "sourceId": "W200595",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200595; page project row 18",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200595; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Westport 230 kV Line (McGuire-Marshall), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "42"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200595",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "sourceId": "W200599",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200599; page project row 19",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W200599; page project row 19",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Davidson River 100 kV Line (North Greenville-Marietta), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "55"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200599",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "sourceId": "W210192",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210192; page project row 20",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210192; page project row 20",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Earl 100 kV Line (Customer Tap-Customer Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "3/31/2026",
+        "estimatedCostMillionNominalUsd": "9"
+      }
+    },
+    {
+      "sourceRow": 40,
+      "sourceId": "W210482",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W210482; page project row 21",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Madison Tie, Upgrade, add 100/44 kV Transformer",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2034",
+        "estimatedCostMillionNominalUsd": "2.4"
+      },
+      "proposed": {
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "ownerId": "carolinas-tpc-dec",
+        "voltageKv": [
+          100,
+          44
+        ],
+        "date": {
+          "value": "2034",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source peak-season target 6/1/2034; calendar year only"
+        },
+        "id": "carolinas-tpc:W210482",
+        "identityBasis": "native-id",
+        "recordUnit": "project",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "ownerIdentityScope": "source",
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "notes": [
+        "Update p.3 says duplicate project removed; p.9 retains this one native ID. The original final-plan Appendix C repeats W210482 on PDF pp.64 and67 (printed62 and65). Count current retained row once; do not cancel it from the change summary."
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "sourceId": "W220053",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220053; page project row 22",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220053; page project row 22",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Shattalon Switching Station, RAS (Grid Enhancing Technology) to Avoid Overload on Bethania and Shattalon 100 kV Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "1"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220053",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "sourceId": "W220209",
+      "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220209; page project row 23",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 9, Reliability Projects, Project ID W220209; page project row 23",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lyle Creek Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2029",
+        "estimatedCostMillionNominalUsd": "75"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220209",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "sourceId": "W220367",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220367; page project row 1",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220367; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Boyd Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "88"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220367",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "sourceId": "W220368",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220368; page project row 2",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220368; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Haas Creek Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2030",
+        "estimatedCostMillionNominalUsd": "70"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220368",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 45,
+      "sourceId": "W220474",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220474; page project row 3",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220474; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Batte 100 kV Line (Concord-Winecoff), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "13"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220474",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 46,
+      "sourceId": "W220506",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220506; page project row 4",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220506; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Upgrade Switches at Oakvale Tie",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "0.8"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220506",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 47,
+      "sourceId": "W220507",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220507; page project row 5",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220507; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cabarrus 100 kV Line (Wildcat-Westfork), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220507",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 48,
+      "sourceId": "W220539",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220539; page project row 6",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220539; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Batte 100 kV Line, RAS (Grid Enhancing Technology) to Avoid Overloads on Batte Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "1.9"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220539",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 49,
+      "sourceId": "W220543",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220543; page project row 7",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220543; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Delta 100 kV Line (Research Triangle Retail-Ellis Rd Retail), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "11"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220543",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 50,
+      "sourceId": "W220559",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220559; page project row 8",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W220559; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Concord 100 kV Line (Concord-Concord City Del 3), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "21"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220559",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "sourceId": "W230087",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230087; page project row 9",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230087; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Kennedy 100 kV Line (Orchard-Newton Tap), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "6"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230087",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 52,
+      "sourceId": "W230093",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230093; page project row 10",
+      "section": "Reliability Projects",
+      "sourceStatus": "Removed",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-removed",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230093; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Woodlawn 230/100/44 kV Tie Station, Upgrade Add 44 kV Breaker",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      }
+    },
+    {
+      "sourceRow": 53,
+      "sourceId": "W230145",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230145; page project row 11",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230145; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Hands Mill Switching Station, Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "61"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230145",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 54,
+      "sourceId": "W230158",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230158; page project row 12",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230158; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Nanny Mountain 1 44 kV Line, Upgrade and Partial Conversion to 100 kV",
+        "issueResolved": "Mitigate contingency loading and voltage issues",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230158",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          44,
+          100
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 55,
+      "sourceId": "W230245",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230245; page project row 13",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230245; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Messer 230 kV Line (Dixon School Rd-Customer), Construct",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "30"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230245",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 56,
+      "sourceId": "W230276",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230276; page project row 14",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230276; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Shelby 230/100/44 kV Tie, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "22"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230276",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230,
+          100,
+          44
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 57,
+      "sourceId": "W230358",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230358; page project row 15",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230358; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Hinkle 100 kV Line (Stamey-Statesville), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230358",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 58,
+      "sourceId": "W230368",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230368; page project row 16",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230368; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Mooresville Tie, RAS (Grid Enhancing Technology) to Avoid Overloads on Timber and Sherrill 100 kV Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "5/7/2026",
+        "estimatedCostMillionNominalUsd": "0.3"
+      }
+    },
+    {
+      "sourceRow": 59,
+      "sourceId": "W230384",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230384; page project row 17",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230384; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Oliver 230 kV Line (Marshall-Boyd), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "16"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230384",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 60,
+      "sourceId": "W230387",
+      "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230387; page project row 18",
+      "section": "Reliability Projects",
+      "sourceStatus": "Removed",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-removed",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 10, Reliability Projects, Project ID W230387; page project row 18",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "E Durham 230/100 kV Tie, Construct Panther Line Terminals",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      }
+    },
+    {
+      "sourceRow": 61,
+      "sourceId": "W230389",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230389; page project row 1",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230389; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sycamore B/W 100 kV (Longview-Lyle Creek), Upgrade and Network",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2037",
+        "estimatedCostMillionNominalUsd": "15"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230389",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2037",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2037; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established.",
+        "The source retains Planned with a June 2037 peak-season target beyond the named 2025–2035 plan horizon; preserve the source target without truncating it."
+      ]
+    },
+    {
+      "sourceRow": 62,
+      "sourceId": "W230402",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230402; page project row 2",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230402; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Ashe St 100 kV Line (Durham-Ashe St), Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "10"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230402",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 63,
+      "sourceId": "W230456",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230456; page project row 3",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W230456; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lawsons Fork Tie Series 100 kV BJB",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "0.8"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230456",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 64,
+      "sourceId": "W240008",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240008; page project row 4",
+      "section": "Reliability Projects",
+      "sourceStatus": "Removed",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-removed",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240008; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Pinewood 100 kV Line, RAS (Grid Enhancing Technology) to Avoid Overloads on Pinewood Lines",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      }
+    },
+    {
+      "sourceRow": 65,
+      "sourceId": "W240278",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240278; page project row 5",
+      "section": "Reliability Projects",
+      "sourceStatus": "Removed",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-removed",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W240278; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Central 230/100/44 kV Tie, Upgrade, Add Redundant Relaying",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Removed",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "",
+        "estimatedCostMillionNominalUsd": ""
+      }
+    },
+    {
+      "sourceRow": 66,
+      "sourceId": "W250072",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250072; page project row 6",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250072; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Taylors 100 kV Line - Rebuild between Tiger Tie and Customer Station with 795 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "1.8"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250072",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 67,
+      "sourceId": "W250207",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250207; page project row 7",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250207; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cliffside 100 kV Lines - Rebuild lines between Cliffside 5 and Customer Tap with 1158 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "29"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250207",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 68,
+      "sourceId": "W250212",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250212; page project row 8",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250212; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Duncan 100 kV Lines - Rebuild lines between Cliffside 5 and Inman Tie with 1158 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "3.9"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250212",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 69,
+      "sourceId": "W250214",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250214; page project row 9",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250214; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Rebuild the Cherokee Lines between AZP Tap and Chesnee Tie with 1158 ACSS/TW",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "17"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250214",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 70,
+      "sourceId": "W250223",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250223; page project row 10",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250223; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Switzer 44 kV Line - Rebuild between structures 48 and 139.5 with 477 ACSS/TW. Includes adding a 100 kV Circuit",
+        "issueResolved": "Required to serve new Customer",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250223",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          44,
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 71,
+      "sourceId": "W250281",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250281; page project row 11",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250281; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lemley 100 kV Bl & Wh Lines 3 span clearance fix and AEU includes D-Line Work",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250281",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 72,
+      "sourceId": "W250285",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250285; page project row 12",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250285; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Add breakers at Campobello Tie",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2032",
+        "estimatedCostMillionNominalUsd": "0.7"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250285",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2032",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2032; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 73,
+      "sourceId": "W250312",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250312; page project row 13",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID W250312; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Shelby Tie - Replace Bank 4",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2033",
+        "estimatedCostMillionNominalUsd": "8"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250312",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2033",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2033; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 74,
+      "sourceId": "E220378",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID E220378; page project row 14",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID E220378; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Durham – RTP 230 kV Line, Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "6"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E220378",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 75,
+      "sourceId": "CTPCDEP03",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP03; page project row 15",
+      "section": "Reliability Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP03; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Falls – Franklinton (Franklinton – Franklinton Novo 115 kV Feeder), Construct",
+        "issueResolved": "Mitigate low voltage issues",
+        "status": "Conceptual",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "16"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:CTPCDEP03",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction."
+      ]
+    },
+    {
+      "sourceRow": 76,
+      "sourceId": "CTPCDEP04",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP04; page project row 16",
+      "section": "Reliability Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID CTPCDEP04; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Rocky Mount - Wilson 115 kV Line, Upgrade",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Conceptual",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "1.5"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:CTPCDEP04",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction."
+      ]
+    },
+    {
+      "sourceRow": 77,
+      "sourceId": "E190052",
+      "locator": "PDF/printed p. 11, Reliability Projects, Project ID E190052; page project row 17",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 11, Reliability Projects, Project ID E190052; page project row 17",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Jacksonville 230 kV, Upgrade CT Ratio for Jacksonville City 115 kV East Line and Add Second 115 kV Bus Tie Breaker",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/15/2025",
+        "estimatedCostMillionNominalUsd": "2.1"
+      }
+    },
+    {
+      "sourceRow": 78,
+      "sourceId": "E190092",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E190092; page project row 1",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E190092; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Greenville - VEPCO Everetts 230 kV Line, Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "12"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E190092",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 79,
+      "sourceId": "E200161",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E200161; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Castle Hayne–Folkstone115 kV Line, Rebuild",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/30/2026",
+        "estimatedCostMillionNominalUsd": "73"
+      },
+      "proposed": {
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "ownerId": "carolinas-tpc-dep",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2026-06-30",
+          "precision": "day",
+          "kind": "in-service",
+          "label": "Reported estimated in-service date; source status remains Underway"
+        },
+        "id": "carolinas-tpc:E200161",
+        "identityBasis": "native-id",
+        "recordUnit": "project",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "ownerIdentityScope": "source",
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "notes": [
+        "Non-placeholder day is retained as a reported estimate, not actual service. Its date precedes the edition; do not infer completion or construction."
+      ]
+    },
+    {
+      "sourceRow": 80,
+      "sourceId": "E210073",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210073; page project row 3",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210073; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Carthage (Hill Crest) 230/115 kV Substation, Construct",
+        "issueResolved": "Mitigate contingency loading and voltage issues",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/29/2026",
+        "estimatedCostMillionNominalUsd": "32"
+      }
+    },
+    {
+      "sourceRow": 81,
+      "sourceId": "E210078",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210078; page project row 4",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210078; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Fayetteville 230/115 kV Bank #1, Upgrade 115 kV Disconnect Switches, Wave Traps, and CT Ratios",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "3/19/2026",
+        "estimatedCostMillionNominalUsd": "11"
+      }
+    },
+    {
+      "sourceRow": 82,
+      "sourceId": "E210145",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210145; page project row 5",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210145; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Holly Ridge North 115 kV Switching Station, Construct",
+        "issueResolved": "Mitigate low voltage issues",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "14"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E210145",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 83,
+      "sourceId": "E210150",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210150; page project row 6",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E210150; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Havelock 230 kV Substation, Upgrade Ancillary Equipment",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "7"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E210150",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 84,
+      "sourceId": "E220112",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220112; page project row 7",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220112; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Asheville Plant – Oteen 115 kV West Line (Arden), Construct",
+        "issueResolved": "Mitigate low voltage issues",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "4/28/2026",
+        "estimatedCostMillionNominalUsd": "15"
+      }
+    },
+    {
+      "sourceRow": 85,
+      "sourceId": "E220408",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220408; page project row 8",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E220408; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Vanderbilt - West Asheville 115 kV Line, Upgrade 115 kV CB and Switches",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "2"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E220408",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 86,
+      "sourceId": "E230041",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230041; page project row 9",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230041; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Richmond 500/230 kV Banks #1 & #2, Upgrade CT Ratios",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "3/10/2026",
+        "estimatedCostMillionNominalUsd": "2.2"
+      }
+    },
+    {
+      "sourceRow": 87,
+      "sourceId": "E230059",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230059; page project row 10",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230059; page project row 10",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sumter – SCEG Eastover 115 kV Line (Kings Hwy – Shaw Field – Eastover), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "18"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E230059",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 88,
+      "sourceId": "E230061",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230061; page project row 11",
+      "section": "Reliability Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E230061; page project row 11",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Henderson 230/115 kV Banks #1 & #2, Upgrade CT Ratios and Relay Settings",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/29/2026",
+        "estimatedCostMillionNominalUsd": "2.2"
+      }
+    },
+    {
+      "sourceRow": 89,
+      "sourceId": "E240135",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240135; page project row 12",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240135; page project row 12",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Sumter - SCEG Eastover 115 kV Line (Gold Kist Tap-Kings Hwy Section), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "11"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240135",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 90,
+      "sourceId": "E240188",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240188; page project row 13",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240188; page project row 13",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 2 - Delco 230 kV West Line (Brunswick 2 – BEMC Southport), Raise Section",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2027",
+        "estimatedCostMillionNominalUsd": "0.8"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240188",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 91,
+      "sourceId": "E240198",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240198; page project row 14",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240198; page project row 14",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 1 - Delco 230 kV East Line (Brunswick 1 - Southport Tap), Upgrade Switch; Reconductor Brunswick 1 -Southport Tap Section",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "4.5"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240198",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 92,
+      "sourceId": "E240238",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240238; page project row 15",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240238; page project row 15",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Henderson – DVP Kerr Dam 115 kV line, Upgrade the wave trap, CT ratio, and relay settings at Henderson 230 to at least 1294 A.",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "4.1"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240238",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 93,
+      "sourceId": "E240276",
+      "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240276; page project row 16",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 12, Reliability Projects, Project ID E240276; page project row 16",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Barnard Creek – Castle Hayne 230 kV East line, Upgrade switches 38A-1, 38A-2 to 3000 A and 41B-3 to 2000 A",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "3.1"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240276",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 94,
+      "sourceId": "E240289",
+      "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240289; page project row 1",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240289; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 1 - Barnard Creek 230 kV line, Upgrade OOS relays, CT ratios, line trap, and line switches to allow us of 2806 A line conductor 32F CW rating",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "1.2"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240289",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 95,
+      "sourceId": "E240296",
+      "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240296; page project row 2",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240296; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Brunswick 2 - Town Creek 230 kV line, Upgrade OOS relay to at least 2000 A, preferably 3000 A",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "0.4"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240296",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 96,
+      "sourceId": "E240331",
+      "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240331; page project row 3",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E240331; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wake-Zebulon 230 kV line, Upgrade CT ratios and relay settings at Wake, upgrade line switch 42-1, and upgrade CT ratios and relay settings at Zebulon 230, all to 3000 A",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "2.4"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E240331",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 97,
+      "sourceId": "E250027",
+      "locator": "PDF/printed p. 13, Reliability Projects, Project ID E250027; page project row 4",
+      "section": "Reliability Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID E250027; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Method-DPC East Durham 230 kV line upgrade line switches and terminal equipment at both ends to allow full line conductor 2546 A cold winter rating",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/1/2029",
+        "estimatedCostMillionNominalUsd": "1"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E250027",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2029",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2029; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 98,
+      "sourceId": "F170824H",
+      "locator": "PDF/printed p. 13, Reliability Projects, Project ID F170824H; page project row 5",
+      "section": "Reliability Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 13, Reliability Projects, Project ID F170824H; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Weatherspoon – LOF 115 kV Line (Maxton-Pembroke), Reconductor",
+        "issueResolved": "Mitigate contingency loading",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "24"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:F170824H",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 99,
+      "sourceId": "W200169",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W200169; page project row 1",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W200169; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Piedmont 100 kV Line (Lee-Shady Grove), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "44"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W200169",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 100,
+      "sourceId": "W220122",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220122; page project row 2",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220122; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Clinton 100 kV Line (Bush River-Laurens), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2026",
+        "estimatedCostMillionNominalUsd": "85"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W220122",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2026; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 101,
+      "sourceId": "W220124",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220124; page project row 3",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W220124; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Newberry 115 kV Line (Bush River-DESC), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "3/30/2026",
+        "estimatedCostMillionNominalUsd": "35"
+      }
+    },
+    {
+      "sourceRow": 102,
+      "sourceId": "W230029",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230029; page project row 4",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230029; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Broadway B/W 100 kV Line (Belton-Lee), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "28"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230029",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 103,
+      "sourceId": "W230066",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230066; page project row 5",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230066; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Bush River Tie 115/100 kV, Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "12"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230066",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115,
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 104,
+      "sourceId": "W230323",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230323; page project row 6",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W230323; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lilesville – Oakboro 230 kV Black & White Lines, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "32"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W230323",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 105,
+      "sourceId": "W240161",
+      "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W240161; page project row 7",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 14, Public Policy Projects, Project ID W240161; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Champion B/W 100 kV Line (Bush River - Newberry PV), Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2028",
+        "estimatedCostMillionNominalUsd": "26"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W240161",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 106,
+      "sourceId": "E220082",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220082; page project row 1",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220082; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cape Fear – West End 230 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "6/29/2026",
+        "estimatedCostMillionNominalUsd": "52"
+      }
+    },
+    {
+      "sourceRow": 107,
+      "sourceId": "E220083",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220083; page project row 2",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220083; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Erwin – Fayetteville East 230 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "7/13/2026",
+        "estimatedCostMillionNominalUsd": "46"
+      }
+    },
+    {
+      "sourceRow": 108,
+      "sourceId": "E220086",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220086; page project row 3",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220086; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Milburnie 230 kV Substation, Upgrade",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/15/2026",
+        "estimatedCostMillionNominalUsd": "5"
+      }
+    },
+    {
+      "sourceRow": 109,
+      "sourceId": "E220087",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220087; page project row 4",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220087; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Fayetteville-Fayetteville Dupont 115 kV Line, Rebuild 4.9-mile section",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "3/19/2026",
+        "estimatedCostMillionNominalUsd": "7"
+      }
+    },
+    {
+      "sourceRow": 110,
+      "sourceId": "E220088",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220088; page project row 5",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220088; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Robinson Plant-Rockingham 230 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "7/29/2026",
+        "estimatedCostMillionNominalUsd": "31"
+      }
+    },
+    {
+      "sourceRow": 111,
+      "sourceId": "E220093",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220093; page project row 6",
+      "section": "Public Policy Projects",
+      "sourceStatus": "In-Service",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "exclude-in-service",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220093; page project row 6",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Camden Junction-Wateree 115 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "In-Service",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "5/26/2026",
+        "estimatedCostMillionNominalUsd": "15"
+      }
+    },
+    {
+      "sourceRow": 112,
+      "sourceId": "E220219",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220219; page project row 7",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E220219; page project row 7",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Robinson Plant-Rockingham 115 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "32"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E220219",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 113,
+      "sourceId": "E230122",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230122; page project row 8",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230122; page project row 8",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Clayton Industrial - Selma 115 kV Line, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2027",
+        "estimatedCostMillionNominalUsd": "27"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E230122",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          115
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2027; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 114,
+      "sourceId": "E230124",
+      "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230124; page project row 9",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Underway",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 15, Public Policy Projects, Project ID E230124; page project row 9",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lilesville - Oakboro 230 kV Black & White lines, Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Underway",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2028",
+        "estimatedCostMillionNominalUsd": "111"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:E230124",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2028; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "Underway includes current-year budget provision through some construction; this row alone does not establish physical construction.",
+        "December 1 is a winter peak-season placeholder. Winter crosses calendar years; the normalized year is only the displayed target year, not the end of winter or a construction interval."
+      ]
+    },
+    {
+      "sourceRow": 115,
+      "sourceId": "E240038",
+      "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+      "section": "Public Policy Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 16, Public Policy Projects, Project ID E240038; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Lee - Milburnie 230 kV Line; Rebuild",
+        "issueResolved": "This upgrade is needed to implement resource plans and to reliably serve customer load.",
+        "status": "Planned",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "12/1/2031",
+        "estimatedCostMillionNominalUsd": "157"
+      },
+      "proposed": {
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "ownerId": "carolinas-tpc-dep",
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": "2031",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source winter peak-season target 12/1/2031; displayed calendar year only"
+        },
+        "id": "carolinas-tpc:E240038",
+        "identityBasis": "native-id",
+        "recordUnit": "project",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "ownerIdentityScope": "source",
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "notes": [
+        "Preserve raw winter-season reference. Winter spans calendar years; normalized 2031 is the displayed target year, not a claim that all winter activity finishes in 2031. Do not silently shift to 2032 or manufacture a window.",
+        "Public policy is the project driver; it does not make the work a generation project."
+      ]
+    },
+    {
+      "sourceRow": 116,
+      "sourceId": "W250215",
+      "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID W250215; page project row 1",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID W250215; page project row 1",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Cliffside 500/230 kV Transformer",
+        "issueResolved": "Enable load growth in the region",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2030",
+        "estimatedCostMillionNominalUsd": "138"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:W250215",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [
+          500,
+          230
+        ],
+        "date": {
+          "value": "2030",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2030; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established."
+      ]
+    },
+    {
+      "sourceRow": 117,
+      "sourceId": "MVSTDEC01",
+      "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC01; page project row 2",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "sourceStatus": "Planned",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-transmission-project",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC01; page project row 2",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Harley Hogback - Rebuilds",
+        "issueResolved": "Enable local load growth and economic transfers",
+        "status": "Planned",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "6/1/2034",
+        "estimatedCostMillionNominalUsd": "125"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:MVSTDEC01",
+        "recordKind": "transmission-project",
+        "lifecycle": "planned",
+        "voltageKv": [],
+        "date": {
+          "value": "2034",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Source summer peak-season target 6/1/2034; displayed calendar year only"
+        }
+      },
+      "notes": [
+        "June 1 is a summer peak-season placeholder; no exact service month/day or construction interval is established.",
+        "The update p.2 moves removed CTPCDEC02 to MVST, but does not explicitly equate that ID with MVSTDEC01; no identity merge is inferred."
+      ]
+    },
+    {
+      "sourceRow": 118,
+      "sourceId": "MVSTDEC02",
+      "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC02; page project row 3",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEC",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC02; page project row 3",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Woodruff - New 100 KV Lines",
+        "issueResolved": "Enable industrial load growth and solar interconnection",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:MVSTDEC02",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [
+          100
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction.",
+        "The p.17 note excludes unapproved conceptual MVST options from approved update cost and schedule totals. A dash is an unknown estimate, not zero."
+      ]
+    },
+    {
+      "sourceRow": 119,
+      "sourceId": "MVSTDEP01",
+      "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEP01; page project row 4",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEP",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEP01; page project row 4",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Badin Rebuilds",
+        "issueResolved": "Increase DEP to DEC energy transfer capability and reduce solar curtailment",
+        "status": "Conceptual",
+        "transmissionOwner": "DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "proposed": {
+        "id": "carolinas-tpc:MVSTDEP01",
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        }
+      },
+      "notes": [
+        "The source explicitly says Conceptual is not planned at this time. This is a future option, not approved construction.",
+        "The p.17 note excludes unapproved conceptual MVST options from approved update cost and schedule totals. A dash is an unknown estimate, not zero."
+      ]
+    },
+    {
+      "sourceRow": 120,
+      "sourceId": "MVSTDEC03",
+      "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC03; page project row 5",
+      "section": "Multi-Value Strategic Transmission Projects",
+      "sourceStatus": "Conceptual",
+      "sourceTransmissionOwner": "DEC/DEP",
+      "disposition": "retain-planning-context",
+      "source": {
+        "file": "2026-08-13-midyear.pdf",
+        "locator": "PDF/printed p. 17, Multi-Value Strategic Transmission Projects, Project ID MVSTDEC03; page project row 5",
+        "url": "https://carolinastpc.org/media/reference/2026/08/14/2025_Collaborative_Transmission_Plan_MidYear_Update_08-13-26.pdf"
+      },
+      "raw": {
+        "project": "Wateree - Open Wateree B&W",
+        "issueResolved": "Enable local generation and increase energy transfer from DEP to DEC",
+        "status": "Conceptual",
+        "transmissionOwner": "DEC/DEP",
+        "estimatedInServiceDate": "TBD",
+        "estimatedCostMillionNominalUsd": "-"
+      },
+      "proposed": {
+        "recordKind": "planning-context",
+        "lifecycle": "unknown",
+        "ownerId": null,
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conceptual proposal; in-service target TBD"
+        },
+        "id": "carolinas-tpc:MVSTDEC03",
+        "identityBasis": "native-id",
+        "recordUnit": "project",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "ownerIdentityScope": null,
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "sourceState": null,
+        "sourceLocation": null,
+        "sourceUpdatedOn": null,
+        "constructionStart": null,
+        "buildWindow": null
+      },
+      "notes": [
+        "Table p.17 names this proposal but expressly excludes unapproved conceptual MVST work from update cost/schedule approval. Keep it context-only.",
+        "Composite owner token is preserved as sponsor context, with no inferred single/global owner or split record.",
+        "A dash is an unknown estimate, not zero."
+      ]
+    }
+  ],
+  "fullTableExtraction": "Pinned PDF pp.8–17 text columns; row-ending native ID/status lines delimit wrapped project and issue cells. Connected sample fields remain unchanged."
+}
