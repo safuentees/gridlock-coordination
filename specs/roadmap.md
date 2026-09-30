@@ -101,7 +101,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | Nevada full 90 complete; Virgin Islands qualification active. | Exact [Virgin Islands qualification](features/F27-us-regional-expansion/vi-wapa/spec.md), no producer before acceptance or shared edits/checks. |
+| source_discovery / ingestion | Virgin Islands accepted scopes: four historical + two dated samples, then full nineteen + two after connection. | Exact two WAPA producer/data folders and receipt in [spec](features/F27-us-regional-expansion/vi-wapa/spec.md); no inferred cross-edition identity or shared edits/checks. |
 | core | CNMI accepted context producers: IRP three + CCR three samples, then full ten + eight after connection. | Exact two source producer/data folders and receipt in [CNMI spec](features/F27-us-regional-expansion/mp-cuc/spec.md); five capital context / thirteen planning context, no transmission qualification or shared edits/checks. |
 | coordinator | PR111 merged; next branch connects TVA six-record sample, then CNMI samples and accepted Virgin Islands scopes. | Root owns aggregate/schema/register/merge/checks; preserve unrelated untracked duplicate files and map trial. |
 | ui | TVA six-record sample connected at 5a35114; full 40 producer active. | Exact `tva-public` source producer/data/receipt in [spec](features/F27-us-regional-expansion/tva-public/spec.md); no UI/map/shared edits or worker checks. |
