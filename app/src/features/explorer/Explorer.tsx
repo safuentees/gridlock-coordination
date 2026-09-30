@@ -18,7 +18,7 @@ function Pagination({ page, count, onChange }: { page: number; count: number; on
   const pages = Math.max(1, Math.ceil(count / PAGE_SIZE))
   return <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-t p-3"><p className="text-xs text-muted-foreground">{count ? `${page * PAGE_SIZE + 1}–${Math.min((page + 1) * PAGE_SIZE, count)} of ${count}` : "0 results"}</p><div className="flex gap-2"><Button variant="outline" size="sm" disabled={page === 0} aria-label="Previous results page" onClick={() => onChange(page - 1)}>Previous</Button><Button variant="outline" size="sm" disabled={page + 1 >= pages} aria-label="Next results page" onClick={() => onChange(page + 1)}>Next</Button></div></div>
 }
-export function Explorer({ dataset }: { dataset: Dataset }) {
+export function Explorer({ dataset, active = true, projectToReveal = null }: { dataset: Dataset; active?: boolean; projectToReveal?: { id: string; request: number } | null }) {
   const [options, setOptions] = useState<AnalysisOptions>({ ...DEFAULT_OPTIONS })
   const [search, setSearch] = useState("")
   const [utility, setUtility] = useState("all")
@@ -76,6 +76,9 @@ export function Explorer({ dataset }: { dataset: Dataset }) {
   }
   function changeFilter(update: () => void) { update(); setProjectPage(0); setPairPage(0) }
   useEffect(() => {
+    if (projectToReveal && byId.has(projectToReveal.id)) selectProject(projectToReveal.id)
+  }, [projectToReveal])
+  useEffect(() => {
     const measure = () => {
       const next = { top: 16, left: listOpen ? (listPanel.current?.offsetWidth ?? 0) + 24 : 16, right: (comparisonPanel.current?.offsetWidth ?? 0) + 24, bottom: timelineOpen ? (timelinePanel.current?.offsetHeight ?? 0) + 24 : 16 }
       setViewportInsets(previous => Object.keys(next).every(key => next[key as keyof typeof next] === previous[key as keyof typeof next]) ? previous : next)
@@ -105,7 +108,7 @@ export function Explorer({ dataset }: { dataset: Dataset }) {
       <Button variant="ghost" size="sm" onClick={() => { setListOpen(true); setTimelineOpen(false); setFiltersOpen(false) }}>Reset layout</Button>
     </div>
     <div className="relative min-h-0 min-w-0 flex-1 overflow-hidden">
-      <div className="absolute inset-0"><ProjectMap visible projects={mapProjects} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
+      <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
       <div className="pointer-events-none absolute inset-0 flex min-h-0 min-w-0 flex-col gap-3 p-3">
         <div className="grid min-h-0 min-w-0 flex-1 gap-3" style={{ gridTemplateColumns: `${listOpen ? "min(30%,22rem)" : "0px"} minmax(0,1fr) min(34%,28rem)` }}>
           <aside ref={listPanel} id="project-list" aria-label="Browse projects and candidates" className={listOpen ? "pointer-events-auto flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border bg-background" : "hidden"}>

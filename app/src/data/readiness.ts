@@ -38,10 +38,14 @@ export function createLocationRevision(dataset: Dataset, projectId: string, draf
   if (!file || !locator) throw new Error("Add a source title or filename and an exact page, sheet, section or other locator.")
   const evidence = { file, locator, url }
   const priorEvidence = original.location?.evidence ?? []
+  const moved = original.location !== null && (original.location.lat !== lat || original.location.lon !== lon || original.location.method !== draft.method)
+  const superseded = moved && original.location
+    ? [`Superseded location: ${original.location.lat}, ${original.location.lon}; ${original.location.method}; ${original.location.confidence}. Earlier evidence: ${priorEvidence.map(source => `${source.file}; ${source.locator}${source.url ? `; ${source.url}` : ""}`).join(" | ") || "No location reference supplied"}.`]
+    : []
   const next = projectSchema.safeParse({
     ...original,
-    location: { lat, lon, method: draft.method, confidence: "unverified", evidence: [...priorEvidence.filter(source => JSON.stringify(source) !== JSON.stringify(evidence)), evidence] },
-    notes: [...original.notes.filter(note => note !== "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage."), "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage."],
+    location: { lat, lon, method: draft.method, confidence: "unverified", evidence: [...(moved ? [] : priorEvidence).filter(source => JSON.stringify(source) !== JSON.stringify(evidence)), evidence] },
+    notes: [...original.notes.filter(note => note !== "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage."), ...superseded, "Location updated from locally supplied evidence; coordinates remain unverified. Original source notes may describe earlier coverage."],
   })
   if (!next.success) throw new Error(next.error.issues[0]?.message ?? "Check the location evidence fields.")
   const revision: Dataset = {
