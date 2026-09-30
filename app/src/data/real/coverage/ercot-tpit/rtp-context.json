@@ -1,0 +1,2255 @@
+{
+  "sourceKey": "ercot-tpit",
+  "editionId": "2026-07-13",
+  "note": "Supplemental context only; never add these rows to active project counts.",
+  "rows": [
+    {
+      "sourceRow": 2,
+      "nativeId": "2022-C1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A2:H2",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-C1",
+        "B": "Cap bank Addition at AIRPRO Station",
+        "C": "CNP",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 3,
+      "nativeId": "2016-N1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A3:H3",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2016-N1",
+        "B": "Kiamichi Energy Facility (140077) 345-kV Reactor Addition",
+        "C": "KIOWA POWER PARTNERS LLC (RE)",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 4,
+      "nativeId": "2021-N2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A4:H4",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-N2",
+        "B": "City View (1483) – Ceramic (1485) 138-kV Line Terminal Equipment Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 5,
+      "nativeId": "2020-NC19",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A5:H5",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2020-NC19",
+        "B": "Cedar Crest (2493) to Dealey (2842) to West Levee (2400) 138-kV Line Upgrades",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 6,
+      "nativeId": "2021-NC9",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A6:H6",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-NC9",
+        "B": "Sargant – Saint Augustine 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 7,
+      "nativeId": "2022-NC1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A7:H7",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC1",
+        "B": "Waco Northeast Tap (3551) to Waco North (3552) 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 8,
+      "nativeId": "2022-NC2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A8:H8",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC2",
+        "B": "Brand (827) to Ben Davis (968) 138-kV Line Upgrade",
+        "C": "GPL",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": 67170,
+        "H": null
+      },
+      "explicitTpitIds": [
+        "67170"
+      ],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [
+        "67170"
+      ],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 9,
+      "nativeId": "2022-NC3",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A9:H9",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC3",
+        "B": "Argyle - Corinth 138-kV Line Upgrade",
+        "C": "ONCOR",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 10,
+      "nativeId": "2022-NC4",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A10:H10",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC4",
+        "B": "Wilmer - Southside Filtration Tap East - Kleberg - Seagoville - Seagoville Switch 138-kV Line Upgrade ",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": 71178,
+        "H": null
+      },
+      "explicitTpitIds": [
+        "71178"
+      ],
+      "matchedTpitIds": [
+        "71178"
+      ],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 11,
+      "nativeId": "2022-NC5",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A11:H11",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC5",
+        "B": "New International Airport Switch 345/138-kV Station",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 12,
+      "nativeId": "2022-NC6",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A12:H12",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC6",
+        "B": "Hackberry - DFW D-East 138-kV Line Upgrades",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [
+        "76135"
+      ],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 13,
+      "nativeId": "2022-NC7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A13:H13",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC7",
+        "B": "Liggett Switch- DFW Area 138-kV Line Upgrades",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 14,
+      "nativeId": "2022-NC8",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A14:H14",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC8",
+        "B": "Lake Creek - Elm Mott 138-kV Line Upgrades",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 15,
+      "nativeId": "2022-NC9",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A15:H15",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC9",
+        "B": "Tin Roof 345-kV Expansion",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 16,
+      "nativeId": "2022-NC10",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A16:H16",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-NC10",
+        "B": "Randol Mill Tap East - Randol Mill 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 17,
+      "nativeId": "2021-FW2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A17:H17",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW2",
+        "B": "Yucca Drive Switch - Wolfcamp - Courtney Creek 69-kV to 138-kV Line Conversion",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 18,
+      "nativeId": "2021-FW4",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A18:H18",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW4",
+        "B": "Rio Pecos - Rankin - Texon Tap - Atlantic Best Tap - Kemper Tap - Big Lake 69-kV to 138-kV Line Conversion",
+        "C": "AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 19,
+      "nativeId": "2021-FW5",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A19:H19",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW5",
+        "B": "Caymus TNP - Gas Pad and Caymus TNP - Caymus Compressor TNP 138-kV Line Terminal Equipment Upgrade",
+        "C": "TNMP, AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 20,
+      "nativeId": "2021-FW6",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A20:H20",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW6",
+        "B": "Monument Draw TNP to Monument Draw Gray Oak TNP 138-kV Line Terminal Equipment Upgrade",
+        "C": "TNMP",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 21,
+      "nativeId": "2021-FW7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A21:H21",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW7",
+        "B": "TNMP Flat Top 138/25-kV Transformer Upgrade",
+        "C": "TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 22,
+      "nativeId": "2021-FW8",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A22:H22",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW8",
+        "B": "Wink TNP - California TNP 69-kV to 138-kV Line Conversion",
+        "C": "TNMP",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 23,
+      "nativeId": "2021-FW12",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A23:H23",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW12",
+        "B": "Moss Switch - Ector Harper - Red Lakes Switch - Penwell POD - Wolf Switching Station 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 24,
+      "nativeId": "2021-FW16",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A24:H24",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW16",
+        "B": "16th Street TNP - Fort Stockton TNP 69-kV Line Upgrade",
+        "C": "TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 25,
+      "nativeId": "2021-FW19",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A25:H25",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW19",
+        "B": "Morgan Creek SES - Longshore Switch 345-kV Line Upgrade",
+        "C": "ONCOR",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 26,
+      "nativeId": "2021-FW20",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A26:H26",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW20",
+        "B": "Lamesa - Key Sub - Gail Sub - Willow Valley Switch 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 27,
+      "nativeId": "2021-FW23",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A27:H27",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW23",
+        "B": "Big Spring West - Stanton East 138-kV Line Upgrade ",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 28,
+      "nativeId": "2021-FW24",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A28:H28",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-FW24",
+        "B": "Adobe Meadow - Midland East 138-kV Line Upgrade ",
+        "C": "Oncor",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 29,
+      "nativeId": "2022-FW1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A29:H29",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW1",
+        "B": "Lynx  - Tombstone - Fort Stockton Plant - Leon Creek TNP 138-kV Line Upgrade",
+        "C": "AEP, TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 30,
+      "nativeId": "2022-FW2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A30:H30",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW2",
+        "B": "Cedarvale 345-kV Subtation Expansion",
+        "C": "TNMP, Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 31,
+      "nativeId": "2022-FW3",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A31:H31",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW3",
+        "B": "New Reiter 345/138-kV Substation and Quail East 345-kV Substation",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 32,
+      "nativeId": "2022-FW4",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A32:H32",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW4",
+        "B": "New Opyote to Pyote 138-kV Line Addition",
+        "C": "TNMP, Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 33,
+      "nativeId": "2022-FW5",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A33:H33",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW5",
+        "B": "New Load Bus 900012 - New Load Bus 900021 138-kV Line Addition",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 34,
+      "nativeId": "2022-FW6",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A34:H34",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW6",
+        "B": "Far West Reactive Power Support Device Additions",
+        "C": "TNMP, Oncor, AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": "65648, 63661, 65642",
+        "H": null
+      },
+      "explicitTpitIds": [
+        "65648",
+        "63661",
+        "65642"
+      ],
+      "matchedTpitIds": [
+        "65648"
+      ],
+      "unresolvedTpitIds": [
+        "63661",
+        "65642"
+      ],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 35,
+      "nativeId": "2022-FW7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A35:H35",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW7",
+        "B": "Leon Creek TNP - Airport TNP 138-kV Line Limiting Element Upgrade",
+        "C": "TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 36,
+      "nativeId": "2022-FW8",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A36:H36",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW8",
+        "B": "New Load Bus 900080 - New Load Bus 900032 138-kV Line Addition",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 37,
+      "nativeId": "2022-FW9",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A37:H37",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW9",
+        "B": "Cholla 345/138-kV Station Addition",
+        "C": "TNMP, Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 38,
+      "nativeId": "2022-FW10",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A38:H38",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW10",
+        "B": "Dollarhide - Dollarhide Unocal 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 39,
+      "nativeId": "2022-FW11",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A39:H39",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW11",
+        "B": "Pecos TNP - Faulkner Toyah TNP 138-kV Line Addition",
+        "C": "TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 40,
+      "nativeId": "2022-FW12",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A40:H40",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW12",
+        "B": "Tarbush TNP - Pig Creek 138-kV Line Upgrade",
+        "C": "TNMP, AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 41,
+      "nativeId": "2022-FW13",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A41:H41",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW13",
+        "B": "Yarbrough Sub - Pecos Trails POD - Monahans Tap 2 - Wolf Switching Station 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 42,
+      "nativeId": "2022-FW14",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A42:H42",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW14",
+        "B": "Odessa EHV Switch - Rexall - General Tire Switch - Southwestern Portland Tap - Edwards Tap - Judkins - Sandhills Tap - Wolf Switching Station 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 43,
+      "nativeId": "2022-FW15",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A43:H43",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW15",
+        "B": "Holt Switch - Turnbaugh Corner Switch - Scharbauer POI - Oncor 900053 Tap - Notrees Southeast POI - Blockline POD - Amburguey - Yucca Drive Switch 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 44,
+      "nativeId": "2022-FW16",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A44:H44",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW16",
+        "B": "Moss Switch - Shin Oak POD - Yucca Drive Switch 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 45,
+      "nativeId": "2022-FW17",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A45:H45",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW17",
+        "B": "Moss Switch - Trigas Odessa Southwest - Big Three Odessa Tap 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 46,
+      "nativeId": "2022-FW18",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A46:H46",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW18",
+        "B": "Odessa EHV Switch - Trigas Odessa Tap 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 47,
+      "nativeId": "2022-FW19",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A47:H47",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW19",
+        "B": "Lamesa - Jim Payne POI - Paul D Tap 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 48,
+      "nativeId": "2022-FW20",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A48:H48",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW20",
+        "B": "Spraberry Switch - CRMWD 7 Tap - Meyers Draw - Dewey Lake Tap - Polecat Creek Switch 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": 45640,
+        "H": null
+      },
+      "explicitTpitIds": [
+        "45640"
+      ],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [
+        "45640"
+      ],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 49,
+      "nativeId": "2022-FW21",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A49:H49",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW21",
+        "B": "Midland East – Midland County NW 345-kV Line Rebuild and Second Circuit Addition",
+        "C": "Oncor",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 50,
+      "nativeId": "2022-FW22",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A50:H50",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW22",
+        "B": " Midessa South 345/138-kV Transformer Upgrade and Second 345/138-kV Transformer Addition",
+        "C": "Oncor",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 51,
+      "nativeId": "2022-FW23",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A51:H51",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW23",
+        "B": "Consavvy South 345/138-kV Station Addition",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 52,
+      "nativeId": "2022-FW24",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A52:H52",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW24",
+        "B": "Faraday - Lamesa - Clearfork - Riverton 345-kV Double Circuit Line Addition",
+        "C": "Oncor, WETT",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 53,
+      "nativeId": "2022-FW25",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A53:H53",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW25",
+        "B": "Cedarvale Third 345/138-kV Transformer Addition",
+        "C": "TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 54,
+      "nativeId": "2022-FW26",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A54:H54",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-FW26",
+        "B": "Tarbush TNP - Leon Creek TNP and Woodward - Airport TNP - Leon Creek TNP 138-kV Line Additions",
+        "C": "TNMP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 55,
+      "nativeId": "2021-W1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A55:H55",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-W1",
+        "B": "Cassava - San Angelo Concho 69-kV to 138-kV Line Conversion",
+        "C": "AEP",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 56,
+      "nativeId": "2021-W2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A56:H56",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-W2",
+        "B": "Morgan Creek - McDonald 138-kV Line Upgrade ",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 57,
+      "nativeId": "2021-W7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A57:H57",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-W7",
+        "B": "San Angelo Highland Street - San Angelo South Tap - San Angelo Power Station 138-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 58,
+      "nativeId": "2021-W9",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A58:H58",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-W9",
+        "B": "San Angelo Paulann - San Angelo North 138-kV Line Upgrade ",
+        "C": "AEP",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 59,
+      "nativeId": "2021-W10",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A59:H59",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-W10",
+        "B": "San Angelo Red Creek - San Angelo Coke Street - Rusthill 138-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 60,
+      "nativeId": "2021-W12",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A60:H60",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-W12",
+        "B": "Cap Bank Addition at 138-kV Hargrove Substation",
+        "C": "AEP",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 61,
+      "nativeId": "2022-W1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A61:H61",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W1",
+        "B": "China Grove - Getty Tap 138-kV Line Upgrade",
+        "C": "ONCOR",
+        "D": 2028,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 62,
+      "nativeId": "2022-W2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A62:H62",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W2",
+        "B": "Morgan Creek SES - Tonkawa 345-kV Line Rebuild and Second Circuit Addition",
+        "C": "ONCOR",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 63,
+      "nativeId": "2022-W3",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A63:H63",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W3",
+        "B": "Colorado City - Plowboy 69-kV to 138-kV Line Conversion",
+        "C": "ONCOR",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 64,
+      "nativeId": "2022-W4",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A64:H64",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W4",
+        "B": "Abilene Northwest - Abilene Mulberry Creek - Abilene Industrial Park - Abilene Elmcreek 138-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 65,
+      "nativeId": "2022-W5",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A65:H65",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W5",
+        "B": "Scurry Chevron - Kndrsacrc - New Load Bus 900041 Tap - Knapp 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 66,
+      "nativeId": "2022-W6",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A66:H66",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W6",
+        "B": "Morgan Creek - Westbrook - Latan Howard Tap 69-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 67,
+      "nativeId": "2022-W7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A67:H67",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-W7",
+        "B": "Knapp - Bluff Creek Switch - Exxon Sharon Ridge 138-kV Line Upgrade",
+        "C": "Oncor",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 68,
+      "nativeId": "2021-WFW1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A68:H68",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2021-WFW1",
+        "B": "Big Lake - Barnhart - Cassava 69-kV to 138-kV Line Conversion",
+        "C": "AEP",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 69,
+      "nativeId": "2022-WFW1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A69:H69",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-WFW1",
+        "B": "Twin Buttes - Hargrove - Pumpjack - Jerry - Russek Street - Big Lake 138-kV line Upgrade",
+        "C": "AEP, LCRA TSC",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 70,
+      "nativeId": "2022-WFW2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A70:H70",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-WFW2",
+        "B": "Midessa South SW - Consavvy - Longshore Switch - Morgan Creek SES 345-kV Line Upgrades",
+        "C": "Oncor",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 71,
+      "nativeId": "2022-WFW3",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A71:H71",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-WFW3",
+        "B": "Morgan Creek SES - Falcon Seaboard - Midland East 345-kV Line Rebuild and Second Circuit Addition",
+        "C": "Oncor",
+        "D": "2025 min",
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 72,
+      "nativeId": "2022-SC1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A72:H72",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC1",
+        "B": "Sim Gideon - Bastrop City - Swiftex 138-KV Line Upgrade",
+        "C": "LCRA TSC",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 73,
+      "nativeId": "2022-SC2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A73:H73",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC2",
+        "B": "San Marcos - Camp Gray - Robert Brown Jr - Clear Fork - Lockhart 69-kV to 138-kV Line Conversion",
+        "C": "LCRA TSC",
+        "D": 2028,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 74,
+      "nativeId": "2022-SC3",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A74:H74",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC3",
+        "B": "Pintail and Mallard 138-kV Substation and Line Additions",
+        "C": "Oncor",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 75,
+      "nativeId": "2022-SC4",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A75:H75",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC4",
+        "B": "Samsung 345-kV Substation and Line Addition",
+        "C": "Oncor",
+        "D": 2028,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 76,
+      "nativeId": "2022-SC5",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A76:H76",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC5",
+        "B": "Sandow Switch 345/138-kV Substation Expansion",
+        "C": "Oncor",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 77,
+      "nativeId": "2022-SC6",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A77:H77",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC6",
+        "B": "Howard - San Miguel 345-kV Double Circuit Line Addition and Beck Road 345/138-kV Substation Expansion",
+        "C": "CPS, STEC",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 78,
+      "nativeId": "2022-SC7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A78:H78",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC7",
+        "B": "Decker 138-kV Bus Tie Breaker Upgrade",
+        "C": "AEN",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 79,
+      "nativeId": "2022-SC8",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A79:H79",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-SC8",
+        "B": "Lytton Substation 345/138-kV Transformer Addition",
+        "C": "AEN",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 80,
+      "nativeId": "2022-S1",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A80:H80",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S1",
+        "B": "Corpus Christi Sub 138/69-kV Transformer Addition and New 138-kV (8462) Substation and Line Additions",
+        "C": "AEP, STEC",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 81,
+      "nativeId": "2022-S2",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A81:H81",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S2",
+        "B": "Fannisub - Goliad 69-kV Line Upgrade",
+        "C": "AEP, STEC",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 82,
+      "nativeId": "2022-S3",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A82:H82",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S3",
+        "B": "Pearsall 138/69-kV Transformer Upgrade",
+        "C": "STEC",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 83,
+      "nativeId": "2022-S4",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A83:H83",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S4",
+        "B": "Cap Bank Addition at 138-kV Wormser Road Substation",
+        "C": "AEP",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 84,
+      "nativeId": "2022-S5",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A84:H84",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S5",
+        "B": "Reactor Addition at 345-kV NSub Substation",
+        "C": "AEP",
+        "D": 2027,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 85,
+      "nativeId": "2022-S6",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A85:H85",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S6",
+        "B": "San Diego - Freer 69-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 86,
+      "nativeId": "2022-S7",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A86:H86",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S7",
+        "B": "Rincon - Gregory 69-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 87,
+      "nativeId": "2022-S8",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A87:H87",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S8",
+        "B": "Rio Hondo - Burns - Heidelburg 138-kV Line Upgrade",
+        "C": "STEC",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 88,
+      "nativeId": "2022-S9",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A88:H88",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S9",
+        "B": "LA Palma – Haine Dr 138-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 89,
+      "nativeId": "2022-S10",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A89:H89",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S10",
+        "B": " Wesmer  - Pantera 138-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2024,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    },
+    {
+      "sourceRow": 90,
+      "nativeId": "2022-S11",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "RTPProjects!A90:H90",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rawFields": {
+        "A": "2022-S11",
+        "B": "North Laredo- Unitec  - Gateway West Tap 138-kV Line Upgrade",
+        "C": "AEP",
+        "D": 2025,
+        "E": null,
+        "F": null,
+        "G": null,
+        "H": null
+      },
+      "explicitTpitIds": [],
+      "matchedTpitIds": [],
+      "unresolvedTpitIds": [],
+      "reverseTpitIds": [],
+      "disposition": "supplemental-context",
+      "reason": "RTP membership can overlap TPIT; blank lifecycle and missing links do not establish an additional active project."
+    }
+  ]
+}

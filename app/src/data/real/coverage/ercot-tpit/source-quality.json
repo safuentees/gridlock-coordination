@@ -1,0 +1,222 @@
+{
+  "sourceKey": "ercot-tpit",
+  "editionId": "2026-07-13",
+  "scope": "sample",
+  "rule": "Year 9999 TPIT milestone cells are unknown/unusable, with exact raw evidence preserved.",
+  "unusableYear9999Cells": {
+    "allSourceRowsIncludingDuplicates": 19,
+    "retainedDistinctRows": 10,
+    "importedRows": 1
+  },
+  "cells": [
+    {
+      "nativeId": "85979",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M134",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "imported"
+    },
+    {
+      "nativeId": "76082",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M199",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "73100",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M442",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "52070",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M736",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "85955",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M798",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "85953",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M834",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "89918",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M1098",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "89920",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "FutureTPIT071326NoCost!M1218",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "73371E",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "PlannedTPIT071326NoCost!M242",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "73362",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "PlannedTPIT071326NoCost!M327",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "pending"
+    },
+    {
+      "nativeId": "72876A",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M15",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "81605",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M16",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "78365",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M61",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "71980",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M68",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "72876B",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M116",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "87846",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M120",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "73359",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M255",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "6749",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M256",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    },
+    {
+      "nativeId": "62643",
+      "field": "M",
+      "rawValue": "9999-01-01T00:00:00",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "CompletedTPIT071326NoCost!M257",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "rowDisposition": "excluded"
+    }
+  ]
+}

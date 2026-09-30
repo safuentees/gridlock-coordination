@@ -1,0 +1,750 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "ERCOT TPIT — July 13, 2026 — sample inventory",
+  "generatedAt": "2026-09-30T09:10:00Z",
+  "projects": [
+    {
+      "id": "ercot-tpit:80422",
+      "utilityId": "ercot-tpit",
+      "sourceId": "80422",
+      "sponsor": "BRYN",
+      "name": "Add_Triangle_Park_Load",
+      "description": "Adding second distribution transformer at Triangle Park",
+      "status": "Planned",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2027-01",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 5, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!B5; header B2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!C5; header C2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "notes": [
+        "The source describes distribution-transformer context; physical transmission construction is not asserted."
+      ],
+      "inventory": {
+        "sourceKey": "ercot-tpit",
+        "editionId": "2026-07-13",
+        "editionLabel": "ERCOT TPIT — July 13, 2026",
+        "reportingGroupName": "ERCOT TPIT inventory",
+        "recordKind": "planning-context",
+        "recordUnit": "component",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-07-13",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "From terminal: Triangle Park; Starting/substation county: Brazos; Ending county: Brazos",
+        "owner": {
+          "id": "ercot-bryn",
+          "name": "BRYN",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+              "locator": "FutureTPIT071326NoCost!I5; header I2",
+              "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "Phase number: 89954",
+          "MOD project number: 80422"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The source provides named terminals/counties and bus references, not native coordinates. No center or route is inferred."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-01",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!L5; header L2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ercot-tpit:91626",
+      "utilityId": "ercot-tpit",
+      "sourceId": "91626",
+      "sponsor": "PEC",
+      "name": "Upgrading Buda to Manchaca",
+      "description": "Upgrading Buda to Manchaca branch to minimum of 379 MVA.",
+      "status": null,
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2027-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 103, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!B103; header B2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!C103; header C2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!O103; header O2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P103; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!Q103; header Q2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!R103; header R2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "notes": [
+        "Physical transmission scope is unresolved under the accepted equipment-evidence rule; missing or zero quantities do not prove that no physical work exists.",
+        "Source lifecycle is not supplied; normalized lifecycle remains unknown."
+      ],
+      "inventory": {
+        "sourceKey": "ercot-tpit",
+        "editionId": "2026-07-13",
+        "editionLabel": "ERCOT TPIT — July 13, 2026",
+        "reportingGroupName": "ERCOT TPIT inventory",
+        "recordKind": "planning-context",
+        "recordUnit": "component",
+        "identityBasis": "native-id",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-07-13",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "owner": {
+          "id": "ercot-pec",
+          "name": "PEC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+              "locator": "FutureTPIT071326NoCost!I103; header I2",
+              "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "Phase number: 91627",
+          "MOD project number: 91626"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The source provides named terminals/counties and bus references, not native coordinates. No center or route is inferred."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!L103; header L2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ercot-tpit:85979",
+      "utilityId": "ercot-tpit",
+      "sourceId": "85979",
+      "sponsor": "LCRATSC",
+      "name": "Elgin - Elgin Tap Transmission Line Overhaul",
+      "description": "Perform an overhaul on the 2.2 mile T728 Elgin (structure #17/7) - Elgin Tap 138-kV transmission line.",
+      "status": "Planned",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2027-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 134, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!B134; header B2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!C134; header C2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!O134; header O2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P134; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!Q134; header Q2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!R134; header R2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "notes": [
+        "Physical transmission scope is unresolved under the accepted equipment-evidence rule; missing or zero quantities do not prove that no physical work exists.",
+        "Unresolved Reported actual in-service month/year: raw 9999-01-01T00:00:00 at FutureTPIT071326NoCost!M134. Year 9999 is an unresolved placeholder/implausible date, not usable event evidence."
+      ],
+      "inventory": {
+        "sourceKey": "ercot-tpit",
+        "editionId": "2026-07-13",
+        "editionLabel": "ERCOT TPIT — July 13, 2026",
+        "reportingGroupName": "ERCOT TPIT inventory",
+        "recordKind": "planning-context",
+        "recordUnit": "component",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-07-13",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": null,
+        "owner": {
+          "id": "ercot-lcratsc",
+          "name": "LCRATSC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+              "locator": "FutureTPIT071326NoCost!I134; header I2",
+              "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "RPG number: 24RPG014",
+          "Phase number: 85980",
+          "MOD project number: 85979",
+          "RTP project number: 2023-SC15"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The source provides named terminals/counties and bus references, not native coordinates. No center or route is inferred."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!L134; header L2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "ActualInService",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Reported actual in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!M134; header M2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "RPGSubmitted",
+            "date": {
+              "value": "2024-05",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Submitted to ERCOT for RPG review month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!W134; header W2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          },
+          {
+            "field": "RPGCompleted",
+            "date": {
+              "value": "2024-05",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "RPG review completed month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!X134; header X2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ercot-tpit:110174",
+      "utilityId": "ercot-tpit",
+      "sourceId": "110174",
+      "sponsor": "LCRATSC",
+      "name": "Lytton Springs - Mendoza Transmission Line Upgrade",
+      "description": "Upgrade the 0.6-mile Lytton Springs - Mendoza 138-kV circuit to achieve a minimum 724 MVA emergency rating. This is an LCP Upgrade project to support Batch Zero Base Load.",
+      "status": "Conceptual",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2027-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 136, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P136; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "notes": [
+        "Physical transmission scope is supported by source equipment quantities: P=0.6.",
+        "Source lifecycle is Conceptual; normalized lifecycle remains unknown."
+      ],
+      "inventory": {
+        "sourceKey": "ercot-tpit",
+        "editionId": "2026-07-13",
+        "editionLabel": "ERCOT TPIT — July 13, 2026",
+        "reportingGroupName": "ERCOT TPIT inventory",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "native-id",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-07-13",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "From terminal: Lytton Springs; To terminal: Mendoza; Starting/substation county: Caldwell; Ending county: Caldwell",
+        "owner": {
+          "id": "ercot-lcratsc",
+          "name": "LCRATSC",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+              "locator": "FutureTPIT071326NoCost!I136; header I2",
+              "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "Phase number: 110175",
+          "MOD project number: 110174"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The source provides named terminals/counties and bus references, not native coordinates. No center or route is inferred."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!L136; header L2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ercot-tpit:110733",
+      "utilityId": "ercot-tpit",
+      "sourceId": "110733",
+      "sponsor": "GPL",
+      "name": "Related_WylieSW_LCP_Upgrades_Walnut_Newman_Line",
+      "description": "Related_WylieSW_LCP_Upgrades_Walnut_Newman_Line",
+      "status": "Planned",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2027-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 363, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!row 364, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "FutureTPIT071326NoCost!P363; header P2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "notes": [
+        "Physical transmission scope is supported by source equipment quantities: P=0.56."
+      ],
+      "inventory": {
+        "sourceKey": "ercot-tpit",
+        "editionId": "2026-07-13",
+        "editionLabel": "ERCOT TPIT — July 13, 2026",
+        "reportingGroupName": "ERCOT TPIT inventory",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-07-13",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "From terminal: Walnut; To terminal: Newman; Starting/substation county: Dallas; Ending county: Dallas",
+        "owner": {
+          "id": "ercot-gpl",
+          "name": "GPL",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+              "locator": "FutureTPIT071326NoCost!I363; header I2",
+              "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "Owner project number: 0",
+          "Phase number: 110734",
+          "MOD project number: 110733"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The source provides named terminals/counties and bus references, not native coordinates. No center or route is inferred."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2027-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "FutureTPIT071326NoCost!L363; header L2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ercot-tpit:90446",
+      "utilityId": "ercot-tpit",
+      "sourceId": "90446",
+      "sponsor": "TNMP",
+      "name": "Avila BESS 138kV Gen Tie.",
+      "description": "",
+      "status": "Under Construction",
+      "voltageKv": [
+        138.0
+      ],
+      "date": {
+        "value": "2025-05",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected in-service month/year"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "PlannedTPIT071326NoCost!row 6, columns A:I; K:AG",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        },
+        {
+          "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+          "locator": "PlannedTPIT071326NoCost!O6; header O2",
+          "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+        }
+      ],
+      "notes": [
+        "Physical transmission scope is supported by source equipment quantities: O=0.22.",
+        "The projected in-service month predates this edition; it does not override the reported lifecycle or establish completion."
+      ],
+      "inventory": {
+        "sourceKey": "ercot-tpit",
+        "editionId": "2026-07-13",
+        "editionLabel": "ERCOT TPIT — July 13, 2026",
+        "reportingGroupName": "ERCOT TPIT inventory",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "native-id",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-07-13",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Starting/substation county: Pecos; Ending county: Pecos",
+        "owner": {
+          "id": "ercot-tnmp",
+          "name": "TNMP",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+              "locator": "PlannedTPIT071326NoCost!I6; header I2",
+              "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "Associated projects: 88914",
+          "Phase number: 90447",
+          "MOD project number: 90446"
+        ],
+        "workType": null,
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "The source provides named terminals/counties and bus references, not native coordinates. No center or route is inferred."
+        ],
+        "milestones": [
+          {
+            "field": "ProjectedInService",
+            "date": {
+              "value": "2025-05",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Projected in-service month/year"
+            },
+            "evidence": [
+              {
+                "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+                "locator": "PlannedTPIT071326NoCost!L6; header L2",
+                "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "ercot-tpit",
+      "editionId": "2026-07-13",
+      "label": "ERCOT TPIT — July 13, 2026",
+      "reportingGroupId": "ercot-tpit",
+      "reportingGroupName": "ERCOT TPIT inventory",
+      "publisher": "ERCOT",
+      "processAuthority": "ERCOT transmission planning",
+      "publishedOn": "2026-07-17",
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "locator": "Four TPIT project sheets, rows 3 onward (excluding contact column J); RTPProjects rows 2:90 supplemental only",
+        "url": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
+      },
+      "sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "geographicScope": "ERCOT planning footprint in Texas; not all Texas transmission, and no per-record state or center is inferred.",
+      "inventoryScope": "Source-assigned TPIT component records: explicit transmission-equipment evidence and useful unresolved/distribution planning context. Completed/cancelled, explicit in-service and model-only entries excluded; RTP rows are supplemental context, not additional active projects.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 2216,
+        "importedRecords": 6,
+        "excludedRows": 450,
+        "failedRows": 0,
+        "pendingRows": 1760,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "cancelled-tab",
+          "count": 78
+        },
+        {
+          "reason": "completed-tab",
+          "count": 262
+        },
+        {
+          "reason": "duplicate-row",
+          "count": 5
+        },
+        {
+          "reason": "explicit-in-service",
+          "count": 14
+        },
+        {
+          "reason": "model-only",
+          "count": 2
+        },
+        {
+          "reason": "supplemental-rtp-context",
+          "count": 89
+        }
+      ],
+      "limitations": [
+        "All source records remain unlocated; named terminals/counties and bus references are not native geometry.",
+        "TPIT component counts are not unique engineering-project totals. Five exact non-contact duplicate rows are coalesced with both locators.",
+        "Only explicit accepted equipment quantities establish transmission-project scope; zero/missing quantities leave other useful records as planning-context.",
+        "Conceptual and absent status remain unknown; source tab/status and actual-date conflicts are preserved rather than resolved through date arithmetic.",
+        "Usable TPIT milestone fields retain displayed month precision; stored days/minutes are not day-level evidence. Year 9999 cells stay unknown with raw evidence preserved.",
+        "Owner tokens are source-scoped; unresolved/composite tokens do not become singular owner identities or globally distinct companies.",
+        "RTP records may overlap TPIT and have blank status; absent links do not establish uniqueness or cancellation.",
+        "Public raw data reused for analysis under ERCOT Terms of Use section 5; source attribution does not imply ERCOT endorsement."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 6,
+    "skipped": 450,
+    "failed": 0,
+    "notes": [
+      "Source-specific inventory components include qualified physical work and distinct planning context; no geometry or benefit is inferred."
+    ]
+  }
+}
