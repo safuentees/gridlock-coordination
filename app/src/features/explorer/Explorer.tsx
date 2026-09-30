@@ -7,8 +7,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { analyzeProjects } from "@/core"
-import { DEFAULT_OPTIONS, UTILITIES, type AnalysisOptions, type AnalysisResult, type Dataset, type Project } from "@/domain/schema"
+import { analyzeProjects, projectEligibility } from "@/core"
+import { DEFAULT_OPTIONS, type AnalysisOptions, type AnalysisResult, type Dataset, type Project } from "@/domain/schema"
+import { reportingGroups, reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-groups"
 import { matchesProjectQuery } from "@/lib/project-search"
 import { BriefWorkspace, type ScenarioSaveRequest } from "@/features/briefs/BriefWorkspace"
 import { ProjectTimeline } from "@/features/scenarios/ProjectTimeline"
@@ -57,6 +58,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   const detailFocus = useRef<HTMLElement | null>(null)
   const focusRequest = useRef<FocusRequest>(null)
   const [viewportInsets, setViewportInsets] = useState({ top: 16, right: 16, bottom: 16, left: 0 })
+  const groups = useMemo(() => reportingGroups(dataset.projects), [dataset])
   const baseline = useMemo(() => analyzeProjects(dataset.projects, DEFAULT_OPTIONS), [dataset])
   const projects = useMemo(() => {
     return dataset.projects.filter((project) => {
@@ -187,7 +189,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
           <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
             <div className="shrink-0 space-y-3 border-b p-3">
               <div hidden={collapsed || detailVisible} inert={collapsed || detailVisible} className={collapsed || detailVisible ? "hidden" : "flex min-w-0 items-center gap-2"}>
-                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
+                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">Inventory ({projects.length})</TabsTrigger></TabsList></div>
                 <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
               </div>
               <Label htmlFor="project-search" className="sr-only">Search projects</Label>
@@ -197,10 +199,10 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
                   ? <Button ref={expandButton} variant="outline" size="sm" aria-expanded={false} aria-controls="panel-results panel-detail" onClick={expand}><PanelLeftOpenIcon aria-hidden="true" data-icon="inline-start" />Expand</Button>
                   : !detailVisible && <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>}
               </div>
-              {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "projects"}</p> : !detailVisible && <>
-                {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Both filings</SelectItem><SelectItem value="desc">Dominion filing</SelectItem><SelectItem value="gpc">Georgia filing</SelectItem></SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All projects</SelectItem><SelectItem value="located">Located projects</SelectItem><SelectItem value="unlocated">Without locations</SelectItem></SelectContent></Select></div></div>}
+              {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "records"}</p> : !detailVisible && <>
+                {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All filings</SelectItem>{groups.map(group => <SelectItem key={group.id} value={group.id}>{group.label}</SelectItem>)}{utility !== "all" && !groups.some(group => group.id === utility) && <SelectItem value={utility}>{utility} (not in this revision)</SelectItem>}</SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All records</SelectItem><SelectItem value="located">Mapped records</SelectItem><SelectItem value="unlocated">Without locations</SelectItem></SelectContent></Select></div></div>}
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
-                  {analysis.summary.unlocatedProjects > 0 && <p className="min-w-0 flex-1 text-xs text-muted-foreground">{analysis.summary.unlocatedProjects} projects need locations before ranking.</p>}
+                  {analysis.summary.unlocatedProjects > 0 && <p className="min-w-0 flex-1 text-xs text-muted-foreground">{analysis.summary.unlocatedProjects} records have no mapped location.</p>}
                   {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
                 </div>
               </>}
@@ -221,7 +223,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
                   </li>)}</ul> : <div className="space-y-3 p-3 text-sm"><p>No candidates match this search and scenario.</p><Button variant="outline" size="sm" onClick={() => changeListView("projects")}>Browse all projects</Button><p className="text-muted-foreground">Widen the radius or clear filters.</p></div>}
                 </TabsContent>
                 <TabsContent forceMount value="projects" hidden={listView !== "projects"} inert={listView !== "projects"} className={listView === "projects" ? "m-0" : "hidden"}>
-                  {projects.length ? <ul className="divide-y">{projects.slice(activeProjectPage * PAGE_SIZE, (activeProjectPage + 1) * PAGE_SIZE).map(project => <li key={project.id}><button type="button" aria-pressed={focusIds.has(project.id)} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectProject(project.id)}><ProjectIdentity project={project} /><span className="block text-sm">{dateKind(project)}: {projectDate(project)}</span><span className="block text-xs text-muted-foreground">{project.location ? `${project.location.confidence} location` : "Location missing"}</span></button></li>)}</ul> : <p className="p-3 text-sm text-muted-foreground">No projects match. Clear the search or change the filters.</p>}
+                  {projects.length ? <ul className="divide-y">{projects.slice(activeProjectPage * PAGE_SIZE, (activeProjectPage + 1) * PAGE_SIZE).map(project => <li key={project.id}><button type="button" aria-pressed={focusIds.has(project.id)} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectProject(project.id)}><ProjectIdentity project={project} /><span className="block text-sm">{dateKind(project)}: {projectDate(project)}</span><span className="block text-xs text-muted-foreground">{projectLocationLabel(project)}{project.inventory && !projectEligibility(project).eligible && "; Context only"}</span></button></li>)}</ul> : <p className="p-3 text-sm text-muted-foreground">No projects match. Clear the search or change the filters.</p>}
                 </TabsContent>
               </div>
               <Pagination page={page} count={count} onChange={changePage} />
@@ -245,5 +247,5 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
 
 function ProjectIdentity({ project, missingId }: { project?: Project; missingId?: string }) {
   if (!project) return <span className="block text-sm">Project unavailable{missingId && <span className="block text-xs text-muted-foreground">{missingId}</span>}</span>
-  return <span className="block min-w-0 space-y-1"><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{UTILITIES[project.utilityId]}{project.sourceId && `; Source ID ${project.sourceId}`}</span></span>
+  return <span className="block min-w-0 space-y-1"><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{reportingGroupLabel(project)}{project.sourceId && `; Source ID ${project.sourceId}`}</span></span>
 }

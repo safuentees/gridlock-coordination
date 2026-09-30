@@ -4,9 +4,10 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareProjectTiming } from "@/core"
-import { UTILITIES, type Dataset, type ImpactInputs, type Opportunity, type Project } from "@/domain/schema"
+import type { Dataset, ImpactInputs, Opportunity, Project } from "@/domain/schema"
 import { ImpactPanel, type ImpactDraft } from "@/features/impact/ImpactPanel"
 import { ProjectEvidence } from "./ProjectDetails"
+import { reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-groups"
 import { sourceEditionLabels } from "@/lib/presentation"
 import { dateKind, projectDate } from "./format"
 
@@ -56,9 +57,7 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
         </div>
       </div> : selectedProject ? <div className="space-y-2">
         <ProjectSummary project={selectedProject} onProject={onProject} />
-        <p className="text-xs text-muted-foreground">{selectedProject.location
-          ? `${selectedProject.location.confidence} project center`
-          : "Location missing; not ranked by distance."}</p>
+        <p className="text-xs text-muted-foreground">{projectLocationLabel(selectedProject)}</p>
       </div> : <CardDescription>Select a candidate to compare, or a project to view its evidence.</CardDescription>}
     </CardHeader>
     {/* Keep the portal target mounted even when selection actions are not applicable. */}
@@ -79,9 +78,10 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
         <TabsContent forceMount value="supporting" inert={activeTab !== "supporting"} className={activeTab === "supporting" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-5 pt-3">
             <section className="space-y-2"><h3 className="text-sm font-medium">Comparison method</h3><ul className="list-disc space-y-2 pl-4 text-xs text-muted-foreground">
-              <li>Cross-filing candidates rank by straight-line center distance, then milestone gap.</li>
+              <li>Candidates rank by straight-line center distance, then milestone gap.</li>
               <li>Date gaps require day-precision dates. Construction overlap requires stated construction windows.</li>
-              <li>A reporting utility may differ from the asset sponsor.</li>
+              <li>Legacy plans use cross-filing comparisons. Added inventories require an active transmission project, a qualified center and evidenced ownership; pairs need distinct evidenced owners.</li>
+              <li>A source publisher or reporting group does not establish asset ownership. Context-only records remain in the inventory.</li>
             </ul></section>
             <section className="space-y-2"><h3 className="text-sm font-medium">Sources</h3>{sourceEditions.length > 0
               ? <ul className="space-y-1 text-xs">{sourceEditions.map(edition => <li key={edition}>{edition}</li>)}</ul>
@@ -97,7 +97,7 @@ function ProjectSummary({ project, missingId, onProject }: { project: Project | 
   if (!project) return <div className="min-w-0"><p className="text-sm font-medium">Project unavailable</p><p className="break-words text-xs text-muted-foreground">{missingId}</p></div>
   return <div className="min-w-0 space-y-1">
     <button type="button" className="min-w-0 break-words text-left text-sm font-medium underline-offset-4 hover:underline focus-visible:underline" onClick={() => onProject(project.id)} title="Inspect this project's evidence">{project.name}</button>
-    <p className="break-words text-xs text-muted-foreground">{UTILITIES[project.utilityId]}{project.sourceId && `; Source ID ${project.sourceId}`}</p>
+    <p className="break-words text-xs text-muted-foreground">{reportingGroupLabel(project)}{project.sourceId && `; Source ID ${project.sourceId}`}</p>
     <p className="break-words text-xs"><span className="text-muted-foreground">{dateKind(project)}: </span>{projectDate(project)}</p>
   </div>
 }
