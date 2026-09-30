@@ -1,5 +1,5 @@
 ---
-setup: implementing-F00
+setup: ready
 run_start: 2026-09-30
 time_budget: not supplied
 usage_budget: not supplied
@@ -7,7 +7,7 @@ contract_owner: coordinator
 reporting_agent: coordinator
 merge_owner: coordinator
 check_owner: coordinator
-base_commit: pending
+base_commit: 9dfc2cea1221d064cb30a03386c50b40df5f58b0
 check_budget: "5 minutes per integrated milestone; no visual checks"
 ---
 
@@ -33,7 +33,9 @@ F00 → F01 + F02 + F03 → first connected real milestone, without waiting for 
 ## Active workers
 | Worker | Feature | Branch / worktree | Claim / PR |
 |---|---|---|---|
-| coordinator / root | F00 | codex/F00-bootstrap / current checkout | local implementation |
+| source_discovery / ingestion | F01 | codex/F01-real-seed / ~/.codex/worktrees/gridlock-ingestion/agent-workflow-template | assigned |
+| core | F02 | codex/F02-matching-core / ~/.codex/worktrees/gridlock-core/agent-workflow-template | assigned |
+| ui | F03 | codex/F03-explorer / ~/.codex/worktrees/gridlock-ui/agent-workflow-template | assigned |
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
