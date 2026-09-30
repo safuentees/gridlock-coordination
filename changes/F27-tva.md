@@ -1,6 +1,7 @@
-# F27-TVA — Captured public-index sample
+# F27-TVA — Complete captured public index
 
-- Added a deterministic, hash-pinned normalizer and six cited diagnostic records under edition observed-2026-09-30; complete ledger: 41 placements = six imported + one duplicate excluded + 34 pending, zero failed/located.
-- Captured text is explicitly derived, never claimed as original HTML; catalog separates 41 accepted text captures from 14 original public GIS JSON artifacts. All originals/captures remain ignored.
-- Preserved operating/design voltage, hold/restart and historical construction evidence, component/old seasonal forecasts and unresolved conflicts. Owners, centers/native geometry and construction windows remain unknown; no shared/UI/map edits.
-- Payload: 22,272 compact / 29,962 formatted UTF-8 bytes. Provider connection and coordinator checks are pending; no worker checks run. Stop before full 40-record production until connection handoff.
+- Completed 40 page work units under observed-2026-09-30; ledger: 41 placements = 40 imported + one duplicate Appalachia placement excluded, zero pending/failed/located. Preserved the six records connected in PR123.
+- Catalog keeps the accepted 41 derived text captures distinct from 14 original public GIS JSON responses; hashes never claim raw HTML. Owners, centers/native geometry and actual construction windows remain unknown.
+- Preserved 36 planned, three on-hold and one historically under-construction record; seasonal/component dates, hold/restart and voltage meanings remain distinct. Lexington/North Dayton/Hardin Valley/Tullahoma conflicts, Bristol heading duplication and GIS scope/status mismatches remain explicit.
+- RailHub-South voltage/service timing remains unknown; North Dayton lifecycle uses May 2019 proposal evidence. Complete scope means the captured public index, not all TVA or state engineering projects.
+- Full payload: 105,935 compact / 147,918 formatted UTF-8 bytes. Coordinator integration/checks pending; no worker checks or shared/UI/map changes.

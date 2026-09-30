@@ -16,13 +16,13 @@
   "sha256": "bc7a6de488eaf25170cee9854bff1fd95fa7dfa7d6da47d3c6cd14c9e9a87573",
   "geographicScope": "Captured index sections span Alabama, Kentucky, Mississippi, North Carolina and Tennessee; Georgia/Virginia sections have no links, not a zero-project claim. Some projects cross section/state boundaries.",
   "inventoryScope": "All 41 current-index placements: 40 unique public transmission page work units and one excluded duplicate Appalachia placement. No claim of utility-wide or state-wide capital-inventory completeness.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 41,
-    "importedRecords": 6,
+    "importedRecords": 40,
     "excludedRows": 1,
     "failedRows": 0,
-    "pendingRows": 34,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

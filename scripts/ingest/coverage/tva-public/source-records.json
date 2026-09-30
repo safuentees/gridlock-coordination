@@ -609,7 +609,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Rebuild and re-energize 1.9 miles of Haney Tap line, add 1.2 miles to Claysville substation, and install two switches.",
+        "status": "Proposed transmission work — undated page",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2024",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2024"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Claysville area, Marshall County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "workType": "Line rebuild, extension and switches",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2024; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-2.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+                "locator": "Narrative L19; Project Schedule L48"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-2.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/claysville-alabama",
+            "locator": "Proposed Transmission Project, captured L7–19; Project Schedule L40–49"
+          }
+        ],
+        "notes": [
+          "The remaining Haney Tap section stays de-energized; existing facilities are not extra proposed projects.",
+          "The expired 2024 forecast does not establish current completion."
+        ]
+      }
     },
     {
       "placementId": "alabama-02",
@@ -626,7 +675,88 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a 13.3-mile 161 kV line between Florence and the proposed Iron City switching station.",
+        "status": "Proposed transmission work — source update 2023-12",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2027"
+        },
+        "sourceState": "Alabama; Tennessee",
+        "sourceLocation": "Lauderdale County, Alabama; Lawrence County, Tennessee",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-12",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line and switching station",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-3.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+                "locator": "December 2023 update L14; Project Schedule L45"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Summer 2024; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-3.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+                "locator": "Background L29"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-3.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+                "locator": "Background L29"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-3.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/florence-alabama",
+            "locator": "Update — December 2023, captured L8–16; Background L19–29; Project Schedule L39–46"
+          }
+        ],
+        "notes": [
+          "The proposed Iron City station is in Tennessee although the index places the page under Alabama.",
+          "December 2023 schedules supersede the older 2024 service forecast."
+        ]
+      }
     },
     {
       "placementId": "alabama-03",
@@ -643,7 +773,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a 7.5-mile 161 kV tie between the Helicon and Trade substations.",
+        "status": "Proposed transmission work — source update 2022-10",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2025–2026"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Eastern Winston County and western Cullman County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2022-10",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-4.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+                "locator": "October 2022 update L20; Project Schedule L66"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-4.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/helicon-trade-alabama",
+            "locator": "Update — October 2022, captured L7–24; Background L27–41; Project Schedule L57–67"
+          }
+        ],
+        "notes": [
+          "Winter 2025–2026 spans two years and is not converted to one exact date.",
+          "The background Trade station conversion and other line due in 2023 are separate work, not construction evidence for this tie."
+        ]
+      }
     },
     {
       "placementId": "alabama-04",
@@ -660,7 +839,87 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build 5.3 miles of 161 kV line from the Mt. Hope–Cullman–Addison tap to the new Jones Chapel substation.",
+        "status": "Proposed transmission work — source update 2024-04",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Spring 2027"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Jones Chapel area, Cullman and Winston Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-04",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Winter 2026–2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-5.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+                "locator": "April 2024 update L13; Project Schedule L49"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2023–2024; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-5.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+                "locator": "Background L25"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-5.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+                "locator": "Background L25"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-5.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/jones-chapel-alabama",
+            "locator": "Update — April 2024, captured L7–14; Background L17–25; Project Schedule L43–50"
+          }
+        ],
+        "notes": [
+          "The revised April 2024 schedule supersedes the old 2023–2024 forecast."
+        ]
+      }
     },
     {
       "placementId": "alabama-05",
@@ -677,7 +936,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 5.7-mile 161 kV line from Hanceville–Bremen to the new Mulberry substation.",
+        "status": "Proposed transmission work — source update 2023-11",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2026–2027"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Colony, Arkadelphia and Mulberry River areas near Hanceville, Cullman County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-11",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-6.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+                "locator": "November 2023 update L19; Project Schedule L63"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-6.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/mulberry-alabama-(cullman-county)",
+            "locator": "Update — November 2023, captured L7–23; Background L26–37; Project Schedule L54–64"
+          }
+        ],
+        "notes": [
+          "The cross-year winter forecast remains unknown at primary date precision; background says early winter 2026–2027.",
+          "Retiring 46 kV facilities and earlier route options are context, not extra records or current operating voltage."
+        ]
+      }
     },
     {
       "placementId": "alabama-06",
@@ -761,7 +1069,95 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 3.3-mile 161 kV line from Farley–Guntersville to the Redstone Arsenal demarcation point.",
+        "status": "Proposed transmission work — source update 2024-06",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Fall 2026"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Redstone Arsenal and Huntsville areas, Madison County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-06",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [
+          "Public proposed-line GIS PROJECT_ID 551220 (scoped alias, not whole-page identity)"
+        ],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-8.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+                "locator": "June 2024 update L17; Project Schedule L54"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2026; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-8.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+                "locator": "Background L26–28"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-8.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+                "locator": "Background L28"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-8.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/redstone-arsenal-no.-3--alabama-(madison-county)",
+            "locator": "Update — June 2024, captured L7–20; Background L23–28; Project Schedule L45–55"
+          },
+          {
+            "file": "redstone-proposed-centerlines.json",
+            "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TSSProjects_Hosted/FeatureServer/0/query?f=json&where=NAME+%3D+%27Redstone+Arsenal+No.+3%2C+AL%27&outFields=OBJECTID%2CNAME%2CPROJECT_ID%2CID%2CSTATUS%2CMILES&returnGeometry=true",
+            "locator": "Exact public webmap-selected feature query; scoped PROJECT_ID and MILES evidence only; no center conversion"
+          }
+        ],
+        "notes": [
+          "The June 2024 route and fall forecast supersede the older spring forecast and southeast demarcation description.",
+          "GIS length 3.68123 miles differs from the preferred page length 3.3 miles; no center is inferred."
+        ]
+      }
     },
     {
       "placementId": "alabama-08",
@@ -778,7 +1174,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build about 3.5 miles of 161 kV line to the proposed Star Gap substation, with retirement of older 46 kV facilities.",
+        "status": "Proposed transmission work — undated page",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Fall 2028"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Fort Payne, DeKalb County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "workType": "New transmission line and associated facility retirement",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring–Summer 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-9.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+                "locator": "Narrative L17; Project Schedule L53"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-9.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/star-gap--alabama-(fort-payne--dekalb-county)",
+            "locator": "Proposed Transmission Project, captured L7–17; Project Schedule L45–54"
+          }
+        ],
+        "notes": [
+          "Retirement is proposed and phased around the new facilities; no present completion is inferred.",
+          "The older 46 kV system is distinct from the new 161 kV scope."
+        ]
+      }
     },
     {
       "placementId": "alabama-09",
@@ -795,7 +1240,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 4.9-mile 161 kV line to Arab Electric Cooperative’s upgraded Sundown Drive substation.",
+        "status": "Proposed transmission work — source update 2023-06",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2025",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2025"
+        },
+        "sourceState": "Alabama",
+        "sourceLocation": "Marshall and Morgan Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-06",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-10.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+                "locator": "June 2023 update L19; Project Schedule L67"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-10.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/sundown-drive-alabama",
+            "locator": "Update — June 2023, captured L7–23; Background L26–41; Project Schedule L58–68"
+          }
+        ],
+        "notes": [
+          "Survey/easement seasons differ between the update and table; neither supplies a construction start.",
+          "Existing 46 kV right of way and station conversion are context; the new line is 161 kV."
+        ]
+      }
     },
     {
       "placementId": "kentucky-01",
@@ -812,7 +1306,75 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build the St. Elmo switching station and 9.93 miles of double-circuit 161 kV line serving Commerce Park II.",
+        "status": "Proposed transmission work — source update 2023-08",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Spring 2026"
+        },
+        "sourceState": "Kentucky",
+        "sourceLocation": "Hopkinsville area, Christian and Todd Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-08",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New switching station and transmission lines",
+        "aliases": [
+          "Commerce Park II Switching Station",
+          "St. Elmo Switching Station"
+        ],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-11.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+                "locator": "August 2023 update L21; Project Schedule L69"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Summer 2025; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-11.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+                "locator": "Background L40"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-11.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/commerce-park-ii-kentucky-(christian-and-todd-counties)",
+            "locator": "Update — August 2023, captured L7–24; Background L27–40; Project Schedule L60–70"
+          }
+        ],
+        "notes": [
+          "St. Elmo and Commerce Park II name the page’s station proposal, not two inventory records.",
+          "The August 2023 update supersedes the older summer 2025 service target."
+        ]
+      }
     },
     {
       "placementId": "kentucky-02",
@@ -935,7 +1497,75 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a 2.2-mile 161 kV tap to Transpark East and the first phase of the renamed Loving switching station.",
+        "status": "Proposed transmission work — source update 2023-03",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2025",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast line in service; source: Summer 2025"
+        },
+        "sourceState": "Kentucky",
+        "sourceLocation": "Bowling Green, Warren County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-03",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Transmission tap and first switching-station phase",
+        "aliases": [
+          "Interstate 65 Switching Station",
+          "Loving Switching Station"
+        ],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-13.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+                "locator": "March 2023 update L24; Project Schedule L78"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2024; older background, forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-13.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+                "locator": "Background L55"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-13.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/transpark-east-kentucky-(warren-county)",
+            "locator": "Update — March 2023, captured L7–28; Background L31–55; Project Schedule L72–79"
+          }
+        ],
+        "notes": [
+          "Loving replaces the Interstate 65 station name after an unsuitable site was eliminated; Site 3 is the preferred location.",
+          "Future 3.8-mile and 3.7-mile lines and later station phases have separate future scope; the current forecast is for the tap."
+        ]
+      }
     },
     {
       "placementId": "mississippi-01",
@@ -952,7 +1582,104 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Proposed 161 kV line from Clay to Artesia is paused while TVA revises the project schedule.",
+        "status": "Temporarily on hold — May 2026",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Current service date unknown while on hold"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Clay, Lowndes and Oktibbeha Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-05",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Earlier forecast in service — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Summer 2027; May 2025 update, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-14.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+                "locator": "May 2025 update L21; Project Schedule L60"
+              }
+            ]
+          },
+          {
+            "field": "Older background completion forecast",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Winter–Spring 2028; historical background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-14.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+                "locator": "Background L31"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting older background in-service forecast",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter–Spring 2027–2028; historical background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-14.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+                "locator": "Background L33"
+              }
+            ]
+          },
+          {
+            "field": "Earlier forecast construction start — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring–Summer 2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-14.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+                "locator": "May 2025 update L20"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-14.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+            "locator": "May 2026 hold, captured L8; May 2025 update L9–22; Background L25–33; Project Schedule L57–60"
+          }
+        ],
+        "notes": [
+          "The hold preserves a plan to complete the project; it is not a cancellation.",
+          "Background forecasts differ, and the newer hold withdraws their use as the current primary date."
+        ]
+      }
     },
     {
       "placementId": "mississippi-02",
@@ -1052,7 +1779,55 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 19.4-mile 161 kV line connecting the existing Midway and South Macon stations.",
+        "status": "Proposed transmission work — source update 2020-04",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2026"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Winston and Noxubee Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2020-04",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-16.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+                "locator": "Update L18; Project Schedule L49"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-16.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/macon-mississippi-(midway-south-macon)",
+            "locator": "Update — April 2020, captured L7–19; Background L22–25; Project Schedule L40–50"
+          }
+        ],
+        "notes": [
+          "The dated proposal and forecast do not establish current construction or completion."
+        ]
+      }
     },
     {
       "placementId": "mississippi-04",
@@ -1069,7 +1844,88 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 7.21-mile 161 kV line from Tupelo–Okolona to the upgraded Nettleton substation.",
+        "status": "Proposed transmission work — source update 2024-01",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2026",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast line in service; source: Spring 2026"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Nettleton area, Lee County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-01",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Winter 2025–2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-17.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+                "locator": "January 2024 update L17; Project Schedule L66"
+              }
+            ]
+          },
+          {
+            "field": "Related station upgrade target",
+            "date": {
+              "value": "2026-04",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "By April 2026; station component, not an exact day"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-17.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+                "locator": "Background L24"
+              }
+            ]
+          },
+          {
+            "field": "Older construction forecast",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter 2025; historical background, forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-17.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+                "locator": "Background L41"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-17.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/nettleton--mississippi-(lee-county)",
+            "locator": "Update — January 2024, captured L7–20; Background L23–41; Project Schedule L58–67"
+          }
+        ],
+        "notes": [
+          "The related Nettleton station target is by April 2026; the separate Shannon upgrade is a prerequisite, not another row here.",
+          "The older background says winter 2025 construction; the update/table use winter 2025–2026."
+        ]
+      }
     },
     {
       "placementId": "mississippi-05",
@@ -1086,7 +1942,88 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 16.9-mile 161 kV line between North Oakland and Coffeeville.",
+        "status": "Proposed transmission work — source update 2024-01",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2026–2027"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Batesville, Charleston, Coffeeville and Oakland areas; Yalobusha County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-01",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-18.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+                "locator": "January 2024 update L14; Project Schedule L67"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2026; July 2021 background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-18.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+                "locator": "July 2021 background L27"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-18.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+                "locator": "July 2021 background L26"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-18.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/north-oakland-coffeeville-mississippi",
+            "locator": "Update — January 2024, captured L7–15; July 2021 background L17–27; Project Schedule L58–68"
+          }
+        ],
+        "notes": [
+          "Completed 2023 field surveys do not establish construction or project completion.",
+          "The January 2024 schedule supersedes the earlier spring 2026 service target."
+        ]
+      }
     },
     {
       "placementId": "mississippi-06",
@@ -1103,7 +2040,55 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build 3.3 miles and rebuild 1.73 miles of 161 kV line to provide an alternate supply to Mineral Wells substation.",
+        "status": "Proposed transmission work — source update 2019-02",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2024–2025"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Olive Branch area",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2019-02",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New line and double-circuit rebuild",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Early winter 2022–2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-19.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+                "locator": "Project Schedule L36"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-19.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/olive-branch-mississippi-(mineral-wells-west-pleasant-hill)",
+            "locator": "Update — February 2019, captured L7–10; Project Schedule L27–37"
+          }
+        ],
+        "notes": [
+          "The source forecast spans two years and does not establish current completion."
+        ]
+      }
     },
     {
       "placementId": "mississippi-07",
@@ -1120,7 +2105,37 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build 1.3 miles of double-circuit transmission line from Burnsville–Corinth to the proposed RailHub-South substation.",
+        "status": "Proposed transmission work — undated page",
+        "voltageKv": [],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "In-service date not published"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Corinth area, Alcorn County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [],
+        "sources": [
+          {
+            "file": "web-capture-20.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/railhub-south--mississippi-(alcorn-county)",
+            "locator": "Proposed Transmission Project, captured L7–11; Project Schedule L33–38"
+          }
+        ],
+        "notes": [
+          "The page gives survey/easement targets only; no construction or service milestone is published.",
+          "No explicit numeric voltage is supplied by this captured page."
+        ]
+      }
     },
     {
       "placementId": "mississippi-08",
@@ -1137,7 +2152,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build the 32.8-mile South Macon–DeKalb No. 2 line with a double-circuit rebuild and connections through Scooba.",
+        "status": "Proposed transmission work — source update 2021-05",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2027–2028"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Macon, Scooba and DeKalb areas",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2021-05",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Transmission line, rebuild and substation connections",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-21.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+                "locator": "May 2021 update L31; Project Schedule L87"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-21.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/south-macon-scooba-dekalb-mississippi",
+            "locator": "Update — May 2021, captured L7–33; Background L37–55; Project Schedule L78–88"
+          }
+        ],
+        "notes": [
+          "The page’s multiple sections, taps and related substations remain one source work unit.",
+          "Existing 46 kV facilities are replacement context; the proposed line is 161 kV."
+        ]
+      }
     },
     {
       "placementId": "mississippi-09",
@@ -1154,7 +2218,55 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred half-mile 161 kV loop to Tupelo Water and Light’s new North Green Street substation.",
+        "status": "Proposed transmission work — source update 2021-11",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2023",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Fall 2023"
+        },
+        "sourceState": "Mississippi",
+        "sourceLocation": "Northeastern Tupelo, Lee County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2021-11",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Double-circuit transmission loop",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-22.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+                "locator": "November 2021 update L18; Project Schedule L64"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-22.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/tupelo-mississippi-(north-green-street)",
+            "locator": "Update — November 2021, captured L7–19; Background L22–34; Project Schedule L55–65"
+          }
+        ],
+        "notes": [
+          "The past 2023 forecast does not establish in-service status."
+        ]
+      }
     },
     {
       "placementId": "north-carolina-01",
@@ -1376,7 +2488,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build 3.85 miles of 161 kV line to the new 109 North substation, with structures designed to accommodate a future 500 kV line.",
+        "status": "Proposed transmission work — source update 2026-08",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Construction and in-service dates to be determined"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Gallatin and Sumner County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-08",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Withdrawn background forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2025–2026; older background, not current"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-25.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+                "locator": "Background L31"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-25.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/109-north--tennessee-(sumner-county)",
+            "locator": "Update — August 2026, captured L7–14; November 2024 update L17–23; Background L27–31; Project Schedule L56–66"
+          }
+        ],
+        "notes": [
+          "August 2026 increases the route from the prior 3.34 miles and leaves construction/service timing undetermined.",
+          "Completed surveys and active easement acquisition are not construction; the future 500 kV line is not current operating voltage."
+        ]
+      }
     },
     {
       "placementId": "tennessee-02",
@@ -1410,7 +2571,136 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build two 161 kV lines, 10.8 miles from Sullivan and 3.4 miles from Bluff City, to the new South Bristol station.",
+        "status": "Proposed transmission work — source update 2023-08",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Separate line-component service forecasts; no whole-program date"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Bristol area",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-08",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Two new transmission lines",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Sullivan–South Bristol forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2025–2026; line component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-26.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+                "locator": "August 2023 update L11–17"
+              }
+            ]
+          },
+          {
+            "field": "Bluff City–South Bristol forecast in service",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2026; line component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-26.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+                "locator": "August 2023 update L18–24"
+              }
+            ]
+          },
+          {
+            "field": "Sullivan–South Bristol forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Late summer 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-26.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+                "locator": "August 2023 update L16"
+              }
+            ]
+          },
+          {
+            "field": "Bluff City–South Bristol forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Late winter 2025–2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-26.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+                "locator": "August 2023 update L23"
+              }
+            ]
+          },
+          {
+            "field": "Superseded lines forecast in service",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2024; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-26.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+                "locator": "Background 2 L41"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-26.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+                "locator": "Background 2 L39"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-26.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/bristol-tennessee-(south-bristol)",
+            "locator": "Update — August 2023, captured L8–24; Background 2 L27–41; Background 1 L47–57; Project Schedule L80–101"
+          }
+        ],
+        "notes": [
+          "The two line components have distinct schedules; do not combine them into one precise completion date.",
+          "The second schedule-table heading repeats Sullivan–South Bristol, while the dated update identifies that component as Bluff City–South Bristol."
+        ]
+      }
     },
     {
       "placementId": "tennessee-04",
@@ -1427,7 +2717,55 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 3.73-mile double-circuit 161 kV line to the Lake County Industrial Park at Cates Landing.",
+        "status": "Proposed transmission work — source update 2022-11",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2024",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Spring 2024"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Tiptonville area, Lake County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2022-11",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-27.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+                "locator": "November 2022 update L21; Project Schedule L65"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-27.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/cates-landing-(lake-county-tennessee)",
+            "locator": "Update — November 2022, captured L7–25; Background L28–33; Project Schedule L56–66"
+          }
+        ],
+        "notes": [
+          "The historical forecast remains a forecast; no completion is stated."
+        ]
+      }
     },
     {
       "placementId": "tennessee-05",
@@ -1444,7 +2782,39 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build and rebuild/reroute a transmission connection to the proposed Fiberon 161 kV substation, with two switches on Maury–Mt. Pleasant.",
+        "status": "Proposed transmission work — source update 2023-07",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2025",
+          "precision": "year",
+          "kind": "unknown",
+          "label": "Forecast completion; source: Fall 2025"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Columbia, Maury County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-07",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Transmission connection, rebuild/reroute and switches",
+        "aliases": [],
+        "milestones": [],
+        "sources": [
+          {
+            "file": "web-capture-28.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/columbia-tennessee-(fiberon)",
+            "locator": "Proposed Transmission Project, Update July 2023, captured L8–16"
+          }
+        ],
+        "notes": [
+          "The page says completion rather than an explicit in-service milestone; its date kind remains unknown.",
+          "Existing West Columbia–Mt. Pleasant 46 kV infrastructure is part of the connection context, not an inferred second new operating voltage."
+        ]
+      }
     },
     {
       "placementId": "tennessee-06",
@@ -1461,7 +2831,168 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build the Locust Creek switching station and transmission ties, Burns–Bon Aqua section and Dickson–Pomona tap, with related reconductoring.",
+        "status": "Proposed transmission work — source update 2025-02",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Separate section/station service forecasts; no whole-program date"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Dickson and Hickman Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-02",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Switching station, transmission sections and reconductoring",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Burns–Bon Aqua forecast in service",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2029; section component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "February 2025 update L11–16"
+              }
+            ]
+          },
+          {
+            "field": "Locust Creek station/ties forecast in service",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2029; station component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "February 2025 update L18–23"
+              }
+            ]
+          },
+          {
+            "field": "Dickson–Pomona tap forecast in service",
+            "date": {
+              "value": "2030",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Summer 2030; section component"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "February 2025 update L24–29"
+              }
+            ]
+          },
+          {
+            "field": "Burns–Bon Aqua forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "February 2025 update L15"
+              }
+            ]
+          },
+          {
+            "field": "Locust Creek station/ties forecast construction start",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2028; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "February 2025 update L22"
+              }
+            ]
+          },
+          {
+            "field": "Dickson–Pomona tap forecast construction start",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Summer 2029; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "February 2025 update L28"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2025–2026; September 2021 update"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "September 2021 update L46"
+              }
+            ]
+          },
+          {
+            "field": "Older background forecast in service",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2025; historical background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-29.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+                "locator": "Background L66"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-29.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/dickson-tennessee",
+            "locator": "Update — February 2025, captured L8–29; September 2021 update L30–46; Background L49–66; Project Schedule L85–107"
+          }
+        ],
+        "notes": [
+          "Separate 2029 and 2030 component schedules do not establish one whole-program completion date.",
+          "The page’s new, rebuilt and reconductored sections remain one source work unit; older targets are superseded."
+        ]
+      }
     },
     {
       "placementId": "tennessee-07",
@@ -1478,7 +3009,55 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 2.99-mile 161 kV line from Lebanon–Murfreesboro to the new Fall Creek substation.",
+        "status": "Proposed transmission work — source update 2024-09",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2027",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2027"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Wilson and Rutherford Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2024-09",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-30.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+                "locator": "September 2024 update L19; Project Schedule L57"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-30.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/fall-creek--tennessee-(wilson-and-rutherford-counties)",
+            "locator": "Update — September 2024, captured L7–23; Background L26–31; Project Schedule L48–58"
+          }
+        ],
+        "notes": [
+          "The preferred route and pending environmental review do not establish engineering approval or construction."
+        ]
+      }
     },
     {
       "placementId": "tennessee-08",
@@ -1495,7 +3074,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build the North Gallatin 161 kV substation and 5.7 miles of double-circuit line from Gallatin–Portland.",
+        "status": "Proposed transmission work — source update 2021-04",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2023–2024"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Gallatin area, Sumner County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2021-04",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New substation and transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-31.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+                "locator": "April 2021 update L25; Project Schedule L67"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-31.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/gallatin-tennessee-(north-gallatin)",
+            "locator": "Update — April 2021, captured L11–26; Background L29–42; Project Schedule L59–68"
+          }
+        ],
+        "notes": [
+          "The historical cross-year winter forecast does not establish current completion.",
+          "Existing 300-foot-wide easement is right-of-way context, not a new line voltage or location center."
+        ]
+      }
     },
     {
       "placementId": "tennessee-09",
@@ -1643,7 +3271,71 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 6.61-mile 161 kV line from Smith Mountain–Brush Creek to the new Lewis Chapel substation.",
+        "status": "Proposed transmission work — source update 2022-04",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2024",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Spring 2024"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Dunlap area, Sequatchie County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2022-04",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Winter 2023–2024; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-33.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+                "locator": "April 2022 update L22"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting background/table construction forecast",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-33.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+                "locator": "Background L41; Project Schedule L64"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-33.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/lewis-chapel-tennessee-(dunlap)",
+            "locator": "Update — April 2022, captured L9–24; Background L27–41; Project Schedule L55–65"
+          }
+        ],
+        "notes": [
+          "The construction forecast differs: update winter 2023–2024 versus background/table winter 2023; neither is an actual start."
+        ]
+      }
     },
     {
       "placementId": "tennessee-11",
@@ -1660,7 +3352,104 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 15.83-mile 161 kV line between West Lexington and Jacks Creek metering stations.",
+        "status": "Proposed transmission work — source update 2021-03",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting in-service forecasts: Fall 2025 / Fall 2023"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Henderson and Chester Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2021-03",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Narrative forecast in service",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2025; unresolved against table"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-34.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+                "locator": "March 2021 update L21"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting table forecast in service",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2023; unresolved against narrative"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-34.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+                "locator": "Project Schedule L62"
+              }
+            ]
+          },
+          {
+            "field": "Narrative forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2024; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-34.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+                "locator": "March 2021 update L20"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting table construction forecast",
+            "date": {
+              "value": "2022",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2022; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-34.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+                "locator": "Project Schedule L61"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-34.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/lexington-tennessee-(west-lexington-jacks-creek)",
+            "locator": "Update — March 2021, captured L7–21; Background L25–33; Project Schedule L53–62"
+          }
+        ],
+        "notes": [
+          "The narrative and schedule table conflict on service and construction years; no current primary date is selected.",
+          "The dated preferred-route statement does not establish present construction or completion."
+        ]
+      }
     },
     {
       "placementId": "tennessee-12",
@@ -1677,7 +3466,104 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a 12-mile double-circuit 161 kV line to North Dayton and expand the existing station.",
+        "status": "Proposed transmission work — source update 2019-05",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting in-service forecasts: Fall 2022 / Spring 2023"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Meigs and Rhea Counties; Sequoyah–Watts Bar to North Dayton",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2019-05",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line and station expansion",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Narrative forecast in service",
+            "date": {
+              "value": "2022",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2022; unresolved against background/table"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-35.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+                "locator": "May 2019 update L22"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting background/table forecast in service",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Spring 2023; unresolved against narrative"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-35.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+                "locator": "Background L30; Project Schedule L56"
+              }
+            ]
+          },
+          {
+            "field": "Narrative forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Between winter 2021–2022 and fall 2022; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-35.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+                "locator": "May 2019 update L21"
+              }
+            ]
+          },
+          {
+            "field": "Conflicting table construction forecast",
+            "date": {
+              "value": "2021",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter 2021; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-35.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+                "locator": "Project Schedule L55"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-35.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/north-dayton-tennessee",
+            "locator": "May 2019 preferred-route update, captured L11–22; November 2020 environmental update L8–10; Background L25–30; Project Schedule L46–56"
+          }
+        ],
+        "notes": [
+          "Lifecycle uses the May 2019 preferred-route evidence; November 2020 only reports final environmental documents, not construction approval or completion.",
+          "Narrative/table dates conflict; source geography includes the river crossing but supplies no project center."
+        ]
+      }
     },
     {
       "placementId": "tennessee-13",
@@ -1694,7 +3580,88 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build about 1.3 miles of 161 kV line to the upgraded Riceville substation and install related disconnect switches.",
+        "status": "Proposed transmission work — source update 2023-09",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2026–2027"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Riceville area, McMinn County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2023-09",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line and switches",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2025; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-36.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+                "locator": "September 2023 update L15; Project Schedule L59"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2024–2025; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-36.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+                "locator": "Background L26–29"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "unknown",
+              "label": "Winter 2023–2024; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-36.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+                "locator": "Background L29"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-36.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/riceville-tennessee",
+            "locator": "Update — September 2023, captured L7–17; Background L21–29; Project Schedule L55–60"
+          }
+        ],
+        "notes": [
+          "The September 2023 update supersedes the older winter 2024–2025 service forecast.",
+          "Tasso substation conversion is a separate project; the related backfeed switch remains within this page’s scope."
+        ]
+      }
     },
     {
       "placementId": "tennessee-14",
@@ -1711,7 +3678,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build 1.5 miles of double-circuit 161 kV line to the new Tiny Town Road station, splitting circuits near the station.",
+        "status": "Proposed transmission work — undated page",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2023",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Summer 2023"
+        },
+        "sourceState": "Tennessee; Kentucky",
+        "sourceLocation": "Tiny Town Road, Clarksville, Montgomery County; service-area context includes Christian County, Kentucky",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2023",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Winter–Spring 2023; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-37.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+                "locator": "Narrative L19; Project Schedule L48"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-37.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/tiny-town-road-tennessee-(clarksville)",
+            "locator": "Proposed Transmission Project, captured L7–19; Project Schedule L41–49"
+          }
+        ],
+        "notes": [
+          "The source describes service needs in both Tennessee and Kentucky; this does not establish the precise route jurisdiction.",
+          "The old 69 kV line remains temporary service context, not a second new project voltage."
+        ]
+      }
     },
     {
       "placementId": "tennessee-15",
@@ -1728,7 +3744,56 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build 6.8 miles of 161 kV Tiptonville–New Madrid No. 2 line and reconductor the existing No. 1 line.",
+        "status": "Proposed transmission work — undated page",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2024–2025"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Tiptonville, Lake County; connection to an AECI structure across the Mississippi River",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-09-30",
+        "lifecycleDateMeaning": "snapshot-observed",
+        "workType": "New transmission line and reconductoring",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2024; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-38.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+                "locator": "Narrative L15; Project Schedule L47"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-38.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/tiptonville-tennessee-(tiptonville-new-madrid-no.-2)",
+            "locator": "Proposed Transmission Project, captured L7–15; Project Schedule L40–48"
+          }
+        ],
+        "notes": [
+          "The across-river endpoint is source context; no additional state or coordinates are inferred from its name.",
+          "New line and reconductoring stay one page work unit; historical forecasts do not establish completion."
+        ]
+      }
     },
     {
       "placementId": "tennessee-16",
@@ -1745,7 +3810,87 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 3.7-mile 161 kV line from Franklin–Belfast to the new Center Grove station.",
+        "status": "Proposed transmission work — source update 2022-06",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting winter forecast precision: 2024–2025 / 2025"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Center Grove area, Franklin County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2022-06",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2024",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2024; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-39.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+                "locator": "June 2022 update L20; Project Schedule L61"
+              }
+            ]
+          },
+          {
+            "field": "Narrative forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2024–2025; source winter range"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-39.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+                "locator": "June 2022 update L21"
+              }
+            ]
+          },
+          {
+            "field": "Background/table forecast in service",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Winter 2025; unresolved seasonal precision"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-39.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+                "locator": "Background L37; Project Schedule L62"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-39.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/tullahoma-tennessee-(center-grove)",
+            "locator": "Update — June 2022, captured L9–21; Background L24–37; Project Schedule L54–62"
+          }
+        ],
+        "notes": [
+          "The update says winter 2024–2025 while background/table say winter 2025; preserve both without inventing calendar boundaries."
+        ]
+      }
     },
     {
       "placementId": "tennessee-17",
@@ -1762,7 +3907,87 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Build a preferred 3.01-mile 161 kV line from Douglas Hydro–Pigeon Forge No. 2 to the new Waldens Creek substation.",
+        "status": "Proposed transmission work — source update 2025-07",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": "2028",
+          "precision": "year",
+          "kind": "in-service",
+          "label": "Forecast in service; source: Winter 2028"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Waldens Creek and Wears Valley area, Sevier County",
+        "sourceUpdatedOn": null,
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025-07",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "New transmission line",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Forecast construction start",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-40.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+                "locator": "July 2025 update L17; Project Schedule L56"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast in service",
+            "date": {
+              "value": null,
+              "precision": "unknown",
+              "kind": "in-service",
+              "label": "Winter 2026–2027; older background"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-40.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+                "locator": "Background L31"
+              }
+            ]
+          },
+          {
+            "field": "Superseded forecast construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Fall 2026; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-40.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+                "locator": "Background L31"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-40.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/waldens-creek--tennessee-(sevier-county)",
+            "locator": "Update — July 2025, captured L7–20; Background L23–31; Project Schedule L54–57"
+          }
+        ],
+        "notes": [
+          "July 2025 selects the preferred route and revises the older winter 2026–2027 target; single-year winter retains year precision."
+        ]
+      }
     },
     {
       "placementId": "tennessee-18",
@@ -1779,7 +4004,118 @@
         "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
         "locator": "Page heading, latest dated update where present, proposed scope and Project Schedule; retained historical/background text is not current status proof"
       },
-      "facts": null
+      "facts": {
+        "description": "Proposed South Covington switching station and 21–24 miles of 161 kV line from Stanton, including a 69 kV line rebuild, are on hold.",
+        "status": "On hold — September 2024",
+        "voltageKv": [
+          161
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Current service date unknown while on hold"
+        },
+        "sourceState": "Tennessee",
+        "sourceLocation": "Fayette, Haywood and Tipton Counties",
+        "sourceUpdatedOn": null,
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2024-09",
+        "lifecycleDateMeaning": "source-edition",
+        "workType": "Switching station, new line and voltage-conversion rebuild",
+        "aliases": [],
+        "milestones": [
+          {
+            "field": "Earlier forecast in service — withdrawn by hold",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Fall 2028; historical background/table"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-41.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+                "locator": "Background L24; Project Schedule L49"
+              }
+            ]
+          },
+          {
+            "field": "Earlier forecast construction start — withdrawn by hold",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Spring 2027; forecast only"
+            },
+            "evidence": [
+              {
+                "file": "web-capture-41.txt",
+                "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+                "locator": "Background L24; Project Schedule L48"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "file": "web-capture-41.txt",
+            "url": "https://www.tva.com/energy/transmission/transmission-projects/west-tennessee-power-system-improvements-(fayette--haywood--and-tipton-counties)",
+            "locator": "Update — September 2024, captured L7–9; Background L12–24; Project Schedule L43–49"
+          }
+        ],
+        "notes": [
+          "The hold concerns continued evaluation of system improvement options; it is not cancellation.",
+          "Stanton’s existing 500 kV station and retired 69 kV line are context, not additional proposed operating voltages."
+        ]
+      }
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "sourceId": "redstone-arsenal-no.-3--alabama-(madison-county)",
+      "meaning": "Preferred Redstone page length 3.3 miles differs from GIS 3.68123; older demarcation/schedule descriptions are superseded."
+    },
+    {
+      "sourceId": "sundown-drive-alabama",
+      "meaning": "Sundown survey/easement seasons differ between update and table, without affecting the consistent service forecast."
+    },
+    {
+      "sourceId": "belmont-stage-2--mississippi-(clay--lowndes--and-oktibbeha-counties)",
+      "meaning": "Belmont background winter–spring 2028 and winter–spring 2027–2028 wording differs; newer hold prevents using old dates."
+    },
+    {
+      "sourceId": "appalachia-area-improvement-tennessee-and-north-carolina",
+      "meaning": "Appalachia GIS covers only 1.45934 miles versus the page line/station scope; separate 2029 component seasons are retained."
+    },
+    {
+      "sourceId": "bristol-tennessee-(south-bristol)",
+      "meaning": "Bristol repeats the Sullivan label on the second schedule table; the explicit update identifies Bluff City as that component."
+    },
+    {
+      "sourceId": "hardin-valley-(tennessee)",
+      "meaning": "Hardin Valley winter 2025–2026 conflicts with table winter 2045–2025; no typo correction or completion inference."
+    },
+    {
+      "sourceId": "lewis-chapel-tennessee-(dunlap)",
+      "meaning": "Lewis Chapel construction forecast uses winter 2023–2024 in the update versus winter 2023 in background/table."
+    },
+    {
+      "sourceId": "lexington-tennessee-(west-lexington-jacks-creek)",
+      "meaning": "Lexington narrative service Fall 2025/construction Fall 2024 conflicts with table Fall 2023/Fall 2022."
+    },
+    {
+      "sourceId": "north-dayton-tennessee",
+      "meaning": "North Dayton service Fall 2022 versus Spring 2023, with differing construction forecasts; lifecycle is May 2019, not the later environmental heading."
+    },
+    {
+      "sourceId": "tullahoma-tennessee-(center-grove)",
+      "meaning": "Tullahoma uses winter 2024–2025 versus winter 2025; no exact calendar range inferred."
+    },
+    {
+      "sourceId": "kentucky-area-improvements-phase-ii-(logan-and-todd-counties)",
+      "meaning": "Kentucky Phase II GIS Active is overridden by the May 2026 page hold; older service dates are not current."
     }
   ]
 }
