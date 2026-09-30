@@ -1,7 +1,7 @@
-# F27-APC DOE connection sample
+# F27-APC DOE full declared subset
 
-- Added three public transmission review packages in index order with accepted contextual IDs and a reproducible normalizer against thirteen preserved-original hashes.
-- Reconciled twelve entries into three imported, six exclusions and three retained pending, zero failed/located; all imported records remain planned.
-- Preserved letter/posting/forecast date distinctions, unknown ownership/geometry/windows and Lock 5's unknown initial voltage; review completion is not physical commissioning or funding close.
-- Source Dataset JSON measures 16,415 compact / 21,197 formatted UTF-8 bytes. Full six-record generation waits for coordinator provider connection and dispatch.
+- Completed all six accepted public transmission review packages after the three-record sample was provider-connected; unchanged catalog/normalizer preserve sample values, IDs and source order.
+- Reconciled twelve entries into six imported and six exclusions, zero pending, failed or located; all imported records remain planned.
+- Preserved letter/posting/forecast date distinctions, unknown ownership/geometry/windows, Lock 5's unknown initial voltage and South Bessemer's existing-station context. Review completion is not physical commissioning or funding close.
+- Full source Dataset JSON measures 28,443 compact / 36,980 formatted UTF-8 bytes. This completes the declared public subset, not the utility or statewide inventory.
 - No worker checks or shared/UI/map/core/dependency edits. Coordinator owns integration and the combined milestone case.

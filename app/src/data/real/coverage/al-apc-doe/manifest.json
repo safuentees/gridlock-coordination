@@ -16,13 +16,13 @@
   "sha256": "216fbddd6529809cf885181467788f3e60f2eed29256f70c4ff0e7adba2dfbf8",
   "geographicScope": "Alabama; each retained letter explicitly identifies its county or counties.",
   "inventoryScope": "All twelve DOE Alabama Power review entries: six physical transmission packages retained; one generation, one demand-side program, two fiber-only and two distribution entries excluded.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 12,
-    "importedRecords": 3,
+    "importedRecords": 6,
     "excludedRows": 6,
     "failedRows": 0,
-    "pendingRows": 3,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

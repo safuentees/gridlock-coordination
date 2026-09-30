@@ -1,7 +1,7 @@
 {
   "sourceKey": "al-apc-doe",
   "editionId": "review-index-snapshot-2026-09-30",
-  "scope": "sample",
+  "scope": "full",
   "artifacts": [
     {
       "file": "index.html",
@@ -120,17 +120,17 @@
   ],
   "counts": {
     "sourceRows": 12,
-    "importedRecords": 3,
+    "importedRecords": 6,
     "excludedRows": 6,
     "failedRows": 0,
-    "pendingRows": 3,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "recordKindCounts": {
-    "transmission-project": 3
+    "transmission-project": 6
   },
   "lifecycleCounts": {
-    "planned": 3
+    "planned": 6
   },
   "completeRetainedRecordKindCounts": {
     "transmission-project": 6
@@ -366,8 +366,17 @@
       "identityBasis": "native-id",
       "rawNativeReference": "#19",
       "lifecycle": "planned",
-      "disposition": "pending",
-      "reason": "Accepted retained transmission package awaiting provider connection before full generation."
+      "disposition": "imported",
+      "projectId": "al-apc-doe:19",
+      "rawFacts": {
+        "nativeReference": "#19 (DOE index title and PDF URL)",
+        "work": "approximately 7.5 miles of 115 kV reconductoring",
+        "constructionStartForecast": null,
+        "completionForecast": null,
+        "indexPostedOn": "April 24, 2026",
+        "letterDate": "March 30, 2026"
+      },
+      "reason": "One physical transmission package described by a public environmental-review letter; planned, not physically complete."
     },
     {
       "sourceRow": 11,
@@ -388,8 +397,17 @@
       "identityBasis": "native-id",
       "rawNativeReference": "#28",
       "lifecycle": "planned",
-      "disposition": "pending",
-      "reason": "Accepted retained transmission package awaiting provider connection before full generation."
+      "disposition": "imported",
+      "projectId": "al-apc-doe:28",
+      "rawFacts": {
+        "nativeReference": "#28 (letter subject and index title)",
+        "work": "new 500 kV switching station for two existing 500 kV transmission lines",
+        "constructionStartForecast": null,
+        "completionForecast": null,
+        "indexPostedOn": "March 25, 2026",
+        "letterDate": "March 24, 2026"
+      },
+      "reason": "One physical transmission package described by a public environmental-review letter; planned, not physically complete."
     },
     {
       "sourceRow": 12,
@@ -410,8 +428,18 @@
       "identityBasis": "native-id",
       "rawNativeReference": "#27",
       "lifecycle": "planned",
-      "disposition": "pending",
-      "reason": "Accepted retained transmission package awaiting provider connection before full generation."
+      "disposition": "imported",
+      "projectId": "al-apc-doe:27",
+      "rawFacts": {
+        "nativeReference": "#27 (letter subject)",
+        "existingStationVoltage": "500/230/115 kV",
+        "work": "eight-terminal breaker-and-a-half gas-insulated scheme; existing 500 kV lines and 500/230 kV autobank; one new 500 kV line connection; future capacity retained as context",
+        "constructionStartForecast": "September 8, 2026",
+        "completionForecast": "May 2030",
+        "indexPostedOn": "August 3, 2026",
+        "letterDate": "July 31, 2026"
+      },
+      "reason": "One physical transmission package described by a public environmental-review letter; planned, not physically complete."
     }
   ]
 }
