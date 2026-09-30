@@ -1,7 +1,7 @@
 {
   "sourceKey": "fl-fpl",
   "editionId": "2026-04",
-  "scope": "sample",
+  "scope": "full",
   "originals": [
     {
       "file": "fpl-2026-plan.pdf",
@@ -130,7 +130,7 @@
   },
   "importedLifecycleCounts": {
     "approved": 1,
-    "planned": 4
+    "planned": 54
   },
   "sampleIds": [
     "fl-fpl:iii-e1-r01",

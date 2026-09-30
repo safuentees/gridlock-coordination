@@ -16,13 +16,13 @@
   "sha256": "30231eb609f4011fa579030e2294483cb7f34c58aed1a05b72eed1055ddecedd",
   "geographicScope": "Partial FPL Florida and Northwest Florida utility planning scope, with named counties/terminals only; not statewide completeness.",
   "inventoryScope": "89 primary source entries: five bulk lines and 84 interconnection forms; retain 55 transmission work units and exclude 34 storage-side-only forms. Matching engineering narratives add no rows.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 89,
-    "importedRecords": 5,
+    "importedRecords": 55,
     "excludedRows": 34,
     "failedRows": 0,
-    "pendingRows": 50,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -42,7 +42,6 @@
     "Separate line/program dates, source voltage, name and endpoint discrepancies and unresolved timing conflicts are preserved. No parent records, guessed centers or cross-source FMPA merges.",
     "Reported circuit miles, kV, transformer/capacity MVA and served-facility MW are distinct meanings. Schedule 9 total installed costs do not establish standalone transmission costs or savings.",
     "Source text calls forecasts tentative and longer-term sites nondefinitive; proposed equipment work is not a final location or design.",
-    "Public factual private analysis only; originals, contact data, hidden metadata and maps are not published or interpreted. No open/commercial reuse license is asserted.",
-    "Five retained diagnostics are emitted first; 50 accepted records await sample connection and full normalization."
+    "Public factual private analysis only; originals, contact data, hidden metadata and maps are not published or interpreted. No open/commercial reuse license is asserted."
   ]
 }

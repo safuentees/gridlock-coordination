@@ -62,8 +62,8 @@
     "row": 3,
     "recordKind": "transmission-project",
     "recordUnit": "component",
-    "disposition": "pending",
-    "reason": "Accepted retained row; full normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r03"
   },
   {
     "sourceId": "iii-e1-r04",
@@ -84,8 +84,8 @@
     "row": 4,
     "recordKind": "transmission-project",
     "recordUnit": "component",
-    "disposition": "pending",
-    "reason": "Accepted retained row; full normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r04"
   },
   {
     "sourceId": "iii-e1-r05",
@@ -106,8 +106,8 @@
     "row": 5,
     "recordKind": "transmission-project",
     "recordUnit": "component",
-    "disposition": "pending",
-    "reason": "Accepted retained row; full normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "fl-fpl:iii-e1-r05"
   },
   {
     "sourceId": "s10-001",
@@ -194,8 +194,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-002",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -239,8 +239,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-003",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -282,8 +282,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-004",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -628,8 +628,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-012",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -890,8 +890,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-018",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -933,8 +933,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-019",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -976,8 +976,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-020",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1019,8 +1019,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-021",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1062,8 +1062,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-022",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1148,8 +1148,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-024",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1191,8 +1191,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-025",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1494,8 +1494,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-032",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1537,8 +1537,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-033",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1838,8 +1838,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-040",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1881,8 +1881,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-041",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1924,8 +1924,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-042",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -1967,8 +1967,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-043",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2010,8 +2010,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-044",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2055,8 +2055,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-045",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2098,8 +2098,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-046",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2143,8 +2143,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-047",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2188,8 +2188,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-048",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2231,8 +2231,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-049",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2274,8 +2274,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-050",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2317,8 +2317,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-051",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2360,8 +2360,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-052",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2403,8 +2403,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-053",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2446,8 +2446,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-054",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2489,8 +2489,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-055",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2534,8 +2534,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-056",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2620,8 +2620,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-058",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2708,8 +2708,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-060",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2794,8 +2794,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-062",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2880,8 +2880,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-064",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -2966,8 +2966,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-066",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3009,8 +3009,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-067",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3052,8 +3052,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-068",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3140,8 +3140,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-070",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3226,8 +3226,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-072",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3312,8 +3312,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-074",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3400,8 +3400,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-076",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3486,8 +3486,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-078",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3574,8 +3574,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-080",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3617,8 +3617,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-081",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3660,8 +3660,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-082",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3705,8 +3705,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-083",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   },
@@ -3750,8 +3750,8 @@
       "investmentMeaning": "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
       "excluded": false
     },
-    "disposition": "pending",
-    "reason": "Accepted retained form; full normalization awaits sample connection.",
+    "disposition": "imported",
+    "projectId": "fl-fpl:s10-084",
     "recordKind": "transmission-project",
     "recordUnit": "component"
   }
