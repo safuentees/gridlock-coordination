@@ -6,7 +6,7 @@ export function projectDate(project: Project) {
 export const timelineLabels: Record<Opportunity["timelineRelation"], string> = {
   "confirmed-overlap": "Explicit construction windows overlap",
   "date-proximity": "Milestone dates within 365 days",
-  separate: "Milestone dates more than 365 days apart",
+  separate: "Distant milestones or separate construction windows",
   unknown: "Timing cannot be compared",
 }
 export function dateKind(project: Project) {
