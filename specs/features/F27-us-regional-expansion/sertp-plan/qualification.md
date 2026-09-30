@@ -1,0 +1,9 @@
+# SERTP public report qualification
+
+**Blocked by conflicting access markings; no inventory is qualified.** The [official public reference library](https://www.southeasternrtp.com/reference_library.cshtml), General Documents → 2026 → June 24 second-quarter meeting, links the June 2026 expansion report as **Non-CEII**. The linked [PDF](https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf), printed page 1 header, instead says **“SERTP TRANSMISSION PROJECTS (CEII)”**; the page footer is dated June 12, 2026. That conflict is enough to trigger this task's explicit stop rule.
+
+Source use stopped on that first response. No subsequent source requests, project extraction, six-record sample, enumeration, owner mapping or cross-source comparisons were performed. The access label cannot establish whether the internal marking is stale or the download was mislabeled. No secure area, models, alternative restricted copy or credentials were used. The web text response was read; no local binary was acquired or altered, and no source project details are copied into these outputs.
+
+Enabling input: an authoritative correction/clarification identifying this exact report and resolving the CEII label, or a corrected report explicitly suitable for the approved public scope. Until then, source counts, native identity, lifecycle mapping, ownership and cross-source overlap remain unassessed. `sample.json` intentionally contains zero examples and null counts; that means unqualified, not an empty portfolio. Do not infer a full inventory, import records or reopen prior Georgia/Dominion records from this source.
+
+The single targeted source pass ran September 30, 2026, 09:32:02–09:32:35 UTC (0.55 minutes of the 15-minute ceiling). It ended at the marking gate; no additional research was necessary. This qualification satisfies the spec's evidence-backed blocker route. No producer or worker checks were run.
