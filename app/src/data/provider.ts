@@ -11,6 +11,7 @@ import ercotInventory from "./real/coverage/ercot-tpit/dataset.json"
 import hawaiiInventory from "./real/coverage/hi-heco-featured/dataset.json"
 import misoInventory from "./real/coverage/miso-mtep/dataset.json"
 import newYorkInventory from "./real/coverage/ny-national-grid-ltp/dataset.json"
+import floridaInventory from "./real/coverage/fl-fmpa/dataset.json"
 import { combineSourceDatasets } from "./coverage"
 
 export function loadDataset(mode: DataMode): Dataset {
@@ -20,7 +21,7 @@ export function loadDataset(mode: DataMode): Dataset {
     projects: [...demoDataset.projects, ...inventoryDemoDataset.projects],
     coverage: { ...inventoryDemoDataset.coverage, processed: demoDataset.projects.length + inventoryDemoDataset.projects.length },
   })
-    : combineSourceDatasets(datasetSchema.parse(realDataset), [datasetSchema.parse(sceInventory), datasetSchema.parse(isoNewEnglandInventory), datasetSchema.parse(pjmInventory), datasetSchema.parse(sppInventory), datasetSchema.parse(alaskaInventory), datasetSchema.parse(ercotInventory), datasetSchema.parse(hawaiiInventory), datasetSchema.parse(misoInventory), datasetSchema.parse(newYorkInventory)])
+    : combineSourceDatasets(datasetSchema.parse(realDataset), [datasetSchema.parse(sceInventory), datasetSchema.parse(isoNewEnglandInventory), datasetSchema.parse(pjmInventory), datasetSchema.parse(sppInventory), datasetSchema.parse(alaskaInventory), datasetSchema.parse(ercotInventory), datasetSchema.parse(hawaiiInventory), datasetSchema.parse(misoInventory), datasetSchema.parse(newYorkInventory), datasetSchema.parse(floridaInventory)])
   if (dataset.mode !== mode) throw new Error("The dataset mode does not match the requested source.")
   return dataset
 }
