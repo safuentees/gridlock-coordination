@@ -189,7 +189,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
           <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
             <div className="shrink-0 space-y-3 border-b p-3">
               <div hidden={collapsed || detailVisible} inert={collapsed || detailVisible} className={collapsed || detailVisible ? "hidden" : "flex min-w-0 items-center gap-2"}>
-                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">Inventory ({projects.length})</TabsTrigger></TabsList></div>
+                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
                 <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
               </div>
               <Label htmlFor="project-search" className="sr-only">Search projects</Label>
