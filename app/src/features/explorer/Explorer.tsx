@@ -45,7 +45,6 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   const [selectedPairId, setSelectedPairId] = useState<string | null>(null)
   const [scenarioSaveRequest, setScenarioSaveRequest] = useState<ScenarioSaveRequest | null>(null)
   const [saveActionTarget, setSaveActionTarget] = useState<HTMLElement | null>(null)
-  const workspaceControls = useRef<HTMLDivElement>(null)
   const panel = useRef<HTMLElement>(null)
   const timelinePanel = useRef<HTMLElement>(null)
   const resultsView = useRef<HTMLDivElement>(null)
@@ -140,7 +139,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   useLayoutEffect(() => {
     const measure = () => {
       const next = {
-        top: (workspaceControls.current?.offsetHeight ?? 0) + (collapsed ? (panel.current?.offsetHeight ?? 0) + 36 : 24),
+        top: collapsed ? (panel.current?.offsetHeight ?? 0) + 24 : 16,
         left: collapsed ? 16 : (panel.current?.offsetWidth ?? 0) + 24,
         right: 16,
         bottom: timelineOpen ? (timelinePanel.current?.offsetHeight ?? 0) + 24 : 16,
@@ -148,7 +147,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
       setViewportInsets(previous => Object.keys(next).every(key => next[key as keyof typeof next] === previous[key as keyof typeof next]) ? previous : next)
     }
     const observer = new ResizeObserver(measure)
-    for (const element of [workspaceControls.current, panel.current, timelinePanel.current]) if (element) observer.observe(element)
+    for (const element of [panel.current, timelinePanel.current]) if (element) observer.observe(element)
     measure()
     return () => observer.disconnect()
   }, [collapsed, timelineOpen])
@@ -172,18 +171,19 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
 
   const page = listView === "opportunities" ? activePairPage : activeProjectPage
   const count = listView === "opportunities" ? opportunities.length : projects.length
-  return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Coordination workspace">
-    <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
+  return <section className="flex h-full min-h-0 w-full min-w-0 flex-col overflow-hidden" aria-label="Coordination workspace">
     <BriefWorkspace dataset={dataset} options={options} selectedOpportunity={selectedOpportunity} opportunities={analysis.opportunities} onShowCurrent={selectPair} openRequest={reviewsRequest} saveScenarioRequest={scenarioSaveRequest} saveActionTarget={saveActionTarget} hideReviewsTrigger />
-    <div className="pointer-events-none absolute inset-0 flex min-h-0 min-w-0 flex-col gap-3 p-3">
-      <div ref={workspaceControls} className="pointer-events-auto flex min-w-0 shrink-0 flex-wrap items-center gap-3 rounded-lg border bg-background p-3" role="group" aria-label="Workspace settings">
-        <ScenarioControls options={options} baseline={baseline} analysis={analysis} onApply={applyScenario} />
-        <p className="min-w-0 flex-1 text-xs text-muted-foreground">Applied: &lt;{options.radiusMiles} mi; {options.maxDateGapDays === null ? "any milestone gap" : `≤${options.maxDateGapDays} days`}; {options.includeUnverified ? "unverified included" : "confirmed only"}</p>
-        <Button variant={timelineOpen ? "secondary" : "outline"} aria-pressed={timelineOpen} aria-expanded={timelineOpen} aria-controls="workspace-timeline" onClick={() => setTimelineOpen(value => !value)}>Timeline {timelineOpen ? "on" : "off"}</Button>
-        <DropdownMenu><DropdownMenuTrigger asChild><Button variant="outline">Layout</Button></DropdownMenuTrigger><DropdownMenuContent align="end"><DropdownMenuItem onSelect={() => { backToResults(); setTimelineOpen(false); setFiltersOpen(false) }}>Reset layout</DropdownMenuItem></DropdownMenuContent></DropdownMenu>
-      </div>
+    <div className="m-3 mb-0 flex min-w-0 shrink-0 flex-wrap items-center gap-3 rounded-lg border bg-background p-3" role="group" aria-label="Workspace settings">
+      <ScenarioControls options={options} baseline={baseline} analysis={analysis} onApply={applyScenario} />
+      <p className="min-w-0 flex-1 text-xs text-muted-foreground">Applied: &lt;{options.radiusMiles} mi; {options.maxDateGapDays === null ? "any milestone gap" : `≤${options.maxDateGapDays} days`}; {options.includeUnverified ? "unverified included" : "confirmed only"}</p>
+      <Button variant={timelineOpen ? "secondary" : "outline"} aria-pressed={timelineOpen} aria-expanded={timelineOpen} aria-controls="workspace-timeline" onClick={() => setTimelineOpen(value => !value)}>Timeline {timelineOpen ? "on" : "off"}</Button>
+      <DropdownMenu><DropdownMenuTrigger asChild><Button variant="outline">Layout</Button></DropdownMenuTrigger><DropdownMenuContent align="end"><DropdownMenuItem onSelect={() => { backToResults(); setTimelineOpen(false); setFiltersOpen(false) }}>Reset layout</DropdownMenuItem></DropdownMenuContent></DropdownMenu>
+    </div>
+    <div className="relative min-h-0 min-w-0 flex-1 overflow-hidden">
+      <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
+      <div className="pointer-events-none absolute inset-0 flex min-h-0 min-w-0 flex-col gap-3 p-3">
       <div className="min-h-0 min-w-0 flex-1">
-        <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 flex-col overflow-hidden rounded-lg border bg-background ${collapsed ? "h-auto w-full max-w-lg" : "h-full min-h-0 w-[min(32rem,65%)]"}`}>
+        <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 max-w-[calc(100%-8rem)] flex-col overflow-hidden rounded-lg border bg-background ${collapsed ? "h-auto w-[min(32rem,100%)]" : "h-full min-h-0 w-[min(32rem,65%)]"}`}>
           <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
             <div className="shrink-0 space-y-3 border-b p-3">
               <div hidden={collapsed || detailVisible} inert={collapsed || detailVisible} className={collapsed || detailVisible ? "hidden" : "flex min-w-0 items-center gap-2"}>
@@ -238,6 +238,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
         </aside>
       </div>
       <section ref={timelinePanel} id="workspace-timeline" aria-label="Timeline panel" hidden={!timelineOpen} inert={!timelineOpen} className={timelineOpen ? "pointer-events-auto flex h-[38%] min-h-0 min-w-0 shrink-0 flex-col gap-3 overflow-hidden rounded-lg border bg-background p-3" : "hidden"}><div className="flex shrink-0 items-center justify-between gap-3"><h2 className="font-medium">Project timeline</h2><IconButton variant="ghost" label="Close timeline" onClick={() => setTimelineOpen(false)}><XIcon aria-hidden="true" /></IconButton></div><ProjectTimeline projects={projects} selectedId={selectedProjectId} onProject={selectProject} /></section>
+      </div>
     </div>
   </section>
 }
