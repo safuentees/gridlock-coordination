@@ -1,0 +1,53 @@
+{
+  "sourceKey": "sdge-tpr",
+  "editionId": "2026-07",
+  "label": "SDG&E public July 2026 TPR portfolio",
+  "reportingGroupId": "sdge-tpr",
+  "reportingGroupName": "SDG&E public TPR filing",
+  "publisher": "San Diego Gas & Electric",
+  "processAuthority": "California Public Utilities Commission",
+  "publishedOn": "2026-07-01",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "JULY26-SDG&E-Public - Resolution E-5252 TPR Process Data.xlsx",
+    "locator": "'Project List'!A4:CO370; headers row 3; 'Definitions'!D2:G2, D31:G34, D57:G59, D63:G65",
+    "url": "https://www.sdge.com/sites/default/files/JULY26-SDG%26E-Public%20-%20Resolution%20E-5252%20TPR%20Process%20Data.xlsx"
+  },
+  "sha256": "0e800beb097adc26be9669c841808ced2c18542c9a499465144b41399c3dd157",
+  "geographicScope": "SDG&E public FERC transmission capital filing; source geography may span multiple cities/counties. Not all California transmission work.",
+  "inventoryScope": "137 nonterminal row units after summary-first exclusions; 93 explicit line/substation units and 44 capital-project-context units. Three unprefixed blanket budgets remain overlapping context.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 367,
+    "importedRecords": 6,
+    "excludedRows": 230,
+    "failedRows": 0,
+    "pendingRows": 131,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "canceled",
+      "count": 3
+    },
+    {
+      "reason": "operational",
+      "count": 187
+    },
+    {
+      "reason": "program-summary",
+      "count": 40
+    }
+  ],
+  "limitations": [
+    "Complete declared public expenditure-bounded workbook: 367 rows, 137 retained units and 230 exclusions. This is not a statewide or deduplicated engineering-project inventory.",
+    "Exclude 40 labeled program summaries before 187 other Operational and three Canceled rows. Parent project counts are not additional rows or evidence of missing projects.",
+    "Three unprefixed distribution blanket budgets remain context with overlapping program/cost scope; optional recordUnit is omitted. Other non-transmission capital work remains context.",
+    "July 1, 2026 is the source edition release, not a known row update, extraction time or live status. Actual/expected starts and projected/actual service dates retain their labels and conflicts.",
+    "Most-specific native IDs, parent work orders and budget codes are distinct. Missing project IDs use explicit source locators; future-edition continuity needs reviewed crosswalks.",
+    "All public latitude/longitude cells are blank. Source city/county text is not geocoded; centers, native geometry, coordinate role/accuracy and asset owners remain unknown.",
+    "The utility is the reporting sponsor, not evidenced asset owner. Project Manager is a person field and is not extracted. Original workbook and hidden metadata remain outside runtime and Git.",
+    "Construction start is actual or expected; no complete construction interval is established. On Hold and nonterminal status remain unchanged when milestones pass.",
+    "Cost fields are in $000 with potentially overlapping parent/child/program scope. No additive project total, ranking input or realized/hypothetical coordination benefit is derived."
+  ]
+}

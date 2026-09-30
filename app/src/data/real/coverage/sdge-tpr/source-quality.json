@@ -1,0 +1,71 @@
+{
+  "sourceKey": "sdge-tpr",
+  "editionId": "2026-07",
+  "scope": "sample",
+  "sampleExcelRows": [
+    12,
+    20,
+    121,
+    334,
+    342,
+    356
+  ],
+  "sampleIds": [
+    "sdge-tpr:project-list-row-009",
+    "sdge-tpr:2026-4802",
+    "sdge-tpr:project-list-row-118",
+    "sdge-tpr:project-list-row-331",
+    "sdge-tpr:2025-4180",
+    "sdge-tpr:project-list-row-353"
+  ],
+  "acceptedFullRecordKinds": {
+    "transmission-project": 93,
+    "capital-project-context": 44
+  },
+  "acceptedFullLifecycles": {
+    "under-construction": 40,
+    "planned": 83,
+    "on-hold": 14
+  },
+  "importedRecordKinds": {
+    "transmission-project": 4,
+    "capital-project-context": 2
+  },
+  "importedLifecycles": {
+    "under-construction": 2,
+    "planned": 3,
+    "on-hold": 1
+  },
+  "primaryDatePrecisionCounts": {
+    "day": 3,
+    "unknown": 3
+  },
+  "unknownOwnerRecords": 6,
+  "unknownLocationRecords": 6,
+  "blanketBudgetExcelRows": [
+    121,
+    161,
+    163
+  ],
+  "pastCurrentDateWithNonterminalStatusExcelRows": [
+    12,
+    41,
+    53,
+    61,
+    92,
+    116,
+    249,
+    307,
+    322
+  ],
+  "constructionStatusWithFutureStartExcelRows": [
+    106,
+    254,
+    347
+  ],
+  "normalizationMethod": "Hash-pinned public source fields plus concise factual descriptions; source-only normalization, no source acquisition, owner/geographic inference or application checks.",
+  "payloadSizes": {
+    "compactUtf8Bytes": 22697,
+    "formattedUtf8Bytes": 30016
+  }
+}
