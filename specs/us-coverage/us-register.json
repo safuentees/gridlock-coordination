@@ -1,20 +1,21 @@
 {
   "registerVersion": 1,
   "updatedOn": "2026-09-30",
-  "baselineRevision": "F27 regional integration PR67 (implementation b210acf; one build/case passed)",
+  "baselineRevision": "F27 SPP/ERCOT/Alaska integration PR73 (implementation 437f865; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Full declared SCE, PJM and ISO-NE source scopes imported; SPP qualification in progress",
+  "qualificationStatus": "Six full declared regional source scopes imported; MISO and Hawaiian Electric featured subset accepted for next increment",
   "totals": {
-    "importedSourceRecords": 6089,
+    "importedSourceRecords": 9128,
     "locatedRecords": 113,
     "confirmedLocations": 0,
     "unverifiedLocations": 113,
-    "missingLocations": 5976,
+    "missingLocations": 9015,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 3,
-    "newFullRegionalInventoriesImported": 3,
-    "knownNationalProjectDenominator": null
+    "newRegionalSourcesQualified": 8,
+    "newFullRegionalInventoriesImported": 6,
+    "knownNationalProjectDenominator": null,
+    "qualifiedFeaturedSubsets": 1
   },
   "pendingEvidence": {
     "integratedF19Decisions": 10,
@@ -155,15 +156,15 @@
       "excludedRows": 10068,
       "exclusions": [
         {
-          "reason": "Cancelled \u2014 cancelled",
+          "reason": "Cancelled — cancelled",
           "count": 847
         },
         {
-          "reason": "IS \u2014 in service",
+          "reason": "IS — in service",
           "count": 9215
         },
         {
-          "reason": "W \u2014 withdrawn",
+          "reason": "W — withdrawn",
           "count": 6
         }
       ],
@@ -256,6 +257,199 @@
       },
       "unallocatedStateRecords": 0,
       "stateCountMeaning": "Exact single-state source labels within the declared footprint; blanks, multistate and anomalous labels remain unallocated. Counts are not independently verified geography."
+    },
+    {
+      "sourceKey": "spp-tracking",
+      "editionId": "2026-q3",
+      "editionPublishedAt": "2026-07-07",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "All Appendix 1 UID upgrades except Complete, Closed Out and Withdrawn. Parent PIDs are relationships, not additional inventory records; Appendix 2 adds no independent upgrades.",
+      "geographicScope": "Partial SPP regional public transmission-upgrade portfolio; raw states and named buses do not establish complete jurisdiction coverage.",
+      "recordKind": "1247 transmission-project",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-07-07",
+      "importedRecords": 1247,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 1247,
+        "milestone": 74,
+        "constructionWindow": 1247,
+        "status": 4,
+        "voltage": 29,
+        "evidencedOwner": 7
+      },
+      "rawSourceRows": 1422,
+      "excludedRows": 175,
+      "exclusions": [
+        {
+          "reason": "Closed Out — complete with closeout requirements fulfilled",
+          "count": 12
+        },
+        {
+          "reason": "Complete — construction complete and in service",
+          "count": 155
+        },
+        {
+          "reason": "Withdrawn — no longer retained in the active scope",
+          "count": 8
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/spp-tracking/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/spp-tracking/row-ledger.json",
+      "publicInventoryDenominator": 1247,
+      "blockers": [
+        "Report publication/lifecycle edition anchor is July 7, 2026; the archive index was posted August 5, 2026. A conflicting older reporting-period string does not establish an activity interval.",
+        "Every location is unknown. Bus numbers/names and state labels are raw context, not coordinates or routes.",
+        "Owner identities are source-scoped; EKC/WR, EM/KCPL and EMW/GMO are evidenced aliases. TBD/blank/composite owners remain unknown; no ultimate parent is inferred.",
+        "In Service means operational with incomplete construction. Schedule/notification stages do not establish construction start; re-evaluation and undefined pending notifications retain unknown phase.",
+        "Owner forecast, RTO need and notification dates remain separate at displayed source precision; none creates a construction window.",
+        "Appendix 2 contains 26 UIDs already in Appendix 1 and is deferred; its inconsistent free-text histories do not overwrite forecasts.",
+        "SPP terms distinguish cited copying from commercial use requiring express authorization. This attributed analysis does not claim commercial permission or an open-data license."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {
+        "NE": 86,
+        "OK": 263,
+        "LA": 30,
+        "TX": 256,
+        "NM": 112,
+        "KS": 118,
+        "SD": 105,
+        "ND": 88,
+        "AR": 21,
+        "MO": 84,
+        "IA": 6,
+        "MT": 1,
+        "WY": 1
+      },
+      "unallocatedStateRecords": 76,
+      "stateCountMeaning": "Exact single-state source labels only; incomplete, multistate, placeholder and absent labels remain unallocated. These are source assertions, not independently verified geography."
+    },
+    {
+      "sourceKey": "ercot-tpit",
+      "editionId": "2026-07-13",
+      "editionPublishedAt": "2026-07-17",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "Source-assigned TPIT component records: explicit transmission-equipment evidence and useful unresolved/distribution planning context. Completed/cancelled, explicit in-service and model-only entries excluded; RTP rows are supplemental context, not additional active projects.",
+      "geographicScope": "ERCOT planning footprint in Texas; not all Texas transmission, and no per-record state or center is inferred.",
+      "recordKind": "795 transmission-project, 971 planning-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-07-13",
+      "importedRecords": 1766,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 1766,
+        "milestone": 0,
+        "constructionWindow": 1766,
+        "status": 328,
+        "voltage": 2,
+        "evidencedOwner": 127
+      },
+      "rawSourceRows": 2216,
+      "excludedRows": 450,
+      "exclusions": [
+        {
+          "reason": "cancelled-tab",
+          "count": 78
+        },
+        {
+          "reason": "completed-tab",
+          "count": 262
+        },
+        {
+          "reason": "duplicate-row",
+          "count": 5
+        },
+        {
+          "reason": "explicit-in-service",
+          "count": 14
+        },
+        {
+          "reason": "model-only",
+          "count": 2
+        },
+        {
+          "reason": "supplemental-rtp-context",
+          "count": 89
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/ercot-tpit/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/ercot-tpit/row-ledger.json",
+      "publicInventoryDenominator": 1766,
+      "blockers": [
+        "All source records remain unlocated; named terminals/counties and bus references are not native geometry.",
+        "TPIT component counts are not unique engineering-project totals. Five exact non-contact duplicate rows are coalesced with both locators.",
+        "Only explicit accepted equipment quantities establish transmission-project scope; zero/missing quantities leave other useful records as planning-context.",
+        "Conceptual and absent status remain unknown; source tab/status and actual-date conflicts are preserved rather than resolved through date arithmetic.",
+        "Usable TPIT milestone fields retain displayed month precision; stored days/minutes are not day-level evidence. Year 9999 cells stay unknown with raw evidence preserved.",
+        "Owner tokens are source-scoped; unresolved/composite tokens do not become singular owner identities or globally distinct companies.",
+        "RTP records may overlap TPIT and have blank status; absent links do not establish uniqueness or cancellation.",
+        "Public raw data reused for analysis under ERCOT Terms of Use section 5; source attribution does not imply ERCOT endorsement."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 1766,
+      "stateCountMeaning": "Exact single-state source labels only; incomplete, multistate, placeholder and absent labels remain unallocated. These are source assertions, not independently verified geography."
+    },
+    {
+      "sourceKey": "ak-aea-rstp",
+      "editionId": "2026-02-26",
+      "editionPublishedAt": "2026-02-26",
+      "status": "imported-full-declared-public-scope",
+      "inventoryScope": "28 chapter-3 leaves: 25 transmission improvements, one mixed transmission/distribution context, two excluded standalone BESS entries. Twelve parent groups and repeated presentations are not additional records.",
+      "geographicScope": "Alaska Railbelt strategic transmission text inventory; not complete Alaska or national coverage.",
+      "recordKind": "25 transmission-project, 1 capital-project-context",
+      "lifecycleIsCurrent": false,
+      "lifecycleAsOf": "2026-02-26",
+      "importedRecords": 26,
+      "locatedRecords": 0,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 0,
+      "eligibleRecords": 0,
+      "missingFields": {
+        "location": 26,
+        "milestone": 25,
+        "constructionWindow": 26,
+        "status": 25,
+        "voltage": 10,
+        "evidencedOwner": 21
+      },
+      "rawSourceRows": 28,
+      "excludedRows": 2,
+      "exclusions": [
+        {
+          "reason": "Standalone battery energy storage",
+          "count": 2
+        }
+      ],
+      "pendingRows": 0,
+      "failedRows": 0,
+      "evidenceFile": "app/src/data/real/coverage/ak-aea-rstp/dataset.json",
+      "rowLedger": "app/src/data/real/coverage/ak-aea-rstp/row-ledger.json",
+      "publicInventoryDenominator": 26,
+      "blockers": [
+        "Curated map/section locators are not native engineering project IDs; future-edition continuity is unproven.",
+        "Strategic priority is not construction maturity. All lifecycle values remain unknown except the explicitly scheduled CIPLink proposal.",
+        "Every record is unlocated. Named endpoints, owner labels and map illustrations supply no coordinate evidence here.",
+        "Composite owners remain unknown; evidenced single owners have source identity scope only.",
+        "Timeline ranges and the 2050 study horizon are not exact milestones or construction windows. CIPLink completion is month precision, unknown date kind.",
+        "A/B cost-row allocation, alternative path scope, endpoint wording and 138/139 kV conflicts remain unresolved; costs are not normalized.",
+        "Companion source: Statewide Railbelt Energy Vision, cover February 2026, PDF page 19 / printed page 34. SHA256 e1beaf0dc562ff532dd32027ffa5a1b9181cf1079d40f8bb0f564266b561b94b."
+      ],
+      "nextTask": "F27; complementary inventories and evidenced locations",
+      "sourceStateCounts": {},
+      "unallocatedStateRecords": 26,
+      "stateCountMeaning": "Exact single-state source labels only; incomplete, multistate, placeholder and absent labels remain unallocated. These are source assertions, not independently verified geography."
     }
   ],
   "jurisdictions": [
@@ -268,8 +462,10 @@
     },
     {
       "code": "AK",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "ak-aea-rstp"
+      ],
       "statewideInventoryComplete": false,
       "recordCountByJurisdiction": null
     },
@@ -282,10 +478,15 @@
     },
     {
       "code": "AR",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 21
+      }
     },
     {
       "code": "CA",
@@ -383,17 +584,27 @@
     },
     {
       "code": "IA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 6
+      }
     },
     {
       "code": "KS",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 118
+      }
     },
     {
       "code": "KY",
@@ -409,10 +620,15 @@
     },
     {
       "code": "LA",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 30
+      }
     },
     {
       "code": "ME",
@@ -478,24 +694,39 @@
     },
     {
       "code": "MO",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 84
+      }
     },
     {
       "code": "MT",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 1
+      }
     },
     {
       "code": "NE",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 86
+      }
     },
     {
       "code": "NV",
@@ -530,10 +761,15 @@
     },
     {
       "code": "NM",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 112
+      }
     },
     {
       "code": "NY",
@@ -556,10 +792,15 @@
     },
     {
       "code": "ND",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 88
+      }
     },
     {
       "code": "OH",
@@ -575,10 +816,15 @@
     },
     {
       "code": "OK",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 263
+      }
     },
     {
       "code": "OR",
@@ -622,10 +868,15 @@
     },
     {
       "code": "SD",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 105
+      }
     },
     {
       "code": "TN",
@@ -641,10 +892,16 @@
     },
     {
       "code": "TX",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking",
+        "ercot-tpit"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 256
+      }
     },
     {
       "code": "UT",
@@ -705,10 +962,15 @@
     },
     {
       "code": "WY",
-      "status": "uncovered",
-      "sourceKeys": [],
+      "status": "partial-public-regional-inventory",
+      "sourceKeys": [
+        "spp-tracking"
+      ],
       "statewideInventoryComplete": false,
-      "recordCountByJurisdiction": null
+      "recordCountByJurisdiction": null,
+      "sourceRecordCounts": {
+        "spp-tracking": 1
+      }
     },
     {
       "code": "DC",
@@ -776,13 +1038,13 @@
     },
     {
       "sourceKey": "miso-mtep",
-      "status": "unqualified",
-      "sourceUrl": "https://help.misoenergy.org/knowledgebase/article/KA-01438/en-us",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
       "importedRecords": 0,
       "locatedRecords": 0,
-      "missingInput": "Public downloadable planned-project sample; documented general-pin precision may limit geographic eligibility",
+      "missingInput": "Sample/provider connection and full accepted source production; all source locations unknown",
       "owner": "source_discovery",
-      "task": "F25 fallback"
+      "task": "F27"
     },
     {
       "sourceKey": "pjm-rtep",
@@ -806,20 +1068,50 @@
     },
     {
       "sourceKey": "spp-tracking",
-      "status": "qualification-in-progress",
-      "sourceUrl": "https://spp.org/engineering/project-tracking-ntcs/",
+      "status": "full-declared-source-scope-imported",
+      "sourceUrl": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+      "importedRecords": 1247,
+      "locatedRecords": 0,
+      "missingInput": "Native location evidence, complete ownership and broader jurisdiction coverage",
+      "owner": "coordinator",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "ercot-tpit",
+      "status": "full-declared-source-scope-imported",
+      "sourceUrl": "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+      "importedRecords": 1766,
+      "locatedRecords": 0,
+      "missingInput": "Native location evidence, complete ownership and broader jurisdiction coverage",
+      "owner": "coordinator",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "ak-aea-rstp",
+      "status": "full-declared-source-scope-imported",
+      "sourceUrl": "https://www.akenergyauthority.org/Portals/0/Home/2026.02.26%20AEA%202050%20RSTP%20%28Final%29.pdf?ver=qI3vDZwWypffLMqvLm9WEg%3D%3D",
+      "importedRecords": 26,
+      "locatedRecords": 0,
+      "missingInput": "Native location evidence, complete ownership and broader jurisdiction coverage",
+      "owner": "coordinator",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "hi-heco-featured",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future",
       "importedRecords": 0,
       "locatedRecords": 0,
-      "missingInput": "Public enumeration and accepted lifecycle/unit/owner/date/geometry mapping",
-      "owner": "source_discovery",
-      "task": "F27-SPP-Q"
+      "missingInput": "Sample/provider connection and full accepted source production; all source locations unknown",
+      "owner": "ui",
+      "task": "F27"
     }
   ],
   "scopeLimits": [
     "Partial supplied filing coverage does not establish statewide completeness or current project status.",
     "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
-    "Uncovered states and territories remain explicitly incomplete. SCE cross-state work and anomalous/multistate/blank PJM labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
-    "National project denominator is unknown. Three full declared regional scopes are imported; record units differ and no cross-source deduplication is claimed. Statewide and national completeness are not established.",
+    "Uncovered states and territories remain explicitly incomplete. Raw incomplete, multistate, placeholder and anomalous state labels are not guessed into jurisdiction totals; zero imports never means zero projects.",
+    "National project denominator is unknown. Six full declared regional scopes are imported; record units differ and no cross-source deduplication is claimed. Eight sources are qualified, including one limited featured subset; two accepted sources are not yet imported. Statewide and national completeness are not established.",
     "Existing infrastructure and generation proposals are not planned-transmission coverage."
   ],
   "qualifiedSources": [
@@ -866,6 +1158,66 @@
       "locatedRecords": 0,
       "scope": "Regional system planning list across Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island and Vermont; partial public inventory, not all local transmission work.",
       "contract": "specs/features/F27-us-regional-expansion/contract.md"
+    },
+    {
+      "sourceKey": "spp-tracking",
+      "editionId": "2026-q3",
+      "reportingGroup": "spp-tracking",
+      "status": "full-declared-source-scope-imported",
+      "sourceRows": 1422,
+      "proposedRetainedRecords": 1247,
+      "proposedExcludedRows": 175,
+      "locatedRecords": 0,
+      "scope": "Partial SPP regional public transmission-upgrade portfolio; raw states and named buses do not establish complete jurisdiction coverage.",
+      "contract": "specs/features/F27-us-regional-expansion/spp-tracking/spec.md"
+    },
+    {
+      "sourceKey": "ercot-tpit",
+      "editionId": "2026-07-13",
+      "reportingGroup": "ercot-tpit",
+      "status": "full-declared-source-scope-imported",
+      "sourceRows": 2216,
+      "proposedRetainedRecords": 1766,
+      "proposedExcludedRows": 450,
+      "locatedRecords": 0,
+      "scope": "ERCOT planning footprint in Texas; not all Texas transmission, and no per-record state or center is inferred.",
+      "contract": "specs/features/F27-us-regional-expansion/ercot-tpit/spec.md"
+    },
+    {
+      "sourceKey": "ak-aea-rstp",
+      "editionId": "2026-02-26",
+      "reportingGroup": "ak-aea-rstp",
+      "status": "full-declared-source-scope-imported",
+      "sourceRows": 28,
+      "proposedRetainedRecords": 26,
+      "proposedExcludedRows": 2,
+      "locatedRecords": 0,
+      "scope": "Alaska Railbelt strategic transmission text inventory; not complete Alaska or national coverage.",
+      "contract": "specs/features/F27-us-regional-expansion/ak-railbelt/spec.md"
+    },
+    {
+      "sourceKey": "miso-mtep",
+      "editionId": "appendix-a-2026-08-04",
+      "reportingGroup": "miso-mtep",
+      "status": "qualified-not-yet-imported",
+      "sourceRows": 3211,
+      "proposedRetainedRecords": 3042,
+      "proposedExcludedRows": 169,
+      "locatedRecords": 0,
+      "scope": "MISO Appendix A facility components; partial public regional scope",
+      "contract": "specs/features/F27-us-regional-expansion/miso-mtep/spec.md"
+    },
+    {
+      "sourceKey": "hi-heco-featured",
+      "editionId": "snapshot-2026-09-30-7a3266df",
+      "reportingGroup": "hi-heco-featured",
+      "status": "qualified-not-yet-imported",
+      "sourceRows": 7,
+      "proposedRetainedRecords": 4,
+      "proposedExcludedRows": 3,
+      "locatedRecords": 0,
+      "scope": "Seven Hawaiian Electric featured topics only; not complete utility or Hawaii inventory",
+      "contract": "specs/features/F27-us-regional-expansion/hi-heco-projects/spec.md"
     }
   ]
 }
