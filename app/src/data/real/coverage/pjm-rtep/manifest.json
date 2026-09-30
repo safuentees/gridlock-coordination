@@ -1,0 +1,37 @@
+{
+  "sourceKey": "pjm-rtep",
+  "editionId": "snapshot-2026-09-30-1cc0ae1b7825",
+  "label": "PJM public RTEP — snapshot September 30, 2026",
+  "reportingGroupId": "pjm-rtep",
+  "reportingGroupName": "PJM RTEP inventory",
+  "publisher": "PJM Interconnection",
+  "processAuthority": "PJM Interconnection",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "projectCostUpgrades.xml",
+    "locator": "/Upgrades/Upgrade; complete public export",
+    "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+  },
+  "sha256": "1cc0ae1b78258cbe81108ec2fdd43754098a57cc5ec224f6e7300cafefe2eb31",
+  "geographicScope": "Public PJM RTEP upgrade inventory across its regional planning footprint; not complete statewide coverage. Preserve raw state text without assigning anomalous or outside-footprint values to jurisdictions.",
+  "inventoryScope": "All public Baseline, Network and Supplemental UpgradeId rows except IS, Cancelled and W. Retained units are upgrades, not deduplicated engineering projects; on-hold and pre-agreement work remain visible.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 15692,
+    "importedRecords": 6,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 15686,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "This is a checksum-pinned retrieval snapshot, not a publisher-issued dated edition; row LastUpdated is not a lifecycle-change date.",
+    "All locations are absent. Named locations, states and transmission-owner tokens are not coordinate evidence.",
+    "Owners have source-scoped identity only. Blank/MISO/composite values do not establish one owner; DL and Duquesne Light (DL) share the explicit source alias.",
+    "Required, projected, actual, revised, ISA, board and TEAC milestones remain distinct. No construction interval is inferred.",
+    "Raw state values may be blank, multistate or anomalous. They do not establish complete jurisdiction coverage.",
+    "Public export requires no login; PJM reserves rights and access does not confer an open reuse license. Preserve source attribution."
+  ]
+}
