@@ -91,8 +91,8 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
 | source_discovery / ingestion | PJM full inventory complete; F27-SPP-Q in progress. | Own only SPP qualification/sample/receipt; 15-minute clarification, no producer before accepted mapping. |
-| core | F27 source-scoped eligibility, exports and async source persistence complete. | Ready for the next exact qualification/contract handoff; retains calculation ownership. |
-| coordinator | Integrate PR67, maintain register and accept SPP mapping/producer handoff. | Root alone owns aggregate/schema/merge/checks; national source gaps remain open. |
+| core | F27 source-scoped eligibility, exports and async source persistence complete; F27-ERCOT-Q ready. | Own exact ERCOT qualification/sample/receipt in its [spec](features/F27-us-regional-expansion/ercot-tpit/spec.md); 15-minute clarification, no producer before accepted mapping. |
+| coordinator | PR67 integrated; maintain register and accept SPP/ERCOT mappings and early-sample/full producer handoffs. | Root alone owns aggregate/schema/merge/checks; national source gaps remain open. |
 | ui | F27 evidence, pagination, import copy and 6,000-record synthetic fixture complete. | Available for a concrete next consumer gap; no map/shared-contract edits without handoff. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
