@@ -12,7 +12,7 @@ cut: never
 Fit the existing application to 100dvh, with no document scrolling. Keep typography, spacing, preset, data, canonical calculations and user workflows. Use shrinkable min-h-0/min-w-0 flex/grid containers and native panel overflow. Do not clip unreachable content or reduce readable type to fit.
 
 ## Agreed ownership before editing
-- Coordinator: App.tsx, index.css, shared dialog component/dependencies, specs/receipts and integration. Header stays visible; dataset revisions/coverage move to a labeled dialog.
+- Coordinator: App.tsx, index.css, shared dialog component/dependencies, dataset/import presentation, specs/receipts and integration. Header stays visible; dataset revisions/coverage move to a labeled dialog. UI ownership was handed back for the final tab-alignment integration adjustment.
 - UI worker in existing UI worktree: features/explorer/* and features/scenarios/*. Search/filter/scenario controls remain visible. Candidate/inventory/map/timeline tabs share available space; selection replaces the existing right detail panel. Detail/impact use tabs. Map follows its container instead of a fixed pixel height.
 - Workspace-briefs worker in existing core worktree: features/briefs/BriefWorkspace.tsx only (plus new brief presentation helpers if needed). Preserve storage/export semantics and existing props. Component becomes persistent Save selected + Saved reviews toolbar; saved lists/comparison/review appear in a bounded dialog with internal overflow. No appended page content.
 - Only coordinator runs the bounded integrated build. No calculation changes, so no repeat core check. No browser automation, screenshots, image analysis, visual verification or mobile audits.

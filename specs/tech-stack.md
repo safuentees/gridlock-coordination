@@ -26,3 +26,6 @@ Official defaults read: [Vite](https://ui.shadcn.com/docs/installation/vite), [C
 Coordinator acts as named checker sequentially and alone: at most one existing build/compile plus one representative core input/output check, five minutes per milestone. Workers implement and inspect code but do not run planned verification, browser/Playwright, screenshots or visual audits. Check-core is authored by core worker and executed by coordinator. No new test framework or CI.
 
 Core expected example: Jasper–Okatie ↔ McIntosh–Purrysburg from discovery.md gives about 5.65 mi, 152 days, unverified candidate; no confirmed construction interval. Rank IDs stable. Impact is user-supplied shared miles × 5280 × width feet / 43560 square feet per acre, then × cost/acre × share fraction; label hypothetical.
+
+## Viewport workspace (F09)
+The shell owns 100dvh and forbids document scrolling. Flex/grid boundaries use min-height:0 and min-width:0; overflowing content scrolls inside bounded panels. Main views and details use tabs; secondary dataset/scenario/saved-review actions use the existing preset's Dialog. Native overflow is sufficient, so no extra scroll component is installed. Keep default type/spacing, primary actions visible and source uncertainty intact. Detailed ownership and the applied design references are in the F09 spec.
