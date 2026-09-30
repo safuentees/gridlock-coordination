@@ -39,5 +39,5 @@
     "20": "Retain one approved parent package; do not add its included substations/line segments as extra records.",
     "21": "Retain one parent package including Common Ties; construction is explicit for a segment, not every component. Compound in-service dates remain unresolved at parent level."
   },
-  "requestDispositionStatus": "Pending explicit 69-row policy and coordinator acceptance; all requests stay pending."
+  "requestDispositionStatus": "Accepted at d108589: retain all69 requests;52 transmission/17 capital context; no exclusions."
 }

@@ -2,8 +2,8 @@
   "policyVersion": 1,
   "sourceKey": "nv-nvenergy",
   "editionId": "2026-05-06-irp",
-  "status": "proposed; coordinator acceptance required before request generation",
-  "runtimeRequestsRemainPending": true,
+  "status": "accepted by coordinator in d108589; source row decisions preserved from f6efcb6",
+  "runtimeRequestsRemainPending": false,
   "selectedSourceRows": 90,
   "approvedRows": 21,
   "requestRows": 69,
@@ -3855,5 +3855,7 @@
       ],
       "supplementaryMilestones": []
     }
-  ]
+  ],
+  "acceptedContract": "d108589; specs/features/F27-us-regional-expansion/nv-nvenergy/spec.md",
+  "fieldNamingNote": "Existing proposed* field names identify the reviewed proposal fields; every value is accepted by the status/contract above, without a new interpretation."
 }

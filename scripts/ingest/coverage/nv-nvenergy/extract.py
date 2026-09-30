@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produce the accepted Nevada connection sample and enumerate its full source universe."""
+"""Normalize the accepted Nevada approved entries and construction-request source units."""
 import argparse
 from collections import Counter
 from datetime import datetime, timezone
@@ -22,6 +22,9 @@ FILES = {
     9: ('NPC-SPPC-Volume-9.pdf', '674f4a973742a716f721cb36c67c3e9dd84caa969250a907cd3ba144c7f1b72f'),
 }
 POLICY = json.loads(Path(__file__).with_name('policy.json').read_text())
+REQUEST_POLICY = json.loads(Path(__file__).with_name('request-policy.json').read_text())
+REQUESTS = {row['requestNumber']: row for row in REQUEST_POLICY['rows']}
+RELATIONSHIPS = {row['id']: row for row in REQUEST_POLICY['relationships']}
 SAMPLE = set(POLICY['sampleApprovedRows'])
 CONTEXT = set(POLICY['approvedCapitalContextRows'])
 
@@ -179,13 +182,53 @@ def approved_project(row):
             'locationAssumptions': ['No native coordinates or geometry are supplied by these table rows. Named facilities and routes do not establish a center, coordinate reference system or precision.']}}
 
 
+def requested_project(row):
+    number = row['requestNumber']
+    decision = REQUESTS[number]
+    if row['requestText'] != decision['rawRequest']:
+        raise ValueError(f'Request {number} differs from the accepted row policy.')
+    sources = list(decision['evidence'])
+    notes = [
+        'Construction approval is requested; the application does not establish approval or current construction.',
+        decision['classificationReason'],
+        'The in-service forecast preserves the request bullet year. No exact construction date or interval is supplied.',
+        *decision['notes'],
+    ]
+    for group_id in decision['relatedGroupIds']:
+        relation = RELATIONSHIPS[group_id]
+        related_ids = [uid for uid in relation['requestSourceIds'] + relation['approvedSourceIds'] if uid != decision['sourceId']]
+        notes.append('Related source actions: ' + relation['meaning'] + '. Source references: ' + ', '.join(related_ids) + '.')
+        for evidence in relation['evidence']:
+            if evidence not in sources:
+                sources.append(evidence)
+    milestones = [{'field': 'Exhibit B requested action in-service forecast',
+        'date': decision['proposedDate'], 'evidence': [decision['source']]}, *decision['supplementaryMilestones']]
+    return {'id': decision['proposedId'], 'utilityId': SOURCE, 'sourceId': decision['sourceId'],
+        'sponsor': 'Nevada Power Company and Sierra Pacific Power Company (joint applicants)',
+        'name': decision['proposedName'], 'description': row['requestText'],
+        'status': 'Construction approval requested', 'voltageKv': decision['proposedVoltageKv'],
+        'date': decision['proposedDate'], 'buildWindow': None, 'location': None,
+        'sources': sources, 'notes': notes,
+        'inventory': {'sourceKey': SOURCE, 'editionId': EDITION, 'editionLabel': LABEL, 'reportingGroupName': GROUP,
+            'recordKind': decision['proposedRecordKind'], 'recordUnit': 'project', 'identityBasis': 'source-locator',
+            'lifecycle': 'planned', 'lifecycleAsOf': AS_OF, 'lifecycleDateMeaning': 'source-edition',
+            'owner': None, 'parentProgramId': None, 'aliases': [],
+            'workType': 'Construction-approval request action',
+            'sourceState': None, 'sourceLocation': None, 'sourceUpdatedOn': None, 'milestones': milestones,
+            'constructionStart': None, 'nativeGeometry': None, 'centerRole': 'unknown',
+            'locationAssumptions': ['The request supplies named facilities and source context but no native coordinates, geometry, coordinate reference system or precision. No location or owner is inferred.']}}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input-dir', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
-    parser.add_argument('--stage', choices=('sample', 'approved'), default='sample')
+    parser.add_argument('--stage', choices=('sample', 'approved', 'full'), default='sample')
     parser.add_argument('--generated-at', default=datetime.now(timezone.utc).isoformat())
     args = parser.parse_args()
+    scope = 'full' if args.stage == 'full' else 'sample'
+    if args.stage == 'full' and not REQUEST_POLICY['status'].startswith('accepted'):
+        raise ValueError('Coordinator must accept the request policy before full generation.')
     readers, source_files = load_sources(args.input_dir)
     approved = approved_rows(readers[9])
     requests = request_rows(readers[2])
@@ -194,19 +237,29 @@ def main():
         number = row['rowNumber']
         entry = {'sourceId': approved_id(number), 'sourceUnit': 'approved-table-row',
                  'source': ref(9, approved_locator(number)), 'raw': row, 'recordKind': kind(number), 'lifecycle': lifecycle(number)}
-        if args.stage == 'approved' or number in SAMPLE:
+        if args.stage in {'approved', 'full'} or number in SAMPLE:
             record = approved_project(row)
             projects.append(record)
-            entry.update(disposition='imported', projectId=record['id'], reason='Accepted approved-table entry retained; source remains incomplete until requests are reconciled.')
+            entry.update(disposition='imported', projectId=record['id'], reason='Accepted approved-table work unit retained.')
         else:
             entry.update(disposition='pending', reason='Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice.')
         ledger.append(entry)
     for row in requests:
         number = row['requestNumber']
         citation = ref(2, f'Application Exhibit B, TRANSMISSION — IRP, request {number}; PDF p.{row["pdfPage"]} / Exhibit B p.{row["exhibitPage"]}; page bullet {row["pageBullet"]}')
-        ledger.append({'sourceId': request_id(number), 'sourceUnit': 'construction-approval-request',
-            'source': citation, 'raw': row, 'disposition': 'pending',
-            'reason': 'Required remaining request unit; exact classification/related-scope/exclusion policy awaits coordinator acceptance.'})
+        decision = REQUESTS[number]
+        entry = {'sourceId': request_id(number), 'sourceUnit': 'construction-approval-request',
+            'source': citation, 'raw': row, 'recordKind': decision['proposedRecordKind'], 'lifecycle': 'planned',
+            'relatedGroupIds': decision['relatedGroupIds'], 'rawRequestVoltageKv': decision['rawRequestVoltageKv'],
+            'normalizedVoltageKv': decision['proposedVoltageKv'], 'voltagePolicy': decision['voltagePolicy']}
+        if args.stage == 'full':
+            record = requested_project(row)
+            projects.append(record)
+            entry.update(disposition='imported', projectId=record['id'],
+                         reason='Accepted source action retained; distinct engineering-project identity is not asserted.')
+        else:
+            entry.update(disposition='pending', reason='Accepted request outside this partial producer stage; required for full selected-source completion.')
+        ledger.append(entry)
     counts = {'sourceRows': len(ledger), 'importedRecords': len(projects), 'excludedRows': 0,
               'failedRows': 0, 'pendingRows': len(ledger) - len(projects), 'locatedRecords': 0}
     manifest = {'sourceKey': SOURCE, 'editionId': EDITION, 'label': LABEL, 'reportingGroupId': SOURCE,
@@ -215,36 +268,36 @@ def main():
         'source': ref(9, 'Figure TP-131, PDF pp.54–55 / printed pp.293–294; selected source also includes Volume2 ExhibitB TRANSMISSION — IRP, PDF pp.46–50'),
         'sha256': FILES[9][1],
         'geographicScope': 'Partial NV Energy public Nevada planning inventory, with cross-state named work such as Bordertown to California; not all Nevada utilities.',
-        'inventoryScope': '21 approved-table rows plus 69 new construction-approval request bullets: 90 source units, not unique engineering projects. Requests remain required work.',
-        'scope': 'sample', 'counts': counts, 'exclusions': [],
+        'inventoryScope': '21 approved-table rows plus 69 new construction-approval request bullets: 90 source work units, not unique engineering projects. No narrative parents/components or economic-benefit totals are additional records.',
+        'scope': scope, 'counts': counts, 'exclusions': [],
         'limitations': [
-            f'{len(projects)} approved entries are included; {21 - len(projects)} approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.',
+            ('All 90 declared source units are reconciled: 21 approved entries and 69 requested actions. Complete refers only to these two source enumerations, not all Nevada projects or unique engineering assets.' if scope == 'full' else f'{len(projects)} approved entries are included; {21 - len(projects)} approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.'),
             'May 6, 2026 dates the joint application/source edition. Exact publication is not independently established; retrieval is not status recency.',
             'Raw Active means approved in this table; Suspended means on-hold. Greenlink West has partial-construction narrative evidence, not proof every component is under construction.',
             'Approved-table rows3/4/5/6/13/19 remain conservative capital context because their physical transmission scope is ambiguous or mixed. Row17 approval covers siting/permitting, not construction.',
             'All qualified owners and native locations/geometry are unknown. Joint applicants, approval dockets, named facilities and routes cannot substitute for those fields.',
             'Exact ISD days remain forecasts; Greenlink West has distinct main/segment4 milestones and an unknown aggregate comparison date. No construction interval is inferred.',
             'One source row may be a compound program. Common Ties belongs within Greenlink West. Narrative components and economic-benefit totals are not extra records.',
-            'The 69 requested actions require classification and overlap reconciliation before normalization. Similar names do not prove identity; shared requests and voltage/date discrepancies remain unresolved.',
+            'Accepted request policy retains all69 observations:52 transmission and17 HVD/distribution/mixed capital context, all planned with year forecasts. Six conflicting voltages stay unknown; cited raw values and eleven relationship groups preserve unresolved identities. No duplicate exclusion or parent identity is inferred.',
             'Public redacted source facts only; no confidential appendix, contact metadata, redaction recovery or source-binary redistribution. Source filenames/hashes for all three volumes are preserved in the ledger.',
         ]}
-    dataset = {'schemaVersion': 2, 'mode': 'real', 'title': LABEL + (' — approved slice; requests pending' if args.stage == 'approved' else ' — connection sample'),
+    dataset = {'schemaVersion': 2, 'mode': 'real', 'title': LABEL + (' — full selected inventory' if scope == 'full' else ' — approved slice; requests pending' if args.stage == 'approved' else ' — connection sample'),
         'generatedAt': args.generated_at, 'projects': projects, 'sourceEditions': [manifest],
         'coverage': {'processed': len(projects), 'skipped': 0, 'failed': 0,
-            'notes': [f'90 source units = {len(projects)} imported + {counts["pendingRows"]} pending; no exclusions have been accepted for requests.',
-                      'All 69 request locators are enumerated without request normalization. Complete-source status awaits their accepted dispositions.']}}
-    row_ledger = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': 'sample', 'counts': counts,
+            'notes': [f'90 source units = {len(projects)} imported + {counts["pendingRows"]} pending; zero excluded source units.',
+                      'Every approved entry and request retains its original source reference. Retention represents source observations, not deduplicated engineering assets.']}}
+    row_ledger = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': scope, 'counts': counts,
         'sourceFiles': source_files, 'sourceUnitCounts': {'approved-table-row': len(approved), 'construction-approval-request': len(requests)},
         'recordKindCounts': dict(Counter(p['inventory']['recordKind'] for p in projects)),
         'lifecycleCounts': dict(Counter(p['inventory']['lifecycle'] for p in projects)),
-        'requestPolicyStatus': 'Proposed exact 69-row mapping in scripts/ingest/coverage/nv-nvenergy/request-policy.json; coordinator acceptance pending. No request exclusions or normalized records yet.', 'rows': ledger}
+        'requestPolicyStatus': REQUEST_POLICY['status'], 'relationships': REQUEST_POLICY['relationships'], 'rows': ledger}
     compact = json.dumps(dataset, ensure_ascii=False, separators=(',', ':'), allow_nan=False) + '\n'
     formatted = json.dumps(dataset, ensure_ascii=False, indent=2, allow_nan=False) + '\n'
-    sizes = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': 'sample', 'stage': args.stage, 'records': len(projects),
+    sizes = {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': scope, 'stage': args.stage, 'records': len(projects),
         'compactUtf8Bytes': len(compact.encode('utf-8')), 'formattedDownloadUtf8Bytes': len(formatted.encode('utf-8')),
-        'measurement': 'Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.', 'datasetFileFormat': 'formatted'}
+        'measurement': 'Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.', 'datasetFileFormat': 'compact' if scope == 'full' else 'formatted'}
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    (args.output_dir / 'dataset.json').write_text(formatted)
+    (args.output_dir / 'dataset.json').write_text(compact if scope == 'full' else formatted)
     for name, content in [('manifest.json', manifest), ('row-ledger.json', row_ledger), ('payload-sizes.json', sizes)]:
         (args.output_dir / name).write_text(json.dumps(content, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
     print(json.dumps({'counts': counts, 'recordKindCounts': row_ledger['recordKindCounts'], 'lifecycleCounts': row_ledger['lifecycleCounts'], 'payloadSizes': sizes}))
