@@ -1,0 +1,40 @@
+{
+  "sourceKey": "nv-nvenergy",
+  "editionId": "2026-05-06-irp",
+  "label": "NV Energy 2026 Joint IRP — approved entries and construction requests",
+  "reportingGroupId": "nv-nvenergy",
+  "reportingGroupName": "NV Energy public transmission planning",
+  "publisher": "Nevada Power Company and Sierra Pacific Power Company d/b/a NV Energy",
+  "processAuthority": "Public Utilities Commission of Nevada",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "NPC-SPPC-Volume-9.pdf",
+    "locator": "Figure TP-131, PDF pp.54–55 / printed pp.293–294; selected source also includes Volume2 ExhibitB TRANSMISSION — IRP, PDF pp.46–50",
+    "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+  },
+  "sha256": "674f4a973742a716f721cb36c67c3e9dd84caa969250a907cd3ba144c7f1b72f",
+  "geographicScope": "Partial NV Energy public Nevada planning inventory, with cross-state named work such as Bordertown to California; not all Nevada utilities.",
+  "inventoryScope": "21 approved-table rows plus 69 new construction-approval request bullets: 90 source units, not unique engineering projects. Requests remain required work.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 90,
+    "importedRecords": 6,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 84,
+    "locatedRecords": 0
+  },
+  "exclusions": [],
+  "limitations": [
+    "Six approved entries are connected; fifteen approved entries and all sixty-nine construction requests remain pending. The first 21-row table does not complete this source.",
+    "May 6, 2026 dates the joint application/source edition. Exact publication is not independently established; retrieval is not status recency.",
+    "Raw Active means approved in this table; Suspended means on-hold. Greenlink West has partial-construction narrative evidence, not proof every component is under construction.",
+    "Approved-table rows3/4/5/6/13/19 remain conservative capital context because their physical transmission scope is ambiguous or mixed. Row17 approval covers siting/permitting, not construction.",
+    "All qualified owners and native locations/geometry are unknown. Joint applicants, approval dockets, named facilities and routes cannot substitute for those fields.",
+    "Exact ISD days remain forecasts; Greenlink West has distinct main/segment4 milestones and an unknown aggregate comparison date. No construction interval is inferred.",
+    "One source row may be a compound program. Common Ties belongs within Greenlink West. Narrative components and economic-benefit totals are not extra records.",
+    "The 69 requested actions require classification and overlap reconciliation before normalization. Similar names do not prove identity; shared requests and voltage/date discrepancies remain unresolved.",
+    "Public redacted source facts only; no confidential appendix, contact metadata, redaction recovery or source-binary redistribution. Source filenames/hashes for all three volumes are preserved in the ledger."
+  ]
+}
