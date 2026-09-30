@@ -1,0 +1,44 @@
+{
+  "sourceKey": "pacificorp-irp-local",
+  "editionId": "2025-03-31",
+  "label": "PacifiCorp 2025 IRP local transmission improvements",
+  "reportingGroupId": "pacificorp-irp-local",
+  "reportingGroupName": "PacifiCorp historical local improvements",
+  "publisher": "PacifiCorp",
+  "processAuthority": "PacifiCorp transmission planning",
+  "publishedOn": "2025-03-31",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "2025_IRP_Vol_1.pdf",
+    "locator": "Chapter 4 local-improvement sections, PDF pages 109–113 / printed pages 93–97; twenty project bullets",
+    "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+  },
+  "sha256": "c540ce2974d538f5f6305794700026298f529aae237469dab1f4280a8eb5da64",
+  "geographicScope": "Historical local project areas in Utah, Idaho, Wyoming and Oregon as explicitly labeled in chapter 4; partial planning scope, not state or utility completeness.",
+  "inventoryScope": "Six completed local-improvement bullets excluded and fourteen planned-section bullets retained. Gateway Table 4.1, model portfolios, driver/benefit sub-bullets and program totals are outside this declared scope.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 20,
+    "importedRecords": 3,
+    "excludedRows": 6,
+    "failedRows": 0,
+    "pendingRows": 11,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "explicit-completed-local-improvement",
+      "count": 6
+    }
+  ],
+  "limitations": [
+    "Historical March 31, 2025 edition is not current lifecycle; current featured pages and the March 2026 update do not silently replace it.",
+    "The breaker program has conflicting planned heading and completed-tense wording; one planning-context record stays unknown, without inventing twelve substations.",
+    "All fourteen retained entries lack service dates and native project IDs; frozen chapter/page/area/bullet locators identify source records.",
+    "Mixed transmission/distribution and BPA/PacifiCorp interests remain visible; no singular asset owner is inferred.",
+    "Spanish Fork–Mercer has an evidenced overlap with the current featured source; records are not claimed to be unique engineering projects.",
+    "No singular asset owner, native project center or exact construction interval is supplied. Publisher/developer context is not inferred ownership.",
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
+    "Three retained diagnostics are emitted first; 11 accepted entries await provider connection and full normalization."
+  ]
+}

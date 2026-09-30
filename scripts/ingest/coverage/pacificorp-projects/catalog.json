@@ -1,0 +1,1064 @@
+{
+  "config": {
+    "editionId": "observed-2026-09-30",
+    "label": "PacifiCorp featured transmission projects — observed September 30, 2026",
+    "group": "PacifiCorp featured projects",
+    "publishedOn": null,
+    "lifecycleAsOf": "2026-09-30",
+    "lifecycleDateMeaning": "snapshot-observed",
+    "manifestSource": {
+      "file": "transmission-projects.html",
+      "locator": "Other project table plus Energy Gateway structured list and linked E8 child; eighteen declared entries",
+      "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+    },
+    "manifestHash": "80d201e1159e1119ed30fb27df12b2310f6e74ead55678f23134f76e9f75cdc3",
+    "expectedSourceRows": 18,
+    "expectedRetained": 10,
+    "expectedExcluded": 8,
+    "sampleIds": [
+      "west-of-hemingway--boardman-to-hemingway",
+      "gateway-west--bridger-anticline-to-populus",
+      "segment-e8--midpoint-to-hemingway"
+    ],
+    "geographicScope": "Featured western project text includes Oregon, Utah, Idaho, Wyoming and Washington; source labels and endpoints are retained without assigning unsupplied project jurisdictions. Not complete utility/state coverage.",
+    "inventoryScope": "Eleven Energy Gateway entries plus six Other Project rows plus E8 child; seven explicitly completed entries and one aggregate Segment E parent excluded. Components and phases stay bundled.",
+    "limitations": [
+      "H lifecycle and expected service use the dated March 31, 2026 update; D3 earliest service also uses that update. Older webpage forecasts remain separate evidence.",
+      "Aggregate Energy Gateway/Segment E totals and linked child scope never both inflate imported projects. The Segment E remainder remains unenumerated context.",
+      "The current featured list is not a utility-wide census. March 2026 model-selection tables remain unenumerated under the no-image policy.",
+      "Source-locator identity uses page and named entry; reused segment letters do not establish native engineering IDs.",
+      "Construction ranges retain supplied month/quarter/year precision; no exact days, centers, route geometry or singular owner are inferred.",
+      "Spanish Fork–Mercer overlaps the historical local scope. Counts represent source records, not distinct engineering projects."
+    ],
+    "sourceKey": "pacificorp-projects",
+    "originals": [
+      {
+        "file": "2025_IRP_Update.pdf",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf",
+        "bytes": 14089517,
+        "sha256": "e79300d73a910433791d3e35647ae826f0cdadfd47204ecbdddeafe0f57676de"
+      },
+      {
+        "file": "2025_IRP_Vol_1.pdf",
+        "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf",
+        "bytes": 14075881,
+        "sha256": "c540ce2974d538f5f6305794700026298f529aae237469dab1f4280a8eb5da64"
+      },
+      {
+        "file": "apex-to-maverick.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html",
+        "bytes": 37679,
+        "sha256": "393bb8f8854607e1489d382a8e56932d8f7eacd2134e043eb956fcfbbc636b2d"
+      },
+      {
+        "file": "black-rock-to-sigurd.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/black-rock-to-sigurd.html",
+        "bytes": 35454,
+        "sha256": "90f867103086a59874021aa16ad9ccfa265f12d8e8388c4e99bf63dbe76957f3"
+      },
+      {
+        "file": "blueprint-south.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html",
+        "bytes": 49036,
+        "sha256": "8976c2ae7da9c67b75cf163c38e55d4c588c683d844d64d2b5cbadaa77d87de8"
+      },
+      {
+        "file": "energy-gateway.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway.html",
+        "bytes": 39588,
+        "sha256": "0dc2c87bba893c4a803718a9588738f71124e7f2f7aafbf9f175fdaed83a5bcf"
+      },
+      {
+        "file": "gateway-central.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html",
+        "bytes": 42956,
+        "sha256": "34b07acf67f3fe81abc6c8314a77abb435250ff22559510578fb1e1a2ba12f66"
+      },
+      {
+        "file": "gateway-south.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html",
+        "bytes": 34077,
+        "sha256": "90cc07f3c2a837ce2c71d96403b713c7b3c288dfd3f30a930c6f2d55ff04be7c"
+      },
+      {
+        "file": "gateway-west.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html",
+        "bytes": 36187,
+        "sha256": "6e152740cbf5983662006f74890f7f1cea0415c8586f0a4e9eb7ee44144497fb"
+      },
+      {
+        "file": "irp-index.html",
+        "url": "https://www.pacificorp.com/energy/integrated-resource-plan.html",
+        "bytes": 53058,
+        "sha256": "b16ab60ac0397ab123f0fa7e61e03b75f27b3b026e3bb29e914db2d9f4023869"
+      },
+      {
+        "file": "segment-b-honeyville-populus-threemile.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html",
+        "bytes": 43331,
+        "sha256": "8439fa72db14aa720fde2c0c71785c45e4068a6eb3fea3d27de35da5698192de"
+      },
+      {
+        "file": "segment-e8.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html",
+        "bytes": 36415,
+        "sha256": "7812eb423f219eefe9046c131370742738b4ab63afa435d279f37e2e2e0310ef"
+      },
+      {
+        "file": "spanish-fork-to-mercer.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html",
+        "bytes": 44475,
+        "sha256": "dd01065e1adb21a5bbfd12c2e13c15fe044bbbdd4795d48498dbd32b68ba0a1c"
+      },
+      {
+        "file": "three-peaks-to-purgatory-flat.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html",
+        "bytes": 39108,
+        "sha256": "dd65b96d3a1583e2ab5d6fdbd8e105a5682447801dc25f60dce598d46cfaffb0"
+      },
+      {
+        "file": "transmission-projects.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects.html",
+        "bytes": 44137,
+        "sha256": "80d201e1159e1119ed30fb27df12b2310f6e74ead55678f23134f76e9f75cdc3"
+      },
+      {
+        "file": "west-of-hemingway.html",
+        "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html",
+        "bytes": 35694,
+        "sha256": "74899efa06e092ff20c485056c0ea20e90566fb66ade11e3cd6c85a7fbbd9ae6"
+      }
+    ]
+  },
+  "records": [
+    {
+      "sourceId": "west-of-hemingway--wallula-to-mcnary",
+      "name": "Wallula to McNary",
+      "description": "",
+      "sources": [
+        {
+          "file": "west-of-hemingway.html",
+          "locator": "Completed segment — Wallula to McNary",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "gateway-central--original-populus-to-terminal",
+      "name": "Original Populus to Terminal",
+      "description": "",
+      "sources": [
+        {
+          "file": "gateway-central.html",
+          "locator": "Introduction and Completed segments — Populus to Terminal",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "gateway-central--mona-to-oquirrh",
+      "name": "Mona to Oquirrh",
+      "description": "",
+      "sources": [
+        {
+          "file": "gateway-central.html",
+          "locator": "Introduction and Completed segments — Mona to Oquirrh",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "gateway-central--limber-to-terminal",
+      "name": "Limber to Terminal",
+      "description": "New Limber substation, 345 kV and 138 kV lines, existing-substation upgrades and changes to the Clover–Oquirrh connection.",
+      "sources": [
+        {
+          "file": "gateway-central.html",
+          "locator": "Segments in progress — Limber to Terminal; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        138,
+        345,
+        500
+      ],
+      "date": {
+        "value": "2030-11",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Scheduled completed/in-service month"
+      },
+      "sourceState": null,
+      "sourceLocation": "Limber, Terminal, Tooele, Oquirrh and Clover substations",
+      "aliases": [
+        "Source program: Energy Gateway",
+        "Source label: Segment C — Limber to Terminal"
+      ],
+      "notes": [
+        "This proposed work is distinct from the completed Mona–Oquirrh entry that also uses Segment C.",
+        "Construction is forecast for Q1 2028–Q4 2030; no exact construction days are supplied."
+      ],
+      "milestones": []
+    },
+    {
+      "sourceId": "gateway-west--windstar-to-aeolus",
+      "name": "Windstar to Aeolus",
+      "description": "",
+      "sources": [
+        {
+          "file": "gateway-west.html",
+          "locator": "D1 — completed November 2024",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "gateway-west--aeolus-to-bridger-anticline",
+      "name": "Aeolus to Bridger/Anticline",
+      "description": "",
+      "sources": [
+        {
+          "file": "gateway-west.html",
+          "locator": "D2 — completed October and energized November 2020",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "gateway-west--bridger-anticline-to-populus",
+      "name": "Bridger/Anticline to Populus",
+      "description": "Proposed approximately 200-mile single-circuit 500 kV transmission line between Anticline and Populus substations.",
+      "sources": [
+        {
+          "file": "gateway-west.html",
+          "locator": "Windstar to Populus — D3",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        },
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34 — Gateway West (Segment D3)",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Proposed line; future in-service timing",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2035",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Earliest in-service year — March 2026 IRP update"
+      },
+      "sourceState": null,
+      "sourceLocation": "Anticline Substation to Populus Substation in southeast Idaho",
+      "aliases": [
+        "Source program: Energy Gateway",
+        "Source segment: D3"
+      ],
+      "notes": [
+        "The March 31, 2026 IRP update supplies the authoritative earliest-2035 forecast. The Gateway West webpage instead says 2034 at the earliest; neither is a fixed completion commitment.",
+        "Permitting evidence does not establish regulatory approval of construction or construction underway."
+      ],
+      "milestones": [
+        {
+          "field": "Earlier website earliest in-service estimate",
+          "date": {
+            "value": "2034",
+            "precision": "year",
+            "kind": "in-service",
+            "label": "Earlier website earliest in-service estimate"
+          },
+          "evidence": [
+            {
+              "file": "gateway-west.html",
+              "locator": "Windstar to Populus — D3",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+            }
+          ]
+        }
+      ],
+      "dateEvidence": [
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34 — Gateway West (Segment D3)",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        }
+      ]
+    },
+    {
+      "sourceId": "gateway-west--populus-to-hemingway-aggregate",
+      "name": "Populus to Hemingway aggregate",
+      "description": "Aggregate Segment E remains source context; E8 is represented separately.",
+      "sources": [
+        {
+          "file": "gateway-west.html",
+          "locator": "Populus to Hemingway (Gateway West — Segment E)",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [
+        "The unenumerated remainder is not declared absent, and no aggregate mileage is added to E8."
+      ],
+      "milestones": [],
+      "reason": "aggregate-parent-represented-by-e8"
+    },
+    {
+      "sourceId": "gateway-south--aeolus-to-mona-clover",
+      "name": "Aeolus to Mona/Clover",
+      "description": "",
+      "sources": [
+        {
+          "file": "gateway-south.html",
+          "locator": "Completed segments — Aeolus to Mona/Clover, completed November 2024",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "gateway-south--sigurd-to-red-butte",
+      "name": "Sigurd to Red Butte",
+      "description": "",
+      "sources": [
+        {
+          "file": "gateway-south.html",
+          "locator": "Completed segments — Sigurd to Red Butte, completed May 2015",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-south.html"
+        }
+      ],
+      "disposition": "excluded",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": null,
+      "sourceLocation": null,
+      "aliases": [],
+      "notes": [],
+      "milestones": [],
+      "reason": "explicit-completed"
+    },
+    {
+      "sourceId": "west-of-hemingway--boardman-to-hemingway",
+      "name": "Boardman to Hemingway",
+      "description": "500 kV transmission connection from the Boardman area in Oregon to Hemingway near Melba, Idaho.",
+      "sources": [
+        {
+          "file": "west-of-hemingway.html",
+          "locator": "Segment in progress — Boardman to Hemingway; Project overview and schedule",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+        },
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34 — Boardman to Hemingway",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "under-construction",
+      "status": "Construction underway — March 2026 IRP update",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2027-12-31",
+        "precision": "day",
+        "kind": "in-service",
+        "label": "Expected in-service date — March 2026 IRP update"
+      },
+      "sourceState": "Oregon; Idaho",
+      "sourceLocation": "Boardman, Oregon to Hemingway Substation near Melba, Idaho",
+      "aliases": [
+        "Source program: Energy Gateway",
+        "Source segment: H",
+        "Source abbreviation: B2H"
+      ],
+      "notes": [
+        "The March 31, 2026 IRP update states construction is underway and provides the expected service date. This dated assertion takes precedence over the older website conditional/preconstruction wording.",
+        "The webpage, updated July 2025, projects late-2027 completion and a late-2025/early-2026 start. Those forecasts do not supply exact construction bounds.",
+        "Idaho Power leads permitting and the source describes joint funding participants; no singular asset owner is assigned.",
+        "Pending BPA redirect rights are separate planning context, not an additional physical line."
+      ],
+      "milestones": [
+        {
+          "field": "Earlier website projected completion — late 2027",
+          "date": {
+            "value": "2027",
+            "precision": "year",
+            "kind": "in-service",
+            "label": "Earlier website projected completion — late 2027"
+          },
+          "evidence": [
+            {
+              "file": "west-of-hemingway.html",
+              "locator": "Segment in progress — Boardman to Hemingway; Project overview and schedule",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/west-of-hemingway.html"
+            }
+          ]
+        }
+      ],
+      "lifecycleAsOf": "2026-03-31",
+      "lifecycleDateMeaning": "source-edition",
+      "dateEvidence": [
+        {
+          "file": "2025_IRP_Update.pdf",
+          "locator": "PDF page 44 / printed page 34 — Boardman to Hemingway",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Update.pdf"
+        }
+      ]
+    },
+    {
+      "sourceId": "apex-to-maverick--line",
+      "name": "Apex to Maverick",
+      "description": "Proposed approximately 32-mile 500 kV transmission line connecting Apex and planned Maverick substations.",
+      "sources": [
+        {
+          "file": "apex-to-maverick.html",
+          "locator": "Opening project description; Preliminary project schedule",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": "Morrow County, Oregon",
+      "sourceLocation": "Apex Substation to planned Maverick Substation",
+      "aliases": [],
+      "notes": [
+        "The source says the Apex substation is under construction; this does not establish that the proposed connecting line is under construction.",
+        "Construction is expected in 2027–2029. The source does not explicitly label the end year as the line in-service date."
+      ],
+      "milestones": [
+        {
+          "field": "Expected construction start year",
+          "date": {
+            "value": "2027",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Expected construction start year"
+          },
+          "evidence": [
+            {
+              "file": "apex-to-maverick.html",
+              "locator": "Opening project description; Preliminary project schedule",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html"
+            }
+          ]
+        },
+        {
+          "field": "Expected construction end year",
+          "date": {
+            "value": "2029",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Expected construction end year"
+          },
+          "evidence": [
+            {
+              "file": "apex-to-maverick.html",
+              "locator": "Opening project description; Preliminary project schedule",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/apex-to-maverick.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "black-rock-to-sigurd--line",
+      "name": "Black Rock to Sigurd",
+      "description": "Proposed approximately 67-mile 230 kV line connecting Black Rock and Sigurd substations.",
+      "sources": [
+        {
+          "file": "black-rock-to-sigurd.html",
+          "locator": "About the project; equipment facts; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/black-rock-to-sigurd.html"
+        },
+        {
+          "file": "transmission-projects.html",
+          "locator": "Other transmission line projects — Black Rock to Sigurd row",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2027",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Anticipated in-service year"
+      },
+      "sourceState": "Central Utah",
+      "sourceLocation": "Black Rock Substation to Sigurd Substation",
+      "aliases": [],
+      "notes": [
+        "Planning and permitting context remains distinct from the general statement that the company is building the line."
+      ],
+      "milestones": []
+    },
+    {
+      "sourceId": "blueprint-south--project",
+      "name": "Blueprint South",
+      "description": "Proposed 500 kV line, two 230 kV lines, a 500 kV substation and two series-compensation stations in south-central Oregon.",
+      "sources": [
+        {
+          "file": "blueprint-south.html",
+          "locator": "Opening project scope; Location routing study; Preliminary project schedule",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        230,
+        500
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": "South-central Oregon",
+      "sourceLocation": "Crook, Deschutes, Lake and Klamath counties; Klamath Falls to Bend area",
+      "aliases": [],
+      "notes": [
+        "Retained as one bundled project; alternative routes and substations remain under study. No unlisted component projects are invented.",
+        "Planning/permitting is forecast for 2023–2029 and construction for 2030–2033; 2033 is not explicitly a service event."
+      ],
+      "milestones": [
+        {
+          "field": "Preliminary construction start year",
+          "date": {
+            "value": "2030",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Preliminary construction start year"
+          },
+          "evidence": [
+            {
+              "file": "blueprint-south.html",
+              "locator": "Opening project scope; Location routing study; Preliminary project schedule",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html"
+            }
+          ]
+        },
+        {
+          "field": "Preliminary construction end year",
+          "date": {
+            "value": "2033",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Preliminary construction end year"
+          },
+          "evidence": [
+            {
+              "file": "blueprint-south.html",
+              "locator": "Opening project scope; Location routing study; Preliminary project schedule",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/blueprint-south.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "segment-b-honeyville-populus-threemile--maintenance",
+      "name": "Honeyville to Populus and Threemile Knoll maintenance",
+      "description": "Two-phase project: approximately 67 miles of 345 kV reconductoring and 40 miles of 138 kV rebuild.",
+      "sources": [
+        {
+          "file": "segment-b-honeyville-populus-threemile.html",
+          "locator": "Project overview; Phase 1; Phase 2; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html"
+        },
+        {
+          "file": "gateway-central.html",
+          "locator": "Segments in progress — Honeyville to Populus and Threemile Knoll",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "upgrade",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        138,
+        345
+      ],
+      "date": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected overall completion year; phase 2 Q4 2030"
+      },
+      "sourceState": "Idaho to Utah",
+      "sourceLocation": "Populus–Honeyville; Grace–Treasureton and Grace–Threemile Knoll",
+      "aliases": [
+        "Source program: Energy Gateway",
+        "Source label: Segment B maintenance"
+      ],
+      "notes": [
+        "One two-phase upgrade, distinct from the original Populus–Terminal Segment B placed in service in 2010.",
+        "Phase-one completion differs between sources: the dedicated page says end of 2028; Gateway Central says end of 2029. The conflict is unresolved.",
+        "Phase two states Q4 2030 in-service and construction January 2029–October 2030. Month/quarter precision is preserved without invented day bounds."
+      ],
+      "milestones": [
+        {
+          "field": "Phase 1 detail expected completion year",
+          "date": {
+            "value": "2028",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Phase 1 detail expected completion year"
+          },
+          "evidence": [
+            {
+              "file": "segment-b-honeyville-populus-threemile.html",
+              "locator": "Project overview; Phase 1; Phase 2; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html"
+            }
+          ]
+        },
+        {
+          "field": "Phase 1 Gateway Central expected completion year",
+          "date": {
+            "value": "2029",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Phase 1 Gateway Central expected completion year"
+          },
+          "evidence": [
+            {
+              "file": "gateway-central.html",
+              "locator": "Segments in progress — Honeyville to Populus and Threemile Knoll",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-central.html"
+            }
+          ]
+        },
+        {
+          "field": "Phase 2 expected construction start",
+          "date": {
+            "value": "2029-01",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Phase 2 expected construction start"
+          },
+          "evidence": [
+            {
+              "file": "segment-b-honeyville-populus-threemile.html",
+              "locator": "Project overview; Phase 1; Phase 2; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html"
+            }
+          ]
+        },
+        {
+          "field": "Phase 2 expected construction end",
+          "date": {
+            "value": "2030-10",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Phase 2 expected construction end"
+          },
+          "evidence": [
+            {
+              "file": "segment-b-honeyville-populus-threemile.html",
+              "locator": "Project overview; Phase 1; Phase 2; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/segment-b-honeyville-populus-threemile.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "spanish-fork-to-mercer--line",
+      "name": "Spanish Fork to Mercer",
+      "description": "Proposed approximately 45-mile 345 kV line from Spanish Fork Substation in Mapleton to Mercer Substation in Eagle Mountain.",
+      "sources": [
+        {
+          "file": "spanish-fork-to-mercer.html",
+          "locator": "Project overview; Project map and planning/design-stage description",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/spanish-fork-to-mercer.html"
+        },
+        {
+          "file": "transmission-projects.html",
+          "locator": "Other transmission line projects — Spanish Fork to Mercer row",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+        },
+        {
+          "file": "2025_IRP_Vol_1.pdf",
+          "locator": "PDF page 111 / printed page 95 — PACE Central Utah, third planned project bullet",
+          "url": "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/integrated-resource-plan/2025-irp/2025_IRP_Vol_1.pdf"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        345
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No in-service milestone supplied"
+      },
+      "sourceState": "Utah",
+      "sourceLocation": "Mapleton to Eagle Mountain, Utah",
+      "aliases": [
+        "Related historical source record: pacificorp-irp-local:2025-ch4-p095-pace-central-utah-3"
+      ],
+      "notes": [
+        "The project is in planning/design and routing study. The source notes an August 2026 route amendment.",
+        "The index lists a 2023–2028 timeline without an explicit service event; it is not promoted to an in-service date.",
+        "The 2025 IRP local list describes the same named endpoints and 345 kV scope. This is an evidenced cross-source overlap, not a second distinct engineering project or a merged historical record."
+      ],
+      "milestones": []
+    },
+    {
+      "sourceId": "three-peaks-to-purgatory-flat--line",
+      "name": "Three Peaks to Purgatory Flat",
+      "description": "Proposed approximately 54-mile 345 kV line from Three Peaks near Cedar City to Purgatory Flat near Washington, Utah.",
+      "sources": [
+        {
+          "file": "three-peaks-to-purgatory-flat.html",
+          "locator": "Project overview; equipment facts; Anticipated project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html"
+        },
+        {
+          "file": "transmission-projects.html",
+          "locator": "Other transmission line projects — Three Peaks to Purgatory Flat row",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "project",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        345
+      ],
+      "date": {
+        "value": "2033",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Anticipated in-service year from project detail"
+      },
+      "sourceState": "Utah",
+      "sourceLocation": "Three Peaks Substation near Cedar City to Purgatory Flat Substation near Washington",
+      "aliases": [],
+      "notes": [
+        "The detail explicitly states service in 2033; the index timeline instead ends in 2032. The labeled service event takes precedence for this field and both statements remain evidence.",
+        "Construction is forecast for 2031–2033, with no exact day bounds; the project remains in planning/routing."
+      ],
+      "milestones": [
+        {
+          "field": "Anticipated construction start year",
+          "date": {
+            "value": "2031",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Anticipated construction start year"
+          },
+          "evidence": [
+            {
+              "file": "three-peaks-to-purgatory-flat.html",
+              "locator": "Project overview; equipment facts; Anticipated project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html"
+            }
+          ]
+        },
+        {
+          "field": "Anticipated construction end year",
+          "date": {
+            "value": "2033",
+            "precision": "year",
+            "kind": "unknown",
+            "label": "Anticipated construction end year"
+          },
+          "evidence": [
+            {
+              "file": "three-peaks-to-purgatory-flat.html",
+              "locator": "Project overview; equipment facts; Anticipated project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/three-peaks-to-purgatory-flat.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "segment-e8--midpoint-to-hemingway",
+      "name": "Gateway West Segment E8 — Midpoint to Hemingway",
+      "description": "Proposed 500 kV line between Midpoint and Hemingway, with substation expansions and three signal-regeneration stations.",
+      "sources": [
+        {
+          "file": "segment-e8.html",
+          "locator": "Opening project scope; Project timeline",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+        },
+        {
+          "file": "gateway-west.html",
+          "locator": "Populus to Hemingway — Segment E; E8 link and description",
+          "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west.html"
+        }
+      ],
+      "disposition": "retained",
+      "recordKind": "transmission-project",
+      "recordUnit": "component",
+      "lifecycle": "planned",
+      "status": "Planned physical work",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2030-06",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Completed/In-Service — June 2030"
+      },
+      "sourceState": "Idaho",
+      "sourceLocation": "Midpoint Substation in Jerome to Hemingway Substation in Melba",
+      "aliases": [
+        "Source program: Energy Gateway",
+        "Source parent label: Gateway West Segment E",
+        "Source child label: E8"
+      ],
+      "notes": [
+        "E8 is an explicitly identified child of Segment E. The aggregate parent is excluded from imported records, and the remaining parent scope is not declared absent.",
+        "Child scope states approximately 133 miles; the Gateway West page describes E8 as 128 miles. The discrepancy remains unresolved.",
+        "The source describes a joint project with Idaho Power; no singular owner identity is inferred.",
+        "Construction is forecast for March 2028–June 2030. These month values do not supply a day-precision construction interval."
+      ],
+      "milestones": [
+        {
+          "field": "Hemingway to Mayfield section completion",
+          "date": {
+            "value": "2028-11",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Hemingway to Mayfield section completion"
+          },
+          "evidence": [
+            {
+              "file": "segment-e8.html",
+              "locator": "Opening project scope; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+            }
+          ]
+        },
+        {
+          "field": "Mayfield to Midpoint section completion",
+          "date": {
+            "value": "2030-06",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Mayfield to Midpoint section completion"
+          },
+          "evidence": [
+            {
+              "file": "segment-e8.html",
+              "locator": "Opening project scope; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+            }
+          ]
+        },
+        {
+          "field": "Expected construction start",
+          "date": {
+            "value": "2028-03",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Expected construction start"
+          },
+          "evidence": [
+            {
+              "file": "segment-e8.html",
+              "locator": "Opening project scope; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+            }
+          ]
+        },
+        {
+          "field": "Expected construction end",
+          "date": {
+            "value": "2030-06",
+            "precision": "month",
+            "kind": "unknown",
+            "label": "Expected construction end"
+          },
+          "evidence": [
+            {
+              "file": "segment-e8.html",
+              "locator": "Opening project scope; Project timeline",
+              "url": "https://www.pacificorp.com/transmission/transmission-projects/energy-gateway/gateway-west/segment-e8.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
