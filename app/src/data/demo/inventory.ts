@@ -61,18 +61,63 @@ function createProject(group: typeof groups[number], index: number): Project {
   }
 }
 
-const projects = groups.flatMap(group => Array.from({ length: 100 }, (_, index) => createProject(group, index)))
-const sourceEditions: SourceEdition[] = groups.map(group => ({
-  sourceKey: group.key, editionId, label: `${group.name}; June 2026 synthetic edition`, reportingGroupId: group.key, reportingGroupName: group.name,
-  publisher: "Synthetic fixture publisher", processAuthority: null, publishedOn: editionId, retrievedOn: editionId,
-  source: { file: `${group.key}-synthetic-inventory.json`, locator: "All 100 synthetic records", url: null },
-  sha256: "0".repeat(64), geographicScope: "Fictional regional portfolio; not evidence of geographic coverage", inventoryScope: "Synthetic transmission and capital-context records", scope: "full",
-  counts: { sourceRows: 100, importedRecords: 100, excludedRows: 0, failedRows: 0, pendingRows: 0, locatedRecords: projects.filter(project => project.utilityId === group.key && project.location !== null).length },
-  exclusions: [], limitations: ["All identities, dates, ownership evidence and positions are synthetic. The zero digest is a fixture sentinel, not a source-file hash."],
-}))
+function createUnlocatedProject(group: typeof groups[number], index: number): Project {
+  const sourceId = `UG-${String(index + 1).padStart(4, "0")}`
+  const evidence: SourceRef = { file: `${group.key}-synthetic-inventory.json`, locator: `Synthetic upgrade ${sourceId}; source context and milestone scenario`, url: null }
+  const station = stations[index % stations.length]
+  const work = workTypes[index % workTypes.length]
+  const year = String(2027 + index % 8)
+  const month = String(1 + index % 12).padStart(2, "0")
+  const precision = index % 13 === 0 ? "unknown" : index % 9 === 0 ? "year" : index % 5 === 0 ? "month" : "day"
+  const value = precision === "unknown" ? null : precision === "year" ? year : precision === "month" ? `${year}-${month}` : `${year}-${month}-15`
+  const needDate = index % 4 === 0
+  const date: Project["date"] = { value, precision, kind: needDate ? "need" : "in-service", label: needDate ? "Required need date (synthetic)" : "Projected in-service date (synthetic)" }
+  const state: InventoryMetadata["lifecycle"] = ["planned", "approved", "under-construction", "planned", "on-hold", "unknown"][index % 6] as InventoryMetadata["lifecycle"]
+  const milestones: NonNullable<InventoryMetadata["milestones"]> = [{ field: needDate ? "RequiredNeedDate" : "ProjectedInServiceDate", date, evidence: [evidence] }]
+  if (index % 3 === 0) milestones.push({ field: "BoardApprovalDate", date: { value: `2026-${String(1 + index % 5).padStart(2, "0")}`, precision: "month", kind: "unknown", label: "Board approval date (synthetic)" }, evidence: [evidence] })
+  if (index % 6 === 2) milestones.push({ field: "PartialInServiceDate", date: { value: "2026-05-15", precision: "day", kind: "in-service", label: "Partial in-service date (synthetic)" }, evidence: [evidence] })
+  return {
+    id: `${group.key}:${sourceId}`, utilityId: group.key, sourceId,
+    name: `${station} ${work} upgrade ${index + 1} (synthetic)`,
+    description: `Synthetic ${work} for ${index % 2 ? "growing regional load and contingency performance" : "aging equipment replacement and local reliability"}. ${index % 3 ? "The source describes an upgrade without a mapped site." : "Scope includes protection changes and associated station work; the precise site is unresolved."}`,
+    sponsor: null, status: state === "unknown" ? null : `${state.replaceAll("-", " ")} (synthetic source)`,
+    voltageKv: index % 11 === 0 ? [] : [[115, 230, 345, 500][index % 4]],
+    date, buildWindow: null, location: null, sources: [evidence], notes: [],
+    inventory: {
+      sourceKey: group.key, editionId, editionLabel: `${group.name}; June 2026 synthetic edition`, reportingGroupName: group.name,
+      recordKind: index % 29 === 0 ? "capital-project-context" : "transmission-project",
+      recordUnit: index % 11 === 0 ? "component" : "upgrade", lifecycle: state, lifecycleAsOf: editionId,
+      lifecycleDateMeaning: index % 2 ? "snapshot-observed" : "source-edition",
+      owner: index % 5 === 0 ? null : { id: `${group.key}-owner`, name: group.owner, identityScope: "global", evidence: [evidence] },
+      sourceState: ["Virginia (synthetic)", "North Carolina (synthetic)", "West Virginia (synthetic)", null][index % 4],
+      sourceLocation: index % 7 === 0 ? null : index % 2 ? `${station} service area (synthetic); site unresolved` : `Between ${station} and ${stations[(index + 3) % stations.length]} (synthetic corridor description)`,
+      sourceUpdatedOn: index % 8 === 0 ? null : `2026-${String(1 + index % 5).padStart(2, "0")}-${String(1 + index % 27).padStart(2, "0")}`,
+      milestones, parentProgramId: null, aliases: index % 3 === 0 ? [`SYN-WO-U-${index + 1}`] : [],
+      workType: work, constructionStart: null, nativeGeometry: null, centerRole: "unknown",
+      locationAssumptions: ["No coordinates supplied in this synthetic source; location text does not establish a mapped center."],
+    },
+  }
+}
+
+// Keep the existing 300 snapshots and their order intact; append unlocated scale records.
+const projects = [
+  ...groups.flatMap(group => Array.from({ length: 100 }, (_, index) => createProject(group, index))),
+  ...groups.flatMap(group => Array.from({ length: 1800 }, (_, index) => createUnlocatedProject(group, index))),
+]
+const sourceEditions: SourceEdition[] = groups.map(group => {
+  const records = projects.filter(project => project.utilityId === group.key)
+  return {
+    sourceKey: group.key, editionId, label: `${group.name}; June 2026 synthetic edition`, reportingGroupId: group.key, reportingGroupName: group.name,
+    publisher: "Synthetic fixture publisher", processAuthority: null, publishedOn: editionId, retrievedOn: editionId,
+    source: { file: `${group.key}-synthetic-inventory.json`, locator: `All ${records.length} synthetic records`, url: null },
+    sha256: "0".repeat(64), geographicScope: "Fictional regional portfolio; not evidence of geographic coverage", inventoryScope: "Synthetic transmission and capital-context records", scope: "full",
+    counts: { sourceRows: records.length, importedRecords: records.length, excludedRows: 0, failedRows: 0, pendingRows: 0, locatedRecords: records.filter(project => project.location !== null).length },
+    exclusions: [], limitations: ["All identities, dates, ownership evidence and positions are synthetic. The zero digest is a fixture sentinel, not a source-file hash."],
+  }
+})
 
 export const inventoryDemoDataset: Dataset = {
-  schemaVersion: 2, mode: "demo", title: "300 synthetic source-qualified inventory records", generatedAt: "2026-09-30",
+  schemaVersion: 2, mode: "demo", title: `${projects.length} synthetic source-qualified inventory records`, generatedAt: "2026-09-30",
   projects, sourceEditions,
   coverage: { processed: projects.length, skipped: 0, failed: 0, notes: ["Deterministic consumer fixture with three additional reporting groups; separate from real source data."] },
 }
