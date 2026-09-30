@@ -12,7 +12,7 @@
     "unverifiedLocations": 113,
     "missingLocations": 12881,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 16,
+    "newRegionalSourcesQualified": 17,
     "newFullRegionalInventoriesImported": 16,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 5,
@@ -2477,6 +2477,16 @@
       "missingInput": "Native locations, evidenced owners and complete/current asset-level register or source identity crosswalk remain absent; declared public scope complete",
       "owner": "source_discovery",
       "task": "F27"
+    },
+    {
+      "sourceKey": "carolinas-tpc",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://carolinastpc.org/reference/",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Connected six-record sample and full98; native location evidence and cross-source owner/identity reconciliation remain absent",
+      "owner": "source_discovery",
+      "task": "F27-CTPC-I"
     }
   ],
   "scopeLimits": [
@@ -2771,6 +2781,18 @@
       "locatedRecords": 0,
       "scope": "Both named remaining-work descriptions in the July7,2026 release; outage-affected feeders and old assets are not additional projects.",
       "contract": "specs/features/F27-us-regional-expansion/vi-wapa/spec.md"
+    },
+    {
+      "sourceKey": "carolinas-tpc",
+      "editionId": "2025-plan-midyear-2026-08",
+      "reportingGroup": "carolinas-tpc",
+      "status": "qualified-production-in-progress",
+      "sourceRows": 120,
+      "proposedRetainedRecords": 98,
+      "proposedExcludedRows": 22,
+      "locatedRecords": 0,
+      "scope": "Complete August2026 update tables,89 physical transmission projects and9 conceptual planning observations; participant-area scope, not statewide inventory",
+      "contract": "specs/features/F27-us-regional-expansion/carolinas-tpc/spec.md"
     }
   ]
 }
