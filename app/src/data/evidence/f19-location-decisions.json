@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "researchedAt": "2026-09-30",
+  "targetProjectIds": ["desc-0139-m-n", "desc-6809-g", "desc-06367-a-c-h", "desc-6852", "desc-6810-o", "gpc-17075", "gpc-20785", "gpc-21116", "gpc-20794", "gpc-17993"],
+  "decisions": [
+    {
+      "id": "f19-desc-0139-m-n",
+      "projectId": "desc-0139-m-n",
+      "decision": "supported-proposal",
+      "sourceIdentity": "Dominion project 0139 M,N: Okatie 230-115kV Substation, Jasper–Yemassee 230kV #1 Fold-in",
+      "suppliedLocator": "2024-2028-2million-and-above-project-descriptions.pdf, physical page 3, Project ID 0139 M,N",
+      "publicSources": [
+        {
+          "title": "USACE Joint Public Notice SAC-2021-00203",
+          "url": "https://www.sac.usace.army.mil/Portals/43/docs/regulatory/publicnotices/SAC-2021-00203_Jasper_OkatieSubstation.pdf?ver=AEs4bTFovJe8paCXDtvs_A%3D%3D",
+          "publishedDate": "2022-09-08",
+          "locator": "Page 1 location paragraph; page 2 Applicant's Stated Purpose and Project Description",
+          "evidence": "The notice gives 32.3350, -81.0322 near Red Dam Road in Hardeeville, Jasper County. It describes expanding the existing Okatie 115kV station to 230/115kV and folding in Jasper–Yemassee 230kV, matching the supplied project scope."
+        }
+      ],
+      "matchReason": "Named station, voltage conversion, named transmission line, utility and county context agree. Proposed source-point remains unverified and represents the permit area rather than a surveyed center.",
+      "limitations": ["Primary-source text was available through the public search index. Direct PDF retrieval returned HTTP 403; no access restriction was bypassed.", "The 2022 permit notice does not update the historical project's status, date or construction window."],
+      "enables": "Preview a one-project location revision through createLocationRevision using the associated proposal draft. Preserve all existing project fields and keep confidence unverified."
+    }
+  ]
+}
