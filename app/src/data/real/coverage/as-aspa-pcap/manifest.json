@@ -16,13 +16,13 @@
   "sha256": "dbf32acea623526934a401e19a6550b923bc7a333e2c11929e1c0b20eff5e7a6",
   "geographicScope": "American Samoa, Tutuila ASPA priority funding actions; parent-action Tafuna location is program-level context only.",
   "inventoryScope": "All three ASPA priority actions and three numbered Action1 projects; exclude parent aggregate, storage, vehicles and charging, retain control-center context and explicit transmission line. Separate ASTCA actions are outside this ASPA subset.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 6,
-    "importedRecords": 1,
+    "importedRecords": 2,
     "excludedRows": 4,
     "failedRows": 0,
-    "pendingRows": 1,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -50,7 +50,6 @@
     "Requested funding is not construction approval or evidence of current status. Related generation funding and emissions estimates do not establish benefit or funding for these actions.",
     "A current public utility capital/transmission inventory and native location/ownership/date evidence remain missing.",
     "No evidenced asset owner, voltage, native project center, service date or construction interval is supplied. ASPA is the implementing agency, not an inferred asset owner.",
-    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted.",
-    "One retained diagnostic is emitted first; 1 accepted entries await provider connection and full normalization."
+    "Concise factual paraphrases and citations are used for authorized private analysis; no original PDF/website prose publication or open/commercial reuse license is asserted."
   ]
 }

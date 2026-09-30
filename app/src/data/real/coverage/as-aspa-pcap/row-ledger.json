@@ -32,8 +32,8 @@
       "kind": "unknown",
       "label": "No service date supplied"
     },
-    "disposition": "pending",
-    "reason": "Accepted retained entry; normalization awaits sample connection."
+    "disposition": "imported",
+    "projectId": "as-aspa-pcap:aspa-priority-action-1-a"
   },
   {
     "sourceId": "aspa-priority-action-1-b",
