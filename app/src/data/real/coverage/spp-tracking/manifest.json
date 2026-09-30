@@ -16,16 +16,29 @@
   "sha256": "167bb301dc9fd290f7901318c43312b28513aec711484d1da17162a207f09b5f",
   "geographicScope": "Partial SPP regional public transmission-upgrade portfolio; raw states and named buses do not establish complete jurisdiction coverage.",
   "inventoryScope": "All Appendix 1 UID upgrades except Complete, Closed Out and Withdrawn. Parent PIDs are relationships, not additional inventory records; Appendix 2 adds no independent upgrades.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 1422,
-    "importedRecords": 6,
-    "excludedRows": 0,
+    "importedRecords": 1247,
+    "excludedRows": 175,
     "failedRows": 0,
-    "pendingRows": 1416,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
-  "exclusions": [],
+  "exclusions": [
+    {
+      "reason": "Closed Out — complete with closeout requirements fulfilled",
+      "count": 12
+    },
+    {
+      "reason": "Complete — construction complete and in service",
+      "count": 155
+    },
+    {
+      "reason": "Withdrawn — no longer retained in the active scope",
+      "count": 8
+    }
+  ],
   "limitations": [
     "Report publication/lifecycle edition anchor is July 7, 2026; the archive index was posted August 5, 2026. A conflicting older reporting-period string does not establish an activity interval.",
     "Every location is unknown. Bus numbers/names and state labels are raw context, not coordinates or routes.",
