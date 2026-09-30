@@ -63,6 +63,8 @@ After source choice, coordinator activates F26-C1 (shared validation/migration/e
 
 ## Current milestone and assignments
 
+**F27-BPA-E2 in progress:** [accepted map-location revisions](features/F27-us-regional-expansion/bpa-location-revisions/spec.md). The six-decision report is complete; coordinator accepts three general pins only, leaving three locations unresolved. Core owns the guarded helper, UI owns the two Readiness consumers, coordinator owns accepted JSON/shared guard/register/checks. Parallel work starts after the contract commit; no map or matching changes.
+
 **F27 tenth increment complete through PR154.** Alabama six, Georgia ten and AEP eight followed thirteen connected sample observations. The shared Source coverage dialog replaces growing edition paragraphs in Home/Outcomes and adds consistent access from Readiness; it separates active counts, imported scopes and four assessed gaps. Display-only source-note curation preserves raw evidence and exceptions. Coordinator's one build and representative source/revision/coverage/copy case passed at 26f3091, 13:08:50–13:09:18 UTC (28 seconds): 14,923 records, 113 centers, six unchanged candidates, 28,417 reconciled rows, preserved local owner/notes and 74,469,266-byte import round trip. Thirty-two JSON assets; initial JS 864,908 bytes. Existing Vite-loader/large-chunk warnings remain; no browser/visual/mobile/persistence-interaction checks. F27-BPA-E1 now assesses six exact native point roles; OGF qualification awaits legitimately accessible data. National scope remains incomplete.
 
 
