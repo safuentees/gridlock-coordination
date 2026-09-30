@@ -1,0 +1,339 @@
+{
+  "sourceKey": "ga-gpc-public",
+  "editionId": "observed-2026-09-30",
+  "scope": "sample",
+  "artifacts": [
+    {
+      "file": "index.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+      "sha256": "8188831eae7426228620ba3a8219e88306b47eba95505c32ac7d131efb736192",
+      "bytes": 322065
+    },
+    {
+      "file": "tomochichi-towaliga.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html",
+      "sha256": "d6c5a359eae9183fa3dcf72cea957c2c048af67f48d910441144c8897fa70be1",
+      "bytes": 304900
+    },
+    {
+      "file": "big-tazewell-farley.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html",
+      "sha256": "4d28a92e98a1ac53af0e08d76ed57e975262523de04c6f1164408ccfbdad095c",
+      "bytes": 265496
+    },
+    {
+      "file": "decatur-scottdale.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html",
+      "sha256": "e9ffcbb71c12a2d8bec0818e23336b80a362ce5aa17c8845bc9b1396103e2905",
+      "bytes": 275820
+    },
+    {
+      "file": "callaway-thomson.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+      "sha256": "fb729fea410327a7a83757b9e0ef22a71535e9fb7bd32ef41316de81397adca5",
+      "bytes": 276989
+    },
+    {
+      "file": "effingham-county.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+      "sha256": "3b6fcdce932f6d3f777e0372746c572ec06f671ce71d8f8a6ef7784dd8cf83e2",
+      "bytes": 261279
+    },
+    {
+      "file": "hills-bridge-speedway.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html",
+      "sha256": "e37a969992b149014159c24f3073ea3093159916382092ca7a56be8a2a24dfae",
+      "bytes": 363172
+    },
+    {
+      "file": "grassy-hollow-great-valley.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html",
+      "sha256": "e4d07f49e856fce68947beaafeaeb0f9360674c518264c6273be87316aab45ac",
+      "bytes": 263979
+    },
+    {
+      "file": "hatch-wadley.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html",
+      "sha256": "8a588810d833260556a251dab3c32d66a3b168d290be90ef5821fc80ee18da12",
+      "bytes": 266212
+    },
+    {
+      "file": "conyers-klondike.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html",
+      "sha256": "afe408c84bd83d10b11dfd280355b3e6f4331600bed014a8a489bcc894464ac8",
+      "bytes": 282339
+    },
+    {
+      "file": "ashley-park.html",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html",
+      "sha256": "f6cdc770c3f4278670d85edc73b63ce4385ff7b4306765226423d3896ca16dd8",
+      "bytes": 293169
+    },
+    {
+      "file": "hills-bridge-letter-to-residents.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/hills-bridge-letter-to-residents.pdf",
+      "sha256": "abd348fefb0daa4959b1c702b29614431f24407a3091df9e3ed2cf959b1668eb",
+      "bytes": 134807
+    },
+    {
+      "file": "grassy-hollow-great-valley-pre-construction-postcards.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/grassy-hollow-great-valley-pre-construction-postcards.pdf",
+      "sha256": "b8e9e184d8bb3e97832298028bf87bac9fbcc95d061553f0fe59b20006a70b3b",
+      "bytes": 2372473
+    },
+    {
+      "file": "external-project-overview-hatch-wadley-500k-kv.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/external-project-overview-hatch-wadley-500k-kv.pdf",
+      "sha256": "0d169b00768874aff392b1300d7554f50960ef365c0a0b084b987615fda9f552",
+      "bytes": 254907
+    },
+    {
+      "file": "ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/about/ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+      "sha256": "79d950995bc9db226aa810979ae0c4ff25a1e7248d7470de0bfeb58336b9d678",
+      "bytes": 140644
+    }
+  ],
+  "counts": {
+    "sourceRows": 10,
+    "importedRecords": 6,
+    "excludedRows": 0,
+    "failedRows": 0,
+    "pendingRows": 4,
+    "locatedRecords": 0
+  },
+  "recordKindCounts": {
+    "capital-project-context": 3,
+    "transmission-project": 3
+  },
+  "lifecycleCounts": {
+    "unknown": 5,
+    "planned": 1
+  },
+  "completeRetainedRecordKindCounts": {
+    "capital-project-context": 4,
+    "transmission-project": 6
+  },
+  "completeRetainedLifecycleCounts": {
+    "unknown": 7,
+    "planned": 3
+  },
+  "rows": [
+    {
+      "sourceId": "tomochichi-towaliga",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Tomochichi - Towaliga River 230 kV",
+      "indexCountyRegion": "Butts & Spalding counties",
+      "indexType": "Area Project",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html",
+      "reason": "Two roughly 5-mile 230 kV lines plus Tomochichi substation. Planning text coexists with a substation construction-began milestone; do not assign one component stage to the program.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "unknown",
+      "sourceRow": 1,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 1: Tomochichi - Towaliga River 230 kV; Type and County/Region fields"
+      },
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:tomochichi-towaliga",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate."
+    },
+    {
+      "sourceId": "big-tazewell-farley",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Big Tazewell - Farley 500 kV",
+      "indexCountyRegion": "Chattahoochee, Clay, Early, Marion, Quitman, & Stewart counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html",
+      "reason": "Approximately 102-mile line to a new Big Tazewell substation. Detail adds Houston County, Alabama; index lists Georgia counties only. FAQ construction wording conflicts with future line-construction schedule.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 2,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 2: Big Tazewell - Farley 500 kV; Type and County/Region fields"
+      },
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:big-tazewell-farley",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate."
+    },
+    {
+      "sourceId": "decatur-scottdale",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Decatur - Scottdale 115 kV",
+      "indexCountyRegion": "Dekalb County",
+      "indexType": "Transmission Line Upgrade",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html",
+      "reason": "Rebuild of approximately 2.5 miles and relocation of approximately 0.7 miles. Do not sum these as independent route lengths; 1965 is existing infrastructure history, not the project date.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "upgrade",
+      "sourceRow": 3,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 3: Decatur - Scottdale 115 kV; Type and County/Region fields"
+      },
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:decatur-scottdale",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate."
+    },
+    {
+      "sourceId": "callaway-thomson",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Callaway Road - Thomson Primary 500 kV",
+      "indexCountyRegion": "Columbia & McDuffie counties",
+      "indexType": "Area Project",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+      "reason": "Callaway Road 500/230 kV substation plus two 500 kV lines, approximately 10 and 7 miles. Preserve the area-program unit; timeline uses seasons and publishes no completion milestone.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "sourceRow": 4,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 4: Callaway Road - Thomson Primary 500 kV; Type and County/Region fields"
+      },
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:callaway-thomson",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate."
+    },
+    {
+      "sourceId": "effingham-county",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Effingham County 500 kV",
+      "indexCountyRegion": "Effingham County",
+      "indexType": "Area Project",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+      "reason": "Expected 500/230 kV substation, 500 kV infrastructure and associated facilities. Components/routes remain under planning; no project map or completion milestone published.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "planned",
+      "sourceRow": 5,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 5: Effingham County 500 kV; Type and County/Region fields"
+      },
+      "disposition": "pending",
+      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+    },
+    {
+      "sourceId": "hills-bridge-speedway",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Hills Bridge – Speedway 500/230 kV",
+      "indexCountyRegion": "Clayton & Henry counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html",
+      "reason": "Detail scope is two substations and three lines, not one line: a 500 kV loop and two 230 kV links. Planning prose, Q2 2026 construction schedule and July clearing notice are retained separately.",
+      "recordKind": "capital-project-context",
+      "lifecycle": "unknown",
+      "sourceRow": 6,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 6: Hills Bridge – Speedway 500/230 kV; Type and County/Region fields"
+      },
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:hills-bridge-speedway",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate.",
+      "supportingNotice": "hills-bridge-letter-to-residents.pdf",
+      "supportingPublishedOn": "2026-07-06"
+    },
+    {
+      "sourceId": "grassy-hollow-great-valley",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Grassy Hollow – Great Valley 230 kV",
+      "indexCountyRegion": "Bartow County",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html",
+      "reason": "Approximately 10.4-mile 230 kV line plus new Grassy Hollow substation. Undated construction notice describes a range of possible work; elapsed tentative schedule does not establish current stage.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 7,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 7: Grassy Hollow – Great Valley 230 kV; Type and County/Region fields"
+      },
+      "disposition": "pending",
+      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+    },
+    {
+      "sourceId": "hatch-wadley",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Hatch – Wadley Primary 500 kV",
+      "indexCountyRegion": "Appling, Emanuel, Jefferson, & Toombs counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html",
+      "reason": "Approximately 75-mile 500 kV line. Undated project-information notice says route surveys are underway; preserve that source observation without treating the entire line as under construction.",
+      "recordKind": "transmission-project",
+      "lifecycle": "planned",
+      "recordUnit": "project",
+      "sourceRow": 8,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 8: Hatch – Wadley Primary 500 kV; Type and County/Region fields"
+      },
+      "disposition": "pending",
+      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+    },
+    {
+      "sourceId": "conyers-klondike",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Conyers – Klondike 230 kV",
+      "indexCountyRegion": "Dekalb & Rockdale counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html",
+      "reason": "New approximately 8.5-mile 230 kV line uses portions of an existing corridor plus new corridor. Existing and proposed lines share names; no historical-record merge is supported.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 9,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 9: Conyers – Klondike 230 kV; Type and County/Region fields"
+      },
+      "disposition": "pending",
+      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+    },
+    {
+      "sourceId": "ashley-park",
+      "identityBasis": "source-locator",
+      "nativePublisherProjectId": null,
+      "indexTitle": "Ashley Park – Wansley 500 kV",
+      "indexCountyRegion": "Fayette & Heard counties",
+      "indexType": "New Transmission Line",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html",
+      "reason": "New approximately 35-mile 500 kV line; detail adds Fulton and Coweta counties. Dated 2025 letter distinguishes line surveying from substation construction; do not transfer the substation stage to the line.",
+      "recordKind": "transmission-project",
+      "lifecycle": "unknown",
+      "recordUnit": "project",
+      "sourceRow": 10,
+      "source": {
+        "file": "index.html",
+        "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+        "locator": "Current Projects, entry 10: Ashley Park – Wansley 500 kV; Type and County/Region fields"
+      },
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:ashley-park",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate.",
+      "supportingNotice": "ashley-park-wansley-500-kv-project-letter-to-residents-100325.pdf",
+      "supportingPublishedOn": "2025-10-03"
+    }
+  ]
+}

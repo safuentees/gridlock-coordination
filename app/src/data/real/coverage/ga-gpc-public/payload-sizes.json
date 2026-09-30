@@ -1,0 +1,10 @@
+{
+  "sourceKey": "ga-gpc-public",
+  "editionId": "observed-2026-09-30",
+  "scope": "sample",
+  "records": 6,
+  "compactUtf8Bytes": 30369,
+  "formattedDownloadUtf8Bytes": 39629,
+  "measurement": "Source-only Dataset2 UTF-8 JSON including final newline; aggregate/export envelope can be larger.",
+  "datasetFileFormat": "formatted"
+}
