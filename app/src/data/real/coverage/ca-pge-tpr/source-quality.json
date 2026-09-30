@@ -1,0 +1,116 @@
+{
+  "sourceKey": "ca-pge-tpr",
+  "editionId": "2026-05-01",
+  "scope": "sample",
+  "originals": [
+    {
+      "file": "pge-may2026-public.xlsx",
+      "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+      "sha256": "917464588f082e2239726479b331dff6ffda97436af9daa5372332a734d4b94e"
+    },
+    {
+      "file": "pge-may2026-transmittal.pdf",
+      "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871864",
+      "sha256": "50b35533feee7eecb1c8da83269716390227559bb74412a558aeed3f62937393"
+    }
+  ],
+  "fullSourceStatusCounts": {
+    "Cancelled": 1,
+    "Construction (10%-25%)": 24,
+    "Construction (25%-50%)": 17,
+    "Construction (50%-75%)": 37,
+    "Construction (over 75%)": 51,
+    "Construction (under 10%)": 9,
+    "Engineering less than 50% complete": 234,
+    "Engineering more than 50% complete": 521,
+    "On Hold": 123,
+    "Operational": 1079,
+    "Planning": 390,
+    "Programmatic Work": 185
+  },
+  "acceptedRetainedKindCounts": {
+    "capital-project-context": 278,
+    "planning-context": 312,
+    "transmission-project": 1001
+  },
+  "acceptedRetainedLifecycleCounts": {
+    "on-hold": 123,
+    "planned": 1145,
+    "under-construction": 138,
+    "unknown": 185
+  },
+  "physicalRecordUnitCounts": {
+    "component": 977,
+    "upgrade": 24
+  },
+  "contextRecordUnit": "Omitted for unsupported program/budget units.",
+  "acceptedCurrentServicePrecisionCounts": {
+    "day": 1306,
+    "unknown": 285
+  },
+  "importedKindCounts": {
+    "capital-project-context": 1,
+    "planning-context": 2,
+    "transmission-project": 3
+  },
+  "importedLifecycleCounts": {
+    "on-hold": 1,
+    "planned": 2,
+    "under-construction": 1,
+    "unknown": 2
+  },
+  "sampleIds": [
+    "ca-pge-tpr:5562465",
+    "ca-pge-tpr:5771718",
+    "ca-pge-tpr:5779902",
+    "ca-pge-tpr:5792705",
+    "ca-pge-tpr:5816828",
+    "ca-pge-tpr:Ex112888"
+  ],
+  "classificationPrecedence": [
+    "Terminal Operational/Cancelled exclusion",
+    "Forecast/investment/redaction planning context",
+    "Bucket/program/right-of-way/supporting capital context",
+    "Explicit physical equipment transmission component/upgrade"
+  ],
+  "publicReplacementNamePatterns": [
+    "Electric Transmission Substation Security Upgrade",
+    "Electric Transmission Cyber Security Upgrade",
+    "Work at the Request of Others (WRO) Network Upgrades",
+    "Private Load Interconnection Project"
+  ],
+  "preservedNonTdotParent": {
+    "sourceId": "5744742",
+    "parentId": "P.05271",
+    "source": {
+      "file": "pge-may2026-public.xlsx",
+      "locator": "CPUC TPR PUBLIC!B2471:X2471, Z2471:CV2471; AI2471, AJ2471",
+      "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875"
+    }
+  },
+  "sourceDates": {
+    "publication": "2026-05-01",
+    "automatedExtraction": "2026-03-10",
+    "lifecycleAsOf": "2026-03",
+    "rowUpdatedOn": null
+  },
+  "omittedFields": [
+    "Y Project Manager",
+    "AD:AH utility prioritization scores",
+    "CR source cost-benefit score"
+  ],
+  "locationEvidence": {
+    "allSourceLatitudeBlank": 2671,
+    "allSourceLongitudeBlank": 2671,
+    "source": {
+      "file": "pge-may2026-public.xlsx",
+      "url": "https://pgera.azurewebsites.net/Regulation/ValidateDocAccess?docID=871875",
+      "locator": "Data Field Descriptions!B7:F8"
+    }
+  },
+  "headlineDiscrepancy": {
+    "transmittalInProgress": 1434,
+    "retainedNonterminalRows": 1591,
+    "meaning": "Different/unreconciled definitions; no source rows removed to force equality."
+  }
+}
