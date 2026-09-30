@@ -1,6 +1,7 @@
-# F27-BPA — Five-record connection sample
-- Added deterministic cited transcription/normalizer for the accepted complete BPA plan scope; the initial output contains Silver Creek, Sno-King, Keeler P05449, Bonanza and Pearl P04974.
-- Full ledger reconciles 98 rows: five imported, 21 excluded (15 completed, one cancelled, five repeated observations), 72 retained pending; zero failed or located. Explicit runtime identity mappings and 14 source hashes preserve originals and aliases.
-- Lifecycle is plan-year 2025; index update is not row status/change. Need/service/completion meanings, conflicting/phased forecasts and source-locator identity remain explicit. All owners, centers, native geometry and construction windows remain unknown.
-- Sample payload: 21,671 compact UTF-8 bytes / 28,747 formatted UTF-8 bytes. Source units do not establish full BPA/state coverage or deduplicated engineering-project totals.
-- Generated artifacts only; no worker checks, builds, browser or visual work. Coordinator provider connection and bounded validation pending; full 77-record production waits for connection.
+# F27-BPA — Complete accepted plan scope
+- PR100 connected five diagnostic records before this full transcription. All five remain unchanged; 72 additional cited transmission-work units now complete the accepted source scope.
+- Full ledger reconciles 98 rows: 77 imported and 21 excluded (15 completed, one cancelled, five repeated observations); zero pending, failed or located. Fourteen source hashes, exact identity mappings and original evidence remain traceable.
+- Plan-year 2025 lifecycle, unknown P03259 status, source-locator/native distinctions, conflicting/phased forecasts and overlapping bundle scope remain explicit. Owners, runtime geometry and construction windows stay unknown; public GIS is supplementary evidence only.
+- Corrected two never-imported locator reservations with old→new ledger mappings: Clatsop transformer §8.2.2 and Sacajawea §8.5.2. East Omak sizing and North of Marion plan/GIS scope conflicts are preserved.
+- Full payload: 190,744 compact UTF-8 bytes / 253,043 formatted UTF-8 bytes. Full means the declared plan normalization, not complete BPA/state inventories or deduplicated engineering-project totals.
+- Generated artifacts only; no worker checks, builds, browser or visual work. Coordinator full-source integration and bounded regional check pending.

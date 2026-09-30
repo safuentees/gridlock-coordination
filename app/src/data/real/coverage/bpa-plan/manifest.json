@@ -16,13 +16,13 @@
   "sha256": "246e6470dec8c7efcd8d31be29ac2a3dbb3a63a9b5669df9812d309beb4a2638",
   "geographicScope": "BPA plan areas across Washington, Oregon, Idaho, western Montana, northern California and northwest Wyoming; not complete state or utility capital inventories.",
   "inventoryScope": "77 retained physical transmission work units in a 98-row plan normalization: 15 completed units, one cancelled unit and five repeated observations excluded. Bundles and named components retain accepted boundaries.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 98,
-    "importedRecords": 5,
+    "importedRecords": 77,
     "excludedRows": 21,
     "failedRows": 0,
-    "pendingRows": 72,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -40,13 +40,15 @@
     }
   ],
   "limitations": [
-    "Full scope refers to this declared plan normalization, not every BPA capital project or distinct engineering-project totals. This sample retains pending units explicitly.",
+    "Full scope refers to this declared plan normalization, not every BPA capital project or distinct engineering-project totals. Partial snapshots retain pending units explicitly.",
     "Lifecycle assertions belong to plan year 2025. The August 25, 2026 index update is not a row update or lifecycle change; publication day is unknown. Separate GERP material and GIS snapshots are supplementary evidence, not a live status feed.",
     "Native bundle identity is used only for unambiguous scope. Section/parent/component locators are not native engineering IDs; future-edition continuity requires explicit review.",
     "Repeated or shared bundles do not merge different components. P5470/P05470 is an accepted explicit alias; P04632 planned breaker and completed line remain distinct. Warner/Hilltop share a bundle but retain component identity.",
     "Conflicting and phased forecasts retain labeled source milestones, with unknown primary date. Need years are not service dates; estimated completion has unknown kind; no days or construction windows are invented.",
     "Runtime geometry and project centers are unknown. Public GERP pins/lines can represent existing facilities or partial scope; no center, centroid or proposed route is inferred from them.",
     "Owners remain unknown unless an exact assertion covers the whole unit. Publisher, sponsor, operator, customer and funder are not ownership defaults; joint BPA/PGE scope has no exclusive owner.",
-    "P03259 remains retained with unknown lifecycle despite its elapsed table year. Explicit completed/cancelled units and repeated observations stay in the source ledger."
+    "P03259 remains retained with unknown lifecycle despite its elapsed table year. Explicit completed/cancelled units and repeated observations stay in the source ledger.",
+    "The Schultz–Raver narrative includes separately retained Olympia/series-capacitor work. Plan and GIS differ on the North of Marion crossing assignment; preserve accepted source units without deduplicated engineering-project claims.",
+    "Two never-imported locator reservations were corrected before full import: Clatsop transformer to section 8.2.2 and Sacajawea to section 8.5.2. Old-to-new mappings remain in the ledger; all five connected sample records are unchanged."
   ]
 }

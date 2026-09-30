@@ -61,6 +61,8 @@ def main():
         item.update({'disposition': disposition, 'reason': reason,
                      'runtimeId': identities.get(row['ledgerId']),
                      'duplicateOfRuntimeId': identities.get(row['duplicateOfLedgerId'])})
+        if 'identityCorrections' in row:
+            item['identityCorrections'] = row['identityCorrections']
         if 'supplementaryPublicGeometryEvidence' in row:
             item['supplementaryPublicGeometryEvidence'] = row['supplementaryPublicGeometryEvidence']
         ledger.append(item)
@@ -83,7 +85,7 @@ def main():
         'scope': args.scope, 'counts': counts,
         'exclusions': [{'reason': reason, 'count': count} for reason, count in exclusions.items()],
         'limitations': [
-            'Full scope refers to this declared plan normalization, not every BPA capital project or distinct engineering-project totals. This sample retains pending units explicitly.',
+            'Full scope refers to this declared plan normalization, not every BPA capital project or distinct engineering-project totals. Partial snapshots retain pending units explicitly.',
             'Lifecycle assertions belong to plan year 2025. The August 25, 2026 index update is not a row update or lifecycle change; publication day is unknown. Separate GERP material and GIS snapshots are supplementary evidence, not a live status feed.',
             'Native bundle identity is used only for unambiguous scope. Section/parent/component locators are not native engineering IDs; future-edition continuity requires explicit review.',
             'Repeated or shared bundles do not merge different components. P5470/P05470 is an accepted explicit alias; P04632 planned breaker and completed line remain distinct. Warner/Hilltop share a bundle but retain component identity.',
@@ -91,6 +93,8 @@ def main():
             'Runtime geometry and project centers are unknown. Public GERP pins/lines can represent existing facilities or partial scope; no center, centroid or proposed route is inferred from them.',
             'Owners remain unknown unless an exact assertion covers the whole unit. Publisher, sponsor, operator, customer and funder are not ownership defaults; joint BPA/PGE scope has no exclusive owner.',
             'P03259 remains retained with unknown lifecycle despite its elapsed table year. Explicit completed/cancelled units and repeated observations stay in the source ledger.',
+            'The Schultz–Raver narrative includes separately retained Olympia/series-capacitor work. Plan and GIS differ on the North of Marion crossing assignment; preserve accepted source units without deduplicated engineering-project claims.',
+            'Two never-imported locator reservations were corrected before full import: Clatsop transformer to section 8.2.2 and Sacajawea to section 8.5.2. Old-to-new mappings remain in the ledger; all five connected sample records are unchanged.',
         ],
     }
     dataset = {
@@ -115,9 +119,11 @@ def main():
 
 Source-only Dataset version 2: {counts['sourceRows']} normalization rows = {counts['importedRecords']} imported + {counts['excludedRows']} excluded + {counts['pendingRows']} pending; zero failed or located. The accepted complete inventory has 77 retained transmission-work units. The exclusions preserve 15 completed, one cancelled and five repeated observations; source units are not deduplicated engineering-project totals.
 
-The connection sample contains Silver Creek, Sno-King, Keeler P05449, Bonanza and Pearl P04974. Silver Creek retains a year-level service forecast; Sno-King retains a need year with unknown service date. The other three preserve conflicting/phased forecasts as source-labeled milestones and leave the primary date unknown. No owner, construction interval or geometry is inferred. Public GERP feature citations remain evidence only.
+The preserved connection sample contains Silver Creek, Sno-King, Keeler P05449, Bonanza and Pearl P04974. Full mode adds the remaining 72 accepted units, including grouped GERP work and corrective-action components. Silver Creek retains a year-level service forecast; Sno-King retains a need year with unknown service date. The other three preserve conflicting/phased forecasts as source-labeled milestones and leave the primary date unknown. No owner, construction interval or geometry is inferred. Public GERP feature citations remain evidence only.
 
-Lifecycle assertions use plan year 2025 with source-edition meaning. The index update is August 25, 2026; it is not a record update, publication day or live status claim. Native/source-locator identity, component boundaries and accepted aliases are explicit in the ledger. Coordinator provider connection is required before full transcription proceeds.
+Lifecycle assertions use plan year 2025 with source-edition meaning. The index update is August 25, 2026; it is not a record update, publication day or live status claim. Native/source-locator identity, component boundaries and accepted aliases are explicit in the ledger. The coordinator connected the initial five records in PR100 before this full transcription. All five sample records retain their original identities and facts.
+
+Source scopes may overlap: the Schultz–Raver narrative includes separate capacitor/Olympia units. Plan and GIS disagree on a North of Marion crossing assignment. P03259 stays unknown lifecycle; East Omak retains its 21/28.8 Mvar discrepancy. Exact sources and milestones preserve these limits. The two never-imported reserved locator corrections are explicit in the ledger.
 
 `manifest.json` matches the embedded edition. `row-ledger.json` records every mapping/disposition and all 14 public source hashes. Payload: {sizes['compactUtf8Bytes']} compact UTF-8 bytes / {sizes['formattedUtf8Bytes']} formatted UTF-8 bytes.
 
