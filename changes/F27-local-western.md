@@ -1,0 +1,7 @@
+# F27 — New York, Florida and BPA integration
+- PR95 connects samples before full declared scopes: 136 New York local-plan records, 59 Florida municipal work items and 77 BPA plan work units. Aggregate 12,446 real records, 113 unverified centers and six unchanged legacy candidates.
+- Eleven declared scopes reconcile 24,403 rows into 12,194 retained and 12,209 excluded, with no pending/failed rows. Historical edition, planning-context, source-locator and overlapping unit meanings remain explicit; no statewide or unique engineering-project total is claimed.
+- Lifecycle evidence now also accepts year precision without inventing a day. The demo scales to 13,200, preserving every prior fixture value/identity; new records are unlocated and explicitly synthetic.
+- Coordinator's one production build and representative case passed at 8f3012b, 10:07:15–10:07:52 UTC. Temporary case ledger-shape assumption corrected; no application fix or second build. Source meanings, unchanged candidates, retained local revisions, 56,981,282-byte revised download/import and all 5,700 prior inventory fixtures were covered.
+- Main JS is 38.1 MB / 2.04 MB gzip; existing bundle-size and future Vite-loader warnings remain. No worker, browser, visual, mobile or persistence-interaction checks. Unrelated untracked duplicate files remain untouched and uncommitted.
+- Puerto Rico and WestConnect producers are accepted for the next connected-sample increment; Guam qualification continues. SERTP remains blocked by conflicting public-link/PDF markings. National discovery remains incomplete.
