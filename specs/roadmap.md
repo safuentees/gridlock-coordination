@@ -94,10 +94,10 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | MISO complete; SERTP source blocked; F27-FL-Q active. | Exact Florida qualification/sample/receipt in [spec](features/F27-us-regional-expansion/fl-fmpa/spec.md); no producer before acceptance. SERTP needs authoritative marking clarification. |
-| core | New York qualification accepted; F27-NY-I six-record sample active. | Exact producer/data/receipt in [New York spec](features/F27-us-regional-expansion/ny-local/spec.md); sample before full 136 historical records. No shared/core/UI edits. |
-| coordinator | MISO/Hawaii milestone PR88 complete; compose next accepted inventories. | Root alone owns aggregate/schema/register/merge/checks; connect samples early and preserve national gaps. |
-| ui | Hawaii complete; F27-BPA-Q active. | Exact Northwest qualification/sample/receipt in [spec](features/F27-us-regional-expansion/bpa-plan/spec.md); no producer/UI/map edits before accepted source/geometry contract. |
+| source_discovery / ingestion | Florida full integrated on current branch; F27-PR-Q active. | Exact Puerto Rico qualification/sample/receipt in [spec](features/F27-us-regional-expansion/pr-transmission/spec.md); no producer before acceptance. SERTP remains blocked. |
+| core | New York full integrated on current branch; F27-WC-Q active. | Exact WestConnect qualification/sample/receipt in [spec](features/F27-us-regional-expansion/westconnect-tppl/spec.md); no producer before acceptance. |
+| coordinator | PR88 integrated; compose New York/Florida/BPA increment PR95. | Root owns aggregate/schema/register/merge/checks, including additive year-only lifecycle precision; preserve all unrelated untracked duplicate files. |
+| ui | BPA five-record sample active, then full 77; fixture scale refresh queued afterward. | Exact BPA producer/data/receipt in [spec](features/F27-us-regional-expansion/bpa-plan/spec.md). After full delivery, only demo inventory/scale receipt under [contract](features/F27-us-regional-expansion/contract.md), to 13,200 synthetic records. No UI/map edits. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
