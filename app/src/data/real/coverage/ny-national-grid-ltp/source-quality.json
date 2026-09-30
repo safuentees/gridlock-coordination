@@ -1,7 +1,7 @@
 {
   "sourceKey": "ny-national-grid-ltp",
   "editionId": "2025-10-30",
-  "scope": "sample",
+  "scope": "full",
   "fullSourceStatusCounts": {
     "Application Deemed Complete": 1,
     "Cancelled": 4,
@@ -22,13 +22,13 @@
     "planning-context": 128
   },
   "importedLifecycleCounts": {
-    "planned": 1,
-    "under-construction": 1,
-    "unknown": 4
+    "planned": 90,
+    "under-construction": 15,
+    "unknown": 31
   },
   "importedKindCounts": {
-    "planning-context": 2,
-    "transmission-project": 4
+    "planning-context": 128,
+    "transmission-project": 8
   },
   "fieldAnomalies": [
     {
