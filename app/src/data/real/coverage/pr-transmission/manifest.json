@@ -16,13 +16,13 @@
   "sha256": "d1bc3b2e3a42fca0f41c5d2ad52b136700cf5ae580d048b213a484f4e24b5cc5",
   "geographicScope": "Partial Puerto Rico physical-hardening program, not territory-wide completeness.",
   "inventoryScope": "Every numbered Table 1 work package; completed/closed and energized-only scopes excluded, incremental remaining work retained. Critical-repair scope remains capital context.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 32,
-    "importedRecords": 6,
+    "importedRecords": 22,
     "excludedRows": 10,
     "failedRows": 0,
-    "pendingRows": 16,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
