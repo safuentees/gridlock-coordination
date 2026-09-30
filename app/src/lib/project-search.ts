@@ -12,5 +12,6 @@ export function matchesProjectQuery(project: Project, query: string): boolean {
     project.sponsor ?? "",
     ...project.voltageKv.map(String),
     ...visibleProjectNotes(project),
+    ...project.sources.flatMap(source => [source.file, source.locator]),
   ].join(" ").toLocaleLowerCase().includes(normalizedQuery)
 }
