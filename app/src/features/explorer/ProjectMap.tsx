@@ -4,6 +4,7 @@ import { DomEvent, type LatLngTuple } from "leaflet"
 import { MinusIcon, PlusIcon } from "lucide-react"
 import "leaflet/dist/leaflet.css"
 import { Button } from "@/components/ui/button"
+import { IconButton } from "@/components/ui/icon-button"
 import type { Opportunity, Project } from "@/domain/schema"
 
 export interface MapViewportInsets { top: number; right: number; bottom: number; left: number }
@@ -98,8 +99,8 @@ function MapView({ projects, focusIds, fitRevision, visible, viewportInsets, til
 
   return <div ref={controls} className="pointer-events-none absolute z-[1000] flex flex-wrap items-start gap-2" style={{ top: insets.top + 12, left: insets.left + 12, right: insets.right + 12 }}>
     <div className="pointer-events-auto flex flex-wrap items-center gap-1 rounded-lg border bg-background p-1">
-      <Button type="button" variant="ghost" size="icon-sm" aria-label="Zoom in" title="Zoom in" onClick={() => map.zoomIn()}><PlusIcon /></Button>
-      <Button type="button" variant="ghost" size="icon-sm" aria-label="Zoom out" title="Zoom out" onClick={() => map.zoomOut()}><MinusIcon /></Button>
+      <IconButton variant="ghost" label="Zoom in" onClick={() => map.zoomIn()}><PlusIcon aria-hidden="true" /></IconButton>
+      <IconButton variant="ghost" label="Zoom out" onClick={() => map.zoomOut()}><MinusIcon aria-hidden="true" /></IconButton>
       <Button type="button" variant="ghost" size="sm" onClick={onFit}>Fit projects</Button>
     </div>
     <details className="pointer-events-auto max-w-full rounded-lg border bg-background text-sm">
@@ -107,12 +108,12 @@ function MapView({ projects, focusIds, fitRevision, visible, viewportInsets, til
       <div className="max-w-72 space-y-2 overflow-auto px-3 pb-3 text-xs" style={{ maxHeight: Math.max(24, Math.min(192, size.height - insets.top - insets.bottom - 64)) }}>
         <p><span aria-hidden="true" className="mr-2 inline-block size-2 rounded-full bg-blue-600" />Dominion filing</p>
         <p><span aria-hidden="true" className="mr-2 inline-block size-2 rounded-full bg-amber-700" />Georgia filing</p>
-        <p>Outlined points have candidates. Larger outlined points are selected.</p>
-        <p>Dashed lines connect project centers, not transmission routes. {selectedPair ? "Showing the selected candidate." : `Showing ${connectionCount} connections; all candidates remain in the list.`}</p>
-        <p>Use the project inventory or candidate list for keyboard selection. Arrow keys pan the focused map; + and − change zoom.</p>
+        <p>Outlined points have candidates. Larger points are selected.</p>
+        <p>Dashed lines connect centers; they do not show routes. {selectedPair ? "Selected candidate shown." : `${connectionCount} connections shown; see all in Candidates.`}</p>
+        <p>Select projects or candidates in the list with the keyboard. On the map, arrow keys pan; + and − zoom.</p>
       </div>
     </details>
-    {tileError && <p role="status" className="pointer-events-auto basis-full rounded-lg border bg-background p-2 text-xs">Basemap tiles could not load. Project points and the inventory remain available.</p>}
+    {tileError && <p role="status" className="pointer-events-auto basis-full rounded-lg border bg-background p-2 text-xs">Background map unavailable. Project points and lists still work.</p>}
   </div>
 }
 
