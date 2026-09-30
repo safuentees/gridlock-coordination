@@ -178,7 +178,7 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
         {removed && <div className="flex min-w-0 flex-wrap items-center gap-2"><span className="min-w-0 break-words text-xs text-muted-foreground">Removed: {removed.projects[0].name} / {removed.projects[1].name}</span><Button type="button" variant="outline" size="sm" onClick={undoRemove}>Undo removal</Button></div>}
       </div>}
       <Tabs value={tab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList><TabsTrigger value="saved">Saved{store.records.length > 0 && ` (${store.records.length})`}</TabsTrigger><TabsTrigger value="compare">Compare{compared.length > 0 && ` (${compared.length})`}</TabsTrigger><TabsTrigger value="restore">Restore</TabsTrigger></TabsList></div>
+        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList aria-label="Saved review views"><TabsTrigger value="saved">Saved{store.records.length > 0 && ` (${store.records.length})`}</TabsTrigger><TabsTrigger value="compare">Compare{compared.length > 0 && ` (${compared.length})`}</TabsTrigger><TabsTrigger value="restore">Restore</TabsTrigger></TabsList></div>
         <TabsContent value="saved" className="min-h-0 min-w-0 overflow-hidden data-[state=active]:flex">
           {store.records.length ? <div className="grid min-h-0 min-w-0 flex-1 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:grid-rows-1">
             <section aria-label="Saved candidates" className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border">

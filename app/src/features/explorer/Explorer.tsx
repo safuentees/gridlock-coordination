@@ -185,9 +185,9 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
       <div className="min-h-0 min-w-0 flex-1">
         <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 flex-col overflow-hidden rounded-lg border bg-background ${collapsed ? "h-auto w-full max-w-lg" : "h-full min-h-0 w-[min(32rem,65%)]"}`}>
           <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
-            <div hidden={detailVisible} inert={detailVisible} className={detailVisible ? "hidden" : "shrink-0 space-y-3 border-b p-3"}>
-              <div hidden={collapsed} className={collapsed ? "hidden" : "flex min-w-0 items-center gap-2"}>
-                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
+            <div className="shrink-0 space-y-3 border-b p-3">
+              <div hidden={collapsed || detailVisible} inert={collapsed || detailVisible} className={collapsed || detailVisible ? "hidden" : "flex min-w-0 items-center gap-2"}>
+                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
                 <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
               </div>
               <Label htmlFor="project-search" className="sr-only">Search projects</Label>
@@ -195,9 +195,9 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
                 <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
                 {collapsed
                   ? <Button ref={expandButton} variant="outline" size="sm" aria-expanded={false} aria-controls="panel-results panel-detail" onClick={expand}><PanelLeftOpenIcon aria-hidden="true" data-icon="inline-start" />Expand</Button>
-                  : <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>}
+                  : !detailVisible && <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>}
               </div>
-              {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "projects"}</p> : <>
+              {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "projects"}</p> : !detailVisible && <>
                 {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Both filings</SelectItem><SelectItem value="desc">Dominion filing</SelectItem><SelectItem value="gpc">Georgia filing</SelectItem></SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All projects</SelectItem><SelectItem value="located">Located projects</SelectItem><SelectItem value="unlocated">Without locations</SelectItem></SelectContent></Select></div></div>}
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
                   {analysis.summary.unlocatedProjects > 0 && <p className="min-w-0 flex-1 text-xs text-muted-foreground">{analysis.summary.unlocatedProjects} projects need locations before ranking.</p>}

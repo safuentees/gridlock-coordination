@@ -65,7 +65,7 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
     {actions && <div hidden={!selectedOpportunity} inert={!selectedOpportunity} className={selectedOpportunity ? "max-h-[25%] min-h-0 min-w-0 shrink-0 overflow-auto px-4" : "hidden"}>{actions}</div>}
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <Tabs value={activeTab} onValueChange={(value) => setTabs((previous) => ({ ...previous, [selectionKey]: value }))} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList></div>
+        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList aria-label="Comparison topics"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList></div>
         <TabsContent forceMount value="evidence" inert={activeTab !== "evidence"} className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
