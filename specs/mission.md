@@ -17,12 +17,25 @@ The central experience is a connected map, searchable project inventory and rank
 ## Differentiation
 Evidence and uncertainty travel with each result. Candidate proximity is never represented as confirmed shared right-of-way, simultaneous construction or verified savings. Source-date precision and reporting utility versus sponsor stay visible.
 
+## Next milestone: evidence readiness and returning to work
+The map-first Explore workspace is the default arrival screen. Data readiness is a separate purposeful workspace for understanding coverage and preparing source-backed location revisions. Saved reviews and occasional dataset imports remain dialogs. Both workspaces fill a viewport; switching workspaces preserves exploration state.
+
+| Journey | Present | Next useful improvement |
+|---|---|---|
+| Arriving | Source/demo label, searchable list, map and scenario summary | Actionable coverage orientation explaining why most records cannot be ranked |
+| Working | All 252 real records, 300 demo records, filters, synchronized selection and timeline | A searchable missing/unverified-location queue with guided evidence editing |
+| Understanding | Paired evidence, timing precision, confidence, uncertainty and impact assumptions | Retain Georgia planning zones and Dominion project-need text already in approved source sections |
+| Acting | Save/compare reviews and export briefs; preview normalized JSON imports | Preview, apply and download one-project location revisions without editing JSON |
+| Returning | Separate local saved reviews and notes | Persist validated source revisions locally, with clear recovery/reset and download fallbacks |
+
+Source discovery found 242 missing locations (39 Dominion, 203 Georgia), not parse failures. Ten supplied centers are unverified; no record supplies an explicit construction window. The next selected milestone is F11 guided location evidence, F12 deterministic public-source context enrichment and F13 local revision persistence. New coordinates require actual user-supplied evidence and remain unverified; no automatic geocoding, guessed coordinates, private-document ingestion or new calculation engine. Originals and stable IDs are preserved. This extends the existing evidence-backed purpose without a change in direction.
+
 ## Requirements and reversible assumptions
 The brief requires at least two utilities, interactive project display and highlighted overlaps, and ranked coordination opportunities. Geography is primary; timing is secondary. A rough impact estimate is a bonus that we select. Details and one input/output example are in discovery.md.
 
 The guide says under 25 miles; default eligibility is strictly distance < 25 mi. Radius is adjustable. Endpoint arithmetic midpoints and single-known-endpoint centers follow the supplied guide. Workbook coordinates are unverified supplied evidence, not independently confirmed infrastructure locations. Plans are historical snapshots; dates before today are not proof of completion. We do not hide them automatically.
 
-A local-first web app is sufficient. No accounts, backend, paid APIs or deployment are needed for this iteration. Intended demo scale is 300 projects, near the observed 252 source-list records, with a minority of located pairs within the radius. Bulk source rows without locations remain useful inventory records.
+A local-first web app is sufficient. No accounts, backend, paid APIs or deployment are needed for this iteration. Intended demo scale is 300 projects, near the observed 252 source-list records, with a minority of located pairs within the radius. Bulk source rows without locations remain useful inventory records. Applied source revisions are retained locally in the browser where available; users can download and restore normalized snapshots.
 
 ## Budget and permissions
 No time or token budget was supplied. Work in small integrated milestones with at most three concurrent subagents. Continue selected capabilities; report real blockers and propose additions rather than silently expanding scope. Coordinator is the sole limited checker (five minutes per milestone, one build and one representative core case, no visual checks).
