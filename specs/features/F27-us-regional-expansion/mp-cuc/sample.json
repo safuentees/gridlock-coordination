@@ -1,0 +1,629 @@
+{
+  "qualificationOnly": true,
+  "retrievedOn": "2026-09-30",
+  "sourcePassStartedAt": "2026-09-30T10:45:23Z",
+  "sourcePassCompletedAt": "2026-09-30T10:51:56Z",
+  "originalsRoot": "inputs/originals/F27-mp-cuc/",
+  "originals": [
+    {
+      "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+      "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf",
+      "bytes": 3459188,
+      "sha256": "d0a509e70cf4a7c87295259dc00d61caa02e7bf4e6933eaa195e1381dc5cb92e",
+      "pages": 124
+    },
+    {
+      "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+      "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf",
+      "bytes": 1342765,
+      "sha256": "ae36d91aecd55ae0bc236971ebd0387e462fcc8c84c1d074e80dc7b90e0a2c5f",
+      "pages": 4
+    },
+    {
+      "file": "CUC2025CCR.pdf",
+      "url": "https://cnmileg.net/resources/files/24th%20House/2025%20CCR/CUC2025CCR.pdf",
+      "bytes": 13954569,
+      "sha256": "b53da36edc0bed1495002412b139b37c068186f6dd69ebdb7df66d8bf3efd555",
+      "pages": 5,
+      "role": "Legislature-hosted copy; printed pages 1–4 are PDF pages 2–5. Do not import twice."
+    },
+    {
+      "file": "reports.html",
+      "url": "https://cucgov.org/reports/",
+      "bytes": 458627,
+      "sha256": "dcd318e1c541d845a58674a9e8ecd070964d190ad1caa922aea758f849e14d0d",
+      "role": "Official index linking both publisher PDFs."
+    }
+  ],
+  "proposedScopes": [
+    {
+      "sourceKey": "mp-cuc-irp",
+      "editionId": "2025-03-27",
+      "sourceRows": 10,
+      "retained": 10,
+      "excluded": 0,
+      "unit": "Table45 recommendation row; six Saipan, two Tinian, two Rota"
+    },
+    {
+      "sourceKey": "mp-cuc-ccr",
+      "editionId": "fy2025-2025-10",
+      "sourceRows": 26,
+      "retained": 8,
+      "excluded": 18,
+      "unit": "Printed p4 power section bullet; combined entries remain combined"
+    }
+  ],
+  "diagnostics": [
+    {
+      "diagnosticId": "irp-t45-r03",
+      "proposedSourceKey": "mp-cuc-irp",
+      "proposedSourceId": "2025-p055-t45-r03",
+      "identityBasis": "source-locator",
+      "name": "Saipan Kalabera connections",
+      "island": "Saipan",
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "lifecycleAsOf": "2025-03-27",
+      "lifecycleDateMeaning": "source-edition",
+      "voltageKv": [
+        34.5
+      ],
+      "sourceFacts": "2 × 12 km connections; model nodes STAT_1/HV_BB1 and STAT_1/HV_BB2",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed service or need milestone in the recommendation"
+      },
+      "buildWindow": null,
+      "citation": {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row3"
+      },
+      "materialLimit": "Modeled reinforcement, not an approved construction project; node identifiers are not coordinates or engineering-project IDs."
+    },
+    {
+      "diagnosticId": "irp-t45-r07",
+      "proposedSourceKey": "mp-cuc-irp",
+      "proposedSourceId": "2025-p055-t45-r07",
+      "identityBasis": "source-locator",
+      "name": "Tinian Marpo Heights connection",
+      "island": "Tinian",
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "lifecycleAsOf": "2025-03-27",
+      "lifecycleDateMeaning": "source-edition",
+      "voltageKv": [
+        13.8
+      ],
+      "sourceFacts": "1.5 km connection; model node Terminal 207",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed service or need milestone in the recommendation"
+      },
+      "buildWindow": null,
+      "citation": {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row7"
+      },
+      "materialLimit": "Modeled reinforcement, not an approved construction project; node identifiers are not coordinates or engineering-project IDs."
+    },
+    {
+      "diagnosticId": "irp-t45-r09",
+      "proposedSourceKey": "mp-cuc-irp",
+      "proposedSourceId": "2025-p055-t45-r09",
+      "identityBasis": "source-locator",
+      "name": "Rota PV/BESS network connection",
+      "island": "Rota",
+      "recordKind": "planning-context",
+      "lifecycle": "unknown",
+      "lifecycleAsOf": "2025-03-27",
+      "lifecycleDateMeaning": "source-edition",
+      "voltageKv": [
+        15,
+        13.8
+      ],
+      "sourceFacts": "0.1 km line typed 15 kV; destination network terminal 13.8 kV; existing overhead line type in model",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No committed service or need milestone in the recommendation"
+      },
+      "buildWindow": null,
+      "citation": {
+        "file": "CNMI-Integrated-Resource-Plan.032725.pdf",
+        "url": "https://cucgov.org/wp-content/uploads/2025/06/CNMI-Integrated-Resource-Plan.032725.pdf",
+        "locator": "PDF69 / printed55, Table45 body row9"
+      },
+      "materialLimit": "Modeled reinforcement, not an approved construction project; node identifiers are not coordinates or engineering-project IDs."
+    },
+    {
+      "diagnosticId": "ccr-power-b06",
+      "proposedSourceKey": "mp-cuc-ccr",
+      "proposedSourceId": "fy2025-p04-power-b06",
+      "identityBasis": "source-locator",
+      "name": "PP1–CHCC underground supply",
+      "island": "Saipan",
+      "recordKind": "planning-context",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2025-10",
+      "lifecycleDateMeaning": "source-edition",
+      "voltageKv": [],
+      "sourceFacts": "Distribution project; design finished, construction application awaiting approval",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No service or need milestone reported"
+      },
+      "buildWindow": null,
+      "citation": {
+        "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "locator": "PDF4 / printed4, power section bullet6; printed p2 Power Transmission and Distribution"
+      },
+      "materialLimit": "Design completion or an application is not construction approval; source does not establish transmission role or row-specific asset ownership."
+    },
+    {
+      "diagnosticId": "ccr-power-b16",
+      "proposedSourceKey": "mp-cuc-ccr",
+      "proposedSourceId": "fy2025-p04-power-b16",
+      "identityBasis": "source-locator",
+      "name": "Concrete poles, Tinian and Rota",
+      "island": "Tinian; Rota",
+      "recordKind": "planning-context",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2025-10",
+      "lifecycleDateMeaning": "source-edition",
+      "voltageKv": [],
+      "sourceFacts": "One combined source bullet; designs finished, construction applications awaiting approval",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No service or need milestone reported"
+      },
+      "buildWindow": null,
+      "citation": {
+        "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "locator": "PDF4 / printed4, power section bullet16; printed p2 Power Transmission and Distribution"
+      },
+      "materialLimit": "Design completion or an application is not construction approval; source does not establish transmission role or row-specific asset ownership."
+    },
+    {
+      "diagnosticId": "ccr-power-b17",
+      "proposedSourceKey": "mp-cuc-ccr",
+      "proposedSourceId": "fy2025-p04-power-b17",
+      "identityBasis": "source-locator",
+      "name": "Concrete poles, phase I",
+      "island": "Saipan",
+      "recordKind": "planning-context",
+      "lifecycle": "planned",
+      "lifecycleAsOf": "2025-10",
+      "lifecycleDateMeaning": "source-edition",
+      "voltageKv": [],
+      "sourceFacts": "Design application awaiting approval; island identified in printed p2 T&D narrative",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "centerRole": "unknown",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "No service or need milestone reported"
+      },
+      "buildWindow": null,
+      "citation": {
+        "file": "CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "url": "https://cucgov.org/wp-content/uploads/2025/10/CUC-FY-2025-Citizen-Centric-Report.pdf",
+        "locator": "PDF4 / printed4, power section bullet17; printed p2 Power Transmission and Distribution"
+      },
+      "materialLimit": "Design completion or an application is not construction approval; source does not establish transmission role or row-specific asset ownership."
+    }
+  ],
+  "irpRecommendationLedger": [
+    {
+      "row": 1,
+      "locator": "PDF69 / printed55, Table45 body row1",
+      "island": "Saipan",
+      "scope": "Naftan connection",
+      "voltageKv": [
+        13.8
+      ],
+      "evidenceSummary": "2 km connection; model node POL_2724",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 2,
+      "locator": "PDF69 / printed55, Table45 body row2",
+      "island": "Saipan",
+      "scope": "As Gonno connection",
+      "voltageKv": [
+        13.8
+      ],
+      "evidenceSummary": "0.5 km connection; model node Site 4/BB",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 3,
+      "locator": "PDF69 / printed55, Table45 body row3",
+      "island": "Saipan",
+      "scope": "Kalabera connections",
+      "voltageKv": [
+        34.5
+      ],
+      "evidenceSummary": "2 × 12 km connections; model nodes STAT_1/HV_BB1 and STAT_1/HV_BB2",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 4,
+      "locator": "PDF69 / printed55, Table45 body row4",
+      "island": "Saipan",
+      "scope": "Kiya 1 reinforcement",
+      "voltageKv": [
+        13.8
+      ],
+      "evidenceSummary": "Stat_5-POL_4218_K1; reconductor or parallel-line alternatives",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 5,
+      "locator": "PDF69 / printed55, Table45 body row5",
+      "island": "Saipan",
+      "scope": "Feeder 2 reinforcement",
+      "voltageKv": [
+        13.8
+      ],
+      "evidenceSummary": "Sub1_MV_N_Feeder2; reconductor or parallel-line alternatives",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 6,
+      "locator": "PDF69 / printed55, Table45 body row6",
+      "island": "Saipan",
+      "scope": "Reactive support",
+      "voltageKv": [],
+      "evidenceSummary": "17.5 MVAr; compensator or existing-generator capability per section 4.7.1",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 7,
+      "locator": "PDF69 / printed55, Table45 body row7",
+      "island": "Tinian",
+      "scope": "Marpo Heights connection",
+      "voltageKv": [
+        13.8
+      ],
+      "evidenceSummary": "1.5 km connection; model node Terminal 207",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 8,
+      "locator": "PDF69 / printed55, Table45 body row8",
+      "island": "Tinian",
+      "scope": "Reactive support",
+      "voltageKv": [],
+      "evidenceSummary": "5.2 MVAr; compensator or existing-generator capability per section 4.7.2",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 9,
+      "locator": "PDF69 / printed55, Table45 body row9",
+      "island": "Rota",
+      "scope": "PV/BESS network connection",
+      "voltageKv": [
+        15,
+        13.8
+      ],
+      "evidenceSummary": "0.1 km line typed 15 kV; destination network terminal 13.8 kV; existing overhead line type in model",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    },
+    {
+      "row": 10,
+      "locator": "PDF69 / printed55, Table45 body row10",
+      "island": "Rota",
+      "scope": "Reactive support",
+      "voltageKv": [],
+      "evidenceSummary": "1 MVAr; compensator or existing-generator capability per section 4.7.3",
+      "disposition": "retain-planning-context",
+      "lifecycle": "unknown"
+    }
+  ],
+  "ccrPowerBulletLedger": [
+    {
+      "bullet": 1,
+      "locator": "PDF4 / printed4, power section bullet1",
+      "scope": "Saipan DE4",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Completed generation unit"
+    },
+    {
+      "bullet": 2,
+      "locator": "PDF4 / printed4, power section bullet2",
+      "scope": "IRP update",
+      "island": "CNMI",
+      "disposition": "exclude",
+      "reason": "Completed planning study"
+    },
+    {
+      "bullet": 3,
+      "locator": "PDF4 / printed4, power section bullet3",
+      "scope": "Headquarters/customer center PV and storage",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Building and generation/storage design"
+    },
+    {
+      "bullet": 4,
+      "locator": "PDF4 / printed4, power section bullet4",
+      "scope": "All-islands PV/storage IPP solicitation",
+      "island": "Saipan; Tinian; Rota",
+      "disposition": "exclude",
+      "reason": "Generation/storage procurement; not a grid project"
+    },
+    {
+      "bullet": 5,
+      "locator": "PDF4 / printed4, power section bullet5",
+      "scope": "Grid modernization subaward",
+      "island": "Saipan; Tinian; Rota",
+      "disposition": "retain-planning-context",
+      "reason": "Submitted SCADA/T&D program; asset list and approval unresolved",
+      "lifecycle": "unknown"
+    },
+    {
+      "bullet": 6,
+      "locator": "PDF4 / printed4, power section bullet6",
+      "scope": "PP1–CHCC underground supply",
+      "island": "Saipan",
+      "disposition": "retain-planning-context",
+      "reason": "Distribution project; design finished, construction application awaiting approval",
+      "lifecycle": "planned"
+    },
+    {
+      "bullet": 7,
+      "locator": "PDF4 / printed4, power section bullet7",
+      "scope": "ROTA100",
+      "island": "Rota",
+      "disposition": "exclude",
+      "reason": "Standalone storage pilot funding request"
+    },
+    {
+      "bullet": 8,
+      "locator": "PDF4 / printed4, power section bullet8",
+      "scope": "Tinian critical-facilities underground supply",
+      "island": "Tinian",
+      "disposition": "retain-planning-context",
+      "reason": "Design/construction procurement underway; construction itself not established",
+      "lifecycle": "planned"
+    },
+    {
+      "bullet": 9,
+      "locator": "PDF4 / printed4, power section bullet9",
+      "scope": "PP1 SCADA phase I",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Two generation-unit controls; not evidenced grid work"
+    },
+    {
+      "bullet": 10,
+      "locator": "PDF4 / printed4, power section bullet10",
+      "scope": "Transformer storage berms",
+      "island": "Rota",
+      "disposition": "exclude",
+      "reason": "Power-plant containment/storage civil work; no grid equipment installation"
+    },
+    {
+      "bullet": 11,
+      "locator": "PDF4 / printed4, power section bullet11",
+      "scope": "PP4 site investigations",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Environmental investigation, closed out"
+    },
+    {
+      "bullet": 12,
+      "locator": "PDF4 / printed4, power section bullet12",
+      "scope": "Response-plan drills",
+      "island": "CNMI",
+      "disposition": "exclude",
+      "reason": "Operating/compliance activity"
+    },
+    {
+      "bullet": 13,
+      "locator": "PDF4 / printed4, power section bullet13",
+      "scope": "PP1 workshop",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Workshop building"
+    },
+    {
+      "bullet": 14,
+      "locator": "PDF4 / printed4, power section bullet14",
+      "scope": "Diesel pipeline protection",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Fuel pipeline equipment"
+    },
+    {
+      "bullet": 15,
+      "locator": "PDF4 / printed4, power section bullet15",
+      "scope": "Oil/water separator service",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Completed operating maintenance"
+    },
+    {
+      "bullet": 16,
+      "locator": "PDF4 / printed4, power section bullet16",
+      "scope": "Concrete poles, Tinian and Rota",
+      "island": "Tinian; Rota",
+      "disposition": "retain-planning-context",
+      "reason": "One combined source bullet; designs finished, construction applications awaiting approval",
+      "lifecycle": "planned"
+    },
+    {
+      "bullet": 17,
+      "locator": "PDF4 / printed4, power section bullet17",
+      "scope": "Concrete poles, phase I",
+      "island": "Saipan",
+      "disposition": "retain-planning-context",
+      "reason": "Design application awaiting approval; island identified in printed p2 T&D narrative",
+      "lifecycle": "planned"
+    },
+    {
+      "bullet": 18,
+      "locator": "PDF4 / printed4, power section bullet18",
+      "scope": "Route 33 pole replacement",
+      "island": null,
+      "disposition": "retain-planning-context",
+      "reason": "Named physical pole work; lifecycle and voltage unstated",
+      "lifecycle": "unknown"
+    },
+    {
+      "bullet": 19,
+      "locator": "PDF4 / printed4, power section bullet19",
+      "scope": "AMI/AMR meter replacements",
+      "island": "Saipan; Tinian; Rota",
+      "disposition": "retain-planning-context",
+      "reason": "Ongoing meter program; no individual assets or construction status",
+      "lifecycle": "unknown"
+    },
+    {
+      "bullet": 20,
+      "locator": "PDF4 / printed4, power section bullet20",
+      "scope": "Streetlight efficiency",
+      "island": "Saipan; Tinian; Rota",
+      "disposition": "retain-planning-context",
+      "reason": "Ongoing program; scope/status beyond that unresolved",
+      "lifecycle": "unknown"
+    },
+    {
+      "bullet": 21,
+      "locator": "PDF4 / printed4, power section bullet21",
+      "scope": "School net-metering connections",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Completed distributed-generation connections"
+    },
+    {
+      "bullet": 22,
+      "locator": "PDF4 / printed4, power section bullet22",
+      "scope": "Vegetation clearing",
+      "island": "Saipan",
+      "disposition": "exclude",
+      "reason": "Routine vegetation/operating work"
+    },
+    {
+      "bullet": 23,
+      "locator": "PDF4 / printed4, power section bullet23",
+      "scope": "T&D heavy-equipment procurement",
+      "island": "CNMI",
+      "disposition": "exclude",
+      "reason": "Completed vehicles/equipment procurement, not network assets"
+    },
+    {
+      "bullet": 24,
+      "locator": "PDF4 / printed4, power section bullet24",
+      "scope": "Clean heavy-duty vehicles award",
+      "island": "CNMI",
+      "disposition": "exclude",
+      "reason": "Vehicle grant"
+    },
+    {
+      "bullet": 25,
+      "locator": "PDF4 / printed4, power section bullet25",
+      "scope": "Government non-net-metering interconnections",
+      "island": "Saipan; Tinian",
+      "disposition": "exclude",
+      "reason": "Completed connections and policy adoption"
+    },
+    {
+      "bullet": 26,
+      "locator": "PDF4 / printed4, power section bullet26",
+      "scope": "Power/water/wastewater master plan",
+      "island": "CNMI",
+      "disposition": "exclude",
+      "reason": "Broad planning study without enumerated physical grid work"
+    }
+  ],
+  "separateAggressiveScenarioRows": [
+    {
+      "locator": "PDF52 / printed38, Table25 row1",
+      "option": "Naftan minimum",
+      "role": "Supplemental to Table45 row1; same 2 km/13.8 kV connection"
+    },
+    {
+      "locator": "PDF52 / printed38, Table25 row2",
+      "option": "Naftan maximum",
+      "role": "Separate modeled alternative: at least 10 km, source says 34.8 kV, reactive support; not a committed project"
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row1",
+      "option": "Naftan minimum repeated",
+      "role": "Printed repeat of preceding-page row; no extra unique option"
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row2",
+      "option": "As Gonno",
+      "role": "Scenario says no upgrades; conflicts with baseline 0.5 km requirement, preserve both scenarios"
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row3",
+      "option": "Tapochao",
+      "role": "Separate modeled alternative: at least 4 km/13.8 kV and reactive support"
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row4",
+      "option": "Kalabera minimum",
+      "role": "Separate modeled alternative: at least 8 km/13.8 kV"
+    },
+    {
+      "locator": "PDF53 / printed39, Table25 row5",
+      "option": "Kalabera maximum",
+      "role": "Source says 2 × 12 km/34.8 kV and 52.5 MW, unlike Table45 34.5 kV/40 MW; no automatic merge"
+    }
+  ],
+  "constraints": [
+    "Qualification proposal only; no production dataset or schema extension.",
+    "All proposed records remain unlocated and outside transmission eligibility.",
+    "No source license to republish original PDFs was established.",
+    "No image/map interpretation, contact data, hidden metadata or external messages."
+  ]
+}
