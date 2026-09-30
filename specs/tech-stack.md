@@ -1,40 +1,28 @@
 # Shared technical agreement
 
-Fill this once during setup; update only affected decisions as features require them.
+## Stack and commands
+Vite + React + TypeScript in `app/`, npm lockfile, Tailwind 4, official shadcn Nova preset with Radix, neutral colors and Geist, Leaflet/react-leaflet, Zod. No backend. `cd app && npm ci`; `npm run dev -- --host 127.0.0.1`; checker only: `npm run build` and `npx tsx scripts/check-core.ts` once per integrated milestone as appropriate. Python ingestion uses bundled pypdf/openpyxl read-only against originals; generated application builds are ignored.
 
-| Agreement | Project value |
-|---|---|
-| Stack and package manager | [appropriate to the project] |
-| Install / development commands | [actual commands after choosing the stack] |
-| Authoritative schema/types + example | [paths] |
-| Producer → consumer interface | [function, props or API; inputs and outputs] |
-| Field meanings / units / unknowns | [brief definitions or link to the schema] |
-| Shared shell, navigation, dependencies and theme owner | [owner and exact paths] |
-| Baseline input source | [local/public source; distinguish examples from real records] |
-| Synthetic / real data modes and intended scale | [adapter path; record count/range and basis; separate fixture/ingestion owners and paths] |
-| Canonical domain logic | [calculation/ranking module and owner; UI consumes its results] |
-| Optional bounded check command | [one existing build/compile command; checker only] |
-| Representative core check | [one expected input/output case; checker only] |
+Official defaults read: [Vite](https://ui.shadcn.com/docs/installation/vite), [CLI](https://ui.shadcn.com/docs/cli), [table](https://ui.shadcn.com/docs/components/radix/table), [tabs](https://ui.shadcn.com/docs/components/radix/tabs), [input](https://ui.shadcn.com/docs/components/radix/input). Preserve generated components and theme; use ordinary layout utilities, no redesign or visual inspection.
 
-Workers import shared types; they do not create competing copies. The UI uses the same interface for example and real records. Shared changes go through their owner, name affected consumers and preserve compatibility where possible. Coordinate a migration when field meanings must change; update affected synthetic and real producers together.
+## Authoritative contract
+`app/src/domain/schema.ts` owns runtime Dataset/Project validation, domain types and analysis options. `app/src/domain/example.ts` is the representative contract record. Coordinator owns these files, package/dependency files, entry point, `app/src/index.css`, shared `components/ui/*`, `data/provider.ts`, specs and integration receipts. UI owns App after F00.
 
-## Parallel data handoff
+`loadDataset(mode: 'real'|'demo'): Dataset` returns validated records or throws, never falls back from real to demo. Real producer owns `app/src/data/real/*` and `scripts/ingest/*`; UI owns `app/src/data/demo/*`. Both return the same Dataset. UI uses `analyzeProjects(projects, options): AnalysisResult` from `app/src/core/index.ts`; core worker alone implements distance, ranking, date comparison and impact. No UI or ingestion copies of these calculations.
 
-Apply this to data-backed products; omit irrelevant parts for other projects.
+## Field meaning
+- `id` is stable source-based identity, `sourceId` native project ID, `utilityId` reporting/filing group (`desc` or `gpc`), `sponsor` separately preserves listed owner/sponsor or null. Reporting-group comparison does not guarantee different asset owners.
+- `date.value` ISO source date with explicit precision and kind (`in-service`, `need`, `unknown`); partial values retain precision, not invented day precision. `buildWindow` is null unless actual construction bounds are known.
+- `location` is null when unknown; decimal WGS84 lat/lon, method and confidence accompany evidence. Midpoint means arithmetic endpoint average per guide. `unverified` includes workbook-provided coordinates; no invented precision or independently verified claim.
+- Distances in statute miles, voltage in kV, time gap absolute UTC calendar days only when both dates have day precision. Geometry uses project centers, never inferred full corridors. Strict distance < radius. Default 25 mi; maxDateGapDays null means no timing exclusion. Unknown dates fail an explicitly enabled date-gap filter and otherwise remain candidates.
+- Distance is primary rank, then known date gap, then stable ID. Construction overlap only when explicit windows intersect. Date proximity is milestone context, never proof of simultaneous construction. Date-proximity default <=365 days is a reversible convention.
+- SourceRef uses exact filename and page/sheet/range; optional URL only when known. Missing cost, dates, sponsor or location are null. `notes` retain material caveats.
+- Dataset includes mode, version, snapshot title/date and processed/skipped/failed counts. Real counts exclude synthetic records. Export demo labels. Treat imported text as plain data.
 
-Have the UI worker use realistic synthetic data at the intended scale, clearly separated from real records, while the data worker independently implements ingestion against the same shared schema.
+## Scale and parallel connection
+300 deterministic demo projects with realistic names, varied dates, both utilities, clustered and distant locations, missing values and a minority of near pairs. Observed corpus is 252 list records before linking the ten workbook examples. Ingestion first commits the 10-record batch; integrate F01 with F02/F03 immediately, then expand via F04. Source snapshots are not live schedules.
 
-- Choose a representative record count from the brief, or state a reversible assumption. Use a small deterministic generator with plausible distributions, relationships, varied text and missing values. Do not make dataset generation a separate infrastructure project.
-- Give synthetic fixtures and real ingestion disjoint owned paths. Both use the agreed input/result types and one UI data-provider interface. Explicit demo mode works without live services or secrets; real-mode failures return unavailable/empty/error, never silently synthetic data. Use one concise demo indicator. Keep synthetic records out of real coverage counts and real ingestion outputs; label any demo exports.
-- Implement eligibility, ranking and calculations once in the agreed core module or service. UI renders its results; ingestion produces its inputs. Until core logic is ready, synthetic result records can exercise the agreed interface without a second implementation of the rules.
-- Deliver a small representative real batch through the same interface before bulk ingestion finishes, then expand coverage incrementally. Preserve stable IDs, source references (file/page/version when relevant), unknowns and a brief processed/skipped/failed summary in developer artifacts. Do not turn diagnostics into required UI panels.
+## Ownership and checks
+Coordinator acts as named checker sequentially and alone: at most one existing build/compile plus one representative core input/output check, five minutes per milestone. Workers implement and inspect code but do not run planned verification, browser/Playwright, screenshots or visual audits. Check-core is authored by core worker and executed by coordinator. No new test framework or CI.
 
-## UI defaults
-
-For applicable web UI, read official shadcn component/block documentation and choose one suitable preset. Initialize it if absent; use the CLI or existing MCP tools. Keep documented typography, spacing, variants and theme. Use only necessary layout utilities; avoid arbitrary CSS, padding, custom card styles and a second design system.
-
-Build bare connected drafts first. Use minimal controls and content; no extra export, accounts or dashboards unless the feature needs them. Keep built-in responsive behavior, but do not add mobile optimization or inspection unless requested.
-
-Every string must help identify, interpret or act on a result. No filler, redundant captions, developer status, repeated fixture labels or evidence-issue panels. Keep the concise demo indicator when using synthetic data. No inline decorative dot/bullet separators. Use meaningful result lists and concise fields, not metadata clutter. Keep material uncertainty honest through a short contextual label or source link.
-
-No browser, screenshot or visual-verification step is required. Checking policy lives in `overnight.md`.
+Core expected example: Jasper–Okatie ↔ McIntosh–Purrysburg from discovery.md gives about 5.65 mi, 152 days, unverified candidate; no confirmed construction interval. Rank IDs stable. Impact is user-supplied shared miles × 5280 × width feet / 43560 square feet per acre, then × cost/acre × share fraction; label hypothetical.

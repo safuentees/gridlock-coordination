@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.0 (in development)
+
+- Initialize Gridlock with shared contracts, default shadcn scaffold and complete product roadmap.
+- Preserve challenge sources locally and separate source requirements from reversible assumptions.
+
+# Changelog
+
 ## 1.1.0 — 2026-09-29
 
 - UI and ingestion develop independently against one schema, using realistic synthetic data at the intended scale in separately owned files.

@@ -1,33 +1,17 @@
-# Agent workflow template
+# Gridlock
 
-A small, framework-neutral starting point for agent-assisted projects. Version 1.1.0.
-
-## Start a project
-
-Use GitHub **Use this template → Create a new repository**, choose a name and **Private**, then clone the new repository. Or run:
+Explore cross-utility transmission plans, nearby coordination candidates and source evidence.
 
 ```sh
-gh repo create safuentees/my-new-project --template safuentees/agent-workflow-template --private --clone
+cd app
+npm ci
+npm run dev -- --host 127.0.0.1
 ```
 
-Replace `my-new-project`. Open that new project in your coding agent and provide the brief or source materials:
+Open the local Vite URL. Source data and synthetic demo data are explicit modes. Supplied plans are historical snapshots; location confidence and date meanings remain attached to records.
 
-> Read AGENTS.md. Use specs/preflight.md to initialize this project from the attached brief. Plan the full product as concrete features, establish the shared contracts and bare scaffold, then start ready work. Time/usage budget: [budget]. Available workers: [workers or just this chat]. Follow the limited-checking and default-component rules.
+[Mission](specs/mission.md), [roadmap](specs/roadmap.md), [technical agreement](specs/tech-stack.md), [source findings](specs/discovery.md).
 
-An agent can read AGENTS.md even if its client does not load that filename automatically. The main entry point is short; workers load only the relevant project specs.
+Original challenge materials are preserved locally in ignored `inputs/originals/`, with hashes in `inputs/manifest.json`. Application repository: https://github.com/safuentees/gridlock-coordination. Never push application code to the workflow-template remote.
 
-## What happens
-
-Brief → product roadmap → shared contracts/scaffold → parallel feature worktrees → small PRs → integration → next ready feature.
-
-The coordinator fills in the mission, stack and roadmap once. Each selected feature gets a concise spec. For data-backed products, UI develops with realistic synthetic data at the intended scale while ingestion uses the same contract; a small real batch connects them early. The roadmap has the winner's phase/lane/dependency structure; the initial F00 row is only a bootstrap placeholder, not the intended project scope.
-
-Only one agent performs limited nonvisual milestone checks. There are no installed review bots, CI workflows, browser tests, app dependencies or automatic schedulers. Web UI defaults to documented shadcn components; other projects choose an appropriate stack during setup.
-
-The template's own commit is not a completed application bootstrap. Do not add `changes/F00.md` until the new project's scaffold exists. Use a new project repository rather than pushing application work back to this starter.
-
-## Files
-
-`AGENTS.md` routes work. `specs/mission.md` defines why; `specs/tech-stack.md` defines shared agreements; `specs/roadmap.md` assigns features; `specs/features/` contains task instructions; `specs/overnight.md` defines execution. `changes/` holds short completion records.
-
-Inspired by the [ShellHacks winner's roadmap](https://github.com/fradicus/Shellhacks-2026/blob/9840f7f/specs/roadmap.md). Its [UI PR](https://github.com/fradicus/Shellhacks-2026/pull/6), [data API PR](https://github.com/fradicus/Shellhacks-2026/pull/8) and [contract extension](https://github.com/fradicus/Shellhacks-2026/pull/22) illustrate a shared data interface and coordinated ownership. Intended-scale synthetic data, an explicit early real-data handoff, limited checking, default styling and coordinator merging are deliberate adaptations, not claims about every action that team took.
+No browser or visual verification is part of this run. Coordinator alone runs bounded build and core checks at integrated milestones.

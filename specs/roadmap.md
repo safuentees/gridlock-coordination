@@ -1,54 +1,40 @@
 ---
-setup: uninitialized
-run_start: unset
-time_budget: unset
-usage_budget: unset
+setup: implementing-F00
+run_start: 2026-09-30
+time_budget: not supplied
+usage_budget: not supplied
 contract_owner: coordinator
 reporting_agent: coordinator
 merge_owner: coordinator
-check_owner: checker
-base_commit: unset
-lanes:
-  A: { name: inputs-and-core, agents: [data-worker] }
-  B: { name: app-and-integration, agents: [coordinator, ui-worker] }
-  C: { name: limited-checks, agents: [checker] }
-frozen_paths: []
+check_owner: coordinator
+base_commit: pending
 check_budget: "5 minutes per integrated milestone; no visual checks"
-gates: []
-stretch: []
 ---
 
-# Project roadmap
+# Product roadmap
 
-Coordinator: fill this from the brief during preflight. F00 below is only the shared starting point. Add the complete selected feature map before parallel work: concrete input/coverage, computation, interaction, result/context, useful action and differentiator features. Do not leave a four-task frontend/backend plan or force nineteen features.
+Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inventory, scenario timeline and coordination workflow; 3 impact and revision comparison; then concise access and gaps. All listed features are selected scope; increments remain small.
 
-## Phases
-
-0. **Bootstrap:** one shared entry point, contracts, examples and common components.
-1. **Parallel foundations:** useful inputs and the main interaction connected in a bare draft.
-2. **Real product:** meaningful coverage, deeper core behavior and selected user actions.
-3. **Differentiators:** valuable capabilities selected for this project's purpose.
-4. **Wrap-up:** concise access instructions, implemented outcomes and known gaps.
-
-Phases set priorities; actual dependencies determine readiness. Each product phase extends the integrated experience. Configure gates from the real budget, not an arbitrary overnight duration.
-
-## Features
-
-| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
-|---|---|---|---|---|---|---|
-| F00 | Shared scaffold, contracts and example input | B | coordinator | 0 | none | never |
-
-`Cut: never` means required for the selected scope; `allowed` means optional under budget pressure. Each row links to or has a matching `features/<ID>-<slug>/spec.md`. Feature count and PR count are not progress targets.
+| ID | Capability | Owner | Phase | Depends on | Owned paths |
+|---|---|---|---|---|---|
+| F00 | [Shared scaffold and contracts](features/F00-bootstrap/spec.md) | coordinator | 0 | none | `app/`, `specs/`, `README.md` |
+| F01 | [Connect ten source-backed projects](features/F01-real-seed/spec.md) | ingestion | 1 | F00 | `scripts/ingest/`, `app/src/data/real/` |
+| F02 | [Canonical proximity and ranking](features/F02-matching-core/spec.md) | core | 1 | F00 | `app/src/core/`, `app/scripts/check-core.ts` |
+| F03 | [Connected map and project explorer](features/F03-explorer/spec.md) | ui | 1 | F00 | `app/src/App.tsx`, `app/src/features/explorer/`, `app/src/data/demo/` |
+| F04 | [Expand both planning inventories](features/F04-source-coverage/spec.md) | ingestion | 2 | F01 | `scripts/ingest/`, `app/src/data/real/` |
+| F05 | [Explore geographic and temporal scenarios](features/F05-scenario-timeline/spec.md) | ui | 2 | F02, F03 | `app/src/App.tsx`, `app/src/features/explorer/`, `app/src/features/scenarios/` |
+| F06 | [Save comparisons and coordination briefs](features/F06-coordination-brief/spec.md) | ui | 2 | F05 | `app/src/App.tsx`, `app/src/features/briefs/` |
+| F07 | [Transparent shared-corridor scenario](features/F07-impact-estimate/spec.md) | core | 3 | F02 | `app/src/core/`, `app/src/features/impact/` |
+| F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F04, F03 | `app/src/features/import/`, `app/src/data/import.ts` |
 
 ## Critical path
-
-[Required chain to the core user outcome; name independent parallel work and one fallback if a bottleneck is late. For data-backed products, UI starts on the shared contract with synthetic data; record the first small real-data handoff without waiting for the whole corpus.]
+F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 adds revisions after real coverage. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
 
 ## Active workers
-
-| Worker / actual chat | Feature | Branch / worktree | Claim / PR |
+| Worker | Feature | Branch / worktree | Claim / PR |
 |---|---|---|---|
+| coordinator / root | F00 | codex/F00-bootstrap / current checkout | local implementation |
 
-Record real identities/paths only after creation. Default: one active feature per worker. Startup/resume arrangement: [who starts workers; whether direct messaging is authorized and available]. Push/merge permissions: [existing user authorization, or local-only]. Milestone check points: [integrated outcomes to check].
+Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
-Completion is recorded by `changes/<ID>.md` on main, not duplicate status tables. The active-worker table tracks claims, not verification. No Markdown file wakes an idle agent.
+Milestones: M1 F01–F03 connected real/demo explorer; M2 source coverage + scenarios/briefs + impact; M3 validated revision import and final mission review. Only coordinator checks; receipts on integrated main record completion. No redundant status-only PRs.
