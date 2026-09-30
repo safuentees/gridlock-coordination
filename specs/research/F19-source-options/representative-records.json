@@ -1,0 +1,537 @@
+{
+  "researchFormatVersion": 1,
+  "purpose": "Source qualification sample only; not a normalized Dataset or full import",
+  "researchPass": {
+    "startedAt": "2026-09-30T07:28:47Z",
+    "endedAt": "2026-09-30T07:58:24Z",
+    "activePassLimitMinutes": 20,
+    "cumulativeSourceSelectionLimitMinutes": 60,
+    "priorCoordinatorScreeningMinutes": null,
+    "priorTimeNote": "Prior screening time was not recorded. Its findings were reused; this pass does not reset the cumulative ceiling.",
+    "sourceFamiliesUsed": [
+      "existing-project-primary-evidence (reused F19)",
+      "regional-transmission-reporting (California TPR)",
+      "federal-nationwide-inventory (existing EIA comparator screening only)"
+    ],
+    "elapsedMinutes": 29.6167,
+    "passLimitExceeded": true,
+    "lastSourceAnalysisAt": "2026-09-30T07:32:58Z",
+    "timingNote": "Elapsed includes sample preparation. No source acquisition after research closure; subsequent work only packages outputs. Prior active time is unknown, so no cumulative remaining-budget claim is made."
+  },
+  "source": {
+    "proposedSlug": "ca-sce-tpr",
+    "publisher": "Southern California Edison",
+    "processAuthority": "California Public Utilities Commission",
+    "reportingGroup": "sce-tpr",
+    "editionId": "2026-06-01",
+    "editionDate": "2026-06-01",
+    "retrievedAt": "2026-09-30",
+    "editionMeaning": "June 1, 2026 public TPR submission; not live project status",
+    "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+    "landingUrl": "https://www.sce.com/regulatory/regulatory-information/open-access-information/tpr-process",
+    "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F25-california-tpr-2026/sce-public-tpr-june-2026.xlsx",
+    "sha256": "42f5ce7a686d08f3900d02eb5ebd09fe089dba39f6e04b1279038d6fde473118",
+    "sheet": "CPUC TPR Public",
+    "headersRow": 3,
+    "rawDataRange": "A4:CM497",
+    "rawPopulatedRows": 494,
+    "rawUniqueTprIds": 494,
+    "declaredExtent": "SCE FERC-jurisdictional transmission capital portfolio, including reported work outside California; not all California transmission projects",
+    "ownerField": null,
+    "ownerNote": "Column X is Project Manager, not asset owner. Personal manager data omitted. Do not infer ownership from publisher/reporting group.",
+    "sourceCrs": null,
+    "sourcePrecisionMeters": null,
+    "coordinateMeaningLocator": "'TPR Notes'!B5:C5",
+    "identityMeaningLocator": "'TPR Notes'!B4:C4"
+  },
+  "proposedEnumeration": {
+    "rawLines": 494,
+    "programAggregates": 44,
+    "individualProjectLines": 450,
+    "excludeOperational": 279,
+    "excludeCanceled": 4,
+    "retainNonterminalKnown": 166,
+    "retainUnknownLifecycle": 1,
+    "proposedRetainedLines": 167,
+    "retainedMeaning": "Nonaggregate source project/subproject lines except Operational and Canceled; includes On Hold and one NA lifecycle context record. Not all are new lines or active construction.",
+    "activeLeafLocationFieldForms": {
+      "numericPair": 83,
+      "textRequiringParsing": 59,
+      "blankPair": 24
+    },
+    "coordinateCoverageDenominatorNote": "Field forms for the 166 known nonterminal leaf rows; not a validated located-project count. Unknown NA lifecycle leaf adds one NA/NA coordinate pair.",
+    "fullImportCompleted": false
+  },
+  "records": [
+    {
+      "approach": "regional-planned-transmission",
+      "sourceFamily": "regional-transmission-reporting",
+      "sourceSlug": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "nativeId": "SP-01",
+      "existingProjectId": null,
+      "classification": "planned",
+      "classificationMeaning": "transmission-associated capital work; existing-asset upgrades are project records, not an existing-asset inventory",
+      "citation": {
+        "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+        "file": "sce-public-tpr-june-2026.xlsx",
+        "locator": "'CPUC TPR Public'!A355:CM355; header row 3; 'TPR Notes'!B3:C5, B23:C23"
+      },
+      "rawFields": {
+        "Row/Line No.": "SP-01",
+        "Project Name(s)": "Calcite Substation Construction",
+        "Latitude": 34.5469999999997,
+        "Longitude": -116.952,
+        "Location2": "Lucerne Valley, San Bernardino County",
+        "Project Description - What": "Substation - Multiple",
+        "Transmission Project Size (length in miles)": "NA",
+        "Transmission Voltage Level (kV)": "NA",
+        "Substation or Transformer Capacity (MVA and/or kV)": "230kV",
+        "Utility Unique ID #1 (Most Specific)": "Multiple Workorders",
+        "Utility Unique ID #2 (Less Specific)": "Multiple CWBSs",
+        "Utility Unique ID #3 (Least Specific)": "6902",
+        "Changes in Unique IDs": "NA | NA | NA | NA",
+        "Project Status": "Engineering less than 50% complete",
+        "Construction Start Date": "2028-01-25",
+        "Original Planned In-Service Date": "2021-03-04",
+        "Current Projected or Actual In-Service Date": "2029-01-23"
+      },
+      "normalizedCandidate": {
+        "name": "Calcite Substation Construction",
+        "description": "New 230kV substation for renewable interconnection.",
+        "recordKind": "transmission-capital-project",
+        "reportingGroup": "sce-tpr",
+        "owner": null,
+        "nativeLifecycle": "Engineering less than 50% complete",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-06-01",
+        "milestone": {
+          "value": "2029-01-23",
+          "precision": "day",
+          "kind": "projected-or-actual-in-service",
+          "isActual": null
+        },
+        "constructionStart": {
+          "value": "2028-01-25",
+          "precision": "day",
+          "isActual": null
+        },
+        "buildWindow": null,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            {
+              "latitude": 34.5469999999997,
+              "longitude": -116.952
+            }
+          ],
+          "sourceCrs": null,
+          "role": "substation-center",
+          "positionalAccuracyMeters": null,
+          "confidence": "unverified"
+        },
+        "derivedCenter": null,
+        "locationNote": "Single substation center provided by the utility.",
+        "caveats": []
+      },
+      "matchEvidence": "Direct source row and native TPR ID. No match to legacy projects or merge by work-order ID is proposed.",
+      "missingFields": [
+        "owner",
+        "coordinate datum",
+        "positional accuracy",
+        "explicit construction end"
+      ],
+      "nextQuestion": "Preserve 230kV from the capacity field without confusing it with MVA."
+    },
+    {
+      "approach": "regional-planned-transmission",
+      "sourceFamily": "regional-transmission-reporting",
+      "sourceSlug": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "nativeId": "PB-02.01",
+      "existingProjectId": null,
+      "classification": "planned",
+      "classificationMeaning": "transmission-associated capital work; existing-asset upgrades are project records, not an existing-asset inventory",
+      "citation": {
+        "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+        "file": "sce-public-tpr-june-2026.xlsx",
+        "locator": "'CPUC TPR Public'!A11:CM11; header row 3; 'TPR Notes'!B3:C5, B23:C23"
+      },
+      "rawFields": {
+        "Row/Line No.": "PB-02.01",
+        "Project Name(s)": "Nevada Pacific DC Intertie Insulator Replacement",
+        "Latitude": "34.31365912 | 45.497586",
+        "Longitude": "-118.49109346 | -121.06462",
+        "Location2": "Sylmar, Los Angeles County",
+        "Project Description - What": "Transmission Line - Other Equipment",
+        "Transmission Project Size (length in miles)": 145,
+        "Transmission Voltage Level (kV)": 500,
+        "Substation or Transformer Capacity (MVA and/or kV)": "NA",
+        "Utility Unique ID #1 (Most Specific)": "901994846",
+        "Utility Unique ID #2 (Less Specific)": "CET-OT-OT-ME-313801",
+        "Utility Unique ID #3 (Least Specific)": "3138",
+        "Changes in Unique IDs": "NA | NA | NA | NA",
+        "Project Status": "Construction (50%-75%)",
+        "Construction Start Date": "2008-06-01",
+        "Original Planned In-Service Date": "2017-09-15",
+        "Current Projected or Actual In-Service Date": "2026-12-01"
+      },
+      "normalizedCandidate": {
+        "name": "Nevada Pacific DC Intertie Insulator Replacement",
+        "description": "Multi-year insulator replacement on an existing intertie.",
+        "recordKind": "transmission-capital-project",
+        "reportingGroup": "sce-tpr",
+        "owner": null,
+        "nativeLifecycle": "Construction (50%-75%)",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06-01",
+        "milestone": {
+          "value": "2026-12-01",
+          "precision": "day",
+          "kind": "projected-or-actual-in-service",
+          "isActual": null
+        },
+        "constructionStart": {
+          "value": "2008-06-01",
+          "precision": "day",
+          "isActual": null
+        },
+        "buildWindow": null,
+        "geometry": {
+          "type": "MultiPoint",
+          "coordinates": [
+            {
+              "latitude": 34.31365912,
+              "longitude": -118.49109346
+            },
+            {
+              "latitude": 45.497586,
+              "longitude": -121.06462
+            }
+          ],
+          "sourceCrs": null,
+          "role": "line-endpoints",
+          "positionalAccuracyMeters": null,
+          "confidence": "unverified"
+        },
+        "derivedCenter": null,
+        "locationNote": "Two published geographic endpoints; no route geometry or work-segment center.",
+        "caveats": [
+          "Source Notes CM11 say the asset is operational while replacement work continues during scheduled outages; the 2008 start is an overall program start, not continuous activity."
+        ]
+      },
+      "matchEvidence": "Direct source row and native TPR ID. No match to legacy projects or merge by work-order ID is proposed.",
+      "missingFields": [
+        "owner",
+        "coordinate datum",
+        "positional accuracy",
+        "continuous construction interval"
+      ],
+      "nextQuestion": "The notes describe an operational asset with ongoing replacements; retain raw construction status and phase caveat."
+    },
+    {
+      "approach": "regional-planned-transmission",
+      "sourceFamily": "regional-transmission-reporting",
+      "sourceSlug": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "nativeId": "SP-05",
+      "existingProjectId": null,
+      "classification": "planned",
+      "classificationMeaning": "transmission-associated capital work; existing-asset upgrades are project records, not an existing-asset inventory",
+      "citation": {
+        "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+        "file": "sce-public-tpr-june-2026.xlsx",
+        "locator": "'CPUC TPR Public'!A359:CM359; header row 3; 'TPR Notes'!B3:C5, B23:C23"
+      },
+      "rawFields": {
+        "Row/Line No.": "SP-05",
+        "Project Name(s)": "Eldorado-Lugo-Mohave RPS Upgrade",
+        "Latitude": "35.7981 | 34.366286 | 35.14729",
+        "Longitude": "-115.007 | -117.369  | -114.59514",
+        "Location2": "Hesperia, San Bernardino County | Boulder City, Clark County | Laughlin, Clark County",
+        "Project Description - What": "Transmission Line - Other Equipment",
+        "Transmission Project Size (length in miles)": "NA",
+        "Transmission Voltage Level (kV)": "NA",
+        "Substation or Transformer Capacity (MVA and/or kV)": "NA",
+        "Utility Unique ID #1 (Most Specific)": "Multiple Workorders",
+        "Utility Unique ID #2 (Less Specific)": "Multiple CWBSs",
+        "Utility Unique ID #3 (Least Specific)": "7546",
+        "Changes in Unique IDs": "NA | NA | NA | NA",
+        "Project Status": "Construction (over 75%)",
+        "Construction Start Date": "2020-11-02",
+        "Original Planned In-Service Date": "2016-12-31",
+        "Current Projected or Actual In-Service Date": "2026-06-30"
+      },
+      "normalizedCandidate": {
+        "name": "Eldorado-Lugo-Mohave RPS Upgrade",
+        "description": "Series-compensation upgrades on two existing transmission lines.",
+        "recordKind": "transmission-capital-project",
+        "reportingGroup": "sce-tpr",
+        "owner": null,
+        "nativeLifecycle": "Construction (over 75%)",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06-01",
+        "milestone": {
+          "value": "2026-06-30",
+          "precision": "day",
+          "kind": "projected-or-actual-in-service",
+          "isActual": null
+        },
+        "constructionStart": {
+          "value": "2020-11-02",
+          "precision": "day",
+          "isActual": null
+        },
+        "buildWindow": null,
+        "geometry": {
+          "type": "MultiPoint",
+          "coordinates": [
+            {
+              "latitude": 35.7981,
+              "longitude": -115.007
+            },
+            {
+              "latitude": 34.366286,
+              "longitude": -117.369
+            },
+            {
+              "latitude": 35.14729,
+              "longitude": -114.59514
+            }
+          ],
+          "sourceCrs": null,
+          "role": "multiple-line-endpoints",
+          "positionalAccuracyMeters": null,
+          "confidence": "unverified"
+        },
+        "derivedCenter": null,
+        "locationNote": "Three published coordinate pairs; do not assume a single two-endpoint route.",
+        "caveats": []
+      },
+      "matchEvidence": "Direct source row and native TPR ID. No match to legacy projects or merge by work-order ID is proposed.",
+      "missingFields": [
+        "owner",
+        "coordinate datum",
+        "positional accuracy",
+        "unambiguous single center",
+        "explicit construction end"
+      ],
+      "nextQuestion": "Agree how multi-line endpoint collections are displayed and whether they can enter radius screening."
+    },
+    {
+      "approach": "regional-planned-transmission",
+      "sourceFamily": "regional-transmission-reporting",
+      "sourceSlug": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "nativeId": "PB-32.03",
+      "existingProjectId": null,
+      "classification": "planned",
+      "classificationMeaning": "transmission-associated capital work; existing-asset upgrades are project records, not an existing-asset inventory",
+      "citation": {
+        "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+        "file": "sce-public-tpr-june-2026.xlsx",
+        "locator": "'CPUC TPR Public'!A269:CM269; header row 3; 'TPR Notes'!B3:C5, B23:C23"
+      },
+      "rawFields": {
+        "Row/Line No.": "PB-32.03",
+        "Project Name(s)": "CS-(ES-5054) Substation Security Vehicle Turnaround Install",
+        "Latitude": null,
+        "Longitude": null,
+        "Location2": null,
+        "Project Description - What": "Other - Physical Security",
+        "Transmission Project Size (length in miles)": "NA",
+        "Transmission Voltage Level (kV)": "NA",
+        "Substation or Transformer Capacity (MVA and/or kV)": "500kV | 220kV",
+        "Utility Unique ID #1 (Most Specific)": "802034875",
+        "Utility Unique ID #2 (Less Specific)": "COS-00-CS-CS-745400",
+        "Utility Unique ID #3 (Least Specific)": "7949",
+        "Changes in Unique IDs": "NA | NA | NA | NA",
+        "Project Status": "Construction (over 75%)",
+        "Construction Start Date": "2023-12-30",
+        "Original Planned In-Service Date": "2024-06-30",
+        "Current Projected or Actual In-Service Date": "2026-08-31"
+      },
+      "normalizedCandidate": {
+        "name": "CS-(ES-5054) Substation Security Vehicle Turnaround Install",
+        "description": "Vehicle-turnaround work associated with a substation security project.",
+        "recordKind": "transmission-capital-project",
+        "reportingGroup": "sce-tpr",
+        "owner": null,
+        "nativeLifecycle": "Construction (over 75%)",
+        "lifecycle": "under-construction",
+        "lifecycleAsOf": "2026-06-01",
+        "milestone": {
+          "value": "2026-08-31",
+          "precision": "day",
+          "kind": "projected-or-actual-in-service",
+          "isActual": null
+        },
+        "constructionStart": {
+          "value": "2023-12-30",
+          "precision": "day",
+          "isActual": null
+        },
+        "buildWindow": null,
+        "geometry": null,
+        "derivedCenter": null,
+        "locationNote": "Coordinates and locality are absent in the public row.",
+        "caveats": []
+      },
+      "matchEvidence": "Direct source row and native TPR ID. No match to legacy projects or merge by work-order ID is proposed.",
+      "missingFields": [
+        "location",
+        "owner",
+        "coordinate datum",
+        "positional accuracy",
+        "explicit construction end"
+      ],
+      "nextQuestion": "Retain the unlocated project; do not geocode or attempt to recover a withheld facility location."
+    },
+    {
+      "approach": "regional-planned-transmission",
+      "sourceFamily": "regional-transmission-reporting",
+      "sourceSlug": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "nativeId": "PB-04.01",
+      "existingProjectId": null,
+      "classification": "unknown",
+      "classificationMeaning": "transmission-associated capital work; existing-asset upgrades are project records, not an existing-asset inventory",
+      "citation": {
+        "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+        "file": "sce-public-tpr-june-2026.xlsx",
+        "locator": "'CPUC TPR Public'!A20:CM20; header row 3; 'TPR Notes'!B3:C5, B23:C23"
+      },
+      "rawFields": {
+        "Row/Line No.": "PB-04.01",
+        "Project Name(s)": "SC&M FERC STEP & HV Spares",
+        "Latitude": "NA",
+        "Longitude": "NA",
+        "Location2": "NA",
+        "Project Description - What": "Substation - Multiple",
+        "Transmission Project Size (length in miles)": "NA",
+        "Transmission Voltage Level (kV)": "NA",
+        "Substation or Transformer Capacity (MVA and/or kV)": "NA",
+        "Utility Unique ID #1 (Most Specific)": "700074",
+        "Utility Unique ID #2 (Less Specific)": "CET-PD-CI-CI-CRINSP",
+        "Utility Unique ID #3 (Least Specific)": "3362",
+        "Changes in Unique IDs": "NA | NA | NA | NA",
+        "Project Status": "NA",
+        "Construction Start Date": "NA",
+        "Original Planned In-Service Date": "NA",
+        "Current Projected or Actual In-Service Date": "NA"
+      },
+      "normalizedCandidate": {
+        "name": "SC&M FERC STEP & HV Spares",
+        "description": "Transformer-sharing and high-voltage spare-equipment support with unspecified lifecycle.",
+        "recordKind": "transmission-capital-project",
+        "reportingGroup": "sce-tpr",
+        "owner": null,
+        "nativeLifecycle": "NA",
+        "lifecycle": "unknown",
+        "lifecycleAsOf": "2026-06-01",
+        "milestone": null,
+        "constructionStart": null,
+        "buildWindow": null,
+        "geometry": null,
+        "derivedCenter": null,
+        "locationNote": "NA location values; no geographic point proposed.",
+        "caveats": []
+      },
+      "matchEvidence": "Direct source row and native TPR ID. No match to legacy projects or merge by work-order ID is proposed.",
+      "missingFields": [
+        "location",
+        "voltage",
+        "lifecycle",
+        "dates",
+        "owner"
+      ],
+      "nextQuestion": "Retain as unknown program-like context instead of claiming scheduled construction."
+    },
+    {
+      "approach": "regional-planned-transmission",
+      "sourceFamily": "regional-transmission-reporting",
+      "sourceSlug": "ca-sce-tpr",
+      "editionId": "2026-06-01",
+      "nativeId": "SP-118",
+      "existingProjectId": null,
+      "classification": "planned",
+      "classificationMeaning": "transmission-associated capital work; existing-asset upgrades are project records, not an existing-asset inventory",
+      "citation": {
+        "url": "https://www.sce.com/sites/default/files/Regulatory/OpenAccessInformation/TPR/01%20Public_%28Public%29SCE%20TPR%20Process-June%202026.xlsx",
+        "file": "sce-public-tpr-june-2026.xlsx",
+        "locator": "'CPUC TPR Public'!A416:CM416; header row 3; 'TPR Notes'!B3:C5, B23:C23"
+      },
+      "rawFields": {
+        "Row/Line No.": "SP-118",
+        "Project Name(s)": "Humidor Storage - TOT959- Q1629",
+        "Latitude": "34.487254 | 34.486169",
+        "Longitude": "-118.116734 | -118.118391",
+        "Location2": "Palmdale, Los Angeles County",
+        "Project Description - What": "Other - Remedial Action Scheme/Special Protection Scheme",
+        "Transmission Project Size (length in miles)": 5,
+        "Transmission Voltage Level (kV)": 500,
+        "Substation or Transformer Capacity (MVA and/or kV)": "500kV | 220kV",
+        "Utility Unique ID #1 (Most Specific)": "903516981",
+        "Utility Unique ID #2 (Less Specific)": "CET-ET-CR-WC-839401",
+        "Utility Unique ID #3 (Least Specific)": "8394",
+        "Changes in Unique IDs": "NA | NA | NA | NA",
+        "Project Status": "On Hold",
+        "Construction Start Date": "2027-06-01",
+        "Original Planned In-Service Date": "2023-10-15",
+        "Current Projected or Actual In-Service Date": "2027-10-20"
+      },
+      "normalizedCandidate": {
+        "name": "Humidor Storage - TOT959- Q1629",
+        "description": "Transmission interconnection work associated with a storage project.",
+        "recordKind": "transmission-capital-project",
+        "reportingGroup": "sce-tpr",
+        "owner": null,
+        "nativeLifecycle": "On Hold",
+        "lifecycle": "on-hold",
+        "lifecycleAsOf": "2026-06-01",
+        "milestone": {
+          "value": "2027-10-20",
+          "precision": "day",
+          "kind": "projected-or-actual-in-service",
+          "isActual": null
+        },
+        "constructionStart": {
+          "value": "2027-06-01",
+          "precision": "day",
+          "isActual": null
+        },
+        "buildWindow": null,
+        "geometry": {
+          "type": "MultiPoint",
+          "coordinates": [
+            {
+              "latitude": 34.487254,
+              "longitude": -118.116734
+            },
+            {
+              "latitude": 34.486169,
+              "longitude": -118.118391
+            }
+          ],
+          "sourceCrs": null,
+          "role": "multiple-project-locations",
+          "positionalAccuracyMeters": null,
+          "confidence": "unverified"
+        },
+        "derivedCenter": null,
+        "locationNote": "Two paired coordinates, but the project type and text do not assign each location to a precise asset role.",
+        "caveats": []
+      },
+      "matchEvidence": "Direct source row and native TPR ID. No match to legacy projects or merge by work-order ID is proposed.",
+      "missingFields": [
+        "owner",
+        "coordinate datum",
+        "positional accuracy",
+        "unambiguous single center",
+        "explicit construction end"
+      ],
+      "nextQuestion": "Keep lifecycle on-hold; do not treat the related storage facility as a transmission project or infer resumption from dates."
+    }
+  ],
+  "reusedEvidence": "Existing F19 decisions/proposal are linked from recommendation.md rather than duplicated here; no new F19 research."
+}
