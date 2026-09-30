@@ -21,7 +21,9 @@ export function projectEligibility(project: Project): Eligibility {
     if (project.utilityId !== "desc" && project.utilityId !== "gpc") reasons.push("This reporting group has no source-qualified inventory metadata.")
     return { eligible: reasons.length === 0, reasons }
   }
-  if (inventory.recordKind !== "transmission-project") reasons.push("This record is capital-project context, not a transmission project.")
+  if (inventory.recordKind !== "transmission-project") reasons.push(inventory.recordKind === "planning-context"
+    ? "This record is planning context; physical transmission work has not been established for matching."
+    : "This record is capital-project context, not a transmission project.")
   if (!activeLifecycles.has(inventory.lifecycle)) reasons.push(`Lifecycle is ${inventory.lifecycle.replaceAll("-", " ")} as of ${inventory.lifecycleAsOf}; matching requires planned, approved or under-construction work.`)
   if (located && !qualifiedCenterRoles.has(inventory.centerRole)) reasons.push(`The displayed location role is ${inventory.centerRole.replaceAll("-", " ")}; it is not a qualified center for distance matching.`)
   if (!evidencedOwner(project)) reasons.push("No asset-owner identity with a cited source file and locator is available. Reporting groups and sponsor labels are not owner evidence.")
