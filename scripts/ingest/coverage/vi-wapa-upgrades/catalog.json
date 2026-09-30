@@ -1,0 +1,111 @@
+{
+  "catalogVersion": 1,
+  "acceptedContract": "fea7322; specs/features/F27-us-regional-expansion/vi-wapa/spec.md",
+  "sourceKey": "vi-wapa-upgrades",
+  "editionId": "2026-07-07-system-upgrades",
+  "reportingGroupName": "Virgin Islands WAPA July 2026 upgrades",
+  "label": "WAPA July 7, 2026 system-upgrade works",
+  "publisher": "Virgin Islands Water and Power Authority",
+  "publishedOn": "2026-07-07",
+  "retrievedOn": "2026-09-30",
+  "sourceFile": "2026-07-07-transmission-distribution-release.html",
+  "sourceUrl": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john",
+  "sourceSha256": "e14e88a3082ddc037390e1e599df1e38031e29244068f3866abfcb02e610ce67",
+  "sourceBytes": 68671,
+  "sampleSourceRows": [
+    25,
+    26
+  ],
+  "sourceLocator": "Dated July7,2026 article: both named remaining-work descriptions (body paragraphs4–5); shared outage schedule is not an inventory list",
+  "defaultScope": "full",
+  "rows": [
+    {
+      "sourceRow": 25,
+      "sourceId": "2026-07-07:release:project-01",
+      "proposedId": "vi-wapa-upgrades:2026-07-07:release:project-01",
+      "editionId": "2026-07-07-system-upgrades",
+      "source": {
+        "file": "2026-07-07-transmission-distribution-release.html",
+        "locator": "Article body paragraph 4; named remaining-work description",
+        "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+      },
+      "name": "Feeder 13 Bypass Project",
+      "raw": {
+        "publicationDate": "July 7, 2026",
+        "sharedScheduledOutageNights": [
+          "July 13, 2026",
+          "July 14, 2026"
+        ],
+        "scope": "Energize a new overhead transmission line",
+        "areasAffected": "Eastern portion of St.Thomas and throughout St.John"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Explicit physical transmission work.",
+      "proposedRecordKind": "transmission-project",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Individual completion/in-service day not assigned"
+      },
+      "lifecycleAsOf": "2026-07-07",
+      "lifecycleDateMeaning": "source-edition",
+      "notes": [
+        "Scheduled remaining work is not confirmed completion. The two outage nights are shared by both projects and are not individually assigned in the source.",
+        "No evidence establishes identity with the old mitigation-list entries; retain distinct source observations, not duplicate engineering-project claims."
+      ],
+      "evidence": [
+        {
+          "file": "2026-07-07-transmission-distribution-release.html",
+          "locator": "Article body paragraph 4; named remaining-work description",
+          "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "2026-07-07:release:project-02",
+      "proposedId": "vi-wapa-upgrades:2026-07-07:release:project-02",
+      "editionId": "2026-07-07-system-upgrades",
+      "source": {
+        "file": "2026-07-07-transmission-distribution-release.html",
+        "locator": "Article body paragraph 5; named remaining-work description",
+        "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+      },
+      "name": "Ridge Road / Cabrita Point Distribution Circuit Redundancy Project",
+      "raw": {
+        "publicationDate": "July 7, 2026",
+        "sharedScheduledOutageNights": [
+          "July 13, 2026",
+          "July 14, 2026"
+        ],
+        "scope": "Interconnect Cabrita submarine distribution cable with the St.John distribution network",
+        "areasAffected": "Eastern portion of St.Thomas and throughout St.John"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Explicit distribution-circuit work; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Individual completion/in-service day not assigned"
+      },
+      "lifecycleAsOf": "2026-07-07",
+      "lifecycleDateMeaning": "source-edition",
+      "notes": [
+        "Scheduled remaining work is not confirmed completion. The two outage nights are shared by both projects and are not individually assigned in the source.",
+        "No evidence establishes identity with the old mitigation-list entries; retain distinct source observations, not duplicate engineering-project claims."
+      ],
+      "evidence": [
+        {
+          "file": "2026-07-07-transmission-distribution-release.html",
+          "locator": "Article body paragraph 5; named remaining-work description",
+          "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+        }
+      ]
+    }
+  ]
+}
