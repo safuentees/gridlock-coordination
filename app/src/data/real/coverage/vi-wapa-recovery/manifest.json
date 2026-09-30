@@ -16,13 +16,13 @@
   "sha256": "20db94628fe067568fb929589307a1080f39ccf09e1fe0a5dc400e03d9fd3b8b",
   "geographicScope": "Partial multi-island WAPA recovery observations: St.Thomas, St.John, St.Croix and completed Water Island work.",
   "inventoryScope": "All24 named packages in PDF pages6–8: four island pole packages, three substations and17 underground entries; five explicitly completed packages excluded.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 24,
-    "importedRecords": 4,
+    "importedRecords": 19,
     "excludedRows": 5,
     "failedRows": 0,
-    "pendingRows": 15,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

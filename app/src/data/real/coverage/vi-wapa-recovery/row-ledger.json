@@ -1,24 +1,24 @@
 {
   "sourceKey": "vi-wapa-recovery",
   "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
-  "scope": "sample",
+  "scope": "full",
   "sourceSha256": "20db94628fe067568fb929589307a1080f39ccf09e1fe0a5dc400e03d9fd3b8b",
   "counts": {
     "sourceRows": 24,
-    "importedRecords": 4,
+    "importedRecords": 19,
     "excludedRows": 5,
     "failedRows": 0,
-    "pendingRows": 15,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "recordKindCounts": {
-    "capital-project-context": 3,
+    "capital-project-context": 18,
     "transmission-project": 1
   },
   "lifecycleCounts": {
-    "under-construction": 1,
-    "unknown": 1,
-    "planned": 2
+    "under-construction": 3,
+    "unknown": 2,
+    "planned": 14
   },
   "completeRetainedRecordKindCounts": {
     "capital-project-context": 18,
@@ -74,8 +74,9 @@
       "lifecycle": "under-construction",
       "lifecycleAsOf": "2023-08",
       "lifecycleDateMeaning": "source-edition",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p06:poles-st-john",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p06:poles-water-island",
@@ -120,8 +121,9 @@
       "lifecycle": "under-construction",
       "lifecycleAsOf": "2023-08",
       "lifecycleDateMeaning": "source-edition",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p06:poles-st-croix",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p07:substation-east-end",
@@ -165,8 +167,9 @@
       "lifecycle": "unknown",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p07:substation-donald-francois",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p07:substation-tutu",
@@ -293,8 +296,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-01",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-02",
@@ -314,8 +318,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-02",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-03",
@@ -335,8 +340,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-03",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-04",
@@ -356,8 +362,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-04",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-05",
@@ -377,8 +384,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-05",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
@@ -420,8 +428,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-john-01",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-john-02",
@@ -441,8 +450,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-john-02",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-john-03",
@@ -462,8 +472,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-john-03",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-01",
@@ -483,8 +494,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-01",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-02",
@@ -504,8 +516,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-02",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-03",
@@ -525,8 +538,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-03",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     },
     {
       "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-04",
@@ -546,8 +560,9 @@
       "lifecycle": "planned",
       "lifecycleAsOf": "2026-09-30",
       "lifecycleDateMeaning": "snapshot-observed",
-      "disposition": "pending",
-      "reason": "Accepted retained package outside the initial connection sample."
+      "disposition": "imported",
+      "projectId": "vi-wapa-recovery:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-04",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context."
     }
   ]
 }
