@@ -1,0 +1,1248 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "Qualified bounded historical recovery inventory plus a distinct dated two-work release; acceptance and exact producer contract pending.",
+  "sourceKeyProposal": "vi-wapa",
+  "reportingGroupProposal": "vi-wapa",
+  "reportingGroupNameProposal": "Virgin Islands WAPA public grid recovery",
+  "retrievedOn": "2026-09-30",
+  "scopeProposal": {
+    "sourceRows": 26,
+    "retainedRecords": 21,
+    "excludedRows": 5,
+    "locatedRecords": 0,
+    "knownQualifiedOwners": 0,
+    "retainedRecordKindCounts": {
+      "transmission-project": 2,
+      "capital-project-context": 19
+    },
+    "retainedLifecycleCounts": {
+      "planned": 16,
+      "under-construction": 3,
+      "unknown": 2
+    },
+    "uniqueEngineeringProjectCount": null,
+    "exclusionSourceRows": [
+      3,
+      8,
+      9,
+      10,
+      11
+    ],
+    "sources": [
+      {
+        "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+        "sourceRows": 24,
+        "retained": 19,
+        "excluded": 5,
+        "publishedOn": null,
+        "editionMeaning": "Snapshot of the linked historical recovery PDF; filename2023-09-12 is not independently verified publication. Only p.6 explicitly has August2023 data.",
+        "inventoryScope": "All four island pole packages p.6, three substation packages p.7 and17 underground entries p.8 (4 completed +13 upcoming)."
+      },
+      {
+        "editionId": "2026-07-07-system-upgrades",
+        "sourceRows": 2,
+        "retained": 2,
+        "excluded": 0,
+        "publishedOn": "2026-07-07",
+        "editionMeaning": "Dated WAPA release; not a live completion update.",
+        "inventoryScope": "Both named remaining-work projects in the article; outage-affected feeder lists are not project rows."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "file": "2023-09-12-investments-public.pdf",
+      "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/2023-09-12-investments-public.pdf",
+      "sha256": "20db94628fe067568fb929589307a1080f39ccf09e1fe0a5dc400e03d9fd3b8b",
+      "bytes": 39065576,
+      "role": "selected inventory; public linked recovery presentation;25 pages"
+    },
+    {
+      "file": "2026-07-07-transmission-distribution-release.html",
+      "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/2026-07-07-transmission-distribution-release.html",
+      "sha256": "e14e88a3082ddc037390e1e599df1e38031e29244068f3866abfcb02e610ce67",
+      "bytes": 68671,
+      "role": "selected inventory; exactly two named remaining-work projects"
+    },
+    {
+      "file": "2020-05-30-east-end-ridge-road-release.html",
+      "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2020/05/30/wapa-board-approves-changes-to-mitigation-projects-st.-croix-water-line-rehab-project-extension-and-contract-for-project-management-services",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/2020-05-30-east-end-ridge-road-release.html",
+      "sha256": "83ed1a5cd37e1736262d3e216379d2f1af1fe9832ce84f00ae1a29a26a69b58c",
+      "bytes": 73293,
+      "role": "supplementary asset-role and impact-area clarification; not extra projects"
+    },
+    {
+      "file": "projects.html",
+      "url": "https://www.viwapa.vi/projects",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/projects.html",
+      "sha256": "48dc1097d90c376b708bfb13ce90459961bdcb0c0ac94ec2372a61edc8d38c60",
+      "bytes": 30576,
+      "role": "official public acquisition index"
+    },
+    {
+      "file": "substation-projects.html",
+      "url": "https://www.viwapa.vi/projects/substation-projects",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/substation-projects.html",
+      "sha256": "5505de6ebf133779171e44a2160892ee375e717da52060b33794dc4b873d966e",
+      "bytes": 36303,
+      "role": "supplementary mixed34.5/13.8kV work-package descriptions; not extra projects"
+    },
+    {
+      "file": "underground-projects.html",
+      "url": "https://www.viwapa.vi/projects/underground-projects",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/underground-projects.html",
+      "sha256": "5ffe155b54709a7875430fb57db0abd51ba77100a6bb469fd38ada36eb836c83",
+      "bytes": 38026,
+      "role": "supplementary distribution roles; not extra projects"
+    },
+    {
+      "file": "powering-forward-public.pdf",
+      "url": "https://www.viwapa.vi/docs/default-source/projects/vi-daily-news-ad---moving-the-virgin-islands-forward322ee754-c7f3-4691-a58b-ebe85dce558f.pdf?sfvrsn=cbe7230a_3",
+      "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-vi-wapa/powering-forward-public.pdf",
+      "sha256": "1d55ab4bd2dd18d101e5978fe69a7ac49d76d4f07ca4cd02b06dceb16fc81ada",
+      "bytes": 4509896,
+      "role": "later undated featured progress summary; component/phase identity does not reconcile the old universe; not imported"
+    }
+  ],
+  "allRowDispositions": [
+    {
+      "sourceRow": 1,
+      "sourceId": "snapshot-2026-09-30:recovery:p06:poles-st-thomas",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p06:poles-st-thomas",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.6; Composite Pole Project, St. Thomas column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "St. Thomas composite pole package",
+      "raw": {
+        "island": "St. Thomas",
+        "totalPoles": 2334,
+        "polesInstalled": 2305,
+        "status": "99%",
+        "targetEnd": "January 2024"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "under-construction",
+      "proposedDate": {
+        "value": "2024-01",
+        "precision": "month",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "lifecycleAsOf": "2023-08",
+      "lifecycleDateMeaning": "source-edition",
+      "recencyCaveat": "PDF p.6 explicitly says data as of August2023."
+    },
+    {
+      "sourceRow": 2,
+      "sourceId": "snapshot-2026-09-30:recovery:p06:poles-st-john",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p06:poles-st-john",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.6; Composite Pole Project, St. John column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "St. John composite pole package",
+      "raw": {
+        "island": "St. John",
+        "totalPoles": 1960,
+        "polesInstalled": 1711,
+        "status": "87%",
+        "targetEnd": "Pending NPS Assessment"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "under-construction",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2023-08",
+      "lifecycleDateMeaning": "source-edition",
+      "recencyCaveat": "PDF p.6 explicitly says data as of August2023."
+    },
+    {
+      "sourceRow": 3,
+      "sourceId": "snapshot-2026-09-30:recovery:p06:poles-water-island",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p06:poles-water-island",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.6; Composite Pole Project, Water Island column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Water Island composite pole package",
+      "raw": {
+        "island": "Water Island",
+        "totalPoles": 200,
+        "polesInstalled": 200,
+        "status": "100%",
+        "targetEnd": "Completed"
+      },
+      "proposedDisposition": "exclude",
+      "reason": "Explicitly completed package; no remaining scope identified in this source.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "in-service",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2023-08",
+      "lifecycleDateMeaning": "source-edition",
+      "recencyCaveat": "PDF p.6 explicitly says data as of August2023."
+    },
+    {
+      "sourceRow": 4,
+      "sourceId": "snapshot-2026-09-30:recovery:p06:poles-st-croix",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p06:poles-st-croix",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.6; Composite Pole Project, St. Croix column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "St. Croix composite pole package",
+      "raw": {
+        "island": "St. Croix",
+        "totalPoles": 4116,
+        "polesInstalled": 3333,
+        "status": "81%",
+        "targetEnd": "March 2024"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "under-construction",
+      "proposedDate": {
+        "value": "2024-03",
+        "precision": "month",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "lifecycleAsOf": "2023-08",
+      "lifecycleDateMeaning": "source-edition",
+      "recencyCaveat": "PDF p.6 explicitly says data as of August2023."
+    },
+    {
+      "sourceRow": 5,
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-east-end",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p07:substation-east-end",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.7; Substation Projects Overview, East End column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "East End Substation",
+      "raw": {
+        "projectStartDate": "8/17/2018",
+        "targetEndDate": "11/31/2023",
+        "areasAffected": "Eastern Portion of St. John",
+        "projectStatus": "99%"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "unknown",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end invalid in source: 11/31/2023"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "Invalid November31 target stays unknown, never silently repaired to November30 or December1.",
+        "Areas Affected is not site location. The2020 WAPA release locates East End Substation on St.Thomas; preserve the slide impact-area wording without using it as a center.",
+        "Percent project status does not explicitly identify physical construction stage; lifecycle unknown."
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-donald-francois",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p07:substation-donald-francois",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.7; Substation Projects Overview, Donald C. Francois column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Donald C. Francois Substation",
+      "raw": {
+        "projectStartDate": "2/15/2023",
+        "targetEndDate": "12/24/2024",
+        "areasAffected": "Central Charlotte Amalie",
+        "projectStatus": "25%"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "unknown",
+      "proposedDate": {
+        "value": "2024-12-24",
+        "precision": "day",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "Project-status percentage does not specify physical construction progress; keep lifecycle unknown."
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-tutu",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p07:substation-tutu",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.7; Substation Projects Overview, Tutu column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Tutu Substation",
+      "raw": {
+        "designEngineeringRfpStartDate": "12/31/2023",
+        "targetEndDate": "1/31/2026",
+        "areasAffected": "Eastern Portion of St. Thomas",
+        "projectStatus": "Design RFP"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": "2026-01-31",
+        "precision": "day",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "Design/engineering RFP start is procurement, not construction start."
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:completed-midland",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:completed-midland",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, COMPLETED UNDERGROUNDING; St. Croix; Midland Project",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Midland Project",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "COMPLETED UNDERGROUNDING",
+        "name": "Midland Project"
+      },
+      "proposedDisposition": "exclude",
+      "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "in-service",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 9,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:completed-golden-grove",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:completed-golden-grove",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, COMPLETED UNDERGROUNDING; St. Croix; Golden Grove Project",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Golden Grove Project",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "COMPLETED UNDERGROUNDING",
+        "name": "Golden Grove Project"
+      },
+      "proposedDisposition": "exclude",
+      "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "in-service",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 10,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:completed-container-port",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:completed-container-port",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, COMPLETED UNDERGROUNDING; St. Croix; Container Port Project",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Container Port Project",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "COMPLETED UNDERGROUNDING",
+        "name": "Container Port Project"
+      },
+      "proposedDisposition": "exclude",
+      "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "in-service",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 11,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:completed-cruz-bay-7e",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:completed-cruz-bay-7e",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, COMPLETED UNDERGROUNDING; St. John; Feeder 7E Cruz Bay Project",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 7E Cruz Bay Project",
+      "raw": {
+        "island": "St. John",
+        "sourceHeading": "COMPLETED UNDERGROUNDING",
+        "name": "Feeder 7E Cruz Bay Project"
+      },
+      "proposedDisposition": "exclude",
+      "reason": "Listed as completed undergrounding; no remaining scope is stated for this package.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "in-service",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 12,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-01",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-01",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 1",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 5A undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 5A"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 13,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-02",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-02",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 2",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 9A undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 9A"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 14,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-03",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-03",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 3",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 10B undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 10B"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 15,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-04",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-04",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 4",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 9D undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 9D"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 16,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-05",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-05",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 5",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Ridge Road undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Ridge Road"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "Ridge Road is a distinct line-list entry. WAPA May30,2020 explicitly calls Ridge Road a distribution feeder; do not prefix it onto the next transmission entry."
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 6",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Transmission Lines 0D0E2 and 0C0D undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Transmission Lines 0D0E2 and 0C0D"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Source expressly identifies transmission lines.",
+      "proposedRecordKind": "transmission-project",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "One compound named source entry contains two line references; these are asset references, not a native project ID. Do not split into two projects or infer voltage from system size."
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-john-01",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-john-01",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. John; entry 1",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 7E Secondary undergrounding",
+      "raw": {
+        "island": "St. John",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 7E Secondary"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 19,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-john-02",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-john-02",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. John; entry 2",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 8E undergrounding",
+      "raw": {
+        "island": "St. John",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 8E"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 20,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-john-03",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-john-03",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. John; entry 3",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 9E undergrounding",
+      "raw": {
+        "island": "St. John",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 9E"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 21,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-01",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-01",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Croix; entry 1",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 1A undergrounding",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 1A"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 22,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-02",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-02",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Croix; entry 2",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 2A undergrounding",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 2A"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 23,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-03",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-03",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Croix; entry 3",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 8B undergrounding",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 8B"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 24,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-croix-04",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-croix-04",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Croix; entry 4",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Feeder 9B undergrounding",
+      "raw": {
+        "island": "St. Croix",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Feeder 9B"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status."
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": "2026-07-07:release:project-01",
+      "proposedId": "vi-wapa:2026-07-07:release:project-01",
+      "editionId": "2026-07-07-system-upgrades",
+      "source": {
+        "file": "2026-07-07-transmission-distribution-release.html",
+        "locator": "Article body paragraph 4; named remaining-work description",
+        "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+      },
+      "name": "Feeder 13 Bypass Project",
+      "raw": {
+        "publicationDate": "July 7, 2026",
+        "sharedScheduledOutageNights": [
+          "July 13, 2026",
+          "July 14, 2026"
+        ],
+        "scope": "Energize a new overhead transmission line",
+        "areasAffected": "Eastern portion of St.Thomas and throughout St.John"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Explicit physical transmission work.",
+      "proposedRecordKind": "transmission-project",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Individual completion/in-service day not assigned"
+      },
+      "lifecycleAsOf": "2026-07-07",
+      "lifecycleDateMeaning": "source-edition",
+      "notes": [
+        "Scheduled remaining work is not confirmed completion. The two outage nights are shared by both projects and are not individually assigned in the source.",
+        "No evidence establishes identity with the old mitigation-list entries; retain distinct source observations, not duplicate engineering-project claims."
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "2026-07-07:release:project-02",
+      "proposedId": "vi-wapa:2026-07-07:release:project-02",
+      "editionId": "2026-07-07-system-upgrades",
+      "source": {
+        "file": "2026-07-07-transmission-distribution-release.html",
+        "locator": "Article body paragraph 5; named remaining-work description",
+        "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+      },
+      "name": "Ridge Road / Cabrita Point Distribution Circuit Redundancy Project",
+      "raw": {
+        "publicationDate": "July 7, 2026",
+        "sharedScheduledOutageNights": [
+          "July 13, 2026",
+          "July 14, 2026"
+        ],
+        "scope": "Interconnect Cabrita submarine distribution cable with the St.John distribution network",
+        "areasAffected": "Eastern portion of St.Thomas and throughout St.John"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Explicit distribution-circuit work; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Individual completion/in-service day not assigned"
+      },
+      "lifecycleAsOf": "2026-07-07",
+      "lifecycleDateMeaning": "source-edition",
+      "notes": [
+        "Scheduled remaining work is not confirmed completion. The two outage nights are shared by both projects and are not individually assigned in the source.",
+        "No evidence establishes identity with the old mitigation-list entries; retain distinct source observations, not duplicate engineering-project claims."
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "sourceRow": 1,
+      "sourceId": "snapshot-2026-09-30:recovery:p06:poles-st-thomas",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p06:poles-st-thomas",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.6; Composite Pole Project, St. Thomas column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "St. Thomas composite pole package",
+      "raw": {
+        "island": "St. Thomas",
+        "totalPoles": 2334,
+        "polesInstalled": 2305,
+        "status": "99%",
+        "targetEnd": "January 2024"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "under-construction",
+      "proposedDate": {
+        "value": "2024-01",
+        "precision": "month",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "lifecycleAsOf": "2023-08",
+      "lifecycleDateMeaning": "source-edition",
+      "recencyCaveat": "PDF p.6 explicitly says data as of August2023.",
+      "proposalCommon": {
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "owner": null,
+        "voltageKv": [],
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "constructionStart": null,
+        "buildWindow": null,
+        "parentProgramId": null,
+        "sourceState": null
+      }
+    },
+    {
+      "sourceRow": 5,
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-east-end",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p07:substation-east-end",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.7; Substation Projects Overview, East End column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "East End Substation",
+      "raw": {
+        "projectStartDate": "8/17/2018",
+        "targetEndDate": "11/31/2023",
+        "areasAffected": "Eastern Portion of St. John",
+        "projectStatus": "99%"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "unknown",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end invalid in source: 11/31/2023"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "Invalid November31 target stays unknown, never silently repaired to November30 or December1.",
+        "Areas Affected is not site location. The2020 WAPA release locates East End Substation on St.Thomas; preserve the slide impact-area wording without using it as a center.",
+        "Percent project status does not explicitly identify physical construction stage; lifecycle unknown."
+      ],
+      "proposalCommon": {
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "owner": null,
+        "voltageKv": [],
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "constructionStart": null,
+        "buildWindow": null,
+        "parentProgramId": null,
+        "sourceState": null
+      }
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": "snapshot-2026-09-30:recovery:p07:substation-tutu",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p07:substation-tutu",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.7; Substation Projects Overview, Tutu column",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Tutu Substation",
+      "raw": {
+        "designEngineeringRfpStartDate": "12/31/2023",
+        "targetEndDate": "1/31/2026",
+        "areasAffected": "Eastern Portion of St. Thomas",
+        "projectStatus": "Design RFP"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Physical recovery work, but pure transmission scope is not established; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": "2026-01-31",
+        "precision": "day",
+        "kind": "unknown",
+        "label": "Target end (source forecast)"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "Design/engineering RFP start is procurement, not construction start."
+      ],
+      "proposalCommon": {
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "owner": null,
+        "voltageKv": [],
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "constructionStart": null,
+        "buildWindow": null,
+        "parentProgramId": null,
+        "sourceState": null
+      }
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": "snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
+      "proposedId": "vi-wapa:snapshot-2026-09-30:recovery:p08:upcoming-st-thomas-06",
+      "editionId": "recovery-snapshot-2026-09-30-20db94628fe0",
+      "source": {
+        "file": "2023-09-12-investments-public.pdf",
+        "locator": "PDF p.8; Underground Snapshot, UPCOMING UNDERGROUNDING; St. Thomas; entry 6",
+        "url": "https://www.viwapa.vi/docs/default-source/default-document-library/9-12-23-final-investments-in-facilities-systems-and-people-presentation.pdf?sfvrsn=199ef15d_0"
+      },
+      "name": "Transmission Lines 0D0E2 and 0C0D undergrounding",
+      "raw": {
+        "island": "St. Thomas",
+        "sourceHeading": "UPCOMING UNDERGROUNDING",
+        "name": "Transmission Lines 0D0E2 and 0C0D"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Source expressly identifies transmission lines.",
+      "proposedRecordKind": "transmission-project",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Target end date not supplied"
+      },
+      "lifecycleAsOf": "2026-09-30",
+      "lifecycleDateMeaning": "snapshot-observed",
+      "recencyCaveat": "Historical recovery presentation with2023 filename; this page has no verified as-of date. September2026 is retrieval/observation only, not current status.",
+      "notes": [
+        "One compound named source entry contains two line references; these are asset references, not a native project ID. Do not split into two projects or infer voltage from system size."
+      ],
+      "proposalCommon": {
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "owner": null,
+        "voltageKv": [],
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "constructionStart": null,
+        "buildWindow": null,
+        "parentProgramId": null,
+        "sourceState": null
+      }
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": "2026-07-07:release:project-01",
+      "proposedId": "vi-wapa:2026-07-07:release:project-01",
+      "editionId": "2026-07-07-system-upgrades",
+      "source": {
+        "file": "2026-07-07-transmission-distribution-release.html",
+        "locator": "Article body paragraph 4; named remaining-work description",
+        "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+      },
+      "name": "Feeder 13 Bypass Project",
+      "raw": {
+        "publicationDate": "July 7, 2026",
+        "sharedScheduledOutageNights": [
+          "July 13, 2026",
+          "July 14, 2026"
+        ],
+        "scope": "Energize a new overhead transmission line",
+        "areasAffected": "Eastern portion of St.Thomas and throughout St.John"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Explicit physical transmission work.",
+      "proposedRecordKind": "transmission-project",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Individual completion/in-service day not assigned"
+      },
+      "lifecycleAsOf": "2026-07-07",
+      "lifecycleDateMeaning": "source-edition",
+      "notes": [
+        "Scheduled remaining work is not confirmed completion. The two outage nights are shared by both projects and are not individually assigned in the source.",
+        "No evidence establishes identity with the old mitigation-list entries; retain distinct source observations, not duplicate engineering-project claims."
+      ],
+      "proposalCommon": {
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "owner": null,
+        "voltageKv": [],
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "constructionStart": null,
+        "buildWindow": null,
+        "parentProgramId": null,
+        "sourceState": null
+      }
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": "2026-07-07:release:project-02",
+      "proposedId": "vi-wapa:2026-07-07:release:project-02",
+      "editionId": "2026-07-07-system-upgrades",
+      "source": {
+        "file": "2026-07-07-transmission-distribution-release.html",
+        "locator": "Article body paragraph 5; named remaining-work description",
+        "url": "https://www.viwapa.vi/news-information/press-releases/press-release-details/2026/07/07/planned-overnight-outages-support-electric-system-upgrades-on-st.-thomas-and-st.-john"
+      },
+      "name": "Ridge Road / Cabrita Point Distribution Circuit Redundancy Project",
+      "raw": {
+        "publicationDate": "July 7, 2026",
+        "sharedScheduledOutageNights": [
+          "July 13, 2026",
+          "July 14, 2026"
+        ],
+        "scope": "Interconnect Cabrita submarine distribution cable with the St.John distribution network",
+        "areasAffected": "Eastern portion of St.Thomas and throughout St.John"
+      },
+      "proposedDisposition": "retain",
+      "reason": "Explicit distribution-circuit work; retain capital context.",
+      "proposedRecordKind": "capital-project-context",
+      "proposedLifecycle": "planned",
+      "proposedDate": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Individual completion/in-service day not assigned"
+      },
+      "lifecycleAsOf": "2026-07-07",
+      "lifecycleDateMeaning": "source-edition",
+      "notes": [
+        "Scheduled remaining work is not confirmed completion. The two outage nights are shared by both projects and are not individually assigned in the source.",
+        "No evidence establishes identity with the old mitigation-list entries; retain distinct source observations, not duplicate engineering-project claims."
+      ],
+      "proposalCommon": {
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "owner": null,
+        "voltageKv": [],
+        "location": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "constructionStart": null,
+        "buildWindow": null,
+        "parentProgramId": null,
+        "sourceState": null
+      }
+    }
+  ],
+  "mapping": {
+    "identity": "Source-locator IDs, not native engineering-project IDs. Feeder/circuit numbers are asset references; separate islands can reuse feeder labels.",
+    "owner": "WAPA is publisher/operator/project sponsor. No per-package sole asset-owner rule established; all qualified owners null. Contractors/funding agencies are not owners.",
+    "spatial": "No native coordinates in selected text. Island names, affected communities and line references remain source context, never inferred centers or geometry.",
+    "voltage": "No continental cutoff. Only the PDF expressly labelled transmission entry and the dated overhead-transmission description qualify as transmission. Mixed substations, poles and undergrounding remain context; normalized voltage unknown.",
+    "dates": "Target end means project completion, kind unknown. Preserve month/day precision. Invalid11/31/2023 stays unknown. Project-start and design-RFP-start dates are not construction starts. Shared2026 outage nights do not establish per-project in-service dates or windows.",
+    "status": "P.6 installed-versus-total poles establishes partial physical work as of August2023. P.7 unqualified project percentages retain unknown lifecycle; DesignRFP is planned. Upcoming p.8 and scheduled remaining2026 work are planned in their respective evidence context, not current confirmations.",
+    "overlap": "Keep Ridge Road separate from transmission lines in the slide. Never equate 2023 entries with2026 named work without engineering identity evidence; do not duplicate current web-page descriptions or program headings.",
+    "geography": "Multi-island partial scope: St.Thomas, St.John, St.Croix and a completed Water Island package. This is not one connected nationwide grid or territory-wide completeness."
+  },
+  "actualGaps": [
+    "No current complete WAPA project register or identity crosswalk between legacy recovery packages and2026 projects.",
+    "No verified publication/as-of date for p.7–8 of the legacy deck; snapshot observation must not imply current status.",
+    "No native geometry or qualified per-project owner evidence.",
+    "Invalid EastEnd target and ambiguous completion percentages require source clarification; public contact was not attempted."
+  ],
+  "enablingInput": "A public current WAPA capital/transmission project register with per-package status date, native work ID, explicit transmission/distribution role, and linkage to legacy recovery scopes would permit authoritative refresh and deduplication.",
+  "sourcePass": {
+    "startedAt": "2026-09-30T10:47:35Z",
+    "endedAt": "2026-09-30T10:52:54Z",
+    "activeMinutes": 5.3,
+    "ceilingMinutes": 15,
+    "method": "Public web text/downloads and PDF text/object extraction only; no rendering/screenshots/browser automation, restricted sources, external contact or producer/checks."
+  }
+}
