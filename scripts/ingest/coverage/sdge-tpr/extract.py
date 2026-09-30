@@ -101,10 +101,11 @@ def voltage(row):
     line = text(row['AA'])
     if re.fullmatch(r'\d+(?:\.\d+)?(?:\s*\|\s*\d+(?:\.\d+)?)*', line):
         values.update(float(part.strip()) for part in line.split('|'))
-    # AB is mixed capacity/voltage text. Only a number explicitly followed by kV
-    # is a voltage; a number followed by MVA is never promoted to kV.
+    # AB is mixed capacity/voltage text. Only a numeric group explicitly labeled
+    # kV supplies voltages; a number labeled MVA is never promoted to kV.
     for field in (line, text(row['AB'])):
-        values.update(float(match) for match in re.findall(r'(?<![\d.])(\d+(?:\.\d+)?)\s*kV\b', field, re.I))
+        for group in re.findall(r'((?:\d+(?:\.\d+)?\s*[/|]\s*)*\d+(?:\.\d+)?)\s*kV\b', field, re.I):
+            values.update(float(value) for value in re.findall(r'\d+(?:\.\d+)?', group))
     return sorted(value for value in values if value > 0)
 
 
@@ -122,7 +123,7 @@ def identities(row):
     return aliases
 
 
-def project(row, number, description):
+def project(row, number, description, extra_notes):
     service = date_field(row['BG'], 'Current projected or actual in-service date')
     start = date_field(row['BE'], 'Construction start: actual or expected', 'unknown')
     original = date_field(row['BF'], 'Original planned in-service date')
@@ -156,6 +157,7 @@ def project(row, number, description):
     for col, field in [('BE', 'Construction start'), ('BF', 'Original planned in-service')]:
         if not date_field(row[col], field)['value']:
             notes.append(f'{field} source value: {text(row[col]) or "blank"}.')
+    notes.extend(extra_notes)
     inventory = {
         'sourceKey': SOURCE, 'editionId': EDITION, 'editionLabel': LABEL,
         'reportingGroupName': GROUP, 'recordKind': record_kind(row),
@@ -198,6 +200,7 @@ def main():
         if len(data) != source['bytes'] or hashlib.sha256(data).hexdigest() != source['sha256']:
             raise SystemExit('Source differs from the accepted public edition: ' + source['localFile'])
     descriptions = json.loads((script_dir / 'descriptions.json').read_text())
+    record_notes = json.loads((script_dir / 'record-notes.json').read_text())
     workbook = openpyxl.load_workbook(args.source_dir / LOCAL_FILE, read_only=True, data_only=True)
     sheet = workbook[SHEET]
     rows = []
@@ -222,7 +225,7 @@ def main():
             disposition, reason = 'pending', 'Accepted nonterminal source unit outside the initial six-record connection sample.'
         else:
             disposition, reason = 'imported', 'Accepted nonterminal source unit; no inferred owner, location or construction window.'
-            projects.append(project(row, number, descriptions[str(number)]))
+            projects.append(project(row, number, descriptions[str(number)], record_notes.get(str(number), [])))
         entry = {
             'sourceRow': number, 'sourceRowNo': row['A'], 'name': text(row['B']),
             'locator': f"'{SHEET}'!A{number}:CO{number}", 'disposition': disposition, 'reason': reason,
@@ -280,6 +283,7 @@ def main():
         'blanketBudgetExcelRows': sorted(BUDGET_ROWS),
         'pastCurrentDateWithNonterminalStatusExcelRows': [number for number, row in retained if (date_field(row['BG'], '')['value'] or '9999') < RELEASE],
         'constructionStatusWithFutureStartExcelRows': [number for number, row in retained if lifecycle(row) == 'under-construction' and date_field(row['BE'], '')['value'] and date_field(row['BE'], '')['value'] > RELEASE],
+        'additionalScopeCaveats': [{'sourceRow': int(number), 'notes': notes} for number, notes in record_notes.items()],
         'normalizationMethod': 'Hash-pinned public source fields plus concise factual descriptions; source-only normalization, no source acquisition, owner/geographic inference or application checks.',
         'payloadSizes': sizes,
     }
@@ -289,15 +293,16 @@ def main():
     write_json(args.output_dir / 'row-ledger.json', {'sourceKey': SOURCE, 'editionId': EDITION, 'scope': args.scope, 'sourceSha256': SHA256, 'counts': counts, 'payloadSizes': sizes, 'rows': ledger})
     write_json(args.output_dir / 'source-catalog.json', {'sourceKey': SOURCE, 'editionId': EDITION, 'captureMeaning': 'Original downloaded bytes, never derived page text or a confidential workbook.', 'sources': ARTIFACTS})
     write_json(args.output_dir / 'source-quality.json', quality)
+    scope_note = 'All 137 accepted units are emitted in source order; the six connected sample records keep their values and identities.' if args.scope == 'full' else 'Full payload is not emitted in this sample snapshot; 131 accepted records remain pending.'
     (args.output_dir / 'README.md').write_text(f'''# SDG&E public July 2026 TPR — {args.scope}
 
 Source version 2: 367 declared rows = {counts['importedRecords']} imported + 230 excluded + {counts['pendingRows']} pending. No failed, located or evidenced-owner records. Full accepted scope is 137 source units (93 transmission / 44 capital context), not statewide or deduplicated engineering coverage.
 
-The six diagnostics are Excel rows 12, 20, 121, 334, 342 and 356. Native/source-locator IDs, parent orders, budget codes, raw unknown dates and source status conflicts remain distinct. Row 121 is an overlapping distribution blanket budget, not an independent known asset; its recordUnit is omitted. All coordinates/owners/native geometry and construction windows remain null. July 1 is the edition date, not per-row freshness.
+The six diagnostics are Excel rows 12, 20, 121, 334, 342 and 356. Native/source-locator IDs, parent orders, budget codes, raw unknown dates and source status conflicts remain distinct. Row 121 is an overlapping distribution blanket budget, not an independent known asset; its recordUnit is omitted, as for blanket budgets at rows 161 and 163 in the full source. Full descriptions preserve supporting-equipment categories, historical program text, prospective ownership and the Ash/Jamacha title-scope conflicts without automatic corrections or merges. All coordinates/owners/native geometry and construction windows remain null. July 1 is the edition date, not per-row freshness.
 
 `manifest.json` is the same edition embedded in `dataset.json`; `row-ledger.json` preserves all 367 public dispositions and whitelisted field values. `source-catalog.json` records hashes of the preserved original workbook and index HTML. No person fields, hidden metadata or originals are included. `source-quality.json` records accepted/full counts and source conflicts.
 
-Actual dataset payload: {sizes['compactUtf8Bytes']:,} compact / {sizes['formattedUtf8Bytes']:,} formatted UTF-8 bytes. Full payload has not been generated at the sample connection milestone. Coordinator owns runtime validation and loader integration; no worker checks were run.
+Actual dataset payload: {sizes['compactUtf8Bytes']:,} compact / {sizes['formattedUtf8Bytes']:,} formatted UTF-8 bytes. {scope_note} Coordinator owns runtime validation and loader integration; no worker checks were run.
 
 Reproduce with `python3 scripts/ingest/coverage/sdge-tpr/extract.py --scope {args.scope}` using ignored originals under `inputs/originals/F27-ca-sdge-tpr/`. Hash mismatch stops generation; no network fetch or alternate-source fallback occurs.
 ''')

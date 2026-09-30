@@ -16,13 +16,13 @@
   "sha256": "0e800beb097adc26be9669c841808ced2c18542c9a499465144b41399c3dd157",
   "geographicScope": "SDG&E public FERC transmission capital filing; source geography may span multiple cities/counties. Not all California transmission work.",
   "inventoryScope": "137 nonterminal row units after summary-first exclusions; 93 explicit line/substation units and 44 capital-project-context units. Three unprefixed blanket budgets remain overlapping context.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 367,
-    "importedRecords": 6,
+    "importedRecords": 137,
     "excludedRows": 230,
     "failedRows": 0,
-    "pendingRows": 131,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
