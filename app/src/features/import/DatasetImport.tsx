@@ -7,6 +7,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { compareDatasets, downloadDataset, MAX_IMPORT_BYTES, parseSourceDataset } from "@/data/import"
 import type { Dataset } from "@/domain/schema"
 
+const IMPORT_LIMIT_LABEL = `${MAX_IMPORT_BYTES / (1024 * 1024)} MiB`
+
 interface Props {
   dataset: Dataset
   isImported: boolean
@@ -33,13 +35,13 @@ export function DatasetImport({ dataset, isImported, onApply, onReset, bundledUp
   return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4" aria-label="Source revisions">
     {dataset.mode === "real" && <div className="shrink-0 space-y-2 pt-2">
       {bundledUpdate && <Button type="button" variant="outline" onClick={() => { request.current += 1; setBusy(false); setCandidate(bundledUpdate); setBundledBase(dataset); setError(null); setApplied(false) }}>Preview bundled update</Button>}
-      <Label htmlFor="dataset-file">Incoming source revision (JSON, up to 10 MB)</Label>
+      <Label htmlFor="dataset-file">Incoming source revision (JSON, up to {IMPORT_LIMIT_LABEL})</Label>
       <Input id="dataset-file" type="file" accept=".json,application/json" onChange={async event => {
         const file = event.target.files?.[0]
         const token = ++request.current
         setCandidate(null); setBundledBase(null); setError(null); setApplied(false); setBusy(false)
         if (!file) return
-        if (file.size > MAX_IMPORT_BYTES) { setError("Choose a dataset smaller than 10 MB."); return }
+        if (file.size > MAX_IMPORT_BYTES) { setError(`Choose a dataset no larger than ${IMPORT_LIMIT_LABEL}.`); return }
         setBusy(true)
         try {
           const imported = parseSourceDataset(await file.text())

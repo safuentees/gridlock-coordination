@@ -1,14 +1,7 @@
 import { z } from "zod"
-import { inventorySchema, sourceEditionSchema, sourceKeySchema, sourceSchema } from "./coverage"
+import { dateSchema, inventorySchema, sourceEditionSchema, sourceKeySchema, sourceSchema } from "./coverage"
 
 export { sourceSchema } from "./coverage"
-const dateSchema = z.object({ value: z.string().nullable(), precision: z.enum(["day", "month", "year", "unknown"]), kind: z.enum(["in-service", "need", "unknown"]), label: z.string() }).superRefine((date, ctx) => {
-  const valid = date.precision === "unknown" ? date.value === null
-    : date.precision === "year" ? /^\d{4}$/.test(date.value ?? "")
-    : date.precision === "month" ? /^\d{4}-(0[1-9]|1[0-2])$/.test(date.value ?? "")
-    : z.iso.date().safeParse(date.value).success
-  if (!valid) ctx.addIssue({ code: "custom", message: "Date value must match its stated precision", path: ["value"] })
-})
 export const projectSchema = z.object({
   id: z.string().min(1), utilityId: sourceKeySchema,
   sponsor: z.string().nullable(), sourceId: z.string().nullable(),

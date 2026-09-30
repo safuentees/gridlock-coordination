@@ -1,0 +1,46 @@
+{
+  "sourceKey": "iso-ne-rsp",
+  "editionId": "2026-06",
+  "label": "ISO New England RSP — June 2026",
+  "reportingGroupId": "iso-ne-rsp",
+  "reportingGroupName": "ISO New England RSP",
+  "publisher": "ISO New England",
+  "processAuthority": "ISO New England regional system planning",
+  "publishedOn": "2026-07-09",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "final_rsp_project_list_jun_2026.xlsx",
+    "locator": "RSP_sortable!A2:DE1025; headers row 1",
+    "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+  },
+  "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+  "geographicScope": "Regional system planning list across Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island and Vermont; partial public inventory, not all local transmission work.",
+  "inventoryScope": "Individual RSP listed work items with latest status Planned, Under Construction or Proposed. In-service and cancelled rows excluded. Duplicate formatted/topical sheets are not additional inventory; asset-condition list is outside this source.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 1024,
+    "importedRecords": 46,
+    "excludedRows": 978,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "cancelled",
+      "count": 335
+    },
+    {
+      "reason": "in-service",
+      "count": 643
+    }
+  ],
+  "limitations": [
+    "No native coordinates; every record remains unlocated and outside proximity matching.",
+    "Projected in-service dates have month precision; stored Excel days do not supply exact milestone days.",
+    "Proposed is retained with unknown normalized lifecycle; elapsed dates do not establish completion.",
+    "Owner identities are source-scoped and do not establish cross-source corporate equivalence.",
+    "Native Project IDs identify listed work items; major project names do not establish deduplication.",
+    "Public source is attributed for private project analysis; no dataset-specific open reuse license identified."
+  ]
+}

@@ -28,7 +28,7 @@ export function projectEligibility(project: Project): Eligibility {
   return { eligible: reasons.length === 0, reasons }
 }
 
-/** Legacy comparisons retain filing semantics; inventory comparisons require evidenced distinct owners. */
+/** Legacy comparisons retain filing semantics; cross-inventory owners need global identity evidence. */
 export function pairEligibility(left: Project, right: Project): Eligibility {
   if (left.id === right.id) return { eligible: false, reasons: ["A project cannot be compared with itself."] }
   const reasons = [left, right].flatMap(project => projectEligibility(project).reasons.map(reason => `${project.name}: ${reason}`))
@@ -44,6 +44,11 @@ export function pairEligibility(left: Project, right: Project): Eligibility {
     reasons: ["Pairs involving source-qualified inventory require evidenced owner identities for both projects; a legacy filing or sponsor label does not establish ownership."],
   }
   if (leftOwner.id === rightOwner.id) return { eligible: false, reasons: ["Source evidence identifies the same asset owner for both projects."] }
+  const sameInventory = left.inventory!.sourceKey === right.inventory!.sourceKey
+  if (!sameInventory && (leftOwner.identityScope !== "global" || rightOwner.identityScope !== "global")) return {
+    eligible: false,
+    reasons: ["Comparing different source inventories requires globally scoped, evidenced owner identities for both projects. Source-scoped or unspecified owner identities do not establish distinct owners across inventories."],
+  }
   return {
     eligible: true,
     reasons: [
