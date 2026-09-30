@@ -97,7 +97,7 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
 | source_discovery / ingestion | Puerto Rico full 22 integrated on PR107 branch after sample connection; F27-NV-Q ready. | Exact Nevada qualification/sample/receipt in [spec](features/F27-us-regional-expansion/nv-nvenergy/spec.md); no producer before acceptance. SERTP remains blocked. |
-| core | New York full integrated on current branch; WestConnect six-record batch connected; full 304 producer active. | Exact source producer/data/receipt in [spec](features/F27-us-regional-expansion/westconnect-tppl/spec.md); Provider connection adc2397 precedes full 304. |
+| core | WestConnect full 304 integrated on PR107 branch after sample connection; F27-PC-Q ready. | Exact PacifiCorp qualification/sample/receipt in [spec](features/F27-us-regional-expansion/pacificorp-plan/spec.md); no producer before acceptance. |
 | coordinator | PR95 integrated; PR107 connects Puerto Rico/WestConnect samples, full source integration pending. | Root owns aggregate/schema/register/merge/checks; preserve all unrelated untracked duplicate files. |
 | ui | BPA full 77 and 13,200-record fixture integrated; F27-GU-Q active. | Exact Guam qualification/sample/receipt in [spec](features/F27-us-regional-expansion/gu-gpa/spec.md); no producer before acceptance, no UI/map edits. |
 
