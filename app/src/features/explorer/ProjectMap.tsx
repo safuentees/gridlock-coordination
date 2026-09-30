@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { CircleMarker, MapContainer, Polyline, Popup, TileLayer, useMap } from "react-leaflet"
 import type { LatLngTuple } from "leaflet"
 import "leaflet/dist/leaflet.css"
@@ -6,20 +6,41 @@ import { Button } from "@/components/ui/button"
 import { UTILITIES, type Opportunity, type Project } from "@/domain/schema"
 
 const colors = { desc: "#2563eb", gpc: "#b45309" }
-function MapView({ projects, focusIds, fitRevision }: { projects: Project[]; focusIds: string[]; fitRevision: number }) {
+function MapView({ projects, focusIds, fitRevision, visible }: { projects: Project[]; focusIds: string[]; fitRevision: number; visible: boolean }) {
   const map = useMap()
+  const lastFit = useRef<{ projects: Project[]; focusIds: string[]; fitRevision: number } | null>(null)
   const locations = useMemo(() => projects.flatMap((project): LatLngTuple[] => project.location ? [[project.location.lat, project.location.lon]] : []), [projects])
   useEffect(() => {
-    if (locations.length) map.fitBounds(locations, { padding: [28, 28], maxZoom: 10, animate: false })
-  }, [map, locations, fitRevision])
+    const container = map.getContainer()
+    let frame = 0
+    const resize = () => {
+      cancelAnimationFrame(frame)
+      frame = requestAnimationFrame(() => {
+        if (container.clientWidth > 0 && container.clientHeight > 0) map.invalidateSize({ pan: false })
+      })
+    }
+    const observer = new ResizeObserver(resize)
+    observer.observe(container)
+    resize()
+    return () => { observer.disconnect(); cancelAnimationFrame(frame) }
+  }, [map])
   useEffect(() => {
+    if (!visible) return
+    map.invalidateSize({ pan: false })
+    const previous = lastFit.current
     const selected = projects.filter((project) => focusIds.includes(project.id)).flatMap((project): LatLngTuple[] => project.location ? [[project.location.lat, project.location.lon]] : [])
-    if (selected.length) map.fitBounds(selected, { padding: [48, 48], maxZoom: selected.length === 1 ? 10 : 12, animate: false })
-  }, [map, projects, focusIds])
+    const requestedFit = previous !== null && previous.fitRevision !== fitRevision
+    if (!requestedFit && (!previous || previous.focusIds !== focusIds) && selected.length) {
+      map.fitBounds(selected, { padding: [48, 48], maxZoom: selected.length === 1 ? 10 : 12, animate: false })
+    } else if ((!previous || previous.projects !== projects || requestedFit) && locations.length) {
+      map.fitBounds(locations, { padding: [28, 28], maxZoom: 10, animate: false })
+    }
+    lastFit.current = { projects, focusIds, fitRevision }
+  }, [map, locations, projects, focusIds, fitRevision, visible])
   return null
 }
-export function ProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity }: {
-  projects: Project[]; opportunities: Opportunity[]; selectedProjectId: string | null; selectedOpportunity: Opportunity | null;
+export function ProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible }: {
+  visible: boolean; projects: Project[]; opportunities: Opportunity[]; selectedProjectId: string | null; selectedOpportunity: Opportunity | null;
   onProject: (id: string) => void; onOpportunity: (id: string) => void;
 }) {
   const [fitRevision, setFitRevision] = useState(0)
@@ -28,10 +49,10 @@ export function ProjectMap({ projects, opportunities, selectedProjectId, selecte
   const byId = useMemo(() => new Map(projects.map((project) => [project.id, project])), [projects])
   const candidateIds = useMemo(() => new Set(opportunities.flatMap((opportunity) => opportunity.projectIds)), [opportunities])
   const lines = selectedOpportunity ? [selectedOpportunity] : opportunities.slice(0, 100)
-  return <section className="space-y-2" aria-label="Project map">
-    <div className="flex flex-wrap items-center justify-between gap-2"><div className="flex flex-wrap gap-3 text-xs"><span><span aria-hidden="true" className="mr-1 inline-block size-2 rounded-full bg-blue-600" />Dominion filing</span><span><span aria-hidden="true" className="mr-1 inline-block size-2 rounded-full bg-amber-700" />Georgia filing</span><span>Outlined points have candidates</span></div><Button variant="outline" size="sm" onClick={() => setFitRevision((value) => value + 1)}>Fit visible projects</Button></div>
-    <MapContainer center={[33.2, -82.5]} zoom={7} scrollWheelZoom={false} className="z-0 h-[420px] w-full rounded-lg border" aria-label="Map of located projects">
-      <MapView projects={projects} focusIds={focusIds} fitRevision={fitRevision} />
+  return <section className="flex min-h-0 min-w-0 flex-1 flex-col gap-3 overflow-hidden" aria-label="Project map">
+    <div className="flex shrink-0 flex-wrap items-center justify-between gap-2"><div className="flex flex-wrap gap-3 text-xs"><span><span aria-hidden="true" className="mr-1 inline-block size-2 rounded-full bg-blue-600" />Dominion filing</span><span><span aria-hidden="true" className="mr-1 inline-block size-2 rounded-full bg-amber-700" />Georgia filing</span><span>Outlined points have candidates</span></div><Button variant="outline" size="sm" onClick={() => setFitRevision((value) => value + 1)}>Fit visible projects</Button></div>
+    <MapContainer center={[33.2, -82.5]} zoom={7} scrollWheelZoom={false} className="z-0 min-h-0 w-full flex-1 rounded-lg border" aria-label="Map of located projects">
+      <MapView projects={projects} focusIds={focusIds} fitRevision={fitRevision} visible={visible} />
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" eventHandlers={{ tileerror: () => setTileError(true) }} />
       {lines.map((opportunity) => {
         const left = byId.get(opportunity.projectIds[0])?.location
@@ -43,7 +64,7 @@ export function ProjectMap({ projects, opportunities, selectedProjectId, selecte
         <Popup><strong>{project.name}</strong><p>{UTILITIES[project.utilityId]}<br />{project.location.confidence}; {project.location.method.replaceAll("-", " ")}</p><button type="button" className="underline" onClick={() => onProject(project.id)}>Show project evidence</button></Popup>
       </CircleMarker>)}
     </MapContainer>
-    {tileError && <p role="status" className="text-xs text-muted-foreground">Basemap tiles could not load. Project coordinates, inventory and evidence remain available.</p>}
-    <p className="text-xs text-muted-foreground">Dashed lines connect project centers, not routes. {selectedOpportunity ? "Showing the selected candidate." : `Showing ${Math.min(100, opportunities.length)} candidate connections; all candidates are in the ranked list.`} Use map zoom controls or drag to navigate.</p>
+    {tileError && <p role="status" className="shrink-0 text-xs text-muted-foreground">Basemap tiles could not load. Project coordinates, inventory and evidence remain available.</p>}
+    <p className="shrink-0 text-xs text-muted-foreground">Dashed lines connect project centers, not routes. {selectedOpportunity ? "Showing the selected candidate." : `Showing ${Math.min(100, opportunities.length)} candidate connections; all candidates are in the ranked list.`} The map includes matching projects, candidate counterparts and the selection.</p>
   </section>
 }

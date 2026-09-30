@@ -1,8 +1,8 @@
-import { useState, type FormEvent } from "react"
+import { useId, useState, type FormEvent } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { DEFAULT_OPTIONS, type AnalysisOptions, type AnalysisResult } from "@/domain/schema"
@@ -10,6 +10,9 @@ import { DEFAULT_OPTIONS, type AnalysisOptions, type AnalysisResult } from "@/do
 export function ScenarioControls({ options, baseline, analysis, onApply }: {
   options: AnalysisOptions; baseline: AnalysisResult; analysis: AnalysisResult; onApply: (options: AnalysisOptions) => void;
 }) {
+  const formId = useId()
+  const [open, setOpen] = useState(false)
+  // Drafts live outside the dialog body so closing a secondary view does not erase edits.
   const [radius, setRadius] = useState(String(options.radiusMiles))
   const [limitDates, setLimitDates] = useState(options.maxDateGapDays !== null)
   const [dateGap, setDateGap] = useState(String(options.maxDateGapDays ?? 365))
@@ -32,16 +35,24 @@ export function ScenarioControls({ options, baseline, analysis, onApply }: {
     setRadius(String(DEFAULT_OPTIONS.radiusMiles)); setLimitDates(false); setDateGap("365"); setIncludeUnverified(true); setError(null)
     onApply({ ...DEFAULT_OPTIONS })
   }
-  return <Card><CardHeader><CardTitle>Coordination scenario</CardTitle><CardDescription>Change eligibility and compare the result with the default 25-mile scenario.</CardDescription></CardHeader><CardContent className="space-y-4">
-    <form className="space-y-4" onSubmit={apply}>
-      <div className="grid items-start gap-4 sm:grid-cols-3">
-        <div className="space-y-2"><Label htmlFor="scenario-radius">Radius (miles)</Label><Input id="scenario-radius" type="number" min="0" step="any" value={radius} onChange={(event) => setRadius(event.target.value)} required /><p className="text-xs text-muted-foreground">Strictly less than this distance.</p></div>
-        <div className="space-y-2"><div className="flex items-center gap-2"><Checkbox id="scenario-limit-date" checked={limitDates} onCheckedChange={(value) => setLimitDates(value === true)} /><Label htmlFor="scenario-limit-date">Limit milestone separation</Label></div><Input aria-label="Maximum milestone separation in days" type="number" min="0" step="1" value={dateGap} disabled={!limitDates} onChange={(event) => setDateGap(event.target.value)} /><p className="text-xs text-muted-foreground">Days, inclusive. When enabled, unknown or partial dates are excluded.</p></div>
-        <div className="space-y-2"><div className="flex items-center gap-2"><Checkbox id="scenario-unverified" checked={includeUnverified} onCheckedChange={(value) => setIncludeUnverified(value === true)} /><Label htmlFor="scenario-unverified">Include unverified locations</Label></div><p className="text-xs text-muted-foreground">Unchecked requires both centers to be marked confirmed in the records.</p></div>
+  return <Dialog open={open} onOpenChange={setOpen}>
+    <DialogTrigger asChild><Button variant="outline">Edit scenario</Button></DialogTrigger>
+    <DialogContent className="flex max-h-[calc(100dvh-2rem)] min-h-0 flex-col overflow-hidden sm:max-w-2xl">
+      <DialogHeader className="shrink-0 pr-8"><DialogTitle>Coordination scenario</DialogTitle><DialogDescription>Change eligibility and compare with the default 25-mile scenario.</DialogDescription></DialogHeader>
+      <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain" tabIndex={0} role="region" aria-label="Scenario settings">
+        <form id={formId} className="space-y-4" onSubmit={apply}>
+          <div className="space-y-2"><Label htmlFor="scenario-radius">Radius (miles)</Label><Input id="scenario-radius" type="number" min="0" step="any" value={radius} onChange={(event) => setRadius(event.target.value)} required /><p className="text-xs text-muted-foreground">Strictly less than this distance.</p></div>
+          <div className="space-y-2"><div className="flex items-center gap-2"><Checkbox id="scenario-limit-date" checked={limitDates} onCheckedChange={(value) => setLimitDates(value === true)} /><Label htmlFor="scenario-limit-date">Limit milestone separation</Label></div><Input aria-label="Maximum milestone separation in days" type="number" min="0" step="1" value={dateGap} disabled={!limitDates} onChange={(event) => setDateGap(event.target.value)} /><p className="text-xs text-muted-foreground">Days, inclusive. When enabled, unknown or partial dates are excluded.</p></div>
+          <div className="space-y-2"><div className="flex items-center gap-2"><Checkbox id="scenario-unverified" checked={includeUnverified} onCheckedChange={(value) => setIncludeUnverified(value === true)} /><Label htmlFor="scenario-unverified">Include unverified locations</Label></div><p className="text-xs text-muted-foreground">Unchecked requires both centers to be marked confirmed in the records.</p></div>
+          {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
+        </form>
+        <section className="space-y-2 border-t pt-4" aria-live="polite" aria-label="Scenario comparison">
+          <p className="text-sm font-medium">Applied scenario compared with defaults</p>
+          <div className="flex flex-wrap gap-2"><Badge variant="outline">Default: {baseline.opportunities.length}</Badge><Badge>Current: {analysis.opportunities.length}</Badge><Badge variant="secondary">{added} added</Badge><Badge variant="secondary">{removed} removed</Badge></div>
+          <p className="text-xs text-muted-foreground">Full-dataset candidates before inventory filters. {analysis.summary.excludedUnverified.toLocaleString()} cross-filing pairs excluded by location confidence.</p>
+        </section>
       </div>
-      {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
-      <div className="flex flex-wrap items-center gap-2"><Button type="submit">Apply scenario</Button><Button type="button" variant="outline" onClick={reset}>Reset defaults</Button><span className="text-xs text-muted-foreground">Applied: &lt;{options.radiusMiles} mi; {options.maxDateGapDays === null ? "any milestone gap" : `≤${options.maxDateGapDays} days`}; {options.includeUnverified ? "all located evidence" : "confirmed locations only"}</span></div>
-    </form>
-    <div className="space-y-2 border-t pt-3" aria-live="polite"><div className="flex flex-wrap gap-2"><Badge variant="outline">Default: {baseline.opportunities.length} candidates</Badge><Badge>Current: {analysis.opportunities.length}</Badge><Badge variant="secondary">{added} added</Badge><Badge variant="secondary">{removed} removed</Badge></div><p className="text-xs text-muted-foreground">Comparison uses the full dataset before inventory filters. {analysis.summary.comparedPairs.toLocaleString()} cross-filing pairs considered; {analysis.summary.excludedUnverified.toLocaleString()} excluded by location confidence. {analysis.summary.unlocatedProjects} projects have no usable location.</p></div>
-  </CardContent></Card>
+      <DialogFooter className="shrink-0"><Button type="button" variant="outline" onClick={reset}>Reset defaults</Button><Button type="submit" form={formId}>Apply scenario</Button></DialogFooter>
+    </DialogContent>
+  </Dialog>
 }
