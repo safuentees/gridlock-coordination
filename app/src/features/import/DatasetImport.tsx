@@ -26,9 +26,9 @@ export function DatasetImport({ dataset, isImported, onApply, onReset }: Props) 
     ...changes.changed.map(({ after, fields }) => ({ id: after.id, name: after.name, change: `Changed: ${fields.join(", ")}` })),
   ] : []
 
-  return <section className="space-y-4" aria-labelledby="dataset-heading">
+  return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4" aria-label="Source revisions">
+    <div className="min-h-0 min-w-0 flex-1 space-y-4 overflow-auto overscroll-contain py-2 [overflow-wrap:anywhere]">
     <div className="space-y-2">
-      <h2 id="dataset-heading" className="text-lg font-semibold">Source revisions</h2>
       <p className="text-sm text-muted-foreground">Preview a normalized source dataset before using it. Imports stay in this session; reloading restores the supplied snapshot.</p>
     </div>
     <div className="flex flex-wrap gap-2">
@@ -63,9 +63,10 @@ export function DatasetImport({ dataset, isImported, onApply, onReset }: Props) 
           <TableBody>{rows.map(row => <TableRow key={row.id}><TableCell>{row.name}<span className="block text-xs text-muted-foreground">{row.id}</span></TableCell><TableCell>{row.change}</TableCell></TableRow>)}</TableBody>
         </Table></div>}
         {candidate.projects.length === 0 && <p className="text-sm">This revision has no projects. Applying it clears the current inventory for this session.</p>}
-        <Button onClick={() => { onApply(candidate); setCandidate(null); setApplied(true) }}>Use this revision</Button>
       </div>}
       {applied && <p role="status" className="text-sm">The revision is active in the explorer.</p>}
     </>}
+    </div>
+    {candidate && dataset.mode === "real" && <div className="shrink-0 border-t pt-4"><Button onClick={() => { onApply(candidate); setCandidate(null); setApplied(true) }}>Use this revision</Button></div>}
   </section>
 }
