@@ -16,13 +16,13 @@
   "sha256": "55b8a60fc0a4159d9de52a5c1f83be04cfaa2c60468126408d9968782eb0c9dc",
   "geographicScope": "Partial MISO regional public facility inventory including seam work; state labels do not establish complete MISO or jurisdiction coverage.",
   "inventoryScope": "All public Appendix A facility components except M4 in service. Explicit parent projects are not extra records. Ancillary and distribution context remain visible with distinct kinds; annual and under-evaluation inventories remain separate.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 3211,
-    "importedRecords": 6,
+    "importedRecords": 3042,
     "excludedRows": 169,
     "failedRows": 0,
-    "pendingRows": 3036,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
