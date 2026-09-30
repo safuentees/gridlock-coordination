@@ -2704,6 +2704,16 @@
       "url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
       "evidenceFile": "specs/features/F27-us-regional-expansion/nyiso-gold-book/qualification.md",
       "missingInput": "Complete ordinarily accessible official 2026 public report or full Section VII with cover/as-of, all rows, headers and footnotes. Ordinary report requests returned robot-verification/empty HTML, not PDF; official references confirm edition only."
+    },
+    {
+      "sourceKey": "sc-santee",
+      "status": "qualified-production-in-progress",
+      "task": "F27-SANTEE-I",
+      "owner": "source_discovery",
+      "missingInput": "Connected six-record batch, then full 24 accepted observations; native locations, owners and corridor crosswalk remain unknown",
+      "sourceRows": 35,
+      "proposedImportedRecords": 24,
+      "locatedRecords": 0
     }
   ],
   "scopeLimits": [
@@ -3035,6 +3045,19 @@
       "locatedRecords": 0,
       "scope": "Complete public nonterminal workbook row scope, including explicitly classified supporting/program context; not distinct engineering projects or statewide completeness",
       "contract": "specs/features/F27-us-regional-expansion/ca-sdge-tpr/spec.md"
+    },
+    {
+      "sourceKey": "sc-santee",
+      "editionId": "public-plans-snapshot-2026-09-30",
+      "status": "qualified-production-in-progress",
+      "task": "F27-SANTEE-I",
+      "owner": "source_discovery",
+      "proposedImportedRecords": 24,
+      "locatedRecords": 0,
+      "sourceRows": 35,
+      "excludedRows": 11,
+      "scope": "Full declared IRP appendix/public-index union, not full utility inventory; unresolved observation overlap prevents a unique engineering-project count",
+      "evidenceFile": "specs/features/F27-us-regional-expansion/sc-santee/qualification.md"
     }
   ]
 }
