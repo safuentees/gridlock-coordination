@@ -1,17 +1,17 @@
 # FPL public transmission plan producer
 
-This `pypdf` adapter reads only the accepted text forms and matched engineering narratives from the hash-pinned April 2026 public plan. The five bulk-table rows are frozen factual cells with exact citations. Source PDF/index originals stay ignored under `inputs/originals/F27-fl-fpl/`; no original narrative, map, hidden metadata or contact fields enter the dataset.
+After the five-record sample was connected at `5d69291`, this unchanged `pypdf` adapter emits all 55 accepted records and reads only the accepted text forms and matched engineering narratives from the hash-pinned April 2026 public plan. The five bulk-table rows are frozen factual cells with exact citations. Source PDF/index originals stay ignored under `inputs/originals/F27-fl-fpl/`; no original narrative, map, hidden metadata or contact fields enter the dataset.
 
 ```sh
 python3 scripts/ingest/coverage/fl-fpl/extract.py \
   --original-dir inputs/originals/F27-fl-fpl \
-  --output-dir app/src/data/real/coverage/fl-fpl --scope sample \
-  --generated-at 2026-09-30T12:08:18+00:00
+  --output-dir app/src/data/real/coverage/fl-fpl --scope full \
+  --generated-at 2026-09-30T12:19:07+00:00
 ```
 
 From an isolated worktree, provide the originals' absolute directory. The fixed generation time reproduces the snapshot without changing April 2026 lifecycle evidence. Hash, field, frozen-locator and source-reconciliation guards stop changed editions; they are producer safeguards, not worker runtime/schema checks.
 
-The complete primary boundary is five Table III.E.1 rows (printed96/PDF110) plus 84 Schedule 10 forms (printed315–398/PDF329–412). Corresponding III.E.1–84 narratives (printed97–180/PDF111–194) add evidence, not projects. Sample ledger: **89 = 5 imported + 34 excluded + 50 pending**, zero failed/located. The accepted full scope is 55 transmission work units; full output waits for coordinator sample connection.
+The complete primary boundary is five Table III.E.1 rows (printed96/PDF110) plus 84 Schedule 10 forms (printed315–398/PDF329–412). Corresponding III.E.1–84 narratives (printed97–180/PDF111–194) add evidence, not projects. Full ledger: **89 = 55 imported + 34 excluded**, zero pending/failed/located. The unchanged producer preserves every connected sample value and ID while emitting the retained source order.
 
 | Sample identity | Locator | Meaning |
 |---|---|---|
@@ -29,4 +29,4 @@ Only the five bulk rows evidence source-scoped FPL equipment ownership. Intercon
 
 Bulk primary service dates retain month precision. The 50 interconnection primary dates remain unknown: anticipated construction years and projected connection quarters are separately labeled supplementary milestones. Quarter text is preserved with at most year precision, never fabricated months/days. Putnam voltage, source spellings/endpoints and four timing discrepancies remain explicit. Line kV, circuit miles, capacity/transformer MVA and served-facility MW retain their own meanings; source investment references do not produce transmission costs or hypothetical savings.
 
-`dataset.json` is Dataset v2; `manifest.json`, `row-ledger.json`, `source-quality.json` and `payload-sizes.json` describe the complete boundary. The five-record Dataset is **24,309 compact / 31,528 formatted UTF-8 bytes**, including its manifest. Default sample production remains reproducible; `--scope full` is ready for the later authorized 55-record delivery. This partial utility planning scope is not complete Florida coverage or a statewide denominator. Coordinator alone owns integration and the bounded check; no worker checks ran.
+`dataset.json` is Dataset v2; `manifest.json`, `row-ledger.json`, `source-quality.json` and `payload-sizes.json` describe the complete boundary. The full Dataset is **238,290 compact / 315,498 formatted UTF-8 bytes**, including its manifest. The connected five-record Dataset was 24,309 compact / 31,528 formatted bytes. Default `--scope sample` still emits the five original diagnostics; `--scope full` emits every accepted retained entry. This partial utility planning scope is not complete Florida coverage or a statewide denominator. Coordinator alone owns integration and the bounded check; no worker checks ran.
