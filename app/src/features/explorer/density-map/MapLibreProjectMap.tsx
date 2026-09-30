@@ -8,6 +8,7 @@ import "maplibre-gl/dist/maplibre-gl.css"
 import { Button } from "@/components/ui/button"
 import { IconButton } from "@/components/ui/icon-button"
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { reportingGroups } from "@/lib/reporting-groups"
 import { MapLegend } from "../MapLegend"
 import { boundedInsets, getMapConnections, getMapLocations, isMappableProject, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "../map-view"
 import { DeckOverlay } from "./DeckOverlay"
@@ -47,6 +48,7 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
   const [fitRequest, setFitRequest] = useState<{ target: FitTarget; revision: number }>({ target: "projects", revision: 0 })
   const lastFit = useRef<{ locationsKey: string; focusKey: string; layoutKey: string; revision: number } | null>(null)
   const mappedProjects = useMemo(() => projects.filter(isMappableProject), [projects])
+  const groups = useMemo(() => reportingGroups(mappedProjects), [mappedProjects])
   const outOfRangeCount = projects.filter((project) => project.location && !isMappableProject(project)).length
   const focusIds = useMemo(() => selectedOpportunity?.projectIds ?? (selectedProjectId ? [selectedProjectId] : []), [selectedOpportunity, selectedProjectId])
   const projectPoints = useMemo(() => mappedProjects.map((project): DensityPoint => ({ id: project.id, position: [project.location.lon, project.location.lat] })), [mappedProjects])
@@ -140,7 +142,7 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
         </div>
         <IconButton variant="outline" label={syntheticPreview ? "Fit sample" : "Fit projects"} disabled={!ready || !locations.length} onClick={() => fit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
       </div>
-      {visible && container && !syntheticPreview && <div className="shrink-0"><MapLegend boundary={container} connectionCount={selectedOpportunity || pointOpacity > 0 ? connections.length : 0} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
+      {visible && container && !syntheticPreview && <div className="shrink-0"><MapLegend groups={groups} boundary={container} connectionCount={selectedOpportunity || pointOpacity > 0 ? connections.length : 0} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
       <Button type="button" variant="outline" size="sm" className="shrink-0" disabled={!ready || !selectedLocations.length} onClick={() => fit("selection")}>Fit selection</Button>
       {visible && <DropdownMenu>
         <DropdownMenuTrigger asChild><Button type="button" variant="outline" size="sm" className="shrink-0">Map view</Button></DropdownMenuTrigger>

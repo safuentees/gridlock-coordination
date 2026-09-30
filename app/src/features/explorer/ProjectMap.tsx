@@ -7,11 +7,12 @@ import { Button } from "@/components/ui/button"
 import { IconButton } from "@/components/ui/icon-button"
 import type { Project } from "@/domain/schema"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { reportingGroups } from "@/lib/reporting-groups"
 import { MapLegend } from "./MapLegend"
+import { mapReportingGroupColor } from "./map-colors"
 import { boundedInsets, getMapConnections, getMapLocations, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "./map-view"
 
 export interface MapViewportInsets { top: number; right: number; bottom: number; left: number }
-const colors = { desc: "#2563eb", gpc: "#b45309" }
 type FitTarget = "projects" | "selection"
 interface FitRequest { target: FitTarget; revision: number }
 
@@ -24,6 +25,7 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
   const controls = useRef<HTMLDivElement>(null)
   const [size, setSize] = useState({ width: 0, height: 0 })
   const lastFit = useRef<{ locationsKey: string; focusKey: string; fitRevision: number; layoutKey: string } | null>(null)
+  const groups = useMemo(() => reportingGroups(projects.filter(project => project.location !== null)), [projects])
   const locations = useMemo(() => getMapLocations(projects), [projects])
   const selectedLocations = useMemo(() => getMapLocations(projects, focusIds), [projects, focusIds])
   const insets = useMemo(() => boundedInsets(viewportInsets, size.width, size.height), [viewportInsets.top, viewportInsets.right, viewportInsets.bottom, viewportInsets.left, size.width, size.height])
@@ -99,7 +101,7 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
       </div>
       <IconButton variant="outline" label="Fit projects" disabled={!locations.length} onClick={() => onFit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
     </div>
-    <div className="pointer-events-auto">{visible && <MapLegend boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
+    <div className="pointer-events-auto">{visible && <MapLegend groups={groups} boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
     <Button className="pointer-events-auto" type="button" variant="outline" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>
     {visible && <DropdownMenu>
       <DropdownMenuTrigger asChild><Button className="pointer-events-auto" type="button" variant="outline" size="sm">Map view</Button></DropdownMenuTrigger>
@@ -127,7 +129,7 @@ function LeafletProjectMap({ projects, opportunities, selectedProjectId, selecte
       <MapView projects={projects} focusIds={focusIds} fitRequest={fitRequest} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} onChangeRenderer={onChangeRenderer} onFit={(target) => setFitRequest((previous) => ({ target, revision: previous.revision + 1 }))} />
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" eventHandlers={{ tileerror: () => setTileError(true) }} />
       {lines.map(({ opportunity, positions }) => <Polyline key={opportunity.id} positions={positions} pathOptions={{ color: "#525252", weight: selectedOpportunity ? 3 : 1.5, opacity: selectedOpportunity ? 0.9 : 0.3, dashArray: "5 5" }} eventHandlers={{ click: () => onOpportunity(opportunity.id) }} />)}
-      {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : colors[project.utilityId], fillColor: colors[project.utilityId], fillOpacity: 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }} />)}
+      {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : mapReportingGroupColor(project.utilityId).css, fillColor: mapReportingGroupColor(project.utilityId).css, fillOpacity: 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }} />)}
     </MapContainer>
   </section>
 }
