@@ -1,0 +1,52 @@
+{
+  "sourceKey": "hi-heco-featured",
+  "editionId": "snapshot-2026-09-30-7a3266df",
+  "label": "Hawaiian Electric featured project pages — September 30, 2026 snapshot",
+  "reportingGroupId": "hi-heco-featured",
+  "reportingGroupName": "Hawaiian Electric featured projects",
+  "publisher": "Hawaiian Electric",
+  "processAuthority": null,
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "investing-in-the-future.html",
+    "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future",
+    "locator": "Investing in the Future; all seven featured topic headings and linked project pages"
+  },
+  "sha256": "7a3266df72a13e0312daea561e685d2fba1fab86ef48648d634c6f453ac98c2d",
+  "geographicScope": "Featured Hawaiian Electric topics on Oahu, Hawaii Island and Maui; retained topics concern Oahu and Hawaii Island. Not complete Hawaii or utility coverage.",
+  "inventoryScope": "Seven featured topics: two transmission improvements, one capital network program, one unresolved planning context and three excluded completed/generation/storage topics. Workstreams and phases are not extra records.",
+  "scope": "full",
+  "counts": {
+    "sourceRows": 7,
+    "importedRecords": 4,
+    "excludedRows": 3,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "Generation turbines, not a standalone transmission improvement.",
+      "count": 1
+    },
+    {
+      "reason": "Explicit completion on 2023-12-15; do not infer in-service wording.",
+      "count": 1
+    },
+    {
+      "reason": "Waena standalone storage; a historical withdrawn Keahole mention is not another index topic.",
+      "count": 1
+    }
+  ],
+  "limitations": [
+    "The featured index is not a complete utility or statewide planned-project inventory; broader Hawaii coverage remains a gap.",
+    "Page slugs are source locators, not native engineering project IDs. Dockets identify proceedings; future-edition identity continuity requires review.",
+    "All retained project owners and geometry are unknown. Publisher/sponsor, controller ownership and named places do not establish project ownership or coordinates.",
+    "Forecast month/year precision is preserved. No construction window, actual start or in-service date is inferred from a schedule or program horizon.",
+    "Kalaeloa replacement-pole counts conflict: 21 in the index, 20 on the detail page.",
+    "North Kohala remains unresolved planning context. Its closed storage procurement does not establish cancellation of the wider concept; the June 30, 2026 annual update reports reevaluation.",
+    "Koa Ridge is excluded because its detail page explicitly reports completion, despite the older future-tense index summary.",
+    "Conditional REZ alternatives and other planning/distribution examples are outside this seven-topic boundary."
+  ]
+}

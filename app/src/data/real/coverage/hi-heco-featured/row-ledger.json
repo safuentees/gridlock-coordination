@@ -1,0 +1,203 @@
+{
+  "sourceKey": "hi-heco-featured",
+  "editionId": "snapshot-2026-09-30-7a3266df",
+  "sources": [
+    {
+      "file": "investing-in-the-future.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/investing-in-the-future.html",
+      "sha256": "7a3266df72a13e0312daea561e685d2fba1fab86ef48648d634c6f453ac98c2d"
+    },
+    {
+      "file": "2026-06-30-igp-action-plan-annual-update.pdf",
+      "url": "https://hawaiipowered.com/igp/2026-0001_2026-06-30_IGP_Action_Plan_2026_Annual_Update.pdf",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/2026-06-30-igp-action-plan-annual-update.pdf",
+      "sha256": "d40aa4ae0c551a5de2206e3366213c673ff6c18ccf19cddc84d8596c362295d2"
+    },
+    {
+      "file": "development-team-projects.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/development-team-projects",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/development-team-projects.html",
+      "sha256": "04d9cb1a17147f2f90aebb4039fc15daf6c04775ced9646ea402f9fddf2f66e0"
+    },
+    {
+      "file": "downtown-honolulu-network-upgrades.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/downtown-honolulu-network-upgrades",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/downtown-honolulu-network-upgrades.html",
+      "sha256": "cc8cefb70189f8e8be588702e0727c5daa884b7530701ed3eb2455b4d7a7e8d1"
+    },
+    {
+      "file": "koa-ridge-46kv-overhead-line-relocation-project.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/koa-ridge-46kv-overhead-line-relocation-project.html",
+      "sha256": "043f0dcb6bb256add458dea2a040a322e3c4685076d2449a92bc32b7990fee27"
+    },
+    {
+      "file": "north-kohala-microgrid.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/north-kohala-microgrid",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/north-kohala-microgrid.html",
+      "sha256": "446df9d7c52dfdcd910d7980e3e35739e6a6e29de3080520b3696f262eda925b"
+    },
+    {
+      "file": "overhead-power-line-replacement-project-in-kalaeloa.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/overhead-power-line-replacement-project-in-kalaeloa.html",
+      "sha256": "526ba09c612c6f7528416671e5e9b1a5ed9ba6f3174ed6fc562a5940ff68be3a"
+    },
+    {
+      "file": "waiau-repower.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-repower",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/waiau-repower.html",
+      "sha256": "39b7bed11d4afafb234c14f4e899e8bd955942c1ecbba30190930214359ded0e"
+    },
+    {
+      "file": "waiau-transmission-structure-replacements.html",
+      "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements",
+      "localOriginal": "inputs/originals/F27-hi-heco-projects/waiau-transmission-structure-replacements.html",
+      "sha256": "8f5d78c11f19111ebbbb6a9dde9c859aec4acf46d323a2beffd19cbe854ac801"
+    }
+  ],
+  "counts": {
+    "sourceRows": 7,
+    "importedRecords": 4,
+    "excludedRows": 3,
+    "failedRows": 0,
+    "pendingRows": 0,
+    "locatedRecords": 0
+  },
+  "payloadSizes": {
+    "compactUtf8Bytes": 11968,
+    "formattedUtf8Bytes": 15350
+  },
+  "rows": [
+    {
+      "topicOrdinal": 1,
+      "sourceId": "downtown-honolulu-network-upgrades",
+      "title": "Downtown Honolulu Network Upgrades",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "capital-project-context",
+      "disposition": "imported",
+      "reason": "Network capital program, not separately enumerated engineering projects",
+      "sources": [
+        {
+          "file": "downtown-honolulu-network-upgrades.html",
+          "locator": "Keeping You Informed; Keys to a Resilient Downtown Network, items 1–5",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/downtown-honolulu-network-upgrades"
+        }
+      ]
+    },
+    {
+      "topicOrdinal": 2,
+      "sourceId": "overhead-power-line-replacement-project-in-kalaeloa",
+      "title": "Overhead Power Line Replacement project in Kalaeloa",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Explicit transmission/subtransmission improvement",
+      "sources": [
+        {
+          "file": "overhead-power-line-replacement-project-in-kalaeloa.html",
+          "locator": "Key elements; final PUC approval and anticipated completion paragraph",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+        },
+        {
+          "file": "investing-in-the-future.html",
+          "locator": "Overhead Power Line Replacement Project in Kalaeloa topic",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future"
+        }
+      ]
+    },
+    {
+      "topicOrdinal": 3,
+      "sourceId": "waiau-repower",
+      "title": "Repowering the Waiau Power Plant",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Generation turbines, not a standalone transmission improvement.",
+      "sources": [
+        {
+          "file": "waiau-repower.html",
+          "locator": "About the Project",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-repower"
+        }
+      ]
+    },
+    {
+      "topicOrdinal": 4,
+      "sourceId": "waiau-transmission-structure-replacements",
+      "title": "Waiau Transmission Structure Replacements",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "transmission-project",
+      "disposition": "imported",
+      "reason": "Explicit transmission/subtransmission improvement",
+      "sources": [
+        {
+          "file": "waiau-transmission-structure-replacements.html",
+          "locator": "Opening scope; final survey and permitting schedule paragraph",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+        }
+      ]
+    },
+    {
+      "topicOrdinal": 5,
+      "sourceId": "koa-ridge-46kv-overhead-line-relocation-project",
+      "title": "Koa Ridge 46kV Overhead Line Relocation Project",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Explicit completion on 2023-12-15; do not infer in-service wording.",
+      "sources": [
+        {
+          "file": "koa-ridge-46kv-overhead-line-relocation-project.html",
+          "locator": "Final approval and completion paragraphs; Docket 2022-0141",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project"
+        }
+      ]
+    },
+    {
+      "topicOrdinal": 6,
+      "sourceId": "north-kohala-microgrid",
+      "title": "North Kohala Microgrid",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": "planning-context",
+      "disposition": "imported",
+      "reason": "Unresolved mixed line-rebuild and microgrid planning context",
+      "sources": [
+        {
+          "file": "north-kohala-microgrid.html",
+          "locator": "Updated March 19, 2024; preferred solution and RFP closure paragraphs",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/north-kohala-microgrid"
+        },
+        {
+          "file": "2026-06-30-igp-action-plan-annual-update.pdf",
+          "locator": "Section 1.3.7, printed page 10 / PDF page 18; June 30, 2026 filing cover",
+          "url": "https://hawaiipowered.com/igp/2026-0001_2026-06-30_IGP_Action_Plan_2026_Annual_Update.pdf"
+        }
+      ]
+    },
+    {
+      "topicOrdinal": 7,
+      "sourceId": "development-team-projects",
+      "title": "Self-Build Battery Energy Storage System on Maui",
+      "identityBasis": "source-locator",
+      "nativeEngineeringProjectId": null,
+      "recordKind": null,
+      "disposition": "excluded",
+      "reason": "Waena standalone storage; a historical withdrawn Keahole mention is not another index topic.",
+      "sources": [
+        {
+          "file": "development-team-projects.html",
+          "locator": "Battery Energy Storage Systems; Maui County",
+          "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/development-team-projects"
+        }
+      ]
+    }
+  ]
+}

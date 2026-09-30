@@ -1,0 +1,46 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "blocked-source-marking-conflict",
+  "sourceKeyProposal": "sertp-plan",
+  "editionProposal": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "officialIndex": "https://www.southeasternrtp.com/reference_library.cshtml",
+    "url": "https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf",
+    "filename": "2026_SERTP_Preliminary_Expansion_Plan_Report_(Non-CEII).pdf",
+    "localOriginal": null,
+    "sha256": null,
+    "bytes": null,
+    "acquisitionNote": "Public web text response only. No local binary acquired after conflicting markings were encountered."
+  },
+  "gate": {
+    "type": "public-label-versus-document-marking",
+    "indexLocator": "General Documents > 2026 > June 24 second-quarter meeting > expansion plan report link",
+    "indexLabel": "2026 SERTP Preliminary Expansion Plan Report (Non-CEII)",
+    "documentLocator": "Printed page 1 header; dated footer June 12, 2026",
+    "documentMarking": "SERTP TRANSMISSION PROJECTS (CEII)",
+    "requiredInput": "Authoritative correction or clarification resolving the exact report marking, or a corrected public-scope report.",
+    "affectedUseStopped": true
+  },
+  "enumeration": {
+    "sourceRows": null,
+    "retainedRecords": null,
+    "excludedRows": null,
+    "assessment": "Not assessed because the marking gate preceded enumeration."
+  },
+  "mapping": null,
+  "examples": [],
+  "crossSourceOverlap": {
+    "assessment": "Not assessed; no native-ID or reference comparisons performed.",
+    "mergeAuthorized": false
+  },
+  "sourcePass": {
+    "startedAt": "2026-09-30T09:32:02Z",
+    "endedAt": "2026-09-30T09:32:35Z",
+    "elapsedMinutes": 0.55,
+    "ceilingMinutes": 15,
+    "stoppedAtGate": true
+  },
+  "implementationAuthorized": false
+}
