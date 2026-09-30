@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "BPA 2025 Transmission Plan — sample",
+  "generatedAt": "2026-09-30T09:39:14Z",
+  "projects": [
+    {
+      "id": "bpa-plan:P01092",
+      "utilityId": "bpa-plan",
+      "sourceId": "P01092",
+      "name": "Silver Creek Substation Reinforcements",
+      "sponsor": null,
+      "description": "Add breakers between the 230 kV buses and on the transformer’s 69 kV side to improve operational flexibility.",
+      "status": null,
+      "voltageKv": [
+        69,
+        230
+      ],
+      "date": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Expected energization"
+      },
+      "notes": [],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 40; §8.1.1 Proposed Plans of Service; Silver Creek",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=40"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1 Chehalis–Centralia; native bundle P01092",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "bpa-plan",
+        "editionId": "2025-updated-2026-08-25",
+        "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+        "reportingGroupName": "Bonneville Power Administration plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "upgrade",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceState": "WA",
+        "sourceLocation": "Silver Creek; Chehalis/Centralia planning area, Washington",
+        "sourceUpdatedOn": null,
+        "workType": null,
+        "milestones": [],
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "bpa-plan:sec-8-1-3-sno-king-bank-3-bushing-ct",
+      "utilityId": "bpa-plan",
+      "sourceId": "sec-8-1-3-sno-king-bank-3-bushing-ct",
+      "name": "Sno-King Bank 3 Bushing Current Transformer Upgrade",
+      "sponsor": null,
+      "description": "Upgrade the limiting circuit-breaker bushing current transformer serving Sno-King’s 230/115 kV transformer bank 3.",
+      "status": null,
+      "voltageKv": [
+        115,
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Expected energization not specified"
+      },
+      "notes": [
+        "The 2026 system-assessment need year is not an energization forecast."
+      ],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 10; §1.2.1 Sno-King CAP; need year 2026",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 44; §8.1.3 Sno-King bank 3 CT upgrade; expected energization TBD",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=44"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1 Sno-King row; no native bundle listed",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "bpa-plan",
+        "editionId": "2025-updated-2026-08-25",
+        "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+        "reportingGroupName": "Bonneville Power Administration plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceState": "WA",
+        "sourceLocation": "Sno-King; Seattle–Tacoma–Olympia planning area, Washington",
+        "sourceUpdatedOn": null,
+        "workType": null,
+        "milestones": [
+          {
+            "field": "System-assessment need year",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "need",
+              "label": "System-assessment need year"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 10; §1.2.1 Sno-King CAP; need year 2026",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=10"
+              }
+            ]
+          }
+        ],
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "bpa-plan:P04974",
+      "utilityId": "bpa-plan",
+      "sourceId": "P04974",
+      "name": "Pearl–Sherwood–McLoughlin Upgrade",
+      "sponsor": "Bonneville Power Administration / Portland General Electric",
+      "description": "Reconfigure the joint BPA/PGE 230 kV circuits and their terminations, with a new bus-sectionalizing breaker at Pearl.",
+      "status": null,
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Phased and conflicting forecasts; see source milestones"
+      },
+      "notes": [
+        "The line and breaker have separate 2026/2028 phase forecasts; the path gives 2027 and GERP estimated completion is May 2026.",
+        "The 2026–2028 envelope is not a construction interval. Joint BPA/PGE work does not establish one exclusive owner.",
+        "The public Pearl point locates one facility in a multi-facility project, not the whole project center."
+      ],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 51; §8.2.3 joint BPA/PGE Pearl–Sherwood corridor work",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 96; §9.14 joint project, expected energization 2027",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=96"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; §2 Portland upgrades; estimated completion May 2026",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 100; §11.1 P04974; phase envelope 2026–2028",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; §11.2 Pearl–Sherwood–McLoughlin; 2027",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=25; Bundle_ID=P04974; Name=Pearl; retrieved 2026-09-30"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "bpa-plan",
+        "editionId": "2025-updated-2026-08-25",
+        "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+        "reportingGroupName": "Bonneville Power Administration plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceState": "OR",
+        "sourceLocation": "Pearl, Sherwood and McLoughlin corridor; Portland planning area, Oregon",
+        "sourceUpdatedOn": null,
+        "workType": null,
+        "milestones": [
+          {
+            "field": "Line reconfiguration expected energization",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Line reconfiguration expected energization"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+              }
+            ]
+          },
+          {
+            "field": "Sectionalizing breaker expected energization",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Sectionalizing breaker expected energization"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+              }
+            ]
+          },
+          {
+            "field": "Path expected energization",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Path expected energization"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 96; §9.14 joint project, expected energization 2027",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=96"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 103; §11.2 Pearl–Sherwood–McLoughlin; 2027",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+              }
+            ]
+          },
+          {
+            "field": "GERP estimated completion",
+            "date": {
+              "value": "2026-05",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "GERP estimated completion"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 13; §2 Portland upgrades; estimated completion May 2026",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+              }
+            ]
+          }
+        ],
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Pearl-Sherwood 230 kV Corridor Reconfiguration and Series Bus Sectionalizing Breaker Addition"
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "bpa-plan:P05449",
+      "utilityId": "bpa-plan",
+      "sourceId": "P05449",
+      "name": "Keeler 500 kV Expansion and Transformer Addition",
+      "sponsor": null,
+      "description": "Reconfigure the 500 kV bus with additional breakers and add a second 500/230 kV transformer bank.",
+      "status": null,
+      "voltageKv": [
+        230,
+        500
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Conflicting forecasts; see source milestones"
+      },
+      "notes": [
+        "Forecasts conflict: the area gives 2031 energization, the path gives 2029, and GERP gives 2030 estimated completion.",
+        "The public Keeler point is an approximate existing-facility position; it is not accepted as this project’s center."
+      ],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 52; §8.2.3 Keeler expansion; expected energization 2031",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 89; §9.5 same Keeler expansion; expected energization 2029",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; §2 Portland upgrades; Keeler estimated completion 2030",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 101; §11.1 native P05449; 2031",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; §11.2 native P05449; 2029",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=5; Bundle_ID=P05449; Name=Keeler; retrieved 2026-09-30"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "bpa-plan",
+        "editionId": "2025-updated-2026-08-25",
+        "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+        "reportingGroupName": "Bonneville Power Administration plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "native-id",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceState": "OR",
+        "sourceLocation": "Keeler Substation, Hillsboro, Oregon",
+        "sourceUpdatedOn": null,
+        "workType": null,
+        "milestones": [
+          {
+            "field": "Area expected energization",
+            "date": {
+              "value": "2031",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Area expected energization"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 52; §8.2.3 Keeler expansion; expected energization 2031",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 101; §11.1 native P05449; 2031",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+              }
+            ]
+          },
+          {
+            "field": "Path expected energization",
+            "date": {
+              "value": "2029",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Path expected energization"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 89; §9.5 same Keeler expansion; expected energization 2029",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 103; §11.2 native P05449; 2029",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+              }
+            ]
+          },
+          {
+            "field": "GERP estimated completion",
+            "date": {
+              "value": "2030",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "GERP estimated completion"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 13; §2 Portland upgrades; Keeler estimated completion 2030",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+              }
+            ]
+          }
+        ],
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    },
+    {
+      "id": "bpa-plan:sec-8-6-1-bonanza-substation",
+      "utilityId": "bpa-plan",
+      "sourceId": "sec-8-6-1-bonanza-substation",
+      "name": "Bonanza Substation Addition",
+      "sponsor": null,
+      "description": "Build a hub substation near Ponderosa, reconnect its transformer high sides and connect the planned station to existing 500 kV lines.",
+      "status": null,
+      "voltageKv": [
+        115,
+        230,
+        500
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Conflicting forecasts; see source milestones"
+      },
+      "notes": [
+        "Forecasts conflict: area energization 2030, supplemental bullet 2028 and GERP completion 2031.",
+        "Area text identifies 500/230 kV and GERP2; the GERP1 summary names 115/230/500 kV. These remain one accepted source unit with the differences preserved.",
+        "The public GERP point P05847 is named Ponderosa; it does not establish the proposed Bonanza center."
+      ],
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 69; §8.6.1 Bonanza substation; estimated energization 2030 and GERP2 label",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 102; §11.1 Bonanza substation row",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 103; Supplemental GERP1 new Bonanza, L0543; 2028",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 12; §2 GERP1 Bonanza 115/230/500 kV near existing Ponderosa; completion 2031",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+        },
+        {
+          "file": "gerp-substations-features.json",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+          "locator": "OBJECTID_1=10; Bundle_ID=P05847; Name=Ponderosa; retrieved 2026-09-30"
+        }
+      ],
+      "inventory": {
+        "sourceKey": "bpa-plan",
+        "editionId": "2025-updated-2026-08-25",
+        "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+        "reportingGroupName": "Bonneville Power Administration plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2025",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceState": "OR",
+        "sourceLocation": "Near existing Ponderosa Substation, Prineville, central Oregon",
+        "sourceUpdatedOn": null,
+        "workType": null,
+        "milestones": [
+          {
+            "field": "Area estimated energization",
+            "date": {
+              "value": "2030",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Area estimated energization"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 69; §8.6.1 Bonanza substation; estimated energization 2030 and GERP2 label",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 102; §11.1 Bonanza substation row",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+              }
+            ]
+          },
+          {
+            "field": "Supplemental expected-energization listing",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "in-service",
+              "label": "Supplemental expected-energization listing"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 103; Supplemental GERP1 new Bonanza, L0543; 2028",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+              }
+            ]
+          },
+          {
+            "field": "GERP estimated completion",
+            "date": {
+              "value": "2031",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "GERP estimated completion"
+            },
+            "evidence": [
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 12; §2 GERP1 Bonanza 115/230/500 kV near existing Ponderosa; completion 2031",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+              }
+            ]
+          }
+        ],
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "P05847",
+          "L0543"
+        ],
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": []
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "bpa-plan",
+      "editionId": "2025-updated-2026-08-25",
+      "label": "BPA 2025 Transmission Plan — index update August 25, 2026",
+      "reportingGroupId": "bpa-plan",
+      "reportingGroupName": "Bonneville Power Administration plan",
+      "publisher": "Bonneville Power Administration",
+      "processAuthority": null,
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "2025-BPA-Transmission-Plan_Final.pdf",
+        "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf",
+        "locator": "Sections 1.2.1, 2, 8–11; accepted 98-row named-work normalization ledger"
+      },
+      "sha256": "246e6470dec8c7efcd8d31be29ac2a3dbb3a63a9b5669df9812d309beb4a2638",
+      "geographicScope": "BPA plan areas across Washington, Oregon, Idaho, western Montana, northern California and northwest Wyoming; not complete state or utility capital inventories.",
+      "inventoryScope": "77 retained physical transmission work units in a 98-row plan normalization: 15 completed units, one cancelled unit and five repeated observations excluded. Bundles and named components retain accepted boundaries.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 98,
+        "importedRecords": 5,
+        "excludedRows": 21,
+        "failedRows": 0,
+        "pendingRows": 72,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "Explicitly completed source work",
+          "count": 15
+        },
+        {
+          "reason": "Explicitly cancelled source work",
+          "count": 1
+        },
+        {
+          "reason": "Repeated source observation of an accepted retained unit",
+          "count": 5
+        }
+      ],
+      "limitations": [
+        "Full scope refers to this declared plan normalization, not every BPA capital project or distinct engineering-project totals. This sample retains pending units explicitly.",
+        "Lifecycle assertions belong to plan year 2025. The August 25, 2026 index update is not a row update or lifecycle change; publication day is unknown. Separate GERP material and GIS snapshots are supplementary evidence, not a live status feed.",
+        "Native bundle identity is used only for unambiguous scope. Section/parent/component locators are not native engineering IDs; future-edition continuity requires explicit review.",
+        "Repeated or shared bundles do not merge different components. P5470/P05470 is an accepted explicit alias; P04632 planned breaker and completed line remain distinct. Warner/Hilltop share a bundle but retain component identity.",
+        "Conflicting and phased forecasts retain labeled source milestones, with unknown primary date. Need years are not service dates; estimated completion has unknown kind; no days or construction windows are invented.",
+        "Runtime geometry and project centers are unknown. Public GERP pins/lines can represent existing facilities or partial scope; no center, centroid or proposed route is inferred from them.",
+        "Owners remain unknown unless an exact assertion covers the whole unit. Publisher, sponsor, operator, customer and funder are not ownership defaults; joint BPA/PGE scope has no exclusive owner.",
+        "P03259 remains retained with unknown lifecycle despite its elapsed table year. Explicit completed/cancelled units and repeated observations stay in the source ledger."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 5,
+    "skipped": 21,
+    "failed": 0,
+    "notes": [
+      "72 accepted BPA plan units remain pending in this source snapshot.",
+      "Plan/component counts are not deduplicated engineering-project totals or complete state coverage."
+    ]
+  }
+}
