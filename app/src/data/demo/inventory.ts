@@ -47,7 +47,7 @@ function createProject(group: typeof groups[number], index: number): Project {
     inventory: {
       sourceKey: group.key, editionId, editionLabel: `${group.name}; June 2026 synthetic edition`, reportingGroupName: group.name,
       recordKind: index % 17 === 0 ? "capital-project-context" : "transmission-project", lifecycle: state, lifecycleAsOf: editionId,
-      owner: index % 4 === 0 ? null : { id: `${group.key}-owner`, name: group.owner, evidence: [evidence] },
+      owner: index % 4 === 0 ? null : { id: `${group.key}-owner`, name: group.owner, identityScope: "global", evidence: [evidence] },
       parentProgramId: `PB-${String(1 + Math.floor(index / 10)).padStart(2, "0")}`, aliases: index % 3 === 0 ? [`SYN-WO-${index + 1000}`] : [],
       workType: work, constructionStart: index % 6 === 1 ? `${year}-02-01` : null,
       nativeGeometry: shape === 10 ? null : {
