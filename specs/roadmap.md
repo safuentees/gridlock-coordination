@@ -23,7 +23,7 @@ Phases: 0 shared base; 1 first connected map/ranking/real batch; 2 complete inve
 | F03 | [Connected map and project explorer](features/F03-explorer/spec.md) | ui | 1 | F00 | `app/src/App.tsx`, `app/src/features/explorer/`, `app/src/data/demo/` |
 | F04 | [Expand both planning inventories](features/F04-source-coverage/spec.md) | ingestion | 2 | F01 | `scripts/ingest/`, `app/src/data/real/` |
 | F05 | [Explore geographic and temporal scenarios](features/F05-scenario-timeline/spec.md) | ui | 2 | F02, F03 | `app/src/App.tsx`, `app/src/features/explorer/`, `app/src/features/scenarios/` |
-| F06 | [Save comparisons and coordination briefs](features/F06-coordination-brief/spec.md) | ui | 2 | F05 | `app/src/App.tsx`, `app/src/features/briefs/` |
+| F06 | [Save comparisons and coordination briefs](features/F06-coordination-brief/spec.md) | ui | 2 | F05 | `app/src/App.tsx`, `app/src/features/briefs/`, `app/src/features/explorer/Explorer.tsx` |
 | F07 | [Transparent shared-corridor scenario](features/F07-impact-estimate/spec.md) | core | 3 | F02 | `app/src/core/`, `app/src/features/impact/` |
 | F08 | [Import and compare revised datasets](features/F08-dataset-revisions/spec.md) | coordinator | 3 | F00 | `app/src/features/import/`, `app/src/data/import.ts` |
 
@@ -33,9 +33,9 @@ F00 → F01 + F02 + F03 → first connected real milestone, without waiting for 
 ## Active workers
 | Worker | Feature | Branch / worktree | Claim / PR |
 |---|---|---|---|
-| source_discovery / ingestion | F01 | codex/F01-real-seed / ~/.codex/worktrees/gridlock-ingestion/agent-workflow-template | assigned |
-| core | F02 | codex/F02-matching-core / ~/.codex/worktrees/gridlock-core/agent-workflow-template | assigned |
-| ui | F03 | codex/F03-explorer / ~/.codex/worktrees/gridlock-ui/agent-workflow-template | assigned |
+| source_discovery / ingestion | F04 | codex/F04-source-coverage / ~/.codex/worktrees/gridlock-ingestion/agent-workflow-template | assigned |
+| core | F07 | codex/F07-impact-estimate / ~/.codex/worktrees/gridlock-core/agent-workflow-template | assigned |
+| ui | F05 | codex/F05-scenario-timeline / ~/.codex/worktrees/gridlock-ui/agent-workflow-template | assigned |
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No separate chats or scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 
