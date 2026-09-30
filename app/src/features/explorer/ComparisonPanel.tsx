@@ -61,11 +61,11 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
           : "Location missing; not ranked by distance."}</p>
       </div> : <CardDescription>Select a candidate to compare, or a project to view its evidence.</CardDescription>}
     </CardHeader>
-    {/* This stable slot keeps the parent's saved-review workspace mounted across selections and tabs. */}
-    {actions && <div className="min-w-0 shrink-0 px-4">{actions}</div>}
+    {/* Keep the portal target mounted even when selection actions are not applicable. */}
+    {actions && <div hidden={!selectedOpportunity} inert={!selectedOpportunity} className={selectedOpportunity ? "max-h-[25%] min-h-0 min-w-0 shrink-0 overflow-auto px-4" : "hidden"}>{actions}</div>}
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <Tabs value={activeTab} onValueChange={(value) => setTabs((previous) => ({ ...previous, [selectionKey]: value }))} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList>
+        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList aria-label="Comparison topics"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList></div>
         <TabsContent forceMount value="evidence" inert={activeTab !== "evidence"} className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
@@ -97,7 +97,7 @@ function ProjectSummary({ project, missingId, onProject }: { project: Project | 
   if (!project) return <div className="min-w-0"><p className="text-sm font-medium">Project unavailable</p><p className="break-words text-xs text-muted-foreground">{missingId}</p></div>
   return <div className="min-w-0 space-y-1">
     <button type="button" className="min-w-0 break-words text-left text-sm font-medium underline-offset-4 hover:underline focus-visible:underline" onClick={() => onProject(project.id)} title="Inspect this project's evidence">{project.name}</button>
-    <p className="break-words text-xs text-muted-foreground">{UTILITIES[project.utilityId]}</p>
+    <p className="break-words text-xs text-muted-foreground">{UTILITIES[project.utilityId]}{project.sourceId && `; Source ID ${project.sourceId}`}</p>
     <p className="break-words text-xs"><span className="text-muted-foreground">{dateKind(project)}: </span>{projectDate(project)}</p>
   </div>
 }

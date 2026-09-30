@@ -1,4 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState, type FormEvent } from "react"
+import { createPortal } from "react-dom"
 import { BookmarkIcon, DownloadIcon, RefreshCwIcon, SaveIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -33,6 +34,8 @@ interface BriefWorkspaceProps {
   onShowCurrent: (id: string) => void
   openRequest?: number
   saveScenarioRequest?: ScenarioSaveRequest | null
+  saveActionTarget?: HTMLElement | null
+  hideReviewsTrigger?: boolean
 }
 type ReviewDraft = { notes: string; reviewState: ReviewState; investigation: Investigation }
 const RESOURCE_LABELS: Record<Investigation["resource"], string> = {
@@ -50,7 +53,7 @@ function isDirty(record: SavedOpportunity, draft: ReviewDraft) {
 export function BriefWorkspace(props: BriefWorkspaceProps) {
   return <Workspace key={props.dataset.mode} {...props} />
 }
-function Workspace({ dataset, options, selectedOpportunity, opportunities, onShowCurrent, openRequest = 0, saveScenarioRequest = null }: BriefWorkspaceProps) {
+function Workspace({ dataset, options, selectedOpportunity, opportunities, onShowCurrent, openRequest = 0, saveScenarioRequest = null, saveActionTarget, hideReviewsTrigger = false }: BriefWorkspaceProps) {
   const [store, setStore] = useState(() => readSaved(dataset.mode))
   const [open, setOpen] = useState(false)
   const [tab, setTab] = useState("saved")
@@ -71,10 +74,12 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
   const unsavedCompared = compared.some(record => drafts[record.id] && isDirty(record, drafts[record.id]))
   const editing = store.records.find((record) => record.id === editingId) ?? null
   const currentSaved = store.records.find((record) => record.id === selectedOpportunity?.id)
+  const externalOpener = useRef<HTMLElement | null>(null)
   const previousOpenRequest = useRef(openRequest)
   useEffect(() => {
     if (openRequest !== previousOpenRequest.current) {
       previousOpenRequest.current = openRequest
+      if (hideReviewsTrigger) externalOpener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
       setOpen(true)
       setEditingId(previous => previous ?? store.records[0]?.id ?? null)
     }
@@ -148,15 +153,21 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
     setEditingId(previous => previous ?? records[0]?.id ?? null)
     setNotice("Restored findings are available in Saved.")
   }
-  function showCurrent(id: string) { onShowCurrent(id); setOpen(false) }
+  function showCurrent(id: string) { externalOpener.current = null; onShowCurrent(id); setOpen(false) }
 
+  const saveAction = <div className="flex min-w-0 flex-wrap items-center gap-2">
+    <Button type="button" disabled={!selectedOpportunity} onClick={saveSelected}>{currentSaved ? <RefreshCwIcon aria-hidden="true" data-icon="inline-start" /> : <SaveIcon aria-hidden="true" data-icon="inline-start" />}{currentSaved ? "Refresh evidence" : "Save selected"}</Button>
+    {store.error ? <span role="alert" className="min-w-0 text-xs text-destructive">{store.error}</span> : notice && <span role="status" className="min-w-0 text-xs text-muted-foreground">{notice}</span>}
+  </div>
   return <Dialog open={open} onOpenChange={setOpen}>
-    <div className="flex min-w-0 flex-wrap items-center gap-2">
-      <Button type="button" disabled={!selectedOpportunity} onClick={saveSelected} title={selectedOpportunity ? `Selected candidate #${selectedOpportunity.rank}; ${selectedOpportunity.distanceMiles.toFixed(2)} mi apart` : "Select a candidate to save its evidence"}>{currentSaved ? <RefreshCwIcon aria-hidden="true" data-icon="inline-start" /> : <SaveIcon aria-hidden="true" data-icon="inline-start" />}{currentSaved ? "Refresh evidence" : "Save selected"}</Button>
-      <DialogTrigger asChild><Button type="button" variant="outline" onClick={() => { if (!editingId && store.records[0]) setEditingId(store.records[0].id) }}><BookmarkIcon aria-hidden="true" data-icon="inline-start" />Saved reviews ({store.records.length})</Button></DialogTrigger>
-      {store.error ? <span role="alert" className="text-xs text-destructive">Storage notice in saved reviews</span> : notice && <span role="status" className="text-xs text-muted-foreground">{notice}</span>}
-    </div>
-    <DialogContent className="flex h-[min(48rem,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-6xl">
+    {saveActionTarget && createPortal(saveAction, saveActionTarget)}
+    {!hideReviewsTrigger && <div className="flex min-w-0 flex-wrap items-center gap-2">{!saveActionTarget && saveAction}<DialogTrigger asChild><Button type="button" variant="outline" onClick={() => { if (!editingId && store.records[0]) setEditingId(store.records[0].id) }}><BookmarkIcon aria-hidden="true" data-icon="inline-start" />Saved reviews ({store.records.length})</Button></DialogTrigger></div>}
+    <DialogContent className="flex h-[min(48rem,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-6xl" onCloseAutoFocus={event => {
+      if (!hideReviewsTrigger) return
+      event.preventDefault()
+      const opener = externalOpener.current
+      if (opener?.isConnected && !opener.closest("[hidden], [inert]") && !opener.matches(":disabled")) opener.focus({ preventScroll: true })
+    }}>
       <DialogHeader className="shrink-0 pr-6">
         <DialogTitle>Saved reviews</DialogTitle>
         <DialogDescription>{dataset.mode === "demo" ? "Synthetic demo" : "Source"} reviews saved in this browser.</DialogDescription>
@@ -167,7 +178,7 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
         {removed && <div className="flex min-w-0 flex-wrap items-center gap-2"><span className="min-w-0 break-words text-xs text-muted-foreground">Removed: {removed.projects[0].name} / {removed.projects[1].name}</span><Button type="button" variant="outline" size="sm" onClick={undoRemove}>Undo removal</Button></div>}
       </div>}
       <Tabs value={tab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="saved">Saved ({store.records.length})</TabsTrigger><TabsTrigger value="compare">Compare ({compared.length})</TabsTrigger><TabsTrigger value="restore">Restore</TabsTrigger></TabsList>
+        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList aria-label="Saved review views"><TabsTrigger value="saved">Saved{store.records.length > 0 && ` (${store.records.length})`}</TabsTrigger><TabsTrigger value="compare">Compare{compared.length > 0 && ` (${compared.length})`}</TabsTrigger><TabsTrigger value="restore">Restore</TabsTrigger></TabsList></div>
         <TabsContent value="saved" className="min-h-0 min-w-0 overflow-hidden data-[state=active]:flex">
           {store.records.length ? <div className="grid min-h-0 min-w-0 flex-1 grid-rows-[minmax(0,1fr)_minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:grid-rows-1">
             <section aria-label="Saved candidates" className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border">
@@ -221,12 +232,12 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
           <RestoreBrief mode={dataset.mode} records={store.records} dirtyIds={dirtyIds} onRestore={restoreRecords} />
         </TabsContent>
       </Tabs>
-      <div className="flex shrink-0 flex-wrap items-center gap-2 border-t pt-4">
+      {tab !== "restore" && store.records.length > 0 && <div className="flex shrink-0 flex-wrap items-center gap-2 border-t pt-4">
         <Badge variant="secondary">{compared.length} selected</Badge>
         {unsavedCompared && <p className="text-xs text-muted-foreground">Unsaved review edits are not included in exports.</p>}
         <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("txt")}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Export text brief</Button>
         <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("json")}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Export JSON brief</Button>
-      </div>
+      </div>}
     </DialogContent>
   </Dialog>
 }
