@@ -31,7 +31,7 @@ def project(record: dict, utility: str, reference: dict, seeds: dict) -> dict:
     seed = seeds.get(identifier)
     notes = record.pop("notes", [])
     if seed:
-        notes += seed["notes"]
+        notes = list(dict.fromkeys(notes + seed["notes"]))
     return {
         "id": identifier, "utilityId": utility, **record,
         "voltageKv": voltages(record["name"]), "buildWindow": None,
@@ -69,12 +69,12 @@ def ingest_corpus(inputs: Path, generated_at: str) -> tuple[dict, dict]:
         if len(rows) != len(row_starts):
             raise ValueError(f"Georgia physical page {page}: parsed {len(rows)} of {len(row_starts)} row starts")
         page_counts[str(page)] = len(rows)
-        for _, _, native_id, name, need_date, sponsor in rows:
+        for zone, _, native_id, name, need_date, sponsor in rows:
             record = {
                 "sourceId": native_id, "sponsor": sponsor, "name": compact(name),
                 "description": "", "status": None,
                 "date": {"value": date_value(need_date), "precision": "day", "kind": "need", "label": "Need date"},
-                "notes": ["Estimated costs are redacted in the source."],
+                "notes": ["Estimated costs are redacted in the source.", f"Planning zone: {zone}."],
             }
             projects.append(project(record, "gpc", source(GEORGIA_FILE, f"physical page {page}, Table 2, TEAMS {native_id}"), seeds))
     if sum(page_counts.values()) != 208:
@@ -86,12 +86,15 @@ def ingest_corpus(inputs: Path, generated_at: str) -> tuple[dict, dict]:
         raise ValueError("One or more seed identities were not found in the complete listings")
 
     located = sum(record["location"] is not None for record in projects)
+    project_needs = sum(any(note.startswith("Project need: ") for note in record["notes"]) for record in projects if record["utilityId"] == "desc")
+    planning_zones = sum(any(note.startswith("Planning zone: ") for note in record["notes"]) for record in projects if record["utilityId"] == "gpc")
     notes = [
         "44 Dominion projects and 208 active Georgia Table 2 projects; ten workbook examples linked by native identity without duplication.",
         f"{located} unverified workbook locations; {len(projects) - located} projects have unknown locations and remain in the inventory.",
         "Dawson (Dominion page 34) has separate phase dates retained in its notes; no single date or construction interval was inferred.",
         "Georgia costs are redacted. Cancelled-project tables and restricted project details were not extracted.",
         "Georgia need dates and Dominion planned in-service dates are historical plan snapshots, not current completion claims.",
+        f"Public planning context retained for {project_needs} Dominion project needs and {planning_zones} Georgia planning zones; zones are identifiers, not coordinates.",
     ]
     dataset = {
         "schemaVersion": 1, "mode": "real", "title": "Dominion and Georgia planning inventories",
@@ -109,6 +112,10 @@ def ingest_corpus(inputs: Path, generated_at: str) -> tuple[dict, dict]:
             {"file": GEORGIA_FILE, "physicalPages": "177-190", "table": "Table 2", "processed": 208, "skipped": 0, "failed": 0, "rowsPerPage": page_counts},
         ],
         "georgiaSponsors": dict(sorted(Counter(record["sponsor"] for record in projects if record["utilityId"] == "gpc").items())),
+        "contextEnrichment": {
+            "dominionProjectNeed": {"enriched": project_needs, "skipped": 44 - project_needs, "locator": "Project Need section on each project's cited physical page"},
+            "georgiaPlanningZone": {"enriched": planning_zones, "skipped": 208 - planning_zones, "locator": "Zone column in each cited Table 2 TEAMS row"},
+        },
         "parsingExceptions": [{"id": "desc-6859", "page": 34, "handling": "Multiple phase dates retained verbatim in notes; date.value is null and buildWindow is null."}],
         "excludedSections": ["Georgia cancelled-project tables", "Georgia restricted project details", "private opportunity materials"],
         "notes": notes,
@@ -129,6 +136,8 @@ def main() -> None:
     args.output.write_text(json.dumps(dataset, indent=2, ensure_ascii=False) + "\n")
     args.summary.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n")
     print(f"Wrote {summary['processed']} real records: {summary['locatedRecords']} located, {summary['unlocatedRecords']} unlocated, {summary['failed']} failed")
+    context = summary["contextEnrichment"]
+    print(f"Enriched {context['dominionProjectNeed']['enriched']} Dominion project needs and {context['georgiaPlanningZone']['enriched']} Georgia planning zones; skipped {sum(field['skipped'] for field in context.values())} uncertain or missing context fields")
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ python3 scripts/ingest/seed.py --inputs /path/to/Sperry-Tech-Challenge --output 
 ## Source meanings
 
 - Native Dominion project IDs and Georgia TEAMS IDs define stable application IDs. Workbook aliases remain notes. `utilityId` identifies the filing group; `sponsor` retains the actual listed sponsor, including SAV, GTC, MEAG and DU.
+- Public planning context stays in project notes: Dominion `Project Need` text comes from that section on the cited physical page; Georgia planning-zone identifiers come from the `Zone` column in the cited Table 2 TEAMS row. These values are neither coordinates nor inferred eligibility rules. Ambiguous or missing section mappings are omitted and counted under `contextEnrichment` in the ingestion summary.
 - Georgia need dates and Dominion planned in-service dates are distinct. Dawson's two phase dates remain verbatim notes, with no single date or construction interval selected.
 - Cached workbook center formulas supply ten unverified locations. All other locations remain null; unlocated projects still belong in the inventory. Single-endpoint centers are explicitly marked as approximations.
 - Voltages come from values explicitly written in source project names. Georgia cost values remain redacted. No other missing values are guessed.

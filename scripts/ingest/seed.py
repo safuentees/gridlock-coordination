@@ -66,6 +66,11 @@ def dominion_record(text: str, expected_id: str | None = None) -> dict:
         raise ValueError(f"Dominion join changed: expected {expected_id}, received {native_id}")
     raw_date = between(text, "Planned In-Service Date", "Estimated Project Cost")
     notes = []
+    # The public Project Need section is context, not a derived eligibility rule.
+    # Omit context if the expected section boundaries are absent or ambiguous.
+    needs = re.findall(r"(?ms)^[ \t]*Project Need[ \t]*\n(.*?)^[ \t]*Project Status[ \t]*$", text)
+    if len(needs) == 1 and compact(needs[0]):
+        notes.append(f"Project need: {compact(needs[0])}")
     try:
         date = {"value": date_value(raw_date), "precision": "day", "kind": "in-service", "label": "Planned in-service date"}
     except ValueError:
@@ -86,11 +91,12 @@ def georgia_record(text: str, expected_id: str) -> dict:
     rows = [row for row in TABLE_ROW.findall(text) if row[2] == expected_id]
     if len(rows) != 1:
         raise ValueError(f"Expected one Georgia Table 2 row for TEAMS {expected_id}, found {len(rows)}")
-    _, _, native_id, name, need_date, sponsor = rows[0]
+    zone, _, native_id, name, need_date, sponsor = rows[0]
     return {
         "sourceId": native_id, "sponsor": sponsor, "name": compact(name),
         "description": "", "status": None,
         "date": {"value": date_value(need_date), "precision": "day", "kind": "need", "label": "Need date"},
+        "notes": [f"Planning zone: {zone}."],
     }
 
 
