@@ -16,13 +16,13 @@
   "sha256": "917464588f082e2239726479b331dff6ffda97436af9daa5372332a734d4b94e",
   "geographicScope": "PG&E California public FERC-transmission capital portfolio; source city/county labels do not establish statewide completeness or coordinates.",
   "inventoryScope": "Entire public CPUC TPR PUBLIC table, rows 5:2675. Retain nonterminal physical components/upgrades and capital/planning context; exclude 1079 Operational and one Cancelled.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 2671,
-    "importedRecords": 6,
+    "importedRecords": 1591,
     "excludedRows": 1080,
     "failedRows": 0,
-    "pendingRows": 1585,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
@@ -46,7 +46,6 @@
     "All public coordinate cells are blank. Endpoints are defined but not supplied; city/county text, voltage and length never supply geometry. Asset owners remain unknown.",
     "Costs/ranges retain $000 units and parent/forecast/actual meanings; they are not additive project totals or hypothetical impact inputs.",
     "This utility-limited FERC capital portfolio is not complete California coverage or a unique engineering-project census.",
-    "Public factual evidence supports authorized private analysis; no original-workbook publication or open/commercial reuse license is asserted.",
-    "Six diagnostic records are emitted first; 1585 accepted records await provider connection and full normalization."
+    "Public factual evidence supports authorized private analysis; no original-workbook publication or open/commercial reuse license is asserted."
   ]
 }

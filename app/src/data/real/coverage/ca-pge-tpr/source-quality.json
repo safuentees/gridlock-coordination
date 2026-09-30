@@ -1,7 +1,7 @@
 {
   "sourceKey": "ca-pge-tpr",
   "editionId": "2026-05-01",
-  "scope": "sample",
+  "scope": "full",
   "originals": [
     {
       "file": "pge-may2026-public.xlsx",
@@ -49,15 +49,15 @@
     "unknown": 285
   },
   "importedKindCounts": {
-    "capital-project-context": 1,
-    "planning-context": 2,
-    "transmission-project": 3
+    "capital-project-context": 278,
+    "planning-context": 312,
+    "transmission-project": 1001
   },
   "importedLifecycleCounts": {
-    "on-hold": 1,
-    "planned": 2,
-    "under-construction": 1,
-    "unknown": 2
+    "on-hold": 123,
+    "planned": 1145,
+    "under-construction": 138,
+    "unknown": 185
   },
   "sampleIds": [
     "ca-pge-tpr:5562465",
