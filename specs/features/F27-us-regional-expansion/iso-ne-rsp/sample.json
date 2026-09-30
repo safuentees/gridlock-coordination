@@ -1,0 +1,285 @@
+{
+  "purpose": "Read-only qualification samples, not production Dataset records or an accepted source contract.",
+  "source": {
+    "publisher": "ISO New England",
+    "title": "Final RSP Project List — June 2026",
+    "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx",
+    "indexUrl": "https://www.iso-ne.com/system-planning/system-plans-studies/rsp",
+    "edition": "June 2026",
+    "publicationDate": "2026-07-09",
+    "retrievedDate": "2026-09-30",
+    "filename": "final_rsp_project_list_jun_2026.xlsx",
+    "bytes": 1967096,
+    "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+    "publicMarking": "June 2026 ISO-NEW ENGLAND Project List Update - ISO-NE Public",
+    "publicMarkingLocator": "06_2026_RSP!A1",
+    "openLicenseIdentified": false
+  },
+  "enumeration": {
+    "sheet": "RSP_sortable",
+    "rows": "2:1025",
+    "nativeIdColumn": "C",
+    "currentStatusColumn": "BF",
+    "rawDistinctProjects": 1024,
+    "nonterminalInventory": 46,
+    "planned": 37,
+    "underConstruction": 7,
+    "proposed": 2,
+    "excludedInService": 643,
+    "excludedCancelled": 335,
+    "pending": 0,
+    "failed": 0,
+    "nativeLocatedNonterminal": 0,
+    "nonterminalByState": {
+      "CT": 5,
+      "MA": 20,
+      "ME": 9,
+      "NH": 3,
+      "RI": 2,
+      "VT": 7
+    },
+    "nonterminalByDriver": {
+      "Generator Interconnection Upgrade": 24,
+      "Reliability Upgrade": 13,
+      "Elective Upgrade": 9
+    }
+  },
+  "mappingStatus": "Proposal only. Source key, canonical owner IDs and Proposed lifecycle mapping require coordinator acceptance before production implementation.",
+  "samples": [
+    {
+      "nativeProjectId": "1938",
+      "locator": "RSP_sortable!A3:DE3",
+      "state": "CT",
+      "primaryDriver": "Generator Interconnection Upgrade",
+      "part": "2a",
+      "majorProject": "Queue Position 1245",
+      "descriptionSummary": "New 345 kV switchyard on an existing Connecticut transmission line.",
+      "owner": {
+        "rawPrimaryEquipmentOwner": "Eversource",
+        "trimmedPrimaryEquipmentOwner": "Eversource",
+        "otherEquipmentOwners": null,
+        "evidence": "RSP_sortable!E3:F3",
+        "canonicalOwnerId": null
+      },
+      "status": {
+        "raw": "Planned",
+        "editionColumn": "Jun-26 Status",
+        "evidence": "RSP_sortable!BF3",
+        "suggestedLifecycle": "planned"
+      },
+      "inService": {
+        "rawExcelDate": "2028-10-01T00:00:00",
+        "displayNumberFormat": "mm/yyyy",
+        "month": "2028-10",
+        "precision": "month",
+        "label": "Projected in-service month/year",
+        "evidence": "RSP_sortable!H3"
+      },
+      "nativeGeometry": null,
+      "location": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "spatiallyEligible": false,
+      "limitations": [
+        "No native coordinate fields in the enumerated source."
+      ]
+    },
+    {
+      "nativeProjectId": "1934",
+      "locator": "RSP_sortable!A7:DE7",
+      "state": "MA",
+      "primaryDriver": "Reliability Upgrade",
+      "part": "1b",
+      "majorProject": "Boston 2033 Solutions Study",
+      "descriptionSummary": "Protection-system changes at five Massachusetts substations.",
+      "owner": {
+        "rawPrimaryEquipmentOwner": "Eversource",
+        "trimmedPrimaryEquipmentOwner": "Eversource",
+        "otherEquipmentOwners": null,
+        "evidence": "RSP_sortable!E7:F7",
+        "canonicalOwnerId": null
+      },
+      "status": {
+        "raw": "Proposed",
+        "editionColumn": "Jun-26 Status",
+        "evidence": "RSP_sortable!BF7",
+        "suggestedLifecycle": "unknown"
+      },
+      "inService": {
+        "rawExcelDate": "2027-03-01T00:00:00",
+        "displayNumberFormat": "mm/yyyy",
+        "month": "2027-03",
+        "precision": "month",
+        "label": "Projected in-service month/year",
+        "evidence": "RSP_sortable!H7"
+      },
+      "nativeGeometry": null,
+      "location": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "spatiallyEligible": false,
+      "limitations": [
+        "No native coordinate fields in the enumerated source.",
+        "Proposed remains source-visible; conservative normalized lifecycle needs coordinator acceptance."
+      ]
+    },
+    {
+      "nativeProjectId": "1928",
+      "locator": "RSP_sortable!A13:DE13",
+      "state": "RI",
+      "primaryDriver": "Generator Interconnection Upgrade",
+      "part": "2a",
+      "majorProject": "Queue Position 1163",
+      "descriptionSummary": "New 115 kV switching station in Rhode Island.",
+      "owner": {
+        "rawPrimaryEquipmentOwner": "Rhode Island Energy",
+        "trimmedPrimaryEquipmentOwner": "Rhode Island Energy",
+        "otherEquipmentOwners": null,
+        "evidence": "RSP_sortable!E13:F13",
+        "canonicalOwnerId": null
+      },
+      "status": {
+        "raw": "Planned",
+        "editionColumn": "Jun-26 Status",
+        "evidence": "RSP_sortable!BF13",
+        "suggestedLifecycle": "planned"
+      },
+      "inService": {
+        "rawExcelDate": "2028-12-02T00:00:00",
+        "displayNumberFormat": "mm/yyyy",
+        "month": "2028-12",
+        "precision": "month",
+        "label": "Projected in-service month/year",
+        "evidence": "RSP_sortable!H13"
+      },
+      "nativeGeometry": null,
+      "location": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "spatiallyEligible": false,
+      "limitations": [
+        "No native coordinate fields in the enumerated source."
+      ]
+    },
+    {
+      "nativeProjectId": "1914",
+      "locator": "RSP_sortable!A27:DE27",
+      "state": "ME",
+      "primaryDriver": "Reliability Upgrade",
+      "part": "1a",
+      "majorProject": "UME 2029 Solutions",
+      "descriptionSummary": "Reactor installation and reconfiguration at a Maine 345 kV substation.",
+      "owner": {
+        "rawPrimaryEquipmentOwner": "Versant Power",
+        "trimmedPrimaryEquipmentOwner": "Versant Power",
+        "otherEquipmentOwners": null,
+        "evidence": "RSP_sortable!E27:F27",
+        "canonicalOwnerId": null
+      },
+      "status": {
+        "raw": "Under Construction",
+        "editionColumn": "Jun-26 Status",
+        "evidence": "RSP_sortable!BF27",
+        "suggestedLifecycle": "under-construction"
+      },
+      "inService": {
+        "rawExcelDate": "2026-12-01T00:00:00",
+        "displayNumberFormat": "mm/yyyy",
+        "month": "2026-12",
+        "precision": "month",
+        "label": "Projected in-service month/year",
+        "evidence": "RSP_sortable!H27"
+      },
+      "nativeGeometry": null,
+      "location": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "spatiallyEligible": false,
+      "limitations": [
+        "No native coordinate fields in the enumerated source."
+      ]
+    },
+    {
+      "nativeProjectId": "1813",
+      "locator": "RSP_sortable!A128:DE128",
+      "state": "VT",
+      "primaryDriver": "Generator Interconnection Upgrade",
+      "part": "2a",
+      "majorProject": "Queue Position 807",
+      "descriptionSummary": "Bus and breaker expansion for a Vermont generator-interconnection upgrade.",
+      "owner": {
+        "rawPrimaryEquipmentOwner": "Vermont Electric Power Company",
+        "trimmedPrimaryEquipmentOwner": "Vermont Electric Power Company",
+        "otherEquipmentOwners": null,
+        "evidence": "RSP_sortable!E128:F128",
+        "canonicalOwnerId": null
+      },
+      "status": {
+        "raw": "Planned",
+        "editionColumn": "Jun-26 Status",
+        "evidence": "RSP_sortable!BF128",
+        "suggestedLifecycle": "planned"
+      },
+      "inService": {
+        "rawExcelDate": "2028-10-01T00:00:00",
+        "displayNumberFormat": "mm/yyyy",
+        "month": "2028-10",
+        "precision": "month",
+        "label": "Projected in-service month/year",
+        "evidence": "RSP_sortable!H128"
+      },
+      "nativeGeometry": null,
+      "location": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "spatiallyEligible": false,
+      "limitations": [
+        "No native coordinate fields in the enumerated source."
+      ]
+    },
+    {
+      "nativeProjectId": "1758",
+      "locator": "RSP_sortable!A183:DE183",
+      "state": "NH",
+      "primaryDriver": "Elective Upgrade",
+      "part": "4a",
+      "majorProject": "Queue Position 501",
+      "descriptionSummary": "Uprating an existing New Hampshire 115 kV line.",
+      "owner": {
+        "rawPrimaryEquipmentOwner": "Eversource ",
+        "trimmedPrimaryEquipmentOwner": "Eversource",
+        "otherEquipmentOwners": null,
+        "evidence": "RSP_sortable!E183:F183",
+        "canonicalOwnerId": null
+      },
+      "status": {
+        "raw": "Planned",
+        "editionColumn": "Jun-26 Status",
+        "evidence": "RSP_sortable!BF183",
+        "suggestedLifecycle": "planned"
+      },
+      "inService": {
+        "rawExcelDate": "2027-12-01T00:00:00",
+        "displayNumberFormat": "mm/yyyy",
+        "month": "2027-12",
+        "precision": "month",
+        "label": "Projected in-service month/year",
+        "evidence": "RSP_sortable!H183"
+      },
+      "nativeGeometry": null,
+      "location": null,
+      "centerRole": "unknown",
+      "constructionStart": null,
+      "buildWindow": null,
+      "spatiallyEligible": false,
+      "limitations": [
+        "No native coordinate fields in the enumerated source."
+      ]
+    }
+  ]
+}
