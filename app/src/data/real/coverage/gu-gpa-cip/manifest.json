@@ -16,13 +16,13 @@
   "sha256": "70bba24f62b1a56d855472307eb03483c1c2928c4eb8b512858a97002be15db8",
   "geographicScope": "Guam Power Authority budget-work scope on Guam; not a complete current Guam project register.",
   "inventoryScope": "All 44 named detail-budget rows in sections A–E/G: 27 retained source work units (two transmission, 14 capital context, 11 planning context) and 17 exclusions. Broad programs are not deduplicated engineering projects.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 44,
-    "importedRecords": 6,
+    "importedRecords": 27,
     "excludedRows": 17,
     "failedRows": 0,
-    "pendingRows": 21,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [
