@@ -15,13 +15,13 @@ Open the local URL printed by Vite. No credentials or backend are required. Map 
 ## Use the workspace
 
 1. Start with **Source data**: 252 planning records from the supplied Dominion and Georgia filings. Ten have supplied, unverified locations; 242 remain searchable without coordinates. **Explore 300-project demo** switches explicitly to synthetic scenarios.
-2. Search by name, native source ID, sponsor or voltage; filter reporting group or location coverage. Switch the main panel between Candidates, Inventory, Map and Timeline. Selection updates the existing detail panel, where evidence and impact are alternate views.
+2. Search the persistent left list by name, native source ID, sponsor or voltage; expand Filters for reporting group or location coverage. Candidates and All projects share the list. The map stays visible behind it, including when browsing projects without coordinates. Selecting a list result or map feature updates one comparison panel on the right.
 3. Open **Edit scenario** to change radius, optional milestone gap and location confidence, then apply the scenario. Compare it with the default under-25-mile candidate set. The timeline preserves date precision; milestone dates do not establish construction overlap.
 4. For a selected pair, enter hypothetical shared corridor length, width, land cost and avoided share. The estimate never derives shared route length from distance between centers.
 5. Use **Save selected** and **Saved reviews** to compare evidence, add local notes and review state, and download a source-referenced coordination brief. Real and demo collections remain separate. Changed or missing projects in a revision keep their saved evidence and notes.
 6. Open **Dataset → Revisions** to download the normalized JSON format, preview changed records and apply a revision for this session. **Dataset → Coverage** retains source limitations and provenance. Reloading or restoring the supplied snapshot discards the imported override. Originals remain unchanged.
 
-The workspace fills one viewport. Long results, details and dialog bodies scroll internally; tables can scroll horizontally within their panel. Header controls remain available.
+The workspace fills one viewport. Both candidate projects, key metrics and uncertainty share the comparison header; Evidence, Impact and Supporting tabs hold longer content. Timeline opens an optional bottom panel. Hide list and Reset layout provide more map space without dragging. Map selection fits around the panels. Long results, details and dialog bodies scroll internally; tables can scroll horizontally within their panel. Header controls remain available.
 
 ## Data and methods
 

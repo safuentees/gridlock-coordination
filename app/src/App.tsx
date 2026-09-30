@@ -16,8 +16,8 @@ export function App() {
     try { return { dataset: mode === "real" && sourceOverride ? sourceOverride : loadDataset(mode), error: null } }
     catch (error) { return { dataset: null, error: error instanceof Error ? error.message : "The dataset could not be loaded." } }
   }, [mode, sourceOverride])
-  return <main className="flex h-dvh min-h-0 w-full min-w-0 flex-col gap-4 overflow-hidden p-4">
-    <header className="flex max-h-[25dvh] min-h-0 min-w-0 shrink-0 flex-wrap items-center justify-between gap-4 overflow-auto">
+  return <main className="flex h-dvh min-h-0 w-full min-w-0 flex-col overflow-hidden">
+    <header className="flex max-h-[25dvh] min-h-0 min-w-0 shrink-0 flex-wrap items-center justify-between gap-4 overflow-auto border-b p-4">
       <div className="flex min-w-0 flex-wrap items-center gap-3"><h1 className="text-2xl font-semibold">Gridlock</h1><Badge variant={mode === "demo" ? "secondary" : "outline"}>{mode === "demo" ? "Synthetic demo" : sourceOverride ? "Imported source" : "Source data"}</Badge></div>
       <nav aria-label="Dataset controls" className="flex min-w-0 flex-wrap items-center gap-2">
         {result.dataset && <Dialog>
@@ -43,7 +43,7 @@ export function App() {
         <Button variant="outline" onClick={() => setMode(mode === "real" ? "demo" : "real")}>{mode === "real" ? "Use demo data" : "Use source data"}</Button>
       </nav>
     </header>
-    <div className="min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain">
+    <div className="min-h-0 min-w-0 flex-1 overflow-hidden">
       {result.dataset ? <Explorer key={`${mode}-${revision}`} dataset={result.dataset} /> : <section role="alert" className="space-y-2 rounded-lg border p-4 [overflow-wrap:anywhere]"><h2 className="font-medium">{mode === "real" ? "Source data" : "Demo data"} could not be loaded</h2><p className="text-sm text-muted-foreground">{result.error}</p><p className="text-sm">Switch modes explicitly to explore another dataset.</p></section>}
     </div>
   </main>

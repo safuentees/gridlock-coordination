@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Keep a searchable Candidates / All projects list over a map-first workspace, synchronize selection with one comparison panel, and fit map features around the panels.
 - Reorganize Gridlock into a viewport-sized workspace with internal panel scrolling, persistent selection details and labeled secondary dialogs.
 
 ## 0.1.0 — 2026-09-30
