@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "researchedAt": "2026-09-30",
+  "proposals": [
+    {
+      "decisionId": "f19-desc-0139-m-n",
+      "projectId": "desc-0139-m-n",
+      "sourceId": "0139 M,N",
+      "expectedCurrentLocation": null,
+      "caveat": "The source states a permit-area point for the Okatie expansion, not a surveyed substation center. This historical notice does not establish current status or a construction window.",
+      "draft": {
+        "latitude": "32.3350",
+        "longitude": "-81.0322",
+        "method": "source-point",
+        "sourceFile": "USACE Joint Public Notice SAC-2021-00203 (2022-09-08)",
+        "sourceLocator": "Page 1, location paragraph: permit-area coordinate near Red Dam Road, Hardeeville; page 2, Project Description: Okatie expansion and Jasper–Yemassee fold-in. Permit-area point, not a surveyed substation center.",
+        "sourceUrl": "https://www.sac.usace.army.mil/Portals/43/docs/regulatory/publicnotices/SAC-2021-00203_Jasper_OkatieSubstation.pdf?ver=AEs4bTFovJe8paCXDtvs_A%3D%3D"
+      }
+    }
+  ]
+}
