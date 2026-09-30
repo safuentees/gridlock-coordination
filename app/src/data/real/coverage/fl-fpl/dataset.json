@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 2,
+  "mode": "real",
+  "title": "FPL April 2026 transmission planning scopes — five-record sample",
+  "generatedAt": "2026-09-30T12:08:18+00:00",
+  "projects": [
+    {
+      "id": "fl-fpl:iii-e1-r01",
+      "sourceId": "iii-e1-r01",
+      "utilityId": "fl-fpl",
+      "sponsor": null,
+      "name": "Whidden–Sweatt 230 kV transmission line",
+      "description": "Proposed 79-circuit-mile 230 kV line from Whidden to Sweatt; source capacity 1,195 MVA.",
+      "status": "Need approved; certification conditions received",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": "2026-06",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected commercial in-service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Table III.E.1, printed p.96 / PDF p.110, row 1; columns (1)–(7)"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 1"
+        }
+      ],
+      "notes": [
+        "Table III.E.1: From=Whidden; To=Sweatt; circuit miles=79; nominal voltage=230 kV; capacity=1,195 MVA. Capacity is not voltage or a savings estimate.",
+        "This is a proposed bulk-line table entry requiring siting certification. Elapsed forecasts do not establish construction progress or completion.",
+        "Identity uses a frozen source position, not a native engineering ID. Future editions require an explicit identity crosswalk; source names alone do not merge FMPA observations.",
+        "Footnote 1 gives need approval on May 17, 2022 and certification conditions in September 2022; it schedules completion in June 2026 without confirming an actual event."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fpl",
+        "editionId": "2026-04",
+        "editionLabel": "FPL April 2026 transmission planning scopes",
+        "reportingGroupName": "Florida Power & Light public plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "project",
+        "identityBasis": "source-locator",
+        "lifecycle": "approved",
+        "lifecycleAsOf": "2026-04",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "From: Whidden; To: Sweatt",
+        "owner": {
+          "id": "fl-fpl",
+          "name": "Florida Power & Light Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "fpl-2026-plan.pdf",
+              "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+              "locator": "Table III.E.1, printed p.96 / PDF p.110, row 1; column (1), Line Ownership=FPL"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [],
+        "workType": "Proposed bulk transmission line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source county/terminal names, miles and right-of-way do not provide native coordinates, a qualified center, CRS or accuracy. No maps or geocoding were used."
+        ],
+        "milestones": [
+          {
+            "field": "Need determination approval",
+            "date": {
+              "value": "2022-05-17",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Need determination approved"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 1"
+              }
+            ]
+          },
+          {
+            "field": "Certification conditions received",
+            "date": {
+              "value": "2022-09",
+              "precision": "month",
+              "kind": "unknown",
+              "label": "Conditions of certification received"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fl-fpl:iii-e1-r02",
+      "sourceId": "iii-e1-r02",
+      "utilityId": "fl-fpl",
+      "sponsor": null,
+      "name": "Andytown–Oasis 500 kV transmission line",
+      "description": "Proposed 30-circuit-mile 500 kV line from Andytown to Oasis; source capacity 3,464 MVA.",
+      "status": "Proposed; need determination application filed",
+      "voltageKv": [
+        500
+      ],
+      "date": {
+        "value": "2031-12",
+        "precision": "month",
+        "kind": "in-service",
+        "label": "Projected commercial in-service"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Table III.E.1, printed p.96 / PDF p.110, row 2; columns (1)–(7)"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+        }
+      ],
+      "notes": [
+        "Table III.E.1: From=Andytown; To=Oasis; circuit miles=30; nominal voltage=500 kV; capacity=3,464 MVA. Capacity is not voltage or a savings estimate.",
+        "This is a proposed bulk-line table entry requiring siting certification. Elapsed forecasts do not establish construction progress or completion.",
+        "Identity uses a frozen source position, not a native engineering ID. Future editions require an explicit identity crosswalk; source names alone do not merge FMPA observations.",
+        "Footnote 2 groups four related lines in the Andytown–Oasis program. Keep each line and its own date; the overall December 2033 forecast does not replace row 2 December 2031. No synthetic parent record or ID is created."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fpl",
+        "editionId": "2026-04",
+        "editionLabel": "FPL April 2026 transmission planning scopes",
+        "reportingGroupName": "Florida Power & Light public plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "From: Andytown; To: Oasis",
+        "owner": {
+          "id": "fl-fpl",
+          "name": "Florida Power & Light Company",
+          "identityScope": "source",
+          "evidence": [
+            {
+              "file": "fpl-2026-plan.pdf",
+              "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+              "locator": "Table III.E.1, printed p.96 / PDF p.110, row 2; column (1), Line Ownership=FPL"
+            }
+          ]
+        },
+        "parentProgramId": null,
+        "aliases": [
+          "Andytown-Oasis Transmission Lines Project"
+        ],
+        "workType": "Proposed bulk transmission line",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source county/terminal names, miles and right-of-way do not provide native coordinates, a qualified center, CRS or accuracy. No maps or geocoding were used."
+        ],
+        "milestones": [
+          {
+            "field": "Program need determination filing",
+            "date": {
+              "value": "2026-03-11",
+              "precision": "day",
+              "kind": "unknown",
+              "label": "Need determination application filed; not approval"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+              }
+            ]
+          },
+          {
+            "field": "Overall program planned in-service",
+            "date": {
+              "value": "2033-12",
+              "precision": "month",
+              "kind": "in-service",
+              "label": "Andytown–Oasis program planned in-service"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Table III.E.1, printed p.96 / PDF p.110, footnote 2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fl-fpl:s10-001",
+      "sourceId": "s10-001",
+      "utilityId": "fl-fpl",
+      "sponsor": null,
+      "name": "Clover Solar Energy Center (St. Lucie County) — transmission facilities",
+      "description": "Proposed transmission-side interconnection package for Clover Solar Energy Center (St. Lucie County); the matched engineering narrative specifies bus, line, terminal, breaker, transformer or substation work. Source connection: Sunbreak Substation to the new Clover Substation.",
+      "status": "Proposed transmission interconnection work",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Transmission in-service date not explicitly stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Schedule 10, form 1/84, printed p.315 / PDF p.329; items (1)–(9)"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "III.E.1, printed p.97 / PDF p.111; projected interconnection work"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Printed p.1 / PDF p.15 and printed p.96 / PDF p.110; tentative planning/site limitations"
+        }
+      ],
+      "notes": [
+        "Schedule 10 connection context: 1 reported line(s), length Approximately 2 miles, line voltage 230 kV; origin/termination: Sunbreak Substation to the new Clover Substation; substations: Clover Substation.",
+        "The served facility has projected nameplate capacity 74.5 MW in III.E.1; this describes generation/storage, not transmission capacity or voltage.",
+        "Right-of-way is reported FPL-owned and other utility participation is None. Those statements do not establish ownership of every transmission/interconnection asset.",
+        "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+        "Anticipated construction years and a projected connection quarter are different source statements, not actual construction bounds or an explicit transmission in-service date.",
+        "The plan treats forecasts as tentative; printed page 96 says longer-term sites are not definitive and transmission analyses may be incomplete. Detailed proposed work is not a verified location or final design.",
+        "Transformer capacities stated in the matched narrative: 85 MVA. Preserve equipment rating separately from line kV and served-facility MW; no conversion or aggregate is inferred."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fpl",
+        "editionId": "2026-04",
+        "editionLabel": "FPL April 2026 transmission planning scopes",
+        "reportingGroupName": "Florida Power & Light public plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "St. Lucie County; Sunbreak Substation to the new Clover Substation",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Clover Solar Energy Center (St. Lucie County)"
+        ],
+        "workType": "Transmission-side interconnection work package",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source county/terminal names, miles and right-of-way do not provide native coordinates, a qualified center, CRS or accuracy. No maps or geocoding were used."
+        ],
+        "milestones": [
+          {
+            "field": "Schedule 10 anticipated construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated construction start"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Schedule 10, form 1/84, printed p.315 / PDF p.329; item (6)"
+              }
+            ]
+          },
+          {
+            "field": "Schedule 10 anticipated construction end",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated construction end"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Schedule 10, form 1/84, printed p.315 / PDF p.329; item (6)"
+              }
+            ]
+          },
+          {
+            "field": "III.E projected connection timing",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "2nd Quarter of 2026; exact quarter retained in label"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "III.E.1, printed p.97 / PDF p.111; projected interconnection work"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fl-fpl:s10-013",
+      "sourceId": "s10-013",
+      "utilityId": "fl-fpl",
+      "sponsor": null,
+      "name": "Putnam Battery Energy Storage System Center (Putnam County) — transmission facilities",
+      "description": "Proposed transmission-side interconnection package for Putnam Battery Energy Storage System Center (Putnam County); the matched engineering narrative specifies bus, line, terminal, breaker, transformer or substation work. Source connection: Putnam BESS U1 substation.",
+      "status": "Proposed transmission interconnection work",
+      "voltageKv": [
+        115
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Transmission in-service date not explicitly stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Schedule 10, form 13/84, printed p.327 / PDF p.341; items (1)–(9)"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "III.E.13, printed p.109 / PDF p.123; projected interconnection work"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Printed p.1 / PDF p.15 and printed p.96 / PDF p.110; tentative planning/site limitations"
+        }
+      ],
+      "notes": [
+        "Schedule 10 connection context: 1 reported line(s), length 0.3 miles, line voltage 115 kV; origin/termination: Putnam BESS U1 substation; substations: Putnam BESS U1 substation.",
+        "The served facility has projected nameplate capacity 200 MW in III.E.13; this describes generation/storage, not transmission capacity or voltage.",
+        "Right-of-way is reported FPL-owned and other utility participation is None. Those statements do not establish ownership of every transmission/interconnection asset.",
+        "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+        "Anticipated construction years and a projected connection quarter are different source statements, not actual construction bounds or an explicit transmission in-service date.",
+        "The plan treats forecasts as tentative; printed page 96 says longer-term sites are not definitive and transmission analyses may be incomplete. Detailed proposed work is not a verified location or final design.",
+        "Transformer capacities stated in the matched narrative: 225 MVA. Preserve equipment rating separately from line kV and served-facility MW; no conversion or aggregate is inferred.",
+        "Schedule 10 and the narrative line/terminal work state 115 kV. III.E.13 item I.1 calls the new substation 230/34.5 kV, while later transformer work states 115/34.5 kV. Preserve this source discrepancy; line voltage is not silently changed to match the station phrase.",
+        "Repeated source item (9) is one participation field, not an extra facility."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fpl",
+        "editionId": "2026-04",
+        "editionLabel": "FPL April 2026 transmission planning scopes",
+        "reportingGroupName": "Florida Power & Light public plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "Putnam County; Putnam BESS U1 substation",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Putnam Battery Energy Storage System Center (Putnam County)"
+        ],
+        "workType": "Transmission-side interconnection work package",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source county/terminal names, miles and right-of-way do not provide native coordinates, a qualified center, CRS or accuracy. No maps or geocoding were used."
+        ],
+        "milestones": [
+          {
+            "field": "Schedule 10 anticipated construction start",
+            "date": {
+              "value": "2025",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated construction start"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Schedule 10, form 13/84, printed p.327 / PDF p.341; item (6)"
+              }
+            ]
+          },
+          {
+            "field": "Schedule 10 anticipated construction end",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated construction end"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Schedule 10, form 13/84, printed p.327 / PDF p.341; item (6)"
+              }
+            ]
+          },
+          {
+            "field": "III.E projected connection timing",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "4th Quarter of 2026; exact quarter retained in label"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "III.E.13, printed p.109 / PDF p.123; projected interconnection work"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fl-fpl:s10-023",
+      "sourceId": "s10-023",
+      "utilityId": "fl-fpl",
+      "sponsor": null,
+      "name": "Spanish Moss Solar Energy Center (St. Lucie County) — transmission facilities",
+      "description": "Proposed transmission-side interconnection package for Spanish Moss Solar Energy Center (St. Lucie County); the matched engineering narrative specifies bus, line, terminal, breaker, transformer or substation work. Source connection: Apricot Substation.",
+      "status": "Proposed transmission interconnection work",
+      "voltageKv": [
+        230
+      ],
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "kind": "unknown",
+        "label": "Transmission in-service date not explicitly stated"
+      },
+      "buildWindow": null,
+      "location": null,
+      "sources": [
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Schedule 10, form 23/84, printed p.337 / PDF p.351; items (1)–(9)"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "III.E.23, printed p.119 / PDF p.133; projected interconnection work"
+        },
+        {
+          "file": "fpl-2026-plan.pdf",
+          "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+          "locator": "Printed p.1 / PDF p.15 and printed p.96 / PDF p.110; tentative planning/site limitations"
+        }
+      ],
+      "notes": [
+        "Schedule 10 connection context: 1 reported line(s), length 0 miles, line voltage 230 kV; origin/termination: Apricot Substation; substations: Apricot Substation.",
+        "The served facility has projected nameplate capacity 74.5 MW in III.E.23; this describes generation/storage, not transmission capacity or voltage.",
+        "Right-of-way is reported FPL-owned and other utility participation is None. Those statements do not establish ownership of every transmission/interconnection asset.",
+        "Transmission/substation amount included in Schedule 9 total installed generation cost; no separate amount supplied.",
+        "Anticipated construction years and a projected connection quarter are different source statements, not actual construction bounds or an explicit transmission in-service date.",
+        "The plan treats forecasts as tentative; printed page 96 says longer-term sites are not definitive and transmission analyses may be incomplete. Detailed proposed work is not a verified location or final design.",
+        "Timing discrepancy: Schedule 10 anticipated construction end is 2027; III.E.23 projects connection in 1st Quarter of 2028. Preserve both without selecting an invented corrected date.",
+        "Schedule 10 names Apricot as origin/termination; III.E.23 describes work from Witt to Apricot. The different endpoint context is unresolved."
+      ],
+      "inventory": {
+        "sourceKey": "fl-fpl",
+        "editionId": "2026-04",
+        "editionLabel": "FPL April 2026 transmission planning scopes",
+        "reportingGroupName": "Florida Power & Light public plan",
+        "recordKind": "transmission-project",
+        "recordUnit": "component",
+        "identityBasis": "source-locator",
+        "lifecycle": "planned",
+        "lifecycleAsOf": "2026-04",
+        "lifecycleDateMeaning": "source-edition",
+        "sourceUpdatedOn": null,
+        "sourceState": null,
+        "sourceLocation": "St. Lucie County; Apricot Substation",
+        "owner": null,
+        "parentProgramId": null,
+        "aliases": [
+          "Spanish Moss Solar Energy Center (St. Lucie County)"
+        ],
+        "workType": "Transmission-side interconnection work package",
+        "constructionStart": null,
+        "nativeGeometry": null,
+        "centerRole": "unknown",
+        "locationAssumptions": [
+          "Source county/terminal names, miles and right-of-way do not provide native coordinates, a qualified center, CRS or accuracy. No maps or geocoding were used."
+        ],
+        "milestones": [
+          {
+            "field": "Schedule 10 anticipated construction start",
+            "date": {
+              "value": "2026",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated construction start"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Schedule 10, form 23/84, printed p.337 / PDF p.351; item (6)"
+              }
+            ]
+          },
+          {
+            "field": "Schedule 10 anticipated construction end",
+            "date": {
+              "value": "2027",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "Anticipated construction end"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "Schedule 10, form 23/84, printed p.337 / PDF p.351; item (6)"
+              }
+            ]
+          },
+          {
+            "field": "III.E projected connection timing",
+            "date": {
+              "value": "2028",
+              "precision": "year",
+              "kind": "unknown",
+              "label": "1st Quarter of 2028; exact quarter retained in label"
+            },
+            "evidence": [
+              {
+                "file": "fpl-2026-plan.pdf",
+                "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+                "locator": "III.E.23, printed p.119 / PDF p.133; projected interconnection work"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sourceEditions": [
+    {
+      "sourceKey": "fl-fpl",
+      "editionId": "2026-04",
+      "label": "FPL April 2026 transmission planning scopes",
+      "reportingGroupId": "fl-fpl",
+      "reportingGroupName": "Florida Power & Light public plan",
+      "publisher": "Florida Power & Light Company",
+      "processAuthority": "Florida Public Service Commission ten-year site planning",
+      "publishedOn": null,
+      "retrievedOn": "2026-09-30",
+      "source": {
+        "file": "fpl-2026-plan.pdf",
+        "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+        "locator": "Table III.E.1 printed p.96 / PDF p.110, rows 1–5; Schedule 10 printed pp.315–398 / PDF pp.329–412, forms 1–84; matched III.E.1–84 narratives"
+      },
+      "sha256": "30231eb609f4011fa579030e2294483cb7f34c58aed1a05b72eed1055ddecedd",
+      "geographicScope": "Partial FPL Florida and Northwest Florida utility planning scope, with named counties/terminals only; not statewide completeness.",
+      "inventoryScope": "89 primary source entries: five bulk lines and 84 interconnection forms; retain 55 transmission work units and exclude 34 storage-side-only forms. Matching engineering narratives add no rows.",
+      "scope": "sample",
+      "counts": {
+        "sourceRows": 89,
+        "importedRecords": 5,
+        "excludedRows": 34,
+        "failedRows": 0,
+        "pendingRows": 50,
+        "locatedRecords": 0
+      },
+      "exclusions": [
+        {
+          "reason": "storage-collector-side-only-no-transmission-work",
+          "count": 34
+        }
+      ],
+      "limitations": [
+        "Two finite primary scopes: five Table III.E.1 bulk rows plus 84 Schedule 10 forms. The 84 matching III.E narratives are support, not extra projects.",
+        "Full accepted scope is 55 transmission work units; 34 storage-side collector/protection entries are excluded by explicit work scope, not a voltage cutoff.",
+        "This FPL plan includes Northwest Florida but is not a complete Florida inventory or a known statewide denominator.",
+        "April 2026 is submission/edition precision; publication day and row update dates are unknown. Analyses occurred in 2025 and Q1 2026; retrieval does not refresh lifecycle.",
+        "Source-locator IDs freeze the initial source positions without an edition prefix. They are not native engineering IDs; every future edition requires an explicit identity crosswalk.",
+        "Only five bulk rows evidence FPL line ownership, scoped to this source. Right-of-way/reporting identity/participation do not establish ownership of the 50 interconnection packages.",
+        "Five bulk commercial-service dates have month precision. Fifty interconnection service dates remain unknown; construction years and connection quarters are supplementary, never invented actual windows.",
+        "Separate line/program dates, source voltage, name and endpoint discrepancies and unresolved timing conflicts are preserved. No parent records, guessed centers or cross-source FMPA merges.",
+        "Reported circuit miles, kV, transformer/capacity MVA and served-facility MW are distinct meanings. Schedule 9 total installed costs do not establish standalone transmission costs or savings.",
+        "Source text calls forecasts tentative and longer-term sites nondefinitive; proposed equipment work is not a final location or design.",
+        "Public factual private analysis only; originals, contact data, hidden metadata and maps are not published or interpreted. No open/commercial reuse license is asserted.",
+        "Five retained diagnostics are emitted first; 50 accepted records await sample connection and full normalization."
+      ]
+    }
+  ],
+  "coverage": {
+    "processed": 5,
+    "skipped": 34,
+    "failed": 0,
+    "notes": [
+      "All 89 primary entries reconciled; 50 retained records remain pending.",
+      "Work-package counts are not a statewide project census; all retained records remain unlocated."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "sourceKey": "fl-fpl",
+  "editionId": "2026-04",
+  "label": "FPL April 2026 transmission planning scopes",
+  "reportingGroupId": "fl-fpl",
+  "reportingGroupName": "Florida Power & Light public plan",
+  "publisher": "Florida Power & Light Company",
+  "processAuthority": "Florida Public Service Commission ten-year site planning",
+  "publishedOn": null,
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "file": "fpl-2026-plan.pdf",
+    "url": "https://www.fpl.com/content/dam/fplgp/us/en/about/pdf/ten-year-site-plan.pdf",
+    "locator": "Table III.E.1 printed p.96 / PDF p.110, rows 1–5; Schedule 10 printed pp.315–398 / PDF pp.329–412, forms 1–84; matched III.E.1–84 narratives"
+  },
+  "sha256": "30231eb609f4011fa579030e2294483cb7f34c58aed1a05b72eed1055ddecedd",
+  "geographicScope": "Partial FPL Florida and Northwest Florida utility planning scope, with named counties/terminals only; not statewide completeness.",
+  "inventoryScope": "89 primary source entries: five bulk lines and 84 interconnection forms; retain 55 transmission work units and exclude 34 storage-side-only forms. Matching engineering narratives add no rows.",
+  "scope": "sample",
+  "counts": {
+    "sourceRows": 89,
+    "importedRecords": 5,
+    "excludedRows": 34,
+    "failedRows": 0,
+    "pendingRows": 50,
+    "locatedRecords": 0
+  },
+  "exclusions": [
+    {
+      "reason": "storage-collector-side-only-no-transmission-work",
+      "count": 34
+    }
+  ],
+  "limitations": [
+    "Two finite primary scopes: five Table III.E.1 bulk rows plus 84 Schedule 10 forms. The 84 matching III.E narratives are support, not extra projects.",
+    "Full accepted scope is 55 transmission work units; 34 storage-side collector/protection entries are excluded by explicit work scope, not a voltage cutoff.",
+    "This FPL plan includes Northwest Florida but is not a complete Florida inventory or a known statewide denominator.",
+    "April 2026 is submission/edition precision; publication day and row update dates are unknown. Analyses occurred in 2025 and Q1 2026; retrieval does not refresh lifecycle.",
+    "Source-locator IDs freeze the initial source positions without an edition prefix. They are not native engineering IDs; every future edition requires an explicit identity crosswalk.",
+    "Only five bulk rows evidence FPL line ownership, scoped to this source. Right-of-way/reporting identity/participation do not establish ownership of the 50 interconnection packages.",
+    "Five bulk commercial-service dates have month precision. Fifty interconnection service dates remain unknown; construction years and connection quarters are supplementary, never invented actual windows.",
+    "Separate line/program dates, source voltage, name and endpoint discrepancies and unresolved timing conflicts are preserved. No parent records, guessed centers or cross-source FMPA merges.",
+    "Reported circuit miles, kV, transformer/capacity MVA and served-facility MW are distinct meanings. Schedule 9 total installed costs do not establish standalone transmission costs or savings.",
+    "Source text calls forecasts tentative and longer-term sites nondefinitive; proposed equipment work is not a final location or design.",
+    "Public factual private analysis only; originals, contact data, hidden metadata and maps are not published or interpreted. No open/commercial reuse license is asserted.",
+    "Five retained diagnostics are emitted first; 50 accepted records await sample connection and full normalization."
+  ]
+}
