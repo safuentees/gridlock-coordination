@@ -2,9 +2,10 @@
   "sourceKey": "nv-nvenergy",
   "editionId": "2026-05-06-irp",
   "scope": "sample",
-  "records": 6,
-  "compactUtf8Bytes": 22264,
-  "formattedDownloadUtf8Bytes": 28340,
+  "stage": "approved",
+  "records": 21,
+  "compactUtf8Bytes": 61493,
+  "formattedDownloadUtf8Bytes": 79263,
   "measurement": "Source-only Dataset2 UTF-8 JSON; aggregate/export envelope can be larger.",
   "datasetFileFormat": "formatted"
 }

@@ -1,0 +1,3859 @@
+{
+  "policyVersion": 1,
+  "sourceKey": "nv-nvenergy",
+  "editionId": "2026-05-06-irp",
+  "status": "proposed; coordinator acceptance required before request generation",
+  "runtimeRequestsRemainPending": true,
+  "selectedSourceRows": 90,
+  "approvedRows": 21,
+  "requestRows": 69,
+  "counts": {
+    "sourceRows": 69,
+    "retainedProposed": 69,
+    "excludedProposed": 0,
+    "recordKindCounts": {
+      "capital-project-context": 17,
+      "transmission-project": 52
+    },
+    "lifecycleCounts": {
+      "planned": 69
+    },
+    "datePrecisionCounts": {
+      "year": 69
+    },
+    "relationshipGroups": 11,
+    "requestUnitsWithDeclaredRelationships": 39,
+    "approvedUnitsReferencedByRelationships": 2,
+    "unresolvedRepeatedTitleUnits": 2,
+    "unitsWithConflictingVoltage": 6
+  },
+  "identityPolicy": "Each request remains one observed action unit, not a unique physical asset. Do not infer parent IDs or merge repeated names. No exclusion has sufficient identical-scope evidence.",
+  "scopePolicy": "Classify the named bullet; broader beneficiary/parent narratives provide evidence and caveats, not extra components. Explicit HVD/distribution/mixed action packages remain context. Narrow transformer/terminal requests can remain transmission work even when their wider program also serves HVD.",
+  "datePolicy": "All comparison dates use the request bullet in-service year. May6,2026 is source-edition meaning; publication remains null. Supplementary need/resource/phase dates never replace the declared request milestone or create intervals.",
+  "voltageConflictRequestNumbers": [
+    1,
+    25,
+    41,
+    51,
+    54,
+    56
+  ],
+  "recordKindRows": {
+    "capital-project-context": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11,
+      12,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      24,
+      25,
+      41
+    ],
+    "transmission-project": [
+      3,
+      5,
+      7,
+      10,
+      13,
+      14,
+      15,
+      22,
+      23,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ]
+  },
+  "exclusions": [],
+  "relationships": [
+    {
+      "id": "sapphire-basin-phases",
+      "meaning": "phase/dependency; no inferred parent or merge",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-01",
+        "2026-05-06:exhibit-b:request-02",
+        "2026-05-06:exhibit-b:request-03",
+        "2026-05-06:exhibit-b:request-04",
+        "2026-05-06:exhibit-b:request-05",
+        "2026-05-06:exhibit-b:request-06",
+        "2026-05-06:exhibit-b:request-07"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Sapphire and Basin phased requests; PDF pp.211,214 / printed pp.207,210",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "opal-line-terminal-overlap",
+      "meaning": "partly shared line/terminal scope; retain distinct source actions",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-05",
+        "2026-05-06:exhibit-b:request-11",
+        "2026-05-06:exhibit-b:request-13"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Opal and HGIII scope descriptions; PDF pp.219,220,223 / printed pp.215,216,219",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "navigator-line-terminal-overlap",
+      "meaning": "partly shared line/terminal scope; retain distinct source actions",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-10",
+        "2026-05-06:exhibit-b:request-12",
+        "2026-05-06:exhibit-b:request-14"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Sand Dune/Navigator/HGIII connections; PDF pp.217,221,223 / printed pp.213,217,219",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "mackay-increment",
+      "meaning": "explicit incremental work after approval; not duplicate scope",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-22"
+      ],
+      "approvedSourceIds": [
+        "2026-05-06:tp-131:row-15"
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Mackay previously approved and new transformers; PDF pp.237 / printed pp.233",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "north-load-network",
+      "meaning": "related physical network; each compound action remains one source unit",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-20",
+        "2026-05-06:exhibit-b:request-21",
+        "2026-05-06:exhibit-b:request-22",
+        "2026-05-06:exhibit-b:request-23"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Mallard/Goose/Mackay/Walker River network; PDF pp.234,235,237,239 / printed pp.230,231,233,235",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "brooks-voltage-levels",
+      "meaning": "distinct transformation actions in one broader narrative",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-40",
+        "2026-05-06:exhibit-b:request-41"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Brooks transmission/distribution transformation; PDF pp.19,20,21 / printed pp.258,259,260",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "walker-river-title-repeat",
+      "meaning": "unresolved repeated title; distinct physical identity not asserted",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-53",
+        "2026-05-06:exhibit-b:request-64"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Walker River terminal resource narratives; PDF pp.33,44 / printed pp.272,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "winston-transformer-terminal",
+      "meaning": "distinct named equipment within a broader resource narrative",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-51",
+        "2026-05-06:exhibit-b:request-52"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Winston transformer/terminal scope; PDF pp.32,33 / printed pp.271,272",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "lux-and-thermal-clearance",
+      "meaning": "shared corridor/#124 scope; exact structure overlap unresolved",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-49",
+        "2026-05-06:exhibit-b:request-50",
+        "2026-05-06:exhibit-b:request-63",
+        "2026-05-06:exhibit-b:request-64"
+      ],
+      "approvedSourceIds": [
+        "2026-05-06:tp-131:row-19"
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Lux and Fort Churchill network works; PDF pp.30,31,44 / printed pp.269,270,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "resource-shared-network",
+      "meaning": "one set of named requests supports several resource narratives; no extra observations",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-15",
+        "2026-05-06:exhibit-b:request-31",
+        "2026-05-06:exhibit-b:request-34",
+        "2026-05-06:exhibit-b:request-35",
+        "2026-05-06:exhibit-b:request-38",
+        "2026-05-06:exhibit-b:request-42",
+        "2026-05-06:exhibit-b:request-44",
+        "2026-05-06:exhibit-b:request-61",
+        "2026-05-06:exhibit-b:request-62",
+        "2026-05-06:exhibit-b:request-65"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Hot Pot/Iron Point/Valmy contingent and direct works; PDF pp.41,42,48 / printed pp.280,281,287",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "valmy-interconnection-components",
+      "meaning": "distinct POI/terminal bullets; unnamed resource aliases unresolved",
+      "requestSourceIds": [
+        "2026-05-06:exhibit-b:request-65",
+        "2026-05-06:exhibit-b:request-66",
+        "2026-05-06:exhibit-b:request-67",
+        "2026-05-06:exhibit-b:request-68",
+        "2026-05-06:exhibit-b:request-69"
+      ],
+      "approvedSourceIds": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Valmy portfolio network and interconnection scopes; PDF pp.48,49 / printed pp.287,288",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "requestNumber": 1,
+      "sourceId": "2026-05-06:exhibit-b:request-01",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-01",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 1; PDF p.46 / Exhibit B p.4; page bullet 1",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Sapphire 230/120 kV substation with an in-service date of 2028 (Sapphire phase 1 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Public narrative explicitly calls Sapphire phase1 a distribution area upgrade, despite conflicting voltage in the application.",
+      "proposedName": "Sapphire phase 1 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230,
+        120
+      ],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "notes": [
+        "Exhibit B says230/120kV; the Sapphire narrative says230/12kV and explicitly calls this a distribution area upgrade. Preserve both raw statements and leave normalized voltage unknown.",
+        "The request ISD is2028. The narrative says required in2027; keep2027 as a separate need milestone, not a replacement in-service date."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 1; PDF p.46 / Exhibit B p.4; page bullet 1",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Sapphire phase1 distribution scope and required year; PDF pp.211 / printed pp.207",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": [
+        {
+          "field": "Sapphire required year (narrative)",
+          "date": {
+            "value": "2027",
+            "precision": "year",
+            "kind": "need",
+            "label": "Sapphire required year"
+          },
+          "evidence": [
+            {
+              "file": "NPC-SPPC-Volume-8.pdf",
+              "locator": "Sapphire phase1 distribution scope and required year; PDF pp.211 / printed pp.207",
+              "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "requestNumber": 2,
+      "sourceId": "2026-05-06:exhibit-b:request-02",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-02",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 2; PDF p.46 / Exhibit B p.4; page bullet 2",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the 230 kV HVD lines at Sapphire substation with an in- service date of 2028 (Sapphire phase 2 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Sapphire phase 2 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 2; PDF p.46 / Exhibit B p.4; page bullet 2",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 3,
+      "sourceId": "2026-05-06:exhibit-b:request-03",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-03",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 3; PDF p.46 / Exhibit B p.4; page bullet 3",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Sapphire to Basin 230 kV line with an in- service date of 2031 (Sapphire phase 3 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Sapphire phase 3 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 3; PDF p.46 / Exhibit B p.4; page bullet 3",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 4,
+      "sourceId": "2026-05-06:exhibit-b:request-04",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-04",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 4; PDF p.46 / Exhibit B p.4; page bullet 4",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of two 230 kV HVD lines at Sapphire substation with an in- service date of 2031 (Sapphire phase 4 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Sapphire phase 4 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 4; PDF p.46 / Exhibit B p.4; page bullet 4",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 5,
+      "sourceId": "2026-05-06:exhibit-b:request-05",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-05",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 5; PDF p.47 / Exhibit B p.5; page bullet 1",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Sapphire to Opal 230 kV line with an in- service date of 2031 (Sapphire phase 5 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Sapphire phase 5 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases",
+        "opal-line-terminal-overlap"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 5; PDF p.47 / Exhibit B p.5; page bullet 1",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 6,
+      "sourceId": "2026-05-06:exhibit-b:request-06",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-06",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 6; PDF p.47 / Exhibit B p.5; page bullet 2",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Basin 525/230 kV 1500 MVA transformer substation with an in-service date of 2031 (Basin phase 1 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "The full Basin phase1 substation request includes HVD lines in the same construction scope.",
+      "proposedName": "Basin phase 1 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        230
+      ],
+      "proposedVoltageKv": [
+        525,
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "notes": [
+        "This whole-substation request includes two HVD lines in its same-phase narrative. Keep mixed capital context without splitting its transmission portion into another record."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 6; PDF p.47 / Exhibit B p.5; page bullet 2",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Basin phase1 construction request; PDF pp.214 / printed pp.210",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 7,
+      "sourceId": "2026-05-06:exhibit-b:request-07",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-07",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 7; PDF p.47 / Exhibit B p.5; page bullet 3",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Basin second 525/230 kV 1500 MVA transformer with an in-service date of 2031 (Basin phase 2 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Basin phase 2 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        230
+      ],
+      "proposedVoltageKv": [
+        525,
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "sapphire-basin-phases"
+      ],
+      "notes": [
+        "Retain the separate second-transformer action; its customer agreement was expected before a ruling, not already executed. HVD customer service does not alone change this narrowly named transformer action into distribution-only work."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 7; PDF p.47 / Exhibit B p.5; page bullet 3",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Basin phase2 transformer request; PDF pp.214 / printed pp.210",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 8,
+      "sourceId": "2026-05-06:exhibit-b:request-08",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-08",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 8; PDF p.47 / Exhibit B p.5; page bullet 4",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Sand Dune 230 kV switching station with 230 kV HVD lines with an in-service date of 2029 (Sand Dune phase 1 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Sand Dune phase 1 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 8; PDF p.47 / Exhibit B p.5; page bullet 4",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 9,
+      "sourceId": "2026-05-06:exhibit-b:request-09",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-09",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 9; PDF p.47 / Exhibit B p.5; page bullet 5",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of 230 kV HVD lines at Sand Dune with an in- service date of 2029 (Sand Dune phase 2 project)..",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Sand Dune phase 2 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 9; PDF p.47 / Exhibit B p.5; page bullet 5",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 10,
+      "sourceId": "2026-05-06:exhibit-b:request-10",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-10",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 10; PDF p.47 / Exhibit B p.5; page bullet 6",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Sand Dune to Navigator 230 kV line with an in-service date of 2031 (Sand Dune phase 3 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Sand Dune phase 3 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "navigator-line-terminal-overlap"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 10; PDF p.47 / Exhibit B p.5; page bullet 6",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 11,
+      "sourceId": "2026-05-06:exhibit-b:request-11",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-11",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 11; PDF p.47 / Exhibit B p.5; page bullet 7",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the New Opal 230 kV switching station with 230 kV HVD lines and 230 kV line to Sapphire and HGIII with an in-service date of 2031 (Opal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Opal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "opal-line-terminal-overlap"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 11; PDF p.47 / Exhibit B p.5; page bullet 7",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 12,
+      "sourceId": "2026-05-06:exhibit-b:request-12",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-12",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 12; PDF p.47 / Exhibit B p.5; page bullet 8",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the New Navigator switching station with 230 kV HVD lines and 230 kV line to HGIII and Sand Dune with an in-service date of 2031 (Navigator project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Navigator project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "navigator-line-terminal-overlap"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 12; PDF p.47 / Exhibit B p.5; page bullet 8",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 13,
+      "sourceId": "2026-05-06:exhibit-b:request-13",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-13",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 13; PDF p.47 / Exhibit B p.5; page bullet 9",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the HGIII to Opal, 230 kV line with an in- service date of 2031 (HGIII phase 1 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "HGIII phase 1 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "opal-line-terminal-overlap"
+      ],
+      "notes": [
+        "Exhibit B describes an HGIII–Opal line, whereas the narrative specifically requests its terminal. Preserve the scope discrepancy; do not merge into Opal or invent separate line and terminal records."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 13; PDF p.47 / Exhibit B p.5; page bullet 9",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "HGIII phase1 request; PDF pp.223 / printed pp.219",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 14,
+      "sourceId": "2026-05-06:exhibit-b:request-14",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-14",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 14; PDF p.47 / Exhibit B p.5; page bullet 10",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Connect HGIII to Navigator 230 kV line terminal and add 525/230 kV 600 MVA transformer at HGIII with an in- service date of 2031 (HGIII phase 2 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "HGIII phase 2 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230,
+        525
+      ],
+      "proposedVoltageKv": [
+        230,
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "navigator-line-terminal-overlap"
+      ],
+      "notes": [
+        "Retain the requested terminal-plus-transformer action. Wider network/HVD construction described under the HGIII narrative is not added as extra records."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 14; PDF p.47 / Exhibit B p.5; page bullet 10",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "HGIII phase2 request; PDF pp.223 / printed pp.219",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 15,
+      "sourceId": "2026-05-06:exhibit-b:request-15",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-15",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 15; PDF p.47 / Exhibit B p.5; page bullet 11",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Two Chukar 345/120 kV transformers with an in- service date of 2029 (Chukar 345/120 kV transformers project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Chukar 345/120 kV transformers project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345,
+        120
+      ],
+      "proposedVoltageKv": [
+        345,
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [
+        "Retain one two-transformer action, not two records. Narrative explains replacement of the previously planned280MVA design by400MVA transformers; the section heading still contains280MVA. No capacity scalar is invented."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 15; PDF p.47 / Exhibit B p.5; page bullet 11",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Chukar transformer scope; PDF pp.225 / printed pp.221",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 16,
+      "sourceId": "2026-05-06:exhibit-b:request-16",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-16",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 16; PDF p.47 / Exhibit B p.5; page bullet 12",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Viking switching station to connect 345 kV HVD lines, connects to Lantern -Comstock 345 kV line with an in- service date of 2030 (Viking project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Viking project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 16; PDF p.47 / Exhibit B p.5; page bullet 12",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 17,
+      "sourceId": "2026-05-06:exhibit-b:request-17",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-17",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 17; PDF p.47 / Exhibit B p.5; page bullet 13",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Vaquero switching station to connect 345 kV HVD lines and two (2) 345/120 kV 280 MVA transformers, connects to Lantern-Comstock 345 kV line, with 120 kV HVD lines with an in-service date of 2031 (Vaquero project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Vaquero project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345,
+        120
+      ],
+      "proposedVoltageKv": [
+        345,
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 17; PDF p.47 / Exhibit B p.5; page bullet 13",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 18,
+      "sourceId": "2026-05-06:exhibit-b:request-18",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-18",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 18; PDF p.47 / Exhibit B p.5; page bullet 14",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the HVD line terminals for a Rule 9 customer at East Tracy with an in-service date of 2031 (East Tracy project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "East Tracy project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "The narrative explicitly requests two345kV HVD terminals; the request bullet omits voltage. Keep raw bullet and supplementary source voltage evidence distinct."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 18; PDF p.47 / Exhibit B p.5; page bullet 14",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "East Tracy HVD terminals; PDF pp.231 / printed pp.227",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 19,
+      "sourceId": "2026-05-06:exhibit-b:request-19",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-19",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 19; PDF p.47 / Exhibit B p.5; page bullet 15",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Petroglyph switching station, connects to West Tracy - Comstock Meadows 345 kV line, with new 345 kV HVD lines with an in-service date of 2029 (Petroglyph project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Petroglyph project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 19; PDF p.47 / Exhibit B p.5; page bullet 15",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 20,
+      "sourceId": "2026-05-06:exhibit-b:request-20",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-20",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 20; PDF p.47 / Exhibit B p.5; page bullet 16",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Mallard 525/345 kV substation, connects to Mackay- Goose 525 kV line, with HVD lines with an in-service date of 2032 (Mallard project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Mallard project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2032",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "proposedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "north-load-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 20; PDF p.47 / Exhibit B p.5; page bullet 16",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 21,
+      "sourceId": "2026-05-06:exhibit-b:request-21",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-21",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 21; PDF p.47 / Exhibit B p.5; page bullet 17",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Goose 525/345 kV substation, with two (2) 525/345 kV 1500 MVA transformer banks, with new 345 HVD lines with an in-service date of 2032 (Goose project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Goose project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2032",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "proposedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "north-load-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 21; PDF p.47 / Exhibit B p.5; page bullet 17",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 22,
+      "sourceId": "2026-05-06:exhibit-b:request-22",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-22",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 22; PDF p.48 / Exhibit B p.6; page bullet 1",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Three Mackay 525/345 kV 600 MVA transformers with an in-service date of 2032 (Mackay 525/345 kV transformer project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Mackay 525/345 kV transformer project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2032",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "proposedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "mackay-increment",
+        "north-load-network"
+      ],
+      "notes": [
+        "Mackay was previously approved; this request adds three525/345kV transformers. Preserve the approved row15 and this incremental action separately. The wider narrative also describes HVD lines; this bullet names the transformer addition only."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 22; PDF p.48 / Exhibit B p.6; page bullet 1",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Mackay incremental transformer request; PDF pp.237 / printed pp.233",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 23,
+      "sourceId": "2026-05-06:exhibit-b:request-23",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-23",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 23; PDF p.48 / Exhibit B p.6; page bullet 2",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Walker River -Goose-Mackay-Walker River 525 kV transmission lines with an in -service date of 2032 (Walker River-Goose-Mackay-Walker River 525 kV transmission lines project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River-Goose-Mackay-Walker River 525 kV transmission lines project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2032",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525
+      ],
+      "proposedVoltageKv": [
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "north-load-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 23; PDF p.48 / Exhibit B p.6; page bullet 2",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 24,
+      "sourceId": "2026-05-06:exhibit-b:request-24",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-24",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 24; PDF p.48 / Exhibit B p.6; page bullet 3",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Spring Canyon 230/12 kV substation with three (3) 37 MVA transformers, connects to Greenway -Mead 230 kV line with an in- service date of 2028 (Spring Canyon project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "230/12kV transformation and distribution feeders are explicit.",
+      "proposedName": "Spring Canyon project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230,
+        12
+      ],
+      "proposedVoltageKv": [
+        230,
+        12
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "The request is230/12kV transformation serving distribution feeders. Keep capital context. The source varies transformer capacity between37MVA and280MVA; no normalized capacity field is added."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 24; PDF p.48 / Exhibit B p.6; page bullet 3",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Spring Canyon area upgrade and distribution feeders; PDF pp.239,240 / printed pp.235,236",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 25,
+      "sourceId": "2026-05-06:exhibit-b:request-25",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-25",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 25; PDF p.48 / Exhibit B p.6; page bullet 4",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Scorpion 230 kV switching station, connects to Arden- Mead 230 kV line, with HVD lines with an in-service date of 2030 (Scorpion project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "Explicit HVD (high voltage distribution) or mixed transmission/distribution scope remains capital context; the source action is not split.",
+      "proposedName": "Scorpion project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "Exhibit B, narrative heading and most construction wording say230kV, but a narrative sentence says345kV. Preserve the conflict and leave normalized voltage unknown."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 25; PDF p.48 / Exhibit B p.6; page bullet 4",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Scorpion voltage and HVD scope; PDF pp.241 / printed pp.237",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 26,
+      "sourceId": "2026-05-06:exhibit-b:request-26",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-26",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 26; PDF p.48 / Exhibit B p.6; page bullet 5",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Ft Sage 345/69 kV transformer with an in-service date of 2028 (Ft Sage 345/69 kV transformer project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Ft Sage 345/69 kV transformer project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345,
+        69
+      ],
+      "proposedVoltageKv": [
+        345,
+        69
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "This is a345/69kV transmission-to-transmission interconnection transformer. Customer cost responsibility does not establish qualified ownership."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 26; PDF p.48 / Exhibit B p.6; page bullet 5",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-8.pdf",
+          "locator": "Ft Sage transformer and transmission interconnection; PDF pp.243,244 / printed pp.239,240",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-8.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 27,
+      "sourceId": "2026-05-06:exhibit-b:request-27",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-27",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 27; PDF p.48 / Exhibit B p.6; page bullet 6",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Northwest 230 kV line terminal with an in-service date of 2028 (Northwest 230 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Northwest 230 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 27; PDF p.48 / Exhibit B p.6; page bullet 6",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 28,
+      "sourceId": "2026-05-06:exhibit-b:request-28",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-28",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 28; PDF p.48 / Exhibit B p.6; page bullet 7",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the NSO-Magnolia 230 kV line with an in-service date of 2035 (NSO-Magnolia 230 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "NSO-Magnolia 230 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2035",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 28; PDF p.48 / Exhibit B p.6; page bullet 7",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 29,
+      "sourceId": "2026-05-06:exhibit-b:request-29",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-29",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 29; PDF p.48 / Exhibit B p.6; page bullet 8",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Onyx 230/69 kV substation with an in- service date of 2032 (Onyx 230/69 kV substation project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Onyx 230/69 kV substation project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2032",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230,
+        69
+      ],
+      "proposedVoltageKv": [
+        230,
+        69
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 29; PDF p.48 / Exhibit B p.6; page bullet 8",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 30,
+      "sourceId": "2026-05-06:exhibit-b:request-30",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-30",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 30; PDF p.48 / Exhibit B p.6; page bullet 9",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Harry Allen reactors with an in- service date of 2028 (Harry Allen reactors project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Harry Allen reactors project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2028",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 30; PDF p.48 / Exhibit B p.6; page bullet 9",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 31,
+      "sourceId": "2026-05-06:exhibit-b:request-31",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-31",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 31; PDF p.48 / Exhibit B p.6; page bullet 10",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Coyote Creek 345 kV breakers with an in-service date of 2031 (Coyote Creek 345 kV breakers project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Coyote Creek 345 kV breakers project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2031",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 31; PDF p.48 / Exhibit B p.6; page bullet 10",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 32,
+      "sourceId": "2026-05-06:exhibit-b:request-32",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-32",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 32; PDF p.48 / Exhibit B p.6; page bullet 11",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Equestrian 230 kV breaker with an in- service date of 2030 (Equestrian 230 kV breaker project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Equestrian 230 kV breaker project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 32; PDF p.48 / Exhibit B p.6; page bullet 11",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 33,
+      "sourceId": "2026-05-06:exhibit-b:request-33",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-33",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 33; PDF p.48 / Exhibit B p.6; page bullet 12",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Northwest 525/230 kV transformer #7 with an in- service date of 2030 (Northwest 525/230 kV transformer #7 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Northwest 525/230 kV transformer #7 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        230
+      ],
+      "proposedVoltageKv": [
+        525,
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 33; PDF p.48 / Exhibit B p.6; page bullet 12",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 34,
+      "sourceId": "2026-05-06:exhibit-b:request-34",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-34",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 34; PDF p.48 / Exhibit B p.6; page bullet 13",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the East Tracy- West Tracy 345 kV #2 with an in- service date of 2029 (East Tracy-West Tracy 345 kV #2 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "East Tracy-West Tracy 345 kV #2 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 34; PDF p.48 / Exhibit B p.6; page bullet 13",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 35,
+      "sourceId": "2026-05-06:exhibit-b:request-35",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-35",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 35; PDF p.48 / Exhibit B p.6; page bullet 14",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the East Tracy-West Tracy 345 kV #1 reconductor with an in-service date of 2029 (East Tracy-West Tracy 345 kV #1 reconductor project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "East Tracy-West Tracy 345 kV #1 reconductor project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 35; PDF p.48 / Exhibit B p.6; page bullet 14",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 36,
+      "sourceId": "2026-05-06:exhibit-b:request-36",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-36",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 36; PDF p.48 / Exhibit B p.6; page bullet 15",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the East Tracy 345/120 kV replacement transformer #1 with 400 MVA with an in- service date of 2029 (East Tracy transformer #1 replacement with 400 MVA project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "East Tracy transformer #1 replacement with 400 MVA project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345,
+        120
+      ],
+      "proposedVoltageKv": [
+        345,
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 36; PDF p.48 / Exhibit B p.6; page bullet 15",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 37,
+      "sourceId": "2026-05-06:exhibit-b:request-37",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-37",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 37; PDF p.48 / Exhibit B p.6; page bullet 16",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Reno Substation replacement switch #1101 and #1113 with an in-service date of 2029 (Replace switch #1101 and #1113 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Replace switch #1101 and #1113 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 37; PDF p.48 / Exhibit B p.6; page bullet 16",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 38,
+      "sourceId": "2026-05-06:exhibit-b:request-38",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-38",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 38; PDF p.48 / Exhibit B p.6; page bullet 17",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Reconductor 120 kV line #103 with an in-service date of 2029 (Reconductor 120 kV line #103 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Reconductor 120 kV line #103 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2029",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 38; PDF p.48 / Exhibit B p.6; page bullet 17",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 39,
+      "sourceId": "2026-05-06:exhibit-b:request-39",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-39",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 39; PDF p.48 / Exhibit B p.6; page bullet 18",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Frontier-Lander 230 kV line with an in-service date of 2030 (Frontier-Lander 230 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Frontier-Lander 230 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 39; PDF p.48 / Exhibit B p.6; page bullet 18",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 40,
+      "sourceId": "2026-05-06:exhibit-b:request-40",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-40",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 40; PDF p.49 / Exhibit B p.7; page bullet 1",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Brooks 230/138 kV substation with two (2) 400 MVA transformers with an in-service date of 2030 (Brooks 230/138 kV substation project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Brooks 230/138 kV substation project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230,
+        138
+      ],
+      "proposedVoltageKv": [
+        230,
+        138
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "brooks-voltage-levels"
+      ],
+      "notes": [
+        "This bullet names two230/138kV transformers; request41 separately names the138/12kV equipment. Retain those distinct action units without importing the common Brooks narrative as a parent record."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 40; PDF p.49 / Exhibit B p.7; page bullet 1",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Brooks transmission and distribution requests; PDF pp.19,20,21 / printed pp.258,259,260",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 41,
+      "sourceId": "2026-05-06:exhibit-b:request-41",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-41",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 41; PDF p.49 / Exhibit B p.7; page bullet 2",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Brooks 138/12 kV 33 MVA transformers, construct 12 kV get aways with an in-service date of 2030 (Brooks 138/12 kV transformer project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "capital-project-context",
+      "classificationReason": "138/12kV transformers and12kV getaways are explicit distribution work.",
+      "proposedName": "Brooks 138/12 kV transformer project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        138,
+        12
+      ],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "brooks-voltage-levels"
+      ],
+      "notes": [
+        "Exhibit B and narrative say138/12kV; FigureTP-82A heading says230/12kV. Retain the distribution action as context and leave normalized voltage unknown rather than silently correct the inconsistent heading."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 41; PDF p.49 / Exhibit B p.7; page bullet 2",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Brooks distribution scope and cash-flow heading; PDF pp.20,21 / printed pp.259,260",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 42,
+      "sourceId": "2026-05-06:exhibit-b:request-42",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-42",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 42; PDF p.49 / Exhibit B p.7; page bullet 3",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Coyote Creek -Falcon 345 kV line with an in- service date of 2030 (Coyote Creek-Falcon 345 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Coyote Creek-Falcon 345 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 42; PDF p.49 / Exhibit B p.7; page bullet 3",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 43,
+      "sourceId": "2026-05-06:exhibit-b:request-43",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-43",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 43; PDF p.49 / Exhibit B p.7; page bullet 4",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Olinghouse-Chukar 345 kV line with an in-service date of 2030 (Olinghouse-Chukar 345 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Olinghouse-Chukar 345 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 43; PDF p.49 / Exhibit B p.7; page bullet 4",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 44,
+      "sourceId": "2026-05-06:exhibit-b:request-44",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-44",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 44; PDF p.49 / Exhibit B p.7; page bullet 5",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the third 345 kV PST and third 525/345 kV transformers at Robinson Summit substation with an in- service date of 2030 (R obinson Summit third 345 kV PST and third 525/345 kV transformer project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "R obinson Summit third 345 kV PST and third 525/345 kV transformer project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345,
+        525
+      ],
+      "proposedVoltageKv": [
+        345,
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 44; PDF p.49 / Exhibit B p.7; page bullet 5",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 45,
+      "sourceId": "2026-05-06:exhibit-b:request-45",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-45",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 45; PDF p.49 / Exhibit B p.7; page bullet 6",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Esmeralda-Millers 230 kV line with an in-service date of 2030 (Esmeralda-Millers 230 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Esmeralda-Millers 230 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 45; PDF p.49 / Exhibit B p.7; page bullet 6",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 46,
+      "sourceId": "2026-05-06:exhibit-b:request-46",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-46",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 46; PDF p.49 / Exhibit B p.7; page bullet 7",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Interconnection of Big Smokey lead line at Millers with an in -service date of 2030 ( Interconnection of Big Smokey lead line at Millers project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": " Interconnection of Big Smokey lead line at Millers project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 46; PDF p.49 / Exhibit B p.7; page bullet 7",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 47,
+      "sourceId": "2026-05-06:exhibit-b:request-47",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-47",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 47; PDF p.49 / Exhibit B p.7; page bullet 8",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the 120 kV line terminal at Wassuk substation for lead line for Mason with an in-service date of 2030 (Wassuk lead line for Mason project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Wassuk lead line for Mason project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 47; PDF p.49 / Exhibit B p.7; page bullet 8",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 48,
+      "sourceId": "2026-05-06:exhibit-b:request-48",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-48",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 48; PDF p.49 / Exhibit B p.7; page bullet 9",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Candeleria switching station with 120 kV lead line position for Excelsior Geothermal project with an in-service date of 2030 (Candelaria 120 kV switching station project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Candelaria 120 kV switching station project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 48; PDF p.49 / Exhibit B p.7; page bullet 9",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 49,
+      "sourceId": "2026-05-06:exhibit-b:request-49",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-49",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 49; PDF p.49 / Exhibit B p.7; page bullet 10",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the #124 line clearance mitigations with an in-service date of 2030 (#124 line clearance mitigations project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "#124 line clearance mitigations project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "lux-and-thermal-clearance"
+      ],
+      "notes": [
+        "Lux narrative describes Walker River–Buckeye120kV clearance work; the Fort Churchill package also describes five structures on#124. The request does not identify exact structure overlap; preserve as one action without assuming these are identical or two separate lines."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 49; PDF p.49 / Exhibit B p.7; page bullet 10",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Lux and Fort Churchill clearance work; PDF pp.30,31,44 / printed pp.269,270,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 50,
+      "sourceId": "2026-05-06:exhibit-b:request-50",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-50",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 50; PDF p.49 / Exhibit B p.7; page bullet 11",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Walker River 120 kV line terminal with an in- service date of 2030 (Walker River 120 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River 120 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "lux-and-thermal-clearance"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 50; PDF p.49 / Exhibit B p.7; page bullet 11",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 51,
+      "sourceId": "2026-05-06:exhibit-b:request-51",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-51",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 51; PDF p.49 / Exhibit B p.7; page bullet 12",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Walker River 345/230 kV transformer #3 with an in- service date of 2030 (Walker River 345/230 kV transformer #3 project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River 345/230 kV transformer #3 project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345,
+        230
+      ],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "winston-transformer-terminal"
+      ],
+      "notes": [
+        "Exhibit B and opening narrative specify345/230kV; construction/budget/cash-flow wording specifies345/120kV. Leave normalized voltage unknown and retain both source statements."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 51; PDF p.49 / Exhibit B p.7; page bullet 12",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Winston transformer request and conflicting scope; PDF pp.32,33 / printed pp.271,272",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 52,
+      "sourceId": "2026-05-06:exhibit-b:request-52",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-52",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 52; PDF p.49 / Exhibit B p.7; page bullet 13",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Walker River 230 kV line terminal with an in- service date of 2030 (Walker River 230 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River 230 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [
+        230
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "winston-transformer-terminal"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 52; PDF p.49 / Exhibit B p.7; page bullet 13",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 53,
+      "sourceId": "2026-05-06:exhibit-b:request-53",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-53",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 53; PDF p.49 / Exhibit B p.7; page bullet 14",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Walker River 345 kV line terminal with an in- service date of 2030 (Walker River 345 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River 345 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "walker-river-title-repeat"
+      ],
+      "notes": [
+        "Request53 and request64 repeat the same terminal title/year. Sleepy Orange and Fort Churchill narratives describe terminal needs, but no keyed bullet-to-resource link establishes identity. Retain both source observations with an unresolved relationship, not confirmed unique physical terminals. The Sleepy Orange paragraph itself names Winston in its request sentence."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 53; PDF p.49 / Exhibit B p.7; page bullet 14",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Separate Walker River345kV terminal narratives; PDF pp.33,44 / printed pp.272,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 54,
+      "sourceId": "2026-05-06:exhibit-b:request-54",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-54",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 54; PDF p.49 / Exhibit B p.7; page bullet 15",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Miller 238 kV line terminal with an in- service date of 2030 (Miller 238 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Miller 238 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        238
+      ],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "Exhibit B says Miller238kV; the narrative says Miller138kV. Leave normalized voltage unknown. The narrative also inconsistently names Winston BESS before requesting Commerce Station interconnection; no resource alias is inferred."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 54; PDF p.49 / Exhibit B p.7; page bullet 15",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Commerce Station/Miller terminal narrative; PDF pp.34 / printed pp.273",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 55,
+      "sourceId": "2026-05-06:exhibit-b:request-55",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-55",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 55; PDF p.49 / Exhibit B p.7; page bullet 16",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Apex 525 kV line terminal with an in- service date of 2030 (Apex 525 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Apex 525 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525
+      ],
+      "proposedVoltageKv": [
+        525
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "Exhibit B names Apex525kV terminal; the similar interconnection narrative names Crystal. Preserve Apex from the request, do not assert the facilities are aliases or relocate the record."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 55; PDF p.49 / Exhibit B p.7; page bullet 16",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Coyote Springs/Crystal terminal narrative; PDF pp.35 / printed pp.274",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 56,
+      "sourceId": "2026-05-06:exhibit-b:request-56",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-56",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 56; PDF p.49 / Exhibit B p.7; page bullet 17",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Gonder 230 kV line terminal with an in-service date of 2030 (Gonder 230 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Gonder 230 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        230
+      ],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Unresolved conflicting public values; preserve raw fields and notes, normalize to unknown.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "Exhibit B says Gonder230kV terminal; narrative says345kV. Leave normalized voltage unknown; keep the distinct generator-runback RAS request57 separately."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 56; PDF p.49 / Exhibit B p.7; page bullet 17",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "White Pine/Gonder terminal narrative; PDF pp.37 / printed pp.276",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 57,
+      "sourceId": "2026-05-06:exhibit-b:request-57",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-57",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 57; PDF p.50 / Exhibit B p.8; page bullet 1",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Gonder generator run back remedial action scheme (“RAS”) for loss of Gonder 345 kV connection to Robinson Summit with an in- service date of 2030 (Gonder generator run back RAS project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Gonder generator run back RAS project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "A protection/remedial-action scheme supporting the transmission connection is physical transmission-system work, not the White Pine generator itself. Do not create a generation parent."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 57; PDF p.50 / Exhibit B p.8; page bullet 1",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Gonder generator-runback protection; PDF pp.37 / printed pp.276",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 58,
+      "sourceId": "2026-05-06:exhibit-b:request-58",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-58",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 58; PDF p.50 / Exhibit B p.8; page bullet 2",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Mira Loma 120 kV line terminal with an in- service date of 2030 (Mira Loma 120 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Mira Loma 120 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 58; PDF p.50 / Exhibit B p.8; page bullet 2",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 59,
+      "sourceId": "2026-05-06:exhibit-b:request-59",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-59",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 59; PDF p.50 / Exhibit B p.8; page bullet 3",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Reconductor #129 120 kV line with an in-service date of 2030 (Reconductor #129 120 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Reconductor #129 120 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 59; PDF p.50 / Exhibit B p.8; page bullet 3",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 60,
+      "sourceId": "2026-05-06:exhibit-b:request-60",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-60",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 60; PDF p.50 / Exhibit B p.8; page bullet 4",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Uprate Iron Mountain-Lorenzi 138 kV line with an in- service date of 2030 (Uprate Iron Mountain-Lorenzi 138 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Uprate Iron Mountain-Lorenzi 138 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        138
+      ],
+      "proposedVoltageKv": [
+        138
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [],
+      "notes": [
+        "The same Iron Mountain–Lorenzi uprate serves several resource narratives. Import the one declared action only; resource headings and contingency repetitions are not additional records."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 60; PDF p.50 / Exhibit B p.8; page bullet 4",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Shared Southern Bighorn/Dry Lake East network work; PDF pp.40,41 / printed pp.279,280",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 61,
+      "sourceId": "2026-05-06:exhibit-b:request-61",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-61",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 61; PDF p.50 / Exhibit B p.8; page bullet 5",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction to resolve clearance on #3420 and change size of conductor on the Lantern-Comstock Meadows 345 kV line with an in-service date of 2030 (Resolve clearance on #3420 and change size of conductor Lantern-Comstock Meadows 345 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Resolve clearance on #3420 and change size of conductor Lantern-Comstock Meadows 345 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [
+        "This bullet combines#3420 clearance work and conductor-size change on Lantern–Comstock Meadows. Keep one compound action. An existing/previously approved line is not a duplicate observation of this incremental work."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 61; PDF p.50 / Exhibit B p.8; page bullet 5",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Hot Pot/Iron Point network upgrades; PDF pp.41,42 / printed pp.280,281",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 62,
+      "sourceId": "2026-05-06:exhibit-b:request-62",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-62",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 62; PDF p.50 / Exhibit B p.8; page bullet 6",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the North Valmy 345 kV line terminal with an in- service date of 2030 (North Valmy 345 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "North Valmy 345 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network"
+      ],
+      "notes": [],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 62; PDF p.50 / Exhibit B p.8; page bullet 6",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 63,
+      "sourceId": "2026-05-06:exhibit-b:request-63",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-63",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 63; PDF p.50 / Exhibit B p.8; page bullet 7",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Grayskull 525/345 kV substation, with two (2) 1500 MVA transformers and the Grayskull-Walker River 525 kV line with an in-service date of 2030 (Walker River-Grayskull 525 kV line project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River-Grayskull 525 kV line project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        525,
+        345
+      ],
+      "proposedVoltageKv": [
+        525,
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "lux-and-thermal-clearance"
+      ],
+      "notes": [
+        "Keep the Grayskull transformers plus Walker River–Grayskull line in one declared compound action. Do not additionally import its generation parent, other narrative components or the already-approved Nighthawk row as duplicates."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 63; PDF p.50 / Exhibit B p.8; page bullet 7",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Fort Churchill network package; PDF pp.44 / printed pp.283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 64,
+      "sourceId": "2026-05-06:exhibit-b:request-64",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-64",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 64; PDF p.50 / Exhibit B p.8; page bullet 8",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Walker River 345 kV line terminal with an in- service date of 2030 (Walker River 345 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Walker River 345 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        345
+      ],
+      "proposedVoltageKv": [
+        345
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "walker-river-title-repeat",
+        "lux-and-thermal-clearance"
+      ],
+      "notes": [
+        "Same title/year as request53 is insufficient to exclude this source unit. Resource narratives indicate potentially distinct needs but do not establish a unique keyed mapping; preserve both with unresolved physical identity."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 64; PDF p.50 / Exhibit B p.8; page bullet 8",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Separate Walker River345kV terminal narratives; PDF pp.33,44 / printed pp.272,283",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 65,
+      "sourceId": "2026-05-06:exhibit-b:request-65",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-65",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 65; PDF p.50 / Exhibit B p.8; page bullet 9",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Valmy geothermal portfolio network upgrades, rebuilding #118 Eagle -NGPP, reconductoring #3422 between East Tracy- Lantern, and adding PST at Oreanna with an in- service date of 2030 ( Valmy geothermal portfolio network upgrades project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": " Valmy geothermal portfolio network upgrades project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "resource-shared-network",
+        "valmy-interconnection-components"
+      ],
+      "notes": [
+        "Keep the#118 rebuild, #3422 reconductor and Oreanna PST as one declared network action. The same works recur as contingent needs for Hot Pot/Iron Point; do not add those narrative repeats or count individual components separately."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 65; PDF p.50 / Exhibit B p.8; page bullet 9",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Shared Valmy and Hot Pot/Iron Point network upgrades; PDF pp.42,48 / printed pp.281,287",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 66,
+      "sourceId": "2026-05-06:exhibit-b:request-66",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-66",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 66; PDF p.50 / Exhibit B p.8; page bullet 10",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the POI substation for Rose of Snowville with an in-service date of 2030 (POI substation for Rose of Snowville project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "POI substation for Rose of Snowville project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "notes": [
+        "Retain the named Rose of Snowville POI action. The narrative describes120kV POIs; keep that supplemental source evidence distinct from the bullet, which supplies no voltage."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 66; PDF p.50 / Exhibit B p.8; page bullet 10",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Valmy portfolio interconnection scope; PDF pp.48,49 / printed pp.287,288",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 67,
+      "sourceId": "2026-05-06:exhibit-b:request-67",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-67",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 67; PDF p.50 / Exhibit B p.8; page bullet 11",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the POI 120 kV line terminal with an in- service date of 2030 (POI 120 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "POI 120 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "notes": [
+        "Generic POI120kV terminal lacks a unique facility in the request. Stony Point/Whirlwind narrative or ordering does not establish an alias; leave location/owner/parent unknown."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 67; PDF p.50 / Exhibit B p.8; page bullet 11",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Valmy portfolio lead-line narratives; PDF pp.48,49 / printed pp.287,288",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 68,
+      "sourceId": "2026-05-06:exhibit-b:request-68",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-68",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 68; PDF p.50 / Exhibit B p.8; page bullet 12",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the POI substation for Pumpernickel with an in- service date of 2030 (POI substation for Pumpernickel project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "POI substation for Pumpernickel project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [],
+      "proposedVoltageKv": [],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "notes": [
+        "Retain the named Pumpernickel POI action. The narrative describes120kV POIs; the bullet itself supplies no voltage."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 68; PDF p.50 / Exhibit B p.8; page bullet 12",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Valmy portfolio interconnection scope; PDF pp.48,49 / printed pp.287,288",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    },
+    {
+      "requestNumber": 69,
+      "sourceId": "2026-05-06:exhibit-b:request-69",
+      "proposedId": "nv-nvenergy:2026-05-06:exhibit-b:request-69",
+      "source": {
+        "file": "NPC-SPPC-Volume-2.pdf",
+        "locator": "Application Exhibit B, TRANSMISSION — IRP, request 69; PDF p.50 / Exhibit B p.8; page bullet 13",
+        "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+      },
+      "rawRequest": "Approval of the construction of the Bald Mountain 120 kV line terminal with an in-service date of 2030 (Bald Mountain 120 kV line terminal project).",
+      "proposedDisposition": "retain",
+      "proposedRecordKind": "transmission-project",
+      "classificationReason": "The declared bullet identifies a physical transmission-system action: line, terminal, transformer, substation, switching, protection or network upgrade. Resource beneficiaries do not become generation records.",
+      "proposedName": "Bald Mountain 120 kV line terminal project",
+      "proposedLifecycle": "planned",
+      "identityBasis": "source-locator",
+      "recordUnit": "project",
+      "proposedDate": {
+        "value": "2030",
+        "precision": "year",
+        "kind": "in-service",
+        "label": "Requested action in-service forecast (Exhibit B)"
+      },
+      "rawRequestVoltageKv": [
+        120
+      ],
+      "proposedVoltageKv": [
+        120
+      ],
+      "voltagePolicy": "Only explicit values in this request bullet; other narrative values stay supplementary, never guessed.",
+      "owner": null,
+      "location": null,
+      "nativeGeometry": null,
+      "constructionStart": null,
+      "buildWindow": null,
+      "parentProgramId": null,
+      "relatedGroupIds": [
+        "valmy-interconnection-components"
+      ],
+      "notes": [
+        "Preserve Bald Mountain from the request. The surrounding narrative names other resources; no evidence uniquely establishes a Whirlwind/Stony Point/Bald Mountain alias."
+      ],
+      "evidence": [
+        {
+          "file": "NPC-SPPC-Volume-2.pdf",
+          "locator": "Application Exhibit B, TRANSMISSION — IRP, request 69; PDF p.50 / Exhibit B p.8; page bullet 13",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-2.pdf"
+        },
+        {
+          "file": "NPC-SPPC-Volume-9.pdf",
+          "locator": "Valmy portfolio terminal narratives; PDF pp.48,49 / printed pp.287,288",
+          "url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-9.pdf"
+        }
+      ],
+      "supplementaryMilestones": []
+    }
+  ]
+}

@@ -4,10 +4,10 @@
   "scope": "sample",
   "counts": {
     "sourceRows": 90,
-    "importedRecords": 6,
+    "importedRecords": 21,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 84,
+    "pendingRows": 69,
     "locatedRecords": 0
   },
   "sourceFiles": [
@@ -38,15 +38,15 @@
     "construction-approval-request": 69
   },
   "recordKindCounts": {
-    "transmission-project": 4,
-    "capital-project-context": 2
+    "transmission-project": 15,
+    "capital-project-context": 6
   },
   "lifecycleCounts": {
-    "approved": 4,
-    "on-hold": 1,
+    "approved": 18,
+    "on-hold": 2,
     "under-construction": 1
   },
-  "requestPolicyStatus": "Required mapping and coordinator acceptance pending; no request exclusions or normalized records yet.",
+  "requestPolicyStatus": "Proposed exact 69-row mapping in scripts/ingest/coverage/nv-nvenergy/request-policy.json; coordinator acceptance pending. No request exclusions or normalized records yet.",
   "rows": [
     {
       "sourceId": "2026-05-06:tp-131:row-01",
@@ -70,7 +70,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-01",
-      "reason": "Accepted connection sample from the approved-table slice."
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-02",
@@ -92,8 +92,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-02",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-03",
@@ -115,8 +116,9 @@
       },
       "recordKind": "capital-project-context",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-03",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-04",
@@ -138,8 +140,9 @@
       },
       "recordKind": "capital-project-context",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-04",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-05",
@@ -161,8 +164,9 @@
       },
       "recordKind": "capital-project-context",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-05",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-06",
@@ -186,7 +190,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-06",
-      "reason": "Accepted connection sample from the approved-table slice."
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-07",
@@ -208,8 +212,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-07",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-08",
@@ -231,8 +236,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "on-hold",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-08",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-09",
@@ -254,8 +260,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-09",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-10",
@@ -277,8 +284,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-10",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-11",
@@ -300,8 +308,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-11",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-12",
@@ -323,8 +332,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-12",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-13",
@@ -348,7 +358,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-13",
-      "reason": "Accepted connection sample from the approved-table slice."
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-14",
@@ -372,7 +382,7 @@
       "lifecycle": "on-hold",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-14",
-      "reason": "Accepted connection sample from the approved-table slice."
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-15",
@@ -394,8 +404,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-15",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-16",
@@ -417,8 +428,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-16",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-17",
@@ -440,8 +452,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-17",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-18",
@@ -463,8 +476,9 @@
       },
       "recordKind": "transmission-project",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-18",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-19",
@@ -486,8 +500,9 @@
       },
       "recordKind": "capital-project-context",
       "lifecycle": "approved",
-      "disposition": "pending",
-      "reason": "Approved entry retained by accepted policy, awaiting provider connection before the 21-row slice."
+      "disposition": "imported",
+      "projectId": "nv-nvenergy:2026-05-06:tp-131:row-19",
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-20",
@@ -511,7 +526,7 @@
       "lifecycle": "approved",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-20",
-      "reason": "Accepted connection sample from the approved-table slice."
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:tp-131:row-21",
@@ -535,7 +550,7 @@
       "lifecycle": "under-construction",
       "disposition": "imported",
       "projectId": "nv-nvenergy:2026-05-06:tp-131:row-21",
-      "reason": "Accepted connection sample from the approved-table slice."
+      "reason": "Accepted approved-table entry retained; source remains incomplete until requests are reconciled."
     },
     {
       "sourceId": "2026-05-06:exhibit-b:request-01",

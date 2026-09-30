@@ -1,8 +1,8 @@
-# F27-NV initial source connection
+# F27-NV approved slice and request mapping
 
-- Delivered the six accepted approved-table diagnostics as Dataset2, matching manifest, full 90-unit raw ledger and reproducible source-specific adapter.
-- Ledger: 90 = 6 imported + 84 pending; all 69 request locators enumerated, zero exclusions/failed/located.
-- Preserved source-reference IDs, mixed capital context, suspended/partial-construction meanings, exact/unknown dates and null qualified owners/centers.
-- Payload: 22,264 compact / 28,340 formatted UTF-8 bytes; originals unchanged and ignored.
-- Provider connection pending; then complete approved slice and obtain acceptance for 69-request dispositions. First 21 rows alone are not source-complete.
-- Generation only; no worker tests/build/visual checks. Coordinator owns acceptance, integration and checking.
+- Expanded the provider-connected six-record sample to all21 approved-table entries, preserving the original six project values/IDs.
+- Ledger:90 =21 imported +69 pending; zero exclusions/failed/located. Source remains sample/incomplete.
+- Added exact proposed69-request policy:69 retained/0 excluded;52 transmission/17 capital context; all planned with year forecasts. No request runtime records generated.
+- Preserved11 relationship groups, repeated-title uncertainty and six voltage conflicts; no owner/location/parent/interval inference.
+- Approved-slice payload:61,493 compact /79,263 formatted UTF-8 bytes; source originals unchanged and ignored.
+- Coordinator request-policy acceptance is required before full generation. Generation only; no worker tests/build/visual checks.
