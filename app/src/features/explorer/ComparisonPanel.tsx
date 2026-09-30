@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react"
+import { CalculatorIcon, FileTextIcon, InfoIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -56,7 +57,7 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
     <div className="min-w-0 shrink-0 px-4">{actions}</div>
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <Tabs value={activeTab} onValueChange={setTab} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence">Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}>Impact</TabsTrigger><TabsTrigger value="supporting">Supporting</TabsTrigger></TabsList>
+        <TabsList className="max-w-full shrink-0 justify-start overflow-x-auto"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList>
         <TabsContent forceMount value="evidence" className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>

@@ -1,4 +1,5 @@
 import { useId, useMemo, useState, type FormEvent } from "react"
+import { BookmarkIcon, DownloadIcon, RefreshCwIcon, SaveIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -83,8 +84,8 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
 
   return <Dialog open={open} onOpenChange={setOpen}>
     <div className="flex min-w-0 flex-wrap items-center gap-2">
-      <Button type="button" disabled={!selectedOpportunity} onClick={saveSelected} title={selectedOpportunity ? `Selected candidate #${selectedOpportunity.rank}; ${selectedOpportunity.distanceMiles.toFixed(2)} mi apart` : "Select a candidate to save its evidence"}>{currentSaved ? "Refresh evidence" : "Save selected"}</Button>
-      <DialogTrigger asChild><Button type="button" variant="outline" onClick={() => { if (!editingId && store.records[0]) setEditingId(store.records[0].id) }}>Saved reviews ({store.records.length})</Button></DialogTrigger>
+      <Button type="button" disabled={!selectedOpportunity} onClick={saveSelected} title={selectedOpportunity ? `Selected candidate #${selectedOpportunity.rank}; ${selectedOpportunity.distanceMiles.toFixed(2)} mi apart` : "Select a candidate to save its evidence"}>{currentSaved ? <RefreshCwIcon aria-hidden="true" data-icon="inline-start" /> : <SaveIcon aria-hidden="true" data-icon="inline-start" />}{currentSaved ? "Refresh evidence" : "Save selected"}</Button>
+      <DialogTrigger asChild><Button type="button" variant="outline" onClick={() => { if (!editingId && store.records[0]) setEditingId(store.records[0].id) }}><BookmarkIcon aria-hidden="true" data-icon="inline-start" />Saved reviews ({store.records.length})</Button></DialogTrigger>
       {store.error ? <span role="alert" className="text-xs text-destructive">Storage notice in saved reviews</span> : notice && <span role="status" className="text-xs text-muted-foreground">{notice}</span>}
     </div>
     <DialogContent className="flex h-[min(48rem,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-6xl">
@@ -143,8 +144,8 @@ function Workspace({ dataset, options, selectedOpportunity, opportunities, onSho
       </Tabs>
       <div className="flex shrink-0 flex-wrap items-center gap-2 border-t pt-4">
         <Badge variant="secondary">{compared.length} selected</Badge>
-        <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("txt")}>Export text brief</Button>
-        <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("json")}>Export JSON brief</Button>
+        <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("txt")}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Export text brief</Button>
+        <Button type="button" variant="outline" size="sm" disabled={!compared.length} onClick={() => exportSelected("json")}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Export JSON brief</Button>
         <DialogClose asChild><Button type="button" variant="ghost" size="sm" className="ml-auto">Close</Button></DialogClose>
       </div>
     </DialogContent>
@@ -173,6 +174,6 @@ function SavedReview({ record, draft, availability, canShowCurrent, onDraftChang
       <details className="min-w-0 rounded-lg border p-3"><summary className="cursor-pointer font-medium">Saved source evidence</summary><div className="mt-4 min-w-0 space-y-5 break-words [overflow-wrap:anywhere]">{record.projects.map((project) => <ProjectEvidence key={project.id} project={project} />)}</div></details>
       <p className="text-xs text-muted-foreground">Review states record your assessment. They do not confirm engineering feasibility or a utility agreement.</p>
     </div>
-    <div className="flex shrink-0 flex-wrap items-center gap-2 border-t p-3"><Button type="submit">Save review</Button>{dirty && <span className="text-xs text-muted-foreground">Unsaved changes</span>}</div>
+    <div className="flex shrink-0 flex-wrap items-center gap-2 border-t p-3"><Button type="submit"><SaveIcon aria-hidden="true" data-icon="inline-start" />Save review</Button>{dirty && <span className="text-xs text-muted-foreground">Unsaved changes</span>}</div>
   </form>
 }
