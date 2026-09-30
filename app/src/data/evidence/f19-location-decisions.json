@@ -1,7 +1,18 @@
 {
   "version": 1,
   "researchedAt": "2026-09-30",
-  "targetProjectIds": ["desc-0139-m-n", "desc-6809-g", "desc-06367-a-c-h", "desc-6852", "desc-6810-o", "gpc-17075", "gpc-20785", "gpc-21116", "gpc-20794", "gpc-17993"],
+  "targetProjectIds": [
+    "desc-0139-m-n",
+    "desc-6809-g",
+    "desc-06367-a-c-h",
+    "desc-6852",
+    "desc-6810-o",
+    "gpc-17075",
+    "gpc-20785",
+    "gpc-21116",
+    "gpc-20794",
+    "gpc-17993"
+  ],
   "decisions": [
     {
       "id": "f19-desc-0139-m-n",
@@ -19,8 +30,209 @@
         }
       ],
       "matchReason": "Named station, voltage conversion, named transmission line, utility and county context agree. Proposed source-point remains unverified and represents the permit area rather than a surveyed center.",
-      "limitations": ["Primary-source text was available through the public search index. Direct PDF retrieval returned HTTP 403; no access restriction was bypassed.", "The 2022 permit notice does not update the historical project's status, date or construction window."],
+      "limitations": [
+        "Primary-source text was available through the public search index. Direct PDF retrieval returned HTTP 403; no access restriction was bypassed.",
+        "The 2022 permit notice does not update the historical project's status, date or construction window."
+      ],
       "enables": "Preview a one-project location revision through createLocationRevision using the associated proposal draft. Preserve all existing project fields and keep confidence unverified."
+    },
+    {
+      "id": "f19-desc-6809-g",
+      "projectId": "desc-6809-g",
+      "decision": "unresolved",
+      "sourceIdentity": "6809 G: Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV (sponsor: Dominion Energy South Carolina)",
+      "suppliedLocator": "2024-2028-2million-and-above-project-descriptions.pdf, physical page 15, Project ID 6809 G",
+      "publicSources": [
+        {
+          "title": "Dominion Energy Hooks–Modoc project overview",
+          "url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects/power-line-projects/hooks-modoc",
+          "locator": "Overview, first two paragraphs",
+          "evidence": "Describes a 6.8-mile 115/46kV project in McCormick County near U.S. Highway 221, with a different corridor name from the supplied 6.5-mile Stevens Creek–Hooks/LR Plumb Branch project."
+        }
+      ],
+      "matchReason": "Shared voltage and a Hooks name are insufficient to link this public overview to native project 6809 G. The workbook seed is project 6809 E, not 6809 G.",
+      "limitations": [
+        "No cited coordinate tied to the exact 6809 G scope was found in this bounded review.",
+        "Do not reuse the neighboring project or a Stevens Creek power-plant point as the rebuild center."
+      ],
+      "enables": "Obtain a public utility or permit record naming 6809 G and its rebuilt segment endpoints, with coordinate evidence for at least one exact endpoint. Keep location null until that link is reviewable."
+    },
+    {
+      "id": "f19-desc-06367-a-c-h",
+      "projectId": "desc-06367-a-c-h",
+      "decision": "unresolved",
+      "sourceIdentity": "06367 A - C, H: Riverport Tap: Construct Tap (sponsor: Dominion Energy South Carolina)",
+      "suppliedLocator": "2024-2028-2million-and-above-project-descriptions.pdf, physical page 22, Project ID 06367 A - C, H",
+      "publicSources": [
+        {
+          "title": "Dominion Jasper–Okatie and Okatie–Riverport siting study letter, 2021-11-18",
+          "url": "https://www.dominionenergy.com/-/media/content/about/power-line-projects/jasper-okatie-riverport/pdfs/jor-workshop-1-invitation-letter.pdf",
+          "locator": "Page 1, first paragraph",
+          "evidence": "Places the future Riverport station west of Highway 17 near Limehouse in Jasper County and describes a new 230kV connection from Okatie to Riverport."
+        }
+      ],
+      "matchReason": "Utility, named endpoints, voltage and load-growth purpose agree with the supplied description. The letter gives an area and station names rather than numeric endpoint locations.",
+      "limitations": [
+        "The 2021 letter is a siting-study document; it does not establish a current route or completed work.",
+        "The Okatie proposal in this batch is a permit-area point for another project, not an established terminal coordinate for this line."
+      ],
+      "enables": "Obtain a public final-siting or permit text that ties native project 06367 A–C,H to a numeric Riverport or Okatie terminal location. A route-center proposal needs both endpoints or explicit route geometry; retain null for now."
+    },
+    {
+      "id": "f19-desc-6852",
+      "projectId": "desc-6852",
+      "decision": "unresolved",
+      "sourceIdentity": "6852: Urquhart – Toolebeck 115kV line: Rebuild (sponsor: Dominion Energy South Carolina)",
+      "suppliedLocator": "2024-2028-2million-and-above-project-descriptions.pdf, physical page 35, Project ID 6852",
+      "publicSources": [
+        {
+          "title": "Dominion 2023–2027 planned transmission project descriptions",
+          "url": "https://www.scrtp.com/assets/pdfs/home/2023-2027-2million-and-above-project-descriptions.pdf",
+          "locator": "Project 38 of 42, Project ID 6852, Project Description",
+          "evidence": "The same native ID describes an approximately 12.5-mile Urquhart–Toolebeck 115kV rebuild, confirming the named project without supplying a numeric location."
+        }
+      ],
+      "matchReason": "The native ID, corridor, voltage and approximate length agree with the supplied project. A corridor name alone does not establish the center of the rebuilt portions.",
+      "limitations": [
+        "No coordinate-bearing endpoint or segment record was established in this bounded review.",
+        "A power-plant location or the separate Urquhart Junction–Toolebeck 230kV project does not establish the target 115kV segment."
+      ],
+      "enables": "Obtain public coordinate evidence for the affected 115kV terminals or rebuilt segment boundaries tied to ID 6852. Use a single endpoint only with its limitation visible; do not substitute a plant point."
+    },
+    {
+      "id": "f19-desc-6810-o",
+      "projectId": "desc-6810-o",
+      "decision": "unresolved",
+      "sourceIdentity": "6810 O: Urquhart – Aiken PSA 46 kV: Rebuild (sponsor: Dominion Energy South Carolina)",
+      "suppliedLocator": "2024-2028-2million-and-above-project-descriptions.pdf, physical page 43, Project ID 6810 O",
+      "publicSources": [
+        {
+          "title": "Dominion 2025–2029 planned transmission project descriptions",
+          "url": "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
+          "locator": "Project 37 of 47, Project ID 6810 O, Project Description",
+          "evidence": "The same ID describes the 4.5-mile Urquhart–Aiken PSA 46kV section and retains uncertainty about whether rebuilding the actual tap is included."
+        }
+      ],
+      "matchReason": "Native ID, endpoints, voltage and length agree. The newer public description preserves the original scope uncertainty and contains no numeric tap location.",
+      "limitations": [
+        "A town, wastewater facility or generating station is not evidence of the electrical tap point.",
+        "No status or date update is proposed from the later plan."
+      ],
+      "enables": "Obtain a public record identifying the Aiken PSA electrical tap and affected line endpoints with coordinates, plus clarification of whether the tap itself belongs to this scope. Preserve null and the existing scope caveat meanwhile."
+    },
+    {
+      "id": "f19-gpc-17075",
+      "projectId": "gpc-17075",
+      "decision": "unresolved",
+      "sourceIdentity": "17075: SAV: LITTLE OGEECHEE 230- 115KV: RELAY MODERNIZATION (sponsor: SAV)",
+      "suppliedLocator": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf, physical page 178, Table 2, TEAMS 17075",
+      "publicSources": [
+        {
+          "title": "Georgia Power Big Ogeechee project article, 2026-06-17",
+          "url": "https://www.georgiapower.com/news-hub/community/big-ogeechee-substation-power-savannah-area-growth-storm-hardened-coastal-grid.html",
+          "locator": "Paragraphs naming West Chatham County and the nearby existing Little Ogeechee station",
+          "evidence": "The utility identifies Little Ogeechee as an existing station near the new Big Ogeechee facility in the Savannah-area context, but provides no coordinate for the relay project."
+        }
+      ],
+      "matchReason": "The named existing station and Savannah context are compatible with sponsor SAV and planning zone 219. The article covers a different construction project and does not establish TEAMS 17075 location.",
+      "limitations": [
+        "An exact-feature lead, OpenStreetMap way 121701191, was identified through a secondary lookup. Primary feature tags and geometry were not retrieved; no coordinate from that lookup is accepted.",
+        "The public feature query returned HTTP 406 and the feature page could not be read. No bulk geocoding or image inspection was performed.",
+        "Big Ogeechee and Little Ogeechee are distinct facilities; the new-station article does not update the relay project status."
+      ],
+      "enables": "Retrieve a readable primary feature or utility/permit record that identifies Little Ogeechee, its operator and 230/115kV station location, then reconcile it with TEAMS 17075. Feature lead: https://www.openstreetmap.org/way/121701191. Keep location null until supported."
+    },
+    {
+      "id": "f19-gpc-20785",
+      "projectId": "gpc-20785",
+      "decision": "unresolved",
+      "sourceIdentity": "20785: SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD (sponsor: SAV)",
+      "suppliedLocator": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf, physical page 183, Table 2, TEAMS 20785",
+      "publicSources": [
+        {
+          "title": "2025 SERTP Preliminary Expansion Plan Report (Non-CEII)",
+          "url": "https://www.southeasternrtp.com/docs/general/2025/2025%20SERTP%20Preliminary%20Expansion%20Plan%20Report%20%28Non-CEII%29.pdf",
+          "locator": "Printed page 59 of 126, SAV: GOSHEN (SAV)–KRAFT 115KV TRANSMISSION LINE, REBUILD",
+          "evidence": "The public entry names the same Savannah corridor and 2027 planning year and describes work on a portion of the line, without coordinates or named segment limits."
+        }
+      ],
+      "matchReason": "Sponsor qualifier SAV, both endpoint names, voltage and planning year agree. The public entry does not justify locating the partial rebuild at an endpoint or midpoint of the entire line.",
+      "limitations": [
+        "No project ID is given in the supplemental entry; the match rests on the complete name, sponsor qualifier and year.",
+        "The supplied zone is 219, unlike the zone 215 Goshen strategic project. Do not copy a same-name Augusta facility or an inherited unverified Goshen point."
+      ],
+      "enables": "Obtain a public segment or permit reference defining the rebuilt portion and numeric endpoint evidence tied to TEAMS 20785 or the complete SAV project identity. Retain null pending that evidence."
+    },
+    {
+      "id": "f19-gpc-21116",
+      "projectId": "gpc-21116",
+      "decision": "unresolved",
+      "sourceIdentity": "21116: GOSHEN AREA STRATEGIC SOLUTION (sponsor: GPC)",
+      "suppliedLocator": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf, physical page 187, Table 2, TEAMS 21116",
+      "publicSources": [
+        {
+          "title": "Vogtle license renewal environmental report, June 2007",
+          "url": "https://www.nrc.gov/reactors/operating/licensing/renewal/applications/vogtle/vogtle-env-report.pdf",
+          "locator": "Section 3.1, printed page 3.1-5, transmission-line discussion",
+          "evidence": "Identifies a Goshen substation south of Augusta. This is evidence that a Goshen name can refer to a different area from the Savannah-qualified projects; it does not locate the 2030 strategic project."
+        }
+      ],
+      "matchReason": "The supplied row has sponsor GPC and planning zone 215, whereas the Savannah Goshen row has sponsor SAV and zone 219. Neither a shared name nor the historical facility discussion proves the strategic project site.",
+      "limitations": [
+        "The approved Table 2 row has no project description, voltage or coordinate.",
+        "A supplemental planning result was excluded when its extracted page header was marked CEII; no details from that result are used in this decision.",
+        "The historical NRC reference is a disambiguation aid, not evidence of the future project footprint."
+      ],
+      "enables": "Obtain a public project description tied to TEAMS 21116 that names the facilities and scope, followed by a coordinate-bearing site reference. Resolve identity before attempting a location revision."
+    },
+    {
+      "id": "f19-gpc-20794",
+      "projectId": "gpc-20794",
+      "decision": "unresolved",
+      "sourceIdentity": "20794: EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD (sponsor: GPC)",
+      "suppliedLocator": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf, physical page 189, Table 2, TEAMS 20794",
+      "publicSources": [
+        {
+          "title": "2024 SERTP Regional Transmission Plan and Input Assumptions",
+          "url": "https://www.southeasternrtp.com/docs/general/2024/2024_Regional_Transmission_Plan_and_Input_Assumptions.pdf",
+          "locator": "Printed page 134, EVANS PRIMARY–THURMOND DAM (USA) #6 115KV REBUILD",
+          "evidence": "The exact #6 name and 2033 planning year appear with an approximately 8.9-mile rebuild scope. The entry supplies no coordinates."
+        }
+      ],
+      "matchReason": "The circuit suffix, voltage and planning year agree with TEAMS 20794. The workbook seed refers to circuit #5, so that project location cannot be copied as evidence for #6.",
+      "limitations": [
+        "The public description does not identify the numeric endpoints of the affected 8.9-mile portion.",
+        "The supplemental in-service year is not a construction window or an update to the supplied need date."
+      ],
+      "enables": "Obtain a public #6-specific segment/terminal record and numeric endpoint locations. Keep the #5 and #6 identities distinct and retain null until the affected segment is established."
+    },
+    {
+      "id": "f19-gpc-17993",
+      "projectId": "gpc-17993",
+      "decision": "unresolved",
+      "sourceIdentity": "17993: EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD (sponsor: GPC)",
+      "suppliedLocator": "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf, physical page 190, Table 2, TEAMS 17993",
+      "publicSources": [
+        {
+          "title": "2024 SERTP Regional Transmission Plan and Input Assumptions",
+          "url": "https://www.southeasternrtp.com/docs/general/2024/2024_Regional_Transmission_Plan_and_Input_Assumptions.pdf",
+          "locator": "Printed page 138, EVANS PRIMARY–THOMSON PRIMARY 115KV REBUILD",
+          "evidence": "The matching 2034 entry narrows the work to the Thomson Primary–Pumpkin Center section of the longer named line. It provides no coordinates."
+        }
+      ],
+      "matchReason": "Full project name, voltage and planning year agree. The section description means an Evans endpoint or a midpoint of the complete Evans–Thomson line would misrepresent the documented work.",
+      "limitations": [
+        "No coordinate-bearing source for the actual Thomson Primary–Pumpkin Center section was established.",
+        "No supplied date, sponsor, description or location field is changed by this research decision."
+      ],
+      "enables": "Obtain public coordinate evidence for Thomson Primary and Pumpkin Center and a source link to the named rebuild section. Propose a midpoint only after both endpoints and the scope match are reviewable."
     }
-  ]
+  ],
+  "summary": {
+    "investigated": 10,
+    "supportedProposals": 1,
+    "unresolved": 9,
+    "baselineChanged": false,
+    "proposedAdditionalLocatedRecords": 1
+  }
 }
