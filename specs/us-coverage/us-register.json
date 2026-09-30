@@ -4,7 +4,7 @@
   "baselineRevision": "F27 TVA/CNMI/WAPA and deferred-loading integration PR125 (implementation 5fff2e6; one build/case passed)",
   "goal": "US-wide planned-transmission discovery",
   "goalStatus": "selected-incomplete",
-  "qualificationStatus": "Sixteen full declared regional inventories, five complete featured/funding subsets and two contextual scopes imported; CNMI transmission role remains unestablished; SERTP source markings require authoritative clarification",
+  "qualificationStatus": "Sixteen full regional inventories, five featured/funding subsets and two contextual scopes imported; three additional regional portfolios qualified for staged production. CNMI transmission role and SERTP source markings remain unresolved.",
   "totals": {
     "importedSourceRecords": 12994,
     "locatedRecords": 113,
@@ -12,7 +12,7 @@
     "unverifiedLocations": 113,
     "missingLocations": 12881,
     "explicitConstructionWindows": 0,
-    "newRegionalSourcesQualified": 17,
+    "newRegionalSourcesQualified": 19,
     "newFullRegionalInventoriesImported": 16,
     "knownNationalProjectDenominator": null,
     "qualifiedFeaturedSubsets": 5,
@@ -2487,6 +2487,26 @@
       "missingInput": "Connected six-record sample and full98; native location evidence and cross-source owner/identity reconciliation remain absent",
       "owner": "source_discovery",
       "task": "F27-CTPC-I"
+    },
+    {
+      "sourceKey": "ca-pge-tpr",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://pgera.azurewebsites.net/Regulation/",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Connected six-record sample then full accepted source scope; native owner/location and cross-source identity remain unresolved",
+      "owner": "core",
+      "task": "F27"
+    },
+    {
+      "sourceKey": "sdge-tpr",
+      "status": "qualified-production-in-progress",
+      "sourceUrl": "https://www.sdge.com/sdge-tpr-process",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Connected six-record sample then full accepted source scope; native owner/location and cross-source identity remain unresolved",
+      "owner": "ui",
+      "task": "F27"
     }
   ],
   "scopeLimits": [
@@ -2793,6 +2813,30 @@
       "locatedRecords": 0,
       "scope": "Complete August2026 update tables,89 physical transmission projects and9 conceptual planning observations; participant-area scope, not statewide inventory",
       "contract": "specs/features/F27-us-regional-expansion/carolinas-tpc/spec.md"
+    },
+    {
+      "sourceKey": "ca-pge-tpr",
+      "editionId": "2026-05-01",
+      "reportingGroup": "ca-pge-tpr",
+      "status": "qualified-production-in-progress",
+      "sourceRows": 2671,
+      "proposedRetainedRecords": 1591,
+      "proposedExcludedRows": 1080,
+      "locatedRecords": 0,
+      "scope": "Complete public nonterminal workbook row scope, including explicitly classified supporting/program context; not distinct engineering projects or statewide completeness",
+      "contract": "specs/features/F27-us-regional-expansion/ca-pge-tpr/spec.md"
+    },
+    {
+      "sourceKey": "sdge-tpr",
+      "editionId": "2026-07",
+      "reportingGroup": "sdge-tpr",
+      "status": "qualified-production-in-progress",
+      "sourceRows": 367,
+      "proposedRetainedRecords": 137,
+      "proposedExcludedRows": 230,
+      "locatedRecords": 0,
+      "scope": "Complete public nonterminal workbook row scope, including explicitly classified supporting/program context; not distinct engineering projects or statewide completeness",
+      "contract": "specs/features/F27-us-regional-expansion/ca-sdge-tpr/spec.md"
     }
   ]
 }
