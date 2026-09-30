@@ -1,0 +1,655 @@
+{
+  "sourceKey": "westconnect-tppl",
+  "editionId": "2026-02-10",
+  "scope": "sample",
+  "fullSourceStatusCounts": {
+    "Conceptual": 56,
+    "In-Service": 65,
+    "Planned": 248,
+    "Under Construction": 4,
+    "Withdrawn": 16
+  },
+  "acceptedRetainedLifecycleCounts": {
+    "planned": 244,
+    "under-construction": 4,
+    "unknown": 56
+  },
+  "acceptedRetainedKindCounts": {
+    "planning-context": 4,
+    "transmission-project": 300
+  },
+  "acceptedRetainedDatePrecisionCounts": {
+    "unknown": 50,
+    "year": 254
+  },
+  "importedLifecycleCounts": {
+    "planned": 4,
+    "under-construction": 1,
+    "unknown": 1
+  },
+  "importedKindCounts": {
+    "planning-context": 1,
+    "transmission-project": 5
+  },
+  "combinedIdMismatchCounts": {
+    "different-year": 36,
+    "missing-numeric-suffix": 19
+  },
+  "combinedIdMismatches": [
+    {
+      "sourceId": "315",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A20:AR20; A20 projectid, N20 InService, S20 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-315",
+      "rawExpectedInService": 2030
+    },
+    {
+      "sourceId": "970",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A41:AR41; A41 projectid, N41 InService, S41 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "976",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A42:AR42; A42 projectid, N42 InService, S42 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "TBD-",
+      "rawExpectedInService": "TBD"
+    },
+    {
+      "sourceId": "987",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A43:AR43; A43 projectid, N43 InService, S43 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2036-",
+      "rawExpectedInService": 2036
+    },
+    {
+      "sourceId": "1235",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A85:AR85; A85 projectid, N85 InService, S85 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-",
+      "rawExpectedInService": 2025
+    },
+    {
+      "sourceId": "1236",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A86:AR86; A86 projectid, N86 InService, S86 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-",
+      "rawExpectedInService": 2025
+    },
+    {
+      "sourceId": "1237",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A87:AR87; A87 projectid, N87 InService, S87 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2026-",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1238",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A88:AR88; A88 projectid, N88 InService, S88 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-",
+      "rawExpectedInService": 2024
+    },
+    {
+      "sourceId": "1249",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A93:AR93; A93 projectid, N93 InService, S93 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2026-1249",
+      "rawExpectedInService": 2034
+    },
+    {
+      "sourceId": "1253",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A94:AR94; A94 projectid, N94 InService, S94 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1253",
+      "rawExpectedInService": 2028
+    },
+    {
+      "sourceId": "1254",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A95:AR95; A95 projectid, N95 InService, S95 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1254",
+      "rawExpectedInService": 2028
+    },
+    {
+      "sourceId": "1262",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A100:AR100; A100 projectid, N100 InService, S100 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2029-1262",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1263",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A101:AR101; A101 projectid, N101 InService, S101 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2029-1263",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1266",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A104:AR104; A104 projectid, N104 InService, S104 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1266",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1268",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A106:AR106; A106 projectid, N106 InService, S106 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1268",
+      "rawExpectedInService": 2031
+    },
+    {
+      "sourceId": "1269",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A107:AR107; A107 projectid, N107 InService, S107 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2029-1269",
+      "rawExpectedInService": 2031
+    },
+    {
+      "sourceId": "1270",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A108:AR108; A108 projectid, N108 InService, S108 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1270",
+      "rawExpectedInService": 2031
+    },
+    {
+      "sourceId": "1271",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A109:AR109; A109 projectid, N109 InService, S109 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1271",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1274",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A111:AR111; A111 projectid, N111 InService, S111 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1274",
+      "rawExpectedInService": 2029
+    },
+    {
+      "sourceId": "1275",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A112:AR112; A112 projectid, N112 InService, S112 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1275",
+      "rawExpectedInService": "TBD"
+    },
+    {
+      "sourceId": "1278",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A114:AR114; A114 projectid, N114 InService, S114 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1278",
+      "rawExpectedInService": 2029
+    },
+    {
+      "sourceId": "1283",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A117:AR117; A117 projectid, N117 InService, S117 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1283",
+      "rawExpectedInService": 2029
+    },
+    {
+      "sourceId": "1284",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A118:AR118; A118 projectid, N118 InService, S118 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1284",
+      "rawExpectedInService": 2034
+    },
+    {
+      "sourceId": "1352",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A156:AR156; A156 projectid, N156 InService, S156 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-",
+      "rawExpectedInService": 2024
+    },
+    {
+      "sourceId": "1353",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A157:AR157; A157 projectid, N157 InService, S157 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-",
+      "rawExpectedInService": 2025
+    },
+    {
+      "sourceId": "1355",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A158:AR158; A158 projectid, N158 InService, S158 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-",
+      "rawExpectedInService": 2025
+    },
+    {
+      "sourceId": "1356",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A159:AR159; A159 projectid, N159 InService, S159 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2026-",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1358",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A161:AR161; A161 projectid, N161 InService, S161 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-",
+      "rawExpectedInService": 2028
+    },
+    {
+      "sourceId": "1359",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A162:AR162; A162 projectid, N162 InService, S162 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2026-",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1361",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A163:AR163; A163 projectid, N163 InService, S163 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-",
+      "rawExpectedInService": 2024
+    },
+    {
+      "sourceId": "1434",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A172:AR172; A172 projectid, N172 InService, S172 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1434",
+      "rawExpectedInService": 2023
+    },
+    {
+      "sourceId": "1435",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A173:AR173; A173 projectid, N173 InService, S173 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1435",
+      "rawExpectedInService": 2025
+    },
+    {
+      "sourceId": "1436",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A174:AR174; A174 projectid, N174 InService, S174 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1436",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1437",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A175:AR175; A175 projectid, N175 InService, S175 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1437",
+      "rawExpectedInService": 2025
+    },
+    {
+      "sourceId": "1438",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A176:AR176; A176 projectid, N176 InService, S176 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1438",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1439",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A177:AR177; A177 projectid, N177 InService, S177 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-1439",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1441",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A179:AR179; A179 projectid, N179 InService, S179 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-1441",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1442",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A180:AR180; A180 projectid, N180 InService, S180 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-1442",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1444",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A182:AR182; A182 projectid, N182 InService, S182 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-1444",
+      "rawExpectedInService": 2026
+    },
+    {
+      "sourceId": "1445",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A183:AR183; A183 projectid, N183 InService, S183 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2025-1445",
+      "rawExpectedInService": 2034
+    },
+    {
+      "sourceId": "1450",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A188:AR188; A188 projectid, N188 InService, S188 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-1450",
+      "rawExpectedInService": 2028
+    },
+    {
+      "sourceId": "1456",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A194:AR194; A194 projectid, N194 InService, S194 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1456",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1457",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A195:AR195; A195 projectid, N195 InService, S195 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1457",
+      "rawExpectedInService": 2031
+    },
+    {
+      "sourceId": "1458",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A196:AR196; A196 projectid, N196 InService, S196 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2028-1458",
+      "rawExpectedInService": 2030
+    },
+    {
+      "sourceId": "1461",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A199:AR199; A199 projectid, N199 InService, S199 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2026-1461",
+      "rawExpectedInService": 2034
+    },
+    {
+      "sourceId": "1462",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A200:AR200; A200 projectid, N200 InService, S200 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2029-1462",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1463",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A201:AR201; A201 projectid, N201 InService, S201 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2029-1463",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1466",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A204:AR204; A204 projectid, N204 InService, S204 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2030-1466",
+      "rawExpectedInService": 2032
+    },
+    {
+      "sourceId": "1467",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A205:AR205; A205 projectid, N205 InService, S205 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2030-1467",
+      "rawExpectedInService": 2032
+    },
+    {
+      "sourceId": "1468",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A206:AR206; A206 projectid, N206 InService, S206 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2030-1468",
+      "rawExpectedInService": 2032
+    },
+    {
+      "sourceId": "1502",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A221:AR221; A221 projectid, N221 InService, S221 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1503",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A222:AR222; A222 projectid, N222 InService, S222 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1505",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A224:AR224; A224 projectid, N224 InService, S224 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2027-",
+      "rawExpectedInService": 2027
+    },
+    {
+      "sourceId": "1506",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A225:AR225; A225 projectid, N225 InService, S225 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2024-",
+      "rawExpectedInService": 2024
+    },
+    {
+      "sourceId": "1507",
+      "source": {
+        "file": "02_10_26__wc_tppl_project_list_public.xlsm",
+        "locator": "All Projects!A226:AR226; A226 projectid, N226 InService, S226 wcprojectID",
+        "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+      },
+      "rawCombinedId": "2026-",
+      "rawExpectedInService": 2026
+    }
+  ],
+  "classification": {
+    "distributionContextIds": [
+      792,
+      1204,
+      1479,
+      1641
+    ],
+    "physicalOtherIds": [
+      1262,
+      1267,
+      1268,
+      1275,
+      1450,
+      1454,
+      1457,
+      1524,
+      1584,
+      1586,
+      1587,
+      1592,
+      1593,
+      1594,
+      1595,
+      1596,
+      1600,
+      1601,
+      1602,
+      1606,
+      1614,
+      1615,
+      1616,
+      1617,
+      1618,
+      1625,
+      1626,
+      1627,
+      1629,
+      1690,
+      1691
+    ],
+    "generationOnlyExclusionIds": [
+      1575,
+      1579,
+      1580,
+      1581
+    ]
+  },
+  "sourceTimestampHandling": {
+    "normalizedField": "AO modifieddate",
+    "excelEpoch": "1899-12-30T00:00:00",
+    "otherFields": [
+      "AP ChangeTime",
+      "AQ POST_DATE",
+      "AR DateProjectEntered"
+    ],
+    "meaning": "Preserve raw value/locator; only modifieddate supplies sourceUpdatedOn. Other timestamps are labeled source context."
+  },
+  "sampleIds": [
+    "westconnect-tppl:5",
+    "westconnect-tppl:17",
+    "westconnect-tppl:1236",
+    "westconnect-tppl:1262",
+    "westconnect-tppl:1595",
+    "westconnect-tppl:1641"
+  ]
+}
