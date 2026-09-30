@@ -1,7 +1,7 @@
 {
   "sourceKey": "sdge-tpr",
   "editionId": "2026-07",
-  "scope": "sample",
+  "scope": "full",
   "sampleExcelRows": [
     12,
     20,
@@ -28,20 +28,20 @@
     "on-hold": 14
   },
   "importedRecordKinds": {
-    "transmission-project": 4,
-    "capital-project-context": 2
+    "transmission-project": 93,
+    "capital-project-context": 44
   },
   "importedLifecycles": {
-    "under-construction": 2,
-    "planned": 3,
-    "on-hold": 1
+    "under-construction": 40,
+    "planned": 83,
+    "on-hold": 14
   },
   "primaryDatePrecisionCounts": {
-    "day": 3,
-    "unknown": 3
+    "day": 119,
+    "unknown": 18
   },
-  "unknownOwnerRecords": 6,
-  "unknownLocationRecords": 6,
+  "unknownOwnerRecords": 137,
+  "unknownLocationRecords": 137,
   "blanketBudgetExcelRows": [
     121,
     161,
@@ -63,9 +63,149 @@
     254,
     347
   ],
+  "additionalScopeCaveats": [
+    {
+      "sourceRow": 42,
+      "notes": [
+        "Source notes connect the RTU upgrade to future interconnection requests and limited available points."
+      ]
+    },
+    {
+      "sourceRow": 72,
+      "notes": [
+        "The source category is Substation - Multiple, but its described work is physical security; no new transmission line is implied."
+      ]
+    },
+    {
+      "sourceRow": 74,
+      "notes": [
+        "The source category is Substation - Multiple, but its described work is physical security; no new transmission line is implied."
+      ]
+    },
+    {
+      "sourceRow": 75,
+      "notes": [
+        "The source category is Substation - Multiple, but its described work is physical security; no new transmission line is implied."
+      ]
+    },
+    {
+      "sourceRow": 92,
+      "notes": [
+        "The source category is Substation - Multiple, but the described equipment is HVAC; preserve that narrower scope."
+      ]
+    },
+    {
+      "sourceRow": 113,
+      "notes": [
+        "The source category is Substation - Multiple, while its description concerns fiber on distribution structures; the published scope is not promoted to a new power-transmission line."
+      ]
+    },
+    {
+      "sourceRow": 124,
+      "notes": [
+        "Source notes identify fire damage as the primary purpose."
+      ]
+    },
+    {
+      "sourceRow": 145,
+      "notes": [
+        "Source notes identify access, design and procurement as reasons for the schedule change."
+      ]
+    },
+    {
+      "sourceRow": 172,
+      "notes": [
+        "Source notes identify a CPUC budget constraint as a reason for the schedule change."
+      ]
+    },
+    {
+      "sourceRow": 173,
+      "notes": [
+        "Source notes identify a CPUC budget constraint as a reason for the schedule change."
+      ]
+    },
+    {
+      "sourceRow": 181,
+      "notes": [
+        "Source notes identify a CPUC budget constraint as a reason for the schedule change."
+      ]
+    },
+    {
+      "sourceRow": 186,
+      "notes": [
+        "Release 6 locations and fire-threat classification are still being scoped in the source; no specific site is inferred."
+      ]
+    },
+    {
+      "sourceRow": 199,
+      "notes": [
+        "The source describes a future utility purchase of customer-built high-voltage assets. It does not establish a current, single asset owner; owner remains unknown."
+      ]
+    },
+    {
+      "sourceRow": 205,
+      "notes": [
+        "The accepted category follows the reported substation field, but the description specifies generation/storage and a point of interconnection rather than a defined grid-side capital scope."
+      ]
+    },
+    {
+      "sourceRow": 238,
+      "notes": [
+        "The source description mentions twenty active projects in 2020. This historical program statement is not a current count or permission to create additional records."
+      ]
+    },
+    {
+      "sourceRow": 253,
+      "notes": [
+        "The Ash title conflicts with a description listing other substations. Preserve the published row without choosing a replacement location or merging it with another project."
+      ]
+    },
+    {
+      "sourceRow": 266,
+      "notes": [
+        "Source notes describe both overhead and underground designs while awaiting external input; no final alignment is inferred."
+      ]
+    },
+    {
+      "sourceRow": 282,
+      "notes": [
+        "Source notes identify construction, land-rights and permitting delays."
+      ]
+    },
+    {
+      "sourceRow": 309,
+      "notes": [
+        "Source notes attribute schedule delay to suspension during COVID."
+      ]
+    },
+    {
+      "sourceRow": 311,
+      "notes": [
+        "Source notes make construction dependent on completion of the C75 undergrounding work."
+      ]
+    },
+    {
+      "sourceRow": 317,
+      "notes": [
+        "The description distinguishes the operating 69 kV line from structures designed to 138 kV specifications."
+      ]
+    },
+    {
+      "sourceRow": 328,
+      "notes": [
+        "Source notes discuss a proposed emergency permitting rationale while the CPUC status remains TBD; no approval is inferred."
+      ]
+    },
+    {
+      "sourceRow": 349,
+      "notes": [
+        "The Jamacha title conflicts with a description matching the Valley Center system-improvement scope at Excel row 354. Both source rows and IDs remain distinct; no correction or duplicate merge is inferred."
+      ]
+    }
+  ],
   "normalizationMethod": "Hash-pinned public source fields plus concise factual descriptions; source-only normalization, no source acquisition, owner/geographic inference or application checks.",
   "payloadSizes": {
-    "compactUtf8Bytes": 22697,
-    "formattedUtf8Bytes": 30016
+    "compactUtf8Bytes": 430886,
+    "formattedUtf8Bytes": 585106
   }
 }
