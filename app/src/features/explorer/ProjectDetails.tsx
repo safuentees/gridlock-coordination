@@ -21,9 +21,12 @@ export function InventoryEvidence({ project }: { project: Project }) {
   return <section className="min-w-0 space-y-3 text-sm [overflow-wrap:anywhere]" aria-label="Source inventory evidence">
     <dl className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-x-4 gap-y-2 [&_dd]:min-w-0">
       <dt className="text-muted-foreground">Source edition</dt><dd>{inventory.editionLabel}</dd>
-      <dt className="text-muted-foreground">Record type</dt><dd>{inventory.recordKind === "transmission-project" ? "Transmission project" : "Capital project context"}</dd>
-      <dt className="text-muted-foreground">Lifecycle</dt><dd>{lifecycleLabels[inventory.lifecycle]}<span className="block text-xs text-muted-foreground">As of {inventory.lifecycleAsOf}</span></dd>
-      <dt className="text-muted-foreground">Asset owner</dt><dd>{inventory.owner?.name ?? "Unknown; no ownership evidence"}</dd>
+      <dt className="text-muted-foreground">Record type</dt><dd>{inventory.recordKind === "capital-project-context" ? "Capital project context" : inventory.recordUnit === "upgrade" ? "Transmission upgrade" : inventory.recordUnit === "component" ? "Transmission component" : "Transmission project"}</dd>
+      <dt className="text-muted-foreground">Lifecycle</dt><dd>{lifecycleLabels[inventory.lifecycle]}<span className="block text-xs text-muted-foreground">{inventory.lifecycleDateMeaning === "snapshot-observed" ? "Observed in snapshot on" : "Source edition as of"} {inventory.lifecycleAsOf}</span></dd>
+      <dt className="text-muted-foreground">Asset owner</dt><dd>{inventory.owner?.name ?? "Unknown; no ownership evidence"}{inventory.owner && inventory.owner.identityScope !== "global" && <span className="block text-xs text-muted-foreground">Identified within this source; cross-source identity unverified.</span>}</dd>
+      {inventory.sourceState && <><dt className="text-muted-foreground">Source state text</dt><dd>{inventory.sourceState}</dd></>}
+      {inventory.sourceLocation && <><dt className="text-muted-foreground">Source location text</dt><dd>{inventory.sourceLocation}</dd></>}
+      {inventory.sourceUpdatedOn && <><dt className="text-muted-foreground">Source row updated</dt><dd>{inventory.sourceUpdatedOn}<span className="block text-xs text-muted-foreground">Not a status-change date.</span></dd></>}
       {inventory.workType && <><dt className="text-muted-foreground">Work type</dt><dd>{inventory.workType}</dd></>}
       {inventory.constructionStart && <><dt className="text-muted-foreground">Reported construction start</dt><dd>{inventory.constructionStart}</dd></>}
       {inventory.parentProgramId && <><dt className="text-muted-foreground">Parent program</dt><dd>{inventory.parentProgramId}</dd></>}
@@ -33,6 +36,15 @@ export function InventoryEvidence({ project }: { project: Project }) {
     {!eligibility.eligible && <div className="space-y-1"><h4 className="font-medium">Context only</h4><ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{eligibility.reasons.map(reason => <li key={reason}>{reason}</li>)}</ul></div>}
     {inventory.locationAssumptions.length > 0 && <ul className="list-disc space-y-1 pl-4 text-xs text-muted-foreground">{inventory.locationAssumptions.map((assumption, index) => <li key={index}>{assumption}</li>)}</ul>}
     {inventory.owner && <div className="space-y-1"><h4 className="text-xs font-medium">Ownership evidence</h4><Sources sources={inventory.owner.evidence} /></div>}
+    {inventory.milestones && inventory.milestones.length > 0 && <details className="space-y-3 rounded-lg border p-3"><summary className="cursor-pointer font-medium">Reported date fields ({inventory.milestones.length})</summary>
+      <p className="text-xs text-muted-foreground">Comparison milestone: {project.date.label}. Other reported dates do not establish a construction window.</p>
+      <ul className="space-y-3">{inventory.milestones.map((milestone, index) => <li key={`${milestone.field}-${index}`} className="space-y-1">
+        <h4 className="text-sm font-medium">{milestone.date.label}</h4>
+        <p className="text-sm">{milestone.date.value === null ? "Unknown" : `${milestone.date.value} (${milestone.date.precision})`}</p>
+        <p className="text-xs text-muted-foreground">Source field: {milestone.field}</p>
+        <Sources sources={milestone.evidence} />
+      </li>)}</ul>
+    </details>}
     {geometry && <details className="space-y-2 rounded-lg border p-3"><summary className="cursor-pointer font-medium">Published positions</summary>
       <dl className="grid grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-x-3 gap-y-2 text-xs">
         <dt className="text-muted-foreground">Role</dt><dd>{geometry.role.replaceAll("-", " ")}</dd>

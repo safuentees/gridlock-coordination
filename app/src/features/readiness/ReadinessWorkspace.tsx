@@ -1,8 +1,9 @@
-import { useId, useMemo, useState, type FormEvent } from "react"
-import { DownloadIcon, SearchIcon } from "lucide-react"
+import { useId, useMemo, useRef, useState, type FormEvent } from "react"
+import { ChevronLeftIcon, ChevronRightIcon, DownloadIcon, SearchIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { IconButton } from "@/components/ui/icon-button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -24,6 +25,7 @@ interface ReadinessWorkspaceProps {
 }
 type EditorDraft = Omit<LocationEvidenceDraft, "method"> & { method: LocationEvidenceDraft["method"] | "" }
 type Queue = "missing" | "unverified" | "all"
+const PAGE_SIZE = 25
 interface Preview {
   key: string
   fingerprint: string
@@ -46,6 +48,8 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
   const [queue, setQueue] = useState<Queue>("missing")
   const [search, setSearch] = useState("")
   const [filing, setFiling] = useState("all")
+  const [page, setPage] = useState(0)
+  const queueBody = useRef<HTMLDivElement>(null)
   const [selection, setSelection] = useState<Partial<Record<DataMode, string>>>({})
   const [drafts, setDrafts] = useState<Record<string, EditorDraft>>({})
   const [candidate, setCandidate] = useState<Preview | null>(null)
@@ -63,7 +67,11 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
       return matchesQueue && matchesSearch && (filing === "all" || project.utilityId === filing)
     })
   }, [dataset, queue, search, filing])
-  const queueSuggestions = suggestions.filter(proposal => projects.some(project => project.id === proposal.projectId))
+  const pageCount = Math.max(1, Math.ceil(projects.length / PAGE_SIZE))
+  const activePage = Math.min(page, pageCount - 1)
+  const pageProjects = projects.slice(activePage * PAGE_SIZE, (activePage + 1) * PAGE_SIZE)
+  const pageIds = new Set(pageProjects.map(project => project.id))
+  const queueSuggestions = suggestions.filter(proposal => pageIds.has(proposal.projectId))
   const selected = dataset.projects.find((project) => project.id === selection[dataset.mode]) ?? projects[0] ?? null
   const selectedNotes = selected ? visibleProjectNotes(selected) : []
   const suggestion = suggestions.find(proposal => proposal.projectId === selected?.id)
@@ -79,6 +87,18 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
   const activeNotice = notice?.key === draftKey ? notice.message : null
   const outsideQueue = selected !== null && !projects.some((project) => project.id === selected.id)
 
+  function preserveSelection() {
+    if (selected) setSelection(previous => ({ ...previous, [dataset.mode]: selected.id }))
+  }
+  function changeQueuePage(nextPage: number) {
+    preserveSelection()
+    setPage(nextPage)
+    if (queueBody.current) queueBody.current.scrollTop = 0
+  }
+  function changeQueueFilter(update: () => void) {
+    changeQueuePage(0)
+    update()
+  }
   function chooseProject(project: Project) {
     setSelection((previous) => ({ ...previous, [dataset.mode]: project.id })); setEditorTab("evidence")
   }
@@ -145,16 +165,20 @@ export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: Readi
     </header>
     <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 overflow-hidden">
       <Card className="min-h-0 min-w-0"><CardHeader className="shrink-0"><CardTitle>Location evidence queue</CardTitle></CardHeader><CardContent className="flex min-h-0 min-w-0 flex-1 flex-col gap-3">
-        <div role="group" aria-label="Location queue" className="flex shrink-0 flex-wrap gap-2">{([ ["missing", "Missing", queueCounts.missing], ["unverified", "Unverified", queueCounts.unverified], ["all", "All records", queueCounts.total] ] as const).map(([value, label, count]) => <Button key={value} variant={queue === value ? "secondary" : "outline"} size="sm" aria-pressed={queue === value} onClick={() => setQueue(value)}>{label} ({count})</Button>)}</div>
-        <div className="shrink-0 space-y-2"><Label htmlFor={`${formId}-search`}><SearchIcon aria-hidden="true" className="size-4" />Search records</Label><Input id={`${formId}-search`} placeholder="Name, need, zone or source ID" value={search} onChange={(event) => setSearch(event.target.value)} /></div>
-        <div className="flex shrink-0 flex-wrap items-center justify-between gap-2"><Select value={filing} onValueChange={setFiling}><SelectTrigger aria-label="Filter reporting filing"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All filings</SelectItem>{groups.map(group => <SelectItem key={group.id} value={group.id}>{group.label}</SelectItem>)}{filing !== "all" && !groups.some(group => group.id === filing) && <SelectItem value={filing}>{filing} (not in this revision)</SelectItem>}</SelectContent></Select><p className="text-xs text-muted-foreground" aria-live="polite">{projects.length} matching records</p></div>
-        <div className="min-h-0 min-w-0 flex-1 space-y-3 overflow-auto overscroll-contain" tabIndex={0} role="region" aria-label="Location evidence records">
-          {queueSuggestions.length > 0 && <details className="rounded-lg border p-3 text-sm"><summary className="cursor-pointer font-medium">Suggested public evidence ({queueSuggestions.length})</summary><ul className="mt-2 space-y-1">{queueSuggestions.map(proposal => <li key={proposal.decisionId}><Button variant="ghost" size="sm" className="h-auto w-full justify-start whitespace-normal text-left [overflow-wrap:anywhere]" onClick={() => { const project = dataset.projects.find(item => item.id === proposal.projectId); if (project) chooseProject(project) }}>{dataset.projects.find(project => project.id === proposal.projectId)?.name}</Button></li>)}</ul></details>}
-          {projects.length ? <ul className="space-y-1">{projects.map((project) => <li key={project.id}><Button variant={selected?.id === project.id ? "secondary" : "ghost"} className="h-auto w-full justify-start whitespace-normal p-3 text-left" aria-pressed={selected?.id === project.id} onClick={() => chooseProject(project)}><span className="min-w-0 space-y-1 [overflow-wrap:anywhere]"><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{project.sourceId ?? "No source ID"}; {reportingGroupLabel(project)}</span><span className="block text-xs text-muted-foreground">{projectLocationLabel(project)}</span></span></Button></li>)}</ul> : <div className="space-y-3 py-4"><p className="text-sm text-muted-foreground">No records match this queue and search.</p><Button variant="outline" size="sm" onClick={() => { setQueue("all"); setSearch(""); setFiling("all") }}>Show all projects</Button></div>}
+        <div role="group" aria-label="Location queue" className="flex shrink-0 flex-wrap gap-2">{([ ["missing", "Missing", queueCounts.missing], ["unverified", "Unverified", queueCounts.unverified], ["all", "All records", queueCounts.total] ] as const).map(([value, label, count]) => <Button key={value} variant={queue === value ? "secondary" : "outline"} size="sm" aria-pressed={queue === value} onClick={() => changeQueueFilter(() => setQueue(value))}>{label} ({count})</Button>)}</div>
+        <div className="shrink-0 space-y-2"><Label htmlFor={`${formId}-search`}><SearchIcon aria-hidden="true" className="size-4" />Search records</Label><Input id={`${formId}-search`} placeholder="Name, need, zone or source ID" value={search} onChange={(event) => changeQueueFilter(() => setSearch(event.target.value))} /></div>
+        <div className="flex shrink-0 flex-wrap items-center justify-between gap-2"><Select value={filing} onValueChange={value => changeQueueFilter(() => setFiling(value))}><SelectTrigger aria-label="Filter reporting filing"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All filings</SelectItem>{groups.map(group => <SelectItem key={group.id} value={group.id}>{group.label}</SelectItem>)}{filing !== "all" && !groups.some(group => group.id === filing) && <SelectItem value={filing}>{filing} (not in this revision)</SelectItem>}</SelectContent></Select><p className="text-xs text-muted-foreground" aria-live="polite">{projects.length} matching records</p></div>
+        <div ref={queueBody} className="min-h-0 min-w-0 flex-1 space-y-3 overflow-auto overscroll-contain" tabIndex={0} role="region" aria-label="Location evidence records">
+          {queueSuggestions.length > 0 && <details className="rounded-lg border p-3 text-sm"><summary className="cursor-pointer font-medium">Suggested evidence on this page ({queueSuggestions.length})</summary><ul className="mt-2 space-y-1">{queueSuggestions.map(proposal => <li key={proposal.decisionId}><Button variant="ghost" size="sm" className="h-auto w-full justify-start whitespace-normal text-left [overflow-wrap:anywhere]" onClick={() => { const project = dataset.projects.find(item => item.id === proposal.projectId); if (project) chooseProject(project) }}>{dataset.projects.find(project => project.id === proposal.projectId)?.name}</Button></li>)}</ul></details>}
+          {projects.length ? <ul className="space-y-1">{pageProjects.map((project) => <li key={project.id}><Button variant={selected?.id === project.id ? "secondary" : "ghost"} className="h-auto w-full justify-start whitespace-normal p-3 text-left" aria-pressed={selected?.id === project.id} onClick={() => chooseProject(project)}><span className="min-w-0 space-y-1 [overflow-wrap:anywhere]"><span className="block font-medium">{project.name}</span><span className="block text-xs text-muted-foreground">{project.sourceId ?? "No source ID"}; {reportingGroupLabel(project)}</span><span className="block text-xs text-muted-foreground">{projectLocationLabel(project)}</span></span></Button></li>)}</ul> : <div className="space-y-3 py-4"><p className="text-sm text-muted-foreground">No records match this queue and search.</p><Button variant="outline" size="sm" onClick={() => changeQueueFilter(() => { setQueue("all"); setSearch(""); setFiling("all") })}>Show all projects</Button></div>}
           <details className="border-t pt-3 text-xs text-muted-foreground"><summary className="cursor-pointer">Coverage by filing</summary><div className="mt-2 space-y-1">{groups.map(group => <p key={group.id}>{group.label}: {summary.byUtility[group.id]?.total ?? 0} records; {summary.byUtility[group.id]?.missing ?? 0} missing, {summary.byUtility[group.id]?.unverified ?? 0} unverified, {summary.byUtility[group.id]?.confirmed ?? 0} marked confirmed.</p>)}</div></details>
         </div>
+        <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-t pt-3" aria-label="Location queue pagination">
+          <p className="text-xs text-muted-foreground" aria-live="polite">{projects.length ? `${activePage * PAGE_SIZE + 1}–${Math.min((activePage + 1) * PAGE_SIZE, projects.length)} of ${projects.length}` : "0 records"}</p>
+          <div className="flex gap-2"><IconButton variant="outline" label="Previous readiness page" disabled={activePage === 0} onClick={() => changeQueuePage(activePage - 1)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" label="Next readiness page" disabled={activePage + 1 >= pageCount} onClick={() => changeQueuePage(activePage + 1)}><ChevronRightIcon aria-hidden="true" /></IconButton></div>
+        </div>
       </CardContent></Card>
-      <Card className="min-h-0 min-w-0"><CardHeader className="max-h-[25%] min-h-0 shrink-0 overflow-auto overscroll-contain"><div className="flex flex-wrap items-start justify-between gap-3"><div className="min-w-0 flex-1 [overflow-wrap:anywhere]"><CardTitle>{selected?.name ?? "Select a project"}</CardTitle>{selected && <p className="mt-1 text-xs text-muted-foreground">{reportingGroupLabel(selected)}; {selected.sourceId ?? selected.id}<span className="block">{projectLocationLabel(selected)}</span></p>}</div>{selected && <Button variant="outline" size="sm" onClick={() => onExploreProject(selected.id)}>Explore project</Button>}</div>{outsideQueue && <p className="text-xs text-muted-foreground">Selected project is outside these filters.</p>}</CardHeader>
+      <Card className="min-h-0 min-w-0"><CardHeader className="max-h-[25%] min-h-0 shrink-0 overflow-auto overscroll-contain"><div className="flex flex-wrap items-start justify-between gap-3"><div className="min-w-0 flex-1 [overflow-wrap:anywhere]"><CardTitle>{selected?.name ?? "Select a project"}</CardTitle>{selected && <p className="mt-1 text-xs text-muted-foreground">{reportingGroupLabel(selected)}; {selected.sourceId ?? selected.id}<span className="block">{projectLocationLabel(selected)}</span></p>}</div>{selected && <Button variant="outline" size="sm" onClick={() => onExploreProject(selected.id)}>Explore project</Button>}</div>{outsideQueue ? <p className="text-xs text-muted-foreground">Selected record is outside these filters.</p> : selected && !pageIds.has(selected.id) && <p className="text-xs text-muted-foreground">Selected record is on another queue page.</p>}</CardHeader>
         <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col gap-3">
           {selected && draft ? <>
             <Tabs value={activeTab} onValueChange={setEditorTab} className="min-h-0 min-w-0 flex-1 overflow-hidden"><TabsList aria-label="Location evidence views" className="shrink-0"><TabsTrigger value="evidence">Evidence</TabsTrigger><TabsTrigger value="preview" disabled={!preview}>Revision preview</TabsTrigger></TabsList>
