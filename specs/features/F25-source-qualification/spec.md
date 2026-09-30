@@ -1,0 +1,13 @@
+# F25 — Qualify a public planned-transmission source
+
+Selected national-coverage increment 1; source selection is ready, not reported as dispatched. Owner `source_discovery`, reusing the completed F19 findings and [F19-R1 brief](../../research/F19-source-options/task.md). Coordinator owns selection and the register. Depends on existing source contracts and F19 evidence; independent of F22/F23. No repeat of the completed ten-record F19 batch.
+
+Purpose: choose the first public inventory capable of useful regional project discovery and later repeatable expansion. Prefer native planned-project locations; compare access, geographic extent, status/date meaning, source authority, fields/missingness, identity and extraction effort. Existing assets and generation queues are separate evidence classes, not substitutes for transmission plans.
+
+Budget: the existing cumulative 60-minute source-selection timebox, three source families and at most ten representative records; subtract research already spent. Use linked preliminary screening instead of repeating it. This bounds qualification research only. It does not limit F26 full extraction or F27 national expansion. If exhausted, record a specific qualification blocker, not national completion.
+
+Ownership: source worker owns only `specs/research/F19-source-options/source-options.md`, `representative-records.json` and `recommendation.md`. Coordinator owns this spec, `task.md`, mission/roadmap and `specs/us-coverage/*`. Source worker supplies proposed coverage facts for coordinator integration; no shared register edits by parallel producers.
+
+Complete when a small public sample establishes: stable native identities; actual planned transmission scope and lifecycle; usable coordinates/endpoints with cited location role/precision for at least some records; representative missing fields; source edition and public access/reuse conditions; and a reproducible route to enumerate the full public inventory. A screenshot, count on a website, login-only map or asset inventory is insufficient. A useful sample need not yield a close candidate pair. Missing-location cases remain visible.
+
+Coordinator records the selected source slug, edition, full enumeration scope and first sample IDs in the roadmap/register, then activates F26's concrete contract, ingestion and integration tasks. A qualified sample is not a full import. Source-specific lack of access can block that source; it does not cancel the selected national goal. No importer implementation before the shared contract and named file handoffs exist. No worker tests or visual checks.

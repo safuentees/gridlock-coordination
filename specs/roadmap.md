@@ -13,7 +13,7 @@ check_budget: "5 minutes per integrated milestone; no visual checks"
 
 # Product roadmap
 
-F00–F14 deliver the working tool and remain complete. F15–F19 surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. F20 adds independent map focus controls; F21 organizes actions and scrolling around user tasks. F00–F21 are integrated; evidence gaps remain explicit. Increments are independently deliverable and no task quota applies.
+F00–F14 deliver the working tool and remain complete. F15–F19 surround it with entry, supported outcomes and useful return/handoff workflows while independently strengthening real evidence. F20 adds independent map focus controls; F21 organizes actions and scrolling around user tasks. F00–F21 are integrated; evidence gaps remain explicit. US-wide planned-transmission discovery is selected through F25–F27, alongside ongoing F22/F23 map work. Increments are independently deliverable and no task quota applies.
 
 | ID | Capability | Owner | Phase | Depends on | Owned paths |
 |---|---|---|---|---|---|
@@ -42,9 +42,24 @@ F00–F14 deliver the working tool and remain complete. F15–F19 surround it wi
 | F22 | [Experimental map compatibility](features/F22-maplibre-compatibility/spec.md) | map-ui (separate chat) | 11 | F20/F21 integrated; pinned dependency handoff | Exact ProjectMap/map-view + three density-map adapter files, package files and receipt in spec; default Leaflet retained |
 | F23 | [Hierarchical project concentrations](features/F23-hierarchical-density/spec.md) | map-ui (separate chat) | 12 | F22 integrated | Exact hierarchy/layer/synthetic files and F22 adapter files; only agreed hierarchy dependencies; receipt |
 | F24 | [Stationary map controls and accessible legend](features/F24-map-controls/spec.md) | coordinator + ui | 11 | F20/F21; explicit map-ui handoff | coordinator: ProjectMap, shared Popover, instructions/receipt; ui: Explorer shell placement and MapLegend only. No map-view/package edits. |
+| F25 | [Qualify a public planned-transmission source](features/F25-source-qualification/spec.md) | source_discovery; coordinator selects/contracts | 11 | Reuse completed F19 and integrated F19-R1 screening; independent of F22/F23 | three worker report/sample files under `specs/research/F19-source-options/`; coordinator owns task and coverage register |
+| F26 | [Import full usable public project inventory](features/F26-full-public-inventory/spec.md) | ingestion + coordinator + ui; core owns eligibility | 12 | F25 source qualification, F26-C1 shared runtime contract | source-specific `scripts/ingest/coverage/<source-key>/*`, `data/real/coverage/<source-key>/*`; exact consumer/schema handoffs in spec |
+| F27 | [Expand across US regions](features/F27-us-regional-expansion/spec.md) | independent ingestion owners + coordinator integration | 13 onward | F26 shared contract and first integrated inventory; next source qualification | separate source-specific producer files/worktrees; coordinator owns shared aggregate/register; map paths excluded |
 
 ## Critical path
 F00 → F01 + F02 + F03 → first connected real milestone, without waiting for F04. F04 expands independent ingestion while F05/F06 extend UI and F07 extends canonical calculations. F08 builds against the shared schema independently and connects after F03; bulk extraction is not a dependency. UI works against 300 synthetic records on the shared schema and core interface. Unknown coordinates never block showing inventory.
+
+## Selected national coverage milestone
+
+Relevant planning from `codex/F19-source-research-plan` / `34f1c63` is integrated here without reverting newer F19 completion or F20–F23 assignments. F19-R1 becomes the reused source-selection brief for F25; its older conditional task IDs are superseded by F25–F27. National discovery is selected product scope, not a future recommendation.
+
+1. **F25 qualification:** a small cited public planned-transmission sample proves identity, location meaning and access to enumerate the inventory. Existing cumulative research timebox applies here only. A blocker report is not a qualified source.
+2. **F26 full inventory:** connect the sample early, then import/reconcile every usable public project in the selected source edition/scope, including valid unlocated records. Complete only after the full inventory and shared coverage are integrated; a pilot is insufficient.
+3. **F27 regional expansion:** add independently deliverable full regional inventories using shared identities/schema/editions. Each increment must add documented geographic coverage. Refreshing one source improves freshness but cannot complete geographic or national expansion.
+
+The [US coverage register](us-coverage/us-register.json) starts at 252 historical source records, 10 unverified locations and 242 missing; no new regional source is qualified/imported. It records every state/DC and US territories, partial imported filing scopes, field gaps and unqualified source leads. A filled register does not mean covered geography. National expansion stays open while areas remain uncovered, blocked or sample-only.
+
+After source choice, coordinator activates F26-C1 (shared validation/migration/eligibility), then assigns the exact source-specific F26-I1 ingestion and F26-I2 integration tasks already scoped in the spec. Producer and consumer work can overlap after that contract; connect the first batch before complete extraction. After integration, continue the full inventory and subsequent qualified F27 adapters without requesting the same scope approval again. Independent adapters may run in parallel in separate owned files/worktrees. Preserve map-ui's current interface/ownership and isolated synthetic density work. Worker assignment below is recorded; this side conversation has not dispatched or messaged workers.
 
 ## Current milestone and assignments
 
@@ -69,11 +84,11 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F23 ready: hierarchical project concentrations and isolated synthetic preview. F22 compatibility integrated through PR53. | Exact density-map files in F23; agreed hierarchy packages are installed. Keep interfaces/default map; Explorer excluded. No pattern polish before user trial. |
-| source_discovery | Resume an unresolved F19 record when its specified public identity/location evidence becomes available; first actionable target is `desc-6809-g`'s native corridor endpoints, kept distinct from `6809 E`. No additional research batch is selected. | Exact public endpoint/route citation; `data/evidence/*` only. See the nine next-input entries in `f19-location-decisions.json`. No evidence means no coordinate change. |
-| coordinator | Integrate a supported evidence proposal through existing preview/revision interfaces when supplied; retain baseline and confidence meanings. | Source/native-ID agreement, then `data/location-proposals.ts` and Readiness composition only if necessary. |
-| ui / core | F21 composition slices complete; retain worktrees for the next selected capability. | No ready assigned implementation dependency; no duplicate checks. |
+| source_discovery | F25 ready: qualify first public planned-transmission source within the remaining source-selection timebox, reusing F19 and the F19-R1 screening. Assignment recorded; main-thread dispatch pending. | Own three F19-R1 research outputs only. Preserve completed F19 decisions; no duplicate ten-record batch. Source selection enables full F26 inventory, not just a pilot. |
+| coordinator | Maintain coverage register; record F25 source choice and activate F26-C1 then exact F26-I1/I2 handoffs. Continue integrating supported evidence without changing the baseline silently. | Source sample and field mapping before runtime schema/eligibility changes; shared consumers and map compatibility owned centrally. |
+| ingestion / ui / core | F26 selected and waiting for F25 source choice/C1: ingestion owns full source inventory, ui prepares shared consumers with separate synthetic records, core owns any agreed eligibility extension. | Exact source paths/API contract before dispatch. Map-ui continues F22/F23 independently; no app/source/schema edits in the qualification task. |
 
-The highest-value proposed extension is a **current public-plan edition refresh**: source_discovery would establish edition/identity continuity, core would reuse revision comparison, and coordinator/UI would surface changed or withdrawn findings. This is medium-sized source/integration work and needs accessible public documents; it would improve present-day usefulness without treating elapsed historical dates as completion. Related-record navigation is a smaller follow-up for distinct phases and linked projects; verified route geometry is a larger evidence effort. These remain proposals, not silently dispatched work.
+Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
 F14 is complete through PR27–29. UI delivered the single panel, restored browsing context and map occlusion; core delivered per-candidate impact drafts and detail topics. The coordinator's sole composition build passed at 5502dcd with the existing bundle-size and future Vite-loader warnings. No browser, visual or mobile checks ran. Source data, canonical calculations and storage interfaces were unchanged.
 
@@ -83,7 +98,7 @@ The F11 shared revision/readiness contract was integrated before dispatch. UI de
 
 The focused copy/control pass is integrated through PR24–26: shared tooltip-backed controls and persistent UI instructions, concise secondary workspaces, and curated comparison/source context. Project-specific limitations remain beside their evidence; source data and calculation/storage interfaces are unchanged. The coordinator's one composition build passed at e0d2b92 with the same nonblocking warnings; no browser or visual checks were run.
 
-The previously proposed ten-record evidence batch is now F19 selected work. Current schedule refresh, additional utilities, explicit related-record navigation and verified route geometry remain proposed extensions; they need concrete source evidence and should not be disguised as more landing-page content.
+F19’s ten-record evidence batch is complete. F25–F27 now select public source qualification, full planned-transmission inventories and additional regional adapters; they are not optional later extensions. Current-status assertions still require source-edition evidence. Related-record navigation and verified route geometry remain separately proposed.
 
 Coordinator dispatches and resumes up to three subagents in this chat directly. F20 additionally authorizes a user-led separate map/UI chat with the explicit ownership boundary above; do not create or start that chat as part of the assignment-only update. Separate managed worktrees/branches begin at integrated F00; subsequent features use latest main. No scheduler. User has authorized project pushes, small PRs and coordinator integration; private project creation was explicitly authorized. Only origin (gridlock-coordination) accepts application pushes; workflow-template push is disabled. No branch deletion.
 

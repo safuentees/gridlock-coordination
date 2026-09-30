@@ -1,0 +1,513 @@
+{
+  "registerVersion": 1,
+  "updatedOn": "2026-09-30",
+  "baselineRevision": "6475864",
+  "goal": "US-wide planned-transmission discovery",
+  "goalStatus": "selected-incomplete",
+  "qualificationStatus": "source selection pending; source-selection worker dispatch not performed by this side conversation",
+  "totals": {
+    "importedSourceRecords": 252,
+    "locatedRecords": 10,
+    "confirmedLocations": 0,
+    "unverifiedLocations": 10,
+    "missingLocations": 242,
+    "explicitConstructionWindows": 0,
+    "newRegionalSourcesQualified": 0,
+    "newFullRegionalInventoriesImported": 0,
+    "knownNationalProjectDenominator": null
+  },
+  "pendingEvidence": {
+    "integratedF19Decisions": 10,
+    "unappliedLocationSuggestions": 1,
+    "unresolvedDecisions": 9,
+    "note": "Okatie permit-area suggestion does not change the bundled snapshot until explicitly applied; per-user revisions are not this baseline."
+  },
+  "importedSources": [
+    {
+      "sourceKey": "desc",
+      "editionId": "2024-2028",
+      "editionPublishedAt": null,
+      "status": "imported-historical-filing",
+      "inventoryScope": "44 supplied Dominion project-description records; partial South Carolina filing coverage, not statewide completeness",
+      "recordKind": "planned-transmission-source-record",
+      "lifecycleIsCurrent": false,
+      "importedRecords": 44,
+      "locatedRecords": 5,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 5,
+      "missingFields": {
+        "location": 39,
+        "milestone": 1,
+        "constructionWindow": 44,
+        "status": 0,
+        "voltage": 3
+      },
+      "evidenceFile": "app/src/data/real/dataset.json",
+      "publicInventoryDenominator": null,
+      "blockers": [
+        "Location evidence incomplete",
+        "Current source-edition continuity not established"
+      ],
+      "nextTask": "F25; preserve F19 evidence decisions"
+    },
+    {
+      "sourceKey": "gpc",
+      "editionId": "2025-irp-table-2",
+      "editionPublishedAt": null,
+      "status": "imported-historical-filing",
+      "inventoryScope": "208 active Georgia planning Table 2 records; excludes cancelled/restricted detail, not complete statewide coverage",
+      "recordKind": "planned-transmission-source-record",
+      "lifecycleIsCurrent": false,
+      "importedRecords": 208,
+      "locatedRecords": 5,
+      "confirmedLocations": 0,
+      "unverifiedLocations": 5,
+      "missingFields": {
+        "location": 203,
+        "milestone": 0,
+        "constructionWindow": 208,
+        "status": 208,
+        "voltage": 43
+      },
+      "evidenceFile": "app/src/data/real/dataset.json",
+      "publicInventoryDenominator": null,
+      "blockers": [
+        "Location evidence incomplete",
+        "Current source-edition continuity not established"
+      ],
+      "nextTask": "F25; preserve F19 evidence decisions"
+    }
+  ],
+  "jurisdictions": [
+    {
+      "code": "AL",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "AK",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "AZ",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "AR",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "CA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "CO",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "CT",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "DE",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "FL",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "GA",
+      "status": "partial-historical-filing",
+      "sourceKeys": [
+        "gpc"
+      ],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "HI",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "ID",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "IL",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "IN",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "IA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "KS",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "KY",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "LA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "ME",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MD",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MI",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MN",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MS",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MO",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MT",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NE",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NV",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NH",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NJ",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NM",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NY",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "NC",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "ND",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "OH",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "OK",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "OR",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "PA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "RI",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "SC",
+      "status": "partial-historical-filing",
+      "sourceKeys": [
+        "desc"
+      ],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "SD",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "TN",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "TX",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "UT",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "VT",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "VA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "WA",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "WV",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "WI",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "WY",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "DC",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "statewideInventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "AS",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "territory": true,
+      "inventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "GU",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "territory": true,
+      "inventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "MP",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "territory": true,
+      "inventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "PR",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "territory": true,
+      "inventoryComplete": false,
+      "recordCountByJurisdiction": null
+    },
+    {
+      "code": "VI",
+      "status": "uncovered",
+      "sourceKeys": [],
+      "territory": true,
+      "inventoryComplete": false,
+      "recordCountByJurisdiction": null
+    }
+  ],
+  "qualificationLeads": [
+    {
+      "sourceKey": "california-tpr",
+      "status": "unqualified",
+      "sourceUrl": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/transmission-project-review-process",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Public project sample with usable location evidence and full-inventory enumeration",
+      "owner": "source_discovery",
+      "task": "F25"
+    },
+    {
+      "sourceKey": "miso-mtep",
+      "status": "unqualified",
+      "sourceUrl": "https://help.misoenergy.org/knowledgebase/article/KA-01438/en-us",
+      "importedRecords": 0,
+      "locatedRecords": 0,
+      "missingInput": "Public downloadable planned-project sample; documented general-pin precision may limit geographic eligibility",
+      "owner": "source_discovery",
+      "task": "F25 fallback"
+    }
+  ],
+  "scopeLimits": [
+    "Partial supplied filing coverage does not establish statewide completeness or current project status.",
+    "Jurisdiction assignment is a filing-scope index, not a verified allocation of project locations; cross-state projects may occur.",
+    "Other US areas and territories have no imported inventory. Zero imports do not mean zero projects.",
+    "No national planned-project denominator, full regional source import or public location-ready new source has yet been established.",
+    "Existing infrastructure and generation proposals are not planned-transmission coverage."
+  ]
+}

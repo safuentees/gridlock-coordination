@@ -1,6 +1,6 @@
 # Gridlock mission
 
-Gridlock helps transmission planners and regional coordination analysts move from fragmented public plans to a prioritized, evidence-backed investigation and a reusable coordination handoff. The product must help people arrive, do the work, understand what it supports, act and return—not only operate a map.
+Gridlock helps transmission planners and coordination analysts across the United States move from fragmented public plans to a prioritized, evidence-backed investigation and a reusable coordination handoff. The product must help people arrive, do the work, understand what it supports, act and return—not only operate a map.
 
 The central experience is a connected map, searchable project inventory and ranked opportunity list. Selecting a pair reveals where its locations and dates came from, distinguishes uncertainty, and supports comparison, scenario exploration and a reusable coordination brief.
 
@@ -11,7 +11,8 @@ The user separately selected an experimental map extension (F22/F23): MapLibre/d
 ## Full selected product
 - Orient a new user with a concise Home page explaining audience, visibility problem, investigation benefit, source coverage and a clear entry to the workspace.
 - Ingest the supplied Dominion and Georgia public planning records reproducibly, link the starter workbook's locations, and preserve source identifiers, dates, sponsor, provenance and missing values.
-- Explore all projects from both filings on an interactive map and searchable inventory. Keep unlocated projects discoverable. Separate real source mode from a realistic 300-record demo.
+- Discover planned transmission projects across the United States through full usable public inventories and additional regional adapters. The supplied filings remain preserved starting evidence, not the final geographic scope.
+- Explore all imported projects on an interactive map and searchable inventory. Keep unlocated projects discoverable. Keep realistic synthetic data separate from real sources and scale fixtures to the agreed consumer contract.
 - Compute cross-filing proximity in one canonical engine, use distance as the primary ranking signal and date separation as secondary context, and explain exclusions and assumptions.
 - Inspect project and pair evidence, map connections and timeline context. Distinguish a scheduled need date, planned in-service date and an actual construction interval.
 - Change radius, date-gap and location-confidence criteria, compare the resulting candidate set, and see what remains unknown.
@@ -44,6 +45,18 @@ Supplied-source review adds useful direction: challenge §1 names crews/equipmen
 
 The supplied snapshot still has 242 missing locations, ten supplied unverified centers and no explicit construction windows. F19's one public permit-area suggestion is separate from that snapshot; an explicit application would yield 11 unverified locations and 241 missing. Nine other researched records retain the precise evidence needed next. Counts describe historical planning evidence, not current utility status. Evidence acquisition is an enabling capability, not a reason to postpone entry/outcomes. New source matches require exact public evidence and remain unverified through the current revision workflow; no bulk geocoding, guessed coordinates, private-document ingestion or second calculation engine. A current-plan refresh needs its own source-edition review before making new status claims.
 
+## Selected goal: US-wide planned-transmission discovery
+
+National discovery is approved product scope. Deliver it progressively: **qualify a usable public source with a small sample (F25), import its full usable public planned-project inventory (F26), then add independently deliverable regional adapters (F27)**. Prefer native project locations with clear geographic meaning. A source sample proves qualification and early integration; it does not finish the source inventory or the national goal. Refreshing one source is maintenance, not geographic expansion.
+
+The [US coverage register](us-coverage/us-register.json) is the maintained record of source editions, imported scope, located and missing-field counts, and blocked or uncovered areas. Report partial filing coverage honestly; do not imply all projects in Georgia or South Carolina are represented. Account for every US state and DC, and track US territories explicitly, including non-RTO areas, Alaska and Hawaii. Distinguish areas without assessed sources from areas where a specific source is inaccessible. Unknown totals are null, not zero. The initial register describes the immutable 252-record snapshot; the un-applied F19 proposal does not raise its located count.
+
+F25 completes only with a cited public sample and an agreed, usable import scope. F26 completes when all public records within that declared source edition/scope are reconciled as imported or excluded with reasons, retaining valid unlocated projects, and the full inventory is available in the product. Each F27 increment completes with another full usable regional inventory adding documented geographic coverage through the shared contract. The national goal remains open while regions are uncovered, blocked or represented only by samples; neither a pilot nor a same-source refresh closes it. Register completeness is not the same as project coverage completeness.
+
+Planned transmission work is distinct from existing infrastructure and generation proposals. Existing asset geometry may be cited to support project locations; it is not a new planned project. Preserve lifecycle as of the source edition and distinguish planned, approved, under-construction, in-service, cancelled and unknown. Do not infer completion from elapsed dates. Source publisher, reporting group and asset sponsor remain separate; all adapters share stable identities and edition conventions, and the canonical calculation owner alone implements any agreed eligibility extension.
+
+The existing research timebox applies to initial source selection only, not to national expansion. Once a source qualifies and its shared contract is committed, assign ingestion and integration slices, connect the first real sample early, and continue to the full inventory. Add independent adapters in parallel when their contracts and owned files permit. Keep F22/F23 map work progressing against the shared schema with separate synthetic data. After each authorized integration, update coverage and continue the next ready selected increment; report evidence/access blockers without presenting a recommendation as a shipped capability.
+
 ## Requirements and reversible assumptions
 The brief requires at least two utilities, interactive project display and highlighted overlaps, and ranked coordination opportunities. Geography is primary; timing is secondary. A rough impact estimate is a bonus that we select. Details and one input/output example are in discovery.md.
 
@@ -57,4 +70,4 @@ No time or token budget was supplied. Work in small integrated milestones with a
 The user authorizes subagent coordination, project pushes, PRs and integration, and creation of a private repository with a different name. Project remote: https://github.com/safuentees/gridlock-coordination. The workflow-template push URL is disabled. Original attachments, credentials, personal information and generated builds stay out of Git. No release publishing or branch deletion is authorized.
 
 ## Exclusions
-No private/CEII material ingestion, autonomous engineering decisions, real-time utility schedule claims, external messaging, live geocoding at scale, authentication, or production hosting. Additional utility adapters and verified route geometry are worthwhile later extensions, not prerequisites for this product.
+No private/CEII material ingestion, autonomous engineering decisions, real-time utility schedule claims, external messaging, live geocoding at scale, authentication, or production hosting. Additional regional transmission adapters are selected scope under F25–F27. Verified route geometry beyond source-supported points remains a separate extension; generation-proposal discovery is not selected by the national-transmission goal.
