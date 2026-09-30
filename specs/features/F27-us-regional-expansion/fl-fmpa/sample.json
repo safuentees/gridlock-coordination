@@ -1,0 +1,365 @@
+{
+  "qualificationFormatVersion": 1,
+  "notRuntimeDataset": true,
+  "decision": "qualified public inventory; exact mapping requires coordinator acceptance",
+  "sourceKeyProposal": "fl-fmpa",
+  "reportingGroupProposal": "fl-fmpa",
+  "editionProposal": "2026-04-01",
+  "sourceAsOf": "2026-04-01",
+  "publishedOn": "2026-04-01",
+  "retrievedOn": "2026-09-30",
+  "source": {
+    "title": "FMPA 2026 Ten-Year Site Plan 2026–2035",
+    "url": "https://files.tcrpc.org/Programs_Services/Energy%20Planning/FMPA%20Municipal%20Power.pdf?t=202609031318390",
+    "officialIndex": "https://files.tcrpc.org/programs___services/energy_planning.php",
+    "pscUrl": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/FMPA%20Municipal%20Power.pdf",
+    "localOriginal": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-fl-fmpa/FMPA Municipal Power.pdf",
+    "sha256": "dce5c6ec57b598c3bf98013881f64751914ef960253f839fa4e6b341f348a4af",
+    "bytes": 1417119,
+    "pages": 67,
+    "inventoryLocator": "PDF p.67 / printed II-1; Table II-1, all five city groups",
+    "editionLocator": "PDF pp.1–2, report date April 1, 2026",
+    "accessNote": "PSC endpoint failed with web 502 and local TLS errors. Official TCRPC energy-planning page links the public report; relative link path was resolved to its public Programs_Services directory. This hash is the TCRPC copy; byte equality with inaccessible PSC copy is not claimed."
+  },
+  "enumeration": {
+    "groupedCityRows": 5,
+    "sourceWorkItems": 59,
+    "retainedRecordsProposal": 59,
+    "excludedRowsProposal": 0,
+    "failedRowsProposal": 0,
+    "locatedRecords": 0,
+    "nativeProjectIds": 0,
+    "groupCounts": {
+      "Beaches Energy Services": 11,
+      "Kissimmee Utility Authority": 17,
+      "Fort Pierce Utility Authority": 23,
+      "Keys Energy Services": 2,
+      "Ocala Electric Utility": 6
+    },
+    "recordKindCountsProposal": {
+      "transmission-project": 49,
+      "planning-context": 10
+    },
+    "ownerCountsProposal": {
+      "qualified": 0,
+      "unknown": 59
+    },
+    "rule": "Each Project Description line and aligned scalar/date line is one work item. Five city rows are grouping only, never five additional projects. No split of compound descriptions."
+  },
+  "planningContextDecisions": [
+    {
+      "groupSlug": "beaches",
+      "childOrdinal": 7,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 7",
+      "reason": "Distribution transformation 138/26.4 kV; Beaches section 2.2.1 printed p.2-5 / PDF23 identifies its distribution delivery at 26.4 kV."
+    },
+    {
+      "groupSlug": "beaches",
+      "childOrdinal": 11,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 11",
+      "reason": "Distribution transformation 138/26.4 kV; Beaches section 2.2.1 printed p.2-5 / PDF23 identifies its distribution delivery at 26.4 kV."
+    },
+    {
+      "groupSlug": "kua",
+      "childOrdinal": 17,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17",
+      "reason": "Relay coordination study only."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 18,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 19,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 19",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 20,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 20",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 21,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 21",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 22,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 22",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "fpua",
+      "childOrdinal": 23,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 23",
+      "reason": "Description explicitly states distribution equipment/substation."
+    },
+    {
+      "groupSlug": "ocala",
+      "childOrdinal": 4,
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 4",
+      "reason": "Description explicitly states distribution equipment/substation."
+    }
+  ],
+  "examples": [
+    {
+      "locator": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 1 (top to bottom)",
+      "proposedId": "fl-fmpa:2026-04-01:ii-1:beaches:01",
+      "raw": {
+        "groupOrdinal": 1,
+        "childOrdinal": 1,
+        "groupSlug": "beaches",
+        "city": "Beaches Energy Services",
+        "description": "Sampson Substation: Replace breakers 805N & 805NT1",
+        "mva": "-",
+        "voltage": "138 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026",
+        "kindProposal": "transmission-project"
+      },
+      "mapping": {
+        "sourceId": "PDF p.67 / printed II-1; Table II-1; Beaches Energy Services; child entry 1 (top to bottom)",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "sponsor": "Beaches Energy Services",
+        "owner": null,
+        "ownerReason": "City identifies the municipal participant; this table does not assert asset-level ownership.",
+        "lifecycleStatus": "planned",
+        "status": "Planned and Proposed Transmission Additions",
+        "date": {
+          "value": "2026-12",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Estimated in-service date"
+        },
+        "location": null,
+        "nativeGeometry": null,
+        "buildWindow": null,
+        "constructionStart": null,
+        "sourceIdMeaning": "Reproducible source reference; not a native engineering project ID."
+      },
+      "diagnostic": "Single table work item contains multiple breakers; do not split it further."
+    },
+    {
+      "locator": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17 (top to bottom)",
+      "proposedId": "fl-fmpa:2026-04-01:ii-1:kua:17",
+      "raw": {
+        "groupOrdinal": 2,
+        "childOrdinal": 17,
+        "groupSlug": "kua",
+        "city": "Kissimmee Utility Authority",
+        "description": "PRC027 Relay Coordination Study – BES only",
+        "mva": "-",
+        "voltage": "230KV",
+        "circuit": "-",
+        "estimatedInServiceDate": "12/2026",
+        "kindProposal": "planning-context"
+      },
+      "mapping": {
+        "sourceId": "PDF p.67 / printed II-1; Table II-1; Kissimmee Utility Authority; child entry 17 (top to bottom)",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "planning-context",
+        "sponsor": "Kissimmee Utility Authority",
+        "owner": null,
+        "ownerReason": "City identifies the municipal participant; this table does not assert asset-level ownership.",
+        "lifecycleStatus": "planned",
+        "status": "Planned and Proposed Transmission Additions",
+        "date": {
+          "value": "2026-12",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Estimated in-service date"
+        },
+        "location": null,
+        "nativeGeometry": null,
+        "buildWindow": null,
+        "constructionStart": null,
+        "sourceIdMeaning": "Reproducible source reference; not a native engineering project ID."
+      },
+      "diagnostic": "Relay coordination study; retain as planning context, not a construction project."
+    },
+    {
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 8 (top to bottom)",
+      "proposedId": "fl-fmpa:2026-04-01:ii-1:fpua:08",
+      "raw": {
+        "groupOrdinal": 3,
+        "childOrdinal": 8,
+        "groupSlug": "fpua",
+        "city": "Fort Pierce Utility Authority",
+        "description": "HD King Substation: Replace breaker K69T2",
+        "mva": "-",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "05/2026",
+        "kindProposal": "transmission-project"
+      },
+      "mapping": {
+        "sourceId": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 8 (top to bottom)",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "sponsor": "Fort Pierce Utility Authority",
+        "owner": null,
+        "ownerReason": "City identifies the municipal participant; this table does not assert asset-level ownership.",
+        "lifecycleStatus": "planned",
+        "status": "Planned and Proposed Transmission Additions",
+        "date": {
+          "value": "2026-05",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Estimated in-service date"
+        },
+        "location": null,
+        "nativeGeometry": null,
+        "buildWindow": null,
+        "constructionStart": null,
+        "sourceIdMeaning": "Reproducible source reference; not a native engineering project ID."
+      },
+      "diagnostic": "May 2026 forecast is now past but has no actual-completion status."
+    },
+    {
+      "locator": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18 (top to bottom)",
+      "proposedId": "fl-fmpa:2026-04-01:ii-1:fpua:18",
+      "raw": {
+        "groupOrdinal": 3,
+        "childOrdinal": 18,
+        "groupSlug": "fpua",
+        "city": "Fort Pierce Utility Authority",
+        "description": "Garden City Substation: Distribution Transformer Addition",
+        "mva": "25",
+        "voltage": "69 kV",
+        "circuit": "-",
+        "estimatedInServiceDate": "06/2030",
+        "kindProposal": "planning-context"
+      },
+      "mapping": {
+        "sourceId": "PDF p.67 / printed II-1; Table II-1; Fort Pierce Utility Authority; child entry 18 (top to bottom)",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "planning-context",
+        "sponsor": "Fort Pierce Utility Authority",
+        "owner": null,
+        "ownerReason": "City identifies the municipal participant; this table does not assert asset-level ownership.",
+        "lifecycleStatus": "planned",
+        "status": "Planned and Proposed Transmission Additions",
+        "date": {
+          "value": "2030-06",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Estimated in-service date"
+        },
+        "location": null,
+        "nativeGeometry": null,
+        "buildWindow": null,
+        "constructionStart": null,
+        "sourceIdMeaning": "Reproducible source reference; not a native engineering project ID."
+      },
+      "diagnostic": "Explicit distribution transformer addition despite 69 kV table entry."
+    },
+    {
+      "locator": "PDF p.67 / printed II-1; Table II-1; Keys Energy Services; child entry 1 (top to bottom)",
+      "proposedId": "fl-fmpa:2026-04-01:ii-1:keys:01",
+      "raw": {
+        "groupOrdinal": 4,
+        "childOrdinal": 1,
+        "groupSlug": "keys",
+        "city": "Keys Energy Services",
+        "description": "US1 Substation: Repalce Auto Transformer AT1",
+        "mva": "125",
+        "voltage": "138/69 kV",
+        "circuit": "1",
+        "estimatedInServiceDate": "12/2028",
+        "kindProposal": "transmission-project"
+      },
+      "mapping": {
+        "sourceId": "PDF p.67 / printed II-1; Table II-1; Keys Energy Services; child entry 1 (top to bottom)",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "sponsor": "Keys Energy Services",
+        "owner": null,
+        "ownerReason": "City identifies the municipal participant; this table does not assert asset-level ownership.",
+        "lifecycleStatus": "planned",
+        "status": "Planned and Proposed Transmission Additions",
+        "date": {
+          "value": "2028-12",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Estimated in-service date"
+        },
+        "location": null,
+        "nativeGeometry": null,
+        "buildWindow": null,
+        "constructionStart": null,
+        "sourceIdMeaning": "Reproducible source reference; not a native engineering project ID."
+      },
+      "diagnostic": "Explicit 138/69 kV auto-transformer work; participant label is not a proved sole owner."
+    },
+    {
+      "locator": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 6 (top to bottom)",
+      "proposedId": "fl-fmpa:2026-04-01:ii-1:ocala:06",
+      "raw": {
+        "groupOrdinal": 5,
+        "childOrdinal": 6,
+        "groupSlug": "ocala",
+        "city": "Ocala Electric Utility",
+        "description": "Ergle Substation: Replace Auto-Transformer",
+        "mva": "",
+        "voltage": "230/69 kV",
+        "circuit": "",
+        "estimatedInServiceDate": "12/2031",
+        "kindProposal": "transmission-project"
+      },
+      "mapping": {
+        "sourceId": "PDF p.67 / printed II-1; Table II-1; Ocala Electric Utility; child entry 6 (top to bottom)",
+        "identityBasis": "source-locator",
+        "recordUnit": "project",
+        "recordKind": "transmission-project",
+        "sponsor": "Ocala Electric Utility",
+        "owner": null,
+        "ownerReason": "City identifies the municipal participant; this table does not assert asset-level ownership.",
+        "lifecycleStatus": "planned",
+        "status": "Planned and Proposed Transmission Additions",
+        "date": {
+          "value": "2031-12",
+          "precision": "month",
+          "kind": "in-service",
+          "label": "Estimated in-service date"
+        },
+        "location": null,
+        "nativeGeometry": null,
+        "buildWindow": null,
+        "constructionStart": null,
+        "sourceIdMeaning": "Reproducible source reference; not a native engineering project ID."
+      },
+      "diagnostic": "MVA and Circuit are blank, not zero and not shifted from the preceding row."
+    }
+  ],
+  "mappingCaveats": [
+    "The report supplies the 69 kV-and-above scope boundary; no added voltage minimum or exclusion of blank voltage.",
+    "Source-locator identity belongs to this edition and is not a native ID or stable cross-edition identity.",
+    "Preserve tentative combined planned/proposed status; no approval/construction/completion inference.",
+    "City is reporting participant, not a universal asset owner. Section 2.2.1 describes both owned and jointly owned/interconnection facilities.",
+    "All costs, savings, windows, coordinates, geometry and accuracy remain unknown; named facilities are context only.",
+    "Retain raw MVA/Circuit and source spellings; do not turn a circuit ordinal into a project count.",
+    "Some KUA substation expansions may serve distribution but do not explicitly say so in this table; preserve that classification uncertainty.",
+    "No explicit cross-source links observed; independent identities, no name-based deduplication.",
+    "Public source availability does not imply a public-reuse license; original remains ignored."
+  ],
+  "sourcePass": {
+    "startedAt": "2026-09-30T09:35:08Z",
+    "endedAt": "2026-09-30T09:38:02Z",
+    "elapsedMinutes": 2.9,
+    "ceilingMinutes": 15
+  },
+  "implementationAuthorized": false
+}
