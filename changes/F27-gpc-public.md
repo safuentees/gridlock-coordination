@@ -1,7 +1,7 @@
-# F27-GPC public catalog connection sample
+# F27-GPC full public catalog
 
-- Added six accepted page observations with stable locator identities, three transmission records and three capital-project contexts; context units remain omitted and Decatur remains an upgrade.
-- Reconciled all ten entries into six imported and four pending, zero exclusions/failed/located; sample lifecycle is one planned and five unknown.
-- Preserved raw quarter/season milestones, conflicting component stages, dated notices and index/detail geography. All primary dates, owners, geometry and construction bounds remain unknown; historical filing records are not merged or inherited.
-- Fifteen preserved originals are hash-pinned without reacquisition or modification. Dataset payload is 30,369 compact / 39,629 formatted UTF-8 bytes.
-- Remaining four observations wait for provider connection and dispatch. No worker checks or shared/UI/map/core/package edits; coordinator owns integration and milestone checking.
+- Completed all ten accepted page observations after the six-record sample was connected, adding only Effingham, Grassy Hollow, Hatch and Conyers; connected mappings, IDs and relative order remain unchanged.
+- Reconciled ten imported with zero pending, exclusions, failed or located records: six transmission records, four capital contexts; three planned and seven unknown lifecycles.
+- Preserved raw quarter/season milestones, conflicting component stages, dated/undated notices and index/detail geography. All primary dates, owners, geometry and construction bounds stay unknown; historical filing observations are not merged or inherited.
+- Fifteen preserved originals remain hash-pinned without reacquisition or modification. Full Dataset payload is 51,940 compact / 68,800 formatted UTF-8 bytes; complete featured scope is not statewide or utility-wide coverage.
+- No worker checks or shared/UI/map/core/package edits. Coordinator owns integration and the combined milestone case.

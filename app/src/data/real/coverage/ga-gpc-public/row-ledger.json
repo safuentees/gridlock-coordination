@@ -1,7 +1,7 @@
 {
   "sourceKey": "ga-gpc-public",
   "editionId": "observed-2026-09-30",
-  "scope": "sample",
+  "scope": "full",
   "artifacts": [
     {
       "file": "index.html",
@@ -96,19 +96,19 @@
   ],
   "counts": {
     "sourceRows": 10,
-    "importedRecords": 6,
+    "importedRecords": 10,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 4,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "recordKindCounts": {
-    "capital-project-context": 3,
-    "transmission-project": 3
+    "capital-project-context": 4,
+    "transmission-project": 6
   },
   "lifecycleCounts": {
-    "unknown": 5,
-    "planned": 1
+    "unknown": 7,
+    "planned": 3
   },
   "completeRetainedRecordKindCounts": {
     "capital-project-context": 4,
@@ -222,8 +222,9 @@
         "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
         "locator": "Current Projects, entry 5: Effingham County 500 kV; Type and County/Region fields"
       },
-      "disposition": "pending",
-      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:effingham-county",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate."
     },
     {
       "sourceId": "hills-bridge-speedway",
@@ -266,8 +267,11 @@
         "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
         "locator": "Current Projects, entry 7: Grassy Hollow – Great Valley 230 kV; Type and County/Region fields"
       },
-      "disposition": "pending",
-      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:grassy-hollow-great-valley",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate.",
+      "supportingNotice": "grassy-hollow-great-valley-pre-construction-postcards.pdf",
+      "supportingPublishedOn": null
     },
     {
       "sourceId": "hatch-wadley",
@@ -287,8 +291,11 @@
         "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
         "locator": "Current Projects, entry 8: Hatch – Wadley Primary 500 kV; Type and County/Region fields"
       },
-      "disposition": "pending",
-      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:hatch-wadley",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate.",
+      "supportingNotice": "external-project-overview-hatch-wadley-500k-kv.pdf",
+      "supportingPublishedOn": null
     },
     {
       "sourceId": "conyers-klondike",
@@ -308,8 +315,9 @@
         "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
         "locator": "Current Projects, entry 9: Conyers – Klondike 230 kV; Type and County/Region fields"
       },
-      "disposition": "pending",
-      "dispositionReason": "Accepted page observation awaiting normalization after the sample is connected."
+      "disposition": "imported",
+      "projectId": "ga-gpc-public:conyers-klondike",
+      "dispositionReason": "One accepted page observation; component scopes remain together and historical filings remain separate."
     },
     {
       "sourceId": "ashley-park",

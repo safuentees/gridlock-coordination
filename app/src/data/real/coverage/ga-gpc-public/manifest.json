@@ -16,13 +16,13 @@
   "sha256": "8188831eae7426228620ba3a8219e88306b47eba95505c32ac7d131efb736192",
   "geographicScope": "Georgia project catalog, including a Big Tazewell–Farley endpoint explicitly in Alabama; per-record state is supplied only when explicit.",
   "inventoryScope": "All ten Current Projects page entries: six transmission project/upgrade observations and four area-program capital contexts; no exclusions. Supporting notices are evidence, not additional rows.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 10,
-    "importedRecords": 6,
+    "importedRecords": 10,
     "excludedRows": 0,
     "failedRows": 0,
-    "pendingRows": 4,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [],
