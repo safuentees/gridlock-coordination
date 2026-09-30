@@ -16,13 +16,13 @@
   "sha256": "dc4f715aa51e4a201e36c06692728c8a845f0b417b1202e27d1d008e8e1a4774",
   "geographicScope": "Santee Cooper South Carolina public transmission planning scope; per-record states are not inferred.",
   "inventoryScope": "Complete union of 23 named 2025 IRP Appendix B headings and 12 public project-index cards: 24 retained observations, two concluded-work exclusions and nine supporting-page exclusions.",
-  "scope": "sample",
+  "scope": "full",
   "counts": {
     "sourceRows": 35,
-    "importedRecords": 6,
+    "importedRecords": 24,
     "excludedRows": 11,
     "failedRows": 0,
-    "pendingRows": 18,
+    "pendingRows": 0,
     "locatedRecords": 0
   },
   "exclusions": [

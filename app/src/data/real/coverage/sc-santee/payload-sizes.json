@@ -1,10 +1,10 @@
 {
   "sourceKey": "sc-santee",
   "editionId": "public-plans-snapshot-2026-09-30",
-  "scope": "sample",
-  "records": 6,
-  "compactUtf8Bytes": 26925,
-  "formattedDownloadUtf8Bytes": 34545,
+  "scope": "full",
+  "records": 24,
+  "compactUtf8Bytes": 91184,
+  "formattedDownloadUtf8Bytes": 115925,
   "measurement": "Source-only Dataset2 UTF-8 JSON including final newline; aggregate/export envelope can be larger.",
-  "datasetFileFormat": "formatted"
+  "datasetFileFormat": "compact"
 }
