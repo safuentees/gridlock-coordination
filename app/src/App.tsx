@@ -57,7 +57,7 @@ export function App() {
       <div className="flex min-w-0 flex-wrap items-center gap-3"><h1 className="text-2xl font-semibold">Gridlock</h1><Badge variant={mode === "demo" ? "secondary" : "outline"}>{mode === "demo" ? "Synthetic demo" : sourceOverride ? "Revised source" : "Source data"}</Badge><nav className="flex min-w-0 flex-wrap gap-2" aria-label="Workspaces">{([
         ["home", "Home", HouseIcon], ["explore", "Explore", MapIcon], ["outcomes", "Outcomes", ChartNoAxesCombinedIcon], ["readiness", "Data readiness", ListChecksIcon],
       ] as const).map(([destination, label, Icon]) => <Button key={destination} variant={workspace === destination ? "default" : "ghost"} aria-current={workspace === destination ? "page" : undefined} onClick={() => setWorkspace(destination)}><Icon aria-hidden="true" data-icon="inline-start" />{label}</Button>)}</nav></div>
-      <nav aria-label="Collection controls" className="flex min-w-0 flex-wrap items-center gap-2">
+      <div role="group" aria-label="Collection controls" className="flex min-w-0 flex-wrap items-center gap-2">
         {result.dataset && <Button variant="outline" onClick={openReviews}><BookmarkIcon aria-hidden="true" data-icon="inline-start" />Saved reviews</Button>}
         {result.dataset && <Dialog open={datasetOpen} onOpenChange={setDatasetOpen}>
           <DialogTrigger asChild><Button variant="outline"><DatabaseIcon aria-hidden="true" data-icon="inline-start" />Dataset</Button></DialogTrigger>
@@ -79,7 +79,7 @@ export function App() {
           </DialogContent>
         </Dialog>}
         <Button variant="outline" onClick={() => setMode(mode === "real" ? "demo" : "real")}>{mode === "real" ? "Use demo data" : "Use source data"}</Button>
-      </nav>
+      </div>
     </header>
     {savedSource.error && mode === "real" && <div role="status" className="flex max-h-[15dvh] min-h-0 shrink-0 flex-wrap items-center gap-3 overflow-auto border-b px-4 py-2"><p className="min-w-0 flex-1 text-sm [overflow-wrap:anywhere]">{savedSource.error}</p><Button variant="outline" size="sm" onClick={restoreSource}>Clear saved revision</Button></div>}
     <div className="min-h-0 min-w-0 flex-1 overflow-hidden">

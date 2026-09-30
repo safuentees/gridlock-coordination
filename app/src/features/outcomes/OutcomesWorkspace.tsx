@@ -62,7 +62,7 @@ export function OutcomesWorkspace({ dataset, options, analysis, onExplore, onRea
             {examples.length ? <ol className="divide-y">{examples.map((candidate) => <li key={candidate.id} className="space-y-2 py-3 first:pt-0 last:pb-0">
               <button type="button" className="min-w-0 text-left font-medium underline-offset-4 hover:underline focus-visible:underline" onClick={() => onExplore(candidate.id)}>
                 <span className="text-muted-foreground">#{candidate.rank} </span>{projectsById.get(candidate.projectIds[0])?.name ?? "Project unavailable"}
-                <span className="block text-sm">↔ {projectsById.get(candidate.projectIds[1])?.name ?? "Project unavailable"}</span>
+                <span className="block">↔ {projectsById.get(candidate.projectIds[1])?.name ?? "Project unavailable"}</span>
               </button>
               <dl className="grid grid-cols-2 gap-3 text-sm">
                 <div><dt className="text-xs text-muted-foreground">Center distance</dt><dd className="tabular-nums">{candidate.distanceMiles.toFixed(2)} mi</dd></div>

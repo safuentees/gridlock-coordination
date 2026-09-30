@@ -23,6 +23,7 @@ App places **Saved reviews** consistently in collection navigation and uses Expl
 | Explore results / browse | Collection tabs, query, filters and pagination | Browsing controls together above a single results scroller; pagination below | Current scenario/layout/save bands consume result height. Remove these bands; investigate tab overflow source and isolate tabs from content scrolling. |
 | Explore workspace / choose analysis/view | Scenario affects whole analysis; timeline/layout affect the view | One workspace area outside browsing body; applied scenario readable; timeline state explicit; Reset layout inside labeled Layout menu | Current scope mixed with list filters. Reuse controls and preserve scenario drafts, list state and measured map occlusion. |
 | Candidate/project detail / understand selection | Pair save/refresh, project evidence links, candidate navigation | Save beside selected pair; Back and Previous/Next retained; Evidence/Impact/Supporting retained | Current Save selected floats above results even without useful selection context. Keep metrics/uncertainty and both projects visible. |
+| Evidence/Impact / assess provenance or hypothetical assumptions | Item evidence; pair-specific assumptions and scenario save | Source references and limitations with evidence; assumptions/results/save within Impact | Reviewed existing implementations: units, date kinds, missing values, hypothetical labels and per-pair drafts already have useful scope. Retain content and calculation structure. |
 | Result rows / select evidence | Item selection | Consistent names/native identification; aligned center-distance and milestone-gap fields | Free-form metric sentence impedes comparison. Keep complete names, units, unknowns and location confidence; do not decorate every row. |
 | Timeline/scenario / inspect dates or apply criteria | View and analysis settings | Explicit applied versus draft state; close/reset/apply in relevant context | Review labels and bounded body; retain milestone versus construction meanings. |
 | Saved reviews / retain and compare findings | Collection selection/export/restore; item save/remove/show-current | Export with selected collection context; review save with item; Restore action in its tab | Review tab overflow, empty counts and export footer shown on irrelevant tabs. Preserve dirty drafts and restoration conflict rules. |
@@ -32,6 +33,8 @@ App places **Saved reviews** consistently in collection navigation and uses Expl
 | Map / explore geography | Map-local controls and selected geometry | Reserved to F20 | Source inspection only; preserve public props and account for new workspace control occlusion from Explorer. |
 
 Workers report concrete secondary findings/corrections, including retained working surfaces, in PRs; coordinator updates this table if the final scope differs. Do not add changes just to make every row have a diff.
+
+Implemented review outcome: navigation, results/detail controls, scenario status, timeline scrolling, review export context, readiness queues and revision/restore presentation received concrete corrections. Home kept its structure and omits Try demo when already in demo. Outcomes kept its conclusions and aligns pair metrics/labels. Evidence, Impact, RevisionPreview and the existing pages remain structurally intact. Tab overflow now belongs to padded, naturally sized wrappers rather than fixed-height TabsList elements; rows retain their separate scroller. Search remains mounted in Results, Detail and Collapsed. F20's independent map controls integrated without a composition contract change.
 
 ## Acceptance
 
@@ -43,3 +46,5 @@ Workers report concrete secondary findings/corrections, including retained worki
 ## Bounded validation
 
 Only coordinator runs at most one production build after composition, within five minutes; no duplicated typecheck/lint and no new framework. No calculation changes warrant a new core test. Review component lifetime, portal target, scroll boundaries and action scope in source. No Playwright/browser automation, screenshots, image analysis, visual verification or mobile audits. Do not claim source review proves usability or exercised interactions.
+
+Actual result: one build passed at 1a518aa with the existing Vite-loader and bundle-size warnings. The same bounded milestone ran F20's one representative map-helper case successfully. No additional F21 tests or visual checks; interactions remain unverified.
