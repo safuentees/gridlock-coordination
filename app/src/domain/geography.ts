@@ -26,6 +26,7 @@ export const geographicReferenceSchema = z.object({
   id: z.string().min(1), names: z.array(z.string().min(1)).min(1), kind: z.enum(["facility", "town", "county", "state"]),
   stateCodes: z.array(z.string()), sourceKeys: z.array(z.string()), projectIds: z.array(z.string()),
   representation: geographicRepresentationSchema,
+  projectFingerprints: z.record(z.string(), z.string().regex(/^[a-f0-9]{64}$/)).optional(),
 })
 export const geographicReferenceBundleSchema = z.object({
   version: z.literal(1), revision: z.string().min(1), retrievedOn: z.iso.date(),

@@ -47,3 +47,7 @@ GeographicRun is a versioned companion, not a Dataset import or automatic Projec
 ## Bounded checking
 
 Only coordinator: one existing production build plus one representative full-collection enrichment/cache/round-trip case per milestone, at most five minutes. No new test framework, exhaustive suite, browser/Playwright/screenshots/image/visual/mobile checks. Producer processing is implementation, not duplicate milestone verification. Source inspection establishes wiring only; do not claim interactive behavior exercised. Integrate small coherent PRs under current permissions and dispatch next ready owned slice immediately.
+
+First-connection root wiring owns only `ReadinessWorkspace.tsx`, `use-geography.ts` and `data/geography-session.ts`. Source evidence editor remains mounted in its own meaningful alternate view; automatic companion processing covers each active Dataset, including future imported revisions. Browser cache uses a separate per-mode IndexedDB store and malformed existing data blocks overwrite. File import/correction UI remains F28-R follow-on; exported companion is not a Dataset file.
+
+Exact-ID reference guard: curated BPA references also supply `projectFingerprints: Record<projectId, SHA256>` calculated from the accepted complete Project baseline excluding notes. Pipeline accepts an exact-ID seed only when its current source fingerprint matches; changed scope/edition/native evidence cannot reuse a yard point merely because the ID is unchanged. Non-ID contextual references omit this field.

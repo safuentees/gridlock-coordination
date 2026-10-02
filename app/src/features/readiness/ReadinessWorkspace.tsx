@@ -18,6 +18,8 @@ import { SourceCoverageDialog } from "@/features/coverage/SourceCoverageDialog"
 import { reportingGroups, reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-groups"
 import { visibleProjectNotes } from "@/lib/presentation"
 import { matchesProjectQuery } from "@/lib/project-search"
+import { GeographyPanel } from "./GeographyPanel"
+import { useGeography } from "./use-geography"
 import { EvidenceSources, LOCATION_METHODS, LocationEvidence, RevisionPreview } from "./RevisionPreview"
 
 interface ReadinessWorkspaceProps {
@@ -47,7 +49,17 @@ function initialDraft(project: Project): EditorDraft {
   }
 }
 
-export function ReadinessWorkspace({ dataset, onApply, onExploreProject }: ReadinessWorkspaceProps) {
+export function ReadinessWorkspace(props: ReadinessWorkspaceProps) {
+  const geography = useGeography(props.dataset)
+  const [view, setView] = useState("geography")
+  return <Tabs value={view} onValueChange={setView} className="flex h-full min-h-0 min-w-0 flex-col overflow-hidden">
+    <TabsList className="shrink-0" aria-label="Data readiness views"><TabsTrigger value="geography">Geographic coverage</TabsTrigger><TabsTrigger value="evidence">Evidence revisions</TabsTrigger></TabsList>
+    <TabsContent forceMount value="geography" hidden={view !== "geography"} className="min-h-0 min-w-0 flex-1 overflow-hidden data-[state=inactive]:hidden"><GeographyPanel dataset={props.dataset} {...geography} onExploreProject={props.onExploreProject} /></TabsContent>
+    <TabsContent forceMount value="evidence" hidden={view !== "evidence"} className="min-h-0 min-w-0 flex-1 overflow-hidden data-[state=inactive]:hidden"><EvidenceWorkspace {...props} /></TabsContent>
+  </Tabs>
+}
+
+function EvidenceWorkspace({ dataset, onApply, onExploreProject }: ReadinessWorkspaceProps) {
   const formId = useId()
   const [queue, setQueue] = useState<Queue>("missing")
   const [search, setSearch] = useState("")
