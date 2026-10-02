@@ -1,3 +1,22 @@
+# Highest-priority milestone — F28 full-collection geographic enrichment
+
+Selected October 1, 2026. [Contract, seven capability tasks and exact ownership](features/F28-geographic-enrichment/spec.md). Covers all 14,923 current records and future imports; processed-with-reason is required, forced coordinates are forbidden. Prior F00–F27 completion and pending BPA work below are preserved, not restarted.
+
+| Task | Owner | Ready / dependency | Completion |
+|---|---|---|---|
+| F28-C shared contract | coordinator | first commit | Shared point/endpoints/area/provenance/outcome schemas and interfaces before parallel work |
+| F28-A clues and full-collection pipeline | core | C | Every record processed, contextual match/ambiguity/reason plus cache reuse |
+| F28-B reusable references/geocoding | source_discovery | C | Complete reusable reference datasets; source GIS/facility-first passes across high-volume inventories |
+| F28-D geographic coverage UI | ui | C; integrates A/B | Full reachable collection, five coverage states and evidence/limitations |
+| F28-R review/corrections/updates | coordinator, then core/ui | A/D; cache starts immediately | Cache/download, repeat updates, explicit decisions/corrections/import preserve better evidence |
+| F28-M map/list representations | map-ui; root shell handoff | A/B/D and exact map handoff | Distinct approximate points/endpoints/areas with synchronized selection and all rows accessible |
+| F28-E exploratory proximity | core, then ui | A/M; separate calculation contract | Labeled uncertainty-aware exploration; strict candidates and unknown owners preserved |
+| F28-F full-scope completion | coordinator + producer owners | A–R | All declared inputs processed across applicable references, unresolved reasons and source totals reconciled |
+
+First integration reuses native locations/BPA exact-ID evidence and complete public administrative references, runs every record, and connects the result to Data readiness. This does not close F28; map/list, exploratory calculations, correction UI and deeper facility matching remain explicit follow-on capabilities. Sources with access barriers do not block processing available records.
+
+---
+
 ---
 setup: ready
 run_start: 2026-09-30
