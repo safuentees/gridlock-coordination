@@ -80,9 +80,9 @@ The [US coverage register](us-coverage/us-register.json) contains 14,923 source 
 
 After source choice, coordinator activates F26-C1 (shared validation/migration/eligibility), then assigns the exact source-specific F26-I1 ingestion and F26-I2 integration tasks already scoped in the spec. Producer and consumer work can overlap after that contract; connect the first batch before complete extraction. After integration, continue the full inventory and subsequent qualified F27 adapters without requesting the same scope approval again. Independent adapters may run in parallel in separate owned files/worktrees. Preserve map-ui's current interface/ownership and isolated synthetic density work. Worker assignment below is recorded; the coordinator dispatches workers directly after the C1 contract commit.
 
-## Current milestone and assignments
+## Preserved F27 milestone history and assignments
 
-**F27-BPA-E2 in progress:** [accepted map-location revisions](features/F27-us-regional-expansion/bpa-location-revisions/spec.md). The six-decision report is complete; coordinator accepts three general pins only, leaving three locations unresolved. Core owns the guarded helper, UI owns the two Readiness consumers, coordinator owns accepted JSON/shared guard/register/checks. Parallel work starts after the contract commit; no map or matching changes.
+**F27-BPA-E2 incorporated into F28:** [accepted map-location revisions](features/F27-us-regional-expansion/bpa-location-revisions/spec.md). The six-decision report is complete; coordinator accepts three general pins only, leaving three locations unresolved. Core owns the guarded helper, UI owns the two Readiness consumers, coordinator owns accepted JSON/shared guard/register/checks. Its report/helper/guarded contract are retained; broader F28 companion processing replaces the interrupted BPA-only UI assignment.
 
 **F27 tenth increment complete through PR154.** Alabama six, Georgia ten and AEP eight followed thirteen connected sample observations. The shared Source coverage dialog replaces growing edition paragraphs in Home/Outcomes and adds consistent access from Readiness; it separates active counts, imported scopes and four assessed gaps. Display-only source-note curation preserves raw evidence and exceptions. Coordinator's one build and representative source/revision/coverage/copy case passed at 26f3091, 13:08:50–13:09:18 UTC (28 seconds): 14,923 records, 113 centers, six unchanged candidates, 28,417 reconciled rows, preserved local owner/notes and 74,469,266-byte import round trip. Thirty-two JSON assets; initial JS 864,908 bytes. Existing Vite-loader/large-chunk warnings remain; no browser/visual/mobile/persistence-interaction checks. F27-BPA-E1 now assesses six exact native point roles; OGF qualification awaits legitimately accessible data. National scope remains incomplete.
 
@@ -131,11 +131,11 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
-| map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | F27-BPA-E1 six point-role decisions complete in PR166. | Retain worktree; no more source retrieval or runtime edits for this evidence increment. |
-| core | F27-BPA-E2 guarded map-location helper in progress from 0393a29. | Only data/map-location-proposals.ts and helper receipt; preserve canonical calculations. |
-| coordinator | F27-BPA-E2 contract accepted; PR167 integrates three map-only revisions. | Root owns accepted JSON/shared guard/register/merge/checks; preserve untracked duplicates and map trial. |
-| ui | F27-BPA-E2 readiness suggestions/preview in progress from 0393a29. | Only ReadinessWorkspace.tsx, RevisionPreview.tsx and UI receipt; no map/shared files. |
+| map-ui | F22/F23/F26 complete; F28-M ownership retained, awaiting exact handoff after first pipeline connection. | Map worktrees clean; prior trial files preserved, server not currently listening. No map edits during A/B/D. |
+| source_discovery / ingestion | F28-B reusable public Census area/BPA references in progress. | Only scripts/enrichment, data/geography/references.json, reference documentation and receipt. |
+| core | F28-A full-collection clue/matching/cache pipeline in progress; BPA helper preserved. | Only enrichment/clues.ts, pipeline.ts, index.ts and receipt; strict calculations unchanged. |
+| coordinator | F28-C committed; automatic processing/cache/Readiness connection in PR169. | Root owns shared contract/hook/cache/wrapper/integration and sole checks; local Explorer edit preserved. |
+| ui | F28-D full-collection GeographyPanel in progress; no BPA UI edits to recover. | Only GeographyPanel.tsx and receipt; shared wrapper stays with root. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
