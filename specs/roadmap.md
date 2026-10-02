@@ -113,10 +113,10 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
 | map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | APC and Georgia complete in milestone branch. Next [F27-BPA-E1](features/F27-us-regional-expansion/bpa-location-evidence/spec.md): six native point-to-project evidence decisions. | Exact bpa-location-evidence qualification/sample/receipt only; no runtime/map edits. |
-| core | AEP eight-record subset complete. Next core/revision assignment depends on accepted BPA point-role evidence. | Retain free worktree; no new core or source edits until the evidence contract. |
-| coordinator | PR154 completed; accept BPA point-role decisions and define a guarded revision contract if evidence supports it. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
-| ui | [F27-COV1](features/F27-us-regional-expansion/source-coverage/spec.md) complete through PR154. [F27-COV2](features/F27-us-regional-expansion/source-copy/spec.md) complete; OGF qualification records an access-form requirement. Next UI work depends on accepted BPA revision needs. | Retain free worktree; no map or shared-file changes without an explicit handoff. |
+| source_discovery / ingestion | F27-BPA-E1 six point-role decisions complete in PR166. | Retain worktree; no more source retrieval or runtime edits for this evidence increment. |
+| core | F27-BPA-E2 guarded map-location helper in progress from 0393a29. | Only data/map-location-proposals.ts and helper receipt; preserve canonical calculations. |
+| coordinator | F27-BPA-E2 contract accepted; PR167 integrates three map-only revisions. | Root owns accepted JSON/shared guard/register/merge/checks; preserve untracked duplicates and map trial. |
+| ui | F27-BPA-E2 readiness suggestions/preview in progress from 0393a29. | Only ReadinessWorkspace.tsx, RevisionPreview.tsx and UI receipt; no map/shared files. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
