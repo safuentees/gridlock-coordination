@@ -46,6 +46,7 @@ export const geographicRunSchema = z.object({
   version: z.literal(1), pipelineVersion: z.string().min(1), referenceRevision: z.string().min(1),
   mode: z.enum(["real", "demo"]), generatedAt: z.iso.datetime(), collectionTitle: z.string(),
   records: z.array(geographicRecordSchema),
+  retainedReviews: z.array(geographicRecordSchema).optional(), // Removed records keep analyst decisions outside active coverage.
 }).refine(run => new Set(run.records.map(row => row.projectId)).size === run.records.length, "One geographic outcome per stable project ID")
 export type GeographicRepresentation = z.infer<typeof geographicRepresentationSchema>
 export type GeographicClue = z.infer<typeof geographicClueSchema>
