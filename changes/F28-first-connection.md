@@ -25,3 +25,7 @@ Local integration is committed on `codex/F28-geographic-enrichment`. Publishing 
 ## Remaining F28 work
 
 The current result is an early connection, not completion. It exposes where coverage is coarse or unavailable. The next high-value work is reliable official source-GIS/facility matching for the entire unresolved collection, followed by approximate map/list rendering, explicit review and correction, uncertainty-aware exploratory proximity, and final coverage reconciliation. No national substation reference was found in the initial source survey; gated or restricted sources and bulk public geocoder calls remain excluded. If a record has no permitted supporting evidence, it stays accessible with its unresolved reason.
+
+## Subsequent local increments
+
+After the first case, PR173 added the immutable fingerprint-bound review helper, the coordinator wired accepted/rejected/corrected decisions through the separate companion cache, and PR174 added selected-record review controls with cited correction forms. Drafts survive selection/tab/workspace navigation while mounted; cross-session draft storage and companion import preview are not part of this increment. The map-only F28-M task is assigned in the existing map chat. These increments are integrated locally on the isolated feature branch and remain subject to a successful publish/merge; the primary checkout's unrelated uncommitted files are preserved.
