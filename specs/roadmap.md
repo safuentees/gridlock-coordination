@@ -31,6 +31,17 @@ R3 is now integrated: the [recovery case](../changes/F28-draft-recovery-check.md
 
 B2 qualification is complete after 8.3 active minutes. Four complete public extracts total 12,263,617,346 published bytes; none was downloaded. US metadata has 73,305 substation elements and only 671 nodes; independently timed counts are not full-inventory reconciliation. Useful follow-on coverage requires explicitly unverified facility footprints/extents, exact Census polygon context and ODbL attribution/export handling. This new reference category is flagged for C2; it is not silently treated as native/verified evidence. No public access blocker remains, but representation/source-use agreement and isolated PBF resources/tooling block producer readiness. C2 is the coordinator's next concrete assignment; core/UI/map consumers await its committed interfaces.
 
+## Queued after F28 — F29 illuminated density
+
+Selected October 3, 2026. [Two-task feature spec](features/F29-illuminated-density/spec.md). This presentation enhancement does not displace geographic enrichment or preceding map/UI claims. The existing `map-ui` owner (the separate **Chat 1 Unrelated** chat) retains implementation ownership; coordinator remains merge and check owner. No application changes are assigned now.
+
+| Task | User purpose / inputs | Owner | Ready / dependency | Exact file boundary | Observable completion |
+|---|---|---|---|---|---|
+| F29-A illuminated density rendering | Make existing square concentrations easier to distinguish; use the integrated hierarchy, final density values and existing map layers | map-ui | **Queued:** F28-F recorded complete; all preceding map/UI assignments integrated and their overlapping claims released | `app/src/features/explorer/density-map/{density-layers.ts,MapLibreProjectMap.tsx,DeckOverlay.tsx,density-style.ts}`, `changes/F29-A.md` | Directional/ambient lighting and shaded columns, muted stone basemap and matching teal-to-amber metric legend; counts, units, precision, cell/project selection and overlays preserved |
+| F29-B interruptible entrance | Orient first entry without delaying work; use A's final presentation plus visibility, interaction and reduced-motion state | map-ui | **Queued:** F29-A integrated; same gate and no overlapping claim | `app/src/features/explorer/ProjectMap.tsx`, `app/src/features/explorer/density-map/{MapLibreProjectMap.tsx,density-layers.ts,density-entrance.ts}`, `changes/F29-B.md` | One approximately one-second presentation fade/rise; final facts throughout; immediate completion on interaction/reduced motion; no camera choreography or replay across filtering/navigation |
+
+Coordinator dispatches A directly when the integration gate clears, then records A completion and dispatches B after its small PR merges. Use separate `codex/F29-A-illuminated-density` and `codex/F29-B-density-entrance` branches/worktrees from current main, one implementation task active for map-ui. This is an integration-event handoff under the existing authorized messaging workflow, not an installed background scheduler. UI has confirmed no active map-file claim; `Explorer.tsx`, `App.tsx`, shared components and calculations remain outside F29 ownership. Any future shared UI change needs an exact coordinator/UI handoff before editing. Experimental cast shadows are optional; hexagonal aggregation is deferred. Named-checker limits remain unchanged.
+
 ---
 
 ---
