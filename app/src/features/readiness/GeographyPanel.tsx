@@ -15,10 +15,12 @@ import type { DataMode, Dataset } from "@/domain/schema"
 import type { GeographicRestoreAction, GeographicRestorePreview } from "@/domain/geographic-restore"
 import { GEOGRAPHY_IMPORT_MAX_BYTES } from "@/data/geography-session"
 import { geographicCoverage } from "@/enrichment"
+import { getGeographicCoverageReport } from "@/enrichment/coverage"
 import type { GeographicReviewInput } from "@/enrichment/review"
 import { matchesProjectQuery } from "@/lib/project-search"
 import { reportingGroupLabel, reportingGroups } from "@/lib/reporting-groups"
 import { EvidenceSources } from "./RevisionPreview"
+import { GeographyCoverage } from "./GeographyCoverage"
 
 export interface GeographyPanelProps {
   dataset: Dataset
@@ -253,6 +255,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   const activeRun = run?.mode === dataset.mode ? run : null
   const outcomes = useMemo(() => new Map(activeRun?.records.map(record => [record.projectId, record]) ?? []), [activeRun])
   const coverage = useMemo(() => geographicCoverage(activeRun, dataset.projects), [activeRun, dataset.projects])
+  const coverageReport = useMemo(() => getGeographicCoverageReport(activeRun, dataset.projects), [activeRun, dataset.projects])
   const groups = useMemo(() => reportingGroups(dataset.projects), [dataset.projects])
   const projects = useMemo(() => {
     const query = browsing.search.trim().toLocaleLowerCase()
@@ -426,7 +429,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   return <section className="flex h-full min-h-0 min-w-0 flex-col gap-4 overflow-hidden" aria-label="Geographic coverage workspace">
     <header className="shrink-0 space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Geographic coverage</h2>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div>
+        <div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Geographic coverage</h2>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}<GeographyCoverage report={coverageReport} projects={dataset.projects} /></div>
         <div className="flex flex-wrap gap-2">
           {onPreviewRestore && onRestore && <Dialog open={restoreOpen} onOpenChange={setRestoreOpen}>
             <DialogTrigger asChild><Button variant="outline" disabled={busy || savingKey !== null || !activeRun}>Restore reviews</Button></DialogTrigger>
