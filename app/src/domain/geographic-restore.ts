@@ -4,5 +4,6 @@ export type GeographicRestoreAction = "restore-review" | "retain-review" | "dupl
 export interface GeographicRestorePreview {
   base: GeographicRun
   incoming: GeographicRun
+  protectedProjectIds: string[]
   entries: { projectId: string; action: GeographicRestoreAction; reason: string }[]
 }
