@@ -14,6 +14,8 @@ import { GEOGRAPHIC_STATUSES, geographicRepresentationSchema, type GeographicRec
 import type { DataMode, Dataset } from "@/domain/schema"
 import type { GeographicRestoreAction, GeographicRestorePreview } from "@/domain/geographic-restore"
 import type { GeographicReviewDraft as ReviewDraft } from "@/domain/geographic-drafts"
+import type { GeographicDraftRestoreAction, GeographicDraftRestorePreview, GeographicDraftSource } from "@/domain/geographic-draft-restore"
+import { mergeGeographicDraftRestore, parseGeographicDraftImport, previewGeographicDraftRestore } from "@/data/geographic-draft-restore"
 import { GEOGRAPHY_IMPORT_MAX_BYTES } from "@/data/geography-session"
 import { geographicCoverage } from "@/enrichment"
 import { getGeographicCoverageReport } from "@/enrichment/coverage"
@@ -111,6 +113,25 @@ interface RestoreState {
   page?: number
   filter?: GeographicRestoreAction | "all"
 }
+interface DraftRestoreState {
+  file?: File
+  text?: string
+  candidate?: { preview: GeographicDraftRestorePreview; file: File; draftKey: string; sourceKey: string }
+  error?: string
+  notice?: string
+  applied?: boolean
+  page?: number
+  filter?: GeographicDraftRestoreAction | "all"
+}
+const DRAFT_RESTORE_LABELS: Record<GeographicDraftRestoreAction, string> = {
+  restore: "Restore draft",
+  "restore-stale": "Restore for re-review",
+  "retain-absent": "Retain outside collection",
+  duplicate: "Already present or no edits",
+  conflict: "Conflict — keep local draft",
+  "not-processed": "Await processing",
+}
+const DRAFT_RESTORE_ACTIONS = Object.keys(DRAFT_RESTORE_LABELS) as GeographicDraftRestoreAction[]
 const RESTORE_LABELS: Record<GeographicRestoreAction, string> = {
   "restore-review": "Restore active review",
   "retain-review": "Retain outside collection",
@@ -207,10 +228,13 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
       setBrowsingByMode(previous => ({ ...previous, [dataset.mode]: { ...previous[dataset.mode], selectedId: projectToReveal.id } }))
     }
   }, [projectToReveal, dataset])
-  const { reviews, setReviews, dismissStoredDraft, hydrated: draftsHydrated, storage: draftStorage, download: downloadDrafts, retrySave: retryDraftSave } = useGeographicDrafts(dataset.mode)
+  const { reviews, setReviews, dismissStoredDraft, hydrated: draftsHydrated, storage: draftStorage, download: downloadDrafts, retrySave: retryDraftSave, draftSession, applyDraftSession } = useGeographicDrafts(dataset.mode)
   const [savingKey, setSavingKey] = useState<string | null>(null)
   const saving = useRef(false)
   const [restoreOpen, setRestoreOpen] = useState(false)
+  const [draftRestoreOpen, setDraftRestoreOpen] = useState(false)
+  const [draftRestores, setDraftRestores] = useState<Partial<Record<DataMode, DraftRestoreState>>>({})
+  const draftRestoreList = useRef<HTMLDivElement>(null)
   const [restores, setRestores] = useState<Partial<Record<DataMode, RestoreState>>>({})
   const [restoreOperation, setRestoreOperation] = useState<"preview" | "apply" | null>(null)
   const restoreLock = useRef(false)
@@ -282,6 +306,31 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   const pageRestoreEntries = filteredRestoreEntries.slice(restorePage * PAGE_SIZE, (restorePage + 1) * PAGE_SIZE)
   const restoreNames = useMemo(() => new Map(dataset.projects.map(project => [project.id, project.name])), [dataset.projects])
   const importLimitMiB = (GEOGRAPHY_IMPORT_MAX_BYTES / (1024 * 1024)).toLocaleString()
+  const draftSources = useMemo<GeographicDraftSource[]>(() => dataset.projects.map(project => {
+    const outcome = outcomes.get(project.id)
+    return { projectId: project.id, inputFingerprint: outcome && outcome.status !== "not-processed" ? outcome.inputFingerprint : null }
+  }), [dataset.projects, outcomes])
+  const draftSourceKey = useMemo(() => JSON.stringify(draftSources), [draftSources])
+  const draftSessionKey = JSON.stringify(draftSession)
+  const draftRestoreState = draftRestores[dataset.mode] ?? {}
+  const draftCandidate = draftRestoreState.candidate
+  const draftRestoreInvalid = !!draftCandidate && (draftCandidate.file !== draftRestoreState.file || draftCandidate.draftKey !== draftSessionKey || draftCandidate.sourceKey !== draftSourceKey || busy || !draftsHydrated)
+  const draftEntries = draftCandidate?.preview.entries ?? []
+  const draftCounts = useMemo(() => {
+    const counts: Record<GeographicDraftRestoreAction, number> = { restore: 0, "restore-stale": 0, "retain-absent": 0, duplicate: 0, conflict: 0, "not-processed": 0 }
+    for (const entry of draftCandidate?.preview.entries ?? []) counts[entry.action]++
+    return counts
+  }, [draftCandidate])
+  const draftCompatibleCount = draftCounts.restore + draftCounts["restore-stale"] + draftCounts["retain-absent"]
+  const draftFilter = draftRestoreState.filter ?? "all"
+  const filteredDraftEntries = draftEntries.filter(entry => draftFilter === "all" || entry.action === draftFilter)
+  const draftPageCount = Math.max(1, Math.ceil(filteredDraftEntries.length / PAGE_SIZE))
+  const draftPage = Math.min(draftRestoreState.page ?? 0, draftPageCount - 1)
+  const pageDraftEntries = filteredDraftEntries.slice(draftPage * PAGE_SIZE, (draftPage + 1) * PAGE_SIZE)
+  const incomingDrafts = useMemo(() => new Map(draftCandidate?.preview.incoming.entries.map(entry => [entry.projectId, entry]) ?? []), [draftCandidate])
+  const draftRestoreContext = useRef({ mode: dataset.mode, draftSessionKey, draftSourceKey, busy, draftsHydrated })
+  draftRestoreContext.current = { mode: dataset.mode, draftSessionKey, draftSourceKey, busy, draftsHydrated }
+  useLayoutEffect(() => { if (draftRestoreList.current) draftRestoreList.current.scrollTop = 0 }, [draftPage, draftFilter, draftCandidate])
   useLayoutEffect(() => {
     if (restoreList.current) restoreList.current.scrollTop = 0
   }, [restorePage, restoreFilter, restoreCandidate])
@@ -385,6 +434,43 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
     }
   }
 
+  function updateDraftRestore(mode: DataMode, update: Partial<DraftRestoreState>) {
+    setDraftRestores(previous => ({ ...previous, [mode]: { ...previous[mode], ...update } }))
+  }
+  async function previewDraftRestore() {
+    if (!draftRestoreState.file || !draftsHydrated || busy || savingKey !== null || restoreLock.current) return
+    const mode = dataset.mode
+    const file = draftRestoreState.file
+    const context = draftRestoreContext.current
+    restoreLock.current = true
+    setRestoreOperation("preview")
+    updateDraftRestore(mode, { error: undefined, notice: undefined, applied: false })
+    try {
+      if (file.size > GEOGRAPHY_IMPORT_MAX_BYTES) throw new Error(`Choose a draft file no larger than ${importLimitMiB} MiB.`)
+      const text = draftRestoreState.text ?? await file.text()
+      updateDraftRestore(mode, { text })
+      const current = draftRestoreContext.current
+      if (current.mode !== mode || current.draftSessionKey !== context.draftSessionKey || current.draftSourceKey !== context.draftSourceKey || current.busy || !current.draftsHydrated) throw new Error("The active sources or unfinished drafts changed while reading the file. Preview again.")
+      const preview = previewGeographicDraftRestore(draftSession, parseGeographicDraftImport(text), draftSources)
+      updateDraftRestore(mode, { candidate: { preview, file, draftKey: draftSessionKey, sourceKey: draftSourceKey }, page: 0, filter: "all" })
+    } catch (failure) {
+      updateDraftRestore(mode, { error: failure instanceof Error ? failure.message : "Drafts could not be previewed. Your current work is unchanged." })
+    } finally {
+      restoreLock.current = false
+      setRestoreOperation(null)
+    }
+  }
+  function restoreDrafts() {
+    if (!draftCandidate || draftRestoreInvalid || draftRestoreState.applied || !draftCompatibleCount || busy || !draftsHydrated || savingKey !== null || restoreLock.current) return
+    try {
+      const merged = mergeGeographicDraftRestore(draftSession, draftCandidate.preview, draftSources)
+      applyDraftSession(merged)
+      updateDraftRestore(dataset.mode, { applied: true, error: undefined, notice: `${draftCompatibleCount.toLocaleString()} unfinished drafts restored to this session. Reviewed geography is unchanged.` })
+    } catch (failure) {
+      updateDraftRestore(dataset.mode, { error: failure instanceof Error ? failure.message : "Drafts could not be restored. The file, preview and current work are retained.", notice: undefined })
+    }
+  }
+
   function changeBrowsing(update: Partial<BrowsingState>, resetPage = false) {
     setBrowsingByMode(previous => ({
       ...previous,
@@ -401,6 +487,42 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Geographic coverage</h2>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}<GeographyCoverage report={coverageReport} projects={dataset.projects} /></div>
         <div className="flex flex-wrap gap-2">
+          <Dialog open={draftRestoreOpen} onOpenChange={setDraftRestoreOpen}>
+            <DialogTrigger asChild><Button variant="outline" disabled={!draftsHydrated || busy || savingKey !== null || restoreOperation !== null}>Restore drafts</Button></DialogTrigger>
+            <DialogContent className="flex h-[min(85dvh,48rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-3xl">
+              <DialogHeader className="shrink-0 pr-8"><DialogTitle>Restore drafts</DialogTitle><DialogDescription>Recover unfinished review fields from a downloaded draft file. This does not apply reviewed geography.</DialogDescription></DialogHeader>
+              <div className="shrink-0 space-y-2">
+                <Label htmlFor={`${id}-draft-file`}>Unfinished geographic drafts JSON</Label>
+                <div className="flex min-w-0 flex-wrap items-center gap-2"><Input key={dataset.mode} id={`${id}-draft-file`} type="file" accept="application/json,.json" className="min-w-0 flex-1" disabled={restoreOperation !== null} onChange={event => {
+                  const file = event.target.files?.[0]
+                  if (file) updateDraftRestore(dataset.mode, { file, text: undefined, error: undefined, notice: undefined, applied: false })
+                }} /><Button variant="outline" disabled={!draftRestoreState.file || !draftsHydrated || busy || savingKey !== null || restoreOperation !== null} onClick={previewDraftRestore}>{restoreOperation === "preview" ? "Reading file…" : "Preview drafts"}</Button></div>
+                <p className="text-xs text-muted-foreground [overflow-wrap:anywhere]">{draftRestoreState.file ? `Selected: ${draftRestoreState.file.name}. ` : ""}Maximum {importLimitMiB} MiB. Current mode: {dataset.mode === "demo" ? "Synthetic demo" : "Source data"}.</p>
+              </div>
+              {draftCandidate && <>
+                <div className="max-h-28 shrink-0 space-y-1 overflow-auto text-xs text-muted-foreground [overflow-wrap:anywhere]">
+                  <p>File mode: {draftCandidate.preview.incoming.mode === "demo" ? "Synthetic demo" : "Source data"}. Existing unfinished drafts stay unchanged. Changed-source drafts need re-review; absent records stay outside the active collection. Unprocessed records must be processed before restoration.</p>
+                  {draftCandidate.file !== draftRestoreState.file && <p>Displayed preview is from {draftCandidate.file.name}. Preview the selected file before restoring.</p>}
+                </div>
+                <dl className="grid shrink-0 grid-cols-3 gap-x-4 gap-y-2" aria-label="Draft recovery summary">{DRAFT_RESTORE_ACTIONS.map(action => <div key={action} className="min-w-0"><dt className="text-xs text-muted-foreground">{DRAFT_RESTORE_LABELS[action]}</dt><dd className="font-medium tabular-nums">{draftCounts[action].toLocaleString()}</dd></div>)}</dl>
+                <div className="flex shrink-0 flex-wrap items-center justify-between gap-2"><Select value={draftFilter} onValueChange={value => updateDraftRestore(dataset.mode, { filter: value as DraftRestoreState["filter"], page: 0 })}><SelectTrigger aria-label="Filter draft recovery entries" className="min-w-0 max-w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All entries</SelectItem>{DRAFT_RESTORE_ACTIONS.map(action => <SelectItem key={action} value={action}>{DRAFT_RESTORE_LABELS[action]}</SelectItem>)}</SelectContent></Select><p className="text-xs text-muted-foreground">{draftCompatibleCount.toLocaleString()} restorable drafts</p></div>
+              </>}
+              <div ref={draftRestoreList} className="min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain [overflow-wrap:anywhere]" tabIndex={0} role="region" aria-label="Draft recovery affected records">
+                {draftCandidate ? pageDraftEntries.length ? <ul className="divide-y">{pageDraftEntries.map(entry => {
+                  const incoming = incomingDrafts.get(entry.projectId)
+                  return <li key={entry.projectId} className="space-y-2 py-3 first:pt-0"><p className="font-medium">{restoreNames.get(entry.projectId) ?? "Not in the active collection"}</p><p className="text-xs text-muted-foreground">{entry.projectId}</p><p className="text-sm">{DRAFT_RESTORE_LABELS[entry.action]}</p><p className="text-xs text-muted-foreground">{entry.reason}</p>{incoming && <details className="rounded-lg border p-3"><summary className="cursor-pointer font-medium">Unfinished {incoming.draft.decision} review</summary><div className="mt-3 space-y-2 text-sm"><p>{incoming.draft.reason || "Review reason is unfinished."}</p>{incoming.draft.decision === "corrected" && <p>{incoming.draft.kind}: {incoming.draft.label || "Geographic label is unfinished."}</p>}<p className="text-xs text-muted-foreground">Partial fields and the original evidence baseline are preserved for review.</p></div></details>}</li>
+                })}</ul> : <p className="text-sm text-muted-foreground">No entries in this view.</p> : <p className="text-sm text-muted-foreground">Choose a downloaded draft file to preview unfinished work.</p>}
+              </div>
+              {draftCandidate && <div className="flex shrink-0 flex-wrap items-center justify-between gap-2" aria-label="Draft recovery pagination"><p className="text-xs text-muted-foreground" aria-live="polite">{filteredDraftEntries.length ? `${draftPage * PAGE_SIZE + 1}–${Math.min((draftPage + 1) * PAGE_SIZE, filteredDraftEntries.length)} of ${filteredDraftEntries.length.toLocaleString()}` : "0 entries"}</p><div className="flex gap-2"><IconButton label="Previous draft recovery page" variant="outline" disabled={draftPage === 0} onClick={() => updateDraftRestore(dataset.mode, { page: draftPage - 1 })}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton label="Next draft recovery page" variant="outline" disabled={draftPage + 1 >= draftPageCount} onClick={() => updateDraftRestore(dataset.mode, { page: draftPage + 1 })}><ChevronRightIcon aria-hidden="true" /></IconButton></div></div>}
+              <div className="max-h-28 shrink-0 space-y-2 overflow-auto">
+                {draftRestoreInvalid && !draftRestoreState.applied && <p role="status" className="text-sm text-muted-foreground">The file, active sources or unfinished drafts changed. Preview again before restoring.</p>}
+                {draftRestoreState.error && <p role="alert" className="text-sm text-destructive">{draftRestoreState.error}</p>}
+                {draftRestoreState.notice && <p role="status" className="text-sm">{draftRestoreState.notice}</p>}
+                {draftStorage[dataset.mode].error && <p role="alert" className="text-sm text-destructive">{draftStorage[dataset.mode].error}</p>}
+              </div>
+              <DialogFooter className="shrink-0">{draftStorage[dataset.mode].error && <Button variant="outline" onClick={() => downloadDrafts(dataset.mode)}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download drafts</Button>}<Button onClick={restoreDrafts} disabled={!draftCandidate || draftRestoreInvalid || draftRestoreState.applied || !draftCompatibleCount || !draftsHydrated || busy || savingKey !== null || restoreOperation !== null}>Restore unfinished drafts</Button></DialogFooter>
+            </DialogContent>
+          </Dialog>
           {onPreviewRestore && onRestore && <Dialog open={restoreOpen} onOpenChange={setRestoreOpen}>
             <DialogTrigger asChild><Button variant="outline" disabled={busy || savingKey !== null || !activeRun}>Restore reviews</Button></DialogTrigger>
             <DialogContent className="flex h-[min(85dvh,48rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-3xl">
