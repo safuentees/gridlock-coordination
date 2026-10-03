@@ -3,7 +3,9 @@ import type { Dataset } from "@/domain/schema"
 import { geographicReferenceBundleSchema, type GeographicReferenceBundle, type GeographicRun } from "@/domain/geography"
 import { enrichCollection } from "@/enrichment"
 import { reviewGeographicOutcome, type GeographicReviewInput } from "@/enrichment/review"
-import { downloadGeographicRun, readGeographySession, saveGeographySession } from "@/data/geography-session"
+import { previewGeographicRestore, restoreGeographicReviews } from "@/enrichment/restore"
+import type { GeographicRestorePreview } from "@/domain/geographic-restore"
+import { downloadGeographicRun, parseGeographicRun, readGeographySession, saveGeographySession } from "@/data/geography-session"
 
 let referencePromise: Promise<GeographicReferenceBundle> | null = null
 function loadReferences(): Promise<GeographicReferenceBundle> {
@@ -46,7 +48,7 @@ export function useGeography(dataset: Dataset | null) {
   const current = state.base === dataset ? state : {run:null,busy:Boolean(dataset),progress:null,error:null}
   const onReview = async (projectId: string, input: GeographicReviewInput) => {
     const latest = current.run
-    if (!dataset || activeDataset.current !== dataset || !latest || latest.mode !== dataset.mode) throw new Error("The active geographic results changed. Reopen this record before reviewing it.")
+    if (!dataset || activeDataset.current !== dataset || current.busy || !latest || latest.mode !== dataset.mode) throw new Error("The active geographic results changed. Reopen this record before reviewing it.")
     try {
       const reviewed = reviewGeographicOutcome(latest, projectId, input)
       cached.current[dataset.mode] = reviewed
@@ -62,7 +64,28 @@ export function useGeography(dataset: Dataset | null) {
       throw new Error(message)
     }
   }
-  return { ...current, onProcess: () => setRevision(value => value + 1), onReview, onDownload: () => {
+  const onPreviewRestore = (text: string, protectedProjectIds: readonly string[]): GeographicRestorePreview => {
+    if (!dataset || activeDataset.current !== dataset || current.busy || !current.run) throw new Error("Wait for current geographic processing to finish before previewing reviews.")
+    return previewGeographicRestore(current.run, parseGeographicRun(text), protectedProjectIds)
+  }
+  const onRestore = async (preview: GeographicRestorePreview, protectedProjectIds: readonly string[]) => {
+    if (!dataset || activeDataset.current !== dataset || current.busy || !current.run) throw new Error("The active geographic results changed. Make a new preview before restoring.")
+    const base = current.run
+    const restored = restoreGeographicReviews(base, preview, protectedProjectIds)
+    // Future source revisions inherit the decisions even if persistence is unavailable.
+    cached.current[dataset.mode] = restored
+    setState(previous => previous.base === dataset && previous.run === base ? { ...previous, busy: true, error: null } : previous)
+    try {
+      const error = await saveGeographySession(restored)
+      if (error) throw new Error(error)
+      setState(previous => previous.base === dataset && previous.run === base ? { ...previous, run: restored, busy: false, error: null } : previous)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Geographic reviews could not be restored. The preview is preserved."
+      setState(previous => previous.base === dataset && previous.run === base ? { ...previous, busy: false, error: message } : previous)
+      throw new Error(message)
+    }
+  }
+  return { ...current, onProcess: () => setRevision(value => value + 1), onReview, onPreviewRestore, onRestore, onDownload: () => {
     if (!current.run) return
     try { downloadGeographicRun(current.run) }
     catch (error) { setState(previous => ({...previous,error:error instanceof Error ? error.message : "The geographic evidence could not be downloaded."})) }

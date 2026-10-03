@@ -3,13 +3,13 @@ import type { DataMode } from "@/domain/schema"
 
 const DATABASE = "gridlock.geographic-evidence.v1"
 const STORE = "runs"
-const MAX_BYTES = 80 * 1024 * 1024
+export const GEOGRAPHY_IMPORT_MAX_BYTES = 80 * 1024 * 1024
 const unavailable = "Geographic evidence could not be saved in this browser. Download the results to keep this run."
 const invalid = "Saved geographic evidence could not be read and has been preserved. This run can be downloaded; the saved copy will not be overwritten."
 let writes: Promise<unknown> = Promise.resolve()
 
 export function parseGeographicRun(text: string): GeographicRun {
-  if (new TextEncoder().encode(text).length > MAX_BYTES) throw new Error("Geographic evidence exceeds the 80 MiB companion-file limit.")
+  if (new TextEncoder().encode(text).length > GEOGRAPHY_IMPORT_MAX_BYTES) throw new Error("Geographic evidence exceeds the 80 MiB companion-file limit.")
   return geographicRunSchema.parse(JSON.parse(text))
 }
 
