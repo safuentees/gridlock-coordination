@@ -1,6 +1,6 @@
 # F29 — Illuminated density and first-entry presentation
 
-Status: selected, queued behind completed F28-F and integration/release of all preceding map/UI assignments. Initial full-collection processing or PR175 integration alone does not clear this gate. Owner: existing `map-ui` worker, **Chat 1 Unrelated** (`01a0f10a-93cd-7b30-9823-ee2e2fb42e34`). Coordinator owns assignment, integration and bounded milestone checks. UI ownership is preserved.
+Status: prioritized for implementation October 3, 2026. F28-F completion is not a dependency. Technical prerequisites are integrated F22/F23 hierarchy/rendering and PR175 map interfaces, with overlapping map/UI claims integrated or explicitly released. They are satisfied for A; the coordinator has dispatched it in a new worktree. Owner: existing `map-ui` worker, **Chat 1 Unrelated** (`01a0f10a-93cd-7b30-9823-ee2e2fb42e34`). Coordinator owns assignment, integration and bounded milestone checks. Independent F28 work and UI ownership are preserved.
 
 ## Purpose and unchanged agreement
 
@@ -10,7 +10,7 @@ Preserve Leaflet default/experimental choice, flat/raised controls, cell focus, 
 
 ## F29-A — Illuminated density rendering
 
-Ready only after the gate above. Branch: `codex/F29-A-illuminated-density`, separate map-owner worktree from latest main. Deliver one coherent PR.
+Ready and assigned after the technical/ownership handoff above. Branch: `codex/F29-A-illuminated-density`, new separate map-owner worktree from latest main. Deliver one coherent PR.
 
 - Attach a deck.gl `LightingEffect` with directional light and ambient fill through the existing overlay; enable shaded material on raised density polygons. Isolate treatment from ordinary markers/selected geography.
 - Use a muted stone basemap, teal lower columns and amber peaks, with the same palette in the metric legend. Prefer local raster-style adjustments using existing permitted tiles and attribution; add no provider, credentials or dependency. Keep default shadcn controls, typography, colors and spacing.
@@ -47,7 +47,7 @@ Complete when there is one short entrance with final facts, an immediate final s
 
 Read-only dependencies include `hierarchy.ts`, `synthetic.ts`, `map-layers.ts`, `geography-layers.ts`, `geography-map.ts`, `map-view.ts`, `MapLegend.tsx`, domain/core/data/storage and package files. `Explorer.tsx`, `App.tsx`, global styles and shared UI components are excluded. The existing visible prop and retained wrapper avoid shell changes; if that proves insufficient, coordinator and current UI owner record an exact handoff first. Preserve all prior worker branches and worktrees.
 
-Coordinator sends A to the existing map chat when F28-F and prior ownership gates clear, integrates/records its completion, then sends B without operator relay. No scheduler is installed. Workers inspect source and commit only their boundaries. Only coordinator runs the established milestone allowance: at most one existing build with a hard deadline and one representative case within five minutes, or applicable exact-revision checks. Reuse the density case to compare unchanged count/area/density and presentation final/interruption state where feasible; add no testing infrastructure. No Playwright, screenshots, image analysis, visual verification or mobile audits. Rendering, picking and physical keyboard interactions remain unverified unless covered by permitted existing checks; report that honestly. This planning increment needs no build.
+Coordinator dispatches A to the existing map chat now, integrates/records its completion, then immediately sends B without operator relay. F28 progresses in disjoint files; no facility producer or consumer acquires F29's map paths before release. No scheduler is installed. Workers inspect source and commit only their boundaries. Only coordinator runs the established milestone allowance: at most one existing build with a hard deadline and one representative case within five minutes, or applicable exact-revision checks. Reuse the density case to compare unchanged count/area/density and presentation final/interruption state where feasible; add no testing infrastructure. No Playwright, screenshots, image analysis, visual verification or mobile audits. Rendering, picking and physical keyboard interactions remain unverified unless covered by permitted existing checks; report that honestly.
 
 ## Official implementation guidance
 
