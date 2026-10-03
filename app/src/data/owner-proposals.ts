@@ -2,6 +2,7 @@ import { z } from "zod"
 import { inventorySchema } from "@/domain/coverage"
 import { projectSchema, type Dataset, type Project } from "@/domain/schema"
 import { parseSourceDataset } from "./import"
+import { matchesEvidenceBaseline } from "./evidence-baseline"
 import proposalsJson from "./evidence/f27-owner-proposals.json"
 
 const proposalSchema = z.object({
@@ -11,18 +12,10 @@ const proposalSchema = z.object({
 const proposals = z.object({ version: z.literal(1), proposals: z.array(proposalSchema) }).parse(proposalsJson).proposals
 export type OwnerProposal = z.infer<typeof proposalSchema>
 
-function canonical(value: unknown): unknown {
-  if (Array.isArray(value)) return value.map(canonical)
-  if (value !== null && typeof value === "object") return Object.fromEntries(
-    Object.entries(value).sort(([left], [right]) => left < right ? -1 : left > right ? 1 : 0).map(([key, item]) => [key, canonical(item)]),
-  )
-  return value
-}
-
 function matches(project: Project, proposal: OwnerProposal) {
   // Every source/evidence field must still match. Analyst notes are allowed and retained.
   return project.id === proposal.projectId && project.inventory?.owner === null
-    && JSON.stringify(canonical({ ...project, notes: [] })) === JSON.stringify(canonical({ ...proposal.expected, notes: [] }))
+    && matchesEvidenceBaseline(project, proposal.expected)
 }
 
 /** Suggestions are explicit local revisions, never silent changes to the bundled inventory. */

@@ -29,7 +29,12 @@
     "integratedF27OwnershipDecisions": 6,
     "unappliedPlannedOwnerSuggestions": 1,
     "unresolvedOwnershipDecisions": 5,
-    "ownershipNote": "Calcite planned-owner evidence from September 2025 is an explicit guarded local revision; no present equipment title or new bundled candidates are asserted."
+    "ownershipNote": "Calcite planned-owner evidence from September 2025 is an explicit guarded local revision; no present equipment title or new bundled candidates are asserted.",
+    "integratedF27BpaLocationDecisions": 6,
+    "unappliedBpaMapLocationSuggestions": 3,
+    "unresolvedBpaLocationDecisions": 3,
+    "bpaLocationNote": "Three explicit guarded general-pin revisions add unverified Keeler/Olympia/Schultz map context only. These are not qualified matching centers, do not establish owner evidence and leave bundled counts unchanged. Buckley, Bonanza and Pearl whole-project locations remain unresolved.",
+    "bpaLocationContract": "specs/features/F27-us-regional-expansion/bpa-location-revisions/spec.md"
   },
   "importedSources": [
     {
@@ -738,13 +743,13 @@
         "Native bundle identity is used only for unambiguous scope. Section/parent/component locators are not native engineering IDs; future-edition continuity requires explicit review.",
         "Repeated or shared bundles do not merge different components. P5470/P05470 is an accepted explicit alias; P04632 planned breaker and completed line remain distinct. Warner/Hilltop share a bundle but retain component identity.",
         "Conflicting and phased forecasts retain labeled source milestones, with unknown primary date. Need years are not service dates; estimated completion has unknown kind; no days or construction windows are invented.",
-        "Runtime geometry and project centers are unknown. Public GERP pins/lines can represent existing facilities or partial scope; no center, centroid or proposed route is inferred from them.",
+        "Bundled native geometry and centers remain unknown. Three guarded optional general-pin revisions provide approximate yard context only; they do not establish qualified matching centers. Other GERP pins/lines may represent existing facilities or partial scope; no center, centroid or proposed route is inferred.",
         "Owners remain unknown unless an exact assertion covers the whole unit. Publisher, sponsor, operator, customer and funder are not ownership defaults; joint BPA/PGE scope has no exclusive owner.",
         "P03259 remains retained with unknown lifecycle despite its elapsed table year. Explicit completed/cancelled units and repeated observations stay in the source ledger.",
         "The Schultz–Raver narrative includes separately retained Olympia/series-capacitor work. Plan and GIS differ on the North of Marion crossing assignment; preserve accepted source units without deduplicated engineering-project claims.",
         "Two never-imported locator reservations were corrected before full import: Clatsop transformer to section 8.2.2 and Sacajawea to section 8.5.2. Old-to-new mappings remain in the ledger; all five connected sample records are unchanged."
       ],
-      "nextTask": "F27; complementary inventories and evidenced locations",
+      "nextTask": "F27-BPA-E2 explicit map-context revisions; qualified centers/owners remain unresolved",
       "sourceStateCounts": {
         "WA": 27,
         "OR": 32,

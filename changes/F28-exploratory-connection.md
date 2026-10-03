@@ -1,0 +1,5 @@
+- Integrated PR176/177 and connected an opt-in Exploratory proximity topic for a selected project in the existing detail panel.
+- One authoritative core scan compares the selection with the full active collection; UI paginates every returned relation without a second engine.
+- Applied radius governs point/sample-endpoint separation; extent overlap/containment has no numeric distance or radius qualification.
+- Missing/incompatible owner evidence stays unknown; stale/rejected companion reviews are excluded. Strict candidates and impact/save actions stay separate.
+- Coordinator's combined F28-M/E build and representative nonvisual case follow this commit; interactions remain unexercised.

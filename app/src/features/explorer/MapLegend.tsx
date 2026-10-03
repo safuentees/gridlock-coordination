@@ -1,6 +1,7 @@
 import { useEffect, useId, useState } from "react"
 import { DomEvent } from "leaflet"
 import { ListIcon } from "lucide-react"
+import type { MapGeography } from "./geography-map"
 import type { reportingGroups } from "@/lib/reporting-groups"
 import { mapReportingGroupColor } from "./map-colors"
 import { Button } from "@/components/ui/button"
@@ -9,6 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Popover, PopoverContent, PopoverHeader, PopoverTitle, PopoverTrigger } from "@/components/ui/popover"
 
 export interface MapLegendProps {
+  geography?: MapGeography
   groups: ReturnType<typeof reportingGroups>
   boundary: HTMLElement
   connectionCount: number
@@ -17,7 +19,7 @@ export interface MapLegendProps {
   onShowConnections: (show: boolean) => void
 }
 
-export function MapLegend({ groups, boundary, connectionCount, selectedPair, showConnections, onShowConnections }: MapLegendProps) {
+export function MapLegend({ geography, groups, boundary, connectionCount, selectedPair, showConnections, onShowConnections }: MapLegendProps) {
   const id = useId()
   const colors = groups.map(group => mapReportingGroupColor(group.id).css)
   const [content, setContent] = useState<HTMLDivElement | null>(null)
@@ -47,6 +49,13 @@ export function MapLegend({ groups, boundary, connectionCount, selectedPair, sho
         <li className="flex items-center gap-3"><MapSymbol kind="selected" colors={colors} /><span>Selected project</span></li>
         <li className="flex items-center gap-3"><MapSymbol kind="connection" /><span>Candidate connection</span></li>
       </ul>
+      {geography && (geography.points.length > 0 || geography.areas.length > 0 || geography.sourceRecords.size > 0) && <section className="space-y-2" aria-labelledby={`${id}-geography`}>
+        <h3 id={`${id}-geography`} className="font-medium">Geographic evidence</h3>
+        <p className="flex items-center gap-3"><svg aria-hidden="true" viewBox="0 0 24 24" className="size-6 shrink-0"><circle cx="12" cy="12" r="5" fill="none" stroke="#64748b" strokeWidth="2" /></svg><span>Companion point / approximate endpoint</span></p>
+        <p className="flex items-center gap-3"><svg aria-hidden="true" viewBox="0 0 24 24" className="size-6 shrink-0"><rect x="3" y="4" width="18" height="16" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="6 4" /></svg><span>Approximate bounding extent</span></p>
+        <p className="text-muted-foreground">Hover for method, precision and limitations. Extents have no project center and are not routes. Shared extents are drawn once; choose any associated project in the list.</p>
+      </section>}
+      {geography && geography.excludedCount > 0 && <p className="text-muted-foreground">{geography.excludedCount} geographic representations include positions outside this map projection; coordinates remain unchanged.</p>}
       <p>Connections link project centers; they are not transmission routes.</p>
       <div className="space-y-2">
         <div className="flex items-center gap-2"><Checkbox id={`${id}-connections`} checked={showConnections} onCheckedChange={checked => onShowConnections(checked === true)} aria-describedby={`${id}-connection-hint`} /><Label htmlFor={`${id}-connections`}>Candidate connections</Label></div>

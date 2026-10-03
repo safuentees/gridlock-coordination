@@ -1,0 +1,7 @@
+# F28-M — Companion geography map adapter
+- Added optional geographicRecords to ProjectMap: supplied current-project records render on both maps as hollow companion points/endpoints and dashed bounding extents, with method/precision/limitations in hover labels and the bounded legend.
+- Source positions are reused instead of duplicated. Identical extents share one shape; existing selection highlights its member, and clicks select the current member or deterministic first member. Other associated records remain reachable through the list.
+- Fit projects/selection includes source coordinates, actual endpoints and area corners with panel insets. Areas never acquire center dots or connecting routes; original strict candidate inputs/lines and density inputs remain unchanged.
+- Absent companion props preserve existing behavior; foreign/unresolved IDs are ignored. Synthetic preview replaces all source/companion layers and retains its explicit label. Fixed controls, attribution, tile errors and event/keyboard behavior remain.
+- Root must connect validated active-mode/current-dataset records through App/Explorer and retain full evidence/list access. Companion positions or entire area extents beyond Mercator's latitude range are omitted with a legend count; source coordinates are never clamped.
+- Source inspected only; coordinator checks pending. No worker checks, browser/visual/mobile work, package/schema edits or patterned polish. GPU/picking and interaction behavior remain unexercised; shared extents use list selection rather than a new map chooser.

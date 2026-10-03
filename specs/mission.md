@@ -1,5 +1,9 @@
 # Gridlock mission
 
+Gridlock enriches imported transmission records with the best supported geographic representation available: project coordinates, matched facilities, endpoint estimates or geographic areas. Automated enrichment operates across the full collection, preserves source evidence, explains uncertainty and supports repeatable updates. Unresolved records remain accessible with a specific reason.
+
+**Highest-priority milestone: F28 full-collection geographic enrichment.** This covers the entire imported collection and future imports. Small increments and early connected batches are delivery techniques, not completion criteria. Existing strict candidates, evidence work, saved reviews and national source acquisition remain preserved. See the [F28 contract and tasks](features/F28-geographic-enrichment/spec.md).
+
 Gridlock helps transmission planners and coordination analysts across the United States move from fragmented public plans to a prioritized, evidence-backed investigation and a reusable coordination handoff. The product must help people arrive, do the work, understand what it supports, act and return—not only operate a map.
 
 The central experience is a connected map, searchable project inventory and ranked opportunity list. Selecting a pair reveals where its locations and dates came from, distinguishes uncertainty, and supports comparison, scenario exploration and a reusable coordination brief.
@@ -22,7 +26,7 @@ The user separately selected an experimental map extension (F22/F23): MapLibre/d
 - Explain supported outcomes in a dedicated view linked to the same applied scenario: candidate evidence, limits on conclusions, coverage gaps and concrete next actions. Potential sharing of land, crews, equipment or substation capacity is a question to investigate, never an inferred benefit.
 - Retain an investigation objective, next research action and optional analyst ownership; explicitly save hypothetical impact inputs/results with their evidence and export them in a usable handoff.
 - Restore exported findings without losing existing reviews, confusing source/demo data or silently replacing saved evidence with a changed dataset.
-- Find projects by imported need/zone context and grow usable real-data coverage through small, reviewable evidence decisions rather than forced coordinates.
+- Find projects by imported need/zone context and enrich the entire imported collection through reusable geographic extraction, reference matching and geocoding, with reviewable evidence and explicit unresolved outcomes.
 
 ## Differentiation
 Evidence and uncertainty travel with each result. Candidate proximity is never represented as confirmed shared right-of-way, simultaneous construction or verified savings. Source-date precision and reporting utility versus sponsor stay visible.
@@ -43,7 +47,7 @@ F15–F19 extend the completed tool without resetting it. Entry, Outcomes and ev
 
 Supplied-source review adds useful direction: challenge §1 names crews/equipment/right-of-way/substation capacity, while its bonus asks for an explained impact estimate. The location guide Part 2 requires identity checks against description, zone and landmarks. Dominion p31's existing right-of-way and p23's new line illustrate distinct scope; pp14–15 contain related but separate Stevens Creek–Hooks records, and p34 contains Dawson phases. These justify resource-specific research questions, searchable source context and retained assumptions. Related-record navigation is a worthwhile later addition; do not merge records or infer shared geometry.
 
-The supplied snapshot still has 242 missing locations, ten supplied unverified centers and no explicit construction windows. F19's one public permit-area suggestion is separate from that snapshot; an explicit application would yield 11 unverified locations and 241 missing. Nine other researched records retain the precise evidence needed next. Counts describe historical planning evidence, not current utility status. Evidence acquisition is an enabling capability, not a reason to postpone entry/outcomes. New source matches require exact public evidence and remain unverified through the current revision workflow; no bulk geocoding, guessed coordinates, private-document ingestion or second calculation engine. A current-plan refresh needs its own source-edition review before making new status claims.
+The supplied snapshot still has 242 missing locations, ten supplied unverified centers and no explicit construction windows. F19's one public permit-area suggestion is separate from that snapshot; an explicit application would yield 11 unverified locations and 241 missing. Nine other researched records retain the precise evidence needed next. Counts describe historical planning evidence, not current utility status. Evidence acquisition is an enabling capability, not a reason to postpone entry/outcomes. Geographic enrichment and bulk geocoding are selected scope: retain provenance, permitted source use, method, appropriate point/endpoint/area precision, uncertainty and original records. Use reusable cached references and respect provider terms/rate limits; never invent accuracy or promote approximate geography into strict candidates. Private/restricted-document ingestion and unsupported engineering claims remain excluded. A current-plan refresh needs its own source-edition review before making new status claims.
 
 ## Selected goal: US-wide planned-transmission discovery
 
@@ -70,7 +74,7 @@ No time or token budget was supplied. Work in small integrated milestones with a
 The user authorizes subagent coordination, project pushes, PRs and integration, and creation of a private repository with a different name. Project remote: https://github.com/safuentees/gridlock-coordination. The workflow-template push URL is disabled. Original attachments, credentials, personal information and generated builds stay out of Git. No release publishing or branch deletion is authorized.
 
 ## Exclusions
-No private/CEII material ingestion, autonomous engineering decisions, real-time utility schedule claims, external messaging, live geocoding at scale, authentication, or production hosting. Additional regional transmission adapters are selected scope under F25–F27. Verified route geometry beyond source-supported points remains a separate extension; generation-proposal discovery is not selected by the national-transmission goal.
+No private/CEII material ingestion, autonomous engineering decisions, real-time utility schedule claims, external messaging, authentication, or production hosting. Additional regional transmission adapters are selected scope under F25–F27. Verified route geometry beyond source-supported points remains a separate extension; generation-proposal discovery is not selected by the national-transmission goal.
 
 ## Current coverage after the tenth F27 increment
 
@@ -82,4 +86,10 @@ Home, Outcomes and Data readiness now share a bounded searchable Source coverage
 
 One production build and the representative source/revision/coverage/copy case passed at 26f3091 from 13:08:50–13:09:18 UTC (28 seconds). It preserved thirteen connected sample records, all prior source values, local owner evidence and notes, unchanged candidates, active-versus-original counts and edition-specific gap handling. The 74,469,266-byte revised download round-trips under 80 MiB; 32 JSON assets emit intact and initial JavaScript is 864,908 bytes. Existing Vite-loader/large-chunk warnings remain. No browser, persistence-interaction, visual or mobile checks ran.
 
-NYISO's complete public report, SERTP's conflicting access markings, CNMI's transmission role and Our Grid Future's download form remain explicit input gaps. No gated content was acquired and unavailable data is not zero projects. National completion remains unproven. The next concrete assignment is F27-BPA-E1: six native point-to-project role decisions using already preserved public BPA evidence. Runtime revisions require a separate accepted contract; no route-derived centers or altered matching policy are authorized.
+NYISO's complete public report, SERTP's conflicting access markings, CNMI's transmission role and Our Grid Future's download form remain explicit input gaps. No gated content was acquired and unavailable data is not zero projects. National completion remains unproven. The six BPA native point-role decisions and guarded helper are now preserved inputs to F28. Three exact yard pins support approximate map context; three whole-project locations remain unresolved. The full-collection pipeline is the current priority; strict matching policy remains unchanged.
+
+Preserved BPA evidence work [F27-BPA-E2](features/F27-us-regional-expansion/bpa-location-revisions/spec.md): explicit map-context revisions for three BPA yards, with three unsupported whole-project centers still unresolved. These general pins improve orientation without increasing qualified candidate coverage. F28 consumes these seeds within full-collection enrichment; bundled records remain unchanged.
+
+## Geographic enrichment completion
+
+F28 completes when every record in the declared collection has been processed and has its best supported geographic representation or a specific unresolved reason, with reusable updates, analyst correction protection, map/list access, explicitly exploratory proximity and reconciled coverage. Source GIS/facility references take precedence over coarse areas when supported. Areas remain areas and uncertain identity remains ambiguous; absent owner evidence remains unknown. Separate evidence enrichment from the stricter candidate engine and preserve raw imports. Current BPA research and guarded revisions are reusable seeds, not the milestone boundary.

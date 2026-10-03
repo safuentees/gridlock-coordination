@@ -1,3 +1,27 @@
+# Highest-priority milestone — F28 full-collection geographic enrichment
+
+Selected October 1, 2026. [Contract, seven capability tasks and exact ownership](features/F28-geographic-enrichment/spec.md). Covers all 14,923 current records and future imports; processed-with-reason is required, forced coordinates are forbidden. Prior F00–F27 completion and pending BPA work below are preserved, not restarted.
+
+| Task | Owner | Ready / dependency | Completion |
+|---|---|---|---|
+| F28-C shared contract | coordinator | first commit | **Committed** point/endpoints/area/provenance/outcome schemas and frozen interfaces before parallel work |
+| F28-A clues and full-collection pipeline | core | C | **Published on F28 from PR171.** Every record receives a contextual result/reason; cache keys bind source, reference and pipeline versions |
+| F28-B reusable references/geocoding | source_discovery | C | **Published on F28 from PR172/178.** 35,936 Census/BPA references; full GNIS locality-to-county-context adapter active under B.md |
+| F28-D geographic coverage UI | ui | C; integrates A/B | **Published on F28 from PR170.** Full collection is searchable with five coverage states, evidence and limitations |
+| F28-R review/corrections/updates | coordinator, then core/ui | A/D; cache starts immediately | Review/correction, storage/export and repeat runs are published. PR179 guarded restore API/controller integrated; ui is implementing the compatible-review preview dialog |
+| F28-M map/list representations | map-ui; root shell handoff | A/B/D and exact map handoff | **Published from PR175 plus coordinated connection.** One active run feeds map/list/detail/readiness; approximate points/endpoints/areas and all rows are accessible |
+| F28-E exploratory proximity | core and ui; root connection | A/M; committed `domain/exploratory.ts` contract | **Published from PR176/177 plus connection.** Opt-in project topic scans full collection; coarse extent context has no numeric distance; ownership unknown stays visible |
+| F28-M1 [Persistent panel header](features/F28-geographic-enrichment/header-polish.md) | ui, root follow-up | M/E connection | **Published from PR180.** One search/toggle header and width across states; redundant collapsed count removed; source reviewed, no extra checks |
+| F28-F full-scope completion | coordinator + producer owners | A–R | All declared inputs processed across applicable references, unresolved reasons and source totals reconciled |
+
+The connected real-data case processed all **14,923** current records against **35,936** reusable references: 68 source-located, 12,114 approximate, 680 ambiguous, 2,061 unsupported with specific reasons, 0 not processed. Approximate includes coarse named-area context. Source Projects and the six strict candidates are unchanged. One App controller now shares processing/review outcomes across Explore and Readiness; map/list/detail navigation, review return and opt-in exploratory proximity are connected. Every row remains accessible. PR178 records four additional facility-source limitations without unauthorized source acquisition.
+
+Coordinator's [M/E case receipt](../changes/F28-map-exploration-check.md) confirms actual area-corner fits, 695 grouped extents, 37 uncertainty-aware exploratory matches for the selected ISO-NE example, companion round-trip/cache preservation and unchanged strict results. One production build stayed idle without diagnostics and was stopped inside the five-minute bound; production type/build validation remains unconfirmed. No browser, visual/mobile, GPU/picking or keyboard-interaction checks.
+
+Ready work was dispatched immediately: core delivered PR179 guarded restore and root connected its persistence callbacks; ui is now adding the companion-review preview dialog. source_discovery is building the complete official GNIS populated-place name inventory as cited county context under B.md's no-coordinate/finer-evidence precedence contract. Cross-session draft persistence and further identity-safe facility reference coverage remain later increments. Full processing with initial references is a connected capability, not completion of all matching opportunities.
+
+---
+
 ---
 setup: ready
 run_start: 2026-09-30
@@ -61,7 +85,9 @@ The [US coverage register](us-coverage/us-register.json) contains 14,923 source 
 
 After source choice, coordinator activates F26-C1 (shared validation/migration/eligibility), then assigns the exact source-specific F26-I1 ingestion and F26-I2 integration tasks already scoped in the spec. Producer and consumer work can overlap after that contract; connect the first batch before complete extraction. After integration, continue the full inventory and subsequent qualified F27 adapters without requesting the same scope approval again. Independent adapters may run in parallel in separate owned files/worktrees. Preserve map-ui's current interface/ownership and isolated synthetic density work. Worker assignment below is recorded; the coordinator dispatches workers directly after the C1 contract commit.
 
-## Current milestone and assignments
+## Preserved F27 milestone history and assignments
+
+**F27-BPA-E2 incorporated into F28:** [accepted map-location revisions](features/F27-us-regional-expansion/bpa-location-revisions/spec.md). The six-decision report is complete; coordinator accepts three general pins only, leaving three locations unresolved. Core owns the guarded helper, UI owns the two Readiness consumers, coordinator owns accepted JSON/shared guard/register/checks. Its report/helper/guarded contract are retained; broader F28 companion processing replaces the interrupted BPA-only UI assignment.
 
 **F27 tenth increment complete through PR154.** Alabama six, Georgia ten and AEP eight followed thirteen connected sample observations. The shared Source coverage dialog replaces growing edition paragraphs in Home/Outcomes and adds consistent access from Readiness; it separates active counts, imported scopes and four assessed gaps. Display-only source-note curation preserves raw evidence and exceptions. Coordinator's one build and representative source/revision/coverage/copy case passed at 26f3091, 13:08:50–13:09:18 UTC (28 seconds): 14,923 records, 113 centers, six unchanged candidates, 28,417 reconciled rows, preserved local owner/notes and 74,469,266-byte import round trip. Thirty-two JSON assets; initial JS 864,908 bytes. Existing Vite-loader/large-chunk warnings remain; no browser/visual/mobile/persistence-interaction checks. F27-BPA-E1 now assesses six exact native point roles; OGF qualification awaits legitimately accessible data. National scope remains incomplete.
 
@@ -110,11 +136,11 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
-| map-ui | F22/F23 and F26 source-color compatibility complete. | Trial on 5175 preserved; no further pattern work until user feedback. |
-| source_discovery / ingestion | APC and Georgia complete in milestone branch. Next [F27-BPA-E1](features/F27-us-regional-expansion/bpa-location-evidence/spec.md): six native point-to-project evidence decisions. | Exact bpa-location-evidence qualification/sample/receipt only; no runtime/map edits. |
-| core | AEP eight-record subset complete. Next core/revision assignment depends on accepted BPA point-role evidence. | Retain free worktree; no new core or source edits until the evidence contract. |
-| coordinator | PR154 completed; accept BPA point-role decisions and define a guarded revision contract if evidence supports it. | Root owns shared loaders/schema/register/merge/checks; preserve untracked duplicates and map trial. |
-| ui | [F27-COV1](features/F27-us-regional-expansion/source-coverage/spec.md) complete through PR154. [F27-COV2](features/F27-us-regional-expansion/source-copy/spec.md) complete; OGF qualification records an access-form requirement. Next UI work depends on accepted BPA revision needs. | Retain free worktree; no map or shared-file changes without an explicit handoff. |
+| map-ui | F28-M adapter delivered through PR175 and connected; map owner retains map-only files. Further map work requires a ready bounded task. | Only ProjectMap/map-only files and `changes/F28-map.md`; no App/Explorer/readiness edits. Root owns the current-run prop connection. |
+| source_discovery / ingestion | PR178 source pass integrated; full GNIS populated-place locality-to-county-context adapter is active under the committed B contract. | Only scripts/enrichment, data/geography/references.json, reference documentation and receipt. Keep complete source snapshots and failed/ambiguous outcomes. GNIS uses name/state/county fields only, no coordinates, and does not shadow finer Census town evidence. |
+| core | F28-A/R and E are integrated; PR179 guarded restore delivered. Strict candidate calculations remain unchanged. | Core API files and receipts only; no UI, persistence or candidate-engine edits. |
+| coordinator | F28-C/A/B/D/M/E/R controller published on the F28 branch; coordinator integrates restore UI and GNIS next and owns the sole bounded check. | Root owns `use-geography.ts`, `geography-session.ts`, Readiness wrapper, roadmap/spec and integration. Preserve the primary checkout's uncommitted Explorer edit. |
+| ui | F28-D/R/E and M1 published; GeographyPanel restore dialog active against the committed R contract. | Only `GeographyPanel.tsx` and `changes/F28-geography-restore-ui.md`; root owns controller/storage. Protect actual dirty drafts; no checks. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 

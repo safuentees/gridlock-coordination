@@ -1,0 +1,1698 @@
+{
+  "artifactType": "bpa-six-point-evidence-decisions",
+  "artifactVersion": 1,
+  "runtimeMutation": false,
+  "coordinatorAcceptance": "pending",
+  "sourceKey": "bpa-plan",
+  "editionId": "2025-updated-2026-08-25",
+  "baseline": {
+    "commit": "6da33da95aa8751d306479199a1e1544fa374098",
+    "datasetPath": "app/src/data/real/coverage/bpa-plan/dataset.json",
+    "datasetSha256": "2bc6e66c5233b4ba5b8c89eb9c5e32c46664a13b2d81262b7fa13b8d5a505cfb",
+    "projectFingerprintMethod": "SHA-256 of each complete currentProject encoded as UTF-8 JSON with recursively sorted object keys, original array order, ensure_ascii=false and compact comma/colon separators, with no trailing newline."
+  },
+  "timebox": {
+    "startedAt": "2026-09-30T13:05:45Z",
+    "sourceReviewClosedAt": "2026-09-30T13:14:54Z",
+    "additionalPublicResearchMinutes": 0,
+    "note": "Targeted reuse of preserved sources only; no public requests, reacquisition, whole-source survey, images or geocoding. Documentation packaging follows source review."
+  },
+  "originalsDirectory": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F27-bpa-plan",
+  "sources": [
+    {
+      "file": "2025-BPA-Transmission-Plan_Final.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf",
+      "sha256": "246e6470dec8c7efcd8d31be29ac2a3dbb3a63a9b5669df9812d309beb4a2638"
+    },
+    {
+      "file": "GERP-10-Project-Summaries.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf",
+      "sha256": "2bb5cdd272123c3c2eeaf71f622ee38a2628906a6434cab5dfdfd7f89df2ecbe"
+    },
+    {
+      "file": "GERP-20-Project-Summaries.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-20-Project-Summaries.pdf",
+      "sha256": "66433703556dd0db867e437dd837500bc7d7dc549515c0855891157896faa543"
+    },
+    {
+      "file": "GERP-Interactive-Map-Guide.pdf",
+      "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf",
+      "sha256": "8b8a92452285bbf89f3ca569e24142f181937737314ea9539ef00f2d4f42bed5"
+    },
+    {
+      "file": "gerp-substations-metadata.json",
+      "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson",
+      "sha256": "3a547c179a40ae3749cf25966de39442a1dabe24f21080d6244faa68c28920c3"
+    },
+    {
+      "file": "gerp-substations-features.json",
+      "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+      "sha256": "05afbfc66f638624d40291a185150d05cd70f6e3912566e51484488161fd83e6"
+    },
+    {
+      "file": "gerp-webmap-metadata.json",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/7f85f964b05442dd960a15b001d0567d?f=pjson",
+      "sha256": "c13657d5dddf37dbe22211e0fd51b476c65895e1f29a68c9e500e05e80ff3e9d"
+    }
+  ],
+  "sourceSemantics": {
+    "nativeLayerDescription": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>Point features typically located in the center or base line intersect point of a substation yard. Attributes provided by TRED Facility database table which is considered the source of record for facility operations information. Primary key relationship is based on the unique 4-letter XREF code value.</span></p></div></div></div>",
+    "nameFieldAlias": "Approximate Location",
+    "originalLayerSpatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "queryResponseSpatialReference": {
+      "wkid": 4326,
+      "latestWkid": 4326
+    },
+    "perFeaturePositionAccuracy": null,
+    "layerEditEpochMilliseconds": 1790195518809,
+    "layerEditMeaning": "Layer-level edit metadata, not a per-project progress date or a coordinate survey epoch.",
+    "guideDate": "2026-01-27",
+    "summaryDate": "2026-01-23",
+    "snapshotRetrievedOn": "2026-09-30",
+    "limitations": [
+      "Published point represents an existing substation yard center or baseline intersection; the source does not identify which of those two roles applies to this feature.",
+      "Name is labeled Approximate Location. Horizontal accuracy, survey method, coordinate epoch and equipment position are not supplied; decimal length is not accuracy.",
+      "Source service is Web Mercator (WKID 102100/latestWKID 3857); the preserved server query requests outSR=4326 and the response declares WKID 4326. No local transformation or geocoding was performed.",
+      "GERP map guide page 5 allows multiple projects at one data point. Bundle identity alone cannot turn a shared yard or nearby asset into the center of every associated scope.",
+      "Evidence snapshot was acquired on September 30, 2026; GIS layer edit time and feature status are not accepted project-progress dates. Existing plan lifecycle, milestone conflicts and owner unknowns remain unchanged."
+    ]
+  },
+  "counts": {
+    "decisions": 6,
+    "exactProjectLinks": 6,
+    "proposedUnverifiedYardProxies": 3,
+    "withheldWholeProjectCenters": 3,
+    "runtimeRecordsChanged": 0,
+    "newMatchingEligibleRecords": 0
+  },
+  "decisions": [
+    {
+      "bundleId": "P05449",
+      "projectId": "bpa-plan:P05449",
+      "sourceId": "P05449",
+      "aliases": [],
+      "identityDecision": "exact-native-bundle",
+      "currentProjectSha256": "97fec049a1323b4b9b4b1bfcc0c3e8abf1e71c6503637b8363a70ce139bde102",
+      "currentProject": {
+        "id": "bpa-plan:P05449",
+        "utilityId": "bpa-plan",
+        "sourceId": "P05449",
+        "name": "Keeler 500 kV Expansion and Transformer Addition",
+        "sponsor": null,
+        "description": "Reconfigure the 500 kV bus with additional breakers and add a second 500/230 kV transformer bank.",
+        "status": null,
+        "voltageKv": [
+          230,
+          500
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting forecasts; see source milestones"
+        },
+        "notes": [
+          "Forecasts conflict: the area gives 2031 energization, the path gives 2029, and GERP gives 2030 estimated completion.",
+          "The public Keeler point is an approximate existing-facility position; it is not accepted as this project’s center."
+        ],
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 52; §8.2.3 Keeler expansion; expected energization 2031",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 89; §9.5 same Keeler expansion; expected energization 2029",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 13; §2 Portland upgrades; Keeler estimated completion 2030",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 101; §11.1 native P05449; 2031",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 103; §11.2 native P05449; 2029",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+          },
+          {
+            "file": "gerp-substations-features.json",
+            "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+            "locator": "OBJECTID_1=5; Bundle_ID=P05449; Name=Keeler; retrieved 2026-09-30"
+          }
+        ],
+        "inventory": {
+          "sourceKey": "bpa-plan",
+          "editionId": "2025-updated-2026-08-25",
+          "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+          "reportingGroupName": "Bonneville Power Administration plan",
+          "recordKind": "transmission-project",
+          "recordUnit": "project",
+          "identityBasis": "native-id",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2025",
+          "lifecycleDateMeaning": "source-edition",
+          "sourceState": "OR",
+          "sourceLocation": "Keeler Substation, Hillsboro, Oregon",
+          "sourceUpdatedOn": null,
+          "workType": null,
+          "milestones": [
+            {
+              "field": "Area expected energization",
+              "date": {
+                "value": "2031",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Area expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 52; §8.2.3 Keeler expansion; expected energization 2031",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+                },
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 101; §11.1 native P05449; 2031",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=101"
+                }
+              ]
+            },
+            {
+              "field": "Path expected energization",
+              "date": {
+                "value": "2029",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Path expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 89; §9.5 same Keeler expansion; expected energization 2029",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+                },
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 103; §11.2 native P05449; 2029",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+                }
+              ]
+            },
+            {
+              "field": "GERP estimated completion",
+              "date": {
+                "value": "2030",
+                "precision": "year",
+                "kind": "unknown",
+                "label": "GERP estimated completion"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 13; §2 Portland upgrades; Keeler estimated completion 2030",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+                }
+              ]
+            }
+          ],
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      },
+      "publishedFeature": {
+        "attributes": {
+          "OBJECTID_1": 5,
+          "Name": "Keeler",
+          "Cycle": "GERP 1.0",
+          "Bundle_ID": "P05449",
+          "Project_Name": "Keeler 230/500 kV Transformer Addition",
+          "Bundle_Name": "KEELER 500KV EXPANSION AND TRANSFORMER ADDITION",
+          "Group_Name": "Portland Area Upgrades",
+          "Expected_Energization": 2030,
+          "Estimated_Costs": 150000000,
+          "XREF": "KEEL",
+          "Description": "A new 500/230-kV transformer would also be added at Keeler Substation (Hillsboro, OR).",
+          "Project_Justification": "Will create additional capacity to support regional load growth, reliability needs and commercial requests for long-term transmission",
+          "GlobalID": "4059bb14-cd26-4826-81f8-d5252ff94caf",
+          "Status": "SCOPING"
+        },
+        "geometry": {
+          "x": -122.89756357587169,
+          "y": 45.5501949477998
+        }
+      },
+      "featureEvidence": {
+        "file": "gerp-substations-features.json",
+        "locator": "FeatureServer/10; OBJECTID_1=5; GlobalID=4059bb14-cd26-4826-81f8-d5252ff94caf; Bundle_ID=P05449; Name=Keeler; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+      },
+      "publishedCoordinate": {
+        "longitude": -122.89756357587169,
+        "latitude": 45.5501949477998,
+        "outputCrs": "EPSG:4326",
+        "nativeLayerWkid": 102100,
+        "nativeLayerLatestWkid": 3857,
+        "transformation": "Source-server query outSR=4326; no local transform",
+        "horizontalAccuracyMeters": null,
+        "sourceRole": "existing-yard",
+        "sourceNameAlias": "Approximate Location"
+      },
+      "decision": "propose-unverified-yard-proxy",
+      "scopeReasoning": "The native bundle matches the full Keeler expansion unit. Plan pages 52 and 89 place both the added breakers/bus rearrangement and the second transformer at Keeler. The GERP point names Keeler (KEEL), so it supports a representative location of that existing yard, not the precise footprint of the added equipment.",
+      "dateAndScopeCaveats": "Plan area forecast 2031, path forecast 2029 and GERP summary/point forecast 2030 remain separate. The completed Keeler–Horizon line is not this transformer/bus unit.",
+      "evidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "locator": "FeatureServer/10; OBJECTID_1=5; GlobalID=4059bb14-cd26-4826-81f8-d5252ff94caf; Bundle_ID=P05449; Name=Keeler; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+        },
+        {
+          "file": "gerp-substations-metadata.json",
+          "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 52; §8.2.3 Keeler 500 kV Expansion and Transformer Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 89; §9.5 Keeler 500 kV Bus Expansion and Transformer Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+        },
+        {
+          "file": "GERP-10-Project-Summaries.pdf",
+          "locator": "PDF page 3; Portland Area Upgrades, Keeler 230/500 kV Transformer Addition",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=3"
+        },
+        {
+          "file": "GERP-Interactive-Map-Guide.pdf",
+          "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+        }
+      ],
+      "proposal": {
+        "status": "proposal-only-requires-coordinator-contract",
+        "location": {
+          "lat": 45.5501949477998,
+          "lon": -122.89756357587169,
+          "method": "source-point",
+          "confidence": "unverified",
+          "evidence": [
+            {
+              "file": "gerp-substations-features.json",
+              "locator": "FeatureServer/10; OBJECTID_1=5; GlobalID=4059bb14-cd26-4826-81f8-d5252ff94caf; Bundle_ID=P05449; Name=Keeler; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+              "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+            },
+            {
+              "file": "gerp-substations-metadata.json",
+              "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+              "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+            },
+            {
+              "file": "2025-BPA-Transmission-Plan_Final.pdf",
+              "locator": "Printed/PDF page 52; §8.2.3 Keeler 500 kV Expansion and Transformer Addition",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+            },
+            {
+              "file": "2025-BPA-Transmission-Plan_Final.pdf",
+              "locator": "Printed/PDF page 89; §9.5 Keeler 500 kV Bus Expansion and Transformer Addition",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+            },
+            {
+              "file": "GERP-10-Project-Summaries.pdf",
+              "locator": "PDF page 3; Portland Area Upgrades, Keeler 230/500 kV Transformer Addition",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=3"
+            },
+            {
+              "file": "GERP-Interactive-Map-Guide.pdf",
+              "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+            }
+          ]
+        },
+        "inventoryChanges": {
+          "centerRole": "substation-center",
+          "nativeGeometry": {
+            "type": "Point",
+            "coordinates": [
+              [
+                -122.89756357587169,
+                45.5501949477998
+              ]
+            ],
+            "role": "substation-center",
+            "crs": "EPSG:4326 (server-returned; source service WKID 102100 / latestWKID 3857)",
+            "accuracyMeters": null,
+            "rawLatitude": "45.5501949477998",
+            "rawLongitude": "-122.89756357587169",
+            "evidence": [
+              {
+                "file": "gerp-substations-features.json",
+                "locator": "FeatureServer/10; OBJECTID_1=5; GlobalID=4059bb14-cd26-4826-81f8-d5252ff94caf; Bundle_ID=P05449; Name=Keeler; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+                "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+              },
+              {
+                "file": "gerp-substations-metadata.json",
+                "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+                "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 52; §8.2.3 Keeler 500 kV Expansion and Transformer Addition",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 89; §9.5 Keeler 500 kV Bus Expansion and Transformer Addition",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=89"
+              },
+              {
+                "file": "GERP-10-Project-Summaries.pdf",
+                "locator": "PDF page 3; Portland Area Upgrades, Keeler 230/500 kV Transformer Addition",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=3"
+              },
+              {
+                "file": "GERP-Interactive-Map-Guide.pdf",
+                "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+              }
+            ]
+          },
+          "appendLocationAssumptions": [
+            "Unverified representative point of the existing Keeler substation yard for this exact work unit; the source permits yard center or baseline intersection and does not distinguish them for this feature.",
+            "The substation-center role is a representative-yard interpretation, not a surveyed construction, equipment or geometric center; source Name is Approximate Location and horizontal accuracy is unknown.",
+            "GIS source WKID 102100/latestWKID 3857; preserved server query returned EPSG:4326. Published decimal digits are retained without an accuracy claim.",
+            "Plan area forecast 2031, path forecast 2029 and GERP summary/point forecast 2030 remain separate. The completed Keeler–Horizon line is not this transformer/bus unit."
+          ]
+        },
+        "guard": "Compare the complete current Project against currentProject before preview/apply; preserve every unrelated field and reject stale or locally revised records. This artifact is not a runtime import or automatic patch."
+      },
+      "mapImplication": "After a separately accepted guarded revision, display only as an unverified existing-yard proxy with the source limitations.",
+      "matchingImplication": "A later accepted revision could qualify the representative-yard role, but current owner is null, so existing core still excludes this inventory record. Source confidence remains unverified; no matching result is promised.",
+      "missingEvidenceOrNextGate": "No additional source is required for the narrowly labeled existing-yard proxy proposal. A surveyed construction or equipment center would require an authoritative project-specific point or footprint; accuracy remains unknown."
+    },
+    {
+      "bundleId": "P06219",
+      "projectId": "bpa-plan:sec-2-cross-cascades-north-olympia",
+      "sourceId": "sec-2-cross-cascades-north-olympia",
+      "aliases": [
+        "P06219"
+      ],
+      "identityDecision": "exact-source-locator-child-with-bundle-alias",
+      "currentProjectSha256": "a0ac42fcfc3755f094c678b84d3a13ab70c3e9d59463a50737ea6ac8262899e0",
+      "currentProject": {
+        "id": "bpa-plan:sec-2-cross-cascades-north-olympia",
+        "utilityId": "bpa-plan",
+        "sourceId": "sec-2-cross-cascades-north-olympia",
+        "name": "Olympia 230 kV substation upgrade",
+        "sponsor": null,
+        "description": "Add a static VAR compensator at Olympia as the named Cross Cascades North component.",
+        "status": null,
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Expected energization not specified"
+        },
+        "notes": [
+          "The component is separately named in GERP but also mentioned in the broader Schultz–Raver path narrative. Source scopes overlap."
+        ],
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 13; Printed/PDF page 13, Olympia 230 kV substation upgrade",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13",
+            "locator": "Printed/PDF page 13; Olympia 230 kV substation upgrade; scope and forecast"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88",
+            "locator": "Printed/PDF page 88; Schultz–Raver narrative includes Olympia STATCOM"
+          },
+          {
+            "file": "gerp-substations-features.json",
+            "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+            "locator": "OBJECTID_1=17; Bundle_ID=P06219; Olympia 230 kV Substation Upgrade; snapshot retrieved 2026-09-30"
+          }
+        ],
+        "inventory": {
+          "sourceKey": "bpa-plan",
+          "editionId": "2025-updated-2026-08-25",
+          "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+          "reportingGroupName": "Bonneville Power Administration plan",
+          "recordKind": "transmission-project",
+          "recordUnit": "component",
+          "identityBasis": "source-locator",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2025",
+          "lifecycleDateMeaning": "source-edition",
+          "sourceState": "WA",
+          "sourceLocation": "Olympia Substation, Washington",
+          "sourceUpdatedOn": null,
+          "workType": null,
+          "milestones": [
+            {
+              "field": "Cross Cascades North group estimated completion",
+              "date": {
+                "value": "2032",
+                "precision": "year",
+                "kind": "unknown",
+                "label": "Cross Cascades North group estimated completion"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13",
+                  "locator": "Printed/PDF page 13; Olympia 230 kV substation upgrade; scope and forecast"
+                }
+              ]
+            },
+            {
+              "field": "GERP public snapshot expected energization — Olympia",
+              "date": {
+                "value": "2032",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "GERP public snapshot expected energization — Olympia"
+              },
+              "evidence": [
+                {
+                  "file": "gerp-substations-features.json",
+                  "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+                  "locator": "OBJECTID_1=17; Bundle_ID=P06219; Olympia 230 kV Substation Upgrade; snapshot retrieved 2026-09-30"
+                }
+              ]
+            }
+          ],
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [
+            "P06219"
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      },
+      "publishedFeature": {
+        "attributes": {
+          "OBJECTID_1": 17,
+          "Name": "Olympia",
+          "Cycle": "GERP 1.0",
+          "Bundle_ID": "P06219",
+          "Project_Name": "Olympia 230 kV Substation Upgrade",
+          "Bundle_Name": "OLYMPIA 230 kV SUBSTATION UPGRADE",
+          "Group_Name": "Cross Cascades North",
+          "Expected_Energization": 2032,
+          "Estimated_Costs": null,
+          "XREF": "OLYM",
+          "Description": "BPA proposes adding a new Static VAR Compensator at Olympia Substation (Olympia, WA).",
+          "Project_Justification": "Will create additional capacity to support regional load growth, reliability needs and commercial requests for long-term transmission",
+          "GlobalID": "ca93c641-9b78-40ea-8eda-92916db668b5",
+          "Status": "SCOPING"
+        },
+        "geometry": {
+          "x": -122.95336901080253,
+          "y": 47.001010344326026
+        }
+      },
+      "featureEvidence": {
+        "file": "gerp-substations-features.json",
+        "locator": "FeatureServer/10; OBJECTID_1=17; GlobalID=ca93c641-9b78-40ea-8eda-92916db668b5; Bundle_ID=P06219; Name=Olympia; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+      },
+      "publishedCoordinate": {
+        "longitude": -122.95336901080253,
+        "latitude": 47.001010344326026,
+        "outputCrs": "EPSG:4326",
+        "nativeLayerWkid": 102100,
+        "nativeLayerLatestWkid": 3857,
+        "transformation": "Source-server query outSR=4326; no local transform",
+        "horizontalAccuracyMeters": null,
+        "sourceRole": "existing-yard",
+        "sourceNameAlias": "Approximate Location"
+      },
+      "decision": "propose-unverified-yard-proxy",
+      "scopeReasoning": "The accepted source-locator child is only the Olympia compensation component, with P06219 retained as an alias. Plan page 13 and GERP 1.0 page 2 place that component at Olympia, and the point names Olympia (OLYM). This can represent the existing Olympia yard for that child; it does not locate the whole Cross Cascades North group or a separate Olympia 500 kV expansion.",
+      "dateAndScopeCaveats": "The imported child and alias remain unchanged. Group estimated completion and GIS expected energization are both 2032 but have different meanings; neither establishes a construction window. The separate GERP 2.0 scope is not merged.",
+      "evidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "locator": "FeatureServer/10; OBJECTID_1=17; GlobalID=ca93c641-9b78-40ea-8eda-92916db668b5; Bundle_ID=P06219; Name=Olympia; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+        },
+        {
+          "file": "gerp-substations-metadata.json",
+          "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 13; §2 Cross Cascades North, Olympia 230 kV Substation Upgrade component",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 88; broader reconductor/Paul capacitor scope includes Olympia STATCOM",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88"
+        },
+        {
+          "file": "GERP-10-Project-Summaries.pdf",
+          "locator": "PDF page 2; Cross Cascades North, Olympia 230 kV Substation Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=2"
+        },
+        {
+          "file": "GERP-20-Project-Summaries.pdf",
+          "locator": "PDF page 3; separate Schultz–Olympia 500 kV Line Rebuild / Olympia 500 kV expansion",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-20-Project-Summaries.pdf#page=3"
+        },
+        {
+          "file": "GERP-Interactive-Map-Guide.pdf",
+          "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+        }
+      ],
+      "proposal": {
+        "status": "proposal-only-requires-coordinator-contract",
+        "location": {
+          "lat": 47.001010344326026,
+          "lon": -122.95336901080253,
+          "method": "source-point",
+          "confidence": "unverified",
+          "evidence": [
+            {
+              "file": "gerp-substations-features.json",
+              "locator": "FeatureServer/10; OBJECTID_1=17; GlobalID=ca93c641-9b78-40ea-8eda-92916db668b5; Bundle_ID=P06219; Name=Olympia; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+              "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+            },
+            {
+              "file": "gerp-substations-metadata.json",
+              "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+              "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+            },
+            {
+              "file": "2025-BPA-Transmission-Plan_Final.pdf",
+              "locator": "Printed/PDF page 13; §2 Cross Cascades North, Olympia 230 kV Substation Upgrade component",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+            },
+            {
+              "file": "2025-BPA-Transmission-Plan_Final.pdf",
+              "locator": "Printed/PDF page 88; broader reconductor/Paul capacitor scope includes Olympia STATCOM",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88"
+            },
+            {
+              "file": "GERP-10-Project-Summaries.pdf",
+              "locator": "PDF page 2; Cross Cascades North, Olympia 230 kV Substation Upgrade",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=2"
+            },
+            {
+              "file": "GERP-20-Project-Summaries.pdf",
+              "locator": "PDF page 3; separate Schultz–Olympia 500 kV Line Rebuild / Olympia 500 kV expansion",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-20-Project-Summaries.pdf#page=3"
+            },
+            {
+              "file": "GERP-Interactive-Map-Guide.pdf",
+              "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+            }
+          ]
+        },
+        "inventoryChanges": {
+          "centerRole": "substation-center",
+          "nativeGeometry": {
+            "type": "Point",
+            "coordinates": [
+              [
+                -122.95336901080253,
+                47.001010344326026
+              ]
+            ],
+            "role": "substation-center",
+            "crs": "EPSG:4326 (server-returned; source service WKID 102100 / latestWKID 3857)",
+            "accuracyMeters": null,
+            "rawLatitude": "47.001010344326026",
+            "rawLongitude": "-122.95336901080253",
+            "evidence": [
+              {
+                "file": "gerp-substations-features.json",
+                "locator": "FeatureServer/10; OBJECTID_1=17; GlobalID=ca93c641-9b78-40ea-8eda-92916db668b5; Bundle_ID=P06219; Name=Olympia; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+                "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+              },
+              {
+                "file": "gerp-substations-metadata.json",
+                "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+                "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 13; §2 Cross Cascades North, Olympia 230 kV Substation Upgrade component",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 88; broader reconductor/Paul capacitor scope includes Olympia STATCOM",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88"
+              },
+              {
+                "file": "GERP-10-Project-Summaries.pdf",
+                "locator": "PDF page 2; Cross Cascades North, Olympia 230 kV Substation Upgrade",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=2"
+              },
+              {
+                "file": "GERP-20-Project-Summaries.pdf",
+                "locator": "PDF page 3; separate Schultz–Olympia 500 kV Line Rebuild / Olympia 500 kV expansion",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-20-Project-Summaries.pdf#page=3"
+              },
+              {
+                "file": "GERP-Interactive-Map-Guide.pdf",
+                "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+              }
+            ]
+          },
+          "appendLocationAssumptions": [
+            "Unverified representative point of the existing Olympia substation yard for this exact work unit; the source permits yard center or baseline intersection and does not distinguish them for this feature.",
+            "The substation-center role is a representative-yard interpretation, not a surveyed construction, equipment or geometric center; source Name is Approximate Location and horizontal accuracy is unknown.",
+            "GIS source WKID 102100/latestWKID 3857; preserved server query returned EPSG:4326. Published decimal digits are retained without an accuracy claim.",
+            "The imported child and alias remain unchanged. Group estimated completion and GIS expected energization are both 2032 but have different meanings; neither establishes a construction window. The separate GERP 2.0 scope is not merged."
+          ]
+        },
+        "guard": "Compare the complete current Project against currentProject before preview/apply; preserve every unrelated field and reject stale or locally revised records. This artifact is not a runtime import or automatic patch."
+      },
+      "mapImplication": "After a separately accepted guarded revision, display only as an unverified existing-yard proxy with the source limitations.",
+      "matchingImplication": "A later accepted revision could qualify the representative-yard role, but current owner is null, so existing core still excludes this inventory record. Source confidence remains unverified; no matching result is promised.",
+      "missingEvidenceOrNextGate": "No additional source is required for the narrowly labeled existing-yard proxy proposal. A compensation-equipment position or surveyed construction center would require project-specific spatial evidence."
+    },
+    {
+      "bundleId": "P04364",
+      "projectId": "bpa-plan:P04364",
+      "sourceId": "P04364",
+      "aliases": [],
+      "identityDecision": "exact-native-bundle",
+      "currentProjectSha256": "cfec8f9f4da93f8ef3b285ef5e04bc7ba0e232dc6634037ff3d50ffcb20bb1c5",
+      "currentProject": {
+        "id": "bpa-plan:P04364",
+        "utilityId": "bpa-plan",
+        "sourceId": "P04364",
+        "name": "Schultz-Raver series capacitors",
+        "sponsor": null,
+        "description": "Upgrade Schultz–Raver series-capacitor capability to support additional path capacity.",
+        "status": null,
+        "voltageKv": [
+          500
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting forecasts; see source milestones"
+        },
+        "notes": [
+          "The path narrative/summary give 2029 energization, while the supplemental table gives 2030.",
+          "The same capacitor work is also mentioned within the broader reconductoring narrative; accepted source units overlap."
+        ],
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 103; Printed/PDF page 103, Schultz-Raver series capacitors",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88",
+            "locator": "Printed/PDF page 88; Schultz-Raver series capacitors; scope and forecast"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85",
+            "locator": "Printed/PDF page 85; Path project summary; series-capacitor 2029"
+          },
+          {
+            "file": "gerp-substations-features.json",
+            "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+            "locator": "OBJECTID_1=26; Bundle_ID=P04364; Schultz-Raver 500kV Series Capacitors; snapshot retrieved 2026-09-30"
+          }
+        ],
+        "inventory": {
+          "sourceKey": "bpa-plan",
+          "editionId": "2025-updated-2026-08-25",
+          "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+          "reportingGroupName": "Bonneville Power Administration plan",
+          "recordKind": "transmission-project",
+          "recordUnit": "upgrade",
+          "identityBasis": "native-id",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2025",
+          "lifecycleDateMeaning": "source-edition",
+          "sourceState": "WA",
+          "sourceLocation": "Schultz–Raver; West of Cascades North",
+          "sourceUpdatedOn": null,
+          "workType": null,
+          "milestones": [
+            {
+              "field": "Supplemental expected energization",
+              "date": {
+                "value": "2030",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Supplemental expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 103; Printed/PDF page 103, Schultz-Raver series capacitors",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+                }
+              ]
+            },
+            {
+              "field": "Path expected energization",
+              "date": {
+                "value": "2029",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Path expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88",
+                  "locator": "Printed/PDF page 88; Schultz-Raver series capacitors; scope and forecast"
+                },
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85",
+                  "locator": "Printed/PDF page 85; Path project summary; series-capacitor 2029"
+                }
+              ]
+            },
+            {
+              "field": "GERP public snapshot expected energization — Schultz",
+              "date": {
+                "value": "2029",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "GERP public snapshot expected energization — Schultz"
+              },
+              "evidence": [
+                {
+                  "file": "gerp-substations-features.json",
+                  "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+                  "locator": "OBJECTID_1=26; Bundle_ID=P04364; Schultz-Raver 500kV Series Capacitors; snapshot retrieved 2026-09-30"
+                }
+              ]
+            }
+          ],
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      },
+      "publishedFeature": {
+        "attributes": {
+          "OBJECTID_1": 26,
+          "Name": "Schultz",
+          "Cycle": "GERP 1.0",
+          "Bundle_ID": "P04364",
+          "Project_Name": "Schultz-Raver 500kV Series Capacitors",
+          "Bundle_Name": "SCHULTZ-RAVER: SERIES CAPS TSEP 2020 (EGP1)",
+          "Group_Name": "Cross Cascades North",
+          "Expected_Energization": 2029,
+          "Estimated_Costs": 60000000,
+          "XREF": "SHUL",
+          "Description": "Add new 500kV series capacitors at Schultz Substation (Ellensburg, WA)  to be coordinated with reconductor project.",
+          "Project_Justification": "Will create additional capacity to support regional load growth, reliability needs and commercial requests for long-term transmission",
+          "GlobalID": "b28b992d-f8fd-4b73-8876-f24f1954297a",
+          "Status": "DESIGN"
+        },
+        "geometry": {
+          "x": -120.51123532816779,
+          "y": 47.122038454985756
+        }
+      },
+      "featureEvidence": {
+        "file": "gerp-substations-features.json",
+        "locator": "FeatureServer/10; OBJECTID_1=26; GlobalID=b28b992d-f8fd-4b73-8876-f24f1954297a; Bundle_ID=P04364; Name=Schultz; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+      },
+      "publishedCoordinate": {
+        "longitude": -120.51123532816779,
+        "latitude": 47.122038454985756,
+        "outputCrs": "EPSG:4326",
+        "nativeLayerWkid": 102100,
+        "nativeLayerLatestWkid": 3857,
+        "transformation": "Source-server query outSR=4326; no local transform",
+        "horizontalAccuracyMeters": null,
+        "sourceRole": "existing-yard",
+        "sourceNameAlias": "Approximate Location"
+      },
+      "decision": "propose-unverified-yard-proxy",
+      "scopeReasoning": "The accepted native unit is the Schultz–Raver series-capacitor upgrade, not the separately retained reconductoring group. Plan page 88 describes the #4 line capacitor capability upgrade; feature OBJECTID_1=26 explicitly places the series capacitors at Schultz Substation (SHUL) and says the work is coordinated with reconductoring. Taken together these support a Schultz-yard proxy for this capacitor unit, not the 77-mile Schultz–Raver corridor.",
+      "dateAndScopeCaveats": "The plan describes upgrading capacitor rating while the GIS description says add new capacitors. This proposal resolves only the shared existing-yard location; it does not reconcile engineering scope or equate the point to the whole reconductor project. Plan 2029/2030 and GIS 2029 forecasts remain unchanged.",
+      "evidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "locator": "FeatureServer/10; OBJECTID_1=26; GlobalID=b28b992d-f8fd-4b73-8876-f24f1954297a; Bundle_ID=P04364; Name=Schultz; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+        },
+        {
+          "file": "gerp-substations-metadata.json",
+          "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 88; separately titled Schultz-Raver Series Capacitors",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 85; path summary lists series capacitors separately from reconductor/Paul capacitor work",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85"
+        },
+        {
+          "file": "GERP-10-Project-Summaries.pdf",
+          "locator": "PDF page 2; broader Cross Cascades North line and substation components, not an independent location for every component",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=2"
+        },
+        {
+          "file": "GERP-Interactive-Map-Guide.pdf",
+          "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+        }
+      ],
+      "proposal": {
+        "status": "proposal-only-requires-coordinator-contract",
+        "location": {
+          "lat": 47.122038454985756,
+          "lon": -120.51123532816779,
+          "method": "source-point",
+          "confidence": "unverified",
+          "evidence": [
+            {
+              "file": "gerp-substations-features.json",
+              "locator": "FeatureServer/10; OBJECTID_1=26; GlobalID=b28b992d-f8fd-4b73-8876-f24f1954297a; Bundle_ID=P04364; Name=Schultz; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+              "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+            },
+            {
+              "file": "gerp-substations-metadata.json",
+              "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+              "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+            },
+            {
+              "file": "2025-BPA-Transmission-Plan_Final.pdf",
+              "locator": "Printed/PDF page 88; separately titled Schultz-Raver Series Capacitors",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88"
+            },
+            {
+              "file": "2025-BPA-Transmission-Plan_Final.pdf",
+              "locator": "Printed/PDF page 85; path summary lists series capacitors separately from reconductor/Paul capacitor work",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85"
+            },
+            {
+              "file": "GERP-10-Project-Summaries.pdf",
+              "locator": "PDF page 2; broader Cross Cascades North line and substation components, not an independent location for every component",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=2"
+            },
+            {
+              "file": "GERP-Interactive-Map-Guide.pdf",
+              "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+              "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+            }
+          ]
+        },
+        "inventoryChanges": {
+          "centerRole": "substation-center",
+          "nativeGeometry": {
+            "type": "Point",
+            "coordinates": [
+              [
+                -120.51123532816779,
+                47.122038454985756
+              ]
+            ],
+            "role": "substation-center",
+            "crs": "EPSG:4326 (server-returned; source service WKID 102100 / latestWKID 3857)",
+            "accuracyMeters": null,
+            "rawLatitude": "47.122038454985756",
+            "rawLongitude": "-120.51123532816779",
+            "evidence": [
+              {
+                "file": "gerp-substations-features.json",
+                "locator": "FeatureServer/10; OBJECTID_1=26; GlobalID=b28b992d-f8fd-4b73-8876-f24f1954297a; Bundle_ID=P04364; Name=Schultz; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+                "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+              },
+              {
+                "file": "gerp-substations-metadata.json",
+                "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+                "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 88; separately titled Schultz-Raver Series Capacitors",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=88"
+              },
+              {
+                "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                "locator": "Printed/PDF page 85; path summary lists series capacitors separately from reconductor/Paul capacitor work",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=85"
+              },
+              {
+                "file": "GERP-10-Project-Summaries.pdf",
+                "locator": "PDF page 2; broader Cross Cascades North line and substation components, not an independent location for every component",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=2"
+              },
+              {
+                "file": "GERP-Interactive-Map-Guide.pdf",
+                "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+                "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+              }
+            ]
+          },
+          "appendLocationAssumptions": [
+            "Unverified representative point of the existing Schultz substation yard for this exact work unit; the source permits yard center or baseline intersection and does not distinguish them for this feature.",
+            "The substation-center role is a representative-yard interpretation, not a surveyed construction, equipment or geometric center; source Name is Approximate Location and horizontal accuracy is unknown.",
+            "GIS source WKID 102100/latestWKID 3857; preserved server query returned EPSG:4326. Published decimal digits are retained without an accuracy claim.",
+            "The plan describes upgrading capacitor rating while the GIS description says add new capacitors. This proposal resolves only the shared existing-yard location; it does not reconcile engineering scope or equate the point to the whole reconductor project. Plan 2029/2030 and GIS 2029 forecasts remain unchanged."
+          ]
+        },
+        "guard": "Compare the complete current Project against currentProject before preview/apply; preserve every unrelated field and reject stale or locally revised records. This artifact is not a runtime import or automatic patch."
+      },
+      "mapImplication": "After a separately accepted guarded revision, display only as an unverified existing-yard proxy with the source limitations.",
+      "matchingImplication": "A later accepted revision could qualify the representative-yard role, but current owner is null, so existing core still excludes this inventory record. Source confidence remains unverified; no matching result is promised.",
+      "missingEvidenceOrNextGate": "No additional source is required for the narrowly labeled existing-yard proxy proposal. Exact capacitor placement or confirmation of new-versus-upgraded equipment would require a project-specific public facility scope/point."
+    },
+    {
+      "bundleId": "P03999",
+      "projectId": "bpa-plan:P03999",
+      "sourceId": "P03999",
+      "aliases": [],
+      "identityDecision": "exact-native-bundle",
+      "currentProjectSha256": "38acb5d050cad3cd6df62d76e58093cf52d68bab014b10de3ec6cfe638da4891",
+      "currentProject": {
+        "id": "bpa-plan:P03999",
+        "utilityId": "bpa-plan",
+        "sourceId": "P03999",
+        "name": "Buckley Air Insulated Substation (GERP1)",
+        "sponsor": null,
+        "description": "Replace the failing Buckley gas-insulated station with an air-insulated station near the existing site.",
+        "status": null,
+        "voltageKv": [
+          500
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting forecasts; see source milestones"
+        },
+        "notes": [
+          "The plan forecasts 2030 energization; GERP estimated completion is 2029.",
+          "The existing station’s temporary bypass and ownership do not establish a completed replacement or a qualified new-site center."
+        ],
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Buckley Air Insulated Substation (GERP1)",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=97",
+            "locator": "Printed/PDF page 97; Buckley Air Insulated Substation (GERP1); scope and forecast"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12",
+            "locator": "Printed/PDF page 12; GERP1 Buckley air-insulated rebuild; estimated completion 2029"
+          },
+          {
+            "file": "gerp-substations-features.json",
+            "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+            "locator": "OBJECTID_1=3; Bundle_ID=P03999; Buckley 500 kV Substation Rebuild; snapshot retrieved 2026-09-30"
+          }
+        ],
+        "inventory": {
+          "sourceKey": "bpa-plan",
+          "editionId": "2025-updated-2026-08-25",
+          "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+          "reportingGroupName": "Bonneville Power Administration plan",
+          "recordKind": "transmission-project",
+          "recordUnit": "project",
+          "identityBasis": "native-id",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2025",
+          "lifecycleDateMeaning": "source-edition",
+          "sourceState": "OR",
+          "sourceLocation": "Buckley, Sherman County, Oregon",
+          "sourceUpdatedOn": null,
+          "workType": null,
+          "milestones": [
+            {
+              "field": "Plan expected energization",
+              "date": {
+                "value": "2030",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Plan expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 102; §11.1, printed/PDF page 102, Buckley Air Insulated Substation (GERP1)",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+                },
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=97",
+                  "locator": "Printed/PDF page 97; Buckley Air Insulated Substation (GERP1); scope and forecast"
+                }
+              ]
+            },
+            {
+              "field": "GERP estimated completion",
+              "date": {
+                "value": "2029",
+                "precision": "year",
+                "kind": "unknown",
+                "label": "GERP estimated completion"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12",
+                  "locator": "Printed/PDF page 12; GERP1 Buckley air-insulated rebuild; estimated completion 2029"
+                }
+              ]
+            },
+            {
+              "field": "GERP public snapshot expected energization — Buckley",
+              "date": {
+                "value": "2029",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "GERP public snapshot expected energization — Buckley"
+              },
+              "evidence": [
+                {
+                  "file": "gerp-substations-features.json",
+                  "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+                  "locator": "OBJECTID_1=3; Bundle_ID=P03999; Buckley 500 kV Substation Rebuild; snapshot retrieved 2026-09-30"
+                }
+              ]
+            }
+          ],
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      },
+      "publishedFeature": {
+        "attributes": {
+          "OBJECTID_1": 3,
+          "Name": "Buckley",
+          "Cycle": "GERP 1.0",
+          "Bundle_ID": "P03999",
+          "Project_Name": "Buckley 500 kV Substation Rebuild",
+          "Bundle_Name": "BUCKLEY AIR INSULATED SUBSTATION",
+          "Group_Name": null,
+          "Expected_Energization": 2029,
+          "Estimated_Costs": 150000000,
+          "XREF": "BKLY",
+          "Description": "This project is a proposed rebuild of BPA’s Buckley Substation in Sherman County, OR. It would be a new air-insulated 500-kV substation built near the existing gas-insulated substation, which will be retired.",
+          "Project_Justification": "Will create additional capacity to support regional load growth, reliability needs and commercial requests for long-term transmission",
+          "GlobalID": "c52a25ed-03d5-488e-b2df-1e1c44ce82fc",
+          "Status": "DESIGN"
+        },
+        "geometry": {
+          "x": -120.90057107872819,
+          "y": 45.23105202210295
+        }
+      },
+      "featureEvidence": {
+        "file": "gerp-substations-features.json",
+        "locator": "FeatureServer/10; OBJECTID_1=3; GlobalID=c52a25ed-03d5-488e-b2df-1e1c44ce82fc; Bundle_ID=P03999; Name=Buckley; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+      },
+      "publishedCoordinate": {
+        "longitude": -120.90057107872819,
+        "latitude": 45.23105202210295,
+        "outputCrs": "EPSG:4326",
+        "nativeLayerWkid": 102100,
+        "nativeLayerLatestWkid": 3857,
+        "transformation": "Source-server query outSR=4326; no local transform",
+        "horizontalAccuracyMeters": null,
+        "sourceRole": "existing-yard-general-pin",
+        "sourceNameAlias": "Approximate Location"
+      },
+      "decision": "withhold-center",
+      "scopeReasoning": "The point names Buckley and uses the facility-yard layer, but both the plan and GERP summary describe a new air-insulated station near the existing gas-insulated station. Neither the point nor the text identifies this coordinate as the new AIS site. Treat it as an approximate Buckley reference pin, not a replacement-station center.",
+      "dateAndScopeCaveats": "Plan 2030 and GERP/GIS 2029 completion forecasts remain separate. Historical component failures, temporary bypass and retirement statements do not prove current construction status or identify the replacement footprint.",
+      "evidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "locator": "FeatureServer/10; OBJECTID_1=3; GlobalID=c52a25ed-03d5-488e-b2df-1e1c44ce82fc; Bundle_ID=P03999; Name=Buckley; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+        },
+        {
+          "file": "gerp-substations-metadata.json",
+          "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 12; GERP1 Buckley new AIS near existing GIS",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 97; §10.1 Buckley AIS addition and temporary GIS bypass",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=97"
+        },
+        {
+          "file": "GERP-10-Project-Summaries.pdf",
+          "locator": "PDF page 1; Buckley 500 kV Substation Rebuild",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=1"
+        },
+        {
+          "file": "GERP-Interactive-Map-Guide.pdf",
+          "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+        }
+      ],
+      "proposal": null,
+      "mapImplication": "Evidence-only approximate reference pin; no runtime proposal. Any future map-only representation must remain general-pin and excluded from matching.",
+      "matchingImplication": "Not a qualified center for this whole Project. Retain location null and centerRole unknown; do not use these coordinates for distance matching.",
+      "missingEvidenceOrNextGate": "An authoritative public coordinate or georeferenced footprint explicitly identifying the proposed Buckley AIS site, with project linkage and role; an old-yard point or nearby-town reference is insufficient."
+    },
+    {
+      "bundleId": "P05847",
+      "projectId": "bpa-plan:sec-8-6-1-bonanza-substation",
+      "sourceId": "sec-8-6-1-bonanza-substation",
+      "aliases": [
+        "P05847",
+        "L0543"
+      ],
+      "identityDecision": "exact-source-locator-child-with-bundle-alias",
+      "currentProjectSha256": "2e70902635cb6b5a7d7cb70cc56f9925283dd4eb18de02c427eb2de8f703cf1f",
+      "currentProject": {
+        "id": "bpa-plan:sec-8-6-1-bonanza-substation",
+        "utilityId": "bpa-plan",
+        "sourceId": "sec-8-6-1-bonanza-substation",
+        "name": "Bonanza Substation Addition",
+        "sponsor": null,
+        "description": "Build a hub substation near Ponderosa, reconnect its transformer high sides and connect the planned station to existing 500 kV lines.",
+        "status": null,
+        "voltageKv": [
+          115,
+          230,
+          500
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Conflicting forecasts; see source milestones"
+        },
+        "notes": [
+          "Forecasts conflict: area energization 2030, supplemental bullet 2028 and GERP completion 2031.",
+          "Area text identifies 500/230 kV and GERP2; the GERP1 summary names 115/230/500 kV. These remain one accepted source unit with the differences preserved.",
+          "The public GERP point P05847 is named Ponderosa; it does not establish the proposed Bonanza center."
+        ],
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 69; §8.6.1 Bonanza substation; estimated energization 2030 and GERP2 label",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 102; §11.1 Bonanza substation row",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 103; Supplemental GERP1 new Bonanza, L0543; 2028",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 12; §2 GERP1 Bonanza 115/230/500 kV near existing Ponderosa; completion 2031",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+          },
+          {
+            "file": "gerp-substations-features.json",
+            "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+            "locator": "OBJECTID_1=10; Bundle_ID=P05847; Name=Ponderosa; retrieved 2026-09-30"
+          }
+        ],
+        "inventory": {
+          "sourceKey": "bpa-plan",
+          "editionId": "2025-updated-2026-08-25",
+          "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+          "reportingGroupName": "Bonneville Power Administration plan",
+          "recordKind": "transmission-project",
+          "recordUnit": "project",
+          "identityBasis": "source-locator",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2025",
+          "lifecycleDateMeaning": "source-edition",
+          "sourceState": "OR",
+          "sourceLocation": "Near existing Ponderosa Substation, Prineville, central Oregon",
+          "sourceUpdatedOn": null,
+          "workType": null,
+          "milestones": [
+            {
+              "field": "Area estimated energization",
+              "date": {
+                "value": "2030",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Area estimated energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 69; §8.6.1 Bonanza substation; estimated energization 2030 and GERP2 label",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69"
+                },
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 102; §11.1 Bonanza substation row",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=102"
+                }
+              ]
+            },
+            {
+              "field": "Supplemental expected-energization listing",
+              "date": {
+                "value": "2028",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Supplemental expected-energization listing"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 103; Supplemental GERP1 new Bonanza, L0543; 2028",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+                }
+              ]
+            },
+            {
+              "field": "GERP estimated completion",
+              "date": {
+                "value": "2031",
+                "precision": "year",
+                "kind": "unknown",
+                "label": "GERP estimated completion"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 12; §2 GERP1 Bonanza 115/230/500 kV near existing Ponderosa; completion 2031",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+                }
+              ]
+            }
+          ],
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [
+            "P05847",
+            "L0543"
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      },
+      "publishedFeature": {
+        "attributes": {
+          "OBJECTID_1": 10,
+          "Name": "Ponderosa",
+          "Cycle": "GERP 1.0",
+          "Bundle_ID": "P05847",
+          "Project_Name": "Bonanza 230/500 kV Substation",
+          "Bundle_Name": "NEW BONANZA SUBSTATION",
+          "Group_Name": null,
+          "Expected_Energization": 2031,
+          "Estimated_Costs": 300000000,
+          "XREF": "POND",
+          "Description": "This facility would be a new hub substation in Central Oregon near Prineville, OR. The new 115/230/500 kV Bonanza Substation would be built near BPA’s existing Ponderosa Substation.",
+          "Project_Justification": "Will create additional capacity to support new resource development and access to non-federal resources",
+          "GlobalID": "1ae6cb5a-84a9-45e6-a881-7d1e6ff23ca3",
+          "Status": "SCOPING"
+        },
+        "geometry": {
+          "x": -120.9327476470405,
+          "y": 44.22567028995498
+        }
+      },
+      "featureEvidence": {
+        "file": "gerp-substations-features.json",
+        "locator": "FeatureServer/10; OBJECTID_1=10; GlobalID=1ae6cb5a-84a9-45e6-a881-7d1e6ff23ca3; Bundle_ID=P05847; Name=Ponderosa; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+      },
+      "publishedCoordinate": {
+        "longitude": -120.9327476470405,
+        "latitude": 44.22567028995498,
+        "outputCrs": "EPSG:4326",
+        "nativeLayerWkid": 102100,
+        "nativeLayerLatestWkid": 3857,
+        "transformation": "Source-server query outSR=4326; no local transform",
+        "horizontalAccuracyMeters": null,
+        "sourceRole": "nearby-asset-general-pin",
+        "sourceNameAlias": "Approximate Location"
+      },
+      "decision": "withhold-center",
+      "scopeReasoning": "The point has Bundle_ID P05847 but Name=Ponderosa and XREF=POND. The accepted Bonanza source-locator child retains P05847 and L0543 as aliases. Both plan and GERP text put the planned Bonanza station near existing Ponderosa; connections to Ponderosa do not make the Ponderosa yard the new station center.",
+      "dateAndScopeCaveats": "The source-locator ID and both aliases remain unchanged. Plan and GERP voltage, cycle and 2028/2030/2031 forecast differences remain explicit. Ponderosa is related to the scope, but it is not established as the proposed Bonanza location.",
+      "evidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "locator": "FeatureServer/10; OBJECTID_1=10; GlobalID=1ae6cb5a-84a9-45e6-a881-7d1e6ff23ca3; Bundle_ID=P05847; Name=Ponderosa; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+        },
+        {
+          "file": "gerp-substations-metadata.json",
+          "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 12; new Bonanza near existing Ponderosa",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=12"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 69; §8.6.1 Bonanza substation addition and external connections",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=69"
+        },
+        {
+          "file": "GERP-10-Project-Summaries.pdf",
+          "locator": "PDF page 1; Bonanza 115/230/500 kV Substation",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=1"
+        },
+        {
+          "file": "GERP-Interactive-Map-Guide.pdf",
+          "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+        }
+      ],
+      "proposal": null,
+      "mapImplication": "Evidence-only approximate reference pin; no runtime proposal. Any future map-only representation must remain general-pin and excluded from matching.",
+      "matchingImplication": "Not a qualified center for this whole Project. Retain location null and centerRole unknown; do not use these coordinates for distance matching.",
+      "missingEvidenceOrNextGate": "An authoritative public point or footprint explicitly for the planned Bonanza station; Ponderosa coordinates and a general near-Ponderosa description cannot resolve this."
+    },
+    {
+      "bundleId": "P04974",
+      "projectId": "bpa-plan:P04974",
+      "sourceId": "P04974",
+      "aliases": [
+        "Pearl-Sherwood 230 kV Corridor Reconfiguration and Series Bus Sectionalizing Breaker Addition"
+      ],
+      "identityDecision": "exact-native-bundle",
+      "currentProjectSha256": "bba7082a89ebbe7c4310ee2a8061105c3f39e4e7f1a7944d65f93dd7f6f0173e",
+      "currentProject": {
+        "id": "bpa-plan:P04974",
+        "utilityId": "bpa-plan",
+        "sourceId": "P04974",
+        "name": "Pearl–Sherwood–McLoughlin Upgrade",
+        "sponsor": "Bonneville Power Administration / Portland General Electric",
+        "description": "Reconfigure the joint BPA/PGE 230 kV circuits and their terminations, with a new bus-sectionalizing breaker at Pearl.",
+        "status": null,
+        "voltageKv": [
+          230
+        ],
+        "date": {
+          "value": null,
+          "precision": "unknown",
+          "kind": "unknown",
+          "label": "Phased and conflicting forecasts; see source milestones"
+        },
+        "notes": [
+          "The line and breaker have separate 2026/2028 phase forecasts; the path gives 2027 and GERP estimated completion is May 2026.",
+          "The 2026–2028 envelope is not a construction interval. Joint BPA/PGE work does not establish one exclusive owner.",
+          "The public Pearl point locates one facility in a multi-facility project, not the whole project center."
+        ],
+        "buildWindow": null,
+        "location": null,
+        "sources": [
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 51; §8.2.3 joint BPA/PGE Pearl–Sherwood corridor work",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 96; §9.14 joint project, expected energization 2027",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=96"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 13; §2 Portland upgrades; estimated completion May 2026",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 100; §11.1 P04974; phase envelope 2026–2028",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=100"
+          },
+          {
+            "file": "2025-BPA-Transmission-Plan_Final.pdf",
+            "locator": "Printed/PDF page 103; §11.2 Pearl–Sherwood–McLoughlin; 2027",
+            "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+          },
+          {
+            "file": "gerp-substations-features.json",
+            "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000",
+            "locator": "OBJECTID_1=25; Bundle_ID=P04974; Name=Pearl; retrieved 2026-09-30"
+          }
+        ],
+        "inventory": {
+          "sourceKey": "bpa-plan",
+          "editionId": "2025-updated-2026-08-25",
+          "editionLabel": "BPA 2025 Transmission Plan — index update August 25, 2026",
+          "reportingGroupName": "Bonneville Power Administration plan",
+          "recordKind": "transmission-project",
+          "recordUnit": "project",
+          "identityBasis": "native-id",
+          "lifecycle": "planned",
+          "lifecycleAsOf": "2025",
+          "lifecycleDateMeaning": "source-edition",
+          "sourceState": "OR",
+          "sourceLocation": "Pearl, Sherwood and McLoughlin corridor; Portland planning area, Oregon",
+          "sourceUpdatedOn": null,
+          "workType": null,
+          "milestones": [
+            {
+              "field": "Line reconfiguration expected energization",
+              "date": {
+                "value": "2026",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Line reconfiguration expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+                }
+              ]
+            },
+            {
+              "field": "Sectionalizing breaker expected energization",
+              "date": {
+                "value": "2028",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Sectionalizing breaker expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 52; §8.2.3 phase energization: line 2026, breaker 2028",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+                }
+              ]
+            },
+            {
+              "field": "Path expected energization",
+              "date": {
+                "value": "2027",
+                "precision": "year",
+                "kind": "in-service",
+                "label": "Path expected energization"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 96; §9.14 joint project, expected energization 2027",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=96"
+                },
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 103; §11.2 Pearl–Sherwood–McLoughlin; 2027",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=103"
+                }
+              ]
+            },
+            {
+              "field": "GERP estimated completion",
+              "date": {
+                "value": "2026-05",
+                "precision": "month",
+                "kind": "unknown",
+                "label": "GERP estimated completion"
+              },
+              "evidence": [
+                {
+                  "file": "2025-BPA-Transmission-Plan_Final.pdf",
+                  "locator": "Printed/PDF page 13; §2 Portland upgrades; estimated completion May 2026",
+                  "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=13"
+                }
+              ]
+            }
+          ],
+          "owner": null,
+          "parentProgramId": null,
+          "aliases": [
+            "Pearl-Sherwood 230 kV Corridor Reconfiguration and Series Bus Sectionalizing Breaker Addition"
+          ],
+          "constructionStart": null,
+          "nativeGeometry": null,
+          "centerRole": "unknown",
+          "locationAssumptions": []
+        }
+      },
+      "publishedFeature": {
+        "attributes": {
+          "OBJECTID_1": 25,
+          "Name": "Pearl",
+          "Cycle": "GERP 1.0",
+          "Bundle_ID": "P04974",
+          "Project_Name": "Pearl-Sherwood-Mcloughlin 230 kV Line Upgrade",
+          "Bundle_Name": "PEARL-SHERWOOD-MCLOUGHLIN UPGRADE",
+          "Group_Name": "Portland Area Upgrades",
+          "Expected_Energization": 2026,
+          "Estimated_Costs": null,
+          "XREF": "PERL",
+          "Description": "Reconfiguring and re-terminating the Pearl-Sherwood-McLoughlin line at BPA’s Pearl Substation (Wilsonville, OR). ",
+          "Project_Justification": "Will create additional capacity to support regional load growth, reliability needs and commercial requests for long-term transmission",
+          "GlobalID": "6f8bbe71-302c-4fb9-b213-8f101d445227",
+          "Status": "CONSTRUCTION"
+        },
+        "geometry": {
+          "x": -122.77691679780706,
+          "y": 45.32933967400088
+        }
+      },
+      "featureEvidence": {
+        "file": "gerp-substations-features.json",
+        "locator": "FeatureServer/10; OBJECTID_1=25; GlobalID=6f8bbe71-302c-4fb9-b213-8f101d445227; Bundle_ID=P04974; Name=Pearl; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+        "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+      },
+      "publishedCoordinate": {
+        "longitude": -122.77691679780706,
+        "latitude": 45.32933967400088,
+        "outputCrs": "EPSG:4326",
+        "nativeLayerWkid": 102100,
+        "nativeLayerLatestWkid": 3857,
+        "transformation": "Source-server query outSR=4326; no local transform",
+        "horizontalAccuracyMeters": null,
+        "sourceRole": "single-facility-component-general-pin",
+        "sourceNameAlias": "Approximate Location"
+      },
+      "decision": "withhold-center",
+      "scopeReasoning": "Feature OBJECTID_1=25 describes work at Pearl, but the full imported project also splits and reterminates circuits at separate Pearl and Sherwood bays and changes the three-terminal Pearl–McLoughlin–Sherwood circuit. Pearl is a cited endpoint/component yard; one yard cannot represent the entire accepted multifacility project without an explicit approximation policy and additional scope evidence.",
+      "dateAndScopeCaveats": "Line 2026, breaker 2028, path 2027 and GERP May 2026 milestones remain separate. GIS CONSTRUCTION is a snapshot label, not a dated construction interval or an accepted lifecycle revision. Joint BPA/PGE scope is not exclusive owner evidence.",
+      "evidence": [
+        {
+          "file": "gerp-substations-features.json",
+          "locator": "FeatureServer/10; OBJECTID_1=25; GlobalID=6f8bbe71-302c-4fb9-b213-8f101d445227; Bundle_ID=P04974; Name=Pearl; geometry.x/geometry.y; preserved September 30, 2026 outSR=4326 response",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=json&resultRecordCount=2000"
+        },
+        {
+          "file": "gerp-substations-metadata.json",
+          "locator": "FeatureServer/10; description; fields[name=Name].alias; extent.spatialReference",
+          "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10?f=pjson"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 51; §8.2.3 joint Pearl-Sherwood corridor reconfiguration and series bus breaker",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=51"
+        },
+        {
+          "file": "2025-BPA-Transmission-Plan_Final.pdf",
+          "locator": "Printed/PDF page 52; separate line-reconfiguration and breaker phases",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf#page=52"
+        },
+        {
+          "file": "GERP-10-Project-Summaries.pdf",
+          "locator": "PDF page 3; Portland Area Upgrades, Pearl-Sherwood-McLoughlin 230 kV Line Upgrade",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-10-Project-Summaries.pdf#page=3"
+        },
+        {
+          "file": "GERP-Interactive-Map-Guide.pdf",
+          "locator": "PDF page 5; multiple projects associated with one substation or line data point",
+          "url": "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Interactive-Map-Guide.pdf#page=5"
+        }
+      ],
+      "proposal": null,
+      "mapImplication": "Evidence-only approximate reference pin; no runtime proposal. Any future map-only representation must remain general-pin and excluded from matching.",
+      "matchingImplication": "Not a qualified center for this whole Project. Retain location null and centerRole unknown; do not use these coordinates for distance matching.",
+      "missingEvidenceOrNextGate": "Public project-specific endpoint/component evidence plus an accepted whole-unit spatial representation rule, or an explicitly scoped child revision. Do not silently shrink the imported project to its Pearl component, average unqualified points, or promote this reference pin to a single-endpoint matching center."
+    }
+  ]
+}

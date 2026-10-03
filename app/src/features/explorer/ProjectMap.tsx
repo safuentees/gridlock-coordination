@@ -1,5 +1,5 @@
 import { Component, lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react"
-import { CircleMarker, MapContainer, Polyline, TileLayer, useMap } from "react-leaflet"
+import { CircleMarker, MapContainer, Polyline, Rectangle, TileLayer, Tooltip, useMap } from "react-leaflet"
 import { DomEvent } from "leaflet"
 import { MinusIcon, PlusIcon, ScanIcon } from "lucide-react"
 import "leaflet/dist/leaflet.css"
@@ -9,6 +9,7 @@ import type { Project } from "@/domain/schema"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { reportingGroups } from "@/lib/reporting-groups"
 import { MapLegend } from "./MapLegend"
+import { getMapGeography, geographyFitLocations, geographyLabel, geographyAreaLabel, geographyAreaProject, type MapGeography } from "./geography-map"
 import { mapReportingGroupColor } from "./map-colors"
 import { boundedInsets, getMapConnections, getMapLocations, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "./map-view"
 
@@ -16,8 +17,8 @@ export interface MapViewportInsets { top: number; right: number; bottom: number;
 type FitTarget = "projects" | "selection"
 interface FitRequest { target: FitTarget; revision: number }
 
-function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tileError, connectionCount, selectedPair, showConnections, onShowConnections, onFit, onChangeRenderer }: {
-  projects: Project[]; focusIds: string[]; fitRequest: FitRequest; visible: boolean; viewportInsets: MapViewportInsets;
+function MapView({ projects, geography, hasGeography, focusIds, fitRequest, visible, viewportInsets, tileError, connectionCount, selectedPair, showConnections, onShowConnections, onFit, onChangeRenderer }: {
+  projects: Project[]; geography: MapGeography; hasGeography: boolean; focusIds: string[]; fitRequest: FitRequest; visible: boolean; viewportInsets: MapViewportInsets;
   tileError: boolean; connectionCount: number; selectedPair: boolean; showConnections: boolean;
   onShowConnections: (show: boolean) => void; onFit: (target: FitTarget) => void; onChangeRenderer: () => void;
 }) {
@@ -25,9 +26,9 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
   const controls = useRef<HTMLDivElement>(null)
   const [size, setSize] = useState({ width: 0, height: 0 })
   const lastFit = useRef<{ locationsKey: string; focusKey: string; fitRevision: number; layoutKey: string } | null>(null)
-  const groups = useMemo(() => reportingGroups(projects.filter(project => project.location !== null)), [projects])
-  const locations = useMemo(() => getMapLocations(projects), [projects])
-  const selectedLocations = useMemo(() => getMapLocations(projects, focusIds), [projects, focusIds])
+  const groups = useMemo(() => reportingGroups(projects.filter(project => project.location !== null || geography.representedIds.has(project.id))), [projects, geography])
+  const locations = useMemo(() => hasGeography ? geographyFitLocations(projects, geography) : getMapLocations(projects), [projects, geography, hasGeography])
+  const selectedLocations = useMemo(() => hasGeography ? geographyFitLocations(projects, geography, focusIds) : getMapLocations(projects, focusIds), [projects, geography, hasGeography, focusIds])
   const insets = useMemo(() => boundedInsets(viewportInsets, size.width, size.height), [viewportInsets.top, viewportInsets.right, viewportInsets.bottom, viewportInsets.left, size.width, size.height])
   // Compare geographic inputs by value so equivalent caller arrays do not reset pan/zoom.
   const locationsKey = JSON.stringify(locations)
@@ -101,7 +102,7 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
       </div>
       <IconButton variant="outline" label="Fit projects" disabled={!locations.length} onClick={() => onFit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
     </div>
-    <div className="pointer-events-auto">{visible && <MapLegend groups={groups} boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
+    <div className="pointer-events-auto">{visible && <MapLegend geography={hasGeography ? geography : undefined} groups={groups} boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
     <Button className="pointer-events-auto" type="button" variant="outline" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>
     {visible && <DropdownMenu>
       <DropdownMenuTrigger asChild><Button className="pointer-events-auto" type="button" variant="outline" size="sm">Map view</Button></DropdownMenuTrigger>
@@ -117,19 +118,26 @@ function MapView({ projects, focusIds, fitRequest, visible, viewportInsets, tile
   </div>
 }
 
-function LeafletProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
+function LeafletProjectMap({ projects, geographicRecords, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
   const [fitRequest, setFitRequest] = useState<FitRequest>({ target: "projects", revision: 0 })
   const [tileError, setTileError] = useState(false)
   const focusIds = useMemo(() => selectedOpportunity?.projectIds ?? (selectedProjectId ? [selectedProjectId] : []), [selectedOpportunity, selectedProjectId])
   const byId = useMemo(() => new Map(projects.map((project) => [project.id, project])), [projects])
   const candidateIds = useMemo(() => new Set(opportunities.flatMap((opportunity) => opportunity.projectIds)), [opportunities])
+  const geography = useMemo(() => getMapGeography(projects, geographicRecords), [projects, geographicRecords])
   const lines = getMapConnections(byId, opportunities, selectedOpportunity, showConnections)
   return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Project map">
     <MapContainer center={[33.2, -82.5]} zoom={7} zoomControl={false} scrollWheelZoom={false} className="absolute inset-0 z-0 h-full w-full" aria-label="Map of located projects">
-      <MapView projects={projects} focusIds={focusIds} fitRequest={fitRequest} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} onChangeRenderer={onChangeRenderer} onFit={(target) => setFitRequest((previous) => ({ target, revision: previous.revision + 1 }))} />
+      <MapView projects={projects} geography={geography} hasGeography={geographicRecords !== undefined} focusIds={focusIds} fitRequest={fitRequest} visible={visible} viewportInsets={viewportInsets} tileError={tileError} connectionCount={lines.length} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} onChangeRenderer={onChangeRenderer} onFit={(target) => setFitRequest((previous) => ({ target, revision: previous.revision + 1 }))} />
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" eventHandlers={{ tileerror: () => setTileError(true) }} />
+      {geography.areas.map(area => {
+        const [west, south, east, north] = area.bounds
+        const selected = area.members.some(member => focusIds.includes(member.project.id))
+        return <Rectangle key={area.key} bounds={[[south, west], [north, east]]} pathOptions={{ color: selected ? "#171717" : "#64748b", weight: selected ? 3 : 1.5, dashArray: "6 4", fillColor: "#64748b", fillOpacity: selected ? 0.08 : 0.025 }} eventHandlers={{ click: () => onProject(geographyAreaProject(area, focusIds)) }}><Tooltip sticky><span className="whitespace-pre-line">{geographyAreaLabel(area, focusIds)}</span></Tooltip></Rectangle>
+      })}
       {lines.map(({ opportunity, positions }) => <Polyline key={opportunity.id} positions={positions} pathOptions={{ color: "#525252", weight: selectedOpportunity ? 3 : 1.5, opacity: selectedOpportunity ? 0.9 : 0.3, dashArray: "5 5" }} eventHandlers={{ click: () => onOpportunity(opportunity.id) }} />)}
-      {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : mapReportingGroupColor(project.utilityId).css, fillColor: mapReportingGroupColor(project.utilityId).css, fillOpacity: 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }} />)}
+      {projects.map((project) => project.location && <CircleMarker key={project.id} center={[project.location.lat, project.location.lon]} radius={focusIds.includes(project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(project.id) || candidateIds.has(project.id) ? "#171717" : mapReportingGroupColor(project.utilityId).css, fillColor: mapReportingGroupColor(project.utilityId).css, fillOpacity: geography.sourceRecords.get(project.id)?.status === "approximate" ? 0 : 0.85, weight: focusIds.includes(project.id) ? 3 : candidateIds.has(project.id) || geography.sourceRecords.get(project.id)?.status === "approximate" ? 2 : 1 }} eventHandlers={{ click: () => onProject(project.id) }}>{geography.sourceRecords.has(project.id) && <Tooltip sticky><span className="whitespace-pre-line">{project.name}{"\n"}{geographyLabel(geography.sourceRecords.get(project.id)!)}</span></Tooltip>}</CircleMarker>)}
+      {geography.points.map(point => <CircleMarker key={point.key} center={[point.position[1], point.position[0]]} radius={focusIds.includes(point.project.id) ? 8 : 5} pathOptions={{ color: focusIds.includes(point.project.id) ? "#171717" : mapReportingGroupColor(point.project.utilityId).css, fill: false, weight: focusIds.includes(point.project.id) ? 3 : 2 }} eventHandlers={{ click: () => onProject(point.project.id) }}><Tooltip sticky><span className="whitespace-pre-line">{point.project.name}{"\n"}{geographyLabel(point.record)}</span></Tooltip></CircleMarker>)}
     </MapContainer>
   </section>
 }

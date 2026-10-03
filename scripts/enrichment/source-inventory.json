@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-03",
+  "scope": "Reusable official reference qualification across the full imported collection; no runtime matching executed",
+  "baseline": {
+    "coordinatorReceipt": "changes/F28-first-connection.md at d2a1434",
+    "projects": 14923,
+    "located": 68,
+    "approximate": 12114,
+    "ambiguous": 680,
+    "unsupported": 2061,
+    "notProcessed": 0,
+    "limitation": "The saved receipt has aggregate outcomes only. No source-level unresolved counts are asserted or recomputed."
+  },
+  "priorityInventories": [
+    {
+      "sourceKey": "pjm-rtep",
+      "records": 5624,
+      "nonemptySourceState": 5228,
+      "nonemptySourceLocation": 5304
+    },
+    {
+      "sourceKey": "miso-mtep",
+      "records": 3042,
+      "nonemptySourceState": 3042,
+      "nonemptySourceLocation": 3042
+    },
+    {
+      "sourceKey": "ercot-tpit",
+      "records": 1766,
+      "nonemptySourceState": 0,
+      "nonemptySourceLocation": 1644
+    },
+    {
+      "sourceKey": "spp-tracking",
+      "records": 1247,
+      "nonemptySourceState": 1234,
+      "nonemptySourceLocation": 720
+    },
+    {
+      "sourceKey": "ca-pge-tpr",
+      "records": 1591,
+      "nonemptySourceState": 0,
+      "nonemptySourceLocation": 1351
+    }
+  ],
+  "priorityCountMeaning": "Read-only counts of current source JSON fields, not usable-match or unresolved counts. Nonempty values can include NA/TBD, programs, multiple states, or unnamed bus labels. Source publisher footprint is not a project state.",
+  "candidates": [
+    {
+      "id": "national-eia-hifld-substations",
+      "prioritySourceKeys": [
+        "pjm-rtep",
+        "miso-mtep",
+        "ercot-tpit",
+        "spp-tracking",
+        "ca-pge-tpr"
+      ],
+      "decision": "unavailable-primary-reference",
+      "urls": [
+        "https://www.eia.gov/tools/faqs/faq.php?id=567&t=1"
+      ],
+      "reason": "Official EIA FAQ does not offer substation locations; existing mirrors do not establish current official publication. No mirror or power-plant substitution used.",
+      "enablingInput": "Current permitted authoritative national facility publication with names, identities and location roles."
+    },
+    {
+      "id": "cec-substations",
+      "prioritySourceKeys": [
+        "ca-pge-tpr",
+        "ca-sce-tpr",
+        "sdge-tpr"
+      ],
+      "decision": "access-gated",
+      "urls": [
+        "https://www.energy.ca.gov/data-reports/energy-maps-and-spatial-data",
+        "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/Substation/FeatureServer/0"
+      ],
+      "reason": "Prior direct official service inspection returned Token Required. No login, alternate mirror, or withheld PG&E coordinate recovery used.",
+      "enablingInput": "Permitted public CEC release or other independently authorized facility reference."
+    },
+    {
+      "id": "mn-transmission-substations",
+      "prioritySourceKeys": [
+        "miso-mtep",
+        "spp-tracking"
+      ],
+      "decision": "current-download-not-established",
+      "urls": [
+        "https://mn.gov/mngeo/gis-data-and-maps/info-by-topic/utilities-telecommunications/utilities.jsp"
+      ],
+      "reason": "Current official utilities index provides service-area and project links but no current statewide named substation download. Historical 2007/2016 references do not establish a maintained permitted facility layer. This is a discovery gap, not a claim that no such data exists.",
+      "enablingInput": "Current official named-facility release and documentation."
+    },
+    {
+      "id": "arkansas-substations",
+      "prioritySourceKeys": [
+        "miso-mtep",
+        "spp-tracking"
+      ],
+      "decision": "identity-insufficient",
+      "urls": [
+        "https://gis.arkansas.gov/2024/08/15/data-update-major-electrical-infrastructure-update/",
+        "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/18"
+      ],
+      "sourceCrs": 26915,
+      "fields": [
+        "objectid",
+        "type",
+        "county",
+        "shape",
+        "globalid"
+      ],
+      "reason": "Public statewide multipoint layer identifies substation type/county but supplies no facility name or engineering ID. County alone cannot link a project to one facility. No geometry acquired.",
+      "enablingInput": "Authoritative facility-name or native-ID crosswalk; explicit multipoint location meaning."
+    },
+    {
+      "id": "atc-project-public-view",
+      "prioritySourceKeys": [
+        "miso-mtep"
+      ],
+      "decision": "point-role-and-identity-insufficient",
+      "urls": [
+        "https://www.atcllc.com/projects/",
+        "https://services2.arcgis.com/7PeVNOs9VhL7Dka9/ArcGIS/rest/services/ATC_Project_Locations_PUBLIC_VIEW/FeatureServer/0"
+      ],
+      "sourceCrs": 3071,
+      "sourceCount": 10,
+      "fields": [
+        "OBJECTID",
+        "Name",
+        "Description",
+        "URL_Link",
+        "GlobalID"
+      ],
+      "reason": "Official project index links its public project map. Layer has ten general project points, no native MISO project/component ID, no facility/center definition, and no stated point accuracy. Broad work cannot inherit a pin as a construction center. Official page direct download returned HTTP403; index text remained readable. No geometry acquired or failure bypass attempted.",
+      "enablingInput": "Public native project crosswalk, point-role documentation and intended reuse terms; sparse display pins are not a complete MISO facility reference."
+    },
+    {
+      "id": "national-grid-ny-substations",
+      "prioritySourceKeys": [
+        "ny-national-grid-ltp"
+      ],
+      "decision": "access-and-use-unresolved",
+      "urls": [
+        "https://systemdataportal.nationalgrid.com/arcgis/rest/services/NYSDP/Substations/MapServer/0",
+        "https://systemdataportal.nationalgrid.com/MA/webpages/IntroTab.htm",
+        "https://systemdataportal.nationalgrid.com/MA/documents/MA_Terms_of_Use.pdf"
+      ],
+      "reason": "Direct NY JSON metadata request returned HTTP403. Public portal documentation describes distribution-hosting context, with portal-specific use terms. MA terms are not assumed to authorize NY reuse. No repeated denied request, feature download or bypass.",
+      "enablingInput": "Accessible authorized snapshot and source-specific permission/role interpretation."
+    },
+    {
+      "id": "eversource-hosting-substations",
+      "prioritySourceKeys": [
+        "iso-ne-rsp"
+      ],
+      "decision": "candidate-not-qualified",
+      "urls": [
+        "https://dghostingexternalmapprod.eversource.com/dghosting/rest/services/Substations/Substation_Locations/MapServer"
+      ],
+      "sourceCrs": 26918,
+      "reason": "Official owner service lists NH, MA and CT substation point layers. Hosting/distribution scope does not establish transmission project identity or a construction center; no explicit export/reuse qualification or full enumeration performed. Potential regional follow-up, not national/high-volume coverage.",
+      "enablingInput": "Source-specific use terms, full named-facility enumeration and corroborated geographic/project context."
+    },
+    {
+      "id": "usgs-gnis-populated-places",
+      "prioritySourceKeys": [
+        "pjm-rtep",
+        "miso-mtep",
+        "ercot-tpit",
+        "spp-tracking",
+        "ca-pge-tpr"
+      ],
+      "decision": "permitted-locality-candidate-awaits-contract",
+      "urls": [
+        "https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data",
+        "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+        "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/GNIS_file_format.pdf"
+      ],
+      "sourceCrs": "NAD83 geographic (documentation pages 1-2)",
+      "reason": "Official nationally staged locality names/state/county/primary coordinates, refreshed every other month. Locality points are neither facility centers nor boundaries. Current pipeline considers town area representations only, so adding points now would have no useful runtime effect. No national archive acquired in this pass.",
+      "enablingInput": "Coordinator/core contract for locality points, Census-area precedence, duplicates/history/unknown (0,0) rejection, NAD83-to-runtime interpretation and scalable asset delivery."
+    },
+    {
+      "id": "aep-ohio-hosting-grids",
+      "prioritySourceKeys": [
+        "pjm-rtep"
+      ],
+      "decision": "geometry-role-insufficient",
+      "urls": [
+        "https://www.aepohio.com/company/about/hosting-capacity",
+        "https://aepgis.maps.arcgis.com/apps/dashboards/15d8050c7d434a4e8780fdec02899640",
+        "https://services.arcgis.com/ZnwBsu4Q8SvSAofV/arcgis/rest/services/PROD_MI_HC_GRID/FeatureServer/1"
+      ],
+      "fields": [
+        "GRID_ID",
+        "SUBSTATION",
+        "CIRCUITID",
+        "STATE_ABBR",
+        "ADDRESS"
+      ],
+      "sourceGeometry": "esriGeometryPolygon",
+      "sourceCrs": null,
+      "sourceCrsMeaning": "Inspected layer metadata does not provide extent or sourceSpatialReference; no geometry requested or transform performed.",
+      "identityMeaning": "SUBSTATION identifies the station supplying a distribution circuit; GRID_ID identifies a hosting-capacity area, not a substation site.",
+      "reason": "Directly linked public dashboard and web map expose hosting-grid polygons, not named station points or facility footprints. Neither polygon bounds nor a grid/address center establishes where its upstream substation is. Public item licenseInfo is empty; this is not a reuse grant.",
+      "enablingInput": "Permitted named-station point/footprint layer with documented CRS/location role, or a public native-ID-to-facility crosswalk with equivalent geographic evidence.",
+      "collectionContext": "PJM has 1,922 source-scoped AEP owner labels, spanning multiple states; this is not an Ohio match count or a promise of coverage."
+    },
+    {
+      "id": "potomac-edison-hosting",
+      "prioritySourceKeys": [
+        "pjm-rtep"
+      ],
+      "decision": "identity-insufficient",
+      "urls": [
+        "https://www.firstenergycorp.com/feconnect.html",
+        "https://firstenergycorp.maps.arcgis.com/apps/webappviewer/index.html?id=fe8d1f209a944b4c92ee3acb016cc8d4",
+        "https://services9.arcgis.com/QhIvHlqYDjdoPWZG/arcgis/rest/services/Full_Map_xfmr_MD/FeatureServer/0",
+        "https://services9.arcgis.com/QhIvHlqYDjdoPWZG/arcgis/rest/services/PoEd/FeatureServer/0"
+      ],
+      "fields": [
+        "FID",
+        "RemainNum",
+        "Remaining"
+      ],
+      "sourceGeometry": "esriGeometryPoint",
+      "sourceCrs": 3857,
+      "sourceCrsMeaning": "Layer metadata WKID 102100 / latestWKID 3857. No feature coordinates acquired or transform performed.",
+      "identityMeaning": "Solar-accommodation point layer supplies a generated FID and capacity values only; no station name or engineering identifier. The second PoEd polygon layer is territory context, not a facility footprint.",
+      "reason": "A public point is insufficient without facility identity and supported role. Named upstream facilities cannot be recovered from capacity values or territory boundaries. Public app/web-map licenseInfo is null.",
+      "enablingInput": "Public named substation layer or official crosswalk from the published feature ID to the relevant physical facility, with explicit point role and permitted reuse."
+    },
+    {
+      "id": "ppl-hosting-publication",
+      "prioritySourceKeys": [
+        "pjm-rtep"
+      ],
+      "decision": "not-published-by-source",
+      "urls": [
+        "https://www.pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/Customer-Owned-Generation/frequently-asked-questions"
+      ],
+      "reason": "Official FAQ says PPL does not publish hosting-capacity maps or specific feeder hosting data; station/feeder information is available by request during a site-specific pre-application. No request or form submitted.",
+      "enablingInput": "A public identity-bearing geographic release, or separately authorized source material. A project address/site request is not a reusable public inventory.",
+      "collectionContext": "357 current PJM observations carry the source-scoped PPL owner label; no geographic matches asserted."
+    },
+    {
+      "id": "dominion-hosting-use-restriction",
+      "prioritySourceKeys": [
+        "pjm-rtep"
+      ],
+      "decision": "use-restricted",
+      "urls": [
+        "https://www.dominionenergy.com/about/delivering-energy/electric-projects/energy-grid-transformation/hosting-capacity-tool",
+        "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/about/energy-grid-transformation/hosting-capacity-tool/pdfs/hosting-capacity-disclaimer.pdf?hash=9BF635AE2ADBDD6D410B118B86C7F66F&rev=7f1f87b4f7b548a78943d1fd511887dc"
+      ],
+      "reason": "The landing page advertises REST layers, but its directly linked December 20, 2020 disclaimer limits access/use to authorized personnel and prohibits disclosure, copying, publication or distribution of tool contents/results. No map configuration, REST metadata or feature data acquired after reading that restriction.",
+      "enablingInput": "Authoritative public replacement or explicit permission resolving the published use restrictions for this reference purpose. No authorization request sent.",
+      "collectionContext": "774 current PJM observations carry the source-scoped Dominion owner label; this does not establish applicability of distribution hosting data."
+    }
+  ],
+  "metadataSnapshots": [
+    {
+      "file": "arkansas-substations-metadata.json",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/18?f=pjson",
+      "retrievedAt": "2026-10-03T06:50:03.605542+00:00",
+      "httpStatus": 200,
+      "bytes": 5553,
+      "sha256": "d9c0da327b588f81b8184774e5705cf0ed77f88f75a0be218bab735486b1fc5f"
+    },
+    {
+      "file": "atc-project-metadata.json",
+      "url": "https://services2.arcgis.com/7PeVNOs9VhL7Dka9/ArcGIS/rest/services/ATC_Project_Locations_PUBLIC_VIEW/FeatureServer/0?f=pjson",
+      "retrievedAt": "2026-10-03T06:50:04.824224+00:00",
+      "httpStatus": 200,
+      "bytes": 13821,
+      "sha256": "4733ab36a1bf4c0679c181e75964650122023f6f8ebda085c15e5848f85b3c04"
+    },
+    {
+      "file": "atc-project-count.json",
+      "url": "https://services2.arcgis.com/7PeVNOs9VhL7Dka9/ArcGIS/rest/services/ATC_Project_Locations_PUBLIC_VIEW/FeatureServer/0/query?f=json&where=1%3D1&returnCountOnly=true",
+      "retrievedAt": "2026-10-03T06:50:06.534041+00:00",
+      "httpStatus": 200,
+      "bytes": 12,
+      "sha256": "4c9caa2c9fbb5e5f0099ac08ff7a74fd9c6711d307d1e88705cb791b157d3404"
+    }
+  ],
+  "originalsDirectory": "inputs/originals/F28-geography/facility-inventory-2026-10-03",
+  "result": {
+    "newRuntimeReferences": 0,
+    "bundleUnchanged": true,
+    "reason": "No new facility candidate cleared access, identity, role and reuse gates together; locality fallback needs a deliberate matching contract."
+  },
+  "followOnPasses": [
+    {
+      "id": "pjm-utility-pass-2026-10-03",
+      "startedAt": "2026-10-03T17:48:33Z",
+      "endedAt": "2026-10-03T17:55:21Z",
+      "activeMinutes": 6.8,
+      "ceilingMinutes": 20,
+      "scope": "New PJM-region utility public hosting/GIS leads; earlier eight candidates and GNIS not reopened.",
+      "decisions": [
+        "aep-ohio-hosting-grids",
+        "potomac-edison-hosting",
+        "ppl-hosting-publication",
+        "dominion-hosting-use-restriction"
+      ],
+      "newRuntimeReferences": 0,
+      "originalsDirectory": "inputs/originals/F28-geography/pjm-utility-pass-2026-10-03",
+      "snapshots": [
+        {
+          "file": "aep-dashboard-item.json",
+          "url": "https://aepgis.maps.arcgis.com/sharing/rest/content/items/15d8050c7d434a4e8780fdec02899640?f=pjson",
+          "sha256": "78a373b34bdfa6e515009a0f035088a2332dfe8e1e39e7c8ed51084fd063caa3",
+          "bytes": 2014,
+          "retrievedAt": "2026-10-03T17:49:43.291818+00:00",
+          "status": 200
+        },
+        {
+          "file": "aep-dashboard-data.json",
+          "url": "https://aepgis.maps.arcgis.com/sharing/rest/content/items/15d8050c7d434a4e8780fdec02899640/data?f=pjson",
+          "sha256": "723eadb5ede5659c5453aeea29789aec2f1a9e0bc6fe8668e5cbf81ddd74d317",
+          "bytes": 38114,
+          "retrievedAt": "2026-10-03T17:49:43.810068+00:00",
+          "status": 200
+        },
+        {
+          "file": "aep-generation-webmap-item.json",
+          "url": "https://aepgis.maps.arcgis.com/sharing/rest/content/items/d58abd68840b4b459e90764971e4d10d?f=pjson",
+          "sha256": "0cbcfe693439570f3081b3c1dcd8f2c67ea06b248a0a353f829c4c18ff6c77d4",
+          "bytes": 1545,
+          "retrievedAt": "2026-10-03T17:50:14.996099+00:00",
+          "status": 200
+        },
+        {
+          "file": "aep-generation-webmap-data.json",
+          "url": "https://aepgis.maps.arcgis.com/sharing/rest/content/items/d58abd68840b4b459e90764971e4d10d/data?f=pjson",
+          "sha256": "b81720e31cb20f124290d9f90808743e823e04d5cb1a56f026d76f0175dfca2e",
+          "bytes": 28538,
+          "retrievedAt": "2026-10-03T17:50:15.449142+00:00",
+          "status": 200
+        },
+        {
+          "file": "aep-generation-grid-metadata.json",
+          "url": "https://services.arcgis.com/ZnwBsu4Q8SvSAofV/arcgis/rest/services/PROD_MI_HC_GRID/FeatureServer/1?f=pjson",
+          "sha256": "2cf7b24ebbbca6b366f2262117182ee9a9bfd9e85e7181a5c249da10e81baca6",
+          "bytes": 25666,
+          "retrievedAt": "2026-10-03T17:50:59.366120+00:00",
+          "status": 200
+        },
+        {
+          "file": "potomac-edison-app-item.json",
+          "url": "https://firstenergycorp.maps.arcgis.com/sharing/rest/content/items/fe8d1f209a944b4c92ee3acb016cc8d4?f=pjson",
+          "sha256": "ada4b7746823e64667d4955030845af1c89b8026ea2615550f1638f0215f21a6",
+          "bytes": 1590,
+          "retrievedAt": "2026-10-03T17:52:29.972991+00:00",
+          "status": 200
+        },
+        {
+          "file": "potomac-edison-app-data.json",
+          "url": "https://firstenergycorp.maps.arcgis.com/sharing/rest/content/items/fe8d1f209a944b4c92ee3acb016cc8d4/data?f=pjson",
+          "sha256": "fe3de47ee10ae2dd681fcd4fd67cb4460158a8ab6ab12617f39e8a3686d3d879",
+          "bytes": 12924,
+          "retrievedAt": "2026-10-03T17:52:30.146610+00:00",
+          "status": 200
+        },
+        {
+          "file": "potomac-edison-webmap-item.json",
+          "url": "https://firstenergycorp.maps.arcgis.com/sharing/rest/content/items/3a5ec3b120f748059c13f2544b48d5b9?f=pjson",
+          "sha256": "d561366ba6ad0192a39f9e4b174f8f53b687326b01f964c9a56f198eccd5d490",
+          "bytes": 1374,
+          "retrievedAt": "2026-10-03T17:53:01.096293+00:00",
+          "status": 200
+        },
+        {
+          "file": "potomac-edison-webmap-data.json",
+          "url": "https://firstenergycorp.maps.arcgis.com/sharing/rest/content/items/3a5ec3b120f748059c13f2544b48d5b9/data?f=pjson",
+          "sha256": "3c94e17cc9c80d6ba068b216bd6f9c7d80eb2dd27847e0ad4ecd63cb693d52ed",
+          "bytes": 16980,
+          "retrievedAt": "2026-10-03T17:53:01.360725+00:00",
+          "status": 200
+        },
+        {
+          "file": "potomac-edison-transformer-metadata.json",
+          "url": "https://services9.arcgis.com/QhIvHlqYDjdoPWZG/arcgis/rest/services/Full_Map_xfmr_MD/FeatureServer/0?f=pjson",
+          "sha256": "311227d1312bb17d4fee154266d13139d9afce28c0fe06e1eaba022270c4e3d6",
+          "bytes": 12748,
+          "retrievedAt": "2026-10-03T17:53:34.817198+00:00",
+          "status": 200
+        },
+        {
+          "file": "potomac-edison-boundary-metadata.json",
+          "url": "https://services9.arcgis.com/QhIvHlqYDjdoPWZG/arcgis/rest/services/PoEd/FeatureServer/0?f=pjson",
+          "sha256": "f543fdebe66270a1898332134cd1b1970f7eeca4ca20ba024b7deaa8145ee471",
+          "bytes": 11530,
+          "retrievedAt": "2026-10-03T17:53:35.429391+00:00",
+          "status": 200
+        },
+        {
+          "file": "ppl-interconnection-faq.html",
+          "url": "https://www.pplelectric.com/site/More/About-Us/Electric-Rates-and-Rules/Customer-Owned-Generation/frequently-asked-questions",
+          "sha256": "d9d6025188170f6b0b592fe9f2fe245c7014ae8451c9e9403b7139d58892e083",
+          "bytes": 4961343,
+          "retrievedAt": "2026-10-03T17:55:09.570658+00:00",
+          "status": 200
+        },
+        {
+          "file": "aep-hosting-explanation.html",
+          "url": "https://www.aepohio.com/company/about/hosting-capacity",
+          "sha256": "96795a227799823dafa486324d2cfc50a7804f618081aa1465fe1db138ab0b7e",
+          "bytes": 195735,
+          "retrievedAt": "2026-10-03T17:55:12.327543+00:00",
+          "status": 200
+        },
+        {
+          "file": "firstenergy-interconnection.html",
+          "url": "https://www.firstenergycorp.com/feconnect.html",
+          "sha256": "eb8d8f59ce0a026a509e3eaf69f0232eed4bce8daed1cd7be13a922e89f27e7a",
+          "bytes": 72110,
+          "retrievedAt": "2026-10-03T17:55:12.997741+00:00",
+          "status": 200
+        },
+        {
+          "file": "dominion-hosting-disclaimer.pdf",
+          "url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/about/energy-grid-transformation/hosting-capacity-tool/pdfs/hosting-capacity-disclaimer.pdf?hash=9BF635AE2ADBDD6D410B118B86C7F66F&rev=7f1f87b4f7b548a78943d1fd511887dc",
+          "sha256": "80757a70c54c60d6752175f9b7678b0c2ab4a70d7ea57d810985ef7f2a90cebc",
+          "bytes": 114386,
+          "retrievedAt": "2026-10-03T17:55:13.564660+00:00",
+          "status": 200
+        }
+      ],
+      "result": "No candidate simultaneously established permitted reuse, facility identity and facility-location geometry. No facility feature queries, CRS conversions, app checks or visuals."
+    }
+  ]
+}

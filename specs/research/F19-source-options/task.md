@@ -18,7 +18,7 @@ Keep the existing ceiling: **60 minutes total active source-selection research, 
 
 The three families are existing-project primary evidence (utility publications/public permits), regional transmission planning/reporting, and federal nationwide inventories. Within remaining time, use one regional lead plus one fallback only if the first is inaccessible. Do not exhaustively survey operators or build scrapers during research. Nationwide evaluation is a repeatability assessment using the same regional evidence and one national comparator, not a new nationwide extraction exercise.
 
-Use public text, tables or documented APIs. No restricted/CEII material, access bypass, bulk geocoding, guessed coordinates, visual inspection or screenshots. Preserve originals. Separate project plans, existing infrastructure, generation proposals and completed/cancelled projects. Existing assets can support an identity match; their existence does not establish a future project, route or construction interval.
+Use public text, tables or documented APIs. No restricted/CEII material, access bypass, guessed coordinates, visual inspection or screenshots. Preserve originals. Separate project plans, existing infrastructure, generation proposals and completed/cancelled projects. Existing assets can support an identity match; their existence does not establish a future project, route or construction interval.
 
 ## Initial comparison and recommendation
 
@@ -88,3 +88,5 @@ After source selection, the coordinator fixes the source slug/edition, exact ada
 Owner assignment is recorded here, not proof of dispatch. This side conversation cannot launch or message workers. The main coordinator resumes the existing source owner, records source choice and proceeds with selected F26/F27 work without treating every adapter as a new product-scope decision. Use the project remote and existing authorized small PR/merge workflow; no template-remote push, branch deletion or history rewrite.
 
 Only the named coordinator checks integrated runtime changes within the existing five-minute nonvisual budget. Documentation needs no build. No Playwright, screenshots, image analysis, visual verification or mobile audits. Report actual source coverage and blockers at each integration; a completed pilot or refresh never closes national expansion.
+
+October 1, 2026: F28 supersedes the earlier research-only boundary for geographic enrichment. Full-collection automated matching/geocoding is selected with provenance, precision, uncertainty, source-use and original-preservation requirements. This historical task still does not authorize private/restricted access or invented engineering claims.
