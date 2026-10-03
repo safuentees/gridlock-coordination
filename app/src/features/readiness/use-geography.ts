@@ -72,12 +72,12 @@ export function useGeography(dataset: Dataset | null) {
     if (!dataset || activeDataset.current !== dataset || current.busy || !current.run) throw new Error("The active geographic results changed. Make a new preview before restoring.")
     const base = current.run
     const restored = restoreGeographicReviews(base, preview, protectedProjectIds)
-    // Future source revisions inherit the decisions even if persistence is unavailable.
-    cached.current[dataset.mode] = restored
     setState(previous => previous.base === dataset && previous.run === base ? { ...previous, busy: true, error: null } : previous)
     try {
       const error = await saveGeographySession(restored)
       if (error) throw new Error(error)
+      // A failed Apply keeps both the displayed run and future reruns on the prior decisions.
+      cached.current[dataset.mode] = restored
       setState(previous => previous.base === dataset && previous.run === base ? { ...previous, run: restored, busy: false, error: null } : previous)
     } catch (error) {
       const message = error instanceof Error ? error.message : "Geographic reviews could not be restored. The preview is preserved."

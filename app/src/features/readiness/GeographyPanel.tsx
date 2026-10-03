@@ -13,6 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { GEOGRAPHIC_STATUSES, geographicRepresentationSchema, type GeographicRecord, type GeographicRepresentation, type GeographicRun, type GeographicStatus } from "@/domain/geography"
 import type { DataMode, Dataset } from "@/domain/schema"
 import type { GeographicRestoreAction, GeographicRestorePreview } from "@/domain/geographic-restore"
+import type { GeographicReviewDraft as ReviewDraft } from "@/domain/geographic-drafts"
 import { GEOGRAPHY_IMPORT_MAX_BYTES } from "@/data/geography-session"
 import { geographicCoverage } from "@/enrichment"
 import { getGeographicCoverageReport } from "@/enrichment/coverage"
@@ -21,6 +22,7 @@ import { matchesProjectQuery } from "@/lib/project-search"
 import { reportingGroupLabel, reportingGroups } from "@/lib/reporting-groups"
 import { EvidenceSources } from "./RevisionPreview"
 import { GeographyCoverage } from "./GeographyCoverage"
+import { reviewIsDirty, useGeographicDrafts, type ReviewState } from "./use-geographic-drafts"
 
 export interface GeographyPanelProps {
   dataset: Dataset
@@ -92,35 +94,6 @@ function RepresentationEvidence({ representation }: { representation: Geographic
   </section>
 }
 
-type PointRepresentation = Extract<GeographicRepresentation, { kind: "point" }>
-type AreaRepresentation = Extract<GeographicRepresentation, { kind: "area" }>
-interface ReviewDraft {
-  inputFingerprint: string
-  decision: GeographicReviewInput["decision"]
-  reason: string
-  kind: GeographicRepresentation["kind"]
-  label: string
-  method: PointRepresentation["method"]
-  pointPrecision: PointRepresentation["precision"]
-  areaPrecision: AreaRepresentation["precision"]
-  longitude: string
-  latitude: string
-  endpoints: string
-  west: string
-  south: string
-  east: string
-  north: string
-  accuracy: string
-  limitations: string
-  evidence: { file: string; locator: string; url: string }[]
-}
-interface ReviewState {
-  tab: "evidence" | "review"
-  draft?: ReviewDraft
-  baseline?: string
-  error?: string
-  notice?: string
-}
 interface RestoreCandidate {
   preview: GeographicRestorePreview
   run: GeographicRun
@@ -147,10 +120,6 @@ const RESTORE_LABELS: Record<GeographicRestoreAction, string> = {
   unreviewed: "Automatic result — not restored",
 }
 const RESTORE_ACTIONS = Object.keys(RESTORE_LABELS) as GeographicRestoreAction[]
-function reviewIsDirty(state: ReviewState): boolean {
-  return !!state.draft && state.baseline !== undefined && JSON.stringify(state.draft) !== state.baseline
-}
-
 function initialReview(record: GeographicRecord): ReviewDraft {
   const representation = record.representation ?? record.review?.representation
   return {
@@ -238,7 +207,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
       setBrowsingByMode(previous => ({ ...previous, [dataset.mode]: { ...previous[dataset.mode], selectedId: projectToReveal.id } }))
     }
   }, [projectToReveal, dataset])
-  const [reviews, setReviews] = useState<Record<string, ReviewState>>({})
+  const { reviews, setReviews, dismissStoredDraft, hydrated: draftsHydrated, storage: draftStorage, download: downloadDrafts, retrySave: retryDraftSave } = useGeographicDrafts(dataset.mode)
   const [savingKey, setSavingKey] = useState<string | null>(null)
   const saving = useRef(false)
   const [restoreOpen, setRestoreOpen] = useState(false)
@@ -282,7 +251,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   const reviewDraft = reviewState?.draft ?? (selectedOutcome ? initialReview(selectedOutcome) : null)
   const staleDraft = !!reviewDraft && !!selectedOutcome && reviewDraft.inputFingerprint !== selectedOutcome.inputFingerprint
   const canReview = !!selectedOutcome && selectedOutcome.status !== "not-processed"
-  const saveDisabled = busy || savingKey !== null || restoreOperation !== null || !canReview || staleDraft || !reviewDraft?.reason.trim()
+  const saveDisabled = !draftsHydrated || busy || savingKey !== null || restoreOperation !== null || !canReview || staleDraft || !reviewDraft?.reason.trim()
     || (reviewDraft?.decision !== "corrected" && !selectedOutcome?.representation)
 
   const protectedProjectIds = useMemo(() => [...new Set(Object.entries(reviews).flatMap(([key, state]) => {
@@ -338,12 +307,12 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   function updateReview(update: Partial<ReviewDraft>) {
     if (!selected || !reviewDraft || restoreLock.current) return
     changeBrowsing({ selectedId: selected.id })
-    setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review", draft: { ...reviewDraft, ...update }, baseline: previous[reviewKey]?.baseline ?? JSON.stringify(reviewDraft) } }))
+    setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review", draft: { ...reviewDraft, ...update }, baseline: previous[reviewKey]?.baseline ?? reviewDraft } }))
   }
   function changeDetailTab(tab: string) {
     if (!selected) return
     changeBrowsing({ selectedId: selected.id })
-    setReviews(previous => ({ ...previous, [reviewKey]: { ...previous[reviewKey], tab: tab as ReviewState["tab"], draft: previous[reviewKey]?.draft ?? reviewDraft ?? undefined, baseline: previous[reviewKey]?.baseline ?? (reviewDraft ? JSON.stringify(reviewDraft) : undefined) } }))
+    setReviews(previous => ({ ...previous, [reviewKey]: { ...previous[reviewKey], tab: tab as ReviewState["tab"], draft: previous[reviewKey]?.draft ?? reviewDraft ?? undefined, baseline: previous[reviewKey]?.baseline ?? reviewDraft ?? undefined } }))
   }
   async function saveReview(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -352,12 +321,13 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
     const draft = reviewDraft
     saving.current = true
     setSavingKey(key)
-    setReviews(previous => ({ ...previous, [key]: { ...previous[key], tab: "review", draft, baseline: previous[key]?.baseline ?? JSON.stringify(draft), error: undefined, notice: undefined } }))
+    setReviews(previous => ({ ...previous, [key]: { ...previous[key], tab: "review", draft, baseline: previous[key]?.baseline ?? draft, error: undefined, notice: undefined } }))
     try {
       const input: GeographicReviewInput = { inputFingerprint: draft.inputFingerprint, decision: draft.decision, reason: draft.reason.trim() }
       if (draft.decision === "corrected") input.representation = correctedRepresentation(draft)
       await onReview(selected.id, input)
-      setReviews(previous => ({ ...previous, [key]: { ...previous[key], baseline: JSON.stringify(draft), notice: "Review saved.", error: undefined } }))
+      dismissStoredDraft(key)
+      setReviews(previous => ({ ...previous, [key]: { ...previous[key], baseline: draft, notice: "Review saved.", error: undefined } }))
     } catch (failure) {
       setReviews(previous => ({ ...previous, [key]: { ...previous[key], error: failure instanceof Error ? failure.message : "The review could not be saved. Your draft is retained.", notice: undefined } }))
     } finally {
@@ -370,7 +340,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
     setRestores(previous => ({ ...previous, [mode]: { ...previous[mode], ...update } }))
   }
   async function previewRestore() {
-    if (!restoreState.file || !activeRun || !onPreviewRestore || busy || savingKey !== null || restoreLock.current) return
+    if (!draftsHydrated || !restoreState.file || !activeRun || !onPreviewRestore || busy || savingKey !== null || restoreLock.current) return
     const mode = dataset.mode
     const file = restoreState.file
     const context = restoreContext.current
@@ -393,7 +363,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
     }
   }
   async function applyRestore() {
-    if (!restoreCandidate || !onRestore || restoreInvalid || restoreState.applied || !compatibleCount || busy || savingKey !== null || restoreLock.current) return
+    if (!draftsHydrated || !restoreCandidate || !onRestore || restoreInvalid || restoreState.applied || !compatibleCount || busy || savingKey !== null || restoreLock.current) return
     const mode = dataset.mode
     const candidate = restoreCandidate
     restoreLock.current = true
@@ -440,7 +410,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
                 <div className="flex min-w-0 flex-wrap items-center gap-2"><Input key={dataset.mode} id={`${id}-restore-file`} type="file" accept="application/json,.json" className="min-w-0 flex-1" disabled={restoreOperation !== null} onChange={event => {
                   const file = event.target.files?.[0]
                   if (file) updateRestore(dataset.mode, { file, text: undefined, error: undefined, notice: undefined, applied: false })
-                }} /><Button variant="outline" disabled={!restoreState.file || !activeRun || busy || savingKey !== null || restoreOperation !== null} onClick={previewRestore}>{restoreOperation === "preview" ? "Reading file…" : "Preview reviews"}</Button></div>
+                }} /><Button variant="outline" disabled={!draftsHydrated || !restoreState.file || !activeRun || busy || savingKey !== null || restoreOperation !== null} onClick={previewRestore}>{restoreOperation === "preview" ? "Reading file…" : "Preview reviews"}</Button></div>
                 <p className="text-xs text-muted-foreground [overflow-wrap:anywhere]">{restoreState.file ? `Selected: ${restoreState.file.name}. ` : ""}Maximum {importLimitMiB} MiB. {protectedProjectIds.length.toLocaleString()} unsaved review drafts protected.</p>
               </div>
               {restoreCandidate && <>
@@ -464,7 +434,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
                 {restoreState.error && <p role="alert" className="text-sm text-destructive">{restoreState.error}</p>}
                 {restoreState.notice && <p role="status" className="text-sm">{restoreState.notice}</p>}
               </div>
-              <DialogFooter className="shrink-0"><Button onClick={applyRestore} disabled={!restoreCandidate || restoreInvalid || restoreState.applied || !compatibleCount || busy || savingKey !== null || restoreOperation !== null}>{restoreOperation === "apply" ? "Restoring reviews…" : "Apply compatible reviews"}</Button></DialogFooter>
+              <DialogFooter className="shrink-0"><Button onClick={applyRestore} disabled={!draftsHydrated || !restoreCandidate || restoreInvalid || restoreState.applied || !compatibleCount || busy || savingKey !== null || restoreOperation !== null}>{restoreOperation === "apply" ? "Restoring reviews…" : "Apply compatible reviews"}</Button></DialogFooter>
             </DialogContent>
           </Dialog>}
           <Button onClick={onProcess} disabled={busy || savingKey !== null || restoreOperation !== null || dataset.projects.length === 0}>{busy ? "Processing…" : !activeRun && error ? "Retry processing" : activeRun ? "Process again" : "Process collection"}</Button>
@@ -474,6 +444,11 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
       <p className="text-sm text-muted-foreground">Coverage across {dataset.projects.length.toLocaleString()} records using available references. Source-located means supplied coordinates, without independent verification. Approximate includes facility estimates, endpoints and areas.</p>
       <dl className="grid grid-cols-5 gap-3" aria-label="Geographic coverage totals">{GEOGRAPHIC_STATUSES.map(status => <div key={status} className="min-w-0"><dt className="text-sm text-muted-foreground">{STATUS_LABELS[status]}</dt><dd className="font-medium tabular-nums">{coverage[status].toLocaleString()}</dd></div>)}</dl>
       {busy && <p role="status" className="text-sm text-muted-foreground">{progress ? `Processing ${progress.processed.toLocaleString()} of ${progress.total.toLocaleString()} records…` : "Preparing geographic evidence…"}</p>}
+      {!draftsHydrated && <p role="status" className="text-sm text-muted-foreground">Loading unfinished review drafts…</p>}
+      {draftStorage[dataset.mode].error && <div className="max-h-28 space-y-2 overflow-auto">
+        <p role="alert" className="text-sm text-destructive">{draftStorage[dataset.mode].error}</p>
+        <div className="flex flex-wrap gap-2"><Button variant="outline" size="sm" disabled={!draftsHydrated} onClick={() => downloadDrafts(dataset.mode)}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download drafts</Button>{!draftStorage[dataset.mode].writeBlocked && <Button variant="outline" size="sm" onClick={retryDraftSave}>Retry saving drafts</Button>}</div>
+      </div>}
       {error && (detailTab !== "review" || error !== reviewState?.error) && <p role="alert" className="max-h-20 overflow-auto text-sm text-destructive">{error}</p>}
     </header>
     <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 overflow-hidden">
@@ -534,7 +509,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
           {detailTab === "review" && <div className="shrink-0 space-y-2 border-t pt-3">
             {reviewState?.error && <p role="alert" className="max-h-20 overflow-auto text-sm text-destructive">{reviewState.error}</p>}
             {reviewState?.notice && <p role="status" className="text-sm text-muted-foreground">{reviewState.notice}</p>}
-            <div className="flex flex-wrap gap-2"><Button type="submit" form={`${id}-review`} disabled={saveDisabled}>{savingKey === reviewKey ? "Saving review…" : "Save review"}</Button>{reviewState && reviewIsDirty(reviewState) && <Button variant="outline" disabled={busy || savingKey !== null || restoreOperation !== null} onClick={() => setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review" } }))}>Discard draft</Button>}</div>
+            <div className="flex flex-wrap gap-2"><Button type="submit" form={`${id}-review`} disabled={saveDisabled}>{savingKey === reviewKey ? "Saving review…" : "Save review"}</Button>{reviewState && reviewIsDirty(reviewState) && <Button variant="outline" disabled={busy || savingKey !== null || restoreOperation !== null} onClick={() => { dismissStoredDraft(reviewKey); setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review" } })) }}>Discard draft</Button>}</div>
           </div>}
         </CardContent>
       </Card>
