@@ -8,6 +8,8 @@ import argparse
 import hashlib
 import json
 import time
+from http.client import RemoteDisconnected
+from urllib.error import HTTPError, URLError
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
@@ -41,8 +43,20 @@ def main():
         if path.exists():
             raise ValueError(f'Unregistered original exists: {filename}; preserve and reconcile before acquiring')
         request = Request(url, headers={'User-Agent': 'Gridlock geographic reference snapshot (public Census research)', 'Accept': 'application/json' if as_json else 'application/pdf'})
-        with urlopen(request, timeout=180) as response:
-            data = response.read()
+        for attempt in range(3):
+            try:
+                with urlopen(request, timeout=60) as response:
+                    data = response.read()
+                break
+            except (HTTPError, URLError, RemoteDisconnected, TimeoutError) as error:
+                # Retry transient transport failures only; stop on rate limits or access denials.
+                if isinstance(error, HTTPError) and error.code not in (500, 502, 503, 504):
+                    raise
+                if attempt == 2:
+                    raise
+                delay = (attempt + 1) * 5
+                print(f'Transient source request failure for {filename}; retry in {delay}s: {error}', flush=True)
+                time.sleep(delay)
         parsed = json.loads(data) if as_json else data
         if as_json and 'error' in parsed:
             raise RuntimeError(f'Census error for {filename}: {parsed["error"]}')

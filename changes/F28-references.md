@@ -1,7 +1,8 @@
-# F28-B — First reusable geographic reference connection
+# F28-B — Complete declared Census area references
 
-- Added reproducible sequential official Census ACS2025 acquisition and offline bounding-extent production with preserved original URLs, hashes, CRS and use meanings.
-- First connection includes all 56 state/territory areas and 3,235 county equivalents, plus three accepted exact-ID BPA general pins guarded by full Project fingerprints excluding analyst note changes.
-- No Census centroids or withheld BPA coordinates are emitted; area and facility context never changes strict Project locations or matching eligibility.
-- Complete place/CDP acquisition and broader facility-reference coverage remain pending; this is not full F28 completion.
+- Added 19,729 incorporated places and 12,913 CDPs; the bundle now has 35,936 references including 56 states/territories, 3,235 county equivalents and the three accepted guarded BPA general pins.
+- Published compact asset: 40,865,532 bytes; reference revision census-acs2025-bpa-0221b350b2cdfaf4. All four declared Census layers are complete.
+- Preserved 185 public original files / 955,292,226 bytes outside Git, with exact URLs, hashes, CRS/use meanings and acquisition counts; no centroids, invented precision or withheld BPA coordinates.
+- Added bounded transport retries and incremental state/county reuse against matching source hashes after an older local polygon read stalled; reference revision now covers emitted semantics as well as upstream bytes.
+- County subdivisions, GNIS-only localities, historical area editions and broader facility coverage remain gaps; area-reference completion is not full F28 or matching completion.
 - No worker application checks or visuals; coordinator owns the combined milestone check and integration.
