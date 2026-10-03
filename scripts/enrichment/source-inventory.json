@@ -170,15 +170,16 @@
         "spp-tracking",
         "ca-pge-tpr"
       ],
-      "decision": "permitted-locality-candidate-awaits-contract",
+      "decision": "connected-full-county-context-only",
       "urls": [
         "https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data",
         "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
         "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/GNIS_file_format.pdf"
       ],
       "sourceCrs": "NAD83 geographic (documentation pages 1-2)",
-      "reason": "Official nationally staged locality names/state/county/primary coordinates, refreshed every other month. Locality points are neither facility centers nor boundaries. Current pipeline considers town area representations only, so adding points now would have no useful runtime effect. No national archive acquired in this pass.",
-      "enablingInput": "Coordinator/core contract for locality points, Census-area precedence, duplicates/history/unknown (0,0) rejection, NAD83-to-runtime interpretation and scalable asset delivery."
+      "reason": "Accepted B contract uses official names and exact administrative codes only. Full September 2, 2026 Populated Places archive is reconciled against same-edition historical IDs and Census ACS2025 county bounds. No GNIS coordinate is consumed; locality/facility points remain unqualified.",
+      "enablingInput": "County-context adapter complete; finer Census town precedence and homonymous county ambiguity preserved. Any future point use still requires a separate explicit CRS/role/precedence contract.",
+      "connectedSummary": "scripts/enrichment/gnis-county-context-summary.json"
     },
     {
       "id": "aep-ohio-hosting-grids",

@@ -2,6 +2,7 @@ import { geographicReferenceBundleSchema, geographicRunSchema, type GeographicCl
 import type { Dataset, Project, SourceRef } from "@/domain/schema"
 import { getMapLocationResearchHint } from "@/data/map-location-proposals"
 import { extractGeographicClues, normalizeGeographicName, stateCode } from "./clues"
+import { precisionRank } from "./review"
 
 export const PIPELINE_VERSION = "1.0.0"
 const fingerprints = new WeakMap<Project, { canonical: string; hash: string }>()
@@ -181,12 +182,8 @@ function reviewed(result: GeographicRecord, previous?: GeographicRecord): Geogra
   return { ...result, review, status: "unsupported", representation: null, reason: `Analyst ${review.decision} an unresolved outcome: ${review.reason}` }
 }
 
-function precisionRank(representation: GeographicRepresentation | null): number {
-  if (!representation) return -1
-  return ({ project: 6, facility: 5, endpoints: 4, locality: 3, unknown: 3, town: 2, county: 1, state: 0, region: 0 })[representation.precision]
-}
 function preserveFiner(result: GeographicRecord, prior: GeographicRecord | undefined, referenceRevision: string | undefined): GeographicRecord {
-  if (!prior?.representation || prior.inputFingerprint !== result.inputFingerprint || prior.review || precisionRank(prior.representation) <= precisionRank(result.representation)) return result
+  if (!prior?.representation || prior.inputFingerprint !== result.inputFingerprint || prior.review || precisionRank(prior.representation) <= (result.representation ? precisionRank(result.representation) : -1)) return result
   const representation = structuredClone(prior.representation)
   const context = `Finer cited geography retained from reference revision ${referenceRevision ?? "unknown"}; the current reference run did not reproduce that precision. Review before relying on it.`
   representation.limitations = unique([...representation.limitations, context])
