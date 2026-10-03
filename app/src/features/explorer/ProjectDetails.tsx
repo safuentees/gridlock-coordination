@@ -7,7 +7,7 @@ import { reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-group
 import { visibleProjectNotes } from "@/lib/presentation"
 import { dateKind, lifecycleLabels, projectDate, timelineLabels } from "./format"
 
-function Sources({ sources }: { sources: SourceRef[] }) {
+export function Sources({ sources }: { sources: SourceRef[] }) {
   return <ul className="space-y-1 text-xs text-muted-foreground">{sources.map((source, index) => <li key={`${source.file}-${source.locator}-${index}`} className="break-words">
     {source.url && /^https?:\/\//i.test(source.url) ? <a className="underline underline-offset-2" href={source.url} target="_blank" rel="noreferrer">{source.file}</a> : source.file}; {source.locator}
   </li>)}</ul>

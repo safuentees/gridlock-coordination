@@ -1,0 +1,6 @@
+- Integrated PR175's approximate-point/endpoint/grouped-extent adapters and connected only the current active collection's companion records.
+- App owns one processing/review controller shared by map/list/detail and geographic readiness; dataset changes withhold stale runs.
+- All projects retains every row and adds extent/status filtering; both maps select the existing detail panel with geographic evidence beside original evidence.
+- Review geography opens the affected record in readiness while preserving filters, pages and correction drafts; source records/strict candidates remain intact.
+- Existing UI owner explicitly handed the shared files to coordinator; the primary checkout's user Explorer patch is preserved.
+- Source inspection only so far; coordinator's combined milestone check follows exploratory integration. No browser/visual/mobile checks.

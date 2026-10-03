@@ -9,13 +9,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { analyzeProjects, projectEligibility } from "@/core"
 import { DEFAULT_OPTIONS, type AnalysisOptions, type AnalysisResult, type Dataset, type Project } from "@/domain/schema"
-import { reportingGroups, reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-groups"
+import type { GeographicRecord } from "@/domain/geography"
+import { reportingGroups, reportingGroupLabel } from "@/lib/reporting-groups"
 import { matchesProjectQuery } from "@/lib/project-search"
 import { BriefWorkspace, type ScenarioSaveRequest } from "@/features/briefs/BriefWorkspace"
 import { ProjectTimeline } from "@/features/scenarios/ProjectTimeline"
 import { ScenarioControls } from "@/features/scenarios/ScenarioControls"
 import { ComparisonPanel } from "./ComparisonPanel"
 import { ProjectMap } from "./ProjectMap"
+import { projectGeographyLabel } from "./GeographicEvidence"
 import { dateKind, projectDate } from "./format"
 
 const PAGE_SIZE = 25
@@ -27,10 +29,11 @@ function Pagination({ page, count, onChange }: { page: number; count: number; on
   const pages = Math.max(1, Math.ceil(count / PAGE_SIZE))
   return <div className="flex shrink-0 flex-wrap items-center justify-between gap-2 border-t p-3"><p className="text-xs text-muted-foreground">{count ? `${page * PAGE_SIZE + 1}–${Math.min((page + 1) * PAGE_SIZE, count)} of ${count}` : "0 results"}</p><div className="flex gap-2"><IconButton variant="outline" disabled={page === 0} label="Previous page" onClick={() => onChange(page - 1)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" disabled={page + 1 >= pages} label="Next page" onClick={() => onChange(page + 1)}><ChevronRightIcon aria-hidden="true" /></IconButton></div></div>
 }
-export function Explorer({ dataset, options, analysis, onOptionsChange, active = true, projectToReveal = null, candidateToReveal = null, reviewsRequest = 0 }: {
+export function Explorer({ dataset, options, analysis, onOptionsChange, geographicRecords, geographyBusy = false, onReviewGeography, active = true, projectToReveal = null, candidateToReveal = null, reviewsRequest = 0 }: {
   dataset: Dataset; options: AnalysisOptions; analysis: AnalysisResult; onOptionsChange: (options: AnalysisOptions) => void;
   active?: boolean; projectToReveal?: { id: string; request: number } | null;
   candidateToReveal?: { id: string; request: number } | null; reviewsRequest?: number;
+  geographicRecords?: readonly GeographicRecord[]; geographyBusy?: boolean; onReviewGeography?: (id: string) => void;
 }) {
   const [search, setSearch] = useState("")
   const [utility, setUtility] = useState("all")
@@ -60,12 +63,17 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
   const [viewportInsets, setViewportInsets] = useState({ top: 16, right: 16, bottom: 16, left: 0 })
   const groups = useMemo(() => reportingGroups(dataset.projects), [dataset])
   const baseline = useMemo(() => analyzeProjects(dataset.projects, DEFAULT_OPTIONS), [dataset])
+  const geographyById = useMemo(() => new Map(geographicRecords?.map(record => [record.projectId, record]) ?? []), [geographicRecords])
+  const unrepresentedCount = useMemo(() => dataset.projects.filter(project => !project.location && !geographyById.get(project.id)?.representation).length, [dataset, geographyById])
   const projects = useMemo(() => {
     return dataset.projects.filter((project) => {
       const matchesSearch = matchesProjectQuery(project, search)
-      return matchesSearch && (utility === "all" || utility === project.utilityId) && (locationFilter === "all" || (locationFilter === "located" ? project.location !== null : project.location === null))
+      const record = geographyById.get(project.id)
+      const represented = Boolean(project.location || record?.representation)
+      const matchesLocation = locationFilter === "all" || (locationFilter === "located" ? represented : locationFilter === "unlocated" ? !represented : locationFilter === "area" ? record?.representation?.kind === "area" : locationFilter === "not-processed" ? !record || record.status === "not-processed" : record?.status === locationFilter)
+      return matchesSearch && (utility === "all" || utility === project.utilityId) && matchesLocation
     })
-  }, [dataset, search, utility, locationFilter])
+  }, [dataset, search, utility, locationFilter, geographyById])
   const visibleIds = useMemo(() => new Set(projects.map((project) => project.id)), [projects])
   // A candidate stays discoverable when either member matches the project filters.
   const opportunities = useMemo(() => analysis.opportunities.filter((pair) => pair.projectIds.some((id) => visibleIds.has(id))), [analysis, visibleIds])
@@ -182,7 +190,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
       <DropdownMenu><DropdownMenuTrigger asChild><Button variant="outline">Layout</Button></DropdownMenuTrigger><DropdownMenuContent align="end"><DropdownMenuItem onSelect={() => { backToResults(); setTimelineOpen(false); setFiltersOpen(false) }}>Reset layout</DropdownMenuItem></DropdownMenuContent></DropdownMenu>
     </div>
     <div className="relative min-h-0 min-w-0 flex-1 overflow-hidden">
-      <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
+      <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} geographicRecords={geographicRecords} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
       <div className="pointer-events-none absolute inset-0 flex min-h-0 min-w-0 flex-col gap-3 p-3">
       <div className="min-h-0 min-w-0 flex-1">
         <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 max-w-[calc(100%-8rem)] flex-col overflow-hidden rounded-lg border bg-background ${collapsed ? "h-auto w-[min(32rem,100%)]" : "h-full min-h-0 w-[min(32rem,65%)]"}`}>
@@ -200,9 +208,9 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
                   : !detailVisible && <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>}
               </div>
               {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "records"}</p> : !detailVisible && <>
-                {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All filings</SelectItem>{groups.map(group => <SelectItem key={group.id} value={group.id}>{group.label}</SelectItem>)}{utility !== "all" && !groups.some(group => group.id === utility) && <SelectItem value={utility}>{utility} (not in this revision)</SelectItem>}</SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All records</SelectItem><SelectItem value="located">Mapped records</SelectItem><SelectItem value="unlocated">Without locations</SelectItem></SelectContent></Select></div></div>}
+                {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All filings</SelectItem>{groups.map(group => <SelectItem key={group.id} value={group.id}>{group.label}</SelectItem>)}{utility !== "all" && !groups.some(group => group.id === utility) && <SelectItem value={utility}>{utility} (not in this revision)</SelectItem>}</SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All records</SelectItem><SelectItem value="located">With map representation</SelectItem><SelectItem value="area">Geographic extents</SelectItem><SelectItem value="approximate">Approximate</SelectItem><SelectItem value="ambiguous">Ambiguous</SelectItem><SelectItem value="unsupported">Unsupported</SelectItem><SelectItem value="not-processed">Not yet processed</SelectItem><SelectItem value="unlocated">Without map representation</SelectItem></SelectContent></Select></div></div>}
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
-                  {analysis.summary.unlocatedProjects > 0 && <p className="min-w-0 flex-1 text-xs text-muted-foreground">{analysis.summary.unlocatedProjects} records have no mapped location.</p>}
+                  <p className="min-w-0 flex-1 text-xs text-muted-foreground">{geographyBusy ? "Geographic evidence is being prepared." : unrepresentedCount > 0 ? `${unrepresentedCount.toLocaleString()} records have no map representation.` : "All records have map context."}</p>
                   {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
                 </div>
               </>}
@@ -223,7 +231,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
                   </li>)}</ul> : <div className="space-y-3 p-3 text-sm"><p>No candidates match this search and scenario.</p><Button variant="outline" size="sm" onClick={() => changeListView("projects")}>Browse all projects</Button><p className="text-muted-foreground">Widen the radius or clear filters.</p></div>}
                 </TabsContent>
                 <TabsContent forceMount value="projects" hidden={listView !== "projects"} inert={listView !== "projects"} className={listView === "projects" ? "m-0" : "hidden"}>
-                  {projects.length ? <ul className="divide-y">{projects.slice(activeProjectPage * PAGE_SIZE, (activeProjectPage + 1) * PAGE_SIZE).map(project => <li key={project.id}><button type="button" aria-pressed={focusIds.has(project.id)} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectProject(project.id)}><ProjectIdentity project={project} /><span className="block text-sm">{dateKind(project)}: {projectDate(project)}</span><span className="block text-xs text-muted-foreground">{projectLocationLabel(project)}{project.inventory && !projectEligibility(project).eligible && "; Context only"}</span></button></li>)}</ul> : <p className="p-3 text-sm text-muted-foreground">No projects match. Clear the search or change the filters.</p>}
+                  {projects.length ? <ul className="divide-y">{projects.slice(activeProjectPage * PAGE_SIZE, (activeProjectPage + 1) * PAGE_SIZE).map(project => <li key={project.id}><button type="button" aria-pressed={focusIds.has(project.id)} className="w-full space-y-2 p-3 text-left hover:bg-muted focus-visible:outline-offset-[-2px] aria-pressed:bg-muted [overflow-wrap:anywhere]" onClick={() => selectProject(project.id)}><ProjectIdentity project={project} /><span className="block text-sm">{dateKind(project)}: {projectDate(project)}</span><span className="block text-xs text-muted-foreground">{projectGeographyLabel(project, geographyById.get(project.id))}{project.inventory && !projectEligibility(project).eligible && "; Context only"}</span></button></li>)}</ul> : <p className="p-3 text-sm text-muted-foreground">No projects match. Clear the search or change the filters.</p>}
                 </TabsContent>
               </div>
               <Pagination page={page} count={count} onChange={changePage} />
@@ -234,7 +242,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, active =
                 {selectedOpportunity && <div className="flex min-w-0 items-center gap-2"><span className="text-xs text-muted-foreground">{selectedCandidateIndex < 0 ? "Outside current results" : `${selectedCandidateIndex + 1} of ${opportunities.length} candidates`}</span><IconButton variant="outline" label="Previous candidate" disabled={selectedCandidateIndex <= 0} onClick={() => selectPair(opportunities[selectedCandidateIndex - 1].id, false)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" label="Next candidate" disabled={selectedCandidateIndex < 0 || selectedCandidateIndex + 1 >= opportunities.length} onClick={() => selectPair(opportunities[selectedCandidateIndex + 1].id, false)}><ChevronRightIcon aria-hidden="true" /></IconButton></div>}
                 <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
               </div>
-              <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} actions={<div ref={setSaveActionTarget} />} onSaveScenario={(pairId, inputs) => setScenarioSaveRequest(previous => ({ pairId, mode: dataset.mode, request: (previous?.request ?? 0) + 1, inputs: { ...inputs } }))} /></div>
+              <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} geographicRecords={geographicRecords} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} onReviewGeography={onReviewGeography} actions={<div ref={setSaveActionTarget} />} onSaveScenario={(pairId, inputs) => setScenarioSaveRequest(previous => ({ pairId, mode: dataset.mode, request: (previous?.request ?? 0) + 1, inputs: { ...inputs } }))} /></div>
             </div>
           </Tabs>
         </aside>

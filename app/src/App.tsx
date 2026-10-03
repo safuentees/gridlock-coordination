@@ -12,6 +12,7 @@ import { HomePage } from "@/features/home/HomePage"
 import { OutcomesWorkspace } from "@/features/outcomes/OutcomesWorkspace"
 import { DatasetImport } from "@/features/import/DatasetImport"
 import { ReadinessWorkspace } from "@/features/readiness/ReadinessWorkspace"
+import { useGeography } from "@/features/readiness/use-geography"
 import { analyzeProjects } from "@/core"
 import { DEFAULT_OPTIONS, type AnalysisOptions, type DataMode, type Dataset } from "@/domain/schema"
 import type { Workspace } from "@/domain/workspace"
@@ -42,6 +43,7 @@ export function App() {
   const [revealProject, setRevealProject] = useState<{ id: string; request: number } | null>(null)
   const [revealCandidate, setRevealCandidate] = useState<{ id: string; request: number } | null>(null)
   const [reviewsRequest, setReviewsRequest] = useState(0)
+  const [geographyToReveal, setGeographyToReveal] = useState<{ id: string; request: number; mode: DataMode } | null>(null)
   const [datasetOpen, setDatasetOpen] = useState(false)
   const options = scenarios[mode]
   async function ensureCollection(target: DataMode): Promise<Dataset> {
@@ -156,6 +158,7 @@ export function App() {
     error: collections[mode].error,
   }
   const analysis = useMemo(() => result.dataset ? analyzeProjects(result.dataset.projects, options) : null, [result.dataset, options])
+  const geography = useGeography(result.dataset)
   const sourceEditions = result.dataset ? sourceEditionLabels(result.dataset.projects.filter(project => !project.inventory)) : []
   const bundledUpdate = useMemo(() => {
     if (mode !== "real" || !sourceOverride || !collections.real.dataset) return { dataset: null, error: null }
@@ -221,9 +224,9 @@ export function App() {
     <div className="min-h-0 min-w-0 flex-1 overflow-hidden">
       {result.dataset && analysis ? <>
         <div hidden={workspace !== "home"} inert={workspace !== "home"} className={workspace === "home" ? "h-full min-h-0 min-w-0" : "hidden"}><HomePage dataset={result.dataset} onNavigate={navigate} onDemo={() => requestMode("demo", "explore")} /></div>
-        <div hidden={workspace !== "explore"} inert={workspace !== "explore"} className={workspace === "explore" ? "h-full min-h-0 min-w-0" : "hidden"}><Explorer key={mode} dataset={result.dataset} options={options} analysis={analysis} onOptionsChange={next => setScenarios(previous => ({ ...previous, [mode]: next }))} active={workspace === "explore"} projectToReveal={revealProject} candidateToReveal={revealCandidate} reviewsRequest={reviewsRequest} /></div>
+        <div hidden={workspace !== "explore"} inert={workspace !== "explore"} className={workspace === "explore" ? "h-full min-h-0 min-w-0" : "hidden"}><Explorer key={mode} dataset={result.dataset} geographicRecords={geography.run?.records} geographyBusy={geography.busy} onReviewGeography={id => { setGeographyToReveal(previous => ({ id, mode, request: (previous?.request ?? 0) + 1 })); navigate("readiness") }} options={options} analysis={analysis} onOptionsChange={next => setScenarios(previous => ({ ...previous, [mode]: next }))} active={workspace === "explore"} projectToReveal={revealProject} candidateToReveal={revealCandidate} reviewsRequest={reviewsRequest} /></div>
         <div hidden={workspace !== "outcomes"} inert={workspace !== "outcomes"} className={workspace === "outcomes" ? "h-full min-h-0 min-w-0 p-4" : "hidden"}><OutcomesWorkspace dataset={result.dataset} options={options} analysis={analysis} onExplore={explore} onReadiness={() => navigate("readiness")} onSavedFindings={openReviews} /></div>
-        <div hidden={workspace !== "readiness"} inert={workspace !== "readiness" || (mode === "real" && sourceBusy)} aria-busy={mode === "real" && sourceBusy} className={workspace === "readiness" ? "h-full min-h-0 min-w-0 p-4" : "hidden"}><ReadinessWorkspace key={mode} dataset={result.dataset} onApply={applySource} onExploreProject={id => { setRevealProject(previous => ({ id, request: (previous?.request ?? 0) + 1 })); navigate("explore") }} /></div>
+        <div hidden={workspace !== "readiness"} inert={workspace !== "readiness" || (mode === "real" && sourceBusy)} aria-busy={mode === "real" && sourceBusy} className={workspace === "readiness" ? "h-full min-h-0 min-w-0 p-4" : "hidden"}><ReadinessWorkspace key={mode} dataset={result.dataset} geography={geography} projectToReveal={geographyToReveal} onApply={applySource} onExploreProject={id => { setRevealProject(previous => ({ id, request: (previous?.request ?? 0) + 1 })); navigate("explore") }} /></div>
       </> : initialError ? <section role="alert" className="h-full space-y-3 overflow-auto rounded-lg border p-4 [overflow-wrap:anywhere]"><h2 className="font-medium">{mode === "real" ? "Source data" : "Demo data"} could not be loaded</h2><p className="text-sm text-muted-foreground">{initialError}</p><Button variant="outline" onClick={() => retryCollection(mode)}>Retry loading</Button></section> : <section role="status" aria-busy="true" className="h-full overflow-auto p-4"><p>{mode === "real" && !sourceLoaded ? "Loading source data and saved revisions…" : `Loading ${mode === "real" ? "source" : "demo"} data…`}</p></section>}
     </div>
   </main>

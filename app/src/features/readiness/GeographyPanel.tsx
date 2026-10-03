@@ -1,4 +1,4 @@
-import { useId, useLayoutEffect, useMemo, useRef, useState, type FormEvent } from "react"
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type FormEvent } from "react"
 import { ChevronLeftIcon, ChevronRightIcon, DownloadIcon, SearchIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -27,6 +27,7 @@ export interface GeographyPanelProps {
   onDownload: () => void
   onExploreProject: (id: string) => void
   onReview: (projectId: string, input: GeographicReviewInput) => Promise<void>
+  projectToReveal?: { id: string; request: number; mode: DataMode } | null
 }
 
 type StatusFilter = GeographicStatus | "all"
@@ -190,10 +191,15 @@ function CorrectionFields({ id, draft, onChange }: { id: string; draft: ReviewDr
   </div>
 }
 
-export function GeographyPanel({ dataset, run, busy, progress, error, onProcess, onDownload, onExploreProject, onReview }: GeographyPanelProps) {
+export function GeographyPanel({ dataset, run, busy, progress, error, onProcess, onDownload, onExploreProject, onReview, projectToReveal }: GeographyPanelProps) {
   const id = useId()
   const [browsingByMode, setBrowsingByMode] = useState<Record<DataMode, BrowsingState>>({ real: initialBrowsingState(), demo: initialBrowsingState() })
   const browsing = browsingByMode[dataset.mode]
+  useEffect(() => {
+    if (projectToReveal?.mode === dataset.mode && dataset.projects.some(project => project.id === projectToReveal.id)) {
+      setBrowsingByMode(previous => ({ ...previous, [dataset.mode]: { ...previous[dataset.mode], selectedId: projectToReveal.id } }))
+    }
+  }, [projectToReveal, dataset])
   const [reviews, setReviews] = useState<Record<string, ReviewState>>({})
   const [savingKey, setSavingKey] = useState<string | null>(null)
   const saving = useRef(false)

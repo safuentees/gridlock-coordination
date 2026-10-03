@@ -14,11 +14,14 @@ function loadReferences(): Promise<GeographicReferenceBundle> {
   return referencePromise
 }
 
-export function useGeography(dataset: Dataset) {
+export function useGeography(dataset: Dataset | null) {
   const [revision, setRevision] = useState(0)
-  const [state, setState] = useState<{ base: Dataset; run: GeographicRun | null; busy: boolean; progress: {processed:number;total:number} | null; error: string | null }>({ base: dataset, run: null, busy: true, progress: null, error: null })
+  const [state, setState] = useState<{ base: Dataset | null; run: GeographicRun | null; busy: boolean; progress: {processed:number;total:number} | null; error: string | null }>({ base: dataset, run: null, busy: Boolean(dataset), progress: null, error: null })
   const cached = useRef<Partial<Record<Dataset["mode"], GeographicRun>>>({})
+  const activeDataset = useRef(dataset)
+  activeDataset.current = dataset
   useEffect(() => {
+    if (!dataset) return
     let cancelled = false
     setState({ base: dataset, run: null, busy: true, progress: {processed:0,total:dataset.projects.length}, error: null })
     void (async () => {
@@ -40,10 +43,10 @@ export function useGeography(dataset: Dataset) {
     })()
     return () => { cancelled = true }
   }, [dataset, revision])
-  const current = state.base === dataset ? state : {run:null,busy:true,progress:null,error:null}
+  const current = state.base === dataset ? state : {run:null,busy:Boolean(dataset),progress:null,error:null}
   const onReview = async (projectId: string, input: GeographicReviewInput) => {
-    const latest = cached.current[dataset.mode] ?? current.run
-    if (!latest || latest.mode !== dataset.mode) return
+    const latest = current.run
+    if (!dataset || activeDataset.current !== dataset || !latest || latest.mode !== dataset.mode) throw new Error("The active geographic results changed. Reopen this record before reviewing it.")
     try {
       const reviewed = reviewGeographicOutcome(latest, projectId, input)
       cached.current[dataset.mode] = reviewed
@@ -65,3 +68,5 @@ export function useGeography(dataset: Dataset) {
     catch (error) { setState(previous => ({...previous,error:error instanceof Error ? error.message : "The geographic evidence could not be downloaded."})) }
   } }
 }
+
+export type GeographyController = ReturnType<typeof useGeography>

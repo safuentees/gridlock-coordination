@@ -1,13 +1,16 @@
 import { useState, type ReactNode } from "react"
 import { CalculatorIcon, FileTextIcon, InfoIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareProjectTiming } from "@/core"
 import type { Dataset, ImpactInputs, Opportunity, Project } from "@/domain/schema"
+import type { GeographicRecord } from "@/domain/geography"
 import { ImpactPanel, type ImpactDraft } from "@/features/impact/ImpactPanel"
 import { ProjectEvidence } from "./ProjectDetails"
-import { reportingGroupLabel, projectLocationLabel } from "@/lib/reporting-groups"
+import { GeographicEvidence, projectGeographyLabel } from "./GeographicEvidence"
+import { reportingGroupLabel } from "@/lib/reporting-groups"
 import { sourceEditionLabels } from "@/lib/presentation"
 import { dateKind, projectDate } from "./format"
 
@@ -18,11 +21,14 @@ export interface ComparisonPanelProps {
   actions?: ReactNode
   onProject: (id: string) => void
   onSaveScenario?: (pairId: string, inputs: ImpactInputs) => void
+  geographicRecords?: readonly GeographicRecord[]
+  onReviewGeography?: (id: string) => void
 }
 
 const BODY_CLASS = "min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain [overflow-wrap:anywhere]"
 
-export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject, actions, onProject, onSaveScenario }: ComparisonPanelProps) {
+export function ComparisonPanel({ dataset, geographicRecords, selectedOpportunity, selectedProject, actions, onProject, onSaveScenario, onReviewGeography }: ComparisonPanelProps) {
+  const geographyById = new Map(geographicRecords?.map(record => [record.projectId, record]) ?? [])
   const selectionKey = JSON.stringify([dataset.mode, selectedOpportunity ? "candidate" : "project", selectedOpportunity?.id ?? selectedProject?.id ?? null])
   const [tabs, setTabs] = useState<Record<string, string>>({})
   const [impactDrafts, setImpactDrafts] = useState<Record<string, ImpactDraft>>({})
@@ -57,7 +63,9 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
         </div>
       </div> : selectedProject ? <div className="space-y-2">
         <ProjectSummary project={selectedProject} onProject={onProject} />
-        <p className="text-xs text-muted-foreground">{projectLocationLabel(selectedProject)}</p>
+        <p className="text-xs text-muted-foreground">{projectGeographyLabel(selectedProject, geographyById.get(selectedProject.id))}</p>
+        {geographyById.get(selectedProject.id)?.representation?.kind === "area" && <p className="text-xs text-muted-foreground">Geographic extent only; project center and route are unknown.</p>}
+        {onReviewGeography && <Button size="sm" variant="outline" onClick={() => onReviewGeography(selectedProject.id)}>Review geography</Button>}
       </div> : <CardDescription>Select a candidate to compare, or a project to view its evidence.</CardDescription>}
     </CardHeader>
     {/* Keep the portal target mounted even when selection actions are not applicable. */}
@@ -68,8 +76,8 @@ export function ComparisonPanel({ dataset, selectedOpportunity, selectedProject,
         <TabsContent forceMount value="evidence" inert={activeTab !== "evidence"} className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
-              {pair.filter((project): project is Project => Boolean(project)).map((project) => <div key={project.id} className="min-w-0 border-t pt-4 first:border-t-0 first:pt-0"><ProjectEvidence project={project} /></div>)}
-            </> : selectedProject ? <ProjectEvidence project={selectedProject} /> : null}
+              {pair.filter((project): project is Project => Boolean(project)).map((project) => <div key={project.id} className="min-w-0 space-y-4 border-t pt-4 first:border-t-0 first:pt-0"><GeographicEvidence record={geographyById.get(project.id)} /><ProjectEvidence project={project} /></div>)}
+            </> : selectedProject ? <><GeographicEvidence record={geographyById.get(selectedProject.id)} /><ProjectEvidence project={selectedProject} /></> : null}
           </div>
         </TabsContent>
         <TabsContent forceMount value="impact" inert={activeTab !== "impact"} className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
