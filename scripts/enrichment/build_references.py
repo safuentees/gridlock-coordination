@@ -29,10 +29,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--originals', type=Path, required=True)
     parser.add_argument('--bpa-originals', type=Path, required=True)
+    parser.add_argument('--base-references', type=Path, help='Reuse previously emitted state/county entries when every source hash agrees with acquisition.json')
     args = parser.parse_args()
     log = json.loads((args.originals / 'acquisition.json').read_text())
     sources = []
     used_files = set()
+    baseline_raw = args.base_references.read_bytes() if args.base_references else None
+    baseline = json.loads(baseline_raw) if baseline_raw else None
 
     def original(filename):
         entry = log['files'][filename]
@@ -55,10 +58,26 @@ def main():
         if layer_name not in log['layers']:
             continue
         layer = log['layers'][layer_name]
+        if baseline and kind in ('state', 'county'):
+            filenames = [layer_name + '-metadata.json', layer_name + '-count.json', *layer['files']]
+            old_sources = {source['evidence']['file']: source for source in baseline['sources']}
+            reusable = [ref for ref in baseline['references'] if ref['id'].startswith(f'census-acs2025:{kind}:')]
+            if len(reusable) != layer['count'] or any(name not in old_sources or old_sources[name]['sha256'] != log['files'][name]['sha256'] for name in filenames):
+                raise ValueError(f'Incremental base/source manifest mismatch for {layer_name}; full rebuild required')
+            for name in filenames:
+                sources.append(old_sources[name])
+                used_files.add(name)
+            references.extend(reusable)
+            if kind == 'state':
+                states.update({ref['id'].split(':')[-1]: ref['stateCodes'][0] for ref in reusable})
+            counts[layer_name] = len(reusable)
+            print(f'Reused complete {layer_name}: {len(reusable):,} references from the versioned base', flush=True)
+            continue
         original(layer_name + '-metadata.json')
         original(layer_name + '-count.json')
         layer_count = 0
         for filename in layer['files']:
+            print(f'Deriving extents from {filename}', flush=True)
             page = original(filename)
             for feature in page['features']:
                 props = feature['attributes']
@@ -111,7 +130,10 @@ def main():
     # Acquisition completeness/uniqueness guards prevent publishing truncated snapshots.
     if len({ref['id'] for ref in references}) != len(references):
         raise ValueError('Reference identity collision; preserve both originals and resolve before publishing')
-    source_fingerprint = digest(''.join(sorted(source['id'] + ':' + source['sha256'] for source in sources)).encode())[:16]
+    # Reference revisions cover both source hashes and emitted semantics, so a producer
+    # correction invalidates cached enrichment even when the upstream bytes did not change.
+    revision_input = {'producerVersion': 2, 'sources': sources, 'references': references}
+    source_fingerprint = digest(json.dumps(revision_input, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode())[:16]
     missing = [name for name in LAYER_KINDS if name not in counts]
     bundle = {
         'version': 1, 'revision': 'census-acs2025-bpa-' + source_fingerprint,
@@ -123,6 +145,7 @@ def main():
             'Area bounds enclose full source polygons and can be very broad for disconnected/dateline-spanning areas; numeric accuracy remains unknown.',
             'Only three coordinator-accepted BPA exact-ID general pins are included. Buckley, Bonanza and Pearl withheld coordinates are not emitted.',
             'This is reusable reference coverage, not full-collection enrichment completion or a national transmission-facility gazetteer.',
+            'The four declared Census layers do not include every locally named settlement: county subdivisions, GNIS-only localities and historical boundary editions are not in this bundle.',
             ('Pending Census layers: ' + ', '.join(missing)) if missing else 'All four declared Census ACS2025 layers are complete: states, county equivalents, incorporated places and census-designated places.',
         ],
     }
