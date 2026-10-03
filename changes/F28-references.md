@@ -14,3 +14,10 @@
 - Preserved three metadata-only originals (19,386 bytes) with exact URLs and SHA-256 hashes. Added zero speculative runtime points; the 35,936-reference asset is unchanged.
 - Identified current USGS GNIS populated places as a broadly reusable locality fallback. It needs a coordinator/core handoff because the current town matcher accepts area geometry only; national acquisition is not started.
 - No application checks or visuals. F28-B/full-collection refinement remains open.
+
+## New PJM utility evidence increment
+
+- Completed a new 6.8-minute pass (17:48:33–17:55:21 UTC, October 3; maximum 20 minutes) on AEP Ohio, Potomac Edison, PPL and Dominion public utility leads.
+- Recorded exact new blockers: named AEP hosting-grid polygons are not station sites; Potomac Edison points lack facility identities; PPL does not publish hosting maps; Dominion's linked terms prohibit reuse without authorization.
+- Preserved 15 public metadata/explanation snapshots, 5,496,597 bytes, with URLs/hashes. No feature geometry, GNIS/NAD83 ingestion, inferred positions or application checks.
+- No candidate qualified for a finite facility adapter, so the existing reference asset is unchanged. Each source decision records its concrete enabling input; broader F28-B stays open.
