@@ -3,6 +3,7 @@ import { ChevronLeftIcon, ChevronRightIcon, DownloadIcon, SearchIcon } from "luc
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { IconButton } from "@/components/ui/icon-button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -11,6 +12,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { GEOGRAPHIC_STATUSES, geographicRepresentationSchema, type GeographicRecord, type GeographicRepresentation, type GeographicRun, type GeographicStatus } from "@/domain/geography"
 import type { DataMode, Dataset } from "@/domain/schema"
+import type { GeographicRestoreAction, GeographicRestorePreview } from "@/domain/geographic-restore"
+import { GEOGRAPHY_IMPORT_MAX_BYTES } from "@/data/geography-session"
 import { geographicCoverage } from "@/enrichment"
 import type { GeographicReviewInput } from "@/enrichment/review"
 import { matchesProjectQuery } from "@/lib/project-search"
@@ -28,6 +31,8 @@ export interface GeographyPanelProps {
   onExploreProject: (id: string) => void
   onReview: (projectId: string, input: GeographicReviewInput) => Promise<void>
   projectToReveal?: { id: string; request: number; mode: DataMode } | null
+  onPreviewRestore?: (text: string, protectedProjectIds: readonly string[]) => GeographicRestorePreview
+  onRestore?: (preview: GeographicRestorePreview, protectedProjectIds: readonly string[]) => Promise<void>
 }
 
 type StatusFilter = GeographicStatus | "all"
@@ -110,9 +115,40 @@ interface ReviewDraft {
 interface ReviewState {
   tab: "evidence" | "review"
   draft?: ReviewDraft
+  baseline?: string
   error?: string
   notice?: string
 }
+interface RestoreCandidate {
+  preview: GeographicRestorePreview
+  run: GeographicRun
+  dataset: Dataset
+  file: File
+  protectedKey: string
+}
+interface RestoreState {
+  file?: File
+  text?: string
+  candidate?: RestoreCandidate
+  error?: string
+  notice?: string
+  applied?: boolean
+  page?: number
+  filter?: GeographicRestoreAction | "all"
+}
+const RESTORE_LABELS: Record<GeographicRestoreAction, string> = {
+  "restore-review": "Restore active review",
+  "retain-review": "Retain outside collection",
+  duplicate: "Already present",
+  conflict: "Conflict — kept unchanged",
+  stale: "Source changed — not applied",
+  unreviewed: "Automatic result — not restored",
+}
+const RESTORE_ACTIONS = Object.keys(RESTORE_LABELS) as GeographicRestoreAction[]
+function reviewIsDirty(state: ReviewState): boolean {
+  return !!state.draft && state.baseline !== undefined && JSON.stringify(state.draft) !== state.baseline
+}
+
 function initialReview(record: GeographicRecord): ReviewDraft {
   const representation = record.representation ?? record.review?.representation
   return {
@@ -191,7 +227,7 @@ function CorrectionFields({ id, draft, onChange }: { id: string; draft: ReviewDr
   </div>
 }
 
-export function GeographyPanel({ dataset, run, busy, progress, error, onProcess, onDownload, onExploreProject, onReview, projectToReveal }: GeographyPanelProps) {
+export function GeographyPanel({ dataset, run, busy, progress, error, onProcess, onDownload, onExploreProject, onReview, projectToReveal, onPreviewRestore, onRestore }: GeographyPanelProps) {
   const id = useId()
   const [browsingByMode, setBrowsingByMode] = useState<Record<DataMode, BrowsingState>>({ real: initialBrowsingState(), demo: initialBrowsingState() })
   const browsing = browsingByMode[dataset.mode]
@@ -203,6 +239,11 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   const [reviews, setReviews] = useState<Record<string, ReviewState>>({})
   const [savingKey, setSavingKey] = useState<string | null>(null)
   const saving = useRef(false)
+  const [restoreOpen, setRestoreOpen] = useState(false)
+  const [restores, setRestores] = useState<Partial<Record<DataMode, RestoreState>>>({})
+  const [restoreOperation, setRestoreOperation] = useState<"preview" | "apply" | null>(null)
+  const restoreLock = useRef(false)
+  const restoreList = useRef<HTMLDivElement>(null)
   const reviewBody = useRef<HTMLDivElement>(null)
   const detailScroll = useRef<Record<string, { evidence: number; review: number }>>({})
   const queueBody = useRef<HTMLDivElement>(null)
@@ -238,8 +279,40 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
   const reviewDraft = reviewState?.draft ?? (selectedOutcome ? initialReview(selectedOutcome) : null)
   const staleDraft = !!reviewDraft && !!selectedOutcome && reviewDraft.inputFingerprint !== selectedOutcome.inputFingerprint
   const canReview = !!selectedOutcome && selectedOutcome.status !== "not-processed"
-  const saveDisabled = busy || savingKey !== null || !canReview || staleDraft || !reviewDraft?.reason.trim()
+  const saveDisabled = busy || savingKey !== null || restoreOperation !== null || !canReview || staleDraft || !reviewDraft?.reason.trim()
     || (reviewDraft?.decision !== "corrected" && !selectedOutcome?.representation)
+
+  const protectedProjectIds = useMemo(() => [...new Set(Object.entries(reviews).flatMap(([key, state]) => {
+    const [mode, projectId] = JSON.parse(key) as [DataMode, string]
+    return mode === dataset.mode && reviewIsDirty(state) ? [projectId] : []
+  }))].sort(), [reviews, dataset.mode])
+  const protectedKey = JSON.stringify(protectedProjectIds)
+  const restoreContext = useRef({ dataset, run: activeRun, protectedKey, busy })
+  restoreContext.current = { dataset, run: activeRun, protectedKey, busy }
+  const restoreState = restores[dataset.mode] ?? {}
+  const restoreCandidate = restoreState.candidate
+  const restoreInvalid = !!restoreCandidate && (restoreCandidate.run !== activeRun || restoreCandidate.dataset !== dataset || restoreCandidate.file !== restoreState.file || restoreCandidate.protectedKey !== protectedKey || busy)
+  const restoreEntries = restoreCandidate?.preview.entries ?? []
+  const incomingReviews = useMemo(() => new Map([
+    ...(restoreCandidate?.preview.incoming.records ?? []),
+    ...(restoreCandidate?.preview.incoming.retainedReviews ?? []),
+  ].map(record => [record.projectId, record.review])), [restoreCandidate])
+  const restoreCounts = useMemo(() => {
+    const counts: Record<GeographicRestoreAction, number> = { "restore-review": 0, "retain-review": 0, duplicate: 0, conflict: 0, stale: 0, unreviewed: 0 }
+    for (const entry of restoreEntries) counts[entry.action]++
+    return counts
+  }, [restoreEntries])
+  const compatibleCount = restoreCounts["restore-review"] + restoreCounts["retain-review"]
+  const restoreFilter = restoreState.filter ?? "all"
+  const filteredRestoreEntries = restoreEntries.filter(entry => restoreFilter === "all" || entry.action === restoreFilter)
+  const restorePageCount = Math.max(1, Math.ceil(filteredRestoreEntries.length / PAGE_SIZE))
+  const restorePage = Math.min(restoreState.page ?? 0, restorePageCount - 1)
+  const pageRestoreEntries = filteredRestoreEntries.slice(restorePage * PAGE_SIZE, (restorePage + 1) * PAGE_SIZE)
+  const restoreNames = useMemo(() => new Map(dataset.projects.map(project => [project.id, project.name])), [dataset.projects])
+  const importLimitMiB = (GEOGRAPHY_IMPORT_MAX_BYTES / (1024 * 1024)).toLocaleString()
+  useLayoutEffect(() => {
+    if (restoreList.current) restoreList.current.scrollTop = 0
+  }, [restorePage, restoreFilter, restoreCandidate])
 
   useLayoutEffect(() => {
     const body = queueBody.current
@@ -260,14 +333,14 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
     detailScroll.current[reviewKey] = { ...(detailScroll.current[reviewKey] ?? { evidence: 0, review: 0 }), [tab]: element.scrollTop }
   }
   function updateReview(update: Partial<ReviewDraft>) {
-    if (!selected || !reviewDraft) return
+    if (!selected || !reviewDraft || restoreLock.current) return
     changeBrowsing({ selectedId: selected.id })
-    setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review", draft: { ...reviewDraft, ...update } } }))
+    setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review", draft: { ...reviewDraft, ...update }, baseline: previous[reviewKey]?.baseline ?? JSON.stringify(reviewDraft) } }))
   }
   function changeDetailTab(tab: string) {
     if (!selected) return
     changeBrowsing({ selectedId: selected.id })
-    setReviews(previous => ({ ...previous, [reviewKey]: { ...previous[reviewKey], tab: tab as ReviewState["tab"], draft: previous[reviewKey]?.draft ?? reviewDraft ?? undefined } }))
+    setReviews(previous => ({ ...previous, [reviewKey]: { ...previous[reviewKey], tab: tab as ReviewState["tab"], draft: previous[reviewKey]?.draft ?? reviewDraft ?? undefined, baseline: previous[reviewKey]?.baseline ?? (reviewDraft ? JSON.stringify(reviewDraft) : undefined) } }))
   }
   async function saveReview(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -276,17 +349,66 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
     const draft = reviewDraft
     saving.current = true
     setSavingKey(key)
-    setReviews(previous => ({ ...previous, [key]: { ...previous[key], tab: "review", draft, error: undefined, notice: undefined } }))
+    setReviews(previous => ({ ...previous, [key]: { ...previous[key], tab: "review", draft, baseline: previous[key]?.baseline ?? JSON.stringify(draft), error: undefined, notice: undefined } }))
     try {
       const input: GeographicReviewInput = { inputFingerprint: draft.inputFingerprint, decision: draft.decision, reason: draft.reason.trim() }
       if (draft.decision === "corrected") input.representation = correctedRepresentation(draft)
       await onReview(selected.id, input)
-      setReviews(previous => ({ ...previous, [key]: { ...previous[key], notice: "Review saved.", error: undefined } }))
+      setReviews(previous => ({ ...previous, [key]: { ...previous[key], baseline: JSON.stringify(draft), notice: "Review saved.", error: undefined } }))
     } catch (failure) {
       setReviews(previous => ({ ...previous, [key]: { ...previous[key], error: failure instanceof Error ? failure.message : "The review could not be saved. Your draft is retained.", notice: undefined } }))
     } finally {
       saving.current = false
       setSavingKey(null)
+    }
+  }
+
+  function updateRestore(mode: DataMode, update: Partial<RestoreState>) {
+    setRestores(previous => ({ ...previous, [mode]: { ...previous[mode], ...update } }))
+  }
+  async function previewRestore() {
+    if (!restoreState.file || !activeRun || !onPreviewRestore || busy || savingKey !== null || restoreLock.current) return
+    const mode = dataset.mode
+    const file = restoreState.file
+    const context = restoreContext.current
+    restoreLock.current = true
+    setRestoreOperation("preview")
+    updateRestore(mode, { error: undefined, notice: undefined, applied: false })
+    try {
+      if (file.size > GEOGRAPHY_IMPORT_MAX_BYTES) throw new Error(`Choose a companion file no larger than ${importLimitMiB} MiB.`)
+      const text = restoreState.text ?? await file.text()
+      updateRestore(mode, { text })
+      const current = restoreContext.current
+      if (current.dataset !== context.dataset || current.run !== context.run || current.protectedKey !== context.protectedKey || current.busy) throw new Error("The active collection or unsaved drafts changed while reading the file. Preview again.")
+      const preview = onPreviewRestore(text, protectedProjectIds)
+      updateRestore(mode, { candidate: { preview, run: activeRun, dataset, file, protectedKey }, page: 0, filter: "all" })
+    } catch (failure) {
+      updateRestore(mode, { error: failure instanceof Error ? failure.message : "The companion file could not be previewed. The current geography is unchanged." })
+    } finally {
+      restoreLock.current = false
+      setRestoreOperation(null)
+    }
+  }
+  async function applyRestore() {
+    if (!restoreCandidate || !onRestore || restoreInvalid || restoreState.applied || !compatibleCount || busy || savingKey !== null || restoreLock.current) return
+    const mode = dataset.mode
+    const candidate = restoreCandidate
+    restoreLock.current = true
+    setRestoreOperation("apply")
+    updateRestore(mode, { error: undefined, notice: undefined })
+    try {
+      await onRestore(candidate.preview, protectedProjectIds)
+      updateRestore(mode, { applied: true, notice: `${compatibleCount.toLocaleString()} compatible reviewed decisions restored. Unsaved drafts are unchanged.` })
+      // Clean, merely opened forms can refresh from restored evidence; edited drafts stay intact.
+      setReviews(previous => Object.fromEntries(Object.entries(previous).map(([key, state]) => {
+        const [draftMode] = JSON.parse(key) as [DataMode, string]
+        return [key, draftMode === mode && !reviewIsDirty(state) ? { ...state, draft: undefined, baseline: undefined } : state]
+      })))
+    } catch (failure) {
+      updateRestore(mode, { error: failure instanceof Error ? failure.message : "Reviews could not be restored. The file, preview and unsaved drafts are retained." })
+    } finally {
+      restoreLock.current = false
+      setRestoreOperation(null)
     }
   }
 
@@ -306,8 +428,44 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-3"><h2 className="text-lg font-semibold">Geographic coverage</h2>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div>
         <div className="flex flex-wrap gap-2">
-          <Button onClick={onProcess} disabled={busy || savingKey !== null || dataset.projects.length === 0}>{busy ? "Processing…" : !activeRun && error ? "Retry processing" : activeRun ? "Process again" : "Process collection"}</Button>
-          <Button variant="outline" onClick={onDownload} disabled={busy || !activeRun}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download geography</Button>
+          {onPreviewRestore && onRestore && <Dialog open={restoreOpen} onOpenChange={setRestoreOpen}>
+            <DialogTrigger asChild><Button variant="outline" disabled={busy || savingKey !== null || !activeRun}>Restore reviews</Button></DialogTrigger>
+            <DialogContent className="flex h-[min(85dvh,48rem)] min-h-0 min-w-0 flex-col overflow-hidden sm:max-w-3xl">
+              <DialogHeader className="shrink-0 pr-8"><DialogTitle>Restore reviews</DialogTitle><DialogDescription>Preview a geographic companion file, then apply compatible analyst decisions. Source records and automatic results are unchanged.</DialogDescription></DialogHeader>
+              <div className="shrink-0 space-y-2">
+                <Label htmlFor={`${id}-restore-file`}>Geographic companion JSON</Label>
+                <div className="flex min-w-0 flex-wrap items-center gap-2"><Input key={dataset.mode} id={`${id}-restore-file`} type="file" accept="application/json,.json" className="min-w-0 flex-1" disabled={restoreOperation !== null} onChange={event => {
+                  const file = event.target.files?.[0]
+                  if (file) updateRestore(dataset.mode, { file, text: undefined, error: undefined, notice: undefined, applied: false })
+                }} /><Button variant="outline" disabled={!restoreState.file || !activeRun || busy || savingKey !== null || restoreOperation !== null} onClick={previewRestore}>{restoreOperation === "preview" ? "Reading file…" : "Preview reviews"}</Button></div>
+                <p className="text-xs text-muted-foreground [overflow-wrap:anywhere]">{restoreState.file ? `Selected: ${restoreState.file.name}. ` : ""}Maximum {importLimitMiB} MiB. {protectedProjectIds.length.toLocaleString()} unsaved review drafts protected.</p>
+              </div>
+              {restoreCandidate && <>
+                <div className="max-h-24 shrink-0 space-y-1 overflow-auto text-xs [overflow-wrap:anywhere]" aria-label="Restore collection context">
+                  <p><span className="font-medium">File:</span> {restoreCandidate.preview.incoming.collectionTitle} ({restoreCandidate.preview.incoming.mode === "demo" ? "Synthetic demo" : "Source data"}); {restoreCandidate.preview.incoming.records.length.toLocaleString()} active records and {(restoreCandidate.preview.incoming.retainedReviews?.length ?? 0).toLocaleString()} retained reviews.</p>
+                  <p><span className="font-medium">Active collection:</span> {dataset.title} ({dataset.mode === "demo" ? "Synthetic demo" : "Source data"}). Reviews absent from this collection can only be retained outside active coverage.</p>
+                  {restoreCandidate.file !== restoreState.file && <p>Displayed preview is from {restoreCandidate.file.name}. Preview the selected file before applying.</p>}
+                </div>
+                <dl className="grid shrink-0 grid-cols-3 gap-x-4 gap-y-2" aria-label="Restore review summary">{RESTORE_ACTIONS.map(action => <div key={action} className="min-w-0"><dt className="text-xs text-muted-foreground">{RESTORE_LABELS[action]}</dt><dd className="font-medium tabular-nums">{restoreCounts[action].toLocaleString()}</dd></div>)}</dl>
+                <div className="flex shrink-0 flex-wrap items-center justify-between gap-2"><Select value={restoreFilter} onValueChange={value => updateRestore(dataset.mode, { filter: value as RestoreState["filter"], page: 0 })}><SelectTrigger aria-label="Filter restore entries" className="min-w-0 max-w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All entries</SelectItem>{RESTORE_ACTIONS.map(action => <SelectItem key={action} value={action}>{RESTORE_LABELS[action]}</SelectItem>)}</SelectContent></Select><p className="text-xs text-muted-foreground">{compatibleCount.toLocaleString()} compatible decisions</p></div>
+              </>}
+              <div ref={restoreList} className="min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain [overflow-wrap:anywhere]" tabIndex={0} role="region" aria-label="Restore affected records">
+                {restoreCandidate ? pageRestoreEntries.length ? <ul className="divide-y">{pageRestoreEntries.map(entry => {
+                  const importedReview = incomingReviews.get(entry.projectId)
+                  return <li key={entry.projectId} className="space-y-2 py-3 first:pt-0"><p className="font-medium">{restoreNames.get(entry.projectId) ?? "Not in the active collection"}</p><p className="text-xs text-muted-foreground">{entry.projectId}</p><p className="text-sm">{RESTORE_LABELS[entry.action]}</p><p className="text-xs text-muted-foreground">{entry.reason}</p>{importedReview && <details className="rounded-lg border p-3"><summary className="cursor-pointer font-medium">Imported {importedReview.decision} review</summary><div className="mt-3 space-y-3"><p className="text-sm">{importedReview.reason}</p>{importedReview.decision === "rejected" && <p className="text-xs text-muted-foreground">Rejected evidence stays outside active geography.</p>}{importedReview.representation && <RepresentationEvidence representation={importedReview.representation} />}</div></details>}</li>
+                })}</ul> : <p className="text-sm text-muted-foreground">No entries in this view.</p> : <p className="text-sm text-muted-foreground">Choose a companion file and preview its reviews before applying any changes.</p>}
+              </div>
+              {restoreCandidate && <div className="flex shrink-0 flex-wrap items-center justify-between gap-2" aria-label="Restore entries pagination"><p className="text-xs text-muted-foreground" aria-live="polite">{filteredRestoreEntries.length ? `${restorePage * PAGE_SIZE + 1}–${Math.min((restorePage + 1) * PAGE_SIZE, filteredRestoreEntries.length)} of ${filteredRestoreEntries.length.toLocaleString()}` : "0 entries"}</p><div className="flex gap-2"><IconButton label="Previous restore page" variant="outline" disabled={restorePage === 0} onClick={() => updateRestore(dataset.mode, { page: restorePage - 1 })}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton label="Next restore page" variant="outline" disabled={restorePage + 1 >= restorePageCount} onClick={() => updateRestore(dataset.mode, { page: restorePage + 1 })}><ChevronRightIcon aria-hidden="true" /></IconButton></div></div>}
+              <div className="max-h-24 shrink-0 space-y-2 overflow-auto">
+                {restoreInvalid && !restoreState.applied && <p role="status" className="text-sm text-muted-foreground">The file, active geography or protected drafts changed. Make a new preview before applying.</p>}
+                {restoreState.error && <p role="alert" className="text-sm text-destructive">{restoreState.error}</p>}
+                {restoreState.notice && <p role="status" className="text-sm">{restoreState.notice}</p>}
+              </div>
+              <DialogFooter className="shrink-0"><Button onClick={applyRestore} disabled={!restoreCandidate || restoreInvalid || restoreState.applied || !compatibleCount || busy || savingKey !== null || restoreOperation !== null}>{restoreOperation === "apply" ? "Restoring reviews…" : "Apply compatible reviews"}</Button></DialogFooter>
+            </DialogContent>
+          </Dialog>}
+          <Button onClick={onProcess} disabled={busy || savingKey !== null || restoreOperation !== null || dataset.projects.length === 0}>{busy ? "Processing…" : !activeRun && error ? "Retry processing" : activeRun ? "Process again" : "Process collection"}</Button>
+          <Button variant="outline" onClick={onDownload} disabled={busy || restoreOperation !== null || !activeRun}><DownloadIcon aria-hidden="true" data-icon="inline-start" />Download geography</Button>
         </div>
       </div>
       <p className="text-sm text-muted-foreground">Coverage across {dataset.projects.length.toLocaleString()} records using available references. Source-located means supplied coordinates, without independent verification. Approximate includes facility estimates, endpoints and areas.</p>
@@ -359,9 +517,9 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
               {reviewDraft && selectedOutcome ? <form id={`${id}-review`} onSubmit={saveReview} noValidate className="space-y-4">
                 <p className="text-sm text-muted-foreground">Review the current evidence before saving. This changes only the geographic companion, not source project centers or strict candidates.</p>
                 <p className="text-sm">{selectedOutcome.reason}</p>
-                {staleDraft && <div className="space-y-2 rounded-lg border p-3"><p role="status" className="text-sm">The source changed since this draft began. Your draft is retained; compare it with the current Evidence tab before saving.</p><Button type="button" variant="outline" size="sm" disabled={busy || savingKey !== null} onClick={() => updateReview({ inputFingerprint: selectedOutcome.inputFingerprint })}>Review current evidence</Button></div>}
+                {staleDraft && <div className="space-y-2 rounded-lg border p-3"><p role="status" className="text-sm">The source changed since this draft began. Your draft is retained; compare it with the current Evidence tab before saving.</p><Button type="button" variant="outline" size="sm" disabled={busy || savingKey !== null || restoreOperation !== null} onClick={() => updateReview({ inputFingerprint: selectedOutcome.inputFingerprint })}>Review current evidence</Button></div>}
                 {!canReview && <p className="text-sm text-muted-foreground">Process this record before saving a review.</p>}
-                <fieldset disabled={busy || savingKey !== null} className="space-y-4">
+                <fieldset disabled={busy || savingKey !== null || restoreOperation !== null} className="space-y-4">
                   <div className="space-y-2"><Label htmlFor={`${id}-decision`}>Decision</Label><Select value={reviewDraft.decision} onValueChange={decision => updateReview({ decision: decision as ReviewDraft["decision"] })}><SelectTrigger id={`${id}-decision`}><SelectValue /></SelectTrigger><SelectContent><SelectItem value="accepted" disabled={!selectedOutcome.representation}>Accept current evidence</SelectItem><SelectItem value="rejected" disabled={!selectedOutcome.representation}>Reject current evidence</SelectItem><SelectItem value="corrected">Correct geography</SelectItem></SelectContent></Select></div>
                   <p className="text-xs text-muted-foreground">{reviewDraft.decision === "accepted" ? "Accept keeps the current representation and its limitations; it does not make approximate evidence exact." : reviewDraft.decision === "rejected" ? "Reject removes the active representation and retains its evidence in review history." : "A correction needs complete cited evidence and remains approximate."}</p>
                   <div className="space-y-2"><Label htmlFor={`${id}-reason`}>Review reason</Label><Textarea id={`${id}-reason`} value={reviewDraft.reason} onChange={event => updateReview({ reason: event.target.value })} placeholder="Explain what the evidence supports or why it is unsuitable" required /></div>
@@ -373,7 +531,7 @@ export function GeographyPanel({ dataset, run, busy, progress, error, onProcess,
           {detailTab === "review" && <div className="shrink-0 space-y-2 border-t pt-3">
             {reviewState?.error && <p role="alert" className="max-h-20 overflow-auto text-sm text-destructive">{reviewState.error}</p>}
             {reviewState?.notice && <p role="status" className="text-sm text-muted-foreground">{reviewState.notice}</p>}
-            <Button type="submit" form={`${id}-review`} disabled={saveDisabled}>{savingKey === reviewKey ? "Saving review…" : "Save review"}</Button>
+            <div className="flex flex-wrap gap-2"><Button type="submit" form={`${id}-review`} disabled={saveDisabled}>{savingKey === reviewKey ? "Saving review…" : "Save review"}</Button>{reviewState && reviewIsDirty(reviewState) && <Button variant="outline" disabled={busy || savingKey !== null || restoreOperation !== null} onClick={() => setReviews(previous => ({ ...previous, [reviewKey]: { tab: "review" } }))}>Discard draft</Button>}</div>
           </div>}
         </CardContent>
       </Card>
