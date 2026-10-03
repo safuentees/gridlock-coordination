@@ -51,7 +51,9 @@ export function useGeography(dataset: Dataset) {
       const error = await saveGeographySession(reviewed)
       if (error) setState(previous => previous.base === dataset && previous.run === reviewed ? { ...previous, error } : previous)
     } catch (error) {
-      setState(previous => previous.base === dataset ? { ...previous, error: error instanceof Error ? error.message : "This geographic review could not be saved." } : previous)
+      const message = error instanceof Error ? error.message : "This geographic review could not be saved."
+      setState(previous => previous.base === dataset ? { ...previous, error: message } : previous)
+      throw new Error(message)
     }
   }
   return { ...current, onProcess: () => setRevision(value => value + 1), onReview, onDownload: () => {
