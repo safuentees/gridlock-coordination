@@ -1,0 +1,7 @@
+# F28-R2 — unfinished review continuity
+
+- PR187/188 connect separate per-mode raw draft storage and editor hydration, retaining incomplete fields, dirty baselines, absent source identities and changed-source guards. Explicit saves/discards win over late reads; restores wait for hydration. Drafts never become accepted geometry by loading.
+- Coordinator's representative case at 870fa82 passed raw-field round trip, dirty baseline/absent identity retention, duplicate identity rejection, malformed replacement/blocked overwrite rejection and unavailable-storage recovery without caller mutation.
+- One existing production build ran from 18:55:50–18:59:29 UTC and was stopped idle without diagnostics, within the five-minute bound. Its process sample showed a synchronous dependency-file read; the cause is not established. Production validation remains unconfirmed. Browser IndexedDB writes/reloads, focus and navigation were inspected in source, not exercised; no visual/mobile or worker checks.
+- Controller cache replacement now occurs only after successful companion restore persistence; failed Apply remains unapplied on repeat runs. This order received source inspection, not a hook runtime test.
+- Abrupt termination may interrupt asynchronous writes. R3's committed recovery contract is the next ready slice: restore downloaded unfinished files with conflicts/source guards, separately from accepted reviews.
