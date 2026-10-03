@@ -1,0 +1,469 @@
+{
+  "version": 1,
+  "task": "F28-B2",
+  "decision": "qualified-source-runtime-deferred",
+  "sourceKeyProposal": "osm-power-substations-us",
+  "checkedOn": "2026-10-03",
+  "sourcePass": {
+    "start": "2026-10-03T19:13:21Z",
+    "end": "2026-10-03T19:21:37Z",
+    "activeMinutes": 8.3,
+    "ceilingMinutes": 20,
+    "meaning": "Bounded public source discovery; report packaging follows, without further acquisition."
+  },
+  "decisionMeaning": "Public acquisition and ODbL reuse are viable. Coordinator must accept geometry, provenance/licensing, acquisition resources and matching contracts before any producer or runtime reference is added.",
+  "finiteScope": {
+    "elementPredicate": "power=substation",
+    "elementTypes": [
+      "node",
+      "way",
+      "relation"
+    ],
+    "extracts": [
+      {
+        "regionId": "us",
+        "pageUrl": "https://download.geofabrik.de/north-america/us.html",
+        "candidateSnapshotUrl": "https://download.geofabrik.de/north-america/us-261002.osm.pbf",
+        "latestUrl": "https://download.geofabrik.de/north-america/us-latest.osm.pbf",
+        "publishedBytes": 12181127106,
+        "publishedDataUntil": "2026-10-02T20:21:34Z",
+        "publishedMd5": "76fcb25cc761bbd210c6e79ef8671155",
+        "sha256": null,
+        "downloaded": false,
+        "intendedContextCoverage": [
+          "50 states",
+          "District of Columbia"
+        ],
+        "statistics": {
+          "url": "https://taginfo.geofabrik.de/north-america:us/api/4/tag/stats?key=power&value=substation",
+          "dataUntil": "2026-10-02T20:21:23Z",
+          "counts": {
+            "all": 73305,
+            "nodes": 671,
+            "ways": 72126,
+            "relations": 508
+          },
+          "meaning": "Independent Taginfo aggregate; not a downloaded-PBF reconciliation, not a unique cross-extract union, not a facility/project count."
+        }
+      },
+      {
+        "regionId": "us/puerto-rico",
+        "pageUrl": "https://download.geofabrik.de/north-america/us/puerto-rico.html",
+        "candidateSnapshotUrl": "https://download.geofabrik.de/north-america/us/puerto-rico-261002.osm.pbf",
+        "latestUrl": "https://download.geofabrik.de/north-america/us/puerto-rico-latest.osm.pbf",
+        "publishedBytes": 73992835,
+        "publishedDataUntil": "2026-10-02T20:21:34Z",
+        "publishedMd5": "0954a8fc8a2f8b83c506e42aa813cbd0",
+        "sha256": null,
+        "downloaded": false,
+        "intendedContextCoverage": [
+          "PR"
+        ],
+        "statistics": {
+          "url": "https://taginfo.geofabrik.de/north-america:us:puerto-rico/api/4/tag/stats?key=power&value=substation",
+          "dataUntil": "2026-10-02T19:51:08Z",
+          "counts": {
+            "all": 549,
+            "nodes": 6,
+            "ways": 543,
+            "relations": 0
+          },
+          "meaning": "Independent Taginfo aggregate; not a downloaded-PBF reconciliation, not a unique cross-extract union, not a facility/project count."
+        }
+      },
+      {
+        "regionId": "us/us-virgin-islands",
+        "pageUrl": "https://download.geofabrik.de/north-america/us/us-virgin-islands.html",
+        "candidateSnapshotUrl": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261002.osm.pbf",
+        "latestUrl": "https://download.geofabrik.de/north-america/us/us-virgin-islands-latest.osm.pbf",
+        "publishedBytes": 3121722,
+        "publishedDataUntil": "2026-10-02T20:21:34Z",
+        "publishedMd5": "42a22b8bc3bf286904a7ba19441538ae",
+        "sha256": null,
+        "downloaded": false,
+        "intendedContextCoverage": [
+          "VI"
+        ],
+        "statistics": {
+          "url": "https://taginfo.geofabrik.de/north-america:us:us-virgin-islands/api/4/tag/stats?key=power&value=substation",
+          "dataUntil": "2026-10-02T19:21:01Z",
+          "counts": {
+            "all": 4,
+            "nodes": 0,
+            "ways": 4,
+            "relations": 0
+          },
+          "meaning": "Independent Taginfo aggregate; not a downloaded-PBF reconciliation, not a unique cross-extract union, not a facility/project count."
+        }
+      },
+      {
+        "regionId": "american-oceania",
+        "pageUrl": "https://download.geofabrik.de/australia-oceania/american-oceania.html",
+        "candidateSnapshotUrl": "https://download.geofabrik.de/australia-oceania/american-oceania-261002.osm.pbf",
+        "latestUrl": "https://download.geofabrik.de/australia-oceania/american-oceania-latest.osm.pbf",
+        "publishedBytes": 5375683,
+        "publishedDataUntil": "2026-10-02T20:21:34Z",
+        "publishedMd5": "2cc0271d1e964319904a5cf98b4f312f",
+        "sha256": null,
+        "downloaded": false,
+        "intendedContextCoverage": [
+          "AS",
+          "GU",
+          "MP"
+        ],
+        "statistics": {
+          "url": "https://taginfo.geofabrik.de/australia-oceania:american-oceania/api/4/tag/stats?key=power&value=substation",
+          "dataUntil": "2026-10-02T19:21:01Z",
+          "counts": {
+            "all": 25,
+            "nodes": 0,
+            "ways": 25,
+            "relations": 0
+          },
+          "meaning": "Independent Taginfo aggregate; not a downloaded-PBF reconciliation, not a unique cross-extract union, not a facility/project count."
+        }
+      }
+    ],
+    "publishedInputBytes": 12263617346,
+    "snapshotPolicy": "Use one common replication timestamp when available; preserve all four originals, headers, clipping metadata, publisher checksums and locally computed SHA-256. A moving latest URL is not a permanent edition. Dated daily URLs can expire.",
+    "territoryPolicy": "Intended application scope is 50 states, DC, PR, VI, AS, GU and MP. The four-extract union must be clipped/assigned using authoritative full Census polygons, not download names, ISO labels or bounding boxes. US minor outlying islands outside the existing 56-area Census reference scope remain outside this proposed runtime contract.",
+    "metadataAnomalies": [
+      "Geofabrik index lists us/puerto-rico and us/us-virgin-islands with parent north-america, independently of us. Do not assume the us download includes them because their pages appear in its subregion table.",
+      "American Oceania index advertises iso3166-1:alpha2=[VU], inconsistent with its name and clipping extent; this field must not assign country/state. Its broad clipping regions also require actual territorial boundary filtering."
+    ],
+    "outsideDeclaredPredicate": [
+      "construction:power=substation without power=substation",
+      "proposed/lifecycle-prefixed-only substations",
+      "power=station legacy tags",
+      "untagged facilities",
+      "individual power=transformer equipment"
+    ],
+    "outsidePredicateMeaning": "Explicit finite baseline, not a claim to include every physical or planned facility. Disused=yes on power=substation remains in the raw ledger with its source meaning."
+  },
+  "availabilityEvidence": {
+    "usTotalElements": 73305,
+    "usNodes": 671,
+    "usWays": 72126,
+    "usRelations": 508,
+    "usNodeSharePercent": 0.915,
+    "usNameTagElements": 29746,
+    "usStateTagElements": 3415,
+    "usVoltageTagElements": 56758,
+    "usOperatorTagElements": 31505,
+    "usTransmissionTagElements": 7269,
+    "meaning": "Counts are tag presence/declared classifications, not verified identity, ownership, transmission status or match yield. Node-only production cannot fulfill useful full inventory coverage."
+  },
+  "identity": {
+    "primaryKey": [
+      "elementType",
+      "osmId"
+    ],
+    "revisionKey": [
+      "elementType",
+      "osmId",
+      "version",
+      "sourceSnapshotSha256"
+    ],
+    "osmIdType": "decimal string (64-bit native ID)",
+    "permittedFields": [
+      "type",
+      "id",
+      "version",
+      "timestamp",
+      "power",
+      "substation",
+      "name",
+      "official_name",
+      "alt_name",
+      "short_name",
+      "ref",
+      "operator",
+      "operator:wikidata",
+      "owner",
+      "voltage",
+      "frequency",
+      "location",
+      "addr:state",
+      "addr:city",
+      "disused",
+      "source"
+    ],
+    "excludedFields": [
+      "user",
+      "uid",
+      "changeset",
+      "contact:*",
+      "phone",
+      "email"
+    ],
+    "caveats": [
+      "Element ID is not a planning project ID or engineering station ID; node/way/relation ID spaces are separate.",
+      "Timestamp/version describe community edits, not construction, commissioning or current verification.",
+      "Names and ref tags are optional; ref namespace/operator identity must be established before cross-source matching.",
+      "Operator and owner tags are community observations and never overwrite Project.owner.",
+      "Co-located or same-named node/way/relation objects may represent one facility; preserve ambiguity rather than blindly merging physical facilities."
+    ]
+  },
+  "geography": {
+    "sourceCrs": "WGS84 latitude/longitude, node documentation",
+    "runtimeCoordinateOrder": [
+      "longitude",
+      "latitude"
+    ],
+    "nodeRole": "Explicitly unverified community-mapped facility position only, if later accepted; not a construction/equipment center.",
+    "waysRelations": "No representative centers. Retain actual supported closed-way/multipolygon footprint or derived bounding extent only after a separate facility-area representation contract. Missing members, invalid rings, area=no and non-area relations get explicit unresolved/excluded reasons.",
+    "numericAccuracyMeters": null,
+    "context": "Use already preserved Census ACS2025 full EPSG:4326 state/territory polygons and their source hashes for containment/intersection. Existing rectangular reference bounds and Geofabrik clipping buffers cannot establish membership. Boundary conflicts stay ambiguous.",
+    "priority": "Preferred native/official evidence first; OSM fallback cannot override accepted evidence or become strict-distance eligible."
+  },
+  "license": {
+    "database": "ODbL-1.0",
+    "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attributionText": "© OpenStreetMap contributors",
+    "attributionUrl": "https://www.openstreetmap.org/copyright",
+    "publisherCredit": "Extract supplied by Geofabrik",
+    "bundlePolicyProposal": "Keep the OSM-derived reference database identified and reproducibly downloadable under ODbL with license/attribution notices. Do not treat existing application/code licenses as relicensing OSM. Separate files alone do not establish legal independence of joined datasets.",
+    "publicUse": "ODbL 4.2–4.6 require notices, share-alike for derivative databases, and a machine-readable database or complete alterations/method offer when publicly used, including through a produced work.",
+    "exports": "JSON/CSV database exports containing OSM-derived references need provenance and license notices; visual/report outputs require attribution. Coordinator must define the scope of mixed project/reference exports and the downloadable derivative offer before shipping them.",
+    "geocodingCaveat": "The OSMF exception for individual geocoding results must not be assumed for systematic national aggregation of a feature type. Collective/geocoding rules may preserve independently sourced project fields, but require an explicit accepted data-flow design."
+  },
+  "producerRequirements": {
+    "tools": "An approved isolated Osmium Tool or pyosmium runtime. osmium/osmconvert/osmfilter were not present on PATH; no dependency was installed.",
+    "disk": "12,263,617,346 published source bytes plus filtered data/member indexes, derived geometry and immutable snapshots. Peak RAM, elapsed extraction time and compact output size are unmeasured.",
+    "strategy": "Sequential checksum-pinned downloads; local streaming nwr/power=substation filtering including referenced geometry members. Count primary tagged elements separately from helper members. Do not retain full-US node locations in a custom in-memory map.",
+    "prohibitedAcquisition": [
+      "bulk public Nominatim",
+      "national Overpass/API sweeps",
+      "tile scraping",
+      "private full-metadata/history server",
+      "multi-GB qualification download"
+    ]
+  },
+  "enablingTasks": [
+    {
+      "owner": "coordinator/core",
+      "task": "Accept community-evidence status, typed node/footprint/extent geometry, precision/null accuracy, precedence, version/fingerprint guards and ODbL bundle/export boundaries.",
+      "dependency": "This qualification; no runtime authorization inferred."
+    },
+    {
+      "owner": "source producer",
+      "task": "Acquire all four same-edition public PBFs after explicit producer dispatch; preserve checksums/headers/hashes and run a full local candidate/member inventory.",
+      "dependency": "Approved isolated tooling and large-source acquisition; finite scope accepted."
+    },
+    {
+      "owner": "source producer",
+      "task": "Resolve supported geometry and full Census polygon context, retain raw names/classifications and emit all eligible references plus complete disposition ledger.",
+      "dependency": "Geometry/context contract. No node-only completion claim."
+    },
+    {
+      "owner": "core/UI",
+      "task": "Consume OSM as an unverified fallback; expose attribution, geometry role, uncertain matches and a downloadable licensed companion through appropriate results/exports.",
+      "dependency": "Early producer batch and accepted license/geometry schema; full scope remains open until reconciled."
+    },
+    {
+      "owner": "coordinator",
+      "task": "Run the sole bounded integrated case, including unchanged native evidence, ambiguity, noneligibility for strict distances and licensed exports.",
+      "dependency": "Connected complete producer/consumer increment."
+    }
+  ],
+  "completionCriteria": [
+    "Every primary element with power=substation in every declared preserved extract has a source identity/version and disposition; helper geometry members are counted separately.",
+    "Cross-extract same-type/native-ID duplicates reconcile; identical editions agree on version/content, conflicts are not silently resolved by arbitrary newest choice.",
+    "Unique candidates = emitted point/area references + explicit excluded/unresolved reasons; report raw occurrences, unique IDs, duplicate occurrences, element types, source-state categories and zero unexplained rows.",
+    "Exact official polygon evidence supports territorial/state context; unnamed, incompatible, boundary-crossing and duplicate-facility cases preserve ambiguity and unknowns.",
+    "All footprints preserve members/holes or explicit failure; no generated center or numerical accuracy enters runtime. Source snapshot revisions invalidate affected stale enrichments.",
+    "Machine-readable ODbL reference bundle/license offer and visible attribution are connected, including export provenance; no raw private project material is published to satisfy a reference-data license.",
+    "No predicted match yield or metadata-statistics sum is represented as completed ingestion or real-world facility completeness."
+  ],
+  "originals": {
+    "path": "/Users/santiagofuentes/Documents/ChatGPT/agent-workflow-template/inputs/originals/F28-geography/osm-qualification",
+    "files": {
+      "geofabrik-us.html": {
+        "url": "https://download.geofabrik.de/north-america/us.html",
+        "bytes": 33660,
+        "sha256": "5bd94062ffca3e3974136efb15097111cabb7b8bf2ed3c4aa6d2a7a66232eaf6",
+        "retrievedAt": "2026-10-03T19:15:00.577081+00:00"
+      },
+      "geofabrik-technical.html": {
+        "url": "https://download.geofabrik.de/technical.html",
+        "bytes": 9288,
+        "sha256": "03e1721761b739ca247682e6bd98cdfd9d5a394117900ce8a03522b9452d1d82",
+        "retrievedAt": "2026-10-03T19:15:01.039016+00:00"
+      },
+      "geofabrik-us.poly": {
+        "url": "https://download.geofabrik.de/north-america/us.poly",
+        "bytes": 13712,
+        "sha256": "5b36ffe960cba918b5b33bd998bca090ce4279828590dab382d097d4a3b7a2f3",
+        "retrievedAt": "2026-10-03T19:15:01.657340+00:00"
+      },
+      "geofabrik-index-v1.json": {
+        "url": "https://download.geofabrik.de/index-v1.json",
+        "bytes": 3785307,
+        "sha256": "9b1d170b09eee255c0e56925788eb367646397c1ba1882f36b4c5c79133691fc",
+        "retrievedAt": "2026-10-03T19:15:03.622814+00:00"
+      },
+      "geofabrik-us-261002.osm.pbf.md5": {
+        "url": "https://download.geofabrik.de/north-america/us-261002.osm.pbf.md5",
+        "bytes": 52,
+        "sha256": "ae8e734b1bdf5637b749b9c0313a1b3cce19f328a0b6e8872f383bd5d3af4456",
+        "retrievedAt": "2026-10-03T19:15:04.121765+00:00"
+      },
+      "osm-copyright.html": {
+        "url": "https://www.openstreetmap.org/copyright/en",
+        "bytes": 21311,
+        "sha256": "914a85a591fe87a20dbb8b1e77a38fc98618cf3d3ec72f5f8c9f6973c907a72f",
+        "retrievedAt": "2026-10-03T19:15:04.685643+00:00"
+      },
+      "osm-attribution.html": {
+        "url": "https://osmfoundation.org/wiki/Licence/Attribution_Guidelines",
+        "bytes": 58627,
+        "sha256": "210fbd97fb9a8a6451a2613ea9d1f31e22dc186d0fb33598e927ef5a40cf6cd3",
+        "retrievedAt": "2026-10-03T19:15:05.581215+00:00"
+      },
+      "odbl-1.0.html": {
+        "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "bytes": 51543,
+        "sha256": "cdcbc6bd08f482e515b6a4ceabbfd40e33522144ac315a1cb80cfb14a0ebbce5",
+        "retrievedAt": "2026-10-03T19:15:06.462452+00:00"
+      },
+      "osm-elements.html": {
+        "url": "https://wiki.openstreetmap.org/wiki/Elements",
+        "bytes": 63897,
+        "sha256": "20cfa5752a6e76a80bb6f8a9876e4d77b4aac4c66cedaea9bfe01af7dacd0376",
+        "retrievedAt": "2026-10-03T19:15:08.745635+00:00"
+      },
+      "osm-substation.html": {
+        "url": "https://wiki.openstreetmap.org/wiki/Tag:power%3Dsubstation",
+        "bytes": 112944,
+        "sha256": "c3a212a8249b5c6f19b1360516bf46ca52693538d3f5fbe07ec9d4c2ff750746",
+        "retrievedAt": "2026-10-03T19:15:09.755917+00:00"
+      },
+      "geofabrik-index-v1-nogeom.json": {
+        "url": "https://download.geofabrik.de/index-v1-nogeom.json",
+        "bytes": 512426,
+        "sha256": "265afa7d9e5929934cb523afcb1aa05e16add94887b87eb9acb138eeccc3b151",
+        "retrievedAt": "2026-10-03T19:15:51.620354+00:00"
+      },
+      "geofabrik-australia-oceania.html": {
+        "url": "https://download.geofabrik.de/australia-oceania.html",
+        "bytes": 25515,
+        "sha256": "c0480ae4e811c0d82f7c039a0d3b06ae09be72af19d5a273e144727f6574ad32",
+        "retrievedAt": "2026-10-03T19:15:52.210608+00:00"
+      },
+      "geofabrik-us-substation-stats.json": {
+        "url": "https://taginfo.geofabrik.de/north-america/us/api/4/tag/stats?key=power&value=substation",
+        "bytes": 364,
+        "sha256": "ce9147048b3c0e28f1d458ae312c6b50251b9c1872d162d06c419442825ed425",
+        "retrievedAt": "2026-10-03T19:15:53.423593+00:00"
+      },
+      "geofabrik-us-substation-combinations.json": {
+        "url": "https://taginfo.geofabrik.de/north-america/us/api/4/tag/combinations?key=power&value=substation&filter=all&rp=30&page=1&sortname=together_count&sortorder=desc",
+        "bytes": 3626,
+        "sha256": "d4d29c70df5f466f32add95edbd581fdb567d1bcfab9fec3a8bee62d8c6084bf",
+        "retrievedAt": "2026-10-03T19:15:54.398735+00:00"
+      },
+      "osm-geocoding-guideline.html": {
+        "url": "https://osmfoundation.org/wiki/Licence/Community_Guidelines/Geocoding_-_Guideline",
+        "bytes": 64327,
+        "sha256": "f4361abd43c00c92e454f037c4b99e3a50694616f6e23292123df44b45c1940e",
+        "retrievedAt": "2026-10-03T19:15:55.259517+00:00"
+      },
+      "osmium-manual.html": {
+        "url": "https://osmcode.org/osmium-tool/manual.html",
+        "bytes": 53889,
+        "sha256": "e070a66f295c8baed72858e3079cc8f059555e63022f31b32b5e904abc0478dc",
+        "retrievedAt": "2026-10-03T19:15:56.474526+00:00"
+      },
+      "geofabrik-american-oceania.html": {
+        "url": "https://download.geofabrik.de/australia-oceania/american-oceania.html",
+        "bytes": 20790,
+        "sha256": "c73198449413e6d1b95611773acb2fc2098ee6eb6d7bdaa0ff8d14a3644d57ff",
+        "retrievedAt": "2026-10-03T19:17:58.483061+00:00"
+      },
+      "geofabrik-puerto-rico.html": {
+        "url": "https://download.geofabrik.de/north-america/us/puerto-rico.html",
+        "bytes": 21775,
+        "sha256": "774a39c58a7d8b86907785afca711e2e6cc68cc89c7cb5c8a7b8dfcece631caa",
+        "retrievedAt": "2026-10-03T19:17:59.208822+00:00"
+      },
+      "geofabrik-us-virgin-islands.html": {
+        "url": "https://download.geofabrik.de/north-america/us/us-virgin-islands.html",
+        "bytes": 20355,
+        "sha256": "b8e3c9baaab87e07217fdb960311cf6686c7d75316f9c906905e5a7575074e90",
+        "retrievedAt": "2026-10-03T19:17:59.847874+00:00"
+      },
+      "geofabrik-american-oceania-substation-stats.json": {
+        "url": "https://taginfo.geofabrik.de/australia-oceania:american-oceania/api/4/tag/stats?key=power&value=substation",
+        "bytes": 369,
+        "sha256": "a2c10e350f6db83192ec909a0cece1d39d6a7c384e3ef6302540b88ef9fccb60",
+        "retrievedAt": "2026-10-03T19:18:00.327351+00:00"
+      },
+      "geofabrik-puerto-rico.poly": {
+        "url": "https://download.geofabrik.de/north-america/us/puerto-rico.poly",
+        "bytes": 239,
+        "sha256": "c310c09ab73b7113d2681b55b2ae57c4c47c999f00f6d217a6630fc3437ac2a7",
+        "retrievedAt": "2026-10-03T19:20:50.033155+00:00"
+      },
+      "geofabrik-us-virgin-islands.poly": {
+        "url": "https://download.geofabrik.de/north-america/us/us-virgin-islands.poly",
+        "bytes": 495,
+        "sha256": "7d10343720251c04005049b60dcd237a4bd379dfac8b8df3b14506f7452083a4",
+        "retrievedAt": "2026-10-03T19:20:50.515372+00:00"
+      },
+      "geofabrik-american-oceania.poly": {
+        "url": "https://download.geofabrik.de/australia-oceania/american-oceania.poly",
+        "bytes": 734,
+        "sha256": "c6a7fc8b9bb621590a01845badc1e5c00a374e18478b8e031c4b700720fd9756",
+        "retrievedAt": "2026-10-03T19:20:50.997246+00:00"
+      },
+      "geofabrik-puerto-rico-261002.osm.pbf.md5": {
+        "url": "https://download.geofabrik.de/north-america/us/puerto-rico-261002.osm.pbf.md5",
+        "bytes": 61,
+        "sha256": "3ba97ce3f16cef50f9457a3b79a0cebf315c28de72913a884dffd8c113ee00ab",
+        "retrievedAt": "2026-10-03T19:20:51.469502+00:00"
+      },
+      "geofabrik-us-virgin-islands-261002.osm.pbf.md5": {
+        "url": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261002.osm.pbf.md5",
+        "bytes": 67,
+        "sha256": "43de2a25547507be17f8217667502c34deb669fd93a5078b7fa4279f51f5ad2f",
+        "retrievedAt": "2026-10-03T19:20:51.946752+00:00"
+      },
+      "geofabrik-american-oceania-261002.osm.pbf.md5": {
+        "url": "https://download.geofabrik.de/australia-oceania/american-oceania-261002.osm.pbf.md5",
+        "bytes": 66,
+        "sha256": "1e2c2d6de0e3c1592d110077eb0d63f7a0ee3b1f6e5305857a78830fac36f3b1",
+        "retrievedAt": "2026-10-03T19:20:52.414278+00:00"
+      },
+      "osm-collective-guideline-canonical.html": {
+        "url": "https://osmfoundation.org/wiki/Licence/Community_Guidelines/Collective_Database_Guideline_Guideline",
+        "bytes": 44644,
+        "sha256": "89405db3cc71e2beabb39e7100fbc3db14b0bd43d1d3305cdb4187e34d652d76",
+        "retrievedAt": "2026-10-03T19:20:53.205383+00:00"
+      },
+      "geofabrik-pr-substation-stats.json": {
+        "url": "https://taginfo.geofabrik.de/north-america:us:puerto-rico/api/4/tag/stats?key=power&value=substation",
+        "bytes": 365,
+        "sha256": "46b1f458dcfaae8afc555359035eb6ad7fe2165c24480f8488254c0179cb8e0e",
+        "retrievedAt": "2026-10-03T19:20:53.673474+00:00"
+      },
+      "geofabrik-vi-substation-stats.json": {
+        "url": "https://taginfo.geofabrik.de/north-america:us:us-virgin-islands/api/4/tag/stats?key=power&value=substation",
+        "bytes": 367,
+        "sha256": "4102f4eacc02be37697dc5ac4e1968ead24538606d2e5d740144cc89c7f903e5",
+        "retrievedAt": "2026-10-03T19:20:54.140933+00:00"
+      }
+    },
+    "count": 29,
+    "bytes": 4920815,
+    "failures": {
+      "osm-collective-guideline.html": {
+        "url": "https://osmfoundation.org/wiki/Licence/Community_Guidelines/Collective_Database_-_Guideline",
+        "error": "HTTP Error 404: Not Found"
+      }
+    },
+    "failureResolution": "An initially guessed Collective Database guideline URL returned 404; the canonical official linked guideline was preserved successfully. OSM copyright web-reader timeout resolved through official /copyright/en. No access restriction was bypassed."
+  },
+  "runtimeAdded": 0,
+  "applicationChecksRun": false,
+  "visualsRun": false
+}
