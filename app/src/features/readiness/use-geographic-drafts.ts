@@ -145,9 +145,24 @@ export function useGeographicDrafts(activeMode: DataMode) {
     }
   }, [activeMode, persist])
 
+  function applyDraftSession(session: GeographicDraftSession) {
+    if (!latest.current.hydrated || session.mode !== activeMode) throw new Error("Wait for drafts to load in the matching source or demo mode.")
+    // The core merge has already guarded the current dirty/source snapshots.
+    // Bypass edit normalization so imported baselines and original times survive.
+    setRawReviews(previous => {
+      const next = { ...previous }
+      for (const entry of session.entries) {
+        const key = JSON.stringify([session.mode, entry.projectId])
+        if (next[key] && reviewIsDirty(next[key])) continue
+        next[key] = { tab: next[key]?.tab ?? "review", draft: entry.draft, baseline: entry.baseline, updatedAt: entry.updatedAt }
+      }
+      return next
+    })
+  }
+
   function download(mode: DataMode) {
     try { downloadGeographicDrafts(sessions[mode]) }
     catch (failure) { setStorage(previous => ({ ...previous, [mode]: { ...previous[mode], error: failure instanceof Error ? failure.message : "Drafts could not be downloaded. Keep this tab open to preserve your work." } })) }
   }
-  return { reviews, setReviews, dismissStoredDraft, hydrated, storage, download, retrySave: () => setRetry(value => value + 1) }
+  return { reviews, setReviews, dismissStoredDraft, hydrated, storage, download, draftSession: sessions[activeMode], applyDraftSession, retrySave: () => setRetry(value => value + 1) }
 }
