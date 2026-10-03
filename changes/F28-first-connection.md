@@ -14,9 +14,13 @@ The current real collection contains 14,923 records. Against 35,936 references (
 
 The case confirmed source Projects were not mutated. Approximate includes evidence-supported geographic areas and endpoint/facility context; it does not promise project-center accuracy. The reference bundle is 40,865,532 bytes. Census bounds remain labeled geographic extents; cited numeric accuracy is null unless the source explicitly supplies it. Original Census pages remain preserved in the ignored source cache, not Git.
 
+An additional source-inventory pass recorded eight official facility/GIS candidates and rejected speculative ingestion: CEC is token-gated, National Grid metadata returned HTTP 403, Arkansas's layer has no facility names, ATC's ten general project pins lack a native MISO identity/role, and Eversource layers represent distribution hosting capacity rather than transmission project centers. GNIS populated-place data could improve locality context only after its coordinate meaning, CRS and matching precedence are explicitly agreed. This pass added no points to the reference bundle; three small public metadata originals remain hash-pinned in ignored storage.
+
 ## Bounded check and limitation
 
 The direct whole-collection case passed using the existing esbuild dependency. `npm run build` did not finish: `tsc -b` remained idle without output for five minutes. A direct diagnostic `tsc -b --verbose` invocation also stalled after creating the missing ignored `node_modules/.tmp` build-info directory and was stopped; no compiler diagnostic was produced. The temporary runtime case through `tsx` likewise stalled in its loader before executing, so the same case was run through the installed esbuild binary. No browser, visual, Playwright, mobile, or UI-interaction checks ran. Production compilation remains unverified.
+
+Local integration is committed on `codex/F28-geographic-enrichment`. Publishing it is currently blocked: `git push origin codex/F28-geographic-enrichment` returned `Repository not found`, and a live GitHub repository lookup returned a connection error. The configured `origin` is the Gridlock project; the workflow-template remote remains fetch-only. PR169 still points at the prior branch head, so the local integration must not be described as merged to main.
 
 ## Remaining F28 work
 
