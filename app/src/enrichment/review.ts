@@ -13,11 +13,11 @@ const inputSchema = z.object({
 
 export type GeographicReviewInput = z.infer<typeof inputSchema>
 
-function precisionRank(representation: GeographicRepresentation): number {
+export function precisionRank(representation: GeographicRepresentation): number {
   return ({ project: 6, facility: 5, endpoints: 4, locality: 3, unknown: 3, town: 2, county: 1, state: 0, region: 0 })[representation.precision]
 }
 
-function requireCitation(representation: GeographicRepresentation): void {
+export function requireCitation(representation: GeographicRepresentation): void {
   if (!representation.label.trim() || representation.limitations.some(limitation => !limitation.trim())
     || representation.evidence.some(source => !source.file.trim() || !source.locator.trim())) {
     throw new Error("Geographic evidence needs a label, meaningful limitations, and a source title with an exact locator for every citation.")
