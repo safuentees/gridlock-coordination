@@ -4,16 +4,20 @@ Selected October 1, 2026. [Contract, seven capability tasks and exact ownership]
 
 | Task | Owner | Ready / dependency | Completion |
 |---|---|---|---|
-| F28-C shared contract | coordinator | first commit | Shared point/endpoints/area/provenance/outcome schemas and interfaces before parallel work |
-| F28-A clues and full-collection pipeline | core | C | Every record processed, contextual match/ambiguity/reason plus cache reuse |
-| F28-B reusable references/geocoding | source_discovery | C | Complete reusable reference datasets; source GIS/facility-first passes across high-volume inventories |
-| F28-D geographic coverage UI | ui | C; integrates A/B | Full reachable collection, five coverage states and evidence/limitations |
-| F28-R review/corrections/updates | coordinator, then core/ui | A/D; cache starts immediately | Cache/download, repeat updates, explicit decisions/corrections/import preserve better evidence |
-| F28-M map/list representations | map-ui; root shell handoff | A/B/D and exact map handoff | Distinct approximate points/endpoints/areas with synchronized selection and all rows accessible |
+| F28-C shared contract | coordinator | first commit | **Committed** point/endpoints/area/provenance/outcome schemas and frozen interfaces before parallel work |
+| F28-A clues and full-collection pipeline | core | C | **Integrated locally from PR171.** Every record receives a contextual result/reason; cache keys bind source, reference and pipeline versions |
+| F28-B reusable references/geocoding | source_discovery | C | **Integrated locally from PR172.** 35,936 Census/BPA references; next work prioritizes reliable facility/source GIS matches across current unresolved records |
+| F28-D geographic coverage UI | ui | C; integrates A/B | **Integrated locally from PR170.** Full collection is searchable with five coverage states, evidence and limitations |
+| F28-R review/corrections/updates | coordinator, then core/ui | A/D; cache starts immediately | Companion storage/download and repeat runs are connected. Next: explicit accept/reject/correct/import preview while preserving reviewed/better evidence |
+| F28-M map/list representations | map-ui; root shell handoff | A/B/D and exact map handoff | **Ready for map-owner handoff.** Distinct approximate points/endpoints/areas with synchronized selection and all rows accessible |
 | F28-E exploratory proximity | core, then ui | A/M; separate calculation contract | Labeled uncertainty-aware exploration; strict candidates and unknown owners preserved |
 | F28-F full-scope completion | coordinator + producer owners | A–R | All declared inputs processed across applicable references, unresolved reasons and source totals reconciled |
 
-First integration reuses native locations/BPA exact-ID evidence and complete public administrative references, runs every record, and connects the result to Data readiness. This does not close F28; map/list, exploratory calculations, correction UI and deeper facility matching remain explicit follow-on capabilities. Sources with access barriers do not block processing available records.
+First connected real-data case processed all **14,923** current records against **35,936** reusable references: 68 source-located, 12,114 approximate, 680 ambiguous, 2,061 unsupported with reasons, and 0 not processed. The pipeline did not mutate source Projects. The approximate count includes coarse named-area context; it does not claim facility-level placement. This capability is integrated on the F28 branch; it does not close F28. Map/list, exploratory calculations, analyst correction, and higher-precision facility/source-GIS coverage remain active work.
+
+Coordinator case receipt: [F28 first connection](../changes/F28-first-connection.md). The direct full-collection case passed. The production build did not complete: `tsc -b` remained idle without diagnostics for the five-minute bound, including one direct diagnostic invocation after creating its ignored build-info directory. No browser, visual, mobile, or UI-interaction checks were run.
+
+Next dispatch: source_discovery continues F28-B against the full unresolved collection, prioritizing officially accessible source GIS/facility references and recording unsupported/ambiguous outcomes where suitable references do not exist. map-ui begins F28-M under the exact file handoff in the F28 feature spec. Core starts F28-R's separate review API after its input/output handoff is frozen; F28-E follows the map integration. Sources with access barriers do not block processing available records.
 
 ---
 
@@ -131,11 +135,11 @@ The coordinator's final bounded check passed at 7a41fc9: one production build an
 
 | Owner | Next concrete assignment / readiness | Dependency and boundary |
 |---|---|---|
-| map-ui | F22/F23/F26 complete; F28-M ownership retained, awaiting exact handoff after first pipeline connection. | Map worktrees clean; prior trial files preserved, server not currently listening. No map edits during A/B/D. |
-| source_discovery / ingestion | F28-B reusable public Census area/BPA references in progress. | Only scripts/enrichment, data/geography/references.json, reference documentation and receipt. |
-| core | F28-A full-collection clue/matching/cache pipeline in progress; BPA helper preserved. | Only enrichment/clues.ts, pipeline.ts, index.ts and receipt; strict calculations unchanged. |
-| coordinator | F28-C committed; automatic processing/cache/Readiness connection in PR169. | Root owns shared contract/hook/cache/wrapper/integration and sole checks; local Explorer edit preserved. |
-| ui | F28-D full-collection GeographyPanel in progress; no BPA UI edits to recover. | Only GeographyPanel.tsx and receipt; shared wrapper stays with root. |
+| map-ui | Start F28-M from the committed map handoff; use the latest F28 branch as a dependency and preserve all map controls. | Only ProjectMap/map-only files and `changes/F28-map.md`; no App/Explorer/readiness edits. Root owns the current-run prop connection. |
+| source_discovery / ingestion | Continue F28-B: inventory official, permitted source GIS/facility references applicable to the entire unresolved collection and implement reusable matches where evidence is available. | Only scripts/enrichment, data/geography/references.json, reference documentation and receipt. Keep complete source snapshots and failed/ambiguous results. |
+| core | Start F28-R's immutable review API after the updated `R.md` interface; F28-A is integrated locally and strict candidates remain unchanged. | Only `app/src/enrichment/review.ts` and `changes/F28-review-core.md`; no UI or persistence edits. |
+| coordinator | F28-C/A/B/D connected on the F28 branch. Wire the frozen F28-R API through the existing cache/export controller after core's commit; integrate/push and keep sole check ownership. | Root owns `use-geography.ts`, `geography-session.ts`, Readiness wrapper, roadmap/spec and integration. Preserve the primary checkout's uncommitted Explorer edit. |
+| ui | F28-D is integrated locally. After core API lands, add explicit review/correction in selected record detail and import preview without disturbing browsing/editor drafts. | Only `GeographyPanel.tsx` and `changes/F28-review-ui.md`; no shared controller edits. |
 
 Current-plan edition refresh is source maintenance within the selected coverage path once the source is chosen; it does not count as national expansion. Additional regional adapters are now selected F27 work. Related-record navigation and verified route geometry remain separate proposals; no generation-proposal inventory is selected by the national-transmission goal.
 
