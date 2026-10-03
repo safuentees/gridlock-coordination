@@ -1,4 +1,5 @@
 import type { LatLngTuple } from "leaflet"
+import type { GeographicRecord } from "@/domain/geography"
 import type { Opportunity, Project } from "@/domain/schema"
 import type { MapViewportInsets } from "./ProjectMap"
 
@@ -37,6 +38,7 @@ export interface ProjectMapProps {
   onProject: (id: string) => void
   onOpportunity: (id: string) => void
   viewportInsets?: MapViewportInsets
+  geographicRecords?: readonly GeographicRecord[]
 }
 
 export interface MapRendererControls {

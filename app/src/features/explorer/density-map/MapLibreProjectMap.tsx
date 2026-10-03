@@ -13,6 +13,8 @@ import { MapLegend } from "../MapLegend"
 import { boundedInsets, getMapConnections, getMapLocations, isMappableProject, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "../map-view"
 import { DeckOverlay } from "./DeckOverlay"
 import { projectLayers } from "./map-layers"
+import { geographyLayers } from "./geography-layers"
+import { getMapGeography, geographyFitLocations, geographyLabel, geographyAreaLabel, type GeographyArea, type GeographyPoint } from "../geography-map"
 import { buildDensityHierarchy, getDensityFrame, smoothstep, type DensityCell, type DensityPoint } from "./hierarchy"
 import { densityLayers, syntheticPointLayer } from "./density-layers"
 import { syntheticDensityPoints } from "./synthetic"
@@ -34,7 +36,7 @@ const MAP_STYLE: StyleSpecification = {
 const densityNumber = new Intl.NumberFormat(undefined, { maximumSignificantDigits: 3 })
 type FitTarget = "projects" | "selection"
 
-export default function MapLibreProjectMap({ projects, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
+export default function MapLibreProjectMap({ projects, geographicRecords, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
   const map = useRef<MapRef>(null)
   const [container, setContainer] = useState<HTMLElement | null>(null)
   const [ready, setReady] = useState(false)
@@ -48,7 +50,9 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
   const [fitRequest, setFitRequest] = useState<{ target: FitTarget; revision: number }>({ target: "projects", revision: 0 })
   const lastFit = useRef<{ locationsKey: string; focusKey: string; layoutKey: string; revision: number } | null>(null)
   const mappedProjects = useMemo(() => projects.filter(isMappableProject), [projects])
-  const groups = useMemo(() => reportingGroups(mappedProjects), [mappedProjects])
+  const geography = useMemo(() => getMapGeography(projects, geographicRecords), [projects, geographicRecords])
+  const groups = useMemo(() => reportingGroups(projects.filter(project => geography.representedIds.has(project.id))), [projects, geography])
+  const approximateIds = useMemo(() => new Set([...geography.sourceRecords].filter(([, record]) => record.status === "approximate").map(([id]) => id)), [geography])
   const outOfRangeCount = projects.filter((project) => project.location && !isMappableProject(project)).length
   const focusIds = useMemo(() => selectedOpportunity?.projectIds ?? (selectedProjectId ? [selectedProjectId] : []), [selectedOpportunity, selectedProjectId])
   const projectPoints = useMemo(() => mappedProjects.map((project): DensityPoint => ({ id: project.id, position: [project.location.lon, project.location.lat] })), [mappedProjects])
@@ -61,8 +65,8 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
   const densityOpacity = showDensity ? 1 - pointOpacity : 0
   const locations = useMemo(() => syntheticPreview
     ? syntheticDensityPoints.map(({ position: [lon, lat] }): [number, number] => [lat, lon])
-    : getMapLocations(mappedProjects), [syntheticPreview, mappedProjects])
-  const selectedLocations = useMemo(() => syntheticPreview ? [] : getMapLocations(mappedProjects, focusIds), [syntheticPreview, mappedProjects, focusIds])
+    : geographicRecords ? geographyFitLocations(mappedProjects, geography) : getMapLocations(mappedProjects), [syntheticPreview, mappedProjects, geographicRecords, geography])
+  const selectedLocations = useMemo(() => syntheticPreview ? [] : geographicRecords ? geographyFitLocations(mappedProjects, geography, focusIds) : getMapLocations(mappedProjects, focusIds), [syntheticPreview, mappedProjects, geographicRecords, geography, focusIds])
   const byId = useMemo(() => new Map(mappedProjects.map((project) => [project.id, project])), [mappedProjects])
   const candidateIds = useMemo(() => new Set(opportunities.flatMap((opportunity) => opportunity.projectIds)), [opportunities])
   const connections = useMemo(() => getMapConnections(byId, opportunities, selectedOpportunity, showConnections), [byId, opportunities, selectedOpportunity, showConnections])
@@ -81,17 +85,20 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
   const layers = useMemo(() => [
     ...densityLayers({ cells: frame.cells, columns, opacity: densityOpacity, onCell: focusCell }),
     ...(syntheticPreview ? [syntheticPointLayer(syntheticDensityPoints, pointOpacity)]
-      : projectLayers({ projects: mappedProjects, connections, focusIds, candidateIds, selectedPair: selectedOpportunity !== null, pointOpacity, onProject, onOpportunity })),
-  ], [frame, columns, densityOpacity, focusCell, syntheticPreview, pointOpacity, mappedProjects, connections, focusIds, candidateIds, selectedOpportunity, onProject, onOpportunity])
+      : [...geographyLayers(geography, focusIds, onProject), ...projectLayers({ projects: mappedProjects, connections, focusIds, candidateIds, selectedPair: selectedOpportunity !== null, pointOpacity, approximateIds, onProject, onOpportunity })]),
+  ], [geography, approximateIds, frame, columns, densityOpacity, focusCell, syntheticPreview, pointOpacity, mappedProjects, connections, focusIds, candidateIds, selectedOpportunity, onProject, onOpportunity])
   const getTooltip = useCallback(({ object }: PickingInfo): string | null => {
     if (!object) return null
+    if ("members" in object) return geographyAreaLabel(object as GeographyArea, focusIds)
+    if ("record" in object) { const point = object as GeographyPoint; return `${point.project.name}\n${geographyLabel(point.record)}` }
     if ("quadkey" in object) {
       const cell = object as DensityCell
       return `${cell.count.toLocaleString()} observed ${syntheticPreview ? "sample locations" : "projects"} in this square\nDisplayed density: ${densityNumber.format(cell.density)} / 1,000 km²\nArea: ${densityNumber.format(cell.areaKm2)} km²\nClick to focus`
     }
     if (syntheticPreview) return "Synthetic location · map preview only"
-    return "name" in object ? String(object.name) : null
-  }, [syntheticPreview])
+    const record = "id" in object ? geography.sourceRecords.get(String(object.id)) : undefined
+    return "name" in object ? `${String(object.name)}${record ? `\n${geographyLabel(record)}` : ""}` : null
+  }, [syntheticPreview, geography, focusIds])
 
   useEffect(() => {
     const node = container
@@ -142,7 +149,7 @@ export default function MapLibreProjectMap({ projects, opportunities, selectedPr
         </div>
         <IconButton variant="outline" label={syntheticPreview ? "Fit sample" : "Fit projects"} disabled={!ready || !locations.length} onClick={() => fit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
       </div>
-      {visible && container && !syntheticPreview && <div className="shrink-0"><MapLegend groups={groups} boundary={container} connectionCount={selectedOpportunity || pointOpacity > 0 ? connections.length : 0} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
+      {visible && container && !syntheticPreview && <div className="shrink-0"><MapLegend geography={geographicRecords ? geography : undefined} groups={groups} boundary={container} connectionCount={selectedOpportunity || pointOpacity > 0 ? connections.length : 0} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
       <Button type="button" variant="outline" size="sm" className="shrink-0" disabled={!ready || !selectedLocations.length} onClick={() => fit("selection")}>Fit selection</Button>
       {visible && <DropdownMenu>
         <DropdownMenuTrigger asChild><Button type="button" variant="outline" size="sm" className="shrink-0">Map view</Button></DropdownMenuTrigger>
