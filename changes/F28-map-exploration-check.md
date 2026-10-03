@@ -1,0 +1,5 @@
+- Coordinator's representative case at the connected M/E revision `5f6b9d3` processed all 14,923 real records against 35,936 Census/BPA references.
+- Coverage reconciled: 68 located, 12,114 approximate, 680 ambiguous, 2,061 unsupported, 0 not processed. Coarse areas are not facility-level locations.
+- Map grouped 695 true extents; selected ISO-NE record `iso-ne-rsp:1939` fit used its actual bounding corners and no fabricated point.
+- The selection's 37 exploratory matches retained null area distances and visible unknown ownership. Companion round-trip/cache outcomes matched; original Projects and six strict candidates stayed unchanged.
+- One existing production build was stopped within the five-minute budget after its compiler stayed idle without diagnostics (a deck.gl declaration was open). Build/typechecking remains unconfirmed; no repeat compile, worker checks, browser, visual/mobile or interaction checks.

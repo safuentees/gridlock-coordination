@@ -199,7 +199,6 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, geograph
               <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
               <IconButton ref={panelToggleButton} className="shrink-0" variant="outline" size="icon" label={collapsed ? "Expand panel" : "Collapse panel"} aria-expanded={!collapsed} aria-controls="panel-results panel-detail" onClick={togglePanel}>{collapsed ? <ChevronDownIcon aria-hidden="true" /> : <ChevronUpIcon aria-hidden="true" />}</IconButton>
             </div>
-            {collapsed && <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "records"}</p>}
           </div>
           <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
             <div hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? "shrink-0 space-y-3 border-b p-3" : "hidden"}>
