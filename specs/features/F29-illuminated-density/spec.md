@@ -10,7 +10,7 @@ Preserve Leaflet default/experimental choice, flat/raised controls, cell focus, 
 
 ## F29-A — Illuminated density rendering
 
-Ready and assigned after the technical/ownership handoff above. Branch: `codex/F29-A-illuminated-density`, new separate map-owner worktree from latest main. Deliver one coherent PR.
+Integrated from PR197 at main `7cf5704`. Branch: `codex/F29-A-illuminated-density`, separate managed map-owner worktree. Final feature check follows B; GPU drawing/picking is unexercised.
 
 - Attach a deck.gl `LightingEffect` with directional light and ambient fill through the existing overlay; enable shaded material on raised density polygons. Isolate treatment from ordinary markers/selected geography.
 - Use a muted stone basemap, teal lower columns and amber peaks, with the same palette in the metric legend. Prefer local raster-style adjustments using existing permitted tiles and attribution; add no provider, credentials or dependency. Keep default shadcn controls, typography, colors and spacing.
@@ -31,7 +31,7 @@ Complete when the illuminated square layer and its legend communicate the unchan
 
 ## F29-B — Interruptible entrance animation
 
-Ready after A integrates. Branch: `codex/F29-B-density-entrance`, separate worktree from latest main. Deliver a second coherent PR.
+Ready and dispatched after A integration. Branch: `codex/F29-B-density-entrance`, new separate worktree from the coordinator's published `codex/F29-integration` (integrated main plus completion records); PR targets that branch before its small final integration to main. Deliver a second coherent implementation PR.
 
 - Once per mounted application/workspace session, on the first visible, ready density-renderer entry, fade the density layer and raise active columns to their final display heights over about 1,000 ms. Flat mode fades only. Do not force renderer, density or column activation or move the camera for the entrance.
 - Hold the one-shot latch in the retained `ProjectMap` wrapper so changing renderer, source mode, filters, selection, layout or destination cannot replay it. Returning from hidden navigation or remounting the experimental adapter uses the final state. A full app reload begins a new session.
