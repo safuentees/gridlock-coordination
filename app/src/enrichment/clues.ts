@@ -67,9 +67,6 @@ export function extractGeographicClues(project: Project): GeographicClue[] {
         if (new RegExp(`(?:^|[,;|]\\s*|\\bin\\s+)${name}(?=$|[,;|])`, "i").test(text)) add("state", name, field)
         if (new RegExp(`(?:^|[,;]\\s*)${code}(?=$|[,;])`).test(text)) add("state", code, field)
       }
-      for (const match of text.matchAll(/(?:^|;)\s*([^;:]+?)\s+Counties\b/g)) {
-        for (const county of match[1].split(/,|\s+and\s+/)) add("county", county, field)
-      }
     }
     for (const match of text.matchAll(/\b(?:in|within|across)\s+(?:the\s+state\s+of\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})(?=[,.;]|$)/g)) {
       if (stateCode(match[1])) add("state", match[1], field)
@@ -83,7 +80,15 @@ export function extractGeographicClues(project: Project): GeographicClue[] {
         else add(label === "state" ? "state" : "town", value, field)
         continue
       }
-      for (const match of part.matchAll(/\b([A-Z][\w.'’-]*(?:\s+(?:[A-Z][\w.'’-]*|and|de|la)){0,4})\s+County\b/g)) add("county", match[1], field)
+      // County words in facility/endpoint names are not administrative geography.
+      // Unlabeled clues require explicit geographic wording or a county-only location segment.
+      const countyPatterns = [
+        /\b(?:in|within|across)\s+([A-Z][\w.'’ -]*(?:,\s*[A-Z][\w.'’ -]*)*)\s+Count(?:y|ies)(?=\s*(?:[,.;]|$))/g,
+        ...(field === "inventory.sourceLocation" ? [/^\s*([A-Z][\w.'’ -]*(?:,\s*[A-Z][\w.'’ -]*)*)\s+Count(?:y|ies)(?=\s*(?:[,.;]|$))/g] : []),
+      ]
+      for (const pattern of countyPatterns) for (const match of part.matchAll(pattern)) {
+        for (const county of match[1].split(/,|\s+and\s+/)) add("county", county, field)
+      }
       for (const match of part.matchAll(/\b(?:city|town)\s+of\s+([A-Z][\w.'’-]*(?:\s+[A-Z][\w.'’-]*){0,3})/g)) add("town", match[1], field)
       for (const match of part.matchAll(/\b([A-Z][\w.'’-]*(?:\s+[A-Z][\w.'’-]*){0,4})\s+(?:Substation|Station|Terminal)\b/g)) add("facility", facilityText(match[1]), field)
     }

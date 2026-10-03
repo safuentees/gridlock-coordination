@@ -33,11 +33,11 @@ function sourcePosition(project: Project): Outcome | null {
   if (location) {
     const evidence = location.evidence.length ? location.evidence : project.sources
     const role = inventory?.centerRole
-    const qualified = location.confidence === "confirmed" && location.method === "source-point" && (!inventory || role === "substation-center" || role === "tower-location")
+    const sourceLocated = location.method === "source-point" && (!inventory || role === "substation-center" || role === "tower-location")
     const sameNativePoint = geometry?.type === "Point" && geometry.coordinates[0][0] === location.lon && geometry.coordinates[0][1] === location.lat
-    return outcome(qualified ? "located" : "approximate", qualified ? "Confirmed source point retained with its evidence; no new geographic inference." : `Existing ${location.confidence} ${location.method} retained for map context; ${role ?? "source"} role does not establish an exact project center.`, {
+    return outcome(sourceLocated ? "located" : "approximate", sourceLocated ? `Directly supplied source point retained; source confidence remains ${location.confidence}. Located describes source provenance/role, not independent verification.` : `Existing ${location.confidence} ${location.method} retained for map context; ${role ?? "source"} role does not establish an exact project center.`, {
       kind: "point", method: location.method === "single-endpoint" ? "single-endpoint" : "source-point", position: [location.lon, location.lat],
-      precision: qualified ? "project" : role === "substation-center" || role === "tower-location" ? "facility" : "unknown",
+      precision: sourceLocated ? "project" : role === "substation-center" || role === "tower-location" ? "facility" : "unknown",
       label: project.name, evidence, accuracyMeters: sameNativePoint ? geometry.accuracyMeters : null,
       limitations: unique([...(inventory?.locationAssumptions ?? []), `Original method: ${location.method}; confidence: ${location.confidence}; role: ${role ?? "legacy source point"}.`, "A displayed position does not establish construction extent, a shared route or coordination benefit."]),
     })
