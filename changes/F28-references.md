@@ -21,3 +21,12 @@
 - Recorded exact new blockers: named AEP hosting-grid polygons are not station sites; Potomac Edison points lack facility identities; PPL does not publish hosting maps; Dominion's linked terms prohibit reuse without authorization.
 - Preserved 15 public metadata/explanation snapshots, 5,496,597 bytes, with URLs/hashes. No feature geometry, GNIS/NAD83 ingestion, inferred positions or application checks.
 - No candidate qualified for a finite facility adapter, so the existing reference asset is unchanged. Each source decision records its concrete enabling input; broader F28-B stays open.
+
+
+## Complete GNIS county-context increment
+
+- Added the full September 2, 2026 official Populated Places extract as coarse locality county context: 3,215 references / 138,836 canonical names; bundle now 39,151 references / 49,975,890 bytes (`census-acs2025-bpa-gnis-f745fdb66ed6b69f`).
+- Reconciled all 190,923 observations: 139,374 retained, 51,549 excluded, zero pending/failed. Exclusions cover historical names, finer Census names, missing state identities and unmatched county codes; repeated native ID 1406241 retains both row locators.
+- Preserved five complete official downloads / 7,773,095 bytes, metadata/use hashes and a 190,923-row coordinate-free disposition ledger outside Git. Added reproducible acquisition and full offline generation using the actual application normalizer.
+- Preserved existing Census/BPA values. No GNIS coordinates, datum transform, facility/project centers or accuracy claim; 6,994 same-state homonyms across counties stay separate and potentially ambiguous.
+- No worker application checks or visuals. This completes the selected GNIS reference increment; coordinator integration/full-collection case and broader facility evidence remain separate.

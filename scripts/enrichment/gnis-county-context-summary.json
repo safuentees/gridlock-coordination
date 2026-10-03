@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "edition": "20260902",
+  "retrievedOn": "2026-10-03",
+  "sourceArchiveSha256": "919fac887628b8547ec1b24fae319522a9481a56909c3914d1e0a2b56783147c",
+  "historicalArchiveSha256": "20c96936a3ba430b345eed1c7395b6aab52875aac8e1e2905fab37b388cab381",
+  "populatedTextSha256": "d7bbe1c13f43be64c98295051d2fb48a842d02bc7440dbff43f1063a979fd4a2",
+  "sourceMetadataSha256": "62003c59cfa2514ad0764691e59c86e0887d6e82fac15320db6117511b0f71fe",
+  "baselineReferencesSha256": "9eef622b640881e78a7c7793fba1a0d2707858c9ccd9c290fb7626fdac8060bf",
+  "normalizerSha256": "8b2c7254b228580e87ceb4b338f8dc1b1fc9a3c2b73a9de50d2d5de08797898a",
+  "rawRows": 190923,
+  "uniqueFeatureIds": 190922,
+  "repeatedFeatureIds": {
+    "1406241": 2
+  },
+  "retainedRows": 139374,
+  "excludedRows": 51549,
+  "exclusions": {
+    "finer-census-town-name-in-state": 35180,
+    "historical-feature": 15165,
+    "unsupported-state-code": 1144,
+    "missing-or-changed-county-code": 60
+  },
+  "pending": 0,
+  "failed": 0,
+  "unsupportedStateCodes": [
+    {
+      "source": ":",
+      "rows": 1143
+    },
+    {
+      "source": "74:U.S. Minor Outlying Islands",
+      "rows": 1
+    }
+  ],
+  "unsupportedCountyCodes": [
+    {
+      "source": "11000:District of Columbia:District of Columbia",
+      "rows": 60
+    }
+  ],
+  "countyContextReferences": 3215,
+  "namesAcrossCountyReferences": 138836,
+  "sameStateCanonicalNamesInMultipleCounties": 6994,
+  "totalReferences": 39151,
+  "referenceRevision": "census-acs2025-bpa-gnis-f745fdb66ed6b69f",
+  "compactBytes": 49975890,
+  "ledger": {
+    "file": "county-context-ledger.jsonl",
+    "sha256": "c4abb2017d94b13764499d505de419307f439a40bfdeaf629fcd1dffab756fd9",
+    "bytes": 46302024,
+    "rows": 190923
+  },
+  "meanings": [
+    "Raw rows retain every source observation, including repeated native feature IDs; the source ID plus original line distinguishes evidence. Aliases are grouped only for county context, never to merge physical features.",
+    "Exclusions are applied in the stated producer order; historical rows precede unsupported county and finer Census name exclusions.",
+    "County codes are exact administrative joins; unknown/retired codes are not translated. GNIS county fields identify the primary location county, not whole-feature containment.",
+    "Names are canonicalized by the application normalizer; a same-name/state finer Census town takes precedence. Different counties retain separate references.",
+    "All original coordinates are unused. Numeric accuracy remains unknown. No application enrichment/check was run by this producer."
+  ]
+}
