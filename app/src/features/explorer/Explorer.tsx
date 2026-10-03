@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
-import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon, FunnelIcon, PanelLeftCloseIcon, PanelLeftOpenIcon, XIcon } from "lucide-react"
+import { ArrowLeftIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, FunnelIcon, XIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { IconButton } from "@/components/ui/icon-button"
@@ -23,7 +23,7 @@ import { dateKind, projectDate } from "./format"
 const PAGE_SIZE = 25
 const VIEW_CLASS = "flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden motion-safe:animate-in motion-safe:fade-in-0 motion-safe:duration-150 motion-reduce:animate-none"
 type PanelView = "results" | "detail"
-type FocusRequest = PanelView | "expand" | null
+type FocusRequest = PanelView | "toggle" | null
 
 function Pagination({ page, count, onChange }: { page: number; count: number; onChange: (page: number) => void }) {
   const pages = Math.max(1, Math.ceil(count / PAGE_SIZE))
@@ -54,7 +54,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, geograph
   const resultsView = useRef<HTMLDivElement>(null)
   const resultsPanel = useRef<HTMLDivElement>(null)
   const detailView = useRef<HTMLDivElement>(null)
-  const expandButton = useRef<HTMLButtonElement>(null)
+  const panelToggleButton = useRef<HTMLButtonElement>(null)
   const backButton = useRef<HTMLButtonElement>(null)
   const listScroll = useRef<Record<string, number>>({ opportunities: 0, projects: 0 })
   const listFocus = useRef<Record<string, HTMLElement | null>>({ opportunities: null, projects: null })
@@ -119,8 +119,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, geograph
     setSelectedPairId(id); setSelectedProjectId(null); openDetail(moveFocus)
   }
   function backToResults() { focusRequest.current = "results"; setPanelView("results"); setCollapsed(false) }
-  function collapse() { rememberResults(); focusRequest.current = "expand"; setCollapsed(true) }
-  function expand() { focusRequest.current = panelView; setCollapsed(false) }
+  function togglePanel() { rememberResults(); focusRequest.current = "toggle"; setCollapsed(value => !value) }
   function changeFilter(update: () => void) { update(); resetResultPages() }
   function applyScenario(next: AnalysisOptions) {
     onOptionsChange(next); setPairPage(0)
@@ -167,7 +166,7 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, geograph
     const request = focusRequest.current
     if (!request || !active) return
     let target: HTMLElement | null = null
-    if (request === "expand" && collapsed) target = expandButton.current
+    if (request === "toggle") target = panelToggleButton.current
     if (request === "results" && resultsVisible) {
       const previous = listFocus.current[listView]
       target = previous?.isConnected && resultsView.current?.contains(previous) && !previous.closest("[hidden], [inert]") && !previous.matches(":disabled") ? previous : resultsPanel.current
@@ -193,27 +192,26 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, geograph
       <div className="absolute inset-0"><ProjectMap visible={active} projects={mapProjects} geographicRecords={geographicRecords} opportunities={opportunities} selectedProjectId={selectedProjectId} selectedOpportunity={selectedOpportunity} onProject={selectProject} onOpportunity={selectPair} viewportInsets={viewportInsets} /></div>
       <div className="pointer-events-none absolute inset-0 flex min-h-0 min-w-0 flex-col gap-3 p-3">
       <div className="min-h-0 min-w-0 flex-1">
-        <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 max-w-[calc(100%-8rem)] flex-col overflow-hidden rounded-lg border bg-background ${collapsed ? "h-auto w-[min(32rem,100%)]" : "h-full min-h-0 w-[min(32rem,65%)]"}`}>
+        <aside ref={panel} aria-label="Project workspace" className={`pointer-events-auto flex max-h-full min-w-0 w-[min(32rem,65%)] max-w-[calc(100%-8rem)] flex-col overflow-hidden rounded-(--panel-radius) border bg-background [--panel-radius:calc(var(--radius)+0.75rem)] ${collapsed ? "h-auto" : "h-full min-h-0"}`}>
+          <div className="shrink-0 space-y-3 border-b p-3">
+            <Label htmlFor="project-search" className="sr-only">Search projects</Label>
+            <div className="flex min-w-0 items-center gap-2">
+              <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
+              <IconButton ref={panelToggleButton} className="shrink-0" variant="outline" size="icon" label={collapsed ? "Expand panel" : "Collapse panel"} aria-expanded={!collapsed} aria-controls="panel-results panel-detail" onClick={togglePanel}>{collapsed ? <ChevronDownIcon aria-hidden="true" /> : <ChevronUpIcon aria-hidden="true" />}</IconButton>
+            </div>
+            {collapsed && <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "records"}</p>}
+          </div>
           <Tabs value={listView} onValueChange={changeListView} className="min-h-0 min-w-0 flex-1 gap-0 overflow-hidden">
-            <div className="shrink-0 space-y-3 border-b p-3">
-              <div hidden={collapsed || detailVisible} inert={collapsed || detailVisible} className={collapsed || detailVisible ? "hidden" : "flex min-w-0 items-center gap-2"}>
-                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
-                <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
-              </div>
-              <Label htmlFor="project-search" className="sr-only">Search projects</Label>
+            <div hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? "shrink-0 space-y-3 border-b p-3" : "hidden"}>
               <div className="flex min-w-0 items-center gap-2">
-                <Input id="project-search" className="min-w-0 flex-1" placeholder="Name, need, zone or source ID" value={search} onChange={event => changeFilter(() => setSearch(event.target.value))} />
-                {collapsed
-                  ? <Button ref={expandButton} variant="outline" size="sm" aria-expanded={false} aria-controls="panel-results panel-detail" onClick={expand}><PanelLeftOpenIcon aria-hidden="true" data-icon="inline-start" />Expand</Button>
-                  : !detailVisible && <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>}
+                <div className="-m-1 min-w-0 flex-1 overflow-x-auto p-1"><TabsList aria-label="Result views"><TabsTrigger value="opportunities">Candidates ({opportunities.length})</TabsTrigger><TabsTrigger value="projects">All projects ({projects.length})</TabsTrigger></TabsList></div>
+                <Button variant="outline" aria-expanded={filtersOpen} aria-controls="project-filters" onClick={() => setFiltersOpen(value => !value)}><FunnelIcon aria-hidden="true" data-icon="inline-start" />Filters{utility !== "all" || locationFilter !== "all" ? " (active)" : ""}</Button>
               </div>
-              {collapsed ? <p className="text-xs text-muted-foreground">{count} {listView === "opportunities" ? "candidates" : "records"}</p> : !detailVisible && <>
                 {filtersOpen && <div id="project-filters" className="grid min-w-0 grid-cols-2 gap-3"><div className="min-w-0 space-y-2"><Label htmlFor="utility-filter">Reporting group</Label><Select value={utility} onValueChange={value => changeFilter(() => setUtility(value))}><SelectTrigger id="utility-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All filings</SelectItem>{groups.map(group => <SelectItem key={group.id} value={group.id}>{group.label}</SelectItem>)}{utility !== "all" && !groups.some(group => group.id === utility) && <SelectItem value={utility}>{utility} (not in this revision)</SelectItem>}</SelectContent></Select></div><div className="min-w-0 space-y-2"><Label htmlFor="location-filter">Location</Label><Select value={locationFilter} onValueChange={value => changeFilter(() => setLocationFilter(value))}><SelectTrigger id="location-filter" className="w-full"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All records</SelectItem><SelectItem value="located">With map representation</SelectItem><SelectItem value="area">Geographic extents</SelectItem><SelectItem value="approximate">Approximate</SelectItem><SelectItem value="ambiguous">Ambiguous</SelectItem><SelectItem value="unsupported">Unsupported</SelectItem><SelectItem value="not-processed">Not yet processed</SelectItem><SelectItem value="unlocated">Without map representation</SelectItem></SelectContent></Select></div></div>}
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
                   <p className="min-w-0 flex-1 text-xs text-muted-foreground">{geographyBusy ? "Geographic evidence is being prepared." : unrepresentedCount > 0 ? `${unrepresentedCount.toLocaleString()} records have no map representation.` : "All records have map context."}</p>
                   {(search || utility !== "all" || locationFilter !== "all") && <Button size="sm" variant="ghost" onClick={clearFilters}>Clear filters</Button>}
                 </div>
-              </>}
             </div>
             <div ref={resultsView} id="panel-results" hidden={!resultsVisible} inert={!resultsVisible} className={resultsVisible ? VIEW_CLASS : "hidden"} onFocusCapture={event => { listFocus.current[listView] = event.target as HTMLElement }}>
               <div ref={resultsPanel} className="relative min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain" tabIndex={0} role="region" aria-label="Search results" onScroll={event => { if (active && resultsVisible) listScroll.current[listView] = event.currentTarget.scrollTop }}>
@@ -240,7 +238,6 @@ export function Explorer({ dataset, options, analysis, onOptionsChange, geograph
               <div className="flex shrink-0 flex-wrap items-center gap-2 border-b p-3">
                 <Button ref={backButton} variant="ghost" size="sm" onClick={backToResults}><ArrowLeftIcon aria-hidden="true" data-icon="inline-start" />Back to results</Button>
                 {selectedOpportunity && <div className="flex min-w-0 items-center gap-2"><span className="text-xs text-muted-foreground">{selectedCandidateIndex < 0 ? "Outside current results" : `${selectedCandidateIndex + 1} of ${opportunities.length} candidates`}</span><IconButton variant="outline" label="Previous candidate" disabled={selectedCandidateIndex <= 0} onClick={() => selectPair(opportunities[selectedCandidateIndex - 1].id, false)}><ChevronLeftIcon aria-hidden="true" /></IconButton><IconButton variant="outline" label="Next candidate" disabled={selectedCandidateIndex < 0 || selectedCandidateIndex + 1 >= opportunities.length} onClick={() => selectPair(opportunities[selectedCandidateIndex + 1].id, false)}><ChevronRightIcon aria-hidden="true" /></IconButton></div>}
-                <IconButton className="ml-auto shrink-0" variant="ghost" label="Collapse panel" aria-expanded={true} aria-controls="panel-results panel-detail" onClick={collapse}><PanelLeftCloseIcon aria-hidden="true" /></IconButton>
               </div>
               <div className="min-h-0 min-w-0 flex-1 overflow-hidden"><ComparisonPanel dataset={dataset} exploratoryRadiusMiles={options.radiusMiles} geographicRecords={geographicRecords} selectedOpportunity={selectedOpportunity} selectedProject={selectedProject} onProject={selectProject} onReviewGeography={onReviewGeography} actions={<div ref={setSaveActionTarget} />} onSaveScenario={(pairId, inputs) => setScenarioSaveRequest(previous => ({ pairId, mode: dataset.mode, request: (previous?.request ?? 0) + 1, inputs: { ...inputs } }))} /></div>
             </div>
