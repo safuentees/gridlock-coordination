@@ -49,7 +49,10 @@ export function useGeography(dataset: Dataset) {
       cached.current[dataset.mode] = reviewed
       setState(previous => previous.base === dataset ? { ...previous, run: reviewed, error: null } : previous)
       const error = await saveGeographySession(reviewed)
-      if (error) setState(previous => previous.base === dataset && previous.run === reviewed ? { ...previous, error } : previous)
+      if (error) {
+        setState(previous => previous.base === dataset && previous.run === reviewed ? { ...previous, error } : previous)
+        throw new Error(error)
+      }
     } catch (error) {
       const message = error instanceof Error ? error.message : "This geographic review could not be saved."
       setState(previous => previous.base === dataset ? { ...previous, error: message } : previous)
