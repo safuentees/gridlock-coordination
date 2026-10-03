@@ -1,0 +1,6 @@
+# F28-R3 — downloaded draft recovery
+
+- PR190/191 connect the authoritative raw-file parser/preview/merge to a separate Restore drafts dialog and ordinary draft autosave. Local dirty work stays protected; source-changed/absent drafts retain fields, original times/baselines/fingerprints and explicit re-review guards. No accepted geography or Dataset import is applied.
+- Coordinator's single representative case at d4ebc0f passed local-conflict preservation, raw fields/baselines/times, stale/absent retention, pending-source exclusion, changed-base/source rejection, mode separation and input immutability. Browser IndexedDB/focus/navigation were source-inspected, not exercised.
+- The sole production build ran 19:13:35–19:20:16 UTC, idle without diagnostics, and was stopped. Its 6m41s duration exceeded the five-minute limit; no further check ran. Both default and expanded-access milestone attempts have stalled with an open local dependency declaration. Root cause and production validation remain unconfirmed. No visual/mobile or worker checks or new testing infrastructure.
+- Future long compiles require a hard termination deadline shorter than the shared check budget. F28-B2 independently qualifies a finite openly licensed facility-reference scope; no new facility evidence is promoted before source/context/representation/use requirements clear.

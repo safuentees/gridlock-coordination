@@ -22,6 +22,8 @@ Coordinate shared-file changes with their owner and affected consumers. Keep use
 
 Only `check_owner` runs planned verification at an integrated milestone. Default total budget: five minutes, at most one existing build/compile command plus one representative core input/output check. Reuse applicable successful exact-revision CI; do not rerun it locally or duplicate typechecking included in a build. Skip checking docs, copy and routine styling changes.
 
+Give a long build/compile a hard process termination deadline shorter than the total check budget (for example 270 seconds with time reserved for the representative case). Manual polling alone must not let an idle compile exceed the bound. This adds no check command, framework or CI.
+
 No Playwright, browser automation, screenshots, image analysis, viewport/mobile/zoom audits, exhaustive suites, coverage targets, extra reviewers or new CI/bot setup unless explicitly requested. Developers and the coordinator do not repeat the check owner's work. Existing enforced checks still apply; report blockers rather than bypassing them.
 
 The checker returns a short revision/result/limitation note. On failure, return the defect to its owner; recheck only the affected case after a fix. Pause affected dependent work while unrelated work continues. Stop at the budget and report unchecked items. Never describe an unrun check as passing.
