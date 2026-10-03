@@ -1,15 +1,17 @@
-import { useState, type ReactNode } from "react"
+import { useMemo, useState, type ReactNode } from "react"
 import { CalculatorIcon, FileTextIcon, InfoIcon } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { compareProjectTiming } from "@/core"
+import { analyzeExploratoryProximity } from "@/core/exploratory"
 import type { Dataset, ImpactInputs, Opportunity, Project } from "@/domain/schema"
 import type { GeographicRecord } from "@/domain/geography"
 import { ImpactPanel, type ImpactDraft } from "@/features/impact/ImpactPanel"
 import { ProjectEvidence } from "./ProjectDetails"
 import { GeographicEvidence, projectGeographyLabel } from "./GeographicEvidence"
+import { ExploratoryResults } from "./ExploratoryResults"
 import { reportingGroupLabel } from "@/lib/reporting-groups"
 import { sourceEditionLabels } from "@/lib/presentation"
 import { dateKind, projectDate } from "./format"
@@ -23,11 +25,12 @@ export interface ComparisonPanelProps {
   onSaveScenario?: (pairId: string, inputs: ImpactInputs) => void
   geographicRecords?: readonly GeographicRecord[]
   onReviewGeography?: (id: string) => void
+  exploratoryRadiusMiles?: number
 }
 
 const BODY_CLASS = "min-h-0 min-w-0 flex-1 overflow-auto overscroll-contain [overflow-wrap:anywhere]"
 
-export function ComparisonPanel({ dataset, geographicRecords, selectedOpportunity, selectedProject, actions, onProject, onSaveScenario, onReviewGeography }: ComparisonPanelProps) {
+export function ComparisonPanel({ dataset, geographicRecords, selectedOpportunity, selectedProject, actions, onProject, onSaveScenario, onReviewGeography, exploratoryRadiusMiles = 25 }: ComparisonPanelProps) {
   const geographyById = new Map(geographicRecords?.map(record => [record.projectId, record]) ?? [])
   const selectionKey = JSON.stringify([dataset.mode, selectedOpportunity ? "candidate" : "project", selectedOpportunity?.id ?? selectedProject?.id ?? null])
   const [tabs, setTabs] = useState<Record<string, string>>({})
@@ -37,7 +40,10 @@ export function ComparisonPanel({ dataset, geographicRecords, selectedOpportunit
   const pair = selectedOpportunity?.projectIds.map((id) => dataset.projects.find((project) => project.id === id)) ?? []
   const [left, right] = pair
   const canEstimate = Boolean(selectedOpportunity && left && right)
-  const activeTab = tab === "impact" && !canEstimate ? "evidence" : tab
+  const activeTab = (tab === "impact" && !canEstimate) || (tab === "exploratory" && !selectedProject) ? "evidence" : tab
+  const exploratory = useMemo(() => activeTab === "exploratory" && selectedProject && geographicRecords
+    ? analyzeExploratoryProximity(dataset.projects, geographicRecords, selectedProject.id, exploratoryRadiusMiles) : null,
+  [activeTab, selectedProject, dataset.projects, geographicRecords, exploratoryRadiusMiles])
   const timing = left && right ? compareProjectTiming(left, right) : null
   const constructionLabel = timing?.constructionRelation === "overlap" ? "Construction windows overlap"
     : timing?.constructionRelation === "separate" ? "Construction windows do not overlap" : "Construction overlap unknown"
@@ -72,13 +78,16 @@ export function ComparisonPanel({ dataset, geographicRecords, selectedOpportunit
     {actions && <div hidden={!selectedOpportunity} inert={!selectedOpportunity} className={selectedOpportunity ? "max-h-[25%] min-h-0 min-w-0 shrink-0 overflow-auto px-4" : "hidden"}>{actions}</div>}
     <CardContent className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
       <Tabs value={activeTab} onValueChange={(value) => setTabs((previous) => ({ ...previous, [selectionKey]: value }))} className="min-h-0 min-w-0 flex-1 overflow-hidden">
-        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList aria-label="Comparison topics"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger><TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList></div>
+        <div className="-m-1 shrink-0 overflow-x-auto p-1"><TabsList aria-label="Comparison topics"><TabsTrigger value="evidence"><FileTextIcon aria-hidden="true" data-icon="inline-start" />Evidence</TabsTrigger>{selectedProject && <TabsTrigger value="exploratory">Exploratory proximity</TabsTrigger>}<TabsTrigger value="impact" disabled={!canEstimate}><CalculatorIcon aria-hidden="true" data-icon="inline-start" />Impact</TabsTrigger><TabsTrigger value="supporting"><InfoIcon aria-hidden="true" data-icon="inline-start" />Supporting</TabsTrigger></TabsList></div>
         <TabsContent forceMount value="evidence" inert={activeTab !== "evidence"} className={activeTab === "evidence" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 space-y-4 pt-3">
             {selectedOpportunity ? <>
               {pair.filter((project): project is Project => Boolean(project)).map((project) => <div key={project.id} className="min-w-0 space-y-4 border-t pt-4 first:border-t-0 first:pt-0"><GeographicEvidence record={geographyById.get(project.id)} /><ProjectEvidence project={project} /></div>)}
             </> : selectedProject ? <><GeographicEvidence record={geographyById.get(selectedProject.id)} /><ProjectEvidence project={selectedProject} /></> : null}
           </div>
+        </TabsContent>
+        <TabsContent forceMount value="exploratory" inert={activeTab !== "exploratory"} className={activeTab === "exploratory" ? "min-h-0 min-w-0 flex-1 overflow-hidden pt-3" : "hidden"}>
+          <ExploratoryResults projects={dataset.projects} result={exploratory} onProject={onProject} />
         </TabsContent>
         <TabsContent forceMount value="impact" inert={activeTab !== "impact"} className={activeTab === "impact" ? BODY_CLASS : "hidden"}>
           <div className="min-w-0 pt-3">{selectedOpportunity && left && right && <ImpactPanel opportunity={selectedOpportunity} projects={[left, right]} draft={impactDraft} onDraftChange={(draft) => setImpactDrafts((previous) => ({ ...previous, [selectionKey]: draft }))} onSaveScenario={onSaveScenario ? inputs => onSaveScenario(selectedOpportunity.id, inputs) : undefined} />}</div>
