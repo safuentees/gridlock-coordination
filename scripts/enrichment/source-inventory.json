@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-03",
+  "scope": "Reusable official reference qualification across the full imported collection; no runtime matching executed",
+  "baseline": {
+    "coordinatorReceipt": "changes/F28-first-connection.md at d2a1434",
+    "projects": 14923,
+    "located": 68,
+    "approximate": 12114,
+    "ambiguous": 680,
+    "unsupported": 2061,
+    "notProcessed": 0,
+    "limitation": "The saved receipt has aggregate outcomes only. No source-level unresolved counts are asserted or recomputed."
+  },
+  "priorityInventories": [
+    {
+      "sourceKey": "pjm-rtep",
+      "records": 5624,
+      "nonemptySourceState": 5228,
+      "nonemptySourceLocation": 5304
+    },
+    {
+      "sourceKey": "miso-mtep",
+      "records": 3042,
+      "nonemptySourceState": 3042,
+      "nonemptySourceLocation": 3042
+    },
+    {
+      "sourceKey": "ercot-tpit",
+      "records": 1766,
+      "nonemptySourceState": 0,
+      "nonemptySourceLocation": 1644
+    },
+    {
+      "sourceKey": "spp-tracking",
+      "records": 1247,
+      "nonemptySourceState": 1234,
+      "nonemptySourceLocation": 720
+    },
+    {
+      "sourceKey": "ca-pge-tpr",
+      "records": 1591,
+      "nonemptySourceState": 0,
+      "nonemptySourceLocation": 1351
+    }
+  ],
+  "priorityCountMeaning": "Read-only counts of current source JSON fields, not usable-match or unresolved counts. Nonempty values can include NA/TBD, programs, multiple states, or unnamed bus labels. Source publisher footprint is not a project state.",
+  "candidates": [
+    {
+      "id": "national-eia-hifld-substations",
+      "prioritySourceKeys": [
+        "pjm-rtep",
+        "miso-mtep",
+        "ercot-tpit",
+        "spp-tracking",
+        "ca-pge-tpr"
+      ],
+      "decision": "unavailable-primary-reference",
+      "urls": [
+        "https://www.eia.gov/tools/faqs/faq.php?id=567&t=1"
+      ],
+      "reason": "Official EIA FAQ does not offer substation locations; existing mirrors do not establish current official publication. No mirror or power-plant substitution used.",
+      "enablingInput": "Current permitted authoritative national facility publication with names, identities and location roles."
+    },
+    {
+      "id": "cec-substations",
+      "prioritySourceKeys": [
+        "ca-pge-tpr",
+        "ca-sce-tpr",
+        "sdge-tpr"
+      ],
+      "decision": "access-gated",
+      "urls": [
+        "https://www.energy.ca.gov/data-reports/energy-maps-and-spatial-data",
+        "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/Substation/FeatureServer/0"
+      ],
+      "reason": "Prior direct official service inspection returned Token Required. No login, alternate mirror, or withheld PG&E coordinate recovery used.",
+      "enablingInput": "Permitted public CEC release or other independently authorized facility reference."
+    },
+    {
+      "id": "mn-transmission-substations",
+      "prioritySourceKeys": [
+        "miso-mtep",
+        "spp-tracking"
+      ],
+      "decision": "current-download-not-established",
+      "urls": [
+        "https://mn.gov/mngeo/gis-data-and-maps/info-by-topic/utilities-telecommunications/utilities.jsp"
+      ],
+      "reason": "Current official utilities index provides service-area and project links but no current statewide named substation download. Historical 2007/2016 references do not establish a maintained permitted facility layer. This is a discovery gap, not a claim that no such data exists.",
+      "enablingInput": "Current official named-facility release and documentation."
+    },
+    {
+      "id": "arkansas-substations",
+      "prioritySourceKeys": [
+        "miso-mtep",
+        "spp-tracking"
+      ],
+      "decision": "identity-insufficient",
+      "urls": [
+        "https://gis.arkansas.gov/2024/08/15/data-update-major-electrical-infrastructure-update/",
+        "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/18"
+      ],
+      "sourceCrs": 26915,
+      "fields": [
+        "objectid",
+        "type",
+        "county",
+        "shape",
+        "globalid"
+      ],
+      "reason": "Public statewide multipoint layer identifies substation type/county but supplies no facility name or engineering ID. County alone cannot link a project to one facility. No geometry acquired.",
+      "enablingInput": "Authoritative facility-name or native-ID crosswalk; explicit multipoint location meaning."
+    },
+    {
+      "id": "atc-project-public-view",
+      "prioritySourceKeys": [
+        "miso-mtep"
+      ],
+      "decision": "point-role-and-identity-insufficient",
+      "urls": [
+        "https://www.atcllc.com/projects/",
+        "https://services2.arcgis.com/7PeVNOs9VhL7Dka9/ArcGIS/rest/services/ATC_Project_Locations_PUBLIC_VIEW/FeatureServer/0"
+      ],
+      "sourceCrs": 3071,
+      "sourceCount": 10,
+      "fields": [
+        "OBJECTID",
+        "Name",
+        "Description",
+        "URL_Link",
+        "GlobalID"
+      ],
+      "reason": "Official project index links its public project map. Layer has ten general project points, no native MISO project/component ID, no facility/center definition, and no stated point accuracy. Broad work cannot inherit a pin as a construction center. Official page direct download returned HTTP403; index text remained readable. No geometry acquired or failure bypass attempted.",
+      "enablingInput": "Public native project crosswalk, point-role documentation and intended reuse terms; sparse display pins are not a complete MISO facility reference."
+    },
+    {
+      "id": "national-grid-ny-substations",
+      "prioritySourceKeys": [
+        "ny-national-grid-ltp"
+      ],
+      "decision": "access-and-use-unresolved",
+      "urls": [
+        "https://systemdataportal.nationalgrid.com/arcgis/rest/services/NYSDP/Substations/MapServer/0",
+        "https://systemdataportal.nationalgrid.com/MA/webpages/IntroTab.htm",
+        "https://systemdataportal.nationalgrid.com/MA/documents/MA_Terms_of_Use.pdf"
+      ],
+      "reason": "Direct NY JSON metadata request returned HTTP403. Public portal documentation describes distribution-hosting context, with portal-specific use terms. MA terms are not assumed to authorize NY reuse. No repeated denied request, feature download or bypass.",
+      "enablingInput": "Accessible authorized snapshot and source-specific permission/role interpretation."
+    },
+    {
+      "id": "eversource-hosting-substations",
+      "prioritySourceKeys": [
+        "iso-ne-rsp"
+      ],
+      "decision": "candidate-not-qualified",
+      "urls": [
+        "https://dghostingexternalmapprod.eversource.com/dghosting/rest/services/Substations/Substation_Locations/MapServer"
+      ],
+      "sourceCrs": 26918,
+      "reason": "Official owner service lists NH, MA and CT substation point layers. Hosting/distribution scope does not establish transmission project identity or a construction center; no explicit export/reuse qualification or full enumeration performed. Potential regional follow-up, not national/high-volume coverage.",
+      "enablingInput": "Source-specific use terms, full named-facility enumeration and corroborated geographic/project context."
+    },
+    {
+      "id": "usgs-gnis-populated-places",
+      "prioritySourceKeys": [
+        "pjm-rtep",
+        "miso-mtep",
+        "ercot-tpit",
+        "spp-tracking",
+        "ca-pge-tpr"
+      ],
+      "decision": "permitted-locality-candidate-awaits-contract",
+      "urls": [
+        "https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data",
+        "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+        "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/GNIS_file_format.pdf"
+      ],
+      "sourceCrs": "NAD83 geographic (documentation pages 1-2)",
+      "reason": "Official nationally staged locality names/state/county/primary coordinates, refreshed every other month. Locality points are neither facility centers nor boundaries. Current pipeline considers town area representations only, so adding points now would have no useful runtime effect. No national archive acquired in this pass.",
+      "enablingInput": "Coordinator/core contract for locality points, Census-area precedence, duplicates/history/unknown (0,0) rejection, NAD83-to-runtime interpretation and scalable asset delivery."
+    }
+  ],
+  "metadataSnapshots": [
+    {
+      "file": "arkansas-substations-metadata.json",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/MapServer/18?f=pjson",
+      "retrievedAt": "2026-10-03T06:50:03.605542+00:00",
+      "httpStatus": 200,
+      "bytes": 5553,
+      "sha256": "d9c0da327b588f81b8184774e5705cf0ed77f88f75a0be218bab735486b1fc5f"
+    },
+    {
+      "file": "atc-project-metadata.json",
+      "url": "https://services2.arcgis.com/7PeVNOs9VhL7Dka9/ArcGIS/rest/services/ATC_Project_Locations_PUBLIC_VIEW/FeatureServer/0?f=pjson",
+      "retrievedAt": "2026-10-03T06:50:04.824224+00:00",
+      "httpStatus": 200,
+      "bytes": 13821,
+      "sha256": "4733ab36a1bf4c0679c181e75964650122023f6f8ebda085c15e5848f85b3c04"
+    },
+    {
+      "file": "atc-project-count.json",
+      "url": "https://services2.arcgis.com/7PeVNOs9VhL7Dka9/ArcGIS/rest/services/ATC_Project_Locations_PUBLIC_VIEW/FeatureServer/0/query?f=json&where=1%3D1&returnCountOnly=true",
+      "retrievedAt": "2026-10-03T06:50:06.534041+00:00",
+      "httpStatus": 200,
+      "bytes": 12,
+      "sha256": "4c9caa2c9fbb5e5f0099ac08ff7a74fd9c6711d307d1e88705cb791b157d3404"
+    }
+  ],
+  "originalsDirectory": "inputs/originals/F28-geography/facility-inventory-2026-10-03",
+  "result": {
+    "newRuntimeReferences": 0,
+    "bundleUnchanged": true,
+    "reason": "No new facility candidate cleared access, identity, role and reuse gates together; locality fallback needs a deliberate matching contract."
+  }
+}
