@@ -18,6 +18,7 @@ import { getMapGeography, geographyFitLocations, geographyLabel, geographyAreaLa
 import { buildDensityHierarchy, getDensityFrame, smoothstep, type DensityCell, type DensityPoint } from "./hierarchy"
 import { densityLayers, syntheticPointLayer } from "./density-layers"
 import { syntheticDensityPoints } from "./synthetic"
+import { createDensityLighting, DENSITY_LEGEND_GRADIENT } from "./density-style"
 
 // MapLibre 6 uses a separate worker module; Vite must bundle its sibling imports too.
 setWorkerUrl(workerUrl)
@@ -31,13 +32,20 @@ const MAP_STYLE: StyleSpecification = {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     },
   },
-  layers: [{ id: "osm", type: "raster", source: "osm" }],
+  layers: [
+    { id: "stone-background", type: "background", paint: { "background-color": "#e7e5e4" } },
+    { id: "osm", type: "raster", source: "osm", paint: {
+      "raster-saturation": -1, "raster-contrast": -0.2,
+      "raster-brightness-min": 0.15, "raster-brightness-max": 0.95, "raster-opacity": 0.82,
+    } },
+  ],
 }
 const densityNumber = new Intl.NumberFormat(undefined, { maximumSignificantDigits: 3 })
 type FitTarget = "projects" | "selection"
 
 export default function MapLibreProjectMap({ projects, geographicRecords, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
   const map = useRef<MapRef>(null)
+  const effects = useMemo(() => [createDensityLighting()], [])
   const [container, setContainer] = useState<HTMLElement | null>(null)
   const [ready, setReady] = useState(false)
   const [mapError, setMapError] = useState(false)
@@ -138,7 +146,7 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
 
   return <section ref={setContainer} className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Experimental project map">
     <MapGL ref={map} initialViewState={{ longitude: -82.5, latitude: 33.2, zoom: 7 }} mapStyle={MAP_STYLE} attributionControl={false} renderWorldCopies={false} maxPitch={60} onLoad={() => setReady(true)} onError={() => setMapError(true)} onPitch={(event) => setPitch(event.viewState.pitch)} onZoom={(event) => setZoom(event.viewState.zoom)} style={{ width: "100%", height: "100%" }}>
-      <DeckOverlay layers={layers} interleaved getTooltip={getTooltip} onError={() => setMapError(true)} />
+      <DeckOverlay layers={layers} effects={effects} interleaved getTooltip={getTooltip} onError={() => setMapError(true)} />
       <AttributionControl compact={false} style={{ marginRight: insets.right + 8, marginBottom: insets.bottom + 8, maxWidth: Math.max(40, size.width - insets.left - insets.right - 16), maxHeight: Math.max(24, (size.height - insets.top - insets.bottom) / 3), overflow: "auto", whiteSpace: "normal" }} />
     </MapGL>
     <div className="pointer-events-auto absolute right-3 top-3 z-10 flex max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] flex-col items-end gap-2 overflow-y-auto overscroll-contain">
@@ -164,7 +172,7 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
           <DropdownMenuCheckboxItem checked={columns} disabled={!ready || !showDensity} onCheckedChange={(value) => { setColumns(value === true); map.current?.jumpTo({ pitch: value ? 45 : 0 }) }}>Raised columns</DropdownMenuCheckboxItem>
           <DropdownMenuCheckboxItem checked={pitch > 0} disabled={!ready} onCheckedChange={(value) => map.current?.jumpTo({ pitch: value ? 45 : 0 })}>Tilt view</DropdownMenuCheckboxItem>
           <DropdownMenuItem disabled={!ready} onSelect={() => map.current?.jumpTo({ pitch: 0, bearing: 0 })}>Reset north and tilt</DropdownMenuItem>
-          <p className="px-2 py-1.5 text-xs text-muted-foreground">Darker and taller means denser. Color and height use a fixed logarithmic scale, capped at 10,000 per 1,000 km². Hover for observed counts; zoom in for locations.</p>
+          <p className="px-2 py-1.5 text-xs text-muted-foreground">Teal to amber means increasing density on a fixed logarithmic scale, capped at 10,000 per 1,000 km². Column height is display exaggeration; face shading comes from lighting. Hover for observed counts; zoom in for locations.</p>
           <DropdownMenuSeparator />
           <DropdownMenuCheckboxItem checked={syntheticPreview} onCheckedChange={(value) => setSyntheticPreview(value === true)}>Synthetic density preview</DropdownMenuCheckboxItem>
           <p className="px-2 py-1.5 text-xs text-muted-foreground">2,400 invented locations replace the map only. Results and your project selection stay unchanged.</p>
@@ -177,8 +185,9 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
         {syntheticPreview && <p>2,400 sample locations</p>}
         {showDensity && densityOpacity > 0 && <div className="mt-1">
           <p>{syntheticPreview ? "Samples" : "Projects"} / 1,000 km²</p>
-          <div className="my-1 h-2 rounded-sm" aria-hidden="true" style={{ background: "linear-gradient(to right, rgb(237 233 254), rgb(139 92 246), rgb(76 29 149))" }} />
-          <p className="flex justify-between gap-1"><span>0</span><span>10,000+</span></p>
+          <div className="my-1 h-2 rounded-sm" aria-hidden="true" style={{ background: DENSITY_LEGEND_GRADIENT }} />
+          <p className="flex justify-between gap-1"><span>0</span><span>100</span><span>10,000+</span></p>
+          {columns && <p className="mt-1">Height exaggerated</p>}
         </div>}
       </div>
       {!syntheticPreview && outOfRangeCount > 0 && <p className="max-w-28 shrink-0 rounded-lg border bg-background p-2 text-xs">{outOfRangeCount} located records are outside this projection; their coordinates are unchanged.</p>}

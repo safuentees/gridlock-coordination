@@ -2,18 +2,16 @@ import type { Color, LayersList, PickingInfo } from "@deck.gl/core"
 import { QuadkeyLayer } from "@deck.gl/geo-layers"
 import { PolygonLayer, ScatterplotLayer } from "@deck.gl/layers"
 import type { DensityCell, DensityPoint } from "./hierarchy"
+import { DENSITY_PALETTE, DENSITY_MATERIAL, DENSITY_DISPLAY_HEIGHT_MAX_METERS } from "./density-style"
 
 // Fixed logarithmic scale in locations per 1,000 km², shared across every level/source.
 export const DENSITY_SCALE_MAX = 10_000
-const DENSITY_HEIGHT_MAX_METERS = 20_000
 function unit(value: number): number { return Number.isFinite(value) ? Math.max(0, Math.min(1, value)) : 0 }
 function strength(density: number): number { return unit(Math.log1p(Math.max(0, density)) / Math.log1p(DENSITY_SCALE_MAX)) }
 
 function fillColor(cell: DensityCell): Color {
   const t = strength(cell.density)
-  const low = [237, 233, 254]
-  const middle = [139, 92, 246]
-  const high = [76, 29, 149]
+  const [low, middle, high] = DENSITY_PALETTE
   const from = t < 0.5 ? low : middle
   const to = t < 0.5 ? middle : high
   const blend = t < 0.5 ? t * 2 : (t - 0.5) * 2
@@ -39,9 +37,9 @@ export function densityLayers({ cells, columns, opacity, onCell }: {
     filled: true,
     stroked: false,
     wireframe: false,
-    material: false as const,
+    material: columns ? DENSITY_MATERIAL : false,
     getFillColor: fillColor,
-    getElevation: (cell: DensityCell) => DENSITY_HEIGHT_MAX_METERS * strength(cell.density),
+    getElevation: (cell: DensityCell) => DENSITY_DISPLAY_HEIGHT_MAX_METERS * strength(cell.density),
     pickable: alpha > 0.05,
     onClick: ({ object }: PickingInfo<DensityCell>) => {
       if (!object || !(object.density > 0)) return false
@@ -52,7 +50,8 @@ export function densityLayers({ cells, columns, opacity, onCell }: {
   }
   // QuadkeyLayer 9.4 shrinks extruded footprints to 99%. Use exact tilebelt bounds
   // for columns so subdivision creates neither gutters nor overlapping parents.
-  // No strokes/lighting/time transitions: inherited child values match the parent.
+  // No strokes/time transitions: inherited child values match the parent.
+  // Flat cells remain unlit; raised faces use the shared density material.
   return columns
     ? [new PolygonLayer<DensityCell>({ ...common, id: "density-columns", extruded: true, getPolygon: rectangle })]
     : [new QuadkeyLayer<DensityCell>({ ...common, id: "density-cells", extruded: false, getQuadkey: (cell) => cell.quadkey })]
