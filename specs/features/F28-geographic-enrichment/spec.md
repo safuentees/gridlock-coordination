@@ -31,6 +31,7 @@ Coordinator owns shared contract, integration, original Dataset/provider/entry c
 | F28-F1 / core then ui | Explain available precision and source coverage | A/B/D; `domain/geographic-coverage.ts` agreed; core `enrichment/coverage.ts`, ui `GeographyCoverage.tsx` plus minimal GeographyPanel insertion; [short spec](coverage-details.md) | Five statuses, seven representation groups, source editions and stale reviews reconcile against current records without foreign/retained IDs or duplicated calculations; PR183/184 integrated |
 | F28-R2 / core and ui | Return to unfinished corrections after reload | R; committed `domain/geographic-drafts.ts`; [exact files/API](persistent-drafts.md) | Separate per-mode storage/hydration preserves incomplete fields, baselines, absent identities and changed-source guards; drafts never change reviewed geometry merely by loading |
 | F28-R3 / core and ui | Recover downloaded unfinished work | R2; committed `domain/geographic-draft-restore.ts`; [exact files/API](draft-recovery.md) | Preview/restore raw draft files without overwriting local dirty work or applying geographic decisions; changed/absent source fingerprints remain guarded |
+| F28-C2 / coordinator | Define useful unverified facility extents and permitted repeatable source use | B2 qualification; [exact files and criteria](facility-contract.md) | Backward-compatible context/precision/attribution/export contract committed before full inventory producer and consumer dispatch; no invented centers or native-evidence promotion |
 
 ## Frozen first-connection API
 
