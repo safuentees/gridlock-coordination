@@ -18,6 +18,7 @@ import { getMapGeography, geographyFitLocations, geographyLabel, geographyAreaLa
 import { buildDensityHierarchy, getDensityFrame, smoothstep, type DensityCell, type DensityPoint } from "./hierarchy"
 import { densityLayers, syntheticPointLayer } from "./density-layers"
 import { syntheticDensityPoints } from "./synthetic"
+import { useDensityEntrance, type DensityEntranceLatch } from "./density-entrance"
 import { createDensityLighting, DENSITY_LEGEND_GRADIENT } from "./density-style"
 
 // MapLibre 6 uses a separate worker module; Vite must bundle its sibling imports too.
@@ -43,7 +44,7 @@ const MAP_STYLE: StyleSpecification = {
 const densityNumber = new Intl.NumberFormat(undefined, { maximumSignificantDigits: 3 })
 type FitTarget = "projects" | "selection"
 
-export default function MapLibreProjectMap({ projects, geographicRecords, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer }: ProjectMapProps & MapRendererControls) {
+export default function MapLibreProjectMap({ projects, geographicRecords, opportunities, selectedProjectId, selectedOpportunity, onProject, onOpportunity, visible, viewportInsets = ZERO_INSETS, showConnections, onShowConnections, onChangeRenderer, entrance }: ProjectMapProps & MapRendererControls & { entrance: DensityEntranceLatch }) {
   const map = useRef<MapRef>(null)
   const effects = useMemo(() => [createDensityLighting()], [])
   const [container, setContainer] = useState<HTMLElement | null>(null)
@@ -71,6 +72,7 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
   const frame = useMemo(() => getDensityFrame(hierarchy, densityZoom), [hierarchy, densityZoom])
   const pointOpacity = showDensity ? smoothstep(zoom - 11) : 1
   const densityOpacity = showDensity ? 1 - pointOpacity : 0
+  const entranceProgress = useDensityEntrance(entrance, ready, visible, showDensity && densityOpacity > 0 && frame.cells.length > 0)
   const locations = useMemo(() => syntheticPreview
     ? syntheticDensityPoints.map(({ position: [lon, lat] }): [number, number] => [lat, lon])
     : geographicRecords ? geographyFitLocations(mappedProjects, geography) : getMapLocations(mappedProjects), [syntheticPreview, mappedProjects, geographicRecords, geography])
@@ -90,11 +92,15 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
     current.jumpTo({ pitch: 0, bearing: 0 })
     current.fitBounds([[west, south], [east, north]], { padding: fitPadding, maxZoom: Math.min(14, current.getZoom() + 2), animate: false, duration: 0 })
   }, [ready, fitPadding])
+  // Entrance frames update only density presentation; contextual data/layers stay stable.
+  const contextLayers = useMemo(() => syntheticPreview
+    ? [syntheticPointLayer(syntheticDensityPoints, pointOpacity)]
+    : [...geographyLayers(geography, focusIds, onProject), ...projectLayers({ projects: mappedProjects, connections, focusIds, candidateIds, selectedPair: selectedOpportunity !== null, pointOpacity, approximateIds, onProject, onOpportunity })],
+  [geography, approximateIds, syntheticPreview, pointOpacity, mappedProjects, connections, focusIds, candidateIds, selectedOpportunity, onProject, onOpportunity])
   const layers = useMemo(() => [
-    ...densityLayers({ cells: frame.cells, columns, opacity: densityOpacity, onCell: focusCell }),
-    ...(syntheticPreview ? [syntheticPointLayer(syntheticDensityPoints, pointOpacity)]
-      : [...geographyLayers(geography, focusIds, onProject), ...projectLayers({ projects: mappedProjects, connections, focusIds, candidateIds, selectedPair: selectedOpportunity !== null, pointOpacity, approximateIds, onProject, onOpportunity })]),
-  ], [geography, approximateIds, frame, columns, densityOpacity, focusCell, syntheticPreview, pointOpacity, mappedProjects, connections, focusIds, candidateIds, selectedOpportunity, onProject, onOpportunity])
+    ...densityLayers({ cells: frame.cells, columns, opacity: densityOpacity, entranceProgress, onCell: focusCell }),
+    ...contextLayers,
+  ], [entranceProgress, frame, columns, densityOpacity, focusCell, contextLayers])
   const getTooltip = useCallback(({ object }: PickingInfo): string | null => {
     if (!object) return null
     if ("members" in object) return geographyAreaLabel(object as GeographyArea, focusIds)

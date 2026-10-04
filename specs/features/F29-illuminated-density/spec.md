@@ -1,6 +1,6 @@
 # F29 — Illuminated density and first-entry presentation
 
-Status: prioritized for implementation October 3, 2026. F28-F completion is not a dependency. Technical prerequisites are integrated F22/F23 hierarchy/rendering and PR175 map interfaces, with overlapping map/UI claims integrated or explicitly released. They are satisfied for A; the coordinator has dispatched it in a new worktree. Owner: existing `map-ui` worker, **Chat 1 Unrelated** (`01a0f10a-93cd-7b30-9823-ee2e2fb42e34`). Coordinator owns assignment, integration and bounded milestone checks. Independent F28 work and UI ownership are preserved.
+Status: A/B implemented through PR197/198; final integration PR200. F28-F completion is not a dependency. Technical prerequisites were integrated F22/F23 hierarchy/rendering and PR175 map interfaces, with overlapping claims released. Owner: existing `map-ui` worker, **Chat 1 Unrelated** (`01a0f10a-93cd-7b30-9823-ee2e2fb42e34`), with separate managed A/B worktrees retained. Coordinator owns integration/checks. Independent F28 work and UI ownership are preserved. The [bounded receipt](../../../changes/F29-check.md) records build and case timeouts; no runtime or GPU pass is claimed.
 
 ## Purpose and unchanged agreement
 
@@ -10,7 +10,7 @@ Preserve Leaflet default/experimental choice, flat/raised controls, cell focus, 
 
 ## F29-A — Illuminated density rendering
 
-Ready and assigned after the technical/ownership handoff above. Branch: `codex/F29-A-illuminated-density`, new separate map-owner worktree from latest main. Deliver one coherent PR.
+Integrated from PR197 at main `7cf5704`. Branch: `codex/F29-A-illuminated-density`, separate managed map-owner worktree. Final feature check follows B; GPU drawing/picking is unexercised.
 
 - Attach a deck.gl `LightingEffect` with directional light and ambient fill through the existing overlay; enable shaded material on raised density polygons. Isolate treatment from ordinary markers/selected geography.
 - Use a muted stone basemap, teal lower columns and amber peaks, with the same palette in the metric legend. Prefer local raster-style adjustments using existing permitted tiles and attribution; add no provider, credentials or dependency. Keep default shadcn controls, typography, colors and spacing.
@@ -31,7 +31,7 @@ Complete when the illuminated square layer and its legend communicate the unchan
 
 ## F29-B — Interruptible entrance animation
 
-Ready after A integrates. Branch: `codex/F29-B-density-entrance`, separate worktree from latest main. Deliver a second coherent PR.
+Implemented and integrated through PR198 after A, from separate `codex/F29-B-density-entrance` worktree into coordinator `codex/F29-integration`; final main integration is PR200. One retained wrapper latch and private adapter props preserve existing public map/shell interfaces.
 
 - Once per mounted application/workspace session, on the first visible, ready density-renderer entry, fade the density layer and raise active columns to their final display heights over about 1,000 ms. Flat mode fades only. Do not force renderer, density or column activation or move the camera for the entrance.
 - Hold the one-shot latch in the retained `ProjectMap` wrapper so changing renderer, source mode, filters, selection, layout or destination cannot replay it. Returning from hidden navigation or remounting the experimental adapter uses the final state. A full app reload begins a new session.
