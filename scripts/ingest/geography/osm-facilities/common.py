@@ -52,7 +52,15 @@ def utc():
 
 
 def tree_bytes(path):
-    return sum(p.stat().st_size for p in Path(path).rglob('*') if p.is_file())
+    total = 0
+    for item in Path(path).rglob('*'):
+        try:
+            if item.is_file():
+                total += item.stat().st_size
+        except FileNotFoundError:
+            # Native writers/SQLite remove their own temporary files concurrently.
+            continue
+    return total
 
 
 def citation(extract):

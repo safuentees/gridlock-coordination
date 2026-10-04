@@ -19,7 +19,7 @@ LIMITATIONS = [
 
 
 def producer_digest():
-    return digest({p.name: sha_file(p) for p in sorted(HERE.iterdir()) if p.suffix in ('.py', '.ts', '.json')})
+    return digest({p.name: sha_file(p) for p in sorted(HERE.iterdir()) if p.suffix in ('.py', '.mts', '.json')})
 
 
 def build(plan, originals, census_originals, work, schema_root, node, tsx, limit=None):
@@ -125,7 +125,7 @@ def build(plan, originals, census_originals, work, schema_root, node, tsx, limit
     write(candidate, asset)
     write(offer, manifest)
     env = dict(os.environ, NODE_OPTIONS='--max-old-space-size=1536')
-    subprocess.run([str(node), str(tsx), str(HERE / 'validate.ts'), str(schema_root), str(candidate), str(offer)], check=True, env=env)
+    subprocess.run([str(node), str(tsx), str(HERE / 'validate.mts'), str(schema_root), str(candidate), str(offer)], check=True, env=env)
     # Only authoritative schema acceptance permits final filenames and a generation receipt.
     candidate.replace(work / 'asset.json')
     offer.replace(work / 'manifest.json')
