@@ -15,7 +15,7 @@ export function DeckOverlay(props: MapLibreOverlayProps) {
   }, [props])
   useEffect(() => {
     if (!current) return
-    return scheduleMapControl(current.getMap(),
+    return scheduleMapControl<MapLibreOverlay>(current.getMap(),
       () => new MapLibreOverlay(latestProps.current),
       control => { overlay.current = control },
       control => { if (overlay.current === control) overlay.current = null },
