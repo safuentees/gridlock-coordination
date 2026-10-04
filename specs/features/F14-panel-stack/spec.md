@@ -21,3 +21,9 @@ Dependency: integrated F10–F13 and shared F14 contract. Both implementation sl
 
 ## Component decision
 [Blueprint PanelStack](https://blueprintjs.com/docs/#core/components/panel-stack) supplies the stack/back model and optional retained inactive panels. Its [PanelView implementation](https://github.com/palantir/blueprint/blob/develop/packages/core/src/components/panel-stack/panelView.tsx) imports Blueprint Button/Text and Blueprint style classes; PanelStack also uses its transition system. Reproduce the small interaction with existing shadcn Button/Input/Tabs and retained React state instead of importing a second design system. No dependency or preset changes.
+
+## FIX-F14 — Square comparison body
+
+User correction: the embedded Project comparison body should have square corners. Coordinator hands `ui` only the root Card radius in `app/src/features/explorer/ComparisonPanel.tsx` and `changes/FIX-F14-comparison.md`; this supersedes the historical core claim only for this styling change. Draft/tab/calculation logic is read-only. No Explorer/map/shared Card edits. Coordinator owns this spec, roadmap and `app/src/AGENTS.md`, incorporating them in the same small implementation PR.
+
+Complete when ComparisonPanel locally uses `rounded-none`, leaving the outer floating shell, default shared components, padding, internal overflow and state unchanged. Source/diff inspection suffices under the routine-styling check exemption; no build, browser, screenshot or visual check.
