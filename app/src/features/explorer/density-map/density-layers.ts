@@ -23,16 +23,20 @@ function rectangle(cell: DensityCell): [number, number][] {
   return [[west, south], [east, south], [east, north], [west, north], [west, south]]
 }
 
-export function densityLayers({ cells, columns, opacity, onCell }: {
+export function densityLayers({ cells, columns, opacity, entranceProgress = 1, onCell }: {
   cells: DensityCell[]
   columns: boolean
   opacity: number
+  entranceProgress?: number
   onCell: (cell: DensityCell) => void
 }): LayersList {
   const alpha = unit(opacity)
   const common = {
     data: cells,
-    opacity: alpha,
+    // An imperceptible positive floor avoids alpha-zero shader discard during picking.
+    // Visibility and pickability depend only on the existing zoom opacity.
+    opacity: alpha * Math.max(0.000001, unit(entranceProgress)),
+    elevationScale: columns ? unit(entranceProgress) : 1,
     visible: alpha > 0,
     filled: true,
     stroked: false,
