@@ -52,3 +52,9 @@ Coordinator dispatches A to the existing map chat now, integrates/records its co
 ## Official implementation guidance
 
 Use [deck.gl effects and lighting](https://deck.gl/docs/developer-guide/using-effects) for existing ambient/directional lights, layer materials and optional experimental shadows. Use [deck.gl animations and transitions](https://deck.gl/docs/developer-guide/animations-and-transitions) for layer-property presentation transitions; its aggregation examples do not authorize replacing the square hierarchy or animating calculated data. Preserve user-controlled camera behavior.
+
+## FIX-F29 — Experimental startup recovery
+
+User-reported startup failure takes priority over new map work. Map-ui owns `ProjectMap.tsx` and `changes/FIX-F29.md`; retry is integrated through PR202. Coordinator owns `app/vite.config.ts`, this spec, the roadmap and `changes/FIX-F29-startup.md`. No Explorer/App, data or calculation handoff is required. Each retry resets the lazy payload and boundary while retaining wrapper inputs and the consumed entrance latch; switching from Standard starts a fresh attempt. Prepare the direct lighting dependency before lazy map entry, following [Vite dependency optimization](https://vite.dev/config/dep-optimization-options).
+
+Completion requires the served experimental modules and lighting bundle to resolve, with explicit retry/standard recovery and preserved input interfaces. Coordinator runs only the affected bounded module-loading case. That establishes module delivery, not GPU rendering or physical interaction. Local package repair must use the exact locked version/integrity, preserve a backup and never commit dependencies. Independent F28 producer ownership remains unchanged.
