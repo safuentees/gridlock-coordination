@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react"
 import { useMap } from "react-map-gl/maplibre"
 import { MapLibreOverlay, type MapLibreOverlayProps } from "@deck.gl/maplibre"
+import { scheduleMapControl } from "./overlay-lifecycle"
 
 // MapLibre owns camera/input. Cancel StrictMode's replay before an asynchronous
 // luma device attachment starts against the same WebGL context a second time.
@@ -14,24 +15,12 @@ export function DeckOverlay(props: MapLibreOverlayProps) {
   }, [props])
   useEffect(() => {
     if (!current) return
-    const map = current.getMap()
-    let cancelled = false
-    let control: MapLibreOverlay | null = null
-    queueMicrotask(() => {
-      if (cancelled) return
-      try {
-        control = new MapLibreOverlay(latestProps.current)
-        map.addControl(control)
-        overlay.current = control
-      } catch (error) {
-        latestProps.current.onError?.(error instanceof Error ? error : new Error(String(error)))
-      }
-    })
-    return () => {
-      cancelled = true
-      if (overlay.current === control) overlay.current = null
-      if (control && map.hasControl(control)) map.removeControl(control)
-    }
+    return scheduleMapControl(current.getMap(),
+      () => new MapLibreOverlay(latestProps.current),
+      control => { overlay.current = control },
+      control => { if (overlay.current === control) overlay.current = null },
+      error => { latestProps.current.onError?.(error instanceof Error ? error : new Error(String(error))) },
+    )
   }, [current])
   return null
 }
