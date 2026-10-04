@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "assetId": "osm-power-substations-us",
+  "revision": "2026-10-02-c2-v1",
+  "snapshotAsOf": "2026-10-02T20:21:34Z",
+  "predicate": "power=substation",
+  "extracts": [
+    {
+      "id": "us",
+      "url": "https://download.geofabrik.de/north-america/us-261002.osm.pbf",
+      "bytes": 12181127106,
+      "md5": "76fcb25cc761bbd210c6e79ef8671155",
+      "sourcePage": "https://download.geofabrik.de/north-america/us.html"
+    },
+    {
+      "id": "puerto-rico",
+      "url": "https://download.geofabrik.de/north-america/us/puerto-rico-261002.osm.pbf",
+      "bytes": 73992835,
+      "md5": "0954a8fc8a2f8b83c506e42aa813cbd0",
+      "sourcePage": "https://download.geofabrik.de/north-america/us/puerto-rico.html"
+    },
+    {
+      "id": "us-virgin-islands",
+      "url": "https://download.geofabrik.de/north-america/us/us-virgin-islands-261002.osm.pbf",
+      "bytes": 3121722,
+      "md5": "42a22b8bc3bf286904a7ba19441538ae",
+      "sourcePage": "https://download.geofabrik.de/north-america/us/us-virgin-islands.html"
+    },
+    {
+      "id": "american-oceania",
+      "url": "https://download.geofabrik.de/australia-oceania/american-oceania-261002.osm.pbf",
+      "bytes": 5375683,
+      "md5": "2cc0271d1e964319904a5cf98b4f312f",
+      "sourcePage": "https://download.geofabrik.de/australia-oceania/american-oceania.html"
+    }
+  ],
+  "census": {
+    "editionId": "Census-TIGERweb-ACS2025-state-full-polygons",
+    "count": 56,
+    "files": [
+      {
+        "file": "states-00000.json",
+        "sha256": "ed20d31a690d06a693b8e017d8eb318ede69144ff6836c93484951ae1deb74b5",
+        "bytes": 3331434,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=0&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00005.json",
+        "sha256": "0d94d1a8ccc643916b20d553c9e3892f5f3218e313c847529d11803c8d51037a",
+        "bytes": 1797148,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=5&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00010.json",
+        "sha256": "566fc41f9323716faf1790dc466b36459f76cd332bc81e47edeaf91ca896351f",
+        "bytes": 4300566,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=10&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00015.json",
+        "sha256": "31bc88b8c1071faff6a72e2bd0fb1cca59625dbad0e302a9c9fdb48b4dc21cd5",
+        "bytes": 4593027,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=15&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00020.json",
+        "sha256": "d7d6e4ac04e23d3df170229f860914aa5a5755691def39109d3c89b846fe684e",
+        "bytes": 4390666,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=20&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00025.json",
+        "sha256": "3cb4077f21080c7cca4aa21b0654e47e94d50f8d87c4a8b113810d9c6043623c",
+        "bytes": 3556686,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=25&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00030.json",
+        "sha256": "e8997c0c4764b16cbff2ea8de2088fe7bcb0a1bdf8270c50a549bd24262c0d58",
+        "bytes": 3666141,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=30&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00035.json",
+        "sha256": "9cda9aac5a956866155426eb8c4c912931ea6483139b143f4de906c5ea5f60c6",
+        "bytes": 2929424,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=35&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00040.json",
+        "sha256": "45ead1b1b3509ed32d85066c54090aaad067023cfcefb287e574cc09b1d9a81a",
+        "bytes": 5576401,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=40&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00045.json",
+        "sha256": "f167499d4036482e8ea1aff4b2ccecb9a30f49b99832070069a7703b5869e462",
+        "bytes": 4945869,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=45&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00050.json",
+        "sha256": "370c0b9d2ae9468cc54b0568a56889b224939bf0a5254dd3d6ac773a6a034b8a",
+        "bytes": 493341,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=50&resultRecordCount=5&f=json"
+      },
+      {
+        "file": "states-00055.json",
+        "sha256": "d8dcded08649cbfb83aa3fe75c09c724ad4c15a2f8b7d9dc228a5505f2095692",
+        "bytes": 20807,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_ACS2025/MapServer/80/query?where=1%3D1&outFields=GEOID%2CSTATE%2CNAME%2CBASENAME%2CSTUSAB&returnGeometry=true&outSR=4326&orderByFields=GEOID+ASC&resultOffset=55&resultRecordCount=5&f=json"
+      }
+    ]
+  },
+  "resources": {
+    "maxScratchBytes": 3221225472,
+    "minFreeBytes": 5368709120,
+    "maxRssBytes": 3221225472,
+    "threads": 2,
+    "relationDepth": 10
+  }
+}

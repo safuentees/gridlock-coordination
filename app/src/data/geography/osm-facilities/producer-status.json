@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "assetId": "osm-power-substations-us",
+  "revision": "2026-10-02-c2-v1",
+  "status": "producer-code-ready-acquisition-gated",
+  "runtimeConnected": false,
+  "counts": null,
+  "scope": "All native nodes, ways and relations tagged power=substation in four synchronized qualified public extracts.",
+  "pendingExtracts": ["us", "puerto-rico", "us-virgin-islands", "american-oceania"],
+  "pendingInputs": [
+    "Coordinator resource confirmation for exact storage paths and bounded plan before any bulk PBF transfer.",
+    "Four preserved PBF originals with publisher checksum, local SHA-256, exact bytes and matching replication header timestamp.",
+    "Complete native enumeration and geometry generation under the accepted C2 schema.",
+    "Separate public reference-database offer and accepted runtime consumer integration."
+  ],
+  "meaning": "This is a producer status record, not a C2 facility asset, zero-record inventory or completed acquisition. No facilities are activated by this directory."
+}

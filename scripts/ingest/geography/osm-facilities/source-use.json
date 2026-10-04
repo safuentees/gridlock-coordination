@@ -1,0 +1,24 @@
+{
+  "id": "osm-geofabrik-odbl-1.0",
+  "databaseKind": "odbl-derived-database",
+  "licenseId": "ODbL-1.0",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": {"text": "© OpenStreetMap contributors", "url": "https://www.openstreetmap.org/copyright"},
+  "supplier": {"name": "Geofabrik", "url": "https://download.geofabrik.de/"},
+  "derivation": "Complete synchronized public Geofabrik power=substation native inventory, filtered with geometry helpers, conservatively assembled and reconciled; full Census ACS2025 polygons supply geographic context only.",
+  "notices": [
+    "Contains information from OpenStreetMap, made available under the Open Database License (ODbL).",
+    "The emitted reference database and complete native identity ledger are an ODbL-derived database; retain attribution, notices and an accessible database offer for public use.",
+    "Census statistical boundaries are U.S. government geographic context with no positional accuracy warranty.",
+    "Community tags do not prove ownership, construction, survey accuracy or association with an independently sourced project.",
+    "A pending public download offer blocks public distribution; this metadata is not proof that publication obligations have been fulfilled."
+  ],
+  "publicUse": {"visibleAttribution": true, "retainNotices": true, "shareAlikeDerivedDatabase": true, "offerReferenceDatabase": true},
+  "outputs": {
+    "companionJson": "include-source-use-and-reference-offer",
+    "csv": "attribution-columns-and-metadata-sidecar",
+    "report": "visible-attribution-and-reference-offer",
+    "independentSourceFields": "retain-original-provenance",
+    "privateAnalystWork": "never-publish-automatically"
+  }
+}
