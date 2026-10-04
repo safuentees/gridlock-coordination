@@ -51,7 +51,7 @@ export function ComparisonPanel({ dataset, geographicRecords, selectedOpportunit
     ? pair.filter((project): project is Project => Boolean(project))
     : selectedProject ? [selectedProject] : dataset.projects)
 
-  return <Card className="flex h-full min-h-0 min-w-0 flex-col overflow-hidden" aria-label="Project comparison">
+  return <Card className="flex h-full min-h-0 min-w-0 flex-col overflow-hidden rounded-none" aria-label="Project comparison">
     <CardHeader className="max-h-[55%] min-h-0 shrink-0 overflow-auto overscroll-contain [overflow-wrap:anywhere]">
       <div className="flex flex-wrap items-center gap-2"><CardTitle>{selectedOpportunity ? `Candidate #${selectedOpportunity.rank}` : selectedProject ? "Project evidence" : "Compare projects"}</CardTitle>{dataset.mode === "demo" && <Badge variant="secondary">Synthetic demo</Badge>}</div>
       {selectedOpportunity ? <div className="space-y-3">
