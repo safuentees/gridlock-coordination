@@ -1,4 +1,4 @@
-import { Component, lazy, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from "react"
+import { Component, lazy, Suspense, useEffect, useLayoutEffect, useCallback, useMemo, useRef, useState, type ReactNode } from "react"
 import { CircleMarker, MapContainer, Polyline, Rectangle, TileLayer, Tooltip, useMap } from "react-leaflet"
 import { DomEvent } from "leaflet"
 import { MinusIcon, PlusIcon, ScanIcon } from "lucide-react"
@@ -9,6 +9,7 @@ import type { Project } from "@/domain/schema"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { reportingGroups } from "@/lib/reporting-groups"
 import { MapLegend } from "./MapLegend"
+import { createDensityEntranceLatch, finishDensityEntrance } from "./density-map/density-entrance"
 import { getMapGeography, geographyFitLocations, geographyLabel, geographyAreaLabel, geographyAreaProject, type MapGeography } from "./geography-map"
 import { mapReportingGroupColor } from "./map-colors"
 import { boundedInsets, getMapConnections, getMapLocations, ZERO_INSETS, type MapRendererControls, type ProjectMapProps } from "./map-view"
@@ -162,12 +163,37 @@ class ExperimentalMapBoundary extends Component<{ children: ReactNode; fallback:
 export function ProjectMap(props: ProjectMapProps) {
   const [experimental, setExperimental] = useState(false)
   const [showConnections, setShowConnections] = useState(true)
+  const entrance = useRef(createDensityEntranceLatch())
+  const finishEntrance = useCallback(() => finishDensityEntrance(entrance.current), [])
+  const previousInputs = useRef({ projects: props.projects, opportunities: props.opportunities, geographicRecords: props.geographicRecords, selectedProjectId: props.selectedProjectId, selectedOpportunityId: props.selectedOpportunity?.id })
+  useLayoutEffect(() => {
+    const next = { projects: props.projects, opportunities: props.opportunities, geographicRecords: props.geographicRecords, selectedProjectId: props.selectedProjectId, selectedOpportunityId: props.selectedOpportunity?.id }
+    const previous = previousInputs.current
+    if (experimental && (previous.projects !== next.projects || previous.opportunities !== next.opportunities || previous.geographicRecords !== next.geographicRecords || previous.selectedProjectId !== next.selectedProjectId || previous.selectedOpportunityId !== next.selectedOpportunityId)) finishEntrance()
+    previousInputs.current = next
+  }, [experimental, props.projects, props.opportunities, props.geographicRecords, props.selectedProjectId, props.selectedOpportunity?.id, finishEntrance])
+  useLayoutEffect(() => {
+    if (!experimental) return
+    if (!props.visible) finishEntrance()
+    // Capture also covers the lazy-loading interval, other workspace controls and portals.
+    const events = ["pointerdown", "wheel", "touchstart", "keydown", "click", "change", "input"] as const
+    const latch = entrance.current
+    function removeListeners() {
+      for (const event of events) window.removeEventListener(event, finishEntrance, true)
+      if (latch.onComplete === removeListeners) latch.onComplete = null
+    }
+    if (props.visible && latch.phase !== "complete") {
+      for (const event of events) window.addEventListener(event, finishEntrance, { capture: true, passive: true })
+      latch.onComplete = removeListeners
+    }
+    return () => { removeListeners(); finishEntrance() }
+  }, [experimental, props.visible, finishEntrance])
   const controls = { showConnections, onShowConnections: setShowConnections }
   if (!experimental) return <LeafletProjectMap {...props} {...controls} onChangeRenderer={() => setExperimental(true)} />
-  const onStandard = () => setExperimental(false)
+  const onStandard = () => { finishEntrance(); setExperimental(false) }
   return <ExperimentalMapBoundary fallback={<MapFallback message="Experimental map unavailable." onStandard={onStandard} />}>
     <Suspense fallback={<MapFallback message="Loading experimental map…" onStandard={onStandard} />}>
-      <ExperimentalMap {...props} {...controls} onChangeRenderer={onStandard} />
+      <ExperimentalMap {...props} {...controls} entrance={entrance.current} onChangeRenderer={onStandard} />
     </Suspense>
   </ExperimentalMapBoundary>
 }
