@@ -20,6 +20,7 @@ import { densityLayers, syntheticPointLayer } from "./density-layers"
 import { syntheticDensityPoints } from "./synthetic"
 import { useDensityEntrance, type DensityEntranceLatch } from "./density-entrance"
 import { createDensityLighting, DENSITY_LEGEND_GRADIENT } from "./density-style"
+import { mapErrorDetails, mapErrorMessage, recoveredBasemapKey } from "./map-errors"
 
 // MapLibre 6 uses a separate worker module; Vite must bundle its sibling imports too.
 setWorkerUrl(workerUrl)
@@ -49,7 +50,9 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
   const effects = useMemo(() => [createDensityLighting()], [])
   const [container, setContainer] = useState<HTMLElement | null>(null)
   const [ready, setReady] = useState(false)
-  const [mapError, setMapError] = useState(false)
+  const [mapError, setMapError] = useState<string | null>(null)
+  const [deckError, setDeckError] = useState<string | null>(null)
+  const [basemapErrors, setBasemapErrors] = useState<Record<string, string>>({})
   const [size, setSize] = useState({ width: 0, height: 0 })
   const [pitch, setPitch] = useState(0)
   const [zoom, setZoom] = useState(7)
@@ -151,17 +154,31 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
   function fit(target: FitTarget) { setFitRequest((previous) => ({ target, revision: previous.revision + 1 })) }
 
   return <section ref={setContainer} className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Experimental project map">
-    <MapGL ref={map} initialViewState={{ longitude: -82.5, latitude: 33.2, zoom: 7 }} mapStyle={MAP_STYLE} attributionControl={false} renderWorldCopies={false} maxPitch={60} onLoad={() => setReady(true)} onError={() => setMapError(true)} onPitch={(event) => setPitch(event.viewState.pitch)} onZoom={(event) => setZoom(event.viewState.zoom)} style={{ width: "100%", height: "100%" }}>
-      <DeckOverlay layers={layers} effects={effects} interleaved getTooltip={getTooltip} onError={() => setMapError(true)} />
+    <MapGL ref={map} initialViewState={{ longitude: -82.5, latitude: 33.2, zoom: 7 }} mapStyle={MAP_STYLE} attributionControl={false} renderWorldCopies={false} maxPitch={60} onLoad={() => setReady(true)} onError={(event) => {
+      const failure = mapErrorDetails(event)
+      console.error(`Experimental ${failure.scope} error`, event.error)
+      if (failure.scope === "basemap") setBasemapErrors(previous => ({ ...previous, [failure.key]: failure.message }))
+      else setMapError(failure.message)
+    }} onSourceData={(event) => {
+      const key = recoveredBasemapKey(event)
+      if (key !== null) setBasemapErrors(previous => {
+        if (!(key in previous)) return previous
+        const next = { ...previous }; delete next[key]; return next
+      })
+    }} onPitch={(event) => setPitch(event.viewState.pitch)} onZoom={(event) => setZoom(event.viewState.zoom)} style={{ width: "100%", height: "100%" }}>
+      <DeckOverlay layers={layers} effects={effects} interleaved getTooltip={getTooltip} onError={(error, layer) => {
+        console.error("Experimental project-layer error", error, layer?.id)
+        setDeckError(mapErrorMessage(error))
+      }} />
       <AttributionControl compact={false} style={{ marginRight: insets.right + 8, marginBottom: insets.bottom + 8, maxWidth: Math.max(40, size.width - insets.left - insets.right - 16), maxHeight: Math.max(24, (size.height - insets.top - insets.bottom) / 3), overflow: "auto", whiteSpace: "normal" }} />
     </MapGL>
     <div className="pointer-events-auto absolute right-3 top-3 z-10 flex max-h-[calc(100%-1.5rem)] max-w-[calc(100%-1.5rem)] flex-col items-end gap-2 overflow-y-auto overscroll-contain">
       <div className="flex shrink-0 items-center gap-2">
-        <div className="flex items-center gap-1 rounded-lg border bg-background p-1" role="group" aria-label="Map zoom">
-          <IconButton variant="ghost" label="Zoom in" disabled={!ready} onClick={() => map.current?.zoomIn({ duration: 0 })}><PlusIcon aria-hidden="true" /></IconButton>
-          <IconButton variant="ghost" label="Zoom out" disabled={!ready} onClick={() => map.current?.zoomOut({ duration: 0 })}><MinusIcon aria-hidden="true" /></IconButton>
+        <div className="flex items-center gap-2" role="group" aria-label="Map zoom">
+          <IconButton size="icon-sm" variant="outline" label="Zoom in" disabled={!ready} onClick={() => map.current?.zoomIn({ duration: 0 })}><PlusIcon aria-hidden="true" /></IconButton>
+          <IconButton size="icon-sm" variant="outline" label="Zoom out" disabled={!ready} onClick={() => map.current?.zoomOut({ duration: 0 })}><MinusIcon aria-hidden="true" /></IconButton>
         </div>
-        <IconButton variant="outline" label={syntheticPreview ? "Fit sample" : "Fit projects"} disabled={!ready || !locations.length} onClick={() => fit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
+        <IconButton size="icon-sm" variant="outline" label={syntheticPreview ? "Fit sample" : "Fit projects"} disabled={!ready || !locations.length} onClick={() => fit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
       </div>
       {visible && container && !syntheticPreview && <div className="shrink-0"><MapLegend geography={geographicRecords ? geography : undefined} groups={groups} boundary={container} connectionCount={selectedOpportunity || pointOpacity > 0 ? connections.length : 0} selectedPair={selectedOpportunity !== null} showConnections={showConnections} onShowConnections={onShowConnections} /></div>}
       <Button type="button" variant="outline" size="sm" className="shrink-0" disabled={!ready || !selectedLocations.length} onClick={() => fit("selection")}>Fit selection</Button>
@@ -197,7 +214,12 @@ export default function MapLibreProjectMap({ projects, geographicRecords, opport
         </div>}
       </div>
       {!syntheticPreview && outOfRangeCount > 0 && <p className="max-w-28 shrink-0 rounded-lg border bg-background p-2 text-xs">{outOfRangeCount} located records are outside this projection; their coordinates are unchanged.</p>}
-      {mapError && <p role="status" className="max-w-72 shrink-0 rounded-lg border bg-background p-2 text-xs">Experimental map unavailable or incomplete. <Button type="button" variant="link" size="sm" onClick={onChangeRenderer}>Use standard map</Button></p>}
+      {(mapError || deckError || Object.keys(basemapErrors).length > 0) && <div role="status" className="max-w-72 shrink-0 space-y-1 break-words rounded-lg border bg-background p-2 text-xs">
+        {Object.keys(basemapErrors).length > 0 && <p>Background tiles could not load. Project layers may still be available.</p>}
+        {mapError && <p>Map navigation or background could not load.</p>}
+        {deckError && <p>Project layers could not render.</p>}
+        <Button type="button" variant="link" size="sm" onClick={onChangeRenderer}>Use standard map</Button>
+      </div>}
     </div>
   </section>
 }
