@@ -97,11 +97,11 @@ function MapView({ projects, geography, hasGeography, focusIds, fitRequest, visi
   // Controls belong to the viewport; changing occlusion only affects geographic fitting.
   return <div ref={controls} className="pointer-events-none absolute right-3 top-3 z-[1000] flex max-w-[calc(100%-1.5rem)] flex-col items-end gap-2 font-sans">
     <div className="pointer-events-auto flex items-center gap-2">
-      <div className="flex items-center gap-1 rounded-lg border bg-background p-1" role="group" aria-label="Map zoom">
-        <IconButton variant="ghost" label="Zoom in" onClick={() => map.zoomIn()}><PlusIcon aria-hidden="true" /></IconButton>
-        <IconButton variant="ghost" label="Zoom out" onClick={() => map.zoomOut()}><MinusIcon aria-hidden="true" /></IconButton>
+      <div className="flex items-center gap-2" role="group" aria-label="Map zoom">
+        <IconButton size="icon-sm" variant="outline" label="Zoom in" onClick={() => map.zoomIn()}><PlusIcon aria-hidden="true" /></IconButton>
+        <IconButton size="icon-sm" variant="outline" label="Zoom out" onClick={() => map.zoomOut()}><MinusIcon aria-hidden="true" /></IconButton>
       </div>
-      <IconButton variant="outline" label="Fit projects" disabled={!locations.length} onClick={() => onFit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
+      <IconButton size="icon-sm" variant="outline" label="Fit projects" disabled={!locations.length} onClick={() => onFit("projects")}><ScanIcon aria-hidden="true" /></IconButton>
     </div>
     <div className="pointer-events-auto">{visible && <MapLegend geography={hasGeography ? geography : undefined} groups={groups} boundary={map.getContainer()} connectionCount={connectionCount} selectedPair={selectedPair} showConnections={showConnections} onShowConnections={onShowConnections} />}</div>
     <Button className="pointer-events-auto" type="button" variant="outline" size="sm" disabled={!selectedLocations.length} onClick={() => onFit("selection")}>Fit selection</Button>

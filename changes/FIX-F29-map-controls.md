@@ -1,0 +1,7 @@
+# FIX-F29 — Map controls and context attachment
+- Standard and Experimental Zoom in/Zoom out/Fit use explicit icon-sm outline buttons with equal dimensions; the zoom group no longer adds its own border/padding. Shared shadcn controls remain unchanged.
+- Vite captured “WebGL context already attached to device webgl-device-1”. Source identifies a StrictMode add/remove/add race: two async luma attachments check the same unattached context before either finishes.
+- DeckOverlay now owns control attachment through useMap and a cancellable microtask. Discarded StrictMode setup cannot construct a Deck; real cleanup removes its control, and props update in effects. Interleaved rendering is preserved.
+- Basemap resource errors, MapLibre errors and project-layer errors show separate useful status copy, with exception details forwarded through existing console.error/Vite logs. Confirmed recovery clears only the matching tile/source issue; loaded/idle alone cannot prove tile recovery, and rendering failures stay visible until remount.
+- Public map inputs, selection, density/hierarchy, geography, source/demo separation, entrance, attribution and viewport fitting remain unchanged; no package/config/domain/shared UI edits.
+- Source inspected only; coordinator targeted lifecycle/error/module case pending. No worker checks, browser/visual/mobile work or new test infrastructure; actual GPU drawing/picking remains unverified.
