@@ -143,12 +143,11 @@ function LeafletProjectMap({ projects, geographicRecords, opportunities, selecte
   </section>
 }
 
-const ExperimentalMap = lazy(() => import("./density-map/MapLibreProjectMap"))
-
-function MapFallback({ message, onStandard }: { message: string; onStandard: () => void }) {
+function MapFallback({ message, onStandard, onRetry }: { message: string; onStandard: () => void; onRetry?: () => void }) {
   return <section className="relative h-full min-h-0 w-full min-w-0 overflow-hidden" aria-label="Experimental map status">
     <div className="absolute right-3 top-3 max-w-[min(18rem,calc(100%-1.5rem))] space-y-2 rounded-lg border bg-background p-3">
       <p role="status" className="text-sm">{message}</p>
+      {onRetry && <Button type="button" variant="outline" size="sm" onClick={onRetry}>Retry experimental map</Button>}
       <Button type="button" variant="outline" size="sm" onClick={onStandard}>Use standard map</Button>
     </div>
   </section>
@@ -162,6 +161,10 @@ class ExperimentalMapBoundary extends Component<{ children: ReactNode; fallback:
 
 export function ProjectMap(props: ProjectMapProps) {
   const [experimental, setExperimental] = useState(false)
+  const [loadAttempt, setLoadAttempt] = useState(0)
+  // React.lazy retains rejected imports. A new attempt must get a fresh payload,
+  // while the component identity stays stable throughout an active map session.
+  const ExperimentalMap = useMemo(() => lazy(() => import("./density-map/MapLibreProjectMap")), [loadAttempt])
   const [showConnections, setShowConnections] = useState(true)
   const entrance = useRef(createDensityEntranceLatch())
   const finishEntrance = useCallback(() => finishDensityEntrance(entrance.current), [])
@@ -189,9 +192,10 @@ export function ProjectMap(props: ProjectMapProps) {
     return () => { removeListeners(); finishEntrance() }
   }, [experimental, props.visible, finishEntrance])
   const controls = { showConnections, onShowConnections: setShowConnections }
-  if (!experimental) return <LeafletProjectMap {...props} {...controls} onChangeRenderer={() => setExperimental(true)} />
+  if (!experimental) return <LeafletProjectMap {...props} {...controls} onChangeRenderer={() => { setLoadAttempt(attempt => attempt + 1); setExperimental(true) }} />
   const onStandard = () => { finishEntrance(); setExperimental(false) }
-  return <ExperimentalMapBoundary fallback={<MapFallback message="Experimental map unavailable." onStandard={onStandard} />}>
+  const onRetry = () => { finishEntrance(); setLoadAttempt(attempt => attempt + 1) }
+  return <ExperimentalMapBoundary key={loadAttempt} fallback={<MapFallback message="Experimental map unavailable." onStandard={onStandard} onRetry={onRetry} />}>
     <Suspense fallback={<MapFallback message="Loading experimental map…" onStandard={onStandard} />}>
       <ExperimentalMap {...props} {...controls} entrance={entrance.current} onChangeRenderer={onStandard} />
     </Suspense>
