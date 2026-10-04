@@ -1,5 +1,7 @@
 import { z } from "zod"
 import { sourceSchema } from "./coverage"
+import { geographicFacilityReferenceSchema } from "./geographic-facility"
+import { geographicReferenceAssetSchema } from "./geographic-attribution"
 
 // Companion evidence layer: never substitutes into Project.location or strict candidates.
 export const geographicPositionSchema = z.tuple([z.number().min(-180).max(180), z.number().min(-90).max(90)])
@@ -27,12 +29,24 @@ export const geographicReferenceSchema = z.object({
   stateCodes: z.array(z.string()), sourceKeys: z.array(z.string()), projectIds: z.array(z.string()),
   representation: geographicRepresentationSchema,
   projectFingerprints: z.record(z.string(), z.string().regex(/^[a-f0-9]{64}$/)).optional(),
+  facility: geographicFacilityReferenceSchema.optional(), // Reference metadata only; no new active representation.
 })
 export const geographicReferenceBundleSchema = z.object({
   version: z.literal(1), revision: z.string().min(1), retrievedOn: z.iso.date(),
   sources: z.array(z.object({ id: z.string(), evidence: sourceSchema, permittedUse: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/) })),
   references: z.array(geographicReferenceSchema), limitations: z.array(z.string()),
+  referenceAssets: z.array(geographicReferenceAssetSchema).optional(),
 }).refine(bundle => new Set(bundle.references.map(row => row.id)).size === bundle.references.length, "Reference IDs must be unique")
+  .superRefine((bundle, ctx) => {
+    const assets = new Map((bundle.referenceAssets ?? []).map(asset => [asset.assetId, asset]))
+    if (assets.size !== (bundle.referenceAssets?.length ?? 0)) ctx.addIssue({ code: "custom", path: ["referenceAssets"], message: "Reference asset identities must be unique" })
+    for (const reference of bundle.references) {
+      if (!reference.facility) continue
+      const facility = reference.facility, asset = assets.get(facility.assetId)
+      if (reference.kind !== "facility" || reference.id !== facility.id) ctx.addIssue({ code: "custom", path: ["references"], message: "Facility metadata must retain its reference kind and native identity" })
+      if (!asset || asset.revision !== facility.assetRevision || asset.sourceUse.id !== facility.sourceUseId) ctx.addIssue({ code: "custom", path: ["referenceAssets"], message: "Facility metadata needs its exact reference asset revision and source-use manifest" })
+    }
+  })
 export const GEOGRAPHIC_STATUSES = ["located", "approximate", "ambiguous", "unsupported", "not-processed"] as const
 export const geographicRecordSchema = z.object({
   projectId: z.string().min(1), inputFingerprint: z.string().regex(/^[a-f0-9]{64}$/),
