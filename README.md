@@ -1,58 +1,219 @@
 # Gridlock
 
-Explore neighboring utilities' transmission plans, investigate coordination candidates and prepare source-referenced briefs.
+Find nearby transmission projects, compare their evidence, and prepare coordination reviews.
 
-## Run locally
+Gridlock brings public utility plans into one workspace for transmission planners and coordination analysts. Search the inventory, investigate potential overlaps, and export a brief with the sources and questions needed for a follow-up review.
+
+![Gridlock comparing Jasper–Okatie and McIntosh–Purrysburg on a map, with distance, milestone dates, and location evidence visible](docs/screenshots/comparison.png)
+
+*A source-data comparison: 5.65 miles between supplied centers and 152 days between planning milestones. Locations are unverified; a shared route and construction overlap remain unknown.*
+
+[Quick start](#quick-start) · [First review](#your-first-coordination-review) · [Screenshots](#screenshots) · [Data and limits](#data-and-limits) · [Development](#development) · [Documentation](#documentation)
+
+## What it does
+
+- **Find projects:** search by name, source ID, reporting group, project need, or planning zone. Records without coordinates remain searchable.
+- **Compare candidates:** inspect distance, milestone separation, source references, and uncertainty together.
+- **Explore geography:** distinguish source points, approximate locations, geographic extents, and unresolved evidence.
+- **Investigate a result:** save candidate evidence, notes, an investigation question, and a next research action.
+- **Share a review:** export readable text or restorable JSON briefs, plus separate dataset and geography backups.
+
+The app runs locally in your browser. It needs no backend, application account, API key, or paid service. Internet access supplies the map basemap; bundled records and analysis run locally.
+
+## Quick start
+
+### Prerequisites
+
+- Node.js **24.x**, or **22.x at version 22.18 or later**, with npm.
+- Git and access to this private repository.
+
+### Install and run
 
 ```sh
-cd app
+git clone https://github.com/safuentees/gridlock-coordination.git
+cd gridlock-coordination/app
 npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-Open the local URL printed by Vite. No credentials or backend are required. Map basemap tiles come from OpenStreetMap; the inventory and calculations use bundled local records.
+Open the URL Vite prints, normally **http://127.0.0.1:5173**. You should see **Home**, the **Source data** badge, and the active inventory summary. Allow the initial source download and geographic processing to finish.
 
-## Use the workspace
-
-Start at **Home** for the audience, purpose, active source coverage and entry actions. **Explore** is the working map; **Outcomes** explains supported conclusions and next research actions using the same applied scenario, before Explore list filters. **Data readiness** addresses missing or unverified location evidence. Switching destinations retains the mounted working views and drafts. Outcomes can open a candidate directly or bring up the existing Saved reviews dialog.
-
-1. Start with **Source data**: 252 planning records from the supplied Dominion and Georgia filings. Ten have supplied, unverified locations; 242 remain searchable without coordinates. **Use demo data** switches explicitly to 300 synthetic projects.
-2. Search the floating panel by name, native source ID, sponsor, voltage, project need or planning zone; Data readiness uses the same source-context search. Candidates/All projects, search and Filters are grouped above the scrolling results. Rows keep complete project names, source identification and consistent comparison fields. Selecting a result or map feature opens its details in the same panel. **Back to results** restores the query, filters, tab, page and scroll position. Collapse retains search and a result count; **Expand** resumes the previous view. Projects without coordinates remain accessible in All projects.
-3. Use the workspace controls for scenario and timeline settings. Applied radius, milestone-gap and confidence criteria remain visible; edit and apply changes in the scenario dialog. Compare with the default under-25-mile candidate set. Timeline is an optional view with explicit open/closed state; milestone dates do not establish construction overlap. **Layout → Reset layout** restores the panel arrangement without clearing browsing or analysis inputs.
-4. For a selected pair, enter hypothetical shared corridor length, width, land cost and avoided share. The estimate never derives shared route length from distance between centers. **Save scenario** explicitly retains valid assumptions with the saved pair; it preserves existing evidence and unsaved review edits.
-5. Use **Save selected** beside the selected pair's comparison, then open **Saved reviews** from the app navigation to compare evidence, record a resource question, next action, analyst, notes and review state, and download a source-referenced coordination brief. Save review edits before export. JSON briefs retain evidence, investigation fields and any hypothetical inputs; text briefs provide a readable handoff. Real and demo collections remain separate. Changed or missing projects in a revision keep their saved evidence and notes. Restoration keeps its own action context instead of showing unrelated export controls.
-6. Open **Data readiness** to see missing/unverified location coverage, search the project queue and prepare an evidence-backed coordinate update. Supply a source title/file and exact locator, preview the changed project, then apply or download the revision. A cited Okatie permit-area suggestion is available for explicit preview; its limitations stay beside it. Nine other researched records identify the evidence still needed. All locally supplied locations remain unverified. **Explore project** opens that record in the detail view; switching workspaces preserves your exploration state.
-7. Open **Dataset → Revisions** to download the normalized JSON format or preview and apply a complete revision. Applied real revisions return after reload when browser storage is available. Storage failures are shown and the active session remains usable; download a backup before leaving. **Restore supplied snapshot** clears the saved revision. Saved reviews and original source files remain unchanged. **Dataset → Coverage** retains source limitations and provenance.
-8. To revisit exported findings, open **Saved reviews → Restore** and choose a matching source/demo JSON brief (up to 10 MB). Preview additions, duplicates and rejected records. Existing findings are kept unless explicitly selected for replacement; unsaved drafts block conflicting restores. Restoring findings does not change the current dataset or applied scenario. Imported derived impact results are discarded and recalculated from validated saved inputs when exported again.
-
-The workspace fills one viewport. Both candidate projects, key metrics and uncertainty share the detail header; Evidence, Impact and Supporting tabs hold longer content. Timeline opens an optional bottom panel. The map fits selected features around the floating panel and stays interactive outside it. Results, details and dialog bodies scroll internally; tables can scroll horizontally within their panel. Scenario drafts, review drafts and candidate-specific impact assumptions survive panel navigation and collapse in the current session. Saved reviews keep their existing browser persistence. Familiar icon-only controls have accessible names and hover/focus tooltips; Back, Expand, navigation and domain actions retain text.
-
-The panel follows [Blueprint PanelStack](https://blueprintjs.com/docs/#core/components/panel-stack) navigation using the existing shadcn controls and a reduced-motion-aware transition. It does not import Blueprint's Button/Text styles or add a second design system. No dragging is required.
-
-## Data and methods
-
-Source mode contains 44 Dominion descriptions and 208 active rows from Georgia's public Table 2. Reporting group and sponsor are distinct: the Georgia filing includes GPC, GTC, SAV, MEAG and DU projects. Dates are historical plan milestones, not live completion claims. Raw originals are preserved in ignored `inputs/originals/`; hashes are in `inputs/manifest.json`. See [source discovery](specs/discovery.md) and [reproducible ingestion](scripts/ingest/README.md).
-
-All 44 Dominion project-need sections and 208 Georgia planning zones are retained as source notes. Zones are source identifiers, not coordinates. The 242 missing locations reflect absent geospatial evidence in the selected listing sections, not extraction failures. Data readiness supports evidence-backed updates; it does not verify locations or find new coordinates automatically. The bounded [public evidence batch](app/src/data/evidence/README.md) leaves the supplied snapshot unchanged: accepting the one supported suggestion would yield 11 unverified locations and 241 still missing.
-
-Source editions are Dominion's 2024–2028 project descriptions and Georgia's 2025 IRP. Dataset-generation timestamps describe local assembly, not plan freshness. Extraction, native-ID deduplication and workbook-linking details live in the ingestion documentation and raw metadata; product screens show curated source context. Dawson's two phase dates remain attached to Dawson's evidence.
-
-Eligibility uses haversine distance between supplied centers, strictly less than the radius (default 25 statute miles). Distance ranks first, then known milestone gap, then stable identity. Unknown dates remain unknown; an enabled day-gap filter excludes unknown or partial dates. Construction overlap requires explicit windows. Locations in the real snapshot have not been independently verified.
-
-Representative example: Jasper–Okatie / McIntosh–Purrysburg is about 5.6501 miles apart with 152 days between an in-service milestone and a need-date milestone. The locations are unverified and construction overlap is unknown.
-
-## Project and checks
-
-Private application repository: https://github.com/safuentees/gridlock-coordination. Application pushes never target the workflow-template remote.
-
-[Mission](specs/mission.md), [roadmap and ownership](specs/roadmap.md), [shared contract](specs/tech-stack.md).
-
-The coordinator alone runs bounded milestone checks:
+If you use the GitHub CLI, authenticate with an account that has repository access and replace the clone command with:
 
 ```sh
-cd app
-npm run build
-node --import tsx scripts/check-core.ts
+gh auth login
+gh repo clone safuentees/gridlock-coordination
 ```
 
-No browser, screenshot or visual verification has been performed. Source coverage and UI interactions are not exhaustive audits. Verified route geometry, current schedule refresh and independently checked locations remain future work.
+Choose **Try demo** or **Use demo data** to explore a separate synthetic collection. The app labels demo mode explicitly and never substitutes it for failed source loading.
+
+## Your first coordination review
+
+1. From **Home**, choose **Open workspace**. In **Explore**, switch between **Candidates** and **All projects**; use search and **Filters** to narrow the results.
+2. Open the **Jasper–Okatie / McIntosh–Purrysburg** candidate. Its supplied centers are about **5.65 miles** apart, with **152 days** between an in-service milestone and a need-date milestone. Read **Evidence** before drawing a conclusion.
+3. Use **Edit scenario** to adjust the radius, milestone-gap limit, or inclusion of unverified locations, then choose **Apply scenario**. The default radius is strictly **less than 25 miles**. **Timeline** shows date context; **Outcomes** explains what the applied scenario supports.
+4. Choose **Save selected**, then open **Saved reviews**. Record the investigation question, next research action, review state, and notes. Choose **Save review** before exporting.
+5. Check the saved candidate's checkbox and choose **Export text brief** for a readable handoff, or **Export JSON brief** to restore the review later through **Saved reviews → Restore**. Clicking its title opens the editor; the checkbox controls export selection.
+
+For example, an investigation question might be: “Could these projects share staging space?” The next action would be to confirm access, construction windows, and the relevant asset owners with source evidence.
+
+**Back to results** restores your browsing context. Switching workspaces preserves the mounted views and current drafts.
+
+### Improve location evidence
+
+Open **Data readiness → Geographic coverage** to inspect the automatic processing results. Each record has a geographic representation or an explanation of why it remains ambiguous or unsupported. Review the sources, then accept, reject, or correct the representation with evidence. **Coverage details** explains the precision and gaps.
+
+Use **Evidence revisions** for cited project-location or ownership updates. Preview a change before applying it. **Dataset → Revisions** lets you download or preview a complete normalized source revision. Geographic context stays separate from the stricter candidate calculation.
+
+### Keep a portable backup
+
+Saved work belongs to this browser and origin. Saved reviews use localStorage; source revisions, geographic reviews, and unfinished geographic drafts use IndexedDB. Changing the hostname or port uses a different storage origin.
+
+| Work to preserve | Download or restore from |
+| --- | --- |
+| Candidate evidence, notes, and investigation questions | **Saved reviews**: export a JSON brief; restore through **Restore** |
+| Active source dataset | **Dataset → Revisions** |
+| Geographic results and completed reviews | **Data readiness → Geographic coverage**: **Download geography** / **Restore reviews** |
+| Unfinished geographic review drafts | **Data readiness → Geographic coverage**: **Download drafts** / **Restore drafts** |
+
+Download a backup before clearing browser storage or moving to another browser. Storage failures are reported in the app. Restoring a brief previews conflicts and does not replace the active dataset or scenario.
+
+## Screenshots
+
+These are actual desktop captures using the bundled **Source data**, at 1440 × 960. The comparison above and the views below show the same application; counts change when you apply revisions. [Capture details and refresh steps](docs/screenshots/README.md).
+
+### Home: understand the collection
+
+![Gridlock Home showing 14,923 source records, missing and unverified location counts, and entry actions](docs/screenshots/home.png)
+
+*The entry screen separates inventory size from eligibility for comparison.*
+
+### Explore: browse candidates and the map
+
+![Gridlock Explore showing six source-data candidates beside a map with project points and approximate geographic extents](docs/screenshots/explore.png)
+
+*Candidate rows show the two projects, source IDs, distance, milestone gap, and location confidence. Geographic extents provide context rather than surveyed project boundaries.*
+
+### Data readiness: inspect geographic evidence
+
+![Gridlock Data readiness showing geographic status totals, a searchable record queue, and a selected record's method and limitations](docs/screenshots/data-readiness.png)
+
+*Approximate and unresolved records stay visible. The selected record exposes its location method, uncertainty, and source evidence.*
+
+### Saved reviews: prepare a brief
+
+![Gridlock Saved reviews dialog showing a saved candidate, investigation fields, Save review, and text and JSON export buttons](docs/screenshots/saved-reviews.png)
+
+*Save your research question and next action alongside the candidate's evidence, then export a brief.*
+
+## Data and limits
+
+### What is included
+
+The bundled collection currently contains:
+
+| Collection | Contents |
+| --- | --- |
+| Source data | **14,923 source observations** across 31 declared regional source scopes and the original 252 Dominion/Georgia filing records |
+| Supplied locations | **113 map centers**, all unverified; **14,810 records** lack a resolved center in the source dataset |
+| Strict comparison | **10 eligible records**, producing **6 candidates** under the default scenario |
+| Synthetic demo | **13,200 synthetic records**, kept separate from source data |
+
+Source observations include transmission projects and planning or capital-project context. They are **not a deduplicated count of engineering projects**. Importing a complete declared source scope does not establish complete state or national coverage. Consult **Source coverage** in the app and the [US coverage register](specs/us-coverage/README.md) for editions, inclusion rules, and known gaps.
+
+Geographic processing adds cited context from bundled references: supported points, facility estimates, endpoints, or geographic extents. A record may be represented on the map while still lacking a location suitable for strict comparison. **Source-located** describes provenance, not independent verification; **approximate** can mean a town, county, state, or region.
+
+### How to read a result
+
+| Result | Meaning |
+| --- | --- |
+| Candidate distance | Straight-line haversine distance between eligible supplied centers; ranked by distance, then known milestone gap, then stable identity |
+| Milestone gap | Separation between source milestones when both have day precision; enabling a gap filter excludes unknown or partial dates |
+| Construction overlap | Established only from explicit construction windows; milestone proximity alone is insufficient |
+| Inventory eligibility | Requires transmission-project scope, eligible lifecycle as of the source edition, a qualified center, and cited owner identity; owner identity must also support the pair comparison |
+| Legacy filing comparison | Preserves cross-filing semantics; a reporting utility and an asset sponsor can differ |
+| Exploratory proximity | A separate view of approximate points, endpoints, or area relationships; area relationships do not establish a radius-qualified distance |
+| Impact estimate | Hypothetical avoided land cost based on your shared-length, width, land-cost, and avoided-share assumptions |
+
+Plans are historical source snapshots, not live schedules. An elapsed date does not establish completion. Proximity does not establish a shared corridor, simultaneous construction, engineering feasibility, or verified savings. Missing values and unresolved evidence remain explicit.
+
+## Development
+
+### Stack
+
+| Area | Tools |
+| --- | --- |
+| Application | React, TypeScript, Vite |
+| Interface | Tailwind CSS, shadcn/ui with Radix |
+| Standard map | Leaflet, react-leaflet, OpenStreetMap |
+| Experimental map | MapLibre, react-map-gl, deck.gl; choose **Map view → Experimental** |
+| Data contracts | Zod validation, normalized JSON, local geographic references |
+| Offline ingestion | Python scripts; optional for running the bundled app |
+
+### Commands
+
+Run these inside `app/`:
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev -- --host 127.0.0.1` | Start the local development server |
+| `npm run build` | Validate the TypeScript projects and create a production build |
+| `npm run preview -- --host 127.0.0.1` | Preview an existing production build |
+| `node --import tsx scripts/check-core.ts` | Check the representative source pair, strict radius boundary, and hypothetical impact calculation |
+
+The core check is a bounded example, not a complete audit of source coverage or browser interactions. Generated output in `app/dist/` stays out of Git.
+
+### Project layout
+
+```text
+app/src/
+  core/           Candidate eligibility, distance, timing, and impact
+  domain/         Validated data contracts and geographic types
+  data/           Source/demo collections, references, and persistence
+  enrichment/     Geographic processing and evidence review
+  features/       Home, Explore, Outcomes, readiness, and briefs
+  components/     Shared interface components
+app/scripts/      Bounded verification scripts
+scripts/          Source ingestion and reference preparation
+specs/            Mission, technical agreements, coverage, and roadmap
+docs/screenshots/ README images and capture instructions
+```
+
+Running the app does **not** require the original PDFs or workbooks. To reproduce ingestion, follow the [baseline ingestion guide](scripts/ingest/README.md) and the relevant [regional adapter guide](scripts/ingest/coverage/). Original inputs, credentials, dependencies, and generated builds must stay out of Git.
+
+### Troubleshooting
+
+| Symptom | What to do |
+| --- | --- |
+| Clone returns “Repository not found” | Confirm repository access and the signed-in GitHub account; use the GitHub CLI clone option above |
+| Installation reports an unsupported engine | Check `node --version` against the prerequisites, then rerun `npm ci` |
+| First load or geography takes time | Let the bundled JSON assets load and processing finish; use the retry action if loading fails |
+| Basemap is blank | Check internet access and OpenStreetMap tile requests |
+| No candidates after changing filters | Check the radius, milestone limit, location-confidence setting, and project filters; **All projects** still shows the searchable inventory |
+| Browser storage cannot save | Download the affected work using the backup actions above before leaving the session |
+| Port 5173 is occupied | Open the alternate URL printed by Vite; browser storage is separate for each port |
+
+## Documentation
+
+- [Mission and scope](specs/mission.md)
+- [Technical contracts and data meanings](specs/tech-stack.md)
+- [Source discovery and original evidence](specs/discovery.md)
+- [US source coverage and gaps](specs/us-coverage/README.md)
+- [Geographic reference sources](specs/features/F28-geographic-enrichment/references.md)
+- [Roadmap](specs/roadmap.md) and [changelog](CHANGELOG.md)
+
+## Help and contributions
+
+Maintainer: [@safuentees](https://github.com/safuentees).
+
+For a bug or data issue, [open an issue](https://github.com/safuentees/gridlock-coordination/issues) with the data mode, relevant source/project IDs, reproduction steps, and expected behavior. Include source locators for proposed data corrections; keep private information and credentials out of reports.
+
+Before contributing, read [AGENTS.md](AGENTS.md) and the applicable technical agreements. Keep changes focused, preserve evidence and uncertainty, and include relevant verification with a pull request.
+
+## License
+
+This repository does not currently include a project license. Third-party libraries and source materials retain their own terms.
+
+## README references
+
+This README follows [GitHub's official README guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) and adapts the overview, setup, usage, and contribution structure of [Best-README-Template](https://github.com/othneildrew/Best-README-Template) and [Standard README](https://github.com/RichardLitt/standard-readme). The latter two are community resources. Images and documentation use repository-relative links, following [GitHub's formatting guidance](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links).

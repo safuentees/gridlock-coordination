@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Rewrite the README with current source/demo coverage, a first-review walkthrough, setup and backup instructions, and five screenshots of the running application.
 - Add a data-readiness workspace for sourced location revisions and retain validated source revisions locally between visits.
 - Keep a searchable Candidates / All projects list over a map-first workspace, synchronize selection with one comparison panel, and fit map features around the panels.
 - Reorganize Gridlock into a viewport-sized workspace with internal panel scrolling, persistent selection details and labeled secondary dialogs.
